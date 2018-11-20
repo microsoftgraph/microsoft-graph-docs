@@ -2,13 +2,13 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization_attributemappingsource.md).
+Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |key|String|The name of the parameter.|
-|value|[attributeMappingSource](synchronization_attributemappingsource.md)|The value of the parameter.|
+|value|[attributeMappingSource](synchronization-attributemappingsource.md)|The value of the parameter.|
 
 ## JSON representation
 

@@ -25,11 +25,11 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/v1.0
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]      | POST /lists/{list-id}
 
-[Get list]: ../api/list_get.md
-[Enumerate list items]: ../api/listitem_list.md
-[Update list item]: ../api/listItem_update.md
-[Delete list item]: ../api/listItem_delete.md
-[Create list item]: ../api/listItem_create.md
+[Get list]: ../api/list-get.md
+[Enumerate list items]: ../api/listitem-list.md
+[Update list item]: ../api/listitem-update.md
+[Delete list item]: ../api/listitem-delete.md
+[Create list item]: ../api/listitem-create.md
 
 ## JSON representation
 
@@ -112,18 +112,18 @@ The **list** resource has the following relationships to other resources.
 | **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
 
-[baseItem]: baseItem.md
-[contentType]: contentType.md
+[baseItem]: baseitem.md
+[contentType]: contenttype.md
 [drive]: drive.md
-[driveItem]: driveItem.md
-[columnDefinition]: columnDefinition.md
-[identitySet]: identitySet.md
+[driveItem]: driveitem.md
+[columnDefinition]: columndefinition.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
-[listInfo]: listInfo.md
-[listItem]: listItem.md
-[sharepointIds]: sharepointIds.md
+[listInfo]: listinfo.md
+[listItem]: listitem.md
+[sharepointIds]: sharepointids.md
 [site]: site.md
-[systemFacet]: systemFacet.md
+[systemFacet]: systemfacet.md
 
 <!-- {
   "type": "#page.annotation",

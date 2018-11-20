@@ -12,14 +12,14 @@ Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
 For a custom time range or interval, use the [getActivitiesByInterval][] API.
 
->**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](../../../concepts/deployments.md).
+>**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
-[itemAnalytics]: ../resources/itemAnalytics.md
-[getActivitiesByInterval]: ../api/itemActivity_getByInterval.md
+[itemAnalytics]: ../resources/itemanalytics.md
+[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------

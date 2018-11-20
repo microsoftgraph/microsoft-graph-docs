@@ -214,20 +214,20 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 | Method                                                   | REST Path
 |:---------------------------------------------------------|:-----------------------
-| [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 
-[createLink]: ../api/driveItem_createLink.md
+[createLink]: ../api/driveitem-createlink.md
 [IdentitySet]: identityset.md
-[invite]: ../api/driveItem_invite.md
+[invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
-[shares API]: ../api/shares_get.md
+[shares API]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 

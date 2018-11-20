@@ -10,7 +10,7 @@ Defines how a value should be extracted (or transformed) from the source object.
 |:----------------------|:--------------------------|:--------------------------|
 |expression             |String                     |Equivalent expression representation of this **attributeMappingSource** object.|
 |name                   |String                     |Name parameter of the mapping source. Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used. |
-|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization_stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** is not `Function`, this property will be null/empty array. |
+|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection | If this object represents a function, lists function parameters. Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions. If **type** is not `Function`, this property will be null/empty array. |
 |type                   | String                    |The type of this attribute mapping source. Possible values are: `Attribute`, `Constant`, `Function`. Default is `Attribute`.| 
 
 ## JSON representation

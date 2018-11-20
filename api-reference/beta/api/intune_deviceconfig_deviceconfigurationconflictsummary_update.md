@@ -1,12 +1,12 @@
-﻿# Update deviceConfigurationConflictSummary
+# Update deviceConfigurationConflictSummary
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceConfigurationConflictSummary](../resources/intune_deviceconfig_deviceconfigurationconflictsummary.md) object.
+Update the properties of a [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,13 +30,13 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceConfigurationConflictSummary](../resources/intune_deviceconfig_deviceconfigurationconflictsummary.md) object.
+In the request body, supply a JSON representation for the [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object.
 
-The following table shows the properties that are required when you create the [deviceConfigurationConflictSummary](../resources/intune_deviceconfig_deviceconfigurationconflictsummary.md).
+The following table shows the properties that are required when you create the [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|conflictingDeviceConfigurations|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|The set of policies in conflict with the given setting|
+|conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) collection|The set of policies in conflict with the given setting|
 |id|String|The id for this set of conflicting policies. This id is the ids of all the policies in ConflictingDeviceConfigurations in lexicographical order separated by underscores.|
 |contributingSettings|String collection|The set of settings in conflict with the given policies|
 |deviceCheckinsImpacted|Int32|The count of checkins impacted by the conflicting policies and settings|
@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationConflictSummary](../resources/intune_deviceconfig_deviceconfigurationconflictsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object in the response body.
 
 ## Example
 ### Request

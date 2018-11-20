@@ -1,4 +1,4 @@
-﻿# iosHomeScreenFolderPage resource type
+# iosHomeScreenFolderPage resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ A folder containing apps on the Home Screen
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the folder page|
-|apps|[iosHomeScreenApp](../resources/intune_deviceconfig_ioshomescreenapp.md) collection|A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.|
+|apps|[iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md) collection|A list of apps to appear on a page within a folder. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

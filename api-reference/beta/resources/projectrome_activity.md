@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a [history item](projectrome_historyitem.md) that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
+Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a [history item](projectrome-historyitem.md) that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
 You can use activities in Microsoft Graph to enable users to get back to what they were doing in their app, across multiple devices. Activities that your app creates appear on all users' devices, and are exposed to users as deep links to specific content within your app. You can express specific content within your app as a destination that is showcased in Windows, and accessible on iOS and Android devices through Cortana notifications.
 
@@ -14,10 +14,10 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create or replace activity](../api/projectrome_put_activity.md) | [activity](projectrome_activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
-|[Delete an activity](../api/projectrome_delete_activity.md) | No Content | Deletes the specified activity for that user from your app.|
-|[Get activities](../api/projectrome_get_activities.md) | Collection of [activities](projectrome_activity.md) | Gets the activities for your app for a given user.|
-|[Get recent activities](../api/projectrome_get_recent_activities.md) | Collection of [activities](projectrome_activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [historyItems](projectrome_historyitem.md).|
+|[Create or replace activity](../api/projectrome-put-activity.md) | [activity](projectrome-activity.md) |Creates or replaces an existing activity (upsert). The appActivityId needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe. |
+|[Delete an activity](../api/projectrome-delete-activity.md) | No Content | Deletes the specified activity for that user from your app.|
+|[Get activities](../api/projectrome-get-activities.md) | Collection of [activities](projectrome-activity.md) | Gets the activities for your app for a given user.|
+|[Get recent activities](../api/projectrome-get-recent-activities.md) | Collection of [activities](projectrome-activity.md) | Gets the most recent activities for your app for a given user, sorted and based on the most recently created or updated [historyItems](projectrome-historyitem.md).|
 
 ## Properties
 
@@ -33,7 +33,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |activationUrl | String | Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.|
 |fallbackUrl | String | Optional. URL used to launch the activity in a web-based app, if available.|
 |contentUrl | String | Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).|
-|visualElements| [visualInfo](../resources/projectrome_visualinfo.md) | Required. The object containing information to render the activity in the UX.|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](https://schema.org) syntax.|
 |expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
 |status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
@@ -42,7 +42,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-|historyItems| [historyItem](../resources/projectrome_historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
+|historyItems| [historyItem](../resources/projectrome-historyitem.md) collection | Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.|
 
 ## JSON representation
 

@@ -1,4 +1,4 @@
-﻿# mobileAppTroubleshootingAppStateHistory resource type
+# mobileAppTroubleshootingAppStateHistory resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,14 +6,14 @@
 
 History Item contained in the Mobile App Troubleshooting Event.
 
-Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)
+Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune_troubleshooting_mobileappactiontype.md)|AAD security group id to which it was targeted. Possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
-|runState|[runState](../resources/intune_shared_runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`.|
+|occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|AAD security group id to which it was targeted. Possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`.|
 |errorCode|String|Error code for the failure, empty if no failure.|
 
 ## Relationships

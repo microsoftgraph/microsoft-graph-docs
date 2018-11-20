@@ -1,4 +1,4 @@
-﻿# windowsInformationProtectionIPRangeCollection resource type
+# windowsInformationProtectionIPRangeCollection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -7,7 +7,7 @@ Windows Information Protection IP Range Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|ranges|[ipRange](../resources/intune_mam_iprange.md) collection|Collection of ip ranges|
+|ranges|[ipRange](../resources/intune-mam-iprange.md) collection|Collection of ip ranges|
 
 ## Relationships
 None

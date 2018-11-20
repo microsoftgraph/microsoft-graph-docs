@@ -4,7 +4,7 @@ Get the overrides that a user has set up to always classify messages from certai
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

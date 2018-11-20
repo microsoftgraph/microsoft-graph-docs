@@ -6,7 +6,7 @@ Retrieve a list of [alert](../resources/alert.md) objects.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,7 +28,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## Optional query parameters
 
-This method supports the following [OData query parameters](../../../concepts/query_parameters.md) to help customize the response:
+This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:
 
 - `$count`
 - `$filter`

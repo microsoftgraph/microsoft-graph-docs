@@ -1,4 +1,4 @@
-﻿# omaSettingStringXml resource type
+# omaSettingStringXml resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,14 +6,14 @@
 
 OMA Settings StringXML definition.
 
-Inherits from [omaSetting](../resources/intune_deviceconfig_omasetting.md)
+Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|String|Description. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|File name associated with the Value property (*.xml).|
 |value|Binary|Value. (UTF8 encoded byte array)|
 

@@ -7,8 +7,8 @@ Represents an object to be used as input test data when the [synchronizationSche
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|[objectDefinition](synchronization_objectdefinition.md)|Definition of the test object.|
-|properties|[stringKeyObjectValuePair](synchronization_stringkeyobjectvaluepair.md) collection|Property values of the test object.|
+|definition|[objectDefinition](synchronization-objectdefinition.md)|Definition of the test object.|
+|properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection|Property values of the test object.|
 
 ## JSON representation
 

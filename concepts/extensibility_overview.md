@@ -1,6 +1,6 @@
 # Add custom data to resources using extensions
 
-Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](../api-reference/v1.0/resources/user.md) and [message](../api-reference/v1.0/resources/message.md). You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
+Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as [user](/graph/api/resources/user?view=graph-rest-1.0) and [message](/graph/api/resources/message?view=graph-rest-1.0). You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store.
 
 For example, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource. Alternatively, you might want to retain your app’s existing user profile store, and simply add an app-specific store identifier to the **user** resource.
 
@@ -17,22 +17,22 @@ The following table lists the resources that support open and schema extensions,
 
 |Resource |Open extensions |Schema extensions |
 |:------- |:------ |:------ |
-| [Administrative unit](../api-reference/beta/resources/administrativeunit.md) | Preview only | Preview only |
-| [Calendar event](../api-reference/v1.0/resources/event.md) | GA | GA |
-| [Device](../api-reference/v1.0/resources/device.md) | GA | GA |
-| [Group](../api-reference/v1.0/resources/group.md) | GA | GA |
-| [Group calendar event](../api-reference/v1.0/resources/event.md) | GA | GA |
-| [Group conversation post](../api-reference/v1.0/resources/post.md) | GA | GA |
-| [Message](../api-reference/v1.0/resources/message.md) | GA | GA |
-| [Organization](../api-reference/v1.0/resources/organization.md) | GA | GA |
-| [Personal contact](../api-reference/v1.0/resources/contact.md)| GA | GA |
-| [User](../api-reference/v1.0/resources/user.md) | GA | GA |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta) | Preview only | Preview only |
+| [Calendar event](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
+| [Device](/graph/api/resources/device?view=graph-rest-1.0) | GA | GA |
+| [Group](/graph/api/resources/group?view=graph-rest-1.0) | GA | GA |
+| [Group calendar event](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
+| [Group conversation post](/graph/api/resources/post?view=graph-rest-1.0) | GA | GA |
+| [Message](/graph/api/resources/message?view=graph-rest-1.0) | GA | GA |
+| [Organization](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
+| [Personal contact](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
+| [User](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
 
 You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
 
 ## Open extensions
 
-[Open extensions](../api-reference/v1.0/resources/opentypeextension.md) (formerly known as Office 365 data extensions) are
+[Open extensions](/graph/api/resources/opentypeextension?view=graph-rest-1.0) (formerly known as Office 365 data extensions) are
 [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
 add untyped app data directly to a resource instance.
 
@@ -43,16 +43,16 @@ One way to do this is to use a reverse domain name system (DNS) format that is d
 
 Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
-You can [create an open extension](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) in a resource instance and store custom data to it all in the same operation (note [known limitation](known_issues.md#extensions) for some of the supported resources).
+You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0) in a resource instance and store custom data to it all in the same operation (note [known limitation](known-issues.md#extensions) for some of the supported resources).
 
-You can subsequently [read](../api-reference/v1.0/api/opentypeextension_get.md), [update](../api-reference/v1.0/api/opentypeextension_update.md), or [delete](../api-reference/v1.0/api/opentypeextension_delete.md)
+You can subsequently [read](/graph/api/opentypeextension-get?view=graph-rest-1.0), [update](/graph/api/opentypeextension-update?view=graph-rest-1.0), or [delete](/graph/api/opentypeextension-delete?view=graph-rest-1.0)
 the extension and its data.
 
-Open extension example: [Add custom data to users using open extensions](extensibility_open_users.md)
+Open extension example: [Add custom data to users using open extensions](extensibility-open-users.md)
 
 ## Schema extensions
 
-[Schema extensions](../api-reference/v1.0/resources/schemaextension.md) allow you to define a schema that you can use to extend a resource type. First, you create your schema extension definition. Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it
+[Schema extensions](/graph/api/resources/schemaextension?view=graph-rest-1.0) allow you to define a schema that you can use to extend a resource type. First, you create your schema extension definition. Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it
 be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
 
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
@@ -62,17 +62,17 @@ When creating a schema extension definition, you must provide a unique name for 
 
 You will see this unique name in **id** used as the name of the complex type that will store your custom data on the extended resource instance.
 
-Unlike open extensions, managing schema extension definitions ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md), and [delete](../api-reference/v1.0/api/schemaextension_delete.md))
+Unlike open extensions, managing schema extension definitions ([list](/graph/api/schemaextension-list?view=graph-rest-1.0), [create](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0), [get](/graph/api/schemaextension-get?view=graph-rest-1.0), [update](/graph/api/schemaextension-update?view=graph-rest-1.0), and [delete](/graph/api/schemaextension-delete?view=graph-rest-1.0))
 and managing their data (add, get, update, and delete data) are separate sets of API operations.
 
 Because schema extensions are accessible as complex types in instances of the targeted resources, you can do CRUD operations on the custom data in a schema extension in the following ways:
 
-- Use the resource `POST` method to specify custom data when creating a new resource instance. Note that there is a [known issue](known_issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that requires creating a schema extension using a `PATCH` operation.
+- Use the resource `POST` method to specify custom data when creating a new resource instance. Note that there is a [known issue](known-issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that requires creating a schema extension using a `PATCH` operation.
 - Use the resource `GET` method to read the custom data.
 - Use the resource `PATCH` method to add or update custom data in an existing resource instance.
 - Use the resource `PATCH` method to set the complex type to null, to delete the custom data in the resource instance.
 
-Schema extension example: [Add custom data to groups using schema extensions](extensibility_schema_groups.md)
+Schema extension example: [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 
 ### Schema extensions lifecycle
 
@@ -103,11 +103,11 @@ The following data types are supported when defining a property in a schema exte
 
 ### Azure AD directory schema extensions
 
-Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](../api-reference/v1.0/resources/directoryObject.md) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
+Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
 
-The same [permissions](./permissions_reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
+The same [permissions](./permissions-reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to be able to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
 
 Additionally, to create and manage schema extension definitions, an application must be granted the *Directory.AccessAsUser.All* permission.
 
@@ -122,7 +122,7 @@ The following limits apply to directory resources (such as **user**, **group**, 
 
 The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
 
-- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md).
+- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
 
 ### Schema extension limits
 
@@ -130,13 +130,13 @@ An application may create no more than five **schema extension** definitions.
 
 ## Known limitations
 
-For known limitations using extensions, see the [extensions section](known_issues.md#extensions) in the known issues article.
+For known limitations using extensions, see the [extensions section](known-issues.md#extensions) in the known issues article.
 
 ## Extension examples
 
-- [Add custom data to users using open extensions](extensibility_open_users.md)
+- [Add custom data to users using open extensions](extensibility-open-users.md)
 
-- [Add custom data to groups using schema extensions](extensibility_schema_groups.md)
+- [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 
 ## See also
 

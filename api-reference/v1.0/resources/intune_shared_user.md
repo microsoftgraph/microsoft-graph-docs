@@ -7,17 +7,17 @@ Represents an Azure Active Directory user object.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune_shared_user_list.md) objects.|[user](../resources/intune_shared_user.md) collection|List properties and relationships of the [user](../resources/intune_shared_user.md) objects.|
-|[Get user](../api/intune_shared_user_get.md) object.|[user](../resources/intune_shared_user.md) collection|Read properties and relationships of the [user](../resources/intune_shared_user.md) object.|
-|[Create user](../api/intune_shared_user_create.md) object.|[user](../resources/intune_shared_user.md) collection|Create a new [user](../resources/intune_shared_user.md) object.|
-|[Delete user](../api/intune_shared_user_delete.md).|None|Deletes a [user](../resources/intune_shared_user.md).|
-|[Update user](../api/intune_shared_user_update.md) object.|[user](../resources/intune_shared_user.md)|Update the properties of a [user](../resources/intune_shared_user.md) object.|
+|[List users](../api/intune-shared-user-list.md) objects.|[user](../resources/intune-shared-user.md) collection|List properties and relationships of the [user](../resources/intune-shared-user.md) objects.|
+|[Get user](../api/intune-shared-user-get.md) object.|[user](../resources/intune-shared-user.md) collection|Read properties and relationships of the [user](../resources/intune-shared-user.md) object.|
+|[Create user](../api/intune-shared-user-create.md) object.|[user](../resources/intune-shared-user.md) collection|Create a new [user](../resources/intune-shared-user.md) object.|
+|[Delete user](../api/intune-shared-user-delete.md).|None|Deletes a [user](../resources/intune-shared-user.md).|
+|[Update user](../api/intune-shared-user-update.md) object.|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |**Device management**|
-|[removeAllDevicesFromManagement action](../api/intune_shared_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
+|[removeAllDevicesFromManagement action](../api/intune-shared-user-removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |**Mobile app management (MAM)**|
-|[getManagedAppDiagnosticStatuses function](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
-|[getManagedAppPolicies function](../api/intune_shared_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
-|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[getManagedAppDiagnosticStatuses function](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
+|[getManagedAppPolicies function](../api/intune-shared-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Gets app restrictions for a given user.|
+|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,11 +31,11 @@ Represents an Azure Active Directory user object.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |**Device management**|
-|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The managed devices associated with the user.|
+|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The managed devices associated with the user.|
 |**Mobile app management (MAM)**|
-|managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
+|managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
 |**Troubleshooting**|
-|deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
+|deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -11,7 +11,7 @@ as an automatic reply for a message recipient.
 | customMailTip | String | A custom mail tip that can be set on the recipient's mailbox. |
 | deliveryRestricted| Boolean | Whether the recipient's mailbox is restricted, for example, accepting messages from only a predefined list of senders, rejecting messages from a predefined list of senders, or accepting messages from only authenticated senders. |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | The email address of the recipient to get mailtips for. |
-| error | [mailTipsError](../resources/mailtipserror.md) | Errors that occur during the [getMailTips](../api/user_getmailtips.md) action. |
+| error | [mailTipsError](../resources/mailtipserror.md) | Errors that occur during the [getMailTips](../api/user-getmailtips.md) action. |
 | externalMemberCount | Int32 | The number of external members if the recipient is a distribution list. |
 | isModerated |Boolean  | Whether sending messages to the recipient requires approval. For example, if the recipient is a large distribution list and a moderator has been set up to approve messages sent to that distribution list, or if sending messages to a recipient requires approval of the recipient's manager. |
 | mailboxFull | Boolean | The mailbox full status of the recipient. |

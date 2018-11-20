@@ -9,8 +9,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
+|[Get ChartAxis](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
 
 ## Properties
 | Property	   | Type	|Description|

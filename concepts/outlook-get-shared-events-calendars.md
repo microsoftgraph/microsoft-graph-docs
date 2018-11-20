@@ -15,7 +15,7 @@ You can get a specific event in Garth's shared default calendar:
 GET users/{Garth-userId | Garth-userPrincipalName}/calendar/events/{id}
 ```
 
-On successful completion, you'll get HTTP 200 OK and the [event](../api-reference/v1.0/resources/event.md) instance identified by `{id}` from Garth's default calendar.
+On successful completion, you'll get HTTP 200 OK and the [event](/graph/api/resources/event?view=graph-rest-1.0) instance identified by `{id}` from Garth's default calendar.
 
 ## Get all the events in the shared calendar
 
@@ -26,7 +26,7 @@ Get all the events in the default calendar that Garth has shared with John:
 GET users/{Garth-userId | Garth-userPrincipalName}/calendar/events
 ```
 
-On successful completion, you'll get HTTP 200 OK and a collection of [event](../api-reference/v1.0/resources/event.md) instances in Garth's default calendar.
+On successful completion, you'll get HTTP 200 OK and a collection of [event](/graph/api/resources/event?view=graph-rest-1.0) instances in Garth's default calendar.
 
 ## Get the shared calendar
 
@@ -37,7 +37,7 @@ Get the default calendar that Garth has shared with John.
 GET users/{Garth-userId | Garth-userPrincipalName}/calendar
 ```
 
-On successful completion, you'll get HTTP 200 OK and a [calendar](../api-reference/v1.0/resources/calendar.md) instance that represents Garth's default folder.
+On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) instance that represents Garth's default folder.
 
 The same GET capabilities apply if Garth had delegated John further access to Garth's default calendar, or if Garth had delegated John his entire mailbox.
 
@@ -49,4 +49,4 @@ If Garth has not shared his default calendar with John, nor has he delegated his
 Find out more about:
 
 - [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](../api-reference/v1.0/resources/calendar.md) in Microsoft Graph v1.0.
+- The [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) in Microsoft Graph v1.0.
