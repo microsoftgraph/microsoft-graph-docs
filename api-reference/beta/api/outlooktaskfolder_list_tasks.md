@@ -4,16 +4,16 @@
 
 Get all the Outlook tasks in the specified folder.
 
-By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask_complete.md) task operations) returns 
+By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns 
 date-related properties in UTC.  You can use a `Prefer: outlook.timezone` request header to have all the date-related properties in the response represented in a time zone 
-different than UTC. See an [example](outlooktask_get.md#example-2) for getting a single task. You can apply the header similarly to get multiple tasks.
+different than UTC. See an [example](outlooktask-get.md#example-2) for getting a single task. You can apply the header similarly to get multiple tasks.
 
 If there is more than one task group, and you want to get all the tasks in a specific task group, first 
-[get all the task folders in that task group](outlooktaskgroup_list_taskfolders.md), 
+[get all the task folders in that task group](outlooktaskgroup-list-taskfolders.md), 
 and then get the tasks in each of these task folders. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

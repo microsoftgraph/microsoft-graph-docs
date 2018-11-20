@@ -2,7 +2,7 @@
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 
-The [getSchedule](../api-reference/beta/api/calendar_getschedule.md) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
+The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
 
 ## Example
 
@@ -124,7 +124,7 @@ By default, the length of each time slot is 30 minutes. This example uses the **
 
 ## How is getSchedule different from findMeetingTimes
 
-The [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
+The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
 
 ### Application
 
@@ -134,7 +134,7 @@ The [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) actio
 - The nature of the requested activity for the time of the day
 - The minimum attendance required for a quorum for a meeting
 
-It is appropriate for scenarios that depend on [streamlining appointment booking](findmeetingtimes_example.md).
+It is appropriate for scenarios that depend on [streamlining appointment booking](findmeetingtimes-example.md).
 
 **getSchedule** simply returns the free/busy status of existing events in each of the requested calendars for a given time period, and assumes the remaining time in that time period tp be free. You would then apply further business logic to make use of this data to complete your scenario.
 
@@ -149,7 +149,7 @@ It is appropriate for scenarios that depend on [streamlining appointment booking
 
 **findmeetingtimes** is generally available for all apps. 
 
-**getSchedule** is currently available [in preview status](versioning_and_support.md#beta-version), and therefore is not appropriate for use in production apps.
+**getSchedule** is currently available [in preview status](versioning-and-support.md#beta-version), and therefore is not appropriate for use in production apps.
 
 
 ## Permissions
@@ -177,5 +177,5 @@ Be aware of the following limits and error condition:
 - If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
 
 ## See also
-- [Permissions reference](permissions_reference.md#calendars-permissions)
-- [Find possible meeting times on the Outlook calendar](findmeetingtimes_example.md)
+- [Permissions reference](permissions-reference.md#calendars-permissions)
+- [Find possible meeting times on the Outlook calendar](findmeetingtimes-example.md)

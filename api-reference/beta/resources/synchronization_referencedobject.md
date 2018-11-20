@@ -2,13 +2,13 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Describes a reference to another object defined in the same [directory definition](synchronization_directorydefinition.md).
+Describes a reference to another object defined in the same [directory definition](synchronization-directorydefinition.md).
 
 ## Properties
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |String                     |Name of the referenced object. Must match one of the objects in the [directory definition](synchronization_directorydefinition.md).|
+|referencedObjectName        |String                     |Name of the referenced object. Must match one of the objects in the [directory definition](synchronization-directorydefinition.md).|
 |referencedProperty          |String                     |**Currently not supported**. Name of the property in the referenced object, the value for which is used as the reference.|
 
 ## JSON representation

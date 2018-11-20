@@ -8,19 +8,19 @@ By default, directory roles are scoped to be tenant-wide.  However, directory ro
 
 This resource supports:
 
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryrole_delta.md) function.
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryrole-delta.md) function.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
-|[List directoryRoles](../api/directoryrole_list.md) | [directoryRole](directoryrole.md) collection | List the directory roles that are activated in the tenant. |
-|[Add member](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Add a user to the directory role by posting to the members navigation property.|
-|[List members](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
-|[Remove a member](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
-|[List scoped-role members](../api/directoryrole_list_members.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
-|[delta](../api/directoryrole_delta.md)|directoryRole collection| Get incremental changes for directory roles. |
+|[Get directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |Read properties and relationships of directoryRole object.|
+|[List directoryRoles](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) collection | List the directory roles that are activated in the tenant. |
+|[Add member](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| Add a user to the directory role by posting to the members navigation property.|
+|[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
+|[Remove a member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
+|[List scoped-role members](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
+|[delta](../api/directoryrole-delta.md)|directoryRole collection| Get incremental changes for directory roles. |
 
 ## Properties
 | Property   | Type |Description|

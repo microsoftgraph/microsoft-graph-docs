@@ -12,9 +12,9 @@ The following tasks are available for listItemVersion resources.
 | [Get version][version-get]         | `GET /sites/{site-id}/items/{item-id}/versions/{version-id}`     |
 | [Restore version][version-restore] | `POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restore` |
 
-[version-list]: ../api/listitem_list_versions.md
-[version-get]: ../api/listitemversion_get.md
-[version-restore]: ../api/listitemversion_restore.md
+[version-list](../api/listitem-list-versions)
+[version-get](../api/listitemversion-get)
+[version-restore](../api/listitemversion-restore)
 
 
 ## JSON representation
@@ -41,7 +41,7 @@ The following tasks are available for listItemVersion resources.
 |      Property name       |                         Type                         |                               Description                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only.        |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 

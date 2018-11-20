@@ -59,8 +59,8 @@ Sharing links contain a unique token that provides access to the item for anyone
 
 Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.
 
-[SharingInvitation]: sharinginvitation.md
-[SharingLink]: sharinglink.md
+[SharingInvitation](sharinginvitation)
+[SharingLink](sharinglink)
 
 ## Roles enumeration
 
@@ -163,11 +163,11 @@ property will contain the information about the account that redeemed the permis
 
 | Method                                                   | REST Path
 |:---------------------------------------------------------|:-----------------------
-| [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Add](../api/driveitem_invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [Add](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## Remarks

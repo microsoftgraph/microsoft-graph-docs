@@ -10,15 +10,15 @@ title: Get item activity stats by interval
 
 Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.
 
->**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](../../../concepts/deployments.md).
+>**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
 Analytics aggregates might not be available for all action types.
 
-[itemActivityStats]: ../resources/itemActivityStat.md
+[itemActivityStats](../resources/itemactivitystat)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------

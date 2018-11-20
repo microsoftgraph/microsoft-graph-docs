@@ -1,4 +1,4 @@
-﻿# cartToClassAssociation resource type
+# cartToClassAssociation resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ CartToClassAssociation for associating device carts with classrooms.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List cartToClassAssociations](../api/intune_deviceconfig_carttoclassassociation_list.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) collection|List properties and relationships of the [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) objects.|
-|[Get cartToClassAssociation](../api/intune_deviceconfig_carttoclassassociation_get.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md)|Read properties and relationships of the [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object.|
-|[Create cartToClassAssociation](../api/intune_deviceconfig_carttoclassassociation_create.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md)|Create a new [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object.|
-|[Delete cartToClassAssociation](../api/intune_deviceconfig_carttoclassassociation_delete.md)|None|Deletes a [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md).|
-|[Update cartToClassAssociation](../api/intune_deviceconfig_carttoclassassociation_update.md)|[cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md)|Update the properties of a [cartToClassAssociation](../resources/intune_deviceconfig_carttoclassassociation.md) object.|
+|[List cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) collection|List properties and relationships of the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) objects.|
+|[Get cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Read properties and relationships of the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.|
+|[Create cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Create a new [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.|
+|[Delete cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|None|Deletes a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
+|[Update cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Update the properties of a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.|
 
 ## Properties
 |Property|Type|Description|

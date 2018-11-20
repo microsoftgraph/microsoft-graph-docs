@@ -10,8 +10,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskyUsers](../api/riskyusers_list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
-|[Get riskyUsers](../api/riskyusers_get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
+|[List riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyuser.md) |List risky users and their properties.|
+|[Get riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyuser.md)|Get a specific risky user and its properties.|
 
 ## Properties
 

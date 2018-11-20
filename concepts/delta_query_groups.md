@@ -1,6 +1,6 @@
 # Get incremental changes for groups
 
-[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](../api-reference/v1.0/api/group_delta.md) function calls. Delta query enables you discover changes to groups
+[Delta query](./delta-query-overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](/graph/api/group-delta?view=graph-rest-1.0) function calls. Delta query enables you discover changes to groups
 without having to fetch the entire set of groups from Microsoft Graph and compare changes.
 
 Clients using synchronizing groups with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the groups in a tenant, and subsequently, get incremental changes to groups periodically.
@@ -8,10 +8,10 @@ Clients using synchronizing groups with a local profile store can use Delta Quer
 ## Tracking group changes
 
 Tracking group changes is a round of one or more GET requests with the **delta** function. You make a GET
-request much like the way you [list groups](../api-reference/v1.0/api/group_list.md), except that you include the following:
+request much like the way you [list groups](/graph/api/group-list?view=graph-rest-1.0), except that you include the following:
 
 - The **delta** function.
-- A [state token](./delta_query_overview.md) (*deltaToken* or *skipToken*) from the previous GET **delta** function call.
+- A [state token](./delta-query-overview.md) (*deltaToken* or *skipToken*) from the previous GET **delta** function call.
 
 ## Example
 
@@ -38,7 +38,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 ## Initial response
 
-If successful, this method returns `200 OK` response code and [group](../api-reference/v1.0/resources/group.md) collection object in the response body. If the entire set of groups is too large to fit in one response, a `nextLink` containing a state token will also be included.
+If successful, this method returns `200 OK` response code and [group](/graph/api/resources/group?view=graph-rest-1.0) collection object in the response body. If the entire set of groups is too large to fit in one response, a `nextLink` containing a state token will also be included.
 
 In this example, a `nextLink` was included; the original `$select` and `$expand` query parameters are encoded in the state token.
 
@@ -322,4 +322,4 @@ We recommend the following best practices to correctly handle this pattern:
 
 
 ## See also
-[Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.
+[Microsoft Graph delta query](delta-query-overview.md) overview.

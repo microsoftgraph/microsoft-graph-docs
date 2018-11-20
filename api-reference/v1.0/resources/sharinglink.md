@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
 | webHtml     | String        | For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.
 | webUrl      | String        | A URL that opens the item in the browser on the OneDrive website.
 
-[Identity]: identity.md
+[Identity](identity)
 
 ## Type options
 

@@ -1,4 +1,4 @@
-﻿# enrollmentProfile resource type
+# enrollmentProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,14 +8,14 @@ The enrollmentProfile resource represents a collection of configurations which m
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List enrollmentProfiles](../api/intune_enrollment_enrollmentprofile_list.md)|[enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md) collection|List properties and relationships of the [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md) objects.|
-|[Get enrollmentProfile](../api/intune_enrollment_enrollmentprofile_get.md)|[enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|Read properties and relationships of the [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md) object.|
-|[Create enrollmentProfile](../api/intune_enrollment_enrollmentprofile_create.md)|[enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|Create a new [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md) object.|
-|[Delete enrollmentProfile](../api/intune_enrollment_enrollmentprofile_delete.md)|None|Deletes a [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md).|
-|[Update enrollmentProfile](../api/intune_enrollment_enrollmentprofile_update.md)|[enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|Update the properties of a [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md) object.|
-|[setDefaultProfile action](../api/intune_enrollment_enrollmentprofile_setdefaultprofile.md)|None|Not yet documented|
-|[exportMobileConfig function](../api/intune_enrollment_enrollmentprofile_exportmobileconfig.md)|String|Exports the mobile configuration|
-|[updateDeviceProfileAssignment action](../api/intune_enrollment_enrollmentprofile_updatedeviceprofileassignment.md)|None|Not yet documented|
+|[List enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|List properties and relationships of the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) objects.|
+|[Get enrollmentProfile](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Read properties and relationships of the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.|
+|[Create enrollmentProfile](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Create a new [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.|
+|[Delete enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|None|Deletes a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
+|[Update enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.|
+|[setDefaultProfile action](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|None|Not yet documented|
+|[exportMobileConfig function](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|Exports the mobile configuration|
+|[updateDeviceProfileAssignment action](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

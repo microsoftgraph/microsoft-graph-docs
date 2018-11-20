@@ -12,7 +12,7 @@ Restore a previous version of a DriveItem to be the current version. This will c
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,7 +56,7 @@ If successful, the API call returns a `204 No content`.
 HTTP/1.1 204 No content
 ```
 
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 <!-- {
   "type": "#page.annotation",

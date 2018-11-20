@@ -1,12 +1,12 @@
-﻿# Update deviceManagement
+# Update deviceManagement
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,14 +30,14 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier|
-|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Account level settings.|
 |maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
 |intuneAccountId|Guid|Intune Account Id for given tenant|
 |legacyPcManangementEnabled|Boolean|The property to enable Non-MDM managed legacy PC management for this account. This property is read-only.|
@@ -45,7 +45,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-deviceconfig-devicemanagement.md) object in the response body.
 
 ## Example
 ### Request

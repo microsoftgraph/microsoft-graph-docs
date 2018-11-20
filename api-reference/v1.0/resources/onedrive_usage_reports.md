@@ -8,7 +8,7 @@ You can use the OneDrive usage reports to gain a high-level view of the value yo
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | ---------------------------------------- |
-| [Get account detail](../api/reportroot_getonedriveusageaccountdetail.md) | Stream      | Get details about OneDrive usage by account. |
-| [Get account counts](../api/reportroot_getonedriveusageaccountcounts.md) | Stream      | Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site. |
-| [Get file counts](../api/reportroot_getonedriveusagefilecounts.md) | Stream      | Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period. |
-| [Get storage](../api/reportroot_getonedriveusagestorage.md) | Stream      | Get the trend on the amount of storage you are using in OneDrive for Business. |
+| [Get account detail](../api/reportroot-getonedriveusageaccountdetail.md) | Stream      | Get details about OneDrive usage by account. |
+| [Get account counts](../api/reportroot-getonedriveusageaccountcounts.md) | Stream      | Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site. |
+| [Get file counts](../api/reportroot-getonedriveusagefilecounts.md) | Stream      | Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period. |
+| [Get storage](../api/reportroot-getonedriveusagestorage.md) | Stream      | Get the trend on the amount of storage you are using in OneDrive for Business. |

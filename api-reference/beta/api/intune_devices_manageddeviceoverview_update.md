@@ -1,12 +1,12 @@
-﻿# Update managedDeviceOverview
+# Update managedDeviceOverview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.
+Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/managedDeviceOverview
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.
+In the request body, supply a JSON representation for the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.
 
-The following table shows the properties that are required when you create the [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md).
+The following table shows the properties that are required when you create the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -40,15 +40,15 @@ The following table shows the properties that are required when you create the [
 |enrolledDeviceCount|Int32|Total enrolled device count. Does not include PC devices managed via Intune PC Agent|
 |mdmEnrolledCount|Int32|The number of devices enrolled in MDM|
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
-|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Device operating system summary.|
-|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune_devices_manageddevicemodelsandmanufacturers.md)|Models and Manufactures meatadata for managed devices in the account|
+|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Device operating system summary.|
+|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Models and Manufactures meatadata for managed devices in the account|
 |lastModifiedDateTime|DateTimeOffset|Last modified date time of device overview|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object in the response body.
 
 ## Example
 ### Request

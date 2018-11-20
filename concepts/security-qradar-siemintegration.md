@@ -25,15 +25,15 @@ Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/en-us/azure/event
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and choose **Create a resource** at the top left of the screen.
 
-    ![Create resource image](../concepts/images/create-resource.png)
+    ![Create resource image](images/create-resource.png)
 
 2. Select **Internet of Things** and choose **Event Hubs**.
 
-    ![event hubs image](../concepts/images/event-hubs.png)
+    ![event hubs image](images/event-hubs.png)
 
 3. In **Create namespace**, enter a namespace name. After making sure the namespace name is available, choose the pricing tier (Basic or Standard). Also, choose an Azure subscription, resource group, and location in which to create the resource. Choose **Create** to create the namespace. You might have to wait a few minutes for the system to fully provision the resources.
 
-    ![create namespace image](../concepts/images/create-namespace.png)
+    ![create namespace image](images/create-namespace.png)
 
 ## Step 2: Configure Azure Monitor to send security alerts from your tenant to the event hub
 

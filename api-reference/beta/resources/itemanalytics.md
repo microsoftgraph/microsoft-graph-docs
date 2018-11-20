@@ -12,7 +12,7 @@ The **itemAnalytics** resource provides analytics about activities that took pla
 
 You can also use the [getActivitiesByInterval][] API to retrieve analytics over a custom time range or interval.
 
->**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](../../../concepts/deployments.md).
+>**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
 ## JSON representation
 
@@ -37,10 +37,10 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 | allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
-[itemActivityStat]: itemActivityStat.md
+[itemActivityStat](itemactivitystat)
 
 
-[getActivitiesByInterval]: ../api/itemActivity_getByInterval.md
+[getActivitiesByInterval](../api/itemactivity-getbyinterval)
 
 <!-- {
   "type": "#page.annotation",

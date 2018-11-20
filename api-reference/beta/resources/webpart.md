@@ -8,7 +8,7 @@ title: WebPart
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitePage.md).
+The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).
 
 ## JSON representation
 
@@ -34,13 +34,13 @@ The **webPart** resource represents type and rendering information for a web par
 | **type**                | String           | A unique identifier specifying the webPart type. Read-only.
 | **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
 
-[sitePageData]: sitePageData.md
+[sitePageData](sitepagedata)
 
 ## Remarks
 
 Web parts can define their own required properties under **data**.
 
-For more information about pages, see [sitePage](sitePage.md).
+For more information about pages, see [sitePage](sitepage.md).
 <!-- {
   "type": "#page.annotation",
   "description": "Defines a control resource",

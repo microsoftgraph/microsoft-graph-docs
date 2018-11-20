@@ -72,8 +72,8 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 See [Error Responses][error-response] for more info about how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
-[file-facet]: ../resources/file.md
+[error-response]: /graph/errors
+[file-facet](../resources/file)
 
 <!-- {
   "type": "#page.annotation",

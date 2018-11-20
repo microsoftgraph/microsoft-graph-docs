@@ -11,9 +11,9 @@ title: Get SharePoint site by path
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 
-[site]: ../resources/site.md
+[site](../resources/site)
 
-In addition to retrieving a [site by ID](site_get.md) you can retrieve a site based on server-relative URL path.
+In addition to retrieving a [site by ID](site-get.md) you can retrieve a site based on server-relative URL path.
 
 * Site collection hostname (contoso.sharepoint.com)
 * Site path, relative to server hostname.
@@ -25,7 +25,7 @@ There is also a reserved site identifier, `root`, which always references the ro
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -56,8 +56,8 @@ Here is a JSON representation of a **baseItem** resource.
 | parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                              |
 | webUrl               | string (url)      | URL that displays the resource in the browser. Read-only.                              |
 
-[identitySet]: identityset.md
-[itemReference]: itemreference.md
+[identitySet](identityset)
+[itemReference](itemreference)
 
 ## Remarks
 

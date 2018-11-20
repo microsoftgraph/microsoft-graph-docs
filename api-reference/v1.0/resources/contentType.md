@@ -9,8 +9,8 @@ title: ContentType
 The **contentType** resource represents a _content type_ in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
-[list]: list.md
-[listItem]: listItem.md
+[list](list)
+[listItem](listitem)
 
 ## JSON representation
 
@@ -60,10 +60,10 @@ Here is a JSON representation of a **contentType** resource.
 
 See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
 
-[columnLink]: columnLink.md
+[columnLink](columnlink)
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
-[itemReference]: itemReference.md
-[contentTypeOrder]: contentTypeOrder.md
+[itemReference](itemreference)
+[contentTypeOrder](contenttypeorder)
 
 <!-- {
   "type": "#page.annotation",

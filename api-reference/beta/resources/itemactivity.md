@@ -45,9 +45,9 @@ Currently only available on SharePoint and OneDrive for Business.
 | location | [location][]            | Physical location where the action was performed. Read-only.
 | times    | [itemActivityTimeSet][] | Details about when the activity took place. Read-only.
 
-[identitySet]: identitySet.md
-[itemActionSet]: itemActionSet.md
-[itemActivityTimeSet]: itemActivityTimeSet.md
+[identitySet](identityset)
+[itemActionSet](itemactionset)
+[itemActivityTimeSet](itemactivitytimeset)
 
 ## Relationships
 
@@ -56,8 +56,8 @@ Currently only available on SharePoint and OneDrive for Business.
 | driveItem         | [driveItem][] | Exposes the **driveItem** that was the target of this activity.
 | listItem          | [listItem][]  | Exposes the **listItem** that was the target of this activity.
 
-[driveItem]: driveItem.md
-[listItem]: listItem.md
+[driveItem](driveitem)
+[listItem](listitem)
 
 ## Actions
 
@@ -78,18 +78,18 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 | share       | [shareAction][]   | An item was shared.
 | version     | [versionAction][] | An item was versioned.
 
-[accessAction]: accessAction.md
-[commentAction]: commentAction.md
-[createAction]: createAction.md
-[deleteAction]: deleteAction.md
-[editAction]: editAction.md
-[location]: location.md
-[mentionAction]: mentionAction.md
-[moveAction]: moveAction.md
-[renameAction]: renameAction.md
-[restoreAction]: restoreAction.md
-[shareAction]: shareAction.md
-[versionAction]: versionAction.md
+[accessAction](accessaction)
+[commentAction](commentaction)
+[createAction](createaction)
+[deleteAction](deleteaction)
+[editAction](editaction)
+[location](location)
+[mentionAction](mentionaction)
+[moveAction](moveaction)
+[renameAction](renameaction)
+[restoreAction](restoreaction)
+[shareAction](shareaction)
+[versionAction](versionaction)
 
 ## Remarks
 

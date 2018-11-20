@@ -15,7 +15,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create invitation](../api/invitation_post.md) | invitation | Write properties and relationships of invitation object.|
+|[Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
 
 ## Properties
 | Property	   | Type	|Description|

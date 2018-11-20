@@ -4,7 +4,7 @@
 
 Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.
 
-![Three note tags displayed on a OneNote page.](images/note-tags-example.PNG)
+![Three note tags displayed on a OneNote page.](images/note-tags-example.png)
 
 
 <a name="attributes"></a>
@@ -151,7 +151,7 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote_update_page.md).
+For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote-update-page.md).
 
 
 <a name="note-tags-lists"></a>
@@ -294,7 +294,7 @@ Microsoft Graph returns the following information in the response.
 | Response data | Description |  
 |------|------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
 
 
 <a name="permissions"></a>
@@ -314,7 +314,7 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
 
 
 <a name="see-also"></a>
@@ -322,8 +322,8 @@ For more information about permission scopes and how they work, see [OneNote per
 ## See also
 
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote_update_page.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Update OneNote page content](onenote-update-page.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

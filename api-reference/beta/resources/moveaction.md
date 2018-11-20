@@ -10,7 +10,7 @@ title: MoveAction
 
 The presence of the **MoveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
 
-[activity]: itemActivity.md
+[activity](itemactivity)
 
 ## JSON representation
 

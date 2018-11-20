@@ -10,11 +10,11 @@ title: Find SharePoint sites by keyword
 
 Search across a SharePoint tenant for [sites][] that match provided keywords.
 
-[sites]: ../resources/site.md
+[sites](../resources/site)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------

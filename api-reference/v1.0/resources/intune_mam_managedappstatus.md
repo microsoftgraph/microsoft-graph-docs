@@ -1,4 +1,4 @@
-﻿# managedAppStatus resource type
+# managedAppStatus resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,8 @@ Represents app protection and configuration status for the organization.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedAppStatuses](../api/intune_mam_managedappstatus_list.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) collection|List properties and relationships of the [managedAppStatus](../resources/intune_mam_managedappstatus.md) objects.|
-|[Get managedAppStatus](../api/intune_mam_managedappstatus_get.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md)|Read properties and relationships of the [managedAppStatus](../resources/intune_mam_managedappstatus.md) object.|
+|[List managedAppStatuses](../api/intune-mam-managedappstatus-list.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md) collection|List properties and relationships of the [managedAppStatus](../resources/intune-mam-managedappstatus.md) objects.|
+|[Get managedAppStatus](../api/intune-mam-managedappstatus-get.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md)|Read properties and relationships of the [managedAppStatus](../resources/intune-mam-managedappstatus.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -52,5 +52,5 @@ To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/detail
 
 - [Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy audit log prerequisites. 
 - Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
-- Review [directoryAudit](directoryAudit.md) resource and actions.
-- Review [signIn](signIn.md) resource and actions. 
+- Review [directoryAudit](directoryaudit.md) resource and actions.
+- Review [signIn](signin.md) resource and actions. 

@@ -42,8 +42,8 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem][].
 
-[folderView]: folderView.md
-[DriveItem]: driveItem.md
+[folderView](folderview)
+[DriveItem](driveitem)
 
 <!-- {
   "type": "#page.annotation",

@@ -4,44 +4,44 @@ A message in a mailFolder.
 
 This resource supports:
 
-- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". Once the message has been sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message_get.md) operation.
-- Adding your own data as custom properties as [extensions](../../../concepts/extensibility_overview.md).
-- Subscribing to [change notifications](../../../concepts/webhooks.md).
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
-by providing a [delta](../api/message_delta.md) function.
+- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". Once the message has been sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
+- Adding your own data as custom properties as [extensions](/graph/extensibility-overview).
+- Subscribing to [change notifications](/graph/webhooks).
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/message-delta.md) function.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List messages](../api/user_list_messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
-|[Create message](../api/user_post_messages.md) | [message](message.md) | [Create](../api/user_post_messages.md#request-1) a draft of a new message. |
-|[Get message](../api/message_get.md) | [message](message.md) |Read properties and relationships of message object.|
-|[Update](../api/message_update.md) | [message](message.md) |Update message object.|
-|[Delete](../api/message_delete.md) | None |Delete message object. |
-|[copy](../api/message_copy.md)|[Message](message.md)|Copy a message to a folder.|
-|[createForward](../api/message_createforward.md)|[Message](message.md)|Create a draft of the Forward message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
-|[createReply](../api/message_createreply.md)|[Message](message.md)|Create a draft of the Reply message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
-|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.|
-|[delta](../api/message_delta.md)|[message](message.md) collection| Get a set of messages that have been added, deleted, or updated in a specified folder.|
-|[forward](../api/message_forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
-|[move](../api/message_move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
-|[reply](../api/message_reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
-|[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
-|[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[List messages](../api/user-list-messages.md) |[message](message.md) collection | Get all the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). |
+|[Create message](../api/user-post-messages.md) | [message](message.md) | [Create](../api/user-post-messages.md#request-1) a draft of a new message. |
+|[Get message](../api/message-get.md) | [message](message.md) |Read properties and relationships of message object.|
+|[Update](../api/message-update.md) | [message](message.md) |Update message object.|
+|[Delete](../api/message-delete.md) | None |Delete message object. |
+|[copy](../api/message-copy.md)|[Message](message.md)|Copy a message to a folder.|
+|[createForward](../api/message-createforward.md)|[Message](message.md)|Create a draft of the Forward message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[createReply](../api/message-createreply.md)|[Message](message.md)|Create a draft of the Reply message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Create a draft of the Reply All message. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
+|[delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that have been added, deleted, or updated in a specified folder.|
+|[forward](../api/message-forward.md)|None|Forward a message. The message is then saved in the Sent Items folder.|
+|[move](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This creates a new copy of the message in the destination folder.|
+|[reply](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
+|[replyAll](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
+|[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 |**Attachments**| | |
-|[List attachments](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
-|[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
+|[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Gets all attachments on a message.|
+|[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|
 |**Open extensions**| | |
-|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
-|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
 |**Schema extensions**| | |
-|[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
-|[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
-|[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
+|[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
+|[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -177,13 +177,13 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Get mailbox settings](../api/user_get_mailboxsettings.md) 
-- [Update mailbox settings](../api/user_update_mailboxsettings.md)
-- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Get mailbox settings](../api/user-get-mailboxsettings.md) 
+- [Update mailbox settings](../api/user-update-mailboxsettings.md)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
+- [Get incremental changes to messages in a folder](/graph/delta-query-messages)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

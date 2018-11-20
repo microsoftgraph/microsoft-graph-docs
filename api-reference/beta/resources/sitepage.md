@@ -24,11 +24,11 @@ All examples below are relative to a [site][], eg: `https://graph.microsoft.com/
 | [Delete][]                      | DELETE /pages/{page-id}
 | [Publish][]                     | POST /pages/{page-id}/publish
 
-[List pages]: ../api/sitepage_list.md
-[Get page]: ../api/sitepage_get.md
-[Create]: ../api/sitepage_create.md
-[Delete]: ../api/sitepage_delete.md
-[Publish]: ../api/sitepage_publish.md
+[List pages](../api/sitepage-list)
+[Get page](../api/sitepage-get)
+[Create](../api/sitepage-create)
+[Delete](../api/sitepage-delete)
+[Publish](../api/sitepage-publish)
 
 ## JSON representation
 
@@ -108,17 +108,17 @@ The following properties are inherited from **[baseItem][]**.
 
 The **sitePage** resource does not have relationships to other resources.
 
-[baseItem]: baseItem.md
-[contentTypeInfo]: contentTypeInfo.md
-[columnDefinition]: columnDefinition.md
-[identitySet]: identitySet.md
-[itemReference]: itemReference.md
-[list]: list.md
-[listInfo]: listInfo.md
-[listItem]: listItem.md
-[publicationFacet]: publicationFacet.md
-[site]: site.md
-[webPart]: webPart.md
+[baseItem](baseitem)
+[contentTypeInfo](contenttypeinfo)
+[columnDefinition](columndefinition)
+[identitySet](identityset)
+[itemReference](itemreference)
+[list](list)
+[listInfo](listinfo)
+[listItem](listitem)
+[publicationFacet](publicationfacet)
+[site](site)
+[webPart](webpart)
 
 <!-- {
   "type": "#page.annotation",

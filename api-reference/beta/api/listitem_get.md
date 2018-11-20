@@ -10,12 +10,12 @@ title: Get an entry from a SharePoint list
 
 Returns the metadata for an [item][] in a [list][].
 
-[list]: ../resources/list.md
-[item]: ../resources/listItem.md
+[list](../resources/list)
+[item](../resources/listitem)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

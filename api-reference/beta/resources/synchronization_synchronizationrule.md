@@ -6,7 +6,7 @@ Defines how the synchronization should be performed for the synchronization engi
 
 >**Note:** Synchronization rules define synchronization in one direction - from the source directory to the target directory. The source and target directories are defined as part of the rule properties.
 
-Synchronization rules are updated as part of the [synchronization schema](synchronization_synchronizationschema.md).
+Synchronization rules are updated as part of the [synchronization schema](synchronization-synchronizationschema.md).
 
 ## Properties
 
@@ -14,12 +14,12 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 |:--------------|:----------|:---------------|
 |editable       |Boolean    |`true` if the synchronization rule can be customized; `false` if this rule is read-only and should not be changed.|
 |id             |String     |Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.|
-|metadata       |[stringKeyStringValuePair](synchronization_stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.|
+|metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.|
 |name           |String     |Human-readable name of the synchronization rule. Not nullable.|
-|objectMappings |[objectMapping](synchronization_objectmapping.md) collection    |Collection of object mappings supported by the rule. Tells the synchronization engine which objects should be synchronized.|
-|priority       |Integer    |Priority relative to other rules in the [synchronizationSchema](synchronization_synchronizationschema.md). Rules with the lowest priority number will be processed first.|
-|sourceDirectoryName       |String    |Name of the source directory. Must match one of the directory definitions in [synchronizationSchema](synchronization_synchronizationschema.md).|
-|targetDirectoryName       |String    |Name of the target directory. Must match one of the directory definitions in [synchronizationSchema](synchronization_synchronizationschema.md).|
+|objectMappings |[objectMapping](synchronization-objectmapping.md) collection    |Collection of object mappings supported by the rule. Tells the synchronization engine which objects should be synchronized.|
+|priority       |Integer    |Priority relative to other rules in the [synchronizationSchema](synchronization-synchronizationschema.md). Rules with the lowest priority number will be processed first.|
+|sourceDirectoryName       |String    |Name of the source directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
+|targetDirectoryName       |String    |Name of the target directory. Must match one of the directory definitions in [synchronizationSchema](synchronization-synchronizationschema.md).|
 
 ## JSON representation
 

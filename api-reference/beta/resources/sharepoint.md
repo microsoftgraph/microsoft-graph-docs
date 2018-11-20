@@ -103,10 +103,10 @@ A URL constructed with only the hostname and siteCollection (`SPSite`) ID will p
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 ```
 
-[site]: site.md
-[list]: list.md
-[drive]: drive.md
-[siteCollection]: siteCollection.md
+[site](site)
+[list](list)
+[drive](drive)
+[siteCollection](sitecollection)
 
 <!-- {
   "type": "#page.annotation",

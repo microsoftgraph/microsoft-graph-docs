@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
 | **height**                | Int32  | Height of the video, in pixels.
 | **width**                 | Int32  | Width of the video, in pixels.
 
-[item-resource]: ../resources/driveitem.md
+[item-resource](../resources/driveitem)
 
 ## Remarks
 

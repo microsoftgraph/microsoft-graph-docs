@@ -86,20 +86,20 @@ ColumnDefinitions and field values for `hidden` columns are not shown by default
 To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
 To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
 
-[booleanColumn]: booleanColumn.md
-[calculatedColumn]: calculatedColumn.md
-[choiceColumn]: choiceColumn.md
-[currencyColumn]: currencyColumn.md
-[dateTimeColumn]: dateTimeColumn.md
-[defaultColumnValue]: defaultColumnValue.md
-[geolocationColumn]: geolocationColumn.md
-[lookupColumn]: lookupColumn.md
-[numberColumn]: numberColumn.md
-[personOrGroupColumn]: personOrGroupColumn.md
-[textColumn]: textColumn.md
-[fieldValueSet]: fieldValueSet.md
-[fields]: fieldvalueset.md
-[listItem]: listitem.md
+[booleanColumn](booleancolumn)
+[calculatedColumn](calculatedcolumn)
+[choiceColumn](choicecolumn)
+[currencyColumn](currencycolumn)
+[dateTimeColumn](datetimecolumn)
+[defaultColumnValue](defaultcolumnvalue)
+[geolocationColumn](geolocationcolumn)
+[lookupColumn](lookupcolumn)
+[numberColumn](numbercolumn)
+[personOrGroupColumn](personorgroupcolumn)
+[textColumn](textcolumn)
+[fieldValueSet](fieldvalueset)
+[fields](fieldvalueset)
+[listItem](listitem)
 
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 

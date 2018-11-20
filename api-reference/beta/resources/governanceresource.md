@@ -9,8 +9,8 @@ Represents resources that could be managed by Privileged Identity Management (PI
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/governanceresource_list.md) | [governanceResource](../resources/governanceresource.md) collection|List a collection of resources the requestor has access to.|
-|[Get](../api/governanceresource_get.md) | [governanceResource](../resources/governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
+|[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md) collection|List a collection of resources the requestor has access to.|
+|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
 
 No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity set for now.
 

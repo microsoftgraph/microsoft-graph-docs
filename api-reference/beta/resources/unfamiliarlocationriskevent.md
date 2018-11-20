@@ -9,7 +9,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent_get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |Read properties and relationships of unfamiliarLocationRiskEvent object.|
+|[Get unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |Read properties and relationships of unfamiliarLocationRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

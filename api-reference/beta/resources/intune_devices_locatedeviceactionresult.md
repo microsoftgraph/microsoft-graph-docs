@@ -1,4 +1,4 @@
-﻿# locateDeviceActionResult resource type
+# locateDeviceActionResult resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,16 +6,16 @@
 
 Locate device action result
 
-Inherits from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
+Inherits from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|String|Action name Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_shared_actionstate.md)|State of the action Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Time the action was initiated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|deviceLocation|[deviceGeoLocation](../resources/intune_devices_devicegeolocation.md)|device location|
+|actionName|String|Action name Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|State of the action Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|startDateTime|DateTimeOffset|Time the action was initiated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|device location|
 
 ## Relationships
 None

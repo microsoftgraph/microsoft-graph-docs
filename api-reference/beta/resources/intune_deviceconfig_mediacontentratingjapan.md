@@ -1,4 +1,4 @@
-﻿# mediaContentRatingJapan resource type
+# mediaContentRatingJapan resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +8,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|Movies rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
-|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|TV rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
+|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|Movies rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|TV rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
 
 ## Relationships
 None

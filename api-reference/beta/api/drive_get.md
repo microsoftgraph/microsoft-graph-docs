@@ -14,7 +14,7 @@ A Drive is the top-level container for a file system, such as OneDrive or ShareP
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -144,8 +144,8 @@ Content-type: application/json
 
 If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
 
-[drive-resource]: ../resources/drive.md
-[odata-query-parameters]: ../../../concepts/query_parameters.md
+[drive-resource](../resources/drive)
+[odata-query-parameters]: /graph/query_parameters
 
 <!-- {
   "type": "#page.annotation",

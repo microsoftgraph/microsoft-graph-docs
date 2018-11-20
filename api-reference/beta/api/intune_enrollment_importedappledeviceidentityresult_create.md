@@ -1,12 +1,12 @@
-﻿# Create importedAppleDeviceIdentityResult
+# Create importedAppleDeviceIdentityResult
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) object.
+Create a new [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,23 +36,23 @@ The following table shows the properties that are required when you create the i
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|serialNumber|String|Device serial number Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837 Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|discoverySource|[discoverySource](../resources/intune_enrollment_discoverysource.md)|Apple device discovery source. Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md). Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|description|String|The description of the device Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Inherited from [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|id|String|Key of the entity. Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|serialNumber|String|Device serial number Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837 Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|description|String|The description of the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) object in the response body.
 
 ## Example
 ### Request

@@ -6,7 +6,7 @@ title: FieldValueSet
 ---
 # FieldValueSet resource
 
-Represents the column values in a [listItem](listItem.md) resource.
+Represents the column values in a [listItem](listitem.md) resource.
 
 ## JSON representation
 

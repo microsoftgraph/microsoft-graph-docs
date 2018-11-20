@@ -10,13 +10,13 @@ title: Delete a page from a SharePoint site
 
 Removes a [sitePage][] from the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+[sitePage](../resources/sitepage)
+[list](../resources/list)
+[site](../resources/site)
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
 

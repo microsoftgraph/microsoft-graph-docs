@@ -10,7 +10,7 @@ title: MentionAction
 
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
-[activity]: itemActivity.md
+[activity](itemactivity)
 
 ## JSON representation
 
@@ -32,7 +32,7 @@ The **MentionAction** resource provides information about an [activity][] that m
 |:--------------|:---------------------------|:-----------------------------
 | mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
 
-[identitySet]: identitySet.md
+[identitySet](identityset)
 
 ## Remarks
 

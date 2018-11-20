@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-This example shows a complete E2E flow for [Invite Participants](../api/participant_invite.md) in an existing P2P meeting.
+This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.
 
 ## Answer Incoming VOIP call with service hosted media
 

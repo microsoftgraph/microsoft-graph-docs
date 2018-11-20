@@ -10,7 +10,7 @@ title: CommentAction
 
 The **CommentAction** resource provides information about a comment [activity][] made on an item.
 
-[activity]: itemActivity.md
+[activity](itemactivity)
 
 ## JSON representation
 
@@ -36,7 +36,7 @@ The **CommentAction** resource provides information about a comment [activity][]
 | parentAuthor     | [identitySet][]            | The identity of the user who started the comment thread.
 | participants     | [identitySet][] collection | The identities of the users participating in this comment thread.
 
-[identitySet]: identitySet.md
+[identitySet](identityset)
 
 ## Remarks
 

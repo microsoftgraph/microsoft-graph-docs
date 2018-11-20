@@ -20,11 +20,11 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 | [Get site for a group][] | GET /groups/{group-id}/sites/root
 | [Search for sites][]     | GET /sites?search={query}
 
-[Get site]: ../api/site_get.md
-[Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_getbypath.md
-[Get site for a group]: ../api/site_get.md
-[Search for sites]: ../api/site_search.md
+[Get site](../api/site-get)
+[Get root site](../api/site-get)
+[Get site by path](../api/site-getbypath)
+[Get site for a group](../api/site-get)
+[Search for sites](../api/site-search)
 
 ## JSON representation
 
@@ -104,14 +104,14 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 | **onenote**       | [onenote][]                      | Calls the OneNote service for notebook related operations.
 
-[columnDefinition]: columndefinition.md
-[baseItem]: baseitem.md
-[contentType]: contentType.md
-[drive]: drive.md
-[identitySet]: identityset.md
-[list]: list.md
-[site]: site.md
-[onenote]: onenote.md
+[columnDefinition](columndefinition)
+[baseItem](baseitem)
+[contentType](contenttype)
+[drive](drive)
+[identitySet](identityset)
+[list](list)
+[site](site)
+[onenote](onenote)
 
 <!-- {
   "type": "#page.annotation",
