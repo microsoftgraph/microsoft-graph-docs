@@ -5,7 +5,7 @@
 Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](../../../concepts/query_parameters.md).
+This method does **not** support [OData Query Parameters](/graph/query-parameters).
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

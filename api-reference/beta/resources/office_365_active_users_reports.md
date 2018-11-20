@@ -9,6 +9,6 @@ You can use the Office 365 active users report to find out how many product lice
 ## Reports
 | Function                                 | CSV return type | JSON return type                         | Description                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Get user detail](../api/reportroot_getoffice365activeuserdetail.md) | Stream          | [office365ActiveUserDetail](../resources/office365activeuserdetail.md) | Get details about Office 365 active users. |
-| [Get user counts](../api/reportroot_getoffice365activeusercounts.md) | Stream          | [office365ActiveUserCounts](../resources/office365activeusercounts.md) | Get the count of daily active users in the reporting period by product. |
-| [Get services user counts](../api/reportroot_getoffice365servicesusercounts.md) | Stream          | [office365ServicesUserCounts](../resources/office365servicesusercounts.md) | Get the count of users by activity type and service. |
+| [Get user detail](../api/reportroot-getoffice365activeuserdetail.md) | Stream          | [office365ActiveUserDetail](../resources/office365activeuserdetail.md) | Get details about Office 365 active users. |
+| [Get user counts](../api/reportroot-getoffice365activeusercounts.md) | Stream          | [office365ActiveUserCounts](../resources/office365activeusercounts.md) | Get the count of daily active users in the reporting period by product. |
+| [Get services user counts](../api/reportroot-getoffice365servicesusercounts.md) | Stream          | [office365ServicesUserCounts](../resources/office365servicesusercounts.md) | Get the count of users by activity type and service. |

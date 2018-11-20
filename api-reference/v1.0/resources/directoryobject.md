@@ -6,12 +6,12 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
-|[Delete directoryObject](../api/directoryobject_delete.md) | None |Delete a directory object. |
-|[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
-|[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
-|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
+|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
+|[Delete directoryObject](../api/directoryobject-delete.md) | None |Delete a directory object. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
 
 ## Properties
 

@@ -4,7 +4,7 @@
 
  resource type
 
-Complex type containing properties of [Shared](insights_shared.md) items. 
+Complex type containing properties of [Shared](insights-shared.md) items. 
 
 ## JSON representation
 Here is a JSON representation of the resource

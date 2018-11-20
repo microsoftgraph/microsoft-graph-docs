@@ -1,10 +1,10 @@
-﻿# Create deviceInstallState
+# Create deviceInstallState
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.
+Create a new [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create the d
 |deviceName|String|Device name.|
 |deviceId|String|Device Id.|
 |lastSyncDateTime|DateTimeOffset|Last sync date and time.|
-|installState|[installState](../resources/intune_books_installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune-books-installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|String|The error code for install failures.|
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the d
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object in the response body.
 
 ## Example
 ### Request

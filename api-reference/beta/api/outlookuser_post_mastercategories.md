@@ -2,10 +2,10 @@
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create an [outlookCategory](../resources/outlookCategory.md) object in the user's master list of categories.
+Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -26,11 +26,11 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 
 
 ## Request body
-In the request body, supply a JSON representation of [outlookCategory](../resources/outlookCategory.md) object.
+In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookCategory.md) object in the response body.
+If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.
 
 ## Example
 ##### Request
@@ -49,7 +49,7 @@ Content-Length: 70
       "color":"preset9"
 }
 ```
-In the request body, supply a JSON representation of [outlookCategory](../resources/outlookCategory.md) object.
+In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

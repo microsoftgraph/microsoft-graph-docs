@@ -1,6 +1,6 @@
 # Display a chart image in Excel with Microsoft Graph
 
-When you perform a [GET operation to retrieve a chart image](/api-reference/v1.0/api/chart_image.md), the Excel API returns the image as a base-64 string.
+When you perform a [GET operation to retrieve a chart image](/api-reference/v1.0/api/chart-image.md), the Excel API returns the image as a base-64 string.
 
 You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 
@@ -16,4 +16,4 @@ If you want to customize the display of the image, specify a height, width, and 
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
-* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)
+* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

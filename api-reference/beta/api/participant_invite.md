@@ -5,7 +5,7 @@
 Invite participants to the active call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                |
 | :-------------- | :--------------------------------------------------------- |
@@ -234,7 +234,7 @@ Content-Type: application/json
 
 ### Invite Participants in Existing P2P meeting
 
-This example shows a complete E2E flow for [Invite Participants](../api/participant_invite.md) in an existing P2P meeting.
+This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.
 
 ##### Answer Incoming VOIP call with service hosted media
 

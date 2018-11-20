@@ -1,4 +1,4 @@
-﻿# windowsAssignedAccessProfile resource type
+# windowsAssignedAccessProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ Assigned Access profile for Windows.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List windowsAssignedAccessProfiles](../api/intune_deviceconfig_windowsassignedaccessprofile_list.md)|[windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md) collection|List properties and relationships of the [windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md) objects.|
-|[Get windowsAssignedAccessProfile](../api/intune_deviceconfig_windowsassignedaccessprofile_get.md)|[windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md)|Read properties and relationships of the [windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md) object.|
-|[Create windowsAssignedAccessProfile](../api/intune_deviceconfig_windowsassignedaccessprofile_create.md)|[windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md)|Create a new [windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md) object.|
-|[Delete windowsAssignedAccessProfile](../api/intune_deviceconfig_windowsassignedaccessprofile_delete.md)|None|Deletes a [windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md).|
-|[Update windowsAssignedAccessProfile](../api/intune_deviceconfig_windowsassignedaccessprofile_update.md)|[windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md)|Update the properties of a [windowsAssignedAccessProfile](../resources/intune_deviceconfig_windowsassignedaccessprofile.md) object.|
+|[List windowsAssignedAccessProfiles](../api/intune-deviceconfig-windowsassignedaccessprofile-list.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) collection|List properties and relationships of the [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) objects.|
+|[Get windowsAssignedAccessProfile](../api/intune-deviceconfig-windowsassignedaccessprofile-get.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|Read properties and relationships of the [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) object.|
+|[Create windowsAssignedAccessProfile](../api/intune-deviceconfig-windowsassignedaccessprofile-create.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|Create a new [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) object.|
+|[Delete windowsAssignedAccessProfile](../api/intune-deviceconfig-windowsassignedaccessprofile-delete.md)|None|Deletes a [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md).|
+|[Update windowsAssignedAccessProfile](../api/intune-deviceconfig-windowsassignedaccessprofile-update.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|Update the properties of a [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) object.|
 
 ## Properties
 |Property|Type|Description|

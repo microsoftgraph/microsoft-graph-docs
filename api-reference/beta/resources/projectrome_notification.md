@@ -10,7 +10,7 @@ When a user acts on a visual notification, the app client can then use client-si
 ## Methods
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create notification](../api/projectrome_notification_post.md) | [notification](projectrome_notification.md) |Create and send a notification. |
+|[Create notification](../api/projectrome-notification-post.md) | [notification](projectrome-notification.md) |Create and send a notification. |
 
 ## Properties
 |Name | Type | Description|

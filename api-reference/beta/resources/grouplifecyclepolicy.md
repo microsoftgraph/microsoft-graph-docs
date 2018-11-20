@@ -6,13 +6,13 @@ Represents a a lifecycle policy for an Office 365 group. A group lifecycle polic
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Get groupLifecyclePolicy](../api/grouplifecyclepolicy_get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Read properties and relationships of a groupLifecyclePolicy object.|
-|[List groupLifecyclePolicies](../api/grouplifecyclepolicy_list.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. |
-|[Update groupLifecyclePolicy](../api/grouplifecyclepolicy_update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md)	| Update a groupLifecyclePolicy object. |
-|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy_delete.md) | None | Delete a groupLifecyclePolicy object. |
-|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy_addgroup.md)|None| Add a group to a lifecycle policy |
-|[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy_removegroup.md)|None| Remove a group to a lifecycle policy. |
-|[Renew a group](../api/grouplifecyclepolicy_renewgroup.md)|None| Renew a group's expiration date. |
+|[Get groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Read properties and relationships of a groupLifecyclePolicy object.|
+|[List groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List all the groupLifecyclePolicies. |
+|[Update groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md)	| Update a groupLifecyclePolicy object. |
+|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Delete a groupLifecyclePolicy object. |
+|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Add a group to a lifecycle policy |
+|[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Remove a group to a lifecycle policy. |
+|[Renew a group](../api/grouplifecyclepolicy-renewgroup.md)|None| Renew a group's expiration date. |
 
 ## Properties
 

@@ -8,7 +8,7 @@ Captures information about the meeting, including the join URL, the attendees li
 
 | Method         | Return Type | Description |
 |:---------------|:--------|:----------|
-| [Get onlineMeeting](../api/onlinemeeting_get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of onlineMeeting object. |
+| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of onlineMeeting object. |
 
 ## Properties
 

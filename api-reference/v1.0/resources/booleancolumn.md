@@ -6,7 +6,7 @@ title: BooleanColumn
 ---
 # BooleanColumn resource type
 
-The **booleanColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column holds a boolean value.
+The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.
 
 ## JSON representation
 

@@ -8,8 +8,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete referenceAttachment object. |
+|[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete referenceAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|

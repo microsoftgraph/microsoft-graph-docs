@@ -10,7 +10,7 @@ Represents the response from the [synchronizationSchema: parseExpression](../api
 |error|odata.error|Error details, if expression evaluation resulted in an error.|
 |evaluationResult|String collection|A collection of values produced by the evaluation of the expression.|
 |evaluationSucceeded|Boolean|`true` if the evaluation was successful.|
-|parsedExpression|[attributeMappingSource](synchronization_attributemappingsource.md)|An [attributeMappingSource](synchronization_attributemappingsource.md) object representing the parsed expression.|
+|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.|
 |parsingSucceeded|Boolean|`true` if the expression was parsed successfully.|
 
 ## JSON representation

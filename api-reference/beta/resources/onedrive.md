@@ -97,8 +97,8 @@ For more information about working with shared folders and remote items, see [Re
 ## Sharing and permissions
 
 One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people.
-Microsoft Graph allows your app to create [sharing links](../api/driveitem_createlink.md), [add permissions and send invitations](../api/driveitem_invite.md) to items in a drive.
+Microsoft Graph allows your app to create [sharing links](../api/driveitem-createlink.md), [add permissions and send invitations](../api/driveitem-invite.md) to items in a drive.
 
-Microsoft Graph also provides a way for your app to [access shared content](../api/shares_get.md) directly from a sharing link.
+Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.
 
  

@@ -1,4 +1,4 @@
-﻿# rolePermission resource type
+# rolePermission resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |actions|String collection|Allowed Actions|
-|resourceActions|[resourceAction](../resources/intune_rbac_resourceaction.md) collection|Actions|
+|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) collection|Actions|
 
 ## Relationships
 None

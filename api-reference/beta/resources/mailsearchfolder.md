@@ -8,12 +8,12 @@ A mailSearchFolder is a virtual folder in the user's mailbox that contains all t
 
 | Method | Return Type  | Description |
 |:---------------|:--------|:----------|
-| [Create a search folder](../api/mailsearchfolder_post.md) | [mailSearchFolder](mailsearchfolder.md) | Create a search folder in this user's mailbox. |
-| [List search folders](../api/mailfolder_list_childfolders.md) | [mailFolder](mailfolder.md) collection | List all the folders in this user's mailbox, including search folders. |
-| [Get a search folder](../api/mailfolder_get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
-| [Update a search folder](../api/mailsearchfolder_update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
-| [Delete a search folder](../api/mailfolder_delete.md) | None | Delete the specified search folder. |
-| [List all messages in a search folder](../api/mailfolder_list_messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
+| [Create a search folder](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Create a search folder in this user's mailbox. |
+| [List search folders](../api/mailfolder-list-childfolders.md) | [mailFolder](mailfolder.md) collection | List all the folders in this user's mailbox, including search folders. |
+| [Get a search folder](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Get the specified search folder. |
+| [Update a search folder](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Update the specified search folder. |
+| [Delete a search folder](../api/mailfolder-delete.md) | None | Delete the specified search folder. |
+| [List all messages in a search folder](../api/mailfolder-list-messages.md) | [message](message.md) collection | List all the messages in the specified search folder. |
 
 ## Properties
 

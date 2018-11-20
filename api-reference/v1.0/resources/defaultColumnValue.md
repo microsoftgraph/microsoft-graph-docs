@@ -6,7 +6,7 @@ title: DefaultColumnValue
 ---
 # DefaultColumnValue resource type
 
-The **defaultColumnValue** on a [columnDefinition](columnDefinition.md) resource specifies the default value for this column.
+The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
 
 ## JSON representation

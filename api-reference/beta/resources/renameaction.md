@@ -10,7 +10,7 @@ title: RenameAction
 
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

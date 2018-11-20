@@ -10,8 +10,8 @@ Directory setting templates represent system-defined settings available to the t
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get directorySettingTemplate](../api/directorysettingtemplate_get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
-|[List directorySettingTemplate](../api/directorysettingtemplate_list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
+|[Get directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
+|[List directorySettingTemplate](../api/directorysettingtemplate-list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
 
 ## Properties
 | Property	   | Type	|Description|

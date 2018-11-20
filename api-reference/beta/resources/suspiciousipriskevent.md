@@ -9,7 +9,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get suspiciousIpRiskEvent](../api/suspiciousipriskevent_get.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Read properties and relationships of suspiciousIpRiskEvent object.|
+|[Get suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Read properties and relationships of suspiciousIpRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|
