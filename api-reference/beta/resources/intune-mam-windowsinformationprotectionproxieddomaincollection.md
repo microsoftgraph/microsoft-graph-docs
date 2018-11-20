@@ -9,7 +9,7 @@ Windows Information Protection Proxied Domain Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|proxiedDomains|[proxiedDomain](../resources/intune-mam-proxieddomain.md) collection|Collection of proxied domains|
+|proxiedDomains|[proxiedDomain](../resources/intune-shared-proxieddomain.md) collection|Collection of proxied domains|
 
 ## Relationships
 None

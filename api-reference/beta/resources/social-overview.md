@@ -34,7 +34,7 @@ Include the next sentence when supporting events.
 
 - Get information about mentions in a message
 
-  - [Get all the messages in the signed-in user's mailbox that mention the user](../api/user_list_messages.md#request-2)
+  - [Get all the messages in the signed-in user's mailbox that mention the user](../api/user-list-messages.md#request-2)
   - [Get details of each mention in a message](../api/message-get.md#request-2)
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message

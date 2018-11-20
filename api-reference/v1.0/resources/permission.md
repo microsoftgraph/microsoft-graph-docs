@@ -50,7 +50,7 @@ Here is a JSON representation of the resource
 | inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
 | link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
 | roles         | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
-| shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares_get.md). Read-only.
+| shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 

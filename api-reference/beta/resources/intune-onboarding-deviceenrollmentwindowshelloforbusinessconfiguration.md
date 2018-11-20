@@ -32,13 +32,13 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-onboarding-dev
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Not yet documented. Possible values are: `allowed`, `required`, `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Not yet documented. Possible values are: `allowed`, `required`, `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Not yet documented. Possible values are: `allowed`, `required`, `disallowed`.|
-|state|[enablement](../resources/intune-onboarding-enablement.md)|Not yet documented. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|state|[enablement](../resources/intune-shared-enablement.md)|Not yet documented. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |securityDeviceRequired|Boolean|Not yet documented|
 |unlockWithBiometricsEnabled|Boolean|Not yet documented|
 |remotePassportEnabled|Boolean|Not yet documented|
 |pinPreviousBlockCount|Int32|Not yet documented|
 |pinExpirationInDays|Int32|Not yet documented|
-|enhancedBiometricsState|[enablement](../resources/intune-onboarding-enablement.md)|Not yet documented. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|enhancedBiometricsState|[enablement](../resources/intune-shared-enablement.md)|Not yet documented. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|

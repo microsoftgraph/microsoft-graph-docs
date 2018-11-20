@@ -64,16 +64,16 @@ Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 [SharePoint]: sharepoint-concept-overview.md
 [file picker]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [file handler]: https://docs.microsoft.com/onedrive/developer/file-handlers
-[special folders]: /graph/api/drive_get_specialfolder?view=graph-rest-1.0
+[special folders]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
 [Notes API]: integrate-with-onenote.md
 [Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
 [REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[delta API]: /graph/api/driveitem_delta?view=graph-rest-1.0
+[delta API]: /graph/api/driveitem-delta?view=graph-rest-1.0
 [video]: /graph/api/resources/video?view=graph-rest-1.0
 [photo]: /graph/api/resources/photo?view=graph-rest-1.0
 [audio]: /graph/api/resources/audio?view=graph-rest-1.0
-[formats]: /graph/api/driveitem_get_content_format?view=graph-rest-1.0
-[thumbnails]: /graph/api/driveitem_list_thumbnails?view=graph-rest-1.0
-[preview]: /graph/api/driveitem_preview?view=graph-rest-beta
+[formats]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
+[thumbnails]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
+[preview]: /graph/api/driveitem-preview?view=graph-rest-beta
 [webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
 [Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0

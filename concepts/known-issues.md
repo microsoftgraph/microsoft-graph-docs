@@ -70,7 +70,7 @@ In the future, we will set **resourceProvisioningOptions** on existing teams tha
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions ([*Group.Read.All*](permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](permissions-reference.md#group-permissions) and [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
 These permissions must be consented to by an administrator.
 In the future, we plan to add new permissions for groups and teams that users can consent to.
 
@@ -171,7 +171,7 @@ GET \me\calendars('{id}')\events
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](/graph/api/user_list_calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](/graph/api/calendar-list-events?view=graph-rest-1.0) of an ICS-based calendar.
 
 ### onlineMeetingUrl property support for Microsoft Teams

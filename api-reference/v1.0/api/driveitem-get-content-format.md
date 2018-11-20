@@ -9,7 +9,7 @@ title: Convert to other formats
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
 
-To download the item in it's original format, see [download an item's contents](driveitem_get_content.md).
+To download the item in it's original format, see [download an item's contents](driveitem-get-content.md).
 
 ## Prerequisites
 

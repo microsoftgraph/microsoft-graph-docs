@@ -23,9 +23,9 @@ This method supports the following OData Query Parameters to help customize the 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
-|[$top](/graph/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
+|[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### List of attributes supported by $filter parameter
 |Attribute Name |Supported operators|
