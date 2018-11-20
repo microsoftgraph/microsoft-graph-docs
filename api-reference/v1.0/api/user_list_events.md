@@ -3,8 +3,8 @@
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
 instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
-[get the instances of an event](event_list_instances.md).
+To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
+[get the instances of an event](event-list-instances.md).
 
 Currently, this operation returns event bodies in only HTML format.
 
@@ -30,7 +30,7 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

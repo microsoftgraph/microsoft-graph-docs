@@ -11,7 +11,7 @@ You can search within a folder hierarchy, a whole drive, or files shared with th
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query_parameters) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Function parameters
 

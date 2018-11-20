@@ -7,7 +7,7 @@ Use this API to add a member (user or group) to an administrative unit.
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -27,7 +27,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryObject.md) to be added.
+In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.
 
 ## Response
 

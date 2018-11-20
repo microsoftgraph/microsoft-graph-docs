@@ -18,7 +18,7 @@ The permissions collection includes potentially sensitive information and may no
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,7 +41,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## Optional query parameters
 
-This method supports the `$select` [OData Query Parameters](/graph/query_parameters) to customize the response.
+This method supports the `$select` [OData Query Parameters](/graph/query-parameters) to customize the response.
 
 ## Optional request headers
 
@@ -125,7 +125,7 @@ Content-Type: application/json
 
 ## Remarks
 
-The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem_get.md) or a collection of DriveItems.
+The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems.
 You must access the permissions property directly.
 
 ## Error responses

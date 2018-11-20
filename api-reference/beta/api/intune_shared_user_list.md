@@ -4,11 +4,11 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-List properties and relationships of the [user](../resources/intune_shared_user.md) objects.
+List properties and relationships of the [user](../resources/intune-shared-user.md) objects.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).  The specific permission depends on the context.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  The specific permission depends on the context.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [user](../resources/intune_shared_user.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/intune-shared-user.md) objects in the response body.
 
 ## Example
 

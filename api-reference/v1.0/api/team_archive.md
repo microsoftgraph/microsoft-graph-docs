@@ -10,10 +10,10 @@ Archiving is an async operation. A team is archived once the async operation com
 
 In order to archive team, the team and [group](../resources/group.md) must have an owner.
 
-To restore a team from its archived state, use the API to [unarchive](team_unarchive.md).
+To restore a team from its archived state, use the API to [unarchive](team-unarchive.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

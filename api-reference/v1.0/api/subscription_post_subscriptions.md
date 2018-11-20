@@ -4,7 +4,7 @@ Subscribes a listener application to receive notifications when data on the Micr
 
 ## Permissions
 
-Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|

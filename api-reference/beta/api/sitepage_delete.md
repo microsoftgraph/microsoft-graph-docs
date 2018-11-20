@@ -16,7 +16,7 @@ Removes a [sitePage][] from the site pages [list][] in a [site][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
 

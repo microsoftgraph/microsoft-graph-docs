@@ -10,7 +10,7 @@ Asynchronously creates a copy of an [driveItem][item-resource] (including any ch
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -64,7 +64,7 @@ Content-Type: application/json
 
 ## Response
 
-Returns details about how to [monitor the progress](/graph/long_running_actions_overview) of the copy, upon accepting the request.
+Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.
 
 <!-- { "blockType": "response" } -->
 
@@ -74,7 +74,7 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 ```
 
 The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.
-You can use this info to [determine when the copy has finished](/graph/long_running_actions_overview).
+You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).
 
 ### Remarks
 

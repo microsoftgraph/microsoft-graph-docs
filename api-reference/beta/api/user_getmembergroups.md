@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Return all the groups that the user is a member of. The check is transitive, unlike reading the
-[memberOf](../api/user_list_memberof.md) navigation property, which returns only the groups that the user is a direct member of.
+[memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.
 
 This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
 request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is
@@ -11,7 +11,7 @@ always direct.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |

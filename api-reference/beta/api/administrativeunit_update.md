@@ -4,7 +4,7 @@
 
 Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -35,7 +35,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|string|Display name for the administrative unit.|
 |visibility|string|Visibility for the administrative unit. If not set then the default is "public". Can be set to "HiddenMembership", which hides the membership from non-members.|
 
-Since the **administrativeUnit** resource supports [extensions](/graph/extensibility_overview), you can use the `PATCH` operation to 
+Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.
 
 ## Response
@@ -75,10 +75,10 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility_open_users)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility_schema_groups)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
 
 

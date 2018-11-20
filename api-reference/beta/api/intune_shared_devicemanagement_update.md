@@ -4,11 +4,11 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 Note that the permission vary according to workflow.
 
@@ -52,9 +52,9 @@ PATCH /deviceManagement
 
 ## Request body
 
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune_shared_devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -63,22 +63,22 @@ The following table shows the properties that are required when you create the [
 |intuneAccountId|GUID|Intune Account ID for given tenant|
 |legacyPcManangementEnabled|Boolean|The property to enable Non-MDM managed legacy PC management for this account. This property is read-only.|
 |maximumDepTokens|Int32|Maximum number of DEP tokens allowed per-tenant.|
-|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
 |accountMoveCompletionDateTime|DateTimeOffset|The date & time when tenant data moved between scaleunits.|
-|adminConsent|[adminConsent](../resources/intune_devices_adminconsent.md)|Admin consent information.|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune_devices_deviceprotectionoverview.md)|Device protection overview.|
-|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune_devices_manageddevicecleanupsettings.md)|Device cleanup rule|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|subscriptions|[deviceManagementSubscriptions](../resources/intune_devices_devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune_devices_windowsmalwareoverview.md)|Malware overview for windows devices.|
+|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Admin consent information.|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Device protection overview.|
+|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Device cleanup rule|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptions|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Malware overview for windows devices.|
 |**Onboarding**|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
+|intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 Request body property support varies according to workflow.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_shared_devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.
 
 ## Example
 

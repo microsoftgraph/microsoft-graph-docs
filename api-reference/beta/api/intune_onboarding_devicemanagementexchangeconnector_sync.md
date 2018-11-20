@@ -6,7 +6,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,7 +36,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|The type of sync which will be executed, full sync or delta sync.|
+|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|The type of sync which will be executed, full sync or delta sync.|
 
 
 

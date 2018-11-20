@@ -1,16 +1,16 @@
 # Create schemaExtension
 
-Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility_overview#supported-resources).
+Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).
 
 Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 
-[state](/graph/extensibility_overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
+[state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
 
-See examples of how to [define a schema extension that describes a training course](/graph/extensibility_schema_groups#2-register-a-schema-extension-definition-that-describes-a-training-course), 
-use the schema extension definition to [create a new group with training course data](/graph/extensibility_schema_groups#3-create-a-new-group-with-extended-data), and 
-[add training course data to an existing group](/graph/extensibility_schema_groups#4-add-update-or-remove-custom-data-in-an-existing-group).
+See examples of how to [define a schema extension that describes a training course](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), 
+use the schema extension definition to [create a new group with training course data](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data), and 
+[add training course data to an existing group](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -204,8 +204,8 @@ Content-length: 420
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

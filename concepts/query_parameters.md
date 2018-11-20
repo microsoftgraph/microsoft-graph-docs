@@ -285,7 +285,7 @@ Content-type: application/json
 }
 ```
 
-To learn more about the People API, see [Get information about relevant people](./people_example.md#search-people).  
+To learn more about the People API, see [Get information about relevant people](./people-example.md#search-people).  
 
 ## select parameter
 

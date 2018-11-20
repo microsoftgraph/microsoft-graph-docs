@@ -5,7 +5,7 @@
 Retrieve a synchronization template by its identifier.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -32,7 +32,7 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns a `200 OK` response code and a [synchronizationTemplate](../resources/synchronization_synchronizationtemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object in the response body.
 
 ### Example
 

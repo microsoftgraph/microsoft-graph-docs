@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) object.
+Create a new [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -40,16 +40,16 @@ The following table shows the properties that are required when you create the r
 |deviceDisplayName|String|Intune device name.|
 |userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
 |initiatedByUserPrincipalName|String|User who initiated the device action, format is UPN.|
-|action|[remoteAction](../resources/intune_devices_remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`.|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
 |deviceOwnerUserPrincipalName|String|Upn of the device owner.|
 |deviceIMEI|String|IMEI of the device.|
-|actionState|[actionState](../resources/intune_shared_actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [remoteActionAudit](../resources/intune_devices_remoteactionaudit.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object in the response body.
 
 ## Example
 ### Request

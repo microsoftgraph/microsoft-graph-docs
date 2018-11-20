@@ -9,13 +9,13 @@ You can use either PATCH or PUT for this operation in version 1.0.
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 - Profile photo of the signed-in **user** - User.ReadWrite, User.ReadWrite.All
 - Profile photo of a **group** - Group.ReadWrite.All
 - Photo of a **contact** - Contacts.ReadWrite
 
-> **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth_v2_service).
+> **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

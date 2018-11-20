@@ -6,7 +6,7 @@ in an organization (tenant), you find all groups that have teams, and then get i
 ## Get a list of groups
 
 To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta) in the organization that have teams,
-get a [list of all groups](/graph/api/group_list?view=graph-rest-beta) and then in code find the ones that have
+get a [list of all groups](/graph/api/group-list?view=graph-rest-beta) and then in code find the ones that have
 a **resourceProvisioningOptions** property that contains "Team".
 Since groups are large objects, use $select to only get the properties of the group you care about.
 
@@ -14,7 +14,7 @@ Since groups are large objects, use $select to only get the properties of the gr
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known_issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
 
 The following is an example of the response. 
 
@@ -50,7 +50,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 > **Note**: $filter on /groups is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
 
-> **Note**: Certain unused old teams will not be listed. For details, see [known issues](known_issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not be listed. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
 
 The following is an example of the response. 
 
@@ -103,7 +103,7 @@ Content-length: xxx
 ## Get team information for a group
 
 To get team information for the team in a particular group, 
-call the [get team](/graph/api/team_get?view=graph-rest-beta) API and include the group ID.
+call the [get team](/graph/api/team-get?view=graph-rest-beta) API and include the group ID.
 
 ```http
 GET /teams/{group-id}
@@ -153,5 +153,5 @@ Content-length: 401
 
 ## See also
 
-- [List joinedTeams](/graph/api/user_list_joinedteams?view=graph-rest-beta)
-- [List groups](/graph/api/group_list?view=graph-rest-beta)
+- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
+- [List groups](/graph/api/group-list?view=graph-rest-beta)

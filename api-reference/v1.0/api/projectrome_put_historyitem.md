@@ -4,7 +4,7 @@ Create a new or replace an existing history item for an existing user activity.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -31,7 +31,7 @@ Id needs to be a GUID.
 
 ## Request body
 
-In the request body, supply a JSON representation of a [historyItem](../resources/projectrome_historyitem.md) object.
+In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.
 
 ## Response
 

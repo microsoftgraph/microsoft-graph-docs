@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.
+Update the properties of a [roleAssignment](../resources/intune-rbac-roleassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [roleAssignment](../resources/intune_rbac_roleassignment.md) object.
+In the request body, supply a JSON representation for the [roleAssignment](../resources/intune-rbac-roleassignment.md) object.
 
-The following table shows the properties that are required when you create the [roleAssignment](../resources/intune_rbac_roleassignment.md).
+The following table shows the properties that are required when you create the [roleAssignment](../resources/intune-rbac-roleassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -40,13 +40,13 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The display or friendly name of the role Assignment.|
 |description|String|Description of the Role Assignment.|
 |scopeMembers|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
-|scopeType|[roleAssignmentScopeType](../resources/intune_rbac_roleassignmentscopetype.md)|Specifies the type of scope for a Role Assignment. Default type 'ResourceScope' allows assignment of ResourceScopes. For 'AllDevices', 'AllLicensedUsers', and 'AllDevicesAndLicensedUsers', the ResourceScopes property should be left empty. Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
+|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|Specifies the type of scope for a Role Assignment. Default type 'ResourceScope' allows assignment of ResourceScopes. For 'AllDevices', 'AllLicensedUsers', and 'AllDevicesAndLicensedUsers', the ResourceScopes property should be left empty. Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
 |resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [roleAssignment](../resources/intune_rbac_roleassignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [roleAssignment](../resources/intune-rbac-roleassignment.md) object in the response body.
 
 ## Example
 ### Request

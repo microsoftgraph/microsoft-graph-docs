@@ -60,10 +60,10 @@ Currently the only catalog is the list of applications in [Microsoft Teams](team
 ### Example usage
 
 #### Delegated
-* _AppCatalog.ReadWrite.All_: [List all applications in catalog](/graph/api/teamsapp_list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Publish an app](/graph/api/teamsapp_publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Update a published app](/graph/api/teamsapp_update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
-* _AppCatalog.ReadWrite.All_: [Remove a published app](/graph/api/teamsapp_delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [List all applications in catalog](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Publish an app](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Update a published app](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [Remove a published app](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
 #### Application
 
@@ -86,7 +86,7 @@ None.
 
 ### Remarks
 
-The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](/graph/api/application_list_owners?view=graph-rest-beta) or [service principal](/graph/api/serviceprincipal_list_owners?view=graph-rest-beta) resource.
+The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](/graph/api/application-list-owners?view=graph-rest-beta) or [service principal](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta) resource.
 > NOTE: Using the _Application.ReadWrite.OwnedBy_ permission to call `GET /applications` to list applications will fail with a 403.  Instead use `GET servicePrincipals/{id}/ownedObjects` to list the applications owned by the calling application.
 
 ### Example usage
@@ -202,7 +202,7 @@ None.
 * _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/app/calls`).
 * _Calls.AccessMedia.All_: Create or Join a call and the app gets direct access to participant media streams in the call (`POST /beta/app/calls`).
 
-> **Note:** For request examples, see to [Create call](/graph/api/application_post_calls?view=graph-rest-beta).
+> **Note:** For request examples, see to [Create call](/graph/api/application-post-calls?view=graph-rest-beta).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -289,7 +289,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 Directory permissions provide the highest level of privilege for accessing directory resources such as [User](/graph/api/resources/user?view=graph-rest-1.0), [Group](/graph/api/resources/group?view=graph-rest-1.0), and [Device](/graph/api/resources/device?view=graph-rest-1.0) in an organization. 
 
-They also exclusively control access to other directory resources like: [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-beta), [schema extension APIs](/graph/api/resources/schemaextension?view=graph-rest-beta), [Privileged Identity Management (PIM) APIs](/graph/api/resources/privilegedidentitymanagement_root?view=graph-rest-beta), as well as many of the resources and APIs listed under the **Azure Active Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more. 
+They also exclusively control access to other directory resources like: [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-beta), [schema extension APIs](/graph/api/resources/schemaextension?view=graph-rest-beta), [Privileged Identity Management (PIM) APIs](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta), as well as many of the resources and APIs listed under the **Azure Active Directory** node in the v1.0 and beta API reference documentation. These include administrative units, directory roles, directory settings, policy, and many more. 
 
 The _Directory.ReadWrite.All_ permission grants the following privileges:
 
@@ -391,7 +391,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 The Files.Read.Selected and Files.ReadWrite.Selected delegated permissions are only valid on work or school accounts and are only exposed for working with [Office 365 file handlers (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps).
 They should not be used for directly calling Microsoft Graph APIs. 
 
-The Files.ReadWrite.AppFolder delegated permission is only valid for personal accounts and is used for accessing the [App Root special folder](https://dev.onedrive.com/misc/appfolder.htm) with the OneDrive [Get special folder](/graph/api/drive_get_specialfolder?view=graph-rest-1.0) Microsoft Graph API.
+The Files.ReadWrite.AppFolder delegated permission is only valid for personal accounts and is used for accessing the [App Root special folder](https://dev.onedrive.com/misc/appfolder.htm) with the OneDrive [Get special folder](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) Microsoft Graph API.
 
 
 ### Example usage
@@ -427,8 +427,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known_issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known_issues.md) for examples.| Yes |
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
 
 
 ### Remarks
@@ -437,11 +437,11 @@ Group functionality is not supported on personal Microsoft accounts.
 
 For Office 365 groups, Group permissions grant the app access to the contents of the group; for example, conversations, files, notes, and so on. 
 
-For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known_issues.md).
+For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner_overview?view=graph-rest-beta) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
+Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview?view=graph-rest-beta) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
 
 
 ### Example usage
@@ -774,10 +774,10 @@ None.
 
 #### Application
 
-* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [Online Meeting](/graph/api/onlinemeeting_get?view=graph-rest-beta) (`GET /beta/app/onlinemeetings/{id}`).
-* _OnlineMeetings.ReadWrite.All_: Create an [Online Meeting](/graph/api/application_post_onlineMeetings?view=graph-rest-beta) (`POST /beta/app/onlinemeetings`).
+* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [Online Meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/app/onlinemeetings/{id}`).
+* _OnlineMeetings.ReadWrite.All_: Create an [Online Meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/app/onlinemeetings`).
 
-> **Note**: Creating an [Online Meeting](/graph/api/application_post_onlineMeetings?view=graph-rest-beta) creates a meeting on behalf of a user specified in the request body, but does not show it on the user's Calendar.
+> **Note**: Creating an [Online Meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) creates a meeting on behalf of a user specified in the request body, but does not show it on the user's Calendar.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

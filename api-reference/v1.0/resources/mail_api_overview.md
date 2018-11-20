@@ -1,9 +1,9 @@
 # Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](/graph/permissions_reference), your app can access the mail data of
+With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
 the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
-Exchange on-premises in a [hybrid deployment](/graph/hybrid_rest_support).
+Exchange on-premises in a [hybrid deployment](/graph/hybrid-rest-support).
 
 ## Using the mail REST API
 
@@ -38,18 +38,18 @@ The Microsoft Graph API also provides methods and actions that support common us
 | **User-centric actions** | | |
 | Draft, read, reply, forward, send, update, or delete messages | [message](../resources/message.md) | [Methods of message](../resources/message.md#methods) |
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Setting the **from** and **sender** properties in a [message](../resources/message.md) |
-| Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Focused Inbox](../resources/manage_focused_inbox.md) |
+| Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user_get_mailboxsettings.md), <br> [Update user's mailbox settings](../api/user_update_mailboxsettings.md) |
-| Get MailTips of other recipients' special status, such as out-of-office | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user_getmailtips.md) |
+| Get MailTips of other recipients' special status, such as out-of-office | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user-getmailtips.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
-| Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query_parameters)  |
+| Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
-| Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta_query_messages) |
+| Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |
 | **App development** | | |
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** property of the message. |
-| Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility_overview) |
+| Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
 
 ## Next steps

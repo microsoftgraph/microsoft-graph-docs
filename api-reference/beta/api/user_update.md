@@ -4,7 +4,7 @@
 
 Update the properties of a user object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -62,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
 
-Since the **user** resource supports [extensions](/graph/extensibility_overview), you can use the `PATCH` operation to 
+Since the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
 ## Response
@@ -115,9 +115,9 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility_open_users)
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility_schema_groups)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

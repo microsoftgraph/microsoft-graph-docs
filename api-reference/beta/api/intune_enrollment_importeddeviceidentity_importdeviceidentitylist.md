@@ -6,7 +6,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,13 +36,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) collection|Not yet documented|
+|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|Not yet documented|
 |overwriteImportedDeviceIdentities|Boolean|Not yet documented|
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [importedDeviceIdentityResult](../resources/intune_enrollment_importeddeviceidentityresult.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) collection in the response body.
 
 ## Example
 ### Request

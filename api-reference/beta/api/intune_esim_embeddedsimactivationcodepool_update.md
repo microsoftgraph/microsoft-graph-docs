@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [embeddedSIMActivationCodePool](../resources/intune_esim_embeddedsimactivationcodepool.md) object.
+Update the properties of a [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [embeddedSIMActivationCodePool](../resources/intune_esim_embeddedsimactivationcodepool.md) object.
+In the request body, supply a JSON representation for the [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object.
 
-The following table shows the properties that are required when you create the [embeddedSIMActivationCodePool](../resources/intune_esim_embeddedsimactivationcodepool.md).
+The following table shows the properties that are required when you create the [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -40,13 +40,13 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The admin defined name of the embedded SIM activation code pool.|
 |createdDateTime|DateTimeOffset|The time the embedded SIM activation code pool was created. Generated service side.|
 |modifiedDateTime|DateTimeOffset|The time the embedded SIM activation code pool was last modified. Updated service side.|
-|activationCodes|[embeddedSIMActivationCode](../resources/intune_esim_embeddedsimactivationcode.md) collection|The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.|
+|activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) collection|The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.|
 |activationCodeCount|Int32|The total count of activation codes which belong to this pool.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePool](../resources/intune_esim_embeddedsimactivationcodepool.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object in the response body.
 
 ## Example
 ### Request

@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) object.
+Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,12 +47,12 @@ The following table shows the properties that are required when you create the a
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
-|qrCodeImage|[mimeContent](../resources/intune_shared_mimecontent.md)|String used to generate a QR code for the token.|
+|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object in the response body.
 
 ## Example
 ### Request

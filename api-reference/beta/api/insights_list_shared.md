@@ -5,7 +5,7 @@
 Calculated insight that returns the list of files shared with a user.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,13 +29,13 @@ You can use the `$filter` query parameter to filter shared items. For example, b
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights_resourceVisualization.md).
+See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 You can also retrieve files shared by a specific user. For example, by specifying the `lastshared/sharedby/address` property:
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-See the [sharingDetail](../resources/insights_sharingdetail.md) complex type.
+See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.
 
 
 ## Request headers
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights_shared.md) items in the response body.
+If successful, this method returns a `200 OK` response code and a list of [shared](../resources/insights-shared.md) items in the response body.
 ## Example
 
 ##### Request

@@ -2,9 +2,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.
+Update the properties of a [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -29,9 +29,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object.
+In the request body, supply a JSON representation for the [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.
 
-The following table shows the properties that are required when you create the [deviceInstallState](../resources/intune_books_deviceinstallstate.md).
+The following table shows the properties that are required when you create the [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -39,7 +39,7 @@ The following table shows the properties that are required when you create the [
 |deviceName|String|Device name.|
 |deviceId|String|Device Id.|
 |lastSyncDateTime|DateTimeOffset|Last sync date and time.|
-|installState|[installState](../resources/intune_books_installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune-books-installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|String|The error code for install failures.|
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceInstallState](../resources/intune_books_deviceinstallstate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object in the response body.
 
 ## Example
 ### Request

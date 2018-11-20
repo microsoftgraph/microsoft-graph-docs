@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [organization](../resources/intune_onboarding_organization.md) object.
+Update the properties of a [organization](../resources/intune-onboarding-organization.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,20 +30,20 @@ PATCH /organization/{organizationId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [organization](../resources/intune_onboarding_organization.md) object.
+In the request body, supply a JSON representation for the [organization](../resources/intune-onboarding-organization.md) object.
 
-The following table shows the properties that are required when you create the [organization](../resources/intune_onboarding_organization.md).
+The following table shows the properties that are required when you create the [organization](../resources/intune-onboarding-organization.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
-|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune_onboarding_certificateconnectorsetting.md)|Certificate connector setting.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
+|certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Certificate connector setting.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune_onboarding_organization.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [organization](../resources/intune-onboarding-organization.md) object in the response body.
 
 ## Example
 ### Request

@@ -4,7 +4,7 @@ You can get a single resource instance expanded with a specific extended propert
 that include extended properties matching a filter.
 
 Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended 
-property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) object that represents an extended property. 
+property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property. 
 
 To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator 
 on the **id** property. In addition, for numeric extended properties, apply one of the following operators on the **value** property: 
@@ -34,7 +34,7 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
-Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -327,7 +327,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
 the properties of the messages that have the extended property matching the filter. The response body is
-similar to the response from [getting a message collection](../api/user_list_messages.md). The response does not 
+similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not 
 include the matching extended property.
 
 
@@ -353,7 +353,7 @@ the properties of the messages that have the extended property matching the filt
 a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and 
 the **value** `Light green`, would match the filter and be included in the response.
 
-The response body is similar to the response from [getting a message collection](../api/user_list_messages.md). The response does not 
+The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not 
 include the matching extended property.
 
 
@@ -391,7 +391,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
 the properties of the messages that have the extended property matching the corresponding filter. The response body is
-similar to the response from [getting a message collection](../api/user_list_messages.md). The response does not 
+similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not 
 include the matching extended property.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

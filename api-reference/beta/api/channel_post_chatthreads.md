@@ -5,7 +5,7 @@
 Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
-> Currently, only [delegated permissions](/graph/permissions_reference) are supported for this operation.  Future releases will support application permissions. 
+> Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.  Future releases will support application permissions. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

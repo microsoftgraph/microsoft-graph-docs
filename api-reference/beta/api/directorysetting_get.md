@@ -7,7 +7,7 @@ Retrieve the properties of a specific directory setting object.
 > **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,4 @@
-﻿# unaryManagementConditionExpression resource type
+# unaryManagementConditionExpression resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,13 +6,13 @@
 
 A management condition expression that is evaluated using a unary operation.
 
-Inherits from [managementConditionExpressionModel](../resources/intune_fencing_managementconditionexpressionmodel.md)
+Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune_fencing_unarymanagementconditionexpressionoperatortype.md)|The operator used in the evaluation of the unary operation. Possible values are: `not`.|
-|operand|[managementConditionExpressionModel](../resources/intune_fencing_managementconditionexpressionmodel.md)|The operand of the unary operation.|
+|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|The operator used in the evaluation of the unary operation. Possible values are: `not`.|
+|operand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|The operand of the unary operation.|
 
 ## Relationships
 None

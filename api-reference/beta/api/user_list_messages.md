@@ -7,7 +7,7 @@ Get the messages in the signed-in user's mailbox (including the Deleted Items an
 In particular, you can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
 
 Note that by default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](../api/message_get.md#request-2).
+to [find details of each mention in a message](../api/message-get.md#request-2).
 
 There are two scenarios where an app can get messages in another user's mail folder:
 
@@ -16,7 +16,7 @@ There are two scenarios where an app can get messages in another user's mail fol
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

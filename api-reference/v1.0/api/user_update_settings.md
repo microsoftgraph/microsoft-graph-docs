@@ -1,12 +1,12 @@
 # Update settings
 
-Update the properties of the [settings](../resources/user_settings.md) object. 
+Update the properties of the [settings](../resources/user-settings.md) object. 
 Users in the same organization can have different settings based on their preference or on the organization policies. 
-To get the user current settings, see [current user settings](user_get_settings.md). 
+To get the user current settings, see [current user settings](user-get-settings.md). 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH https://graph.microsoft.com/v1.0/me/settings
 ```
 
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions_reference). 
+Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference). 
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/
@@ -39,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|Set to true do disable delegate access to the [Trending](/graph/api/resources/insights_trending?view=graph-rest-beta) API and to disable access to documents in Office Delve for the user. Setting to true also affects the relevance of the content displayed in Office 365 - for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. This setting reflects the control state in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Boolean|Set to true do disable delegate access to the [Trending](/graph/api/resources/insights-trending?view=graph-rest-beta) API and to disable access to documents in Office Delve for the user. Setting to true also affects the relevance of the content displayed in Office 365 - for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. This setting reflects the control state in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## Example 
 

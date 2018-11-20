@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagement](../resources/intune_devices_devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-devices-devicemanagement.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,25 +30,25 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune_devices_devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-devices-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune_devices_devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-devices-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the device|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|subscriptions|[deviceManagementSubscriptions](../resources/intune_devices_devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
-|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune_devices_manageddevicecleanupsettings.md)|Device cleanup rule|
-|adminConsent|[adminConsent](../resources/intune_devices_adminconsent.md)|Admin consent information.|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune_devices_deviceprotectionoverview.md)|Device protection overview.|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune_devices_windowsmalwareoverview.md)|Malware overview for windows devices.|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptions|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
+|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Device cleanup rule|
+|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Admin consent information.|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Device protection overview.|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Malware overview for windows devices.|
 |accountMoveCompletionDateTime|DateTimeOffset|The date & time when tenant data moved between scaleunits.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_devices_devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-devices-devicemanagement.md) object in the response body.
 
 ## Example
 ### Request

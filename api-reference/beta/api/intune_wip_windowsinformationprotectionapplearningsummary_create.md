@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object.
+Create a new [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,13 +38,13 @@ The following table shows the properties that are required when you create the w
 |:---|:---|:---|
 |id|String|Unique Identifier for the WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Application Name|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Application Type. Possible values are: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Application Type. Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object in the response body.
 
 ## Example
 ### Request

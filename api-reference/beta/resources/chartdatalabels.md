@@ -9,8 +9,8 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels_get.md) | [ChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
-|[Update](../api/chartdatalabels_update.md) | [ChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties
 | Property	   | Type	|Description|

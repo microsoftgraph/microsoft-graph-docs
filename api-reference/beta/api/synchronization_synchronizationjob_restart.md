@@ -5,7 +5,7 @@
 Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -31,7 +31,7 @@ In the request body, provide a JSON object with the following parameter.
 
 | Parameter     | Type      | Description    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization_synchronizationjobrestartcriteria.md) |Restart criteria|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Restart criteria|
 
 ## Response
 

@@ -50,10 +50,10 @@ GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f
 GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
 ```
 
-Since the **group** resource supports [extensions](/graph/extensibility_overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
+Since the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -67,7 +67,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /groups/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -127,9 +127,9 @@ Content-length: xxx
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to users using open extensions](/graph/extensibility_open_users)
-- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,4 +1,4 @@
-﻿# windowsFirewallNetworkProfile resource type
+# windowsFirewallNetworkProfile resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,7 +6,7 @@ Windows Firewall Profile Policies.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Configures the host device to allow or block the firewall and advanced security enforcement for the network profile. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Configures the host device to allow or block the firewall and advanced security enforcement for the network profile. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |stealthModeBlocked|Boolean|Prevent the server from operating in stealth mode. When StealthModeRequired and StealthModeBlocked are both true, StealthModeBlocked takes priority.|
 |incomingTrafficBlocked|Boolean|Configures the firewall to block all incoming traffic regardless of other policy settings. When IncomingTrafficRequired and IncomingTrafficBlocked are both true, IncomingTrafficBlocked takes priority.|
 |unicastResponsesToMulticastBroadcastsBlocked|Boolean|Configures the firewall to block unicast responses to multicast broadcast traffic. When UnicastResponsesToMulticastBroadcastsRequired and UnicastResponsesToMulticastBroadcastsBlocked are both true, UnicastResponsesToMulticastBroadcastsBlocked takes priority.|

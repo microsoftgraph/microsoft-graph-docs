@@ -5,7 +5,7 @@
 List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -21,7 +21,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|

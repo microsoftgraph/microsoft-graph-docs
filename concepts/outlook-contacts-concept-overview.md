@@ -15,24 +15,24 @@ The contacts API lets you keep your customers organized, in close parity as the 
 
 - Similarly to the customer experience, you can create [contact](/graph/api/resources/contact?view=graph-rest-1.0) instances and assign them to [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) objects.
 - The contacts API lets you assign categories contacts, as well as events, messages, tasks, and group posts in a consistent way to enhance organization and disovery. In addition, you can [define a user's master list of categories](/graph/api/outlookuser_post_mastercategories?view=graph-rest-1.0), which can open up additional creative scenarios.
-- You can set a flag on a [contact](/graph/api/resources/contact?view=graph-rest-1.0) for follow-up. (Flagging is currently [in preview](versioning_and_support.md#beta-version) in Microsoft Graph.)
+- You can set a flag on a [contact](/graph/api/resources/contact?view=graph-rest-1.0) for follow-up. (Flagging is currently [in preview](versioning-and-support.md#beta-version) in Microsoft Graph.)
 
 
 ### Share contact information
 
-The contacts API lets you get contact items of the signed-in user, or of the users who have shared or delegated their contacts to the signed-in user. For example, if Garth has shared a contact folder with John, or if Garth has delegated access to John, then [delegated permissions](permissions_reference.md#delegated-permissions-application-permissions-and-effective-permissions) from John would give you read access to Garth's shared calendar and contents as well.
+The contacts API lets you get contact items of the signed-in user, or of the users who have shared or delegated their contacts to the signed-in user. For example, if Garth has shared a contact folder with John, or if Garth has delegated access to John, then [delegated permissions](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions) from John would give you read access to Garth's shared calendar and contents as well.
 
 
 ### Leverage people API in Microsoft Graph to make better use of all people data
 
-You can use the typical CRUD operations for an Outlook [contact](/graph/api/resources/contact?view=graph-rest-1.0) to create and manage contacts. As part of Microsoft Graph, you can also use the [people API](people_example.md) that looks at a user's Outlook contacts, as well as social networks, organization directory, and people from recent communication, and return information about people from all these sources that are most relevant to the user. Take advantage of this additional intelligence in people picker scenarios.
+You can use the typical CRUD operations for an Outlook [contact](/graph/api/resources/contact?view=graph-rest-1.0) to create and manage contacts. As part of Microsoft Graph, you can also use the [people API](people-example.md) that looks at a user's Outlook contacts, as well as social networks, organization directory, and people from recent communication, and return information about people from all these sources that are most relevant to the user. Take advantage of this additional intelligence in people picker scenarios.
 
 
 ### Take advantage of other shared features and conveniences in Microsoft Graph
 
 - The **contact** entity supports a contact photo which is implemented as the same [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-1.0) entity as a user photo stored in Exchange Online or Azure Active Directory. This eliminates the overhead in converting between contact and user profile photos.
-- You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) and [tracking changes](delta_query_overview.md) to contacts and contact folders.
-- You can extend app storage in a contact instance as an [open extension](extensibility_overview.md#open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility_overview.md#schema-extensions).
+- You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) and [tracking changes](delta-query-overview.md) to contacts and contact folders.
+- You can extend app storage in a contact instance as an [open extension](extensibility-overview.md#open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility-overview.md#schema-extensions).
 
 ## API reference
 Looking for the API reference for this service?

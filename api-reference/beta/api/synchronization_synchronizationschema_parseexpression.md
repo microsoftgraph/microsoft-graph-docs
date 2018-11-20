@@ -7,7 +7,7 @@ Parse a given string expression into an [attributeMappingSource|(../resources/sy
 For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -33,11 +33,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |expression               |String               |Expression to parse.|
-|testInputObject          |[expressionInputObject](../resources/synchronization_expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization_attributedefinition.md) |Definition of the attribute that will be mapped to this expression. Optional.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definition of the attribute that will be mapped to this expression. Optional.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization_parseexpressionresponse.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.
 
 ## Example
 

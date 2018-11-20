@@ -7,7 +7,7 @@ Retrieve a list of class objects. Note that if the delegated token is used, memb
 <!-- Please verify the revision to the delegated token text. -->
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

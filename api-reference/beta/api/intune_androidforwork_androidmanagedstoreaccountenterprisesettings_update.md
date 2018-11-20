@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [androidManagedStoreAccountEnterpriseSettings](../resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings.md) object.
+Update the properties of a [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,27 +30,27 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [androidManagedStoreAccountEnterpriseSettings](../resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings.md) object.
+In the request body, supply a JSON representation for the [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.
 
-The following table shows the properties that are required when you create the [androidManagedStoreAccountEnterpriseSettings](../resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings.md).
+The following table shows the properties that are required when you create the [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Android store account enterprise settings identifier|
-|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune_androidforwork_androidmanagedstoreaccountbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
-|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune_androidforwork_androidmanagedstoreaccountappsyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
+|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|Owner UPN that created the enterprise|
 |ownerOrganizationName|String|Organization name used when onboarding Android Enterprise|
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android enterprise settings|
-|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune_androidforwork_androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
+|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAccountEnterpriseSettings](../resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object in the response body.
 
 ## Example
 ### Request

@@ -1,4 +1,4 @@
-﻿# windowsPackageInformation resource type
+# windowsPackageInformation resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,13 +8,13 @@ Contains properties for the package information for a Windows line of business a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |displayName|String|The Display Name.|
 |identityName|String|The Identity Name.|
 |identityPublisher|String|The Identity Publisher.|
 |identityResourceIdentifier|String|The Identity Resource Identifier.|
 |identityVersion|String|The Identity Version.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
 ## Relationships
 None

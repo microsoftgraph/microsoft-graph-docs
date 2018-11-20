@@ -4,7 +4,7 @@
 
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,7 +31,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [vppToken](../resources/intune_onboarding_vpptoken.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [vppToken](../resources/intune-onboarding-vpptoken.md) in the response body.
 
 ## Example
 ### Request

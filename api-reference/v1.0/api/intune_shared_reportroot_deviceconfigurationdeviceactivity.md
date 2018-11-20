@@ -5,7 +5,7 @@
 Metadata for the device configuration device activity report
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -33,7 +33,7 @@ GET /reports/deviceConfigurationDeviceActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune_shared_report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
 ### Request

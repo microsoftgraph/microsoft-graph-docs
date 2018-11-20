@@ -1,6 +1,6 @@
 # Update open extension
 
-Update an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) with the properties in the request body:
+Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
 
 - If a property in the request body matches the name of an existing property in the extension, the data in the 
 extension is updated.
@@ -10,7 +10,7 @@ The data in an extension can be primitive types, or arrays of primitive types.
 
 ## Permissions
 
-Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -61,7 +61,7 @@ See the [Request body](#request-body) section about including in the request bod
 
 ## Request body
 
-Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md) object, with the 
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the 
 following required name-value pairs, and any custom data to change or add to that extension. 
 The data in the JSON payload can be primitive types, or arrays of primitive types.
 
@@ -73,7 +73,7 @@ The data in the JSON payload can be primitive types, or arrays of primitive type
 ## Response
 
 If successful, this method returns a `200 OK` response code and the updated
-[openTypeExtension](../resources/openTypeExtension.md) object.
+[openTypeExtension](../resources/opentypeextension.md) object.
 
 
 ## Example

@@ -5,7 +5,7 @@
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -21,7 +21,7 @@ GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

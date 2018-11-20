@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) object.
+Update the properties of a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) object.
+In the request body, supply a JSON representation for the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.
 
-The following table shows the properties that are required when you create the [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md).
+The following table shows the properties that are required when you create the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -43,13 +43,13 @@ The following table shows the properties that are required when you create the [
 |universalIntegratedCircuitCardIdentifier|String|The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.|
 |deviceName|String|Device name to which the subscription was provisioned e.g. DESKTOP-JOE|
 |userName|String|Username which the subscription was provisioned to e.g. joe@contoso.com|
-|state|[embeddedSIMDeviceStateValue](../resources/intune_esim_embeddedsimdevicestatevalue.md)|The state of the profile operation applied to the device. Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|The state of the profile operation applied to the device. Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |stateDetails|String|String description of the provisioning state.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object in the response body.
 
 ## Example
 ### Request

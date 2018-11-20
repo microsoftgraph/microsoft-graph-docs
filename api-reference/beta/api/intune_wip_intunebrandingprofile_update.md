@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) object.
+Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) object.
+In the request body, supply a JSON representation for the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.
 
-The following table shows the properties that are required when you create the [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md).
+The following table shows the properties that are required when you create the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -50,17 +50,17 @@ The following table shows the properties that are required when you create the [
 |privacyUrl|String|URL to the company/organization’s privacy policy.|
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|themeColor|[rgbColor](../resources/intune_shared_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
-|themeColorLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps on theme color backgrounds.|
-|lightBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps on light backgrounds.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune_shared_mimecontent.md)|Customized image displayed in Company Portal apps landing page|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps on theme color backgrounds.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps on light backgrounds.|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object in the response body.
 
 ## Example
 ### Request

@@ -3,10 +3,10 @@
 Get the properties and relationships of a post in a specified thread. You can specify both the parent 
 conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
-Since the **post** resource supports [extensions](/graph/extensibility_overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.
+Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -79,10 +79,10 @@ Content-length: 414
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility_open_users)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility_schema_groups)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
 
 

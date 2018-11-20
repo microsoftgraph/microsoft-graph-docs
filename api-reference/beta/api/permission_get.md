@@ -13,13 +13,13 @@ Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
-This property is an [ItemReference](../resources/itemReference.md) resource referencing the ancestor that the permission is inherited from.
+This property is an [ItemReference](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
 
 SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

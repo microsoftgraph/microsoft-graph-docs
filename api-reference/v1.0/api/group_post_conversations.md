@@ -1,10 +1,10 @@
 # Create conversation
 Create a new [conversation](../resources/conversation.md) by including a thread and a post. 
 
-Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that conversation.
+Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -25,13 +25,13 @@ POST /groups/{id}/conversations
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationThread.md) and a [post](../resources/post.md).
+In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).
 
 ## Response
 If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.
 
 The response includes the IDs for the new conversation and thread, which you can use in the 
-[list posts](conversationthread_list_posts.md) operation to get the new post as well.
+[list posts](conversationthread-list-posts.md) operation to get the new post as well.
 
 ## Example
 #### Request

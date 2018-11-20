@@ -36,15 +36,15 @@ Container types (mailFolder, calendar, etc.) do not support immutable ID, but th
 
 ## Immutable ID with change notifications
 
-You can request that Microsoft Graph send immutable IDs in change notifications by including the `Prefer: IdType="ImmutableId"` header when [creating a subscription](/graph/api/subscription_post_subscriptions?view=graph-rest-beta). Existing subscriptions created without the header will continue to use the default ID format. In order to switch existing subscriptions to use immutable IDs, you must delete and recreate them using the header.
+You can request that Microsoft Graph send immutable IDs in change notifications by including the `Prefer: IdType="ImmutableId"` header when [creating a subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-beta). Existing subscriptions created without the header will continue to use the default ID format. In order to switch existing subscriptions to use immutable IDs, you must delete and recreate them using the header.
 
 ## Immutable ID with delta query
 
-You can request that Microsoft Graph return immutable IDs in [delta query responses](delta_query_overview.md) for supported resource types by including the `Prefer: IdType="ImmutableId"` header. The `nextLink` and `deltaLink` values returned by delta queries are compatible with both ID formats, so your application does not need to re-synchronize to take advantage of immutable ID. You can use the header to get immutable IDs going forward, and you can [update your app's storage](#updating-existing-data) separately.
+You can request that Microsoft Graph return immutable IDs in [delta query responses](delta-query-overview.md) for supported resource types by including the `Prefer: IdType="ImmutableId"` header. The `nextLink` and `deltaLink` values returned by delta queries are compatible with both ID formats, so your application does not need to re-synchronize to take advantage of immutable ID. You can use the header to get immutable IDs going forward, and you can [update your app's storage](#updating-existing-data) separately.
 
 ## Updating existing data
 
-If you've already got a database filled with thousands of regular IDs, you can migrate those IDs to immutable format using the [translateExchangeIds](/graph/api/user_translateexchangeids?view=graph-rest-beta) function. You can provide an array of up to 1000 IDs to be translated into a target format.
+If you've already got a database filled with thousands of regular IDs, you can migrate those IDs to immutable format using the [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta) function. You can provide an array of up to 1000 IDs to be translated into a target format.
 
 > **Note:** You can also use `translateExchangeIds` to migrate Exchange Web Services applications to Microsoft Graph.
 

@@ -4,7 +4,7 @@
 
 Update the properties of the currently authenticated organization.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
@@ -34,7 +34,7 @@ In the request body, supply the values for relevant fields that should be update
 |securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
 
-Since the **organization** resource supports [extensions](/graph/extensibility_overview), you can use the `PATCH` operation to 
+Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.
 
 ## Response
@@ -78,10 +78,10 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility_open_users)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility_schema_groups)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -9,10 +9,10 @@ The **plannerUser** resource provides access to Planner resources for a [user](u
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) assigned to the user.|
-|[List favoritePlans](../api/planneruser_list_favoriteplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) marked as favorite by the user.|
-|[List recentPlans](../api/planneruser_list_recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
-|[Update](../api/planneruser_update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get the [plannerTasks](plannertask.md) assigned to the user.|
+|[List favoritePlans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) marked as favorite by the user.|
+|[List recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) collection| Get the [plannerPlans](plannerplan.md) recently viewed by the user.|
+|[Update](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Update a **plannerUser** object. |
 
 
 ## Properties

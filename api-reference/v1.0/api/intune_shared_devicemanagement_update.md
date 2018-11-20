@@ -2,9 +2,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission&nbsp;type&nbsp;(by&nbsp;workflow) | Permissions (from most to least privileged) |
 |:---|:---|
@@ -41,24 +41,24 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune_shared_devicemanagement.md) object.
+In the request body, supply a JSON representation for the [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune_shared_devicemanagement.md).
+The following table shows the properties that are required when you create the [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the device|
 |**Device configuration**|
-|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
+|settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**Onboarding**|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
+|intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 Request body property support varies according to workflow.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_shared_devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune-shared-devicemanagement.md) object in the response body.
 
 ## Example
 

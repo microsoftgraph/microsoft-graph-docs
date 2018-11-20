@@ -4,7 +4,7 @@
 
 Update the content of a OneNote page.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -27,7 +27,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## Request body
-In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page. For more information and examples, see [Update OneNote page content](/graph/onenote_update_page).
+In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page. For more information and examples, see [Update OneNote page content](/graph/onenote-update-page).
 
 ## Response
 

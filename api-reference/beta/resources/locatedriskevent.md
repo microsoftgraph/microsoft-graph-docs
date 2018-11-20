@@ -15,7 +15,7 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get locatedRiskEvent](../api/locatedriskevent_get.md) | [locatedRiskEvent](locatedriskevent.md) |Read properties and relationships of locatedRiskEvent object.|
+|[Get locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Read properties and relationships of locatedRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

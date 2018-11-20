@@ -1,7 +1,7 @@
 # Get incremental changes to messages in a folder
 
 Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of
-[delta](/graph/api/message_delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain
+[delta](/graph/api/message-delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain
 and synchronize a local store of a user's messages,
 without having to fetch the entire set of the user's messages from the server every time.
 
@@ -15,7 +15,7 @@ subsequently, get incremental changes to that folder periodically.
 Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually.
 
 Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET
-request is very much like the way you [get messages](/graph/api/user_list_messages?view=graph-rest-1.0),
+request is very much like the way you [get messages](/graph/api/user-list-messages?view=graph-rest-1.0),
 except that you include the **delta** function:
 
 ```http
@@ -27,7 +27,7 @@ A GET request with the **delta** function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or
 - A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](delta_query_overview.md#state-tokens) that are completely opaque to the client.
+These tokens are [state tokens](delta-query-overview.md#state-tokens) that are completely opaque to the client.
 To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET
 request to the next **delta** function call for the same folder. A `deltaLink` returned in a response
 signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL
@@ -331,7 +331,7 @@ The response contains a `deltaLink`. This indicates that all changes in the remo
 
 ## See also
 
-- [Microsoft Graph delta query](delta_query_overview.md)
-- [Get incremental changes to events in a calendar view](delta_query_events.md)
-- [Get incremental changes to groups](delta_query_groups.md)
-- [Get incremental changes to users](delta_query_users.md)
+- [Microsoft Graph delta query](delta-query-overview.md)
+- [Get incremental changes to events in a calendar view](delta-query-events.md)
+- [Get incremental changes to groups](delta-query-groups.md)
+- [Get incremental changes to users](delta-query-users.md)

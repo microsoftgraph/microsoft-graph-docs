@@ -5,7 +5,7 @@
 Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -22,7 +22,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
 ## Optional query parameters
-This method does **not** support the [OData Query Parameters](/graph/query_parameters) to help customize the response.
+This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

@@ -241,13 +241,13 @@ Content-length: 326
 
 ## See also
 
-- [Add custom data to resources using extensions](extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](extensibility_open_users.md)
+- [Add custom data to resources using extensions](extensibility-overview.md)
+- [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
 - [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Adding and Verifying a Domain for the NEW Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension resource type](/graph/api/resources/schemaextension?view=graph-rest-1.0)
-- [List schemaExtensions](/graph/api/schemaextension_list?view=graph-rest-1.0)
-- [Create schemaExtension](/graph/api/schemaextension_post_schemaextensions?view=graph-rest-1.0)
-- [Get schemaExtension](/graph/api/schemaextension_get?view=graph-rest-1.0)
-- [Update schemaExtension](/graph/api/schemaextension_update?view=graph-rest-1.0)
-- [Delete schemaExtension](/graph/api/schemaextension_delete?view=graph-rest-1.0)
+- [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
+- [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
+- [Get schemaExtension](/graph/api/schemaextension-get?view=graph-rest-1.0)
+- [Update schemaExtension](/graph/api/schemaextension-update?view=graph-rest-1.0)
+- [Delete schemaExtension](/graph/api/schemaextension-delete?view=graph-rest-1.0)

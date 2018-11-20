@@ -8,8 +8,8 @@ You can use the Groups activity reports to gain insights into the activity of Of
 
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :-------------- |  ---------------------------------------- |
-| [Get group detail](../api/reportroot_getoffice365groupsactivitydetail.md) | Stream          | Get details about Office 365 Groups activity by group. |
-| [Get activity counts](../api/reportroot_getoffice365groupsactivitycounts.md) | Stream          | Get the number of group activities across group workloads. |
-| [Get group counts](../api/reportroot_getoffice365groupsactivitygroupcounts.md) | Stream          | Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities. |
-| [Get storage](../api/reportroot_getoffice365groupsactivitystorage.md) | Stream          | Get the total storage used across all group mailboxes and group sites. |
-| [Get file counts](../api/reportroot_getoffice365groupsactivityfilecounts.md) | Stream          | Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group. |
+| [Get group detail](../api/reportroot-getoffice365groupsactivitydetail.md) | Stream          | Get details about Office 365 Groups activity by group. |
+| [Get activity counts](../api/reportroot-getoffice365groupsactivitycounts.md) | Stream          | Get the number of group activities across group workloads. |
+| [Get group counts](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Stream          | Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities. |
+| [Get storage](../api/reportroot-getoffice365groupsactivitystorage.md) | Stream          | Get the total storage used across all group mailboxes and group sites. |
+| [Get file counts](../api/reportroot-getoffice365groupsactivityfilecounts.md) | Stream          | Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group. |

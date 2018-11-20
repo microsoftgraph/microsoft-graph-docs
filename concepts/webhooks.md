@@ -230,8 +230,8 @@ The following code samples are available on GitHub.
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Get subscription](/graph/api/subscription_get?view=graph-rest-1.0)
-- [Create subscription](/graph/api/subscription_post_subscriptions?view=graph-rest-1.0)
+- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
+- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
 [contact](/graph/api/resources/contact?view=graph-rest-1.0)
 [conversation](/graph/api/resources/conversation?view=graph-rest-1.0)

@@ -113,10 +113,10 @@ HTTP/1.1 204 No content
 
 ## See also
 
-- [Add custom data to resources using extensions](extensibility_overview.md)
-- [Add custom data to groups using schema extensions](extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](extensibility-overview.md)
+- [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
 - [openTypeExtension resource type](/graph/api/resources/opentypeextension?view=graph-rest-1.0)
-- [Create open extension](/graph/api/opentypeextension_post_opentypeextension?view=graph-rest-1.0)
-- [Get open extension](/graph/api/opentypeextension_get?view=graph-rest-1.0)
-- [Update open extension](/graph/api/opentypeextension_update?view=graph-rest-1.0)
-- [Delete open extension](/graph/api/opentypeextension_delete?view=graph-rest-1.0)
+- [Create open extension](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+- [Get open extension](/graph/api/opentypeextension-get?view=graph-rest-1.0)
+- [Update open extension](/graph/api/opentypeextension-update?view=graph-rest-1.0)
+- [Delete open extension](/graph/api/opentypeextension-delete?view=graph-rest-1.0)

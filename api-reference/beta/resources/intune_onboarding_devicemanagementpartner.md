@@ -1,4 +1,4 @@
-﻿# deviceManagementPartner resource type
+# deviceManagementPartner resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,19 +8,19 @@ Entity which represents a connection to device management partner.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List deviceManagementPartners](../api/intune_onboarding_devicemanagementpartner_list.md)|[deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) collection|List properties and relationships of the [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) objects.|
-|[Get deviceManagementPartner](../api/intune_onboarding_devicemanagementpartner_get.md)|[deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|Read properties and relationships of the [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) object.|
-|[Create deviceManagementPartner](../api/intune_onboarding_devicemanagementpartner_create.md)|[deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|Create a new [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) object.|
-|[Delete deviceManagementPartner](../api/intune_onboarding_devicemanagementpartner_delete.md)|None|Deletes a [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md).|
-|[Update deviceManagementPartner](../api/intune_onboarding_devicemanagementpartner_update.md)|[deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|Update the properties of a [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) object.|
+|[List deviceManagementPartners](../api/intune-onboarding-devicemanagementpartner-list.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) collection|List properties and relationships of the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) objects.|
+|[Get deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-get.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Read properties and relationships of the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
+|[Create deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-create.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Create a new [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
+|[Delete deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-delete.md)|None|Deletes a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
+|[Update deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Not yet documented|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to Device management Partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|Partner App type. Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner App type. Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Partner Single tenant App id|
 |displayName|String|Partner display name|
 |isConfigured|Boolean|Whether device management partner is configured or not|

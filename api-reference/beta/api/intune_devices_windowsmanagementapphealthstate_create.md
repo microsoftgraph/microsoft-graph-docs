@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object.
+Create a new [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -37,7 +37,7 @@ The following table shows the properties that are required when you create the w
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the Windows management app health state|
-|healthState|[healthState](../resources/intune_devices_healthstate.md)|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows management app installed version.|
 |lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|
 |deviceName|String|Name of the device on which Windows management app is installed.|
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the w
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune_devices_windowsmanagementapphealthstate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object in the response body.
 
 ## Example
 ### Request

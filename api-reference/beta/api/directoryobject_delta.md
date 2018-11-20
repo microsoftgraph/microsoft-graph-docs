@@ -2,11 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../../../api-reference/beta/resources/user), [group](../../../api-reference/beta/resources/group) and [organizational contact](../../../api-reference/beta/resources/orgcontact), in a single delta query. See [Track changes](/graph/delta_query_overview) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../../../api-reference/beta/resources/user), [group](../../../api-reference/beta/resources/group) and [organizational contact](../../../api-reference/beta/resources/orgcontact), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,8 +34,8 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 
 | Query parameter | Type |Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta_query_overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta_query_overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
 
 ### OData query parameters
 
@@ -285,8 +285,8 @@ Content-type: application/json
 }
 ```
 
-- [Use delta query to track changes in Microsoft Graph data](/graph/delta_query_overview).
-- [Get incremental changes for users](/graph/delta_query_users).
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
+- [Get incremental changes for users](/graph/delta-query-users).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

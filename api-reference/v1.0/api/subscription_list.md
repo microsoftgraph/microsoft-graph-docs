@@ -4,13 +4,13 @@ Retrieve the properties and relationships of webhook subscriptions, based on the
 
 ## Permissions
 
-This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated permission](/graph/auth_v2_user) (work or school account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
-| [Delegated permission](/graph/auth_v2_user) (personal Microsoft account) | Role required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
-| [Application permission](/graph/auth_v2_service) | Role required to [create subscription](subscription_post_subscriptions.md). |
+| [Delegated permission](/graph/auth-v2-user) (work or school account) | Role required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below). |
+| [Delegated permission](/graph/auth-v2-user) (personal Microsoft account) | Role required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below). |
+| [Application permission](/graph/auth-v2-service) | Role required to [create subscription](subscription-post-subscriptions.md). |
 
 Response results are based on the context of the calling app. The following is a summary of the common scenarios:
 
@@ -20,8 +20,8 @@ Most commonly, an application wants to retrieve subscriptions that it originally
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
-| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the directory.|
+| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
+| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the directory.|
 
 ### Advanced scenarios
 

@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Describes a single parameter used in an [attributeMappingFunctionSchema](../resources/synchronization_attributemappingfunctionschema.md).
+Describes a single parameter used in an [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).
 
 ## Properties
 

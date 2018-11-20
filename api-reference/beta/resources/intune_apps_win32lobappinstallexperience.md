@@ -1,4 +1,4 @@
-﻿# win32LobAppInstallExperience resource type
+# win32LobAppInstallExperience resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Contains installation experience properties for a Win32 App
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|runAsAccount|[runAsAccountType](../resources/intune_apps_runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
 
 ## Relationships
 None

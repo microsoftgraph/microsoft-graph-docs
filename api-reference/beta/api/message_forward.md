@@ -5,8 +5,8 @@
 Forward a message, add a comment or modify any updateable properties  
 all in one **forward** call. The message is saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft forward message](../api/message_createforward.md) to include a comment or update any message properties, 
-and then [send](../api/message_send.md) the draft message.
+Alternatively, you can first [create a draft forward message](../api/message-createforward.md) to include a comment or update any message properties, 
+and then [send](../api/message-send.md) the draft message.
 
 **Note**
 
@@ -15,7 +15,7 @@ and then [send](../api/message_send.md) the draft message.
 neither will return an HTTP 400 Bad Request error.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

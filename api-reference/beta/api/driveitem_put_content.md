@@ -11,11 +11,11 @@ title: Upload small files
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
 
-To upload large files see [Upload large files with an upload session](driveitem_createuploadsession.md).
+To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -5,15 +5,15 @@ Microsoft Bookings provides online and mobile apps that make appointment schedul
 ## Why integrate with Microsoft Bookings using Microsoft Graph?
 
 ### Streamline appointment booking
-A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](/graph/api/bookingbusiness_list_services?view=graph-rest-beta) and [book appontments](/graph/api/bookingbusiness_post_appointments?view=graph-rest-beta) any time directly on the scheduling page, on the business web site or Facebook. 
+A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) and [book appontments](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) any time directly on the scheduling page, on the business web site or Facebook. 
 
-Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can [reschedule](../api-reference/beta//api/bookingappointment_update.md), [cancel](/graph/api/bookingappointment_cancel?view=graph-rest-beta), or [re-assign](/graph/api/bookingappointment_update?view=graph-rest-beta) an existing booking to another available staff member. 
+Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can [reschedule](../api-reference/beta//api/bookingappointment-update.md), [cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta), or [re-assign](/graph/api/bookingappointment-update?view=graph-rest-beta) an existing booking to another available staff member. 
 
 ### Reduce no-shows and increase productivity of the staff
 Business operators can specify [scheduling policies](/graph/api/resources/bookingschedulingpolicy?view=graph-rest-beta) that include minimum notice for bookings and cancellations, and customers can schedule or reschedule appointments themselves. Automated appointment confirmations and reminders decrease no-shows, and let the staff make better use of their production hours. 
 
 ### Manage customer information and relationships from anywhere
-Completing an appointment automatically verifies if the customer is already on the [customer list](/graph/api/bookingbusiness_list_customers?view=graph-rest-beta), and [adds](/graph/api/bookingbusiness_post_customers?view=graph-rest-beta) the customer's name and email address to the list if necessary. This makes it convenient for business operators to stay in touch with their customers, and send periodic newsletters or other promotional material.
+Completing an appointment automatically verifies if the customer is already on the [customer list](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta), and [adds](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) the customer's name and email address to the list if necessary. This makes it convenient for business operators to stay in touch with their customers, and send periodic newsletters or other promotional material.
 
 ### Integrate with productivity and team collaboration services in Microsoft Graph
 Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and [integrate with the best of Microsoft 365](overview-major-services.md) to support richer scenarios. For example, you can use [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) to track and analyze business financial data, and generate professional reports, or use [SharePoint](sharepoint-concept-overview.md) or [Microsoft Teams](teams-concept-overview.md) to enhance team collaboration.

@@ -21,7 +21,7 @@ The general pattern follows these steps:
 
 ## Initial action request
 
-Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem_copy?view=graph-rest-beta) scenario.
+Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem-copy?view=graph-rest-beta) scenario.
 In this scenario, your app requests to copy a folder that contains a large amount of data.
 This request will likely take several seconds to complete since the amount of data is large.
 
@@ -143,11 +143,11 @@ Long running actions are supported on the following API methods
 
 | **Resource** | **API** |
 |:------ | :------ |
-| DriveItem | [Copy](/graph/api/driveitem_copy?view=graph-rest-beta) |
+| DriveItem | [Copy](/graph/api/driveitem-copy?view=graph-rest-beta) |
 
 ## Prerequisites
 
-The same [permissions](./permissions_reference.md) that are required to perform a long running action are also required to query the status of a long running action.
+The same [permissions](./permissions-reference.md) that are required to perform a long running action are also required to query the status of a long running action.
 
 
 

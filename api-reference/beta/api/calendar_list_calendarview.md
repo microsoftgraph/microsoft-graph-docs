@@ -6,7 +6,7 @@ Get the occurrences, exceptions, and single instances of events in a calendar vi
 from the default calendar `(../me/calendarview)` of a user or group, or some other calendar of the user's.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 * Events in a user's calendar: Calendars.Read or Calendars.ReadWrite
 * Events in a group calendar: Group.Read.All or Group.ReadWrite.All

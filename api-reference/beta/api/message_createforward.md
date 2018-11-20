@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a draft forward message to include a comment or update any message properties  
-all in one **createForward** call. You can then [send](../api/message_send.md) the draft message.
+all in one **createForward** call. You can then [send](../api/message-send.md) the draft message.
 
 **Note**
 
@@ -12,7 +12,7 @@ all in one **createForward** call. You can then [send](../api/message_send.md) t
 neither will return an HTTP 400 Bad Request error.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

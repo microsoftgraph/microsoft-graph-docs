@@ -6,7 +6,7 @@ Retrieve the properties and relationships of a subscription.
 
 ## Permissions
 
-The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|

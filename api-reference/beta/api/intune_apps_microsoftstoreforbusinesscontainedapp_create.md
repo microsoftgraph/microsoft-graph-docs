@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object.
+Create a new [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,13 +38,13 @@ The following table shows the properties that are required when you create the m
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md)|
+|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object in the response body.
 
 ## Example
 ### Request

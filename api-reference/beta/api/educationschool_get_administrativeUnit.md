@@ -7,7 +7,7 @@ Retrieve the simple directory **administrativeUnit** that corresponds to this **
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
 
 ## Permissions
-A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,7 +28,7 @@ GET /education/schools/{id}/administrativeUnit
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and an [administrativeUnit](../resources/administrativeUnit.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 ## Example
 ##### Request
 The following is an example of the request.

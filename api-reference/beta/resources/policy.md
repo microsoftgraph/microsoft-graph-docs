@@ -11,13 +11,13 @@ This policy is described in further detail below.
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-| [Get policy](../api/policy_get.md) |Policy|Read properties and relationships of user object.|
-|[Create policy](../api/policy_post.md)|Policy|Create a new policy object.|
-|[Update policy](../api/policy_update.md)|None|Update policy object.|
-|[Delete policy](../api/policy_delete.md)|None|Delete policy object.|
-|[Assign policy](../api/policy_assign.md)|None|Assign a policy to an application, service principal.|
-|[List policies](../api/policy_list.md)|Policy collection|Get all policy objects in the organization.|
-|[List assigned policies](../api/policy_list_assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
+| [Get policy](../api/policy-get.md) |Policy|Read properties and relationships of user object.|
+|[Create policy](../api/policy-post.md)|Policy|Create a new policy object.|
+|[Update policy](../api/policy-update.md)|None|Update policy object.|
+|[Delete policy](../api/policy-delete.md)|None|Delete policy object.|
+|[Assign policy](../api/policy-assign.md)|None|Assign a policy to an application, service principal.|
+|[List policies](../api/policy-list.md)|Policy collection|Get all policy objects in the organization.|
+|[List assigned policies](../api/policy-list-assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
 
 ### Common Properties
 | Property	   | Type	|Description|
@@ -30,10 +30,10 @@ This policy is described in further detail below.
 #### Common Relationships
 |Relationship|Type|Description|
 |:-------------|:-----------|:-----------|
-|appliesTo|[directoryObject](../resources/directoryObject.md) collection|The applications, service principals, groups, or organization the policy applies to.|
+|appliesTo|[directoryObject](../resources/directoryobject.md) collection|The applications, service principals, groups, or organization the policy applies to.|
 
 ## Token Lifetime Policy
-Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](../api/policy_assign.md) to applications and service principals. There are four kinds of tokens whose lifetimes can be configured. Access/Refresh token pairs are obtained during authentication through a client, whereas ID/Session token pairs are obtained during authentication through a browser.
+Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](../api/policy-assign.md) to applications and service principals. There are four kinds of tokens whose lifetimes can be configured. Access/Refresh token pairs are obtained during authentication through a client, whereas ID/Session token pairs are obtained during authentication through a browser.
 
 - **Access Token** contains information about the identity and privileges associated with a user account that is used by clients to access protected resources like applications.
 - **Refresh Token** is obtained together with the access token when a user authenticates against Azure AD through a client to access a protected resource. While it is not revoked or left unused for more than the MaxInactiveTime (below), it can be used to obtain a new access/refresh token pair when the current access token expires.

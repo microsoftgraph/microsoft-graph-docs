@@ -2,14 +2,14 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create an open extension ([openTypeExtension](../resources/openTypeExtension.md) object) and add custom properties
+Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
 in a new or existing instance of a supported resource.
 
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## Permissions
 
-Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -81,7 +81,7 @@ See the [Request body](#request-body) section about including _the extension_ in
 
 ## Request body
 
-Provide a JSON body of an [openTypeExtension](../resources/openTypeExtension.md), with the following required
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required
 name-value pairs and any additional custom data. The data in the JSON payload can be primitive types, or arrays of
 primitive types.
 
@@ -106,7 +106,7 @@ Refer to the corresponding topics for creating the instance, as listed [above](#
 
 | Scenario       | Resource  | Response body |
 |:---------------|:----------|:--------------|
-| Creating an extension while explicitly creating a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/openTypeExtension.md) object. |
+| Creating an extension while explicitly creating a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/opentypeextension.md) object. |
 | Creating an extension while implicitly creating a resource instance | [post](../resources/post.md) | The response includes only a response code but not a response body. |
 | Creating an extension in an _existing_ resource instance | All supported resources | Includes the **openTypeExtension** object. |
 
@@ -458,9 +458,9 @@ created post, which in turn contains the new extension.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-To get the new extension, first [get all the posts](../api/conversationthread_list_posts.md) in this
+To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this
 thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to
-[get the extension](../api/opentypeextension_get.md).
+[get the extension](../api/opentypeextension-get.md).
 
 <!-- {
   "blockType": "response",

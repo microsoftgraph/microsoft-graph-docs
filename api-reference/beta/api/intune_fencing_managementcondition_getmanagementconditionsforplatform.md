@@ -6,7 +6,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,12 +36,12 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md)|Not yet documented|
+|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Not yet documented|
 
 
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [managementCondition](../resources/intune_fencing_managementcondition.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [managementCondition](../resources/intune-fencing-managementcondition.md) collection in the response body.
 
 ## Example
 ### Request

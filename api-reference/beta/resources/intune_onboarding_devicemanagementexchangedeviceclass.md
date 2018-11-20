@@ -1,4 +1,4 @@
-﻿# deviceManagementExchangeDeviceClass resource type
+# deviceManagementExchangeDeviceClass resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ Device Class in Exchange.
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Name of the device class which will be impacted by this rule.|
-|type|[deviceManagementExchangeAccessRuleType](../resources/intune_onboarding_devicemanagementexchangeaccessruletype.md)|Type of device which is impacted by this rule e.g. Model, Family. Possible values are: `family`, `model`.|
+|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Type of device which is impacted by this rule e.g. Model, Family. Possible values are: `family`, `model`.|
 
 ## Relationships
 None

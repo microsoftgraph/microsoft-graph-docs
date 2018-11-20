@@ -4,9 +4,9 @@
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) object.
+Create a new [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,13 +38,13 @@ The following table shows the properties that are required when you create the n
 |:---|:---|:---|
 |id|String|The key of the NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Last connection time for the Ndes Connector|
-|state|[ndesConnectorState](../resources/intune_deviceconfig_ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
 |displayName|String|The friendly name of the Ndes Connector.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.
 
 ## Example
 ### Request

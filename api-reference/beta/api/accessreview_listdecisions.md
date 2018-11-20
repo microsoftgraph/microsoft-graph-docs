@@ -2,12 +2,12 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.
 
 Note that a recurring access review will not have a `decisions` relationship.  Instead, the caller must navigate the `instance` relationship to find an `accessReview` object for a current or past instance of the access review.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -71,12 +71,12 @@ Content-type: application/json
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](accessreview_get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
-|[List my accessReview decisions](accessreview_listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
-|[Send accessReview reminder](accessreview_sendreminder.md) |		None.	|	Send a reminder to the reviewers of an accessReview. |
-|[Stop accessReview](accessreview_stop.md) |		None.	|	Stop an accessReview. |
-|[Reset accessReview decisions](accessreview_reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
-|[Apply accessReview decisions](accessreview_apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
+|[Get accessReview](accessreview-get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
+|[List my accessReview decisions](accessreview-listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
+|[Send accessReview reminder](accessreview-sendreminder.md) |		None.	|	Send a reminder to the reviewers of an accessReview. |
+|[Stop accessReview](accessreview-stop.md) |		None.	|	Stop an accessReview. |
+|[Reset accessReview decisions](accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
+|[Apply accessReview decisions](accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
 
 
 <!-- {

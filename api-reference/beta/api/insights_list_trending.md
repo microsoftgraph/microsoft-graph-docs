@@ -5,7 +5,7 @@
 Calculated insight that returns the list of items trending around the user.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -31,7 +31,7 @@ Or based on Container Type:
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights_resourceVisualization.md).
+See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 
 ## Request headers
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [trending](../resources/insights_trending.md) items in the response body. Each item contains visualization properties for displaying the item in your experience.
+If successful, this method returns a `200 OK` response code and a list of [trending](../resources/insights-trending.md) items in the response body. Each item contains visualization properties for displaying the item in your experience.
 
 ## Example
 #### Request

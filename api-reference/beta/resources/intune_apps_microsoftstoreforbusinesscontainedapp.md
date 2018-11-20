@@ -1,4 +1,4 @@
-﻿# microsoftStoreForBusinessContainedApp resource type
+# microsoftStoreForBusinessContainedApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,21 +6,21 @@
 
 A class that represents a contained app of a MicrosoftStoreForBusinessApp.
 
-Inherits from [mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md)
+Inherits from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List microsoftStoreForBusinessContainedApps](../api/intune_apps_microsoftstoreforbusinesscontainedapp_list.md)|[microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) collection|List properties and relationships of the [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) objects.|
-|[Get microsoftStoreForBusinessContainedApp](../api/intune_apps_microsoftstoreforbusinesscontainedapp_get.md)|[microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md)|Read properties and relationships of the [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object.|
-|[Create microsoftStoreForBusinessContainedApp](../api/intune_apps_microsoftstoreforbusinesscontainedapp_create.md)|[microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md)|Create a new [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object.|
-|[Delete microsoftStoreForBusinessContainedApp](../api/intune_apps_microsoftstoreforbusinesscontainedapp_delete.md)|None|Deletes a [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md).|
-|[Update microsoftStoreForBusinessContainedApp](../api/intune_apps_microsoftstoreforbusinesscontainedapp_update.md)|[microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md)|Update the properties of a [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object.|
+|[List microsoftStoreForBusinessContainedApps](../api/intune-apps-microsoftstoreforbusinesscontainedapp-list.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) collection|List properties and relationships of the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) objects.|
+|[Get microsoftStoreForBusinessContainedApp](../api/intune-apps-microsoftstoreforbusinesscontainedapp-get.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)|Read properties and relationships of the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.|
+|[Create microsoftStoreForBusinessContainedApp](../api/intune-apps-microsoftstoreforbusinesscontainedapp-create.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)|Create a new [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.|
+|[Delete microsoftStoreForBusinessContainedApp](../api/intune-apps-microsoftstoreforbusinesscontainedapp-delete.md)|None|Deletes a [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md).|
+|[Update microsoftStoreForBusinessContainedApp](../api/intune-apps-microsoftstoreforbusinesscontainedapp-update.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)|Update the properties of a [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md)|
+|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.|
 
 ## Relationships

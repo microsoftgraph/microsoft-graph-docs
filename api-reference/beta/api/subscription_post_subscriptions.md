@@ -6,7 +6,7 @@ Subscribes a listener application to receive notifications when data on a Micros
 
 ## Permissions
 
-Creating a subscription requires read permission to the resource for which the app will receive notifications. For example, to get notifications about Messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Creating a subscription requires read permission to the resource for which the app will receive notifications. For example, to get notifications about Messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|

@@ -7,13 +7,13 @@ saved as a draft or sent. That ID changes when the message is copied or moved to
 
 ## Creating and sending mail
 
-In Outlook, you can create and send an email in the same [sendMail](/graph/api/user_sendmail?view=graph-rest-1.0) action, or you can [create](/graph/api/user_post_messages?view=graph-rest-1.0) a draft, subsequently [add content](/graph/api/message_update?view=graph-rest-1.0) and [send](/graph/api/message_send?view=graph-rest-1.0) the draft.
+In Outlook, you can create and send an email in the same [sendMail](/graph/api/user-sendmail?view=graph-rest-1.0) action, or you can [create](/graph/api/user-post-messages?view=graph-rest-1.0) a draft, subsequently [add content](/graph/api/message-update?view=graph-rest-1.0) and [send](/graph/api/message-send?view=graph-rest-1.0) the draft.
 
-Similarly, when responding to an email, you can create and send the response in the same action ([reply](/graph/api/message_reply?view=graph-rest-1.0), [reply-all](/graph/api/message_replyall?view=graph-rest-1.0), or [forward](/graph/api/message_forward?view=graph-rest-1.0)). Or, you can create a draft for the response ([reply](/graph/api/message_createreply?view=graph-rest-1.0), [reply-all](/graph/api/message_createreplyall?view=graph-rest-1.0), or [forward](/graph/api/message_createforward?view=graph-rest-1.0)), [add content](/graph/api/message_update?view=graph-rest-1.0), and then [send](/graph/api/message_send?view=graph-rest-1.0) the draft at a later time.
+Similarly, when responding to an email, you can create and send the response in the same action ([reply](/graph/api/message-reply?view=graph-rest-1.0), [reply-all](/graph/api/message-replyall?view=graph-rest-1.0), or [forward](/graph/api/message-forward?view=graph-rest-1.0)). Or, you can create a draft for the response ([reply](/graph/api/message-createreply?view=graph-rest-1.0), [reply-all](/graph/api/message-createreplyall?view=graph-rest-1.0), or [forward](/graph/api/message-createforward?view=graph-rest-1.0)), [add content](/graph/api/message-update?view=graph-rest-1.0), and then [send](/graph/api/message-send?view=graph-rest-1.0) the draft at a later time.
 
 To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
-By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder?view=graph-rest-1.0). For example, you can do the following to [get the messages](/graph/api/user_list_messages?view=graph-rest-1.0) in the Drafts folder:
+By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder?view=graph-rest-1.0). For example, you can do the following to [get the messages](/graph/api/user-list-messages?view=graph-rest-1.0) in the Drafts folder:
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -26,7 +26,7 @@ GET /me/mailfolders('Drafts')
 
 The message body can be either HTML or text, with HTML as the default message body type returned in a GET response.
 
-When [getting a message](/graph/api/message_get?view=graph-rest-1.0), you can specify the following request header to return the **body** and **uniqueBody** properties in text format:
+When [getting a message](/graph/api/message-get?view=graph-rest-1.0), you can specify the following request header to return the **body** and **uniqueBody** properties in text format:
 
 ```http
 Prefer: outlook.body-content-type="text"
@@ -68,7 +68,7 @@ MailTips can tell you information such as the recipient's mailbox is restricted 
 @-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention?view=graph-rest-beta) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
 You can:
 
-- Create @-mentions when [creating a message](/graph/api/user_post_messages?view=graph-rest-beta#request-2)
+- Create @-mentions when [creating a message](/graph/api/user-post-messages?view=graph-rest-beta#request-2)
 - [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user_list_messages?view=graph-rest-beta#request-2)
 - [Get all the @-mention is a message](/graph/api/message_get?view=graph-rest-beta#request-2)
 
@@ -77,8 +77,8 @@ You can:
 Take advantage of the following common capabilities that are shared among Microsoft Graph entities:
 
 - Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) on messages when one or more types of changes occur, such as message creation or update.
-- [Track these incremental changes to messages in a folder](delta_query_messages.md).
-- Create [open extensions](extensibility_overview.md#open-extensions) or [schema extensions](extensibility_overview.md#schema-extensions) to add custom data to a message instance.
+- [Track these incremental changes to messages in a folder](delta-query-messages.md).
+- Create [open extensions](extensibility-overview.md#open-extensions) or [schema extensions](extensibility-overview.md#schema-extensions) to add custom data to a message instance.
 - Create [extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
 
 ## Next steps
@@ -86,14 +86,14 @@ Take advantage of the following common capabilities that are shared among Micros
 Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail_api_overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
+- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
     "Error: /concepts/outlook-create-send-messages.md:
-        BookmarkSkippedDocFileNotFound: Link '[creating a message](/graph/api/user_post_messages?view=graph-rest-beta#request-2)'.",
+        BookmarkSkippedDocFileNotFound: Link '[creating a message](/graph/api/user-post-messages?view=graph-rest-beta#request-2)'.",
     "Error: /concepts/outlook-create-send-messages.md:
       BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user_list_messages?view=graph-rest-beta#request-2)'.",
     "Error: /concepts/outlook-create-send-messages.md:

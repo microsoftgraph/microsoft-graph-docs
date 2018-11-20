@@ -3,7 +3,7 @@
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
 Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 
-property. This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)
+property. This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)
 object that represents an extended property.
 
 The following user resources are supported:
@@ -25,7 +25,7 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
-Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|

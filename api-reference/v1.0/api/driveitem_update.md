@@ -8,11 +8,11 @@ title: Update a file or folder
 
 Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 
-You can also use update to [move an item](driveitem_move.md) to another parent by updating the item's **parentReference** property.
+You can also use update to [move an item](driveitem-move.md) to another parent by updating the item's **parentReference** property.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

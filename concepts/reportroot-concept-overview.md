@@ -16,13 +16,13 @@ You can use the reports API to access the data sets listed in the following tabl
 
 |Office 365 app|Data set|
 |:--------|:--------|
-|Microsoft Teams|[Device usage](/graph/api/resources/microsoft_teams_device_usage_reports?view=graph-rest-1.0)<br/>|[User activity](/graph/api/resources/microsoft_teams_user_activity_reports?view=graph-rest-1.0)|
-|Office 365 (general) |[Activations](/graph/api/resources/office_365_activations_reports?view=graph-rest-1.0)<br/>[Active users](/graph/api/resources/office_365_active_users_reports?view=graph-rest-1.0)<br/>[Groups activity](/graph/api/resources/office_365_groups_activity_reports?view=graph-rest-1.0)|
-|OneDrive |[Activity](/graph/api/resources/onedrive_activity_reports?view=graph-rest-1.0)<br/>[Usage](/graph/api/resources/onedrive_usage_reports?view=graph-rest-1.0)|
-|Outlook|[Activity](/graph/api/resources/email_activity_reports?view=graph-rest-1.0)<br/>[App usage](/graph/api/resources/email_app_usage_reports?view=graph-rest-1.0)<br/>[Mailbox usage](/graph/api/resources/mailbox_usage_reports?view=graph-rest-1.0)|
-|SharePoint |[Activity](/graph/api/resources/sharepoint_activity_reports?view=graph-rest-1.0)<br/>[Site usage](/graph/api/resources/sharepoint_site_usage_reports?view=graph-rest-1.0)|
-|Skype for Business |[Activity](/graph/api/resources/skype_for_business_activity_reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/skype_for_business_device_usage_reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/skype_for_business_device_usage_reports?view=graph-rest-1.0)<br/>[Participant activity](/graph/api/resources/skype_for_business_participant_activity_reports?view=graph-rest-1.0)<br/>[Peer to peer activity](/graph/api/resources/skype_for_business_peer_to_peer_activity?view=graph-rest-1.0)|
-|Yammer |[Activity](/graph/api/resources/yammer_activity_reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/yammer_device_usage_reports?view=graph-rest-1.0)<br/>[Groups activity](/graph/api/resources/yammer_groups_activity_reports?view=graph-rest-1.0)|
+|Microsoft Teams|[Device usage](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>|[User activity](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
+|Office 365 (general) |[Activations](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[Active users](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[Groups activity](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0)|
+|OneDrive |[Activity](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[Usage](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0)|
+|Outlook|[Activity](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[App usage](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[Mailbox usage](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0)|
+|SharePoint |[Activity](/graph/api/resources/sharepoint-activity-reports?view=graph-rest-1.0)<br/>[Site usage](/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-1.0)|
+|Skype for Business |[Activity](/graph/api/resources/skype-for-business-activity-reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Participant activity](/graph/api/resources/skype-for-business-participant-activity-reports?view=graph-rest-1.0)<br/>[Peer to peer activity](/graph/api/resources/skype-for-business-peer-to-peer-activity?view=graph-rest-1.0)|
+|Yammer |[Activity](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[Groups activity](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0)|
 
 ## API reference
 Looking for the API reference for this service?

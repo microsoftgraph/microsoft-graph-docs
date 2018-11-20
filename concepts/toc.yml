@@ -1,16 +1,15 @@
   name: Graph Docs
   items:
-  - name: Microsoft Graph
+  - name: Overview of Microsoft Graph
     href: overview.md
     expanded: true
     items:
     - name: Explore
       expanded: true
       items:
-      - name: Overview
-        href: overview.md
       - name: Services in Microsoft Graph
         href: overview-major-services.md
+        expanded: true
         items:
         - name: Users you can reach
           href: users-you-can-reach.md
@@ -215,5 +214,7 @@
           href: changelog.md
         - name: Errors
           href: errors.md
-    - name: API Reference
-      href: /graph/api/overview?toc=./ref/toc.json
+    - name: v1.0 API Reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+    - name: beta API Reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

@@ -1,4 +1,4 @@
-﻿# vppTokenRevokeLicensesActionResult resource type
+# vppTokenRevokeLicensesActionResult resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,18 +6,18 @@
 
 The status of the revoke licenses action performed on the Apple Volume Purchase Program token.
 
-Inherits from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)
+Inherits from [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|String|Action name Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
-|actionState|[actionState](../resources/intune_shared_actionstate.md)|State of the action Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md). Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Time the action was initiated Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
-|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
+|actionName|String|Action name Inherited from [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|State of the action Inherited from [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md). Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|startDateTime|DateTimeOffset|Time the action was initiated Inherited from [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
 |totalLicensesCount|Int32|A count of the number of licenses that were attempted to revoke.|
 |failedLicensesCount|Int32|A count of the number of licenses that failed to revoke.|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune_shared_vpptokenactionfailurereason.md)|The reason for the revoke licenses action failure. Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|The reason for the revoke licenses action failure. Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
 ## Relationships
 None
