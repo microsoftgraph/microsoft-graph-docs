@@ -111,7 +111,7 @@ Groups and Sites may have multiple Drive resources available.
 Drives with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
 
-[system]: ../resources/systemFacet.md
+[system]: ../resources/systemfacet.md
 
 <!-- {
   "type": "#page.annotation",

@@ -22,10 +22,10 @@ The following tasks are available for driveItemVersion resources.
 | [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
 | [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
 
-[version-list]: ../api/driveitem_list_versions.md
-[version-get]: ../api/driveitemversion_get.md
-[content-get]: ../api/driveitemversion_get_contents.md
-[version-restore]: ../api/driveitemversion_restore.md
+[version-list]: ../api/driveitem-list-versions.md
+[version-get]: ../api/driveitemversion-get.md
+[content-get]: ../api/driveitemversion-get-contents.md
+[version-restore]: ../api/driveitemversion-restore.md
 
 In the previous table, the examples use `/drive`, but there are many valid requests.
 

@@ -109,18 +109,18 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 In the previous table, the examples use `/drive`, but other paths are valid too.
 
-[itemActivity]: itemActivity.md
+[itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-activities]: ../api/activities_list.md
-[drive-following]: ../api/drive_list_following.md
-[drive-get]: ../api/drive_get.md
-[item-get]: ../api/driveitem_get.md
-[item-changes]: ../api/driveitem_delta.md
-[item-search]: ../api/driveitem_search.md
-[item-children]: ../api/driveitem_list_children.md
+[drive-activities]: ../api/activities-list.md
+[drive-following]: ../api/drive-list-following.md
+[drive-get]: ../api/drive-get.md
+[item-get]: ../api/driveitem-get.md
+[item-changes]: ../api/driveitem-delta.md
+[item-search]: ../api/driveitem-search.md
+[item-children]: ../api/driveitem-list-children.md
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

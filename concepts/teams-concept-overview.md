@@ -17,7 +17,7 @@ and [apps](/graph/api/teamsappinstallation-add?view=graph-rest-1.0).
 If you want to get the new team together to discuss the business issue, 
 [add a new event](/graph/api/group-post-events?view=graph-rest-1.0) to the team calendar.
 
-![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams_lifecycle.png)
+![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams-lifecycle.png)
 
 When the business issue is resolved and you no longer need the team, 
 use the Microsoft Teams API to [archive](/graph/api/team-archive?view=graph-rest-1.0)
@@ -68,7 +68,7 @@ You can create web sites, services, and native platform applications that run ou
 
 **Types of apps enabled for Microsoft Teams**
 
-![Call the Microsoft Teams API from tabs, bots, websites, and services](images/TeamsAppEndpoints.png)
+![Call the Microsoft Teams API from tabs, bots, websites, and services](images/teamsappendpoints.png)
 
 These collaboration tools include Microsoft Graph-enabled tabs or bots running inside Microsoft Teams apps. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to [create a tab](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that uses the existing website code.
 

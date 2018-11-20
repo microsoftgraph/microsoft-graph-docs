@@ -177,7 +177,7 @@ Content-type: application/json
 **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
 [list]: ../resources/list.md
-[listItem]: ../resources/listItem.md
+[listItem]: ../resources/listitem.md
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 

@@ -180,37 +180,37 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
-[item-preview]: ../api/driveItem_preview.md
+[item-preview]: ../api/driveitem-preview.md
 
 ## Remarks
 
 In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
 [audio]: audio.md
-[baseItem]: baseItem.md
+[baseItem]: baseitem.md
 [deleted]: deleted.md
-[download-format]: ../api/driveitem_get_content_format.md
-[driveItemVersion]: driveItemVersion.md
+[download-format]: ../api/driveitem-get-content-format.md
+[driveItemVersion]: driveitemversion.md
 [file]: file.md
-[fileSystemInfo]: fileSystemInfo.md
+[fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[getting previous versions]: ../api/driveitem_list_versions.md
-[getting thumbnails]: ../api/driveitem_list_thumbnails.md
-[identitySet]: identitySet.md
+[getting previous versions]: ../api/driveitem-list-versions.md
+[getting thumbnails]: ../api/driveitem-list-thumbnails.md
+[identitySet]: identityset.md
 [image]: image.md
-[itemReference]: itemReference.md
-[geoCoordinates]: geoCoordinates.md
-[listItem]: listItem.md
+[itemReference]: itemreference.md
+[geoCoordinates]: geocoordinates.md
+[listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
 [photo]: photo.md
-[remoteItem]: remoteItem.md
+[remoteItem]: remoteitem.md
 [root]: root.md
-[searchResult]: searchResult.md
+[searchResult]: searchresult.md
 [shared]: shared.md
-[sharepointIds]: sharepointIds.md
-[specialFolder]: specialFolder.md
-[thumbnailSet]: thumbnailSet.md
+[sharepointIds]: sharepointids.md
+[specialFolder]: specialfolder.md
+[thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users

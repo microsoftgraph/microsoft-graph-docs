@@ -10,7 +10,7 @@ title: Delete a page from a SharePoint site
 
 Removes a [sitePage][] from the site pages [list][] in a [site][].
 
-[sitePage]: ../resources/sitePage.md
+[sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 

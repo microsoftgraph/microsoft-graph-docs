@@ -8,7 +8,7 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 
 > **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
-[createLink]: driveItem_createLink.md
+[createLink]: driveitem-createlink.md
 
 ## Permissions
 

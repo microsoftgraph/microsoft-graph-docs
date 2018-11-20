@@ -108,11 +108,11 @@ In the previous table, the examples use `/drive`, but other pathes are valid too
 [identity-set]: identityset.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-get]: ../api/drive_get.md
-[item-get]: ../api/driveitem_get.md
-[item-changes]: ../api/driveitem_delta.md
-[item-search]: ../api/driveitem_search.md
-[item-children]: ../api/driveitem_list_children.md
+[drive-get]: ../api/drive-get.md
+[item-get]: ../api/driveitem-get.md
+[item-changes]: ../api/driveitem-delta.md
+[item-search]: ../api/driveitem-search.md
+[item-children]: ../api/driveitem-list-children.md
 
 
 <!-- {

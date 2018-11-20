@@ -44,7 +44,7 @@ Here is a JSON representation of the resource
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares_get.md
+[Shares]: ../api/shares-get.md
 
 ## Remarks
 
