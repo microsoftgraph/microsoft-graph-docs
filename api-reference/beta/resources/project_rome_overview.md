@@ -20,12 +20,12 @@ When an application publishes user activity objects, the object will show up in 
 
 You can use the following Microsoft Graph APIs to create and retrieve user activities:
 
-- [Create or replace activity](../api/projectrome_put_activity.md)
-- [Get activities](../api/projectrome_get_activities.md)
-- [Get recent activities](../api/projectrome_get_recent_activities.md)
-- [Delete an activity](../api/projectrome_delete_activity.md)
-- [Create or replace a history item](../api/projectrome_put_historyitem.md)
-- [Delete a history item](../api/projectrome_delete_historyitem.md)
+- [Create or replace activity](../api/projectrome-put-activity.md)
+- [Get activities](../api/projectrome-get-activities.md)
+- [Get recent activities](../api/projectrome-get-recent-activities.md)
+- [Delete an activity](../api/projectrome-delete-activity.md)
+- [Create or replace a history item](../api/projectrome-put-historyitem.md)
+- [Delete a history item](../api/projectrome-delete-historyitem.md)
 
 ## Devices
 
@@ -40,8 +40,8 @@ With these APIs, you can build apps that create rich experiences that transcend 
 You can use the following Microsoft Graph APIs to communicate with other Windows devices:
 
 - [List the user's devices](../api/user_list_devices.md)
-- [Send a command to a device](../api/send_device_command.md)
-- [Get command status](../api/get_device_command_status.md)
+- [Send a command to a device](../api/send-device-command.md)
+- [Get command status](../api/get-device-command-status.md)
 
 ## Notifications
 
@@ -49,5 +49,5 @@ You can use the notifications APIs in Microsoft Graph to deliver notifications a
 
 You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the [client SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
 
-For details, see [Create and send a notification](../api/projectrome_notification_post.md).
+For details, see [Create and send a notification](../api/projectrome-notification-post.md).
 

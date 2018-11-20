@@ -10,11 +10,11 @@ error message:
 
 "Your request can't be completed. You need to be an organizer to cancel a meeting."
 
-This action differs from [Delete](event_delete.md) in that **Cancel** is available to only the organizer, and lets
+This action differs from [Delete](event-delete.md) in that **Cancel** is available to only the organizer, and lets
 the organizer send a custom message to the attendees about the cancellation.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

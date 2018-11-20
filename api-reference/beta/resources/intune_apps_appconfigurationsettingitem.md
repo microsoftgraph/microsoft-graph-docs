@@ -1,4 +1,4 @@
-﻿# appConfigurationSettingItem resource type
+# appConfigurationSettingItem resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ Contains properties for App configuration setting item.
 |Property|Type|Description|
 |:---|:---|:---|
 |appConfigKey|String|app configuration key.|
-|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|String|app configuration key value.|
 
 ## Relationships

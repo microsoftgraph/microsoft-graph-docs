@@ -9,7 +9,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get anonymousIpRiskEvent](../api/anonymousipriskevent_get.md) | [anonymousIpRiskEvent](anonymousipriskevent.md) |Read properties and relationships of anonymousIpRiskEvent object.|
+|[Get anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) | [anonymousIpRiskEvent](anonymousipriskevent.md) |Read properties and relationships of anonymousIpRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

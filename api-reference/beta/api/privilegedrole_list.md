@@ -6,7 +6,7 @@ Retrieve a list of [privilegedRole](../resources/privilegedrole.md) objects.
 
 To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.
  

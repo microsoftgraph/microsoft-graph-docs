@@ -5,8 +5,8 @@
 Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
 The message is then saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft reply message](../api/message_createreply.md) to include a comment or update any message properties, 
-and then [send](../api/message_send.md) the reply.
+Alternatively, you can first [create a draft reply message](../api/message-createreply.md) to include a comment or update any message properties, 
+and then [send](../api/message-send.md) the reply.
 
 **Note**
 
@@ -16,7 +16,7 @@ you should send the reply to the recipients in **replyTo** and not the recipient
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

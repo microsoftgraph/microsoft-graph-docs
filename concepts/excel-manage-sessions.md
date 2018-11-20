@@ -13,11 +13,11 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
 ## Next step
-To learn how to create and use sessions, see the [Create session reference topic](../api-reference/v1.0/api/workbook_createsession.md).
+To learn how to create and use sessions, see the [Create session reference topic](/graph/api/workbook-createsession?view=graph-rest-1.0).
 
 ## See also
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
-* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)
+* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

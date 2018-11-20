@@ -2,11 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client ID, and client secret.
+Create a new [identityProvider](../resources/identityprovider.md) by specifying display name, identityProvider type, client ID, and client secret.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,7 +32,7 @@ POST /identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object. All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) object. All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
@@ -43,7 +43,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 

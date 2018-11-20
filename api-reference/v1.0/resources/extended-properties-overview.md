@@ -27,8 +27,8 @@ need to access custom data for Outlook MAPI properties that are not already expo
 ## Types of extended properties
 
 Depending on whether you intend to store a single or multiple values (of the same type) in an extended property, you can 
-create an extended property as a [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md), 
-or [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md).
+create an extended property as a [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), 
+or [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md).
 
 Each of these types identifies the property by its **id** and stores data in **value**. 
 
@@ -78,11 +78,11 @@ in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Prop
  
 Single-value extended property operations:
 
-- [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
+- [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)
 - [Get one or a collection of resource instances with an extended property using `$expand` or `$filter`](../api/singlevaluelegacyextendedproperty_get.md)
 
 Multi-value extended property operations:
 
-- [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
+- [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty_get.md)
 

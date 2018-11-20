@@ -161,27 +161,27 @@ Removing file permissions for a user may not immediately invalidate the URL.
 
 | Method                                                   | REST Path
 |:---------------------------------------------------------|:------------------
-| [Get item](../api/driveitem_get.md)                      | `GET /drive/items/{item-id}`
-| [List activities](../api/activities_list.md)             | `GET /drive/items/{item-id}/activities`
+| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
+| [List activities](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
 | [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`
 | [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [List children](../api/driveitem_list_children.md)       | `GET /drive/items/{item-id}/children`
-| [List versions](../api/driveitem_list_versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Create item](../api/driveitem_post_children.md)         | `POST /drive/items/{item-id}/children`
-| [Update item](../api/driveitem_update.md)                | `PATCH /drive/items/{item-id}`
-| [Upload content](../api/driveitem_put_content.md)        | `PUT /drive/items/{item-id}/content`
-| [Download content](../api/driveitem_get_content.md)      | `GET /drive/items/{item-id}/content`
+| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
+| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
+| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
+| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
+| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
+| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Delete item](../api/driveitem_delete.md)                | `DELETE /drive/items/{item-id}`
-| [Move item](../api/driveitem_move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copy item](../api/driveitem_copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Search items](../api/driveitem_search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [List changes in a drive](../api/driveitem_delta.md)     | `GET /drive/root/delta`
-| [List thumbnails](../api/driveitem_list_thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Create sharing link](../api/driveitem_createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Add permissions](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
-| [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Delete permission](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
+| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
+| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
+| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
+| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
+| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
+| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 

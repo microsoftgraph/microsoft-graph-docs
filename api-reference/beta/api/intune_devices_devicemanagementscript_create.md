@@ -1,12 +1,12 @@
-﻿# Create deviceManagementScript
+# Create deviceManagementScript
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object.
+Create a new [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -39,18 +39,18 @@ The following table shows the properties that are required when you create the d
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
-|runSchedule|[runSchedule](../resources/intune_devices_runschedule.md)|The interval for script to run. If not defined the script will run once|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once|
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
-|runAsAccount|[runAsAccountType](../resources/intune_devices_runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune_devices_devicemanagementscript.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object in the response body.
 
 ## Example
 ### Request

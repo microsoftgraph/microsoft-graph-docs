@@ -6,7 +6,7 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../../concepts/permissions_reference.md#education-permissions). 
+To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](/graph/permissions-reference#education-permissions). 
 
 ### App permissions to enable school IT admins to consent 
 
@@ -46,17 +46,17 @@ The rostering APIs provide the following key resources:
 
 The rostering APIs support the following scenarios:
 
-- [List all schools](../api/educationroot_list_schools.md) 
-- [List schools in which a class is taught](../api/educationclass_list_schools.md)
-- [List schools for a user](../api/educationuser_list_schools.md)
+- [List all schools](../api/educationroot-list-schools.md) 
+- [List schools in which a class is taught](../api/educationclass-list-schools.md)
+- [List schools for a user](../api/educationuser-list-schools.md)
 - [Get all classes](../api/educationroot_list_classes.md )
-- [Get classes in a school](../api/educationschool_list_classes.md)
-- [List classes for a user](../api/educationuser_list_classes.md)
-- [Add classes to a school](../api/educationschool_post_classes.md)
-- [Get students and teachers for a class](../api/educationclass_list_members.md)
-- [Add members to a class](../api/educationclass_post_members.md) 
-- [List teachers for a class](../api/educationclass_list_teachers.md)
-- [Get users in a school](../api/educationschool_list_users.md)
+- [Get classes in a school](../api/educationschool-list-classes.md)
+- [List classes for a user](../api/educationuser-list-classes.md)
+- [Add classes to a school](../api/educationschool-post-classes.md)
+- [Get students and teachers for a class](../api/educationclass-list-members.md)
+- [Add members to a class](../api/educationclass-post-members.md) 
+- [List teachers for a class](../api/educationclass-list-teachers.md)
+- [Get users in a school](../api/educationschool-list-users.md)
 
 <!-- Should you list delete scenarios here as well? -->
 

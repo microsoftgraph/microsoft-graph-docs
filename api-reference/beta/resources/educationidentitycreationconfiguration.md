@@ -6,7 +6,7 @@ Defines the settings on creation of school data profile identities. These identi
 
 > **Note:** If you have directory sync turned on to sync between on-premises Active Directory and Azure Active Directory (Azure AD), use the [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) resource instead.
 
-Derived from [educationIdentitySynchronizationConfiguration](educationIdentitySynchronizationConfiguration.md).
+Derived from [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md).
 
 ## Properties
 

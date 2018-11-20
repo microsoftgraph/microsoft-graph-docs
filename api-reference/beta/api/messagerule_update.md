@@ -5,7 +5,7 @@
 Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and updated [message
 ## Example
 ##### Request
 The following example changes the name of the rule, and the actions to be taken for that rule in the 
-[example](messagerule_get.md#example) in [Get rule](messagerule_get.md), from forwarding to an address to marking its importance as high. 
+[example](messagerule-get.md#example) in [Get rule](messagerule-get.md), from forwarding to an address to marking its importance as high. 
 <!-- {
   "blockType": "request",
   "name": "update_messagerule"

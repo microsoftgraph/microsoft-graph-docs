@@ -6,7 +6,7 @@ Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in t
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -24,7 +24,7 @@ GET /teams/{id}/installedApps
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

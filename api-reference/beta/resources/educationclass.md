@@ -9,19 +9,19 @@ Represents a class within a school. The **educationClass** resource corresponds 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationClass](../api/educationclass_get.md) | [educationClass](educationclass.md) |Read properties and relationships of an **educationClass** object.|
-|[Add member](../api/educationclass_post_members.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the members navigation property.|
-|[List members](../api/educationclass_list_members.md) |[educationUser](educationuser.md) collection| Get an **educationUser** object collection.|
-|[Remove student](../api/educationclass_delete_members.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the members navigation property.|
-|[List schools](../api/educationclass_list_schools.md) |[educationSchool](educationschool.md) collection| Get an **educationSchool** object collection.|
-|[Add teacher](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
-|[List teachers](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
-|[Remove teacher](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
-|[Create educationAssignment](../api/educationclass_post_assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
-|[List assignments](../api/educationclass_list_assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
-|[Get group](../api/educationclass_get_group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
-|[Update](../api/educationclass_update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
-|[Delete](../api/educationclass_delete.md) | None |Delete **educationClass** object. |
+|[Get educationClass](../api/educationclass-get.md) | [educationClass](educationclass.md) |Read properties and relationships of an **educationClass** object.|
+|[Add member](../api/educationclass-post-members.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the members navigation property.|
+|[List members](../api/educationclass-list-members.md) |[educationUser](educationuser.md) collection| Get an **educationUser** object collection.|
+|[Remove student](../api/educationclass-delete-members.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the members navigation property.|
+|[List schools](../api/educationclass-list-schools.md) |[educationSchool](educationschool.md) collection| Get an **educationSchool** object collection.|
+|[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
+|[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
+|[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
+|[Create educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
+|[List assignments](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
+|[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
+|[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
+|[Delete](../api/educationclass-delete.md) | None |Delete **educationClass** object. |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -12,7 +12,7 @@ This resource provides information on the status of a asynchronous job progress.
 
 The following API calls return **AsyncJobStatus** resources:
 
-* [Copy Item](../api/driveitem_copy.md)
+* [Copy Item](../api/driveitem-copy.md)
 
 ## JSON representation
 

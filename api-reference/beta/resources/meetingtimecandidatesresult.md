@@ -4,7 +4,7 @@
 
 A collection of meeting suggestions if there is any, or the reason if there isn't.
 
-The following are the possible reasons that [findMeetingTimes](../api/user_findmeetingtimes.md) does not return any meeting suggestions.
+The following are the possible reasons that [findMeetingTimes](../api/user-findmeetingtimes.md) does not return any meeting suggestions.
 
 |**emptySuggestionsHint value**|**Reasons**|
 |:-----|:-----|
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |emptySuggestionsHint|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`.|
-|meetingTimeSlots|[meetingTimeCandidate](meetingTimeCandidate.md) collection|An array of meeting suggestions.|
+|meetingTimeSlots|[meetingTimeCandidate](meetingtimecandidate.md) collection|An array of meeting suggestions.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

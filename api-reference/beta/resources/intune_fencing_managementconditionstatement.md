@@ -1,4 +1,4 @@
-﻿# managementConditionStatement resource type
+# managementConditionStatement resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,13 +8,13 @@ A management condition statement is a group of management conditions that enable
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managementConditionStatements](../api/intune_fencing_managementconditionstatement_list.md)|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) collection|List properties and relationships of the [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) objects.|
-|[Get managementConditionStatement](../api/intune_fencing_managementconditionstatement_get.md)|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md)|Read properties and relationships of the [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object.|
-|[Create managementConditionStatement](../api/intune_fencing_managementconditionstatement_create.md)|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md)|Create a new [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object.|
-|[Delete managementConditionStatement](../api/intune_fencing_managementconditionstatement_delete.md)|None|Deletes a [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md).|
-|[Update managementConditionStatement](../api/intune_fencing_managementconditionstatement_update.md)|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md)|Update the properties of a [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object.|
-|[getManagementConditionStatementExpressionString function](../api/intune_fencing_managementconditionstatement_getmanagementconditionstatementexpressionstring.md)|[managementConditionExpressionString](../resources/intune_fencing_managementconditionexpressionstring.md)|Not yet documented|
-|[getManagementConditionStatementsForPlatform function](../api/intune_fencing_managementconditionstatement_getmanagementconditionstatementsforplatform.md)|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) collection|Not yet documented|
+|[List managementConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|List properties and relationships of the [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) objects.|
+|[Get managementConditionStatement](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Read properties and relationships of the [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object.|
+|[Create managementConditionStatement](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Create a new [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object.|
+|[Delete managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|None|Deletes a [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).|
+|[Update managementConditionStatement](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Update the properties of a [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object.|
+|[getManagementConditionStatementExpressionString function](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md)|Not yet documented|
+|[getManagementConditionStatementsForPlatform function](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -24,15 +24,15 @@ A management condition statement is a group of management conditions that enable
 |description|String|The admin defined description of the management condition statement.|
 |createdDateTime|DateTimeOffset|The time the management condition statement was created. Generated service side.|
 |modifiedDateTime|DateTimeOffset|The time the management condition statement was last modified. Updated service side.|
-|expression|[managementConditionExpression](../resources/intune_fencing_managementconditionexpression.md)|The management condition statement expression used to evaluate if a management condition statement was activated/deactivated.|
+|expression|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|The management condition statement expression used to evaluate if a management condition statement was activated/deactivated.|
 |eTag|String|ETag of the management condition statement. Updated service side.|
-|applicablePlatforms|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md) collection|The applicable platforms for this management condition statement.
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition statement.
 This is calculated from looking the management conditions associated to the management condition statement and finding the intersection of applicable platforms.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managementConditions|[managementCondition](../resources/intune_fencing_managementcondition.md) collection|The management conditions associated to the management condition statement.|
+|managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) collection|The management conditions associated to the management condition statement.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

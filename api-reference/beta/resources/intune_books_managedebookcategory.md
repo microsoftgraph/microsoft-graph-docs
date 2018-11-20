@@ -1,4 +1,4 @@
-﻿# managedEBookCategory resource type
+# managedEBookCategory resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ Contains properties for a single Intune eBook category.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedEBookCategories](../api/intune_books_managedebookcategory_list.md)|[managedEBookCategory](../resources/intune_books_managedebookcategory.md) collection|List properties and relationships of the [managedEBookCategory](../resources/intune_books_managedebookcategory.md) objects.|
-|[Get managedEBookCategory](../api/intune_books_managedebookcategory_get.md)|[managedEBookCategory](../resources/intune_books_managedebookcategory.md)|Read properties and relationships of the [managedEBookCategory](../resources/intune_books_managedebookcategory.md) object.|
-|[Create managedEBookCategory](../api/intune_books_managedebookcategory_create.md)|[managedEBookCategory](../resources/intune_books_managedebookcategory.md)|Create a new [managedEBookCategory](../resources/intune_books_managedebookcategory.md) object.|
-|[Delete managedEBookCategory](../api/intune_books_managedebookcategory_delete.md)|None|Deletes a [managedEBookCategory](../resources/intune_books_managedebookcategory.md).|
-|[Update managedEBookCategory](../api/intune_books_managedebookcategory_update.md)|[managedEBookCategory](../resources/intune_books_managedebookcategory.md)|Update the properties of a [managedEBookCategory](../resources/intune_books_managedebookcategory.md) object.|
+|[List managedEBookCategories](../api/intune-books-managedebookcategory-list.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) collection|List properties and relationships of the [managedEBookCategory](../resources/intune-books-managedebookcategory.md) objects.|
+|[Get managedEBookCategory](../api/intune-books-managedebookcategory-get.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Read properties and relationships of the [managedEBookCategory](../resources/intune-books-managedebookcategory.md) object.|
+|[Create managedEBookCategory](../api/intune-books-managedebookcategory-create.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Create a new [managedEBookCategory](../resources/intune-books-managedebookcategory.md) object.|
+|[Delete managedEBookCategory](../api/intune-books-managedebookcategory-delete.md)|None|Deletes a [managedEBookCategory](../resources/intune-books-managedebookcategory.md).|
+|[Update managedEBookCategory](../api/intune-books-managedebookcategory-update.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|Update the properties of a [managedEBookCategory](../resources/intune-books-managedebookcategory.md) object.|
 
 ## Properties
 |Property|Type|Description|

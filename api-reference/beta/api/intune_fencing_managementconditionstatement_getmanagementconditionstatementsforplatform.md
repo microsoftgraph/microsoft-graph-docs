@@ -1,4 +1,4 @@
-﻿# getManagementConditionStatementsForPlatform function
+# getManagementConditionStatementsForPlatform function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,12 +36,12 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md)|Not yet documented|
+|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Not yet documented|
 
 
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection in the response body.
 
 ## Example
 ### Request

@@ -11,8 +11,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete itemAttachment object. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|

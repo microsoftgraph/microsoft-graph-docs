@@ -39,7 +39,7 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Upload large files with an upload session](../api/driveitem_createuploadsession.md)
+- [Upload large files with an upload session](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

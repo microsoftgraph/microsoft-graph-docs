@@ -1,4 +1,4 @@
-﻿# windowsInformationProtectionProxiedDomainCollection resource type
+# windowsInformationProtectionProxiedDomainCollection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ Windows Information Protection Proxied Domain Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|proxiedDomains|[proxiedDomain](../resources/intune_mam_proxieddomain.md) collection|Collection of proxied domains|
+|proxiedDomains|[proxiedDomain](../resources/intune-mam-proxieddomain.md) collection|Collection of proxied domains|
 
 ## Relationships
 None

@@ -1,10 +1,10 @@
-﻿# Create remoteAssistancePartner
+# Create remoteAssistancePartner
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) object.
+Create a new [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -37,13 +37,13 @@ The following table shows the properties that are required when you create the r
 |id|String|Unique identifier of the partner.|
 |displayName|String|Display name of the partner.|
 |onboardingUrl|String|URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.
 
 ## Example
 ### Request

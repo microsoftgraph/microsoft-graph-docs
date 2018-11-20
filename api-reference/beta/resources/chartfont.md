@@ -9,8 +9,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

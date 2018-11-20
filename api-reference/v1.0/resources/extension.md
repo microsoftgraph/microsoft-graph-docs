@@ -1,6 +1,6 @@
 # extension resource type
 
-An abstract type to support the OData v4 open type [openTypeExtension](openTypeExtension.md).
+An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 
 ## JSON representation
 
@@ -34,7 +34,7 @@ None
 
 ## Methods
 
-See the methods of the derived type [openTypeExtension](openTypeExtension.md) for actually supported methods.
+See the methods of the derived type [openTypeExtension](opentypeextension.md) for actually supported methods.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

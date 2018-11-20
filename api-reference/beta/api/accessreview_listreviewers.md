@@ -2,9 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, retrieve the reviewers of an [accessReview](../resources/accessreview.md) object.
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the reviewers of an [accessReview](../resources/accessreview.md) object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -64,9 +64,9 @@ Content-type: application/json
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](accessreview_get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
-|[Add accessReview reviewer](accessreview_addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](accessreview_removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
+|[Get accessReview](accessreview-get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
+|[Add accessReview reviewer](accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
 
 
 <!-- {

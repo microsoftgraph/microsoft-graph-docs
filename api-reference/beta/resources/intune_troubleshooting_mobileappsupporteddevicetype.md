@@ -1,4 +1,4 @@
-﻿# mobileAppSupportedDeviceType resource type
+# mobileAppSupportedDeviceType resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Device properties
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[deviceType](../resources/intune_shared_devicetype.md)|Device type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|type|[deviceType](../resources/intune-shared-devicetype.md)|Device type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |minimumOperatingSystemVersion|String|Minimum OS version|
 |maximumOperatingSystemVersion|String|Maximum OS version|
 

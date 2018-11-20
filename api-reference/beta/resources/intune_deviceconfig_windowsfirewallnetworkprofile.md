@@ -1,4 +1,4 @@
-﻿# windowsFirewallNetworkProfile resource type
+# windowsFirewallNetworkProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Windows Firewall Profile Policies.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Configures the host device to allow or block the firewall and advanced security enforcement for the network profile. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Configures the host device to allow or block the firewall and advanced security enforcement for the network profile. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |stealthModeRequired|Boolean|Allow the server to operate in stealth mode. When StealthModeRequired and StealthModeBlocked are both true, StealthModeBlocked takes priority.|
 |stealthModeBlocked|Boolean|Prevent the server from operating in stealth mode. When StealthModeRequired and StealthModeBlocked are both true, StealthModeBlocked takes priority.|
 |incomingTrafficRequired|Boolean|Configures the firewall to allow incoming traffic pursuant to other policy settings. When IncomingTrafficRequired and IncomingTrafficBlocked are both true, IncomingTrafficBlocked takes priority.|

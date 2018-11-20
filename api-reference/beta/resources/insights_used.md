@@ -11,16 +11,16 @@ An insight representing documents used by a specific user. The insights returns 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List used](../api/insights_list_used.md) |[insights_used](insights_used.md) collection| Get a list of used files.|
+|[List used](../api/insights-list-used.md) |[insights_used](insights-used.md) collection| Get a list of used files.|
 
 ## Properties
 
 | Property              | Type          	 		| Description  |
 | -------------         |---------------	 		| -------------|
 | id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
-| lastUsed			    | [usageDetails](insights_usagedetails.md)				| Information about when the item was last viewed and modified by the user. Read only. 	   |
-| resourceVisualization	| [resourceVisualization](insights_resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
-| resourceReference		| [resourceReference](insights_resourcereference.md)                      | Reference properties of the used document, such as the url and type of the document. Read-only	   |
+| lastUsed			    | [usageDetails](insights-usagedetails.md)				| Information about when the item was last viewed and modified by the user. Read only. 	   |
+| resourceVisualization	| [resourceVisualization](insights-resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
+| resourceReference		| [resourceReference](insights-resourcereference.md)                      | Reference properties of the used document, such as the url and type of the document. Read-only	   |
 
 ## Relationships
 

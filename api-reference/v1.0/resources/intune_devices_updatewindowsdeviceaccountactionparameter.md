@@ -1,4 +1,4 @@
-﻿# updateWindowsDeviceAccountActionParameter resource type
+# updateWindowsDeviceAccountActionParameter resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,7 +6,7 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceAccount|[windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|Not yet documented|
+|deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|Not yet documented|
 |passwordRotationEnabled|Boolean|Not yet documented|
 |calendarSyncEnabled|Boolean|Not yet documented|
 |deviceAccountEmail|String|Not yet documented|

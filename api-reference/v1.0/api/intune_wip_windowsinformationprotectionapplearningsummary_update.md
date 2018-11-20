@@ -1,10 +1,10 @@
-﻿# Update windowsInformationProtectionAppLearningSummary
+# Update windowsInformationProtectionAppLearningSummary
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object.
+Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -28,21 +28,21 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object.
+In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.
 
-The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md).
+The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Application Name|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Application Type. Possible values are: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Application Type. Possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object in the response body.
 
 ## Example
 ### Request

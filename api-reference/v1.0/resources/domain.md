@@ -6,36 +6,36 @@ Use domain operations to associate domains to a tenant, verify domain ownership,
 
 To associate a domain with a tenant:
 
-1. [Associate](../api/domain_post_domains.md) a domain with a tenant.
+1. [Associate](../api/domain-post-domains.md) a domain with a tenant.
 
-2. [Retrieve](../api/domain_list_verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or DNS server configuration.
+2. [Retrieve](../api/domain-list-verificationdnsrecords.md) the domain verification records. Add the verification record details to the domain's zone file using the domain registrar or DNS server configuration.
 
-3. [Verify](../api/domain_verify.md) the ownership of the domain. This will verify the domain and set the *isVerified* property to *true*.
+3. [Verify](../api/domain-verify.md) the ownership of the domain. This will verify the domain and set the *isVerified* property to *true*.
 
-4. [Indicate](../api/domain_update.md) the supported services you plan to use with the domain.
+4. [Indicate](../api/domain-update.md) the supported services you plan to use with the domain.
 
-5. [Configure](../api/domain_list_serviceconfigurationrecords.md) supported services by retrieving a list of records needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
+5. [Configure](../api/domain-list-serviceconfigurationrecords.md) supported services by retrieving a list of records needed to enable services for the domain. Add the configuration record details to the domain's zone file using the domain registrar or DNS server configuration.
 
 ## Methods
 
 | Method   | Return Type |Description|
 |:---------------|:--------|:----------|
-|[Get domain](../api/domain_get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
-|[Create domain](../api/domain_post_domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
-|[List domainNameReference](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
-|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
-|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
-|[Update domain](../api/domain_update.md) | [domain](domain.md) |Updates a domain.|
-|[Delete domain](../api/domain_delete.md) | None |Deletes a domain.|
-|[ForceDelete domain](../api/domain_forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
-|[Verify domain](../api/domain_verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
+|[Get domain](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
+|[Create domain](../api/domain-post-domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
+|[List domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
+|[List serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
+|[List verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
+|[Update domain](../api/domain-update.md) | [domain](domain.md) |Updates a domain.|
+|[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
+|[ForceDelete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
+|[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
 
 ## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
 |authenticationType|String| Indicates the configured authentication type for the domain. The value is either *Managed* or *Federated*.<br> *Managed* indicates a cloud managed domain where Azure AD performs user authentication.<br>*Federated* indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable |
-|availabilityStatus|String| This property is always null except when the [verify](../api/domain_verify.md) action is used. When the [verify](../api/domain_verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either *AvailableImmediately* or *EmailVerifiedDomainTakeoverScheduled*.|
+|availabilityStatus|String| This property is always null except when the [verify](../api/domain-verify.md) action is used. When the [verify](../api/domain-verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either *AvailableImmediately* or *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique |
 |isAdminManaged|Boolean| The value of the property is false if the DNS record management of the domain has been delegated to Office 365. Otherwise, the value is true. Not nullable |
 |isDefault|Boolean| True if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable |
