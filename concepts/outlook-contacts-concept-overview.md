@@ -14,7 +14,7 @@ Hundreds of millions of consumers and tens of millions of organization customers
 The contacts API lets you keep your customers organized, in close parity as the customers do it themselves through Outlook:
 
 - Similarly to the customer experience, you can create [contact](/graph/api/resources/contact?view=graph-rest-1.0) instances and assign them to [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) objects.
-- The contacts API lets you assign categories contacts, as well as events, messages, tasks, and group posts in a consistent way to enhance organization and disovery. In addition, you can [define a user's master list of categories](/graph/api/outlookuser_post_mastercategories?view=graph-rest-1.0), which can open up additional creative scenarios.
+- The contacts API lets you assign categories contacts, as well as events, messages, tasks, and group posts in a consistent way to enhance organization and disovery. In addition, you can [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), which can open up additional creative scenarios.
 - You can set a flag on a [contact](/graph/api/resources/contact?view=graph-rest-1.0) for follow-up. (Flagging is currently [in preview](versioning-and-support.md#beta-version) in Microsoft Graph.)
 
 

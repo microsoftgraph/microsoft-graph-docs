@@ -94,11 +94,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Delta query
 
-| Change type | Version | Description                              |
+| **Change type** | **Version** | **Description**                  |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | Beta   | Added [delta query](delta-query-overview.md) capability for [directoryObject](/graph/api/directoryobject-delta?view=graph-rest-beta) |
-| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](/graph/api/user-delta?view=graph-rest-1.0) and [groups](/graph/api/group-delta?view=graph-rest-1.0). |
-| Addition        | v1.0        | Added [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function for [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](delta-query-overview.md). |
+| Change      | v1.0 and beta  | Alternative behavior to return changed properties only in JSON response for [users](/graph/api/user-delta?view=graph-rest-1.0) and [groups](/graph/api/group-delta?view=graph-rest-1.0). |
+| Addition    | v1.0   | Added [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function for [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](delta-query-overview.md). |
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          | 
+| :-------------- | :------------ | :--------------------------------------- | 
+| Addition | Beta | Added the **licenseAssignmentStates** property to the [User](/graph/api/resources/user?view=graph-rest-beta) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](/graph/api/resources/group?view=graph-rest-beta) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
 ### Microsoft Intune APIs
 
@@ -1123,7 +1131,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|v1.0|Added the **deviceEnrollmentLimit** property to the [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) entity|
 |Change|v1.0|Added the **managedDevices**, **managedAppRegistrations** and **deviceManagementTroubleshootingEvents** navigation properties to the [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0) entity|
 |||
-|Addition|Beta|Added new entities:<br/>[deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta)<br/>[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile)<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-beta)<br/>|
+|Addition|Beta|Added new entities:<br/>[deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta)<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-beta)<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-beta)<br/>|
 |Addition|Beta|Added new complex types:<br/>[revokeAppleVppLicensesActionResult](/graph/api/resources/intune-devices-revokeapplevpplicensesactionresult?view=graph-rest-beta)<br/>[vppTokenRevokeLicensesActionResult](/graph/api/resources/intune-onboarding-vpptokenrevokelicensesactionresult?view=graph-rest-beta)<br/>|
 |Addition|Beta|Added the [revokeToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken?view=graph-rest-beta) action on [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta) |
 |Addition|Beta|Added the [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) action on [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta) |
@@ -1538,9 +1546,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 [ItemReference-beta]: /graph/api/resources/itemreference?view=graph-rest-beta
 [SharepointIds-beta]: /graph/api/resources/sharepointids?view=graph-rest-beta
 [Video-beta]: /graph/api/resources/video?view=graph-rest-beta
-[CheckIn-beta]: /graph/api/driveitem_checkin?view=graph-rest-beta
-[CheckOut-beta]: /graph/api/driveitem_checkout?view=graph-rest-beta
-[CreateLink-beta]: /graph/api/driveitem_createlink?view=graph-rest-beta
+[CheckIn-beta]: /graph/api/driveitem-checkin?view=graph-rest-beta
+[CheckOut-beta]: /graph/api/driveitem-checkout?view=graph-rest-beta
+[CreateLink-beta]: /graph/api/driveitem-createlink?view=graph-rest-beta
 
 
 ### Outlook calendar
@@ -1611,18 +1619,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 [ChoiceColumn]: /graph/api/resources/choicecolumn?view=graph-rest-1.0
 [ColumnDefinition-beta]: /graph/api/resources/columndefinition?view=graph-rest-beta
 [ColumnDefinition]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[ColumnLink-beta]: /graph/api/resources/columnLink?view=graph-rest-beta
-[ColumnLink]: /graph/api/resources/columnLink?view=graph-rest-1.0
-[ContentType-beta]: /graph/api/resources/contentType?view=graph-rest-beta
-[ContentType]: /graph/api/resources/contentType?view=graph-rest-1.0
-[ContentTypeInfo-beta]: /graph/api/resources/contentTypeInfo?view=graph-rest-beta
-[ContentTypeInfo]: /graph/api/resources/contentTypeInfo?view=graph-rest-1.0
-[ContentTypeOrder-beta]: /graph/api/resources/contentTypeOrder?view=graph-rest-beta
-[ContentTypeOrder]: /graph/api/resources/contentTypeOrder?view=graph-rest-1.0
+[ColumnLink-beta]: /graph/api/resources/columnlink?view=graph-rest-beta
+[ColumnLink]: /graph/api/resources/columnlink?view=graph-rest-1.0
+[ContentType-beta]: /graph/api/resources/contenttype?view=graph-rest-beta
+[ContentType]: /graph/api/resources/contenttype?view=graph-rest-1.0
+[ContentTypeInfo-beta]: /graph/api/resources/contenttypeinfo?view=graph-rest-beta
+[ContentTypeInfo]: /graph/api/resources/contenttypeinfo?view=graph-rest-1.0
+[ContentTypeOrder-beta]: /graph/api/resources/contenttypeorder?view=graph-rest-beta
+[ContentTypeOrder]: /graph/api/resources/contenttypeorder?view=graph-rest-1.0
 [CurrencyColumn-beta]: /graph/api/resources/currencycolumn?view=graph-rest-beta
 [CurrencyColumn]: /graph/api/resources/currencycolumn?view=graph-rest-1.0
 [DateTimeColumn]: /graph/api/resources/datetimecolumn?view=graph-rest-1.0
-[DefaultColumnValue]: /graph/api/resources/defaultColumnValue?view=graph-rest-1.0
+[DefaultColumnValue]: /graph/api/resources/defaultcolumnvalue?view=graph-rest-1.0
 [List-beta]: /graph/api/resources/list?view=graph-rest-beta
 [List]: /graph/api/resources/list?view=graph-rest-1.0
 [ListInfo-beta]: /graph/api/resources/listinfo?view=graph-rest-beta
@@ -1630,16 +1638,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 [ListItem-beta]: /graph/api/resources/listitem?view=graph-rest-beta
 [ListItem]: /graph/api/resources/listitem?view=graph-rest-1.0
 [ListItemVersion-beta]: /graph/api/resources/listitemversion?view=graph-rest-beta
-[LookupColumn-beta]: /graph/api/resources/lookupColumn?view=graph-rest-beta
+[LookupColumn-beta]: /graph/api/resources/lookupcolumn?view=graph-rest-beta
 [LookupColumn]: /graph/api/resources/lookupcolumn?view=graph-rest-1.0
-[NumberColumn-beta]: /graph/api/resources/numberColumn?view=graph-rest-beta
+[NumberColumn-beta]: /graph/api/resources/numbercolumn?view=graph-rest-beta
 [NumberColumn]: /graph/api/resources/numbercolumn?view=graph-rest-1.0
-[PersonOrGroupColumn-beta]: /graph/api/resources/personOrGroupColumn?view=graph-rest-beta
+[PersonOrGroupColumn-beta]: /graph/api/resources/personorgroupcolumn?view=graph-rest-beta
 [PersonOrGroupColumn]: /graph/api/resources/personorgroupcolumn?view=graph-rest-1.0
 [Site-beta]: /graph/api/resources/site?view=graph-rest-beta
 [Site]: /graph/api/resources/site?view=graph-rest-1.0
 [SystemFacet-beta]: /graph/api/resources/systemfacet?view=graph-rest-beta
-[SystemFacet]: /graph/api/resources/systemFacet?view=graph-rest-1.0
+[SystemFacet]: /graph/api/resources/systemfacet?view=graph-rest-1.0
 [TextColumn]: /graph/api/resources/textcolumn?view=graph-rest-1.0
 
 
@@ -2384,7 +2392,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon & long running processes in business scenarios](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). |
-| Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](permissions_reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
+| Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 
 ### Invitation APIs

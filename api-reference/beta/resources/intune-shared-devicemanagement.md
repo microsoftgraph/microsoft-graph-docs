@@ -73,9 +73,9 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Company terms**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|The terms and conditions associated with device management of the company.|
 |**Corporate enrollment**|
-|enrollmentProfiles|[enrollmentProfile](../resources/intune-corpenrollment-enrollmentprofile.md) collection|The enrollment profiles.|
-|importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-corpenrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
-|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-shared-importeddeviceidentity.md) collection|The imported device identities.|
+|enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|The enrollment profiles.|
+|importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
+|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
 |**Device configuration**|
 |advancedThreatProtectionOnboardingStateSummary|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|The summary state of ATP onboarding state for this account.|
 |cartToClassAssociations|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) collection|The Cart To Class Associations.|

@@ -137,7 +137,7 @@ how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[odata-query-parameters]: /graph/query_parameters
+[odata-query-parameters]: /graph/query-parameters
 
 <!-- {
   "type": "#page.annotation",

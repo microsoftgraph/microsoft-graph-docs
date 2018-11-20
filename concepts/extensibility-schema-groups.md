@@ -67,7 +67,7 @@ Then, specify a description (to enable discoverability), target types
 (defining which resources this extension applies to), and the custom properties that make up the schema.  In this example, 
 specify the `courseId`, `courseName` and `courseType` custom properties and their types.
 
-See an [example of the other way to assign **id** in the request](/graph/api/schemaextension_post_schemaextensions?view=graph-rest-1.0), that requires you to provide only a schema name.
+See an [example of the other way to assign **id** in the request](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0#request-2), that requires you to provide only a schema name.
 
 Notice that when you initially create a schema extension, its status is **InDevelopment**. While you're developing the extension, you can keep it in this status, 
 during which only your app that created it can update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to **Available**.

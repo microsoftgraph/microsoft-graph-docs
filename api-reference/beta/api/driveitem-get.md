@@ -41,7 +41,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
-You can use the [`$expand` query string parameter](/graph/query_parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
+You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
 
 ## Optional request headers
 
@@ -107,7 +107,7 @@ See [Error Responses][error-response] for more info about
 how errors are returned.
 
 [error-response]: /graph/errors
-[odata-parameters]: /graph/query_parameters
+[odata-parameters]: /graph/query-parameters
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
