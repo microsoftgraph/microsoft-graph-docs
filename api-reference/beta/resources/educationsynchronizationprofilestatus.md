@@ -10,7 +10,7 @@ Represents the synchronization status of a school data [synchronization profile]
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
+| [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
 
 ## Properties
 

@@ -4,7 +4,7 @@ The education API in Microsoft Graph enhances Office 365 resources with informat
 
 The education API in Microsoft Graph provides access to classes, schools, users, assignments, submissions and more.
 
-![EDU Graph Overview](images/EDUGraph.PNG)
+![EDU Graph Overview](images/edugraph.png)
 
 ## Why integrate with education scenarios?
 
@@ -14,9 +14,9 @@ Most education software developers learn early on that class roster is one of th
 
 The following are some of the scenarios that the roster APIs enable:
 
-- [Get all classes in a school](/graph/api/educationschool_list_classes?view=graph-rest-1.0)
-- [Get all users in a class](/graph/api/educationclass_list_members?view=graph-rest-1.0)
-- [Get all the classes I teach](/graph/api/educationuser_list_classes?view=graph-rest-1.0)
+- [Get all classes in a school](/graph/api/educationschool-list-classes?view=graph-rest-1.0)
+- [Get all users in a class](/graph/api/educationclass-list-members?view=graph-rest-1.0)
+- [Get all the classes I teach](/graph/api/educationuser-list-classes?view=graph-rest-1.0)
 
 
 ### Use Microsoft Teams to create class assignments in an assignments tab
@@ -30,15 +30,15 @@ For education, Microsoft Teams custom tab apps are opened in an education class 
 
 The following image shows a web app for managing assignments in an Assignments custom Tab for a **Science - Biology 1** class.
 
-![Screenshot of an Assignments tab in Microsoft Teams for a Science - Biology class](images/AssignmentsInTeams.PNG)
+![Screenshot of an Assignments tab in Microsoft Teams for a Science - Biology class](images/assignmentsinteams.png)
 
 
 With the assignment API, your app can interact with the assignment service outside of Microsoft Teams. Microsoft Teams will handle distribution, due dates, and grading while your system can provide a rich learning experience to students.
 The following are examples of a few scenarios enabled by the assignments API:
 
-- [Add an assignment that links to your application](/graph/api/educationclass_post_assignments?view=graph-rest-beta) 
-- [Assign grades to individual students for assignments linked to your application](/graph/api/educationsubmission_update?view=graph-rest-beta)
-- [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass_list_assignments?view=graph-rest-beta)
+- [Add an assignment that links to your application](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
+- [Assign grades to individual students for assignments linked to your application](/graph/api/educationsubmission-update?view=graph-rest-beta)
+- [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
 
 
 ### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
@@ -47,8 +47,8 @@ The following are examples of a few scenarios enabled by the assignments API:
 
 School Data Sync management APIs support end-to-end scenarios for managing sync; for example:
 
-- [Create a synchronization profile that automatically starts a sync](/graph/api/educationsynchronizationprofile_post?view=graph-rest-beta)
-- Manage sync lifecycle with [pause](/graph/api/educationsynchronizationprofile_pause?view=graph-rest-beta), [resume](/graph/api/educationsynchronizationprofile_resume?view=graph-rest-beta) and [reset](/graph/api/educationsynchronizationprofile_reset?view=graph-rest-beta) operations
+- [Create a synchronization profile that automatically starts a sync](/graph/api/educationsynchronizationprofile-post?view=graph-rest-beta)
+- Manage sync lifecycle with [pause](/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta), [resume](/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta) and [reset](/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta) operations
 
 ## API reference
 Looking for the API reference for this service?

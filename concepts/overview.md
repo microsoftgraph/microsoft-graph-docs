@@ -16,13 +16,13 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 To find out more, see 
 [Major services and features in Microsoft Graph](overview-major-services.md).
 
-Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user_list_memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user_list_manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
+Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
 
-You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights_trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user_list_people?view=graph-rest-beta) around a user.
+You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around a user.
 
 Discover the possibilities in the relationships within Microsoft Graph.
 
-![An image showing the primary resources and relationships that are part of the graph](images/microsoft_graph.png)
+![An image showing the primary resources and relationships that are part of the graph](images/microsoft-graph.png)
 
 ## What can you do with Microsoft Graph? 
 
@@ -91,8 +91,8 @@ For more information about Microsoft Graph Data Connect, see [Microsoft Graph Da
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](auth_overview.md) in your app.
-- Start [using the API](use_the_api.md).
+- Find out how to [get an auth token](auth-overview.md) in your app.
+- Start [using the API](use-the-api.md).
 
 ## Feedback?
 

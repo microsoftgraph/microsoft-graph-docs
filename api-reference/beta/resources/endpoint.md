@@ -8,8 +8,8 @@ Endpoints represent URLs for resources associated with an entity.  For example, 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
-|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
+|[List endpoints](../api/group-list-endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
+|[Get endpoint](../api/endpoint-get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -7,7 +7,7 @@ Manages sorting operations on Range objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Apply](../api/rangesort_apply.md)|None|Perform a sort operation.|
+|[Apply](../api/rangesort-apply.md)|None|Perform a sort operation.|
 
 ## Properties
 None

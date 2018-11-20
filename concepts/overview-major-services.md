@@ -40,7 +40,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](outlook-calendar-concept-overview.md)  |
 | Files | OneDrive and SharePoint | Manages and shares user files on OneDrive and SharePoint. | [OneDrive files storage overview](onedrive-concept-overview.md) |
 | Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](outlook-mail-concept-overview.md) |
-| Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote notes overview](integrate_with_onenote.md) |
+| Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote notes overview](integrate-with-onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](outlook-contacts-concept-overview.md) |
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](excel-concept-overview.md) |
 

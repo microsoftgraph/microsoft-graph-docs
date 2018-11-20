@@ -9,8 +9,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)	|Update RangeFont object. |
+|[Get RangeFont](../api/rangefont-get.md) | [RangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)	|Update RangeFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

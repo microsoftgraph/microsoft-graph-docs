@@ -2,8 +2,8 @@
 
 Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps: 
 
-- [Create a group](/graph/api/group_post_groups?view=graph-rest-beta) with the right properties.
-- [Add a team](/graph/api/team_put_teams?view=graph-rest-beta) to the group.
+- [Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.
+- [Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.
 
 ## Create a group
 

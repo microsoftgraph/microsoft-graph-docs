@@ -6,20 +6,20 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 This resource supports:
 
-- Using [delta query](/graph/delta_query_overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryobject_delta.md) function.
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/directoryobject-delta.md) function.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
-|[Delete](../api/directoryobject_delete.md) | None |Delete a directory object. |
-|[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
-|[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
-|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
-|[validateProperties](../api/directoryobject_validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
-|[delta](../api/directoryobject_delta.md)|directoryObject collection| Get incremental changes for directory objects. Supports filtering by derrived type. |
+|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
+|[Delete](../api/directoryobject-delete.md) | None |Delete a directory object. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
+|[delta](../api/directoryobject-delta.md)|directoryObject collection| Get incremental changes for directory objects. Supports filtering by derrived type. |
 
 ## Properties
 

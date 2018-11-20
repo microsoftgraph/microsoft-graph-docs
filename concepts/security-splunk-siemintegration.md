@@ -193,18 +193,18 @@ Try searching Graph Security alerts:
 > **Note:**
 As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [Splunk search tutorials](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
 
- ![splunk_search_query](images/splunk_search_query.png)
+ ![splunk_search_query](images/splunk-search-query.png)
 > Search query: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
 
 Splunk also allows multiple actions on search results using the "Save As" menu option in top right of the screen. You can create Reports, Dashboard Panels, or Alerts based on your search filter.
 Below is an example of a dashboard with an event stream based on the previous query:
 You can add a drilldown link to each event to further access the details on Microsoft Graph site. See [Splunk drilldown documentation](https://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
 
- ![splunk_search_results](images/splunk_search_results.png)
+ ![splunk_search_results](images/splunk-search-results.png)
 
 Or you can create a dashboard as a timeline chart:
 
- ![splunk_search_timeline](images/splunk_search_timeline.png)
+ ![splunk_search_timeline](images/splunk-search-timeline.png)
 
 You can follow [Splunk Search & Report tutorial](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
 

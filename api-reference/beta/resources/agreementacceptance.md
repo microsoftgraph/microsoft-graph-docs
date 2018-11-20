@@ -9,9 +9,9 @@ Represents the current status of a user within scope of a company's customizable
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementAcceptance](../api/agreementacceptance_get.md) | [agreementAcceptance](agreementacceptance.md) | Read properties and relationships of agreementAcceptance object. |
-| [Update](../api/agreementacceptance_update.md) | [agreementAcceptance](agreementacceptance.md) | Update an **agreementAcceptance** object. |
-| [Delete](../api/agreementacceptance_delete.md) | None | Delete an **agreementAcceptance** object. |
+| [Get agreementAcceptance](../api/agreementacceptance-get.md) | [agreementAcceptance](agreementacceptance.md) | Read properties and relationships of agreementAcceptance object. |
+| [Update](../api/agreementacceptance-update.md) | [agreementAcceptance](agreementacceptance.md) | Update an **agreementAcceptance** object. |
+| [Delete](../api/agreementacceptance-delete.md) | None | Delete an **agreementAcceptance** object. |
 -->
 
 ## Properties

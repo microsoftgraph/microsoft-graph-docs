@@ -3,34 +3,34 @@ Represents an individual Post item within a [conversationThread](conversationthr
 
 Even though you cannot explicitly create a post, doing any of the following would create a post:
 
-- [Reply to an existing post](../api/post_reply.md) 
-- [Reply to an existing thread](../api/conversationthread_reply.md) 
-- [Create a thread in a new conversation](../api/group_post_threads.md)
-- [Create a new conversation](../api/group_post_conversations.md)
+- [Reply to an existing post](../api/post-reply.md) 
+- [Reply to an existing thread](../api/conversationthread-reply.md) 
+- [Create a thread in a new conversation](../api/group-post-threads.md)
+- [Create a new conversation](../api/group-post-conversations.md)
 
-This resource lets you add your own data to custom properties using [extensions](/graph/extensibility_overview).
+This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List posts](../api/conversationthread_list_posts.md) | [post](post.md) |Get the posts of the specified thread. |
-|[Get post](../api/post_get.md) | [post](post.md) |Get the properties and relationships of a post in a specified thread.|
-|[Reply](../api/post_reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
-|[Forward](../api/post_forward.md)|None|Forward a post to a recipient.|
+|[List posts](../api/conversationthread-list-posts.md) | [post](post.md) |Get the posts of the specified thread. |
+|[Get post](../api/post-get.md) | [post](post.md) |Get the properties and relationships of a post in a specified thread.|
+|[Reply](../api/post-reply.md)|None|Reply to a post and add a new post to the specified thread in a group conversation.|
+|[Forward](../api/post-forward.md)|None|Forward a post to a recipient.|
 |**Attachments**| | |
-|[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get all attachments on a post.|
-|[Add attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
+|[List attachments](../api/post-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on a post.|
+|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
 |**Open extensions**| | |
-|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
-|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
 |**Schema extensions**| | |
-|[Add schema extension values](/graph/extensibility_schema_groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
-|[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
-|[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
+|[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
+|[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -124,9 +124,9 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Add custom data to resources using extensions](/graph/extensibility_overview)
-- [Add custom data to users using open extensions](/graph/extensibility_open_users)
-- [Add custom data to groups using schema extensions](/graph/extensibility_schema_groups)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -48,11 +48,11 @@ For details and a list of all the properties, see the [user](user.md) object.
 
 | Path    | Description |
 |:---------|:-------------|
-|[`/users`](../api/user_list.md) | Lists users in the organization. |
-|[`/users/{id}`](../api/user_get.md) | Gets a specific user by id. |
+|[`/users`](../api/user-list.md) | Lists users in the organization. |
+|[`/users/{id}`](../api/user-get.md) | Gets a specific user by id. |
 |[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Gets the user's profile photo. |
-|[`/users/{id}/manager`](../api/user_list_manager.md) | Gets the user's manager. |
-|[`/users/{id}/messages`](../api/user_list_messages.md)| Lists the user's email messages in their primary inbox. |
-|[`/users/{id}/events`](../api/user_list_events.md) | Lists the user's upcoming events in their calendar. |
-|[`/users/{id}/drive`](../api/drive_get.md)| Gets the user's OneDrive file store. |
-|[`/users/{id}/memberOf`](../api/user_list_memberof.md)| Lists the groups that the user is a member of. |
+|[`/users/{id}/manager`](../api/user-list-manager.md) | Gets the user's manager. |
+|[`/users/{id}/messages`](../api/user-list-messages.md)| Lists the user's email messages in their primary inbox. |
+|[`/users/{id}/events`](../api/user-list-events.md) | Lists the user's upcoming events in their calendar. |
+|[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
+|[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |

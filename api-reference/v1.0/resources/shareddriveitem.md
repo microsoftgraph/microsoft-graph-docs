@@ -6,7 +6,7 @@ title: SharedDriveItem
 ---
 # SharedDriveItem resource type
 
-The **sharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [driveItem](driveitem.md).
+The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
 ## JSON representation
 
@@ -69,7 +69,7 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 
 | Method                                  | REST Path                |
 | :-------------------------------------- | :----------------------- |
-| [Get shared item](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## Remarks
 

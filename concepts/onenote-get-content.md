@@ -145,11 +145,11 @@ Get the HTML content of a page.
 
 `../pages/{page-id}/content[?includeIDs,preAuthenticated]`
 
-(*learn more about [returned HTML content](onenote_input_output_html.md)*) 
+(*learn more about [returned HTML content](onenote-input-output-html.md)*) 
 
 <br/>
 
-Use the **includeIDs=true** query string option to get generated IDs used to [update the page](onenote_update_page.md).
+Use the **includeIDs=true** query string option to get generated IDs used to [update the page](onenote-update-page.md).
 
 Use the **preAuthenticated=true** query string option to get public URLs to the [image resources](#image-or-other-file-resource) that are on the page. The public URLs are valid for one hour. 
 
@@ -281,7 +281,7 @@ Get the binary data of a specific resource.
 
 <br/>
 
-You can find the file's resource URI in the page's [output HTML](onenote_input_output_html.md).
+You can find the file's resource URI in the page's [output HTML](onenote-input-output-html.md).
 
 For example, an **img** tag includes endpoints for the original image in the **data-fullres-src** attribute and the optimized image in the **src** attribute. 
 
@@ -306,7 +306,7 @@ And an **object** tag includes the endpoint for the file resource in the **data*
     type="application/pdf" ... />
 ```
 
-To get public, pre-authenticated URLs to the image resources on a page, include `preAuthenticated=true` in the query string when you [retrieve the page content](#page-html-content) (**example:**  `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned in the [output HTML](onenote_input_output_html.md#output-html-examples-for-images) are valid for one hour. Without this flag, retrieved images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. 
+To get public, pre-authenticated URLs to the image resources on a page, include `preAuthenticated=true` in the query string when you [retrieve the page content](#page-html-content) (**example:**  `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned in the [output HTML](onenote-input-output-html.md#output-html-examples-for-images) are valid for one hour. Without this flag, retrieved images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. 
 
 > **Note:**
 > Getting a collection of resources is not supported. 
@@ -315,10 +315,10 @@ When you get a file resource, you don't need to include an **Accept** content ty
 
 For more information about GET requests, see the following resources in the Microsoft Graph API REST reference:
 
-- [GET Pages](/graph/api/page_get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section_get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup_get?view=graph-rest-1.0)
-- [GET Notebooks](/graph/api/notebook_get?view=graph-rest-1.0) 
+- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
+- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
+- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
+- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
 
@@ -624,10 +624,10 @@ Property names are case-sensitive in query expressions.
 
 For the list of properties and property types, see the following resources in the Microsoft Graph API REST reference:
 
-- [GET Pages](/graph/api/page_get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section_get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup_get?view=graph-rest-1.0)
-- [GET Notebooks](/graph/api/notebook_get?view=graph-rest-1.0) 
+- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
+- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
+- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
+- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
 
@@ -646,7 +646,7 @@ The **expand** query string option can be used with the following navigation pro
 | Request data | Description |  
 |------|------|  
 | Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions_reference.md).</p> |  
+| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p> |  
 | Accept header | <p> `application/json` for OneNote entities and entity sets</p><p> `text/html` for page content</p> | 
 
 <br/>
@@ -655,7 +655,7 @@ The **expand** query string option can be used with the following navigation pro
 |------|------|  
 | Success code | A 200 HTTP status code. |  
 | Response body | An OData representation of the entity or entity set in JSON format, the page HTML, or file resource binary data.  |  
-| Errors | If the request fails, the API returns [errors](onenote_error_codes.md) in the **@api.diagnostics** object in the response body. |  
+| Errors | If the request fails, the API returns [errors](onenote-error-codes.md) in the **@api.diagnostics** object in the response body. |  
 | X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
 
 
@@ -686,14 +686,14 @@ Choose from:
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions_reference.md).
+For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions-reference.md).
 
 <a name="see-also"></a>
 
 ## See also
 
-- [Input and output HTML for OneNote pages](onenote_input_output_html.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Input and output HTML for OneNote pages](onenote-input-output-html.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

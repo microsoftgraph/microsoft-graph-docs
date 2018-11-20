@@ -2,16 +2,16 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](accessreviews_root.md) feature, the program control object represents a control, linking an access review to a program.
+In the Azure AD [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create programControl](../api/programcontrol_create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
-|[Delete programControl](../api/programcontrol_delete.md) |		None.	|	Remove a programControl from a program.|
-|[List programControls](../api/programcontrol_list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
+|[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
+|[Delete programControl](../api/programcontrol-delete.md) |		None.	|	Remove a programControl from a program.|
+|[List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
 
 ## Permissions
 
@@ -43,8 +43,8 @@ In the Azure AD [access reviews](accessreviews_root.md) feature, the program con
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List programControls of a program](../api/program_listcontrols.md) |		[programControl](programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[List programControlTypes](../api/programcontroltype_list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
+|[List programControls of a program](../api/program-listcontrols.md) |		[programControl](programcontrol.md) collection|	Get a collection of the controls of a program.|
+|[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## JSON representation
 

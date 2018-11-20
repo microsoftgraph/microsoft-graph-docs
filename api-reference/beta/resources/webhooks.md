@@ -18,7 +18,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 ## Permissions
 
-In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
+In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
 | Permission type                        | Supported resource types in beta                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
@@ -29,11 +29,11 @@ In general, subscription operations require read permission to the resource. For
 ## See also
 
 - [Subscription resource type](subscription.md)
-- [List subscriptions](../api/subscription_list.md)
-- [Get subscription](../api/subscription_get.md)
-- [Create subscription](../api/subscription_post_subscriptions.md)
-- [Update subscription](../api/subscription_update.md)
-- [Delete subscription](../api/subscription_delete.md)
+- [List subscriptions](../api/subscription-list.md)
+- [Get subscription](../api/subscription-get.md)
+- [Create subscription](../api/subscription-post-subscriptions.md)
+- [Update subscription](../api/subscription-update.md)
+- [Delete subscription](../api/subscription-delete.md)
 
 [contact]: ./contact.md
 [conversation]: ./conversation.md

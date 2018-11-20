@@ -1,16 +1,15 @@
   name: Graph Docs
   items:
-  - name: Microsoft Graph
+  - name: Overview of Microsoft Graph
     href: overview.md
     expanded: true
     items:
     - name: Explore
       expanded: true
       items:
-      - name: Overview
-        href: overview.md
       - name: Services in Microsoft Graph
         href: overview-major-services.md
+        expanded: true
         items:
         - name: Users you can reach
           href: users-you-can-reach.md
@@ -18,11 +17,11 @@
           - name: National cloud deployments
             href: deployments.md
           - name: Hybrid deployments (preview)
-            href: hybrid_rest_support.md
+            href: hybrid-rest-support.md
         - name: Versioning and support
-          href: versioning_and_support.md
+          href: versioning-and-support.md
         - name: Terms of use
-          href: https://developer.microsoft.com/graph/terms-of-use.md
+          href: https://developer.microsoft.com/en-us/graph/terms-of-use
       - name: Microsoft Graph data connect (preview)
         href: data-connect-overview.md
     - name: Learn
@@ -36,7 +35,7 @@
         href: outlook-calendar-concept-overview.md
         items:
         - name: Find meeting times
-          href: findmeetingtimes_example.md
+          href: findmeetingtimes-example.md
         - name: Get free/busy schedule
           href: outlook-get-free-busy-schedule.md
         - name: Schedule recurring events
@@ -83,18 +82,18 @@
         - name: Immutable ID (preview)
           href: outlook-immutable-id.md
       - name: Notes
-        href: integrate_with_onenote.md
+        href: integrate-with-onenote.md
         items:
         - name: Get OneNote content
           href: onenote-get-content.md
         - name: Open the OneNote client
-          href: open_onenote_client.md
+          href: open-onenote-client.md
         - name: Create pages
           href: onenote-create-page.md
         - name: Update page content
-          href: onenote_update_page.md
+          href: onenote-update-page.md
         - name: Add images, videos, and files
-          href: onenote_images_files.md
+          href: onenote-images-files.md
         - name: Create absolute positioned elements
           href: onenote-abs-pos.md
         - name: Extract data
@@ -103,13 +102,13 @@
           href: onenote-note-tags.md
         - name: RESOURCES
         - name: Input and output HTML
-          href: onenote_input_output_html.md
+          href: onenote-input-output-html.md
         - name: Best practices
-          href: onenote_best_practices.md
+          href: onenote-best-practices.md
         - name: Branding guidelines
           href: onenote-branding.md
         - name: Error codes
-          href: onenote_error_codes.md
+          href: onenote-error-codes.md
       - name: Personal contacts
         href: outlook-contacts-concept-overview.md
         items:
@@ -127,7 +126,7 @@
         - name: Authorization
           href: security-authorization.md
         - name: Integrate with a SIEM
-          href: security_siemintegration.md
+          href: security-siemintegration.md
           items:
           - name: Splunk
             href: security-splunk-siemintegration.md
@@ -139,7 +138,7 @@
         href: social-intel-concept-overview.md
         items:
         - name: Get information about relevant people
-          href: people_example.md
+          href: people-example.md
       - name: Tasks and plans
         href: planner-concept-overview.md
       - name: Teamwork
@@ -161,59 +160,61 @@
       expanded: true
       items:
       - name: Get auth tokens
-        href: auth_overview.md
+        href: auth-overview.md
         items:
         - name: Register your app
-          href: auth_register_app_v2.md
+          href: auth-register-app-v2.md
         - name: Get access on behalf of a user
-          href: auth_v2_user.md
+          href: auth-v2-user.md
         - name: Get access without a user
-          href: auth_v2_service.md
+          href: auth-v2-service.md
         - name: Permissions
-          href: permissions_reference.md
+          href: permissions-reference.md
         - name: Manage app access (CSPs)
-          href: auth_cloudsolutionprovider.md
+          href: auth-cloudsolutionprovider.md
       - name: Use the API
-        href: use_the_api.md
+        href: use-the-api.md
         items:
         - name: Paging
           href: paging.md
         - name: Use query parameters
-          href: query_parameters.md
+          href: query-parameters.md
         - name: Batch requests
-          href: json_batching.md
+          href: json-batching.md
         - name: Throttling
           href: throttling.md
         - name: Change notifications
           href: webhooks.md
         - name: Track changes
-          href: delta_query_overview.md
+          href: delta-query-overview.md
           items:
           - name: Get changes to events (example)
-            href: delta_query_events.md
+            href: delta-query-events.md
           - name: Get changes to groups (example)
-            href: delta_query_groups.md
+            href: delta-query-groups.md
           - name: Get changes to messages (example)
-            href: delta_query_messages.md
+            href: delta-query-messages.md
           - name: Get changes to users (example)
-            href: delta_query_users.md
+            href: delta-query-users.md
         - name: Add custom data
-          href: extensibility_overview.md
+          href: extensibility-overview.md
           items:
           - name: Use open extensions (example)
-            href: extensibility_open_users.md
+            href: extensibility-open-users.md
           - name: Use schema extensions (example)
-            href: extensibility_schema_groups.md
+            href: extensibility-schema-groups.md
       - name: Resources
         expanded: true
         items:
         - name: Best practices
           href: best-practices-concept.md
         - name: Known issues
-          href: known_issues.md
+          href: known-issues.md
         - name: Changelog
           href: changelog.md
         - name: Errors
           href: errors.md
-    - name: API Reference
-      href: /graph/api/overview?toc=./ref/toc.json
+    - name: v1.0 API Reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+    - name: beta API Reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

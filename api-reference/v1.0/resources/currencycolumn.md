@@ -6,7 +6,7 @@ title: CurrencyColumn
 ---
 # CurrencyColumn resource type
 
-The **currencyColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values represent currency.
+The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
 ## JSON representation
 
