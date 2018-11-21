@@ -219,6 +219,18 @@ Content-type: application/json
 }
 ```
 
+## Support for extension attributes in Azure AD
+
+Delta function can be used to track changes to [extension attributes](https://docs.microsoft.com/en-us/powershell/azure/active-directory/using-extension-attributes-sample?view=azureadps-2.0) on Azure AD objects, such as users, groups, etc. These attributes use the following naming convention: *extension_applicationId_attributeName* and can be referenced in the `$select` query parameter, as any other property.
+
+For example, the following delta query can be used to track changes to users when either the job title or the position number (stored as an extension attribute) changes in Azure AD:
+
+```http
+GET https://graph.microsoft.com/v1.0/users/delta?$select=jobTitle,extension_49e738ad-1e0a-4c89-917a-0d8fe119c6b0_PositionNumber
+```
+
+> **Note:** With the current implementation, a change to any extension attribute on an object will cause the object to show up in the delta query response, even if the attribute changing was not included in the original `$select` parameter. Using the previous sample request, if another attribute - say *extension_49e738ad-1e0a-4c89-917a-0d8fe119c6b0_BuildingId* - changed on the user, that user object would still be included in the next delta response, even though *jobTitle* and *extension_49e738ad-1e0a-4c89-917a-0d8fe119c6b0_PositionNumber* have not changed.
+
 - [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md).
 - [Get incremental changes for users](../../../concepts/delta_query_users.md).
 
