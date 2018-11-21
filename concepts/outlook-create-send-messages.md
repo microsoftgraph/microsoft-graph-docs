@@ -69,8 +69,8 @@ MailTips can tell you information such as the recipient's mailbox is restricted 
 You can:
 
 - Create @-mentions when [creating a message](/graph/api/user-post-messages?view=graph-rest-beta#request-2)
-- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user_list_messages?view=graph-rest-beta#request-2)
-- [Get all the @-mention is a message](/graph/api/message_get?view=graph-rest-beta#request-2)
+- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages?view=graph-rest-beta#request-2)
+- [Get all the @-mention is a message](/graph/api/message-get?view=graph-rest-beta#request-2)
 
 ## Other shared capabilities
 
@@ -95,8 +95,8 @@ Find out more about:
     "Error: /concepts/outlook-create-send-messages.md:
         BookmarkSkippedDocFileNotFound: Link '[creating a message](/graph/api/user-post-messages?view=graph-rest-beta#request-2)'.",
     "Error: /concepts/outlook-create-send-messages.md:
-      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user_list_messages?view=graph-rest-beta#request-2)'.",
+      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages?view=graph-rest-beta#request-2)'.",
     "Error: /concepts/outlook-create-send-messages.md:
-      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](/graph/api/message_get?view=graph-rest-beta#request-2)'."
+      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](/graph/api/message-get?view=graph-rest-beta#request-2)'."
   ]
 }-->
