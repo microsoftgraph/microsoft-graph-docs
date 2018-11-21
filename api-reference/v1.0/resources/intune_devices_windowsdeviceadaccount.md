@@ -1,15 +1,15 @@
-﻿# windowsDeviceADAccount resource type
+# windowsDeviceADAccount resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
 
-Inherits from [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)
+Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|password|String|Not yet documented Inherited from [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
+|password|String|Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |domainName|String|Not yet documented|
 |userName|String|Not yet documented|
 

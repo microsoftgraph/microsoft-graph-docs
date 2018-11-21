@@ -38,7 +38,7 @@ The current user's account has exceeded the maximum number of active requests. Y
 The service can't create a page in the requested section because that section is protected by a password.
 
 ### 10005
-The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote_images_files.md).
+The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote-images-files.md).
 
 ### 10006
 The OneNote API was unable to create a page in the specified section because that section is corrupt.
@@ -191,19 +191,19 @@ The HTML in the "Presentation" part contains a **data-attachment** attribute tha
 Your request specifies a PATCH target that can't be located.
 
 ### 20121
-Your request contains an invalid PATCH argument. See [Update page content](onenote_update_page.md).
+Your request contains an invalid PATCH argument. See [Update page content](onenote-update-page.md).
 
 ### 20122
-Your request specifies an unsupported PATCH action. See [Update page content](onenote_update_page.md).
+Your request specifies an unsupported PATCH action. See [Update page content](onenote-update-page.md).
 
 ### 20123
 The PATCH request is unable to alter the specified page.
 
 ### 20124
-Your multipart PATCH request doesn't include a "commands" part with the PATCH action JSON structure. See [Update page content](onenote_update_page.md).
+Your multipart PATCH request doesn't include a "commands" part with the PATCH action JSON structure. See [Update page content](onenote-update-page.md).
 
 ### 20125
-Your PATCH request contains no actions. See [Update page content](onenote_update_page.md).
+Your PATCH request contains no actions. See [Update page content](onenote-update-page.md).
 
 ### 20126
 The message body contains either incorrectly formatted JSON or fields that are not supported for this operation.
@@ -227,13 +227,13 @@ Your request contains an invalid value for Content-Type. Use the value indicated
 Your request contains invalid content. Common causes for this are a missing Content-Type request header and/or no content in the body of the request. 
 
 ### 20133
-Your request specifies a PATCH target that is not supported. See [Update page content](onenote_update_page.md).
+Your request specifies a PATCH target that is not supported. See [Update page content](onenote-update-page.md).
 
 ### 20134
-Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](onenote_update_page.md).
+Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](onenote-update-page.md).
 
 ### 20135
-Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](onenote_update_page.md).
+Your request specifies an entity type that is not supported for the PATCH operation. See [Update page content](onenote-update-page.md).
 
 ### 20136
 Your request contains an invalid or missing **data-render-src** or **data-render-method** attribute. See [Extract data from captures](onenote-extract-data.md).
@@ -242,7 +242,7 @@ Your request contains an invalid or missing **data-render-src** or **data-render
 The target page does not support PATCH requests.
 
 ### 20138
-The target element type in your PATCH request doesn't support the **append** action. See [Update page content](onenote_update_page.md).
+The target element type in your PATCH request doesn't support the **append** action. See [Update page content](onenote-update-page.md).
 
 ### 20139
 Your request contains an invalid **data-tag** attribute value. See [Use note tags](onenote-note-tags.md).
@@ -258,7 +258,7 @@ Example:
 See [Use note tags](onenote-note-tags.md).
 
 ### 20141
-The target in your PATCH request doesn't support the specified action. See [Update page content](onenote_update_page.md).
+The target in your PATCH request doesn't support the specified action. See [Update page content](onenote-update-page.md).
 
 ### 20142
 Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
@@ -323,7 +323,7 @@ The application has issued too many requests on behalf of a user in a short peri
 For more information, see [OneNote API throttling and how to avoid it](https://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### 20168
-The video source specified in the request is not supported. See [Supported video sites](onenote_images_files.md#adding-videos) for the current list.
+The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
 
 
 ## Codes from 30001 to 39999
@@ -379,7 +379,7 @@ There is a required parameter missing.
 The user or application does not have the correct permissions.
 
 ### 40001
-The request doesn't contain a valid OAuth token. See [Notes permissions](permissions_reference.md#notes-permissions).
+The request doesn't contain a valid OAuth token. See [Notes permissions](permissions-reference.md#notes-permissions).
 
 ### 40002
 The user doesn't have permission to write to the requested location.
@@ -388,10 +388,10 @@ The user doesn't have permission to write to the requested location.
 The user doesn't have permission to access the requested resource.
 
 ### 40004
-The OAuth token doesn't have the required scopes to perform the requested action. See [Notes permissions](permissions_reference.md#notes-permissions).
+The OAuth token doesn't have the required scopes to perform the requested action. See [Notes permissions](permissions-reference.md#notes-permissions).
 
 ### 40006 
-The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [Notes permissions](permissions_reference.md#notes-permissions).
+The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [Notes permissions](permissions-reference.md#notes-permissions).
 
 ### 40007
 The user does not have permissions to access this resource.
@@ -405,5 +405,5 @@ The container is already in use by another resource.
 ## See also
 
 - [Microsoft Graph error responses and resource types](errors.md)
-- [OneNote reference](../api-reference/v1.0/resources/onenote.md)
+- [OneNote reference](/graph/api/resources/onenote?view=graph-rest-1.0)
 

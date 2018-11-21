@@ -2,11 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
+Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -36,8 +36,8 @@ includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
 
 ## Optional query parameters
 
@@ -68,8 +68,8 @@ If successful, this method returns `200 OK` response code and [directoryRole](..
 - If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
 
 See:</br>
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
-- [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.</br>
+- [Using Delta Query](/graph/delta-query-overview) for more details</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
 
 ### Example
 ##### Request

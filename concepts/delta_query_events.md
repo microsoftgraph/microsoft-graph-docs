@@ -19,8 +19,8 @@ Delta query for events is specific to a calendar and date/time range that you sp
 you need to track each calendar individually. 
 
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
-the [delta](../api-reference/v1.0/api/event_delta.md) function. The initial GET 
-request is very much like the way you [list a calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), 
+the [delta](/graph/api/event-delta?view=graph-rest-1.0) function. The initial GET 
+request is very much like the way you [list a calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0), 
 except that you include the **delta** function:
 
 ```
@@ -32,7 +32,7 @@ A GET request with the **delta** function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
 - A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](delta_query_overview.md#state-tokens) which encode the refs/remotes/microsoftgraph/master
+These tokens are [state tokens](delta-query-overview.md#state-tokens) which encode the refs/remotes/microsoftgraph/master
 _startDateTime_ and _endDateTime_ parameters, and any other query parameter 
 in your initial delta query GET request. 
 
@@ -417,7 +417,7 @@ Content-type: application/json
 
 ## See also
 
-- [Microsoft Graph delta query](../Concepts/delta_query_overview.md)
-- [Get incremental changes to messages](../Concepts/delta_query_messages.md)
-- [Get incremental changes to groups](../Concepts/delta_query_groups.md)
-- [Get incremental changes to users](../Concepts/delta_query_users.md)
+- [Microsoft Graph delta query](delta-query-overview.md)
+- [Get incremental changes to messages](delta-query-messages.md)
+- [Get incremental changes to groups](delta-query-groups.md)
+- [Get incremental changes to users](delta-query-users.md)

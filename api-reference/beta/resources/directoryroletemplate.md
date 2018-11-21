@@ -9,7 +9,7 @@ Represents a directory role template. A directory role template specifies the pr
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
+|[Get directoryRoleTemplate](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Read properties and relationships of directoryRoleTemplate object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -11,11 +11,11 @@ In Outlook, there is a default task group `My Tasks` which you cannot rename or 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get outlookTaskGroup](../api/outlooktaskgroup_get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Get the properties and relationships of the specified Outlook task group.|
-|[Create outlookTaskFolder](../api/outlooktaskgroup_post_taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Create an Outlook task folder.|
-|[List taskFolders](../api/outlooktaskgroup_list_taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md) collection| Get a collection of Outlook task folders.|
-|[Update](../api/outlooktaskgroup_update.md) | [outlookTaskGroup](outlooktaskgroup.md)	|Update the writable properties of an Outlook task group. |
-|[Delete](../api/outlooktaskgroup_delete.md) | None |Delete the specified Outlook task group. |
+|[Get outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Get the properties and relationships of the specified Outlook task group.|
+|[Create outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Create an Outlook task folder.|
+|[List taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md) collection| Get a collection of Outlook task folders.|
+|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)	|Update the writable properties of an Outlook task group. |
+|[Delete](../api/outlooktaskgroup-delete.md) | None |Delete the specified Outlook task group. |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -5,7 +5,7 @@
 Activate the role that is assigned to the requestor.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 The requestor can only call ```selfActivate``` for the role that is assigned to him.
  

@@ -36,7 +36,7 @@ It is available on the fileSystemInfo property of [driveItem][item-resource] res
 | Property                 | Type           | Description                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | The UTC date and time the file was created on a client.                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive_recent.md) only. |
+| **lastAccessedDateTime** | DateTimeOffset | The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only. |
 | **lastModifiedDateTime** | DateTimeOffset | The UTC date and time the file was last modified on a client.                                                        |
 
 ## Notes

@@ -5,7 +5,7 @@
 Returns a submitted resource. This will be available to a teacher after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

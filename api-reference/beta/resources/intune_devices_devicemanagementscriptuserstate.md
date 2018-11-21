@@ -1,4 +1,4 @@
-﻿# deviceManagementScriptUserState resource type
+# deviceManagementScriptUserState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ Contains properties for user run state of the device management script.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List deviceManagementScriptUserStates](../api/intune_devices_devicemanagementscriptuserstate_list.md)|[deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) collection|List properties and relationships of the [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) objects.|
-|[Get deviceManagementScriptUserState](../api/intune_devices_devicemanagementscriptuserstate_get.md)|[deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md)|Read properties and relationships of the [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object.|
-|[Create deviceManagementScriptUserState](../api/intune_devices_devicemanagementscriptuserstate_create.md)|[deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md)|Create a new [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object.|
-|[Delete deviceManagementScriptUserState](../api/intune_devices_devicemanagementscriptuserstate_delete.md)|None|Deletes a [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md).|
-|[Update deviceManagementScriptUserState](../api/intune_devices_devicemanagementscriptuserstate_update.md)|[deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md)|Update the properties of a [deviceManagementScriptUserState](../resources/intune_devices_devicemanagementscriptuserstate.md) object.|
+|[List deviceManagementScriptUserStates](../api/intune-devices-devicemanagementscriptuserstate-list.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) collection|List properties and relationships of the [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) objects.|
+|[Get deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-get.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Read properties and relationships of the [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.|
+|[Create deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-create.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Create a new [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.|
+|[Delete deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-delete.md)|None|Deletes a [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md).|
+|[Update deviceManagementScriptUserState](../api/intune-devices-devicemanagementscriptuserstate-update.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|Update the properties of a [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ Contains properties for user run state of the device management script.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune_devices_devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices of specific user.|
+|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices of specific user.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

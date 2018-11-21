@@ -1,12 +1,12 @@
-﻿# Update windowsProtectionState
+# Update windowsProtectionState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.
+Update the properties of a [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,15 +31,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.
+In the request body, supply a JSON representation for the [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) object.
 
-The following table shows the properties that are required when you create the [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md).
+The following table shows the properties that are required when you create the [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
 |malwareProtectionEnabled|Boolean|Anti malware is enabled or not|
-|deviceState|[windowsDeviceHealthState](../resources/intune_devices_windowsdevicehealthstate.md)|Computer's state (like clean or pending full scan or pending reboot etc). Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Computer's state (like clean or pending full scan or pending reboot etc). Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Boolean|Real time protection is enabled or not?|
 |networkInspectionSystemEnabled|Boolean|Network inspection system enabled or not?|
 |quickScanOverdue|Boolean|Quick scan overdue or not?|
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) object in the response body.
 
 ## Example
 ### Request

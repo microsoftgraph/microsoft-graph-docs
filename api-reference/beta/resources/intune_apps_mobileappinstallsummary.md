@@ -1,4 +1,4 @@
-﻿# mobileAppInstallSummary resource type
+# mobileAppInstallSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +8,8 @@ Contains properties for the installation summary of a mobile app.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_get.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
-|[Update mobileAppInstallSummary](../api/intune_apps_mobileappinstallsummary_update.md)|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Update the properties of a [mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md) object.|
+|[Get mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Read properties and relationships of the [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object.|
+|[Update mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Update the properties of a [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

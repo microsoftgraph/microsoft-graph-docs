@@ -6,7 +6,7 @@ title: NumberColumn
 ---
 # NumberColumn resource type
 
-The **numberColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are numbers.
+The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
 ## JSON representation
 

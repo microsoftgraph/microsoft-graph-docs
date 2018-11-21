@@ -7,24 +7,24 @@ A channel represents a topic, and therefore a logical isolation of discussion, w
 
 Every team is associated with a [group](../resources/group.md).
 The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}.
-For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams_api_overview.md).
+For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create team](../api/team_put_teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
-|[Get team](../api/team_get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
-|[Update team](../api/team_update.md) | [team](team.md) |Update the properties of the specified team. |
-|[Delete team](../../v1.0/api/group_delete.md) | None |Delete the team and its associated group. |
-|[Clone team](../api/team_clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
-|[Archive team](../api/team_archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
-|[Unarchive team](../api/team_unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
-|[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
-|[List all teams](../../../concepts/teams_list_all_teams.md) | [group](group.md) collection | List all groups that have teams. |
+|[Create team](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
+|[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
+|[Delete team](/graph/api/group-delete?view=graph-rest-1.0) | None |Delete the team and its associated group. |
+|[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
+|[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
+|[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
+|[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
+|[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
 |[Publish apps to your organization](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
-|[Add app to team](../api/teamsappinstallation_add.md) | [teamsappinstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
-|[Add tab to channel](../api/teamstab_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
+|[Add app to team](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
+|[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 
 ## Properties
 
@@ -77,5 +77,5 @@ The following is a JSON representation of the resource.
 }-->
 
 ## See Also
-- [Creating a group with a team](../../../concepts/teams-create-group-and-team.md)
-- [Using Teams APIs](teams_api_overview.md)
+- [Creating a group with a team](/graph/teams-create-group-and-team)
+- [Using Teams APIs](teams-api-overview.md)

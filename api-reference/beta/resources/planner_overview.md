@@ -1,4 +1,4 @@
-﻿# Use the Planner REST API
+# Use the Planner REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,22 +9,22 @@ Before you get started with Planner API, it is worth understanding how the main 
 ## Groups
 
 Office 365 groups are the owners of the plans in the Planner API.
-To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the following HTTP request.
+To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
 GET /groups/{id}/planner/plans
 ```
 
-When [creating a new plan](../api/planner_post_plans.md), give the plan a group owner by setting the `owner` property on a plan object. A plan must be owned by a group. A group can own multiple plans.
+When [creating a new plan](../api/planner-post-plans.md), give the plan a group owner by setting the `owner` property on a plan object. A plan must be owned by a group. A group can own multiple plans.
 
->**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using [Create group](../api/group_post_groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group_post_members.md).
+>**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
 ## Plans
 
 [Plans](plannerplan.md) are the containers of [tasks](plannertask.md). 
-To [create a task in a plan](../api/planner_post_tasks.md), set the `planId` property on the task object to the ID of the plan while creating the task.
+To [create a task in a plan](../api/planner-post-tasks.md), set the `planId` property on the task object to the ID of the plan while creating the task.
 Tasks currently cannot be created without plans.
-To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the following HTTP request.
+To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
 
 ``` http
 GET /planner/plans/{id}/tasks
@@ -47,13 +47,13 @@ Aside from task and plan data, the Planner API also provides resources to provid
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
 | Flat list (tasks in a plan)                                                               | `orderHint` property on tasks                                                   |
 | Flat list (tasks assigned to a user)                                                      | `assigneePriority` property on tasks                                            |
-| Board view with columns for assignees (assigned to task board)                            | [assignedToTaskBoardTaskFormat](plannerassignedToTaskBoardTaskFormat.md) object |
-| Board view with columns for progress of the task towards completion (progress task board) | [progressTaskBoardTaskFormat](plannerprogressTaskBoardTaskFormat.md) object     |
-| Board view with custom columns of tasks (bucket task board):                              | [bucketTaskBoardTaskFormat](plannerbucketTaskBoardTaskFormat.md) object         |
+| Board view with columns for assignees (assigned to task board)                            | [assignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) object |
+| Board view with columns for progress of the task towards completion (progress task board) | [progressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) object     |
+| Board view with custom columns of tasks (bucket task board):                              | [bucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) object         |
 
 The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.
 
-All the ordering is controlled by the principles identified in [Planner order hints](planner_order_hint_format.md).
+All the ordering is controlled by the principles identified in [Planner order hints](planner-order-hint-format.md).
 
 ## <a name="delta">Track changes using delta query</a>
 
@@ -112,11 +112,11 @@ Planner's delta query call flow is as follows:
 Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
 Planner allows changes to older versions of resources if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
 Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
-The client apps are expected to handle versioning related [error codes](../../../concepts/errors.md) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
+The client apps are expected to handle versioning related [error codes](/graph/errors) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
 
 ## Common Planner error conditions
 
-In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
+In addition to [general errors](/graph/errors) that apply to Microsoft Graph, some error conditions are specific to the Planner API.
 
 ### 400 Bad request
 
@@ -128,9 +128,9 @@ There are several common cases where the `POST` and `PATCH` requests can get a 4
 
 #### Example
 
-[plannerAssignments](plannerAssignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
+[plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
 
-* Order hint values do not have the [correct format](planner_order_hint_format.md).
+* Order hint values do not have the [correct format](planner-order-hint-format.md).
 
    For example, an order hint value is being set directly to the value returned to the client.
 
@@ -149,20 +149,20 @@ The possible values for the limit types include:
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | The maximum number of Plans owned by a group limit has been exceeded. This limit is based on the `owner` property on the [plannerPlan](plannerPlan.md) resource.                                         |
-| MaximumProjectsSharedWithUser | The maximum number of Plans shared with a user limit has been exceeded.  This limit is based on the `sharedWith` property on the [plannerPlanDetails](plannerPlanDetails.md) resource.                   |
-| MaximumTasksCreatedByUser     | The maximum number of Tasks created by a user limit has been exceeded. This limit is based on the `createdBy` property on the [plannerTask](plannerTask.md) resource.                                    |
-| MaximumTasksAssignedToUser    | The maximum number of Tasks assigned to a user limit has been exceeded. This limit is based on the `assignments` property on the [plannerTask](plannerTask.md) resource.                                 |
-| MaximumTasksInProject         | The maximum number of Tasks in a Plan limit has been exceeded. This limit is based on the `planId` property on the [plannerTask](plannerTask.md) resource.                                               |
-| MaximumActiveTasksInProject   | The maximum number of Tasks that aren't completed in a Plan limit has been exceeded. This limit is based on the `planId` and `percentComplete` properties on the [plannerTask](plannerTask.md) resource. |
-| MaximumBucketsInProject       | The maximum number of Buckets in a Plan limit has been exceeded. This limit is based on the `planId` property on the [plannerBucket](plannerBucket.md) resource.                                         |
-| MaximumUsersSharedWithProject | The `sharedWith` property on the [plannerPlanDetails](plannerPlanDetails.md) resource contains too many values.                                                                                          |
-| MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.                                                                                          |
-| MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.                                                                                           |
-| MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannerTask.md) resource contains too many values.                                                                                                       |
-| MaximumFavoritePlansForUser   | The `favoritePlanReferences` property on the [plannerUser](plannerUser.md) resource contains too many values.                                                                                            |
-| MaximumRecentPlansForUser     | The `recentPlanReferences` property on the [plannerUser](plannerUser.md) resource contains too many values.                                                                                              |
-| MaximumContextsOnPlan         | The `contexts` property on the [plannerPlan](plannerPlan.md) resource contains too many values.                                                                                                          |
+| MaximumProjectsOwnedByUser    | The maximum number of Plans owned by a group limit has been exceeded. This limit is based on the `owner` property on the [plannerPlan](plannerplan.md) resource.                                         |
+| MaximumProjectsSharedWithUser | The maximum number of Plans shared with a user limit has been exceeded.  This limit is based on the `sharedWith` property on the [plannerPlanDetails](plannerplandetails.md) resource.                   |
+| MaximumTasksCreatedByUser     | The maximum number of Tasks created by a user limit has been exceeded. This limit is based on the `createdBy` property on the [plannerTask](plannertask.md) resource.                                    |
+| MaximumTasksAssignedToUser    | The maximum number of Tasks assigned to a user limit has been exceeded. This limit is based on the `assignments` property on the [plannerTask](plannertask.md) resource.                                 |
+| MaximumTasksInProject         | The maximum number of Tasks in a Plan limit has been exceeded. This limit is based on the `planId` property on the [plannerTask](plannertask.md) resource.                                               |
+| MaximumActiveTasksInProject   | The maximum number of Tasks that aren't completed in a Plan limit has been exceeded. This limit is based on the `planId` and `percentComplete` properties on the [plannerTask](plannertask.md) resource. |
+| MaximumBucketsInProject       | The maximum number of Buckets in a Plan limit has been exceeded. This limit is based on the `planId` property on the [plannerBucket](plannerbucket.md) resource.                                         |
+| MaximumUsersSharedWithProject | The `sharedWith` property on the [plannerPlanDetails](plannerplandetails.md) resource contains too many values.                                                                                          |
+| MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
+| MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
+| MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
+| MaximumFavoritePlansForUser   | The `favoritePlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                            |
+| MaximumRecentPlansForUser     | The `recentPlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
+| MaximumContextsOnPlan         | The `contexts` property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
 
 #### 412 Precondition Failed
 

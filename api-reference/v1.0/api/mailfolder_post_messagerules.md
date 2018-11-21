@@ -6,7 +6,7 @@ Create a [messageRule](../resources/messagerule.md) object by specifying a set o
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

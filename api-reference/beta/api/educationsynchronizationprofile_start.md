@@ -7,7 +7,7 @@ Verify the files uploaded to a specific school data [synchronization profile](..
 > **Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md). Also, the profile's state property needs to be provisioned before it can be started. Poll the profile object to check its state property.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions |
 |:-----------|:----------|

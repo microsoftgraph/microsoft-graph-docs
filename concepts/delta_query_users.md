@@ -1,15 +1,15 @@
 # Get incremental changes for users
 
-[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](../api-reference/v1.0/api/user_delta.md) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
+[Delta query](./delta-query-overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](/graph/api/user-delta?view=graph-rest-1.0) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
 
 Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.
 
 ## Tracking user changes
 
-Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](../api-reference/v1.0/api/user_list.md), except that you include the following:
+Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](/graph/api/user-list?view=graph-rest-1.0), except that you include the following:
 
 - The **delta** function.
-- A [state token](./delta_query_overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
+- A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
 
 ## Example
 
@@ -35,7 +35,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ## Initial response
 
-If successful, this method returns `200 OK` response code and [user](../api-reference/v1.0/resources/user.md) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.
+If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user?view=graph-rest-1.0) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.
 
 In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.
 
@@ -193,4 +193,4 @@ Some things to note about the example response above:
 - When the user is created, or restored, there is no annotation.
 
 ## See also
-[Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.
+[Microsoft Graph delta query](delta-query-overview.md) overview.

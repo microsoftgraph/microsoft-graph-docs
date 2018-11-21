@@ -1,4 +1,4 @@
-﻿# auditResource resource type
+# auditResource resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ A class containing the properties for Audit Resource.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name.|
-|modifiedProperties|[auditProperty](../resources/intune_auditing_auditproperty.md) collection|List of modified properties.|
+|modifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) collection|List of modified properties.|
 |type|String|Audit resource's type.|
 |resourceId|String|Audit resource's Id.|
 

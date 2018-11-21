@@ -8,11 +8,11 @@ You can explicitly specify to have time zones returned in the Windows time zone 
 (also known as Olson time zone) format. The Windows format is the default.
 
 When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by 
-[getting the user's mailbox settings](user_get_mailboxsettings.md).
+[getting the user's mailbox settings](user-get-mailboxsettings.md).
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

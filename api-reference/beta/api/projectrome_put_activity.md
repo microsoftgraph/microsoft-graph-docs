@@ -2,11 +2,11 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome_put_activity.md#example-2---deep-insert).
+Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -33,7 +33,7 @@ PUT /me/activities/{appActivityId}
 
 ## Request body
 
-In the request body, supply a JSON representation of an [activity](../resources/projectrome_activity.md) object.
+In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.
 
 ## Response
 

@@ -3,11 +3,11 @@
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 
 When setting up an Outlook client, the user selects the preferred language from this supported list. You can subsequently get the preferred language by 
-[getting the user's mailbox settings](user_get_mailboxsettings.md).
+[getting the user's mailbox settings](user-get-mailboxsettings.md).
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

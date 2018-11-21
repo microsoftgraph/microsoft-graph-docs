@@ -1,4 +1,4 @@
-﻿# win32LobAppProductCodeDetection resource type
+# win32LobAppProductCodeDetection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,13 +6,13 @@
 
 Contains product code and version properties to detect a Win32 App
 
-Inherits from [win32LobAppDetection](../resources/intune_apps_win32lobappdetection.md)
+Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |productCode|String|The product code of Win32 Line of Business (LoB) app.|
-|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune_apps_win32lobappdetectionoperator.md)|The operator to detect product version. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|The operator to detect product version. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |productVersion|String|The product version of Win32 Line of Business (LoB) app.|
 
 ## Relationships

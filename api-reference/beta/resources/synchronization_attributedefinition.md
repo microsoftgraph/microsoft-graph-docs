@@ -10,12 +10,12 @@ Describes an attribute of an object.
 |:--------------|:----------|:---------------|
 |anchor         |Boolean    | `true` if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is `false`. One, and only one, of the object's attributes must be designated as the anchor to support synchronization. |
 |caseExact      |Boolean    |`true` if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.|
-|metadata       |[metadataEntry](../resources/synchronization_metadataentry.md)    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
+|metadata       |[metadataEntry](../resources/synchronization-metadataentry.md)    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |multivalued    |Boolean    |`true` if an attribute can have multiple values. Default is `false`.|
 |mutability     |String     |An attribute's mutability. Possible values are:  `ReadWrite`, `ReadOnly`, `Immutable`, `WriteOnly`. Default is `ReadWrite`.|
 |name           |String     |Name of the attribute. Must be unique within the object definition. Not nullable.|
 |required       |Boolean    |`true` if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.|
-|referencedObjects|[referencedObject](../resources/synchronization_referencedobject.md) |For attributes with `reference` type, lists referenced objects (for example, the `manager` attribute would list `User` as the referenced object).|
+|referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md) |For attributes with `reference` type, lists referenced objects (for example, the `manager` attribute would list `User` as the referenced object).|
 |type           |String     |Attribute value type. Possible values are: `String`, `Integer`, `Reference`, `Binary`, `Boolean`. Default is `String`.|
 
 ## JSON representation

@@ -1,12 +1,12 @@
-﻿# Update windowsOfficeClientSecurityConfiguration
+# Update windowsOfficeClientSecurityConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsOfficeClientSecurityConfiguration](../resources/intune_cirrus_windowsofficeclientsecurityconfiguration.md) object.
+Update the properties of a [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,27 +30,27 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsOfficeClientSecurityConfiguration](../resources/intune_cirrus_windowsofficeclientsecurityconfiguration.md) object.
+In the request body, supply a JSON representation for the [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) object.
 
-The following table shows the properties that are required when you create the [windowsOfficeClientSecurityConfiguration](../resources/intune_cirrus_windowsofficeclientsecurityconfiguration.md).
+The following table shows the properties that are required when you create the [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Preference settings JSON string in binary format, these values can be overridden by the user. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|policyPayload|Stream|Policy settings JSON string in binary format, these values cannot be changed by the user. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|description|String|Admin provided description of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|displayName|String|Admin provided name of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|assignments|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|The list of group assignments for the policy.. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|priority|Int32|Priority value should be unique value for each policy under a tenant and will be used for conflict resolution, lower values mean priority is high. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|lastModifiedDateTime|DateTime|Last modified datetime stamp of the policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune_cirrus_officeusercheckinsummary.md)|User check-in summary for the policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune_cirrus_officeclientcheckinstatus.md) collection|List of office Client check-in status. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
+|id|String|Id of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Stream|Preference settings JSON string in binary format, these values can be overridden by the user. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Stream|Policy settings JSON string in binary format, these values cannot be changed by the user. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|String|Admin provided description of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|String|Admin provided name of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection|The list of group assignments for the policy.. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|priority|Int32|Priority value should be unique value for each policy under a tenant and will be used for conflict resolution, lower values mean priority is high. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|lastModifiedDateTime|DateTime|Last modified datetime stamp of the policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|User check-in summary for the policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection|List of office Client check-in status. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsOfficeClientSecurityConfiguration](../resources/intune_cirrus_windowsofficeclientsecurityconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md) object in the response body.
 
 ## Example
 ### Request

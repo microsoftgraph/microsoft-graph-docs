@@ -9,12 +9,12 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List appointments](../api/bookingbusiness_list_appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Create bookingAppointment](../api/bookingbusiness_post_appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Get bookingAppointment](../api/bookingappointment_get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
-|[Update](../api/bookingappointment_update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
-|[Delete](../api/bookingappointment_delete.md) | None |Delete a **bookingAppointment** object. |
-|[Cancel](../api/bookingappointment_cancel.md)|None| Cancel a **bookingAppointment** object.|
+|[List appointments](../api/bookingbusiness-list-appointments.md) |  [bookingAppointment](bookingappointment.md) collection | Get a list of **bookingAppointment** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Create a new **bookingAppointment** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Get bookingAppointment](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Read the properties and relationships of **bookingAppointment** object.|
+|[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)	|Update a **bookingAppointment** object. |
+|[Delete](../api/bookingappointment-delete.md) | None |Delete a **bookingAppointment** object. |
+|[Cancel](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
 
 ## Properties
 | Property	   | Type	|Description|

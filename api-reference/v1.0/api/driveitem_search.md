@@ -11,7 +11,7 @@ You can search within a folder hierarchy, a whole drive, or files shared with th
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## Optional query parameters
 
-This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
+This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Function parameters
 
@@ -135,9 +135,9 @@ Content-type: application/json
 See [Error Responses][error-response] for more information about
 how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[odata-query-parameters]: ../../../concepts/query_parameters.md
+[odata-query-parameters]: /graph/query-parameters
 
 <!-- {
   "type": "#page.annotation",

@@ -48,9 +48,9 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get appRoleAssignment](../api/approleassignment_get.md) | [appRoleAssignment](approleassignment.md) |Read properties and relationships of appRoleAssignment object.|
-|[Update](../api/approleassignment_update.md) | [appRoleAssignment](approleassignment.md)	|Update appRoleAssignment object. |
-|[Delete](../api/approleassignment_delete.md) | None |Delete appRoleAssignment object. |
+|[Get appRoleAssignment](../api/approleassignment-get.md) | [appRoleAssignment](approleassignment.md) |Read properties and relationships of appRoleAssignment object.|
+|[Update](../api/approleassignment-update.md) | [appRoleAssignment](approleassignment.md)	|Update appRoleAssignment object. |
+|[Delete](../api/approleassignment-delete.md) | None |Delete appRoleAssignment object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

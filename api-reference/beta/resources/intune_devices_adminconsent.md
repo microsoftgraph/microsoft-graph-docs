@@ -1,4 +1,4 @@
-﻿# adminConsent resource type
+# adminConsent resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Admin consent information.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|shareAPNSData|[adminConsentState](../resources/intune_devices_adminconsentstate.md)|The admin consent state of sharing user and device data to Apple. Possible values are: `notConfigured`, `granted`, `notGranted`.|
+|shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|The admin consent state of sharing user and device data to Apple. Possible values are: `notConfigured`, `granted`, `notGranted`.|
 
 ## Relationships
 None

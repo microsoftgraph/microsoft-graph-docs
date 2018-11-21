@@ -10,7 +10,7 @@ In the same **sendMail** action call, you can:
 - Use a [mention](../resources/mention.md) to call out another user in the new message
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

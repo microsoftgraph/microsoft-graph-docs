@@ -1,4 +1,4 @@
-﻿# windowsOfficeClientConfiguration resource type
+# windowsOfficeClientConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,34 +6,34 @@
 
 Entity that describes office policy settings for Windows.
 
-Inherits from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)
+Inherits from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List windowsOfficeClientConfigurations](../api/intune_cirrus_windowsofficeclientconfiguration_list.md)|[windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md) collection|List properties and relationships of the [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md) objects.|
-|[Get windowsOfficeClientConfiguration](../api/intune_cirrus_windowsofficeclientconfiguration_get.md)|[windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md)|Read properties and relationships of the [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md) object.|
-|[Create windowsOfficeClientConfiguration](../api/intune_cirrus_windowsofficeclientconfiguration_create.md)|[windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md)|Create a new [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md) object.|
-|[Delete windowsOfficeClientConfiguration](../api/intune_cirrus_windowsofficeclientconfiguration_delete.md)|None|Deletes a [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md).|
-|[Update windowsOfficeClientConfiguration](../api/intune_cirrus_windowsofficeclientconfiguration_update.md)|[windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md)|Update the properties of a [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md) object.|
+|[List windowsOfficeClientConfigurations](../api/intune-cirrus-windowsofficeclientconfiguration-list.md)|[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) collection|List properties and relationships of the [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) objects.|
+|[Get windowsOfficeClientConfiguration](../api/intune-cirrus-windowsofficeclientconfiguration-get.md)|[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)|Read properties and relationships of the [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) object.|
+|[Create windowsOfficeClientConfiguration](../api/intune-cirrus-windowsofficeclientconfiguration-create.md)|[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)|Create a new [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) object.|
+|[Delete windowsOfficeClientConfiguration](../api/intune-cirrus-windowsofficeclientconfiguration-delete.md)|None|Deletes a [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md).|
+|[Update windowsOfficeClientConfiguration](../api/intune-cirrus-windowsofficeclientconfiguration-update.md)|[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)|Update the properties of a [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Preference settings JSON string in binary format, these values can be overridden by the user. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|policyPayload|Stream|Policy settings JSON string in binary format, these values cannot be changed by the user. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|description|String|Admin provided description of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|displayName|String|Admin provided name of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|priority|Int32|Priority value should be unique value for each policy under a tenant and will be used for conflict resolution, lower values mean priority is high. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|lastModifiedDateTime|DateTime|Last modified datetime stamp of the policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune_cirrus_officeusercheckinsummary.md)|User check-in summary for the policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune_cirrus_officeclientcheckinstatus.md) collection|List of office Client check-in status. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
+|id|String|Id of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Stream|Preference settings JSON string in binary format, these values can be overridden by the user. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Stream|Policy settings JSON string in binary format, these values cannot be changed by the user. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|String|Admin provided description of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|String|Admin provided name of the office client configuration policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|priority|Int32|Priority value should be unique value for each policy under a tenant and will be used for conflict resolution, lower values mean priority is high. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|lastModifiedDateTime|DateTime|Last modified datetime stamp of the policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|User check-in summary for the policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection|List of office Client check-in status. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|The list of group assignments for the policy. Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
+|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection|The list of group assignments for the policy. Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

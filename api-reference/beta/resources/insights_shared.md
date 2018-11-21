@@ -13,16 +13,16 @@ An insight representing files shared with or by a specific user. The following s
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List shared](../api/insights_list_shared.md) |[insights_shared](insights_shared.md) collection| Get a list of shared files.|
+|[List shared](../api/insights-list-shared.md) |[insights_shared](insights-shared.md) collection| Get a list of shared files.|
 
 ## Properties
 
 | Property              | Type          	 		| Description  |
 | -------------         |---------------	 		| -------------|
 | id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
-| lastShared			| [sharingDetail](insights_sharingdetail.md)				| Details about the shared item. Read only. 	   |
-| resourceVisualization	| [resourceVisualization](insights_resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
-| resourceReference		| [resourceReference](insights_resourcereference.md)                      | Reference properties of the shared document, such as the url and type of the document. Read-only	   |
+| lastShared			| [sharingDetail](insights-sharingdetail.md)				| Details about the shared item. Read only. 	   |
+| resourceVisualization	| [resourceVisualization](insights-resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
+| resourceReference		| [resourceReference](insights-resourcereference.md)                      | Reference properties of the shared document, such as the url and type of the document. Read-only	   |
 
 ## Relationships
 

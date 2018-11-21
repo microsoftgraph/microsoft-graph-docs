@@ -7,6 +7,6 @@ You can use the Office 365 active users reports to find out how many product lic
 ## Reports
 | Function                                 | Return Type | Description                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot_getoffice365activeuserdetail.md) | Stream      | Get details about Office 365 active users. |
-| [Get user counts](../api/reportroot_getoffice365activeusercounts.md) | Stream      | Get the count of daily active users in the reporting period by product. |
-| [Get services user counts](../api/reportroot_getoffice365servicesusercounts.md) | Stream      | Get the count of users by activity type and service. |
+| [Get user detail](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Get details about Office 365 active users. |
+| [Get user counts](../api/reportroot-getoffice365activeusercounts.md) | Stream      | Get the count of daily active users in the reporting period by product. |
+| [Get services user counts](../api/reportroot-getoffice365servicesusercounts.md) | Stream      | Get the count of users by activity type and service. |

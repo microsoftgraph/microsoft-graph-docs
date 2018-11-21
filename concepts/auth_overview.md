@@ -34,7 +34,7 @@ There are two types of permissions:
 - Delegated permissions are used by apps that run with a user present. The user's privileges are delegated to the app which makes calls on behalf of the user to Microsoft Graph. Many of these permissions can be consented to by a user, but others require administrator consent.  
 - Application permissions are used by apps that run without a user. These often grant an app broad privileges within an organization and always require the consent of an administrator.
 
-For a complete list of Microsoft Graph permissions, as well as the differences between delegated and application permissions, see the [Permissions reference](permissions_reference.md).
+For a complete list of Microsoft Graph permissions, as well as the differences between delegated and application permissions, see the [Permissions reference](permissions-reference.md).
 
 ## Where does my app get an access token?
 Your app gets access tokens from Azure Active Directory (Azure AD), Microsoft's cloud identity service. To get an access token, your app exchanges HTTP requests and responses with Azure AD using industry-standard protocols defined in the OAuth 2.0 and OpenID Connect 1.0 specifications. These protocols describe the Azure AD endpoints and exchanges with them -- or authentication flows -- that your app uses to securely authenticate with Azure AD and get access tokens.  
@@ -147,10 +147,10 @@ For more information about differences between the Azure AD v2.0 endpoint and th
 
 After you've registered your app, you're ready to get started!
 
-- For quick steps on getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth_v2_user.md).
-- For quick steps on getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth_v2_service.md).
-- To see the permissions that you can use with Microsoft Graph, see [Permissions](permissions_reference.md).
-- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth_cloudsolutionprovider.md).
+- For quick steps on getting an access token for apps that call Microsoft Graph on behalf of a user, see [Get access on behalf of users](auth-v2-user.md).
+- For quick steps on getting an access token for apps that call Microsoft Graph without a user, see [Get access without a user](auth-v2-service.md).
+- To see the permissions that you can use with Microsoft Graph, see [Permissions](permissions-reference.md).
+- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth-cloudsolutionprovider.md).
 
 
 If you're ready to jump into code, you can use the following resources to help you implement authentication and authorization with Azure AD in your app.

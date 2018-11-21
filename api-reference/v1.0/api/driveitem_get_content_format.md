@@ -9,7 +9,7 @@ title: Convert to other formats
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
 
-To download the item in it's original format, see [download an item's contents](driveitem_get_content.md).
+To download the item in it's original format, see [download an item's contents](driveitem-get-content.md).
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 See [Error Responses][error-response] for more info about how errors are returned.
 
-[error-response]: ../../../concepts/errors.md
+[error-response]: /graph/errors
 [file-facet]: ../resources/file.md
 
 <!-- {

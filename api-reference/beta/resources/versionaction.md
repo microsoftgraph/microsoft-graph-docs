@@ -10,7 +10,7 @@ title: VersionAction
 
 The presence of the **VersionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

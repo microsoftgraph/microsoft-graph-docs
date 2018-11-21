@@ -6,9 +6,9 @@ The security resource is the entry point for the Security object model. It retur
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List alerts](../api/alert_list.md) | [alert](alert.md) collection | Get a alert object collection. |
-| [get alerts](../api/alert_get.md) | [alert](alert.md) collection | Get a alert object. |
-| [Update alerts](../api/alert_update.md) | [alert](alert.md) collection | Get a alert object. |
+| [List alerts](../api/alert-list.md) | [alert](alert.md) collection | Get a alert object collection. |
+| [get alerts](../api/alert-get.md) | [alert](alert.md) collection | Get a alert object. |
+| [Update alerts](../api/alert-update.md) | [alert](alert.md) collection | Get a alert object. |
 
 ## Properties
 None

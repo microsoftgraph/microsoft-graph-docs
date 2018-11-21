@@ -2,17 +2,17 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, create a new [programControl](../resources/programcontrol.md) object.  This links an access review to a program.
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.  This links an access review to a program.
 
 Prior to making this request, the caller must have previously
 
- - [created a program](program_create.md) or [retrieved a program](program_list.md), to have the value of `programId` to include in the request,
- - [created an access review](accessreview_create.md) or [retrieved an access review](accessreview_get.md), to have the value of `controlId` to include in the request, and
- - [retrieved the list of program control types](programcontroltype_list.md), to have the value of `controlTypeId` to include in the request.
+ - [created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,
+ - [created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and
+ - [retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -31,7 +31,7 @@ POST /programControls
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [programControl](../resources/programControl.md) object.
+In the request body, supply a JSON representation of a [programControl](../resources/programcontrol.md) object.
 
 The following table shows the properties that are required when you create a program control.
 
@@ -42,12 +42,12 @@ The following table shows the properties that are required when you create a pro
 | `controlTypeId`          |`String`                | The programControlType identifies the type of program control - for example, a control linking to guest access reviews. |
 
 ## Response
-If successful, this method returns a `201, Created` response code and a [programControl](../resources/programControl.md) object in the response body.
+If successful, this method returns a `201, Created` response code and a [programControl](../resources/programcontrol.md) object in the response body.
 
 
 ## Example
 ##### Request
-In the request body, supply a JSON representation of the [programControl](../resources/programControl.md) object.
+In the request body, supply a JSON representation of the [programControl](../resources/programcontrol.md) object.
 
 <!-- {
   "blockType": "request",
@@ -90,7 +90,7 @@ Content-type: application/json
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List programControlTypes](../api/programcontroltype_list.md) | [programControlType](../resources/programcontroltype.md) collection| List program control types. |
+|[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md) collection| List program control types. |
 
 
 <!-- {

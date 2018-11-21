@@ -9,9 +9,9 @@ Represents a customizable terms of use agreement file that a tenant manages with
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile_get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile_update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile_delete.md) | None | Delete an **agreementFile** object. |
+| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
+| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
+| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
 -->
 
 ## Properties

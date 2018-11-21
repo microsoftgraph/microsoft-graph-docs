@@ -1,4 +1,4 @@
-﻿# reportRoot resource type
+# reportRoot resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,17 +9,17 @@ The resource that represents an instance of a device or troubleshooting report, 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get reportRoot](../api/intune_shared_reportroot_get.md)|Read properties and relationships of the [reportRoot](../resources/intune_shared_reportroot.md) object.|
-|[Update reportRoot](../api/intune_shared_reportroot_update.md)|Update the properties of a [reportRoot](../resources/intune_shared_reportroot.md) object.|
+|[Get reportRoot](../api/intune-shared-reportroot-get.md)|Read properties and relationships of the [reportRoot](../resources/intune-shared-reportroot.md) object.|
+|[Update reportRoot](../api/intune-shared-reportroot-update.md)|Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.|
 |**Device configuration**|
-|[deviceConfigurationUserActivity function](../api/intune_shared_reportroot_deviceconfigurationuseractivity.md)|Metadata for the device configuration user activity report|
-|[deviceConfigurationDeviceActivity function](../api/intune_shared_reportroot_deviceconfigurationdeviceactivity.md)|Metadata for the device configuration device activity report|
+|[deviceConfigurationUserActivity function](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|Metadata for the device configuration user activity report|
+|[deviceConfigurationDeviceActivity function](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|Metadata for the device configuration device activity report|
 |**Troubleshooting**|
-|[managedDeviceEnrollmentAbandonmentDetails function](../api/intune_shared_reportroot_manageddeviceenrollmentabandonmentdetails.md)|[report](../resources/intune_shared_report.md)|Metadata for Enrollment abandonment details report|
-|[managedDeviceEnrollmentAbandonmentSummary function](../api/intune_shared_reportroot_manageddeviceenrollmentabandonmentsummary.md)|[report](../resources/intune_shared_report.md)|Metadata for Enrollment abandonment summary report|
-|[managedDeviceEnrollmentFailureDetails function](../api/intune_shared_reportroot_manageddeviceenrollmentfailuredetails.md)|Not yet documented|
-|[managedDeviceEnrollmentFailureTrends function](../api/intune_shared_reportroot_manageddeviceenrollmentfailuretrends.md)|Metadata for the enrollment failure trends report|
-|[managedDeviceEnrollmentTopFailures function](../api/intune_shared_reportroot_manageddeviceenrollmenttopfailures.md)|Not yet documented|
+|[managedDeviceEnrollmentAbandonmentDetails function](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentdetails.md)|[report](../resources/intune-shared-report.md)|Metadata for Enrollment abandonment details report|
+|[managedDeviceEnrollmentAbandonmentSummary function](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentsummary.md)|[report](../resources/intune-shared-report.md)|Metadata for Enrollment abandonment summary report|
+|[managedDeviceEnrollmentFailureDetails function](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|Not yet documented|
+|[managedDeviceEnrollmentFailureTrends function](../api/intune-shared-reportroot-manageddeviceenrollmentfailuretrends.md)|Metadata for the enrollment failure trends report|
+|[managedDeviceEnrollmentTopFailures function](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
