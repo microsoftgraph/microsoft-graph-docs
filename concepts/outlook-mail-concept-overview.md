@@ -30,7 +30,7 @@ as well as events, contacts, tasks, and group posts, and opens up creative scena
 
 Use Microsoft Graph to suggest contextual data to your app users:
 
-- Integrate with [Focused Inbox](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0) and [@-mentions (preview)](/graph/api/message_get?view=graph-rest-beta#request-2) and let your app users read and respond to what's relevant to them first.
+- Integrate with [Focused Inbox](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0) and [@-mentions (preview)](/graph/api/message-get?view=graph-rest-beta#request-2) and let your app users read and respond to what's relevant to them first.
 
 - Check [mail tips](/graph/api/resources/mailtips?view=graph-rest-1.0) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead.
 

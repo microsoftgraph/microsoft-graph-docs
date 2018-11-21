@@ -65,11 +65,11 @@ Looking for the API reference for this service?
     - [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - Try the education APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore the following education-related samples:
-    - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [Python sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [PHP sample for for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+    - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples.md)
+    - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples.md)   
+    - [Python sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-Python-Samples.md)
+    - [PHP sample for for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-PHP-Samples.md)
+    - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples.md) 
 
 
 

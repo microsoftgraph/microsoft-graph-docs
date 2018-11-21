@@ -4,7 +4,7 @@
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-> **Note:** In V1.0, [use the group resource to make renew requests](../../v1.0/api/group-renew.md).
+> **Note:** In V1.0, [use the group resource to make renew requests](/graph/api/group-renew?view=graph-rest-1.0).
 
 ## Permissions
 

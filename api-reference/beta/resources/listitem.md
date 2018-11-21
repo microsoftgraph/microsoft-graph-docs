@@ -20,7 +20,6 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Get column values][Get]       | GET /items/{item-id}?expand=fields
-| [Get activities][]             | GET /items/{item-id}/activities
 | [Get analytics][]              | GET /items/{item-id}/analytics
 | [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
 | [Create][]                     | POST /items
@@ -29,7 +28,6 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update column values][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listitem-get.md
-[Get activities]: ../api/itemactivities-list.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
