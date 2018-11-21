@@ -36,8 +36,7 @@ In the request body, supply the values for relevant fields that should be update
 |deletedDateTime|DateTimeOffset| The date and time the application was deleted. |
 |displayName|String|The display name for the application. |
 |id|String|The unique identifier for the application. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. |
-|info|[informationalUrl](../resources/informationalurl.md)| Basic profile information of the application. |
-|installedClients|[installedClient](../resources/installedclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
+|info|[informationalUrl](../resources/informationalurl.md)| Basic profile information of the application. | Specifies settings for installed clients such as desktop or mobile devices. |
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the application Not nullable. |
 |logo|Stream|The main logo for the application. Not nullable. |
 |orgRestrictions|String collection| The organizational tenantIds to which the application is restricted.  If the collection is empty, the application is multi-tenant (not restricted). If the collection contains tenantIds, the application is restricted to the organizational tenantIds in the collection. Specifying other tenants but not the tenantId where the application is registered implies that the application's own tenantId is indirectly included. |

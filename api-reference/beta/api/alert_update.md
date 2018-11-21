@@ -42,8 +42,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 |feedback|[alertFeedback](../resources/alertfeedbackenumtype.md) enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|[alertStatus](../resources/alertstatusenumtype.md) enum|Alert lifecycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
-|vendorInformation *|[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.**|
-(\* Indicates a mandatory field.)
+|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.**|
 
 ## Response
 
