@@ -1,4 +1,4 @@
-# Delete windows10TeamGeneralConfiguration
+---title: "Delete windows10TeamGeneralConfiguration"description: "Deletes a windows10TeamGeneralConfiguration."---# Delete windows10TeamGeneralConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

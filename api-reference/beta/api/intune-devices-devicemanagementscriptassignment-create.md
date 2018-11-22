@@ -1,4 +1,4 @@
-# Create deviceManagementScriptAssignment
+---title: "Create deviceManagementScriptAssignment"description: "Create a new deviceManagementScriptAssignment object."---# Create deviceManagementScriptAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

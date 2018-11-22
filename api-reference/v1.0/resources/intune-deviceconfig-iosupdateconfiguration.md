@@ -1,4 +1,4 @@
-# iosUpdateConfiguration resource type
+---title: "iosUpdateConfiguration resource type"description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"---# iosUpdateConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

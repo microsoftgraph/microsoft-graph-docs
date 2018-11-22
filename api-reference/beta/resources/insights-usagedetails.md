@@ -1,4 +1,4 @@
-# usageDetails resource type
+---title: "usageDetails resource type"description: "Complex type containing properties of Used items. Information on when the resource was last accessed (viewed) and modified (edited) by the user."---# usageDetails resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# RangeFont resource type
+---title: "RangeFont resource type"description: "This object represents the font attributes (font name, font size, color, etc.) for an object."---# RangeFont resource type
 
 This object represents the font attributes (font name, font size, color, etc.) for an object.
 

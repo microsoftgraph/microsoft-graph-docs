@@ -1,4 +1,4 @@
-# workbookPivotTable: refresh
+---title: "workbookPivotTable: refresh"description: "Refreshes the PivotTable."---# workbookPivotTable: refresh
 
 Refreshes the PivotTable.
 

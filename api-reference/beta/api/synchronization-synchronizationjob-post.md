@@ -1,4 +1,4 @@
-# Create synchronizationJob
+---title: "Create synchronizationJob"description: "Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call Start job to start synchronization."---# Create synchronizationJob
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# microsoftStoreForBusinessAppAssignmentSettings resource type
+---title: "microsoftStoreForBusinessAppAssignmentSettings resource type"description: "Contains properties used to assign an Microsoft Store for Business mobile app to a group."---# microsoftStoreForBusinessAppAssignmentSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

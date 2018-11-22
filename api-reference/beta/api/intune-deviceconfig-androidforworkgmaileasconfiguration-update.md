@@ -1,4 +1,4 @@
-# Update androidForWorkGmailEasConfiguration
+---title: "Update androidForWorkGmailEasConfiguration"description: "Update the properties of a androidForWorkGmailEasConfiguration object."---# Update androidForWorkGmailEasConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

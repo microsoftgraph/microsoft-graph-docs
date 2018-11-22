@@ -1,4 +1,4 @@
-﻿# managedDevicePartnerReportedHealthState enum type
+---title: "managedDevicePartnerReportedHealthState enum type"description: "Available health states for the Device Health API"---# managedDevicePartnerReportedHealthState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

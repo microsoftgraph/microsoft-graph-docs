@@ -1,4 +1,4 @@
-# Get organization
+---title: "Get organization"description: "Retrieve the properties and relationships of currently authenticated organization."---# Get organization
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

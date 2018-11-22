@@ -1,4 +1,4 @@
-# Update termsAndConditionsGroupAssignment
+---title: "Update termsAndConditionsGroupAssignment"description: "Update the properties of a termsAndConditionsGroupAssignment object."---# Update termsAndConditionsGroupAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

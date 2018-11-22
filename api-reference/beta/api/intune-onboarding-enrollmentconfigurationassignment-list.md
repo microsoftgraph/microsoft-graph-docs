@@ -1,4 +1,4 @@
-# List enrollmentConfigurationAssignments
+---title: "List enrollmentConfigurationAssignments"description: "List properties and relationships of the enrollmentConfigurationAssignment objects."---# List enrollmentConfigurationAssignments
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# workbookRangeView: range
+---title: "workbookRangeView: range"description: "Return the range associated with the rangeView resource."---# workbookRangeView: range
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Range: clear
+---title: "Range: clear"description: "Clear range values, format, fill, border, etc."---# Range: clear
 
 Clear range values, format, fill, border, etc.
 ## Permissions

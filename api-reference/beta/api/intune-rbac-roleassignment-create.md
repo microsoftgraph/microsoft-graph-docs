@@ -1,4 +1,4 @@
-# Create roleAssignment
+---title: "Create roleAssignment"description: "Create a new roleAssignment object."---# Create roleAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Manage sessions and persistence in Excel with Microsoft Graph
+---title: "Manage sessions and persistence in Excel with Microsoft Graph"description: "If your application needs to make more than one or two calls to the Excel API, you should create a session and pass the session Id with each request. The presence of a session Id in the requests ensures that you are using the Excel API in the most efficient way possible."---# Manage sessions and persistence in Excel with Microsoft Graph
 
 If your application needs to make more than one or two calls to the Excel API, you should create a session and pass the session Id with each request. The presence of a session Id in the requests ensures that you are using the Excel API in the most efficient way possible.
 

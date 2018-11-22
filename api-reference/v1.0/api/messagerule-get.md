@@ -1,4 +1,4 @@
-# Get rule
+---title: "Get rule"description: "Get the properties and relationships of a messageRule object."---# Get rule
 
 
 Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.

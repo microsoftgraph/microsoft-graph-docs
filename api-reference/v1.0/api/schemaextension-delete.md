@@ -1,4 +1,4 @@
-# Delete schemaExtension
+---title: "Delete schemaExtension"description: "Delete the definition of a schema extension."---# Delete schemaExtension
 
 Delete the definition of a [schema extension](../resources/schemaextension.md).
 

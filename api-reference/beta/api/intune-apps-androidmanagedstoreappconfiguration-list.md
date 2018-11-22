@@ -1,4 +1,4 @@
-# List androidManagedStoreAppConfigurations
+---title: "List androidManagedStoreAppConfigurations"description: "List properties and relationships of the androidManagedStoreAppConfiguration objects."---# List androidManagedStoreAppConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

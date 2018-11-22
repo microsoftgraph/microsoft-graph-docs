@@ -1,4 +1,4 @@
-# TableColumnCollection: ItemAt
+---title: "TableColumnCollection: ItemAt"description: "Gets a column based on its position in the collection."---# TableColumnCollection: ItemAt
 
 Gets a column based on its position in the collection.
 ## Permissions

@@ -1,4 +1,4 @@
----title: "teamGuestSettings resource type"description: "Settings to configure whether guests can create, update, or delete channels in the team."---# teamGuestSettings resource type
+---title: "teamGuestSettings resource type"description: "Settings to configure whether guests can create, update, or delete channels in the team."---# teamGuestSettings resource type
 
 
 

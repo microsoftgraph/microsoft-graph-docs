@@ -1,4 +1,4 @@
-# Get iosEducationDeviceConfiguration
+---title: "Get iosEducationDeviceConfiguration"description: "Read properties and relationships of the iosEducationDeviceConfiguration object."---# Get iosEducationDeviceConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

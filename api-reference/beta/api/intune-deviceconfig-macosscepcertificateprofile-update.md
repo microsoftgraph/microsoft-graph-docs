@@ -1,4 +1,4 @@
-# Update macOSScepCertificateProfile
+---title: "Update macOSScepCertificateProfile"description: "Update the properties of a macOSScepCertificateProfile object."---# Update macOSScepCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

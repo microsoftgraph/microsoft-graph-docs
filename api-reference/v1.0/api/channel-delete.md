@@ -1,4 +1,4 @@
-# Delete channel
+---title: "Delete channel"description: "Delete the channel."---# Delete channel
 
 
 

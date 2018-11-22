@@ -1,4 +1,4 @@
-# Create Chart
+---title: "Create Chart"description: "Use this API to create a new Chart."---# Create Chart
 
 Use this API to create a new Chart.
 ## Permissions

@@ -1,4 +1,4 @@
-# Get RangeBorder
+---title: "Get RangeBorder"description: "Retrieve the properties and relationships of rangeborder object."---# Get RangeBorder
 
 Retrieve the properties and relationships of rangeborder object.
 ## Permissions

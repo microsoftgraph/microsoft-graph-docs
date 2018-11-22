@@ -1,4 +1,4 @@
-# List windows10CompliancePolicies
+---title: "List windows10CompliancePolicies"description: "List properties and relationships of the windows10CompliancePolicy objects."---# List windows10CompliancePolicies
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

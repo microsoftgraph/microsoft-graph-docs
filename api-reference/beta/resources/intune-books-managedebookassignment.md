@@ -1,4 +1,4 @@
-# managedEBookAssignment resource type
+---title: "managedEBookAssignment resource type"description: "Contains properties used to assign a eBook to a group."---# managedEBookAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

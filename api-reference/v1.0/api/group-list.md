@@ -1,4 +1,4 @@
-# List groups
+---title: "List groups"description: "List all the groups available in an organization, including but not limited to Office 365 Groups."---# List groups
 List all the groups available in an organization, including but not limited to Office 365 Groups.
 The [default properties](../api/group-get.md#default-properties) of each group are returned.
 

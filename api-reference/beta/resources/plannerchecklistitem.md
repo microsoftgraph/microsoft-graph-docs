@@ -1,4 +1,4 @@
-# plannerChecklistItem resource type
+---title: "plannerChecklistItem resource type"description: "The **plannerChecklistItem** resource represents an item in the checklist of a task. The checklist on a task is represented by the checklistItems object."---# plannerChecklistItem resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

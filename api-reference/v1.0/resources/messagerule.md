@@ -1,4 +1,4 @@
-# messageRule resource type
+---title: "messageRule resource type"description: "A rule that applies to messages in the Inbox of a user."---# messageRule resource type
 
 
 A rule that applies to messages in the Inbox of a user.

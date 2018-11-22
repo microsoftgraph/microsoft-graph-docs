@@ -1,4 +1,4 @@
-# defaultManagedAppProtection resource type
+---title: "defaultManagedAppProtection resource type"description: "Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy"---# defaultManagedAppProtection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

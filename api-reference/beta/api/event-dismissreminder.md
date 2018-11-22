@@ -1,4 +1,4 @@
-# event: dismissReminder
+---title: "event: dismissReminder"description: "Dismiss a reminder that has been triggered for an event in a user calendar."---# event: dismissReminder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

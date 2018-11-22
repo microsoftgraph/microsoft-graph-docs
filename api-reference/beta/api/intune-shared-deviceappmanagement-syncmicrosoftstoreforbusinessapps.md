@@ -1,4 +1,4 @@
-# syncMicrosoftStoreForBusinessApps action
+---title: "syncMicrosoftStoreForBusinessApps action"description: "Syncs Intune account with Microsoft Store For Business"---# syncMicrosoftStoreForBusinessApps action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List windows81GeneralConfigurations
+---title: "List windows81GeneralConfigurations"description: "List properties and relationships of the windows81GeneralConfiguration objects."---# List windows81GeneralConfigurations
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

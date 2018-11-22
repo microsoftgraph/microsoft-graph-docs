@@ -1,4 +1,4 @@
-# Get contactFolder
+---title: "Get contactFolder"description: "Get a contact folder by using the contact folder ID."---# Get contactFolder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

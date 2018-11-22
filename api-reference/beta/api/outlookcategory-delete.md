@@ -1,4 +1,4 @@
-# Delete Outlook category
+---title: "Delete Outlook category"description: "Delete the specified outlookCategory object."---# Delete Outlook category
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

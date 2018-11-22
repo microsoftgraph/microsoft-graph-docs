@@ -1,4 +1,4 @@
-﻿# androidWorkProfileDefaultAppPermissionPolicyType enum type
+---title: "androidWorkProfileDefaultAppPermissionPolicyType enum type"description: "Android Work Profile default app permission policy type."---# androidWorkProfileDefaultAppPermissionPolicyType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

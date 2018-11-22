@@ -1,4 +1,4 @@
-# recentNotebook resource type
+---title: "recentNotebook resource type"description: "A recently accessed OneNote notebook. A **recentNotebook** is similar to a notebook but has fewer properties."---# recentNotebook resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

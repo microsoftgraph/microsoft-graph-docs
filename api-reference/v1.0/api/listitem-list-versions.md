@@ -1,4 +1,4 @@
-# Listing versions of a ListItem
+---title: "Listing versions of a ListItem"description: "SharePoint can be configured to retain the history for list items."---# Listing versions of a ListItem
 
 SharePoint can be configured to retain the history for list items.
 

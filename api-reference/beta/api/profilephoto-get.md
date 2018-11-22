@@ -1,4 +1,4 @@
-# Get photo
+---title: "Get photo"description: "Get the specified profilePhoto or its metadata (**profilePhoto** properties)."---# Get photo
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

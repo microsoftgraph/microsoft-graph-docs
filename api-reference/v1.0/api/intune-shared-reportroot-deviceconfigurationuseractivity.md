@@ -1,4 +1,4 @@
-# deviceConfigurationUserActivity function
+---title: "deviceConfigurationUserActivity function"description: "Metadata for the device configuration user activity report"---# deviceConfigurationUserActivity function
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

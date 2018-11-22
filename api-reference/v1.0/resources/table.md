@@ -1,4 +1,4 @@
-# Table resource type
+---title: "Table resource type"description: "Represents an Excel table."---# Table resource type
 
 Represents an Excel table.
 

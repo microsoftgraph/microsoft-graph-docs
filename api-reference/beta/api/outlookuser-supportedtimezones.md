@@ -1,4 +1,4 @@
-# outlookUser: supportedTimeZones
+---title: "outlookUser: supportedTimeZones"description: "Get the list of time zones that are supported for the user, as configured on the user's mailbox server."---# outlookUser: supportedTimeZones
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

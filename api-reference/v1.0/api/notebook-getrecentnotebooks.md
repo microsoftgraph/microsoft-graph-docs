@@ -1,4 +1,4 @@
-# notebook: getRecentNotebooks
+---title: "notebook: getRecentNotebooks"description: "Get a list of recentNotebook instances that have been accessed by the signed-in user."---# notebook: getRecentNotebooks
 
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.
 

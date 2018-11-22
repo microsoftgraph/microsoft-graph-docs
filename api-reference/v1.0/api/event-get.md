@@ -1,4 +1,4 @@
-# Get event
+---title: "Get event"description: "Get the properties and relationships of the specified event object."---# Get event
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 

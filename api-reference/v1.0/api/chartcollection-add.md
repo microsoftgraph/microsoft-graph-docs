@@ -1,4 +1,4 @@
-# ChartCollection: add
+---title: "ChartCollection: add"description: "Creates a new chart."---# ChartCollection: add
 
 Creates a new chart.
 ## Permissions

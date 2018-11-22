@@ -1,4 +1,4 @@
----title: "teamsAsyncOperationType enum type"description: "Types of teamsAsyncOperation. Members will be added here as more async operations are supported."---# teamsAsyncOperationType enum type
+---title: "teamsAsyncOperationType enum type"description: "Types of teamsAsyncOperation. Members will be added here as more async operations are supported."---# teamsAsyncOperationType enum type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

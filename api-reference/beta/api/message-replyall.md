@@ -1,4 +1,4 @@
-# message: replyAll
+---title: "message: replyAll"description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "---# message: replyAll
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

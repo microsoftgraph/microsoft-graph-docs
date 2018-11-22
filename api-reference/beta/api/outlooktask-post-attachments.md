@@ -1,4 +1,4 @@
-# Create attachment
+---title: "Create attachment"description: "Use this API to add an attachment to an outlookTask."---# Create attachment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

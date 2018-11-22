@@ -1,4 +1,4 @@
-# Table: HeaderRowRange
+---title: "Table: HeaderRowRange"description: "Gets the range object associated with header row of the table."---# Table: HeaderRowRange
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

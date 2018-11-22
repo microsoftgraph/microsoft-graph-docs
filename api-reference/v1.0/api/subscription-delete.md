@@ -1,4 +1,4 @@
-# Delete subscription
+---title: "Delete subscription"description: "Delete a subscription."---# Delete subscription
 
 Delete a subscription.
 

@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActivationsUserDetail
+---title: "reportRoot: getOffice365ActivationsUserDetail"description: "Get details about users who have activated Office 365."---# reportRoot: getOffice365ActivationsUserDetail
 
 Get details about users who have activated Office 365.
 

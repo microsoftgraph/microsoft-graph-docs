@@ -1,4 +1,4 @@
-# Delete synchronizationJob
+---title: "Delete synchronizationJob"description: "Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is."---# Delete synchronizationJob
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

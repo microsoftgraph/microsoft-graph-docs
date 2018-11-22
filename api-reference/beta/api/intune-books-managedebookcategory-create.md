@@ -1,4 +1,4 @@
-# Create managedEBookCategory
+---title: "Create managedEBookCategory"description: "Create a new managedEBookCategory object."---# Create managedEBookCategory
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

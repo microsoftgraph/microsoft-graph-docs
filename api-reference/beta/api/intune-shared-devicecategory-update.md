@@ -1,4 +1,4 @@
-# Update deviceCategory
+---title: "Update deviceCategory"description: "Update the properties of a deviceCategory object."---# Update deviceCategory
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

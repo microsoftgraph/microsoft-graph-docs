@@ -1,4 +1,4 @@
-# Delete tab from channel
+---title: "Delete tab from channel"description: "Removes (unpins) a tab from the specified channel within a team. "---# Delete tab from channel
 
 
 

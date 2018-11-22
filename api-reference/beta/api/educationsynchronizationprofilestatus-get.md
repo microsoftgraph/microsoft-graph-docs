@@ -1,4 +1,4 @@
-# Get the status of an educationSynchronizationProfile
+---title: "Get the status of an educationSynchronizationProfile"description: "Get the status of a specific school data synchronization profile in the tenant. The response will indicate the status of the sync."---# Get the status of an educationSynchronizationProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

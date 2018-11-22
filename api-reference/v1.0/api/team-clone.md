@@ -1,4 +1,4 @@
-# Clone a team
+---title: "Clone a team"description: "Create a copy of a team. This operation also creates a copy of the corresponding group."---# Clone a team
 
 
 

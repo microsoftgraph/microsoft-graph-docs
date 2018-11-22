@@ -1,4 +1,4 @@
-# Get ChartPoint
+---title: "Get ChartPoint"description: "Retrieve the properties and relationships of chartpoint object."---# Get ChartPoint
 
 Retrieve the properties and relationships of chartpoint object.
 ## Permissions

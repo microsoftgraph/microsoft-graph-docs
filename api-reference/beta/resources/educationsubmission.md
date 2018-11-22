@@ -1,4 +1,4 @@
-# educationSubmission resource type
+---title: "educationSubmission resource type"description: "Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned."---# educationSubmission resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

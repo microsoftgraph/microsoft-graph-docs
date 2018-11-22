@@ -1,4 +1,4 @@
-# Create windows81VpnConfiguration
+---title: "Create windows81VpnConfiguration"description: "Create a new windows81VpnConfiguration object."---# Create windows81VpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List windowsPhone81CustomConfigurations
+---title: "List windowsPhone81CustomConfigurations"description: "List properties and relationships of the windowsPhone81CustomConfiguration objects."---# List windowsPhone81CustomConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

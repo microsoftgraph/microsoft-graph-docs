@@ -1,4 +1,4 @@
-# TableColumn resource type
+---title: "TableColumn resource type"description: "Represents a column in a table."---# TableColumn resource type
 
 Represents a column in a table.
 

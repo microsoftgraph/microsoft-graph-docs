@@ -1,4 +1,4 @@
-# Add a scopedRoleMember
+---title: "Add a scopedRoleMember"description: "Add a new scopedRoleMembership. NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships."---# Add a scopedRoleMember
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

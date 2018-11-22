@@ -1,4 +1,4 @@
-# List androidForWorkNineWorkEasConfigurations
+---title: "List androidForWorkNineWorkEasConfigurations"description: "List properties and relationships of the androidForWorkNineWorkEasConfiguration objects."---# List androidForWorkNineWorkEasConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

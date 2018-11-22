@@ -1,4 +1,4 @@
-# Get RangeFont
+---title: "Get RangeFont"description: "Retrieve the properties and relationships of rangefont object."---# Get RangeFont
 
 Retrieve the properties and relationships of rangefont object.
 ## Permissions

@@ -1,4 +1,4 @@
-# Get FormatProtection
+---title: "Get FormatProtection"description: "Retrieve the properties and relationships of formatprotection object."---# Get FormatProtection
 
 Retrieve the properties and relationships of formatprotection object.
 ## Permissions

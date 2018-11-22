@@ -1,4 +1,4 @@
-# List deviceComplianceSettingStates
+---title: "List deviceComplianceSettingStates"description: "List properties and relationships of the deviceComplianceSettingState objects."---# List deviceComplianceSettingStates
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

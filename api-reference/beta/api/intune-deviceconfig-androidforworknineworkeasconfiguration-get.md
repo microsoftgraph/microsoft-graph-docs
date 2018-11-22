@@ -1,4 +1,4 @@
-# Get androidForWorkNineWorkEasConfiguration
+---title: "Get androidForWorkNineWorkEasConfiguration"description: "Read properties and relationships of the androidForWorkNineWorkEasConfiguration object."---# Get androidForWorkNineWorkEasConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

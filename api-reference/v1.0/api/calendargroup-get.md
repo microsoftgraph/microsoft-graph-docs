@@ -1,4 +1,4 @@
-# Get calendarGroup
+---title: "Get calendarGroup"description: "Retrieve the properties and relationships of a calendar group object."---# Get calendarGroup
 
 Retrieve the properties and relationships of a calendar group object.
 

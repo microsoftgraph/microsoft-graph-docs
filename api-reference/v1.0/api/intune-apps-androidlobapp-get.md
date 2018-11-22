@@ -1,4 +1,4 @@
-# Get androidLobApp
+---title: "Get androidLobApp"description: "Read properties and relationships of the androidLobApp object."---# Get androidLobApp
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# Create or replace an activity
+---title: "Create or replace an activity"description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use deep insert."---# Create or replace an activity
 
 Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).
 

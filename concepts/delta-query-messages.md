@@ -1,4 +1,4 @@
-# Get incremental changes to messages in a folder
+---title: "Get incremental changes to messages in a folder"description: "Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of"---# Get incremental changes to messages in a folder
 
 Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of
 [delta](/graph/api/message-delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain

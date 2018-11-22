@@ -1,4 +1,4 @@
-# workbookPivotTable: refreshAll
+---title: "workbookPivotTable: refreshAll"description: "Refreshes the PivotTable within a given worksheet."---# workbookPivotTable: refreshAll
 
 Refreshes the PivotTable within a given worksheet.
 

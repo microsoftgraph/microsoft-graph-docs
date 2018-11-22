@@ -1,4 +1,4 @@
-# Get plannerPlanDetails
+---title: "Get plannerPlanDetails"description: "Retrieve the properties and relationships of **plannerplandetails** object."---# Get plannerPlanDetails
 
 Retrieve the properties and relationships of **plannerplandetails** object.
 ## Permissions

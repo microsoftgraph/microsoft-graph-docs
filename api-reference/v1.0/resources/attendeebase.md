@@ -1,4 +1,4 @@
-# attendeeBase resource type
+---title: "attendeeBase resource type"description: "The type of attendee."---# attendeeBase resource type
 
 The type of attendee.
 

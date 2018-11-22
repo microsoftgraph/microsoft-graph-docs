@@ -1,4 +1,4 @@
-# timeSlot resource type
+---title: "timeSlot resource type"description: "A time period."---# timeSlot resource type
 
 A time period.
 

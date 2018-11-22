@@ -1,4 +1,4 @@
-# List tabs in channel
+---title: "List tabs in channel"description: "Retrieve the list of tabs in the specified channel within a team. "---# List tabs in channel
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

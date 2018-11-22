@@ -1,4 +1,4 @@
-# workbookRange: rowsAbove
+---title: "workbookRange: rowsAbove"description: "Gets a certain number of rows above a given range."---# workbookRange: rowsAbove
 
 Gets a certain number of rows above a given range.
 

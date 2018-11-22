@@ -1,4 +1,4 @@
-# multiValueLegacyExtendedProperty resource type
+---title: "multiValueLegacyExtendedProperty resource type"description: "An extended property that contains a collection of values."---# multiValueLegacyExtendedProperty resource type
 
 An extended property that contains a collection of values.
 

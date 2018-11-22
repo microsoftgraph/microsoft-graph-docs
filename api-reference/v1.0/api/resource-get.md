@@ -1,4 +1,4 @@
-# Get resource
+---title: "Get resource"description: "Retrieve the binary data of a file or image resource object."---# Get resource
 
 Retrieve the binary data of a file or image [resource](../resources/resource.md) object.
 ## Permissions

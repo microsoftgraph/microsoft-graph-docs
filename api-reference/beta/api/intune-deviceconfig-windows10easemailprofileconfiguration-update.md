@@ -1,4 +1,4 @@
-# Update windows10EasEmailProfileConfiguration
+---title: "Update windows10EasEmailProfileConfiguration"description: "Update the properties of a windows10EasEmailProfileConfiguration object."---# Update windows10EasEmailProfileConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

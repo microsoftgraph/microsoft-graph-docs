@@ -1,4 +1,4 @@
-# ChartFill resource type
+---title: "ChartFill resource type"description: "Represents the fill formatting for a chart element."---# ChartFill resource type
 
 Represents the fill formatting for a chart element.
 

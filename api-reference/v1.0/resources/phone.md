@@ -1,4 +1,4 @@
----title: "phone resource type"description: "Represents a phone number."---# phone resource type
+---title: "phone resource type"description: "Represents a phone number."---# phone resource type
 
 Represents a phone number.
 

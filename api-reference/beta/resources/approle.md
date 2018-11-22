@@ -1,4 +1,4 @@
----title: "appRole resource type"description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the servicePrincipal entity and of the application entity is a collection of **appRole**."---# appRole resource type
+---title: "appRole resource type"description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the servicePrincipal entity and of the application entity is a collection of **appRole**."---# appRole resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

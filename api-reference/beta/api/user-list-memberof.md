@@ -1,4 +1,4 @@
-# List user memberOf
+---title: "List user memberOf"description: "Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive."---# List user memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

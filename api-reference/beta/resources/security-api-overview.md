@@ -1,4 +1,4 @@
-# Use the Microsoft Graph Security API
+---title: "Use the Microsoft Graph Security API"description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."---# Use the Microsoft Graph Security API
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

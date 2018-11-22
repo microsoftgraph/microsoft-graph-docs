@@ -1,4 +1,4 @@
-# Create conversation thread
+---title: "Create conversation thread"description: "Start a new group conversation by first creating a thread. "---# Create conversation thread
 Start a new group conversation by first creating a thread. 
 
 A new conversation, conversation thread, and post are created in the group. 

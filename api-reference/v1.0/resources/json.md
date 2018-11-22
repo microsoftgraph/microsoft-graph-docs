@@ -1,4 +1,4 @@
----title: "Json resource type"description: "Represents data returned in JSON format"---# Json resource type
+---title: "Json resource type"description: "Represents data returned in JSON format"---# Json resource type
 
 Represents data returned in JSON format
 ## Properties

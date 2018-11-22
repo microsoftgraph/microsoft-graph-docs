@@ -1,4 +1,4 @@
-# TableColumn: delete
+---title: "TableColumn: delete"description: "Deletes the column from the table."---# TableColumn: delete
 
 Deletes the column from the table.
 ## Permissions

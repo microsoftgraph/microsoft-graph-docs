@@ -1,4 +1,4 @@
-# Update chartaxis
+---title: "Update chartaxis"description: "Update the properties of chartaxis object."---# Update chartaxis
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

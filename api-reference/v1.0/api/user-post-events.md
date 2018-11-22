@@ -1,4 +1,4 @@
-# Create Event
+---title: "Create Event"description: "Create an event in the user's default calendar or specified calendar."---# Create Event
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 

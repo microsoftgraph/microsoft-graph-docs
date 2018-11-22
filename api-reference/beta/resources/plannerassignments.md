@@ -1,4 +1,4 @@
----title: "plannerAssignments resource type"description: "The **plannerAssignments** resource represents assignments of a plannerTask resource. This type is an open type. Each property name in this type "---# plannerAssignments resource type
+---title: "plannerAssignments resource type"description: "The **plannerAssignments** resource represents assignments of a plannerTask resource. This type is an open type. Each property name in this type "---# plannerAssignments resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

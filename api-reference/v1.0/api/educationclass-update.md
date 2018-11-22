@@ -1,4 +1,4 @@
-# Update educationclass properties
+---title: "Update educationclass properties"description: "Update the properties of a class."---# Update educationclass properties
 
 Update the properties of a class.
 

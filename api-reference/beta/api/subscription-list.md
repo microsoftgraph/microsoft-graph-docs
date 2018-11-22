@@ -1,4 +1,4 @@
-# List subscriptions
+---title: "List subscriptions"description: " see the scenarios below for details."---# List subscriptions
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

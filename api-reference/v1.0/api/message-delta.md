@@ -1,4 +1,4 @@
-# message: delta
+---title: "message: delta"description: "Get a set of messages that have been added, deleted, or updated in a specified folder."---# message: delta
 
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 

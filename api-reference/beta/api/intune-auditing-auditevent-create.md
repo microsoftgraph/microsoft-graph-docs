@@ -1,4 +1,4 @@
-# Create auditEvent
+---title: "Create auditEvent"description: "Create a new auditEvent object."---# Create auditEvent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

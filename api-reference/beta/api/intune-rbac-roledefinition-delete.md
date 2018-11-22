@@ -1,4 +1,4 @@
-# Delete roleDefinition
+---title: "Delete roleDefinition"description: "Deletes a roleDefinition."---# Delete roleDefinition
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

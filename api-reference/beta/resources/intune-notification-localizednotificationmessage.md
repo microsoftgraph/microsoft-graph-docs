@@ -1,4 +1,4 @@
-# localizedNotificationMessage resource type
+---title: "localizedNotificationMessage resource type"description: "The text content of a Notification Message Template for the specified locale."---# localizedNotificationMessage resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

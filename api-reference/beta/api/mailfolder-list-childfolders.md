@@ -1,4 +1,4 @@
-# List childFolders
+---title: "List childFolders"description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "---# List childFolders
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

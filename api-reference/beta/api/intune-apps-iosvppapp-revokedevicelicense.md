@@ -1,4 +1,4 @@
-# revokeDeviceLicense action
+---title: "revokeDeviceLicense action"description: "Revoke assigned iOS VPP device license for given app."---# revokeDeviceLicense action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

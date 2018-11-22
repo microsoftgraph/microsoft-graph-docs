@@ -1,4 +1,4 @@
-# Add attachment
+---title: "Add attachment"description: "Use this API to add an attachment to a message. "---# Add attachment
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 

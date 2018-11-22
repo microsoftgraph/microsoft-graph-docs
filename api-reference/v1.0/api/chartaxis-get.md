@@ -1,4 +1,4 @@
-# Get ChartAxis
+---title: "Get ChartAxis"description: "Retrieve the properties and relationships of chartaxis object."---# Get ChartAxis
 
 Retrieve the properties and relationships of chartaxis object.
 ## Permissions

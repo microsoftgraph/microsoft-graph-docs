@@ -1,4 +1,4 @@
-# Get directoryRole
+---title: "Get directoryRole"description: "Retrieve the properties of a directoryRole object."---# Get directoryRole
 
 Retrieve the properties of a directoryRole object.
 

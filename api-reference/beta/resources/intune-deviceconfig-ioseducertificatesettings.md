@@ -1,4 +1,4 @@
-# iosEduCertificateSettings resource type
+---title: "iosEduCertificateSettings resource type"description: "Trusted Root and PFX certificates for iOS EDU."---# iosEduCertificateSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

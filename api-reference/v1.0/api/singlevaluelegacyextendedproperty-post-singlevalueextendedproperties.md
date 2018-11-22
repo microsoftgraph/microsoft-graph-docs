@@ -1,4 +1,4 @@
-# Create single-value extended property
+---title: "Create single-value extended property"description: "Create one or more single-value extended properties in a new or existing instance of a resource. "---# Create single-value extended property
 
 Create one or more single-value extended properties in a new or existing instance of a resource. 
 

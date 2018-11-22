@@ -1,4 +1,4 @@
-# Add app to team
+---title: "Add app to team"description: "Installs an app to the specified team."---# Add app to team
 
 
 

@@ -1,4 +1,4 @@
-# Add educationUser to an educationSchool
+---title: "Add educationUser to an educationSchool"description: "Add a user to a school."---# Add educationUser to an educationSchool
 
 Add a user to a school.
 

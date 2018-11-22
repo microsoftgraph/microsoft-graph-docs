@@ -1,4 +1,4 @@
-# message: createReplyAll
+---title: "message: createReplyAll"description: "Create a draft of a reply-all message to include a comment or update any message properties, "---# message: createReplyAll
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

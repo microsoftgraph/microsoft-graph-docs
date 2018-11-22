@@ -1,4 +1,4 @@
-# List serviceConfigurationRecords
+---title: "List serviceConfigurationRecords"description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."---# List serviceConfigurationRecords
 
 Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
 

@@ -1,4 +1,4 @@
-# Table: DataBodyRange
+---title: "Table: DataBodyRange"description: "Gets the range object associated with the data body of the table."---# Table: DataBodyRange
 
 Gets the range object associated with the data body of the table.
 ## Permissions

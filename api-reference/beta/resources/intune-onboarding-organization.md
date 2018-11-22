@@ -1,4 +1,4 @@
-# organization resource type
+---title: "organization resource type"description: "The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level."---# organization resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

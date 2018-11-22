@@ -1,4 +1,4 @@
-# List classes
+---title: "List classes"description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "---# List classes
 
 Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. 
 

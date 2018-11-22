@@ -1,4 +1,4 @@
-# secureScores resource type
+---title: "secureScores resource type"description: "top=n, where n = the number of days of data that you want to retrieve. "---# secureScores resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

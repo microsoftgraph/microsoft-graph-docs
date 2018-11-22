@@ -1,4 +1,4 @@
-# importedDeviceIdentityResult resource type
+---title: "importedDeviceIdentityResult resource type"description: "The importedDeviceIdentityResult resource represents the result of attempting to import a device identity."---# importedDeviceIdentityResult resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

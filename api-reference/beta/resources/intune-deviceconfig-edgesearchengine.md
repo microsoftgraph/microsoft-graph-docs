@@ -1,4 +1,4 @@
-# edgeSearchEngine resource type
+---title: "edgeSearchEngine resource type"description: "Allows IT admins to set a predefined default search engine for MDM-Controlled devices."---# edgeSearchEngine resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

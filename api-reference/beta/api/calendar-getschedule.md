@@ -1,4 +1,4 @@
-# calendar: getSchedule
+---title: "calendar: getSchedule"description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."---# calendar: getSchedule
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

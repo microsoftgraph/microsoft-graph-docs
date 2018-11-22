@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActiveUserCounts
+---title: "reportRoot: getOffice365ActiveUserCounts"description: "Get the count of daily active users in the reporting period by product."---# reportRoot: getOffice365ActiveUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

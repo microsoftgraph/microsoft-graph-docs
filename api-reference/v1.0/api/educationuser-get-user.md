@@ -1,4 +1,4 @@
-# Get user
+---title: "Get user"description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."---# Get user
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 

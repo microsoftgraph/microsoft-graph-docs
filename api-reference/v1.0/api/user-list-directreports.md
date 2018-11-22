@@ -1,4 +1,4 @@
-# List directReports
+---title: "List directReports"description: "Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager."---# List directReports
 
 Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.
 ## Permissions

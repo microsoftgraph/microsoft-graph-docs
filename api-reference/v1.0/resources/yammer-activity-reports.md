@@ -1,4 +1,4 @@
-# Yammer activity reports
+---title: "Yammer activity reports"description: "You can use the Yammer activity reports to understand the level of your organization's engagement with Yammer by seeing how much activity is generated across the organization and the number of unique users who post, like, and read messages on Yammer."---# Yammer activity reports
 
 You can use the Yammer activity reports to understand the level of your organization's engagement with Yammer by seeing how much activity is generated across the organization and the number of unique users who post, like, and read messages on Yammer.
 

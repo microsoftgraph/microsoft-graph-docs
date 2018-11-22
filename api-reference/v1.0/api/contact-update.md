@@ -1,4 +1,4 @@
-# Update contact
+---title: "Update contact"description: "Update the properties of a contact object."---# Update contact
 
 Update the properties of a contact object.
 ## Permissions

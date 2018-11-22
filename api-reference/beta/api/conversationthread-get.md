@@ -1,4 +1,4 @@
-# Get conversationThread
+---title: "Get conversationThread"description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "---# Get conversationThread
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

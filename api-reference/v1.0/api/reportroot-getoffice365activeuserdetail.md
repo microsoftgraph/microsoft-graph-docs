@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActiveUserDetail
+---title: "reportRoot: getOffice365ActiveUserDetail"description: "Get details about Office 365 active users."---# reportRoot: getOffice365ActiveUserDetail
 
 Get details about Office 365 active users.
 

@@ -1,4 +1,4 @@
-# Get incremental changes to events in a calendar view 
+---title: "Get incremental changes to events in a calendar view "description: "A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) "---# Get incremental changes to events in a calendar view 
 
 A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) 
 or some other calendar of the user's. By using delta query, you can get 

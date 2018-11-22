@@ -1,4 +1,4 @@
-# notificationMessageTemplate resource type
+---title: "notificationMessageTemplate resource type"description: " section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance."---# notificationMessageTemplate resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

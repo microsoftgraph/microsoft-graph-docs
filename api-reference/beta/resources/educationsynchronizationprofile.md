@@ -1,4 +1,4 @@
-# educationSynchronizationProfile resource type
+---title: "educationSynchronizationProfile resource type"description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync."---# educationSynchronizationProfile resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

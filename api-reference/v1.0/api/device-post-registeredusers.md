@@ -1,4 +1,4 @@
-# Create registeredUser
+---title: "Create registeredUser"description: "Add a registered user for the device."---# Create registeredUser
 
 Add a registered user for the device.
 

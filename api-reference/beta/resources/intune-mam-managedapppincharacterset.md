@@ -1,4 +1,4 @@
-﻿# managedAppPinCharacterSet enum type
+---title: "managedAppPinCharacterSet enum type"description: "Character set which is to be used for a user's app PIN"---# managedAppPinCharacterSet enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

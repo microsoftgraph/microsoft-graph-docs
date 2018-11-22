@@ -1,4 +1,4 @@
-# Remove an app from your organization's app catalog
+---title: "Permissions"description: "Remove the app from your organization's app catalog (the tenant app catalog). "---# Remove an app from your organization's app catalog
 
 
 

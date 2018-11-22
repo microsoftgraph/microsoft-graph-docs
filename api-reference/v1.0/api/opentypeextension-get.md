@@ -1,4 +1,4 @@
-# Get open extension
+---title: "Get open extension"description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."---# Get open extension
 
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.
 

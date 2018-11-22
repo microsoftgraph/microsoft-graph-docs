@@ -1,4 +1,4 @@
-# Get notificationMessageTemplate
+---title: "Get notificationMessageTemplate"description: "Read properties and relationships of the notificationMessageTemplate object."---# Get notificationMessageTemplate
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

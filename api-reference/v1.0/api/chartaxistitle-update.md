@@ -1,4 +1,4 @@
-# Update chartaxistitle
+---title: "Update chartaxistitle"description: "Update the properties of chartaxistitle object."---# Update chartaxistitle
 
 Update the properties of chartaxistitle object.
 ## Permissions

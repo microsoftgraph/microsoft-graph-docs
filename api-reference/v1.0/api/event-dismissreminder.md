@@ -1,4 +1,4 @@
-# event: dismissReminder
+---title: "event: dismissReminder"description: "Dismiss a reminder that has been triggered for an event in a user calendar."---# event: dismissReminder
 
 Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 

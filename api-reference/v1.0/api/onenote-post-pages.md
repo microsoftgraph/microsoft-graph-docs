@@ -1,4 +1,4 @@
-# Create page
+---title: "Create page"description: "Create a new OneNote page in the default section of the default notebook."---# Create page
 
 Create a new OneNote page in the default section of the default notebook.
 

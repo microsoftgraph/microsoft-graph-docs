@@ -1,4 +1,4 @@
-# List TableCollection
+---title: "List TableCollection"description: "Retrieve a list of table objects."---# List TableCollection
 
 Retrieve a list of table objects.
 ## Permissions

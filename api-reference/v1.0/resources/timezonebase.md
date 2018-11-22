@@ -1,4 +1,4 @@
----title: "timeZoneBase resource type"description: "The basic representation of a time zone."---# timeZoneBase resource type
+---title: "timeZoneBase resource type"description: "The basic representation of a time zone."---# timeZoneBase resource type
 
 The basic representation of a time zone.
 

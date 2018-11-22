@@ -1,4 +1,4 @@
-# domain resource type
+---title: "domain resource type"description: "Represents a domain associated with the tenant."---# domain resource type
 
 Represents a domain associated with the tenant.
 

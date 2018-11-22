@@ -1,4 +1,4 @@
-# Get plannerUser
+---title: "Get plannerUser"description: "Retrieve the properties and relationships of a plannerUser object. The returned properties include the user's favorite plans and recently viewed plans. "---# Get plannerUser
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

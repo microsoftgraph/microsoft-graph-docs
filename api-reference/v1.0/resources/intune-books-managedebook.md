@@ -1,4 +1,4 @@
-# managedEBook resource type
+---title: "managedEBook resource type"description: "An abstract class containing the base properties for Managed eBook."---# managedEBook resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

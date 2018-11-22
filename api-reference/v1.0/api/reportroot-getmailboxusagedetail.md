@@ -1,4 +1,4 @@
-# reportRoot: getMailboxUsageDetail
+---title: "reportRoot: getMailboxUsageDetail"description: "Get details about mailbox usage."---# reportRoot: getMailboxUsageDetail
 
 Get details about mailbox usage.
 

@@ -1,4 +1,4 @@
-# Remove a student
+---title: "Remove a student"description: "Removes an educationUser from an educationClass"---# Remove a student
 
 Removes an [educationUser](../resources/educationuser.md) from an [educationClass](../resources/educationclass.md)
 

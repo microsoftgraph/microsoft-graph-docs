@@ -1,4 +1,4 @@
-# windowsUniversalAppXContainedApp resource type
+---title: "windowsUniversalAppXContainedApp resource type"description: "A class that represents a contained app of a WindowsUniversalAppX app."---# windowsUniversalAppXContainedApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

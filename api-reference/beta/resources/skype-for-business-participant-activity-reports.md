@@ -1,4 +1,4 @@
-# Skype for Business participant activity reports
+---title: "Skype for Business participant activity reports"description: "You can get details on conferencing activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization."---# Skype for Business participant activity reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

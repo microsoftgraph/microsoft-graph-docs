@@ -1,4 +1,4 @@
-# Update managedEBookAssignment
+---title: "Update managedEBookAssignment"description: "Update the properties of a managedEBookAssignment object."---# Update managedEBookAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

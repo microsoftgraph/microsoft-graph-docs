@@ -1,4 +1,4 @@
-# event: accept
+---title: "event: accept"description: "Accept the specified event in a user calendar."---# event: accept
 
 Accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 

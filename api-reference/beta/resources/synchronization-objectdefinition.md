@@ -1,4 +1,4 @@
-# objectDefinition resource type
+---title: "objectDefinition resource type"description: "Describes an object and its attributes. Object definitions are part of directoryDefinition, which is updated as part of synchronizationSchema."---# objectDefinition resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

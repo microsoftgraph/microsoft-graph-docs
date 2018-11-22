@@ -1,4 +1,4 @@
-# Update orgcontact
+---title: "Update orgcontact"description: "Update the properties of orgcontact object."---# Update orgcontact
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

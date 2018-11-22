@@ -1,4 +1,4 @@
-# intuneBrand resource type
+---title: "intuneBrand resource type"description: "intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal."---# intuneBrand resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

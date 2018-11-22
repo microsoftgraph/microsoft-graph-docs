@@ -1,4 +1,4 @@
-# Remove directory role member
+---title: "Remove directory role member"description: "Remove a member from a directoryRole."---# Remove directory role member
 
 Remove a member from a directoryRole.
 

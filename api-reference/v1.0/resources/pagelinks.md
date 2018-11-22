@@ -1,4 +1,4 @@
----title: "pageLinks resource type"description: "Links for opening a OneNote page."---# pageLinks resource type
+---title: "pageLinks resource type"description: "Links for opening a OneNote page."---# pageLinks resource type
 
 Links for opening a OneNote page.
 

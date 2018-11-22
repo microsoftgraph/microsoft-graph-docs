@@ -1,4 +1,4 @@
-# conversationThread resource type
+---title: "conversationThread resource type"description: "A conversationThread is a collection of posts."---# conversationThread resource type
 A conversationThread is a collection of [posts](post.md).
 
 The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.

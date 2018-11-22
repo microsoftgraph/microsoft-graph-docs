@@ -1,4 +1,4 @@
-# List posts
+---title: "List posts"description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "---# List posts
 
 Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation.

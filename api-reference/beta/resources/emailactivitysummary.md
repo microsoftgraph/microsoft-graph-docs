@@ -1,4 +1,4 @@
----title: "emailActivitySummary resource type"description: "The following is a JSON representation of the resource."---# emailActivitySummary resource type
+---title: "emailActivitySummary resource type"description: "The following is a JSON representation of the resource."---# emailActivitySummary resource type
 
 ## Properties
 

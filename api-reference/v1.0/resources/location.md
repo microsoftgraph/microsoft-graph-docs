@@ -1,4 +1,4 @@
-# Location resource type
+---title: "Location resource type"description: "Represents location information of an event."---# Location resource type
 
 Represents location information of an [event](event.md).
 

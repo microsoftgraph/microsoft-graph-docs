@@ -1,4 +1,4 @@
-# Create educationAssignment
+---title: "Create educationAssignment"description: "Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  "---# Create educationAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

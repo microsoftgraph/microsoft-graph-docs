@@ -1,4 +1,4 @@
-# macOSImportedPFXCertificateProfile resource type
+---title: "macOSImportedPFXCertificateProfile resource type"description: "MacOS PFX Import certificate profile"---# macOSImportedPFXCertificateProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

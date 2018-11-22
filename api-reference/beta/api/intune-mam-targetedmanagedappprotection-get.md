@@ -1,4 +1,4 @@
-# Get targetedManagedAppProtection
+---title: "Get targetedManagedAppProtection"description: "Read properties and relationships of the targetedManagedAppProtection object."---# Get targetedManagedAppProtection
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

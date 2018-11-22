@@ -1,4 +1,4 @@
-# Delete attachment
+---title: "Delete attachment"description: "Delete an attachment from a calendar event, mail message, or group post."---# Delete attachment
 
 Delete an attachment from a calendar event, mail message, or group post.
 ## Permissions

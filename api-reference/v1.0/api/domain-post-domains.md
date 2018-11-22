@@ -1,4 +1,4 @@
-# Create domain
+---title: "Create domain"description: "Adds a domain to the tenant."---# Create domain
 
 Adds a domain to the tenant.
 

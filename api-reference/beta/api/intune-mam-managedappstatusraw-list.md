@@ -1,4 +1,4 @@
-# List managedAppStatusRaws
+---title: "List managedAppStatusRaws"description: "List properties and relationships of the managedAppStatusRaw objects."---# List managedAppStatusRaws
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

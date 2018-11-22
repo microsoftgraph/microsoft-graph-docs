@@ -1,4 +1,4 @@
-# Get call
+---title: "Get call"description: "Retrieve the properties and relationships of a call object."---# Get call
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

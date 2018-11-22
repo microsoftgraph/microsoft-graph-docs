@@ -1,4 +1,4 @@
-# reportRoot: getOneDriveUsageFileCounts
+---title: "reportRoot: getOneDriveUsageFileCounts"description: "Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period."---# reportRoot: getOneDriveUsageFileCounts
 
 Get the total number of files across all sites and how many are active files. A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 

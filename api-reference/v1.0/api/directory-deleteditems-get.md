@@ -1,4 +1,4 @@
-# Get deleted item
+---title: "Get deleted item"description: "Retrieve the properties of a recently deleted item in deleted items."---# Get deleted item
 
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).
 

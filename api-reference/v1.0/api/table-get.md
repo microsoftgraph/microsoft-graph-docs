@@ -1,4 +1,4 @@
-# Get Table
+---title: "Get Table"description: "Retrieve the properties and relationships of table object."---# Get Table
 
 Retrieve the properties and relationships of table object.
 ## Permissions

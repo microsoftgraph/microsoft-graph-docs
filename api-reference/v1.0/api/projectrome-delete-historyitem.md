@@ -1,4 +1,4 @@
-# Delete a historyItem
+---title: "Delete a historyItem"description: "Delete an existing history item for an existing user activity."---# Delete a historyItem
 
 Delete an existing history item for an existing user activity.
 

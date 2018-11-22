@@ -1,4 +1,4 @@
-# List windows10TeamGeneralConfigurations
+---title: "List windows10TeamGeneralConfigurations"description: "List properties and relationships of the windows10TeamGeneralConfiguration objects."---# List windows10TeamGeneralConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

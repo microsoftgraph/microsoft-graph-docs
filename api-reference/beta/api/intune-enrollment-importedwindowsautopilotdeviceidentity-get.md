@@ -1,4 +1,4 @@
-# Get importedWindowsAutopilotDeviceIdentity
+---title: "Get importedWindowsAutopilotDeviceIdentity"description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."---# Get importedWindowsAutopilotDeviceIdentity
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create notebook
+---title: "Create notebook"description: "Create a new OneNote notebook."---# Create notebook
 
 Create a new OneNote [notebook](../resources/notebook.md).
 ## Permissions

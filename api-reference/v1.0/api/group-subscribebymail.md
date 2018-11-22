@@ -1,4 +1,4 @@
-# group: subscribeByMail
+---title: "group: subscribeByMail"description: "Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 groups only."---# group: subscribeByMail
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 groups only.
 
 ## Permissions

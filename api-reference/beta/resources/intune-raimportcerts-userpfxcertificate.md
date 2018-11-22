@@ -1,4 +1,4 @@
-# userPFXCertificate resource type
+---title: "userPFXCertificate resource type"description: "Entity that encapsulates all information required for a user's PFX certificates."---# userPFXCertificate resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

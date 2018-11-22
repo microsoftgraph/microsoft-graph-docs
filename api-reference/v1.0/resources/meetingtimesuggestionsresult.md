@@ -1,4 +1,4 @@
-# meetingTimeSuggestionsResult resource type
+---title: "meetingTimeSuggestionsResult resource type"description: "A collection of meeting suggestions if there is any, or the reason if there isn't."---# meetingTimeSuggestionsResult resource type
 
 A collection of meeting suggestions if there is any, or the reason if there isn't.
 

@@ -1,4 +1,4 @@
-# List contactFolders
+---title: "List contactFolders"description: "Get the contact folder collection in the default Contacts folder of the signed-in user."---# List contactFolders
 
 Get the contact folder collection in the default Contacts folder of the signed-in user.
 ## Permissions

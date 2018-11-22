@@ -1,4 +1,4 @@
-# Get windowsPhone81VpnConfiguration
+---title: "Get windowsPhone81VpnConfiguration"description: "Read properties and relationships of the windowsPhone81VpnConfiguration object."---# Get windowsPhone81VpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

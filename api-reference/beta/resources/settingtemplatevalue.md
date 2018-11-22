@@ -1,4 +1,4 @@
----title: "settingTemplateValue resource type"description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."---# settingTemplateValue resource type
+---title: "settingTemplateValue resource type"description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."---# settingTemplateValue resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# onenote resource type
+---title: "onenote resource type"description: "The entry point for OneNote resources."---# onenote resource type
 
 The entry point for OneNote resources.
 

@@ -1,4 +1,4 @@
-# Delete open extension
+---title: "Delete open extension"description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource. "---# Delete open extension
 
 Delete an open extension ([openTypeExtension](../resources/opentypeextension.md) object) from the specified instance of a resource. 
 

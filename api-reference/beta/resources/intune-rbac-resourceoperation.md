@@ -1,4 +1,4 @@
-# resourceOperation resource type
+---title: "resourceOperation resource type"description: " operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles."---# resourceOperation resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

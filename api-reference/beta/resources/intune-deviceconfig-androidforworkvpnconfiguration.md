@@ -1,4 +1,4 @@
-# androidForWorkVpnConfiguration resource type
+---title: "androidForWorkVpnConfiguration resource type"description: "By providing the configurations in this profile you can instruct the Android device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."---# androidForWorkVpnConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

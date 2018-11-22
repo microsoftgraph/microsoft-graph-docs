@@ -1,4 +1,4 @@
-# List androidWorkProfileScepCertificateProfiles
+---title: "List androidWorkProfileScepCertificateProfiles"description: "List properties and relationships of the androidWorkProfileScepCertificateProfile objects."---# List androidWorkProfileScepCertificateProfiles
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

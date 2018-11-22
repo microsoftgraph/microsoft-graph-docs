@@ -1,4 +1,4 @@
-# Get officeClientConfigurationAssignment
+---title: "Get officeClientConfigurationAssignment"description: "Read properties and relationships of the officeClientConfigurationAssignment object."---# Get officeClientConfigurationAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

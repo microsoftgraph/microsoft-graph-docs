@@ -1,4 +1,4 @@
-# List androidForWorkGmailEasConfigurations
+---title: "List androidForWorkGmailEasConfigurations"description: "List properties and relationships of the androidForWorkGmailEasConfiguration objects."---# List androidForWorkGmailEasConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

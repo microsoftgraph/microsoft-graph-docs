@@ -1,4 +1,4 @@
-# Create User
+---title: "Create User"description: "Use this API to create a new User."---# Create User
 
 Use this API to create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.

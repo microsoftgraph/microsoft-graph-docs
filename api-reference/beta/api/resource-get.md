@@ -1,4 +1,4 @@
-# Get resource
+---title: "Get resource"description: "Retrieve the binary data of a file or image resource object."---# Get resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

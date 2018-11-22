@@ -1,4 +1,4 @@
-# Add Named Item FormulaLocal
+---title: "Add Named Item FormulaLocal"description: "Adds a new name to the collection of the given scope using the user's locale for the formula."---# Add Named Item FormulaLocal
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions

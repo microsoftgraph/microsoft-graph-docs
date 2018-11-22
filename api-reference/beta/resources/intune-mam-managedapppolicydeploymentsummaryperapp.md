@@ -1,4 +1,4 @@
-# managedAppPolicyDeploymentSummaryPerApp resource type
+---title: "managedAppPolicyDeploymentSummaryPerApp resource type"description: "Represents policy deployment summary per app."---# managedAppPolicyDeploymentSummaryPerApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

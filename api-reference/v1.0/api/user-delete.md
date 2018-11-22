@@ -1,4 +1,4 @@
-# Delete a user
+---title: "Delete a user"description: "Delete user."---# Delete a user
 
 Delete user.
 ## Permissions

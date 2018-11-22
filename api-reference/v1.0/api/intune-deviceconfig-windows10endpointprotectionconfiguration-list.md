@@ -1,4 +1,4 @@
-# List windows10EndpointProtectionConfigurations
+---title: "List windows10EndpointProtectionConfigurations"description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."---# List windows10EndpointProtectionConfigurations
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

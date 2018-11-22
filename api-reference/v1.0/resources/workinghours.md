@@ -1,4 +1,4 @@
-# workingHours resource type
+---title: "workingHours resource type"description: "Represents the days of the week and hours in a specific time zone that the user works."---# workingHours resource type
 
 Represents the days of the week and hours in a specific time zone that the user works.
 

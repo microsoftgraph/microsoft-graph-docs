@@ -1,4 +1,4 @@
-# Get NamedItem
+---title: "Get NamedItem"description: "Retrieve the properties and relationships of nameditem object."---# Get NamedItem
 
 Retrieve the properties and relationships of nameditem object.
 ## Permissions

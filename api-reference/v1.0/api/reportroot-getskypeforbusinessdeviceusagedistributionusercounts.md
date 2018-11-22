@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
+---title: "reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts"description: "Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad."---# reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
 Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.
 

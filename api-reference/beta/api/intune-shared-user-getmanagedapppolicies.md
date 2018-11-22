@@ -1,4 +1,4 @@
-# getManagedAppPolicies function
+---title: "getManagedAppPolicies function"description: "Gets app restrictions for a given user."---# getManagedAppPolicies function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

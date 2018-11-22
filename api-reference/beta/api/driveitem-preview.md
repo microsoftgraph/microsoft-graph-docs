@@ -1,4 +1,4 @@
-# driveItem: preview
+---title: "driveItem: preview"description: "This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview."---# driveItem: preview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

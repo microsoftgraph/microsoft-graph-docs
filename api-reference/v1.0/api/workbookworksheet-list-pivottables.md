@@ -1,4 +1,4 @@
-# List pivotTables
+---title: "List pivotTables"description: "Retrieve a list of workbookpivottable objects."---# List pivotTables
 
 Retrieve a list of workbookpivottable objects.
 

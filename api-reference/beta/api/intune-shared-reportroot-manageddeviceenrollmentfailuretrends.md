@@ -1,4 +1,4 @@
-# managedDeviceEnrollmentFailureTrends function
+---title: "managedDeviceEnrollmentFailureTrends function"description: "Metadata for the enrollment failure trends report"---# managedDeviceEnrollmentFailureTrends function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

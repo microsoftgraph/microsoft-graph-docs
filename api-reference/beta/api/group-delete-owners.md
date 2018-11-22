@@ -1,4 +1,4 @@
-# Remove owner
+---title: "Remove owner"description: "Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property."---# Remove owner
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

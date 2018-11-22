@@ -1,4 +1,4 @@
-# List events
+---title: "List events"description: "Retrieve a list of event objects."---# List events
 Retrieve a list of [event](../resources/event.md) objects.
 
 ## Permissions

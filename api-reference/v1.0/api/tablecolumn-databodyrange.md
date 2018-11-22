@@ -1,4 +1,4 @@
-# TableColumn: DataBodyRange
+---title: "TableColumn: DataBodyRange"description: "Gets the range object associated with the data body of the column."---# TableColumn: DataBodyRange
 
 Gets the range object associated with the data body of the column.
 ## Permissions

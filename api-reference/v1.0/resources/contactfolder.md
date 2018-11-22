@@ -1,4 +1,4 @@
-# contactFolder resource type
+---title: "contactFolder resource type"description: "A folder that contains contacts."---# contactFolder resource type
 
 A folder that contains contacts.
 

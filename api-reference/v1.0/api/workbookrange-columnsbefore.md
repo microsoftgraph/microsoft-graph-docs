@@ -1,4 +1,4 @@
-# workbookRange: columnsBefore
+---title: "workbookRange: columnsBefore"description: "Gets a certain number of columns to the left of the given range."---# workbookRange: columnsBefore
 
 Gets a certain number of columns to the left of the given range.
 

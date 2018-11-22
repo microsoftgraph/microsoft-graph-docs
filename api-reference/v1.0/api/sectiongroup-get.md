@@ -1,4 +1,4 @@
-# Get sectionGroup
+---title: "Get sectionGroup"description: "Retrieve the properties and relationships of a sectionGroup object."---# Get sectionGroup
 
 Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.
 ## Permissions

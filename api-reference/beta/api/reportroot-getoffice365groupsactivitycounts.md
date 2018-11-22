@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityCounts
+---title: "reportRoot: getOffice365GroupsActivityCounts"description: "Get the number of group activities across group workloads."---# reportRoot: getOffice365GroupsActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

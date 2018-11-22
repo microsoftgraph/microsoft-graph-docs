@@ -1,4 +1,4 @@
-# ChartFill: clear
+---title: "ChartFill: clear"description: "Clear the fill color of a chart element."---# ChartFill: clear
 
 Clear the fill color of a chart element.
 ## Permissions

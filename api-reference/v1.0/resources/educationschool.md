@@ -1,4 +1,4 @@
-# educationSchool resource type
+---title: "educationSchool resource type"description: "A resource representing a school and used to manage the classes, teachers, and students of the represented school.  "---# educationSchool resource type
 
 A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
 

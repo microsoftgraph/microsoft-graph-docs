@@ -1,4 +1,4 @@
-# Delete conversationThread
+---title: "Delete conversationThread"description: "Delete conversationThread."---# Delete conversationThread
 
 Delete conversationThread.
 ## Permissions

@@ -1,4 +1,4 @@
-# hardwareInformation resource type
+---title: "hardwareInformation resource type"description: "Hardware information of a given device."---# hardwareInformation resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

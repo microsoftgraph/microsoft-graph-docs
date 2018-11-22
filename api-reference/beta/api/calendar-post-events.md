@@ -1,4 +1,4 @@
-# Create Event
+---title: "Create Event"description: "Use this API to create a new Event in the default or the specified calendar."---# Create Event
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

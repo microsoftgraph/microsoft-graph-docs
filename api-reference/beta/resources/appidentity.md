@@ -1,4 +1,4 @@
-# appIdentity resource type
+---title: "appIdentity resource type"description: "Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the directoryAudit API"---# appIdentity resource type
 Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API
 
 

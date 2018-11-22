@@ -1,4 +1,4 @@
-# ChartTitle resource type
+---title: "ChartTitle resource type"description: "Represents a chart title object of a chart."---# ChartTitle resource type
 
 Represents a chart title object of a chart.
 

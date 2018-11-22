@@ -1,4 +1,4 @@
-# deviceManagementPartner resource type
+---title: "deviceManagementPartner resource type"description: "Entity which represents a connection to device management partner."---# deviceManagementPartner resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

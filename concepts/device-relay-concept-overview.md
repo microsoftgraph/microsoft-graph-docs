@@ -1,4 +1,4 @@
-# Device relay API in Microsoft Graph (preview)
+---title: "Device relay API in Microsoft Graph (preview)"description: "Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. "---# Device relay API in Microsoft Graph (preview)
 
 Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. 
 

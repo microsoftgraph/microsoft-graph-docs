@@ -1,4 +1,4 @@
-# Delete windows10SecureAssessmentConfiguration
+---title: "Delete windows10SecureAssessmentConfiguration"description: "Deletes a windows10SecureAssessmentConfiguration."---# Delete windows10SecureAssessmentConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# Assign a manager
+---title: "Assign a manager"description: "Use this API to assign a user's manager."---# Assign a manager
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get a ListItemVersion resource
+---title: "Get a ListItemVersion resource"description: "Retrieve the metadata for a specific version of a ListItem."---# Get a ListItemVersion resource
 
 Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).
 

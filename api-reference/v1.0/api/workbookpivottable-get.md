@@ -1,4 +1,4 @@
-# Get workbookPivotTable
+---title: "Get workbookPivotTable"description: "Retrieve the properties and relationships of workbookPivotTable object."---# Get workbookPivotTable
 
 Retrieve the properties and relationships of workbookPivotTable object.
 

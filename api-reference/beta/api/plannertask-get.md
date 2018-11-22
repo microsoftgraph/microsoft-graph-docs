@@ -1,4 +1,4 @@
-# Get plannerTask
+---title: "Get plannerTask"description: "Retrieve the properties and relationships of **plannertask** object."---# Get plannerTask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getOneDriveUsageAccountDetail
+---title: "reportRoot: getOneDriveUsageAccountDetail"description: "Get details about OneDrive usage by account."---# reportRoot: getOneDriveUsageAccountDetail
 
 Get details about OneDrive usage by account.
 

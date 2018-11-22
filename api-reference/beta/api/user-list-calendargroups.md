@@ -1,4 +1,4 @@
-# List calendarGroups
+---title: "List calendarGroups"description: "Get the user's calendar groups."---# List calendarGroups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

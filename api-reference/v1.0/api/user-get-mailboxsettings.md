@@ -1,4 +1,4 @@
-# Get user mailbox settings
+---title: "Get user mailbox settings"description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "---# Get user mailbox settings
 
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon 
 receipt of their email), locale (language and country/region), and time zone, and working hours.

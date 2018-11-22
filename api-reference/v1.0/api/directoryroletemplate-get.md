@@ -1,4 +1,4 @@
-# Get directoryRoleTemplate
+---title: "Get directoryRoleTemplate"description: "Retrieve the properties and relationships of a directoryroletemplate object."---# Get directoryRoleTemplate
 
 Retrieve the properties and relationships of a directoryroletemplate object.
 ## Permissions

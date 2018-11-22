@@ -1,4 +1,4 @@
-
+---title: "Update user"description: "Update the properties of a user object."---
 # Update user
 
 Update the properties of a user object.

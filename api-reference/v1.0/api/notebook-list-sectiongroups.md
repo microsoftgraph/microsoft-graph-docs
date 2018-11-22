@@ -1,4 +1,4 @@
-# List sectionGroups
+---title: "List sectionGroups"description: "Retrieve a list of section groups from the specified notebook."---# List sectionGroups
 
 Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.
 ## Permissions

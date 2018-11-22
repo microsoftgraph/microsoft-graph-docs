@@ -1,4 +1,4 @@
-# Update page
+---title: "Update page"description: "Update the content of a OneNote page."---# Update page
 
 Update the content of a OneNote page.
 ## Permissions

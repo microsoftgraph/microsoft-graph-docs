@@ -1,4 +1,4 @@
-# Chart: Image
+---title: "Chart: Image"description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."---# Chart: Image
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

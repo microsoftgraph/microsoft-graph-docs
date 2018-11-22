@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
+---title: "reportRoot: getSkypeForBusinessPeerToPeerActivityCounts"description: "Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer."---# reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

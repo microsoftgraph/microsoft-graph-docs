@@ -1,4 +1,4 @@
-# message resource type
+---title: "message resource type"description: "A message in a mailFolder."---# message resource type
 
 A message in a mailFolder.
 

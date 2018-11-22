@@ -1,4 +1,4 @@
-# Delete windows10EnterpriseModernAppManagementConfiguration
+---title: "Delete windows10EnterpriseModernAppManagementConfiguration"description: "Deletes a windows10EnterpriseModernAppManagementConfiguration."---# Delete windows10EnterpriseModernAppManagementConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

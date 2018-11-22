@@ -1,4 +1,4 @@
-# Remove a scopedRoleMember
+---title: "Remove a scopedRoleMember"description: "Remove a scoped-role member from an adminstrative unit."---# Remove a scopedRoleMember
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

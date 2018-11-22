@@ -1,4 +1,4 @@
-# Create ChartSeries
+---title: "Create ChartSeries"description: "Use this API to create a new ChartSeries."---# Create ChartSeries
 
 Use this API to create a new ChartSeries.
 ## Permissions

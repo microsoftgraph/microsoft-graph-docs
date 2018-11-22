@@ -1,4 +1,4 @@
-# Overview of Office 365 groups in Microsoft Graph
+---title: "Overview of Office 365 groups in Microsoft Graph"description: "Office 365 groups provide the foundational membership service for users to share conversations, files, notes, calendars, plans, and many other assets. "---# Overview of Office 365 groups in Microsoft Graph
 
 Office 365 groups provide the foundational membership service for users to share conversations, files, notes, calendars, plans, and many other assets. 
 

@@ -1,4 +1,4 @@
-# TableSort: reapply
+---title: "TableSort: reapply"description: "Reapplies the current sorting parameters to the table."---# TableSort: reapply
 
 Reapplies the current sorting parameters to the table.
 ## Permissions

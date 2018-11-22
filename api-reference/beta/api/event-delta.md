@@ -1,4 +1,4 @@
-# event: delta
+---title: "event: delta"description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)"---# event: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

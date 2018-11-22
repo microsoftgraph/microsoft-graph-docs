@@ -1,4 +1,4 @@
-# Create windowsPhone81CustomConfiguration
+---title: "Create windowsPhone81CustomConfiguration"description: "Create a new windowsPhone81CustomConfiguration object."---# Create windowsPhone81CustomConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

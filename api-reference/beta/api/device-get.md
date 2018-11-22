@@ -1,4 +1,4 @@
-# Get device
+---title: "Get device"description: "Get the properties and relationships of a device object."---# Get device
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

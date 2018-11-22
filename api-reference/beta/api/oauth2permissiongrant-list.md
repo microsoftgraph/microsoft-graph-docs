@@ -1,4 +1,4 @@
-# List oauth2PermissionGrants
+---title: "List oauth2PermissionGrants"description: "Retrieve a list of oauth2PermissionGrant objects."---# List oauth2PermissionGrants
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# synchronizationTemplate resource type
+---title: "synchronizationTemplate resource type"description: " anyone can retrieve the template to see the default settings, including the synchronization schema."---# synchronizationTemplate resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

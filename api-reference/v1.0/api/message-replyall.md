@@ -1,4 +1,4 @@
-# message: replyAll
+---title: "message: replyAll"description: "Reply to all recipients of a message. The message is then saved in the Sent Items folder."---# message: replyAll
 
 Reply to all recipients of a message. The message is then saved in the Sent Items folder.
 

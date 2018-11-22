@@ -1,4 +1,4 @@
-# Update chart
+---title: "Update chart"description: "Update the properties of chart object."---# Update chart
 
 Update the properties of chart object.
 ## Permissions

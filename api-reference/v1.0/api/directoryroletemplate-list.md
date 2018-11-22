@@ -1,4 +1,4 @@
-# List directoryRoleTemplates
+---title: "List directoryRoleTemplates"description: "Retrieve a list of directoryRoleTemplate objects."---# List directoryRoleTemplates
 
 Retrieve a list of directoryRoleTemplate objects.
 

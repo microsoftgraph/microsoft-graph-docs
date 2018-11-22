@@ -1,4 +1,4 @@
-# Table: reapplyFilters
+---title: "Table: reapplyFilters"description: "Reapplies all the filters currently on the table."---# Table: reapplyFilters
 
 Reapplies all the filters currently on the table.
 ## Permissions

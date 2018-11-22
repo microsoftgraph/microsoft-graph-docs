@@ -1,4 +1,4 @@
-# Update plannerUser
+---title: "Update plannerUser"description: "Update the properties of a plannerUser object. You can use this operation to add or remove plans from a user's favorite plans list, and to indicate which plans the user has recently viewed."---# Update plannerUser
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

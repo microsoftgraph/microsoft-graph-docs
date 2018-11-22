@@ -1,4 +1,4 @@
-# iosNetworkUsageRule resource type
+---title: "iosNetworkUsageRule resource type"description: "Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks."---# iosNetworkUsageRule resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List contracts
+---title: "List contracts"description: "Retrieve a list of contract objects associated to a partner tenant."---# List contracts
 
 Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.
 

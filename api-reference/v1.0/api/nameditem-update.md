@@ -1,4 +1,4 @@
-# Update nameditem
+---title: "Update nameditem"description: "Update the properties of nameditem object."---# Update nameditem
 
 Update the properties of nameditem object.
 ## Permissions

@@ -1,4 +1,4 @@
-# List advancedThreatProtectionOnboardingDeviceSettingStates
+---title: "List advancedThreatProtectionOnboardingDeviceSettingStates"description: "List properties and relationships of the advancedThreatProtectionOnboardingDeviceSettingState objects."---# List advancedThreatProtectionOnboardingDeviceSettingStates
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

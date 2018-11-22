@@ -1,4 +1,4 @@
-# Get settings
+---title: "Get settings"description: "Read the user and organization settings object."---# Get settings
 
 Read the user and organization [settings](../resources/user-settings.md) object.
 To learn how to update the properties of the [settings](../resources/user-settings.md) object, see [update user settings](user-update-settings.md).

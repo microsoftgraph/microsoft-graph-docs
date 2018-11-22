@@ -1,4 +1,4 @@
-# Update Outlook category
+---title: "Update Outlook category"description: "Update the writable property, **color**, of the specified outlookCategory object. You cannot modify the **displayName** property "---# Update Outlook category
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

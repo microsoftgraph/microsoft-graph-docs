@@ -1,4 +1,4 @@
-# List points
+---title: "List points"description: "Retrieve a list of chartpoints objects."---# List points
 
 Retrieve a list of chartpoints objects.
 ## Permissions

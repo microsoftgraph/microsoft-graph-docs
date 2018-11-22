@@ -1,4 +1,4 @@
-# deviceManagementScriptRunSummary resource type
+---title: "deviceManagementScriptRunSummary resource type"description: "Contains properties for the run summary of a device management script."---# deviceManagementScriptRunSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

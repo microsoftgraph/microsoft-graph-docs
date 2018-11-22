@@ -1,4 +1,4 @@
-# mailFolder: move
+---title: "mailFolder: move"description: "Move a mailfolder and its contents to another mailfolder."---# mailFolder: move
 
 Move a mailfolder and its contents to another mailfolder.
 

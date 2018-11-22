@@ -1,4 +1,4 @@
-# List officeClientConfigurationAssignments
+---title: "List officeClientConfigurationAssignments"description: "List properties and relationships of the officeClientConfigurationAssignment objects."---# List officeClientConfigurationAssignments
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# secureScoreControlProfiles resource type
+---title: "secureScoreControlProfiles resource type"description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."---# secureScoreControlProfiles resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

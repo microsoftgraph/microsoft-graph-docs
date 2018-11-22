@@ -1,4 +1,4 @@
-# Get ChartSeries
+---title: "Get ChartSeries"description: "Retrieve the properties and relationships of chartseries object."---# Get ChartSeries
 
 Retrieve the properties and relationships of chartseries object.
 ## Permissions

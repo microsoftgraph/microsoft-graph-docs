@@ -1,4 +1,4 @@
----title: "onenoteEntitySchemaObjectModel resource"description: "This is a base type for OneNote entities."---# onenoteEntitySchemaObjectModel resource
+---title: "onenoteEntitySchemaObjectModel resource"description: "This is a base type for OneNote entities."---# onenoteEntitySchemaObjectModel resource
 
 This is a base type for OneNote entities.
 

@@ -1,4 +1,4 @@
-# List deviceConfigurationDeviceStatuses
+---title: "List deviceConfigurationDeviceStatuses"description: "List properties and relationships of the deviceConfigurationDeviceStatus objects."---# List deviceConfigurationDeviceStatuses
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

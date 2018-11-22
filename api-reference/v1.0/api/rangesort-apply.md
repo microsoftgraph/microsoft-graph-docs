@@ -1,4 +1,4 @@
-# RangeSort: apply
+---title: "RangeSort: apply"description: "Perform a sort operation."---# RangeSort: apply
 
 Perform a sort operation.
 ## Permissions

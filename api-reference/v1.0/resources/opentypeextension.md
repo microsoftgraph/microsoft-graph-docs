@@ -1,4 +1,4 @@
-# openTypeExtension resource type (open extensions)
+---title: "openTypeExtension resource type (open extensions)"description: "Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph."---# openTypeExtension resource type (open extensions)
 
 Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
 

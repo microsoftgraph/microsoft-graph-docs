@@ -1,4 +1,4 @@
-# teamsAppInstallation resource type
+---title: "teamsAppInstallation resource type"description: "A teamsApp installed in a team. "---# teamsAppInstallation resource type
 
 
 

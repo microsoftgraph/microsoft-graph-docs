@@ -1,4 +1,4 @@
-# userInstallStateSummary resource type
+---title: "userInstallStateSummary resource type"description: "Contains properties for the installation state summary for a user."---# userInstallStateSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

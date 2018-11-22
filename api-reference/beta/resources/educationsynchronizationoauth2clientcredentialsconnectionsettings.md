@@ -1,4 +1,4 @@
-# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
+---title: "educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource"description: "When OAuth2 Client Credentials Grant is to be used to connect to the data provider, this connection settings type should be used to set up the profile."---# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

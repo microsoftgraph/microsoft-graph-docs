@@ -1,4 +1,4 @@
-# imageInfo resource type
+---title: "imageInfo resource type"description: "A complex type for representing the **attribution** property in the visualInfo part of the activity object."---# imageInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get iosScepCertificateProfile
+---title: "Get iosScepCertificateProfile"description: "Read properties and relationships of the iosScepCertificateProfile object."---# Get iosScepCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# windowsPhone81TrustedRootCertificate resource type
+---title: "windowsPhone81TrustedRootCertificate resource type"description: " Trusted Root Certificate configuration profile"---# windowsPhone81TrustedRootCertificate resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

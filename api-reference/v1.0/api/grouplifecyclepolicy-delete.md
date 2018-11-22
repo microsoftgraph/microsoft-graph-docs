@@ -1,4 +1,4 @@
-# Delete groupLifecyclePolicy
+---title: "Delete groupLifecyclePolicy"description: "Deletes a groupLifecyclePolicy."---# Delete groupLifecyclePolicy
 
 Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 

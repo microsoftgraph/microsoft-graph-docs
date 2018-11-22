@@ -1,4 +1,4 @@
-# vppTokenRevokeLicensesActionResult resource type
+---title: "vppTokenRevokeLicensesActionResult resource type"description: "The status of the revoke licenses action performed on the Apple Volume Purchase Program token."---# vppTokenRevokeLicensesActionResult resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create notebook
+---title: "Create notebook"description: "Create a new OneNote notebook."---# Create notebook
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

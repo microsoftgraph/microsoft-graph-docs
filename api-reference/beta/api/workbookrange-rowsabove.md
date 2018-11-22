@@ -1,4 +1,4 @@
-# workbookRange: rowsAbove
+---title: "workbookRange: rowsAbove"description: "Gets a certain number of rows above a given range."---# workbookRange: rowsAbove
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

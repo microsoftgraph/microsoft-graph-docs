@@ -1,4 +1,4 @@
-# Get Range
+---title: "Get Range"description: "Retrieve the properties and relationships of range object."---# Get Range
 
 Retrieve the properties and relationships of range object.
 ## Permissions

@@ -1,4 +1,4 @@
-# windowsPackageInformation resource type
+---title: "windowsPackageInformation resource type"description: "Contains properties for the package information for a Windows line of business app."---# windowsPackageInformation resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Add educationClass to educationSchool
+---title: "Add educationClass to educationSchool"description: "Add a class to a school."---# Add educationClass to educationSchool
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

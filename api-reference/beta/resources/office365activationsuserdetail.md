@@ -1,4 +1,4 @@
----title: "office365ActivationsUserDetail resource type"description: "The following is a JSON representation of the resource."---# office365ActivationsUserDetail resource type
+---title: "office365ActivationsUserDetail resource type"description: "The following is a JSON representation of the resource."---# office365ActivationsUserDetail resource type
 
 ## Properties
 

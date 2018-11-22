@@ -1,4 +1,4 @@
-# embeddedSIMActivationCodePoolAssignment resource type
+---title: "embeddedSIMActivationCodePoolAssignment resource type"description: "The embedded SIM activation code pool assignment entity assigns a specific embeddedSIMActivationCodePool to an AAD device group."---# embeddedSIMActivationCodePoolAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

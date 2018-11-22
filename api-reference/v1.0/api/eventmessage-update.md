@@ -1,4 +1,4 @@
-# Update eventMessage
+---title: "Update eventMessage"description: "Update the properties of an eventMessage object."---# Update eventMessage
 
 Update the properties of an [eventMessage](../resources/eventmessage.md) object.
 ## Permissions

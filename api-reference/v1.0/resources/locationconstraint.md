@@ -1,4 +1,4 @@
-# locationConstraint resource type
+---title: "locationConstraint resource type"description: "The conditions stated by a client for the location of a meeting."---# locationConstraint resource type
 
 The conditions stated by a client for the location of a meeting.
 

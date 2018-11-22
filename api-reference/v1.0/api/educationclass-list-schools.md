@@ -1,4 +1,4 @@
-# List schools
+---title: "List schools"description: "Retrieve a list of schools in which the class is taught."---# List schools
 
 Retrieve a list of schools in which the class is taught.
 

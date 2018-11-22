@@ -1,4 +1,4 @@
-# Get iosCertificateProfile
+---title: "Get iosCertificateProfile"description: "Read properties and relationships of the iosCertificateProfile object."---# Get iosCertificateProfile
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# windows10CertificateProfileBase resource type
+---title: "windows10CertificateProfileBase resource type"description: "Base class for Windows 10 certificate profile."---# windows10CertificateProfileBase resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

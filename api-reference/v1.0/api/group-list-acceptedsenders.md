@@ -1,4 +1,4 @@
-# List acceptedSenders
+---title: "List acceptedSenders"description: "Get a list of users or groups that are in the acceptedSenders list for this group."---# List acceptedSenders
 Get a list of users or groups that are in the acceptedSenders list for this group.
 
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 

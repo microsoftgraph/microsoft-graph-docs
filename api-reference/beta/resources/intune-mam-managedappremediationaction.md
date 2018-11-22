@@ -1,4 +1,4 @@
-﻿# managedAppRemediationAction enum type
+---title: "managedAppRemediationAction enum type"description: "An admin initiated action to be applied on a managed app."---# managedAppRemediationAction enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

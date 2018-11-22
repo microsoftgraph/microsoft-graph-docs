@@ -1,4 +1,4 @@
-# Create educationClass
+---title: "Create educationClass"description: "Create a new class. This will also create a universal group. When you use this API to create a class, it will add special properties to the group, which will"---# Create educationClass
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

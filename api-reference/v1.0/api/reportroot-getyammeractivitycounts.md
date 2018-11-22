@@ -1,4 +1,4 @@
-# reportRoot: getYammerActivityCounts
+---title: "reportRoot: getYammerActivityCounts"description: "Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked."---# reportRoot: getYammerActivityCounts
 
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 

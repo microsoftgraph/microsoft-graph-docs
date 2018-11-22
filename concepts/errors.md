@@ -1,4 +1,4 @@
-# Microsoft Graph error responses and resource types
+---title: "Microsoft Graph error responses and resource types"description: "  "---# Microsoft Graph error responses and resource types
 
 <!--In this article:
   

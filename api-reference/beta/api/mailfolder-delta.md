@@ -1,4 +1,4 @@
-# mailFolder: delta
+---title: "mailFolder: delta"description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."---# mailFolder: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update iosLobApp
+---title: "Update iosLobApp"description: "Update the properties of a iosLobApp object."---# Update iosLobApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

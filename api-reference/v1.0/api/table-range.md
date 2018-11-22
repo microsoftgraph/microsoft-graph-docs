@@ -1,4 +1,4 @@
-# Table: Range
+---title: "Table: Range"description: "Gets the range object associated with the entire table."---# Table: Range
 
 Gets the range object associated with the entire table.
 ## Permissions

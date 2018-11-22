@@ -1,4 +1,4 @@
-# Update team
+---title: "Update team"description: "Update the properties of the specified team."---# Update team
 
 
 

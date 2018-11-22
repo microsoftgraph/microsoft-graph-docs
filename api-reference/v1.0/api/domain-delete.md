@@ -1,4 +1,4 @@
-# Delete domain
+---title: "Delete domain"description: "Deletes a domain from a tenant."---# Delete domain
 
 Deletes a domain from a tenant.
 

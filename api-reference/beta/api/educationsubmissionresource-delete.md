@@ -1,4 +1,4 @@
-# Delete educationSubmissionResource
+---title: "Delete educationSubmissionResource"description: " the resource to its original state. If the resource was not copied from the assignment but was added from the student, the resource is simply deleted."---# Delete educationSubmissionResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Use the activity feed REST API
+---title: "Use the activity feed REST API"description: "You can use the activity feed API in Microsoft Graph to resume a user's activity across devices and platforms. Activity feed API requests are performed on behalf of a user via delegated permissions and the user activity permission, which can be used with either personal or work and school accounts. "---# Use the activity feed REST API
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

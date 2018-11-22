@@ -1,4 +1,4 @@
-# Get iosGeneralDeviceConfiguration
+---title: "Get iosGeneralDeviceConfiguration"description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."---# Get iosGeneralDeviceConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

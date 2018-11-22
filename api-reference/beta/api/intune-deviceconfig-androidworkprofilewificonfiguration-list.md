@@ -1,4 +1,4 @@
-# List androidWorkProfileWiFiConfigurations
+---title: "List androidWorkProfileWiFiConfigurations"description: "List properties and relationships of the androidWorkProfileWiFiConfiguration objects."---# List androidWorkProfileWiFiConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

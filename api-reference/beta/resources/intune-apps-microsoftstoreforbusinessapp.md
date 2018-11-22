@@ -1,4 +1,4 @@
-# microsoftStoreForBusinessApp resource type
+---title: "microsoftStoreForBusinessApp resource type"description: "Microsoft Store for Business Apps. This class does not support Create, Delete, or Update."---# microsoftStoreForBusinessApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

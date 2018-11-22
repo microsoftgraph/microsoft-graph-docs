@@ -1,4 +1,4 @@
-# Overview of users in Microsoft Graph
+---title: "Overview of users in Microsoft Graph"description: "Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users."---# Overview of users in Microsoft Graph
 
 Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
 

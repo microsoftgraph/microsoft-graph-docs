@@ -1,4 +1,4 @@
-# OneDrive activity reports
+---title: "OneDrive activity reports"description: "You can get the activity of every user licensed to use OneDrive by looking at their interaction with files on OneDrive. It also helps you to understand the level of collaboration going on by showing the number of files shared."---# OneDrive activity reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

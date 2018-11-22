@@ -1,4 +1,4 @@
-# Update windows81GeneralConfiguration
+---title: "Update windows81GeneralConfiguration"description: "Update the properties of a windows81GeneralConfiguration object."---# Update windows81GeneralConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

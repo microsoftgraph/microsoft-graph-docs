@@ -1,4 +1,4 @@
-# rangeView resource type
+---title: "rangeView resource type"description: "RangeView represents a set of visible cells of the parent range."---# rangeView resource type
 RangeView represents a set of visible cells of the parent range.
 
 ## Methods

@@ -1,4 +1,4 @@
-# Get anonymousIpRiskEvent
+---title: "Get anonymousIpRiskEvent"description: "Retrieve the properties and relationships of an anonymousipriskevent object."---# Get anonymousIpRiskEvent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

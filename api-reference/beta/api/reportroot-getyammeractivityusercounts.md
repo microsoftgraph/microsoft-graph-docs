@@ -1,4 +1,4 @@
-# reportRoot: getYammerActivityUserCounts
+---title: "reportRoot: getYammerActivityUserCounts"description: "Get the trends on the number of unique users who posted, read, and liked Yammer messages."---# reportRoot: getYammerActivityUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

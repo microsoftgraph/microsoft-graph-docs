@@ -1,4 +1,4 @@
-# androidForWorkEnrollmentProfile resource type
+---title: "androidForWorkEnrollmentProfile resource type"description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."---# androidForWorkEnrollmentProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update chartdatalabels
+---title: "Update chartdatalabels"description: "Update the properties of chartdatalabels object."---# Update chartdatalabels
 
 Update the properties of chartdatalabels object.
 ## Permissions

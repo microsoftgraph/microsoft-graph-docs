@@ -1,4 +1,4 @@
-# page resource type
+---title: "page resource type"description: "A page in a OneNote notebook."---# page resource type
 
 A page in a OneNote notebook.
 

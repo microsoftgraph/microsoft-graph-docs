@@ -1,4 +1,4 @@
-# Get windowsManagedDevice
+---title: "Get windowsManagedDevice"description: "Read properties and relationships of the windowsManagedDevice object."---# Get windowsManagedDevice
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

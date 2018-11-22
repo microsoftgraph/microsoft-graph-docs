@@ -1,4 +1,4 @@
-# List win32LobApps
+---title: "List win32LobApps"description: "List properties and relationships of the win32LobApp objects."---# List win32LobApps
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

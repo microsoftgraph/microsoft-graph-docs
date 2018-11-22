@@ -1,4 +1,4 @@
-# List applications
+---title: "List applications"description: "Retrieve a list of application objects associated with the connectorGroup."---# List applications
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

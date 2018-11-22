@@ -1,4 +1,4 @@
-# Create remoteAssistancePartner
+---title: "Create remoteAssistancePartner"description: "Create a new remoteAssistancePartner object."---# Create remoteAssistancePartner
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

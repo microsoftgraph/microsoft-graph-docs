@@ -1,4 +1,4 @@
-# Get notebook
+---title: "Get notebook"description: "Retrieve the properties and relationships of a notebook object."---# Get notebook
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object.
 ## Permissions

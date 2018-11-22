@@ -1,4 +1,4 @@
-# List TableColumnCollection
+---title: "List TableColumnCollection"description: "Retrieve a list of tablecolumn objects."---# List TableColumnCollection
 
 Retrieve a list of tablecolumn objects.
 ## Permissions

@@ -1,4 +1,4 @@
-# educationSubmission: release
+---title: "educationSubmission: release"description: " and indicates that grading is done. This action can only be done by the teacher."---# educationSubmission: release
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

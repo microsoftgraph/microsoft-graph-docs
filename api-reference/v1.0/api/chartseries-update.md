@@ -1,4 +1,4 @@
-# Update chartseries
+---title: "Update chartseries"description: "Update the properties of chartseries object."---# Update chartseries
 
 Update the properties of chartseries object.
 ## Permissions

@@ -1,4 +1,4 @@
----title: "recurrenceRange resource type"description: "Describes a date range over which a recurring event repeats. "---# recurrenceRange resource type
+---title: "recurrenceRange resource type"description: "Describes a date range over which a recurring event repeats. "---# recurrenceRange resource type
 
 Describes a date range over which a recurring [event](event.md) repeats. 
 

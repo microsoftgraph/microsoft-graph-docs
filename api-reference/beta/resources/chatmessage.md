@@ -1,4 +1,4 @@
-# chatMessage resource type
+---title: "chatMessage resource type"description: "Represents an individual chat message within a channel or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message."---# chatMessage resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

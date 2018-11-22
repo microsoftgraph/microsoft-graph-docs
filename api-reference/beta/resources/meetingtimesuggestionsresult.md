@@ -1,4 +1,4 @@
-# meetingTimeSuggestionsResult resource type
+---title: "meetingTimeSuggestionsResult resource type"description: "A collection of meeting suggestions if there is any, or the reason if there isn't."---# meetingTimeSuggestionsResult resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

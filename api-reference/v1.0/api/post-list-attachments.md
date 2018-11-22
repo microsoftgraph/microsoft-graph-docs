@@ -1,4 +1,4 @@
-# List attachments
+---title: "List attachments"description: "Retrieve a list of attachment objects attached to a post."---# List attachments
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
 ## Permissions

@@ -1,4 +1,4 @@
-# List educationClasses
+---title: "List educationClasses"description: "Retrieve a list of classes owned by a school."---# List educationClasses
 
 Retrieve a list of classes owned by a school.
 

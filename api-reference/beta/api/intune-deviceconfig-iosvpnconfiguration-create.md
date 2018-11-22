@@ -1,4 +1,4 @@
-# Create iosVpnConfiguration
+---title: "Create iosVpnConfiguration"description: "Create a new iosVpnConfiguration object."---# Create iosVpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

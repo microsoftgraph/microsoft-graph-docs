@@ -1,4 +1,4 @@
-# List series
+---title: "List series"description: "Retrieve a list of chartseries objects."---# List series
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

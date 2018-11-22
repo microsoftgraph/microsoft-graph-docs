@@ -1,4 +1,4 @@
-# List macOSOfficeSuiteApps
+---title: "List macOSOfficeSuiteApps"description: "List properties and relationships of the macOSOfficeSuiteApp objects."---# List macOSOfficeSuiteApps
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Delete programControl
+---title: "Delete programControl"description: "In the Azure AD access reviews feature, delete a programControl object.  This unlinks an access review from a program."---# Delete programControl
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

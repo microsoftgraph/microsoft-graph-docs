@@ -1,4 +1,4 @@
-# Get section
+---title: "Get section"description: "Retrieve the properties and relationships of a onenoteSection object."---# Get section
 
 Retrieve the properties and relationships of a [onenoteSection](../resources/section.md) object.
 ## Permissions

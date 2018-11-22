@@ -1,4 +1,4 @@
-# plannerGroup resource type
+---title: "plannerGroup resource type"description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."---# plannerGroup resource type
 
 The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.
 

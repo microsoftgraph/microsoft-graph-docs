@@ -1,4 +1,4 @@
-# iosWebContentFilterSpecificWebsitesAccess resource type
+---title: "iosWebContentFilterSpecificWebsitesAccess resource type"description: "Represents an iOS Web Content Filter setting type, which installs URL bookmarks into iOS built-in browser. An example scenario is in the classroom where teachers would like the students to navigate websites through browser bookmarks configured on their iOS devices, and no access to other sites."---# iosWebContentFilterSpecificWebsitesAccess resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

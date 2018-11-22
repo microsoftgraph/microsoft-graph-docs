@@ -1,4 +1,4 @@
-# Get Application
+---title: "Get Application"description: "Retrieve the properties and relationships of application object."---# Get Application
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

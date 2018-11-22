@@ -1,4 +1,4 @@
-# List overrides
+---title: "List overrides"description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."---# List overrides
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

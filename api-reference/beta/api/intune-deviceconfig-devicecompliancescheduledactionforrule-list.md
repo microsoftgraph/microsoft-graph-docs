@@ -1,4 +1,4 @@
-# List deviceComplianceScheduledActionForRules
+---title: "List deviceComplianceScheduledActionForRules"description: "List properties and relationships of the deviceComplianceScheduledActionForRule objects."---# List deviceComplianceScheduledActionForRules
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

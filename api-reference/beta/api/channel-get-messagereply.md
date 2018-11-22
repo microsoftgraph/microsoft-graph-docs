@@ -1,4 +1,4 @@
-# Get a reply to a channel message
+---title: "Get a reply to a channel message"description: "Get a single reply to a message in a channel of a team."---# Get a reply to a channel message
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

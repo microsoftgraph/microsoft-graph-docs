@@ -1,4 +1,4 @@
----title: "educationWordResource resource type"description: "A subclass of educationResource. This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the "---# educationWordResource resource type
+---title: "educationWordResource resource type"description: "A subclass of educationResource. This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the "---# educationWordResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get contact
+---title: "Get contact"description: "Retrieve the properties and relationships of a contact object."---# Get contact
 
 Retrieve the properties and relationships of a contact object.
 

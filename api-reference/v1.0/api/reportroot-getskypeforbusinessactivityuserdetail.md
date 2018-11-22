@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessActivityUserDetail
+---title: "reportRoot: getSkypeForBusinessActivityUserDetail"description: "Get details about Skype for Business activity by user."---# reportRoot: getSkypeForBusinessActivityUserDetail
 
 Get details about Skype for Business activity by user.
 

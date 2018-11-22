@@ -1,4 +1,4 @@
-# Get WorksheetProtection
+---title: "Get WorksheetProtection"description: "Retrieve the properties and relationships of worksheetprotection object."---# Get WorksheetProtection
 
 Retrieve the properties and relationships of worksheetprotection object.
 ## Permissions

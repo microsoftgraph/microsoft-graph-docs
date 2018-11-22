@@ -1,4 +1,4 @@
-# Delete plannerTask
+---title: "Delete plannerTask"description: "Delete **plannerTask**."---# Delete plannerTask
 
 Delete **plannerTask**.
 ## Permissions

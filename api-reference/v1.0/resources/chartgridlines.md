@@ -1,4 +1,4 @@
-# ChartGridlines resource type
+---title: "ChartGridlines resource type"description: "Represents major or minor gridlines on a chart axis."---# ChartGridlines resource type
 
 Represents major or minor gridlines on a chart axis.
 

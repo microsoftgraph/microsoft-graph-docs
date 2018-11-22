@@ -1,4 +1,4 @@
-# deviceManagementScriptGroupAssignment resource type
+---title: "deviceManagementScriptGroupAssignment resource type"description: "Contains properties used to assign a device management script to a group."---# deviceManagementScriptGroupAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

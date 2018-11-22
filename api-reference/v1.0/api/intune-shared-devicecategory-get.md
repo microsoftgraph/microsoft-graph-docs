@@ -1,4 +1,4 @@
-# Get deviceCategory
+---title: "Get deviceCategory"description: "Read properties and relationships of the deviceCategory object."---# Get deviceCategory
 
 
 

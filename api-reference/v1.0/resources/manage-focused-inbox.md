@@ -1,4 +1,4 @@
-# Manage Focused Inbox
+---title: "Manage Focused Inbox"description: "Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system "---# Manage Focused Inbox
 
 Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system 
 initially organizes Inbox messages in a default way. You can correct and train the system over time through the user interface or programmatically. The more you use it, 

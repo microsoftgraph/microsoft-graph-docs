@@ -1,4 +1,4 @@
-# Create event
+---title: "Create event"description: "Use this API to create a new event."---# Create event
 Use this API to create a new [event](../resources/event.md).
 
 ## Permissions

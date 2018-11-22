@@ -1,4 +1,4 @@
-# microsoftStoreForBusinessAppAssignmentSettings resource type
+---title: "microsoftStoreForBusinessAppAssignmentSettings resource type"description: "Contains properties used to assign an Microsoft Store for Business mobile app to a group."---# microsoftStoreForBusinessAppAssignmentSettings resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

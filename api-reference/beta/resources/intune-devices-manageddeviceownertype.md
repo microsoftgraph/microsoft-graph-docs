@@ -1,4 +1,4 @@
-﻿# managedDeviceOwnerType enum type
+---title: "managedDeviceOwnerType enum type"description: "Owner type of device."---# managedDeviceOwnerType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

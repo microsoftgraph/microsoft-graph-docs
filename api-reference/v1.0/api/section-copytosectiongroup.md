@@ -1,4 +1,4 @@
-# section: copyToSectionGroup
+---title: "section: copyToSectionGroup"description: "Copies a section to a specific section group."---# section: copyToSectionGroup
 Copies a section to a specific section group.
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.

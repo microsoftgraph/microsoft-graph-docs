@@ -1,4 +1,4 @@
-# synchronizationJob: pause
+---title: "synchronizationJob: pause"description: "Temporarily stop synchronization. All the progress, including job state, is persisted, and the job will continue from where it left off when a Start call is made."---# synchronizationJob: pause
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

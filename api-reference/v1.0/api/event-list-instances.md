@@ -1,4 +1,4 @@
-# List instances
+---title: "List instances"description: "Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the "---# List instances
 
 Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the 
 occurrences and exceptions of the event in the specified time range.

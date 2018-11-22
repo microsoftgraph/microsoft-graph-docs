@@ -1,4 +1,4 @@
-# teamsAppInstallation resource type
+---title: "teamsAppInstallation resource type"description: "A teamsApp installed in a team. "---# teamsAppInstallation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

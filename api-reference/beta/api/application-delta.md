@@ -1,4 +1,4 @@
-# application: delta
+---title: "application: delta"description: "Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection. See Using Delta Query for details."---# application: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

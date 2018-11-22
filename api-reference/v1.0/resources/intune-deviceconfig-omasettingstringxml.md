@@ -1,4 +1,4 @@
-# omaSettingStringXml resource type
+---title: "omaSettingStringXml resource type"description: "OMA Settings StringXML definition."---# omaSettingStringXml resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

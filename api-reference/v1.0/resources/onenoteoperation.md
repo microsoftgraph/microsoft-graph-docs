@@ -1,4 +1,4 @@
-# onenoteOperation resource type
+---title: "onenoteOperation resource type"description: "The status of certain long-running OneNote operations."---# onenoteOperation resource type
 
 The status of certain long-running OneNote operations.
 

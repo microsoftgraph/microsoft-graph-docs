@@ -1,4 +1,4 @@
-# Remove educationClass
+---title: "Remove educationClass"description: "Delete a class from a school."---# Remove educationClass
 
 Delete a class from a school.
 

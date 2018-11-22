@@ -1,4 +1,4 @@
-# List windowsPhone81StoreApps
+---title: "List windowsPhone81StoreApps"description: "List properties and relationships of the windowsPhone81StoreApp objects."---# List windowsPhone81StoreApps
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

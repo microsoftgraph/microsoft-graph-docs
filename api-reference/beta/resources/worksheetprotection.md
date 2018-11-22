@@ -1,4 +1,4 @@
-# WorksheetProtection resource type
+---title: "WorksheetProtection resource type"description: "Represents the protection of a sheet object."---# WorksheetProtection resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get conversation thread
+---title: "Get conversation thread"description: "Get a thread object."---# Get conversation thread
 Get a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

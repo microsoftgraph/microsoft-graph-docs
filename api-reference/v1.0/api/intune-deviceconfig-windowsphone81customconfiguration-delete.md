@@ -1,4 +1,4 @@
-# Delete windowsPhone81CustomConfiguration
+---title: "Delete windowsPhone81CustomConfiguration"description: "Deletes a windowsPhone81CustomConfiguration."---# Delete windowsPhone81CustomConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

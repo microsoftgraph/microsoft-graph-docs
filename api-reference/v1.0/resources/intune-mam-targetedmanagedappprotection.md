@@ -1,4 +1,4 @@
-# targetedManagedAppProtection resource type
+---title: "targetedManagedAppProtection resource type"description: "Policy used to configure detailed management settings targeted to specific security groups"---# targetedManagedAppProtection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

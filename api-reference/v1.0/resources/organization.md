@@ -1,4 +1,4 @@
-# organization resource type
+---title: "organization resource type"description: " create and delete are not supported. Inherits from directoryObject."---# organization resource type
 
 Represents an Azure Active Directory tenant. Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 

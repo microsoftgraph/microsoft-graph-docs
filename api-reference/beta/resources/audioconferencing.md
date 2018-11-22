@@ -1,4 +1,4 @@
----title: "audioConferencing resource type"description: "Represents phone access information for an onlineMeeting."---# audioConferencing resource type
+---title: "audioConferencing resource type"description: "Represents phone access information for an onlineMeeting."---# audioConferencing resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

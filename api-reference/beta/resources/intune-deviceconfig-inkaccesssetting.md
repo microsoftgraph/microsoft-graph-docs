@@ -1,4 +1,4 @@
-﻿# inkAccessSetting enum type
+---title: "inkAccessSetting enum type"description: "Values for the InkWorkspaceAccess setting."---# inkAccessSetting enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

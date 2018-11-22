@@ -1,4 +1,4 @@
-# TableColumnCollection: ItemAt
+---title: "TableColumnCollection: ItemAt"description: "Gets a column based on its position in the collection."---# TableColumnCollection: ItemAt
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# sharedPCAccountManagerPolicy resource type
+---title: "sharedPCAccountManagerPolicy resource type"description: "SharedPC Account Manager Policy. Only applies when the account manager is enabled."---# sharedPCAccountManagerPolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

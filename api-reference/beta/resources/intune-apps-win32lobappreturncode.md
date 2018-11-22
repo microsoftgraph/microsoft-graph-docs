@@ -1,4 +1,4 @@
-# win32LobAppReturnCode resource type
+---title: "win32LobAppReturnCode resource type"description: "Contains return code properties for a Win32 App"---# win32LobAppReturnCode resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

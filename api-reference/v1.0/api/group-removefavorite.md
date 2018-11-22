@@ -1,4 +1,4 @@
-# group: removeFavorite
+---title: "group: removeFavorite"description: "Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only."---# group: removeFavorite
 Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.
 
 ## Permissions

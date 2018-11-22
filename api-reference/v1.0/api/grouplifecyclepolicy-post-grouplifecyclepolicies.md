@@ -1,4 +1,4 @@
-# Create groupLifecyclePolicy
+---title: "Create groupLifecyclePolicy"description: "Creates a new groupLifecyclePolicy."---# Create groupLifecyclePolicy
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 

@@ -1,4 +1,4 @@
-# List iosUpdateDeviceStatuses
+---title: "List iosUpdateDeviceStatuses"description: "List properties and relationships of the iosUpdateDeviceStatus objects."---# List iosUpdateDeviceStatuses
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create OneNote pages
+---title: "Create OneNote pages"description: " Enterprise notebooks on Office 365"---# Create OneNote pages
 
 **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

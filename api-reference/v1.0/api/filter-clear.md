@@ -1,4 +1,4 @@
-# Filter: clear
+---title: "Filter: clear"description: "Clear the filter on the given column."---# Filter: clear
 
 Clear the filter on the given column.
 ## Permissions

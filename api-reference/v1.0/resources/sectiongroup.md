@@ -1,4 +1,4 @@
-# sectionGroup resource type
+---title: "sectionGroup resource type"description: "A section group in a OneNote notebook. Section groups can contain sections and section groups."---# sectionGroup resource type
 
 A section group in a OneNote notebook. Section groups can contain sections and section groups.
 

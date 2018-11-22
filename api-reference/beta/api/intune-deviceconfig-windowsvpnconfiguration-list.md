@@ -1,4 +1,4 @@
-# List windowsVpnConfigurations
+---title: "List windowsVpnConfigurations"description: "List properties and relationships of the windowsVpnConfiguration objects."---# List windowsVpnConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# androidWorkProfileNineWorkEasConfiguration resource type
+---title: "androidWorkProfileNineWorkEasConfiguration resource type"description: "By providing configurations in this profile you can instruct the Nine Work email client on Android Work Profile devices to communicate with an Exchange server and get email, contacts, calendar, tasks, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync."---# androidWorkProfileNineWorkEasConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

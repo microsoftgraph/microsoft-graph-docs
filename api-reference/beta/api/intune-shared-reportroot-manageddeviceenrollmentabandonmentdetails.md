@@ -1,4 +1,4 @@
-# managedDeviceEnrollmentAbandonmentDetails function
+---title: "managedDeviceEnrollmentAbandonmentDetails function"description: "Metadata for Enrollment abandonment details report"---# managedDeviceEnrollmentAbandonmentDetails function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

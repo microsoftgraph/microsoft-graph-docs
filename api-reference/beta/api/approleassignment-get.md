@@ -1,4 +1,4 @@
-# Get appRoleAssignment
+---title: "Get appRoleAssignment"description: "Retrieve the properties and relationships of approleassignment object."---# Get appRoleAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

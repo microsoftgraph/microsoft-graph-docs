@@ -1,4 +1,4 @@
-# List programControls of a program
+---title: "List programControls of a program"description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."---# List programControls of a program
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

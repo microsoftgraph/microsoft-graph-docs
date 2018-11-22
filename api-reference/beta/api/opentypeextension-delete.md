@@ -1,4 +1,4 @@
-# Delete open extension
+---title: "Delete open extension"description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource. "---# Delete open extension
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getYammerActivityUserDetail
+---title: "reportRoot: getYammerActivityUserDetail"description: "Get details about Yammer activity by user."---# reportRoot: getYammerActivityUserDetail
 
 Get details about Yammer activity by user.
 

@@ -1,4 +1,4 @@
-# Update groupLifecyclePolicy
+---title: "Update groupLifecyclePolicy"description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."---# Update groupLifecyclePolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

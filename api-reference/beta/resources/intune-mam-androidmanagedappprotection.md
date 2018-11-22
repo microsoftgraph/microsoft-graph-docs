@@ -1,4 +1,4 @@
-# androidManagedAppProtection resource type
+---title: "androidManagedAppProtection resource type"description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"---# androidManagedAppProtection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

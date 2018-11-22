@@ -1,4 +1,4 @@
-# deviceCompliancePolicy resource type
+---title: "deviceCompliancePolicy resource type"description: "This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. "---# deviceCompliancePolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# TableSort resource type
+---title: "TableSort resource type"description: "Manages sorting operations on Table objects."---# TableSort resource type
 
 Manages sorting operations on Table objects.
 

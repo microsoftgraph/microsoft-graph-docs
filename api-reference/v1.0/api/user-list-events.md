@@ -1,4 +1,4 @@
-# List events
+---title: "List events"description: "Get a list of event objects in the user's mailbox. The list contains single "---# List events
 
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
 instance meetings and series masters.

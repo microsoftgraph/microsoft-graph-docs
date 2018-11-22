@@ -1,4 +1,4 @@
-# List tasks
+---title: "List tasks"description: "Retrieve a list of **plannerTask** objects associated to a plannerBucket object."---# List tasks
 
 Retrieve a list of **plannerTask** objects associated to a [plannerBucket](../resources/plannerbucket.md) object.
 ## Permissions

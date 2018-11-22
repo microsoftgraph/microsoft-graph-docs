@@ -1,4 +1,4 @@
-# Create chat thread
+---title: "Create chat thread"description: "Create a new chat thread in the specified channel by supplying the root messages."---# Create chat thread
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

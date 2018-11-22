@@ -1,4 +1,4 @@
-# channel resource type
+---title: "channel resource type"description: "A channel is a collection of chatMessages within a team. "---# channel resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

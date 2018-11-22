@@ -1,4 +1,4 @@
-# Get vppToken
+---title: "Get vppToken"description: "Read properties and relationships of the vppToken object."---# Get vppToken
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

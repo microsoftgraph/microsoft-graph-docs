@@ -1,4 +1,4 @@
-# RangeBorder resource type
+---title: "RangeBorder resource type"description: "Represents the border of an object."---# RangeBorder resource type
 
 Represents the border of an object.
 

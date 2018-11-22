@@ -1,4 +1,4 @@
-# iosScepCertificateProfile resource type
+---title: "iosScepCertificateProfile resource type"description: "iOS SCEP certificate profile."---# iosScepCertificateProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List calendars
+---title: "List calendars"description: "Retrieve a list of calendars belonging to a calendar group."---# List calendars
 
 Retrieve a list of calendars belonging to a calendar group.
 

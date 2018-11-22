@@ -1,4 +1,4 @@
-# call: redirect
+---title: "call: redirect"description: "Redirect an incoming call."---# call: redirect
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

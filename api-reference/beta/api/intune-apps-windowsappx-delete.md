@@ -1,4 +1,4 @@
-# Delete windowsAppX
+---title: "Delete windowsAppX"description: "Deletes a windowsAppX."---# Delete windowsAppX
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

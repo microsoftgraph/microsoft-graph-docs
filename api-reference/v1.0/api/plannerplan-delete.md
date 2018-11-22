@@ -1,4 +1,4 @@
-# Delete plannerPlan
+---title: "Delete plannerPlan"description: "Delete **plannerPlan**."---# Delete plannerPlan
 
 Delete **plannerPlan**.
 ## Permissions

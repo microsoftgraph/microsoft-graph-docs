@@ -1,4 +1,4 @@
-# ChartPoint resource type
+---title: "ChartPoint resource type"description: "Represents a point of a series in a chart."---# ChartPoint resource type
 
 Represents a point of a series in a chart.
 

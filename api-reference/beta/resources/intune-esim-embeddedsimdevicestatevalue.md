@@ -1,4 +1,4 @@
-﻿# embeddedSIMDeviceStateValue enum type
+---title: "embeddedSIMDeviceStateValue enum type"description: "Describes the various states for an embedded SIM activation code."---# embeddedSIMDeviceStateValue enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

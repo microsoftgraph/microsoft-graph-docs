@@ -1,4 +1,4 @@
-# Get mobileAppContent
+---title: "Get mobileAppContent"description: "Read properties and relationships of the mobileAppContent object."---# Get mobileAppContent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

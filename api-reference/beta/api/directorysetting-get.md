@@ -1,4 +1,4 @@
-# Get a directory setting
+---title: "Get a directory setting"description: "Retrieve the properties of a specific directory setting object."---# Get a directory setting
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

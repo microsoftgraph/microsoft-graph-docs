@@ -1,4 +1,4 @@
-# Enroll devices for management in Intune
+---title: "Enroll devices for management in Intune"description: " (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device."---# Enroll devices for management in Intune
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

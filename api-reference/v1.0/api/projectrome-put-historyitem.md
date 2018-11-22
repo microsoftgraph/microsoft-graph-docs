@@ -1,4 +1,4 @@
-# Create or replace a historyItem
+---title: "Create or replace a historyItem"description: "Create a new or replace an existing history item for an existing user activity."---# Create or replace a historyItem
 
 Create a new or replace an existing history item for an existing user activity.
 

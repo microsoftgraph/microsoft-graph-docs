@@ -1,4 +1,4 @@
-# List registeredDevices
+---title: "List registeredDevices"description: "Get the list of user's registered devices."---# List registeredDevices
 
 Get the list of user's registered devices.
 ## Permissions

@@ -1,4 +1,4 @@
-# Update accessReview
+---title: "Update accessReview"description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."---# Update accessReview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# user: reminderView
+---title: "user: reminderView"description: "Return a list of calendar reminders within the specified start and end times. "---# user: reminderView
 Return a list of calendar reminders within the specified start and end times. 
 
 ## Permissions

@@ -1,4 +1,4 @@
-# Update oAuth2PermissionGrant
+---title: "Update oAuth2PermissionGrant"description: "Update the properties of oAuth2PermissionGrant object."---# Update oAuth2PermissionGrant
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

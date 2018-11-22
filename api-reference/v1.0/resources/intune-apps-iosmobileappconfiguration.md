@@ -1,4 +1,4 @@
-# iosMobileAppConfiguration resource type
+---title: "iosMobileAppConfiguration resource type"description: "Contains properties, inherited properties and actions for iOS mobile app configurations."---# iosMobileAppConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

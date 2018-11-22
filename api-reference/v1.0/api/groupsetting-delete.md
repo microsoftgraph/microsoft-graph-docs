@@ -1,4 +1,4 @@
-# Delete a group setting
+---title: "Delete a group setting"description: "Delete a group setting."---# Delete a group setting
 
 Delete a group setting.
 

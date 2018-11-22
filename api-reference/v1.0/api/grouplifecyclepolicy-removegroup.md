@@ -1,4 +1,4 @@
-# groupLifecyclePolicy: removeGroup
+---title: "groupLifecyclePolicy: removeGroup"description: "Removes a group from a lifecycle policy."---# groupLifecyclePolicy: removeGroup
 
 Removes a group from a lifecycle policy.
 

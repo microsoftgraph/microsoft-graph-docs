@@ -1,4 +1,4 @@
-# managedAppRegistration resource type
+---title: "managedAppRegistration resource type"description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."---# managedAppRegistration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

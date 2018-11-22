@@ -1,4 +1,4 @@
-# Delete eventMessage
+---title: "Delete eventMessage"description: "Delete eventMessage."---# Delete eventMessage
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

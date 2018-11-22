@@ -1,4 +1,4 @@
-# Delete windowsPhone81AppXBundle
+---title: "Delete windowsPhone81AppXBundle"description: "Deletes a windowsPhone81AppXBundle."---# Delete windowsPhone81AppXBundle
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

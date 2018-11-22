@@ -1,4 +1,4 @@
-# group: unsubscribeByMail
+---title: "group: unsubscribeByMail"description: "Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group. Supported for Office 365 groups only. "---# group: unsubscribeByMail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getYammerDeviceUsageUserCounts
+---title: "reportRoot: getYammerDeviceUsageUserCounts"description: "Get the number of daily users by device type."---# reportRoot: getYammerDeviceUsageUserCounts
 
 Get the number of daily users by device type.
 

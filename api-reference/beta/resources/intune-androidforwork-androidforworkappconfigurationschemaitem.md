@@ -1,4 +1,4 @@
-# androidForWorkAppConfigurationSchemaItem resource type
+---title: "androidForWorkAppConfigurationSchemaItem resource type"description: "Single configuration item inside an Android for Work application's custom configuration schema."---# androidForWorkAppConfigurationSchemaItem resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

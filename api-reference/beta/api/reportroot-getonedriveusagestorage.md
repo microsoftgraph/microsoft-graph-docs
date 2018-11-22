@@ -1,4 +1,4 @@
-# reportRoot: getOneDriveUsageStorage
+---title: "reportRoot: getOneDriveUsageStorage"description: "Get the trend on the amount of storage you are using in OneDrive for Business."---# reportRoot: getOneDriveUsageStorage
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

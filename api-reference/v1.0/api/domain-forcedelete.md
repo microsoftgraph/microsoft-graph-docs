@@ -1,4 +1,4 @@
-# Force domain deletion
+---title: "Force domain deletion"description: "Deletes a domain using an asynchronous long-running operation."---# Force domain deletion
 
 Deletes a domain using an asynchronous long-running operation.
 

@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessOrganizerActivityCounts
+---title: "reportRoot: getSkypeForBusinessOrganizerActivityCounts"description: "Get usage trends on the number and type of conference sessions held and organized by users in your organization. Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - 3rd party, and Dial-in/out Microsoft."---# reportRoot: getSkypeForBusinessOrganizerActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

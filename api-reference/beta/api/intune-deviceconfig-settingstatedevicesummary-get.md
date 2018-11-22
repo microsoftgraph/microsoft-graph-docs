@@ -1,4 +1,4 @@
-# Get settingStateDeviceSummary
+---title: "Get settingStateDeviceSummary"description: "Read properties and relationships of the settingStateDeviceSummary object."---# Get settingStateDeviceSummary
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# conversationThread: reply
+---title: "conversationThread: reply"description: "Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation "---# conversationThread: reply
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

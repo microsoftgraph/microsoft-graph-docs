@@ -1,4 +1,4 @@
-# Delete group
+---title: "Delete group"description: "Delete group."---# Delete group
 Delete group.
 
 ## Permissions

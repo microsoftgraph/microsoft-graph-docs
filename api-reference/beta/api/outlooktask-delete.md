@@ -1,4 +1,4 @@
-# Delete outlookTask
+---title: "Delete outlookTask"description: "Delete the specified Outlook task in the user's mailbox."---# Delete outlookTask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Calling the Microsoft Graph API
+---title: "Calling the Microsoft Graph API"description: "To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   "---# Calling the Microsoft Graph API
 
 To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   
 

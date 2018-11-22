@@ -1,4 +1,4 @@
-# List remoteAssistancePartners
+---title: "List remoteAssistancePartners"description: "List properties and relationships of the remoteAssistancePartner objects."---# List remoteAssistancePartners
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

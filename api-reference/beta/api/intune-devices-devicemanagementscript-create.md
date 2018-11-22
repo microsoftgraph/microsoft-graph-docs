@@ -1,4 +1,4 @@
-# Create deviceManagementScript
+---title: "Create deviceManagementScript"description: "Create a new deviceManagementScript object."---# Create deviceManagementScript
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List governanceResources
+---title: "List governanceResources"description: "Retrieve a collection of governanceResource that the requestor has access to."---# List governanceResources
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

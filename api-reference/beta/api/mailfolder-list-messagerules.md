@@ -1,4 +1,4 @@
-# List rules
+---title: "List rules"description: "Get all the messageRule objects defined for the user's Inbox."---# List rules
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

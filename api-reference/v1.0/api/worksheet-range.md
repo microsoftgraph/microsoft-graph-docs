@@ -1,4 +1,4 @@
-# Worksheet: Range
+---title: "Worksheet: Range"description: "Gets the range object specified by the address or name."---# Worksheet: Range
 
 Gets the range object specified by the address or name.
 ## Permissions

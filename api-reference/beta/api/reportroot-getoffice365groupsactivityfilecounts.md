@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityFileCounts
+---title: "reportRoot: getOffice365GroupsActivityFileCounts"description: "Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group."---# reportRoot: getOffice365GroupsActivityFileCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

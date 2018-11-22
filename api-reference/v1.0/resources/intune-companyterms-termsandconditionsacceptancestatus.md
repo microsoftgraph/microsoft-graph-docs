@@ -1,4 +1,4 @@
-# termsAndConditionsAcceptanceStatus resource type
+---title: "termsAndConditionsAcceptanceStatus resource type"description: "C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal."---# termsAndConditionsAcceptanceStatus resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

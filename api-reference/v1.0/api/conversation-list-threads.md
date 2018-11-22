@@ -1,4 +1,4 @@
-# List threads
+---title: "List threads"description: "Get all the threads in a group conversation."---# List threads
 
 Get all the threads in a group conversation.
 

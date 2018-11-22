@@ -1,4 +1,4 @@
-# managedMobileApp resource type
+---title: "managedMobileApp resource type"description: "The identifier for the deployment an app."---# managedMobileApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

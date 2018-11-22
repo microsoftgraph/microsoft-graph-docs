@@ -1,4 +1,4 @@
-# workbookRange: resizedRange
+---title: "workbookRange: resizedRange"description: "Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns."---# workbookRange: resizedRange
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
 ## Permissions

@@ -1,4 +1,4 @@
-# Create TableColumn
+---title: "Create TableColumn"description: "Use this API to create a new TableColumn."---# Create TableColumn
 
 Use this API to create a new TableColumn.
 ## Permissions

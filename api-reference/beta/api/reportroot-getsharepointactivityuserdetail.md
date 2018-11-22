@@ -1,4 +1,4 @@
-# reportRoot: getSharePointActivityUserDetail
+---title: "reportRoot: getSharePointActivityUserDetail"description: "Get details about SharePoint activity by user."---# reportRoot: getSharePointActivityUserDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# managedAppConfiguration resource type
+---title: "managedAppConfiguration resource type"description: "Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped"---# managedAppConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

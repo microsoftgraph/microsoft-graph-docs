@@ -1,4 +1,4 @@
-# Create Outlook category
+---title: "Create Outlook category"description: "Create an outlookCategory object in the user's master list of categories."---# Create Outlook category
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

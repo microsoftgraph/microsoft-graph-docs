@@ -1,4 +1,4 @@
-# Update contactfolder
+---title: "Update contactfolder"description: "Update the properties of contactfolder object."---# Update contactfolder
 
 Update the properties of contactfolder object.
 ## Permissions

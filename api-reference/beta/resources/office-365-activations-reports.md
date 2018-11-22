@@ -1,4 +1,4 @@
-# Office 365 activations reports
+---title: "Office 365 activations reports"description: "The Office 365 activation report gives you a view of which users have activated their Office 365 subscriptions on at least one device. It provides a breakdown of the Office 365 ProPlus, Project, and Visio Pro for Office 365 subscription activations, as well as the breakdown of activations across desktop and devices. This report could help you identify users who might need additional support to activate their Office subscription."---# Office 365 activations reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

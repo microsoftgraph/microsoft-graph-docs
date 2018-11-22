@@ -1,4 +1,4 @@
-# windowsPhone81CompliancePolicy resource type
+---title: "windowsPhone81CompliancePolicy resource type"description: "This class contains compliance settings for Windows 8.1 Mobile."---# windowsPhone81CompliancePolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

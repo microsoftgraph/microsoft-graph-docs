@@ -1,4 +1,4 @@
-# mailTips resource type
+---title: "mailTips resource type"description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "---# mailTips resource type
 
 Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 
 as an automatic reply for a message recipient.

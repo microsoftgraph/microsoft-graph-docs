@@ -1,4 +1,4 @@
-# List sectionGroups
+---title: "List sectionGroups"description: "Retrieve a list of sectionGroup objects."---# List sectionGroups
 
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
 ## Permissions

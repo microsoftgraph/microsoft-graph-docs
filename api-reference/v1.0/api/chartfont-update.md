@@ -1,4 +1,4 @@
-# Update chartfont
+---title: "Update chartfont"description: "Update the properties of chartfont object."---# Update chartfont
 
 Update the properties of chartfont object.
 ## Permissions

@@ -1,4 +1,4 @@
-# Get depMacOSEnrollmentProfile
+---title: "Get depMacOSEnrollmentProfile"description: "Read properties and relationships of the depMacOSEnrollmentProfile object."---# Get depMacOSEnrollmentProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# ChartAxisTitle resource type
+---title: "ChartAxisTitle resource type"description: "Represents the title of a chart axis."---# ChartAxisTitle resource type
 
 Represents the title of a chart axis.
 

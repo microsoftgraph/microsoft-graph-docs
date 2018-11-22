@@ -1,4 +1,4 @@
-# Get post
+---title: "Get post"description: "Get the properties and relationships of a post in a specified thread. You can specify both the parent "---# Get post
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

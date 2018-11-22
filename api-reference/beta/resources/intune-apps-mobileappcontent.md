@@ -1,4 +1,4 @@
-# mobileAppContent resource type
+---title: "mobileAppContent resource type"description: "Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile."---# mobileAppContent resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

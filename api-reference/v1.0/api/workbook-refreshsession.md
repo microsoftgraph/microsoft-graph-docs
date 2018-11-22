@@ -1,4 +1,4 @@
-# Refresh Session
+---title: "Refresh Session"description: "Use this API to refresh an existing workbook session. "---# Refresh Session
 
 Use this API to refresh an existing workbook session. 
 

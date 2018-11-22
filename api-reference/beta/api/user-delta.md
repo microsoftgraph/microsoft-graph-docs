@@ -1,4 +1,4 @@
-# user: delta
+---title: "user: delta"description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See Track changes for details."---# user: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update windows10SecureAssessmentConfiguration
+---title: "Update windows10SecureAssessmentConfiguration"description: "Update the properties of a windows10SecureAssessmentConfiguration object."---# Update windows10SecureAssessmentConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

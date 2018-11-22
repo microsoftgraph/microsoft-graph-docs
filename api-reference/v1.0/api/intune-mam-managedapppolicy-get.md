@@ -1,4 +1,4 @@
-# Get managedAppPolicy
+---title: "Get managedAppPolicy"description: "Read properties and relationships of the managedAppPolicy object."---# Get managedAppPolicy
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# user: getMailTips
+---title: "user: getMailTips"description: "Get the MailTips of one or more recipients as available to the signed-in user."---# user: getMailTips
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

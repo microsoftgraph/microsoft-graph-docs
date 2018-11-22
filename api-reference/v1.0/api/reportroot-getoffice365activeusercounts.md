@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActiveUserCounts
+---title: "reportRoot: getOffice365ActiveUserCounts"description: "Get the count of daily active users in the reporting period by product."---# reportRoot: getOffice365ActiveUserCounts
 
 Get the count of daily active users in the reporting period by product.
 

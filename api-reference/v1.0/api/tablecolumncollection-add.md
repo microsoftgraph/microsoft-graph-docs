@@ -1,4 +1,4 @@
-# TableColumnCollection: add
+---title: "TableColumnCollection: add"description: "Adds a new column to the table."---# TableColumnCollection: add
 
 Adds a new column to the table.
 ## Permissions

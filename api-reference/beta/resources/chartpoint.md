@@ -1,4 +1,4 @@
-# ChartPoint resource type
+---title: "ChartPoint resource type"description: "Represents a point of a series in a chart."---# ChartPoint resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update profilephoto
+---title: "Update profilephoto"description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there"---# Update profilephoto
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

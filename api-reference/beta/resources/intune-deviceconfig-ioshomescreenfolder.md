@@ -1,4 +1,4 @@
-# iosHomeScreenFolder resource type
+---title: "iosHomeScreenFolder resource type"description: "A folder containing pages of apps on the Home Screen"---# iosHomeScreenFolder resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

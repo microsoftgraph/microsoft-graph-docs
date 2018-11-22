@@ -1,4 +1,4 @@
-# Create macOSCustomConfiguration
+---title: "Create macOSCustomConfiguration"description: "Create a new macOSCustomConfiguration object."---# Create macOSCustomConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

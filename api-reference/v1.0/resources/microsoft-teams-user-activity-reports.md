@@ -1,4 +1,4 @@
-# Microsoft Teams user activity reports
+---title: "Microsoft Teams user activity reports"description: "Use the Microsoft Teams activity reports to get insights into the Microsoft Teams user activity in your organization."---# Microsoft Teams user activity reports
 
 Use the Microsoft Teams activity reports to get insights into the Microsoft Teams user activity in your organization.
 

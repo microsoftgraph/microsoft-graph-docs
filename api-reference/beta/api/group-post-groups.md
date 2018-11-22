@@ -1,4 +1,4 @@
-# Create group
+---title: "Create group"description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"---# Create group
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

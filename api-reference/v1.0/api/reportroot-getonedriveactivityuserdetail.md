@@ -1,4 +1,4 @@
-# reportRoot: getOneDriveActivityUserDetail
+---title: "reportRoot: getOneDriveActivityUserDetail"description: "Get details about OneDrive activity by user."---# reportRoot: getOneDriveActivityUserDetail
 
 Get details about OneDrive activity by user.
 

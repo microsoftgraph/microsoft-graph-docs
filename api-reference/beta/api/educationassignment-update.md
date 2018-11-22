@@ -1,4 +1,4 @@
-# Update educationassignment
+---title: "Update educationassignment"description: "Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the publish action to change the assignment status."---# Update educationassignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

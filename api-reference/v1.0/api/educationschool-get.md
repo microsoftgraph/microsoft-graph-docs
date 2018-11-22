@@ -1,4 +1,4 @@
-# Get educationSchool
+---title: "Get educationSchool"description: "Retrieve the properties and relationships of the school object."---# Get educationSchool
 
 Retrieve the properties and relationships of the school object.
 

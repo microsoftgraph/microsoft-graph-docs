@@ -1,4 +1,4 @@
-# Get applePushNotificationCertificate
+---title: "Get applePushNotificationCertificate"description: "Read properties and relationships of the applePushNotificationCertificate object."---# Get applePushNotificationCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

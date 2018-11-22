@@ -1,4 +1,4 @@
-# List contacts
+---title: "List contacts"description: "Get a contact collection from the default contacts folder of the signed-in user."---# List contacts
 
 Get a contact collection from the default contacts folder of the signed-in user.
 

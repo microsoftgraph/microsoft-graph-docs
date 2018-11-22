@@ -1,4 +1,4 @@
-# RangeBorderCollection: ItemAt
+---title: "RangeBorderCollection: ItemAt"description: "Gets a border object using its index"---# RangeBorderCollection: ItemAt
 
 Gets a border object using its index
 ## Permissions

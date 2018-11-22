@@ -1,4 +1,4 @@
-# List rows
+---title: "List rows"description: "Retrieve a list of tablerow objects."---# List rows
 
 Retrieve a list of tablerow objects.
 ## Permissions

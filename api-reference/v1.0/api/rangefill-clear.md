@@ -1,4 +1,4 @@
-# RangeFill: clear
+---title: "RangeFill: clear"description: "Resets the range background."---# RangeFill: clear
 
 Resets the range background.
 ## Permissions

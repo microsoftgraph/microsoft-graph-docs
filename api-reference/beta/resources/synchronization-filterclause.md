@@ -1,4 +1,4 @@
-# filterClause resource type
+---title: "filterClause resource type"description: "Represents a single assertion that a candidate object must satisfy, and is evaluated to either `true` (object satisfies the assertion) or `false` (object does not satisfy the assertion)."---# filterClause resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

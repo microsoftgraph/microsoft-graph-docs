@@ -1,4 +1,4 @@
-# call: unmute
+---title: "call: unmute"description: "Allows the application to unmute itself."---# call: unmute
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

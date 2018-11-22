@@ -1,4 +1,4 @@
-# Update importedWindowsAutopilotDeviceIdentityUpload
+---title: "Update importedWindowsAutopilotDeviceIdentityUpload"description: "Update the properties of a importedWindowsAutopilotDeviceIdentityUpload object."---# Update importedWindowsAutopilotDeviceIdentityUpload
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

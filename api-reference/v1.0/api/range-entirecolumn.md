@@ -1,4 +1,4 @@
-# Range: EntireColumn
+---title: "Range: EntireColumn"description: "Gets an object that represents the entire column of the range."---# Range: EntireColumn
 
 Gets an object that represents the entire column of the range.
 ## Permissions

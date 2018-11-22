@@ -1,4 +1,4 @@
-# Update chartgridlines
+---title: "Update chartgridlines"description: "Update the properties of chartgridlines object."---# Update chartgridlines
 
 Update the properties of chartgridlines object.
 ## Permissions

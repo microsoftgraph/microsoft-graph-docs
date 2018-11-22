@@ -1,4 +1,4 @@
-# Delete win32LobApp
+---title: "Delete win32LobApp"description: "Deletes a win32LobApp."---# Delete win32LobApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

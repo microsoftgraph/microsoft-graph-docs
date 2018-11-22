@@ -1,4 +1,4 @@
-# Get androidLobApp
+---title: "Get androidLobApp"description: "Read properties and relationships of the androidLobApp object."---# Get androidLobApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Remove educationUser from an educationSchool
+---title: "Remove educationUser from an educationSchool"description: "Delete a user from a school."---# Remove educationUser from an educationSchool
 
 Delete a user from a school.
 

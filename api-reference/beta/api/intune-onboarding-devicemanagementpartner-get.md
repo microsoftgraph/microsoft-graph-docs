@@ -1,4 +1,4 @@
-# Get deviceManagementPartner
+---title: "Get deviceManagementPartner"description: "Read properties and relationships of the deviceManagementPartner object."---# Get deviceManagementPartner
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

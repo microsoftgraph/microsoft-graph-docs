@@ -1,4 +1,4 @@
-# omaSettingBase64 resource type
+---title: "omaSettingBase64 resource type"description: "OMA Settings Base64 definition."---# omaSettingBase64 resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

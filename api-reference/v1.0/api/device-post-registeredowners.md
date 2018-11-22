@@ -1,4 +1,4 @@
-# Create registeredOwner
+---title: "Create registeredOwner"description: "Add a user as a registered owner of the device."---# Create registeredOwner
 
 Add a user as a registered owner of the device.
 ## Permissions

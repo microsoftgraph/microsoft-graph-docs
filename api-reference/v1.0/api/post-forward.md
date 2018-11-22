@@ -1,4 +1,4 @@
-# post: forward
+---title: "post: forward"description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "---# post: forward
 
 Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
 or, you can specify just the parent thread without the parent conversation. 

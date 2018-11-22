@@ -1,4 +1,4 @@
-# event: decline
+---title: "event: decline"description: "Decline invitation to the specified event in a user calendar."---# event: decline
 
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 

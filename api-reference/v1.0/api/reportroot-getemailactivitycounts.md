@@ -1,4 +1,4 @@
-# reportRoot: getEmailActivityCounts
+---title: "reportRoot: getEmailActivityCounts"description: "Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization."---# reportRoot: getEmailActivityCounts
 
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 

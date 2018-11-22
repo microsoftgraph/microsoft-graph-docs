@@ -1,4 +1,4 @@
-# workbookRange: columnsAfter
+---title: "workbookRange: columnsAfter"description: "Gets a certain number of columns to the right of the given range."---# workbookRange: columnsAfter
 
 Gets a certain number of columns to the right of the given range.
 

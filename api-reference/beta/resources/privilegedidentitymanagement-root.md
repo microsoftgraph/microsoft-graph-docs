@@ -1,4 +1,4 @@
-# Azure AD Privileged Identity Management
+---title: "Azure AD Privileged Identity Management"description: "Here is the list of methods that are provided by Privileged Identity Management service."---# Azure AD Privileged Identity Management
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get deviceManagementScriptUserState
+---title: "Get deviceManagementScriptUserState"description: "Read properties and relationships of the deviceManagementScriptUserState object."---# Get deviceManagementScriptUserState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

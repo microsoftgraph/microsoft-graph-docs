@@ -1,4 +1,4 @@
-# singleValueLegacyExtendedProperty resource type
+---title: "singleValueLegacyExtendedProperty resource type"description: "An extended property that contains a single value. "---# singleValueLegacyExtendedProperty resource type
 
 An extended property that contains a single value. 
 

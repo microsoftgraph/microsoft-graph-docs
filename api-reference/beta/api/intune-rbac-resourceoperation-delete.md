@@ -1,4 +1,4 @@
-# Delete resourceOperation
+---title: "Delete resourceOperation"description: "Deletes a resourceOperation."---# Delete resourceOperation
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

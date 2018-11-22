@@ -1,4 +1,4 @@
-# Get TableSort
+---title: "Get TableSort"description: "Retrieve the properties and relationships of tablesort object."---# Get TableSort
 
 Retrieve the properties and relationships of tablesort object.
 ## Permissions

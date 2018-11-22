@@ -1,4 +1,4 @@
-# message: copy
+---title: "message: copy"description: "Copy a message to a folder."---# message: copy
 
 Copy a message to a folder.
 

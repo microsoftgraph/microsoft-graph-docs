@@ -1,4 +1,4 @@
-# outlookUser resource type
+---title: "outlookUser resource type"description: "Represents the Outlook services available to a user."---# outlookUser resource type
 
 
 Represents the Outlook services available to a user.

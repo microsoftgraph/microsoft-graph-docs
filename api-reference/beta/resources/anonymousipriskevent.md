@@ -1,4 +1,4 @@
-# anonymousIpRiskEvent resource type
+---title: "anonymousIpRiskEvent resource type"description: "A risk event detected by Azure Active Directory Identity Protection where an account sign-in is attempted from an IP address that appears to be anonymous. Complete information about risk events can be found in the Azure AD Identity Protection documentation."---# anonymousIpRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

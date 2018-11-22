@@ -1,4 +1,4 @@
-# List deleted items
+---title: "List deleted items"description: "Retrieve a list of recently deleted items from deleted items."---# List deleted items
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 

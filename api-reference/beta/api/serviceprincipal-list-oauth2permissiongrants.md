@@ -1,4 +1,4 @@
-# servicePrincipal: List oAuth2Permissiongrants
+---title: "servicePrincipal: List oAuth2Permissiongrants"description: "Retrieve a list of oAuth2Permissiongrant objects."---# servicePrincipal: List oAuth2Permissiongrants
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

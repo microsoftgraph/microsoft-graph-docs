@@ -1,4 +1,4 @@
-# Update windows10EndpointProtectionConfiguration
+---title: "Update windows10EndpointProtectionConfiguration"description: "Update the properties of a windows10EndpointProtectionConfiguration object."---# Update windows10EndpointProtectionConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

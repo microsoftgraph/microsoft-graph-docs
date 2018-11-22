@@ -1,4 +1,4 @@
-# Get open extension
+---title: "Get open extension"description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."---# Get open extension
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update windowsPhone81SCEPCertificateProfile
+---title: "Update windowsPhone81SCEPCertificateProfile"description: "Update the properties of a windowsPhone81SCEPCertificateProfile object."---# Update windowsPhone81SCEPCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

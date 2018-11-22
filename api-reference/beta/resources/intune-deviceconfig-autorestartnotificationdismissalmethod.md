@@ -1,4 +1,4 @@
-﻿# autoRestartNotificationDismissalMethod enum type
+---title: "autoRestartNotificationDismissalMethod enum type"description: "Auto restart required notification dismissal method"---# autoRestartNotificationDismissalMethod enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

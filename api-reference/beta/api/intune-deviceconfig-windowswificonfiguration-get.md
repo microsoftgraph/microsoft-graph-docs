@@ -1,4 +1,4 @@
-# Get windowsWifiConfiguration
+---title: "Get windowsWifiConfiguration"description: "Read properties and relationships of the windowsWifiConfiguration object."---# Get windowsWifiConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

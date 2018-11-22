@@ -1,4 +1,4 @@
-# List NamedItemCollection
+---title: "List NamedItemCollection"description: "Retrieve a list of nameditem objects."---# List NamedItemCollection
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

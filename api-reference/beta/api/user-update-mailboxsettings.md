@@ -1,4 +1,4 @@
-# Update user mailbox settings
+---title: "Update user mailbox settings"description: "Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours."---# Update user mailbox settings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

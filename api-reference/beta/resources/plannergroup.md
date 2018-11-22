@@ -1,4 +1,4 @@
-# plannerGroup resource type
+---title: "plannerGroup resource type"description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."---# plannerGroup resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

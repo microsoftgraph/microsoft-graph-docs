@@ -1,4 +1,4 @@
-# ChartLegend resource type
+---title: "ChartLegend resource type"description: "Represents the legend in a chart."---# ChartLegend resource type
 
 Represents the legend in a chart.
 

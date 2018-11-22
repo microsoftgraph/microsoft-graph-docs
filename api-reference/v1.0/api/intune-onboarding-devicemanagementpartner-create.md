@@ -1,4 +1,4 @@
-# Create deviceManagementPartner
+---title: "Create deviceManagementPartner"description: "Create a new deviceManagementPartner object."---# Create deviceManagementPartner
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

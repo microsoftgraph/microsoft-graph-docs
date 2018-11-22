@@ -1,4 +1,4 @@
-# Skype for Business activity reports
+---title: "Skype for Business activity reports"description: "You can get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization."---# Skype for Business activity reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

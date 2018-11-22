@@ -1,4 +1,4 @@
-# Get page
+---title: "Get page"description: "Retrieve the properties and relationships of a page object."---# Get page
 
 Retrieve the properties and relationships of a [page](../resources/page.md) object.
 

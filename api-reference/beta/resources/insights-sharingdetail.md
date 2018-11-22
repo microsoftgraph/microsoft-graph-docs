@@ -1,4 +1,4 @@
-# sharingDetail resource type
+---title: "sharingDetail resource type"description: "Complex type containing properties of Shared items. "---# sharingDetail resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

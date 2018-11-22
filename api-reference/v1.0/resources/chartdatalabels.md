@@ -1,4 +1,4 @@
-# ChartDataLabels resource type
+---title: "ChartDataLabels resource type"description: "Represents a collection of all the data labels on a chart point."---# ChartDataLabels resource type
 
 Represents a collection of all the data labels on a chart point.
 

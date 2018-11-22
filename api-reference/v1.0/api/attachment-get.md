@@ -1,4 +1,4 @@
-# Get attachment
+---title: "Get attachment"description: "Read the properties and relationships of an attachment, attached to an event, "---# Get attachment
 
 Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 
 [message](../resources/message.md), or [post](../resources/post.md). 

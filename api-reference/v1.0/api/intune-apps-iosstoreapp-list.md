@@ -1,4 +1,4 @@
-# List iosStoreApps
+---title: "List iosStoreApps"description: "List properties and relationships of the iosStoreApp objects."---# List iosStoreApps
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

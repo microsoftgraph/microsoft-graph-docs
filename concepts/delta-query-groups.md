@@ -1,4 +1,4 @@
-# Get incremental changes for groups
+---title: "Get incremental changes for groups"description: "Delta query lets you query for additions, deletions, or updates to groups, by way of a series of delta function calls. Delta query enables you discover changes to groups"---# Get incremental changes for groups
 
 [Delta query](./delta-query-overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](/graph/api/group-delta?view=graph-rest-1.0) function calls. Delta query enables you discover changes to groups
 without having to fetch the entire set of groups from Microsoft Graph and compare changes.

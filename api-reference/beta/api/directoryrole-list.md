@@ -1,4 +1,4 @@
-# List directoryRoles
+---title: "List directoryRoles"description: "List the directory roles that are activated in the tenant."---# List directoryRoles
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# eventMessage resource type
+---title: "eventMessage resource type"description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). "---# eventMessage resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

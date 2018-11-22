@@ -1,4 +1,4 @@
-# ChartSeriesCollection: ItemAt
+---title: "ChartSeriesCollection: ItemAt"description: "Retrieves a series based on its position in the collection"---# ChartSeriesCollection: ItemAt
 
 Retrieves a series based on its position in the collection
 ## Permissions

@@ -1,4 +1,4 @@
-# Add Connector to connectorGroup
+---title: "Add Connector to connectorGroup"description: "Use this API to add a connector to a new connectorGroup."---# Add Connector to connectorGroup
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

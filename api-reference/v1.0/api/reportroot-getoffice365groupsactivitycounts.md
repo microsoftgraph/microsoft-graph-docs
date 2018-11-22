@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityCounts
+---title: "reportRoot: getOffice365GroupsActivityCounts"description: "Get the number of group activities across group workloads."---# reportRoot: getOffice365GroupsActivityCounts
 
 Get the number of group activities across group workloads.
 

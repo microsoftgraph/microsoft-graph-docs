@@ -1,4 +1,4 @@
-# mobileContainedApp resource type
+---title: "mobileContainedApp resource type"description: "An abstract class that represents a contained app in a mobileApp acting as a package."---# mobileContainedApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

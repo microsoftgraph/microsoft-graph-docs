@@ -1,4 +1,4 @@
-# List devices
+---title: "List devices"description: "Retrieve a list of device objects registered in the organization."---# List devices
 
 Retrieve a list of device objects registered in the organization.
 

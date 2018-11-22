@@ -1,4 +1,4 @@
-# Get windowsPhone81TrustedRootCertificate
+---title: "Get windowsPhone81TrustedRootCertificate"description: "Read properties and relationships of the windowsPhone81TrustedRootCertificate object."---# Get windowsPhone81TrustedRootCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get a DriveItemVersion resource (preview)
+---title: "Get a DriveItemVersion resource (preview)"description: "Retrieve the metadata for a specific version of a DriveItem."---# Get a DriveItemVersion resource (preview)
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

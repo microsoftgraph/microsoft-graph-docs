@@ -1,4 +1,4 @@
-﻿# ndesConnectorState enum type
+---title: "ndesConnectorState enum type"description: "The current status of the Ndes Connector."---# ndesConnectorState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

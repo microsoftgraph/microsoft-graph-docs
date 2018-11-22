@@ -1,4 +1,4 @@
-# List buckets
+---title: "List buckets"description: "Retrieve a list of **plannerbucket** objects."---# List buckets
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

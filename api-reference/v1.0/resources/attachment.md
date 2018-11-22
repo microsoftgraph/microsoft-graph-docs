@@ -1,4 +1,4 @@
-# attachment resource type
+---title: "attachment resource type"description: "You can add related content to an event,"---# attachment resource type
 
 You can add related content to an [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md) in the form of an attachment.

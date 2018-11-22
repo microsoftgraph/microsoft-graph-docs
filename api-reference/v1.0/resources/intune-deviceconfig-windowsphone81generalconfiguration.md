@@ -1,4 +1,4 @@
-# windowsPhone81GeneralConfiguration resource type
+---title: "windowsPhone81GeneralConfiguration resource type"description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windowsPhone81GeneralConfiguration resource."---# windowsPhone81GeneralConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

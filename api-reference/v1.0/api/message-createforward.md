@@ -1,4 +1,4 @@
-# message: createForward
+---title: "message: createForward"description: "Create a draft to forward the specified message. You can then update the draft to add content to the **body** or change other message properties, or, simply send the draft."---# message: createForward
 
 Create a draft to forward the specified [message](../resources/message.md). You can then [update](../api/message-update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
 

@@ -1,4 +1,4 @@
-# Get Outlook category
+---title: "Get Outlook category"description: "Get the properties and relationships of the specified outlookCategory object."---# Get Outlook category
 
 > **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# managedDeviceMobileAppConfigurationDeviceSummary resource type
+---title: "managedDeviceMobileAppConfigurationDeviceSummary resource type"description: "Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary."---# managedDeviceMobileAppConfigurationDeviceSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

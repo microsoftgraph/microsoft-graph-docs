@@ -1,4 +1,4 @@
-# Update open extension
+---title: "Update open extension"description: "Update an open extension (openTypeExtension object) with the properties in the request body:"---# Update open extension
 
 Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
 

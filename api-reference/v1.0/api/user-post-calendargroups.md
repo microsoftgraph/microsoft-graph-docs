@@ -1,4 +1,4 @@
-# Create CalendarGroup
+---title: "Create CalendarGroup"description: "Use this API to create a new CalendarGroup."---# Create CalendarGroup
 
 Use this API to create a new CalendarGroup.
 ## Permissions

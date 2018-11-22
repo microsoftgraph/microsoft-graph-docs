@@ -1,4 +1,4 @@
-# Microsoft Teams device usage reports
+---title: "Microsoft Teams device usage reports"description: "Use the Microsoft Teams device usage reports to get insights into the Microsoft Teams device usage in your organization. "---# Microsoft Teams device usage reports
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. These APIs are not supported in Microsoft Graph China operated by 21Vianet.
 

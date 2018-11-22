@@ -1,4 +1,4 @@
-# Get androidDeviceOwnerWiFiConfiguration
+---title: "Get androidDeviceOwnerWiFiConfiguration"description: "Read properties and relationships of the androidDeviceOwnerWiFiConfiguration object."---# Get androidDeviceOwnerWiFiConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

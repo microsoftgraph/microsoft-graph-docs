@@ -1,4 +1,4 @@
-# plannerPlanDetails resource type
+---title: "plannerPlanDetails resource type"description: "The **plannerPlanDetails** resource represents the additional information about a plan. Each plan object has a details object."---# plannerPlanDetails resource type
 
 
 The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.

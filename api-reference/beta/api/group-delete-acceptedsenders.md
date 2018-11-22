@@ -1,4 +1,4 @@
-# Remove acceptedSender
+---title: "Remove acceptedSender"description: "Remove a user or group from the acceptedSenders list. "---# Remove acceptedSender
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

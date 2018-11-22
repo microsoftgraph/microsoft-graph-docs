@@ -1,4 +1,4 @@
-# reportRoot: getMailboxUsageQuotaStatusMailboxCounts
+---title: "reportRoot: getMailboxUsageQuotaStatusMailboxCounts"description: "Get the count of user mailboxes in each quota category."---# reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
 Get the count of user mailboxes in each quota category.
 

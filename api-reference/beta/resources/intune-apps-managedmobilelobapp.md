@@ -1,4 +1,4 @@
-# managedMobileLobApp resource type
+---title: "managedMobileLobApp resource type"description: "An abstract base class containing properties for all managed mobile line of business apps."---# managedMobileLobApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

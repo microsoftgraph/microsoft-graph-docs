@@ -1,4 +1,4 @@
-# List embeddedSIMActivationCodePools
+---title: "List embeddedSIMActivationCodePools"description: "List properties and relationships of the embeddedSIMActivationCodePool objects."---# List embeddedSIMActivationCodePools
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

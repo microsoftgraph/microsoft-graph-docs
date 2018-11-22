@@ -1,4 +1,4 @@
-# Update activeDirectoryWindowsAutopilotDeploymentProfile
+---title: "Update activeDirectoryWindowsAutopilotDeploymentProfile"description: "Update the properties of a activeDirectoryWindowsAutopilotDeploymentProfile object."---# Update activeDirectoryWindowsAutopilotDeploymentProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

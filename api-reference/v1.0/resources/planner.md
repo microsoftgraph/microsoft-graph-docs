@@ -1,4 +1,4 @@
-# planner resource type
+---title: "planner resource type"description: "The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties."---# planner resource type
 
 The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties.
 

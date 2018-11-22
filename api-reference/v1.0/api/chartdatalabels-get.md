@@ -1,4 +1,4 @@
-# Get ChartDataLabels
+---title: "Get ChartDataLabels"description: "Retrieve the properties and relationships of chartdatalabels object."---# Get ChartDataLabels
 
 Retrieve the properties and relationships of chartdatalabels object.
 ## Permissions

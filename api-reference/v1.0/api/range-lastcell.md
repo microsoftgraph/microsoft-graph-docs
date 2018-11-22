@@ -1,4 +1,4 @@
-# Range: LastCell
+---title: "Range: LastCell"description: "."---# Range: LastCell
 
 Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 ## Permissions

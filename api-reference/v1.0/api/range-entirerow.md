@@ -1,4 +1,4 @@
-# Range: EntireRow
+---title: "Range: EntireRow"description: "Gets an object that represents the entire row of the range."---# Range: EntireRow
 
 Gets an object that represents the entire row of the range.
 ## Permissions

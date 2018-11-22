@@ -1,4 +1,4 @@
-﻿# mobileAppAssignmentSettings resource type
+---title: "mobileAppAssignmentSettings resource type"description: "Abstract class to contain properties used to assign a mobile app to a group."---# mobileAppAssignmentSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update windows10TeamGeneralConfiguration
+---title: "Update windows10TeamGeneralConfiguration"description: "Update the properties of a windows10TeamGeneralConfiguration object."---# Update windows10TeamGeneralConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

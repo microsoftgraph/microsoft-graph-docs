@@ -1,4 +1,4 @@
-# Table: delete
+---title: "Table: delete"description: "Deletes the table."---# Table: delete
 
 Deletes the table.
 ## Permissions

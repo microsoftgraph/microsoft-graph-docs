@@ -1,4 +1,4 @@
-# Update plannerbucket
+---title: "Update plannerbucket"description: "Update the properties of **plannerbucket** object."---# Update plannerbucket
 
 Update the properties of **plannerbucket** object.
 ## Permissions

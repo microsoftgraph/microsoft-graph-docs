@@ -1,4 +1,4 @@
-# Get dataPolicyOperation
+---title: "Get dataPolicyOperation"description: "Retrieve the properties of the dataPolicyOperation object."---# Get dataPolicyOperation
 
 Retrieve the properties of the dataPolicyOperation object.
 

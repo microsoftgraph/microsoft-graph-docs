@@ -1,4 +1,4 @@
-# OneNoteResource resource type
+---title: "OneNoteResource resource type"description: "An image or other file resource on a OneNote page. "---# OneNoteResource resource type
 
 An image or other file resource on a OneNote page. 
 

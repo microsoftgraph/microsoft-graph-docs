@@ -1,4 +1,4 @@
-# plannerOrderHintsByAssignee resource type
+---title: "plannerOrderHintsByAssignee resource type"description: "The **plannerOrderHintsByAssignee** is a resource that contains ordering hints for assignees in a plannerTask resource, to indicate the order of the task in Assigned To view of the Task Board."---# plannerOrderHintsByAssignee resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

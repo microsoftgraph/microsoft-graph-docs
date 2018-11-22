@@ -1,4 +1,4 @@
-# List channels
+---title: "List channels"description: "Retrieve the list of channels in this team."---# List channels
 
 
 

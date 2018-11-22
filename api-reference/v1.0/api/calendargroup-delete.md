@@ -1,4 +1,4 @@
-# Delete calendarGroup
+---title: "Delete calendarGroup"description: "Delete a calendar group other than the default calendar group."---# Delete calendarGroup
 
 Delete a calendar group other than the default calendar group.
 

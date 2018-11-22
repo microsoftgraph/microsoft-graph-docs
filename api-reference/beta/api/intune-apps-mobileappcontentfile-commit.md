@@ -1,4 +1,4 @@
-# commit action
+---title: "commit action"description: "Commits a file of a given app."---# commit action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

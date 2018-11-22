@@ -1,4 +1,4 @@
-# win32LobAppFileSystemDetection resource type
+---title: "win32LobAppFileSystemDetection resource type"description: "Contains file or folder path to detect a Win32 App"---# win32LobAppFileSystemDetection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

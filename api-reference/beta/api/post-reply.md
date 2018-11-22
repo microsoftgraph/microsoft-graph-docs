@@ -1,4 +1,4 @@
-# post: reply
+---title: "post: reply"description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "---# post: reply
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

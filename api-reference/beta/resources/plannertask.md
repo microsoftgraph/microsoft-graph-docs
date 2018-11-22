@@ -1,4 +1,4 @@
-# plannerTask resource type
+---title: "plannerTask resource type"description: "The **plannerTask** resource represents a Planner task in Office 365. A Planner task is contained in a plan and can be assigned to a bucket in a plan. Each task object has a details object which can contain more information about the task. See overview for more information regarding relationships between group, plan and task."---# plannerTask resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

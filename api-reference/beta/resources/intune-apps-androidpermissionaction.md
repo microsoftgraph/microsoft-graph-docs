@@ -1,4 +1,4 @@
-# androidPermissionAction resource type
+---title: "androidPermissionAction resource type"description: "Mapping between an Android app permission and the action Android should take when that permission is requested."---# androidPermissionAction resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

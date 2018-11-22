@@ -1,4 +1,4 @@
-# sendTestMessage action
+---title: "sendTestMessage action"description: "Sends test message using the specified notificationMessageTemplate in the default locale"---# sendTestMessage action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

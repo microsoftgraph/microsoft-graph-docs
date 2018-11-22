@@ -1,4 +1,4 @@
-# List schemaExtensions
+---title: "List schemaExtensions"description: "Get a list of schemaExtension objects created by any apps you own in the current tenant (that can be "---# List schemaExtensions
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List borders
+---title: "List borders"description: "Retrieve a list of rangeborder objects."---# List borders
 
 Retrieve a list of rangeborder objects.
 ## Permissions

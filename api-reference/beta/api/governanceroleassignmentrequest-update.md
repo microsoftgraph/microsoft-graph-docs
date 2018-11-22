@@ -1,4 +1,4 @@
-# Update governanceRoleAssignmentRequests
+---title: "Update governanceRoleAssignmentRequests"description: "Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on governanceRoleAssignmentRequests that are in status of `PendingAdminDecision`."---# Update governanceRoleAssignmentRequests
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

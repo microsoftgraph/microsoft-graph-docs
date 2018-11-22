@@ -1,4 +1,4 @@
-# WorksheetProtection: protect
+---title: "WorksheetProtection: protect"description: "Protect a worksheet. It throws if the worksheet has been protected."---# WorksheetProtection: protect
 
 Protect a worksheet. It throws if the worksheet has been protected.
 ## Permissions

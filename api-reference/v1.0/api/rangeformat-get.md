@@ -1,4 +1,4 @@
-# Get RangeFormat
+---title: "Get RangeFormat"description: "Retrieve the properties and relationships of rangeformat object."---# Get RangeFormat
 
 Retrieve the properties and relationships of rangeformat object.
 ## Permissions

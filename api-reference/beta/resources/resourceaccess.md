@@ -1,4 +1,4 @@
-# resourceAccess resource type
+---title: "resourceAccess resource type"description: "Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the requiredResourceAccess type is a collection of **ResourceAccess**."---# resourceAccess resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

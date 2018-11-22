@@ -1,4 +1,4 @@
----title: "operationError resource type"description: "Describes errors in teamsAsyncOperation."---# operationError resource type
+---title: "operationError resource type"description: "Describes errors in teamsAsyncOperation."---# operationError resource type
 
 
 

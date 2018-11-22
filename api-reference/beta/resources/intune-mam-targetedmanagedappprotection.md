@@ -1,4 +1,4 @@
-# targetedManagedAppProtection resource type
+---title: "targetedManagedAppProtection resource type"description: "Policy used to configure detailed management settings targeted to specific security groups"---# targetedManagedAppProtection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

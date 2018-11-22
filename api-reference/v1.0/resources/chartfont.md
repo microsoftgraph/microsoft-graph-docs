@@ -1,4 +1,4 @@
-# ChartFont resource type
+---title: "ChartFont resource type"description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."---# ChartFont resource type
 
 This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 

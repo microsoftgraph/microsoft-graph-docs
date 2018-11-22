@@ -1,4 +1,4 @@
-# List deviceManagementScriptAssignments
+---title: "List deviceManagementScriptAssignments"description: "List properties and relationships of the deviceManagementScriptAssignment objects."---# List deviceManagementScriptAssignments
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

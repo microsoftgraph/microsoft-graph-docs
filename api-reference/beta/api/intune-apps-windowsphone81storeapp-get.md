@@ -1,4 +1,4 @@
-# Get windowsPhone81StoreApp
+---title: "Get windowsPhone81StoreApp"description: "Read properties and relationships of the windowsPhone81StoreApp object."---# Get windowsPhone81StoreApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

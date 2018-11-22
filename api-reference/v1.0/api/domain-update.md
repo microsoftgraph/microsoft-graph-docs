@@ -1,4 +1,4 @@
-# Update domain
+---title: "Update domain"description: "Update the properties of domain object."---# Update domain
 
 Update the properties of domain object.
 

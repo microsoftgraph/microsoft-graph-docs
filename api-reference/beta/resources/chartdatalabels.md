@@ -1,4 +1,4 @@
-# ChartDataLabels resource type
+---title: "ChartDataLabels resource type"description: "Represents a collection of all the data labels on a chart point."---# ChartDataLabels resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

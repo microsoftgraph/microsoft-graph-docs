@@ -1,4 +1,4 @@
-# reportRoot: getMailboxUsageQuotaStatusMailboxCounts
+---title: "reportRoot: getMailboxUsageQuotaStatusMailboxCounts"description: "Get the count of user mailboxes in each quota category."---# reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

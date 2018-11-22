@@ -1,4 +1,4 @@
-# List the published apps from the Microsoft Teams app catalog
+---title: "List the published apps from the Microsoft Teams app catalog"description: "List apps from the Microsoft Teams app catalog. "---# List the published apps from the Microsoft Teams app catalog
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

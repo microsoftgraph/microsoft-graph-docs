@@ -1,4 +1,4 @@
-# Get windows10VpnConfiguration
+---title: "Get windows10VpnConfiguration"description: "Read properties and relationships of the windows10VpnConfiguration object."---# Get windows10VpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List groupLifecyclePolicies
+---title: "List groupLifecyclePolicies"description: "List all the groupLifecyclePolicies."---# List groupLifecyclePolicies
 
 List all the [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).
 

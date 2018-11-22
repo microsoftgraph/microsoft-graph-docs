@@ -1,4 +1,4 @@
-# Get windows10CustomConfiguration
+---title: "Get windows10CustomConfiguration"description: "Read properties and relationships of the windows10CustomConfiguration object."---# Get windows10CustomConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

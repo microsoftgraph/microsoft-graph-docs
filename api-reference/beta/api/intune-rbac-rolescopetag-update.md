@@ -1,4 +1,4 @@
-# Update roleScopeTag
+---title: "Update roleScopeTag"description: "Update the properties of a roleScopeTag object."---# Update roleScopeTag
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

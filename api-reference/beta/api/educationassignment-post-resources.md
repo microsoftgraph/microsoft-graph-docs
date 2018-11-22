@@ -1,4 +1,4 @@
-# Create educationAssignmentResource
+---title: "Create educationAssignmentResource"description: "odata.type to indicate which type of resource is being created. Note that file-based resources must first be uploaded to the assignments **resourceFolder**."---# Create educationAssignmentResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

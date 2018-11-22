@@ -1,4 +1,4 @@
-# managedAppPolicy resource type
+---title: "managedAppPolicy resource type"description: "The ManagedAppPolicy resource represents a base type for platform specific policies."---# managedAppPolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

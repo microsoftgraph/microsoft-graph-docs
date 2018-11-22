@@ -1,8 +1,8 @@
-# directoryObject: delta
+---title: "directoryObject: delta"description: "Get newly created, updated, or deleted directory objects of the following types: user, group and organizational contact, in a single delta query. See Track changes for details."---# directoryObject: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../../beta/resources/user), [group](../../beta/resources/group) and [organizational contact](../../beta/resources/orgcontact), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../resources/resources/user), [group](../resources/group) and [organizational contact](../resources/orgcontact), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
 
 ## Permissions
 

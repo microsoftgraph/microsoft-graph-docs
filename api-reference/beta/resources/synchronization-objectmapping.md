@@ -1,4 +1,4 @@
-# objectMapping resource type
+---title: "objectMapping resource type"description: "Defines how a given object should be synchronized from source directory to target directory. In particular, it defines how object in source directory should be matched with an object in target directory, what (if any) scoping filters should be used to decide if we want to provision a given object, and how object attributes should be transformed going from source to target directory."---# objectMapping resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

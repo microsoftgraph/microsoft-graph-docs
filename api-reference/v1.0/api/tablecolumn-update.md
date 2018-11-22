@@ -1,4 +1,4 @@
-# Update tablecolumn
+---title: "Update tablecolumn"description: "Update the properties of tablecolumn object."---# Update tablecolumn
 
 Update the properties of tablecolumn object.
 ## Permissions

@@ -1,4 +1,4 @@
-﻿# ratingAustraliaMoviesType enum type
+---title: "ratingAustraliaMoviesType enum type"description: "Movies rating labels in Australia"---# ratingAustraliaMoviesType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

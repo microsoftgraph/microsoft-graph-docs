@@ -1,4 +1,4 @@
-# Add a student
+---title: "Add a student"description: "Add a member to a class."---# Add a student
 
 Add a member to a class.
 

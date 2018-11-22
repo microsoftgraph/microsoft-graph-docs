@@ -1,4 +1,4 @@
-# iosVppAppAssignedUserLicense resource type
+---title: "iosVppAppAssignedUserLicense resource type"description: "iOS Volume Purchase Program user license assignment. This class does not support Create, Delete, or Update."---# iosVppAppAssignedUserLicense resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# windows10TeamGeneralConfiguration resource type
+---title: "windows10TeamGeneralConfiguration resource type"description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10TeamGeneralConfiguration resource."---# windows10TeamGeneralConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

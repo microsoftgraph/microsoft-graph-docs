@@ -1,4 +1,4 @@
-# Filter: apply
+---title: "Filter: apply"description: "Apply the given filter criteria on the given column."---# Filter: apply
 
 Apply the given filter criteria on the given column.
 ## Permissions

@@ -1,4 +1,4 @@
-﻿# iosDeviceType resource type
+---title: "iosDeviceType resource type"description: "Contains properties of the possible iOS device types the mobile app can run on."---# iosDeviceType resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

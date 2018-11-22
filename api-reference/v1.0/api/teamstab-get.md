@@ -1,4 +1,4 @@
-# Get tab
+---title: "Get tab"description: "Retrieve the properties and relationships of the specified tab. "---# Get tab
 
 
 

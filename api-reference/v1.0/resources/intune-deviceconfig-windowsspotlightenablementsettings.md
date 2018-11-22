@@ -1,4 +1,4 @@
-﻿# windowsSpotlightEnablementSettings enum type
+---title: "windowsSpotlightEnablementSettings enum type"description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"---# windowsSpotlightEnablementSettings enum type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

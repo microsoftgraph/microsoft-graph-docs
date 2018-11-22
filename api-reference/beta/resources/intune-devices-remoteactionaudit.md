@@ -1,4 +1,4 @@
-# remoteActionAudit resource type
+---title: "remoteActionAudit resource type"description: "Report of remote actions initiated on the devices belonging to a certain tenant."---# remoteActionAudit resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

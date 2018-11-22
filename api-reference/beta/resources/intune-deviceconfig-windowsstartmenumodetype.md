@@ -1,4 +1,4 @@
-﻿# windowsStartMenuModeType enum type
+---title: "windowsStartMenuModeType enum type"description: "Type of display modes for the start menu."---# windowsStartMenuModeType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update formatprotection
+---title: "Update formatprotection"description: "Update the properties of formatprotection object."---# Update formatprotection
 
 Update the properties of formatprotection object.
 ## Permissions

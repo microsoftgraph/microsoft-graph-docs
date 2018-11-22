@@ -1,4 +1,4 @@
-# Working with SharePoint sites in Microsoft Graph
+---title: "Working with SharePoint sites in Microsoft Graph"description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"---# Working with SharePoint sites in Microsoft Graph
 
 The SharePoint API in Microsoft Graph supports the following core scenarios:
 

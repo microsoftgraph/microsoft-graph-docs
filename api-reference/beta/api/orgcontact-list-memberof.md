@@ -1,4 +1,4 @@
-# orgContact: List memberOf
+---title: "orgContact: List memberOf"description: "Retrieve the list of groups and adminstrative units the contact is a member of."---# orgContact: List memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

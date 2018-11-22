@@ -1,4 +1,4 @@
-# Icon resource type
+---title: "Icon resource type"description: "Represents a cell icon."---# Icon resource type
 
 Represents a cell icon.
 

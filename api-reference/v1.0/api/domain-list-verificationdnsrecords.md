@@ -1,4 +1,4 @@
-# List verificationDnsRecords
+---title: "List verificationDnsRecords"description: "Retrieve a list of domainDnsRecord objects."---# List verificationDnsRecords
 
 Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.
 

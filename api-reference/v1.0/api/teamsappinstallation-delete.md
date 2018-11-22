@@ -1,4 +1,4 @@
-# Delete app from team
+---title: "Delete app from team"description: "Uninstalls an app from the specified team."---# Delete app from team
 
 
 

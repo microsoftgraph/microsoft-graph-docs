@@ -1,4 +1,4 @@
-# Create Calendar
+---title: "Create Calendar"description: "Use this API to create a new calendar for a user."---# Create Calendar
 
 Use this API to create a new calendar for a [user](../resources/user.md).
 ## Permissions

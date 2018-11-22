@@ -1,4 +1,4 @@
-# List domainNameReferences
+---title: "List domainNameReferences"description: "Retrieve a list of directoryObject with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain."---# List domainNameReferences
 
 Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain.
 

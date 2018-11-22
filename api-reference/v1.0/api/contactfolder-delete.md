@@ -1,4 +1,4 @@
-# Delete contactFolder
+---title: "Delete contactFolder"description: "Delete contactFolder other than the default contactFolder."---# Delete contactFolder
 
 Delete contactFolder other than the default contactFolder.
 ## Permissions

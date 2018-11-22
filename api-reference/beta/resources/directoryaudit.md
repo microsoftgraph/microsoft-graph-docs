@@ -1,4 +1,4 @@
-# directoryAudit resource type
+---title: "directoryAudit resource type"description: "This resource represents the directory Audit items and its collection"---# directoryAudit resource type
 This resource represents the directory Audit items and its collection
 
 

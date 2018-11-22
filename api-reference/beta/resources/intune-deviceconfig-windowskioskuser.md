@@ -1,4 +1,4 @@
-﻿# windowsKioskUser resource type
+---title: "windowsKioskUser resource type"description: "The user base class used to identify the account info for the kiosk configuration"---# windowsKioskUser resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

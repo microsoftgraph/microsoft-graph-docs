@@ -1,4 +1,4 @@
-# List sections
+---title: "List sections"description: "Retrieve a list of onenoteSection objects from the specified notebook."---# List sections
 
 Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified notebook.
 ## Permissions

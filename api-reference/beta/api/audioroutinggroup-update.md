@@ -1,4 +1,4 @@
-# Update audio routing group
+---title: "Update audio routing group"description: "Modify sources and receivers of an audioRoutingGroup."---# Update audio routing group
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

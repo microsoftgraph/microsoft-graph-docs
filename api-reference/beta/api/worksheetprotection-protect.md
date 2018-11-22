@@ -1,4 +1,4 @@
-# WorksheetProtection: protect
+---title: "WorksheetProtection: protect"description: "Protect a worksheet. It throws if the worksheet has been protected."---# WorksheetProtection: protect
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

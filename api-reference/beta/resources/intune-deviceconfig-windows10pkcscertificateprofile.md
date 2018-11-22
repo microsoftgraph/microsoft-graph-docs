@@ -1,4 +1,4 @@
-# windows10PkcsCertificateProfile resource type
+---title: "windows10PkcsCertificateProfile resource type"description: "Windows 10 Desktop and Mobile PKCS certificate profile"---# windows10PkcsCertificateProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

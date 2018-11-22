@@ -1,4 +1,4 @@
-
+---title: "Create absolute positioned elements in OneNote pages"description: "The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page."---
 # Create absolute positioned elements in OneNote pages
 
 The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.

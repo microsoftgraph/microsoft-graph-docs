@@ -1,4 +1,4 @@
-# Update subscription
+---title: "Update subscription"description: "Renew a subscription by extending its expiry time."---# Update subscription
 
 Renew a subscription by extending its expiry time.
 

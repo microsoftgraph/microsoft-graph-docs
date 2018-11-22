@@ -1,4 +1,4 @@
-# Get Outlook category
+---title: "Get Outlook category"description: "Get the properties and relationships of the specified outlookCategory object."---# Get Outlook category
 
 
 Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.

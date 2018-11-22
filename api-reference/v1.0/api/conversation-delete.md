@@ -1,4 +1,4 @@
-# Delete conversation
+---title: "Delete conversation"description: "Delete conversation."---# Delete conversation
 
 Delete conversation.
 ## Permissions

@@ -1,4 +1,4 @@
-# plannerFavoritePlanReference resource type
+---title: "plannerFavoritePlanReference resource type"description: "The **plannerFavoritePlanReference** resource type repesents a reference to a plannerPlan that has been marked as a favorite by the user. "---# plannerFavoritePlanReference resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

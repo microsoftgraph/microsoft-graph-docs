@@ -1,4 +1,4 @@
-# List tabs in channel
+---title: "List tabs in channel"description: "Retrieve the list of tabs in the specified channel within a team. "---# List tabs in channel
 
 
 

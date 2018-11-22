@@ -1,4 +1,4 @@
-# Update icon
+---title: "Update icon"description: "Update the properties of icon object."---# Update icon
 
 Update the properties of icon object.
 ## Permissions

@@ -1,4 +1,4 @@
-# List networkIPv6ConfigurationManagementConditions
+---title: "List networkIPv6ConfigurationManagementConditions"description: "List properties and relationships of the networkIPv6ConfigurationManagementCondition objects."---# List networkIPv6ConfigurationManagementConditions
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

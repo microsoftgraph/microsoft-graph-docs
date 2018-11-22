@@ -1,4 +1,4 @@
-# Get conversation
+---title: "Get conversation"description: "Get a conversation object."---# Get conversation
 Get a [conversation](../resources/conversation.md) object.
 
 ## Permissions

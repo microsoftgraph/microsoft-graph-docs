@@ -1,4 +1,4 @@
-# Microsoft Teams device usage reports
+---title: "Microsoft Teams device usage reports"description: "Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization."---# Microsoft Teams device usage reports
 
 Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization.
 

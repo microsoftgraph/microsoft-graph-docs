@@ -1,4 +1,4 @@
-# Remove teacher
+---title: "Remove teacher"description: "Remove a teacher from a class."---# Remove teacher
 
 Remove a teacher from a class.
 

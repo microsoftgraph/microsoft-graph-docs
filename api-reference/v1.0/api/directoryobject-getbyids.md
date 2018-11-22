@@ -1,4 +1,4 @@
-# Get directory objects from a list of ids
+---title: "Get directory objects from a list of ids"description: "select` query option is not available for this operation."---# Get directory objects from a list of ids
 
 Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.
 

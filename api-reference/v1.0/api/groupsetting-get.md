@@ -1,4 +1,4 @@
-# Get a group setting
+---title: "Get a group setting"description: "Retrieve the properties of a specific of group setting object."---# Get a group setting
 
 Retrieve the properties of a specific of group setting object.
 

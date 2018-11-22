@@ -1,4 +1,4 @@
-# List managedMobileApps
+---title: "List managedMobileApps"description: "List properties and relationships of the managedMobileApp objects."---# List managedMobileApps
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

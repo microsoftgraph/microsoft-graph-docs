@@ -1,4 +1,4 @@
-# identityRiskEvent resource type
+---title: "identityRiskEvent resource type"description: "A risk event detected by Azure Active Directory Identity Protection. It is the base type for each specific risk event type:"---# identityRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

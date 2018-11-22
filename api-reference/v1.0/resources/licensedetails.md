@@ -1,4 +1,4 @@
-# licenseDetails resource type
+---title: "licenseDetails resource type"description: "Contains information about a license assigned to a user."---# licenseDetails resource type
 
 Contains information about a license assigned to a user.
 

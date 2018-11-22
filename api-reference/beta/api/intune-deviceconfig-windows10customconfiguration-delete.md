@@ -1,4 +1,4 @@
-# Delete windows10CustomConfiguration
+---title: "Delete windows10CustomConfiguration"description: "Deletes a windows10CustomConfiguration."---# Delete windows10CustomConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# People overview
+---title: "People overview"description: "Microsoft Graph provides access to useful people data."---# People overview
 
 Microsoft Graph provides access to useful people data.
 

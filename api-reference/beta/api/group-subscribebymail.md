@@ -1,4 +1,4 @@
-# group: subscribeByMail
+---title: "group: subscribeByMail"description: "Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for Office 365 Groups only."---# group: subscribeByMail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

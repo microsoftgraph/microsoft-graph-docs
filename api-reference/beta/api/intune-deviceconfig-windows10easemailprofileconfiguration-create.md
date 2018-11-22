@@ -1,4 +1,4 @@
-# Create windows10EasEmailProfileConfiguration
+---title: "Create windows10EasEmailProfileConfiguration"description: "Create a new windows10EasEmailProfileConfiguration object."---# Create windows10EasEmailProfileConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

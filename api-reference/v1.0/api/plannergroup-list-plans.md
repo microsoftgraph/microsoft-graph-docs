@@ -1,4 +1,4 @@
-# List plans
+---title: "List plans"description: "Retrieve a list of **plannerPlan** objects owned by a group object."---# List plans
 
 Retrieve a list of **plannerPlan** objects owned by a [group](../resources/group.md) object.
 ## Permissions

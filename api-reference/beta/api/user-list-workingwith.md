@@ -1,4 +1,4 @@
-# List workingWith
+---title: "List workingWith"description: "Calculated insight for the list of users that a user has been working with."---# List workingWith
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

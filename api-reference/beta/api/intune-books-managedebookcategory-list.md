@@ -1,4 +1,4 @@
-# List managedEBookCategories
+---title: "List managedEBookCategories"description: "List properties and relationships of the managedEBookCategory objects."---# List managedEBookCategories
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Permanently delete item
+---title: "Permanently delete item"description: "Permanently deletes an item from deleted items."---# Permanently delete item
 
 Permanently deletes an item from [deleted items](../resources/directory.md).
 

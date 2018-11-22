@@ -1,4 +1,4 @@
-# Get windows10SecureAssessmentConfiguration
+---title: "Get windows10SecureAssessmentConfiguration"description: "Read properties and relationships of the windows10SecureAssessmentConfiguration object."---# Get windows10SecureAssessmentConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

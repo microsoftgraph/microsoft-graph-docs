@@ -1,4 +1,4 @@
-# reportRoot: getEmailAppUsageUserCounts
+---title: "reportRoot: getEmailAppUsageUserCounts"description: "Get the count of unique users that connected to Exchange Online using any email app."---# reportRoot: getEmailAppUsageUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

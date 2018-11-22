@@ -1,4 +1,4 @@
-# managedAndroidStoreApp resource type
+---title: "managedAndroidStoreApp resource type"description: "Contains properties and inherited properties for Android store apps that you can manage with an Intune app protection policy."---# managedAndroidStoreApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

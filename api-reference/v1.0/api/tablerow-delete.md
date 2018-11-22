@@ -1,4 +1,4 @@
-# TableRow: delete
+---title: "TableRow: delete"description: "Deletes the row from the table."---# TableRow: delete
 
 Deletes the row from the table.
 ## Permissions

@@ -1,4 +1,4 @@
-# Get conversation
+---title: "Get conversation"description: "Retrieve the properties and relationships of conversation object."---# Get conversation
 
 Retrieve the properties and relationships of conversation object.
 ## Permissions

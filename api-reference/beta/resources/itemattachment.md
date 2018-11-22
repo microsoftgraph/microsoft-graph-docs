@@ -1,4 +1,4 @@
-# itemAttachment resource type
+---title: "itemAttachment resource type"description: "A contact, event, or message that's attached to another event,"---# itemAttachment resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

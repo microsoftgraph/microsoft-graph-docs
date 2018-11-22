@@ -1,4 +1,4 @@
-# Create windows10GeneralConfiguration
+---title: "Create windows10GeneralConfiguration"description: "Create a new windows10GeneralConfiguration object."---# Create windows10GeneralConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

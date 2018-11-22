@@ -1,4 +1,4 @@
-# Create ChartPoints
+---title: "Create ChartPoints"description: "Use this API to create a new ChartPoints."---# Create ChartPoints
 
 Use this API to create a new ChartPoints.
 ## Permissions

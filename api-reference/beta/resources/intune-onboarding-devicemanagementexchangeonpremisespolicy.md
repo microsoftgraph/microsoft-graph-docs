@@ -1,4 +1,4 @@
-# deviceManagementExchangeOnPremisesPolicy resource type
+---title: "deviceManagementExchangeOnPremisesPolicy resource type"description: "Singleton entity which represents the Exchange OnPremises policy configured for a tenant."---# deviceManagementExchangeOnPremisesPolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

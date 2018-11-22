@@ -1,4 +1,4 @@
-# Create conversation
+---title: "Create conversation"description: "Create a new conversation by including a thread and a post. "---# Create conversation
 Create a new [conversation](../resources/conversation.md) by including a thread and a post. 
 
 Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.

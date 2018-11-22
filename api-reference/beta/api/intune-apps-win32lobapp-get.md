@@ -1,4 +1,4 @@
-# Get win32LobApp
+---title: "Get win32LobApp"description: "Read properties and relationships of the win32LobApp object."---# Get win32LobApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

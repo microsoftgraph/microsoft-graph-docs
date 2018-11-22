@@ -1,4 +1,4 @@
-# Get windowsPhone81AppX
+---title: "Get windowsPhone81AppX"description: "Read properties and relationships of the windowsPhone81AppX object."---# Get windowsPhone81AppX
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

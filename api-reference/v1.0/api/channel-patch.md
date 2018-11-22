@@ -1,4 +1,4 @@
-# Patch channel
+---title: "Patch channel"description: "Update the properties of the specified channel."---# Patch channel
 
 
 

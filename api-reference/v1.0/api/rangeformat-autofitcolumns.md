@@ -1,4 +1,4 @@
-# RangeFormat: autofitColumns
+---title: "RangeFormat: autofitColumns"description: "Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns."---# RangeFormat: autofitColumns
 
 Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
 ## Permissions

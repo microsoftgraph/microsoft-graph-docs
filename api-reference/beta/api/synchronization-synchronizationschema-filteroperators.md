@@ -1,4 +1,4 @@
-# synchronizationSchema: filterOperators
+---title: "synchronizationSchema: filterOperators"description: "List all operators supported in the scoping filters."---# synchronizationSchema: filterOperators
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

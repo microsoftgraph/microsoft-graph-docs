@@ -1,4 +1,4 @@
-# Get windows10GeneralConfiguration
+---title: "Get windows10GeneralConfiguration"description: "Read properties and relationships of the windows10GeneralConfiguration object."---# Get windows10GeneralConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

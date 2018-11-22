@@ -1,4 +1,4 @@
-# Range: delete
+---title: "Range: delete"description: "Deletes the cells associated with the range."---# Range: delete
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

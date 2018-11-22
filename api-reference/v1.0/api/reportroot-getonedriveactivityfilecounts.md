@@ -1,4 +1,4 @@
-# reportRoot: getOneDriveActivityFileCounts
+---title: "reportRoot: getOneDriveActivityFileCounts"description: "Get the number of unique, licensed users that performed file interactions against any OneDrive account."---# reportRoot: getOneDriveActivityFileCounts
 
 Get the number of unique, licensed users that performed file interactions against any OneDrive account.
 

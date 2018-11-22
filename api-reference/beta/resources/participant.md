@@ -1,4 +1,4 @@
-# participant resource type
+---title: "participant resource type"description: "The participant type."---# participant resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

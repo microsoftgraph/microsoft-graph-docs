@@ -1,4 +1,4 @@
-# iosVppAppAssignedDeviceLicense resource type
+---title: "iosVppAppAssignedDeviceLicense resource type"description: "iOS Volume Purchase Program device license assignment. This class does not support Create, Delete, or Update."---# iosVppAppAssignedDeviceLicense resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

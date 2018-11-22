@@ -1,4 +1,4 @@
-# win32LobAppRegistryDetection resource type
+---title: "win32LobAppRegistryDetection resource type"description: "Contains registry properties to detect a Win32 App"---# win32LobAppRegistryDetection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

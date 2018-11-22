@@ -1,4 +1,4 @@
-# List pages
+---title: "List pages"description: "Retrieve a list of page objects."---# List pages
 
 Retrieve a list of [page](../resources/page.md) objects.
 ## Permissions

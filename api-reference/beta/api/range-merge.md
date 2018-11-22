@@ -1,4 +1,4 @@
-# Range: merge
+---title: "Range: merge"description: "Merge the range cells into one region in the worksheet."---# Range: merge
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

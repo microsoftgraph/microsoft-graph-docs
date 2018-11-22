@@ -1,4 +1,4 @@
-# Chart resource type
+---title: "Chart resource type"description: "Represents a chart object in a workbook."---# Chart resource type
 
 Represents a chart object in a workbook.
 

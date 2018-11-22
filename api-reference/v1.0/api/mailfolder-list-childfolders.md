@@ -1,4 +1,4 @@
-# List childFolders
+---title: "List childFolders"description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "---# List childFolders
 
 Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.

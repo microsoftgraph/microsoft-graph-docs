@@ -1,4 +1,4 @@
-# Create a directory setting on groups
+---title: "Create a directory setting on groups"description: "Use this API to create a new directory setting for the group."---# Create a directory setting on groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
