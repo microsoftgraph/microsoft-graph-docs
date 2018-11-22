@@ -1,4 +1,4 @@
----title: "Use note tags in OneNote pages"description: " Enterprise notebooks on Office 365"---# Use note tags in OneNote pages
+---title: "Use note tags in OneNote pages"description: " Enterprise notebooks on Office 365"---# Use note tags in OneNote pages
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

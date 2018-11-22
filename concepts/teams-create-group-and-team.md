@@ -1,4 +1,4 @@
----title: "Creating a group with a Microsoft Teams team"description: "Creating a group that includes a team involves two steps: "---# Creating a group with a Microsoft Teams team
+---title: "Creating a group with a Microsoft Teams team"description: "Creating a group that includes a team involves two steps: "---# Creating a group with a Microsoft Teams team
 
 Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps: 
 
