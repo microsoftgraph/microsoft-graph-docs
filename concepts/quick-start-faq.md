@@ -1,4 +1,4 @@
----title: "Microsoft Graph quick start FAQ"description: "This FAQ answers questions related to the Microsoft Graph Quick Starts."---# Microsoft Graph quick start FAQ
+---title: "Microsoft Graph quick start FAQ"description: "This FAQ answers questions related to the Microsoft Graph Quick Starts."---# Microsoft Graph quick start FAQ
 
 This FAQ answers questions related to the [Microsoft Graph Quick Starts](https://developer.microsoft.com/graph/quick-start).
 

@@ -1,4 +1,4 @@
----title: "Update OneNote page content"description: " Enterprise notebooks on Office 365"---# Update OneNote page content
+---title: "Update OneNote page content"description: " Enterprise notebooks on Office 365"---# Update OneNote page content
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

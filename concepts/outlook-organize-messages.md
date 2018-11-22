@@ -1,4 +1,4 @@
----title: "Organize Outlook messages"description: "Outlook lets customers organize their messages the way they like it, be it leaving all messages in the same Inbox folder, or organizing messages in a tree-like folder structure under the Inbox to fit their specific needs. You can conveniently filter, search, or sort messages in the user's"---# Organize Outlook messages
+---title: "Organize Outlook messages"description: "Outlook lets customers organize their messages the way they like it, be it leaving all messages in the same Inbox folder, or organizing messages in a tree-like folder structure under the Inbox to fit their specific needs. You can conveniently filter, search, or sort messages in the user's"---# Organize Outlook messages
 
 Outlook lets customers organize their messages the way they like it, be it leaving all messages in the same Inbox folder, or organizing messages in a tree-like folder structure under the Inbox to fit their specific needs. You can conveniently [filter, search, or sort](query-parameters.md) messages in the user's
 entire mailbox or in specific folders.
