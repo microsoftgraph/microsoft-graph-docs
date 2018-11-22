@@ -1,4 +1,4 @@
-# Configuring the built-in tab types in Microsoft Teams
+---title: "Configuring the built-in tab types in Microsoft Teams"description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs, "---# Configuring the built-in tab types in Microsoft Teams
 
 To [create](/graph/api/teamstab-add?view=graph-rest-beta) or [configure](/graph/api/teamstab-update?view=graph-rest-beta) a Microsoft Teams tab using Microsoft Graph APIs, 
 you need to know the `teamsAppId` of the app, and the

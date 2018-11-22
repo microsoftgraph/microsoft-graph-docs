@@ -1,4 +1,4 @@
-# onenoteEntityHierarchyModel resource
+---title: "onenoteEntityHierarchyModel resource"description: "This is a base type for OneNote entities."---# onenoteEntityHierarchyModel resource
 
 This is a base type for OneNote entities.
 

@@ -1,4 +1,4 @@
-# Get Outlook contacts in a shared folder
+---title: "Get Outlook contacts in a shared folder"description: " this is also "---# Get Outlook contacts in a shared folder
 
 Outlook lets customers share folders with one another and provide "read", "create", "modify", or "delete" access to individual contact folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific folders or the customer's entire mailbox; this is also 
 known as "delegation" in Outlook.

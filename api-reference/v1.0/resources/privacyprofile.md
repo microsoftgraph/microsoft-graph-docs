@@ -1,4 +1,4 @@
-# privacyProfile resource type
+---title: "privacyProfile resource type"description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."---# privacyProfile resource type
 
 Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.
 

@@ -1,4 +1,4 @@
-# api resource type
+---title: "api resource type"description: "Specifies settings for a Web API application."---# api resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

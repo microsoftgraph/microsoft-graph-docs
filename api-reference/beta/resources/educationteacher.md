@@ -1,4 +1,4 @@
-# educationTeacher resource type
+---title: "educationTeacher resource type"description: "Additional information added to an educationUser that is present when the primaryRole of a user is `teacher`."---# educationTeacher resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

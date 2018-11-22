@@ -1,4 +1,4 @@
-# typedEmailAddress resource type
+---title: "typedEmailAddress resource type"description: "Represents the name, email addresses, and their corresponding email address type of a contact."---# typedEmailAddress resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

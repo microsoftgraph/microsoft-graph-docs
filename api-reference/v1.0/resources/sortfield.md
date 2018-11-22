@@ -1,4 +1,4 @@
-# SortField resource type
+---title: "SortField resource type"description: "Represents a condition in a sorting operation."---# SortField resource type
 
 Represents a condition in a sorting operation.
 

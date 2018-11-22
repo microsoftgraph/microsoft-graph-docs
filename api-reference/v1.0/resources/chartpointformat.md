@@ -1,4 +1,4 @@
-# ChartPointFormat resource type
+---title: "ChartPointFormat resource type"description: "Represents formatting object for chart points."---# ChartPointFormat resource type
 
 Represents formatting object for chart points.
 

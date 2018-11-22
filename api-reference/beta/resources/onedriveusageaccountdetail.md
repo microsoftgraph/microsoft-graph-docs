@@ -1,4 +1,4 @@
-# oneDriveUsageAccountDetail resource type
+---title: "oneDriveUsageAccountDetail resource type"description: "The following is a JSON representation of the resource."---# oneDriveUsageAccountDetail resource type
 
 ## Properties
 

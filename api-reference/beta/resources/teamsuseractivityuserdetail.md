@@ -1,4 +1,4 @@
-# teamsUserActivityUserDetail resource type
+---title: "teamsUserActivityUserDetail resource type"description: "The following is a JSON representaion of the resource."---# teamsUserActivityUserDetail resource type
 
 ## Properties
 

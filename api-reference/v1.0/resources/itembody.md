@@ -1,4 +1,4 @@
-# itemBody resource type
+---title: "itemBody resource type"description: "Represents properties of the body of an item, such as a message, event or group post."---# itemBody resource type
 
 Represents properties of the body of an item, such as a message, event or group post.
 

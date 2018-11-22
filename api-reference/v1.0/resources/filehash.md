@@ -1,4 +1,4 @@
-# fileHash resource type
+---title: "fileHash resource type"description: "Contains stateful information about file hashes (cryptographic and location-sensitive)."---# fileHash resource type
 
 Contains stateful information about file hashes (cryptographic and location-sensitive).
 

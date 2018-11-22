@@ -1,4 +1,4 @@
-# targetResourceServicePrincipal resource type
+---title: "targetResourceServicePrincipal resource type"description: "Indicates the ServicePrincipalId for the resource that impacted the audit activity. Derived from the targetResource resource."---# targetResourceServicePrincipal resource type
 Indicates the ServicePrincipalId for the resource that impacted the audit activity. Derived from the [targetResource](targetresource.md) resource.
 
 

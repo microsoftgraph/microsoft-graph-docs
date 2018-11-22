@@ -1,4 +1,4 @@
-# office365ActiveUserCounts resource type
+---title: "office365ActiveUserCounts resource type"description: "The following is a JSON representation of the resource."---# office365ActiveUserCounts resource type
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# sharePointActivityUserCounts resource type
+---title: "sharePointActivityUserCounts resource type"description: "The following is a JSON representation of the resource."---# sharePointActivityUserCounts resource type
 
 ## Properties
 
