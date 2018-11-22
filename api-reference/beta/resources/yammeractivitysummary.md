@@ -1,4 +1,4 @@
----title: "yammerActivitySummary resource type"description: "The following is a JSON representation of the resource."---# yammerActivitySummary resource type
+---title: "yammerActivitySummary resource type"description: "The following is a JSON representation of the resource."---# yammerActivitySummary resource type
 
 ## Properties
 

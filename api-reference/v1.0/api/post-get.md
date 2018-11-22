@@ -1,4 +1,4 @@
-# Get post
+---title: "Get post"description: "Get the properties and relationships of a post in a specified thread. You can specify both the parent "---# Get post
 
 Get the properties and relationships of a post in a specified thread. You can specify both the parent 
 conversation and the thread, or, you can specify the thread without referencing the parent conversation.

@@ -1,4 +1,4 @@
-# onPremisesConditionalAccessSettings resource type
+---title: "onPremisesConditionalAccessSettings resource type"description: "Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant."---# onPremisesConditionalAccessSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

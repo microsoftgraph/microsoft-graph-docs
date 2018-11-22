@@ -1,4 +1,4 @@
-# Delete inferenceClassificationOverride
+---title: "Delete inferenceClassificationOverride"description: "Delete an override specified by its ID."---# Delete inferenceClassificationOverride
 
 Delete an override specified by its ID.
 ## Permissions

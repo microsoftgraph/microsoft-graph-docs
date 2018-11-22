@@ -1,4 +1,4 @@
-# List educationAssignmentResources
+---title: "List educationAssignmentResources"description: "Get all the resources associated with this assignment."---# List educationAssignmentResources
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

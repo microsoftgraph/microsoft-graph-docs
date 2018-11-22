@@ -1,4 +1,4 @@
-# Delete message
+---title: "Delete message"description: "Delete a message in the specified user's mailbox, or delete a relationship of the message."---# Delete message
 
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 

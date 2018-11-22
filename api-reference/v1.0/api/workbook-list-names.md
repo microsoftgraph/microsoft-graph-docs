@@ -1,4 +1,4 @@
-# List names
+---title: "List names"description: "Retrieve a list of nameditem objects."---# List names
 
 Retrieve a list of nameditem objects.
 ## Permissions

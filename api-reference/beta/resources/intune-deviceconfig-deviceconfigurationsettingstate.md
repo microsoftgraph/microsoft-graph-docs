@@ -1,4 +1,4 @@
-# deviceConfigurationSettingState resource type
+---title: "deviceConfigurationSettingState resource type"description: "Device Configuration Setting State for a given device."---# deviceConfigurationSettingState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

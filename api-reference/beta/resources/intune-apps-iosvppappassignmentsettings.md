@@ -1,4 +1,4 @@
-# iosVppAppAssignmentSettings resource type
+---title: "iosVppAppAssignmentSettings resource type"description: "Contains properties used to assign an iOS VPP mobile app to a group."---# iosVppAppAssignmentSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

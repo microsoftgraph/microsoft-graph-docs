@@ -1,4 +1,4 @@
-# reportRoot: getYammerGroupsActivityDetail
+---title: "reportRoot: getYammerGroupsActivityDetail"description: "Get details about Yammer groups activity by group."---# reportRoot: getYammerGroupsActivityDetail
 
 Get details about Yammer groups activity by group.
 

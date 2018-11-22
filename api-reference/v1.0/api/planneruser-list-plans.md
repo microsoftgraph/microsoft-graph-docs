@@ -1,4 +1,4 @@
-# List plans
+---title: "List plans"description: "Retrieve a list of **plannerplan** objects shared with a user object."---# List plans
 
 Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.
 

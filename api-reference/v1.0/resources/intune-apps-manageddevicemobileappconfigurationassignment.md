@@ -1,4 +1,4 @@
-# managedDeviceMobileAppConfigurationAssignment resource type
+---title: "managedDeviceMobileAppConfigurationAssignment resource type"description: "Contains the properties used to assign an MDM app configuration to a group."---# managedDeviceMobileAppConfigurationAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

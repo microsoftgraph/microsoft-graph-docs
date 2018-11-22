@@ -1,4 +1,4 @@
-# symantecCodeSigningCertificate resource type
+---title: "symantecCodeSigningCertificate resource type"description: "Not yet documented"---# symantecCodeSigningCertificate resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

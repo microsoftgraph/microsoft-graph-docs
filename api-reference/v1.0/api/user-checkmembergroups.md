@@ -1,4 +1,4 @@
-# checkMemberGroups
+---title: "checkMemberGroups"description: "Check for membership in the specified list of groups. Returns from the list those groups of which"---# checkMemberGroups
 
 Check for membership in the specified list of groups. Returns from the list those groups of which
 the user has a direct or transitive membership.

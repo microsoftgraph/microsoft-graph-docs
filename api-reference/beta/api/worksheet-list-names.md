@@ -1,4 +1,4 @@
-# List names
+---title: "List names"description: "Retrieve a list of named item associated with the worksheet. "---# List names
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

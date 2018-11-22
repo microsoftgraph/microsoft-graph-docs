@@ -1,4 +1,4 @@
-# List educationUsers
+---title: "List educationUsers"description: "Retrieve a list of users at a school."---# List educationUsers
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

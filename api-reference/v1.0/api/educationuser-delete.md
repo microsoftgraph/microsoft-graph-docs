@@ -1,4 +1,4 @@
-# Delete educationUser
+---title: "Delete educationUser"description: "Delete a user."---# Delete educationUser
 
 Delete a user.
 

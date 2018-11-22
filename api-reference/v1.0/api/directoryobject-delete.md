@@ -1,4 +1,4 @@
-# Delete directoryObject
+---title: "Delete directoryObject"description: "Deletes a directoryObject."---# Delete directoryObject
 
 Deletes a directoryObject.
 

@@ -1,4 +1,4 @@
-# List childFolders
+---title: "List childFolders"description: "Get a collection of child folders under the specified contact folder."---# List childFolders
 
 Get a collection of child folders under the specified contact folder.
 ## Permissions

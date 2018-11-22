@@ -1,4 +1,4 @@
-# TableColumn: TotalRowRange
+---title: "TableColumn: TotalRowRange"description: "Gets the range object associated with the totals row of the column."---# TableColumn: TotalRowRange
 
 Gets the range object associated with the totals row of the column.
 ## Permissions

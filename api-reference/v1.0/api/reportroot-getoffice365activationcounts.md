@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActivationCounts
+---title: "reportRoot: getOffice365ActivationCounts"description: "Get the count of Office 365 activations on desktops and devices."---# reportRoot: getOffice365ActivationCounts
 
 Get the count of Office 365 activations on desktops and devices.
 

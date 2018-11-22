@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ServicesUserCounts
+---title: "reportRoot: getOffice365ServicesUserCounts"description: "Get the count of users by activity type and service."---# reportRoot: getOffice365ServicesUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Range: EntireColumn
+---title: "Range: EntireColumn"description: "Gets an object that represents the entire column of the range."---# Range: EntireColumn
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

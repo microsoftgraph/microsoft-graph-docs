@@ -1,4 +1,4 @@
-# message: createReply
+---title: "message: createReply"description: "Create a draft of the reply to the specified message. You can then update the draft to add reply content to the **body** or change other message properties, or, simply send the draft."---# message: createReply
 
 Create a draft of the reply to the specified [message](../resources/message.md). You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
 

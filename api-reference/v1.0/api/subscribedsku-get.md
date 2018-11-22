@@ -1,4 +1,4 @@
-# Get subscribedSku
+---title: "Get subscribedSku"description: "Retrieve a specific commercial subscription that an organization has acquired."---# Get subscribedSku
 Retrieve a specific commercial subscription that an organization has acquired.
 
 ## Permissions

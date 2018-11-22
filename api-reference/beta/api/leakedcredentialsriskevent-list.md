@@ -1,4 +1,4 @@
-# List leakedCredentialsRiskEvents
+---title: "List leakedCredentialsRiskEvents"description: "Retrieve a list of leakedcredentialsriskevent objects."---# List leakedCredentialsRiskEvents
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

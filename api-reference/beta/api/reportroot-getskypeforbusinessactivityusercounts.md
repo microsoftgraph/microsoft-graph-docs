@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessActivityUserCounts
+---title: "reportRoot: getSkypeForBusinessActivityUserCounts"description: "Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions."---# reportRoot: getSkypeForBusinessActivityUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

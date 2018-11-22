@@ -1,4 +1,4 @@
-# ChartLineFormat: clear
+---title: "ChartLineFormat: clear"description: "Clear the line format of a chart element."---# ChartLineFormat: clear
 
 Clear the line format of a chart element.
 ## Permissions

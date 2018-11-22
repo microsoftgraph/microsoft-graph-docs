@@ -1,4 +1,4 @@
-# reportRoot: getOneDriveActivityUserCounts
+---title: "reportRoot: getOneDriveActivityUserCounts"description: "Get the trend in the number of active OneDrive users."---# reportRoot: getOneDriveActivityUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

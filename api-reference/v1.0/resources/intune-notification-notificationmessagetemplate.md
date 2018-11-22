@@ -1,4 +1,4 @@
-# notificationMessageTemplate resource type
+---title: "notificationMessageTemplate resource type"description: " section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance."---# notificationMessageTemplate resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

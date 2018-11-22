@@ -1,4 +1,4 @@
-# Update windowsUniversalAppX
+---title: "Update windowsUniversalAppX"description: "Update the properties of a windowsUniversalAppX object."---# Update windowsUniversalAppX
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# Update range
+---title: "Update range"description: "Update the properties of range object."---# Update range
 
 Update the properties of range object.
 ## Permissions

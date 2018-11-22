@@ -1,4 +1,4 @@
----title: "assignedPlan resource type"description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."---# assignedPlan resource type
+---title: "assignedPlan resource type"description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."---# assignedPlan resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

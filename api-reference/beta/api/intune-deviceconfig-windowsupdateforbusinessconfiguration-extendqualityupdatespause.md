@@ -1,4 +1,4 @@
-# extendQualityUpdatesPause action
+---title: "extendQualityUpdatesPause action"description: "Extend Quality Updates Pause for a Windows Update for Business ring."---# extendQualityUpdatesPause action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

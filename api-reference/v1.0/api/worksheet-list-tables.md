@@ -1,4 +1,4 @@
-# List tables
+---title: "List tables"description: "Retrieve a list of table objects."---# List tables
 
 Retrieve a list of table objects.
 ## Permissions

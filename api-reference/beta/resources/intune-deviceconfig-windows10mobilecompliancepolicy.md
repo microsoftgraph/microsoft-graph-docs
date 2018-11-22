@@ -1,4 +1,4 @@
-# windows10MobileCompliancePolicy resource type
+---title: "windows10MobileCompliancePolicy resource type"description: "This class contains compliance settings for Windows 10 Mobile."---# windows10MobileCompliancePolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getYammerGroupsActivityCounts
+---title: "reportRoot: getYammerGroupsActivityCounts"description: "Get the number of Yammer messages posted, read, and liked in groups."---# reportRoot: getYammerGroupsActivityCounts
 
 Get the number of Yammer messages posted, read, and liked in groups.
 

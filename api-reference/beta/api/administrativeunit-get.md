@@ -1,4 +1,4 @@
-# Get administrativeUnit
+---title: "Get administrativeUnit"description: "Retrieve the properties and relationships of an administrativeUnit object."---# Get administrativeUnit
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

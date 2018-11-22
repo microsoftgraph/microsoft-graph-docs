@@ -1,4 +1,4 @@
-# List licenseDetails
+---title: "List licenseDetails"description: "Retrieve a list of licenseDetails objects."---# List licenseDetails
 
 Retrieve a list of licenseDetails objects.
 

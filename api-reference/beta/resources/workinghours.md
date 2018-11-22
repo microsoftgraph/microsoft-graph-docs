@@ -1,4 +1,4 @@
-# workingHours resource type
+---title: "workingHours resource type"description: "Represents the days of the week and hours in a specific time zone that the user works."---# workingHours resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

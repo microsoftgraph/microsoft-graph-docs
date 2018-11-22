@@ -1,4 +1,4 @@
-# Update androidImportedPFXCertificateProfile
+---title: "Update androidImportedPFXCertificateProfile"description: "Update the properties of a androidImportedPFXCertificateProfile object."---# Update androidImportedPFXCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

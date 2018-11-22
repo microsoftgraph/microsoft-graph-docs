@@ -1,4 +1,4 @@
-﻿# fileEncryptionInfo resource type
+---title: "fileEncryptionInfo resource type"description: "Contains properties for file encryption information for the content version of a line of business app."---# fileEncryptionInfo resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

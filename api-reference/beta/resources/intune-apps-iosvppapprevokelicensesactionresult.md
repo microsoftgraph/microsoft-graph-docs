@@ -1,4 +1,4 @@
-# iosVppAppRevokeLicensesActionResult resource type
+---title: "iosVppAppRevokeLicensesActionResult resource type"description: "Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult."---# iosVppAppRevokeLicensesActionResult resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

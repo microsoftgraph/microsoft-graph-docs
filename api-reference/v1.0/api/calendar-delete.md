@@ -1,4 +1,4 @@
-# Delete calendar
+---title: "Delete calendar"description: "Delete a calendar other than the default calendar."---# Delete calendar
 
 Delete a calendar other than the default calendar.
 ## Permissions

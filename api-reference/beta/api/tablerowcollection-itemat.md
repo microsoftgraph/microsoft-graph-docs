@@ -1,4 +1,4 @@
-# TableRowCollection: ItemAt
+---title: "TableRowCollection: ItemAt"description: "Gets a row based on its position in the collection."---# TableRowCollection: ItemAt
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# plannerPlanContextDetailsCollection resource type
+---title: "plannerPlanContextDetailsCollection resource type"description: " the value is the plannerPlanContextDetails object."---# plannerPlanContextDetailsCollection resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

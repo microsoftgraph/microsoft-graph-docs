@@ -1,4 +1,4 @@
-# Example Invite Participants in Existing P2P meeting
+---title: "Example Invite Participants in Existing P2P meeting"description: "This example shows a complete E2E flow for Invite Participants in an existing P2P meeting."---# Example Invite Participants in Existing P2P meeting
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

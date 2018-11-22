@@ -1,4 +1,4 @@
-# managedDeviceMobileAppConfigurationAssignment resource type
+---title: "managedDeviceMobileAppConfigurationAssignment resource type"description: "Contains the properties used to assign an MDM app configuration to a group."---# managedDeviceMobileAppConfigurationAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

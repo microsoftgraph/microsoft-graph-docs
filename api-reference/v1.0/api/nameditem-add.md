@@ -1,4 +1,4 @@
-# Add Named Item
+---title: "Add Named Item"description: "Adds a new name to the collection of the given scope using the user's locale for the formula."---# Add Named Item
 
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 

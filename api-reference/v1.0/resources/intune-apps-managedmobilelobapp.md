@@ -1,4 +1,4 @@
-# managedMobileLobApp resource type
+---title: "managedMobileLobApp resource type"description: "An abstract base class containing properties for all managed mobile line of business apps."---# managedMobileLobApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

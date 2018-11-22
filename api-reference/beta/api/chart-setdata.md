@@ -1,4 +1,4 @@
-# Chart: setData
+---title: "Chart: setData"description: "Resets the source data for the chart."---# Chart: setData
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

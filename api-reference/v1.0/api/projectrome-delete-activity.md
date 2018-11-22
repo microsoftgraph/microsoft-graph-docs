@@ -1,4 +1,4 @@
-# Delete an activity
+---title: "Delete an activity"description: "Delete an existing user activity for your app."---# Delete an activity
 
 Delete an existing user activity for your app.
 

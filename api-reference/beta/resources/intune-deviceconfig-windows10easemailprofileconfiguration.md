@@ -1,4 +1,4 @@
-# windows10EasEmailProfileConfiguration resource type
+---title: "windows10EasEmailProfileConfiguration resource type"description: "By providing configurations in this profile you can instruct the native email client (Outlook) on Windows 10 devices to communicate with an Exchange server and get email, contacts, calendar, and tasks. Furthermore, you can also specify how much email to sync and how often the device should sync."---# windows10EasEmailProfileConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

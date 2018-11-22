@@ -1,4 +1,4 @@
-# telecomExpenseManagementPartner resource type
+---title: "telecomExpenseManagementPartner resource type"description: "telecomExpenseManagementPartner resources represent the metadata and status of a given TEM service. Once your organization has onboarded with a partner, the partner can be enabled or disabled to switch TEM functionality on or off."---# telecomExpenseManagementPartner resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

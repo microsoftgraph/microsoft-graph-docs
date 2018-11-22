@@ -1,4 +1,4 @@
-# TableRow: Range
+---title: "TableRow: Range"description: "Returns the range object associated with the entire row."---# TableRow: Range
 
 Returns the range object associated with the entire row.
 ## Permissions

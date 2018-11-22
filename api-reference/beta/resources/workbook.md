@@ -1,4 +1,4 @@
-# Workbook resource type
+---title: "Workbook resource type"description: "Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc."---# Workbook resource type
 
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 

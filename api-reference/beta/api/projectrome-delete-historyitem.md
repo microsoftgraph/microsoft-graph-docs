@@ -1,4 +1,4 @@
-# Delete a historyItem
+---title: "Delete a historyItem"description: "Delete an existing history item for an existing user activity."---# Delete a historyItem
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

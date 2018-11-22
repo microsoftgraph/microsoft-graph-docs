@@ -1,4 +1,4 @@
-# List educationSchools
+---title: "List educationSchools"description: "Retrieve a list of all school objects."---# List educationSchools
 
 Retrieve a list of all school objects.
 

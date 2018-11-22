@@ -1,4 +1,4 @@
-# Find possible meeting times on the Outlook calendar
+---title: "Find possible meeting times on the Outlook calendar"description: "In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use "---# Find possible meeting times on the Outlook calendar
 
 In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) to identify any possible meeting times that satisfy time, location, and other constraints.   

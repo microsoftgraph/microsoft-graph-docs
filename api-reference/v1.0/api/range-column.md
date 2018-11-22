@@ -1,4 +1,4 @@
-# Range: Column
+---title: "Range: Column"description: "Gets a column contained in the range."---# Range: Column
 
 Gets a column contained in the range.
 ## Permissions

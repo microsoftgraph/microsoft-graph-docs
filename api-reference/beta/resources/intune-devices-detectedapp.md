@@ -1,4 +1,4 @@
-# detectedApp resource type
+---title: "detectedApp resource type"description: "A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned."---# detectedApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# parseExpressionResponse resource type
+---title: "parseExpressionResponse resource type"description: "Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action."---# parseExpressionResponse resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

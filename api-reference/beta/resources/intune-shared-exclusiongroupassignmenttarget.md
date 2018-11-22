@@ -1,4 +1,4 @@
-# exclusionGroupAssignmentTarget resource type
+---title: "exclusionGroupAssignmentTarget resource type"description: "Represents a group that should be excluded from an assignment."---# exclusionGroupAssignmentTarget resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

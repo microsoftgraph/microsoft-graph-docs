@@ -1,4 +1,4 @@
-# List pivotTables
+---title: "List pivotTables"description: "Retrieve a list of workbookpivottable objects."---# List pivotTables
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

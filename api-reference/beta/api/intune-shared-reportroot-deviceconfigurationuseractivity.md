@@ -1,4 +1,4 @@
-# deviceConfigurationUserActivity function
+---title: "deviceConfigurationUserActivity function"description: "Metadata for the device configuration user activity report"---# deviceConfigurationUserActivity function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

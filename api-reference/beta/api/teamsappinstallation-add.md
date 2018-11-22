@@ -1,4 +1,4 @@
-# Add app to team
+---title: "Add app to team"description: "Installs an app to the specified team."---# Add app to team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

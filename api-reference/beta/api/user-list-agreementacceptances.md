@@ -1,4 +1,4 @@
-# List agreementAcceptances
+---title: "List agreementAcceptances"description: "Retrieve a list of a user's agreementAcceptance objects."---# List agreementAcceptances
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

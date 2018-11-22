@@ -1,4 +1,4 @@
-# Update settings
+---title: "Update settings"description: "Update the properties of the settings object. "---# Update settings
 
 Update the properties of the [settings](../resources/user-settings.md) object. 
 Users in the same organization can have different settings based on their preference or on the organization policies. 

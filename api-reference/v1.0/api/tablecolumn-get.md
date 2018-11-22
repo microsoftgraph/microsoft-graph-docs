@@ -1,4 +1,4 @@
-# Get TableColumn
+---title: "Get TableColumn"description: "Retrieve the properties and relationships of tablecolumn object."---# Get TableColumn
 
 Retrieve the properties and relationships of tablecolumn object.
 ## Permissions

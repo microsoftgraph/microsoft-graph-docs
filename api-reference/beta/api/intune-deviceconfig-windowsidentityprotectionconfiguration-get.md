@@ -1,4 +1,4 @@
-# Get windowsIdentityProtectionConfiguration
+---title: "Get windowsIdentityProtectionConfiguration"description: "Read properties and relationships of the windowsIdentityProtectionConfiguration object."---# Get windowsIdentityProtectionConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

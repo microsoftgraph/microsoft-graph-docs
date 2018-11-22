@@ -1,4 +1,4 @@
-# extension resource type
+---title: "extension resource type"description: "An abstract type to support the OData v4 open type openTypeExtension."---# extension resource type
 
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 

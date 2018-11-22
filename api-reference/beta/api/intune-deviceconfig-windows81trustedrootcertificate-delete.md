@@ -1,4 +1,4 @@
-# Delete windows81TrustedRootCertificate
+---title: "Delete windows81TrustedRootCertificate"description: "Deletes a windows81TrustedRootCertificate."---# Delete windows81TrustedRootCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

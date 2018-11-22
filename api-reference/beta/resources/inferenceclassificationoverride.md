@@ -1,4 +1,4 @@
-# inferenceClassificationOverride resource type
+---title: "inferenceClassificationOverride resource type"description: "Represents a user's override for how incoming messages from a specific sender should always be classified as"---# inferenceClassificationOverride resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

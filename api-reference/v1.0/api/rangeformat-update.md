@@ -1,4 +1,4 @@
-# Update rangeformat
+---title: "Update rangeformat"description: "Update the properties of rangeformat object."---# Update rangeformat
 
 Update the properties of rangeformat object.
 ## Permissions

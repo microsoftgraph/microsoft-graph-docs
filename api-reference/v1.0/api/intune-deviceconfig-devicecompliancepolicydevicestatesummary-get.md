@@ -1,4 +1,4 @@
-# Get deviceCompliancePolicyDeviceStateSummary
+---title: "Get deviceCompliancePolicyDeviceStateSummary"description: "Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object."---# Get deviceCompliancePolicyDeviceStateSummary
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

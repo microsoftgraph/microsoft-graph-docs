@@ -1,4 +1,4 @@
-# Delete event
+---title: "Delete event"description: "Delete an event object."---# Delete event
 Delete an [event](../resources/event.md) object.
 
 ## Permissions

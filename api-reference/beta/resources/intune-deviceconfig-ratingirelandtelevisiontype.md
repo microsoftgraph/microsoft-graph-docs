@@ -1,4 +1,4 @@
-﻿# ratingIrelandTelevisionType enum type
+---title: "ratingIrelandTelevisionType enum type"description: "TV content rating labels in Ireland"---# ratingIrelandTelevisionType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

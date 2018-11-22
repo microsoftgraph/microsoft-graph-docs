@@ -1,4 +1,4 @@
-# reportRoot: getEmailAppUsageVersionsUserCounts
+---title: "reportRoot: getEmailAppUsageVersionsUserCounts"description: "Get the count of unique users by Outlook desktop version."---# reportRoot: getEmailAppUsageVersionsUserCounts
 
 Get the count of unique users by Outlook desktop version.
 

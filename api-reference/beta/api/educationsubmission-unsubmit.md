@@ -1,4 +1,4 @@
-# educationSubmission: unsubmit
+---title: "educationSubmission: unsubmit"description: ". During the submit process, all the resources will be copied from submittedResources to the workingResources bucket. The teacher will be looking at the working resources list for grading."---# educationSubmission: unsubmit
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

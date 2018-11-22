@@ -1,4 +1,4 @@
-# Range: LastRow
+---title: "Range: LastRow"description: "."---# Range: LastRow
 
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 ## Permissions

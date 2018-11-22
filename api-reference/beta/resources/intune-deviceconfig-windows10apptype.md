@@ -1,4 +1,4 @@
-﻿# windows10AppType enum type
+---title: "windows10AppType enum type"description: "Windows 10 Application type."---# windows10AppType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

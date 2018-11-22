@@ -1,4 +1,4 @@
-# List groupLifecyclePolicies
+---title: "List groupLifecyclePolicies"description: "Retrieves a list of groupLifecyclePolicy objects to which a group belongs."---# List groupLifecyclePolicies
 
 Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.
 

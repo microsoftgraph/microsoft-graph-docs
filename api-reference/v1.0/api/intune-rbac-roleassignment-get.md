@@ -1,4 +1,4 @@
-# Get roleAssignment
+---title: "Get roleAssignment"description: "Read properties and relationships of the roleAssignment object."---# Get roleAssignment
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

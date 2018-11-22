@@ -1,4 +1,4 @@
-# Create outlookTask
+---title: "Create outlookTask"description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."---# Create outlookTask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

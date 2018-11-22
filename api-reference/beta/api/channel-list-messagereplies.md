@@ -1,4 +1,4 @@
-# List channel message replies
+---title: "List channel message replies"description: "List all the replies of a message in a channel of a team."---# List channel message replies
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List Outlook categories
+---title: "List Outlook categories"description: "Get all the categories that have been defined for the user."---# List Outlook categories
 
 
 Get all the categories that have been defined for the user.

@@ -1,4 +1,4 @@
-# List plans
+---title: "List plans"description: "Retrieve a list of **plannerplan** objects."---# List plans
 
 Retrieve a list of **plannerplan** objects.
 ## Permissions

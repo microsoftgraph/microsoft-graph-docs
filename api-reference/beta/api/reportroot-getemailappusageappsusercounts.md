@@ -1,4 +1,4 @@
-# reportRoot: getEmailAppUsageAppsUserCounts
+---title: "reportRoot: getEmailAppUsageAppsUserCounts"description: "Get the count of unique users per email app."---# reportRoot: getEmailAppUsageAppsUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

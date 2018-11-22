@@ -1,4 +1,4 @@
-# workbookRangeView: range
+---title: "workbookRangeView: range"description: "Return the range associated with the rangeView resource."---# workbookRangeView: range
 Return the range associated with the rangeView resource.
 
 ## Permissions

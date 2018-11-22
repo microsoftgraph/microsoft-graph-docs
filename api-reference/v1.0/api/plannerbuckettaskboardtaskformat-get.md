@@ -1,4 +1,4 @@
-# Get plannerBucketTaskBoardTaskFormat
+---title: "Get plannerBucketTaskBoardTaskFormat"description: "Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object."---# Get plannerBucketTaskBoardTaskFormat
 
 Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
 ## Permissions

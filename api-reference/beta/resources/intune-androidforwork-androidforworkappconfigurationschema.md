@@ -1,4 +1,4 @@
-# androidForWorkAppConfigurationSchema resource type
+---title: "androidForWorkAppConfigurationSchema resource type"description: "Schema describing an Android for Work application's custom configurations."---# androidForWorkAppConfigurationSchema resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

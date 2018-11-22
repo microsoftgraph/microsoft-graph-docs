@@ -1,4 +1,4 @@
-# Get singleValueLegacyExtendedProperty
+---title: "Get singleValueLegacyExtendedProperty"description: "You can get a single resource instance expanded with a specific extended property, or a collection of resource instances"---# Get singleValueLegacyExtendedProperty
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

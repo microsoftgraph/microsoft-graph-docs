@@ -1,4 +1,4 @@
-# ListItemVersion resource type
+---title: "ListItemVersion resource type"description: "The **listItemVersion** resource represents a previous version of a ListItem resource."---# ListItemVersion resource type
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
 

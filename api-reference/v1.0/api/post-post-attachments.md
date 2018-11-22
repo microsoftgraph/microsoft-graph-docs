@@ -1,4 +1,4 @@
-# Add attachment
+---title: "Add attachment"description: "Use this API to add an attachment to a post. Since there"---# Add attachment
 
 Use this API to add an [attachment](../resources/attachment.md) to a post. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment

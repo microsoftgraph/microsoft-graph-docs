@@ -1,4 +1,4 @@
-# groupLifecyclePolicy: addGroup
+---title: "groupLifecyclePolicy: addGroup"description: "Adds a group to a lifecycle policy."---# groupLifecyclePolicy: addGroup
 
 Adds a group to a lifecycle policy.
 

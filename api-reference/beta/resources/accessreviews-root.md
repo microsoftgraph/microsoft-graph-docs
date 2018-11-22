@@ -1,4 +1,4 @@
-# Azure AD access reviews
+---title: "Azure AD access reviews"description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."---# Azure AD access reviews
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

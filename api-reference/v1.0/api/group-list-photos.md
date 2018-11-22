@@ -1,4 +1,4 @@
-# List photos
+---title: "List photos"description: "Retrieve a list of profilePhoto objects."---# List photos
 Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
 
 ## Permissions

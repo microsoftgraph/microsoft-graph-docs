@@ -1,4 +1,4 @@
-# List privilegedRoleAssignments
+---title: "List privilegedRoleAssignments"description: "Retrieve a list of privilegedRoleAssignment objects, which correspond to all role assignments for the organization."---# List privilegedRoleAssignments
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

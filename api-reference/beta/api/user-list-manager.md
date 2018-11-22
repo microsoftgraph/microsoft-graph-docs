@@ -1,4 +1,4 @@
-# List manager
+---title: "List manager"description: "Get user's manager. Returns the user or contact assigned as the user's manager."---# List manager
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

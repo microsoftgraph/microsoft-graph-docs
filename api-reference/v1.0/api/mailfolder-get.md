@@ -1,4 +1,4 @@
-# Get mailFolder
+---title: "Get mailFolder"description: "Retrieve the properties and relationships of a message folder object."---# Get mailFolder
 
 Retrieve the properties and relationships of a message folder object.
 

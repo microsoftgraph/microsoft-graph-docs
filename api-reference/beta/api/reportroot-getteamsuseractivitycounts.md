@@ -1,4 +1,4 @@
-# reportRoot: getTeamsUserActivityCounts
+---title: "reportRoot: getTeamsUserActivityCounts"description: "Get the number of Microsoft Teams activities by activity type. The activity types are team chat messages, private chat messages, calls, and meetings."---# reportRoot: getTeamsUserActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

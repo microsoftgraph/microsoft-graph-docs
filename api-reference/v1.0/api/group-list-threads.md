@@ -1,4 +1,4 @@
-# List threads
+---title: "List threads"description: "Get all the threads of a group."---# List threads
 Get all the threads of a group.
 
 >Note: You can also [get all the threads of a conversation](conversation-list-threads.md).

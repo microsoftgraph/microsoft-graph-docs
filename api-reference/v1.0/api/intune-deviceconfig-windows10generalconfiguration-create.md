@@ -1,4 +1,4 @@
-# Create windows10GeneralConfiguration
+---title: "Create windows10GeneralConfiguration"description: "Create a new windows10GeneralConfiguration object."---# Create windows10GeneralConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

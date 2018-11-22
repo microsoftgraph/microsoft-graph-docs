@@ -1,4 +1,4 @@
-# Display a chart image in Excel with Microsoft Graph
+---title: "Display a chart image in Excel with Microsoft Graph"description: "When you perform a GET operation to retrieve a chart image, the Excel API returns the image as a base-64 string."---# Display a chart image in Excel with Microsoft Graph
 
 When you perform a [GET operation to retrieve a chart image](/api-reference/v1.0/api/chart-image.md), the Excel API returns the image as a base-64 string.
 

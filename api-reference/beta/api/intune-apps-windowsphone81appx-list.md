@@ -1,4 +1,4 @@
-# List windowsPhone81AppXs
+---title: "List windowsPhone81AppXs"description: "List properties and relationships of the windowsPhone81AppX objects."---# List windowsPhone81AppXs
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

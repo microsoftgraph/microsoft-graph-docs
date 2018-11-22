@@ -1,4 +1,4 @@
-# Get group
+---title: "Get group"description: "Get the properties and relationships of a group object."---# Get group
 Get the properties and relationships of a group object.
 
 ##### Default properties

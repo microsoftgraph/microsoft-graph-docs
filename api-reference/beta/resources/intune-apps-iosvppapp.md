@@ -1,4 +1,4 @@
-# iosVppApp resource type
+---title: "iosVppApp resource type"description: "Contains properties and inherited properties for iOS Volume-Purchased Program (VPP) Apps."---# iosVppApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

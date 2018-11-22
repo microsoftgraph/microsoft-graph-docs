@@ -1,4 +1,4 @@
-# plannerPlanDetails resource type
+---title: "plannerPlanDetails resource type"description: "The **plannerPlanDetails** resource represents the additional information about a plan. Each plan object has a details object."---# plannerPlanDetails resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

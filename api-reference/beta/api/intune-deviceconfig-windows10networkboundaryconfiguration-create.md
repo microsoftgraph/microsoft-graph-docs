@@ -1,4 +1,4 @@
-# Create windows10NetworkBoundaryConfiguration
+---title: "Create windows10NetworkBoundaryConfiguration"description: "Create a new windows10NetworkBoundaryConfiguration object."---# Create windows10NetworkBoundaryConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

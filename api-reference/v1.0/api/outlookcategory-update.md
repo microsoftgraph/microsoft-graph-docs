@@ -1,4 +1,4 @@
-# Update Outlook category
+---title: "Update Outlook category"description: "Update the writable property, **color**, of the specified outlookCategory object. You cannot modify the **displayName** property "---# Update Outlook category
 
 
 Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property 

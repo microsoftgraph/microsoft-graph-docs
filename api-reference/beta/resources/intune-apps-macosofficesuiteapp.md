@@ -1,4 +1,4 @@
-# macOSOfficeSuiteApp resource type
+---title: "macOSOfficeSuiteApp resource type"description: "Contains properties and inherited properties for the MacOS Office Suite App."---# macOSOfficeSuiteApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

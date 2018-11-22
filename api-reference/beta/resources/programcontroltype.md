@@ -1,4 +1,4 @@
-# programControlType resource type
+---title: "programControlType resource type"description: "In the Azure AD access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "---# programControlType resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

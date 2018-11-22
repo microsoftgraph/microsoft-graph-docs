@@ -1,4 +1,4 @@
-# Update groupLifecyclePolicy
+---title: "Update groupLifecyclePolicy"description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."---# Update groupLifecyclePolicy
 
 Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.
 

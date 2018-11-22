@@ -1,4 +1,4 @@
-# subscribedSku resource type
+---title: "subscribedSku resource type"description: "Contains information about a service SKU that a company is subscribed to."---# subscribedSku resource type
 
 Contains information about a service SKU that a company is subscribed to.
 

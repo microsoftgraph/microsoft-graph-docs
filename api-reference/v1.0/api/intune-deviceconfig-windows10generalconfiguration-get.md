@@ -1,4 +1,4 @@
-# Get windows10GeneralConfiguration
+---title: "Get windows10GeneralConfiguration"description: "Read properties and relationships of the windows10GeneralConfiguration object."---# Get windows10GeneralConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

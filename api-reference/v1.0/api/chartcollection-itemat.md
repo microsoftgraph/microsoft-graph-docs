@@ -1,4 +1,4 @@
-# ChartCollection: ItemAt
+---title: "ChartCollection: ItemAt"description: "Gets a chart based on its position in the collection."---# ChartCollection: ItemAt
 
 Gets a chart based on its position in the collection.
 ## Permissions

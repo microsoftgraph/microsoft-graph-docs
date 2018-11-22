@@ -1,4 +1,4 @@
-# mailFolder: copy
+---title: "mailFolder: copy"description: "Copy a mailfolder and its contents to another mailfolder."---# mailFolder: copy
 
 Copy a mailfolder and its contents to another mailfolder.
 

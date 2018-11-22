@@ -1,4 +1,4 @@
-# Worksheet: delete
+---title: "Worksheet: delete"description: "Deletes the worksheet from the workbook."---# Worksheet: delete
 
 Deletes the worksheet from the workbook.
 ## Permissions

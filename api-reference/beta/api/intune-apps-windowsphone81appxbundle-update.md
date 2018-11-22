@@ -1,4 +1,4 @@
-# Update windowsPhone81AppXBundle
+---title: "Update windowsPhone81AppXBundle"description: "Update the properties of a windowsPhone81AppXBundle object."---# Update windowsPhone81AppXBundle
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

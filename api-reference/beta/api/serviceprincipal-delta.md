@@ -1,4 +1,4 @@
-# servicePrincipal: delta
+---title: "servicePrincipal: delta"description: "Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See Using Delta Query for details."---# servicePrincipal: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get educationSubmissionResource
+---title: "Get educationSubmissionResource"description: " resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment."---# Get educationSubmissionResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

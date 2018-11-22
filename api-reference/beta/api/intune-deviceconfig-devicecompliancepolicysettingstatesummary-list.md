@@ -1,4 +1,4 @@
-# List deviceCompliancePolicySettingStateSummaries
+---title: "List deviceCompliancePolicySettingStateSummaries"description: "List properties and relationships of the deviceCompliancePolicySettingStateSummary objects."---# List deviceCompliancePolicySettingStateSummaries
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

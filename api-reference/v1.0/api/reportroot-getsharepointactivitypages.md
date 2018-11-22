@@ -1,4 +1,4 @@
-# reportRoot: getSharePointActivityPages
+---title: "reportRoot: getSharePointActivityPages"description: "Get the number of unique pages visited by users."---# reportRoot: getSharePointActivityPages
 
 Get the number of unique pages visited by users.
 

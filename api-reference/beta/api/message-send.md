@@ -1,4 +1,4 @@
-# message: send
+---title: "message: send"description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"---# message: send
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

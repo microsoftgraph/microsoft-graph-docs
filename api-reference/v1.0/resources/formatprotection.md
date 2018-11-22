@@ -1,4 +1,4 @@
-# FormatProtection resource type
+---title: "FormatProtection resource type"description: "Represents the format protection of a range object."---# FormatProtection resource type
 
 Represents the format protection of a range object.
 

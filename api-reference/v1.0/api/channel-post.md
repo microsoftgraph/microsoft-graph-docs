@@ -1,4 +1,4 @@
-# Create Channel
+---title: "Create Channel"description: "Create a new channel in a Microsoft Team, as specified in the request body."---# Create Channel
 
 
 

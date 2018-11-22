@@ -1,4 +1,4 @@
----title: "educationSynchronizationCustomizations resource type"description: "Contains the list of entities to sync and their customizations, if any."---# educationSynchronizationCustomizations resource type
+---title: "educationSynchronizationCustomizations resource type"description: "Contains the list of entities to sync and their customizations, if any."---# educationSynchronizationCustomizations resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# ChartLineFormat resource type
+---title: "ChartLineFormat resource type"description: "Enapsulates the formatting options for line elements."---# ChartLineFormat resource type
 
 Enapsulates the formatting options for line elements.
 

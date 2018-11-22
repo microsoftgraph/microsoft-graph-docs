@@ -1,4 +1,4 @@
-# windowsKioskAzureADGroup resource type
+---title: "windowsKioskAzureADGroup resource type"description: "The class used to identify an AzureAD group for the kiosk configuration"---# windowsKioskAzureADGroup resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

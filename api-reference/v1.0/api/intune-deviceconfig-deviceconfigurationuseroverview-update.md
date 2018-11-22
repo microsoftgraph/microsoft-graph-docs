@@ -1,4 +1,4 @@
-# Update deviceConfigurationUserOverview
+---title: "Update deviceConfigurationUserOverview"description: "Update the properties of a deviceConfigurationUserOverview object."---# Update deviceConfigurationUserOverview
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

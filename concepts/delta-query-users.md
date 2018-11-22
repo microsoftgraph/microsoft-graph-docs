@@ -1,4 +1,4 @@
-# Get incremental changes for users
+---title: "Get incremental changes for users"description: "Delta query lets you query for additions, deletions, or updates to users, by way of a series of delta function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes."---# Get incremental changes for users
 
 [Delta query](./delta-query-overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](/graph/api/user-delta?view=graph-rest-1.0) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.
 

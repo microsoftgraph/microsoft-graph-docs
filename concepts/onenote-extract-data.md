@@ -1,4 +1,4 @@
-# Use OneNote API div tags to extract data from captures 
+---title: "Use OneNote API div tags to extract data from captures "description: " Enterprise notebooks on Office 365"---# Use OneNote API div tags to extract data from captures 
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

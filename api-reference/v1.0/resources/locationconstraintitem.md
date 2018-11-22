@@ -1,4 +1,4 @@
-# locationConstraintItem resource type
+---title: "locationConstraintItem resource type"description: "The conditions stated by a client for the location of a meeting."---# locationConstraintItem resource type
 
 The conditions stated by a client for the location of a meeting.
 

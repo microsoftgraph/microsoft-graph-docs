@@ -1,4 +1,4 @@
-# Mailbox usage reports
+---title: "Mailbox usage reports"description: "Use the mailbox usage reports to get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many mailboxes are approaching storage quotas."---# Mailbox usage reports
 
 Use the mailbox usage reports to get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many mailboxes are approaching storage quotas.
 

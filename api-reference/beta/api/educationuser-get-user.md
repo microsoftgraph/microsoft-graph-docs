@@ -1,4 +1,4 @@
-# Get user
+---title: "Get user"description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."---# Get user
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

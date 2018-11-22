@@ -1,4 +1,4 @@
-# Device configuration in Microsoft Intune
+---title: "Device configuration in Microsoft Intune"description: "Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage."---# Device configuration in Microsoft Intune
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

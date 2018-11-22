@@ -1,4 +1,4 @@
-# getEncryptionPublicKey function
+---title: "getEncryptionPublicKey function"description: "Get a public key to use to encrypt the Apple device enrollment program token"---# getEncryptionPublicKey function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

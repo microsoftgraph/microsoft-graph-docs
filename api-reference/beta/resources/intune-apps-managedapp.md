@@ -1,4 +1,4 @@
-# managedApp resource type
+---title: "managedApp resource type"description: "Abstract class that contains properties and inherited properties for apps that you can manage with an Intune app protection policy."---# managedApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

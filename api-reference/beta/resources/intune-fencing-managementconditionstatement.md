@@ -1,4 +1,4 @@
-# managementConditionStatement resource type
+---title: "managementConditionStatement resource type"description: "A management condition statement is a group of management conditions that enable/disable device/application configurations when all contained management conditions are met."---# managementConditionStatement resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

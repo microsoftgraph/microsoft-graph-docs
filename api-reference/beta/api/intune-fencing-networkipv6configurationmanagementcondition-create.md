@@ -1,4 +1,4 @@
-# Create networkIPv6ConfigurationManagementCondition
+---title: "Create networkIPv6ConfigurationManagementCondition"description: "Create a new networkIPv6ConfigurationManagementCondition object."---# Create networkIPv6ConfigurationManagementCondition
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

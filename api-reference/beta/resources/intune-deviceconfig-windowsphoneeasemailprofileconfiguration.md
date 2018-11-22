@@ -1,4 +1,4 @@
-# windowsPhoneEASEmailProfileConfiguration resource type
+---title: "windowsPhoneEASEmailProfileConfiguration resource type"description: "By providing configurations in this profile you can instruct the native email client on Windows Phone to communicate with an Exchange server and get email, contacts, calendar, and tasks. Furthermore, you can also specify how much email to sync and how often the device should sync."---# windowsPhoneEASEmailProfileConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

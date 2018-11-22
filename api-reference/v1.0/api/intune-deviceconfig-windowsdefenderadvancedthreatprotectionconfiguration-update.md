@@ -1,4 +1,4 @@
-# Update windowsDefenderAdvancedThreatProtectionConfiguration
+---title: "Update windowsDefenderAdvancedThreatProtectionConfiguration"description: "Update the properties of a windowsDefenderAdvancedThreatProtectionConfiguration object."---# Update windowsDefenderAdvancedThreatProtectionConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

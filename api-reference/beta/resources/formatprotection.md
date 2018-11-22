@@ -1,4 +1,4 @@
-# FormatProtection resource type
+---title: "FormatProtection resource type"description: "Represents the format protection of a range object."---# FormatProtection resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

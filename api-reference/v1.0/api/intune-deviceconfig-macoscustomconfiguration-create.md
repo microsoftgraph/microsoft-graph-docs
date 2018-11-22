@@ -1,4 +1,4 @@
-# Create macOSCustomConfiguration
+---title: "Create macOSCustomConfiguration"description: "Create a new macOSCustomConfiguration object."---# Create macOSCustomConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

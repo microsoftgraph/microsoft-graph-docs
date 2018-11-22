@@ -1,4 +1,4 @@
-# Get iosVppAppAssignedLicense
+---title: "Get iosVppAppAssignedLicense"description: "Read properties and relationships of the iosVppAppAssignedLicense object."---# Get iosVppAppAssignedLicense
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

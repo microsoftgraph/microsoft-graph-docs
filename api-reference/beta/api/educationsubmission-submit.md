@@ -1,4 +1,4 @@
-# educationSubmission: submit
+---title: "educationSubmission: submit"description: ". During the submit process, all the resources will be copied to the submittedResources bucket. The teacher will be looking at the submitted resources list for grading."---# educationSubmission: submit
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

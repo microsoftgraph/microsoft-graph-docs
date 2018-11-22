@@ -1,4 +1,4 @@
----title: "networkConnection resource type"description: "Contains stateful information about the network connection related to the alert."---# networkConnection resource type
+---title: "networkConnection resource type"description: "Contains stateful information about the network connection related to the alert."---# networkConnection resource type
 
 Contains stateful information about the network connection related to the alert.
 

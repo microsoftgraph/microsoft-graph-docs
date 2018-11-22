@@ -1,4 +1,4 @@
-# Update group
+---title: "Update group"description: "Update the properties of a group object."---# Update group
 
 Update the properties of a group object.
 

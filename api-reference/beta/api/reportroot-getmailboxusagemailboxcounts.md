@@ -1,4 +1,4 @@
-# reportRoot: getMailboxUsageMailboxCounts
+---title: "reportRoot: getMailboxUsageMailboxCounts"description: "Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email."---# reportRoot: getMailboxUsageMailboxCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

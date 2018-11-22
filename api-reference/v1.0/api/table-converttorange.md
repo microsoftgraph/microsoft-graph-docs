@@ -1,4 +1,4 @@
-# Table: convertToRange
+---title: "Table: convertToRange"description: "Converts the table into a normal range of cells. All data is preserved."---# Table: convertToRange
 
 Converts the table into a normal range of cells. All data is preserved.
 ## Permissions

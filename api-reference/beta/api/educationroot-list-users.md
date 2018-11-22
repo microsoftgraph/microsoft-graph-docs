@@ -1,4 +1,4 @@
-# List users
+---title: "List users"description: "Retrieve a list of user objects. These user objects will include education-specific properties."---# List users
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

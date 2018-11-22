@@ -1,4 +1,4 @@
-# directoryRole: delta
+---title: "directoryRole: delta"description: "Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See Using Delta Query for details."---# directoryRole: delta
 
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
 

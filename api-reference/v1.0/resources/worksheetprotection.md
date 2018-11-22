@@ -1,4 +1,4 @@
-# WorksheetProtection resource type
+---title: "WorksheetProtection resource type"description: "Represents the protection of a sheet object."---# WorksheetProtection resource type
 
 Represents the protection of a sheet object.
 

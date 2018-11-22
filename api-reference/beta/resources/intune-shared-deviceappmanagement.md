@@ -1,4 +1,4 @@
-# deviceAppManagement resource type
+---title: "deviceAppManagement resource type"description: "Singleton entity that acts as a container for all device app management functionality."---# deviceAppManagement resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

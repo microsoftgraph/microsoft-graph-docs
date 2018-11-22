@@ -1,4 +1,4 @@
-# Close Session
+---title: "Close Session"description: "Use this API to close an existing workbook session. "---# Close Session
 
 Use this API to close an existing workbook session. 
 

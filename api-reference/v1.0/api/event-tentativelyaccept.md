@@ -1,4 +1,4 @@
-# event: tentativelyAccept
+---title: "event: tentativelyAccept"description: "Tentatively accept the specified event in a user calendar."---# event: tentativelyAccept
 
 Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 

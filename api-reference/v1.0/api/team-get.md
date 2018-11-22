@@ -1,4 +1,4 @@
-# Get team
+---title: "Get team"description: "Retrieve the properties and relationships of the specified team."---# Get team
 
 
 

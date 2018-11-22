@@ -1,4 +1,4 @@
-# reportRoot: getYammerDeviceUsageDistributionUserCounts
+---title: "reportRoot: getYammerDeviceUsageDistributionUserCounts"description: "Get the number of users by device type."---# reportRoot: getYammerDeviceUsageDistributionUserCounts
 
 Get the number of users by device type.
 

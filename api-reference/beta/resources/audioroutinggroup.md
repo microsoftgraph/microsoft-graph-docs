@@ -1,4 +1,4 @@
-# audioRoutingGroup resource type
+---title: "audioRoutingGroup resource type"description: "The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation."---# audioRoutingGroup resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

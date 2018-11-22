@@ -1,4 +1,4 @@
-# Get directoryObject
+---title: "Get directoryObject"description: "Retrieve the properties and relationships of directoryObject object."---# Get directoryObject
 
 Retrieve the properties and relationships of directoryObject object.
 ## Permissions

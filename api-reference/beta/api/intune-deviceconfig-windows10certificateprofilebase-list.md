@@ -1,4 +1,4 @@
-# List windows10CertificateProfileBases
+---title: "List windows10CertificateProfileBases"description: "List properties and relationships of the windows10CertificateProfileBase objects."---# List windows10CertificateProfileBases
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

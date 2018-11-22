@@ -1,4 +1,4 @@
-# call: changeScreenSharingRole
+---title: "call: changeScreenSharingRole"description: "Start and stop sharing screen in the call. This API is used to allow applications to share screen content with the participants of a call or meeting."---# call: changeScreenSharingRole
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

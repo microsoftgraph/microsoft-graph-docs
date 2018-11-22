@@ -1,4 +1,4 @@
-# List ChartSeriesCollection
+---title: "List ChartSeriesCollection"description: "Retrieve a list of chartseries objects."---# List ChartSeriesCollection
 
 Retrieve a list of chartseries objects.
 ## Permissions

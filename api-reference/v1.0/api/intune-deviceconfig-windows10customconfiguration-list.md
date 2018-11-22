@@ -1,4 +1,4 @@
-# List windows10CustomConfigurations
+---title: "List windows10CustomConfigurations"description: "List properties and relationships of the windows10CustomConfiguration objects."---# List windows10CustomConfigurations
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

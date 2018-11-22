@@ -1,4 +1,4 @@
-# Chart resource type
+---title: "Chart resource type"description: "Represents a chart object in a workbook."---# Chart resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

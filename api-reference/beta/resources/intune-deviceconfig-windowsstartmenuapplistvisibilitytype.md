@@ -1,4 +1,4 @@
-﻿# windowsStartMenuAppListVisibilityType enum type
+---title: "windowsStartMenuAppListVisibilityType enum type"description: "Type of start menu app list visibility."---# windowsStartMenuAppListVisibilityType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

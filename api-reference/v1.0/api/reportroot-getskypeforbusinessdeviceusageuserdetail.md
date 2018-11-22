@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessDeviceUsageUserDetail
+---title: "reportRoot: getSkypeForBusinessDeviceUsageUserDetail"description: "Get details about Skype for Business device usage by user."---# reportRoot: getSkypeForBusinessDeviceUsageUserDetail
 
 Get details about Skype for Business device usage by user.
 

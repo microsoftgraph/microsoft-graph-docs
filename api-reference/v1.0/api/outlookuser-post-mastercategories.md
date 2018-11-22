@@ -1,4 +1,4 @@
-# Create Outlook category
+---title: "Create Outlook category"description: "Create an outlookCategory object in the user's master list of categories."---# Create Outlook category
 
 
 Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.

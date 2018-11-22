@@ -1,4 +1,4 @@
-# servicePrincipal: List createdObjects
+---title: "servicePrincipal: List createdObjects"description: "Retrieve a list of directoryobject objects."---# servicePrincipal: List createdObjects
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

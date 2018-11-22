@@ -1,4 +1,4 @@
-# calendar resource type
+---title: "calendar resource type"description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of an Office 365 group."---# calendar resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# SendReminder accessReview
+---title: "SendReminder accessReview"description: "In the Azure AD access reviews feature, send a reminder to the reviewers of a currently active accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review. "---# SendReminder accessReview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update deviceConfigurationUserOverview
+---title: "Update deviceConfigurationUserOverview"description: "Update the properties of a deviceConfigurationUserOverview object."---# Update deviceConfigurationUserOverview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

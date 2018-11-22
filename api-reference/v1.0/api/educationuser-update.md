@@ -1,4 +1,4 @@
-# Update educationUser properties
+---title: "Update educationUser properties"description: "Update the properties of an **educationuser** object."---# Update educationUser properties
 
 Update the properties of an **educationuser** object.
 ## Permissions

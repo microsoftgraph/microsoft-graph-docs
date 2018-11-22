@@ -1,4 +1,4 @@
-# List windowsMobileMSIs
+---title: "List windowsMobileMSIs"description: "List properties and relationships of the windowsMobileMSI objects."---# List windowsMobileMSIs
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

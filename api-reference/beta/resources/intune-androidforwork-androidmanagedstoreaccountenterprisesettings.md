@@ -1,4 +1,4 @@
-# androidManagedStoreAccountEnterpriseSettings resource type
+---title: "androidManagedStoreAccountEnterpriseSettings resource type"description: "Enterprise settings for an Android managed store account."---# androidManagedStoreAccountEnterpriseSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

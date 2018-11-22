@@ -1,4 +1,4 @@
-# windowsPhone81AppX resource type
+---title: "windowsPhone81AppX resource type"description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps."---# windowsPhone81AppX resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

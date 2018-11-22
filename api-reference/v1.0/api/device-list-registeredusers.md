@@ -1,4 +1,4 @@
-# List registeredUsers
+---title: "List registeredUsers"description: "Retrieve a list of users that are registered users of the device."---# List registeredUsers
 
 Retrieve a list of users that are registered users of the device.
 

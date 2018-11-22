@@ -1,4 +1,4 @@
-# Create androidManagedAppProtection
+---title: "Create androidManagedAppProtection"description: "Create a new androidManagedAppProtection object."---# Create androidManagedAppProtection
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

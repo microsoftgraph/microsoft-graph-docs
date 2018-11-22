@@ -1,4 +1,4 @@
-# List childFolders
+---title: "List childFolders"description: "Get a collection of child folders under the specified contact folder."---# List childFolders
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

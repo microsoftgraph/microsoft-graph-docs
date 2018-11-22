@@ -1,4 +1,4 @@
-# List WorksheetCollection
+---title: "List WorksheetCollection"description: "Retrieve a list of worksheet objects."---# List WorksheetCollection
 
 Retrieve a list of worksheet objects.
 ## Permissions

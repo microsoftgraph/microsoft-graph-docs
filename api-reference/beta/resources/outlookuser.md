@@ -1,4 +1,4 @@
-# outlookUser resource type
+---title: "outlookUser resource type"description: "Represents the Outlook services available to a user."---# outlookUser resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

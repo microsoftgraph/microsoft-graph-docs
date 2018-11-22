@@ -1,4 +1,4 @@
-# networkIPv6ConfigurationManagementCondition resource type
+---title: "networkIPv6ConfigurationManagementCondition resource type"description: "IPv6 configuration-based management conditions may be defined that will trigger when a device detects certain IP network settings. An IP config management condition will only be considered TRUE when the network connection is active."---# networkIPv6ConfigurationManagementCondition resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

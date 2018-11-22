@@ -1,4 +1,4 @@
-# attachment resource type
+---title: "attachment resource type"description: "You can add related content to an event,"---# attachment resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

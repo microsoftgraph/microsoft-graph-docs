@@ -1,4 +1,4 @@
-# privilegedRoleSettings resource type
+---title: "privilegedRoleSettings resource type"description: "Represents the settings for a privileged role."---# privilegedRoleSettings resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

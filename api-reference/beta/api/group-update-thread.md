@@ -1,4 +1,4 @@
-# Update conversation thread
+---title: "Update conversation thread"description: "Update a thread object."---# Update conversation thread
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

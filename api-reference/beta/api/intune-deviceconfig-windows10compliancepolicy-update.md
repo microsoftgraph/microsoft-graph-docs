@@ -1,4 +1,4 @@
-# Update windows10CompliancePolicy
+---title: "Update windows10CompliancePolicy"description: "Update the properties of a windows10CompliancePolicy object."---# Update windows10CompliancePolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

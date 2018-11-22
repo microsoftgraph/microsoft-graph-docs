@@ -1,4 +1,4 @@
-# reportRoot: getEmailActivityUserDetail
+---title: "reportRoot: getEmailActivityUserDetail"description: "Get details about email activity users have performed."---# reportRoot: getEmailActivityUserDetail
 
 Get details about email activity users have performed.
 

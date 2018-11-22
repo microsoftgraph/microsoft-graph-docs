@@ -1,4 +1,4 @@
-# Get TableRow
+---title: "Get TableRow"description: "Retrieve the properties and relationships of tablerow object."---# Get TableRow
 
 Retrieve the properties and relationships of tablerow object.
 ## Permissions

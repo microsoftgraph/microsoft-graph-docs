@@ -1,4 +1,4 @@
-# Get windows81CompliancePolicy
+---title: "Get windows81CompliancePolicy"description: "Read properties and relationships of the windows81CompliancePolicy object."---# Get windows81CompliancePolicy
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# Get windows81GeneralConfiguration
+---title: "Get windows81GeneralConfiguration"description: "Read properties and relationships of the windows81GeneralConfiguration object."---# Get windows81GeneralConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

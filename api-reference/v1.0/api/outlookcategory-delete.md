@@ -1,4 +1,4 @@
-# Delete Outlook category
+---title: "Delete Outlook category"description: "Delete the specified outlookCategory object."---# Delete Outlook category
 
 
 Delete the specified [outlookCategory](../resources/outlookcategory.md) object.

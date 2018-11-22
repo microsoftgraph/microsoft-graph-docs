@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ServicesUserCounts
+---title: "reportRoot: getOffice365ServicesUserCounts"description: "Get the count of users by activity type and service."---# reportRoot: getOffice365ServicesUserCounts
 
 Get the count of users by activity type and service.
 

@@ -1,4 +1,4 @@
-# List ownedObjects
+---title: "List ownedObjects"description: "Get the list of directory objects that are owned by the user."---# List ownedObjects
 
 Get the list of directory objects that are owned by the user.
 ## Permissions

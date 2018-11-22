@@ -1,4 +1,4 @@
-# List androidWorkProfileCustomConfigurations
+---title: "List androidWorkProfileCustomConfigurations"description: "List properties and relationships of the androidWorkProfileCustomConfiguration objects."---# List androidWorkProfileCustomConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create deviceConfigurationDeviceStatus
+---title: "Create deviceConfigurationDeviceStatus"description: "Create a new deviceConfigurationDeviceStatus object."---# Create deviceConfigurationDeviceStatus
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

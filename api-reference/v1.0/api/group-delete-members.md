@@ -1,4 +1,4 @@
-# Remove member
+---title: "Remove member"description: "Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups."---# Remove member
 Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.
 
 ## Permissions

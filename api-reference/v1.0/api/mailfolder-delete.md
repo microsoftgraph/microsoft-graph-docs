@@ -1,4 +1,4 @@
-# Delete mailFolder
+---title: "Delete mailFolder"description: "Delete the specified mailFolder."---# Delete mailFolder
 
 Delete the specified [mailFolder](../resources/mailfolder.md).
 

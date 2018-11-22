@@ -1,4 +1,4 @@
-# Update windowsMobileMSI
+---title: "Update windowsMobileMSI"description: "Update the properties of a windowsMobileMSI object."---# Update windowsMobileMSI
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

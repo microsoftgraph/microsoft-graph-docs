@@ -1,4 +1,4 @@
-# List owners
+---title: "List owners"description: "Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. "---# List owners
 Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
 
 ## Permissions

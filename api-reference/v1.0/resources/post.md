@@ -1,4 +1,4 @@
-# post resource type
+---title: "post resource type"description: "Represents an individual Post item within a conversationThread entity."---# post resource type
 Represents an individual Post item within a [conversationThread](conversationthread.md) entity.
 
 Even though you cannot explicitly create a post, doing any of the following would create a post:

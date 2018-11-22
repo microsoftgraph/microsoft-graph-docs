@@ -1,4 +1,4 @@
-# List windows10MobileCompliancePolicies
+---title: "List windows10MobileCompliancePolicies"description: "List properties and relationships of the windows10MobileCompliancePolicy objects."---# List windows10MobileCompliancePolicies
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

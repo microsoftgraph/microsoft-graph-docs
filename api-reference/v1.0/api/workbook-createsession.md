@@ -1,4 +1,4 @@
-# Create Session
+---title: "Create Session"description: "Use this API to create a new workbook session. "---# Create Session
 
 Use this API to create a new workbook session. 
 

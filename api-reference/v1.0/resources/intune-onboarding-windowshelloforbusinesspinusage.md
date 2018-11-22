@@ -1,4 +1,4 @@
-﻿# windowsHelloForBusinessPinUsage enum type
+---title: "windowsHelloForBusinessPinUsage enum type"description: "Windows Hello for Business pin usage options"---# windowsHelloForBusinessPinUsage enum type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

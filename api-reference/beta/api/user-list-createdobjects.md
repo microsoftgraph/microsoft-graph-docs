@@ -1,4 +1,4 @@
-# List createdObjects
+---title: "List createdObjects"description: "Get a list of directory objects that were created by the user."---# List createdObjects
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

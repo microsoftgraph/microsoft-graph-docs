@@ -1,4 +1,4 @@
-# Assign a manager
+---title: "Assign a manager"description: "Use this API to assign a user's manager."---# Assign a manager
 
 Use this API to assign a user's manager.
 > Note: You cannot assign direct reports - instead use this API.

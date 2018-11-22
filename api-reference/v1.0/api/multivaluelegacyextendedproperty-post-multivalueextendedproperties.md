@@ -1,4 +1,4 @@
-# Create multi-value extended property
+---title: "Create multi-value extended property"description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "---# Create multi-value extended property
 
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 

@@ -1,4 +1,4 @@
-# Add Named Item
+---title: "Add Named Item"description: "Adds a new name to the collection of the given scope using the user's locale for the formula."---# Add Named Item
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

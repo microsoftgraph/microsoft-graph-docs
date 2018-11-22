@@ -1,4 +1,4 @@
-﻿# windows10EditionType enum type
+---title: "windows10EditionType enum type"description: "Windows 10 Edition type."---# windows10EditionType enum type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

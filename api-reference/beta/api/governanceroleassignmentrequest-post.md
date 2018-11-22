@@ -1,4 +1,4 @@
-# Create governanceRoleAssignmentRequest
+---title: "Create governanceRoleAssignmentRequest"description: "Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations."---# Create governanceRoleAssignmentRequest
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Publish apps to your organization's app catalog
+---title: "Permissions"description: "Publish an app to the Microsoft Teams apps catalog. "---# Publish apps to your organization's app catalog
 
 
 

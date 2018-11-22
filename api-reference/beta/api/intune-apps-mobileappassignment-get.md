@@ -1,4 +1,4 @@
-# Get mobileAppAssignment
+---title: "Get mobileAppAssignment"description: "Read properties and relationships of the mobileAppAssignment object."---# Get mobileAppAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

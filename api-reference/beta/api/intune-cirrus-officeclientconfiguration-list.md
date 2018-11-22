@@ -1,4 +1,4 @@
-# List officeClientConfigurations
+---title: "List officeClientConfigurations"description: "Get all policies."---# List officeClientConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

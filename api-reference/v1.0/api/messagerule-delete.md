@@ -1,4 +1,4 @@
-# Delete messageRule
+---title: "Delete messageRule"description: "Delete the specified messageRule object."---# Delete messageRule
 
 
 Delete the specified [messageRule](../resources/messagerule.md) object.

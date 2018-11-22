@@ -1,4 +1,4 @@
-# multiValueLegacyExtendedProperty resource type
+---title: "multiValueLegacyExtendedProperty resource type"description: "An extended property that contains a collection of values."---# multiValueLegacyExtendedProperty resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# targetedManagedAppConfiguration resource type
+---title: "targetedManagedAppConfiguration resource type"description: "Configuration used to deliver a set of custom settings as-is to all users in the targeted security group"---# targetedManagedAppConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

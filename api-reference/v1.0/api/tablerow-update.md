@@ -1,4 +1,4 @@
-# Update tablerow
+---title: "Update tablerow"description: "Update the properties of tablerow object."---# Update tablerow
 
 Update the properties of tablerow object.
 ## Permissions

@@ -1,4 +1,4 @@
-# List NamedItemCollection
+---title: "List NamedItemCollection"description: "Retrieve a list of nameditem objects."---# List NamedItemCollection
 
 Retrieve a list of nameditem objects.
 ## Permissions

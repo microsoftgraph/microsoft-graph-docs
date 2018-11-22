@@ -1,4 +1,4 @@
-# plannerRecentPlanReference resource type
+---title: "plannerRecentPlanReference resource type"description: "The **plannerRecentPlanReference** resource type repesents a reference to a plannerPlan that has recently been viewed by a user. "---# plannerRecentPlanReference resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

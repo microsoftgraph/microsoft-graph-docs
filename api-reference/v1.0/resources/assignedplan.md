@@ -1,4 +1,4 @@
----title: "assignedPlan resource type"description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."---# assignedPlan resource type
+---title: "assignedPlan resource type"description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."---# assignedPlan resource type
 
 The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.
 

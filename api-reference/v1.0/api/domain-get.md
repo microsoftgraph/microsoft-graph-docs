@@ -1,4 +1,4 @@
-# Get domain
+---title: "Get domain"description: "Retrieve the properties and relationships of domain object."---# Get domain
 
 Retrieve the properties and relationships of domain object.
 

@@ -1,4 +1,4 @@
-# Create educationUser
+---title: "Create educationUser"description: "Create a new user."---# Create educationUser
 
 Create a new user.
 

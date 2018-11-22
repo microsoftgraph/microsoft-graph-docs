@@ -1,4 +1,4 @@
-# Update organization
+---title: "Update organization"description: "Update the properties of the currently authenticated organization."---# Update organization
 
 Update the properties of the currently authenticated organization.
 

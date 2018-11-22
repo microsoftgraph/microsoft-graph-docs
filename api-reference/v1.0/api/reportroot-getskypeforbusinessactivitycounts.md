@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessActivityCounts
+---title: "reportRoot: getSkypeForBusinessActivityCounts"description: "Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions."---# reportRoot: getSkypeForBusinessActivityCounts
 
 Get the trends on how many users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions.
 

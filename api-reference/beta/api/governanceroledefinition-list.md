@@ -1,4 +1,4 @@
-# List governanceRoleDefinitions
+---title: "List governanceRoleDefinitions"description: "Get a collection of governanceRoleDefinitions on a resource."---# List governanceRoleDefinitions
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.

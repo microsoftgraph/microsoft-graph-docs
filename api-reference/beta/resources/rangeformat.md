@@ -1,4 +1,4 @@
-# RangeFormat resource type
+---title: "RangeFormat resource type"description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."---# RangeFormat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

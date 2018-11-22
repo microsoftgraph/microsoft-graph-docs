@@ -1,4 +1,4 @@
-# Update windows10PFXImportCertificateProfile
+---title: "Update windows10PFXImportCertificateProfile"description: "Update the properties of a windows10PFXImportCertificateProfile object."---# Update windows10PFXImportCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

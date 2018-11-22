@@ -1,4 +1,4 @@
-# Get androidVpnConfiguration
+---title: "Get androidVpnConfiguration"description: "Read properties and relationships of the androidVpnConfiguration object."---# Get androidVpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getEmailAppUsageAppsUserCounts
+---title: "reportRoot: getEmailAppUsageAppsUserCounts"description: "Get the count of unique users per email app."---# reportRoot: getEmailAppUsageAppsUserCounts
 
 Get the count of unique users per email app.
 

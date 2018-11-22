@@ -1,4 +1,4 @@
-﻿# auditActor resource type
+---title: "auditActor resource type"description: "A class containing the properties for Audit Actor."---# auditActor resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

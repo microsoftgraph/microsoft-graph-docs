@@ -1,4 +1,4 @@
-# Update table
+---title: "Update table"description: "Update the properties of table object."---# Update table
 
 Update the properties of table object.
 ## Permissions

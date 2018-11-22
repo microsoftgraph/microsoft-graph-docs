@@ -1,4 +1,4 @@
-# List messages
+---title: "List messages"description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). "---# List messages
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# ChartPointsCollection: ItemAt
+---title: "ChartPointsCollection: ItemAt"description: "Retrieve a point based on its position within the series."---# ChartPointsCollection: ItemAt
 
 Retrieve a point based on its position within the series.
 ## Permissions

@@ -1,4 +1,4 @@
-﻿# vppTokenState enum type
+---title: "vppTokenState enum type"description: "Possible states associated with an Apple Volume Purchase Program token."---# vppTokenState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

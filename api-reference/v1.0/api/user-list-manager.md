@@ -1,4 +1,4 @@
-# List manager
+---title: "List manager"description: "Get user's manager. Returns the user or contact assigned as the user's manager."---# List manager
 
 Get user's manager. Returns the user or contact assigned as the user's manager.
 ## Permissions

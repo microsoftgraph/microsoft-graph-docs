@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessDeviceUsageUserDetail
+---title: "reportRoot: getSkypeForBusinessDeviceUsageUserDetail"description: "Get details about Skype for Business device usage by user."---# reportRoot: getSkypeForBusinessDeviceUsageUserDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

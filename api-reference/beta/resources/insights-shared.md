@@ -1,4 +1,4 @@
-# shared resource type
+---title: "shared resource type"description: "An insight representing files shared with or by a specific user. The following shared files are supported:"---# shared resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Range: merge
+---title: "Range: merge"description: "Merge the range cells into one region in the worksheet."---# Range: merge
 
 Merge the range cells into one region in the worksheet.
 ## Permissions

@@ -1,4 +1,4 @@
-# List names
+---title: "List names"description: "Retrieve a list of named item associated with the worksheet. "---# List names
 
 Retrieve a list of named item associated with the worksheet. 
 ## Permissions

@@ -1,4 +1,4 @@
-# Update plannerProgressTaskBoardTaskFormat
+---title: "Update plannerProgressTaskBoardTaskFormat"description: "Update the properties of **plannerProgressTaskBoardTaskFormat** object."---# Update plannerProgressTaskBoardTaskFormat
 
 Update the properties of **plannerProgressTaskBoardTaskFormat** object.
 ## Permissions

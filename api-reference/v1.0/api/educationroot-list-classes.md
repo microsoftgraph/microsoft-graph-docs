@@ -1,4 +1,4 @@
-# List classes
+---title: "List classes"description: "Retrieve a list of all class objects. "---# List classes
 
 Retrieve a list of all class objects. 
 

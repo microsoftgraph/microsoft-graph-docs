@@ -1,4 +1,4 @@
-# List windows10EndpointProtectionConfigurations
+---title: "List windows10EndpointProtectionConfigurations"description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."---# List windows10EndpointProtectionConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

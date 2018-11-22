@@ -1,4 +1,4 @@
-# used resource type
+---title: "used resource type"description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:"---# used resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

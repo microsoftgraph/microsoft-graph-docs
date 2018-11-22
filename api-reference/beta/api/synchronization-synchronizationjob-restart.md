@@ -1,4 +1,4 @@
-# Restart synchronizationJob
+---title: "Restart synchronizationJob"description: "Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors."---# Restart synchronizationJob
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

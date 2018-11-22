@@ -1,4 +1,4 @@
-# educationSynchronizationDataProvider resource type
+---title: "educationSynchronizationDataProvider resource type"description: "Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema. "---# educationSynchronizationDataProvider resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

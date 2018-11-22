@@ -1,4 +1,4 @@
-# group: getMemberGroups
+---title: "group: getMemberGroups"description: "Return all the groups that the specified group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of."---# group: getMemberGroups
 
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 

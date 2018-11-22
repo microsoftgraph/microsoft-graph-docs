@@ -1,4 +1,4 @@
-# Range: Row
+---title: "Range: Row"description: "Gets a row contained in the range."---# Range: Row
 
 Gets a row contained in the range.
 ## Permissions

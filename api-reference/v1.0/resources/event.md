@@ -1,4 +1,4 @@
-# event resource type
+---title: "event resource type"description: "An event in a calendar."---# event resource type
 
 An event in a calendar.
 

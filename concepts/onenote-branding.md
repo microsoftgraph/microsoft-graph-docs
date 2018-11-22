@@ -1,4 +1,4 @@
-# Branding guidelines for OneNote API developers 
+---title: "Branding guidelines for OneNote API developers "description: " "---# Branding guidelines for OneNote API developers 
  
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

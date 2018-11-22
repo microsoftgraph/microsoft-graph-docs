@@ -1,4 +1,4 @@
-# Create outlookTaskGroup
+---title: "Create outlookTaskGroup"description: "Create an Outlook task group in the user's mailbox."---# Create outlookTaskGroup
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

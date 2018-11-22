@@ -1,4 +1,4 @@
-# RangeFill resource type
+---title: "RangeFill resource type"description: "Represents the background of a range object."---# RangeFill resource type
 
 Represents the background of a range object.
 

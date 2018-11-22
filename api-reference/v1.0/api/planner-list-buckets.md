@@ -1,4 +1,4 @@
-# List buckets
+---title: "List buckets"description: "Retrieve a list of **plannerbucket** objects."---# List buckets
 
 Retrieve a list of **plannerbucket** objects.
 

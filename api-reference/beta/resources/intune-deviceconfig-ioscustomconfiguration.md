@@ -1,4 +1,4 @@
-# iosCustomConfiguration resource type
+---title: "iosCustomConfiguration resource type"description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosCustomConfiguration resource."---# iosCustomConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

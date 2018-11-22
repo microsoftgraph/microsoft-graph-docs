@@ -1,4 +1,4 @@
-# List apps in team
+---title: "List apps in team"description: "Retrieve the list of apps installed in the specified team."---# List apps in team
 
 
 

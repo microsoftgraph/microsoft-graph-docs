@@ -1,4 +1,4 @@
-# managementConditionExpressionString resource type
+---title: "managementConditionExpressionString resource type"description: "A management condition expression string is a string representation of a management condition expression."---# managementConditionExpressionString resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

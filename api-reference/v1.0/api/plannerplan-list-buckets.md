@@ -1,4 +1,4 @@
-# List buckets
+---title: "List buckets"description: "Retrieve a list of **plannerbucket** objects contained by a plannerPlan object."---# List buckets
 
 Retrieve a list of **plannerbucket** objects contained by a [plannerPlan](../resources/plannerplan.md) object.
 ## Permissions

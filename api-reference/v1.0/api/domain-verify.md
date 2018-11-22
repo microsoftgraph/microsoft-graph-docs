@@ -1,4 +1,4 @@
-# domain: verify
+---title: "domain: verify"description: "Validates the ownership of the domain."---# domain: verify
 
 Validates the ownership of the domain.
 

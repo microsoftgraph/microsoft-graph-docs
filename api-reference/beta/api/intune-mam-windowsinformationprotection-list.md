@@ -1,4 +1,4 @@
-# List windowsInformationProtections
+---title: "List windowsInformationProtections"description: "List properties and relationships of the windowsInformationProtection objects."---# List windowsInformationProtections
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

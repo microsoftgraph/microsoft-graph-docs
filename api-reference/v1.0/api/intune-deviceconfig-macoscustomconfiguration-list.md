@@ -1,4 +1,4 @@
-# List macOSCustomConfigurations
+---title: "List macOSCustomConfigurations"description: "List properties and relationships of the macOSCustomConfiguration objects."---# List macOSCustomConfigurations
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

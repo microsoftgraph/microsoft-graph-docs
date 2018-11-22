@@ -1,4 +1,4 @@
-# sideLoadingKey resource type
+---title: "sideLoadingKey resource type"description: "SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line Of Business Apps for a tenant."---# sideLoadingKey resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

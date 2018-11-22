@@ -1,4 +1,4 @@
-# microsoftStoreForBusinessApp resource type
+---title: "microsoftStoreForBusinessApp resource type"description: "Microsoft Store for Business Apps. This class does not support Create, Delete, or Update."---# microsoftStoreForBusinessApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

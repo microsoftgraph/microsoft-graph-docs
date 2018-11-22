@@ -1,4 +1,4 @@
-# reportRoot: getYammerDeviceUsageDistributionUserCounts
+---title: "reportRoot: getYammerDeviceUsageDistributionUserCounts"description: "Get the number of users by device type."---# reportRoot: getYammerDeviceUsageDistributionUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

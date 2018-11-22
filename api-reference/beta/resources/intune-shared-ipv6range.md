@@ -1,4 +1,4 @@
-# iPv6Range resource type
+---title: "iPv6Range resource type"description: "IP V6 range"---# iPv6Range resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

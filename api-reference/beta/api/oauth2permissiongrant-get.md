@@ -1,4 +1,4 @@
-# Get oAuth2Permissiongrant
+---title: "Get oAuth2Permissiongrant"description: "Retrieve the properties and relationships of oAuth2Permissiongrant object."---# Get oAuth2Permissiongrant
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

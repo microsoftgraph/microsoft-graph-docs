@@ -1,4 +1,4 @@
-# windowsKioskMultipleApps resource type
+---title: "windowsKioskMultipleApps resource type"description: "The class used to identify the MultiMode app configuration for the kiosk configuration"---# windowsKioskMultipleApps resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

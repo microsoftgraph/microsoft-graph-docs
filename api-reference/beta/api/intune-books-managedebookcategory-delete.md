@@ -1,4 +1,4 @@
-# Delete managedEBookCategory
+---title: "Delete managedEBookCategory"description: "Deletes a managedEBookCategory."---# Delete managedEBookCategory
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

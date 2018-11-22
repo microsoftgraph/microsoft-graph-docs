@@ -1,4 +1,4 @@
-# filterGroup resource type
+---title: "filterGroup resource type"description: "Defines a set of clauses that an object must satisfy to be considered in scope. An object is considered in scope for the group (the group is evaluated to `true`) only if all the clauses of the group are evaluated to `true`."---# filterGroup resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List appleVpnConfigurations
+---title: "List appleVpnConfigurations"description: "List properties and relationships of the appleVpnConfiguration objects."---# List appleVpnConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

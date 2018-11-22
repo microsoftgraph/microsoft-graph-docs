@@ -1,4 +1,4 @@
-# List events
+---title: "List events"description: "Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters."---# List events
 
 Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 

@@ -1,4 +1,4 @@
-# agreementAcceptance resource type
+---title: "agreementAcceptance resource type"description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD)."---# agreementAcceptance resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

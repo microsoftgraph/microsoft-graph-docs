@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityDetail
+---title: "reportRoot: getOffice365GroupsActivityDetail"description: "Get details about Office 365 Groups activity by group."---# reportRoot: getOffice365GroupsActivityDetail
 
 Get details about Office 365 Groups activity by group.
 

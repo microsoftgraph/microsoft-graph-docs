@@ -1,4 +1,4 @@
-# Upgrade an app in a team
+---title: "Upgrade an app in a team"description: "Upgrades an app installation in a team"---# Upgrade an app in a team
 
 
 

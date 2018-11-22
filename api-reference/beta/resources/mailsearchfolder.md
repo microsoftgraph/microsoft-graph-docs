@@ -1,4 +1,4 @@
-# mailSearchFolder resource type
+---title: "mailSearchFolder resource type"description: "A mailSearchFolder is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. mailSearchFolder inherits from mailFolder."---# mailSearchFolder resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

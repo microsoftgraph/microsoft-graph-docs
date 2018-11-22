@@ -1,4 +1,4 @@
-# List managementConditionStatements
+---title: "List managementConditionStatements"description: "List properties and relationships of the managementConditionStatement objects."---# List managementConditionStatements
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

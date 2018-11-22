@@ -1,4 +1,4 @@
-# Delete conversation
+---title: "Delete conversation"description: "Delete a conversation object."---# Delete conversation
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

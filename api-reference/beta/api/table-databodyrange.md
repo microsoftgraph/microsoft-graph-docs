@@ -1,4 +1,4 @@
-# Table: DataBodyRange
+---title: "Table: DataBodyRange"description: "Gets the range object associated with the data body of the table."---# Table: DataBodyRange
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update deviceManagementScriptGroupAssignment
+---title: "Update deviceManagementScriptGroupAssignment"description: "Update the properties of a deviceManagementScriptGroupAssignment object."---# Update deviceManagementScriptGroupAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

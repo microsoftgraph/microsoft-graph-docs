@@ -1,4 +1,4 @@
-# List accessReview reviewers
+---title: "List accessReview reviewers"description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."---# List accessReview reviewers
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

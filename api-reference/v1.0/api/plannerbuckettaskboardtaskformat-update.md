@@ -1,4 +1,4 @@
-# Update plannerBucketTaskBoardTaskFormat
+---title: "Update plannerBucketTaskBoardTaskFormat"description: "Update the properties of **plannerBucketTaskBoardTaskFormat** object."---# Update plannerBucketTaskBoardTaskFormat
 
 Update the properties of **plannerBucketTaskBoardTaskFormat** object.
 ## Permissions

@@ -1,4 +1,4 @@
-# Get managedIOSStoreApp
+---title: "Get managedIOSStoreApp"description: "Read properties and relationships of the managedIOSStoreApp object."---# Get managedIOSStoreApp
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# Azure AD identity and access management API overview
+---title: "Azure AD identity and access management API overview"description: "Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  "---# Azure AD identity and access management API overview
 
 Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  
 

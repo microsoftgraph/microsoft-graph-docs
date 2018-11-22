@@ -1,4 +1,4 @@
-# List windows81SCEPCertificateProfiles
+---title: "List windows81SCEPCertificateProfiles"description: "List properties and relationships of the windows81SCEPCertificateProfile objects."---# List windows81SCEPCertificateProfiles
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

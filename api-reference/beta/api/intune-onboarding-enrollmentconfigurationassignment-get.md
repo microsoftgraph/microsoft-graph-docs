@@ -1,4 +1,4 @@
-# Get enrollmentConfigurationAssignment
+---title: "Get enrollmentConfigurationAssignment"description: "Read properties and relationships of the enrollmentConfigurationAssignment object."---# Get enrollmentConfigurationAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# List attachments
+---title: "List attachments"description: "Retrieve a list of attachment objects."---# List attachments
 
 Retrieve a list of attachment objects.
 ## Permissions

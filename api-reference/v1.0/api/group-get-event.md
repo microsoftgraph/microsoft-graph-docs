@@ -1,4 +1,4 @@
-# Get event
+---title: "Get event"description: "Get an event object."---# Get event
 Get an [event](../resources/event.md) object.
 
 ## Permissions

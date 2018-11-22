@@ -1,4 +1,4 @@
-# followupFlag resource type
+---title: "followupFlag resource type"description: "Allows setting a flag in an item for the user to follow up on later. "---# followupFlag resource type
 
 
 Allows setting a flag in an item for the user to follow up on later. 

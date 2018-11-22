@@ -1,4 +1,4 @@
-# governanceRoleAssignment resource type
+---title: "governanceRoleAssignment resource type"description: "Represents the assignment of a user or group to a role."---# governanceRoleAssignment resource type
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents the assignment of a user or group to a role.

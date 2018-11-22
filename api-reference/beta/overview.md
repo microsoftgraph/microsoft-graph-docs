@@ -1,4 +1,4 @@
-# Microsoft Graph beta endpoint reference
+---title: "Microsoft Graph beta endpoint reference"description: "The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:"---# Microsoft Graph beta endpoint reference
 
 The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:
 

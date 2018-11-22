@@ -1,4 +1,4 @@
-# List alerts
+---title: "List alerts"description: "Retrieve a list of alert objects."---# List alerts
 
 Retrieve a list of [alert](../resources/alert.md) objects.
 

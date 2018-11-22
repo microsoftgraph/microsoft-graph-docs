@@ -1,4 +1,4 @@
-# Create windows10EndpointProtectionConfiguration
+---title: "Create windows10EndpointProtectionConfiguration"description: "Create a new windows10EndpointProtectionConfiguration object."---# Create windows10EndpointProtectionConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

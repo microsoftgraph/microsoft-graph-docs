@@ -1,4 +1,4 @@
-# reportRoot: getTeamsDeviceUsageUserCounts
+---title: "reportRoot: getTeamsDeviceUsageUserCounts"description: "Get the number of Microsoft Teams daily unique users by device type."---# reportRoot: getTeamsDeviceUsageUserCounts
 
 Get the number of Microsoft Teams daily unique users by device type.
 

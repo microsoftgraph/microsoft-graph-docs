@@ -1,4 +1,4 @@
-# Get user mailbox settings
+---title: "Get user mailbox settings"description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "---# Get user mailbox settings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

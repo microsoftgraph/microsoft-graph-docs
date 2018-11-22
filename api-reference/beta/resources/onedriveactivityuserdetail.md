@@ -1,4 +1,4 @@
----title: "oneDriveActivityUserDetail resource type"description: "The following is a JSON representation of the resource."---# oneDriveActivityUserDetail resource type
+---title: "oneDriveActivityUserDetail resource type"description: "The following is a JSON representation of the resource."---# oneDriveActivityUserDetail resource type
 
 ## Properties
 

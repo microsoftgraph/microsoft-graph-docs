@@ -1,4 +1,4 @@
-# List instances
+---title: "List instances"description: "Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the"---# List instances
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

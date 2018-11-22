@@ -1,4 +1,4 @@
-# Delete contact
+---title: "Delete contact"description: "Delete a contact."---# Delete contact
 
 Delete a contact.
 ## Permissions

@@ -1,4 +1,4 @@
-# chatThread resource type
+---title: "chatThread resource type"description: "A chatThread is a collection of chatMessages in Microsoft Teams."---# chatThread resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

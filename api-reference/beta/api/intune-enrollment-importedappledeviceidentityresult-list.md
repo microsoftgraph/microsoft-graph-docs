@@ -1,4 +1,4 @@
-# List importedAppleDeviceIdentityResults
+---title: "List importedAppleDeviceIdentityResults"description: "List properties and relationships of the importedAppleDeviceIdentityResult objects."---# List importedAppleDeviceIdentityResults
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

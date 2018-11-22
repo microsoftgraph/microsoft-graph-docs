@@ -1,4 +1,4 @@
----title: "Members"description: "Describes the visibility of a team. "---#teamVisibilityType enum type
+---title: "Members"description: "Describes the visibility of a team. "---#teamVisibilityType enum type
 
 
 

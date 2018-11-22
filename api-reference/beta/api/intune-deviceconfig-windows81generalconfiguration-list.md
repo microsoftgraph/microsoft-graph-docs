@@ -1,4 +1,4 @@
-# List windows81GeneralConfigurations
+---title: "List windows81GeneralConfigurations"description: "List properties and relationships of the windows81GeneralConfiguration objects."---# List windows81GeneralConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

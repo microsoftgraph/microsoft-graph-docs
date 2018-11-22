@@ -1,4 +1,4 @@
-# managedAppProtection resource type
+---title: "managedAppProtection resource type"description: "Policy used to configure detailed management settings for a specified set of apps"---# managedAppProtection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# windowsInformationProtectionNetworkLearningSummary resource type
+---title: "windowsInformationProtectionNetworkLearningSummary resource type"description: "Windows Information Protection Network learning Summary entity."---# windowsInformationProtectionNetworkLearningSummary resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

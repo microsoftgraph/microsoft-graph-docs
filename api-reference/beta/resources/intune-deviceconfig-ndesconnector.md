@@ -1,4 +1,4 @@
-# ndesConnector resource type
+---title: "ndesConnector resource type"description: "Entity which represents an OnPrem Ndes connector."---# ndesConnector resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

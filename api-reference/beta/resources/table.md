@@ -1,4 +1,4 @@
-# Table resource type
+---title: "Table resource type"description: "Represents an Excel table."---# Table resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

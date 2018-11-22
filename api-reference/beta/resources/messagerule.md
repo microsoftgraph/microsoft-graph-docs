@@ -1,4 +1,4 @@
-# messageRule resource type
+---title: "messageRule resource type"description: "A rule that applies to messages in the Inbox of a user."---# messageRule resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# targetedManagedAppConfiguration resource type
+---title: "targetedManagedAppConfiguration resource type"description: "Configuration used to deliver a set of custom settings as-is to all users in the targeted security group"---# targetedManagedAppConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

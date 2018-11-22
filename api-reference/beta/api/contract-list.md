@@ -1,4 +1,4 @@
-# List contracts
+---title: "List contracts"description: "Retrieve a list of contract objects associated to a partner tenant."---# List contracts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

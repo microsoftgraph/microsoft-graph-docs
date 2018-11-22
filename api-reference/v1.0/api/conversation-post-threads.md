@@ -1,4 +1,4 @@
-# Create thread
+---title: "Create thread"description: "Create a new thread in the specified conversation. "---# Create thread
 
 Create a new thread in the specified conversation. 
 

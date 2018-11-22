@@ -1,4 +1,4 @@
-# Use the Outlook mail REST API
+---title: "Use the Outlook mail REST API"description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."---# Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
 With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of

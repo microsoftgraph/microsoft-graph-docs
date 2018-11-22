@@ -1,4 +1,4 @@
-# mention resource type
+---title: "mention resource type"description: "Represents a notification to a person based on the person's email address. This type of notification is also known as "---# mention resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

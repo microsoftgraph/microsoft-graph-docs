@@ -1,4 +1,4 @@
-# Delete educationClass
+---title: "Delete educationClass"description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."---# Delete educationClass
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Range resource type
+---title: "Range resource type"description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."---# Range resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

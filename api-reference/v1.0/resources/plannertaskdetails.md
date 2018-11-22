@@ -1,4 +1,4 @@
-# plannerTaskDetails resource type
+---title: "plannerTaskDetails resource type"description: "The **plannerTaskDetails** resource represents the additional information about a task. Each task object has a details object."---# plannerTaskDetails resource type
 
 The **plannerTaskDetails** resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.
 

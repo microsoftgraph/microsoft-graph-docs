@@ -1,4 +1,4 @@
-# Create Message
+---title: "Create Message"description: "Use this API to create a new Message in a mailfolder."---# Create Message
 
 Use this API to create a new Message in a mailfolder.
 ## Permissions

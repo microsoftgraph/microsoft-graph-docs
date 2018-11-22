@@ -1,4 +1,4 @@
-# Get OneNote content and structure with Microsoft Graph
+---title: "Get OneNote content and structure with Microsoft Graph"description: " Enterprise notebooks on Office 365"---# Get OneNote content and structure with Microsoft Graph
 
 **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 

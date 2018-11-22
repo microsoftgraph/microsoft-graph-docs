@@ -1,4 +1,4 @@
-# calendarGroup resource type
+---title: "calendarGroup resource type"description: "A group of user calendars."---# calendarGroup resource type
 
 A group of user calendars.
 

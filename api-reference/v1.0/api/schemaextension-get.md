@@ -1,4 +1,4 @@
-# Get schemaExtension
+---title: "Get schemaExtension"description: "Get the properties of the specified schemaExtension definition."---# Get schemaExtension
 Get the properties of the specified [schemaExtension](../resources/schemaextension.md) definition.
 
 ## Permissions

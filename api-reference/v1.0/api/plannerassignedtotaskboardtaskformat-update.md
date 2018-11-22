@@ -1,4 +1,4 @@
-# Update plannerAssignedToTaskBoardTaskFormat
+---title: "Update plannerAssignedToTaskBoardTaskFormat"description: "Update the properties of **plannerAssignedToTaskBoardTaskFormat** object."---# Update plannerAssignedToTaskBoardTaskFormat
 
 Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.
 ## Permissions

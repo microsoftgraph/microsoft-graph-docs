@@ -1,4 +1,4 @@
-# Get directory objects from a list of ids
+---title: "Get directory objects from a list of ids"description: "select` query option is not available for this operation."---# Get directory objects from a list of ids
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

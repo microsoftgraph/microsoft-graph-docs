@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityStorage
+---title: "reportRoot: getOffice365GroupsActivityStorage"description: "Get the total storage used across all group mailboxes and group sites."---# reportRoot: getOffice365GroupsActivityStorage
 
 Get the total storage used across all group mailboxes and group sites.
 

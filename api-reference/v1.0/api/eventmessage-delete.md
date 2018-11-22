@@ -1,4 +1,4 @@
-# Delete eventMessage
+---title: "Delete eventMessage"description: "Delete eventMessage."---# Delete eventMessage
 
 Delete eventMessage.
 ## Permissions

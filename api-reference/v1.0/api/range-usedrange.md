@@ -1,4 +1,4 @@
-# Range: UsedRange
+---title: "Range: UsedRange"description: "Returns the used range of the given range object."---# Range: UsedRange
 
 Returns the used range of the given range object.
 ## Permissions

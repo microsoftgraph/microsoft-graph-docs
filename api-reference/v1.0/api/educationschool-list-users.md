@@ -1,4 +1,4 @@
-# List educationUsers
+---title: "List educationUsers"description: "Retrieve a list of users at a school."---# List educationUsers
 
 Retrieve a list of users at a school.
 

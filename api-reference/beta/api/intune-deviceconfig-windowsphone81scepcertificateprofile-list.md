@@ -1,4 +1,4 @@
-# List windowsPhone81SCEPCertificateProfiles
+---title: "List windowsPhone81SCEPCertificateProfiles"description: "List properties and relationships of the windowsPhone81SCEPCertificateProfile objects."---# List windowsPhone81SCEPCertificateProfiles
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

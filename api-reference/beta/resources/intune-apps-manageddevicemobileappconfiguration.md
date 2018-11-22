@@ -1,4 +1,4 @@
-# managedDeviceMobileAppConfiguration resource type
+---title: "managedDeviceMobileAppConfiguration resource type"description: "An abstract class for Mobile app configuration for enrolled devices."---# managedDeviceMobileAppConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

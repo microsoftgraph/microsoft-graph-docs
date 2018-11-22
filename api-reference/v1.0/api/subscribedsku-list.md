@@ -1,4 +1,4 @@
-# List subscribedSkus
+---title: "List subscribedSkus"description: "Retrieve the list of commercial subscriptions that an organization has acquired."---# List subscribedSkus
 Retrieve the list of commercial subscriptions that an organization has acquired.
 
 ## Permissions

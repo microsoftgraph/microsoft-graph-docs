@@ -1,4 +1,4 @@
-# List group members
+---title: "List group members"description: "Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive."---# List group members
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

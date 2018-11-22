@@ -1,4 +1,4 @@
-# Get educationAssignmentResource
+---title: "Get educationAssignmentResource"description: "Get the properties of a specific resource on an assignment.  "---# Get educationAssignmentResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

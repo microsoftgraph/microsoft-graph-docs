@@ -1,4 +1,4 @@
-# Create sectionGroup
+---title: "Create sectionGroup"description: "Create a new section group in the specified section group."---# Create sectionGroup
 
 Create a new [section group](../resources/sectiongroup.md) in the specified section group.
 ## Permissions

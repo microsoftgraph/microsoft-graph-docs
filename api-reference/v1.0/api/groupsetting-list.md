@@ -1,4 +1,4 @@
-# List group settings
+---title: "List group settings"description: "Retrieve a list of group setting objects."---# List group settings
 
 Retrieve a list of group setting objects.
 

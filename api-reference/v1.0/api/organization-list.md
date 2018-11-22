@@ -1,4 +1,4 @@
-# List organization
+---title: "List organization"description: "Retrieve a list of organization objects."---# List organization
 
 
 

@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
+---title: "reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts"description: "Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad."---# reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

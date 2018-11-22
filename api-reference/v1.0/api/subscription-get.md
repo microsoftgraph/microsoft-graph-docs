@@ -1,4 +1,4 @@
-# Get subscription
+---title: "Get subscription"description: "Retrieve the properties and relationships of a subscription."---# Get subscription
 
 Retrieve the properties and relationships of a subscription.
 

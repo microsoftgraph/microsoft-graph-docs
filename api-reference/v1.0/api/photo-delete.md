@@ -1,4 +1,4 @@
-# Delete photo
+---title: "Delete photo"description: "Delete a photo."---# Delete photo
 
 Delete a photo.
 ## Permissions

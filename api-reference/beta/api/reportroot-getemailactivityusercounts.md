@@ -1,4 +1,4 @@
-# reportRoot: getEmailActivityUserCounts
+---title: "reportRoot: getEmailActivityUserCounts"description: "Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive."---# reportRoot: getEmailActivityUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

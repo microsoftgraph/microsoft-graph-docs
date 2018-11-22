@@ -1,4 +1,4 @@
-# List favoritePlans
+---title: "List favoritePlans"description: "Retrieve a list of plannerPlans that are marked as favorite by a user. You can mark a plan as favorite by updating the plannerUser resource."---# List favoritePlans
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

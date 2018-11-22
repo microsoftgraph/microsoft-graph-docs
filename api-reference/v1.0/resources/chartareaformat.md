@@ -1,4 +1,4 @@
----title: "ChartAreaFormat resource type"description: "Encapsulates the format properties for the overall chart area."---# ChartAreaFormat resource type
+---title: "ChartAreaFormat resource type"description: "Encapsulates the format properties for the overall chart area."---# ChartAreaFormat resource type
 
 Encapsulates the format properties for the overall chart area.
 

@@ -1,4 +1,4 @@
-# List notebooks
+---title: "List notebooks"description: "Retrieve a list of notebook objects."---# List notebooks
 
 Retrieve a list of [notebook](../resources/notebook.md) objects.
 ## Permissions

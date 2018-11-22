@@ -1,4 +1,4 @@
-# List scopedMembers for a directory role
+---title: "List scopedMembers for a directory role"description: "Retrieve a list of scopedRoleMembership objects for a directory role."---# List scopedMembers for a directory role
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

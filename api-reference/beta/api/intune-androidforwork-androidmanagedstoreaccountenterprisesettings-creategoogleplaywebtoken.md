@@ -1,4 +1,4 @@
-# createGooglePlayWebToken action
+---title: "createGooglePlayWebToken action"description: "Generates a web token that is used in an embeddable component."---# createGooglePlayWebToken action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

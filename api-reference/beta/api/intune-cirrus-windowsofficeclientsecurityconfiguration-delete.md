@@ -1,4 +1,4 @@
-# Delete windowsOfficeClientSecurityConfiguration
+---title: "Delete windowsOfficeClientSecurityConfiguration"description: "Deletes a security policy windowsOfficeClientSecurityConfiguration."---# Delete windowsOfficeClientSecurityConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

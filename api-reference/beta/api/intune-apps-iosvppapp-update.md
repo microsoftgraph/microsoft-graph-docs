@@ -1,4 +1,4 @@
-# Update iosVppApp
+---title: "Update iosVppApp"description: "Update the properties of a iosVppApp object."---# Update iosVppApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

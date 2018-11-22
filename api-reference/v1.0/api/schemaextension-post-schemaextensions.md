@@ -1,4 +1,4 @@
-# Create schemaExtension
+---title: "Create schemaExtension"description: "Create a new schemaExtension definition to extend a supporting resource type."---# Create schemaExtension
 
 Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).
 

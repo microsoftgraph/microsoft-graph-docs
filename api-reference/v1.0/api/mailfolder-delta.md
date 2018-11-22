@@ -1,4 +1,4 @@
-# mailFolder: delta
+---title: "mailFolder: delta"description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."---# mailFolder: delta
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 

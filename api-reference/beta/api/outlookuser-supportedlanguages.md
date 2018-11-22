@@ -1,4 +1,4 @@
-# outlookUser: supportedLanguages
+---title: "outlookUser: supportedLanguages"description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."---# outlookUser: supportedLanguages
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

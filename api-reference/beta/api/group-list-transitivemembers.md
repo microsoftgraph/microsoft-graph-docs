@@ -1,4 +1,4 @@
-# List group transitive members
+---title: "List group transitive members"description: "Get a list of the group's members. A group can have users, contacts, devices, service principals and other groups as members. This operation is transitive and will also return a flat list of all nested members."---# List group transitive members
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

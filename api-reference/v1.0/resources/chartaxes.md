@@ -1,4 +1,4 @@
----title: "ChartAxes resource type"description: "Represents the chart axes."---# ChartAxes resource type
+---title: "ChartAxes resource type"description: "Represents the chart axes."---# ChartAxes resource type
 
 Represents the chart axes.
 

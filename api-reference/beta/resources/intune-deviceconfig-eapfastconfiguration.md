@@ -1,4 +1,4 @@
-﻿# eapFastConfiguration enum type
+---title: "eapFastConfiguration enum type"description: "Available settings for EAP-FAST Configuration."---# eapFastConfiguration enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

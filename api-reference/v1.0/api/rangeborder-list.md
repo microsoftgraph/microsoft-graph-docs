@@ -1,4 +1,4 @@
-# List RangeBorderCollection
+---title: "List RangeBorderCollection"description: "Retrieve a list of rangeborder objects."---# List RangeBorderCollection
 
 Retrieve a list of rangeborder objects.
 ## Permissions

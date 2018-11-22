@@ -1,4 +1,4 @@
-# DriveItemVersion resource type
+---title: "DriveItemVersion resource type"description: "The **DriveItemVersion** resource represents a specific version of a DriveItem."---# DriveItemVersion resource type
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
 

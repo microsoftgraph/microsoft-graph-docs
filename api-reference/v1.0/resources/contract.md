@@ -1,4 +1,4 @@
-# Contract resource type
+---title: "Contract resource type"description: "Represents an existing partnership that the partner tenant has with a customer tenant."---# Contract resource type
 Represents an existing partnership that the partner tenant has with a customer tenant.
 
 > **Important:**

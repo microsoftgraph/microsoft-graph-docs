@@ -1,4 +1,4 @@
-# List plans
+---title: "List plans"description: "Retrieve a list of **plannerplan** objects."---# List plans
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

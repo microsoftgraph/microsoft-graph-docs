@@ -1,4 +1,4 @@
-# Get windows81TrustedRootCertificate
+---title: "Get windows81TrustedRootCertificate"description: "Read properties and relationships of the windows81TrustedRootCertificate object."---# Get windows81TrustedRootCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

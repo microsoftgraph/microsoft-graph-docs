@@ -1,4 +1,4 @@
-# List Applications and Service Principals with specific Policy assigned
+---title: "List Applications and Service Principals with specific Policy assigned"description: "Retrieve the application and service principal objects with the specified policy assigned."---# List Applications and Service Principals with specific Policy assigned
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

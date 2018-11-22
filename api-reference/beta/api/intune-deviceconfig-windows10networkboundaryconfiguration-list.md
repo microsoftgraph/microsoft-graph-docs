@@ -1,4 +1,4 @@
-# List windows10NetworkBoundaryConfigurations
+---title: "List windows10NetworkBoundaryConfigurations"description: "List properties and relationships of the windows10NetworkBoundaryConfiguration objects."---# List windows10NetworkBoundaryConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

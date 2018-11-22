@@ -1,4 +1,4 @@
-# Chart: setData
+---title: "Chart: setData"description: "Resets the source data for the chart."---# Chart: setData
 
 Resets the source data for the chart.
 ## Permissions

@@ -1,4 +1,4 @@
----title: "skypeForBusinessOrganizerActivityUserCounts resource type"description: "The following is a JSON representation of the resource."---# skypeForBusinessOrganizerActivityUserCounts resource type
+---title: "skypeForBusinessOrganizerActivityUserCounts resource type"description: "The following is a JSON representation of the resource."---# skypeForBusinessOrganizerActivityUserCounts resource type
 
 ## Properties
 

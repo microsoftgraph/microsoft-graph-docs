@@ -1,4 +1,4 @@
-# setMobileDeviceManagementAuthority action
+---title: "setMobileDeviceManagementAuthority action"description: "Set mobile device management authority"---# setMobileDeviceManagementAuthority action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

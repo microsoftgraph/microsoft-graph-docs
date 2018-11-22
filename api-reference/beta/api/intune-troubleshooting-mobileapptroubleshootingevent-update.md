@@ -1,4 +1,4 @@
-# Update mobileAppTroubleshootingEvent
+---title: "Update mobileAppTroubleshootingEvent"description: "Update the properties of a mobileAppTroubleshootingEvent object."---# Update mobileAppTroubleshootingEvent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

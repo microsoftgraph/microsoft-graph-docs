@@ -1,4 +1,4 @@
-# Create iosUpdateDeviceStatus
+---title: "Create iosUpdateDeviceStatus"description: "Create a new iosUpdateDeviceStatus object."---# Create iosUpdateDeviceStatus
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,4 @@
-# Update telecomExpenseManagementPartner
+---title: "Update telecomExpenseManagementPartner"description: "Update the properties of a telecomExpenseManagementPartner object."---# Update telecomExpenseManagementPartner
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

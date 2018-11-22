@@ -1,4 +1,4 @@
-# Get privilegedRoleSettings
+---title: "Get privilegedRoleSettings"description: "Retrieve the role settings for the given role. A privilegedRoleSettings object will be returned."---# Get privilegedRoleSettings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

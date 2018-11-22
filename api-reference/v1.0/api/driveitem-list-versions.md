@@ -1,4 +1,4 @@
-# Listing versions of a DriveItem
+---title: "Listing versions of a DriveItem"description: "OneDrive and SharePoint can be configured to retain the history for files."---# Listing versions of a DriveItem
 
 OneDrive and SharePoint can be configured to retain the history for files.
 Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.

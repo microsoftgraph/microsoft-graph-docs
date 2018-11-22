@@ -1,4 +1,4 @@
-# List attachments
+---title: "List attachments"description: "Retrieve a list of attachment objects attached to a post."---# List attachments
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# plannerBucket resource type
+---title: "plannerBucket resource type"description: ") for tasks in a plan in Office 365. It is contained in a plannerPlan and can have a collection of plannerTasks."---# plannerBucket resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

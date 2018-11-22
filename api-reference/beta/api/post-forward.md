@@ -1,4 +1,4 @@
-# post: forward
+---title: "post: forward"description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "---# post: forward
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

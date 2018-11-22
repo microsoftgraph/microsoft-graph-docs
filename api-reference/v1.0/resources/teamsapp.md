@@ -1,4 +1,4 @@
-# teamsApp resource type
+---title: "teamsApp resource type"description: "An app in the Microsoft Teams app catalog."---# teamsApp resource type
 
 
 

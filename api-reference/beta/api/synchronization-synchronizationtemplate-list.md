@@ -1,4 +1,4 @@
-# List existing synchronization templates
+---title: "List existing synchronization templates"description: "List the synchronization templates associated with a given application or service principal."---# List existing synchronization templates
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

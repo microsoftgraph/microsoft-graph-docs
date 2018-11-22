@@ -1,4 +1,4 @@
-# managedAndroidLobApp resource type
+---title: "managedAndroidLobApp resource type"description: "Contains properties and inherited properties for Managed Android Line Of Business apps."---# managedAndroidLobApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

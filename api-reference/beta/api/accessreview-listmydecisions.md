@@ -1,4 +1,4 @@
-# List my accessReview decisions
+---title: "List my accessReview decisions"description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."---# List my accessReview decisions
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

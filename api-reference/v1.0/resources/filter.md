@@ -1,4 +1,4 @@
-# Filter resource type
+---title: "Filter resource type"description: "Manages the filtering of a table's column."---# Filter resource type
 
 Manages the filtering of a table's column.
 

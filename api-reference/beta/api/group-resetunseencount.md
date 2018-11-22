@@ -1,4 +1,4 @@
-# group: resetUnseenCount
+---title: "group: resetUnseenCount"description: "Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 Groups only."---# group: resetUnseenCount
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

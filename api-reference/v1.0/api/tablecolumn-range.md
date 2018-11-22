@@ -1,4 +1,4 @@
-# TableColumn: Range
+---title: "TableColumn: Range"description: "Gets the range object associated with the entire column."---# TableColumn: Range
 
 Gets the range object associated with the entire column.
 ## Permissions

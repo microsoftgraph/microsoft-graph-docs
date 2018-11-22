@@ -1,4 +1,4 @@
-# userIdentity type
+---title: "userIdentity type"description: "For the Azure AD access reviews, this type represents an Azure AD user identity for a reviewer of an access review.  "---# userIdentity type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

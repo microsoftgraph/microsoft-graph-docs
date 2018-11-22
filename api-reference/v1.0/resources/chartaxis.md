@@ -1,4 +1,4 @@
-# ChartAxis resource type
+---title: "ChartAxis resource type"description: "Represents a single axis in a chart."---# ChartAxis resource type
 
 Represents a single axis in a chart.
 

@@ -1,4 +1,4 @@
-# Service root
+---title: "Service root"description: "2015-10-25 14:57:30 UTC -->"---# Service root
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

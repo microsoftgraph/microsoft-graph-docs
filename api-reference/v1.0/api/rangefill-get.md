@@ -1,4 +1,4 @@
-# Get RangeFill
+---title: "Get RangeFill"description: "Retrieve the properties and relationships of rangefill object."---# Get RangeFill
 
 Retrieve the properties and relationships of rangefill object.
 ## Permissions

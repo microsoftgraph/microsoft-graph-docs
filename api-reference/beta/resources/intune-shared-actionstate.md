@@ -1,4 +1,4 @@
-﻿# actionState enum type
+---title: "actionState enum type"description: "State of the action on the device"---# actionState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

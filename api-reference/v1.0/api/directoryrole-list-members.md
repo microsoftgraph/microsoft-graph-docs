@@ -1,4 +1,4 @@
-# List members
+---title: "List members"description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."---# List members
 
 Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role.
 ## Permissions

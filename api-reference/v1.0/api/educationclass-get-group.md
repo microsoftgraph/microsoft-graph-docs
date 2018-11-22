@@ -1,4 +1,4 @@
-# Get group
+---title: "Get group"description: "Retrieve the Office 365 **group** that corresponds to this **educationClass**."---# Get group
 
 Retrieve the Office 365 **group** that corresponds to this **educationClass**.
 

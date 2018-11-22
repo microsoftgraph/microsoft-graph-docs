@@ -1,4 +1,4 @@
-# Get windows10EnrollmentCompletionPageConfiguration
+---title: "Get windows10EnrollmentCompletionPageConfiguration"description: "Read properties and relationships of the windows10EnrollmentCompletionPageConfiguration object."---# Get windows10EnrollmentCompletionPageConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

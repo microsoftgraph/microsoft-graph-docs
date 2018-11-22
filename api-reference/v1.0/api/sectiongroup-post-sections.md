@@ -1,4 +1,4 @@
-# Create section
+---title: "Create section"description: "Create a new onenoteSection in the specified section group."---# Create section
 
 Create a new [onenoteSection](../resources/section.md) in the specified section group.
 ## Permissions

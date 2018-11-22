@@ -1,4 +1,4 @@
-# educationSchool resource type
+---title: "educationSchool resource type"description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "---# educationSchool resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

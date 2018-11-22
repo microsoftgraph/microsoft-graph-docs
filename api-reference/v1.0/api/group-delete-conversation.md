@@ -1,4 +1,4 @@
-# Delete conversation
+---title: "Delete conversation"description: "Delete a conversation object."---# Delete conversation
 Delete a [conversation](../resources/conversation.md) object.
 
 ## Permissions

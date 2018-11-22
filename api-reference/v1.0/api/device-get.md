@@ -1,4 +1,4 @@
-# Get device
+---title: "Get device"description: "Get the properties and relationships of a device object."---# Get device
 
 Get the properties and relationships of a device object.
 ## Permissions

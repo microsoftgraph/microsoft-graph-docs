@@ -1,4 +1,4 @@
-# windowsKioskSingleUWPApp resource type
+---title: "windowsKioskSingleUWPApp resource type"description: "The class used to identify the UWP app info for the kiosk configuration"---# windowsKioskSingleUWPApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

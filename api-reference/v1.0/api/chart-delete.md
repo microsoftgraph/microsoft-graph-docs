@@ -1,4 +1,4 @@
-# Chart: delete
+---title: "Chart: delete"description: "Deletes the chart object."---# Chart: delete
 
 Deletes the chart object.
 ## Permissions

@@ -1,4 +1,4 @@
-# Get plannerProgressTaskBoardTaskFormat
+---title: "Get plannerProgressTaskBoardTaskFormat"description: "Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object."---# Get plannerProgressTaskBoardTaskFormat
 
 Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
 ## Permissions

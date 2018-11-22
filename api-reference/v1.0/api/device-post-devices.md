@@ -1,4 +1,4 @@
-# Create device
+---title: "Create device"description: "Create and register a new device in the organization."---# Create device
 
 Create and register a new device in the organization.
 

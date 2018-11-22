@@ -1,4 +1,4 @@
-# List recentPlans
+---title: "List recentPlans"description: "Retrieve a list of plannerPlans recently viewed by a user. You can update recently viewed plans by updating the plannerUser resource."---# List recentPlans
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

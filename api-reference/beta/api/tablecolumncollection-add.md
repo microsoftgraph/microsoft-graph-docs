@@ -1,4 +1,4 @@
-# TableColumnCollection: add
+---title: "TableColumnCollection: add"description: "Adds a new column to the table."---# TableColumnCollection: add
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

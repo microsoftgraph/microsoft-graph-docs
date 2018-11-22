@@ -1,4 +1,4 @@
-# macOSGeneralDeviceConfiguration resource type
+---title: "macOSGeneralDeviceConfiguration resource type"description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource."---# macOSGeneralDeviceConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

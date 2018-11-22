@@ -1,4 +1,4 @@
-# reportRoot: getTeamsDeviceUsageDistributionUserCounts
+---title: "reportRoot: getTeamsDeviceUsageDistributionUserCounts"description: "Get the number of Microsoft Teams unique users by device type over the selected time period."---# reportRoot: getTeamsDeviceUsageDistributionUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

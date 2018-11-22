@@ -1,4 +1,4 @@
-# Update chartlineformat
+---title: "Update chartlineformat"description: "Update the properties of chartlineformat object."---# Update chartlineformat
 
 Update the properties of chartlineformat object.
 ## Permissions

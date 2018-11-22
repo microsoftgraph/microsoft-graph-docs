@@ -1,4 +1,4 @@
-# Create androidManagedAppRegistration
+---title: "Create androidManagedAppRegistration"description: "Create a new androidManagedAppRegistration object."---# Create androidManagedAppRegistration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

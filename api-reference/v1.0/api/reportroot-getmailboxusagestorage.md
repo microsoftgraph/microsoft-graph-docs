@@ -1,4 +1,4 @@
-# reportRoot: getMailboxUsageStorage
+---title: "reportRoot: getMailboxUsageStorage"description: "Get the amount of storage used in your organization."---# reportRoot: getMailboxUsageStorage
 
 Get the amount of storage used in your organization.
 

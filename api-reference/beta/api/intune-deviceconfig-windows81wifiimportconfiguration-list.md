@@ -1,4 +1,4 @@
-# List windows81WifiImportConfigurations
+---title: "List windows81WifiImportConfigurations"description: "List properties and relationships of the windows81WifiImportConfiguration objects."---# List windows81WifiImportConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

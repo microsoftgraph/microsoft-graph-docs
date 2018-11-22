@@ -1,4 +1,4 @@
-# Restore deleted item
+---title: "Restore deleted item"description: "Restores a recently deleted item from deleted items. "---# Restore deleted item
 
 Restores a recently deleted item from [deleted items](../resources/directory.md). 
 

@@ -1,4 +1,4 @@
----title: "teamsDeviceUsageDistributionUserCounts resource type"description: "The following is a JSON representation of the resource."---# teamsDeviceUsageDistributionUserCounts resource type
+---title: "teamsDeviceUsageDistributionUserCounts resource type"description: "The following is a JSON representation of the resource."---# teamsDeviceUsageDistributionUserCounts resource type
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# termsAndConditionsAssignment resource type
+---title: "termsAndConditionsAssignment resource type"description: "C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."---# termsAndConditionsAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

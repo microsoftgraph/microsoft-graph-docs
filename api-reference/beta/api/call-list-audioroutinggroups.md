@@ -1,4 +1,4 @@
-# List audio routing groups
+---title: "List audio routing groups"description: "Retrieve a list of **audioRoutingGroup** objects."---# List audio routing groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActivationsUserDetail
+---title: "reportRoot: getOffice365ActivationsUserDetail"description: "Get details about users who have activated Office 365."---# reportRoot: getOffice365ActivationsUserDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

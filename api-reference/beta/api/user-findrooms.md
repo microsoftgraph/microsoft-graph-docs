@@ -1,4 +1,4 @@
-# user: findRooms
+---title: "user: findRooms"description: "Get all the meeting rooms in the user's tenant or in a specific room list. "---# user: findRooms
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update a range format in Excel with Microsoft Graph
+---title: "Update a range format in Excel with Microsoft Graph"description: "The following examples demonstrate how to update properties of the RangeFormat, RangeFill, and RangeFont properties of a specified range."---# Update a range format in Excel with Microsoft Graph
 
 The following examples demonstrate how to update properties of the [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0), and [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) properties of a specified range.
 

@@ -1,4 +1,4 @@
-# iosTrustedRootCertificate resource type
+---title: "iosTrustedRootCertificate resource type"description: "iOS Trusted Root Certificate configuration profile."---# iosTrustedRootCertificate resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

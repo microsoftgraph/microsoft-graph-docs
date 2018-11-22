@@ -1,4 +1,4 @@
-# Export governanceRoleAssignmentRequests
+---title: "Export governanceRoleAssignmentRequests"description: "Retrieve a collection of governanceRoleAssignmentRequests in the format `application/octet-stream`, which can be parsed as a .csv file in the browser."---# Export governanceRoleAssignmentRequests
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
----title: "ChartSeriesFormat resource type"description: "encapsulates the format properties for the chart series"---# ChartSeriesFormat resource type
+---title: "ChartSeriesFormat resource type"description: "encapsulates the format properties for the chart series"---# ChartSeriesFormat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

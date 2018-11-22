@@ -1,4 +1,4 @@
-# List rangeView rows
+---title: "List rangeView rows"description: "Retrieve a list of range view objects."---# List rangeView rows
 
 Retrieve a list of range view objects.
 

@@ -1,4 +1,4 @@
-# reportRoot: getYammerGroupsActivityCounts
+---title: "reportRoot: getYammerGroupsActivityCounts"description: "Get the number of Yammer messages posted, read, and liked in groups."---# reportRoot: getYammerGroupsActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

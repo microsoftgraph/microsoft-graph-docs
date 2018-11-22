@@ -1,4 +1,4 @@
-# Table: clearFilters
+---title: "Table: clearFilters"description: "Clears all the filters currently applied on the table."---# Table: clearFilters
 
 Clears all the filters currently applied on the table.
 ## Permissions

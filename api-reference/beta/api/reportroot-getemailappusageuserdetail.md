@@ -1,4 +1,4 @@
-# reportRoot: getEmailAppUsageUserDetail
+---title: "reportRoot: getEmailAppUsageUserDetail"description: "Get details about which activities users performed on the various email apps."---# reportRoot: getEmailAppUsageUserDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Update macOSImportedPFXCertificateProfile
+---title: "Update macOSImportedPFXCertificateProfile"description: "Update the properties of a macOSImportedPFXCertificateProfile object."---# Update macOSImportedPFXCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

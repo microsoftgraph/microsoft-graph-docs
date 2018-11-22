@@ -1,4 +1,4 @@
-# Update plannertaskdetails
+---title: "Update plannertaskdetails"description: "Update the properties of **plannertaskdetails** object."---# Update plannertaskdetails
 
 Update the properties of **plannertaskdetails** object.
 ## Permissions

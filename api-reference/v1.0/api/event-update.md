@@ -1,4 +1,4 @@
-# Update event
+---title: "Update event"description: "Update the properties of the event object."---# Update event
 
 Update the properties of the [event](../resources/event.md) object.
 ## Permissions

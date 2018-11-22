@@ -1,4 +1,4 @@
-# reportRoot resource type
+---title: "reportRoot resource type"description: "The resource that represents an instance of a device or troubleshooting report, depending on context."---# reportRoot resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

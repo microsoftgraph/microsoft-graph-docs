@@ -1,4 +1,4 @@
-# itemAttachment resource type
+---title: "itemAttachment resource type"description: "A contact, event, or message that's attached to another event, message, or post.  "---# itemAttachment resource type
 
 A contact, event, or message that's attached to another event, message, or post.  
 

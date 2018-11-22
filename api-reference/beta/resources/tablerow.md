@@ -1,4 +1,4 @@
-# TableRow resource type
+---title: "TableRow resource type"description: "Represents a row in a table."---# TableRow resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

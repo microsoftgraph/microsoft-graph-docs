@@ -1,4 +1,4 @@
-# List tasks
+---title: "List tasks"description: "Retrieve a list of **plannertask** objects associated to a plannerPlan object."---# List tasks
 
 Retrieve a list of **plannertask** objects associated to a [plannerPlan](../resources/plannerplan.md) object.
 ## Permissions

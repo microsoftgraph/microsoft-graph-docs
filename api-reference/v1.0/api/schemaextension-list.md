@@ -1,4 +1,4 @@
-# List schemaExtensions
+---title: "List schemaExtensions"description: "Get a list of schemaExtension objects created by any apps you own in the current tenant (that can be "---# List schemaExtensions
 
 Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be 
 **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**. 

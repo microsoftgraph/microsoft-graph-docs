@@ -1,4 +1,4 @@
-# ChartFill resource type
+---title: "ChartFill resource type"description: "Represents the fill formatting for a chart element."---# ChartFill resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

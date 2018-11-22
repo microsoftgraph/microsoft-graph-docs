@@ -1,4 +1,4 @@
-# List androidWorkProfileCompliancePolicies
+---title: "List androidWorkProfileCompliancePolicies"description: "List properties and relationships of the androidWorkProfileCompliancePolicy objects."---# List androidWorkProfileCompliancePolicies
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

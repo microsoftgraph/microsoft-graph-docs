@@ -1,4 +1,4 @@
-# Update depEnrollmentProfile
+---title: "Update depEnrollmentProfile"description: "Update the properties of a depEnrollmentProfile object."---# Update depEnrollmentProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

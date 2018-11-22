@@ -1,4 +1,4 @@
-# visualInfo resource type
+---title: "visualInfo resource type"description: "A complex type for representing the **visualElements** property in the activity object."---# visualInfo resource type
 
 A complex type for representing the **visualElements** property in the [activity](../resources/projectrome-activity.md) object.
 

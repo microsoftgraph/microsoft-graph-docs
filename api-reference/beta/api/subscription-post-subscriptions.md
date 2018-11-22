@@ -1,4 +1,4 @@
-# Create subscription
+---title: "Create subscription"description: "Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes."---# Create subscription
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

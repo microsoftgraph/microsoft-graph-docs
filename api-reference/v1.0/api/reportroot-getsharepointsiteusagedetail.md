@@ -1,4 +1,4 @@
-# reportRoot: getSharePointSiteUsageDetail
+---title: "reportRoot: getSharePointSiteUsageDetail"description: "Get details about SharePoint site usage."---# reportRoot: getSharePointSiteUsageDetail
 
 Get details about SharePoint site usage.
 

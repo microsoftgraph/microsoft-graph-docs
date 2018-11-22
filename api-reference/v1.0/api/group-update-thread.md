@@ -1,4 +1,4 @@
-# Update conversation thread
+---title: "Update conversation thread"description: "Update a thread object."---# Update conversation thread
 Update a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

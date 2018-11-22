@@ -1,4 +1,4 @@
-# deviceCategory resource type
+---title: "deviceCategory resource type"description: "These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories."---# deviceCategory resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

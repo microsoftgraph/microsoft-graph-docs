@@ -1,4 +1,4 @@
-# participant: configureMixer
+---title: "participant: configureMixer"description: "Configure how audio is mixed for different participants in a multiparty conversation."---# participant: configureMixer
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# chatMessageReaction resource type
+---title: "chatMessageReaction resource type"description: "Represents a reaction to a chatMessage entity. "---# chatMessageReaction resource type
 
 Represents a reaction to a [chatMessage](chatmessage.md) entity. 
 

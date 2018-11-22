@@ -1,4 +1,4 @@
-# List worksheets
+---title: "List worksheets"description: "Retrieve a list of worksheet objects."---# List worksheets
 
 Retrieve a list of worksheet objects.
 ## Permissions

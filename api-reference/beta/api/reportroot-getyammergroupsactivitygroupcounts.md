@@ -1,4 +1,4 @@
-# reportRoot: getYammerGroupsActivityGroupCounts
+---title: "reportRoot: getYammerGroupsActivityGroupCounts"description: "Get the total number of groups that existed and how many included group conversation activity."---# reportRoot: getYammerGroupsActivityGroupCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

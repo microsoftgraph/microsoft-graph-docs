@@ -1,4 +1,4 @@
-# Get deviceManagementScriptGroupAssignment
+---title: "Get deviceManagementScriptGroupAssignment"description: "Read properties and relationships of the deviceManagementScriptGroupAssignment object."---# Get deviceManagementScriptGroupAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

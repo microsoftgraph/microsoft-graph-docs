@@ -1,4 +1,4 @@
-# Create iosUpdateConfiguration
+---title: "Create iosUpdateConfiguration"description: "Create a new iosUpdateConfiguration object."---# Create iosUpdateConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

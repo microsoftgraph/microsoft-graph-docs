@@ -1,4 +1,4 @@
-# plannerUser resource type
+---title: "plannerUser resource type"description: "The **plannerUser** resource provide access to Planner resources for a user. It doesn't contain any usable properties."---# plannerUser resource type
 
 The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.
 

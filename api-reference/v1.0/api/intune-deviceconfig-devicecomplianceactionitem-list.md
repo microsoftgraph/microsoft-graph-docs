@@ -1,4 +1,4 @@
-# List deviceComplianceActionItems
+---title: "List deviceComplianceActionItems"description: "List properties and relationships of the deviceComplianceActionItem objects."---# List deviceComplianceActionItems
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

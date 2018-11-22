@@ -1,4 +1,4 @@
-# Get subscribedSku
+---title: "Get subscribedSku"description: "Retrieve a specific commercial subscription that an organization has acquired."---# Get subscribedSku
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

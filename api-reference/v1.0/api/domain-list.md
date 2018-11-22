@@ -1,4 +1,4 @@
-# List domains
+---title: "List domains"description: "Retrieve a list of domain objects."---# List domains
 
 Retrieve a list of domain objects.
 

@@ -1,4 +1,4 @@
-# Get ChartGridlines
+---title: "Get ChartGridlines"description: "Retrieve the properties and relationships of chartgridlines object."---# Get ChartGridlines
 
 Retrieve the properties and relationships of chartgridlines object.
 ## Permissions

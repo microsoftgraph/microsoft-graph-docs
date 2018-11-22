@@ -1,4 +1,4 @@
-# reportRoot: getSharePointSiteUsagePages
+---title: "reportRoot: getSharePointSiteUsagePages"description: "Get the number of pages viewed across all sites."---# reportRoot: getSharePointSiteUsagePages
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

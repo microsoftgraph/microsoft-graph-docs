@@ -1,4 +1,4 @@
-# advancedThreatProtectionOnboardingDeviceSettingState resource type
+---title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"description: "ATP onboarding State for a given device."---# advancedThreatProtectionOnboardingDeviceSettingState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

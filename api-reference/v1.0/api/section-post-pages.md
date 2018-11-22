@@ -1,4 +1,4 @@
-# Create page
+---title: "Create page"description: "Create a new page in the specified section."---# Create page
 
 Create a new [page](../resources/page.md) in the specified section.
 

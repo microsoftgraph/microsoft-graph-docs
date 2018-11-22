@@ -1,4 +1,4 @@
-# Remove acceptedSender
+---title: "Remove acceptedSender"description: "Remove a user or group from the acceptedSenders list. "---# Remove acceptedSender
 Remove a user or group from the acceptedSenders list. 
 
 ## Permissions

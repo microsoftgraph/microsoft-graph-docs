@@ -1,4 +1,4 @@
----title: "teamFunSettings resource type"description: "Settings to configure use of Giphy, memes, and stickers in the team."---# teamFunSettings resource type
+---title: "teamFunSettings resource type"description: "Settings to configure use of Giphy, memes, and stickers in the team."---# teamFunSettings resource type
 
 
 

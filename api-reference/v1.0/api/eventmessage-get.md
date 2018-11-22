@@ -1,4 +1,4 @@
-# Get eventMessage
+---title: "Get eventMessage"description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."---# Get eventMessage
 
 Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.
 

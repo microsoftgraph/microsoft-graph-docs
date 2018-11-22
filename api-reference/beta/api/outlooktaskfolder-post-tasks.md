@@ -1,4 +1,4 @@
-# Create outlookTask
+---title: "Create outlookTask"description: "Create an Outlook task in the specified task folder."---# Create outlookTask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

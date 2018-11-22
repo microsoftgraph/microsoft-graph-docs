@@ -1,4 +1,4 @@
-# Office 365 Groups activity reports
+---title: "Office 365 Groups activity reports"description: "You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used."---# Office 365 Groups activity reports
 
 You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used.
 

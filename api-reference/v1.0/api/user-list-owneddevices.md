@@ -1,4 +1,4 @@
-# List ownedDevices
+---title: "List ownedDevices"description: "Get the list of devices that are owned by the user."---# List ownedDevices
 
 Get the list of devices that are owned by the user.
 ## Permissions

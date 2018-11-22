@@ -1,4 +1,4 @@
-# Get Chart
+---title: "Get Chart"description: "Retrieve the properties and relationships of chart object."---# Get Chart
 
 Retrieve the properties and relationships of chart object.
 ## Permissions

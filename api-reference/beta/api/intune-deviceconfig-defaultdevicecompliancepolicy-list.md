@@ -1,4 +1,4 @@
-# List defaultDeviceCompliancePolicies
+---title: "List defaultDeviceCompliancePolicies"description: "List properties and relationships of the defaultDeviceCompliancePolicy objects."---# List defaultDeviceCompliancePolicies
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

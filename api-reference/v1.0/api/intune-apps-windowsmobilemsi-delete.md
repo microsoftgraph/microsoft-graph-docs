@@ -1,4 +1,4 @@
-# Delete windowsMobileMSI
+---title: "Delete windowsMobileMSI"description: "Deletes a windowsMobileMSI."---# Delete windowsMobileMSI
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

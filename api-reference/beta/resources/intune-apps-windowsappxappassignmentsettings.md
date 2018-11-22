@@ -1,4 +1,4 @@
-# windowsAppXAppAssignmentSettings resource type
+---title: "windowsAppXAppAssignmentSettings resource type"description: "Contains properties used when assigning a Windows AppX mobile app to a group."---# windowsAppXAppAssignmentSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

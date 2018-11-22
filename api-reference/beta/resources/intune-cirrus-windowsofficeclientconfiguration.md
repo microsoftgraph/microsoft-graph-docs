@@ -1,4 +1,4 @@
-# windowsOfficeClientConfiguration resource type
+---title: "windowsOfficeClientConfiguration resource type"description: "Entity that describes office policy settings for Windows."---# windowsOfficeClientConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# user: findMeetingTimes
+---title: "user: findMeetingTimes"description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."---# user: findMeetingTimes
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

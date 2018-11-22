@@ -1,4 +1,4 @@
----title: "targetResourceApp resource type"description: "Indicates the app object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."---# targetResourceApp resource type
+---title: "targetResourceApp resource type"description: "Indicates the app object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."---# targetResourceApp resource type
 Indicates the app object that was added, updated or deleted by admins as part of audit activity. Derived from the [targetResource](targetresource.md) resource.
 
 

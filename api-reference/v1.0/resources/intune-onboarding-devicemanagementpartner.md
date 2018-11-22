@@ -1,4 +1,4 @@
-# deviceManagementPartner resource type
+---title: "deviceManagementPartner resource type"description: "Entity which represents a connection to device management partner."---# deviceManagementPartner resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

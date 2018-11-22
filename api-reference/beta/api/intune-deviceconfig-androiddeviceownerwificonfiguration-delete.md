@@ -1,4 +1,4 @@
-# Delete androidDeviceOwnerWiFiConfiguration
+---title: "Delete androidDeviceOwnerWiFiConfiguration"description: "Deletes a androidDeviceOwnerWiFiConfiguration."---# Delete androidDeviceOwnerWiFiConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

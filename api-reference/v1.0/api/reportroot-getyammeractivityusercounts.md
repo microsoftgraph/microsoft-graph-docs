@@ -1,4 +1,4 @@
-# reportRoot: getYammerActivityUserCounts
+---title: "reportRoot: getYammerActivityUserCounts"description: "Get the trends on the number of unique users who posted, read, and liked Yammer messages."---# reportRoot: getYammerActivityUserCounts
 
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 

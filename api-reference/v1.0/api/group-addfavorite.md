@@ -1,4 +1,4 @@
-# group: addFavorite
+---title: "group: addFavorite"description: "Add the group to the list of the current user's favorite groups. Supported for Office 365 groups only."---# group: addFavorite
 Add the group to the list of the current user's favorite groups. Supported for Office 365 groups only.
 
 ## Permissions

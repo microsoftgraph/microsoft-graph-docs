@@ -1,4 +1,4 @@
-# Range: unmerge
+---title: "Range: unmerge"description: "Unmerge the range cells into separate cells."---# Range: unmerge
 
 Unmerge the range cells into separate cells.
 ## Permissions

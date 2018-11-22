@@ -1,4 +1,4 @@
-# Range: clear
+---title: "Range: clear"description: "Clear range values, format, fill, border, etc."---# Range: clear
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

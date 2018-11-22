@@ -1,4 +1,4 @@
-# Create acceptedSender
+---title: "Create acceptedSender"description: "Add a new user or group to the acceptedSender list."---# Create acceptedSender
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

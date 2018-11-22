@@ -1,4 +1,4 @@
-# Update profilephoto
+---title: "Update profilephoto"description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"---# Update profilephoto
 
 Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo

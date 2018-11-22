@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActivationsUserCounts
+---title: "reportRoot: getOffice365ActivationsUserCounts"description: "Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers."---# reportRoot: getOffice365ActivationsUserCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create MailFolder
+---title: "Create MailFolder"description: "Use this API to create a new child mailfolder."---# Create MailFolder
 
 Use this API to create a new child mailfolder.
 

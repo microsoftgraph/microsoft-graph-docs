@@ -1,4 +1,4 @@
-# List windowsPhone81CompliancePolicies
+---title: "List windowsPhone81CompliancePolicies"description: "List properties and relationships of the windowsPhone81CompliancePolicy objects."---# List windowsPhone81CompliancePolicies
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

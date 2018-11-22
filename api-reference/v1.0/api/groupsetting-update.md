@@ -1,4 +1,4 @@
-# Update a group setting
+---title: "Update a group setting"description: "Update the properties of a specific group setting object."---# Update a group setting
 
 Update the properties of a specific group setting object.
 

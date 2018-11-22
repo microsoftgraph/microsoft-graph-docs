@@ -1,4 +1,4 @@
-# Range: delete
+---title: "Range: delete"description: "Deletes the cells associated with the range."---# Range: delete
 
 Deletes the cells associated with the range.
 ## Permissions

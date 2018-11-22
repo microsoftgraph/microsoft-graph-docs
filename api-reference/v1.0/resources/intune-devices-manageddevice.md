@@ -1,4 +1,4 @@
-# managedDevice resource type
+---title: "managedDevice resource type"description: "Devices that are managed or pre-enrolled through Intune"---# managedDevice resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

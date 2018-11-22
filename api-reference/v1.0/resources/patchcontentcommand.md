@@ -1,4 +1,4 @@
-# patchContentCommand resource type
+---title: "patchContentCommand resource type"description: "The changes to make to a OneNote page in a PATCH request."---# patchContentCommand resource type
 
 The changes to make to a OneNote page in a PATCH request.
 

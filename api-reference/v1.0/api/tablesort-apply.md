@@ -1,4 +1,4 @@
-# TableSort: apply
+---title: "TableSort: apply"description: "Perform a sort operation."---# TableSort: apply
 
 Perform a sort operation.
 ## Permissions

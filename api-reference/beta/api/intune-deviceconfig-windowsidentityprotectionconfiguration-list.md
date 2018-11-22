@@ -1,4 +1,4 @@
-# List windowsIdentityProtectionConfigurations
+---title: "List windowsIdentityProtectionConfigurations"description: "List properties and relationships of the windowsIdentityProtectionConfiguration objects."---# List windowsIdentityProtectionConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

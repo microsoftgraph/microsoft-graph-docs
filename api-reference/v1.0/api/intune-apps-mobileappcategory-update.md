@@ -1,4 +1,4 @@
-# Update mobileAppCategory
+---title: "Update mobileAppCategory"description: "Update the properties of a mobileAppCategory object."---# Update mobileAppCategory
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

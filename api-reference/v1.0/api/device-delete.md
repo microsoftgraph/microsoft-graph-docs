@@ -1,4 +1,4 @@
-# Delete device
+---title: "Delete device"description: "Delete a registered device."---# Delete device
 
 Delete a registered device.
 

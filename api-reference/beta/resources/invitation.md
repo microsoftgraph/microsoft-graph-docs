@@ -1,4 +1,4 @@
-# invitation manager
+---title: "invitation manager"description: "Use the invitation manager to create an invite, in order to add an external user to the organization. "---# invitation manager
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

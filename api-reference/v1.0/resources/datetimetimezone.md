@@ -1,4 +1,4 @@
----title: "dateTimeTimeZone resource type"description: "Describes the date, time, and time zone of a point in time."---# dateTimeTimeZone resource type
+---title: "dateTimeTimeZone resource type"description: "Describes the date, time, and time zone of a point in time."---# dateTimeTimeZone resource type
 
 Describes the date, time, and time zone of a point in time.
 

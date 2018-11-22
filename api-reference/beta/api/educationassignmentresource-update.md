@@ -1,4 +1,4 @@
-# Update educationAssignmentResource
+---title: "Update educationAssignmentResource"description: "Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  "---# Update educationAssignmentResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

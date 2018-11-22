@@ -1,4 +1,4 @@
-# appleDeviceFeaturesConfigurationBase resource type
+---title: "appleDeviceFeaturesConfigurationBase resource type"description: "Apple device features configuration profile."---# appleDeviceFeaturesConfigurationBase resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

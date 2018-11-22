@@ -1,4 +1,4 @@
-# conversationThread resource type
+---title: "conversationThread resource type"description: "A conversationThread is a collection of posts."---# conversationThread resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

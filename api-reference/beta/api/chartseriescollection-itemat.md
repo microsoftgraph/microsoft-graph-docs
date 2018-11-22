@@ -1,4 +1,4 @@
-# ChartSeriesCollection: ItemAt
+---title: "ChartSeriesCollection: ItemAt"description: "Retrieves a series based on its position in the collection"---# ChartSeriesCollection: ItemAt
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

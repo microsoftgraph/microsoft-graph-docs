@@ -1,4 +1,4 @@
-# Device management in Microsoft Intune
+---title: "Device management in Microsoft Intune"description: ""---# Device management in Microsoft Intune
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

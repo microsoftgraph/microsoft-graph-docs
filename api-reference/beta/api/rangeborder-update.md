@@ -1,4 +1,4 @@
-# Update rangeborder
+---title: "Update rangeborder"description: "Update the properties of rangeborder object."---# Update rangeborder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

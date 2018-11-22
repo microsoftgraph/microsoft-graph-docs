@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityDetail
+---title: "reportRoot: getOffice365GroupsActivityDetail"description: "Get details about Office 365 Groups activity by group."---# reportRoot: getOffice365GroupsActivityDetail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

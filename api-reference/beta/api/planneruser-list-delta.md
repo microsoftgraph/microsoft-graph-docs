@@ -1,4 +1,4 @@
-# Planner: delta
+---title: "Planner: delta"description: "Retrieves changes to objects that the user is subscribed to."---# Planner: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

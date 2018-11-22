@@ -1,4 +1,4 @@
-# userAppInstallStatus resource type
+---title: "userAppInstallStatus resource type"description: "Contains properties for the installation status for a user."---# userAppInstallStatus resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

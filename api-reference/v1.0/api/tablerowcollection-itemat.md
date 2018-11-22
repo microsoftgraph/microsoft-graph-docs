@@ -1,4 +1,4 @@
-# TableRowCollection: ItemAt
+---title: "TableRowCollection: ItemAt"description: "Gets a row based on its position in the collection."---# TableRowCollection: ItemAt
 
 Gets a row based on its position in the collection.
 ## Permissions

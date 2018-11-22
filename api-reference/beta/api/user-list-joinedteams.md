@@ -1,4 +1,4 @@
-# List joinedTeams
+---title: "List joinedTeams"description: "Get the teams in Microsoft Teams that the user is a direct member of."---# List joinedTeams
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

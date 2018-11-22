@@ -1,4 +1,4 @@
-# List mailFolders
+---title: "List mailFolders"description: "Get the mail folder collection under the root folder of the signed-in user. "---# List mailFolders
 
 Get the mail folder collection under the root folder of the signed-in user. 
 ## Permissions

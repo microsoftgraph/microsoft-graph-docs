@@ -1,4 +1,4 @@
-# binaryManagementConditionExpression resource type
+---title: "binaryManagementConditionExpression resource type"description: "A management condition expression that is evaluated using a binary operation."---# binaryManagementConditionExpression resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

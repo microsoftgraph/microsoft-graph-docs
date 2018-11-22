@@ -1,4 +1,4 @@
-# participant: invite
+---title: "participant: invite"description: "Invite participants to the active call."---# participant: invite
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

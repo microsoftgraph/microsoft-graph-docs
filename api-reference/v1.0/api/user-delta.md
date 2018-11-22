@@ -1,4 +1,4 @@
-# user: delta
+---title: "user: delta"description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See Track changes for details."---# user: delta
 
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [Track changes](/graph/delta-query-overview) for details.
 

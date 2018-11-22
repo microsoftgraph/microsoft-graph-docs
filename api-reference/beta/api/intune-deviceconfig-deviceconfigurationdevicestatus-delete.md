@@ -1,4 +1,4 @@
-# Delete deviceConfigurationDeviceStatus
+---title: "Delete deviceConfigurationDeviceStatus"description: "Deletes a deviceConfigurationDeviceStatus."---# Delete deviceConfigurationDeviceStatus
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

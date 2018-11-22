@@ -1,4 +1,4 @@
-# plannerProgressTaskBoardTaskFormat resource type
+---title: "plannerProgressTaskBoardTaskFormat resource type"description: "The **plannerProgressTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Progress view of the Task Board (a view organized by the state of the PercentComplete field on the task object, with columns for Not Started, In Progress and Complete). Each task will have one **plannerProgressTaskBoardTaskFormat** object associated with it."---# plannerProgressTaskBoardTaskFormat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

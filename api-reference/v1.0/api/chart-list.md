@@ -1,4 +1,4 @@
-# List ChartCollection
+---title: "List ChartCollection"description: "Retrieve a list of chart objects."---# List ChartCollection
 
 Retrieve a list of chart objects.
 ## Permissions

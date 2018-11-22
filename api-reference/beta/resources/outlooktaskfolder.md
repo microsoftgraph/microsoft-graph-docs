@@ -1,4 +1,4 @@
-# outlookTaskFolder resource type
+---title: "outlookTaskFolder resource type"description: "A folder that contains Outlook tasks (collection of outlookTask objects). "---# outlookTaskFolder resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

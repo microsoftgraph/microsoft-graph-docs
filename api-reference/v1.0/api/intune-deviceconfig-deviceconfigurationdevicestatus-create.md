@@ -1,4 +1,4 @@
-# Create deviceConfigurationDeviceStatus
+---title: "Create deviceConfigurationDeviceStatus"description: "Create a new deviceConfigurationDeviceStatus object."---# Create deviceConfigurationDeviceStatus
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

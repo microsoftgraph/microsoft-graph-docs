@@ -1,4 +1,4 @@
-# Update rule
+---title: "Update rule"description: "Change writable properties on a messageRule object and save the changes."---# Update rule
 
 
 Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.

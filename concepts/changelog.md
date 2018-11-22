@@ -1,4 +1,4 @@
-# Changelog for Microsoft Graph
+---title: "Changelog for Microsoft Graph"description: "This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs."---# Changelog for Microsoft Graph
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
@@ -183,6 +183,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Dynamics 365 Business Central API
 
+| **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)
 
@@ -832,9 +833,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added [Get recent activities API](/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [Get activities API](/graph/api/projectrome-get-activities?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [Upsert Activity](/graph/api/projectrome-put-activity?view=graph-rest-1.0) |
-| Addition | v1.0 | Added [Upsert HistoryItem](../api-reference/v1.0/projectrome-put-historyitem) |
-| Addition | v1.0 | Added [Delete Activity](../api-reference/v1.0/projectrome-delete-activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](../api-reference/v1.0/projectrome-delete-historyitem) |
+| Addition | v1.0 | Added [Upsert HistoryItem](/graph/api/projectrome-put-historyitem?view=graph-rest-1.0) |
+| Addition | v1.0 | Added [Delete Activity](/graph/api/projectrome-delete-activity?view=graph-rest-1.0) |
+| Addition | v1.0 | Added [Upsert HistoryItem](/graph/api/projectrome-delete-historyitem?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [activity](/graph/api/resources/projectrome-activity?view=graph-rest-1.0) |
 | Addition | v.10 | Added [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-1.0) |
 | Addition | v1.0 | Added [visualInfo](/graph/api/resources/projectrome-visualinfo?view=graph-rest-1.0) |
@@ -871,9 +872,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta       | Added [Get recent activities API](/graph/api/projectrome-get-recent-activities?view=graph-rest-beta) |
 | Addition        | Beta       | Added [Get activities API](/graph/api/projectrome-get-activities?view=graph-rest-beta) |
 | Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert Activity](/graph/api/projectrome-put-activity?view=graph-rest-beta) |
-| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](../api-reference/beta/projectrome-put-historyitem) |
-| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](../api-reference/beta/projectrome-delete-activity) |
-| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](../api-reference/beta/projectrome-delete-historyitem) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](/graph/api/projectrome-put-historyitem?view=graph-rest-beta) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](/graph/api/projectrome-delete-activity?view=graph-rest-beta) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](/graph/api/projectrome-delete-historyitem?view=graph-rest-beta) |
 | Change | Beta | Added **status** property to [activity](/graph/api/resources/projectrome-activity?view=graph-rest-beta) |
 | Change | Beta | Added **activity** navigation property to [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta) |
 | Change | Beta | Added new APIs to [Project Rome overview](/graph/api/resources/project-rome-overview?view=graph-rest-beta) |

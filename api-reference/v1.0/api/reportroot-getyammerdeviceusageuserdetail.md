@@ -1,4 +1,4 @@
-# reportRoot: getYammerDeviceUsageUserDetail function
+---title: "reportRoot: getYammerDeviceUsageUserDetail function"description: "Get details about Yammer device usage by user."---# reportRoot: getYammerDeviceUsageUserDetail function
 
 Get details about Yammer device usage by user.
 

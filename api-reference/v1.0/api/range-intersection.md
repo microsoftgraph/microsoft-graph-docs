@@ -1,4 +1,4 @@
-# Range: Intersection
+---title: "Range: Intersection"description: "Gets the range object that represents the rectangular intersection of the given ranges."---# Range: Intersection
 
 Gets the range object that represents the rectangular intersection of the given ranges.
 ## Permissions

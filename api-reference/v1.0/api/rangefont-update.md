@@ -1,4 +1,4 @@
-# Update rangefont
+---title: "Update rangefont"description: "Update the properties of rangefont object."---# Update rangefont
 
 Update the properties of rangefont object.
 ## Permissions

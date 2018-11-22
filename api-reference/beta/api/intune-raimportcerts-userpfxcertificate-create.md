@@ -1,4 +1,4 @@
-# Create userPFXCertificate
+---title: "Create userPFXCertificate"description: "Create a new userPFXCertificate object."---# Create userPFXCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Delete deviceComplianceUserStatus
+---title: "Delete deviceComplianceUserStatus"description: "Deletes a deviceComplianceUserStatus."---# Delete deviceComplianceUserStatus
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

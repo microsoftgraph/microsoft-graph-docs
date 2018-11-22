@@ -1,4 +1,4 @@
-# Get alert
+---title: "Get alert"description: " Retrieve the properties and relationships of an alert object."---# Get alert
 
  Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 

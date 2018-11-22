@@ -1,4 +1,4 @@
-# schemaExtension resource type (schema extensions)
+---title: "schemaExtension resource type (schema extensions)"description: "Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. "---# schemaExtension resource type (schema extensions)
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

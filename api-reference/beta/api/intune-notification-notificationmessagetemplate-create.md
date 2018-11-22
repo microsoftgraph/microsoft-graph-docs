@@ -1,4 +1,4 @@
-# Create notificationMessageTemplate
+---title: "Create notificationMessageTemplate"description: "Create a new notificationMessageTemplate object."---# Create notificationMessageTemplate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

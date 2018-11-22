@@ -1,4 +1,4 @@
-# List directoryRoles
+---title: "List directoryRoles"description: "List the directory roles that are activated in the tenant."---# List directoryRoles
 
 List the directory roles that are activated in the tenant.
 ## Permissions

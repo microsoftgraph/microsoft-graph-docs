@@ -1,4 +1,4 @@
-# networkManagementCondition resource type
+---title: "networkManagementCondition resource type"description: "Contains the information to define a network management condition."---# networkManagementCondition resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

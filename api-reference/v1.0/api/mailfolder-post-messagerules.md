@@ -1,4 +1,4 @@
-# Create rule
+---title: "Create rule"description: "Create a messageRule object by specifying a set of conditions and actions. "---# Create rule
 
 
 Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 

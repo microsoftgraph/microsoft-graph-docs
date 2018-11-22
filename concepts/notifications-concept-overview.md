@@ -1,4 +1,4 @@
-# Using the notifications API in Microsoft Graph to enable human-centric notification experiences 
+---title: "Using the notifications API in Microsoft Graph to enable human-centric notification experiences "description: "Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence. "---# Using the notifications API in Microsoft Graph to enable human-centric notification experiences 
 
 Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence. 
 

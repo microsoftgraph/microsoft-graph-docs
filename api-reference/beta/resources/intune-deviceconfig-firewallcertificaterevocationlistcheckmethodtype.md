@@ -1,4 +1,4 @@
-﻿# firewallCertificateRevocationListCheckMethodType enum type
+---title: "firewallCertificateRevocationListCheckMethodType enum type"description: "Possible values for firewallCertificateRevocationListCheckMethod"---# firewallCertificateRevocationListCheckMethodType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

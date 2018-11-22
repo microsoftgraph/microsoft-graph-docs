@@ -1,4 +1,4 @@
-# deviceCompliancePolicySettingState resource type
+---title: "deviceCompliancePolicySettingState resource type"description: "Device Compilance Policy Setting State for a given device."---# deviceCompliancePolicySettingState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

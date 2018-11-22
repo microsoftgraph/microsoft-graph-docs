@@ -1,4 +1,4 @@
-# section resource type
+---title: "section resource type"description: "A section in a OneNote notebook. Sections can contain pages."---# section resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

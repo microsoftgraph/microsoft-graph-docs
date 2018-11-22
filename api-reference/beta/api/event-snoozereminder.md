@@ -1,4 +1,4 @@
-# event: snoozeReminder
+---title: "event: snoozeReminder"description: "Postpone a reminder for an event in a user calendar until a new time."---# event: snoozeReminder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Delete calendarGroup
+---title: "Delete calendarGroup"description: "Delete a calendar group other than the default calendar group."---# Delete calendarGroup
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

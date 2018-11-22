@@ -1,4 +1,4 @@
-# Delete page
+---title: "Delete page"description: "Delete a OneNote page."---# Delete page
 
 Delete a OneNote page.
 ## Permissions

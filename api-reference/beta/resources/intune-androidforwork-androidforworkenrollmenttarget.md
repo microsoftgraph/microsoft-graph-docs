@@ -1,4 +1,4 @@
-﻿# androidForWorkEnrollmentTarget enum type
+---title: "androidForWorkEnrollmentTarget enum type"description: "Android for Work device management targeting type for the account"---# androidForWorkEnrollmentTarget enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create educationSchool
+---title: "Create educationSchool"description: "Create a school."---# Create educationSchool
 
 Create a school.
 

@@ -1,4 +1,4 @@
-# Archive team
+---title: "Archive team"description: "Archive the specified team. "---# Archive team
 
 
 

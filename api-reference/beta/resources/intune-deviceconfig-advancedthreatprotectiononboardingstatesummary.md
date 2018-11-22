@@ -1,4 +1,4 @@
-# advancedThreatProtectionOnboardingStateSummary resource type
+---title: "advancedThreatProtectionOnboardingStateSummary resource type"description: "Windows defender advanced threat protection onboarding state summary across the account."---# advancedThreatProtectionOnboardingStateSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

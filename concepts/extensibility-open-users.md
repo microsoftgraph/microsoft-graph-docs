@@ -1,4 +1,4 @@
-# Add custom data to users using open extensions
+---title: "Add custom data to users using open extensions"description: "We're going to walk you through an example to demonstrate how to use *open extensions*. "---# Add custom data to users using open extensions
 We're going to walk you through an example to demonstrate how to use *open extensions*. 
 
 Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users 

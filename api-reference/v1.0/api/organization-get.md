@@ -1,4 +1,4 @@
-# Get organization
+---title: "Get organization"description: "Retrieve the properties and relationships of currently authenticated organization."---# Get organization
 
 Retrieve the properties and relationships of currently authenticated organization.
 ## Permissions

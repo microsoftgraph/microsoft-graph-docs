@@ -1,4 +1,4 @@
-# Get Contract
+---title: "Get Contract"description: "Retrieve the properties and relationships of contract object."---# Get Contract
 
 Retrieve the properties and relationships of [contract](../resources/contract.md) object.
 

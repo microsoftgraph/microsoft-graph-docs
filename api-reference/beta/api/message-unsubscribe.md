@@ -1,4 +1,4 @@
-# message: unsubscribe
+---title: "message: unsubscribe"description: "Submits a email request on behalf of the signed-in user to unsubscribe from an email distribution list. Uses the information in the `List-Unsubscribe` header."---# message: unsubscribe
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

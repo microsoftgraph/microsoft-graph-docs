@@ -1,4 +1,4 @@
-# depEnrollmentProfile resource type
+---title: "depEnrollmentProfile resource type"description: "The depEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."---# depEnrollmentProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# plannerUser resource type
+---title: "plannerUser resource type"description: "The **plannerUser** resource provides access to Planner resources for a user. "---# plannerUser resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

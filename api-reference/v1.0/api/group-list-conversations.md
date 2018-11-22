@@ -1,4 +1,4 @@
-# List conversations
+---title: "List conversations"description: "Retrieve the list of conversations in this group."---# List conversations
 Retrieve the list of [conversations](../resources/conversation.md) in this group.
 
 ## Permissions

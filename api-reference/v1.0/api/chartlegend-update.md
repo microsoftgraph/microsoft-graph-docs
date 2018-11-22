@@ -1,4 +1,4 @@
-# Update chartlegend
+---title: "Update chartlegend"description: "Update the properties of chartlegend object."---# Update chartlegend
 
 Update the properties of chartlegend object.
 ## Permissions

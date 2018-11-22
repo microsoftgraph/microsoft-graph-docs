@@ -1,4 +1,4 @@
-# Get suspiciousIpRiskEvent
+---title: "Get suspiciousIpRiskEvent"description: "Retrieve the properties and relationships of a suspiciousipriskevent object."---# Get suspiciousIpRiskEvent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

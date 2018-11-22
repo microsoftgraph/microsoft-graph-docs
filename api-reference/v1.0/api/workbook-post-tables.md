@@ -1,4 +1,4 @@
-# Create table
+---title: "Create table"description: "Use this API to create a new Table."---# Create table
 
 Use this API to create a new Table.
 ## Permissions

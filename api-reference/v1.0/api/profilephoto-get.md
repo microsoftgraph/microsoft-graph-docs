@@ -1,4 +1,4 @@
-# Get photo
+---title: "Get photo"description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."---# Get photo
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
 

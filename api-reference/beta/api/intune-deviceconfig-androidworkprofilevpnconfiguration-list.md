@@ -1,4 +1,4 @@
-# List androidWorkProfileVpnConfigurations
+---title: "List androidWorkProfileVpnConfigurations"description: "List properties and relationships of the androidWorkProfileVpnConfiguration objects."---# List androidWorkProfileVpnConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

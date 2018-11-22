@@ -1,4 +1,4 @@
-# Create androidForWorkVpnConfiguration
+---title: "Create androidForWorkVpnConfiguration"description: "Create a new androidForWorkVpnConfiguration object."---# Create androidForWorkVpnConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

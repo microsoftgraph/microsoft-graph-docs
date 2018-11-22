@@ -1,4 +1,4 @@
----title: "personType resource type"description: "Represents the type of person."---# personType resource type
+---title: "personType resource type"description: "Represents the type of person."---# personType resource type
 
 Represents the type of person.
 

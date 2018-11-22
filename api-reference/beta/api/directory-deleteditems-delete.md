@@ -1,4 +1,4 @@
-# Permanently delete item
+---title: "Permanently delete item"description: "Permanently deletes an item from deleted items."---# Permanently delete item
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
----title: "localeInfo resource type"description: "Information about the locale, including the preferred language and country/region, of the signed-in user."---# localeInfo resource type
+---title: "localeInfo resource type"description: "Information about the locale, including the preferred language and country/region, of the signed-in user."---# localeInfo resource type
 
 Information about the locale, including the preferred language and country/region, of the signed-in user.
 

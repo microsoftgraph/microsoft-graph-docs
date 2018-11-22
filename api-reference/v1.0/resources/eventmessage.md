@@ -1,4 +1,4 @@
-# eventMessage resource type
+---title: "eventMessage resource type"description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline)."---# eventMessage resource type
 
 A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
 

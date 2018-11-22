@@ -1,4 +1,4 @@
-# unaryManagementConditionExpression resource type
+---title: "unaryManagementConditionExpression resource type"description: "A management condition expression that is evaluated using a unary operation."---# unaryManagementConditionExpression resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

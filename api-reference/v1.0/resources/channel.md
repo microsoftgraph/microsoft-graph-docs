@@ -1,4 +1,4 @@
-# channel resource type
+---title: "channel resource type"description: "A channel is a collection of messages within a team. "---# channel resource type
 
 
 

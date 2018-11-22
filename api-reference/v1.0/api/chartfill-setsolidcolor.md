@@ -1,4 +1,4 @@
-# ChartFill: setSolidColor
+---title: "ChartFill: setSolidColor"description: "Sets the fill formatting of a chart element to a uniform color."---# ChartFill: setSolidColor
 
 Sets the fill formatting of a chart element to a uniform color.
 ## Permissions

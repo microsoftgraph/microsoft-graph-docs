@@ -1,4 +1,4 @@
-# customSubjectAlternativeName resource type
+---title: "customSubjectAlternativeName resource type"description: "Custom Subject Alternative Name definition"---# customSubjectAlternativeName resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

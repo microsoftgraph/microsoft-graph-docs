@@ -1,4 +1,4 @@
-# Get channel message
+---title: "Get channel message"description: "Retrieve a single message (without its replies) in a channel of a team."---# Get channel message
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

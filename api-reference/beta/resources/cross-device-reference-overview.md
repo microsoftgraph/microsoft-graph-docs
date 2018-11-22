@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to enable cross-device experiences
+---title: "Use the Microsoft Graph API to enable cross-device experiences"description: "{This is the beta version. Content is similar to the existing project_rome_overview.md.}"---# Use the Microsoft Graph API to enable cross-device experiences
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

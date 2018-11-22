@@ -1,4 +1,4 @@
-# deviceConfigurationAssignment resource type
+---title: "deviceConfigurationAssignment resource type"description: "The device configuration assignment entity assigns an AAD group to a specific device configuration."---# deviceConfigurationAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

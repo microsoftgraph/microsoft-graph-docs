@@ -1,4 +1,4 @@
-# Update windows10EnrollmentCompletionPageConfiguration
+---title: "Update windows10EnrollmentCompletionPageConfiguration"description: "Update the properties of a windows10EnrollmentCompletionPageConfiguration object."---# Update windows10EnrollmentCompletionPageConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

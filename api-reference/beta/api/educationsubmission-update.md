@@ -1,4 +1,4 @@
-# Update educationsubmission
+---title: "Update educationsubmission"description: "Add a grade and feedback to a submission. Only teachers can perform this operation. Note that the Basic permission does not have access to the grade properties, and therefore cannot write to grade or feedback. This action does not release the grade and feedback to the student. A teacher must take an explicit release action for the grade data to be returned to the student."---# Update educationsubmission
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

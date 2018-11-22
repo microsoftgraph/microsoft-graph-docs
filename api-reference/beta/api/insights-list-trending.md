@@ -1,4 +1,4 @@
-# List trending
+---title: "List trending"description: "Calculated insight that returns the list of items trending around the user."---# List trending
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

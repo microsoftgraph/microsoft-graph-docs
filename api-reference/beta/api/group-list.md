@@ -1,4 +1,4 @@
-# List groups
+---title: "List groups"description: "List all the groups available in an organization, including but not limited to Office 365 Groups."---# List groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

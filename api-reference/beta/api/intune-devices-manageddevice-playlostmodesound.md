@@ -1,4 +1,4 @@
-# playLostModeSound action
+---title: "playLostModeSound action"description: "Remote lock"---# playLostModeSound action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

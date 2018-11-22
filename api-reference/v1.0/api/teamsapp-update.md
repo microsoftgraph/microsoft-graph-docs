@@ -1,4 +1,4 @@
-# Update apps published to your organization's app catalog
+---title: "Permissions"description: "Update an app previously published to the Microsoft Teams app catalog. "---# Update apps published to your organization's app catalog
 
 
 

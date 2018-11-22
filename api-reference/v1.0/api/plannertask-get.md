@@ -1,4 +1,4 @@
-# Get plannerTask
+---title: "Get plannerTask"description: "Retrieve the properties and relationships of **plannertask** object."---# Get plannerTask
 
 Retrieve the properties and relationships of **plannertask** object.
 ## Permissions

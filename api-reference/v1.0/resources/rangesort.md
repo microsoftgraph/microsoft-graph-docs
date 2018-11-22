@@ -1,4 +1,4 @@
-# RangeSort resource type
+---title: "RangeSort resource type"description: "Manages sorting operations on Range objects."---# RangeSort resource type
 
 Manages sorting operations on Range objects.
 

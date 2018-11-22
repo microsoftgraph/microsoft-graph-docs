@@ -1,4 +1,4 @@
-# iosImportedPFXCertificateProfile resource type
+---title: "iosImportedPFXCertificateProfile resource type"description: "iOS PFX Import certificate profile"---# iosImportedPFXCertificateProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

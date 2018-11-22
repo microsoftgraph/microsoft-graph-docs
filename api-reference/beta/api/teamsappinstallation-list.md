@@ -1,4 +1,4 @@
-# List apps in team
+---title: "List apps in team"description: "Retrieve the list of apps installed in the specified team."---# List apps in team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

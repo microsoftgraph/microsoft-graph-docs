@@ -1,4 +1,4 @@
-# governanceResource resource type
+---title: "governanceResource resource type"description: "Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc."---# governanceResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

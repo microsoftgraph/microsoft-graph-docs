@@ -1,4 +1,4 @@
-# TableColumn resource type
+---title: "TableColumn resource type"description: "Represents a column in a table."---# TableColumn resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

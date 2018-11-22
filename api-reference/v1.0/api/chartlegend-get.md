@@ -1,4 +1,4 @@
-# Get ChartLegend
+---title: "Get ChartLegend"description: "Retrieve the properties and relationships of chartlegend object."---# Get ChartLegend
 
 Retrieve the properties and relationships of chartlegend object.
 ## Permissions

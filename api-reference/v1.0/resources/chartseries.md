@@ -1,4 +1,4 @@
-# ChartSeries resource type
+---title: "ChartSeries resource type"description: "Represents a series in a chart."---# ChartSeries resource type
 
 Represents a series in a chart.
 

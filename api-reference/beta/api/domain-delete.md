@@ -1,4 +1,4 @@
-# Delete domain
+---title: "Delete domain"description: "Deletes a domain from a tenant."---# Delete domain
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

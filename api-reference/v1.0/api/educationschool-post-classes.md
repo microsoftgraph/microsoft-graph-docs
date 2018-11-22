@@ -1,4 +1,4 @@
-# Add educationClass to educationSchool
+---title: "Add educationClass to educationSchool"description: "Add a class to a school."---# Add educationClass to educationSchool
 
 Add a class to a school.
 

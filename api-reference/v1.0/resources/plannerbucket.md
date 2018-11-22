@@ -1,4 +1,4 @@
-# plannerBucket resource type
+---title: "plannerBucket resource type"description: ") for tasks in a plan in Office 365. It is contained in a plannerPlan and can have a collection of plannerTasks."---# plannerBucket resource type
 
 The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
 

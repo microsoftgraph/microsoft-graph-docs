@@ -1,4 +1,4 @@
-# WorksheetProtection: unprotect
+---title: "WorksheetProtection: unprotect"description: "Unprotect a worksheet"---# WorksheetProtection: unprotect
 
 Unprotect a worksheet
 ## Permissions

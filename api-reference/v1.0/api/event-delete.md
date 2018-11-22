@@ -1,4 +1,4 @@
-# Delete event
+---title: "Delete event"description: "Delete event."---# Delete event
 
 Delete event.
 ## Permissions

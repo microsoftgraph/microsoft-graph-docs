@@ -1,4 +1,4 @@
-# importedDeviceIdentity resource type
+---title: "importedDeviceIdentity resource type"description: "The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration."---# importedDeviceIdentity resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

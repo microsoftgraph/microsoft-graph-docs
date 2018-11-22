@@ -1,4 +1,4 @@
-# TableRow resource type
+---title: "TableRow resource type"description: "Represents a row in a table."---# TableRow resource type
 
 Represents a row in a table.
 

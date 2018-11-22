@@ -1,4 +1,4 @@
-# pivotTable resource type
+---title: "pivotTable resource type"description: "Represents an Excel PivotTable."---# pivotTable resource type
 
 Represents an Excel PivotTable.
 

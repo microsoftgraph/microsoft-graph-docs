@@ -1,4 +1,4 @@
-# List deviceComplianceUserStatuses
+---title: "List deviceComplianceUserStatuses"description: "List properties and relationships of the deviceComplianceUserStatus objects."---# List deviceComplianceUserStatuses
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

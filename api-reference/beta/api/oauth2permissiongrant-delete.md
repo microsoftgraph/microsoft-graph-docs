@@ -1,4 +1,4 @@
-# Delete oAuth2PermissionGrant
+---title: "Delete oAuth2PermissionGrant"description: "Delete an oAuth2PermissionGrant."---# Delete oAuth2PermissionGrant
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get educationUser
+---title: "Get educationUser"description: "Retrieve the properties and relationships of a user."---# Get educationUser
 
 Retrieve the properties and relationships of a user.
 

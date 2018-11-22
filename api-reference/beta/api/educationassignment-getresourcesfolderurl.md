@@ -1,4 +1,4 @@
-# educationAssignment: getResourcesFolderUrl
+---title: "educationAssignment: getResourcesFolderUrl"description: "This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.  "---# educationAssignment: getResourcesFolderUrl
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

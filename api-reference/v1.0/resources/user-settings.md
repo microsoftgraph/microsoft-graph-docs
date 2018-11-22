@@ -1,4 +1,4 @@
-# settings resource type
+---title: "settings resource type"description: "The current user settings. "---# settings resource type
 
 The current user settings. 
 To learn how to get or update user settings, see [Get settings](../api/user-get-settings.md) and [Update settings](../api/user-update-settings.md).

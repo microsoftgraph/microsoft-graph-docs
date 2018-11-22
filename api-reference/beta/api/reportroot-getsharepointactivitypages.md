@@ -1,4 +1,4 @@
-# reportRoot: getSharePointActivityPages
+---title: "reportRoot: getSharePointActivityPages"description: "Get the number of unique pages visited by users."---# reportRoot: getSharePointActivityPages
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

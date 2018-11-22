@@ -1,4 +1,4 @@
-# mobileAppAssignment resource type
+---title: "mobileAppAssignment resource type"description: "A class containing the properties used for Group Assignment of a Mobile App."---# mobileAppAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

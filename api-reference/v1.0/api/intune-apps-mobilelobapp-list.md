@@ -1,4 +1,4 @@
-# List mobileLobApps
+---title: "List mobileLobApps"description: "List properties and relationships of the mobileLobApp objects."---# List mobileLobApps
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

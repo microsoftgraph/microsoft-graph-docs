@@ -1,4 +1,4 @@
-# List columns
+---title: "List columns"description: "Retrieve a list of tablecolumn objects."---# List columns
 
 Retrieve a list of tablecolumn objects.
 ## Permissions

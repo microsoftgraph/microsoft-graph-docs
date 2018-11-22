@@ -1,4 +1,4 @@
-# Delete windowsPhone81TrustedRootCertificate
+---title: "Delete windowsPhone81TrustedRootCertificate"description: "Deletes a windowsPhone81TrustedRootCertificate."---# Delete windowsPhone81TrustedRootCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

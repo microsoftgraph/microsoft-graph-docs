@@ -1,4 +1,4 @@
-# Update secureScoreControlProfiles
+---title: "Update secureScoreControlProfiles"description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."---# Update secureScoreControlProfiles
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

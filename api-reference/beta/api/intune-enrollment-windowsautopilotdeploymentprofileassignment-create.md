@@ -1,4 +1,4 @@
-# Create windowsAutopilotDeploymentProfileAssignment
+---title: "Create windowsAutopilotDeploymentProfileAssignment"description: "Create a new windowsAutopilotDeploymentProfileAssignment object."---# Create windowsAutopilotDeploymentProfileAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

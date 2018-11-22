@@ -1,4 +1,4 @@
-# reportRoot: getSharePointSiteUsageSiteCounts
+---title: "reportRoot: getSharePointSiteUsageSiteCounts"description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."---# reportRoot: getSharePointSiteUsageSiteCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

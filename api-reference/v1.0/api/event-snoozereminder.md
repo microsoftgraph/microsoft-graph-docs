@@ -1,4 +1,4 @@
-# event: snoozeReminder
+---title: "event: snoozeReminder"description: "Postpone a reminder for an event in a user calendar until a new time."---# event: snoozeReminder
 
 Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.
 

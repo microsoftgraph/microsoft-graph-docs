@@ -1,4 +1,4 @@
-# Remove teacher
+---title: "Remove teacher"description: "Remove a teacher from a class."---# Remove teacher
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

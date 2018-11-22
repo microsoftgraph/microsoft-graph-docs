@@ -1,4 +1,4 @@
-# alert resource type
+---title: "alert resource type"description: "Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in Graph Explorer."---# alert resource type
 
 Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

@@ -1,4 +1,4 @@
-# importedAppleDeviceIdentity resource type
+---title: "importedAppleDeviceIdentity resource type"description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."---# importedAppleDeviceIdentity resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# mobileLobApp resource type
+---title: "mobileLobApp resource type"description: "An abstract base class containing properties for all mobile line of business apps."---# mobileLobApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

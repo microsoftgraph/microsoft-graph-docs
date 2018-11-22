@@ -1,4 +1,4 @@
-# Get conversationThread
+---title: "Get conversationThread"description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "---# Get conversationThread
 
 Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation. 

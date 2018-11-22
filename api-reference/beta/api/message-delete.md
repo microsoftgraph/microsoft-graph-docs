@@ -1,4 +1,4 @@
-# Delete message
+---title: "Delete message"description: "Delete a message in the specified user's mailbox, or delete a relationship of the message."---# Delete message
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

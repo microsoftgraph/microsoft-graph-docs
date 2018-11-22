@@ -1,4 +1,4 @@
-# Create Calendar
+---title: "Create Calendar"description: "Use this API to create a new calendar in a calendar group for a user."---# Create Calendar
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

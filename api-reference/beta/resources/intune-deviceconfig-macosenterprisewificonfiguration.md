@@ -1,4 +1,4 @@
-# macOSEnterpriseWiFiConfiguration resource type
+---title: "macOSEnterpriseWiFiConfiguration resource type"description: "MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile."---# macOSEnterpriseWiFiConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

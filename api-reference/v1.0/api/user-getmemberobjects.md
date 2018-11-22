@@ -1,4 +1,4 @@
-# user: getMemberObjects
+---title: "user: getMemberObjects"description: "Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive."---# user: getMemberObjects
 Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.
 
 ## Permissions

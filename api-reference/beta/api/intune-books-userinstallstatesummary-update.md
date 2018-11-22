@@ -1,4 +1,4 @@
-# Update userInstallStateSummary
+---title: "Update userInstallStateSummary"description: "Update the properties of a userInstallStateSummary object."---# Update userInstallStateSummary
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

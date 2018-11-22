@@ -1,4 +1,4 @@
-# Use the Planner REST API
+---title: "Use the Planner REST API"description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365."---# Use the Planner REST API
 
 You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
 

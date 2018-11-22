@@ -1,4 +1,4 @@
-# signIn resource type
+---title: "signIn resource type"description: "This resource details user or application sign-in activity in your directory. "---# signIn resource type
 This resource details user or application sign-in activity in your directory. 
 
 ## Methods

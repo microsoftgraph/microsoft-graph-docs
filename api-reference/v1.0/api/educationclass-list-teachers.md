@@ -1,4 +1,4 @@
-# List teachers
+---title: "List teachers"description: "Retrieve a list teachers for a class. Delegated tokens must be members of the class to get the teacher list."---# List teachers
 
 Retrieve a list teachers for a class. Delegated tokens must be members of the class to get the teacher list.
 

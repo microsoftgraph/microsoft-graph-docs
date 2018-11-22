@@ -1,4 +1,4 @@
-# Delete conversation thread
+---title: "Delete conversation thread"description: "Delete a thread object."---# Delete conversation thread
 Delete a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

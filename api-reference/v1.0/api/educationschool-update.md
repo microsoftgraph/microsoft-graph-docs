@@ -1,4 +1,4 @@
-# Update educationschool properties
+---title: "Update educationschool properties"description: "Update the properties of a school object."---# Update educationschool properties
 
 Update the properties of a school object.
 

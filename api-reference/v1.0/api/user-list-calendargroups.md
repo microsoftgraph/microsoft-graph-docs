@@ -1,4 +1,4 @@
-# List calendarGroups
+---title: "List calendarGroups"description: "Get the user's calendar groups."---# List calendarGroups
 
 Get the user's calendar groups.
 ## Permissions

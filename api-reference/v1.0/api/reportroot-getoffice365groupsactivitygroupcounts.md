@@ -1,4 +1,4 @@
-# reportRoot: getOffice365GroupsActivityGroupCounts
+---title: "reportRoot: getOffice365GroupsActivityGroupCounts"description: "Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities."---# reportRoot: getOffice365GroupsActivityGroupCounts
 
 Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
 

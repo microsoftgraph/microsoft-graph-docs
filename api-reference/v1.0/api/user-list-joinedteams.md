@@ -1,4 +1,4 @@
-# List joinedTeams
+---title: "List joinedTeams"description: "Get the teams in Microsoft Teams that the user is a direct member of."---# List joinedTeams
 
 
 

@@ -1,4 +1,4 @@
-# Add directory role member
+---title: "Add directory role member"description: "Use this API to create a new directory role member."---# Add directory role member
 
 Use this API to create a new directory role member.
 

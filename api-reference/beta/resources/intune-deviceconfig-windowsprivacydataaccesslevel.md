@@ -1,4 +1,4 @@
-﻿# windowsPrivacyDataAccessLevel enum type
+---title: "windowsPrivacyDataAccessLevel enum type"description: "Determine the access level to specific Windows privacy data category."---# windowsPrivacyDataAccessLevel enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

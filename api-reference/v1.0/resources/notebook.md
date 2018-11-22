@@ -1,4 +1,4 @@
-# notebook resource type
+---title: "notebook resource type"description: "A OneNote notebook."---# notebook resource type
 
 A OneNote notebook.
 

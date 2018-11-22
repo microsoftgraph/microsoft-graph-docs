@@ -1,4 +1,4 @@
-# teamsTab resource type
+---title: "teamsTab resource type"description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "---# teamsTab resource type
 
 
 

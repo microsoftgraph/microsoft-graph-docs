@@ -1,4 +1,4 @@
-# Delete educationSchool
+---title: "Delete educationSchool"description: "Delete a school."---# Delete educationSchool
 
 Delete a school.
 

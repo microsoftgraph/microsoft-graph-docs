@@ -1,4 +1,4 @@
-# synchronizationStatus resource type
+---title: "synchronizationStatus resource type"description: "Represents the current status of the synchronizationJob."---# synchronizationStatus resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

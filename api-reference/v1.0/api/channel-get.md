@@ -1,4 +1,4 @@
-# Get channel
+---title: "Get channel"description: "Retrieve the properties and relationships of a channel."---# Get channel
 
 
 

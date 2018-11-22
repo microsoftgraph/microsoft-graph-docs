@@ -1,4 +1,4 @@
-# List memberOf
+---title: "List memberOf"description: "Get groups and directory roles that the user is a direct member of. "---# List memberOf
 
 Get [groups](../resources/group.md) and [directory roles](../resources/directoryrole.md) that the user is a direct member of. 
 

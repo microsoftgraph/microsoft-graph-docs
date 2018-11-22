@@ -1,4 +1,4 @@
-# List TableRowCollection
+---title: "List TableRowCollection"description: "Retrieve a list of tablerow objects."---# List TableRowCollection
 
 Retrieve a list of tablerow objects.
 ## Permissions

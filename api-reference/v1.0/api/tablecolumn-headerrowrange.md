@@ -1,4 +1,4 @@
-# TableColumn: HeaderRowRange
+---title: "TableColumn: HeaderRowRange"description: "Gets the range object associated with the header row of the column."---# TableColumn: HeaderRowRange
 
 Gets the range object associated with the header row of the column.
 ## Permissions

@@ -1,4 +1,4 @@
-# Add group owner
+---title: "Add group owner"description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."---# Add group owner
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
 
 ## Permissions

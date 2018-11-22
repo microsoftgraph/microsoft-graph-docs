@@ -1,4 +1,4 @@
-# Delete plannerBucket
+---title: "Delete plannerBucket"description: "Delete **plannerBucket**."---# Delete plannerBucket
 
 Delete **plannerBucket**.
 ## Permissions

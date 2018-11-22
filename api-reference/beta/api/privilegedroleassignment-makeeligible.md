@@ -1,4 +1,4 @@
-# privilegedRoleAssignment: makeEligible
+---title: "privilegedRoleAssignment: makeEligible"description: "Make the role assignment as eligible. If the role assignment is already eligible before the call, it does nothing. If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user. If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration."---# privilegedRoleAssignment: makeEligible
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

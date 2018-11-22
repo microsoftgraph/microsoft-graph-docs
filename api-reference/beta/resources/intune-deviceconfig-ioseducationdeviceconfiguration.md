@@ -1,4 +1,4 @@
-# iosEducationDeviceConfiguration resource type
+---title: "iosEducationDeviceConfiguration resource type"description: "iOS Education configuration profile"---# iosEducationDeviceConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

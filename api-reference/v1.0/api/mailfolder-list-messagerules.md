@@ -1,4 +1,4 @@
-# List rules
+---title: "List rules"description: "Get all the messageRule objects defined for the user's Inbox."---# List rules
 
 Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.
 

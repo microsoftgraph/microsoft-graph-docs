@@ -1,4 +1,4 @@
-# reportRoot: getSharePointActivityUserDetail
+---title: "reportRoot: getSharePointActivityUserDetail"description: "Get details about SharePoint activity by user."---# reportRoot: getSharePointActivityUserDetail
 
 Get details about SharePoint activity by user.
 

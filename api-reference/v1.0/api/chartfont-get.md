@@ -1,4 +1,4 @@
-# Get ChartFont
+---title: "Get ChartFont"description: "Retrieve the properties and relationships of chartfont object."---# Get ChartFont
 
 Retrieve the properties and relationships of chartfont object.
 ## Permissions

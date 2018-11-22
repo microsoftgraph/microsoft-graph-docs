@@ -1,4 +1,4 @@
-# Update mailfolder
+---title: "Update mailfolder"description: "Update the properties of mailfolder object."---# Update mailfolder
 
 Update the properties of mailfolder object.
 ## Permissions

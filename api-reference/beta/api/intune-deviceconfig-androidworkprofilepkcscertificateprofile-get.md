@@ -1,4 +1,4 @@
-# Get androidWorkProfilePkcsCertificateProfile
+---title: "Get androidWorkProfilePkcsCertificateProfile"description: "Read properties and relationships of the androidWorkProfilePkcsCertificateProfile object."---# Get androidWorkProfilePkcsCertificateProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Get contactFolder
+---title: "Get contactFolder"description: "Get a contact folder by using the contact folder ID."---# Get contactFolder
 
 Get a contact folder by using the contact folder ID.
 

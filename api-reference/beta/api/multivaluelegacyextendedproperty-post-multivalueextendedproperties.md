@@ -1,4 +1,4 @@
-# Create multi-value extended property
+---title: "Create multi-value extended property"description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "---# Create multi-value extended property
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

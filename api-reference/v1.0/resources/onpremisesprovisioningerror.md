@@ -1,4 +1,4 @@
----title: "onPremisesProvisioningError resource type"description: "Represents directory synchronization errors for the user and group entities when synchronizing on-premises directories to Azure Active Directory."---# onPremisesProvisioningError resource type
+---title: "onPremisesProvisioningError resource type"description: "Represents directory synchronization errors for the user and group entities when synchronizing on-premises directories to Azure Active Directory."---# onPremisesProvisioningError resource type
 
 Represents directory synchronization errors for the [user](user.md) and [group](group.md) entities when synchronizing on-premises directories to Azure Active Directory.
 

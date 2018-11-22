@@ -1,4 +1,4 @@
-# deviceAndAppManagementRoleAssignment resource type
+---title: "deviceAndAppManagementRoleAssignment resource type"description: "The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles."---# deviceAndAppManagementRoleAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

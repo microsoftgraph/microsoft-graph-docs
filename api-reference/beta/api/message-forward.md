@@ -1,4 +1,4 @@
-# message: forward
+---title: "message: forward"description: "Forward a message, add a comment or modify any updateable properties  "---# message: forward
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

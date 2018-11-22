@@ -1,4 +1,4 @@
-# reportRoot: getTeamsDeviceUsageUserDetail
+---title: "reportRoot: getTeamsDeviceUsageUserDetail"description: "Get details about Microsoft Teams device usage by user."---# reportRoot: getTeamsDeviceUsageUserDetail
 
 Get details about Microsoft Teams device usage by user.
 

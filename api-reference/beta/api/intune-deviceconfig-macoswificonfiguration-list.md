@@ -1,4 +1,4 @@
-# List macOSWiFiConfigurations
+---title: "List macOSWiFiConfigurations"description: "List properties and relationships of the macOSWiFiConfiguration objects."---# List macOSWiFiConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Create connectorGroup
+---title: "Create connectorGroup"description: "Use this API to create a new connectorGroup."---# Create connectorGroup
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

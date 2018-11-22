@@ -1,4 +1,4 @@
----title: "entity resource type"description: "None"---# entity resource type
+---title: "entity resource type"description: "None"---# entity resource type
 
 ## Properties
 | Property	   | Type	|Description|

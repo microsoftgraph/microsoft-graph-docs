@@ -1,4 +1,4 @@
-# Update device
+---title: "Update device"description: "Update the properties of a registered device."---# Update device
 
 Update the properties of a registered device.
 

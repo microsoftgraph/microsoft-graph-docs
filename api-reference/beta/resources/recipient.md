@@ -1,4 +1,4 @@
----title: "recipient resource type"description: "Represents information about a user in the sending or receiving end of an event, message or group post. "---# recipient resource type
+---title: "recipient resource type"description: "Represents information about a user in the sending or receiving end of an event, message or group post. "---# recipient resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

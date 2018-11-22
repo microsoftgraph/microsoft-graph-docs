@@ -1,4 +1,4 @@
-# mailTips resource type
+---title: "mailTips resource type"description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "---# mailTips resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

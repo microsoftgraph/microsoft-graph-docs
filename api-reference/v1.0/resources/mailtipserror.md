@@ -1,4 +1,4 @@
----title: "mailTipsError resource type"description: "An error that occurs during an action."---# mailTipsError resource type
+---title: "mailTipsError resource type"description: "An error that occurs during an action."---# mailTipsError resource type
 
 An error that occurs during an action.
 

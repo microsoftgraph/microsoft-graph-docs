@@ -1,4 +1,4 @@
-# macOSOfficeSuiteApp resource type
+---title: "macOSOfficeSuiteApp resource type"description: "Contains properties and inherited properties for the MacOS Office Suite App."---# macOSOfficeSuiteApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

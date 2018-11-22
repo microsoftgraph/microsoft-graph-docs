@@ -1,4 +1,4 @@
-# Update schemaExtension
+---title: "Update schemaExtension"description: "Update properties in the definition of the specified schemaExtension."---# Update schemaExtension
 
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 

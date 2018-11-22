@@ -1,4 +1,4 @@
-# Create androidLobApp
+---title: "Create androidLobApp"description: "Create a new androidLobApp object."---# Create androidLobApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

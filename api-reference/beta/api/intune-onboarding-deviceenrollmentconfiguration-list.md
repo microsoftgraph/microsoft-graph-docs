@@ -1,4 +1,4 @@
-# List deviceEnrollmentConfigurations
+---title: "List deviceEnrollmentConfigurations"description: "List properties and relationships of the deviceEnrollmentConfiguration objects."---# List deviceEnrollmentConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

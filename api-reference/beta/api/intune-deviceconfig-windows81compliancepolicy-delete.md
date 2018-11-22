@@ -1,4 +1,4 @@
-# Delete windows81CompliancePolicy
+---title: "Delete windows81CompliancePolicy"description: "Deletes a windows81CompliancePolicy."---# Delete windows81CompliancePolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

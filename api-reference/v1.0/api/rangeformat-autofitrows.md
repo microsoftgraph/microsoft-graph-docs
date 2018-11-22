@@ -1,4 +1,4 @@
-# RangeFormat: autofitRows
+---title: "RangeFormat: autofitRows"description: "Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns."---# RangeFormat: autofitRows
 
 Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
 ## Permissions

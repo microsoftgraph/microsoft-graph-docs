@@ -1,4 +1,4 @@
-# mdmWindowsInformationProtectionPolicy resource type
+---title: "mdmWindowsInformationProtectionPolicy resource type"description: "Policy for Windows information protection with MDM"---# mdmWindowsInformationProtectionPolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

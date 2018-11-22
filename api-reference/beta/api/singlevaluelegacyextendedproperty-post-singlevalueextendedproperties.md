@@ -1,4 +1,4 @@
-# Create single-value extended property
+---title: "Create single-value extended property"description: "Create one or more single-value extended properties in a new or existing instance of a resource. "---# Create single-value extended property
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

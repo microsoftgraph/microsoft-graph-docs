@@ -1,4 +1,4 @@
-# Delete windowsAutopilotDeploymentProfileAssignment
+---title: "Delete windowsAutopilotDeploymentProfileAssignment"description: "Deletes a windowsAutopilotDeploymentProfileAssignment."---# Delete windowsAutopilotDeploymentProfileAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

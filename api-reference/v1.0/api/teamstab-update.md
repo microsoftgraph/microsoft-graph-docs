@@ -1,4 +1,4 @@
-# Update tab
+---title: "Update tab"description: "Update the properties of the specified tab."---# Update tab
 
 
 

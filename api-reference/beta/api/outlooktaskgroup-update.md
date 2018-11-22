@@ -1,4 +1,4 @@
-# Update outlooktaskgroup
+---title: "Update outlooktaskgroup"description: "Update the writable properties of an Outlook task group."---# Update outlooktaskgroup
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

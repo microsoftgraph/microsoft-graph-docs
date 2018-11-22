@@ -1,4 +1,4 @@
-# deviceConfigurationConflictSummary resource type
+---title: "deviceConfigurationConflictSummary resource type"description: "Conflict summary for a set of device configuration policies."---# deviceConfigurationConflictSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

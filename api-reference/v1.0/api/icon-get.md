@@ -1,4 +1,4 @@
-# Get Icon
+---title: "Get Icon"description: "Retrieve the properties and relationships of icon object."---# Get Icon
 
 Retrieve the properties and relationships of icon object.
 ## Permissions

@@ -1,4 +1,4 @@
----title: " averageComparativeScore resource type"description: "This resource contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure)."---#  averageComparativeScore resource type
+---title: " averageComparativeScore resource type"description: "This resource contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure)."---#  averageComparativeScore resource type
 
 This resource contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure).
 

@@ -1,4 +1,4 @@
-# Get calendar
+---title: "Get calendar"description: "Get the properties and relationships of a calendar object. The calendar can be one for a user, "---# Get calendar
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

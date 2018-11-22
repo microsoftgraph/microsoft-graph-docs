@@ -1,4 +1,4 @@
-# Add tab to channel
+---title: "Add tab to channel"description: "Adds (pins) a tab to the specified channel within a team. "---# Add tab to channel
 
 
 

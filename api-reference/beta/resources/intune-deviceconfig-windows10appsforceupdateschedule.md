@@ -1,4 +1,4 @@
-# windows10AppsForceUpdateSchedule resource type
+---title: "windows10AppsForceUpdateSchedule resource type"description: "Windows 10 force update schedule for Apps"---# windows10AppsForceUpdateSchedule resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

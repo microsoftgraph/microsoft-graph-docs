@@ -1,4 +1,4 @@
-# androidManagedAppRegistration resource type
+---title: "androidManagedAppRegistration resource type"description: "Represents the synchronization details of an android app, with management capabilities, for a specific user."---# androidManagedAppRegistration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

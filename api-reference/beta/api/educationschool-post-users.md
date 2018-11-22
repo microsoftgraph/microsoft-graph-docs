@@ -1,4 +1,4 @@
-# Add educationUser to an educationSchool
+---title: "Add educationUser to an educationSchool"description: "Add a user to a school."---# Add educationUser to an educationSchool
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

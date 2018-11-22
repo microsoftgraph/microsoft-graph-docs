@@ -1,4 +1,4 @@
-# Download contents of a DriveItemVersion resource
+---title: "Download contents of a DriveItemVersion resource"description: "Retrieve the contents of a specific version of a DriveItem."---# Download contents of a DriveItemVersion resource
 
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
 

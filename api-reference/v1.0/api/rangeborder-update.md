@@ -1,4 +1,4 @@
-# Update rangeborder
+---title: "Update rangeborder"description: "Update the properties of rangeborder object."---# Update rangeborder
 
 Update the properties of rangeborder object.
 ## Permissions

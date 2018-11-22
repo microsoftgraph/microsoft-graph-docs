@@ -1,4 +1,4 @@
-﻿# subjectNameFormat enum type
+---title: "subjectNameFormat enum type"description: "Subject Name Format Options."---# subjectNameFormat enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

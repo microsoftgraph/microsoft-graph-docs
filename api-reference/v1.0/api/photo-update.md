@@ -1,4 +1,4 @@
-# Update photo
+---title: "Update photo"description: "Update the properties of photo object."---# Update photo
 
 Update the properties of photo object.
 ## Permissions

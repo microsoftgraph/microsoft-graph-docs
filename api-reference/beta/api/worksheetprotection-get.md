@@ -1,4 +1,4 @@
-# Get WorksheetProtection
+---title: "Get WorksheetProtection"description: "Retrieve the properties and relationships of worksheetprotection object."---# Get WorksheetProtection
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

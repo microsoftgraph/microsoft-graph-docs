@@ -1,4 +1,4 @@
-# reportRoot: getTeamsUserActivityUserDetail
+---title: "reportRoot: getTeamsUserActivityUserDetail"description: "Get details about Microsoft Teams user activity by user."---# reportRoot: getTeamsUserActivityUserDetail
 
 Get details about Microsoft Teams user activity by user.
 

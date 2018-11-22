@@ -1,4 +1,4 @@
-# remoteAssistancePartner resource type
+---title: "remoteAssistancePartner resource type"description: "remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."---# remoteAssistancePartner resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

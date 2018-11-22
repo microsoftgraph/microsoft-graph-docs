@@ -1,4 +1,4 @@
-# Write data to an Excel workbook with Microsoft Graph
+---title: "Write data to an Excel workbook with Microsoft Graph"description: "q=excelstarter)."---# Write data to an Excel workbook with Microsoft Graph
 
 The Excel REST API provides an easy, platform-agnostic way to upload information to an Excel workbook. This topic shows you how to write simple data sets to an Excel workbook on three web development frameworks: ASP.NET, Angular, and React. You can look at the code samples featured in this topic by visiting the [Microsoft Graph Excel starter samples on GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
 

@@ -1,4 +1,4 @@
-# Create MailFolder
+---title: "Create MailFolder"description: "Use this API to create a new mail folder in the root folder of the user's mailbox."---# Create MailFolder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

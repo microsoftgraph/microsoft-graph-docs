@@ -1,4 +1,4 @@
-# Update message
+---title: "Update message"description: "Update the properties of message object."---# Update message
 
 Update the properties of message object.
 ## Permissions

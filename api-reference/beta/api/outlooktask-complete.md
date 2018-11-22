@@ -1,4 +1,4 @@
-# outlookTask: complete
+---title: "outlookTask: complete"description: "Complete an Outlook task which sets the **completedDateTime** property to the current date, "---# outlookTask: complete
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

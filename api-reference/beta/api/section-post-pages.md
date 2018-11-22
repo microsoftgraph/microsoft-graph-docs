@@ -1,4 +1,4 @@
-# Create page
+---title: "Create page"description: "Create a new page in the specified section."---# Create page
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
