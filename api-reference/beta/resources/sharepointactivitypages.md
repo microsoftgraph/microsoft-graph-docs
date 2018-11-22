@@ -1,4 +1,4 @@
-# sharePointActivityPages resource type
+---title: "sharePointActivityPages resource type"description: "The following is a JSON representation of the resource."---# sharePointActivityPages resource type
 
 ## Properties
 

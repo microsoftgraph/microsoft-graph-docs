@@ -1,4 +1,4 @@
-# ChartLegendFormat resource type
+---title: "ChartLegendFormat resource type"description: "Encapsulates the format properties of a chart legend."---# ChartLegendFormat resource type
 
 Encapsulates the format properties of a chart legend.
 

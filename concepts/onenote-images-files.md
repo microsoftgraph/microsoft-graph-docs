@@ -1,4 +1,4 @@
-
+---title: "Add images, videos, and files to OneNote pages"description: " Enterprise notebooks on Office 365"---
 # Add images, videos, and files to OneNote pages
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365

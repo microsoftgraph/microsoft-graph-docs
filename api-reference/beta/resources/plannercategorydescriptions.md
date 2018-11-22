@@ -1,4 +1,4 @@
-# plannerCategoryDescriptions resource type
+---title: "plannerCategoryDescriptions resource type"description: "The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the plan details object. There can be up to 6 categories defined. "---# plannerCategoryDescriptions resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# teamsUserActivityCounts resource type
+---title: "teamsUserActivityCounts resource type"description: "The following is a JSON representation of the resource."---# teamsUserActivityCounts resource type
 
 ## Properties
 

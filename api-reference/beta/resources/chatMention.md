@@ -1,4 +1,4 @@
-# chatMessageMention resource type
+---title: "chatMessageMention resource type"description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "---# chatMessageMention resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

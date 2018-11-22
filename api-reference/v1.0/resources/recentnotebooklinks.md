@@ -1,4 +1,4 @@
-# recentNotebookLinks resource type
+---title: "recentNotebookLinks resource type"description: "Links for opening a OneNote notebook. This resource type exists as a property on a recentNotebook resource."---# recentNotebookLinks resource type
 
 Links for opening a OneNote notebook. This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.
 

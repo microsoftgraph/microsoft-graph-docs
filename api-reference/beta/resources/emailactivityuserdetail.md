@@ -1,4 +1,4 @@
-# emailActivityUserDetail resource type
+---title: "emailActivityUserDetail resource type"description: "The following is a JSON representation of the resource."---# emailActivityUserDetail resource type
 
 ## Properties
 

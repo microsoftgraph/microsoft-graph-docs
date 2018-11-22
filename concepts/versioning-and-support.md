@@ -1,4 +1,4 @@
-# Versioning, support, and breaking change policies for Microsoft Graph 
+---title: "Versioning, support, and breaking change policies for Microsoft Graph "description: "This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available."---# Versioning, support, and breaking change policies for Microsoft Graph 
 
 This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available.
 

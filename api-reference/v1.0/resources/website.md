@@ -1,4 +1,4 @@
-# website resource type
+---title: "website resource type"description: "Represents a website."---# website resource type
 
 Represents a website.
 

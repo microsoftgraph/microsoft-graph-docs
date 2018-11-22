@@ -1,4 +1,4 @@
-# office365GroupsActivityGroupCounts resource type
+---title: "office365GroupsActivityGroupCounts resource type"description: "The following is a JSON representation of the resource."---# office365GroupsActivityGroupCounts resource type
 
 ## Properties
 

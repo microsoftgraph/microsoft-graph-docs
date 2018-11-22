@@ -1,4 +1,4 @@
-# yammerDeviceUsageUserDetail resource type
+---title: "yammerDeviceUsageUserDetail resource type"description: "The following is a JSON representation of the resource."---# yammerDeviceUsageUserDetail resource type
 
 ## Properties
 

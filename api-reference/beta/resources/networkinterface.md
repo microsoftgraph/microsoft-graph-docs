@@ -1,4 +1,4 @@
-# networkInterface resource type
+---title: "networkInterface resource type"description: "Represents a Network Interface Card (NIC) associated with this host."---# networkInterface resource type
 
 Represents a Network Interface Card (NIC) associated with this host.
 

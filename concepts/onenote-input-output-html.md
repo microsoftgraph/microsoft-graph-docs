@@ -1,4 +1,4 @@
-# Input and output HTML in OneNote pages
+---title: "Input and output HTML in OneNote pages"description: "The HTML that defines the page content and structure when you create or update a OneNote page is called *input HTML*. "---# Input and output HTML in OneNote pages
 
 The HTML that defines the page content and structure when you [create](onenote-create-page.md) or [update](onenote-update-page.md) a OneNote page is called *input HTML*. 
 

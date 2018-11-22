@@ -1,4 +1,4 @@
-# outlookItem resource type
+---title: "outlookItem resource type"description: "Here is a JSON representation of the resource"---# outlookItem resource type
 
 
 

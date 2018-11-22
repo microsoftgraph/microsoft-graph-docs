@@ -1,4 +1,4 @@
-# Microsoft Teams API overview
+---title: "Microsoft Teams API overview"description: "Microsoft Teams is the ultimate hub for teamwork and intelligent communications. "---# Microsoft Teams API overview
 
 [Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. 
 Built on the strength and scale of [Office 365](https://products.office.com/) with over 120 million users, 

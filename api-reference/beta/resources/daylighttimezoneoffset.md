@@ -1,4 +1,4 @@
-# daylightTimeZoneOffset resource type
+---title: "daylightTimeZoneOffset resource type"description: "Specifies when a time zone switches from standard time to daylight saving time."---# daylightTimeZoneOffset resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

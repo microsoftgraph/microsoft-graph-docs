@@ -1,4 +1,4 @@
-# alternativeSecurityId resource type
+---title: "alternativeSecurityId resource type"description: "For internal use only."---# alternativeSecurityId resource type
 
 For internal use only.
 

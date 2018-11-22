@@ -1,4 +1,4 @@
-# teamsAsyncOperationStatus enum type
+---title: "teamsAsyncOperationStatus enum type"description: "Describes the current status of a teamsAsyncOperation."---# teamsAsyncOperationStatus enum type
 
 
 

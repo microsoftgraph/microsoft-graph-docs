@@ -1,4 +1,4 @@
-# office365GroupsActivityStorage resource type
+---title: "office365GroupsActivityStorage resource type"description: "The following is a JSON representation of the resource."---# office365GroupsActivityStorage resource type
 
 ## Properties
 

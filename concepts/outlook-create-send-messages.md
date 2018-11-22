@@ -1,4 +1,4 @@
-# Create and send Outlook messages
+---title: "Create and send Outlook messages"description: "Emails are represented by the message resource in Microsoft Graph."---# Create and send Outlook messages
 
 Emails are represented by the [message](/graph/api/resources/message?view=graph-rest-1.0) resource in Microsoft Graph.
 
