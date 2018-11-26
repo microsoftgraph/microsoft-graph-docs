@@ -1,18 +1,13 @@
 {
     "redirections": [
         {
-            "source_path": "/concepts/v1-overview.md",
+            "source_path": "concepts\\v1-overview.md",
             "redirect_url": "/graph/api/overview?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {
-            "source_path": "api-reference\\beta\\beta-overview",
+            "source_path": "api-reference\\beta\\beta-overview.md",
             "redirect_url": "/graph/api/overview?view=graph-rest-beta",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "ISSUE_TEMPLATE.md",
-            "redirect_url": "/graph/ISSUE-TEMPLATE",
             "redirect_document_id": true
         },
         {
