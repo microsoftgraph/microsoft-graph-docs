@@ -1,4 +1,4 @@
-﻿# windowsManagementAppHealthSummary resource type
+---title: "windowsManagementAppHealthSummary resource type"description: "Contains properties for the health summary of the Windows management app."---# windowsManagementAppHealthSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +8,8 @@ Contains properties for the health summary of the Windows management app.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get windowsManagementAppHealthSummary](../api/intune_devices_windowsmanagementapphealthsummary_get.md)|[windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md)|Read properties and relationships of the [windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
-|[Update windowsManagementAppHealthSummary](../api/intune_devices_windowsmanagementapphealthsummary_update.md)|[windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md)|Update the properties of a [windowsManagementAppHealthSummary](../resources/intune_devices_windowsmanagementapphealthsummary.md) object.|
+|[Get windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Read properties and relationships of the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.|
+|[Update windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Update the properties of a [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

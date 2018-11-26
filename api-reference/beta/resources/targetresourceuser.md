@@ -1,4 +1,4 @@
-# targetResourceUser resource type
+---title: "targetResourceUser resource type"description: "Indicates the user object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."---# targetResourceUser resource type
 Indicates the user object that was added, updated or deleted by admins as part of audit activity. Derived from the [targetResource](targetresource.md) resource.
 
 

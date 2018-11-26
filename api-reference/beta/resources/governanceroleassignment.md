@@ -1,4 +1,4 @@
-# governanceRoleAssignment resource type
+---title: "governanceRoleAssignment resource type"description: "Represents the assignment of a user or group to a role."---# governanceRoleAssignment resource type
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents the assignment of a user or group to a role.
@@ -12,9 +12,9 @@ Privileged Identity Management (PIM) supports two types of assignments:
 
 | Method		  | Return Type	|Description|
 |:------------|:--------|:--------|
-|[Get](../api/governanceroleassignment_get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
-|[List](../api/governanceroleassignment_list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
-|[Export](../api/governanceroleassignment_export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file.|
+|[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
+|[List](../api/governanceroleassignment-list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
+|[Export](../api/governanceroleassignment-export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file.|
 
 No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssignments` entity set. Any create, update, and delete operations on `governanceRoleAssignment` are done by `governanceRoleAssignmentRequest`.
 

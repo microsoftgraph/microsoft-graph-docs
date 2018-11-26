@@ -1,4 +1,4 @@
-# locatedRiskEvent resource type
+---title: "locatedRiskEvent resource type"description: "A risk event detected by Azure Active Directory Identity Protection that is based on location data. Located risk event types include:"---# locatedRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -15,7 +15,7 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get locatedRiskEvent](../api/locatedriskevent_get.md) | [locatedRiskEvent](locatedriskevent.md) |Read properties and relationships of locatedRiskEvent object.|
+|[Get locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Read properties and relationships of locatedRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

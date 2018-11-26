@@ -1,4 +1,4 @@
-﻿# windowsProtectionState resource type
+---title: "windowsProtectionState resource type"description: "Device protection status entity."---# windowsProtectionState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,15 +8,15 @@ Device protection status entity.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get windowsProtectionState](../api/intune_devices_windowsprotectionstate_get.md)|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.|
-|[Update windowsProtectionState](../api/intune_devices_windowsprotectionstate_update.md)|[windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/intune_devices_windowsprotectionstate.md) object.|
+|[Get windowsProtectionState](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Read properties and relationships of the [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) object.|
+|[Update windowsProtectionState](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique Identifier for the device protection status object. This is device id of the device|
 |malwareProtectionEnabled|Boolean|Anti malware is enabled or not|
-|deviceState|[windowsDeviceHealthState](../resources/intune_devices_windowsdevicehealthstate.md)|Computer's state (like clean or pending full scan or pending reboot etc). Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Computer's state (like clean or pending full scan or pending reboot etc). Possible values are: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Boolean|Real time protection is enabled or not?|
 |networkInspectionSystemEnabled|Boolean|Network inspection system enabled or not?|
 |quickScanOverdue|Boolean|Quick scan overdue or not?|
@@ -36,7 +36,7 @@ Device protection status entity.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|detectedMalwareState|[windowsDeviceMalwareState](../resources/intune_devices_windowsdevicemalwarestate.md) collection|Device malware list|
+|detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md) collection|Device malware list|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -1,11 +1,11 @@
-# synchronizationSchema: filterOperators
+---title: "synchronizationSchema: filterOperators"description: "List all operators supported in the scoping filters."---# synchronizationSchema: filterOperators
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-List all operators supported in the [scoping filters](../resources/synchronization_filter.md).
+List all operators supported in the [scoping filters](../resources/synchronization-filter.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization_filteroperatorschema.md) collection object in the response body.
+If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.
 
 ## Example
 

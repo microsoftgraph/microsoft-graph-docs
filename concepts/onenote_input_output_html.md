@@ -1,6 +1,6 @@
-# Input and output HTML in OneNote pages
+---title: "Input and output HTML in OneNote pages"description: "The HTML that defines the page content and structure when you create or update a OneNote page is called *input HTML*. "---# Input and output HTML in OneNote pages
 
-The HTML that defines the page content and structure when you [create](onenote-create-page.md) or [update](onenote_update_page.md) a OneNote page is called *input HTML*. 
+The HTML that defines the page content and structure when you [create](onenote-create-page.md) or [update](onenote-update-page.md) a OneNote page is called *input HTML*. 
 
 The HTML that's returned when you [get page content](onenote-get-content.md) is called *output HTML*. Output HTML won't be the same as input HTML.
 
@@ -36,7 +36,7 @@ The HTML content in the page body represents the page content and structure, inc
 
 |Input attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-render-fallback | The fallback action if the [extraction](onenote-extract-data.md) fails: **render** (default) or **none** |
 | data-render-method | The [extraction](onenote-extract-data.md) method to perform, for example:<br/>`extract.businesscard` or `extract.recipe` |
 | data-render-src | The content source for the [extraction](onenote-extract-data.md). |
@@ -54,8 +54,8 @@ The OneNote APIs in Microsoft Graph wrap all body content in at least one div. T
 
 |Output attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The position and size properties of the div. |
  
 ### Non-contributing divs
@@ -111,8 +111,8 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 |Input attribute|Description|
 |:------|:------|
 | alt | The supplied alt text for the image. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
-| data-render-src |Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="https://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](../api-reference/v1.0/api/section_post_pages.md#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.|
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| data-render-src |Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="https://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](/graph/api/section-post-pages?view=graph-rest-1.0#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.|
 | data-tag | A [note tag](onenote-note-tags.md) on the element. |
 | style |The position and size properties for the image: **position** (**absolute** only), **left**, **top**, **width**, and **height**.<br/><br/>Size can be set on any image.<br/><br/>Position properties are used to create an [absolute positioned](onenote-abs-pos.md) image, only if the image is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>In the output HTML, the image size is returned separately in **width** and **height** attributes. |
 | src |Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="https://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.|
@@ -127,7 +127,7 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 |Output attribute|Description|
 |:------|:------|
 | alt | The supplied alt text for the image. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-index | The position of the image. For [split image](#split-images) support. |
 | data-fullres-src | The endpoint for the version of the image resource that was originally embedded in the page. |
 | data-fullres-src-type | The media type of the **data-fullres-src** resource, for example: `image/png` or `image/jpeg`. |
@@ -135,7 +135,7 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | data-render-original-src | The original source URL of the image, if the source image is from the public internet and was created with the **data-render-src** attribute. |
 | data-src-type | The media type of the **src** resource, for example: `image/png` or `image/jpeg`. |
 | data-tag | A [note tag](onenote-note-tags.md) on the element. |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | src | The endpoint for the version of the image resource that has been optimized for web browsers and mobile and tablet form factors. |
 | style | The position properties of the image. |
 | width, height | The width or height of the image, in pixels. |
@@ -143,7 +143,7 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 
 ### Output HTML examples for images
 
-Output **img** elements contain endpoints for image file resources and the image type, as shown below. You can make separate [GET requests to image resource endpoints](../api-reference/v1.0/api/resource_get.md) to retrieve their binary contents.
+Output **img** elements contain endpoints for image file resources and the image type, as shown below. You can make separate [GET requests to image resource endpoints](/graph/api/resource-get?view=graph-rest-1.0) to retrieve their binary contents.
 
 ```html
 <img 
@@ -243,13 +243,13 @@ Because users can move the images on the page, the returned indexes might be out
 OneNote pages can contain embedded videos represented by **iframe** elements. 
 
 > **Note:** 
-> You can also [attach a video file using an **object** element](onenote_images_files.md#adding-files).
+> You can also [attach a video file using an **object** element](onenote-images-files.md#adding-files).
 
 #### Input attributes
 
 |Input attribute|Description|
 |:------|:------|
-| data-original-src | Required. The URL of the video source. See the [list of supported video sources](onenote_images_files.md#adding-videos). <br/><br/>Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
+| data-original-src | Required. The URL of the video source. See the [list of supported video sources](onenote-images-files.md#adding-videos). <br/><br/>Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
 | width, height | The width or height of the iframe, in pixels. Example: `width=300` |
 
 #### Output attributes
@@ -284,9 +284,9 @@ OneNote pages can contain file attachments represented by **object** elements. A
 
 |Input attribute|Description|
 |:------|:------|
-| data | Required. The name of the part that represents the file in the [multipart request](../api-reference/v1.0/api/section_post_pages.md#example). |
+| data | Required. The name of the part that represents the file in the [multipart request](/graph/api/section-post-pages?view=graph-rest-1.0#example). |
 | data-attachment | Required. The file name. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The position and size properties for the object: **position** (**absolute** only), **left**, **top**, and **width**.<br/><br/>Used to create an [absolute positioned](onenote-abs-pos.md) object, only if the object is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<object style="position:absolute;top:350px;left:300px" ... />` |
 | type | Required.<br/><br/>The standard media file type. Known file types display the icon associated with the file type on the OneNote page. Unknown file types display a generic file icon. |
 <!--todo: add link to known file types--> 
@@ -297,15 +297,15 @@ OneNote pages can contain file attachments represented by **object** elements. A
 |:------|:------|
 | data | The endpoint for the file resource. |
 | data-attachment | The file name. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The position properties of the object. |
 | type | The standard media file type. |
  
 
 #### Output HTML example for objects
 
-Output **object** elements contain endpoints that link to the file resources in the page, as shown. You can make separate [GET requests to file resource endpoints](../api-reference/v1.0/api/resource_get.md) to retrieve their binary contents.
+Output **object** elements contain endpoints that link to the file resources in the page, as shown. You can make separate [GET requests to file resource endpoints](/graph/api/resource-get?view=graph-rest-1.0) to retrieve their binary contents.
 
 ```html
 <object
@@ -323,7 +323,7 @@ Paragraphs, headings, and other text containers can contain the following attrib
 
 |Input attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-tag | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element. |
 | style | The CSS [style](#styles) properties of the element. |
  
@@ -332,9 +332,9 @@ Paragraphs, headings, and other text containers can contain the following attrib
 
 |Output attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-tag | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element. |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The CSS [style](#styles) properties of the element. In the output HTML, these values may be returned inline on appropriate child elements or on **span** elements. |
  
 
@@ -367,7 +367,7 @@ Lists and list items can contain the following attributes in the input and outpu
 
 |Input attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-tag | A [note tag](onenote-note-tags.md) on a **ul**, **ol**, or **li** element. |
 | style | The **list-style-type** and the CSS [style](#styles) properties for the list or list item. |
  
@@ -376,9 +376,9 @@ Lists and list items can contain the following attributes in the input and outpu
 
 |Output attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-tag |  A [note tag](onenote-note-tags.md) on a span in an **li** element. |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The **list-style-type** and CSS [style](#styles) properties of the element. In the output HTML, list-level settings are returned on list items. Default properties are not returned. |
  
 ### List styles
@@ -451,7 +451,7 @@ Tables can contain the following attributes in the input and output HTML. The On
 
 |Input attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The CSS [style](#styles) properties of the element, and also:<br/> - **border**. Can be either 0px or 1px.<br/> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
  
 
@@ -459,8 +459,8 @@ Tables can contain the following attributes in the input and output HTML. The On
 
 |Output attribute|Description|
 |:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote_update_page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](../api-reference/v1.0/api/page_get.md) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote_update_page.md). |
+| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The CSS [style](#styles) properties of the element. |
  
 
@@ -590,7 +590,7 @@ This is the input HTML sent in the message body to create the page.
 This is the output HTML that Microsoft Graph returns when you [get page content](onenote-get-content.md).
 
 > **Note:** 
-> When you [create a page](onenote-create-page.md) or [get page metadata](../api-reference/v1.0/api/page_get.md), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
+> When you [create a page](onenote-create-page.md) or [get page metadata](/graph/api/page-get?view=graph-rest-1.0), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
 
 ```html
 <html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">
@@ -632,5 +632,5 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
 
 - [Get OneNote content and structure](onenote-get-content.md)
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote_update_page.md)
-- [Add images, videos, and files](onenote_images_files.md)
+- [Update OneNote page content](onenote-update-page.md)
+- [Add images, videos, and files](onenote-images-files.md)

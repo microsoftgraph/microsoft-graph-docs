@@ -1,4 +1,4 @@
-﻿# macOSLobApp resource type
+---title: "macOSLobApp resource type"description: "Contains properties and inherited properties for the MacOS LOB App."---# macOSLobApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,43 +6,43 @@
 
 Contains properties and inherited properties for the MacOS LOB App.
 
-Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
+Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List macOSLobApps](../api/intune_apps_macoslobapp_list.md)|[macOSLobApp](../resources/intune_apps_macoslobapp.md) collection|List properties and relationships of the [macOSLobApp](../resources/intune_apps_macoslobapp.md) objects.|
-|[Get macOSLobApp](../api/intune_apps_macoslobapp_get.md)|[macOSLobApp](../resources/intune_apps_macoslobapp.md)|Read properties and relationships of the [macOSLobApp](../resources/intune_apps_macoslobapp.md) object.|
-|[Create macOSLobApp](../api/intune_apps_macoslobapp_create.md)|[macOSLobApp](../resources/intune_apps_macoslobapp.md)|Create a new [macOSLobApp](../resources/intune_apps_macoslobapp.md) object.|
-|[Delete macOSLobApp](../api/intune_apps_macoslobapp_delete.md)|None|Deletes a [macOSLobApp](../resources/intune_apps_macoslobapp.md).|
-|[Update macOSLobApp](../api/intune_apps_macoslobapp_update.md)|[macOSLobApp](../resources/intune_apps_macoslobapp.md)|Update the properties of a [macOSLobApp](../resources/intune_apps_macoslobapp.md) object.|
+|[List macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md) collection|List properties and relationships of the [macOSLobApp](../resources/intune-apps-macoslobapp.md) objects.|
+|[Get macOSLobApp](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Read properties and relationships of the [macOSLobApp](../resources/intune-apps-macoslobapp.md) object.|
+|[Create macOSLobApp](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Create a new [macOSLobApp](../resources/intune-apps-macoslobapp.md) object.|
+|[Delete macOSLobApp](../api/intune-apps-macoslobapp-delete.md)|None|Deletes a [macOSLobApp](../resources/intune-apps-macoslobapp.md).|
+|[Update macOSLobApp](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Update the properties of a [macOSLobApp](../resources/intune-apps-macoslobapp.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
-|committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|The description of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |bundleId|String|The bundle id.|
-|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune_apps_macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
 |versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
-|childApps|[macOSLobChildApp](../resources/intune_apps_macoslobchildapp.md) collection|The app list in this bundle package|
+|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) collection|The app list in this bundle package|
 |identityVersion|String|The identity version.|
 |md5HashChunkSize|Int32|The chunk size for MD5 hash|
 |md5Hash|String collection|The MD5 hash codes|
@@ -51,12 +51,12 @@ Inherits from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
+|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|contentVersions|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) collection|The list of content versions for this app. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

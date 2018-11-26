@@ -1,4 +1,4 @@
-# reportRoot: getYammerDeviceUsageDistributionUserCounts
+---title: "reportRoot: getYammerDeviceUsageDistributionUserCounts"description: "Get the number of users by device type."---# reportRoot: getYammerDeviceUsageDistributionUserCounts
 
 Get the number of users by device type.
 
@@ -6,7 +6,7 @@ Get the number of users by device type.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

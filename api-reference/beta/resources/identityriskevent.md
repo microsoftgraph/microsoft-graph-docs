@@ -1,4 +1,4 @@
-# identityRiskEvent resource type
+---title: "identityRiskEvent resource type"description: "A risk event detected by Azure Active Directory Identity Protection. It is the base type for each specific risk event type:"---# identityRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -19,7 +19,7 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get identityRiskEvent](../api/identityriskevent_get.md) | [identityRiskEvent](identityriskevent.md) |Read properties and relationships of identityRiskEvent object.|
+|[Get identityRiskEvent](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |Read properties and relationships of identityRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

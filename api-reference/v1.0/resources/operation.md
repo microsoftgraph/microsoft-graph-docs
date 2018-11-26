@@ -1,4 +1,4 @@
-# operation resource type
+---title: "operation resource type"description: "The status of a long-running operation."---# operation resource type
 
 The status of a long-running operation.
 

@@ -1,4 +1,4 @@
-# ChartFont resource type
+---title: "ChartFont resource type"description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."---# ChartFont resource type
 
 This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 
@@ -7,8 +7,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [WorkbookChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont_update.md) | [WorkbookChartFont](chartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

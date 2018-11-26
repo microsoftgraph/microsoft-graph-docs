@@ -1,4 +1,4 @@
-﻿# mobileAppPublishingState enum type
+---title: "mobileAppPublishingState enum type"description: "Indicates the publishing state of an app."---# mobileAppPublishingState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

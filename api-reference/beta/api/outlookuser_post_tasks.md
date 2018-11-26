@@ -1,4 +1,4 @@
-# Create outlookTask
+---title: "Create outlookTask"description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."---# Create outlookTask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,12 +7,12 @@ Create an Outlook task in the default task group (`My Tasks`) and default task f
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time 
 to be always midnight in the specified time zone.
 
-By default, this operation (and the GET, PATCH, and [complete](../api/outlooktask_complete.md) task operations) returns date-related properties in UTC. 
+By default, this operation (and the GET, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC. 
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

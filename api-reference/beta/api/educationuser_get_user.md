@@ -1,4 +1,4 @@
-# Get user
+---title: "Get user"description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."---# Get user
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,7 +7,7 @@ Retrieve the simple directory **user** that corresponds to this **educationUser*
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
 
 ## Permissions
-A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

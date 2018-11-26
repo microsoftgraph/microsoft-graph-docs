@@ -1,10 +1,10 @@
-# reportRoot: getTeamsUserActivityUserCounts
+---title: "reportRoot: getTeamsUserActivityUserCounts"description: "Get the number of Microsoft Teams users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings."---# reportRoot: getTeamsUserActivityUserCounts
 
 Get the number of Microsoft Teams users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

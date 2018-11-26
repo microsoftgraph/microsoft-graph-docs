@@ -1,4 +1,4 @@
-﻿# deviceEnrollmentType enum type
+---title: "deviceEnrollmentType enum type"description: "Possible ways of adding a mobile device to management."---# deviceEnrollmentType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

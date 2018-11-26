@@ -1,8 +1,8 @@
-# Update range
+---title: "Update range"description: "Update the properties of range object."---# Update range
 
 Update the properties of range object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -88,11 +88,11 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+    "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
       Inconsistent types between parameter (Collection) and table (None)",
     "Warning: /api-reference/v1.0/api/range_update.md/update_range/values:
       Inconsistent types between parameter (Collection) and table (None)",
-    "Error: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+    "Error: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
       Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
     "Error: /api-reference/v1.0/api/range_update.md/update_range/values:
       Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."

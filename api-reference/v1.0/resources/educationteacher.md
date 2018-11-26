@@ -1,4 +1,4 @@
-# educationTeacher resource type
+---title: "educationTeacher resource type"description: "Additional information added to an educationUser that is present when the primaryRole of a user is `teacher`."---# educationTeacher resource type
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.
 

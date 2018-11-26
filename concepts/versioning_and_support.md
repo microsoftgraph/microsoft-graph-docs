@@ -1,4 +1,4 @@
-# Versioning, support, and breaking change policies for Microsoft Graph 
+---title: "Versioning, support, and breaking change policies for Microsoft Graph "description: "This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available."---# Versioning, support, and breaking change policies for Microsoft Graph 
 
 This article describes the support and breaking change policies for Microsoft Graph and the versions of the Microsoft Graph API that are currently available.
 
@@ -41,7 +41,7 @@ The following are examples of backward compatible changes:
 The following versions of the Microsoft Graph API are currently available.
 
 ### Beta version
-Exposed under `https://graph.microsoft.com/beta`, the Microsoft Graph API beta version contains features that are currently _**in preview**_. For beta API documentation, see [Microsoft Graph beta endpoint reference](../api-reference/beta/beta-overview.md). Expect breaking changes to the beta version from time to time. Do not take a production dependency on /beta APIs.
+Exposed under `https://graph.microsoft.com/beta`, the Microsoft Graph API beta version contains features that are currently _**in preview**_. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta). Expect breaking changes to the beta version from time to time. Do not take a production dependency on /beta APIs.
 
 We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability (GA), we will add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number will be incremented, with the new version becoming the current version.
 Our developer community can post feature request on [UserVoice](https://officespdev.uservoice.com/), including requests for new features as well as requests to promote existing beta APIs to the current version. 

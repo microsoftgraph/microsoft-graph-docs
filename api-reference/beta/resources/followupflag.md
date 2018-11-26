@@ -1,4 +1,4 @@
-# followupFlag resource type
+---title: "followupFlag resource type"description: "Allows setting a flag for the user to follow up on an item later. Supported items include message and contact."---# followupFlag resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,7 +7,7 @@ Allows setting a flag for the user to follow up on an item later. Supported item
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|The date and time that the follow-up was finished.|
+|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that the follow-up was finished.|
 |dueDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to be finished.|
 |flagStatus|String|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
 |startDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to begin.|

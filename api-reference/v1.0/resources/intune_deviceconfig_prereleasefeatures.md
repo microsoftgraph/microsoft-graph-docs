@@ -1,4 +1,4 @@
-﻿# prereleaseFeatures enum type
+---title: "prereleaseFeatures enum type"description: "Possible values for pre-release features."---# prereleaseFeatures enum type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

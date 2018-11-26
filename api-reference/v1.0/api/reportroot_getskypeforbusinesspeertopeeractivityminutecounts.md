@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
+---title: "reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts"description: "Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video."---# reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
 Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video.
 
@@ -6,7 +6,7 @@ Get usage trends on the length in minutes and type of peer-to-peer sessions held
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

@@ -24,15 +24,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 
-[Get site]: ../api/site_get.md
-[Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_getbypath.md
-[Get site for a group]: ../api/site_get.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
-[List pages]: ../api/sitepage_list.md
-[List root sites]: ../api/site_list.md
-[Search for sites]: ../api/site_search.md
+[Get site]: ../api/site-get.md
+[Get root site]: ../api/site-get.md
+[Get site by path]: ../api/site-getbypath.md
+[Get site for a group]: ../api/site-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[List pages]: ../api/sitepage-list.md
+[List root sites]: ../api/site-list.md
+[Search for sites]: ../api/site-search.md
 
 
 ## Properties
@@ -67,16 +67,16 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[contentType]: contentType.md
+[contentType]: contenttype.md
 [drive]: drive.md
 [identitySet]: identityset.md
-[itemAnalytics]: itemAnalytics.md
+[itemAnalytics]: itemanalytics.md
 [list]: list.md
-[sitePage]: sitePage.md
+[sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
-[sharepointIds]: sharepointIds.md
-[siteCollection]: siteCollection.md
+[sharepointIds]: sharepointids.md
+[siteCollection]: sitecollection.md
 
 ## JSON representation
 

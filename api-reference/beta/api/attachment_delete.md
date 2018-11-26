@@ -1,11 +1,11 @@
-# Delete attachment
+---title: "Delete attachment"description: "Delete an attachment from a calendar event,"---# Delete attachment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Delete an attachment from a calendar [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 * If accessing attachments in messages: Mail.ReadWrite
 * If accessing attachments in events: Calendars.ReadWrite

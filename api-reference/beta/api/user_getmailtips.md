@@ -1,4 +1,4 @@
-# user: getMailTips
+---title: "user: getMailTips"description: "Get the MailTips of one or more recipients as available to the signed-in user."---# user: getMailTips
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Note that by making a `POST` call to the `getMailTips` action, you can request s
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

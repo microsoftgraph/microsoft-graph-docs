@@ -1,9 +1,9 @@
-# Create and send a notification
+---title: "Create and send a notification"description: "Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  "---# Create and send a notification
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -22,7 +22,7 @@ POST /me/notifications/
 |:----|:-----|:-----------|
 |Authorization | string |The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
 ## Request body
-In the request body, supply a JSON representation of a [notification](../resources/projectrome_notification.md) object.
+In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
 
 ## Response
 If successful, this method returns the `201 Created` response code that indicates that the notification was successfully created and stored. 

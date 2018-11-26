@@ -1,4 +1,4 @@
-# outlookTaskFolder resource type
+---title: "outlookTaskFolder resource type"description: "A folder that contains Outlook tasks (collection of outlookTask objects). "---# outlookTaskFolder resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -12,16 +12,16 @@ You cannot rename or delete these default task group and folder, but you can cre
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get outlookTaskFolder](../api/outlooktaskfolder_get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Get the properties and relationships of the specified Outlook task folder.|
-|[Create outlookTask](../api/outlooktaskfolder_post_tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the specified task folder.|
-|[List tasks](../api/outlooktaskfolder_list_tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the specified folder.|
-|[Update](../api/outlooktaskfolder_update.md) | [outlookTaskFolder](outlooktaskfolder.md)	|Update the writable properties of an Outlook task folder. |
-|[Delete](../api/outlooktaskfolder_delete.md) | None |Delete the specified Outlook task folder.|
+|[Get outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Get the properties and relationships of the specified Outlook task folder.|
+|[Create outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the specified task folder.|
+|[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the specified folder.|
+|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)	|Update the writable properties of an Outlook task folder. |
+|[Delete](../api/outlooktaskfolder-delete.md) | None |Delete the specified Outlook task folder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Create one or more single-value extended properties in a new or existing Outlook task folder.   |
-|[Get task folder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get Outlook task folders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Create one or more multi-value extended properties in a new or existing Outlook task folder.  |
-|[Get task folder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get an Outlook task folder that contains a multi-value extended property by using `$expand`. |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Create one or more single-value extended properties in a new or existing Outlook task folder.   |
+|[Get task folder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get Outlook task folders that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Create one or more multi-value extended properties in a new or existing Outlook task folder.  |
+|[Get task folder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Get an Outlook task folder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|

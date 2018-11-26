@@ -1,4 +1,4 @@
-# notebookLinks resource type
+---title: "notebookLinks resource type"description: "Links for opening a OneNote notebook."---# notebookLinks resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

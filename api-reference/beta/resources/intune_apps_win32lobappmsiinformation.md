@@ -1,4 +1,4 @@
-﻿# win32LobAppMsiInformation resource type
+---title: "win32LobAppMsiInformation resource type"description: "Contains MSI app properties for a Win32 App."---# win32LobAppMsiInformation resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -12,7 +12,7 @@ Contains MSI app properties for a Win32 App.
 |productVersion|String|The MSI product version.|
 |upgradeCode|String|The MSI upgrade code.|
 |requiresReboot|Boolean|Whether the MSI app requires the machine to reboot to complete installation.|
-|packageType|[win32LobAppMsiPackageType](../resources/intune_apps_win32lobappmsipackagetype.md)|The MSI package type. Possible values are: `perMachine`, `perUser`, `dualPurpose`.|
+|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|The MSI package type. Possible values are: `perMachine`, `perUser`, `dualPurpose`.|
 
 ## Relationships
 None

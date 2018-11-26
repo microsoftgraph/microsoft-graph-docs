@@ -1,6 +1,6 @@
-# Use the Microsoft Graph API
+---title: "Use the Microsoft Graph API"description: "Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API."---# Use the Microsoft Graph API
 
-Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth_register_app_v2.md) and [get authentication tokens for a user](auth_v2_user.md) or [service](auth_v2_service.md), you can make requests to the Microsoft Graph API.
+Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth-register-app-v2.md) and [get authentication tokens for a user](auth-v2-user.md) or [service](auth-v2-service.md), you can make requests to the Microsoft Graph API.
 
 > **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
@@ -48,17 +48,17 @@ Microsoft Graph currently supports two versions: `v1.0` and `beta`.
 
 We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [UserVoice](https://officespdev.uservoice.com/) page.
 
-For more information about API versions, see [Versioning and support](versioning_and_support.md).
+For more information about API versions, see [Versioning and support](versioning-and-support.md).
 
 ## Resource
 
 Your URL will include the resource or resources you are interacting with in the request, such as `me`, `users`, `groups`, `drives`, and `sites`. Each of the top-level resources also include **relationships**, which you can use to access additional resources, like `me/messages` or `me/drive`. You can also interact with resources using **methods**; for example, to send an email, use `me/sendMail`.
 
-For more information about how to navigate resource relationships and methods, see [Traverse the graph](traverse_the_graph.md). 
+For more information about how to navigate resource relationships and methods, see [Traverse the graph](traverse-the-graph.md). 
 
 Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic. 
 
-For details about permissions, see [Permissions reference](permissions_reference.md).
+For details about permissions, see [Permissions reference](permissions-reference.md).
 
 ## Query parameters (optional)
 
@@ -70,7 +70,7 @@ For example, adding the following filter parameter restricts the messages return
 https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
 
-For more information about query parameters, see [Customize responses](query_parameters.md).
+For more information about query parameters, see [Customize responses](query-parameters.md).
 
 ## Next steps
 

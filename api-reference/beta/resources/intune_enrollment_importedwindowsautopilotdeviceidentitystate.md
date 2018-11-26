@@ -1,4 +1,4 @@
-﻿# importedWindowsAutopilotDeviceIdentityState resource type
+---title: "importedWindowsAutopilotDeviceIdentityState resource type"description: "Not yet documented"---# importedWindowsAutopilotDeviceIdentityState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Device status reported by Device Directory Service(DDS). Possible values are: `unknown`, `pending`, `partial`, `complete`, `error`.|
+|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)|Device status reported by Device Directory Service(DDS). Possible values are: `unknown`, `pending`, `partial`, `complete`, `error`.|
 |deviceRegistrationId|String|Device Registration ID for successfully added device reported by Device Directory Service(DDS).|
 |deviceErrorCode|Int32|Device error code reported by Device Directory Service(DDS).|
 |deviceErrorName|String|Device error name reported by Device Directory Service(DDS).|

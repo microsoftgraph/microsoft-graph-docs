@@ -1,4 +1,4 @@
-﻿# mobileAppTroubleshootingAppUpdateHistory resource type
+---title: "mobileAppTroubleshootingAppUpdateHistory resource type"description: "History Item contained in the Mobile App Troubleshooting Event."---# mobileAppTroubleshootingAppUpdateHistory resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,12 +6,12 @@
 
 History Item contained in the Mobile App Troubleshooting Event.
 
-Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)
+Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)|
+|occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 
 ## Relationships
 None

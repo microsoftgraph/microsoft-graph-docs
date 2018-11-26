@@ -1,4 +1,4 @@
-# privilegedRoleSummary resource type
+---title: "privilegedRoleSummary resource type"description: "The statistics summary for a particular role."---# privilegedRoleSummary resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ The statistics summary for a particular role.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get privilegedRoleSummary](../api/privilegedrolesummary_get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Read properties and relationships of privilegedRoleSummary object.|
+|[Get privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Read properties and relationships of privilegedRoleSummary object.|
 
 ## Properties
 | Property	   | Type	|Description|

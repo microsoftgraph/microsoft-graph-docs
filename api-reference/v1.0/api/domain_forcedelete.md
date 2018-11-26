@@ -1,4 +1,4 @@
-# Force domain deletion
+---title: "Force domain deletion"description: "Deletes a domain using an asynchronous long-running operation."---# Force domain deletion
 
 Deletes a domain using an asynchronous long-running operation.
 
@@ -14,11 +14,11 @@ The following actions are performed as part of this operation:
 
 * If one of the `applications` to be renamed is a multi-tenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain_get.md) operation.
+After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,4 @@
-﻿# managementConditionExpressionModel resource type
+---title: "managementConditionExpressionModel resource type"description: "A management condition expression model is an model representation of a management condition expression."---# managementConditionExpressionModel resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 A management condition expression model is an model representation of a management condition expression.
 
-Inherits from [managementConditionExpression](../resources/intune_fencing_managementconditionexpression.md)
+Inherits from [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
 
 ## Properties
 |Property|Type|Description|

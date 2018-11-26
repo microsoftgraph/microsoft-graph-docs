@@ -1,11 +1,11 @@
-# Create synchronizationTemplate
+---title: "Create synchronizationTemplate"description: "Create a new synchronization template for a given application."---# Create synchronizationTemplate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new synchronization template for a given application.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -27,11 +27,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## Request body
 
-In the request body, supply the [synchronizationTemplate](../resources/synchronization_synchronizationtemplate.md) object to be created. The `id`, `applicationId` and `factoryTag` properties are required. When no `schema` is provided with the template, the default schema associated with the `factoryTag` property will be used.
+In the request body, supply the [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object to be created. The `id`, `applicationId` and `factoryTag` properties are required. When no `schema` is provided with the template, the default schema associated with the `factoryTag` property will be used.
 
 ### Response
 
-If successful, this method returns a `201 Created` response code and a [synchronizationTemplate](../resources/synchronization_synchronizationtemplate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object in the response body.
 
 ### Example
 

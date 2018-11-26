@@ -1,4 +1,4 @@
-﻿# sideLoadingKey resource type
+---title: "sideLoadingKey resource type"description: "SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line Of Business Apps for a tenant."---# sideLoadingKey resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ SideLoadingKey entity is required for Windows 8 and 8.1 devices to intall Line O
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List sideLoadingKeies](../api/intune_onboarding_sideloadingkey_list.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) objects.|
-|[Get sideLoadingKey](../api/intune_onboarding_sideloadingkey_get.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Read properties and relationships of the [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
-|[Create sideLoadingKey](../api/intune_onboarding_sideloadingkey_create.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
-|[Delete sideLoadingKey](../api/intune_onboarding_sideloadingkey_delete.md)|None|Deletes a [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md).|
-|[Update sideLoadingKey](../api/intune_onboarding_sideloadingkey_update.md)|[sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md)|Update the properties of a [sideLoadingKey](../resources/intune_onboarding_sideloadingkey.md) object.|
+|[List sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) collection|List properties and relationships of the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) objects.|
+|[Get sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Read properties and relationships of the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.|
+|[Create sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Create a new [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.|
+|[Delete sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|None|Deletes a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).|
+|[Update sideLoadingKey](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Update the properties of a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.|
 
 ## Properties
 |Property|Type|Description|

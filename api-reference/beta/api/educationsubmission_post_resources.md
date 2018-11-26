@@ -1,11 +1,11 @@
-# Create educationSubmissionResource
+---title: "Create educationSubmissionResource"description: "Adds a resource to the resources list. This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag is not set to true. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or is not in that folder, the POST request will fail. "---# Create educationSubmissionResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Adds a resource to the resources list. This action can only be done by the student to whom this submission is assigned. This action will not succeed if the **allowStudentsToAddResources** flag is not set to true. If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission. If the file does not exist or is not in that folder, the POST request will fail. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

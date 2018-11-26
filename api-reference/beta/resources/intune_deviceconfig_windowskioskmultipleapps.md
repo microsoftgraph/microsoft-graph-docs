@@ -1,4 +1,4 @@
-﻿# windowsKioskMultipleApps resource type
+---title: "windowsKioskMultipleApps resource type"description: "The class used to identify the MultiMode app configuration for the kiosk configuration"---# windowsKioskMultipleApps resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,12 +6,12 @@
 
 The class used to identify the MultiMode app configuration for the kiosk configuration
 
-Inherits from [windowsKioskAppConfiguration](../resources/intune_deviceconfig_windowskioskappconfiguration.md)
+Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|apps|[windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md) collection|These are the only Windows Store Apps that will be available to launch from the Start menu.|
+|apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) collection|These are the only Windows Store Apps that will be available to launch from the Start menu.|
 |showTaskBar|Boolean|This setting allows the admin to specify whether the Task Bar is shown or not.|
 |disallowDesktopApps|Boolean|This setting indicates that desktop apps are allowed. Default to true.|
 |startMenuLayoutXml|Binary|Allows admins to override the default Start layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in Binary format.|

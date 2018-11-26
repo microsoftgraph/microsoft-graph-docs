@@ -1,10 +1,10 @@
-# Call Microsoft Graph from a Cloud Solution Provider application
+---title: "Call Microsoft Graph from a Cloud Solution Provider application"description: "This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the authorization code grant flow or the service to service client credentials flow."---# Call Microsoft Graph from a Cloud Solution Provider application
 
 > **Note:** This topic applies **only** to Microsoft Cloud Solution Provider (CSP) application developers. The [Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program enables Microsoft’s partners to resell and manage Microsoft Online services to customers.
 
 This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-**Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](../api-reference/beta/resources/intune_graph_overview.md) resources.
+**Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta) resources.
 
 ## What is a partner-managed application
 

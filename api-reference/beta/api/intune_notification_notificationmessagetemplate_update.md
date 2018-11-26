@@ -1,12 +1,12 @@
-﻿# Update notificationMessageTemplate
+---title: "Update notificationMessageTemplate"description: "Update the properties of a notificationMessageTemplate object."---# Update notificationMessageTemplate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.
+Update the properties of a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.
+In the request body, supply a JSON representation for the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.
 
-The following table shows the properties that are required when you create the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md).
+The following table shows the properties that are required when you create the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -40,13 +40,13 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
 |displayName|String|Display name for the Notification Message Template.|
 |defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.
 
 ## Example
 ### Request

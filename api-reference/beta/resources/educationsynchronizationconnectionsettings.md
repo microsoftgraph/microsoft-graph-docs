@@ -1,4 +1,4 @@
-# educationSynchronizationConnectionSettings resource type
+---title: "educationSynchronizationConnectionSettings resource type"description: "Represents the provider connection settings. This allows the system to know how to connect to the provider APIs. "---# educationSynchronizationConnectionSettings resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

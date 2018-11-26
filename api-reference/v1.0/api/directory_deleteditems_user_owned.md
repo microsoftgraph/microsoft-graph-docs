@@ -1,4 +1,4 @@
-# **List deleted items owned by a user**
+---title: "Permissions"description: "Retrieves a list of recently deleted items owned by the specified user.  "---# **List deleted items owned by a user**
 
 Retrieves a list of recently deleted items owned by the specified user.  
 

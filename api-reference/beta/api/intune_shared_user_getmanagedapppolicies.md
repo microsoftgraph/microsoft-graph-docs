@@ -1,4 +1,4 @@
-﻿# getManagedAppPolicies function
+---title: "getManagedAppPolicies function"description: "Gets app restrictions for a given user."---# getManagedAppPolicies function
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Gets app restrictions for a given user.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -40,7 +40,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection in the response body.
 
 ## Example
 

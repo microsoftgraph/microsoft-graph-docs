@@ -1,4 +1,4 @@
-﻿# eBookInstallSummary resource type
+---title: "eBookInstallSummary resource type"description: "Contains properties for the installation summary of a book for a device."---# eBookInstallSummary resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +6,8 @@ Contains properties for the installation summary of a book for a device.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
-|[Update eBookInstallSummary](../api/intune_books_ebookinstallsummary_update.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Update the properties of a [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) object.|
+|[Get eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Read properties and relationships of the [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) object.|
+|[Update eBookInstallSummary](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Update the properties of a [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,4 +1,4 @@
-# yammerDeviceUsageUserCounts resource type
+---title: "yammerDeviceUsageUserCounts resource type"description: "The following is a JSON representation of the resource."---# yammerDeviceUsageUserCounts resource type
 
 ## Properties
 

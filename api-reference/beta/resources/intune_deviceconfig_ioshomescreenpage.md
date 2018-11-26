@@ -1,4 +1,4 @@
-﻿# iosHomeScreenPage resource type
+---title: "iosHomeScreenPage resource type"description: "A page containing apps and folders on the Home Screen"---# iosHomeScreenPage resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ A page containing apps and folders on the Home Screen
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the page|
-|icons|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) collection|A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.|
+|icons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

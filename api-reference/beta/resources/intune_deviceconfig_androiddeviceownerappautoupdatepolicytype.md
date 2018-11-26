@@ -1,4 +1,4 @@
-﻿# androidDeviceOwnerAppAutoUpdatePolicyType enum type
+---title: "androidDeviceOwnerAppAutoUpdatePolicyType enum type"description: "Android Device Owner possible values for states of the device's app auto update policy."---# androidDeviceOwnerAppAutoUpdatePolicyType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

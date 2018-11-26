@@ -1,4 +1,4 @@
-﻿# androidManagedStoreAppConfigurationSchema resource type
+---title: "androidManagedStoreAppConfigurationSchema resource type"description: "Schema describing an Android application's custom configurations."---# androidManagedStoreAppConfigurationSchema resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,18 +8,18 @@ Schema describing an Android application's custom configurations.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List androidManagedStoreAppConfigurationSchemas](../api/intune_androidforwork_androidmanagedstoreappconfigurationschema_list.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md) collection|List properties and relationships of the [androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md) objects.|
-|[Get androidManagedStoreAppConfigurationSchema](../api/intune_androidforwork_androidmanagedstoreappconfigurationschema_get.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md)|Read properties and relationships of the [androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md) object.|
-|[Create androidManagedStoreAppConfigurationSchema](../api/intune_androidforwork_androidmanagedstoreappconfigurationschema_create.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md)|Create a new [androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md) object.|
-|[Delete androidManagedStoreAppConfigurationSchema](../api/intune_androidforwork_androidmanagedstoreappconfigurationschema_delete.md)|None|Deletes a [androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md).|
-|[Update androidManagedStoreAppConfigurationSchema](../api/intune_androidforwork_androidmanagedstoreappconfigurationschema_update.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md)|Update the properties of a [androidManagedStoreAppConfigurationSchema](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschema.md) object.|
+|[List androidManagedStoreAppConfigurationSchemas](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-list.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) collection|List properties and relationships of the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) objects.|
+|[Get androidManagedStoreAppConfigurationSchema](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-get.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Read properties and relationships of the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.|
+|[Create androidManagedStoreAppConfigurationSchema](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-create.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Create a new [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.|
+|[Delete androidManagedStoreAppConfigurationSchema](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-delete.md)|None|Deletes a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).|
+|[Update androidManagedStoreAppConfigurationSchema](../api/intune-androidforwork-androidmanagedstoreappconfigurationschema-update.md)|[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Update the properties of a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity the Android package name for the application the schema corresponds to|
 |exampleJson|Binary|UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app|
-|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
+|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
 
 ## Relationships
 None

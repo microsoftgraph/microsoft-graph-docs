@@ -1,4 +1,4 @@
-# educationOrganization resource type
+---title: "educationOrganization resource type"description: "Abstract entity used to model the commonality between different organization types within the education sector."---# educationOrganization resource type
 
 Abstract entity used to model the commonality between different organization types within the education sector.
 

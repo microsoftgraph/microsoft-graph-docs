@@ -1,10 +1,10 @@
-﻿# Update deviceAndAppManagementRoleDefinition
+---title: "Update deviceAndAppManagementRoleDefinition"description: "Update the properties of a deviceAndAppManagementRoleDefinition object."---# Update deviceAndAppManagementRoleDefinition
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) object.
+Update the properties of a [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -29,22 +29,22 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) object.
+In the request body, supply a JSON representation for the [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.
 
-The following table shows the properties that are required when you create the [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md).
+The following table shows the properties that are required when you create the [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|String|Display Name of the Role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|String|Description of the Role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|displayName|String|Display Name of the Role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|description|String|Description of the Role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.
 
 ## Example
 ### Request

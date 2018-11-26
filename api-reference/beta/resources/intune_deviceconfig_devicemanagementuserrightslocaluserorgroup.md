@@ -1,4 +1,4 @@
-﻿# deviceManagementUserRightsLocalUserOrGroup resource type
+---title: "deviceManagementUserRightsLocalUserOrGroup resource type"description: "Represents information for a local user or group used for user rights setting."---# deviceManagementUserRightsLocalUserOrGroup resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

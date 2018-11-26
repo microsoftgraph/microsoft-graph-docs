@@ -1,4 +1,4 @@
-# educationSubmissionResource resource type
+---title: "educationSubmissionResource resource type"description: "A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if this was copied from the assignment.  "---# educationSubmissionResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,8 +9,8 @@ A wrapper around a resource for use on a submission. The wrapper adds a pointer 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationSubmissionResource](../api/educationsubmissionresource_get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
-|[Delete](../api/educationsubmissionresource_delete.md) | None |Delete an **educationSubmissionResource** object. |
+|[Get educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
+|[Delete](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
 
 ## Properties
 | Property	   | Type	|Description|

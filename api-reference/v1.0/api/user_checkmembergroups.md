@@ -1,4 +1,4 @@
-# checkMemberGroups
+---title: "checkMemberGroups"description: "Check for membership in the specified list of groups. Returns from the list those groups of which"---# checkMemberGroups
 
 Check for membership in the specified list of groups. Returns from the list those groups of which
 the user has a direct or transitive membership.
@@ -9,7 +9,7 @@ in an Office 365 Group is always direct.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |

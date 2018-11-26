@@ -1,4 +1,4 @@
-# servicePlanInfo resource type
+---title: "servicePlanInfo resource type"description: "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the subscribedSku entity is a collection of **servicePlanInfo**."---# servicePlanInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

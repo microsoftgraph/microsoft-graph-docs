@@ -1,4 +1,4 @@
-# expressionInputObject resource type
+---title: "expressionInputObject resource type"description: "Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation."---# expressionInputObject resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,8 +7,8 @@ Represents an object to be used as input test data when the [synchronizationSche
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|[objectDefinition](synchronization_objectdefinition.md)|Definition of the test object.|
-|properties|[stringKeyObjectValuePair](synchronization_stringkeyobjectvaluepair.md) collection|Property values of the test object.|
+|definition|[objectDefinition](synchronization-objectdefinition.md)|Definition of the test object.|
+|properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection|Property values of the test object.|
 
 ## JSON representation
 

@@ -1,4 +1,4 @@
-﻿# androidDeviceOwnerSystemUpdateInstallType enum type
+---title: "androidDeviceOwnerSystemUpdateInstallType enum type"description: "System Update Types for Android Device Owner."---# androidDeviceOwnerSystemUpdateInstallType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

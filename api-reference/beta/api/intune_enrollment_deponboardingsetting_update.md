@@ -1,12 +1,12 @@
-﻿# Update depOnboardingSetting
+---title: "Update depOnboardingSetting"description: "Update the properties of a depOnboardingSetting object."---# Update depOnboardingSetting
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [depOnboardingSetting](../resources/intune_enrollment_deponboardingsetting.md) object.
+Update the properties of a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [depOnboardingSetting](../resources/intune_enrollment_deponboardingsetting.md) object.
+In the request body, supply a JSON representation for the [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.
 
-The following table shows the properties that are required when you create the [depOnboardingSetting](../resources/intune_enrollment_deponboardingsetting.md).
+The following table shows the properties that are required when you create the [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the [
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
-|tokenType|[depTokenType](../resources/intune_enrollment_deptokentype.md)|Gets or sets the Dep Token Type. Possible values are: `none`, `dep`, `appleSchoolManager`.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. Possible values are: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Gets synced device count|
 |defaultProfileDisplayName|String|Gets synced device count|
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune_enrollment_deponboardingsetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.
 
 ## Example
 ### Request

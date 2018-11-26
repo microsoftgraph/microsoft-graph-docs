@@ -1,10 +1,10 @@
-﻿# androidMobileAppIdentifier resource type
+---title: "androidMobileAppIdentifier resource type"description: "The identifier for an Android app."---# androidMobileAppIdentifier resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The identifier for an Android app.
 
-Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
+Inherits from [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## Properties
 |Property|Type|Description|

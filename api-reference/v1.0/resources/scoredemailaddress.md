@@ -1,4 +1,4 @@
-# scoredEmailAddress resource type
+---title: "scoredEmailAddress resource type"description: "Represents a scored email address."---# scoredEmailAddress resource type
 
 Represents a scored email address.
 

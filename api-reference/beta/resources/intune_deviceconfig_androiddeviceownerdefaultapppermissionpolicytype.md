@@ -1,4 +1,4 @@
-﻿# androidDeviceOwnerDefaultAppPermissionPolicyType enum type
+---title: "androidDeviceOwnerDefaultAppPermissionPolicyType enum type"description: "Android Device Owner default app permission policy type."---# androidDeviceOwnerDefaultAppPermissionPolicyType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

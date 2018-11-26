@@ -1,4 +1,4 @@
-# emailAddress resource type
+---title: "emailAddress resource type"description: "Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner."---# emailAddress resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

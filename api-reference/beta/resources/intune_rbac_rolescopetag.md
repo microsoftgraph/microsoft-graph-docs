@@ -1,4 +1,4 @@
-﻿# roleScopeTag resource type
+---title: "roleScopeTag resource type"description: "Role Scope Tag"---# roleScopeTag resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ Role Scope Tag
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List roleScopeTags](../api/intune_rbac_rolescopetag_list.md)|[roleScopeTag](../resources/intune_rbac_rolescopetag.md) collection|List properties and relationships of the [roleScopeTag](../resources/intune_rbac_rolescopetag.md) objects.|
-|[Get roleScopeTag](../api/intune_rbac_rolescopetag_get.md)|[roleScopeTag](../resources/intune_rbac_rolescopetag.md)|Read properties and relationships of the [roleScopeTag](../resources/intune_rbac_rolescopetag.md) object.|
-|[Create roleScopeTag](../api/intune_rbac_rolescopetag_create.md)|[roleScopeTag](../resources/intune_rbac_rolescopetag.md)|Create a new [roleScopeTag](../resources/intune_rbac_rolescopetag.md) object.|
-|[Delete roleScopeTag](../api/intune_rbac_rolescopetag_delete.md)|None|Deletes a [roleScopeTag](../resources/intune_rbac_rolescopetag.md).|
-|[Update roleScopeTag](../api/intune_rbac_rolescopetag_update.md)|[roleScopeTag](../resources/intune_rbac_rolescopetag.md)|Update the properties of a [roleScopeTag](../resources/intune_rbac_rolescopetag.md) object.|
+|[List roleScopeTags](../api/intune-rbac-rolescopetag-list.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|List properties and relationships of the [roleScopeTag](../resources/intune-rbac-rolescopetag.md) objects.|
+|[Get roleScopeTag](../api/intune-rbac-rolescopetag-get.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Read properties and relationships of the [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
+|[Create roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Create a new [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
+|[Delete roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|None|Deletes a [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
+|[Update roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Update the properties of a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
 
 ## Properties
 |Property|Type|Description|

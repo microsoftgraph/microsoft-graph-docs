@@ -1,12 +1,12 @@
-﻿# Update importedDeviceIdentityResult
+---title: "Update importedDeviceIdentityResult"description: "Update the properties of a importedDeviceIdentityResult object."---# Update importedDeviceIdentityResult
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [importedDeviceIdentityResult](../resources/intune_enrollment_importeddeviceidentityresult.md) object.
+Update the properties of a [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,27 +30,27 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [importedDeviceIdentityResult](../resources/intune_enrollment_importeddeviceidentityresult.md) object.
+In the request body, supply a JSON representation for the [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) object.
 
-The following table shows the properties that are required when you create the [importedDeviceIdentityResult](../resources/intune_enrollment_importeddeviceidentityresult.md).
+The following table shows the properties that are required when you create the [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune_enrollment_importeddeviceidentitytype.md)|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `imei`, `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|description|String|The description of the device Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|id|String|Id of the imported device identity Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|importedDeviceIdentifier|String|Imported Device Identifier Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Possible values are: `unknown`, `imei`, `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|description|String|The description of the device Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [importedDeviceIdentityResult](../resources/intune_enrollment_importeddeviceidentityresult.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) object in the response body.
 
 ## Example
 ### Request

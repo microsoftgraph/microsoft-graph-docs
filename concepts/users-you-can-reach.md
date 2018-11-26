@@ -1,4 +1,4 @@
-# Users you can reach with Microsoft Graph
+---title: "Users you can reach with Microsoft Graph"description: "Microsoft offers services and solutions that expand modern work and modern life. "---# Users you can reach with Microsoft Graph
 
 Microsoft offers services and solutions that expand modern work and modern life. 
 
@@ -16,7 +16,7 @@ Use Microsoft Graph to reach users and organizations that have licenses to Micro
 -	Enterprise Mobility + Security 
 -	Windows 10 
 
-With their consent, you can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. To learn more, see [Major services and features in Microsoft Graph](../concepts/overview-major-services.md).
+With their consent, you can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. To learn more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
 ### Worldwide, multigeo, and national clouds
 The services in Microsoft Graph are part of the Microsoft worldwide cloud. In addition, Microsoft offers:
@@ -24,7 +24,7 @@ The services in Microsoft Graph are part of the Microsoft worldwide cloud. In ad
 -	Multigeo capabilities for multinational organizations with multiple geographic regions and/or countries within their existing tenant.
 -	National cloud deployments for US government, Germany, and Azure and Office 365 operated by 21Vianet in China.
 
-With their consent, you can use Microsoft Graph to reach users and organizations whose services are in the worldwide cloud, including organizations with multigeo services, and you can also use Microsoft Graph to access users and organizations in national cloud deployments, but special considerations are required for cloud sovereignty. To find out more, see [National cloud deployments](../concepts/deployments.md).
+With their consent, you can use Microsoft Graph to reach users and organizations whose services are in the worldwide cloud, including organizations with multigeo services, and you can also use Microsoft Graph to access users and organizations in national cloud deployments, but special considerations are required for cloud sovereignty. To find out more, see [National cloud deployments](deployments.md).
 
 ## Connect to school services
 
@@ -36,5 +36,5 @@ Use Microsoft Graph to reach students, teachers, and schools with licenses to Mi
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](../concepts/auth_overview.md) in your app.
-- Start [using the API](../concepts/use_the_api.md).
+- Find out how to [get an auth token](auth-overview.md) in your app.
+- Start [using the API](use-the-api.md).

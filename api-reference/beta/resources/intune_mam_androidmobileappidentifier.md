@@ -1,4 +1,4 @@
-﻿# androidMobileAppIdentifier resource type
+---title: "androidMobileAppIdentifier resource type"description: "The identifier for an Android app."---# androidMobileAppIdentifier resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 The identifier for an Android app.
 
-Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
+Inherits from [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## Properties
 |Property|Type|Description|

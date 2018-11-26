@@ -1,4 +1,4 @@
-# Create a directory setting
+---title: "Create a directory setting"description: "Use this API to create a new setting, based on the templates available in directorySettingTemplates. These settings can be at the tenant-level or at an object level (currently only for groups). The creation request must provide settingValues for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available."---# Create a directory setting
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,7 +10,7 @@ For a list of templates and the properties they support in beta, use a [director
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,33 +1,33 @@
-﻿# iosVppEBook resource type
+---title: "iosVppEBook resource type"description: "A class containing the properties for iOS Vpp eBook."---# iosVppEBook resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A class containing the properties for iOS Vpp eBook.
 
-Inherits from [managedEBook](../resources/intune_books_managedebook.md)
+Inherits from [managedEBook](../resources/intune-books-managedebook.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosVppEBooks](../api/intune_books_iosvppebook_list.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md) collection|List properties and relationships of the [iosVppEBook](../resources/intune_books_iosvppebook.md) objects.|
-|[Get iosVppEBook](../api/intune_books_iosvppebook_get.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Read properties and relationships of the [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
-|[Create iosVppEBook](../api/intune_books_iosvppebook_create.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Create a new [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
-|[Delete iosVppEBook](../api/intune_books_iosvppebook_delete.md)|None|Deletes a [iosVppEBook](../resources/intune_books_iosvppebook.md).|
-|[Update iosVppEBook](../api/intune_books_iosvppebook_update.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|Update the properties of a [iosVppEBook](../resources/intune_books_iosvppebook.md) object.|
+|[List iosVppEBooks](../api/intune-books-iosvppebook-list.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) collection|List properties and relationships of the [iosVppEBook](../resources/intune-books-iosvppebook.md) objects.|
+|[Get iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Read properties and relationships of the [iosVppEBook](../resources/intune-books-iosvppebook.md) object.|
+|[Create iosVppEBook](../api/intune-books-iosvppebook-create.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Create a new [iosVppEBook](../resources/intune-books-iosvppebook.md) object.|
+|[Delete iosVppEBook](../api/intune-books-iosvppebook-delete.md)|None|Deletes a [iosVppEBook](../resources/intune-books-iosvppebook.md).|
+|[Update iosVppEBook](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Update the properties of a [iosVppEBook](../resources/intune-books-iosvppebook.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|description|String|Description. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|Description. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|The Vpp token ID.|
 |appleId|String|The Apple ID associated with Vpp token.|
 |vppOrganizationName|String|The Vpp token's organization name.|
@@ -40,10 +40,10 @@ Inherits from [managedEBook](../resources/intune_books_managedebook.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|The list of assignments for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) collection|The list of assignments for this eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Mobile App Install Summary. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|userStateSummary|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) collection|The list of installation states for this eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

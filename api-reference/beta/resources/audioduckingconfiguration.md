@@ -1,4 +1,4 @@
-# audioDuckingConfiguration resource type
+---title: "audioDuckingConfiguration resource type"description: "Parameters for ducking of other sources (phasing in and out of other sources.)"---# audioDuckingConfiguration resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

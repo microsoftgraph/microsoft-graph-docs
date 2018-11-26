@@ -1,4 +1,4 @@
-# educationSynchronizationProfile resource type
+---title: "educationSynchronizationProfile resource type"description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync."---# educationSynchronizationProfile resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,17 +8,17 @@ Represents a set of configurations used to synchronize education entities and ro
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [List synchronization profiles](../api/educationsynchronizationprofile_list.md) | **educationSynchronizationProfile** collection | Get a list of all the synchronization profiles in the tenant. |
-| [Get synchronization profile](../api/educationsynchronizationprofile_get.md) | **educationSynchronizationProfile** | Retrieve a specific profile given the profile identifier. |
-| [Create synchronization profile](../api/educationsynchronizationprofile_post.md) | None | Create a new synchronization profile. |
-| [Delete synchronization profile](../api/educationsynchronizationprofile_delete.md) | **educationSynchronizationProfile** | Delete a specific profile given the profile identifier. |
-| [Pause an ongoing sync](../api/educationsynchronizationprofile_pause.md) | None | Pause an ongoing synchronization. |
-| [Resume a paused sync](../api/educationsynchronizationprofile_resume.md) | None | Resume a paused synchronization. |
-| [Reset a sync](../api/educationsynchronizationprofile_reset.md) | None | Reset the state of the profile and restart synchronization. |
-| [Start sync for uploaded files](../api/educationsynchronizationprofile_start.md) | [educationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md) collection| Verify the uploaded source files and start synchronization. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
-| [Get an upload URL](../api/educationsynchronizationprofile_uploadurl.md) | string | Return the short-lived URL to upload CSV data files. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
-| [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md) | [status](educationsynchronizationprofilestatus.md) | Return the status of a specific synchronization profile. |
-| [Get synchronization errors](../api/educationsynchronizationerrors_get.md) | [educationSynchronizationError](educationsynchronizationerror.md) collection| Get all the errors generated during synchronization. |
+| [List synchronization profiles](../api/educationsynchronizationprofile-list.md) | **educationSynchronizationProfile** collection | Get a list of all the synchronization profiles in the tenant. |
+| [Get synchronization profile](../api/educationsynchronizationprofile-get.md) | **educationSynchronizationProfile** | Retrieve a specific profile given the profile identifier. |
+| [Create synchronization profile](../api/educationsynchronizationprofile-post.md) | None | Create a new synchronization profile. |
+| [Delete synchronization profile](../api/educationsynchronizationprofile-delete.md) | **educationSynchronizationProfile** | Delete a specific profile given the profile identifier. |
+| [Pause an ongoing sync](../api/educationsynchronizationprofile-pause.md) | None | Pause an ongoing synchronization. |
+| [Resume a paused sync](../api/educationsynchronizationprofile-resume.md) | None | Resume a paused synchronization. |
+| [Reset a sync](../api/educationsynchronizationprofile-reset.md) | None | Reset the state of the profile and restart synchronization. |
+| [Start sync for uploaded files](../api/educationsynchronizationprofile-start.md) | [educationFileSynchronizationVerificationMessage](educationfilesynchronizationverificationmessage.md) collection| Verify the uploaded source files and start synchronization. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
+| [Get an upload URL](../api/educationsynchronizationprofile-uploadurl.md) | string | Return the short-lived URL to upload CSV data files. Applies only when the data provider is [educationCsvDataProvider](educationcsvdataprovider.md). |
+| [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md) | [status](educationsynchronizationprofilestatus.md) | Return the status of a specific synchronization profile. |
+| [Get synchronization errors](../api/educationsynchronizationerrors-get.md) | [educationSynchronizationError](educationsynchronizationerror.md) collection| Get all the errors generated during synchronization. |
 
 ## Properties
 

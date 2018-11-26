@@ -1,4 +1,4 @@
-﻿# targetApps action
+---title: "targetApps action"description: "Not yet documented"---# targetApps action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|apps|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) collection|Not yet documented|
+|apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) collection|Not yet documented|
 
 
 

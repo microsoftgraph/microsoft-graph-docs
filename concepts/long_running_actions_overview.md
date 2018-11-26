@@ -15,13 +15,13 @@ This pattern provides your app a wait to poll for status updates on a long runni
 The general pattern follows these steps:
 
 1. Your app requests a long running action via the API. The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.
-2. Your app requests the action status report URL and receives an [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) response with the progress of the long running action.
+2. Your app requests the action status report URL and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response with the progress of the long running action.
 3. The long running action completes. 
-4. Your app requests the action status report URL again and receives an [AsyncJobStatus](../api-reference/beta/resources/asyncjobstatus.md) response showing the completion of the action.
+4. Your app requests the action status report URL again and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response showing the completion of the action.
 
 ## Initial action request
 
-Let's walk through the steps for an example [DriveItem Copy](../api-reference/beta/api/driveitem_copy.md) scenario.
+Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem-copy?view=graph-rest-beta) scenario.
 In this scenario, your app requests to copy a folder that contains a large amount of data.
 This request will likely take several seconds to complete since the amount of data is large.
 
@@ -143,11 +143,11 @@ Long running actions are supported on the following API methods
 
 | **Resource** | **API** |
 |:------ | :------ |
-| DriveItem | [Copy](../api-reference/beta/api/driveitem_copy.md) |
+| DriveItem | [Copy](/graph/api/driveitem-copy?view=graph-rest-beta) |
 
 ## Prerequisites
 
-The same [permissions](./permissions_reference.md) that are required to perform a long running action are also required to query the status of a long running action.
+The same [permissions](./permissions-reference.md) that are required to perform a long running action are also required to query the status of a long running action.
 
 
 

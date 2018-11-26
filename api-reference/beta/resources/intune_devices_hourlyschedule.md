@@ -1,4 +1,4 @@
-﻿# hourlySchedule resource type
+---title: "hourlySchedule resource type"description: "Hourly run schedule of a recurring device management script."---# hourlySchedule resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 Hourly run schedule of a recurring device management script.
 
-Inherits from [runSchedule](../resources/intune_devices_runschedule.md)
+Inherits from [runSchedule](../resources/intune-devices-runschedule.md)
 
 ## Properties
 |Property|Type|Description|

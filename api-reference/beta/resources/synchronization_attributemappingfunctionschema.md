@@ -1,21 +1,21 @@
-# attributeMappingFunctionSchema resource type
+---title: "attributeMappingFunctionSchema resource type"description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."---# attributeMappingFunctionSchema resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Describes a function that can be used in an [attribute mapping](synchronization_attributeMapping.md) to transform values during synchronization.
+Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization_synchronizationschema_functions.md) | [attributeMappingFunctionSchema](../resources/synchronization_attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
+|[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
 
 ## Properties
 
 | Property                   | Type                      | Description    |
 |:---------------------------|:-------------------------|:---------------|
 |name                        |String                    |Operator name. |
-|parameters                  |[attributeMappingParameterSchema](../resources/synchronization_attributemappingparameterschema.md) collection  |Collection of function parameters.|
+|parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection  |Collection of function parameters.|
 
 ## JSON representation
 

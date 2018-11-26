@@ -1,4 +1,4 @@
-# riskyUsers resource type
+---title: "riskyUsers resource type"description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."---# riskyUsers resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,8 +10,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskyUsers](../api/riskyusers_list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
-|[Get riskyUsers](../api/riskyusers_get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
+|[List riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyuser.md) |List risky users and their properties.|
+|[Get riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyuser.md)|Get a specific risky user and its properties.|
 
 ## Properties
 

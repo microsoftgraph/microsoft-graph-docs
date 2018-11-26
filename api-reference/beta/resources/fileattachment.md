@@ -1,4 +1,4 @@
-# fileAttachment resource type
+---title: "fileAttachment resource type"description: "A file (such as a text file or Word document) attached to an event,"---# fileAttachment resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -17,8 +17,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete fileAttachment object. |
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete fileAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|

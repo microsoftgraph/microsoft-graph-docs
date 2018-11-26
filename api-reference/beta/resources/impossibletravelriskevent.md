@@ -1,4 +1,4 @@
-# impossibleTravelRiskEvent resource type
+---title: "impossibleTravelRiskEvent resource type"description: "A risk event detected by Azure Active Directory Identity Protection where two account sign-ins occur from locations atypical for the user and it would be impossible to travel between the locations in the duration between the sign-ins. Complete information about risk events can be found in the Azure AD Identity Protection documentation."---# impossibleTravelRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get impossibleTravelRiskEvent](../api/impossibletravelriskevent_get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Read properties and relationships of impossibleTravelRiskEvent object.|
+|[Get impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Read properties and relationships of impossibleTravelRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,11 +1,11 @@
-# Get a reply to a channel message
+---title: "Get a reply to a channel message"description: "Get a single reply to a message in a channel of a team."---# Get a reply to a channel message
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a single reply to a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|

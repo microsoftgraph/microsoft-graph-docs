@@ -1,4 +1,4 @@
-# Get Contract
+---title: "Get Contract"description: "Retrieve the properties and relationships of contract object."---# Get Contract
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@ Retrieve the properties and relationships of [contract](../resources/contract.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

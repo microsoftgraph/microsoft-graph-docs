@@ -1,4 +1,4 @@
-# ChartAxisTitle resource type
+---title: "ChartAxisTitle resource type"description: "Represents the title of a chart axis."---# ChartAxisTitle resource type
 
 Represents the title of a chart axis.
 
@@ -7,8 +7,8 @@ Represents the title of a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle_update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
+|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|

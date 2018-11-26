@@ -1,9 +1,9 @@
-# Create device
+---title: "Create device"description: "Create and register a new device in the organization."---# Create device
 
 Create and register a new device in the organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

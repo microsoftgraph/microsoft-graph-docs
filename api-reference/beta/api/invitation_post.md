@@ -1,4 +1,4 @@
-# Create invitation
+---title: "Create invitation"description: "Use this API to create a new invitation. Invitation adds an external user to the organization."---# Create invitation
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,7 +10,7 @@ When creating a new invitation you have several options available:
 2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

@@ -1,4 +1,4 @@
-﻿# assign action
+---title: "assign action"description: "Replace all targeted groups for a policy."---# assign action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 Replace all targeted groups for a policy.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,12 +36,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|List of office configuration assignments|
+|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection|List of office configuration assignments|
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection in the response body.
 
 ## Example
 ### Request

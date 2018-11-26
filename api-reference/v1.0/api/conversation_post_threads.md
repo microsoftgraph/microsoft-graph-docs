@@ -1,14 +1,14 @@
-# Create thread
+---title: "Create thread"description: "Create a new thread in the specified conversation. "---# Create thread
 
 Create a new thread in the specified conversation. 
 
-A thread and post are created as specified. Use [reply thread](conversationthread_reply.md) to further post 
-to that thread. Or, if you get the post ID, you can also [reply](post_reply.md) to that post in that thread.
+A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post 
+to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.
 
-Note: You can also [start a new conversation by first creating a thread](group_post_threads.md).
+Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

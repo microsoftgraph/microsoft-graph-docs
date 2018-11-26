@@ -1,4 +1,4 @@
-﻿# deviceManagementSubscriptionState enum type
+---title: "deviceManagementSubscriptionState enum type"description: "Tenant mobile device management subscription state."---# deviceManagementSubscriptionState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

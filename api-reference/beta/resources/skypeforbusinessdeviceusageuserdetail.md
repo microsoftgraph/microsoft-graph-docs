@@ -1,4 +1,4 @@
-# skypeForBusinessDeviceUsageUserDetail resource type
+---title: "skypeForBusinessDeviceUsageUserDetail resource type"description: "The following is a JSON representation of the resource."---# skypeForBusinessDeviceUsageUserDetail resource type
 
 ## Properties
 

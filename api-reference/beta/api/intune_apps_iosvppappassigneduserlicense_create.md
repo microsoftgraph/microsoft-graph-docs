@@ -1,12 +1,12 @@
-﻿# Create iosVppAppAssignedUserLicense
+---title: "Create iosVppAppAssignedUserLicense"description: "Create a new iosVppAppAssignedUserLicense object."---# Create iosVppAppAssignedUserLicense
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [iosVppAppAssignedUserLicense](../resources/intune_apps_iosvppappassigneduserlicense.md) object.
+Create a new [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,16 +36,16 @@ The following table shows the properties that are required when you create the i
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|
-|userEmailAddress|String|The user email address. Inherited from [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|
-|userId|String|The user ID. Inherited from [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|
-|userName|String|The user name. Inherited from [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|
-|userPrincipalName|String|The user principal name. Inherited from [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|
+|id|String|Key of the entity. Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|String|The user email address. Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userId|String|The user ID. Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userName|String|The user name. Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|String|The user principal name. Inherited from [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [iosVppAppAssignedUserLicense](../resources/intune_apps_iosvppappassigneduserlicense.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) object in the response body.
 
 ## Example
 ### Request

@@ -1,4 +1,4 @@
-﻿# intuneBrandingProfile resource type
+---title: "intuneBrandingProfile resource type"description: "This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal."---# intuneBrandingProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ This entity contains data which is used in customizing the tenant level appearan
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List intuneBrandingProfiles](../api/intune_wip_intunebrandingprofile_list.md)|[intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) collection|List properties and relationships of the [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) objects.|
-|[Get intuneBrandingProfile](../api/intune_wip_intunebrandingprofile_get.md)|[intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md)|Read properties and relationships of the [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) object.|
-|[Create intuneBrandingProfile](../api/intune_wip_intunebrandingprofile_create.md)|[intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md)|Create a new [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) object.|
-|[Delete intuneBrandingProfile](../api/intune_wip_intunebrandingprofile_delete.md)|None|Deletes a [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md).|
-|[Update intuneBrandingProfile](../api/intune_wip_intunebrandingprofile_update.md)|[intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md)|Update the properties of a [intuneBrandingProfile](../resources/intune_wip_intunebrandingprofile.md) object.|
+|[List intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) collection|List properties and relationships of the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) objects.|
+|[Get intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Read properties and relationships of the [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
+|[Create intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Create a new [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
+|[Delete intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|None|Deletes a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
+|[Update intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -31,12 +31,12 @@ This entity contains data which is used in customizing the tenant level appearan
 |privacyUrl|String|URL to the company/organization’s privacy policy.|
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|themeColor|[rgbColor](../resources/intune_shared_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
-|themeColorLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps on theme color backgrounds.|
-|lightBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps on light backgrounds.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune_shared_mimecontent.md)|Customized image displayed in Company Portal apps landing page|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps on theme color backgrounds.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps on light backgrounds.|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
 
 ## Relationships
 None

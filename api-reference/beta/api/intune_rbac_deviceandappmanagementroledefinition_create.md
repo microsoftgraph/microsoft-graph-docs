@@ -1,12 +1,12 @@
-﻿# Create deviceAndAppManagementRoleDefinition
+---title: "Create deviceAndAppManagementRoleDefinition"description: "Create a new deviceAndAppManagementRoleDefinition object."---# Create deviceAndAppManagementRoleDefinition
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) object.
+Create a new [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,18 +36,18 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|String|Display Name of the Role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|String|Description of the Role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|permissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|String|Key of the entity. This is read-only and automatically generated. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|displayName|String|Display Name of the Role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|description|String|Description of the Role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.
 
 ## Example
 ### Request

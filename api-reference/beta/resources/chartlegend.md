@@ -1,4 +1,4 @@
-# ChartLegend resource type
+---title: "ChartLegend resource type"description: "Represents the legend in a chart."---# ChartLegend resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,8 +9,8 @@ Represents the legend in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)	|Update ChartLegend object. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md)	|Update ChartLegend object. |
 
 ## Properties
 | Property	   | Type	|Description|

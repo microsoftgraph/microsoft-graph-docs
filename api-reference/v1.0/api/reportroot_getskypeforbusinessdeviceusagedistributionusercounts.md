@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
+---title: "reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts"description: "Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad."---# reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
 Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.
 
@@ -6,7 +6,7 @@ Get the number of users using unique devices in your organization. The report wi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

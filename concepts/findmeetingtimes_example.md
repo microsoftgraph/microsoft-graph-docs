@@ -1,7 +1,7 @@
-# Find possible meeting times on the Outlook calendar
+---title: "Find possible meeting times on the Outlook calendar"description: "In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use "---# Find possible meeting times on the Outlook calendar
 
 In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
-[findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) to identify any possible meeting times that satisfy time, location, and other constraints.   
+[findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) to identify any possible meeting times that satisfy time, location, and other constraints.   
 
 The **findMeetingTimes** action lets you specify conditions such as the meeting date/time range, duration, optional or required attendees, and
 nature of the activity (**activityDomain**). The action takes into account the attendees' and organizer's normal work schedules and free/busy status, and suggests 
@@ -44,7 +44,7 @@ As the attendee is out-of-office on April 18-19, and there is no commonly availa
 with the reason (**emptySuggestionsReason**) that attendees are not available.
 2. The second call looks for availability on April 21 and returns a suggestion of 2-4pm.
 
-The two calls to **findMeetingTimes** include the following parameters. All [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) for **findMeetingTimes** are optional.
+The two calls to **findMeetingTimes** include the following parameters. All [parameters](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body) for **findMeetingTimes** are optional.
 
 - **attendees**: one attendee, Samantha Booth, set as `required` for the **type** property
 - **locationConstraint**: does not require any location suggestion
@@ -241,12 +241,12 @@ Content-Length: 714
 
 There are times when not all attendees can attend a meeting. You can have **findMeetingTimes** suggest a time if the _confidence_ for attendance reaches a certain percentage,
 by specifying the **minimumAttendeePercentage** optional parameter. Learn more about the 
-[confidence of a meeting suggestion](../api-reference/v1.0/api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)
-and other [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body), and apply them as appropriate for meetings of larger sizes.
+[confidence of a meeting suggestion](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#the-confidence-of-a-meeting-suggestion)
+and other [parameters](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body), and apply them as appropriate for meetings of larger sizes.
 
 After getting meeting time suggestions, you may want to:
 
-1. [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md).
-2. [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event.
+1. [Create an event and send it as a meeting request](/graph/api/user-post-events?view=graph-rest-1.0).
+2. [Add an attachment](/graph/api/event-post-attachments?view=graph-rest-1.0) to the event.
 
 Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).

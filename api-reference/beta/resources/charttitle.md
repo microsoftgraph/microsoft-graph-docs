@@ -1,4 +1,4 @@
-# ChartTitle resource type
+---title: "ChartTitle resource type"description: "Represents a chart title object of a chart."---# ChartTitle resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,8 +9,8 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)	|Update ChartTitle object. |
+|[Get ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
+|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)	|Update ChartTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|

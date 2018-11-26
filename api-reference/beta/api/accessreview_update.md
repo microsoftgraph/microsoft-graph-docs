@@ -1,14 +1,14 @@
-# Update accessReview
+---title: "Update accessReview"description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."---# Update accessReview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
 
-This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview_addreviewer.md) or [removeReviewer](accessreview_removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview_stop.md) API, and to apply the decisions to the target group or app access rights, use the [apply](accessreview_apply.md) API. 
+This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API, and to apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|

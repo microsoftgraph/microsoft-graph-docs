@@ -1,8 +1,8 @@
-# RangeFill: clear
+---title: "RangeFill: clear"description: "Resets the range background."---# RangeFill: clear
 
 Resets the range background.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

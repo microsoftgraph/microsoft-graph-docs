@@ -1,21 +1,21 @@
-# conversation resource type
+---title: "conversation resource type"description: "A conversation is a collection of threads, and a thread contains posts to that thread. All threads and posts in a conversation share the same subject."---# conversation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 A conversation is a collection of [threads](conversationthread.md), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.
 
-This resource supports subscribing to [change notifications](../../../concepts/webhooks.md).
+This resource supports subscribing to [change notifications](/graph/webhooks).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List conversations](../api/group_list_conversations.md) | [conversation](conversation.md) collection |Get the list of conversations in this group.|
-|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by including a thread and a post.|
-|[Get conversation](../api/conversation_get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
-|[Delete](../api/conversation_delete.md) | None |Delete conversation object. |
-|[List conversation threads](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads in a group conversation.|
-|[Create conversation thread](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
+|[List conversations](../api/group-list-conversations.md) | [conversation](conversation.md) collection |Get the list of conversations in this group.|
+|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Create a new conversation by including a thread and a post.|
+|[Get conversation](../api/conversation-get.md) | [conversation](conversation.md) |Read properties and relationships of conversation object.|
+|[Delete](../api/conversation-delete.md) | None |Delete conversation object. |
+|[List conversation threads](../api/conversation-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads in a group conversation.|
+|[Create conversation thread](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) collection| Create a thread in the specified conversation.|
 
 ## Properties
 | Property	   | Type	|Description|

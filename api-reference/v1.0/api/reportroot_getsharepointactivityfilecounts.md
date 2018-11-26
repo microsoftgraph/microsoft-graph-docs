@@ -1,4 +1,4 @@
-# reportRoot: getSharePointActivityFileCounts
+---title: "reportRoot: getSharePointActivityFileCounts"description: "Get the number of unique, licensed users who interacted with files stored on SharePoint sites."---# reportRoot: getSharePointActivityFileCounts
 
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
@@ -6,7 +6,7 @@ Get the number of unique, licensed users who interacted with files stored on Sha
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

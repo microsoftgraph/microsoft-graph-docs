@@ -1,12 +1,12 @@
-﻿# Update embeddedSIMActivationCodePoolAssignment
+---title: "Update embeddedSIMActivationCodePoolAssignment"description: "Update the properties of a embeddedSIMActivationCodePoolAssignment object."---# Update embeddedSIMActivationCodePoolAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [embeddedSIMActivationCodePoolAssignment](../resources/intune_esim_embeddedsimactivationcodepoolassignment.md) object.
+Update the properties of a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,19 +30,19 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [embeddedSIMActivationCodePoolAssignment](../resources/intune_esim_embeddedsimactivationcodepoolassignment.md) object.
+In the request body, supply a JSON representation for the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.
 
-The following table shows the properties that are required when you create the [embeddedSIMActivationCodePoolAssignment](../resources/intune_esim_embeddedsimactivationcodepoolassignment.md).
+The following table shows the properties that are required when you create the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the embedded SIM activation code pool assignment. System generated value assigned when created.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The type of groups targeted by the embedded SIM activation code pool.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The type of groups targeted by the embedded SIM activation code pool.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePoolAssignment](../resources/intune_esim_embeddedsimactivationcodepoolassignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object in the response body.
 
 ## Example
 ### Request

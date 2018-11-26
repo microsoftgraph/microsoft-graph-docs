@@ -1,4 +1,4 @@
-﻿# resourceOperation resource type
+---title: "resourceOperation resource type"description: " operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles."---# resourceOperation resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,11 +6,11 @@ This defines an operation or action that can be performed on an Intune resource 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List resourceOperations](../api/intune_rbac_resourceoperation_list.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md) collection|List properties and relationships of the [resourceOperation](../resources/intune_rbac_resourceoperation.md) objects.|
-|[Get resourceOperation](../api/intune_rbac_resourceoperation_get.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md)|Read properties and relationships of the [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.|
-|[Create resourceOperation](../api/intune_rbac_resourceoperation_create.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md)|Create a new [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.|
-|[Delete resourceOperation](../api/intune_rbac_resourceoperation_delete.md)|None|Deletes a [resourceOperation](../resources/intune_rbac_resourceoperation.md).|
-|[Update resourceOperation](../api/intune_rbac_resourceoperation_update.md)|[resourceOperation](../resources/intune_rbac_resourceoperation.md)|Update the properties of a [resourceOperation](../resources/intune_rbac_resourceoperation.md) object.|
+|[List resourceOperations](../api/intune-rbac-resourceoperation-list.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md) collection|List properties and relationships of the [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects.|
+|[Get resourceOperation](../api/intune-rbac-resourceoperation-get.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Read properties and relationships of the [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.|
+|[Create resourceOperation](../api/intune-rbac-resourceoperation-create.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Create a new [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.|
+|[Delete resourceOperation](../api/intune-rbac-resourceoperation-delete.md)|None|Deletes a [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
+|[Update resourceOperation](../api/intune-rbac-resourceoperation-update.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Update the properties of a [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|

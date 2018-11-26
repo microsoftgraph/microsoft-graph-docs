@@ -1,4 +1,4 @@
-# reportRoot: getYammerDeviceUsageUserDetail function
+---title: "reportRoot: getYammerDeviceUsageUserDetail function"description: "Get details about Yammer device usage by user."---# reportRoot: getYammerDeviceUsageUserDetail function
 
 Get details about Yammer device usage by user.
 
@@ -6,7 +6,7 @@ Get details about Yammer device usage by user.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

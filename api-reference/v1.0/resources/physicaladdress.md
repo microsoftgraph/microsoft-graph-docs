@@ -1,4 +1,4 @@
-# physicalAddress resource type
+---title: "physicalAddress resource type"description: "Represents the street address of a resource such as a contact or event."---# physicalAddress resource type
 
 Represents the street address of a resource such as a contact or event.
 

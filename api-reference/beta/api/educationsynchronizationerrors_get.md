@@ -1,9 +1,9 @@
-# Get educationSynchronizationErrors
+---title: "Get educationSynchronizationErrors"description: "Get the errors generated during validation and/or during a sync of a specific school data synchronization profile in the tenant. "---# Get educationSynchronizationErrors
 
 Get the errors generated during validation and/or during a sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 |:-----------|:------|

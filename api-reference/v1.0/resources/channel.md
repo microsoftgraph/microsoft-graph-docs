@@ -1,4 +1,4 @@
-# channel resource type
+---title: "channel resource type"description: "A channel is a collection of messages within a team. "---# channel resource type
 
 
 
@@ -11,11 +11,11 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List channels](../api/channel_list.md) | [channel](channel.md) collection | Get the list of channels in this team.|
-|[Create channel](../api/channel_post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
-|[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
-|[Update channel](../api/channel_patch.md) | [channel](channel.md) | Update properties of the channel.|
-|[Delete channel](../api/channel_delete.md) | None | Delete a channel.|
+|[List channels](../api/channel-list.md) | [channel](channel.md) collection | Get the list of channels in this team.|
+|[Create channel](../api/channel-post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
+|[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
+|[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
+|[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 
 ## Properties
 | Property	   | Type	|Description|

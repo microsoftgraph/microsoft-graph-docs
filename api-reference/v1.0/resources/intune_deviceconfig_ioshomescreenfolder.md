@@ -1,16 +1,16 @@
-﻿# iosHomeScreenFolder resource type
+---title: "iosHomeScreenFolder resource type"description: "A folder containing pages of apps on the Home Screen"---# iosHomeScreenFolder resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A folder containing pages of apps on the Home Screen
 
-Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
+Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
-|pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
+|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|pages|[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

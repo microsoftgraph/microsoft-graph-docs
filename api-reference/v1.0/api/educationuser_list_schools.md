@@ -1,11 +1,11 @@
-# List schools
+---title: "List schools"description: "Retrieve a list of schools for a user."---# List schools
 
 Retrieve a list of schools for a user.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

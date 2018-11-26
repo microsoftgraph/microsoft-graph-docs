@@ -1,4 +1,4 @@
-# multiValueLegacyExtendedProperty resource type
+---title: "multiValueLegacyExtendedProperty resource type"description: "An extended property that contains a collection of values."---# multiValueLegacyExtendedProperty resource type
 
 An extended property that contains a collection of values.
 
@@ -9,8 +9,8 @@ open extensions or extended properties, and how to specify extended properties.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md). Note that group [post](../resources/post.md) is not supported. | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
-|[Get](../api/multivaluelegacyextendedproperty_get.md) |A supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)) expanded with a [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand`.|
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md). Note that group [post](../resources/post.md) is not supported. | Create a **multiValueLegacyExtendedProperty** in a new or existing instance of a supported resource. |
+|[Get](../api/multivaluelegacyextendedproperty-get.md) |A supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)) expanded with a [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) object. |Get a resource instance with an extended property using `$expand`.|
 
 ## Properties
 | Property	   | Type	|Description|

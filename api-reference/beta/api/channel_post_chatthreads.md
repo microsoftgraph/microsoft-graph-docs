@@ -1,11 +1,11 @@
-# Create chat thread
+---title: "Create chat thread"description: "Create a new chat thread in the specified channel by supplying the root messages."---# Create chat thread
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
-> Currently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.  Future releases will support application permissions. 
+> Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.  Future releases will support application permissions. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

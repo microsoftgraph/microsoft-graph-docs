@@ -1,10 +1,10 @@
-﻿# autopilotDeviceStream function
+---title: "autopilotDeviceStream function"description: "Create a upload request with autopilot device stream in it."---# autopilotDeviceStream function
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a upload request with autopilot device stream in it.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

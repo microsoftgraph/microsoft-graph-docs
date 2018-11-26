@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
+---title: "reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts"description: "Get usage trends on the length in minutes and type of conference sessions held and organized by users in your organization. Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft."---# reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 
 Get usage trends on the length in minutes and type of conference sessions held and organized by users in your organization. Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft.
 
@@ -6,7 +6,7 @@ Get usage trends on the length in minutes and type of conference sessions held a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

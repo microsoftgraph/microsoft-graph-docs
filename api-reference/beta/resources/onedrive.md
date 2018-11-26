@@ -1,4 +1,4 @@
-# Working with files in Microsoft Graph
+---title: "Working with files in Microsoft Graph"description: "You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries. With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file sharing scenarios."---# Working with files in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -97,8 +97,8 @@ For more information about working with shared folders and remote items, see [Re
 ## Sharing and permissions
 
 One of the most common actions for OneDrive and SharePoint document libraries is sharing content with other people.
-Microsoft Graph allows your app to create [sharing links](../api/driveitem_createlink.md), [add permissions and send invitations](../api/driveitem_invite.md) to items in a drive.
+Microsoft Graph allows your app to create [sharing links](../api/driveitem-createlink.md), [add permissions and send invitations](../api/driveitem-invite.md) to items in a drive.
 
-Microsoft Graph also provides a way for your app to [access shared content](../api/shares_get.md) directly from a sharing link.
+Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.
 
  

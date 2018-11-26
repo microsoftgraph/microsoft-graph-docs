@@ -1,4 +1,4 @@
-# yammerGroupsActivityCounts resource type
+---title: "yammerGroupsActivityCounts resource type"description: "The following is a JSON representation of the resource."---# yammerGroupsActivityCounts resource type
 
 ## Properties
 

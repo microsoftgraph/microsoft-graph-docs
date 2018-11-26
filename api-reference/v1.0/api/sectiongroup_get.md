@@ -1,8 +1,8 @@
-# Get sectionGroup
+---title: "Get sectionGroup"description: "Retrieve the properties and relationships of a sectionGroup object."---# Get sectionGroup
 
 Retrieve the properties and relationships of a [sectionGroup](../resources/sectiongroup.md) object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

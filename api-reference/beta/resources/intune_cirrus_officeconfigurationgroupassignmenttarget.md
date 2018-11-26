@@ -1,4 +1,4 @@
-﻿# officeConfigurationGroupAssignmentTarget resource type
+---title: "officeConfigurationGroupAssignmentTarget resource type"description: "Office client configuration AAD group assignment target."---# officeConfigurationGroupAssignmentTarget resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 Office client configuration AAD group assignment target.
 
-Inherits from [officeConfigurationAssignmentTarget](../resources/intune_cirrus_officeconfigurationassignmenttarget.md)
+Inherits from [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|

@@ -1,11 +1,11 @@
-# Delete educationSubmissionResource
+---title: "Delete educationSubmissionResource"description: " the resource to its original state. If the resource was not copied from the assignment but was added from the student, the resource is simply deleted."---# Delete educationSubmissionResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted. This allows you to "reset" the resource to its original state. If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

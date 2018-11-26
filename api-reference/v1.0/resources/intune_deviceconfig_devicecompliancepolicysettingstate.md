@@ -1,4 +1,4 @@
-﻿# deviceCompliancePolicySettingState resource type
+---title: "deviceCompliancePolicySettingState resource type"description: "Device Compilance Policy Setting State for a given device."---# deviceCompliancePolicySettingState resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -9,14 +9,14 @@ Device Compilance Policy Setting State for a given device.
 |setting|String|The setting that is being reported|
 |settingName|String|Localized/user friendly setting name that is being reported|
 |instanceDisplayName|String|Name of setting instance that is being reported.|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Error code for the setting|
 |errorDescription|String|Error description|
 |userId|String|UserId|
 |userName|String|UserName|
 |userEmail|String|UserEmail|
 |userPrincipalName|String|UserPrincipalName.|
-|sources|[settingSource](../resources/intune_deviceconfig_settingsource.md) collection|Contributing policies|
+|sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
 
 ## Relationships

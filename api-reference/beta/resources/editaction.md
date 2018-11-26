@@ -12,7 +12,7 @@ The presence of the **EditAction** resource on an [**itemActivity**][activity] i
 
 **Note**: While this resource is empty today, in future API revisions it may be populated with additional properties.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

@@ -1,4 +1,4 @@
-# emailAppUsageVersionsUserCounts resource type
+---title: "emailAppUsageVersionsUserCounts resource type"description: "The following is a JSON representation of the resource."---# emailAppUsageVersionsUserCounts resource type
 
 ## Properties
 

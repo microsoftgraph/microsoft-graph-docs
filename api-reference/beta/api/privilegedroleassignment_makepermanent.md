@@ -1,11 +1,11 @@
-# privilegedRoleAssignment: makePermanent
+---title: "privilegedRoleAssignment: makePermanent"description: "Make the role assignment as permanent."---# privilegedRoleAssignment: makePermanent
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Make the role assignment as permanent.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 The tenant needs to be registered to PIM. Otherwise, HTTP 403 Forbidden error will be returned.
 

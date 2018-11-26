@@ -1,4 +1,4 @@
-# driveItem: preview
+---title: "driveItem: preview"description: "This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview."---# driveItem: preview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,12 +8,12 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 
 > **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
-[createLink]: driveItem_createLink.md
+[createLink]: driveitem-createlink.md
 
 ## Permissions
 
 One of the following permissions is required to call this API.
-To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)
 |:---------------------------------------|:-------------------------------------------

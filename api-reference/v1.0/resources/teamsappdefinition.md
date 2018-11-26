@@ -1,4 +1,4 @@
-# teamsAppDefinition resource type
+---title: "teamsAppDefinition resource type"description: "The details of one version of a teamsApp."---# teamsAppDefinition resource type
 
 
 

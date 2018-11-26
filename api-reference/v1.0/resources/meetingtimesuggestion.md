@@ -1,4 +1,4 @@
-# meetingTimeSuggestion resource type
+---title: "meetingTimeSuggestion resource type"description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "---# meetingTimeSuggestion resource type
 
 A meeting suggestion that includes information like meeting time, attendance likelihood, individual 
 availability, and available meeting locations.

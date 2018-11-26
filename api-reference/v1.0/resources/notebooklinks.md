@@ -1,4 +1,4 @@
-# notebookLinks resource type
+---title: "notebookLinks resource type"description: "Links for opening a OneNote notebook."---# notebookLinks resource type
 
 Links for opening a OneNote notebook.
 

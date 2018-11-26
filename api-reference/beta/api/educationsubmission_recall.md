@@ -1,11 +1,11 @@
-# educationSubmission: recall
+---title: "educationSubmission: recall"description: "."---# educationSubmission: recall
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Indicates that a student wants to take back a submission. This action can only be done by a student. It will change the status of the submission from "submitted" back to "working".
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

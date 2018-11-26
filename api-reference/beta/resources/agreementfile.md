@@ -1,4 +1,4 @@
-# agreementFile resource type
+---title: "agreementFile resource type"description: "Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file)."---# agreementFile resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,9 +9,9 @@ Represents a customizable terms of use agreement file that a tenant manages with
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile_get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile_update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile_delete.md) | None | Delete an **agreementFile** object. |
+| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
+| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
+| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
 -->
 
 ## Properties

@@ -1,4 +1,4 @@
-﻿# intuneBrand resource type
+---title: "intuneBrand resource type"description: "intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal."---# intuneBrand resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -14,10 +14,10 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |privacyUrl|String|URL to the company/organization’s privacy policy.|
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|themeColor|[rgbColor](../resources/intune_onboarding_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
+|themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
-|lightBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
-|darkBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
+|darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
 |showNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 

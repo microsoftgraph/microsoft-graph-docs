@@ -1,4 +1,4 @@
-# Enumerate sites
+---title: "Enumerate sites"description: "List the available [sites][] in an organization that match provided filter criteria and query options."---# Enumerate sites
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -12,12 +12,12 @@ Only the following query options are currently supported:
 
 In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.
 
-[search]: site_search.md
+[search]: site-search.md
 [sites]: ../resources/site.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------

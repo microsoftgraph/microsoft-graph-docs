@@ -1,10 +1,10 @@
-# Create device
+---title: "Create device"description: "Create a new device."---# Create device
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create a new device.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -27,7 +27,7 @@ POST /devices
 ## Request body
 In the request body, supply a JSON representation of [device](../resources/device.md) object.
 
-Since the **device** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.
+Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.
 
 ## Response
 
@@ -91,9 +91,9 @@ Content-length: 364
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

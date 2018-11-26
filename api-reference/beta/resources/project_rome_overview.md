@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to work with Project Rome 
+---title: "Use the Microsoft Graph API to work with Project Rome "description: "Project Rome is a Microsoft initiative to build a platform that enables app developers to build great cross-device experiences. Project Rome enables different capabilities that connect different services and client endpoints when the user signs in with the same Microsoft account or work or school account. This allows you to implement cross-device and cross-platform experiences that are centered around user tasks rather than devices. "---# Use the Microsoft Graph API to work with Project Rome 
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -20,12 +20,12 @@ When an application publishes user activity objects, the object will show up in 
 
 You can use the following Microsoft Graph APIs to create and retrieve user activities:
 
-- [Create or replace activity](../api/projectrome_put_activity.md)
-- [Get activities](../api/projectrome_get_activities.md)
-- [Get recent activities](../api/projectrome_get_recent_activities.md)
-- [Delete an activity](../api/projectrome_delete_activity.md)
-- [Create or replace a history item](../api/projectrome_put_historyitem.md)
-- [Delete a history item](../api/projectrome_delete_historyitem.md)
+- [Create or replace activity](../api/projectrome-put-activity.md)
+- [Get activities](../api/projectrome-get-activities.md)
+- [Get recent activities](../api/projectrome-get-recent-activities.md)
+- [Delete an activity](../api/projectrome-delete-activity.md)
+- [Create or replace a history item](../api/projectrome-put-historyitem.md)
+- [Delete a history item](../api/projectrome-delete-historyitem.md)
 
 ## Devices
 
@@ -39,9 +39,9 @@ With these APIs, you can build apps that create rich experiences that transcend 
 
 You can use the following Microsoft Graph APIs to communicate with other Windows devices:
 
-- [List the user's devices](../api/user_list_devices.md)
-- [Send a command to a device](../api/send_device_command.md)
-- [Get command status](../api/get_device_command_status.md)
+- [List the user's devices](../api/user-list-devices.md)
+- [Send a command to a device](../api/send-device-command.md)
+- [Get command status](../api/get-device-command-status.md)
 
 ## Notifications
 
@@ -49,5 +49,5 @@ You can use the notifications APIs in Microsoft Graph to deliver notifications a
 
 You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the [client SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
 
-For details, see [Create and send a notification](../api/projectrome_notification_post.md).
+For details, see [Create and send a notification](../api/projectrome-notification-post.md).
 

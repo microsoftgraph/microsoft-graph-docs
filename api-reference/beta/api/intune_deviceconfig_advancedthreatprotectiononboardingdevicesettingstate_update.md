@@ -1,12 +1,12 @@
-﻿# Update advancedThreatProtectionOnboardingDeviceSettingState
+---title: "Update advancedThreatProtectionOnboardingDeviceSettingState"description: "Update the properties of a advancedThreatProtectionOnboardingDeviceSettingState object."---# Update advancedThreatProtectionOnboardingDeviceSettingState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) object.
+Update the properties of a [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,14 +30,14 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) object.
+In the request body, supply a JSON representation for the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) object.
 
-The following table shows the properties that are required when you create the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md).
+The following table shows the properties that are required when you create the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity|
-|platformType|[deviceType](../resources/intune_shared_devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
 |deviceId|String|The Device Id that is being reported|
@@ -47,13 +47,13 @@ The following table shows the properties that are required when you create the [
 |userName|String|The User Name that is being reported|
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) object in the response body.
 
 ## Example
 ### Request

@@ -1,4 +1,4 @@
-
+---title: "Create absolute positioned elements in OneNote pages"description: "The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page."---
 # Create absolute positioned elements in OneNote pages
 
 The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.
@@ -85,11 +85,11 @@ The following example creates a page that contains one absolute positioned div a
  
 The OneNote API evaluates the input HTML and preserves all semantic content and any structural information that is supported by OneNote. The resulting page renders as shown in the following image (but without the visible borders for the div and image). 
 
-![Resulting page with absolute positioned div and image](images/abs-pos.PNG)
+![Resulting page with absolute positioned div and image](images/abs-pos.png)
 
 Notice the changes to the non-contributing, nested div from the input HTML. The API preserves the div's content but discards the `<div>` tags because the div doesn't define semantic information (such as `data-id`).
 
-For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote_input_output_html.md).
+For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote-input-output-html.md).
 
 <a name="style-attributes"></a>
 
@@ -120,7 +120,7 @@ The OneNote API returns the following information in the response.
 | Response data | Description |  
 |:------|:------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
   
 
 
@@ -142,7 +142,7 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md#notes-permissions).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
 
 
 <a name="see-also"></a>
@@ -150,8 +150,8 @@ For more information about permission scopes and how they work, see [OneNote per
 ## See also
 
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote_update_page.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Update OneNote page content](onenote-update-page.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

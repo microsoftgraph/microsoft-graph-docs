@@ -1,4 +1,4 @@
-﻿# mobileAppCategory resource type
+---title: "mobileAppCategory resource type"description: "Contains properties for a single Intune app category."---# mobileAppCategory resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ Contains properties for a single Intune app category.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List mobileAppCategories](../api/intune_apps_mobileappcategory_list.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|List properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) objects.|
-|[Get mobileAppCategory](../api/intune_apps_mobileappcategory_get.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Read properties and relationships of the [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object.|
-|[Create mobileAppCategory](../api/intune_apps_mobileappcategory_create.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Create a new [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object.|
-|[Delete mobileAppCategory](../api/intune_apps_mobileappcategory_delete.md)|None|Deletes a [mobileAppCategory](../resources/intune_apps_mobileappcategory.md).|
-|[Update mobileAppCategory](../api/intune_apps_mobileappcategory_update.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|Update the properties of a [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) object.|
+|[List mobileAppCategories](../api/intune-apps-mobileappcategory-list.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|List properties and relationships of the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) objects.|
+|[Get mobileAppCategory](../api/intune-apps-mobileappcategory-get.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Read properties and relationships of the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.|
+|[Create mobileAppCategory](../api/intune-apps-mobileappcategory-create.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Create a new [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.|
+|[Delete mobileAppCategory](../api/intune-apps-mobileappcategory-delete.md)|None|Deletes a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
+|[Update mobileAppCategory](../api/intune-apps-mobileappcategory-update.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Update the properties of a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.|
 
 ## Properties
 |Property|Type|Description|

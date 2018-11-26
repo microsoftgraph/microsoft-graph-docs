@@ -1,4 +1,4 @@
-﻿# binaryManagementConditionExpression resource type
+---title: "binaryManagementConditionExpression resource type"description: "A management condition expression that is evaluated using a binary operation."---# binaryManagementConditionExpression resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,14 +6,14 @@
 
 A management condition expression that is evaluated using a binary operation.
 
-Inherits from [managementConditionExpressionModel](../resources/intune_fencing_managementconditionexpressionmodel.md)
+Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|operator|[binaryManagementConditionExpressionOperatorType](../resources/intune_fencing_binarymanagementconditionexpressionoperatortype.md)|The operator used in the evaluation of the binary operation. Possible values are: `or`, `and`.|
-|firstOperand|[managementConditionExpressionModel](../resources/intune_fencing_managementconditionexpressionmodel.md)|The first operand of the binary operation.|
-|secondOperand|[managementConditionExpressionModel](../resources/intune_fencing_managementconditionexpressionmodel.md)|The second operand of the binary operation.|
+|operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|The operator used in the evaluation of the binary operation. Possible values are: `or`, `and`.|
+|firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|The first operand of the binary operation.|
+|secondOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|The second operand of the binary operation.|
 
 ## Relationships
 None

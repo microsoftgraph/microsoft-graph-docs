@@ -1,10 +1,10 @@
-﻿# Delete windows10CompliancePolicy
+---title: "Delete windows10CompliancePolicy"description: "Deletes a windows10CompliancePolicy."---# Delete windows10CompliancePolicy
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Deletes a [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md).
+Deletes a [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

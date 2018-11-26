@@ -1,12 +1,12 @@
-# Add tab to channel
+---title: "Add tab to channel"description: "Adds (pins) a tab to the specified channel within a team. "---# Add tab to channel
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
-The corresponding app must already be [installed in the team](../api/teamsappinstallation_add.md).
+The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -85,7 +85,7 @@ Content-type: application/json
 
 ## See also
 
-[Configuring the built-in tab types](../../../concepts/teams-configuring-builtin-tabs.md)
+[Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,4 +1,4 @@
-# Get user mailbox settings
+---title: "Get user mailbox settings"description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "---# Get user mailbox settings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,12 +7,12 @@ receipt of their email), locale (language and country/region), time zone, and wo
 
 You can view all mailbox settings, or, get specific settings.
 
-Time zone is one of the preferred settings a user can set up for the user's mailbox. The user chooses it from the [supported time zones](outlookuser_supportedtimezones.md) that an administrator has set up for the user's mailbox server. The administrator sets up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default. 
+Time zone is one of the preferred settings a user can set up for the user's mailbox. The user chooses it from the [supported time zones](outlookuser-supportedtimezones.md) that an administrator has set up for the user's mailbox server. The administrator sets up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default. 
 
-When you get a user's preferred time zone, the time zone is returned in the format that it was set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user_update_mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
+When you get a user's preferred time zone, the time zone is returned in the format that it was set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -58,7 +58,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:
 
 - [mailboxSettings](../resources/mailboxsettings.md) object
-- [automaticRepliesSetting](../resources/automaticRepliesSetting.md) object
+- [automaticRepliesSetting](../resources/automaticrepliessetting.md) object
 - [localeInfo](../resources/localeinfo.md) object
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)

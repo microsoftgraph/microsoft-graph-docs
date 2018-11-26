@@ -1,14 +1,14 @@
-# groupLifecyclePolicy: renewGroup
+---title: "groupLifecyclePolicy: renewGroup"description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."---# groupLifecyclePolicy: renewGroup
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-> **Note:** In V1.0, [use the group resource to make renew requests](../../v1.0/api/group_renew.md).
+> **Note:** In V1.0, [use the group resource to make renew requests](/graph/api/group-renew?view=graph-rest-1.0).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
  
 
 |Permission type      | Permissions (from least to most privileged)              |

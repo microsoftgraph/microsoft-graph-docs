@@ -1,4 +1,4 @@
-﻿# ratingUnitedKingdomTelevisionType enum type
+---title: "ratingUnitedKingdomTelevisionType enum type"description: "TV content rating labels in United Kingdom"---# ratingUnitedKingdomTelevisionType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

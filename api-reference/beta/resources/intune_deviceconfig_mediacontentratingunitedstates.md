@@ -1,4 +1,4 @@
-﻿# mediaContentRatingUnitedStates resource type
+---title: "mediaContentRatingUnitedStates resource type"description: "Not yet documented"---# mediaContentRatingUnitedStates resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +8,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|[ratingUnitedStatesMoviesType](../resources/intune_deviceconfig_ratingunitedstatesmoviestype.md)|Movies rating selected for United States. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
-|tvRating|[ratingUnitedStatesTelevisionType](../resources/intune_deviceconfig_ratingunitedstatestelevisiontype.md)|TV rating selected for United States. Possible values are: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
+|movieRating|[ratingUnitedStatesMoviesType](../resources/intune-deviceconfig-ratingunitedstatesmoviestype.md)|Movies rating selected for United States. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults`.|
+|tvRating|[ratingUnitedStatesTelevisionType](../resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md)|TV rating selected for United States. Possible values are: `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults`.|
 
 ## Relationships
 None

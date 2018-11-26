@@ -1,4 +1,4 @@
-# responseStatus resource type
+---title: "responseStatus resource type"description: "The response status of a meeting request."---# responseStatus resource type
 
 The response status of a meeting request.
 

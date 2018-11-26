@@ -1,12 +1,12 @@
-﻿# Update officeClientConfigurationAssignment
+---title: "Update officeClientConfigurationAssignment"description: "Update the properties of a officeClientConfigurationAssignment object."---# Update officeClientConfigurationAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object.
+Update the properties of a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,19 +30,19 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object.
+In the request body, supply a JSON representation for the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.
 
-The following table shows the properties that are required when you create the [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md).
+The following table shows the properties that are required when you create the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Not yet documented|
-|target|[officeConfigurationAssignmentTarget](../resources/intune_cirrus_officeconfigurationassignmenttarget.md)|Not yet documented|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Not yet documented|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object in the response body.
 
 ## Example
 ### Request

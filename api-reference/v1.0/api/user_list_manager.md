@@ -1,8 +1,8 @@
-# List manager
+---title: "List manager"description: "Get user's manager. Returns the user or contact assigned as the user's manager."---# List manager
 
 Get user's manager. Returns the user or contact assigned as the user's manager.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

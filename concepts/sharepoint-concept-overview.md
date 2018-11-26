@@ -1,4 +1,4 @@
-# SharePoint sites and content API overview
+---title: "SharePoint sites and content API overview"description: "SharePoint is your mobile, intelligent intranet. With SharePoint, users can share and manage content, knowledge, and applications to empower teamwork, find information, and collaborate across an organization. You can use the SharePoint REST API in Microsoft Graph to integrate your solutions with SharePoint sites and content."---# SharePoint sites and content API overview
 
 SharePoint is your mobile, intelligent intranet. With SharePoint, users can share and manage content, knowledge, and applications to empower teamwork, find information, and collaborate across an organization. You can use the SharePoint REST API in Microsoft Graph to integrate your solutions with SharePoint sites and content.
 
@@ -41,22 +41,22 @@ To learn about these models in more detail, visit the [SharePoint Dev Center][] 
 ## API reference
 Looking for the API reference for this service?
 
-- [SharePoint API in Microsoft Graph v1.0](../api-reference/v1.0/resources/sharepoint.md)
-- [SharePoint API in Microsoft Graph beta](../api-reference/beta/resources/sharepoint.md)
+- [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
+- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
 
 ## Next steps
 
 Get started with SharePoint in Microsoft Graph by learning more about [working with sites][SharePoint].
 
-[list]: ../api-reference/v1.0/resources/list.md
-[columns]: ../api-reference/v1.0/resources/columndefinition.md
-[list type]: ../api-reference/v1.0/resources/listinfo.md
-[create]: ../api-reference/v1.0/api/list_create.md
-[querying]: ../api-reference/v1.0/api/listitem_get.md
-[drive]: ../api-reference/v1.0/resources/drive.md
-[OneDrive API]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/onedrive
+[list]: /graph/api/resources/list?view=graph-rest-1.0
+[columns]: /graph/api/resources/columndefinition?view=graph-rest-1.0
+[list type]: /graph/api/resources/listinfo?view=graph-rest-1.0
+[create]: /graph/api/list-create?view=graph-rest-1.0
+[querying]: /graph/api/listitem-get?view=graph-rest-1.0
+[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint Dev Center]: https://developer.microsoft.com/sharepoint
 [SharePoint Developer Docs]: https://aka.ms/spdev-docs
-[SharePoint]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/sharepoint
+[SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0

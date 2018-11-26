@@ -1,4 +1,4 @@
-# ChartFont resource type
+---title: "ChartFont resource type"description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."---# ChartFont resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,8 +9,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)	|Update ChartFont object. |
+|[Get ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |Read properties and relationships of chartFont object.|
+|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)	|Update ChartFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

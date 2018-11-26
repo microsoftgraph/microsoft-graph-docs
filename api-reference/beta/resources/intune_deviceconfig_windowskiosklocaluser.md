@@ -1,4 +1,4 @@
-﻿# windowsKioskLocalUser resource type
+---title: "windowsKioskLocalUser resource type"description: "The class used to identify a local account for the kiosk configuration"---# windowsKioskLocalUser resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 The class used to identify a local account for the kiosk configuration
 
-Inherits from [windowsKioskUser](../resources/intune_deviceconfig_windowskioskuser.md)
+Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## Properties
 |Property|Type|Description|

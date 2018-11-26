@@ -1,4 +1,4 @@
-﻿# defenderCloudBlockLevelType enum type
+---title: "defenderCloudBlockLevelType enum type"description: "Possible values of Cloud Block Level"---# defenderCloudBlockLevelType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

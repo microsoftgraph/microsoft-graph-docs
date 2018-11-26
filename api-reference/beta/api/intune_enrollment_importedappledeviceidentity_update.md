@@ -1,12 +1,12 @@
-﻿# Update importedAppleDeviceIdentity
+---title: "Update importedAppleDeviceIdentity"description: "Update the properties of a importedAppleDeviceIdentity object."---# Update importedAppleDeviceIdentity
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) object.
+Update the properties of a [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +30,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) object.
+In the request body, supply a JSON representation for the [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object.
 
-The following table shows the properties that are required when you create the [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md).
+The following table shows the properties that are required when you create the [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -41,17 +41,17 @@ The following table shows the properties that are required when you create the [
 |requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device|
 |isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837|
-|discoverySource|[discoverySource](../resources/intune_enrollment_discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object in the response body.
 
 ## Example
 ### Request

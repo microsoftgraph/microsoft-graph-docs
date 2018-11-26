@@ -1,12 +1,12 @@
-﻿# Update roleScopeTag
+---title: "Update roleScopeTag"description: "Update the properties of a roleScopeTag object."---# Update roleScopeTag
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [roleScopeTag](../resources/intune_rbac_rolescopetag.md) object.
+Update the properties of a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,9 +31,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [roleScopeTag](../resources/intune_rbac_rolescopetag.md) object.
+In the request body, supply a JSON representation for the [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.
 
-The following table shows the properties that are required when you create the [roleScopeTag](../resources/intune_rbac_rolescopetag.md).
+The following table shows the properties that are required when you create the [roleScopeTag](../resources/intune-rbac-rolescopetag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -44,7 +44,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [roleScopeTag](../resources/intune_rbac_rolescopetag.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object in the response body.
 
 ## Example
 ### Request

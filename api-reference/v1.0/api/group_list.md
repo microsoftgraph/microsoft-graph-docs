@@ -1,6 +1,6 @@
-# List groups
+---title: "List groups"description: "List all the groups available in an organization, including but not limited to Office 365 Groups."---# List groups
 List all the groups available in an organization, including but not limited to Office 365 Groups.
-The [default properties](../api/group_get.md#default-properties) of each group are returned.
+The [default properties](../api/group-get.md#default-properties) of each group are returned.
 
 To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
 ```
@@ -14,7 +14,7 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,7 +29,7 @@ GET /groups
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/groups
 #### Response
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. The [default properties](../api/group-get.md#default-properties) will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

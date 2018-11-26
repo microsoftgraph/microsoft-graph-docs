@@ -1,9 +1,9 @@
-# List licenseDetails
+---title: "List licenseDetails"description: "Retrieve a list of licenseDetails objects."---# List licenseDetails
 
 Retrieve a list of licenseDetails objects.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

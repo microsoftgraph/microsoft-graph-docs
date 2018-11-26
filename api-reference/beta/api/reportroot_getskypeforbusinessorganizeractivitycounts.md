@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessOrganizerActivityCounts
+---title: "reportRoot: getSkypeForBusinessOrganizerActivityCounts"description: "Get usage trends on the number and type of conference sessions held and organized by users in your organization. Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - 3rd party, and Dial-in/out Microsoft."---# reportRoot: getSkypeForBusinessOrganizerActivityCounts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ Get usage trends on the number and type of conference sessions held and organize
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |
@@ -32,7 +32,7 @@ In the request URL, provide the following parameter with a valid value.
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
-This method supports the `$format` [OData query parameter](../../../concepts/query_parameters.md) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 

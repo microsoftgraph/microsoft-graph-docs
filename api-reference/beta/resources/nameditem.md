@@ -1,4 +1,4 @@
-# NamedItem resource type
+---title: "NamedItem resource type"description: "Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names."---# NamedItem resource type
 
 Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names.
 
@@ -7,12 +7,12 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem_add.md)|[NamedItem](nameditem.md)|Adds a new name to the collection of the given scope.|
-|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[NamedItem](nameditem.md)|Adds a new name to the collection of the given scope using the user's locale for the formula.|
-|[Get NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Read properties and relationships of namedItem object.|
-|[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)	|Update NamedItem object. |
-|[Range](../api/nameditem_range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
-|[List](../api/nameditem_list.md) | [NamedItem](nameditem.md) collection |Get namedItem object collection. |
+|[Add](../api/nameditem-add.md)|[NamedItem](nameditem.md)|Adds a new name to the collection of the given scope.|
+|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[NamedItem](nameditem.md)|Adds a new name to the collection of the given scope using the user's locale for the formula.|
+|[Get NamedItem](../api/nameditem-get.md) | [NamedItem](nameditem.md) |Read properties and relationships of namedItem object.|
+|[Update](../api/nameditem-update.md) | [NamedItem](nameditem.md)	|Update NamedItem object. |
+|[Range](../api/nameditem-range.md)|[Range](range.md)|Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.|
+|[List](../api/nameditem-list.md) | [NamedItem](nameditem.md) collection |Get namedItem object collection. |
 
 ## Properties
 | Property	   | Type	|Description|

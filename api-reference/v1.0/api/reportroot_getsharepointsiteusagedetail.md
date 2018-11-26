@@ -1,4 +1,4 @@
-# reportRoot: getSharePointSiteUsageDetail
+---title: "reportRoot: getSharePointSiteUsageDetail"description: "Get details about SharePoint site usage."---# reportRoot: getSharePointSiteUsageDetail
 
 Get details about SharePoint site usage.
 
@@ -6,7 +6,7 @@ Get details about SharePoint site usage.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

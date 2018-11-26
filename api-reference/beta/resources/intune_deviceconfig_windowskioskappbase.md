@@ -1,4 +1,4 @@
-﻿# windowsKioskAppBase resource type
+---title: "windowsKioskAppBase resource type"description: "The base class for a type of apps"---# windowsKioskAppBase resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +8,7 @@ The base class for a type of apps
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune_deviceconfig_windowsappstartlayouttilesize.md)|The app tile size for the start layout. Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout. Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Represents the friendly name of an app|
 
 ## Relationships

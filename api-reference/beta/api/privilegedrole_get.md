@@ -1,11 +1,11 @@
-# Get privilegedRole
+---title: "Get privilegedRole"description: "Retrieve the properties and relationships of privilegedRole object. "---# Get privilegedRole
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of [privilegedRole](../resources/privilegedrole.md) object. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.
  

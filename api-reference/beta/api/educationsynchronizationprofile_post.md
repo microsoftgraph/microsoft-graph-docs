@@ -1,11 +1,11 @@
-# Create an educationSynchronizationProfile
+---title: "Create an educationSynchronizationProfile"description: "Create a request for a new school data synchronization profile in the tenant. Query the status to get the status of the profile. "---# Create an educationSynchronizationProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a request for a new school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](educationsynchronizationprofilestatus_get.md) to get the status of the profile. 
+Create a request for a new school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](educationsynchronizationprofilestatus-get.md) to get the status of the profile. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions |
 |:-----------|:----------|

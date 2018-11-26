@@ -1,4 +1,4 @@
-﻿# macOSFirewallApplication resource type
+---title: "macOSFirewallApplication resource type"description: "Represents an app in the list of macOS firewall applications"---# macOSFirewallApplication resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActiveUserCounts
+---title: "reportRoot: getOffice365ActiveUserCounts"description: "Get the count of daily active users in the reporting period by product."---# reportRoot: getOffice365ActiveUserCounts
 
 Get the count of daily active users in the reporting period by product.
 
@@ -6,7 +6,7 @@ Get the count of daily active users in the reporting period by product.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

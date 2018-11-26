@@ -1,4 +1,4 @@
-# bookingStaffMember resource type
+---title: "bookingStaffMember resource type"description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."---# bookingStaffMember resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
  
@@ -16,11 +16,11 @@ When booking appointments, the Bookings API considers the following settings to 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List staff members](../api/bookingbusiness_list_staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Get a list of **bookingStaffMember** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Create bookingStaff](../api/bookingbusiness_post_staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Create a new **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Get bookingStaffMember](../api/bookingstaffmember_get.md) | [bookingStaffMember](bookingstaffmember.md) |Get the properties and relationships of a **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingstaffmember_update.md) | [bookingStaffMember](bookingstaffmember.md)	|Update the properties of a **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Delete](../api/bookingstaffmember_delete.md) | None |Delete a staff member in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List staff members](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Get a list of **bookingStaffMember** objects in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Create bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) collection | Create a new **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Get bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Get the properties and relationships of a **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md).|
+|[Update](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)	|Update the properties of a **bookingStaffMember** in the specified [bookingbusiness](../resources/bookingbusiness.md).|
+|[Delete](../api/bookingstaffmember-delete.md) | None |Delete a staff member in the specified [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,4 +1,4 @@
-﻿# vpnTrafficRuleRoutingPolicyType enum type
+---title: "vpnTrafficRuleRoutingPolicyType enum type"description: "Specifies the routing policy for a VPN traffic rule."---# vpnTrafficRuleRoutingPolicyType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

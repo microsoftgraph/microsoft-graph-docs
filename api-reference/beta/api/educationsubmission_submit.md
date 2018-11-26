@@ -1,11 +1,11 @@
-# educationSubmission: submit
+---title: "educationSubmission: submit"description: ". During the submit process, all the resources will be copied to the submittedResources bucket. The teacher will be looking at the submitted resources list for grading."---# educationSubmission: submit
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 An action that indicates that a student is done with the work and is ready to hand in the assignment. This action can only be taken by the student. This will change the status of the submission from "working" to "submitted". During the submit process, all the resources will be copied to the submittedResources bucket. The teacher will be looking at the submitted resources list for grading.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

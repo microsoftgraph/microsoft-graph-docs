@@ -12,7 +12,7 @@ Create a new [listItem][] in a [list][].
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -83,7 +83,7 @@ Content-type: application/json
 **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
 [list]: ../resources/list.md
-[listItem]: ../resources/listItem.md
+[listItem]: ../resources/listitem.md
 
 <!-- {
   "type": "#page.annotation",

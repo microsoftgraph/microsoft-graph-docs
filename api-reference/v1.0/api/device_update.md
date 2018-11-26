@@ -1,11 +1,11 @@
-# Update device
+---title: "Update device"description: "Update the properties of a registered device."---# Update device
 
 Update the properties of a registered device.
 
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

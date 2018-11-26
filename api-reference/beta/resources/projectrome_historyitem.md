@@ -1,8 +1,8 @@
-# historyItem resource type
+---title: "historyItem resource type"description: "Represents a history item for an activity in an app. User activities represent a single destination within your app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity."---# historyItem resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a history item for an [activity](projectrome_activity.md) in an app. User activities represent a single destination within your app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
+Represents a history item for an [activity](projectrome-activity.md) in an app. User activities represent a single destination within your app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a history item that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
 When an app creates a session, a **historyItem** object should be added to the **activity** object to reflect the period of user engagement. Each time a user re-engages with an activity, a new **historyItem** is added to the activity to accrue user engagement.
 
@@ -10,8 +10,8 @@ When an app creates a session, a **historyItem** object should be added to the *
 
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create or replace historyItem](../api/projectrome_put_historyitem.md) | [historyItem](projectrome_historyitem.md) | Creates or replaces an existing **historyItem** for that activity (upsert). The ID needs to be a GUID.|
-|[Delete a historyItem](../api/projectrome_delete_historyitem.md) | No Content | Deletes the specified **historyItem** for that activity.|
+|[Create or replace historyItem](../api/projectrome-put-historyitem.md) | [historyItem](projectrome-historyitem.md) | Creates or replaces an existing **historyItem** for that activity (upsert). The ID needs to be a GUID.|
+|[Delete a historyItem](../api/projectrome-delete-historyitem.md) | No Content | Deletes the specified **historyItem** for that activity.|
 
 ## Properties
 
@@ -31,7 +31,7 @@ When an app creates a session, a **historyItem** object should be added to the *
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-|activity| [activity](../resources/projectrome_activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
+|activity| [activity](../resources/projectrome-activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
 
 ## JSON representation
 

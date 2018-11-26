@@ -1,4 +1,4 @@
-# educationOrganization resource type
+---title: "educationOrganization resource type"description: "Abstract entity used to model the commonality between different organization types within the education sector.  "---# educationOrganization resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

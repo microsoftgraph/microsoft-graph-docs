@@ -1,4 +1,4 @@
-# timeStamp resource type
+---title: "timeStamp resource type"description: "Date and time information for a point in time."---# timeStamp resource type
 
 Date and time information for a point in time.
 

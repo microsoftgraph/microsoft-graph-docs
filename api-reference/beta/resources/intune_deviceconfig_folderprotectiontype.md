@@ -1,4 +1,4 @@
-﻿# folderProtectionType enum type
+---title: "folderProtectionType enum type"description: "Possible values of Folder Protection"---# folderProtectionType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

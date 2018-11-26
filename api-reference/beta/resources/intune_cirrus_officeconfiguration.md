@@ -1,4 +1,4 @@
-﻿# officeConfiguration resource type
+---title: "officeConfiguration resource type"description: "Singleton entity that acts as a container for all device management functionality."---# officeConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,20 +8,20 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|Get officeConfiguration|[officeConfiguration](../resources/intune_cirrus_officeconfiguration.md)|Read properties and relationships of the [officeConfiguration](../resources/intune_cirrus_officeconfiguration.md) object.|
-|Update officeConfiguration|[officeConfiguration](../resources/intune_cirrus_officeconfiguration.md)|Update the properties of a [officeConfiguration](../resources/intune_cirrus_officeconfiguration.md) object.|
+|Get officeConfiguration|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|Read properties and relationships of the [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) object.|
+|Update officeConfiguration|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|Update the properties of a [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the office configuration.|
-|tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune_cirrus_officeclientcheckinstatus.md) collection|List of office Client check-in status.|
-|tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune_cirrus_officeusercheckinsummary.md)|Entity that describes tenant check-in statues|
+|tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection|List of office Client check-in status.|
+|tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entity that describes tenant check-in statues|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|clientConfigurations|[officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md) collection|List of office Client configuration.|
+|clientConfigurations|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) collection|List of office Client configuration.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -1,4 +1,4 @@
-# reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
+---title: "reportRoot: getSkypeForBusinessPeerToPeerActivityCounts"description: "Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer."---# reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 
 Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer.
 
@@ -6,7 +6,7 @@ Get usage trends on the number and type of sessions held in your organization. T
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

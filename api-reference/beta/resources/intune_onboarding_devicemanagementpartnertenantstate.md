@@ -1,4 +1,4 @@
-﻿# deviceManagementPartnerTenantState enum type
+---title: "deviceManagementPartnerTenantState enum type"description: "Partner state of this tenant."---# deviceManagementPartnerTenantState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

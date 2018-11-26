@@ -1,10 +1,10 @@
-﻿# Update managedEBookAssignment
+---title: "Update managedEBookAssignment"description: "Update the properties of a managedEBookAssignment object."---# Update managedEBookAssignment
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) object.
+Update the properties of a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -28,20 +28,20 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) object.
+In the request body, supply a JSON representation for the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.
 
-The following table shows the properties that are required when you create the [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).
+The following table shows the properties that are required when you create the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The assignment target for eBook.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|The install intent for eBook. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for eBook.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|The install intent for eBook. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object in the response body.
 
 ## Example
 ### Request

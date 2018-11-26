@@ -1,4 +1,4 @@
-# skypeForBusinessPeerToPeerActivityUserCounts resource type
+---title: "skypeForBusinessPeerToPeerActivityUserCounts resource type"description: "The following is a JSON representation of the resource."---# skypeForBusinessPeerToPeerActivityUserCounts resource type
 
 ## Properties
 

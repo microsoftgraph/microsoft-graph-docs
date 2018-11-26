@@ -1,4 +1,4 @@
-# notification resource type
+---title: "notification resource type"description: "The following is a JSON representation of the resource."---# notification resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

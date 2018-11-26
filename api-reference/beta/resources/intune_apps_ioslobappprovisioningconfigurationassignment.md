@@ -1,4 +1,4 @@
-﻿# iosLobAppProvisioningConfigurationAssignment resource type
+---title: "iosLobAppProvisioningConfigurationAssignment resource type"description: "A class containing the properties used for Group Assignment of an iOS LOB App Provisioning and Configuration."---# iosLobAppProvisioningConfigurationAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,17 +8,17 @@ A class containing the properties used for Group Assignment of an iOS LOB App Pr
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosLobAppProvisioningConfigurationAssignments](../api/intune_apps_ioslobappprovisioningconfigurationassignment_list.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md) collection|List properties and relationships of the [iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md) objects.|
-|[Get iosLobAppProvisioningConfigurationAssignment](../api/intune_apps_ioslobappprovisioningconfigurationassignment_get.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md)|Read properties and relationships of the [iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md) object.|
-|[Create iosLobAppProvisioningConfigurationAssignment](../api/intune_apps_ioslobappprovisioningconfigurationassignment_create.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md)|Create a new [iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md) object.|
-|[Delete iosLobAppProvisioningConfigurationAssignment](../api/intune_apps_ioslobappprovisioningconfigurationassignment_delete.md)|None|Deletes a [iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md).|
-|[Update iosLobAppProvisioningConfigurationAssignment](../api/intune_apps_ioslobappprovisioningconfigurationassignment_update.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md)|Update the properties of a [iosLobAppProvisioningConfigurationAssignment](../resources/intune_apps_ioslobappprovisioningconfigurationassignment.md) object.|
+|[List iosLobAppProvisioningConfigurationAssignments](../api/intune-apps-ioslobappprovisioningconfigurationassignment-list.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) collection|List properties and relationships of the [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) objects.|
+|[Get iosLobAppProvisioningConfigurationAssignment](../api/intune-apps-ioslobappprovisioningconfigurationassignment-get.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Read properties and relationships of the [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object.|
+|[Create iosLobAppProvisioningConfigurationAssignment](../api/intune-apps-ioslobappprovisioningconfigurationassignment-create.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Create a new [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object.|
+|[Delete iosLobAppProvisioningConfigurationAssignment](../api/intune-apps-ioslobappprovisioningconfigurationassignment-delete.md)|None|Deletes a [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md).|
+|[Update iosLobAppProvisioningConfigurationAssignment](../api/intune-apps-ioslobappprovisioningconfigurationassignment-update.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Update the properties of a [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
 
 ## Relationships
 None

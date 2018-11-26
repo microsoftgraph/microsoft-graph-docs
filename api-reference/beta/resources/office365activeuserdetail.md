@@ -1,4 +1,4 @@
-# office365ActiveUserDetail resource type
+---title: "office365ActiveUserDetail resource type"description: "The following is a JSON representation of the resource."---# office365ActiveUserDetail resource type
 
 ## Properties
 

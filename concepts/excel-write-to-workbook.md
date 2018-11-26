@@ -1,4 +1,4 @@
-# Write data to an Excel workbook with Microsoft Graph
+---title: "Write data to an Excel workbook with Microsoft Graph"description: "q=excelstarter)."---# Write data to an Excel workbook with Microsoft Graph
 
 The Excel REST API provides an easy, platform-agnostic way to upload information to an Excel workbook. This topic shows you how to write simple data sets to an Excel workbook on three web development frameworks: ASP.NET, Angular, and React. You can look at the code samples featured in this topic by visiting the [Microsoft Graph Excel starter samples on GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
 
@@ -12,7 +12,7 @@ The Excel REST API requires you to POST a simple request body to the REST endpoi
 
 `https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add`
 
-For more information about how to reach files in OneDrive folders, see the [DriveItem resource type](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/driveitem) in our reference documentation.
+For more information about how to reach files in OneDrive folders, see the [DriveItem resource type](/graph/api/resources/driveitem?view=graph-rest-1.0) in our reference documentation.
 
 > **Note:** You can look at the existing row collection of the workbook by making a GET request to the part of the path that ends at `/rows`.
 
@@ -148,4 +148,4 @@ The `onWriteToExcel` function constructs the two-dimensional string array and pa
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
-* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)    
+* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)    

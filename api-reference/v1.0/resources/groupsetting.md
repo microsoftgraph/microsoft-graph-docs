@@ -1,18 +1,18 @@
-# groupSetting resource type
+---title: "groupSetting resource type"description: "Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners."---# groupSetting resource type
 
 Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners.
 
-Group settings can be created based on the available [groupSettingTemplates](groupSettingTemplate.md), and changed from their preset defaults. These settings govern group behaviors at a tenant-wide level or to a specific group. When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group. Group settings only govern Office 365 groups behavior.
+Group settings can be created based on the available [groupSettingTemplates](groupsettingtemplate.md), and changed from their preset defaults. These settings govern group behaviors at a tenant-wide level or to a specific group. When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group. Group settings only govern Office 365 groups behavior.
 
 ## Methods
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. |
-|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
-|[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
-|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update groupsetting object. |
-|[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
+|[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. |
+|[Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
+|[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+|[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update groupsetting object. |
+|[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 
 ## Properties
 

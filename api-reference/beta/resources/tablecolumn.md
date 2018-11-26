@@ -1,4 +1,4 @@
-# TableColumn resource type
+---title: "TableColumn resource type"description: "Represents a column in a table."---# TableColumn resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,16 +9,16 @@ Represents a column in a table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableColumn](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |Read properties and relationships of tableColumn object.|
-|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md)	|Update TableColumn object. |
-|[Databodyrange](../api/tablecolumn_databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the column.|
-|[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[Range](range.md)|Gets the range object associated with the header row of the column.|
-|[Range](../api/tablecolumn_range.md)|[Range](range.md)|Gets the range object associated with the entire column.|
-|[Totalrowrange](../api/tablecolumn_totalrowrange.md)|[Range](range.md)|Gets the range object associated with the totals row of the column.|
-|[Delete](../api/tablecolumn_delete.md)|None|Deletes the column from the table.|
-|[List](../api/tablecolumn_list.md) | [TableColumn](tablecolumn.md) collection |Get tableColumn object collection. |
-|[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|Gets a column based on its position in the collection.|
-|[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|Adds a new column to the table.|
+|[Get TableColumn](../api/tablecolumn-get.md) | [TableColumn](tablecolumn.md) |Read properties and relationships of tableColumn object.|
+|[Update](../api/tablecolumn-update.md) | [TableColumn](tablecolumn.md)	|Update TableColumn object. |
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the column.|
+|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Gets the range object associated with the header row of the column.|
+|[Range](../api/tablecolumn-range.md)|[Range](range.md)|Gets the range object associated with the entire column.|
+|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Gets the range object associated with the totals row of the column.|
+|[Delete](../api/tablecolumn-delete.md)|None|Deletes the column from the table.|
+|[List](../api/tablecolumn-list.md) | [TableColumn](tablecolumn.md) collection |Get tableColumn object collection. |
+|[Itemat](../api/tablecolumncollection-itemat.md)|[TableColumn](tablecolumn.md)|Gets a column based on its position in the collection.|
+|[Add](../api/tablecolumncollection-add.md)|[TableColumn](tablecolumn.md)|Adds a new column to the table.|
 
 ## Properties
 | Property	   | Type	|Description|

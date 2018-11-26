@@ -1,4 +1,4 @@
-# List domainNameReferences
+---title: "List domainNameReferences"description: "Retrieve a list of directoryObject with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain."---# List domainNameReferences
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@ Retrieve a list of [directoryObject](../resources/directoryobject.md) with a ref
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

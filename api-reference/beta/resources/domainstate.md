@@ -1,4 +1,4 @@
-# domainState resource type
+---title: "domainState resource type"description: "Represents the status of asynchronous operations scheduled on a domain."---# domainState resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

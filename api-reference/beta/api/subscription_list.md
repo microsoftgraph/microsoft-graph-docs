@@ -1,4 +1,4 @@
-# List subscriptions
+---title: "List subscriptions"description: " see the scenarios below for details."---# List subscriptions
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,13 +6,13 @@ Retrieve a list of webhook subscriptions. The content of the response depends on
 
 ## Permissions
 
-This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type  | Permissions (from least to most privileged)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegated](../../../concepts/auth_v2_user.md) (work or school account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
-| [Delegated](../../../concepts/auth_v2_user.md) (personal Microsoft account) | Permission required to [create subscription](subscription_post_subscriptions.md) or Subscription.Read.All (see below). |
-| [Application](../../../concepts/auth_v2_service.md) | Permission required to [create subscription](subscription_post_subscriptions.md). |
+| [Delegated](/graph/auth-v2-user) (work or school account) | Permission required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below). |
+| [Delegated](/graph/auth-v2-user) (personal Microsoft account) | Permission required to [create subscription](subscription-post-subscriptions.md) or Subscription.Read.All (see below). |
+| [Application](/graph/auth-v2-service) | Permission required to [create subscription](subscription-post-subscriptions.md). |
 
 Response results are based on the context of the calling app. The following is a summary of the common scenarios:
 
@@ -22,8 +22,8 @@ Most commonly, an application wants to retrieve subscriptions that it originally
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
-| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription_post_subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the directory.|
+| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
+| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the directory.|
 
 ### Advanced scenarios
 
@@ -117,4 +117,4 @@ Content-length: 586
   "tocPath": ""
 }-->
 
-When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](../../../concepts/paging.md).
+When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).

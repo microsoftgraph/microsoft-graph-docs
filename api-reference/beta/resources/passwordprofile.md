@@ -1,4 +1,4 @@
-# passwordProfile resource type
+---title: "passwordProfile resource type"description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."---# passwordProfile resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,4 @@
-# Add custom data to groups using schema extensions 
+---title: "Add custom data to groups using schema extensions "description: "We're going to walk you through an example to demonstrate how to use *schema extensions*. "---# Add custom data to groups using schema extensions 
 
 We're going to walk you through an example to demonstrate how to use *schema extensions*. 
 
@@ -67,7 +67,7 @@ Then, specify a description (to enable discoverability), target types
 (defining which resources this extension applies to), and the custom properties that make up the schema.  In this example, 
 specify the `courseId`, `courseName` and `courseType` custom properties and their types.
 
-See an [example of the other way to assign **id** in the request](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md#request-2), that requires you to provide only a schema name.
+See an [example of the other way to assign **id** in the request](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0#request-2), that requires you to provide only a schema name.
 
 Notice that when you initially create a schema extension, its status is **InDevelopment**. While you're developing the extension, you can keep it in this status, 
 during which only your app that created it can update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to **Available**.
@@ -241,13 +241,13 @@ Content-length: 326
 
 ## See also
 
-- [Add custom data to resources using extensions](extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](extensibility_open_users.md)
+- [Add custom data to resources using extensions](extensibility-overview.md)
+- [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
 - [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Adding and Verifying a Domain for the NEW Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-- [schemaExtension resource type](../api-reference/v1.0/resources/schemaextension.md)
-- [List schemaExtensions](../api-reference/v1.0/api/schemaextension_list.md)
-- [Create schemaExtension](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md)
-- [Get schemaExtension](../api-reference/v1.0/api/schemaextension_get.md)
-- [Update schemaExtension](../api-reference/v1.0/api/schemaextension_update.md)
-- [Delete schemaExtension](../api-reference/v1.0/api/schemaextension_delete.md)
+- [schemaExtension resource type](/graph/api/resources/schemaextension?view=graph-rest-1.0)
+- [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
+- [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
+- [Get schemaExtension](/graph/api/schemaextension-get?view=graph-rest-1.0)
+- [Update schemaExtension](/graph/api/schemaextension-update?view=graph-rest-1.0)
+- [Delete schemaExtension](/graph/api/schemaextension-delete?view=graph-rest-1.0)

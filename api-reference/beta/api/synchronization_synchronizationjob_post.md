@@ -1,11 +1,11 @@
-# Create synchronizationJob
+---title: "Create synchronizationJob"description: "Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call Start job to start synchronization."---# Create synchronizationJob
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call [Start job](synchronization_synchronizationjob_start.md) to start synchronization.
+Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -27,11 +27,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## Request body
 
-In the request body, supply a JSON representation of the [synchronizationJob](../resources/synchronization_synchronizationjob.md) object to be created. The only required property is `templateId`. The `templateId` property must match one of the templates created for this application/service principal. To find available templates, use [List templates](synchronization_synchronizationtemplate_list.md).
+In the request body, supply a JSON representation of the [synchronizationJob](../resources/synchronization-synchronizationjob.md) object to be created. The only required property is `templateId`. The `templateId` property must match one of the templates created for this application/service principal. To find available templates, use [List templates](synchronization-synchronizationtemplate-list.md).
 
 ## Response
 
-If successful, returns a `201 Created` response code and a [synchronizationJob](../resources/synchronization_synchronizationjob.md) object in the response body.
+If successful, returns a `201 Created` response code and a [synchronizationJob](../resources/synchronization-synchronizationjob.md) object in the response body.
 
 ## Example
 

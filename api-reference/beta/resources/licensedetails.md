@@ -1,4 +1,4 @@
-# licenseDetails resource type
+---title: "licenseDetails resource type"description: "Contains information about a license assigned to a user."---# licenseDetails resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,9 +8,9 @@ Contains information about a license assigned to a user.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List licenseDetails](../api/user_list_licensedetails.md) | licenseDetails collection |Retrieve a list of licenseDetails objects for a user.|
+|[List licenseDetails](../api/user-list-licensedetails.md) | licenseDetails collection |Retrieve a list of licenseDetails objects for a user.|
 
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
+<!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
 ## Properties
 | Property	   | Type	|Description|

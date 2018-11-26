@@ -1,4 +1,4 @@
-﻿# depEnrollmentProfile resource type
+---title: "depEnrollmentProfile resource type"description: "The depEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."---# depEnrollmentProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,26 +6,26 @@
 
 The depEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
 
-Inherits from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)
+Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List depEnrollmentProfiles](../api/intune_enrollment_depenrollmentprofile_list.md)|[depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) collection|List properties and relationships of the [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) objects.|
-|[Get depEnrollmentProfile](../api/intune_enrollment_depenrollmentprofile_get.md)|[depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md)|Read properties and relationships of the [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) object.|
-|[Create depEnrollmentProfile](../api/intune_enrollment_depenrollmentprofile_create.md)|[depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md)|Create a new [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) object.|
-|[Delete depEnrollmentProfile](../api/intune_enrollment_depenrollmentprofile_delete.md)|None|Deletes a [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md).|
-|[Update depEnrollmentProfile](../api/intune_enrollment_depenrollmentprofile_update.md)|[depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md)|Update the properties of a [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) object.|
+|[List depEnrollmentProfiles](../api/intune-enrollment-depenrollmentprofile-list.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) collection|List properties and relationships of the [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) objects.|
+|[Get depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-get.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|Read properties and relationships of the [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) object.|
+|[Create depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-create.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|Create a new [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) object.|
+|[Delete depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-delete.md)|None|Deletes a [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md).|
+|[Update depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-update.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|Update the properties of a [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
+|id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
@@ -33,9 +33,9 @@ Inherits from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofi
 |isMandatory|Boolean|Indicates if the profile is mandatory|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled|
 |supportPhoneNumber|String|Support phone number|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune_enrollment_itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |profileRemovalDisabled|Boolean|Indicates if the profile removal option is disabled|
-|managementCertificates|[managementCertificateWithThumbprint](../resources/intune_enrollment_managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
+|managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreBlocked|Boolean|Indicates if Restore setup pane is blocked|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
 |appleIdDisabled|Boolean|Indicates if Apple id setup pane is disabled|

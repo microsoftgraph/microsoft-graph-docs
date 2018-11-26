@@ -1,4 +1,4 @@
-# TableRow resource type
+---title: "TableRow resource type"description: "Represents a row in a table."---# TableRow resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,13 +9,13 @@ Represents a row in a table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |Read properties and relationships of tableRow object.|
-|[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)	|Update TableRow object. |
-|[Range](../api/tablerow_range.md)|[Range](range.md)|Returns the range object associated with the entire row.|
-|[Delete](../api/tablerow_delete.md)|None|Deletes the row from the table.|
-|[List](../api/tablerow_list.md) | [TableRow](tablerow.md) collection |Get tableRow object collection. |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Gets a row based on its position in the collection.|
-|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Adds a new row to the table.|
+|[Get TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |Read properties and relationships of tableRow object.|
+|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)	|Update TableRow object. |
+|[Range](../api/tablerow-range.md)|[Range](range.md)|Returns the range object associated with the entire row.|
+|[Delete](../api/tablerow-delete.md)|None|Deletes the row from the table.|
+|[List](../api/tablerow-list.md) | [TableRow](tablerow.md) collection |Get tableRow object collection. |
+|[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|Gets a row based on its position in the collection.|
+|[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|Adds a new row to the table.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,4 +1,4 @@
-# Using the notifications API in Microsoft Graph to enable human-centric notification experiences 
+---title: "Using the notifications API in Microsoft Graph to enable human-centric notification experiences "description: "Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence. "---# Using the notifications API in Microsoft Graph to enable human-centric notification experiences 
 
 Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence. 
 
@@ -16,9 +16,9 @@ You can use the notifications API to retrieve notification history based on an e
 
 ## Integrating with the notifications API in Microsoft Graph
 
-You can integrate your apps with Microsoft Graph notifications with a few simple steps - onboard your app via Windows Dev Center, use the [Create notification](../api-reference/beta/api/projectrome_notification_post.md) method to publish notifications, and use the Project Rome SDK to receive and manage notifications on your app clients.  
+You can integrate your apps with Microsoft Graph notifications with a few simple steps - onboard your app via Windows Dev Center, use the [Create notification](/graph/api/projectrome-notification-post?view=graph-rest-beta) method to publish notifications, and use the Project Rome SDK to receive and manage notifications on your app clients.  
 
-To learn more about how to publish user notifications via Microsoft Graph, see the [notifications API reference](../api-reference/beta/resources/notifications-api-overview.md).
+To learn more about how to publish user notifications via Microsoft Graph, see the [notifications API reference](/graph/api/resources/notifications-api-overview?view=graph-rest-beta).
  
 To learn more about receiving and managing notifications by integrating with the Project Rome SDK, see the [Project Rome SDK documentation](https://docs.microsoft.com/en-us/windows/project-rome/) 
 

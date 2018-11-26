@@ -1,4 +1,4 @@
-﻿# deviceManagementExchangeAccessRuleType enum type
+---title: "deviceManagementExchangeAccessRuleType enum type"description: "Criteria which defines the type of device this access rule will apply to"---# deviceManagementExchangeAccessRuleType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

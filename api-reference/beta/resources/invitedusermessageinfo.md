@@ -1,4 +1,4 @@
-# Configuring the invitation message
+---title: "Configuring the invitation message"description: "The invitedUserMessageInfo object allows you to configure the invitation message."---# Configuring the invitation message
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

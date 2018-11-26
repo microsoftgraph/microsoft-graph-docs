@@ -1,12 +1,12 @@
-﻿# Get networkIPv4ConfigurationManagementCondition
+---title: "Get networkIPv4ConfigurationManagementCondition"description: "Read properties and relationships of the networkIPv4ConfigurationManagementCondition object."---# Get networkIPv4ConfigurationManagementCondition
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Read properties and relationships of the [networkIPv4ConfigurationManagementCondition](../resources/intune_fencing_networkipv4configurationmanagementcondition.md) object.
+Read properties and relationships of the [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,7 +36,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [networkIPv4ConfigurationManagementCondition](../resources/intune_fencing_networkipv4configurationmanagementcondition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) object in the response body.
 
 ## Example
 ### Request

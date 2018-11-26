@@ -1,4 +1,4 @@
-﻿# softwareUpdateStatusSummary resource type
+---title: "softwareUpdateStatusSummary resource type"description: "Not yet documented"---# softwareUpdateStatusSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +8,8 @@ Not yet documented
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get softwareUpdateStatusSummary](../api/intune_deviceconfig_softwareupdatestatussummary_get.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Read properties and relationships of the [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) object.|
-|[Update softwareUpdateStatusSummary](../api/intune_deviceconfig_softwareupdatestatussummary_update.md)|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|Update the properties of a [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) object.|
+|[Get softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-get.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Read properties and relationships of the [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) object.|
+|[Update softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-update.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Update the properties of a [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

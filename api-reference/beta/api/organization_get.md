@@ -1,13 +1,13 @@
-# Get organization
+---title: "Get organization"description: "Retrieve the properties and relationships of currently authenticated organization."---# Get organization
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of currently authenticated organization.
 
-Since the **organization** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
+Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
@@ -79,10 +79,10 @@ Content-length: 411
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

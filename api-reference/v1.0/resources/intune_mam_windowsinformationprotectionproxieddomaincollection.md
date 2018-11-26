@@ -1,4 +1,4 @@
-﻿# windowsInformationProtectionProxiedDomainCollection resource type
+---title: "windowsInformationProtectionProxiedDomainCollection resource type"description: "Windows Information Protection Proxied Domain Collection"---# windowsInformationProtectionProxiedDomainCollection resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -7,7 +7,7 @@ Windows Information Protection Proxied Domain Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|proxiedDomains|[proxiedDomain](../resources/intune_mam_proxieddomain.md) collection|Collection of proxied domains|
+|proxiedDomains|[proxiedDomain](../resources/intune-mam-proxieddomain.md) collection|Collection of proxied domains|
 
 ## Relationships
 None

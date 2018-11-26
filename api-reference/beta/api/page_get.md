@@ -1,4 +1,4 @@
-# Get page
+---title: "Get page"description: "Retrieve the properties and relationships of a page object."---# Get page
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -21,10 +21,10 @@ GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-The `includeIDs=true` query option is used to [update pages](../api/page_update.md).
+The `includeIDs=true` query option is used to [update pages](../api/page-update.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

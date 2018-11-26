@@ -1,8 +1,8 @@
-# List points
+---title: "List points"description: "Retrieve a list of chartpoints objects."---# List points
 
 Retrieve a list of chartpoints objects.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,4 @@
-# stringKeyLongValuePair resource type
+---title: "stringKeyLongValuePair resource type"description: "Represents a key-value pair where the key is a string and the value is an Int64."---# stringKeyLongValuePair resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

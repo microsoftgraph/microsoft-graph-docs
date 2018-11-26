@@ -1,10 +1,10 @@
-# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
+---title: "educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource"description: "When OAuth2 Client Credentials Grant is to be used to connect to the data provider, this connection settings type should be used to set up the profile."---# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.
 
-Derived from [educationSynchronizationConnectionSettings](educationSynchronizationConnectionSettings.md).
+Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
 
 ## Properties
 

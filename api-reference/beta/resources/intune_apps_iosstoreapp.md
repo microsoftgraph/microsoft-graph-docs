@@ -1,4 +1,4 @@
-﻿# iosStoreApp resource type
+---title: "iosStoreApp resource type"description: "Contains properties and inherited properties for iOS store apps."---# iosStoreApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,48 +6,48 @@
 
 Contains properties and inherited properties for iOS store apps.
 
-Inherits from [mobileApp](../resources/intune_apps_mobileapp.md)
+Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosStoreApps](../api/intune_apps_iosstoreapp_list.md)|[iosStoreApp](../resources/intune_apps_iosstoreapp.md) collection|List properties and relationships of the [iosStoreApp](../resources/intune_apps_iosstoreapp.md) objects.|
-|[Get iosStoreApp](../api/intune_apps_iosstoreapp_get.md)|[iosStoreApp](../resources/intune_apps_iosstoreapp.md)|Read properties and relationships of the [iosStoreApp](../resources/intune_apps_iosstoreapp.md) object.|
-|[Create iosStoreApp](../api/intune_apps_iosstoreapp_create.md)|[iosStoreApp](../resources/intune_apps_iosstoreapp.md)|Create a new [iosStoreApp](../resources/intune_apps_iosstoreapp.md) object.|
-|[Delete iosStoreApp](../api/intune_apps_iosstoreapp_delete.md)|None|Deletes a [iosStoreApp](../resources/intune_apps_iosstoreapp.md).|
-|[Update iosStoreApp](../api/intune_apps_iosstoreapp_update.md)|[iosStoreApp](../resources/intune_apps_iosstoreapp.md)|Update the properties of a [iosStoreApp](../resources/intune_apps_iosstoreapp.md) object.|
+|[List iosStoreApps](../api/intune-apps-iosstoreapp-list.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md) collection|List properties and relationships of the [iosStoreApp](../resources/intune-apps-iosstoreapp.md) objects.|
+|[Get iosStoreApp](../api/intune-apps-iosstoreapp-get.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|Read properties and relationships of the [iosStoreApp](../resources/intune-apps-iosstoreapp.md) object.|
+|[Create iosStoreApp](../api/intune-apps-iosstoreapp-create.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|Create a new [iosStoreApp](../resources/intune-apps-iosstoreapp.md) object.|
+|[Delete iosStoreApp](../api/intune-apps-iosstoreapp-delete.md)|None|Deletes a [iosStoreApp](../resources/intune-apps-iosstoreapp.md).|
+|[Update iosStoreApp](../api/intune-apps-iosstoreapp-update.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|Update the properties of a [iosStoreApp](../resources/intune-apps-iosstoreapp.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|The description of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |bundleId|String|The Identity Name.|
 |appStoreUrl|String|The Apple App Store URL|
-|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|The iOS architecture for which this app can run on.|
-|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune_apps_iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|The iOS architecture for which this app can run on.|
+|minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune-apps-iosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune_apps_mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

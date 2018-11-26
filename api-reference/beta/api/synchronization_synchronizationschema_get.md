@@ -1,11 +1,11 @@
-# Get synchronizationSchema
+---title: "Get synchronizationSchema"description: "Retrieve the schema for a given synchronization job or template."---# Get synchronizationSchema
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the schema for a given synchronization job or template.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [synchronizationSchema](../resources/synchronization_synchronizationschema.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object in the response body.
 
 ## Example
 

@@ -1,4 +1,4 @@
-﻿# userAppInstallStatus resource type
+---title: "userAppInstallStatus resource type"description: "Contains properties for the installation status for a user."---# userAppInstallStatus resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ Contains properties for the installation status for a user.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List userAppInstallStatuses](../api/intune_apps_userappinstallstatus_list.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) objects.|
-|[Get userAppInstallStatus](../api/intune_apps_userappinstallstatus_get.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md)|Read properties and relationships of the [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object.|
-|[Create userAppInstallStatus](../api/intune_apps_userappinstallstatus_create.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md)|Create a new [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object.|
-|[Delete userAppInstallStatus](../api/intune_apps_userappinstallstatus_delete.md)|None|Deletes a [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md).|
-|[Update userAppInstallStatus](../api/intune_apps_userappinstallstatus_update.md)|[userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md)|Update the properties of a [userAppInstallStatus](../resources/intune_apps_userappinstallstatus.md) object.|
+|[List userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|List properties and relationships of the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) objects.|
+|[Get userAppInstallStatus](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Read properties and relationships of the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.|
+|[Create userAppInstallStatus](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Create a new [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.|
+|[Delete userAppInstallStatus](../api/intune-apps-userappinstallstatus-delete.md)|None|Deletes a [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).|
+|[Update userAppInstallStatus](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|Update the properties of a [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,8 +27,8 @@ Contains properties for the installation status for a user.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|app|[mobileApp](../resources/intune_apps_mobileapp.md)|The navigation link to the mobile app.|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|The install state of the app on devices.|
+|app|[mobileApp](../resources/intune-apps-mobileapp.md)|The navigation link to the mobile app.|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The install state of the app on devices.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -1,4 +1,4 @@
-# ChartLegend resource type
+---title: "ChartLegend resource type"description: "Represents the legend in a chart."---# ChartLegend resource type
 
 Represents the legend in a chart.
 
@@ -7,8 +7,8 @@ Represents the legend in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend_get.md) | [WorkbookChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend_update.md) | [WorkbookChartLegend](chartlegend.md)	|Update ChartLegend object. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md)	|Update ChartLegend object. |
 
 ## Properties
 | Property	   | Type	|Description|

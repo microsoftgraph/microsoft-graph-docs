@@ -1,4 +1,4 @@
-﻿# iosWebContentFilterAutoFilter resource type
+---title: "iosWebContentFilterAutoFilter resource type"description: "Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control. When constructed with no property values, the iOS device will enable the automatic filter regardless."---# iosWebContentFilterAutoFilter resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control. When constructed with no property values, the iOS device will enable the automatic filter regardless.
 
-Inherits from [iosWebContentFilterBase](../resources/intune_deviceconfig_ioswebcontentfilterbase.md)
+Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## Properties
 |Property|Type|Description|

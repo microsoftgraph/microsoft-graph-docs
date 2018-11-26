@@ -1,8 +1,8 @@
-# synchronizationSchedule resource type
+---title: "synchronizationSchedule resource type"description: "Defines the schedule used to run a synchronizationJob."---# synchronizationSchedule resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Defines the schedule used to run a [synchronizationJob](synchronization_synchronizationjob.md).
+Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## Properties
 | Property	   | Type	|Description|

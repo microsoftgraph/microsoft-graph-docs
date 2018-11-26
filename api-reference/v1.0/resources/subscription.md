@@ -1,4 +1,4 @@
-# subscription resource type
+---title: "subscription resource type"description: "A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"---# subscription resource type
 
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
@@ -80,11 +80,11 @@ None
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [Create subscription](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive notifications when Microsoft Graph data changes. |
-| [Update subscription](../api/subscription_update.md) | [subscription](subscription.md) | Renews a subscription by updating its expiration time. |
-| [List subscriptions](../api/subscription_list.md) | [subscription](subscription.md) | Lists active subscriptions. |
-| [Get subscription](../api/subscription_get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
-| [Delete subscription](../api/subscription_delete.md) | None |Deletes a subscription object. |
+| [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive notifications when Microsoft Graph data changes. |
+| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renews a subscription by updating its expiration time. |
+| [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
+| [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
+| [Delete subscription](../api/subscription-delete.md) | None |Deletes a subscription object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

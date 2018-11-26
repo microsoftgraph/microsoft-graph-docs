@@ -1,4 +1,4 @@
-# Workbook resource type
+---title: "Workbook resource type"description: "Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc."---# Workbook resource type
 
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
@@ -9,9 +9,9 @@ None
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook_createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
-|[Close Session](../api/workbook_closesession.md) | None |Close an existing session.|
-|[Refresh Session](../api/workbook_refreshsession.md) | None |Refresh an existing session.|
+|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Close Session](../api/workbook-closesession.md) | None |Close an existing session.|
+|[Refresh Session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
 
 
 ## Relationships

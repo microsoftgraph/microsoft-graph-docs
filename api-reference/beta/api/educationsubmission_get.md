@@ -1,4 +1,4 @@
-# Get educationSubmission
+---title: "Get educationSubmission"description: "Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher has full access to all submissions. "---# Get educationSubmission
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,7 +7,7 @@ Retrieve a particular submission. A submission object represents a student's wor
 The grade and feedback from a teacher are also part of this object. Only teachers can add or change grades and feedback. Students will not see the grade or feedback until the assignment has been released. The Basic permissions do not include grade and feedback but do include everything else.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

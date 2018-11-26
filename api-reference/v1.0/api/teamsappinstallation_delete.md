@@ -1,11 +1,11 @@
-# Delete app from team
+---title: "Delete app from team"description: "Uninstalls an app from the specified team."---# Delete app from team
 
 
 
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,4 @@
-# Get photo
+---title: "Get photo"description: "Get the specified profilePhoto or its metadata (**profilePhoto** properties)."---# Get photo
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -16,7 +16,7 @@ If the specified size is not available in the user's mailbox or in Azure Active 
 metadata.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 > **Note:** The GET photo operation in beta supports a user's work, school, or personal accounts. The GET photo metadata operation, however, supports only the user's work or school accounts and not personal accounts.
 
@@ -84,7 +84,7 @@ Do not supply a request body for this method.
 ### Response for getting the photo
 If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
 ### Response for getting the metadata of the photo
-If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilephoto.md) object in the response body.
 
 ## Example
 ##### Request 1
@@ -167,7 +167,7 @@ Content-type: application/json
 ```
 ## Using the binary data of the requested photo
 
-When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment. Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user_post_messages.md).
+When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment. Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user-post-messages.md).
 
       const attachments = [{
         '@odata.type': '#microsoft.graph.fileAttachment',

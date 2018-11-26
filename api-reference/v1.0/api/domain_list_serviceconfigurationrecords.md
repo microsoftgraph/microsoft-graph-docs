@@ -1,4 +1,4 @@
-# List serviceConfigurationRecords
+---title: "List serviceConfigurationRecords"description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."---# List serviceConfigurationRecords
 
 Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
 
@@ -6,7 +6,7 @@ Use the returned list to add records to the zone file of the domain. This can be
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

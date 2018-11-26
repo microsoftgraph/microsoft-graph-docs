@@ -1,4 +1,4 @@
-# chatMessage resource type
+---title: "chatMessage resource type"description: "Represents an individual chat message within a channel or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message."---# chatMessage resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,10 +8,10 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Channel messages](../api/channel_list_messages.md) | [chatmessage](chatmessage.md) collection | Get the list of all root messages in a channel.|
-|[Get Channel message](../api/channel_get_message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
-|[List replies to a message](../api/channel_list_messagereplies.md) | [chatmessage](chatmessage.md) collection| Get the list of all replies to a message in channel.|
-|[Get a reply to a message](../api/channel_get_messagereply.md) | [chatmessage](chatmessage.md)| Get a single reply to a message in a channel.|
+|[List Channel messages](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) collection | Get the list of all root messages in a channel.|
+|[Get Channel message](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
+|[List replies to a message](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) collection| Get the list of all replies to a message in channel.|
+|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Get a single reply to a message in a channel.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -26,9 +26,9 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |isDeleted|boolean|Represents if a message has been soft deleted|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
 |subject|string|Message subject line. Optional|
-|body|[itemBody](itemBody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
+|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
-|mentions|[chatMessageMention](chatMention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
+|mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
 |importance| string | The importance of the message: Normal, High|
 |reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|

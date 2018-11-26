@@ -1,4 +1,4 @@
-﻿# windowsKioskDesktopApp resource type
+---title: "windowsKioskDesktopApp resource type"description: "The base class for a type of apps"---# windowsKioskDesktopApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,13 +6,13 @@
 
 The base class for a type of apps
 
-Inherits from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md)
+Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune_deviceconfig_windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md)|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Define the path of a desktop app|
 |desktopApplicationId|String|Define the DesktopApplicationID of the app|
 |desktopApplicationLinkPath|String|Define the DesktopApplicationLinkPath of the app|

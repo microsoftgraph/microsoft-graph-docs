@@ -1,10 +1,10 @@
-# Create ContactFolder
+---title: "Create ContactFolder"description: "Create a new contactFolder under the user's default contacts folder."---# Create ContactFolder
 
 Create a new contactFolder under the user's default contacts folder.
 
-You can also [create a new contactfolder as a child of any specified contact folder](contactfolder_post_childfolders.md).
+You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

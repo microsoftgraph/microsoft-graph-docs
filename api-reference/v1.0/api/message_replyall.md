@@ -1,9 +1,9 @@
-# message: replyAll
+---title: "message: replyAll"description: "Reply to all recipients of a message. The message is then saved in the Sent Items folder."---# message: replyAll
 
 Reply to all recipients of a message. The message is then saved in the Sent Items folder.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

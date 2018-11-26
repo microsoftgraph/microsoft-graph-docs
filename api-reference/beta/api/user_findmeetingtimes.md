@@ -1,4 +1,4 @@
-# user: findMeetingTimes
+---title: "user: findMeetingTimes"description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."---# user: findMeetingTimes
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ Based on this value, you can better adjust the parameters and call **findMeeting
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -59,10 +59,10 @@ calculates the best possible meeting times, and returns any meeting suggestions.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) in the response body. 
+If successful, this method returns `200 OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md) in the response body. 
 
 A **meetingTimeSuggestionsResult** includes a collection of meeting suggestions and an **emptySuggestionsReason** property. Each suggestion is defined 
-as a [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md), with attendees having on the average a confidence level of 50% to attend, 
+as a [meetingTimeSuggestion](../resources/meetingtimesuggestion.md), with attendees having on the average a confidence level of 50% to attend, 
 or a specific % that you have specified in the **minimumAttendeePercentage** parameter. 
 
 By default, each meeting time suggestion is returned in UTC. 

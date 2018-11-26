@@ -1,4 +1,4 @@
-﻿# iosVppAppAssignedLicense resource type
+---title: "iosVppAppAssignedLicense resource type"description: "iOS Volume Purchase Program license assignment. This class does not support Create, Delete, or Update."---# iosVppAppAssignedLicense resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +8,11 @@ iOS Volume Purchase Program license assignment. This class does not support Crea
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List iosVppAppAssignedLicenses](../api/intune_apps_iosvppappassignedlicense_list.md)|[iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md) collection|List properties and relationships of the [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md) objects.|
-|[Get iosVppAppAssignedLicense](../api/intune_apps_iosvppappassignedlicense_get.md)|[iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|Read properties and relationships of the [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md) object.|
-|[Create iosVppAppAssignedLicense](../api/intune_apps_iosvppappassignedlicense_create.md)|[iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|Create a new [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md) object.|
-|[Delete iosVppAppAssignedLicense](../api/intune_apps_iosvppappassignedlicense_delete.md)|None|Deletes a [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md).|
-|[Update iosVppAppAssignedLicense](../api/intune_apps_iosvppappassignedlicense_update.md)|[iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md)|Update the properties of a [iosVppAppAssignedLicense](../resources/intune_apps_iosvppappassignedlicense.md) object.|
+|[List iosVppAppAssignedLicenses](../api/intune-apps-iosvppappassignedlicense-list.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) collection|List properties and relationships of the [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) objects.|
+|[Get iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-get.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Read properties and relationships of the [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.|
+|[Create iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-create.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Create a new [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.|
+|[Delete iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-delete.md)|None|Deletes a [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md).|
+|[Update iosVppAppAssignedLicense](../api/intune-apps-iosvppappassignedlicense-update.md)|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|Update the properties of a [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) object.|
 
 ## Properties
 |Property|Type|Description|

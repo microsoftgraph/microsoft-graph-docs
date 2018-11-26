@@ -1,4 +1,4 @@
-# Add attachment
+---title: "Add attachment"description: "Use this API to add an attachment to an event. Since there"---# Add attachment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@ Use this API to add an [attachment](../resources/attachment.md) to an event. Sin
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
 you can add to under 4MB.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

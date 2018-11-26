@@ -1,9 +1,9 @@
-# notebook: getRecentNotebooks
+---title: "notebook: getRecentNotebooks"description: "Get a list of recentNotebook instances that have been accessed by the signed-in user."---# notebook: getRecentNotebooks
 
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

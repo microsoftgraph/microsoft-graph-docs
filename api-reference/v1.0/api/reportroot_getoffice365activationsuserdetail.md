@@ -1,4 +1,4 @@
-# reportRoot: getOffice365ActivationsUserDetail
+---title: "reportRoot: getOffice365ActivationsUserDetail"description: "Get details about users who have activated Office 365."---# reportRoot: getOffice365ActivationsUserDetail
 
 Get details about users who have activated Office 365.
 
@@ -6,7 +6,7 @@ Get details about users who have activated Office 365.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

@@ -1,4 +1,4 @@
-﻿# activeDirectoryWindowsAutopilotDeploymentProfile resource type
+---title: "activeDirectoryWindowsAutopilotDeploymentProfile resource type"description: "Windows Autopilot Deployment Profile"---# activeDirectoryWindowsAutopilotDeploymentProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,37 +6,37 @@
 
 Windows Autopilot Deployment Profile
 
-Inherits from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)
+Inherits from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List activeDirectoryWindowsAutopilotDeploymentProfiles](../api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_list.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md) collection|List properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md) objects.|
-|[Get activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_get.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)|Read properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md) object.|
-|[Create activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_create.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)|Create a new [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md) object.|
-|[Delete activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_delete.md)|None|Deletes a [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md).|
-|[Update activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_update.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)|Update the properties of a [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md) object.|
+|[List activeDirectoryWindowsAutopilotDeploymentProfiles](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-list.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) collection|List properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects.|
+|[Get activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-get.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|Read properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object.|
+|[Create activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-create.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|Create a new [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object.|
+|[Delete activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-delete.md)|None|Deletes a [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md).|
+|[Update activeDirectoryWindowsAutopilotDeploymentProfile](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-update.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|Update the properties of a [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Profile Key Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|displayName|String|Name of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|description|String|Description of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|language|String|Language configured on the device Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|createdDateTime|DateTimeOffset|Profile creation time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|lastModifiedDateTime|DateTimeOffset|Profile last modified time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|extractHardwareHash|Boolean|HardwareHash Extraction for the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|deviceNameTemplate|String|The template used to name the AutoPilot Device. This can be a custom text and can also contain either the serial number of the device, or a randomly generated number. The total length of the text generated by the template can be no more than 15 characters. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|id|String|Profile Key Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|displayName|String|Name of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|description|String|Description of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|language|String|Language configured on the device Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|createdDateTime|DateTimeOffset|Profile creation time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|lastModifiedDateTime|DateTimeOffset|Profile last modified time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Out of box experience setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Boolean|HardwareHash Extraction for the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|deviceNameTemplate|String|The template used to name the AutoPilot Device. This can be a custom text and can also contain either the serial number of the device, or a randomly generated number. The total length of the text generated by the template can be no more than 15 characters. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune_enrollment_windowsautopilotdeviceidentity.md) collection|The list of assigned devices for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune_enrollment_windowsautopilotdeploymentprofileassignment.md) collection|The list of group assignments for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
-|domainJoinConfiguration|[windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md)|Configuration to join Active Directory domain|
+|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) collection|The list of assigned devices for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) collection|The list of group assignments for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|domainJoinConfiguration|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Configuration to join Active Directory domain|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

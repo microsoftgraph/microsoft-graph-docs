@@ -1,4 +1,4 @@
-# ChartDataLabels resource type
+---title: "ChartDataLabels resource type"description: "Represents a collection of all the data labels on a chart point."---# ChartDataLabels resource type
 
 Represents a collection of all the data labels on a chart point.
 
@@ -7,8 +7,8 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels_get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
-|[Update](../api/chartdatalabels_update.md) | [WorkbookChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties
 | Property	   | Type	|Description|

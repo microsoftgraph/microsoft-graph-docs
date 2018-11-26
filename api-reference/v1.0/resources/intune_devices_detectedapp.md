@@ -1,4 +1,4 @@
-﻿# detectedApp resource type
+---title: "detectedApp resource type"description: "A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned."---# detectedApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,11 +6,11 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List detectedApps](../api/intune_devices_detectedapp_list.md)|[detectedApp](../resources/intune_devices_detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) objects.|
-|[Get detectedApp](../api/intune_devices_detectedapp_get.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|Read properties and relationships of the [detectedApp](../resources/intune_devices_detectedapp.md) object.|
-|[Create detectedApp](../api/intune_devices_detectedapp_create.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|Create a new [detectedApp](../resources/intune_devices_detectedapp.md) object.|
-|[Delete detectedApp](../api/intune_devices_detectedapp_delete.md)|None|Deletes a [detectedApp](../resources/intune_devices_detectedapp.md).|
-|[Update detectedApp](../api/intune_devices_detectedapp_update.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|Update the properties of a [detectedApp](../resources/intune_devices_detectedapp.md) object.|
+|[List detectedApps](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) collection|List properties and relationships of the [detectedApp](../resources/intune-devices-detectedapp.md) objects.|
+|[Get detectedApp](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Read properties and relationships of the [detectedApp](../resources/intune-devices-detectedapp.md) object.|
+|[Create detectedApp](../api/intune-devices-detectedapp-create.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Create a new [detectedApp](../resources/intune-devices-detectedapp.md) object.|
+|[Delete detectedApp](../api/intune-devices-detectedapp-delete.md)|None|Deletes a [detectedApp](../resources/intune-devices-detectedapp.md).|
+|[Update detectedApp](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Update the properties of a [detectedApp](../resources/intune-devices-detectedapp.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +24,7 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The devices that have the discovered application installed|
+|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The devices that have the discovered application installed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

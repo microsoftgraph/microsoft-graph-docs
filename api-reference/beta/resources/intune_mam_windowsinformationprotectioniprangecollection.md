@@ -1,4 +1,4 @@
-﻿# windowsInformationProtectionIPRangeCollection resource type
+---title: "windowsInformationProtectionIPRangeCollection resource type"description: "Windows Information Protection IP Range Collection"---# windowsInformationProtectionIPRangeCollection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,7 +9,7 @@ Windows Information Protection IP Range Collection
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name|
-|ranges|[ipRange](../resources/intune_shared_iprange.md) collection|Collection of ip ranges|
+|ranges|[ipRange](../resources/intune-shared-iprange.md) collection|Collection of ip ranges|
 
 ## Relationships
 None

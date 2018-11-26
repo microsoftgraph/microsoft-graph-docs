@@ -1,4 +1,4 @@
-﻿# roleAssignment resource type
+---title: "roleAssignment resource type"description: "The Role Assignment resource. Role assignments tie together a role definition with members and scopes. There can be one or more role assignments per role. This applies to custom and built-in roles."---# roleAssignment resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,11 +6,11 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List roleAssignments](../api/intune_rbac_roleassignment_list.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md) collection|List properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) objects.|
-|[Get roleAssignment](../api/intune_rbac_roleassignment_get.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Read properties and relationships of the [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
-|[Create roleAssignment](../api/intune_rbac_roleassignment_create.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Create a new [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
-|[Delete roleAssignment](../api/intune_rbac_roleassignment_delete.md)|None|Deletes a [roleAssignment](../resources/intune_rbac_roleassignment.md).|
-|[Update roleAssignment](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Update the properties of a [roleAssignment](../resources/intune_rbac_roleassignment.md) object.|
+|[List roleAssignments](../api/intune-rbac-roleassignment-list.md)|[roleAssignment](../resources/intune-rbac-roleassignment.md) collection|List properties and relationships of the [roleAssignment](../resources/intune-rbac-roleassignment.md) objects.|
+|[Get roleAssignment](../api/intune-rbac-roleassignment-get.md)|[roleAssignment](../resources/intune-rbac-roleassignment.md)|Read properties and relationships of the [roleAssignment](../resources/intune-rbac-roleassignment.md) object.|
+|[Create roleAssignment](../api/intune-rbac-roleassignment-create.md)|[roleAssignment](../resources/intune-rbac-roleassignment.md)|Create a new [roleAssignment](../resources/intune-rbac-roleassignment.md) object.|
+|[Delete roleAssignment](../api/intune-rbac-roleassignment-delete.md)|None|Deletes a [roleAssignment](../resources/intune-rbac-roleassignment.md).|
+|[Update roleAssignment](../api/intune-rbac-roleassignment-update.md)|[roleAssignment](../resources/intune-rbac-roleassignment.md)|Update the properties of a [roleAssignment](../resources/intune-rbac-roleassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|roleDefinition|[roleDefinition](../resources/intune_rbac_roledefinition.md)|Role definition this assignment is part of.|
+|roleDefinition|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Role definition this assignment is part of.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

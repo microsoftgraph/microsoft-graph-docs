@@ -1,11 +1,11 @@
-# List deleted items
+---title: "List deleted items"description: "Retrieve a list of recently deleted items from deleted items."---# List deleted items
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### For users:
 

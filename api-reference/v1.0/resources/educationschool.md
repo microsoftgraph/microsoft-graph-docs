@@ -1,4 +1,4 @@
-# educationSchool resource type
+---title: "educationSchool resource type"description: "A resource representing a school and used to manage the classes, teachers, and students of the represented school.  "---# educationSchool resource type
 
 A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
 
@@ -7,15 +7,15 @@ A resource representing a school and used to manage the classes, teachers, and s
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get](../api/educationschool_get.md) | [educationSchool](educationschool.md) |Read properties and relationships of an **educationSchool** object.|
-|[Add class](../api/educationschool_post_classes.md) |[educationClass](educationclass.md)| Add a new **educationClass** for the school by posting to the classes navigation property.|
-|[List classes](../api/educationschool_list_classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection.|
-|[Remove class](../api/educationschool_delete_classes.md) |[educationClass](educationclass.md)| Remove an **educationClass** from the school through the classes navigation property.|
-|[Add user](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the school by posting to the **users** navigation property.|
-|[List users](../api/educationschool_list_users.md) |[educationUser](educationuser.md) collection| Get the **educationUser** object collection.|
-|[Remove user](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the school through the **users** navigation property.|
-|[Update](../api/educationschool_update.md) | [educationSchool](educationschool.md)	|Update an **educationSchool** object. |
-|[Delete](../api/educationschool_delete.md) | None |Delete an **educationSchool** object. |
+|[Get](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Read properties and relationships of an **educationSchool** object.|
+|[Add class](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Add a new **educationClass** for the school by posting to the classes navigation property.|
+|[List classes](../api/educationschool-list-classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection.|
+|[Remove class](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Remove an **educationClass** from the school through the classes navigation property.|
+|[Add user](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the school by posting to the **users** navigation property.|
+|[List users](../api/educationschool-list-users.md) |[educationUser](educationuser.md) collection| Get the **educationUser** object collection.|
+|[Remove user](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the school through the **users** navigation property.|
+|[Update](../api/educationschool-update.md) | [educationSchool](educationschool.md)	|Update an **educationSchool** object. |
+|[Delete](../api/educationschool-delete.md) | None |Delete an **educationSchool** object. |
 
 ## Properties
 | Property	   | Type	|Description|

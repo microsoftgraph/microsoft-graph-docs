@@ -1,4 +1,4 @@
-# Create Policy
+---title: "Create Policy"description: "Create a new policy object by specifying display name, policy type, and policy description."---# Create Policy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -7,7 +7,7 @@ Create a new [policy](../resources/policy.md) object by specifying display name,
 >Note: The policy details will be validated before being stored. If it does not pass validation, a 400 Bad Request will be returned.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

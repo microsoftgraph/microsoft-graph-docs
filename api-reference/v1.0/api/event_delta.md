@@ -1,17 +1,17 @@
-# event: delta
+---title: "event: delta"description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) "---# event: delta
 
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) 
 of the user's primary calendar.
 
 A **delta** function call for events is similar to a `GET /calendarview` request for 
 a range of dates in the user's primary calendar, except that by appropriately 
-applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
+applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
 you can query for incremental changes in that calender view. This allows you to maintain and synchronize 
 a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
 from the server every time.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -42,8 +42,8 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
-| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
-| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
 a `GET /calendarview` request. `$select` is not supported in this case. 
@@ -68,7 +68,7 @@ The following example shows how to make a single **delta** function call, and li
 in the response body to 2.
 
 To track changes in a calendar view, you would make one or more **delta** function calls, with 
-appropriate [state tokens](../../../concepts/delta_query_overview.md), to get the set of incremental changes since the last delta query. 
+appropriate [state tokens](/graph/delta-query-overview), to get the set of incremental changes since the last delta query. 
 
 <!-- {
   "blockType": "request",
@@ -120,8 +120,8 @@ Content-length: 359
 
 ### See also
 
-- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to events in a calendar](../../../concepts/delta_query_events.md)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
+- [Get incremental changes to events in a calendar](/graph/delta-query-events)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

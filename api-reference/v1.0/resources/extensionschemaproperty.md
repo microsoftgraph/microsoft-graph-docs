@@ -1,4 +1,4 @@
-# extensionSchemaProperty resource type
+---title: "extensionSchemaProperty resource type"description: "Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a schemaExtension definition."---# extensionSchemaProperty resource type
 
 Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a [schemaExtension](schemaextension.md) definition.
 

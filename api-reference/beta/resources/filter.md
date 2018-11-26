@@ -1,4 +1,4 @@
-# Filter resource type
+---title: "Filter resource type"description: "Manages the filtering of a table's column."---# Filter resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,8 +9,8 @@ Manages the filtering of a table's column.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Apply](../api/filter_apply.md)|None|Apply the given filter criteria on the given column.|
-|[Clear](../api/filter_clear.md)|None|Clear the filter on the given column.|
+|[Apply](../api/filter-apply.md)|None|Apply the given filter criteria on the given column.|
+|[Clear](../api/filter-clear.md)|None|Clear the filter on the given column.|
 
 ## Properties
 None

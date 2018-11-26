@@ -1,4 +1,4 @@
-# TableRowCollection: add
+---title: "TableRowCollection: add"description: "Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. "---# TableRowCollection: add
 
 Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. 
 
@@ -7,7 +7,7 @@ Adds rows to the end of the table. Note that the API can accept multiple rows da
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -89,9 +89,9 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+    "Warning: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
       Inconsistent types between parameter (Collection) and table (None)",
-    "Error: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+    "Error: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
       Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
   ],
   "tocPath": ""

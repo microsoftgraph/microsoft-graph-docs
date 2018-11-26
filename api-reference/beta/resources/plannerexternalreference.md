@@ -1,4 +1,4 @@
-# plannerExternalReference resource type
+---title: "plannerExternalReference resource type"description: "The **plannerExternalReference** resource represents the metadata of a reference (attachments such as file, URL). It is the value of property-value pairs in the externalReferences object."---# plannerExternalReference resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

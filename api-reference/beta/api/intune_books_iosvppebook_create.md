@@ -1,12 +1,12 @@
-﻿# Create iosVppEBook
+---title: "Create iosVppEBook"description: "Create a new iosVppEBook object."---# Create iosVppEBook
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [iosVppEBook](../resources/intune_books_iosvppebook.md) object.
+Create a new [iosVppEBook](../resources/intune-books-iosvppebook.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,16 +36,16 @@ The following table shows the properties that are required when you create the i
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|description|String|Description. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|Description. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|The Vpp token ID.|
 |appleId|String|The Apple ID associated with Vpp token.|
 |vppOrganizationName|String|The Vpp token's organization name.|
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the i
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [iosVppEBook](../resources/intune_books_iosvppebook.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [iosVppEBook](../resources/intune-books-iosvppebook.md) object in the response body.
 
 ## Example
 ### Request

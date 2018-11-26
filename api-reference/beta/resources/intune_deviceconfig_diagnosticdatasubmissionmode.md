@@ -1,4 +1,4 @@
-﻿# diagnosticDataSubmissionMode enum type
+---title: "diagnosticDataSubmissionMode enum type"description: "Allow the device to send diagnostic and usage telemetry data, such as Watson."---# diagnosticDataSubmissionMode enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

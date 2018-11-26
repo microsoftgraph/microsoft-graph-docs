@@ -1,4 +1,4 @@
-# Use the Microsoft Graph API to integrate social intelligence in an app
+---title: "Use the Microsoft Graph API to integrate social intelligence in an app"description: "Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data."---# Use the Microsoft Graph API to integrate social intelligence in an app
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -11,7 +11,7 @@ about a person from across mail, contacts, and social networks. The results are 
 relevance based on multiple communication, collaboration, and business relationships. The API
 lets you browse, sort, select, filter, or search for persons based on your criteria.
 
-- [List people](../api/user_list_people.md)
+- [List people](../api/user-list-people.md)
 
 ## Manage @-Mentions
 
@@ -29,20 +29,20 @@ Include the next sentence when supporting events.
 
 - Create mentions in a new message
 
-  - [Create and send mentions as part of a new message](../api/user_sendmail.md#request-2)
-  - [Create mentions as part of a message draft](../api/user_post_messages.md#request-2)
+  - [Create and send mentions as part of a new message](../api/user-sendmail.md#request-2)
+  - [Create mentions as part of a message draft](../api/user-post-messages.md#request-2)
 
 - Get information about mentions in a message
 
-  - [Get all the messages in the signed-in user's mailbox that mention the user](../api/user_list_messages.md#request-2)
-  - [Get details of each mention in a message](../api/message_get.md#request-2)
+  - [Get all the messages in the signed-in user's mailbox that mention the user](../api/user-list-messages.md#request-2)
+  - [Get details of each mention in a message](../api/message-get.md#request-2)
 
-- [Delete a mention](../api/message_delete.md#request-2) in a message
+- [Delete a mention](../api/message-delete.md#request-2) in a message
 
 ## Access social data around and about a user
 
 Office Graph encapsulates the relationships between different entities in Office 365. Use Office Graph to get social insights
 into individual users across Office 365.
 
-- List the items [trending around](../api/insights_list_trending.md) a user
-- List users who have been [working with](../api/user_list_people.md) a user
+- List the items [trending around](../api/insights-list-trending.md) a user
+- List users who have been [working with](../api/user-list-people.md) a user

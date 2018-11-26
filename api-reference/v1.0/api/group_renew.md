@@ -1,10 +1,10 @@
-# group: renew
+---title: "group: renew"description: "Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."---# group: renew
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
  
 
 |Permission type      | Permissions (from least to most privileged)              |

@@ -1,4 +1,4 @@
-﻿# officeClientConfiguration resource type
+---title: "officeClientConfiguration resource type"description: "Office Client Configuration."---# officeClientConfiguration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,10 +8,10 @@ Office Client Configuration.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List officeClientConfigurations](../api/intune_cirrus_officeclientconfiguration_list.md)|[officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md) collection|List properties and relationships of the [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md) objects.|
-|[Get officeClientConfiguration](../api/intune_cirrus_officeclientconfiguration_get.md)|[officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|Read properties and relationships of the [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md) object.|
-|[assign action](../api/intune_cirrus_officeclientconfiguration_assign.md)|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|Replace all targeted groups for a policy.|
-|[updatePriorities action](../api/intune_cirrus_officeclientconfiguration_updatepriorities.md)|None|Update policy priorities.|
+|[List officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) collection|List properties and relationships of the [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) objects.|
+|[Get officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Read properties and relationships of the [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) object.|
+|[assign action](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection|Replace all targeted groups for a policy.|
+|[updatePriorities action](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|None|Update policy priorities.|
 
 ## Properties
 |Property|Type|Description|
@@ -23,13 +23,13 @@ Office Client Configuration.
 |displayName|String|Admin provided description of the office client configuration policy.|
 |lastModifiedDateTime|DateTime|Last modified datetime stamp of the policy.|
 |priority|Int32|Priority value should be unique value for each policy under a tenant and will be used for conflict resolution, lower values mean priority is high.|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune_cirrus_officeusercheckinsummary.md)|User check-in summary for the policy.|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune_cirrus_officeclientcheckinstatus.md) collection|List of office Client check-in status.|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|User check-in summary for the policy.|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection|List of office Client check-in status.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|The list of group assignments for the policy.|
+|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection|The list of group assignments for the policy.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

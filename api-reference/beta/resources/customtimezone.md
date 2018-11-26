@@ -1,4 +1,4 @@
-# customTimeZone resource type
+---title: "customTimeZone resource type"description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."---# customTimeZone resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

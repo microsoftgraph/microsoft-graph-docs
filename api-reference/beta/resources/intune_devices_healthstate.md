@@ -1,4 +1,4 @@
-﻿# healthState enum type
+---title: "healthState enum type"description: "Indicates health state of the Windows management app."---# healthState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

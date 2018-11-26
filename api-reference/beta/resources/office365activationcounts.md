@@ -1,4 +1,4 @@
-# office365ActivationCounts resource type
+---title: "office365ActivationCounts resource type"description: "The following is a JSON representation of the resource."---# office365ActivationCounts resource type
 
 ## Properties
 

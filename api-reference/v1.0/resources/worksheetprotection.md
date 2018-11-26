@@ -1,4 +1,4 @@
-# WorksheetProtection resource type
+---title: "WorksheetProtection resource type"description: "Represents the protection of a sheet object."---# WorksheetProtection resource type
 
 Represents the protection of a sheet object.
 
@@ -7,9 +7,9 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
-|[Protect](../api/worksheetprotection_protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|None|Unprotect a worksheet|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
+|[Protect](../api/worksheetprotection-protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
+|[Unprotect](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet|
 
 ## Properties
 | Property	   | Type	|Description|

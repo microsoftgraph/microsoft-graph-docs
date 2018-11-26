@@ -1,4 +1,4 @@
-# planner resource type
+---title: "planner resource type"description: "The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties."---# planner resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,9 +9,9 @@ The **planner** resource is the entry point for the Planner object model. It ret
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Create a new **plannerBucket** by posting to the buckets collection.|
-|[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
-|[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
+|[Create plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| Create a new **plannerBucket** by posting to the buckets collection.|
+|[Create plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
+|[Create plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
 
 ## Properties
 | Property	   | Type	|Description|

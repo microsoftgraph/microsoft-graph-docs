@@ -1,8 +1,8 @@
-# convertIdResult resource type
+---title: "convertIdResult resource type"description: "The result of an ID format conversion performed by the translateExchangeIds function."---# convertIdResult resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The result of an ID format conversion performed by the [translateExchangeIds](../api/user_translateexchangeids.md) function.
+The result of an ID format conversion performed by the [translateExchangeIds](../api/user-translateexchangeids.md) function.
 
 ## Properties
 

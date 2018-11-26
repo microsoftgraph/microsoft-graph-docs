@@ -1,4 +1,4 @@
-﻿# symantecCodeSigningCertificate resource type
+---title: "symantecCodeSigningCertificate resource type"description: "Not yet documented"---# symantecCodeSigningCertificate resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,15 +8,15 @@ Not yet documented
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get symantecCodeSigningCertificate](../api/intune_apps_symanteccodesigningcertificate_get.md)|[symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md)|Read properties and relationships of the [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.|
-|[Update symantecCodeSigningCertificate](../api/intune_apps_symanteccodesigningcertificate_update.md)|[symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md)|Update the properties of a [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.|
+|[Get symantecCodeSigningCertificate](../api/intune-apps-symanteccodesigningcertificate-get.md)|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|Read properties and relationships of the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.|
+|[Update symantecCodeSigningCertificate](../api/intune-apps-symanteccodesigningcertificate-update.md)|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The key of the entity.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
-|status|[certificateStatus](../resources/intune_apps_certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|
 |subjectName|String|The Subject Name for the cert.|
 |subject|String|The Subject value for the cert.|

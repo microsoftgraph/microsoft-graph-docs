@@ -1,4 +1,4 @@
-# teamMessagingSettings resource type
+---title: "teamMessagingSettings resource type"description: "Settings to configure messaging and mentions in the team."---# teamMessagingSettings resource type
 
 
 

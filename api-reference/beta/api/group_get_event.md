@@ -1,11 +1,11 @@
-# Get event
+---title: "Get event"description: "Get an event object."---# Get event
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get an [event](../resources/event.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -21,7 +21,7 @@ GET /groups/{id}/calendar/events/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description |

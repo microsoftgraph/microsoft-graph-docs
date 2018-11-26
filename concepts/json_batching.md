@@ -1,4 +1,4 @@
-# Combine multiple requests in one HTTP call using JSON batching
+---title: "Combine multiple requests in one HTTP call using JSON batching"description: "JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:"---# Combine multiple requests in one HTTP call using JSON batching
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
@@ -162,7 +162,7 @@ An additional use case for JSON batching is to bypass URL length limitations. In
 
 For a list of current limitations related to batching, see [known issues][batching-known-issues].
 
-[batching-known-issues]: https://developer.microsoft.com/graph/docs/concepts/known_issues#json-batching
+[batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 
 

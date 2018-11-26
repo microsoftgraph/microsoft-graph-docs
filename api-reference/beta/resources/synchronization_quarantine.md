@@ -1,8 +1,8 @@
-# synchronizationQuarantine resource type
+---title: "synchronizationQuarantine resource type"description: "Provides information about the quarantine state of a synchronizationJob."---# synchronizationQuarantine resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Provides information about the quarantine state of a [synchronizationJob](synchronization_synchronizationjob.md).
+Provides information about the quarantine state of a [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## Properties
 | Property	   | Type	|Description|

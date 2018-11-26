@@ -1,12 +1,12 @@
-﻿# Create importedDeviceIdentity
+---title: "Create importedDeviceIdentity"description: "Create a new importedDeviceIdentity object."---# Create importedDeviceIdentity
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) object.
+Create a new [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,18 +38,18 @@ The following table shows the properties that are required when you create the i
 |:---|:---|:---|
 |id|String|Id of the imported device identity|
 |importedDeviceIdentifier|String|Imported Device Identifier|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune_enrollment_importeddeviceidentitytype.md)|Type of Imported Device Identity. Possible values are: `unknown`, `imei`, `serialNumber`.|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity. Possible values are: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object in the response body.
 
 ## Example
 ### Request
