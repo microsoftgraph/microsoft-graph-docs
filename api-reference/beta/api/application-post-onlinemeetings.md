@@ -53,12 +53,11 @@ Content-Length: 1553
     "organizer": {
       "identity": {
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "id": "550fae72-d251-43ec-868c-373732c2704f"
         }
-      },
+      }
     }
   },
-  "startDateTime": "2018-03-19T09:46:02Z",
   "subject": "subject-value"
 }
 ```

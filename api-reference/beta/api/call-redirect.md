@@ -158,7 +158,7 @@ Content-Type: application/json
       "endpointType": "default",
       "identity": {
         "user": {
-          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699",
+          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
         }
       },
       "languageId": "en-US",

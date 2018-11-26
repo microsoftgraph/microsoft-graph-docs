@@ -167,11 +167,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   }
@@ -350,7 +350,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "state": "establishing",
+        "state": "establishing"
       }
     }
   ]

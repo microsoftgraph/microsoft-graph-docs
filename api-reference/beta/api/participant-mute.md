@@ -152,11 +152,11 @@ Content-Type: application/json
               "label": "main-audio",
               "sourceId": "1",
               "direction": "sendReceive",
-              "serverMuted": false,
+              "serverMuted": false
             }
           ],
           "isMuted": true,
-          "isInLobby": false,
+          "isInLobby": false
         },
         {
           "@odata.type": "#microsoft.graph.participant",
@@ -177,10 +177,10 @@ Content-Type: application/json
               "label": "main-audio",
               "sourceId": "2",
               "direction": "sendReceive",
-              "serverMuted": false,
+              "serverMuted": false
             }
           ],
-          "isInLobby": false,
+          "isInLobby": false
         }
       ]
     }

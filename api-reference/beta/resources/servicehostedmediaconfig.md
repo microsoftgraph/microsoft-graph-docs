@@ -40,11 +40,11 @@ The following is a JSON representation of the resource.
   "preFetchMedia": [
     {
       "uri": "https://cdn.contoso.com/beep.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
     },
     {
       "uri": "https://cdn.contoso.com/cool.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
     }
   ],
   "removeFromDefaultAudioGroup": false

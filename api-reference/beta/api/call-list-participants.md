@@ -132,7 +132,7 @@ Content-Type: application/json
           }
         },
         "region": "westus",
-        "languageId": "en-US",
+        "languageId": "en-US"
       },
       "mediaStreams": [
         {
@@ -163,7 +163,7 @@ Content-Type: application/json
           "serverMuted": false
         }
       ],
-      "isMuted": true,
+      "isMuted": true
     },
     {
       "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
@@ -175,7 +175,7 @@ Content-Type: application/json
           }
         },
         "region": "westus",
-        "languageId": "en-US",
+        "languageId": "en-US"
       },
       "mediaStreams": [
         {

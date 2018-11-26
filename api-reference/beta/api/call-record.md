@@ -63,14 +63,10 @@ Content-Length: 394
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "prompts": [
     {
-      "@odata.type": "#microsoft.graph.silencePrompt",
-      "duration": 5000
-    },
-    {
       "@odata.type": "#microsoft.graph.mediaPrompt",
       "mediaInfo": {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceid": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       "loop": 5
     }
@@ -81,7 +77,7 @@ Content-Length: 394
   "recordingFormat": "wav",
   "playBeep": true,
   "streamWhileRecording": true,
-  "stopTones": [ "#", "11", "*" ],
+  "stopTones": [ "#", "11", "*" ]
 }
 ```
 
@@ -124,6 +120,7 @@ Content-Type: application/json
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
         "recordResourceLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+        "recordResourceAccessToken": "<access-token>",
         "completionReason": "stopToneDetected"
       }
     }

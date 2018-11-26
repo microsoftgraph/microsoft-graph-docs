@@ -87,7 +87,7 @@ Content-Length: 1574
   "id": "013448345",
   "isCancelled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "meetingType": "calendar",
+  "meetingType": "scheduled",
   "participants": {
     "attendees": [
       {

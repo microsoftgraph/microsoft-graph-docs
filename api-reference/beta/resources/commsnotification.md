@@ -25,7 +25,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "changeType": "created | updated | deleted",
-  "resource": "String",
+  "resource": "String"
 }
 ```
 

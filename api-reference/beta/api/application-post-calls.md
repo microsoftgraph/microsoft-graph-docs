@@ -59,11 +59,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   },
@@ -105,7 +105,6 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-Type: application/json
 
-
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",
   "callbackUri": "https://bot.contoso.com/api/calls",
@@ -114,11 +113,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   },
@@ -279,7 +278,7 @@ Content-Type: application/json
       "application": {
         "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
       }
-    },
+    }
   },
   "targets": [
     {
@@ -305,11 +304,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   },
@@ -345,7 +344,7 @@ Content-Type: application/json
       "application": {
         "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
       }
-    },
+    }
   },
   "requestedModalities": [ "audio", "video" ],
   "mediaConfig": {
@@ -353,17 +352,17 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   },
   "chatInfo": {
     "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
-    "messageId": "0",
+    "messageId": "0"
   },
   "meetingInfo": {
     "@odata.type": "#microsoft.graph.organizerMeetingInfo",
@@ -401,7 +400,7 @@ Content-Type: application/json
       "application": {
         "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
       }
-    },
+    }
   },
   "requestedModalities": [ "audio", "video" ],
   "mediaConfig": {
@@ -409,11 +408,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   },
@@ -459,7 +458,7 @@ Content-Type: application/json
         "displayName": "App_Guest_DisplayName",
         "identityProvider": "None"
       }
-    },
+    }
   },
   "requestedModalities": [ "audio", "video" ],
   "mediaConfig": {
@@ -467,11 +466,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   },

@@ -190,7 +190,7 @@ Content-Type: application/json
               }
             },
             "region": "westus",
-            "languageId": "en-US",
+            "languageId": "en-US"
           },
           "mediaStreams": [
             {
@@ -198,7 +198,7 @@ Content-Type: application/json
               "label": "main-audio",
               "sourceId": "1",
               "direction": "sendReceive",
-              "serverMuted": false,
+              "serverMuted": false
             }
           ]
         },
@@ -222,7 +222,7 @@ Content-Type: application/json
               "label": "main-audio",
               "sourceId": "2",
               "direction": "sendReceive",
-              "serverMuted": false,
+              "serverMuted": false
             }
           ]
         }
@@ -306,11 +306,11 @@ Content-Type: application/json
     "preFetchMedia": [
       {
         "url": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
       {
         "url": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
       }
     ]
   }
@@ -355,7 +355,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "state": "establishing",
+        "state": "establishing"
       }
     }
   ]
@@ -426,7 +426,7 @@ Content-Type: application/json
     "organizer": {
       "user": {
         "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849",
+        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
       }
     }
   }
@@ -518,7 +518,7 @@ Content-Type: application/json
       },
       "replacesCallId": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896"
     }
-  ],
+  ]
 }
 ```
 
@@ -608,7 +608,7 @@ Content-Type: application/json
               "mediaType": "audio",
               "label": "main-audio",
               "sourceId": "1",
-              "direction": "sendReceive",
+              "direction": "sendReceive"
             }
           ]
         },
@@ -632,7 +632,7 @@ Content-Type: application/json
               "mediaType": "audio",
               "label": "main-audio",
               "sourceId": "2",
-              "direction": "sendReceive",
+              "direction": "sendReceive"
             }
           ]
         }
