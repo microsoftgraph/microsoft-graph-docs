@@ -43,11 +43,14 @@
       "ms.date": "06/11/2018"
     },
     "fileMetadata": {
-      "ms.service": {
+      "ms.technology": {
         "**/*.md": "microsoft-graph"
       },
       "ms.topic": {
         "**/*.md": "conceptual"
+      },
+      "titleSuffix": {
+        "**/*.md": "Microsoft Graph"
       }
     },
     "template": [],
