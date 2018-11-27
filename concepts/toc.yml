@@ -22,6 +22,25 @@
           href: versioning-and-support.md
         - name: Terms of use
           href: https://developer.microsoft.com/graph/terms-of-use
+      - name: Training
+        href: training.md
+        items:
+        - name: ASP.NET
+          href: /graph/training/aspnet-tutorial/
+        - name: Microsoft Flow
+          href: /graph/training/flow-tutorial/
+        - name: Node.js
+          href: /graph/training/node-tutorial/
+        - name: PHP
+          href: /graph/training/php-tutorial/
+        - name: Python
+          href: /graph/training/python-tutorial/
+        - name: Ruby
+          href: /graph/training/ruby-tutorial/
+        - name: React
+          href: /graph/training/react-tutorial/
+        - name: UWP
+          href: /graph/training/uwp-tutorial/
       - name: Microsoft Graph data connect (preview)
         href: data-connect-overview.md
     - name: Learn
