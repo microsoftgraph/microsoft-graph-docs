@@ -104,7 +104,7 @@
           "toc.yml"
         ],
         "src": "v1.0/",
-		"dest": "ref/",
+        "dest": "api/",
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
@@ -120,7 +120,7 @@
           "toc.yml"
         ],
         "src": "beta/",
-		"dest": "ref/",
+        "dest": "api/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
@@ -223,7 +223,7 @@
         "beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
-      "ms.service": {
+      "ms.technology": {
         "v1.0/api/*.md": "microsoft-graph",  
         "beta/api/*.md": "microsoft-graph",
         "v1.0/resources/*.md": "microsoft-graph",  
@@ -234,6 +234,14 @@
         "beta/api/*.md": "reference",
         "v1.0/resources/*.md": "reference",  
         "beta/resources/*.md": "reference" 
+      },
+      "titleSuffix": {
+        "v1.0/*.md": "Microsoft Graph v1.0", 
+        "beta/*.md": "Microsoft Graph beta",
+        "v1.0/api/*.md": "Microsoft Graph v1.0", 
+        "beta/api/*.md": "Microsoft Graph beta",
+        "v1.0/resources/*.md": "Microsoft Graph v1.0", 
+        "beta/resources/*.md": "Microsoft Graph beta" 
       }
     },
     "template": [],
