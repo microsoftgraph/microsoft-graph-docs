@@ -1,4 +1,9 @@
-﻿# mobileAppInstallStatus resource type
+---
+title: "mobileAppInstallStatus resource type"
+description: "Contains properties for the installation state of a mobile app for a device."
+---
+
+# mobileAppInstallStatus resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +13,11 @@ Contains properties for the installation state of a mobile app for a device.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List mobileAppInstallStatuses](../api/intune_apps_mobileappinstallstatus_list.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) objects.|
-|[Get mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_get.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md)|Read properties and relationships of the [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.|
-|[Create mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_create.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md)|Create a new [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.|
-|[Delete mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_delete.md)|None|Deletes a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md).|
-|[Update mobileAppInstallStatus](../api/intune_apps_mobileappinstallstatus_update.md)|[mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md)|Update the properties of a [mobileAppInstallStatus](../resources/intune_apps_mobileappinstallstatus.md) object.|
+|[List mobileAppInstallStatuses](../api/intune-apps-mobileappinstallstatus-list.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|List properties and relationships of the [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) objects.|
+|[Get mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-get.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Read properties and relationships of the [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) object.|
+|[Create mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-create.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Create a new [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) object.|
+|[Delete mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-delete.md)|None|Deletes a [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).|
+|[Update mobileAppInstallStatus](../api/intune-apps-mobileappinstallstatus-update.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Update the properties of a [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -21,9 +26,9 @@ Contains properties for the installation state of a mobile app for a device.
 |deviceName|String|Device name|
 |deviceId|String|Device ID|
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
-|mobileAppInstallStatusValue|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installState|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune_apps_resultantappstatedetail.md)|The install state detail of the app. Possible values are: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|The install state detail of the app. Possible values are: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|The error code for install or uninstall failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
@@ -34,7 +39,7 @@ Contains properties for the installation state of a mobile app for a device.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|app|[mobileApp](../resources/intune_apps_mobileapp.md)|The navigation link to the mobile app.|
+|app|[mobileApp](../resources/intune-apps-mobileapp.md)|The navigation link to the mobile app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

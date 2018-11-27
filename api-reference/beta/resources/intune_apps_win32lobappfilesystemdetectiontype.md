@@ -1,4 +1,9 @@
-﻿# win32LobAppFileSystemDetectionType enum type
+---
+title: "win32LobAppFileSystemDetectionType enum type"
+description: "Contains all supported file system detection type."
+---
+
+# win32LobAppFileSystemDetectionType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

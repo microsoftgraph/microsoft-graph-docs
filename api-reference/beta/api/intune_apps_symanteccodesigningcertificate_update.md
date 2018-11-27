@@ -1,12 +1,17 @@
-﻿# Update symantecCodeSigningCertificate
+---
+title: "Update symantecCodeSigningCertificate"
+description: "Update the properties of a symantecCodeSigningCertificate object."
+---
+
+# Update symantecCodeSigningCertificate
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.
+Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,15 +35,15 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object.
+In the request body, supply a JSON representation for the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.
 
-The following table shows the properties that are required when you create the [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md).
+The following table shows the properties that are required when you create the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The key of the entity.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
-|status|[certificateStatus](../resources/intune_apps_certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|
 |subjectName|String|The Subject Name for the cert.|
 |subject|String|The Subject value for the cert.|
@@ -50,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune_apps_symanteccodesigningcertificate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object in the response body.
 
 ## Example
 ### Request

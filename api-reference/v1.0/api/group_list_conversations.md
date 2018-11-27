@@ -1,8 +1,13 @@
+---
+title: "List conversations"
+description: "Retrieve the list of conversations in this group."
+---
+
 # List conversations
 Retrieve the list of [conversations](../resources/conversation.md) in this group.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -17,7 +22,7 @@ GET /groups/{id}/conversations
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |

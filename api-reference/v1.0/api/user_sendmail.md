@@ -1,3 +1,8 @@
+---
+title: "Send mail"
+description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
+---
+
 # Send mail
 
 Send the message specified in the request body. The message is saved in the Sent Items folder by default.
@@ -5,7 +10,7 @@ Send the message specified in the request body. The message is saved in the Sent
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

@@ -1,4 +1,9 @@
-﻿# siteSecurityLevel enum type
+---
+title: "siteSecurityLevel enum type"
+description: "Possible values for site security level."
+---
+
+# siteSecurityLevel enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,3 +1,8 @@
+---
+title: "licenseUnitsDetail resource type"
+description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
+---
+
 # licenseUnitsDetail resource type
 
 The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.

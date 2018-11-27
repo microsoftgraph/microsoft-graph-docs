@@ -1,10 +1,15 @@
-﻿# Create roleDefinition
+---
+title: "Create roleDefinition"
+description: "Create a new roleDefinition object."
+---
+
+# Create roleDefinition
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [roleDefinition](../resources/intune_rbac_roledefinition.md) object.
+Create a new [roleDefinition](../resources/intune-rbac-roledefinition.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -37,13 +42,13 @@ The following table shows the properties that are required when you create the r
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|Display Name of the Role definition.|
 |description|String|Description of the Role definition.|
-|rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.|
+|rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.|
 |isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [roleDefinition](../resources/intune_rbac_roledefinition.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.
 
 ## Example
 ### Request

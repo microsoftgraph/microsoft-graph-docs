@@ -1,4 +1,9 @@
-﻿# deviceManagementScriptRunSummary resource type
+---
+title: "deviceManagementScriptRunSummary resource type"
+description: "Contains properties for the run summary of a device management script."
+---
+
+# deviceManagementScriptRunSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +13,8 @@ Contains properties for the run summary of a device management script.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceManagementScriptRunSummary](../api/intune_devices_devicemanagementscriptrunsummary_get.md)|[deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md)|Read properties and relationships of the [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object.|
-|[Update deviceManagementScriptRunSummary](../api/intune_devices_devicemanagementscriptrunsummary_update.md)|[deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md)|Update the properties of a [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object.|
+|[Get deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Read properties and relationships of the [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) object.|
+|[Update deviceManagementScriptRunSummary](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Update the properties of a [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

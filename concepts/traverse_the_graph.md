@@ -1,3 +1,8 @@
+---
+title: "Traverse Microsoft Graph"
+description: "In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph."
+---
+
 # Traverse Microsoft Graph
 
 In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph.
@@ -36,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-If successful, you'll get a 200 OK response that contains the collection of [user](../api-reference/v1.0/resources/user.md) resources in the payload. Each user is 
+If successful, you'll get a 200 OK response that contains the collection of [user](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each user is 
 identified by the **id** property and accompanied by its default properties. The payload shown below is truncated for brevity.
 
 ```no-highlight 
@@ -81,14 +86,14 @@ Content-type: application/json
 ```
 
 Microsoft Graph also lets you view collections by navigating the relationships of one resource with another. For example, through a user's **mailFolders** navigation property, 
-you can query for the collection of [mailFolder](../api-reference/v1.0/resources/mailfolder.md) resources in the user's mailbox:
+you can query for the collection of [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resources in the user's mailbox:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-If successful, you'll get a 200 OK response that contains the collection of [mailFolder](../api-reference/v1.0/resources/user.md) resources in the payload. Each **mailFolder** is 
+If successful, you'll get a 200 OK response that contains the collection of [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each **mailFolder** is 
 identified by the **id** property and accompanied by its properties. The payload shown below is truncated for brevity.
 
 ```no-highlight 
@@ -161,7 +166,7 @@ content-length: 982
 ```
 
 ## Read specific properties of a resource
-To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query_parameters.md) query parameter to the previous request, as shown in the following example. 
+To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
@@ -189,7 +194,7 @@ content-length: 169
 Here, instead of the entire property sets on the **user** entity, only the **aboutMe**, **displayName**, and **skills** basic properties are returned.
 
 ## Read specific properties of the resources in a collection
-In addition to reading specific properties of a single resource, you can also apply the similar [$select](query_parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
+In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request.
 
 ```no-highlight 
@@ -338,5 +343,5 @@ Like the power and ease of SDKs? While you can always use REST APIs to call Micr
 
 ## See also
 
-- [Use the Microsoft Graph API](use_the_api.md)
-- [Get auth tokens](auth_overview.md)
+- [Use the Microsoft Graph API](use-the-api.md)
+- [Get auth tokens](auth-overview.md)

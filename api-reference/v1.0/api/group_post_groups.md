@@ -1,3 +1,8 @@
+---
+title: "Create group"
+description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"
+---
+
 # Create group
 Use this API to create a new group as specified in the request body. You can create one of three types of groups:
 
@@ -8,7 +13,7 @@ Use this API to create a new group as specified in the request body. You can cre
 > **Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,3 +1,8 @@
+---
+title: "Create group"
+description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"
+---
+
 # Create group
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,10 +13,10 @@ Use this API to create a new [group](../resources/group.md) as specified in the 
 * Dynamic group
 * Security group
 
-> **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team_put_teams.md).
+> **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,7 +55,7 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 | Dynamic | "DynamicMembership" |
 | Security | Do not set. |
 
-Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
+Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 
 >**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
@@ -158,9 +163,9 @@ Content-type: application/json
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

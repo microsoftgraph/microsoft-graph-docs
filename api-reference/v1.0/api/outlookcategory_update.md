@@ -1,11 +1,16 @@
+---
+title: "Update Outlook category"
+description: "Update the writable property, **color**, of the specified outlookCategory object. You cannot modify the **displayName** property "
+---
+
 # Update Outlook category
 
 
-Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookCategory.md) object. You cannot modify the **displayName** property 
+Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property 
 once you have created the category.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +42,7 @@ will maintain their previous values or be recalculated based on changes to other
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookCategory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

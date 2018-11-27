@@ -1,12 +1,17 @@
-﻿# Update managementConditionStatement
+---
+title: "Update managementConditionStatement"
+description: "Update the properties of a managementConditionStatement object."
+---
+
+# Update managementConditionStatement
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object.
+Update the properties of a [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,9 +36,9 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object.
+In the request body, supply a JSON representation for the [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object.
 
-The following table shows the properties that are required when you create the [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md).
+The following table shows the properties that are required when you create the [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -42,15 +47,15 @@ The following table shows the properties that are required when you create the [
 |description|String|The admin defined description of the management condition statement.|
 |createdDateTime|DateTimeOffset|The time the management condition statement was created. Generated service side.|
 |modifiedDateTime|DateTimeOffset|The time the management condition statement was last modified. Updated service side.|
-|expression|[managementConditionExpression](../resources/intune_fencing_managementconditionexpression.md)|The management condition statement expression used to evaluate if a management condition statement was activated/deactivated.|
+|expression|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|The management condition statement expression used to evaluate if a management condition statement was activated/deactivated.|
 |eTag|String|ETag of the management condition statement. Updated service side.|
-|applicablePlatforms|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md) collection|The applicable platforms for this management condition statement.
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition statement.
 This is calculated from looking the management conditions associated to the management condition statement and finding the intersection of applicable platforms. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object in the response body.
 
 ## Example
 ### Request

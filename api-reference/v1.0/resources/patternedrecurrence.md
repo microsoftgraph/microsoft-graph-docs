@@ -1,3 +1,8 @@
+---
+title: "patternedRecurrence resource type"
+description: "The recurrence pattern and range."
+---
+
 # patternedRecurrence resource type
 
 The recurrence pattern and range.

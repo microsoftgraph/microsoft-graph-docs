@@ -1,3 +1,8 @@
+---
+title: "Delete tab from channel"
+description: "Removes (unpins) a tab from the specified channel within a team. "
+---
+
 # Delete tab from channel
 
 
@@ -5,7 +10,7 @@
 Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

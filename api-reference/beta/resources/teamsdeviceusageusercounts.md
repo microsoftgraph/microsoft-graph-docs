@@ -1,3 +1,8 @@
+---
+title: "teamsDeviceUsageUserCounts resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # teamsDeviceUsageUserCounts resource type
 
 ## Properties

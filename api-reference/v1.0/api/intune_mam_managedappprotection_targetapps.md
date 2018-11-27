@@ -1,10 +1,15 @@
-﻿# targetApps action
+---
+title: "targetApps action"
+description: "Not yet documented"
+---
+
+# targetApps action
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,7 +41,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|apps|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) collection|Not yet documented|
+|apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) collection|Not yet documented|
 
 
 

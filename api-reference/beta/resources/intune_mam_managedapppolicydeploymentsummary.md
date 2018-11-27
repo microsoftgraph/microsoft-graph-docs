@@ -1,4 +1,9 @@
-﻿# managedAppPolicyDeploymentSummary resource type
+---
+title: "managedAppPolicyDeploymentSummary resource type"
+description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
+---
+
+# managedAppPolicyDeploymentSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +13,8 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_get.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
-|[Update managedAppPolicyDeploymentSummary](../api/intune_mam_managedapppolicydeploymentsummary_update.md)|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) object.|
+|[Get managedAppPolicyDeploymentSummary](../api/intune-mam-managedapppolicydeploymentsummary-get.md)|[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md)|Read properties and relationships of the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.|
+|[Update managedAppPolicyDeploymentSummary](../api/intune-mam-managedapppolicydeploymentsummary-update.md)|[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md)|Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -17,7 +22,7 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 |displayName|String|Not yet documented|
 |configurationDeployedUserCount|Int32|Not yet documented|
 |lastRefreshTime|DateTimeOffset|Not yet documented|
-|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
+|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 

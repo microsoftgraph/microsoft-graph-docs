@@ -1,8 +1,13 @@
+---
+title: "Create CalendarGroup"
+description: "Use this API to create a new CalendarGroup."
+---
+
 # Create CalendarGroup
 
 Use this API to create a new CalendarGroup.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

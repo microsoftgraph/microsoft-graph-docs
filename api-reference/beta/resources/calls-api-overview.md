@@ -1,4 +1,9 @@
-﻿# Working with the calls and online meetings API in Microsoft Graph
+---
+title: "Working with the calls and online meetings API in Microsoft Graph"
+description: "The Microsoft Graph calls and online meetings API adds a new dimension to how your apps and services can interact with users by enabling voice and video features. The API enables you to create calls and receive calls from users and applications in Microsoft Teams. You can use these APIs to build a service application (bot) that can act as a participant in a call or meeting."
+---
+
+# Working with the calls and online meetings API in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -27,9 +32,9 @@ To receive an incoming call, you need to register the calling bot. When the bot 
 
 | Method                              | Description                                  |
 |:------------------------------------|:---------------------------------------------|
-| [Answer](../api/call_answer.md)     | Answer the incoming call.                    |
-| [Reject](../api/call_reject.md)     | Reject and hangup the call.                  |
-| [Redirect](../api/call_redirect.md) | Redirect the call.                           |
+| [Answer](../api/call-answer.md)     | Answer the incoming call.                    |
+| [Reject](../api/call-reject.md)     | Reject and hangup the call.                  |
+| [Redirect](../api/call-redirect.md) | Redirect the call.                           |
 
 The bot can redirect the call to another user or a bot. The bot can also redirect it to a user's voicemail.
 
@@ -43,18 +48,18 @@ Operations for the bot are available on the call object. These affect the bot as
 
 | Method                                                            | Description                                  |
 |:------------------------------------------------------------------|:---------------------------------------------|
-| [Mute](../api/call_mute.md)                                       | Mute self in the call.                       |
-| [Unmute](../api/call_unmute.md)                                   | Unmute self in the call.                     |
-| [UpdateMetadata](../api/call_updatemetadata.md)                   | Update metadata for self in roster.          |
-| [ChangeScreenSharingRole](../api/call_changescreensharingrole.md) | Start and stop sharing screen in the call.   |
+| [Mute](../api/call-mute.md)                                       | Mute self in the call.                       |
+| [Unmute](../api/call-unmute.md)                                   | Unmute self in the call.                     |
+| [UpdateMetadata](../api/call-updatemetadata.md)                   | Update metadata for self in roster.          |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) | Start and stop sharing screen in the call.   |
 
 To interact with other participants on the call, use the participants object.
 
 | Method                                                            | Description                                  |
 |:------------------------------------------------------------------|:---------------------------------------------|
-| [List participants](../api/call_list_participants.md)             | Get a participant object collection.         |
-| [Invite Participants](../api/participant_invite.md)               | Invite participants to the active call.      |
-| [Mute All Participants](../api/participant_muteall.md)            | Mute all participants in the call.           |
+| [List participants](../api/call-list-participants.md)             | Get a participant object collection.         |
+| [Invite Participants](../api/participant-invite.md)               | Invite participants to the active call.      |
+| [Mute All Participants](../api/participant-muteall.md)            | Mute all participants in the call.           |
 
 ## Media
 
@@ -68,10 +73,10 @@ Bots can manage the workflow and offload audio processing to the Microsoft Real-
 
 | Method                                                        | Description                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|
-| [PlayPrompt](../api/call_playprompt.md)                       | Play an audio clip to the user.                         |
-| [Record](../api/call_record.md)                               | Optionally play a prompt and record an audio clip.      |
-| [SubscribeToTone](../api/call_subscribetotone.md)             | Subscribe to DTMF tones from the user.                  |
-| [CancelMediaProcessing](../api/call_cancelmediaprocessing.md) | Cancel any media processing already queued.             |
+| [PlayPrompt](../api/call-playprompt.md)                       | Play an audio clip to the user.                         |
+| [Record](../api/call-record.md)                               | Optionally play a prompt and record an audio clip.      |
+| [SubscribeToTone](../api/call-subscribetotone.md)             | Subscribe to DTMF tones from the user.                  |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md) | Cancel any media processing already queued.             |
 
 ### Application-hosted media
 
@@ -87,4 +92,4 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 
 [Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
-[Known issues](../../../concepts/known_issues.md#Calls-and-online-meetings)
+[Known issues](/graph/known-issues#calls-and-online-meetings)

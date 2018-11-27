@@ -1,4 +1,9 @@
-﻿# managedMobileApp resource type
+---
+title: "managedMobileApp resource type"
+description: "The identifier for the deployment an app."
+---
+
+# managedMobileApp resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,16 +11,16 @@ The identifier for the deployment an app.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedMobileApps](../api/intune_mam_managedmobileapp_list.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) collection|List properties and relationships of the [managedMobileApp](../resources/intune_mam_managedmobileapp.md) objects.|
-|[Get managedMobileApp](../api/intune_mam_managedmobileapp_get.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Read properties and relationships of the [managedMobileApp](../resources/intune_mam_managedmobileapp.md) object.|
-|[Create managedMobileApp](../api/intune_mam_managedmobileapp_create.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Create a new [managedMobileApp](../resources/intune_mam_managedmobileapp.md) object.|
-|[Delete managedMobileApp](../api/intune_mam_managedmobileapp_delete.md)|None|Deletes a [managedMobileApp](../resources/intune_mam_managedmobileapp.md).|
-|[Update managedMobileApp](../api/intune_mam_managedmobileapp_update.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Update the properties of a [managedMobileApp](../resources/intune_mam_managedmobileapp.md) object.|
+|[List managedMobileApps](../api/intune-mam-managedmobileapp-list.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) collection|List properties and relationships of the [managedMobileApp](../resources/intune-mam-managedmobileapp.md) objects.|
+|[Get managedMobileApp](../api/intune-mam-managedmobileapp-get.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Read properties and relationships of the [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.|
+|[Create managedMobileApp](../api/intune-mam-managedmobileapp-create.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Create a new [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.|
+|[Delete managedMobileApp](../api/intune-mam-managedmobileapp-delete.md)|None|Deletes a [managedMobileApp](../resources/intune-mam-managedmobileapp.md).|
+|[Update managedMobileApp](../api/intune-mam-managedmobileapp-update.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Update the properties of a [managedMobileApp](../resources/intune-mam-managedmobileapp.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The identifier for an app with it's operating system type.|
+|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|The identifier for an app with it's operating system type.|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 

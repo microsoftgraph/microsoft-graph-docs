@@ -1,4 +1,9 @@
-﻿# vpnTrafficRuleAppType enum type
+---
+title: "vpnTrafficRuleAppType enum type"
+description: "Indicates the type of app that a VPN traffic rule is associated with."
+---
+
+# vpnTrafficRuleAppType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

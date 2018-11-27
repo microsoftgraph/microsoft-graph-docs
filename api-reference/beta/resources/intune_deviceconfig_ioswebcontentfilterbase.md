@@ -1,4 +1,9 @@
-﻿# iosWebContentFilterBase resource type
+---
+title: "iosWebContentFilterBase resource type"
+description: "Represents an iOS Web Content Filter setting base type. An empty and abstract base. Caller should use one of derived types for configurations."
+---
+
+# iosWebContentFilterBase resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,9 @@
-﻿# managedDeviceCleanupSettings resource type
+---
+title: "managedDeviceCleanupSettings resource type"
+description: "Define the rule when the admin wants the devices to be cleaned up."
+---
+
+# managedDeviceCleanupSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

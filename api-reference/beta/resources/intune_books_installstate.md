@@ -1,4 +1,9 @@
-﻿# installState enum type
+---
+title: "installState enum type"
+description: "Possible values for install state."
+---
+
+# installState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,9 @@
-﻿# osVersionCount resource type
+---
+title: "osVersionCount resource type"
+description: "Count of devices with malware for each OS version"
+---
+
+# osVersionCount resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

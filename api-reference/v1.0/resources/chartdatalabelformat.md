@@ -1,3 +1,8 @@
+---
+title: "ChartDataLabelFormat resource type"
+description: "Encapsulates the format properties for the chart data labels."
+---
+
 # ChartDataLabelFormat resource type
 
 Encapsulates the format properties for the chart data labels.

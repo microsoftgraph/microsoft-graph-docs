@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getSharePointSiteUsageSiteCounts"
+description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."
+---
+
 # reportRoot: getSharePointSiteUsageSiteCounts
 
 Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
@@ -6,7 +11,7 @@ Get the total number of files across all sites and the number of active files. A
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

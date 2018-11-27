@@ -1,10 +1,15 @@
+---
+title: "List programControlTypes"
+description: "In the Azure AD access reviews feature, list all the programControlType objects."
+---
+
 # List programControlTypes
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, list all the [programControlType](../resources/programcontroltype.md) objects.
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControlType](../resources/programcontroltype.md) objects.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -78,7 +83,7 @@ Content-type: application/json
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List programControls of a program](program_listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
+|[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
 
 
 <!-- {

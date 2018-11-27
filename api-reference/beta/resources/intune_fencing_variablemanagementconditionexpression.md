@@ -1,4 +1,9 @@
-﻿# variableManagementConditionExpression resource type
+---
+title: "variableManagementConditionExpression resource type"
+description: "Evaluates the management condition state as a Boolean expression."
+---
+
+# variableManagementConditionExpression resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Evaluates the management condition state as a Boolean expression.
 
-Inherits from [managementConditionExpressionModel](../resources/intune_fencing_managementconditionexpressionmodel.md)
+Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## Properties
 |Property|Type|Description|

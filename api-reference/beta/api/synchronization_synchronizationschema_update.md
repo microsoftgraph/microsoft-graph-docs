@@ -1,3 +1,8 @@
+---
+title: "Update synchronizationSchema"
+description: "Update the synchronization schema for a given job or template. This method fully replaces the current schema with the one provided in the request. To update the schema of a template, make the call on the application object. You must be the owner of the application."
+---
+
 # Update synchronizationSchema
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Update the synchronization schema for a given job or template. This method fully replaces the current schema with the one provided in the request. To update the schema of a template, make the call on the application object. You must be the owner of the application.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -28,7 +33,7 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## Request body
 
-In the request body, supply the [synchronizationSchema](../resources/synchronization_synchronizationschema.md) object to replace the existing schema with.
+In the request body, supply the [synchronizationSchema](../resources/synchronization-synchronizationschema.md) object to replace the existing schema with.
 
 ## Response
 

@@ -1,4 +1,9 @@
-﻿# user resource type
+---
+title: "user resource type"
+description: "Represents an Azure Active Directory user object."
+---
+
+# user resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,24 +14,24 @@ Represents an Azure Active Directory user object.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune_shared_user_list.md) objects.|[user](../resources/intune_shared_user.md) collection|List properties and relationships of the [user](../resources/intune_shared_user.md) objects.|
-|[Get user](../api/intune_shared_user_get.md) object.|[user](../resources/intune_shared_user.md)|Read properties and relationships of the [user](../resources/intune_shared_user.md) object.|
-|[Create user](../api/intune_shared_user_create.md) object.|[user](../resources/intune_shared_user.md)|Create a new [user](../resources/intune_shared_user.md) object.|
-|[Delete user](../api/intune_shared_user_delete.md).|None|Deletes a [user](../resources/intune_shared_user.md).|
-|[Update user](../api/intune_shared_user_update.md) object.|[user](../resources/intune_shared_user.md)|Update the properties of a [user](../resources/intune_shared_user.md) object.|
+|[List users](../api/intune-shared-user-list.md) objects.|[user](../resources/intune-shared-user.md) collection|List properties and relationships of the [user](../resources/intune-shared-user.md) objects.|
+|[Get user](../api/intune-shared-user-get.md) object.|[user](../resources/intune-shared-user.md)|Read properties and relationships of the [user](../resources/intune-shared-user.md) object.|
+|[Create user](../api/intune-shared-user-create.md) object.|[user](../resources/intune-shared-user.md)|Create a new [user](../resources/intune-shared-user.md) object.|
+|[Delete user](../api/intune-shared-user-delete.md).|None|Deletes a [user](../resources/intune-shared-user.md).|
+|[Update user](../api/intune-shared-user-update.md) object.|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |**Device management**|
-|[getLoggedOnManagedDevices function](../api/intune_shared_user_getloggedonmanageddevices.md)|[managedDevice](../resources/intune_devices_manageddevice.md) collection|Not yet documented|
-|[removeAllDevicesFromManagement action](../api/intune_shared_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
+|[getLoggedOnManagedDevices function](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) collection|Not yet documented|
+|[removeAllDevicesFromManagement action](../api/intune-shared-user-removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |**Mobile application management (MAM)**|
-|[getManagedAppDiagnosticStatuses function](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
-|[getManagedAppPolicies function](../api/intune_shared_user_getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Gets app restrictions for a given user.|
-|[wipeManagedAppRegistrationByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
-|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[getManagedAppDiagnosticStatuses function](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
+|[getManagedAppPolicies function](../api/intune-shared-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Gets app restrictions for a given user.|
+|[wipeManagedAppRegistrationByDeviceTag action](../api/intune-shared-user-wipemanagedappregistrationbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
+|[wipeManagedAppRegistrationsByDeviceTag action](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 |**Onboarding**|
-|[exportDeviceAndAppManagementData function](../api/intune_shared_user_exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune_onboarding_deviceandappmanagementdata.md)|Not yet documented|
-|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune_shared_user_geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Not yet documented|
+|[exportDeviceAndAppManagementData function](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Not yet documented|
+|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|Not yet documented|
 |**Troubleshooting**|
-|[getManagedDevicesWithAppFailures function](../api/intune_shared_user_getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps.|
+|[getManagedDevicesWithAppFailures function](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps.|
 
 
 ## Properties
@@ -40,15 +45,15 @@ Represents an Azure Active Directory user object.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |**Device management**|
-|managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The managed devices associated with the user.|
+|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The managed devices associated with the user.|
 |**Mobile application management (MAM)**|
-|managedAppRegistrations|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
+|managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
 |**Onboarding**|
-|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
+|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
 |**Troubleshooting**|
-|deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
-|mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune_troubleshooting_mobileappintentandstate.md) collection|The list of troubleshooting events for this user.|
-|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune_troubleshooting_mobileapptroubleshootingevent.md) collection|The list of mobile app troubleshooting events for this user.|
+|deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
+|mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) collection|The list of troubleshooting events for this user.|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) collection|The list of mobile app troubleshooting events for this user.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

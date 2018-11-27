@@ -1,3 +1,8 @@
+---
+title: "settingValue resource type"
+description: "A setting represented by a name/value pair."
+---
+
 # settingValue resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

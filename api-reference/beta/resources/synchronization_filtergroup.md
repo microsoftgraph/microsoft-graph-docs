@@ -1,3 +1,8 @@
+---
+title: "filterGroup resource type"
+description: "Defines a set of clauses that an object must satisfy to be considered in scope. An object is considered in scope for the group (the group is evaluated to `true`) only if all the clauses of the group are evaluated to `true`."
+---
+
 # filterGroup resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,7 +12,7 @@ Defines a set of clauses that an object must satisfy to be considered in scope. 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|clauses|[filterClause](synchronization_filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`.|
+|clauses|[filterClause](synchronization-filterclause.md) collection|Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to `true`.|
 |name|String|Human-readable name of the filter group.|
 
 ## JSON representation

@@ -1,4 +1,9 @@
-﻿# emailSyncDuration enum type
+---
+title: "emailSyncDuration enum type"
+description: "Possible values for email sync duration."
+---
+
+# emailSyncDuration enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

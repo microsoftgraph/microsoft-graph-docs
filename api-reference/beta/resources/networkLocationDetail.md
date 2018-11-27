@@ -1,3 +1,8 @@
+---
+title: "networkLocationDetail resource type"
+description: "Indicates details associated with the network location. ."
+---
+
 # networkLocationDetail resource type
 Indicates details associated with the network location. .
 

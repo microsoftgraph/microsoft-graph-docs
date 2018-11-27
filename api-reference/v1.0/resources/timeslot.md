@@ -1,3 +1,8 @@
+---
+title: "timeSlot resource type"
+description: "A time period."
+---
+
 # timeSlot resource type
 
 A time period.
@@ -24,8 +29,8 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](dateTimeTimeZone.md)|The time a period begins.|
-|start|[dateTimeTimeZone](dateTimeTimeZone.md)|The time the period ends.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|The time a period begins.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|The time the period ends.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

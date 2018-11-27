@@ -1,12 +1,17 @@
-﻿# Create managementConditionStatement
+---
+title: "Create managementConditionStatement"
+description: "Create a new managementConditionStatement object."
+---
+
+# Create managementConditionStatement
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object.
+Create a new [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -42,15 +47,15 @@ The following table shows the properties that are required when you create the m
 |description|String|The admin defined description of the management condition statement.|
 |createdDateTime|DateTimeOffset|The time the management condition statement was created. Generated service side.|
 |modifiedDateTime|DateTimeOffset|The time the management condition statement was last modified. Updated service side.|
-|expression|[managementConditionExpression](../resources/intune_fencing_managementconditionexpression.md)|The management condition statement expression used to evaluate if a management condition statement was activated/deactivated.|
+|expression|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|The management condition statement expression used to evaluate if a management condition statement was activated/deactivated.|
 |eTag|String|ETag of the management condition statement. Updated service side.|
-|applicablePlatforms|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md) collection|The applicable platforms for this management condition statement.
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition statement.
 This is calculated from looking the management conditions associated to the management condition statement and finding the intersection of applicable platforms. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) object in the response body.
 
 ## Example
 ### Request

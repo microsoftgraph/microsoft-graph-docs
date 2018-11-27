@@ -1,4 +1,9 @@
-﻿# windowsKioskProfile resource type
+---
+title: "windowsKioskProfile resource type"
+description: "Not yet documented"
+---
+
+# windowsKioskProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -10,8 +15,8 @@ Not yet documented
 |:---|:---|:---|
 |profileId|String|Key of the entity.|
 |profileName|String|This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.|
-|appConfiguration|[windowsKioskAppConfiguration](../resources/intune_deviceconfig_windowskioskappconfiguration.md)|The App configuration that will be used for this kiosk configuration.|
-|userAccountsConfiguration|[windowsKioskUser](../resources/intune_deviceconfig_windowskioskuser.md) collection|The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 500 elements.|
+|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|The App configuration that will be used for this kiosk configuration.|
+|userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) collection|The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None

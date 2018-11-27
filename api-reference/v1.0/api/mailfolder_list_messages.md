@@ -1,8 +1,13 @@
+---
+title: "List messages"
+description: "Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox."
+---
+
 # List messages
 
 Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

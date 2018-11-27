@@ -1,3 +1,8 @@
+---
+title: "Send mail"
+description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
+---
+
 # Send mail
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -10,7 +15,7 @@ In the same **sendMail** action call, you can:
 - Use a [mention](../resources/mention.md) to call out another user in the new message
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

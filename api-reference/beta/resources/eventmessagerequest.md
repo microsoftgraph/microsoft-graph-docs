@@ -1,3 +1,8 @@
+---
+title: "eventMessageRequest resource type"
+description: "A message that represents a meeting request."
+---
+
 # eventMessageRequest resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -115,20 +120,20 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
-|[Create Attachment](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
-|[List attachments](../api/eventmessage_list_attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
-|[Update](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)	|Update eventMessage object. |
-|[Delete](../api/eventmessage_delete.md) | None |Delete eventMessage object. |
-|[copy](../api/message_copy.md)|[Message](message.md)||
-|[createForward](../api/message_createforward.md)|[Message](message.md)||
-|[createReply](../api/message_createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)||
-|[forward](../api/message_forward.md)|None|Forwards a message. The message is then saved in the Sent Items folder.|
-|[move](../api/message_move.md)|[Message](message.md)|Move the message to a mailFolder.|
-|[reply](../api/message_reply.md)|None|Replys to the sender of a message. The message is then saved in the Sent Items folder.|
-|[replyAll](../api/message_replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
-|[send](../api/message_send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
+|[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Read properties and relationships of eventMessage object.|
+|[Create Attachment](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Create a new Attachment by posting to the attachments collection.|
+|[List attachments](../api/eventmessage-list-attachments.md) |[Attachment](attachment.md) collection| Get a Attachment object collection.|
+|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)	|Update eventMessage object. |
+|[Delete](../api/eventmessage-delete.md) | None |Delete eventMessage object. |
+|[copy](../api/message-copy.md)|[Message](message.md)||
+|[createForward](../api/message-createforward.md)|[Message](message.md)||
+|[createReply](../api/message-createreply.md)|[Message](message.md)||
+|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)||
+|[forward](../api/message-forward.md)|None|Forwards a message. The message is then saved in the Sent Items folder.|
+|[move](../api/message-move.md)|[Message](message.md)|Move the message to a mailFolder.|
+|[reply](../api/message-reply.md)|None|Replys to the sender of a message. The message is then saved in the Sent Items folder.|
+|[replyAll](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
+|[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

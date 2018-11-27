@@ -1,3 +1,8 @@
+---
+title: "Get synchronizationJob"
+description: "Retrieve the existing synchronization job and its properties."
+---
+
 # Get synchronizationJob
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Retrieve the existing synchronization job and its properties.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -31,7 +36,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, returns a `200 OK` response with a [synchronizationJob](../resources/synchronization_synchronizationjob.md) in the response body.
+If successful, returns a `200 OK` response with a [synchronizationJob](../resources/synchronization-synchronizationjob.md) in the response body.
 
 ## Example
 

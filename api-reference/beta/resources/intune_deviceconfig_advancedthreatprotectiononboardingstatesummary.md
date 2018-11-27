@@ -1,4 +1,9 @@
-﻿# advancedThreatProtectionOnboardingStateSummary resource type
+---
+title: "advancedThreatProtectionOnboardingStateSummary resource type"
+description: "Windows defender advanced threat protection onboarding state summary across the account."
+---
+
+# advancedThreatProtectionOnboardingStateSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +13,8 @@ Windows defender advanced threat protection onboarding state summary across the 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get advancedThreatProtectionOnboardingStateSummary](../api/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary_get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md)|Read properties and relationships of the [advancedThreatProtectionOnboardingStateSummary](../resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md) object.|
-|[Update advancedThreatProtectionOnboardingStateSummary](../api/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary_update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md)|Update the properties of a [advancedThreatProtectionOnboardingStateSummary](../resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md) object.|
+|[Get advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Read properties and relationships of the [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) object.|
+|[Update advancedThreatProtectionOnboardingStateSummary](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Update the properties of a [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -27,7 +32,7 @@ Windows defender advanced threat protection onboarding state summary across the 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) collection|Not yet documented|
+|advancedThreatProtectionOnboardingDeviceSettingStates|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) collection|Not yet documented|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

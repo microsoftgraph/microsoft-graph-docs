@@ -1,6 +1,11 @@
+---
+title: "imageInfo resource type"
+description: "A complex type for representing the **attribution** property in the visualInfo part of the activity object."
+---
+
 # imageInfo resource type
 
-A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome_visualinfo.md) part of the [activity](../resources/projectrome_activity.md) object.
+A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.
 
 ## Properties
 

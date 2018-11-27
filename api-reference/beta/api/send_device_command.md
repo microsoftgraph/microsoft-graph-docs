@@ -1,3 +1,8 @@
+---
+title: "Send device command"
+description: "This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the "
+---
+
 # Send device command
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,7 +12,7 @@ This API enables Project Rome capabilities to command a device associated with a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -77,7 +82,7 @@ HTTP/1.1 201 OK
 |appServiceName | String | Name of app service defined by the target application. Required if launching an app service. |
 |type| String | LaunchURI or AppService. |
 |id| String | The ID of a command that has been sent to the device. |
-|actionStatus | String | The [status](get_device_command_status.md) of a command. |
+|actionStatus | String | The [status](get-device-command-status.md) of a command. |
 |error| String| Any errors associated with the request from the target application. |
 
 ## Launch URI example

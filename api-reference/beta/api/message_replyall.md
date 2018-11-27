@@ -1,3 +1,8 @@
+---
+title: "message: replyAll"
+description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "
+---
+
 # message: replyAll
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,8 +10,8 @@
 Reply to all recipients of a message by specifying a comment and modifying any updateable properties 
 for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.
 
-Alternatively, you can first [create a draft reply-all message](../api/message_createreplyall.md) to include a comment or 
-update any message properties, and then [send](../api/message_send.md) the reply.
+Alternatively, you can first [create a draft reply-all message](../api/message-createreplyall.md) to include a comment or 
+update any message properties, and then [send](../api/message-send.md) the reply.
 
 **Note**
 
@@ -17,7 +22,7 @@ update any message properties, and then [send](../api/message_send.md) the reply
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

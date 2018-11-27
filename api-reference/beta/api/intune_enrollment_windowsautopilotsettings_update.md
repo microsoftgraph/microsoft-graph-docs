@@ -1,12 +1,17 @@
-﻿# Update windowsAutopilotSettings
+---
+title: "Update windowsAutopilotSettings"
+description: "Update the properties of a windowsAutopilotSettings object."
+---
+
+# Update windowsAutopilotSettings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md) object.
+Update the properties of a [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,21 +35,21 @@ PATCH /deviceManagement/windowsAutopilotSettings
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md) object.
+In the request body, supply a JSON representation for the [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object.
 
-The following table shows the properties that are required when you create the [windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md).
+The following table shows the properties that are required when you create the [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object|
 |lastSyncDateTime|DateTimeOffset|Last data sync date time with DDS service.|
 |lastManualSyncTriggerDateTime|DateTimeOffset|Last data sync date time with DDS service.|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune_enrollment_windowsautopilotsyncstatus.md)|Indicates the status of sync with Device data sync (DDS) service. Possible values are: `unknown`, `inProgress`, `completed`, `failed`.|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indicates the status of sync with Device data sync (DDS) service. Possible values are: `unknown`, `inProgress`, `completed`, `failed`.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object in the response body.
 
 ## Example
 ### Request

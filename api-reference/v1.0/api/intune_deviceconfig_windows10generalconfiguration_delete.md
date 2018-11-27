@@ -1,10 +1,15 @@
-﻿# Delete windows10GeneralConfiguration
+---
+title: "Delete windows10GeneralConfiguration"
+description: "Deletes a windows10GeneralConfiguration."
+---
+
+# Delete windows10GeneralConfiguration
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Deletes a [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md).
+Deletes a [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

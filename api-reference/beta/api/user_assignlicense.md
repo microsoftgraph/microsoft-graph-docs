@@ -1,13 +1,18 @@
+---
+title: "assignLicense"
+description: "Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this Technet article."
+---
+
 # assignLicense
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this [Technet article](https://technet.microsoft.com/en-us/library/mt765146.aspx).
 
-To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku_list.md). 
+To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku-list.md). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

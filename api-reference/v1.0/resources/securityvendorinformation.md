@@ -1,3 +1,8 @@
+---
+title: "securityVendorInformation resource type"
+description: " subProvider=AppLocker)."
+---
+
 # securityVendorInformation resource type
 
 Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).

@@ -1,9 +1,14 @@
+---
+title: "Add images, videos, and files to OneNote pages"
+description: " Enterprise notebooks on Office 365"
+---
+
 
 # Add images, videos, and files to OneNote pages
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 
-You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](onenote-create-page.md) or [updating](onenote_update_page.md) the page. 
+You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](onenote-create-page.md) or [updating](onenote-update-page.md) the page. 
 
 - Use **img** to render an image on the page.
 - Use **iframe** to embed a video on the page.
@@ -54,7 +59,7 @@ An **img** element can optionally include **alt**, **height**, and **width** att
 Microsoft Graph supports TIFF, PNG, GIF, JPEG, and BMP image types. To capture an image that uses a different format that you don't want to convert, [send the binary data](#add-an-image-using-binary-data) in a multipart request. You don't need to use Base64 or otherwise encode the binary data that you send.
 
 > **Note:**
-> The API detects the original input image type, and returns it as the **data-fullres-src-type** attribute in the [output HTML](onenote_input_output_html.md#output-html). The API also returns the image type of the optimized image in **data-src-type**.
+> The API detects the original input image type, and returns it as the **data-fullres-src-type** attribute in the [output HTML](onenote-input-output-html.md#output-html). The API also returns the image type of the optimized image in **data-src-type**.
  
 See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
 
@@ -488,14 +493,14 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md#notes-permissions).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
 
 
 <a name="see-also"></a>
 
 ## See also
 
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

@@ -1,9 +1,14 @@
+---
+title: "Creating a group with a Microsoft Teams team"
+description: "Creating a group that includes a team involves two steps: "
+---
+
 # Creating a group with a Microsoft Teams team
 
-Creating a [group](../api-reference/beta/resources/group.md) that includes a [team](../api-reference/beta/resources/team.md) involves two steps: 
+Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps: 
 
-- [Create a group](../api-reference/beta/api/group_post_groups.md) with the right properties.
-- [Add a team](../api-reference/beta/api/team_put_teams.md) to the group.
+- [Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.
+- [Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.
 
 ## Create a group
 

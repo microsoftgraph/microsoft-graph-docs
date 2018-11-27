@@ -1,3 +1,8 @@
+---
+title: "Listing versions of a DriveItem"
+description: "OneDrive and SharePoint can be configured to retain the history for files."
+---
+
 # Listing versions of a DriveItem
 
 OneDrive and SharePoint can be configured to retain the history for files.
@@ -7,7 +12,7 @@ Previous versions of a document may be retained for a finite period of time depe
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -99,7 +104,7 @@ Content-Type: application/json
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
-When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveItemVersion.md) resource is returned that provides the available information about the specific version.
+When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 
 
 <!-- {

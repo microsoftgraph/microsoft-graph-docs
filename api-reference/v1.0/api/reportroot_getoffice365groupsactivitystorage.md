@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getOffice365GroupsActivityStorage"
+description: "Get the total storage used across all group mailboxes and group sites."
+---
+
 # reportRoot: getOffice365GroupsActivityStorage
 
 Get the total storage used across all group mailboxes and group sites.
@@ -6,7 +11,7 @@ Get the total storage used across all group mailboxes and group sites.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

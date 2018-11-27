@@ -1,10 +1,15 @@
+---
+title: "Delete Outlook category"
+description: "Delete the specified outlookCategory object."
+---
+
 # Delete Outlook category
 
 
-Delete the specified [outlookCategory](../resources/outlookCategory.md) object.
+Delete the specified [outlookCategory](../resources/outlookcategory.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,9 @@
-﻿# managedAppFlaggedReason enum type
+---
+title: "managedAppFlaggedReason enum type"
+description: "The reason for which a user has been flagged"
+---
+
+# managedAppFlaggedReason enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

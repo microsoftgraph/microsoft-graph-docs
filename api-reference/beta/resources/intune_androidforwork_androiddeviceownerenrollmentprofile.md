@@ -1,4 +1,9 @@
-﻿# androidDeviceOwnerEnrollmentProfile resource type
+---
+title: "androidDeviceOwnerEnrollmentProfile resource type"
+description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
+---
+
+# androidDeviceOwnerEnrollmentProfile resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,13 +13,13 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List androidDeviceOwnerEnrollmentProfiles](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_list.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) collection|List properties and relationships of the [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) objects.|
-|[Get androidDeviceOwnerEnrollmentProfile](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_get.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md)|Read properties and relationships of the [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) object.|
-|[Create androidDeviceOwnerEnrollmentProfile](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_create.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md)|Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) object.|
-|[Delete androidDeviceOwnerEnrollmentProfile](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_delete.md)|None|Deletes a [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md).|
-|[Update androidDeviceOwnerEnrollmentProfile](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md)|Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune_androidforwork_androiddeviceownerenrollmentprofile.md) object.|
-|[revokeToken action](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_revoketoken.md)|None|Not yet documented|
-|[createToken action](../api/intune_androidforwork_androiddeviceownerenrollmentprofile_createtoken.md)|None|Not yet documented|
+|[List androidDeviceOwnerEnrollmentProfiles](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) collection|List properties and relationships of the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) objects.|
+|[Get androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Read properties and relationships of the [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.|
+|[Create androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.|
+|[Delete androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|None|Deletes a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).|
+|[Update androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.|
+|[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|None|Not yet documented|
+|[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +35,7 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
-|qrCodeImage|[mimeContent](../resources/intune_shared_mimecontent.md)|String used to generate a QR code for the token.|
+|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 
 ## Relationships
 None

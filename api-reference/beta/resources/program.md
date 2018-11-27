@@ -1,8 +1,13 @@
+---
+title: "program resource type"
+description: "In the Azure AD access reviews feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  "
+---
+
 # program resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](accessreviews_root.md) feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  
+In the Azure AD [access reviews](accessreviews-root.md) feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  
 
 Each tenant that has on-boarded Azure AD access reviews has one program, `Default program`.  A global administrator can create additional programs, for example to represent compliance initiatives. 
 
@@ -11,11 +16,11 @@ Each tenant that has on-boarded Azure AD access reviews has one program, `Defaul
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create program](../api/program_create.md) |	[program](program.md)	|	Create a new program.|
-|[Delete program](../api/program_delete.md) |	None.	|	Delete a program.|
-|[List programs](../api/program_list.md) |	[program](program.md) collection|	Get a collection of all the programs.|
-|[List programControls of a program](../api/program_listcontrols.md) |		[programControl](programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[Update program](../api/program_update.md) |	[program](program.md)|	Update a program.|
+|[Create program](../api/program-create.md) |	[program](program.md)	|	Create a new program.|
+|[Delete program](../api/program-delete.md) |	None.	|	Delete a program.|
+|[List programs](../api/program-list.md) |	[program](program.md) collection|	Get a collection of all the programs.|
+|[List programControls of a program](../api/program-listcontrols.md) |		[programControl](programcontrol.md) collection|	Get a collection of the controls of a program.|
+|[Update program](../api/program-update.md) |	[program](program.md)|	Update a program.|
 
 ## Permissions
 

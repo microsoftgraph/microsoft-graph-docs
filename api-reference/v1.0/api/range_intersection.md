@@ -1,8 +1,13 @@
+---
+title: "Range: Intersection"
+description: "Gets the range object that represents the rectangular intersection of the given ranges."
+---
+
 # Range: Intersection
 
 Gets the range object that represents the rectangular intersection of the given ranges.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

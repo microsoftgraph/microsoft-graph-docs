@@ -1,3 +1,8 @@
+---
+title: "List contacts"
+description: "Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder."
+---
+
 # List contacts
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

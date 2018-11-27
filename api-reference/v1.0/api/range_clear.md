@@ -1,8 +1,13 @@
+---
+title: "Range: clear"
+description: "Clear range values, format, fill, border, etc."
+---
+
 # Range: clear
 
 Clear range values, format, fill, border, etc.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

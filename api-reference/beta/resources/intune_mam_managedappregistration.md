@@ -1,4 +1,9 @@
-﻿# managedAppRegistration resource type
+---
+title: "managedAppRegistration resource type"
+description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
+---
+
+# managedAppRegistration resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,9 +14,9 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedAppRegistrations](../api/intune_mam_managedappregistration_list.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) objects.|
-|[Get managedAppRegistration](../api/intune_mam_managedappregistration_get.md)|[managedAppRegistration](../resources/intune_mam_managedappregistration.md)|Read properties and relationships of the [managedAppRegistration](../resources/intune_mam_managedappregistration.md) object.|
-|[getUserIdsWithFlaggedAppRegistration function](../api/intune_mam_managedappregistration_getuseridswithflaggedappregistration.md)|String collection|Not yet documented|
+|[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune-mam-managedappregistration.md) objects.|
+|[Get managedAppRegistration](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Read properties and relationships of the [managedAppRegistration](../resources/intune-mam-managedappregistration.md) object.|
+|[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -28,18 +33,18 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |azureADDeviceId|String|The Azure Active Directory Device identifier of the host device. Value could be empty even when the host device is Azure Active Directory registered.|
 |deviceModel|String|The device model for the current app registration |
 |deviceManufacturer|String|The device manufacturer for the current app registration |
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device|
 |userId|String|The user Id to who this app registration belongs.|
-|appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|The app package Identifier|
+|appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|The app package Identifier|
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service.|
-|intendedPolicies|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now.|
-|operations|[managedAppOperation](../resources/intune_mam_managedappoperation.md) collection|Zero or more long running operations triggered on the app registration.|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service.|
+|intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now.|
+|operations|[managedAppOperation](../resources/intune-mam-managedappoperation.md) collection|Zero or more long running operations triggered on the app registration.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

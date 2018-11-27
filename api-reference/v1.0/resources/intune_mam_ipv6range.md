@@ -1,10 +1,15 @@
-﻿# iPv6Range resource type
+---
+title: "iPv6Range resource type"
+description: "IP V6 range"
+---
+
+# iPv6Range resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 IP V6 range
 
-Inherits from [ipRange](../resources/intune_mam_iprange.md)
+Inherits from [ipRange](../resources/intune-mam-iprange.md)
 
 ## Properties
 |Property|Type|Description|

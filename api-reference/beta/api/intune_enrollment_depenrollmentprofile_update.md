@@ -1,12 +1,17 @@
-﻿# Update depEnrollmentProfile
+---
+title: "Update depEnrollmentProfile"
+description: "Update the properties of a depEnrollmentProfile object."
+---
+
+# Update depEnrollmentProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) object.
+Update the properties of a [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,18 +35,18 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) object.
+In the request body, supply a JSON representation for the [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) object.
 
-The following table shows the properties that are required when you create the [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md).
+The following table shows the properties that are required when you create the [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune_enrollment_enrollmentprofile.md)|
+|id|String|The GUID for the object Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Name of the profile Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|Description of the profile Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
@@ -49,9 +54,9 @@ The following table shows the properties that are required when you create the [
 |isMandatory|Boolean|Indicates if the profile is mandatory|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled|
 |supportPhoneNumber|String|Support phone number|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune_enrollment_itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |profileRemovalDisabled|Boolean|Indicates if the profile removal option is disabled|
-|managementCertificates|[managementCertificateWithThumbprint](../resources/intune_enrollment_managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
+|managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreBlocked|Boolean|Indicates if Restore setup pane is blocked|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
 |appleIdDisabled|Boolean|Indicates if Apple id setup pane is disabled|
@@ -70,7 +75,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [depEnrollmentProfile](../resources/intune_enrollment_depenrollmentprofile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) object in the response body.
 
 ## Example
 ### Request

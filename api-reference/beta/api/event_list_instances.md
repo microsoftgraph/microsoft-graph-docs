@@ -1,3 +1,8 @@
+---
+title: "List instances"
+description: "Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the"
+---
+
 # List instances
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,7 +11,7 @@ Get the instances (occurrences) of an event for a specified time range. If the e
 occurrences and exceptions of the event in the specified time range.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

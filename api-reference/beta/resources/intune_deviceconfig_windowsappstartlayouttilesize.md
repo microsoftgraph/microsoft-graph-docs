@@ -1,4 +1,9 @@
-﻿# windowsAppStartLayoutTileSize enum type
+---
+title: "windowsAppStartLayoutTileSize enum type"
+description: "The tile size of Windows app in the start layout."
+---
+
+# windowsAppStartLayoutTileSize enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

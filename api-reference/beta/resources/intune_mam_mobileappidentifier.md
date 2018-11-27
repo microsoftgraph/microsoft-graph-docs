@@ -1,4 +1,9 @@
-﻿# mobileAppIdentifier resource type
+---
+title: "mobileAppIdentifier resource type"
+description: "The identifier for a mobile app."
+---
+
+# mobileAppIdentifier resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

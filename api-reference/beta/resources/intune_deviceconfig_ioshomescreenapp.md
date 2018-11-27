@@ -1,4 +1,9 @@
-﻿# iosHomeScreenApp resource type
+---
+title: "iosHomeScreenApp resource type"
+description: "Represents an icon for an app on the Home Screen"
+---
+
+# iosHomeScreenApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,12 +11,12 @@
 
 Represents an icon for an app on the Home Screen
 
-Inherits from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)
+Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md)|
+|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |bundleID|String|BundleID of app|
 
 ## Relationships

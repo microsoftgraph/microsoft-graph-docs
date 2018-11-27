@@ -1,4 +1,9 @@
-﻿# Create officeClientConfigurationAssignment
+---
+title: "Create officeClientConfigurationAssignment"
+description: "Add a target group to an existing policy."
+---
+
+# Create officeClientConfigurationAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Add a target group to an existing policy.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -37,12 +42,12 @@ The following table shows the properties that are required when you create the o
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the OfficeConfigurationAssignment.|
-|target|[officeConfigurationAssignmentTarget](../resources/intune_cirrus_officeconfigurationassignmenttarget.md)|The target assignment defined by the admin.|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|The target assignment defined by the admin.|
 
 
 
 ## Response
-If successful, this method returns a `200 Created` response code and a [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object in the response body.
+If successful, this method returns a `200 Created` response code and a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object in the response body.
 
 ## Example
 ### Request

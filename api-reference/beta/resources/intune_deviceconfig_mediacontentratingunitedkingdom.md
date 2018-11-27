@@ -1,4 +1,9 @@
-﻿# mediaContentRatingUnitedKingdom resource type
+---
+title: "mediaContentRatingUnitedKingdom resource type"
+description: "Not yet documented"
+---
+
+# mediaContentRatingUnitedKingdom resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,8 +13,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|Movies rating selected for United Kingdom. Possible values are: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
-|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|TV rating selected for United Kingdom. Possible values are: `allAllowed`, `allBlocked`, `caution`.|
+|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune-deviceconfig-ratingunitedkingdommoviestype.md)|Movies rating selected for United Kingdom. Possible values are: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
+|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)|TV rating selected for United Kingdom. Possible values are: `allAllowed`, `allBlocked`, `caution`.|
 
 ## Relationships
 None

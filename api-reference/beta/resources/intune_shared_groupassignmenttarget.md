@@ -1,4 +1,9 @@
-﻿# groupAssignmentTarget resource type
+---
+title: "groupAssignmentTarget resource type"
+description: "Represents an assignment to a group."
+---
+
+# groupAssignmentTarget resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Represents an assignment to a group.
 
-Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)
+Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|

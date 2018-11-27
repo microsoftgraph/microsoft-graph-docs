@@ -1,4 +1,9 @@
-﻿# List officeClientConfigurations
+---
+title: "List officeClientConfigurations"
+description: "Get all policies."
+---
+
+# List officeClientConfigurations
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Get all policies.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -33,7 +38,7 @@ GET /officeConfiguration/clientConfigurations
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) objects in the response body.
 
 ## Example
 ### Request

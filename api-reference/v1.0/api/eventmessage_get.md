@@ -1,3 +1,8 @@
+---
+title: "Get eventMessage"
+description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."
+---
+
 # Get eventMessage
 
 Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.
@@ -5,7 +10,7 @@ Get the properties and relationships of the [eventMessage](../resources/eventmes
 Currently, this operation returns event message bodies in only HTML format.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

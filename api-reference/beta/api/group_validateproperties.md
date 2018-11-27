@@ -1,6 +1,11 @@
+---
+title: "group: validateProperties"
+description: "Validate if an Office 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group. For validating properties before creating a group, use the validateProperties function for directory objects."
+---
+
 # group: validateProperties
 
-Validate if an Office 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject_validateproperties.md) for directory objects.
+Validate if an Office 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
 
 The following validations are performed for the display name and mail nickname properties: 
 1. Validate the prefix and suffix naming policy
@@ -10,7 +15,7 @@ This API returns with the first failure encountered. If one or more properties f
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,15 +1,20 @@
-﻿# exclusionGroupAssignmentTarget resource type
+---
+title: "exclusionGroupAssignmentTarget resource type"
+description: "Represents a group that should be excluded from an assignment."
+---
+
+# exclusionGroupAssignmentTarget resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Represents a group that should be excluded from an assignment.
 
-Inherits from [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)
+Inherits from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
+|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
 ## Relationships
 None

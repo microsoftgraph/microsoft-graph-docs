@@ -1,3 +1,8 @@
+---
+title: "Cancel governanceRoleAssignmentRequest"
+description: "Cancel a governanceRoleAssignmentRequest."
+---
+
 # Cancel governanceRoleAssignmentRequest
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -14,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](../../../concepts/query_parameters.md).
+This method does **not** support [OData Query Parameters](/graph/query-parameters).
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

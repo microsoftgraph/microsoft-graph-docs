@@ -1,18 +1,23 @@
+---
+title: "Planner: delta"
+description: "Retrieves changes to objects that the user is subscribed to."
+---
+
 # Planner: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieves changes to objects that the user is [subscribed](../resources/planner_overview.md#track-changes-using-delta-query) to.
+Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.
 
 This method allows your application to track changes to objects that the user can access from within Planner over time.
 
 The return value of this method might contain hetergenous types of objects from Planner.
 
-For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md).
+For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,7 +54,7 @@ If the `deltaLink` that the caller uses is malformed, this endpoint will return 
 
 If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.
 
-This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).
+This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
 

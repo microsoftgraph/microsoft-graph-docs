@@ -1,4 +1,9 @@
-﻿# androidManagedStoreAppConfigurationSchemaItemDataType enum type
+---
+title: "androidManagedStoreAppConfigurationSchemaItemDataType enum type"
+description: "Data type for a configuration item inside an Android application's custom configuration schema"
+---
+
+# androidManagedStoreAppConfigurationSchemaItemDataType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

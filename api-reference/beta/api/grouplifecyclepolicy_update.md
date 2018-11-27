@@ -1,3 +1,8 @@
+---
+title: "Update groupLifecyclePolicy"
+description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."
+---
+
 # Update groupLifecyclePolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,7 +11,7 @@ Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource ty
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
  
 
 |Permission type      | Permissions (from least to most privileged)              |

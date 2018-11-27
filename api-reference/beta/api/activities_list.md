@@ -12,11 +12,11 @@ List the recent [activities][] that took place on an item or under a hierarchy.
 
 **Note:** Activities is in a limited Preview and not yet available to all tenants.
 
-[activities]: ../resources/itemActivity.md
+[activities]: ../resources/itemactivity.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)
 |:--------------------------------------|:-------------------------------------

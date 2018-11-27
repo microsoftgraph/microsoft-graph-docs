@@ -1,4 +1,9 @@
-﻿# androidWorkProfileVpnConnectionType enum type
+---
+title: "androidWorkProfileVpnConnectionType enum type"
+description: "Android Work Profile VPN connection type."
+---
+
+# androidWorkProfileVpnConnectionType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

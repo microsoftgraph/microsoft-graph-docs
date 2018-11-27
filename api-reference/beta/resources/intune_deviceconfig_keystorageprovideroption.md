@@ -1,4 +1,9 @@
-﻿# keyStorageProviderOption enum type
+---
+title: "keyStorageProviderOption enum type"
+description: "Key Storage Provider (KSP) Import Options."
+---
+
+# keyStorageProviderOption enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

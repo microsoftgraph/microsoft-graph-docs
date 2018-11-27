@@ -1,3 +1,8 @@
+---
+title: "educationSubmission resource type"
+description: "Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned."
+---
+
 # educationSubmission resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -11,13 +16,13 @@ Submissions are automatically created when an assignment is published. The submi
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationSubmission](../api/educationsubmission_get.md) | [educationSubmission](educationsubmission.md) |Read properties and relationships of an **educationSubmission** object.|
-|[List resources](../api/educationsubmission_list_resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
-|[List submittedResources](../api/educationsubmission_list_submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
-|[Update](../api/educationsubmission_update.md) | [educationSubmission](educationsubmission.md)	|Update an **educationSubmission** object. |
-|[Return](../api/educationsubmission_return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
-|[Submit](../api/educationsubmission_submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the assignment. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
-|[Unsubmit](../api/educationsubmission_unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
+|[Get educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Read properties and relationships of an **educationSubmission** object.|
+|[List resources](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
+|[List submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
+|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md)	|Update an **educationSubmission** object. |
+|[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
+|[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the assignment. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
+|[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -41,7 +46,7 @@ Submissions are automatically created when an assignment is published. The submi
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |resources|[educationSubmissionResource](educationsubmissionresource.md) collection| Nullable.|
-|submittedResources|[educationSubmissionResource](educationSubmissionResource.md) collection| Read-only. Nullable.|
+|submittedResources|[educationSubmissionResource](educationsubmissionresource.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 

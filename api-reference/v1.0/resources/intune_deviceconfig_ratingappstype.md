@@ -1,4 +1,9 @@
-﻿# ratingAppsType enum type
+---
+title: "ratingAppsType enum type"
+description: "Apps rating as in media content"
+---
+
+# ratingAppsType enum type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,4 +1,9 @@
-﻿# managedEBookAssignment resource type
+---
+title: "managedEBookAssignment resource type"
+description: "Contains properties used to assign a eBook to a group."
+---
+
+# managedEBookAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,18 +13,18 @@ Contains properties used to assign a eBook to a group.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedEBookAssignments](../api/intune_books_managedebookassignment_list.md)|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) collection|List properties and relationships of the [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) objects.|
-|[Get managedEBookAssignment](../api/intune_books_managedebookassignment_get.md)|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Read properties and relationships of the [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) object.|
-|[Create managedEBookAssignment](../api/intune_books_managedebookassignment_create.md)|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Create a new [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) object.|
-|[Delete managedEBookAssignment](../api/intune_books_managedebookassignment_delete.md)|None|Deletes a [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).|
-|[Update managedEBookAssignment](../api/intune_books_managedebookassignment_update.md)|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Update the properties of a [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) object.|
+|[List managedEBookAssignments](../api/intune-books-managedebookassignment-list.md)|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) collection|List properties and relationships of the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) objects.|
+|[Get managedEBookAssignment](../api/intune-books-managedebookassignment-get.md)|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Read properties and relationships of the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.|
+|[Create managedEBookAssignment](../api/intune-books-managedebookassignment-create.md)|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Create a new [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.|
+|[Delete managedEBookAssignment](../api/intune-books-managedebookassignment-delete.md)|None|Deletes a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
+|[Update managedEBookAssignment](../api/intune-books-managedebookassignment-update.md)|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Update the properties of a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The assignment target for eBook.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|The install intent for eBook. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for eBook.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|The install intent for eBook. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## Relationships
 None

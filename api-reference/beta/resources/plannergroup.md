@@ -1,3 +1,8 @@
+---
+title: "plannerGroup resource type"
+description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."
+---
+
 # plannerGroup resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +13,7 @@ The **plannerGroup** resource provides access to Planner resources for a [group]
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List plans](../api/plannergroup_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
+|[List plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|

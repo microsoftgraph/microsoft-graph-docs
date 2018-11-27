@@ -1,3 +1,8 @@
+---
+title: "privilegedRoleSettings resource type"
+description: "Represents the settings for a privileged role."
+---
+
 # privilegedRoleSettings resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +14,7 @@ Represents the settings for a privileged role.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
+|[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

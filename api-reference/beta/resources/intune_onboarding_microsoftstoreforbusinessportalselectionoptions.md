@@ -1,4 +1,9 @@
-﻿# microsoftStoreForBusinessPortalSelectionOptions enum type
+---
+title: "microsoftStoreForBusinessPortalSelectionOptions enum type"
+description: "Portal to which admin syncs available Microsoft Store for Business apps. This is available in the Intune Admin Console."
+---
+
+# microsoftStoreForBusinessPortalSelectionOptions enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

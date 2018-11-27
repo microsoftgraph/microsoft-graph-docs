@@ -1,3 +1,8 @@
+---
+title: "teamsAsyncOperationType enum type"
+description: "Types of teamsAsyncOperation. Members will be added here as more async operations are supported."
+---
+
 # teamsAsyncOperationType enum type
 
 

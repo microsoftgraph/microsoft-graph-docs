@@ -1,3 +1,8 @@
+---
+title: "Restart synchronizationJob"
+description: "Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors."
+---
+
 # Restart synchronizationJob
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -31,7 +36,7 @@ In the request body, provide a JSON object with the following parameter.
 
 | Parameter     | Type      | Description    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization_synchronizationjobrestartcriteria.md) |Restart criteria|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Restart criteria|
 
 ## Response
 

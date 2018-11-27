@@ -1,4 +1,9 @@
-﻿# androidForWorkAppConfigurationSchemaItem resource type
+---
+title: "androidForWorkAppConfigurationSchemaItem resource type"
+description: "Single configuration item inside an Android for Work application's custom configuration schema."
+---
+
+# androidForWorkAppConfigurationSchemaItem resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -15,8 +20,8 @@ Single configuration item inside an Android for Work application's custom config
 |defaultIntValue|Int32|Default value for integer type items, if specified by the app developer|
 |defaultStringValue|String|Default value for string type items, if specified by the app developer|
 |defaultStringArrayValue|String collection|Default value for string array type items, if specified by the app developer|
-|dataType|[androidForWorkAppConfigurationSchemaItemDataType](../resources/intune_androidforwork_androidforworkappconfigurationschemaitemdatatype.md)|The type of value this item describes. Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
-|selections|[keyValuePair](../resources/intune_shared_keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
+|dataType|[androidForWorkAppConfigurationSchemaItemDataType](../resources/intune-androidforwork-androidforworkappconfigurationschemaitemdatatype.md)|The type of value this item describes. Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
+|selections|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)|
 
 ## Relationships
 None

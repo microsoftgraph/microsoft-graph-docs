@@ -1,4 +1,9 @@
-﻿# managedAppPolicy resource type
+---
+title: "managedAppPolicy resource type"
+description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
+---
+
+# managedAppPolicy resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,9 +13,9 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) objects.|
-|[Get managedAppPolicy](../api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) object.|
-|[targetApps action](../api/intune_mam_managedapppolicy_targetapps.md)|None|Not yet documented|
+|[List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) objects.|
+|[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) object.|
+|[targetApps action](../api/intune-mam-managedapppolicy-targetapps.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

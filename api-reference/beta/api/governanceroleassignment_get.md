@@ -1,3 +1,8 @@
+---
+title: "Get governanceRoleAssignment"
+description: "Retrieve the properties and relationships of a governanceRoleAssignment."
+---
+
 # Get governanceRoleAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Retrieve the properties and relationships of a [governanceRoleAssignment](../resources/governanceroleassignment.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -28,7 +33,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ```
 
 ## Optional query parameters
-This method does **not** supports [OData Query Parameters](../../../concepts/query_parameters.md) other than `$filter` to help customize the response.
+This method does **not** supports [OData Query Parameters](/graph/query-parameters) other than `$filter` to help customize the response.
 
 ## Request headers
 | Name      |Description|

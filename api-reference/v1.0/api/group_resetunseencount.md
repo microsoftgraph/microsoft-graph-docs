@@ -1,8 +1,13 @@
+---
+title: "group: resetUnseenCount"
+description: "Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 groups only."
+---
+
 # group: resetUnseenCount
 Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 groups only.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,9 @@
-﻿# deviceEnrollmentPlatformRestriction resource type
+---
+title: "deviceEnrollmentPlatformRestriction resource type"
+description: "Platform specific enrollment restrictions"
+---
+
+# deviceEnrollmentPlatformRestriction resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

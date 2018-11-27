@@ -1,9 +1,14 @@
+---
+title: "Create page"
+description: "Create a new page in the specified section."
+---
+
 # Create page
 
 Create a new [page](../resources/page.md) in the specified section.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

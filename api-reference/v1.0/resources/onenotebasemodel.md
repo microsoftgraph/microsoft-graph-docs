@@ -1,3 +1,8 @@
+---
+title: "onenoteEntityBaseModel resource"
+description: "This is the base type for OneNote entities."
+---
+
 # onenoteEntityBaseModel resource
 
 This is the base type for OneNote entities.

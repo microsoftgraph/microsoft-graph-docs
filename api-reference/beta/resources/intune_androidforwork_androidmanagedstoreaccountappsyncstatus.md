@@ -1,4 +1,9 @@
-﻿# androidManagedStoreAccountAppSyncStatus enum type
+---
+title: "androidManagedStoreAccountAppSyncStatus enum type"
+description: "Sync status of the tenant with the Google EMM API"
+---
+
+# androidManagedStoreAccountAppSyncStatus enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

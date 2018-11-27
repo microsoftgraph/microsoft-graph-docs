@@ -1,3 +1,8 @@
+---
+title: "Create Event"
+description: "Create an event in the user's default calendar or specified calendar."
+---
+
 # Create Event
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
@@ -32,7 +37,7 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -61,7 +66,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## Request body
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
-Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
+Since the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the event while creating it.
 
 ## Response
 
@@ -578,9 +583,9 @@ Content-type: application/json
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 

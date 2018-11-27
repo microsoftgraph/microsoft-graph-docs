@@ -1,3 +1,8 @@
+---
+title: "sharePointSiteUsageDetail resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # sharePointSiteUsageDetail resource type
 
 ## Properties

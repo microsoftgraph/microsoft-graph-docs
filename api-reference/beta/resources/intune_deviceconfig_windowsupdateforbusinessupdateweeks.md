@@ -1,4 +1,9 @@
-﻿# windowsUpdateForBusinessUpdateWeeks enum type
+---
+title: "windowsUpdateForBusinessUpdateWeeks enum type"
+description: "Scheduled the update installation on the weeks of the month"
+---
+
+# windowsUpdateForBusinessUpdateWeeks enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

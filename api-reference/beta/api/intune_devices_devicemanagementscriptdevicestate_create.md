@@ -1,12 +1,17 @@
-﻿# Create deviceManagementScriptDeviceState
+---
+title: "Create deviceManagementScriptDeviceState"
+description: "Create a new deviceManagementScriptDeviceState object."
+---
+
+# Create deviceManagementScriptDeviceState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [deviceManagementScriptDeviceState](../resources/intune_devices_devicemanagementscriptdevicestate.md) object.
+Create a new [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,7 +43,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune_shared_runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
@@ -47,7 +52,7 @@ The following table shows the properties that are required when you create the d
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [deviceManagementScriptDeviceState](../resources/intune_devices_devicemanagementscriptdevicestate.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.
 
 ## Example
 ### Request

@@ -1,4 +1,9 @@
-﻿# appListType enum type
+---
+title: "appListType enum type"
+description: "Possible values of the compliance app list."
+---
+
+# appListType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

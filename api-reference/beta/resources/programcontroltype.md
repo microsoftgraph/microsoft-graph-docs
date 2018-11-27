@@ -1,8 +1,13 @@
+---
+title: "programControlType resource type"
+description: "In the Azure AD access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
+---
+
 # programControlType resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](accessreviews_root.md) feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  
+In the Azure AD [access reviews](accessreviews-root.md) feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  
 
 The program control type objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  No additional program control types can be created.
 
@@ -11,7 +16,7 @@ The program control type objects are automatically generated when the global adm
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List programControlTypes](../api/programcontroltype_list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
+|[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -29,7 +34,7 @@ None.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create programControl](../api/programcontrol_create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
+|[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
 
 
 ## JSON representation

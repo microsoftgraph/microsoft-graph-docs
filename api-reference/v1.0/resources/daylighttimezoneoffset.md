@@ -1,3 +1,8 @@
+---
+title: "daylightTimeZoneOffset resource type"
+description: "Specifies when a time zone switches from standard time to daylight saving time."
+---
+
 # daylightTimeZoneOffset resource type
 
 Specifies when a time zone switches from standard time to daylight saving time.

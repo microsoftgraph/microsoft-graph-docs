@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getOffice365ActivationCounts"
+description: "Get the count of Office 365 activations on desktops and devices."
+---
+
 # reportRoot: getOffice365ActivationCounts
 
 Get the count of Office 365 activations on desktops and devices.
@@ -6,7 +11,7 @@ Get the count of Office 365 activations on desktops and devices.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

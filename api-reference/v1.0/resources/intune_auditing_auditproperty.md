@@ -1,4 +1,9 @@
-﻿# auditProperty resource type
+---
+title: "auditProperty resource type"
+description: "A class containing the properties for Audit Property."
+---
+
+# auditProperty resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getYammerActivityCounts"
+description: "Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked."
+---
+
 # reportRoot: getYammerActivityCounts
 
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
@@ -6,7 +11,7 @@ Get the trends on the amount of Yammer activity in your organization by how many
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

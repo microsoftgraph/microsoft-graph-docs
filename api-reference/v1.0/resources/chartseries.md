@@ -1,3 +1,8 @@
+---
+title: "ChartSeries resource type"
+description: "Represents a series in a chart."
+---
+
 # ChartSeries resource type
 
 Represents a series in a chart.
@@ -7,12 +12,12 @@ Represents a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries_get.md) | [WorkbookChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
-|[Create ChartPoints](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
-|[List points](../api/chartseries_list_points.md) |[ChartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
-|[Update](../api/chartseries_update.md) | [WorkbookChartSeries](chartseries.md)	|Update ChartSeries object. |
-|[List](../api/chartseries_list.md) | [WorkbookChartSeries](chartseries.md) collection |Get chartSeries object collection. |
-|[ItemAt](../api/chartseriescollection_itemat.md)|[WorkbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
+|[Get ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
+|[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
+|[List points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
+|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md)	|Update ChartSeries object. |
+|[List](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md) collection |Get chartSeries object collection. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
 
 ## Properties
 | Property	   | Type	|Description|

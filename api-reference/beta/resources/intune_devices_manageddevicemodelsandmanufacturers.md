@@ -1,4 +1,9 @@
-﻿# managedDeviceModelsAndManufacturers resource type
+---
+title: "managedDeviceModelsAndManufacturers resource type"
+description: "Models and Manufactures meatadata for managed devices in the account"
+---
+
+# managedDeviceModelsAndManufacturers resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

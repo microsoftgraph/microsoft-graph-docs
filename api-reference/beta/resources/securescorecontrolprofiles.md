@@ -1,3 +1,8 @@
+---
+title: "secureScoreControlProfiles resource type"
+description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."
+---
+
 # secureScoreControlProfiles resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +14,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles_list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
 
 
 ## Properties
@@ -32,9 +37,9 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates |	String	|	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles_update.md)). |
-|	tenantNote |	String	|	Tenant can set per control comments (supports [update](../api/securescorecontrolprofiles_update.md)). |
-|	assignedTo |	String	|	Tenant can assign the control to a individual (supports [update](../api/securescorecontrolprofiles_update.md)). |
+|	controlStateUpdates |	String	|	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	tenantNote |	String	|	Tenant can set per control comments (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	assignedTo |	String	|	Tenant can assign the control to a individual (supports [update](../api/securescorecontrolprofiles-update.md)). |
 |	updatedBy |	String	|	User principal name of who made changes to a control's state. |
 
 ## Relationships

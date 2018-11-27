@@ -1,8 +1,13 @@
+---
+title: "Update message"
+description: "Update the properties of message object."
+---
+
 # Update message
 
 Update the properties of message object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |subject|String|The subject of the message. Updatable only if isDraft = true.|
 
-Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
+Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **message** instance.
 
 ## Response
@@ -99,10 +104,10 @@ Content-length: 248
 
 ## See also
 
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
 
 

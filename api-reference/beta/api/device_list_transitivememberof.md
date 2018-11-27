@@ -1,3 +1,8 @@
+---
+title: "List device transitive groups"
+description: "Get groups that the device is a member of. This API request is transitive, and will also return all groups the device is a nested member of."
+---
+
 # List device transitive groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,7 +11,7 @@ Get groups that the device is a member of. This API request is transitive, and w
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,3 +1,8 @@
+---
+title: "office365ServicesUserCounts resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # office365ServicesUserCounts resource type
 
 ## Properties

@@ -1,4 +1,9 @@
-﻿# localizedNotificationMessage resource type
+---
+title: "localizedNotificationMessage resource type"
+description: "The text content of a Notification Message Template for the specified locale."
+---
+
+# localizedNotificationMessage resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,11 +11,11 @@ The text content of a Notification Message Template for the specified locale.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List localizedNotificationMessages](../api/intune_notification_localizednotificationmessage_list.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) collection|List properties and relationships of the [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) objects.|
-|[Get localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_get.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md)|Read properties and relationships of the [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.|
-|[Create localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_create.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md)|Create a new [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.|
-|[Delete localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_delete.md)|None|Deletes a [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md).|
-|[Update localizedNotificationMessage](../api/intune_notification_localizednotificationmessage_update.md)|[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md)|Update the properties of a [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) object.|
+|[List localizedNotificationMessages](../api/intune-notification-localizednotificationmessage-list.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) collection|List properties and relationships of the [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) objects.|
+|[Get localizedNotificationMessage](../api/intune-notification-localizednotificationmessage-get.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|Read properties and relationships of the [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.|
+|[Create localizedNotificationMessage](../api/intune-notification-localizednotificationmessage-create.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|Create a new [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.|
+|[Delete localizedNotificationMessage](../api/intune-notification-localizednotificationmessage-delete.md)|None|Deletes a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).|
+|[Update localizedNotificationMessage](../api/intune-notification-localizednotificationmessage-update.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|Update the properties of a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.|
 
 ## Properties
 |Property|Type|Description|

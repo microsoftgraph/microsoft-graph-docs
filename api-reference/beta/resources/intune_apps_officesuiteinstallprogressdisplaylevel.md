@@ -1,4 +1,9 @@
-﻿# officeSuiteInstallProgressDisplayLevel enum type
+---
+title: "officeSuiteInstallProgressDisplayLevel enum type"
+description: "The Enum to specify the level of display for the Installation Progress Setup UI on the Device."
+---
+
+# officeSuiteInstallProgressDisplayLevel enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,4 +1,9 @@
-﻿# deviceEnrollmentFailureReason enum type
+---
+title: "deviceEnrollmentFailureReason enum type"
+description: "Top level failure categories for enrollment."
+---
+
+# deviceEnrollmentFailureReason enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

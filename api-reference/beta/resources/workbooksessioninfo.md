@@ -1,3 +1,8 @@
+---
+title: "workbookSessionInfo resource type"
+description: "Provides information about workbook session."
+---
+
 # workbookSessionInfo resource type
 
 Provides information about workbook session.

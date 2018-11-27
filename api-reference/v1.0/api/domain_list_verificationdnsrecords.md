@@ -1,3 +1,8 @@
+---
+title: "List verificationDnsRecords"
+description: "Retrieve a list of domainDnsRecord objects."
+---
+
 # List verificationDnsRecords
 
 Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.
@@ -8,7 +13,7 @@ Root domains require verification. For example, contoso.com requires verificatio
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

@@ -1,3 +1,8 @@
+---
+title: "privilegedApproval resource type"
+description: "Represents an approval that is requested in Privileged Identity Management for getting into a role."
+---
+
 # privilegedApproval resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,11 +14,11 @@ Represents an approval that is requested in Privileged Identity Management for g
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get privilegedApproval](../api/privilegedapproval_get.md) | [privilegedApproval](privilegedapproval.md) |Read properties and relationships of privilegedApproval object.|
-|[List privilegedApproval objects](../api/privilegedApproval_list.md) | [privilegedApproval](privilegedApproval.md) collection|Get the collection of privilegedApproval.|
-|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)	|Create privilegedApproval object. |
-|[Update privilegedApproval](../api/privilegedapproval_update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
-|[Myrequests](../api/privilegedapproval_myrequests.md)|[privilegedApproval](privilegedapproval.md)|Get the requestor's approval requests.|
+|[Get privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Read properties and relationships of privilegedApproval object.|
+|[List privilegedApproval objects](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Get the collection of privilegedApproval.|
+|[Create privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)	|Create privilegedApproval object. |
+|[Update privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
+|[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Get the requestor's approval requests.|
 
 ## Properties
 | Property	   | Type	|Description|

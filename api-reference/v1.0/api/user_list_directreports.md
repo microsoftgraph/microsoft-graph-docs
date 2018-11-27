@@ -1,8 +1,13 @@
+---
+title: "List directReports"
+description: "Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager."
+---
+
 # List directReports
 
 Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

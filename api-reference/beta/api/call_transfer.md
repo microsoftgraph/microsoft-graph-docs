@@ -1,3 +1,8 @@
+---
+title: "call: transfer"
+description: "Transfer an active call."
+---
+
 # call: transfer
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Transfer an active call.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)         |
 | :-------------- | :-------------------------------------------------- |
@@ -31,7 +36,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|target|[identitySet](../resources/identitySet.md)||
+|target|[identitySet](../resources/identityset.md)||
 |replacesCallId|String|Original call id of the participant that is being transferred.|
 |clientContext|String|The client context.|
 

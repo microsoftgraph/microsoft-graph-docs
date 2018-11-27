@@ -1,4 +1,9 @@
-﻿# importedDeviceIdentity resource type
+---
+title: "importedDeviceIdentity resource type"
+description: "The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration."
+---
+
+# importedDeviceIdentity resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,25 +13,25 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List importedDeviceIdentities](../api/intune_enrollment_importeddeviceidentity_list.md)|[importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) collection|List properties and relationships of the [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) objects.|
-|[Get importedDeviceIdentity](../api/intune_enrollment_importeddeviceidentity_get.md)|[importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|Read properties and relationships of the [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) object.|
-|[Create importedDeviceIdentity](../api/intune_enrollment_importeddeviceidentity_create.md)|[importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|Create a new [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) object.|
-|[Delete importedDeviceIdentity](../api/intune_enrollment_importeddeviceidentity_delete.md)|None|Deletes a [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md).|
-|[Update importedDeviceIdentity](../api/intune_enrollment_importeddeviceidentity_update.md)|[importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|Update the properties of a [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md) object.|
-|[importDeviceIdentityList action](../api/intune_enrollment_importeddeviceidentity_importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune_enrollment_importeddeviceidentityresult.md) collection|Not yet documented|
+|[List importedDeviceIdentities](../api/intune-enrollment-importeddeviceidentity-list.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|List properties and relationships of the [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) objects.|
+|[Get importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-get.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Read properties and relationships of the [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object.|
+|[Create importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-create.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Create a new [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object.|
+|[Delete importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-delete.md)|None|Deletes a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).|
+|[Update importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-update.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Update the properties of a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object.|
+|[importDeviceIdentityList action](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the imported device identity|
 |importedDeviceIdentifier|String|Imported Device Identifier|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune_enrollment_importeddeviceidentitytype.md)|Type of Imported Device Identity. Possible values are: `unknown`, `imei`, `serialNumber`.|
+|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Type of Imported Device Identity. Possible values are: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Last Modified DateTime of the description|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## Relationships
 None

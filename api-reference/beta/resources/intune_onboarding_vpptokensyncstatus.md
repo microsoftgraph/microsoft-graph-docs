@@ -1,4 +1,9 @@
-﻿# vppTokenSyncStatus enum type
+---
+title: "vppTokenSyncStatus enum type"
+description: "Possible sync statuses associated with an Apple Volume Purchase Program token."
+---
+
+# vppTokenSyncStatus enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

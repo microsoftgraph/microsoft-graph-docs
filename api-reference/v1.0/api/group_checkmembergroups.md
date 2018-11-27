@@ -1,3 +1,8 @@
+---
+title: "group: checkMemberGroups"
+description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
+---
+
 # group: checkMemberGroups
 
 Check for membership in the specified list of groups. Returns from the list those groups of which
@@ -9,7 +14,7 @@ in an Office 365 Group is always direct.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |

@@ -1,3 +1,8 @@
+---
+title: "Restore deleted item"
+description: "Restores a recently deleted item from deleted items. "
+---
+
 # Restore deleted item
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +14,7 @@ Currently, deleted items functionality is only supported for the [group](../reso
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 * For users: User.ReadWrite.All, Directory.AccessAsUser.All
 * For groups: Group.ReadWrite.All, Directory.AccessAsUser.All

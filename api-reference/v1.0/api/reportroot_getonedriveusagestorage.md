@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getOneDriveUsageStorage"
+description: "Get the trend on the amount of storage you are using in OneDrive for Business."
+---
+
 # reportRoot: getOneDriveUsageStorage
 
 Get the trend on the amount of storage you are using in OneDrive for Business.
@@ -6,7 +11,7 @@ Get the trend on the amount of storage you are using in OneDrive for Business.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

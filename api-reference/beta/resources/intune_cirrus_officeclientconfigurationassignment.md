@@ -1,4 +1,9 @@
-﻿# officeClientConfigurationAssignment resource type
+---
+title: "officeClientConfigurationAssignment resource type"
+description: "Office Client Configuration Assignment."
+---
+
+# officeClientConfigurationAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,17 +13,17 @@ Office Client Configuration Assignment.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List officeClientConfigurationAssignments](../api/intune_cirrus_officeclientconfigurationassignment_list.md)|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|List properties and relationships of the [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) objects.|
-|[Get officeClientConfigurationAssignment](../api/intune_cirrus_officeclientconfigurationassignment_get.md)|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md)|Read properties and relationships of the [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object.|
-|[Create officeClientConfigurationAssignment](../api/intune_cirrus_officeclientconfigurationassignment_create.md)|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md)|Create a new [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object.|
-|[Delete officeClientConfigurationAssignment](../api/intune_cirrus_officeclientconfigurationassignment_delete.md)|None|Deletes a [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md).|
-|[Update officeClientConfigurationAssignment](../api/intune_cirrus_officeclientconfigurationassignment_update.md)|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md)|Update the properties of a [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) object.|
+|[List officeClientConfigurationAssignments](../api/intune-cirrus-officeclientconfigurationassignment-list.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) collection|List properties and relationships of the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) objects.|
+|[Get officeClientConfigurationAssignment](../api/intune-cirrus-officeclientconfigurationassignment-get.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Read properties and relationships of the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.|
+|[Create officeClientConfigurationAssignment](../api/intune-cirrus-officeclientconfigurationassignment-create.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Create a new [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.|
+|[Delete officeClientConfigurationAssignment](../api/intune-cirrus-officeclientconfigurationassignment-delete.md)|None|Deletes a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).|
+|[Update officeClientConfigurationAssignment](../api/intune-cirrus-officeclientconfigurationassignment-update.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Update the properties of a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the OfficeConfigurationAssignment.|
-|target|[officeConfigurationAssignmentTarget](../resources/intune_cirrus_officeconfigurationassignmenttarget.md)|The target assignment defined by the admin.|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|The target assignment defined by the admin.|
 
 ## Relationships
 None

@@ -1,4 +1,9 @@
-﻿# ipRange resource type
+---
+title: "ipRange resource type"
+description: "IP range base class for representing IPV4, IPV6 address ranges"
+---
+
+# ipRange resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,3 +1,8 @@
+---
+title: "onenoteOperationError resource type"
+description: "An error from a failed OneNote operation."
+---
+
 # onenoteOperationError resource type
 
 An error from a failed OneNote operation.

@@ -1,4 +1,9 @@
-﻿# macOSLobChildApp resource type
+---
+title: "macOSLobChildApp resource type"
+description: "Contains properties the MacOS LOB App in a bundle package"
+---
+
+# macOSLobChildApp resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

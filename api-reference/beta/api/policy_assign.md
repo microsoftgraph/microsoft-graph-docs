@@ -1,3 +1,8 @@
+---
+title: "Assign Policy"
+description: "Assigns a policy to an application or service principal."
+---
+
 # Assign Policy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,7 +12,7 @@ Assigns a [policy](../resources/policy.md) to an application or service principa
 >Note: Currently, policy assignment only applies to Token lifetime Policy. This type of policy is described in [policy](../resources/policy.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

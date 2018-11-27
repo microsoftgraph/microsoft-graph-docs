@@ -1,12 +1,17 @@
-﻿# Update deviceManagementScriptRunSummary
+---
+title: "Update deviceManagementScriptRunSummary"
+description: "Update the properties of a deviceManagementScriptRunSummary object."
+---
+
+# Update deviceManagementScriptRunSummary
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object.
+Update the properties of a [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,9 +35,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object.
+In the request body, supply a JSON representation for the [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) object.
 
-The following table shows the properties that are required when you create the [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md).
+The following table shows the properties that are required when you create the [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -45,7 +50,7 @@ The following table shows the properties that are required when you create the [
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptRunSummary](../resources/intune_devices_devicemanagementscriptrunsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) object in the response body.
 
 ## Example
 ### Request

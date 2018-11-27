@@ -1,8 +1,13 @@
+---
+title: "List contacts"
+description: "Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder."
+---
+
 # List contacts
 
 Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

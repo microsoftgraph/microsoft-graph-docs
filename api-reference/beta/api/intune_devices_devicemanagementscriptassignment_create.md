@@ -1,12 +1,17 @@
-﻿# Create deviceManagementScriptAssignment
+---
+title: "Create deviceManagementScriptAssignment"
+description: "Create a new deviceManagementScriptAssignment object."
+---
+
+# Create deviceManagementScriptAssignment
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [deviceManagementScriptAssignment](../resources/intune_devices_devicemanagementscriptassignment.md) object.
+Create a new [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -37,12 +42,12 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script group assignment entity.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The Id of the Azure Active Directory group we are targeting the script to.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Id of the Azure Active Directory group we are targeting the script to.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [deviceManagementScriptAssignment](../resources/intune_devices_devicemanagementscriptassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) object in the response body.
 
 ## Example
 ### Request

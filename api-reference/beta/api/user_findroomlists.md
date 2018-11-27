@@ -1,3 +1,8 @@
+---
+title: "user: findRoomLists"
+description: "Get the room lists defined in a tenant."
+---
+
 # user: findRoomLists
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,11 +10,11 @@
 Get the room lists defined in a tenant.
 
 Tenants can organize meeting rooms into room lists. Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.
-You can get all the room lists in the tenant, [get all the rooms](user_findrooms.md) in the tenant, or [get all the rooms](user_findrooms.md) in a specific room list.
+You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

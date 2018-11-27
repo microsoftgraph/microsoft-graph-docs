@@ -1,4 +1,9 @@
-﻿# deviceManagementScriptGroupAssignment resource type
+---
+title: "deviceManagementScriptGroupAssignment resource type"
+description: "Contains properties used to assign a device management script to a group."
+---
+
+# deviceManagementScriptGroupAssignment resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +13,11 @@ Contains properties used to assign a device management script to a group.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List deviceManagementScriptGroupAssignments](../api/intune_devices_devicemanagementscriptgroupassignment_list.md)|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) collection|List properties and relationships of the [deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) objects.|
-|[Get deviceManagementScriptGroupAssignment](../api/intune_devices_devicemanagementscriptgroupassignment_get.md)|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md)|Read properties and relationships of the [deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) object.|
-|[Create deviceManagementScriptGroupAssignment](../api/intune_devices_devicemanagementscriptgroupassignment_create.md)|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md)|Create a new [deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) object.|
-|[Delete deviceManagementScriptGroupAssignment](../api/intune_devices_devicemanagementscriptgroupassignment_delete.md)|None|Deletes a [deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md).|
-|[Update deviceManagementScriptGroupAssignment](../api/intune_devices_devicemanagementscriptgroupassignment_update.md)|[deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md)|Update the properties of a [deviceManagementScriptGroupAssignment](../resources/intune_devices_devicemanagementscriptgroupassignment.md) object.|
+|[List deviceManagementScriptGroupAssignments](../api/intune-devices-devicemanagementscriptgroupassignment-list.md)|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) collection|List properties and relationships of the [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) objects.|
+|[Get deviceManagementScriptGroupAssignment](../api/intune-devices-devicemanagementscriptgroupassignment-get.md)|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Read properties and relationships of the [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.|
+|[Create deviceManagementScriptGroupAssignment](../api/intune-devices-devicemanagementscriptgroupassignment-create.md)|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Create a new [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.|
+|[Delete deviceManagementScriptGroupAssignment](../api/intune-devices-devicemanagementscriptgroupassignment-delete.md)|None|Deletes a [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md).|
+|[Update deviceManagementScriptGroupAssignment](../api/intune-devices-devicemanagementscriptgroupassignment-update.md)|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Update the properties of a [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|

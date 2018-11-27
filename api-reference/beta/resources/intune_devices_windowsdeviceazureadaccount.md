@@ -1,4 +1,9 @@
-﻿# windowsDeviceAzureADAccount resource type
+---
+title: "windowsDeviceAzureADAccount resource type"
+description: "Not yet documented"
+---
+
+# windowsDeviceAzureADAccount resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,12 +11,12 @@
 
 Not yet documented
 
-Inherits from [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)
+Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|password|String|Not yet documented Inherited from [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
+|password|String|Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |userPrincipalName|String|Not yet documented|
 
 ## Relationships

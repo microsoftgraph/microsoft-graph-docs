@@ -1,4 +1,9 @@
-﻿# administratorConfiguredDeviceComplianceState enum type
+---
+title: "administratorConfiguredDeviceComplianceState enum type"
+description: "Administrator configured device compliance state Enum"
+---
+
+# administratorConfiguredDeviceComplianceState enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

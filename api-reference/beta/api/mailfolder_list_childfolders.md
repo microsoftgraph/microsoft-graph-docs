@@ -1,3 +1,8 @@
+---
+title: "List childFolders"
+description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
+---
+
 # List childFolders
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,7 +11,7 @@ Get the folder collection under the specified folder. You can use the `.../me/Ma
 folder collection and navigate to another folder.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -22,7 +27,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|

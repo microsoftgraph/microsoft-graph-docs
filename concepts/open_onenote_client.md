@@ -1,3 +1,8 @@
+---
+title: "Open the OneNote client"
+description: "You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. "
+---
+
 # Open the OneNote client
 
 You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. 
@@ -30,13 +35,13 @@ The **links** property is a JSON object that contains two URLs. The URLs will op
 
 The OneNote API returns the **links** property in the HTTP response for the following operations:
 
-- Create a page by sending a [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) request.
+- Create a page by sending a [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) request.
 
-- Create a notebook by sending a [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) request.
+- Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) request.
 
-- Get page metadata by sending a [`GET pages`](../api-reference/v1.0/api/page_get.md) or [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) request.
+- Get page metadata by sending a [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) or [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) request.
 
-- Get notebook metadata by sending a [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) or [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) request.
+- Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) or [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) request.
 
 The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.
 

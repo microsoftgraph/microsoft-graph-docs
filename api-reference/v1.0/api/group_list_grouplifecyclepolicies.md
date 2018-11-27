@@ -1,10 +1,15 @@
+---
+title: "List groupLifecyclePolicies"
+description: "Retrieves a list of groupLifecyclePolicy objects to which a group belongs."
+---
+
 # List groupLifecyclePolicies
 
 Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

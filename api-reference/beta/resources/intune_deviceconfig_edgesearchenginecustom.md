@@ -1,4 +1,9 @@
-﻿# edgeSearchEngineCustom resource type
+---
+title: "edgeSearchEngineCustom resource type"
+description: "Allows IT admins to set a custom default search engine for MDM-Controlled devices."
+---
+
+# edgeSearchEngineCustom resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Allows IT admins to set a custom default search engine for MDM-Controlled devices.
 
-Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)
+Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)
 
 ## Properties
 |Property|Type|Description|

@@ -1,4 +1,9 @@
-﻿# managementCondition resource type
+---
+title: "managementCondition resource type"
+description: "Management conditions are events that can be triggered dynamically such as geo-fences, time-fences, and network-fences."
+---
+
+# managementCondition resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,9 +13,9 @@ Management conditions are events that can be triggered dynamically such as geo-f
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List managementConditions](../api/intune_fencing_managementcondition_list.md)|[managementCondition](../resources/intune_fencing_managementcondition.md) collection|List properties and relationships of the [managementCondition](../resources/intune_fencing_managementcondition.md) objects.|
-|[Get managementCondition](../api/intune_fencing_managementcondition_get.md)|[managementCondition](../resources/intune_fencing_managementcondition.md)|Read properties and relationships of the [managementCondition](../resources/intune_fencing_managementcondition.md) object.|
-|[getManagementConditionsForPlatform function](../api/intune_fencing_managementcondition_getmanagementconditionsforplatform.md)|[managementCondition](../resources/intune_fencing_managementcondition.md) collection|Not yet documented|
+|[List managementConditions](../api/intune-fencing-managementcondition-list.md)|[managementCondition](../resources/intune-fencing-managementcondition.md) collection|List properties and relationships of the [managementCondition](../resources/intune-fencing-managementcondition.md) objects.|
+|[Get managementCondition](../api/intune-fencing-managementcondition-get.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)|Read properties and relationships of the [managementCondition](../resources/intune-fencing-managementcondition.md) object.|
+|[getManagementConditionsForPlatform function](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[managementCondition](../resources/intune-fencing-managementcondition.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -22,12 +27,12 @@ Management conditions are events that can be triggered dynamically such as geo-f
 |createdDateTime|DateTimeOffset|The time the management condition was created. Generated service side.|
 |modifiedDateTime|DateTimeOffset|The time the management condition was last modified. Updated service side.|
 |eTag|String|ETag of the management condition. Updated service side.|
-|applicablePlatforms|[devicePlatformType](../resources/intune_shared_deviceplatformtype.md) collection|The applicable platforms for this management condition.|
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managementConditionStatements|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) collection|The management condition statements associated to the management condition.|
+|managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated to the management condition.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

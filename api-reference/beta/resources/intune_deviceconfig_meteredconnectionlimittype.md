@@ -1,4 +1,9 @@
-﻿# meteredConnectionLimitType enum type
+---
+title: "meteredConnectionLimitType enum type"
+description: "Metered Connection Limit Settings."
+---
+
+# meteredConnectionLimitType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

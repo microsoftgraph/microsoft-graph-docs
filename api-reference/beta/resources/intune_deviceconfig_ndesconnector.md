@@ -1,4 +1,9 @@
-﻿# ndesConnector resource type
+---
+title: "ndesConnector resource type"
+description: "Entity which represents an OnPrem Ndes connector."
+---
+
+# ndesConnector resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,18 +13,18 @@ Entity which represents an OnPrem Ndes connector.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List ndesConnectors](../api/intune_deviceconfig_ndesconnector_list.md)|[ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) collection|List properties and relationships of the [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) objects.|
-|[Get ndesConnector](../api/intune_deviceconfig_ndesconnector_get.md)|[ndesConnector](../resources/intune_deviceconfig_ndesconnector.md)|Read properties and relationships of the [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) object.|
-|[Create ndesConnector](../api/intune_deviceconfig_ndesconnector_create.md)|[ndesConnector](../resources/intune_deviceconfig_ndesconnector.md)|Create a new [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) object.|
-|[Delete ndesConnector](../api/intune_deviceconfig_ndesconnector_delete.md)|None|Deletes a [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md).|
-|[Update ndesConnector](../api/intune_deviceconfig_ndesconnector_update.md)|[ndesConnector](../resources/intune_deviceconfig_ndesconnector.md)|Update the properties of a [ndesConnector](../resources/intune_deviceconfig_ndesconnector.md) object.|
+|[List ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) collection|List properties and relationships of the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) objects.|
+|[Get ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Read properties and relationships of the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.|
+|[Create ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Create a new [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.|
+|[Delete ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|None|Deletes a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
+|[Update ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Update the properties of a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The key of the NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Last connection time for the Ndes Connector|
-|state|[ndesConnectorState](../resources/intune_deviceconfig_ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
 |displayName|String|The friendly name of the Ndes Connector.|
 
 ## Relationships

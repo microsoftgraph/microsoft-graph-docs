@@ -1,4 +1,9 @@
-﻿# ratingNewZealandMoviesType enum type
+---
+title: "ratingNewZealandMoviesType enum type"
+description: "Movies rating labels in New Zealand"
+---
+
+# ratingNewZealandMoviesType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

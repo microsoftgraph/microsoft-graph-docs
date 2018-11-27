@@ -1,3 +1,8 @@
+---
+title: "person resource type"
+description: "An aggregation of information about a person from across mail, contacts and social networks. People can be local contacts, contacts from social networking, your organization's directory, and people from recent communications (such as email and Skype)."
+---
+
 # person resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +13,7 @@ An aggregation of information about a person from across mail, contacts and soci
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
+|[List people](../api/user-list-people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
 
 ## Properties
 

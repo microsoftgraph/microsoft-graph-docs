@@ -1,3 +1,8 @@
+---
+title: "mailFolder: delta"
+description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."
+---
+
 # mailFolder: delta
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,12 +10,12 @@
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for mail folders in a mailbox is similar to a GET request, except that by appropriately 
-applying [state tokens](../../../concepts/delta_query_overview.md) in one or more of these calls, 
+applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
 you can query for incremental changes in the mail folders. This allows you to maintain and synchronize 
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -38,8 +43,8 @@ includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same mail folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same mail folder collection. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same mail folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same mail folder collection. |
 
 ### OData query parameters
 
@@ -66,7 +71,7 @@ To track changes in the mail folders of a mailbox, you would make one or more **
 appropriate state tokens, to get the set of incremental changes since the last delta query. 
 
 You can find a similar example that shows how to use the state tokens to track changes in the messages of a mail folder: 
-[Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md). The main differences
+[Get incremental changes to messages in a folder](/graph/delta-query-messages). The main differences
 between tracking mail folders and tracking messages in a folder are in the delta query request URLs, and the query responses 
 returning **mailFolder** rather than **message** collections.
 
@@ -118,8 +123,8 @@ Content-length: 254
 
 ### See also
 
-- [Microsoft Graph delta query](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
+- [Microsoft Graph delta query](/graph/delta-query-overview)
+- [Get incremental changes to messages in a folder](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

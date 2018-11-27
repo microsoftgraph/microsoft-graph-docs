@@ -1,10 +1,15 @@
-﻿# Create mobileAppAssignment
+---
+title: "Create mobileAppAssignment"
+description: "Create a new mobileAppAssignment object."
+---
+
+# Create mobileAppAssignment
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) object.
+Create a new [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -35,14 +40,14 @@ The following table shows the properties that are required when you create the m
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
-|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
+|intent|[installIntent](../resources/intune-shared-installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
+|settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) object in the response body.
 
 ## Example
 ### Request

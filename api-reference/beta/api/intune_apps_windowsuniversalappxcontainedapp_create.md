@@ -1,12 +1,17 @@
-﻿# Create windowsUniversalAppXContainedApp
+---
+title: "Create windowsUniversalAppXContainedApp"
+description: "Create a new windowsUniversalAppXContainedApp object."
+---
+
+# Create windowsUniversalAppXContainedApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Create a new [windowsUniversalAppXContainedApp](../resources/intune_apps_windowsuniversalappxcontainedapp.md) object.
+Create a new [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -38,13 +43,13 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md)|
+|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a WindowsUniversalAppX app.|
 
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [windowsUniversalAppXContainedApp](../resources/intune_apps_windowsuniversalappxcontainedapp.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object in the response body.
 
 ## Example
 ### Request

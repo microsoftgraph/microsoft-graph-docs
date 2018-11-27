@@ -1,3 +1,8 @@
+---
+title: "Configuring the invitation message"
+description: "The invitedUserMessageInfo object allows you to configure the invitation message."
+---
+
 # Configuring the invitation message
 
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.

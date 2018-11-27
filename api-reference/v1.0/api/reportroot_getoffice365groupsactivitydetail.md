@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getOffice365GroupsActivityDetail"
+description: "Get details about Office 365 Groups activity by group."
+---
+
 # reportRoot: getOffice365GroupsActivityDetail
 
 Get details about Office 365 Groups activity by group.
@@ -6,7 +11,7 @@ Get details about Office 365 Groups activity by group.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

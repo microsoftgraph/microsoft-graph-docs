@@ -1,4 +1,9 @@
-﻿# edgeSearchEngineBase resource type
+---
+title: "edgeSearchEngineBase resource type"
+description: "Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set."
+---
+
+# edgeSearchEngineBase resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

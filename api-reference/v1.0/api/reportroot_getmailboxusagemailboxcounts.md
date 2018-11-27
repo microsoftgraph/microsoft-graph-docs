@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getMailboxUsageMailboxCounts"
+description: "Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email."
+---
+
 # reportRoot: getMailboxUsageMailboxCounts
 
 Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email.
@@ -6,7 +11,7 @@ Get the total number of user mailboxes in your organization and how many are act
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

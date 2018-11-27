@@ -1,12 +1,17 @@
+---
+title: "List events"
+description: "Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters."
+---
+
 # List events
 
 Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
-[get the instances of an event](event_list_instances.md).
+To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
+[get the instances of an event](event-list-instances.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

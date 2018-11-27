@@ -1,12 +1,17 @@
-﻿# Update androidForWorkSettings
+---
+title: "Update androidForWorkSettings"
+description: "Update the properties of a androidForWorkSettings object."
+---
+
+# Update androidForWorkSettings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.
+Update the properties of a [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,27 +35,27 @@ PATCH /deviceManagement/androidForWorkSettings
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object.
+In the request body, supply a JSON representation for the [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) object.
 
-The following table shows the properties that are required when you create the [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md).
+The following table shows the properties that are required when you create the [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Android for Work settings identifier|
-|bindStatus|[androidForWorkBindStatus](../resources/intune_androidforwork_androidforworkbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
-|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune_androidforwork_androidforworksyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
+|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|Owner UPN that created the enterprise|
 |ownerOrganizationName|String|Organization name used when onboarding Android for Work|
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android for Work settings|
-|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune_androidforwork_androidforworkenrollmenttarget.md)|Indicates which users can enroll devices in Android for Work device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
+|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Indicates which users can enroll devices in Android for Work device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [androidForWorkSettings](../resources/intune_androidforwork_androidforworksettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) object in the response body.
 
 ## Example
 ### Request

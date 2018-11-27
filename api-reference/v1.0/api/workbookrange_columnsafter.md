@@ -1,9 +1,14 @@
+---
+title: "workbookRange: columnsAfter"
+description: "Gets a certain number of columns to the right of the given range."
+---
+
 # workbookRange: columnsAfter
 
 Gets a certain number of columns to the right of the given range.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

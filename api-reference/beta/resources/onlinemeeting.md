@@ -1,3 +1,8 @@
+---
+title: "onlineMeeting resource type"
+description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
+---
+
 # onlineMeeting resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +13,7 @@ Captures information about the meeting, including the join URL, the attendees li
 
 | Method         | Return Type | Description |
 |:---------------|:--------|:----------|
-| [Get onlineMeeting](../api/onlinemeeting_get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of onlineMeeting object. |
+| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of onlineMeeting object. |
 
 ## Properties
 

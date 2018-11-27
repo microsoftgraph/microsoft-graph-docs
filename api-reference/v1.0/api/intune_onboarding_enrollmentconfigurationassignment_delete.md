@@ -1,10 +1,15 @@
-﻿# Delete enrollmentConfigurationAssignment
+---
+title: "Delete enrollmentConfigurationAssignment"
+description: "Deletes a enrollmentConfigurationAssignment."
+---
+
+# Delete enrollmentConfigurationAssignment
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Deletes a [enrollmentConfigurationAssignment](../resources/intune_onboarding_enrollmentconfigurationassignment.md).
+Deletes a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

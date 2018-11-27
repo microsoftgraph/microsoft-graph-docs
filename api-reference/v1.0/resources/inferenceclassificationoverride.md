@@ -1,3 +1,8 @@
+---
+title: "inferenceClassificationOverride resource type"
+description: "Represents a user's override for how incoming messages from a specific sender should always be classified as."
+---
+
 # inferenceClassificationOverride resource type
 
 Represents a user's override for how incoming messages from a specific sender should always be classified as.
@@ -7,8 +12,8 @@ Represents a user's override for how incoming messages from a specific sender sh
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | None |Delete an override specified by its ID. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
 
 ## Properties
 | Property	   | Type	|Description|

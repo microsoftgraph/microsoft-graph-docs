@@ -1,3 +1,8 @@
+---
+title: "Permanently delete item"
+description: "Permanently deletes an item from deleted items."
+---
+
 # Permanently delete item
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,7 +12,7 @@ Permanently deletes an item from [deleted items](../resources/directory.md).
 Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 * For users: User.ReadWrite.All, Directory.AccessAsUser.All
 * For groups: Group.ReadWrite.All, Directory.AccessAsUser.All

@@ -1,15 +1,20 @@
+---
+title: "Get outlookTask"
+description: "Get the properties and relationships of an Outlook task in the user's mailbox."
+---
+
 # Get outlookTask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get the properties and relationships of an Outlook task in the user's mailbox.
 
-By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask_complete.md) task operations) returns date-related properties in UTC. 
+By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC. 
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

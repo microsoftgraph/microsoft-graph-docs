@@ -1,3 +1,8 @@
+---
+title: "ChartPoint resource type"
+description: "Represents a point of a series in a chart."
+---
+
 # ChartPoint resource type
 
 Represents a point of a series in a chart.
@@ -7,9 +12,9 @@ Represents a point of a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint_get.md) | [WorkbookChartPoint](chartpoint.md) |Read properties and relationships of chartPoint object.|
-|[List](../api/chartpoint_list.md) | [WorkbookChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
-|[ItemAt](../api/chartpointscollection_itemat.md)|[WorkbookChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
+|[Get ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](chartpoint.md) |Read properties and relationships of chartPoint object.|
+|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
+|[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
 
 ## Properties
 | Property	   | Type	|Description|

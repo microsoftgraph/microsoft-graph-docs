@@ -1,4 +1,9 @@
-﻿# importAppleDeviceIdentityList action
+---
+title: "importAppleDeviceIdentityList action"
+description: "Not yet documented"
+---
+
+# importAppleDeviceIdentityList action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Not yet documented
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -36,13 +41,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) collection|Not yet documented|
+|importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|Not yet documented|
 |overwriteImportedDeviceIdentities|Boolean|Not yet documented|
 
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) collection in the response body.
 
 ## Example
 ### Request

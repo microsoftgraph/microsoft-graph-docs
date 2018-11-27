@@ -1,4 +1,9 @@
-﻿# resultantAppStateDetail enum type
+---
+title: "resultantAppStateDetail enum type"
+description: "Enum indicating additional details regarding why an application has a particular install state."
+---
+
+# resultantAppStateDetail enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

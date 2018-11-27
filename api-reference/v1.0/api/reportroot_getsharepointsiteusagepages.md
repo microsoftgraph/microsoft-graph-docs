@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getSharePointSiteUsagePages"
+description: "Get the number of pages viewed across all sites."
+---
+
 # reportRoot: getSharePointSiteUsagePages
 
 Get the number of pages viewed across all sites.
@@ -6,7 +11,7 @@ Get the number of pages viewed across all sites.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

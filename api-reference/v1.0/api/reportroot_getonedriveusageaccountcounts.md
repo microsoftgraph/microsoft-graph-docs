@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getOneDriveUsageAccountCounts"
+description: "Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site."
+---
+
 # reportRoot: getOneDriveUsageAccountCounts
 
 Get the trend in the number of active OneDrive for Business sites. Any site on which users viewed, modified, uploaded, downloaded, shared, or synced files is considered an active site.
@@ -6,7 +11,7 @@ Get the trend in the number of active OneDrive for Business sites. Any site on w
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

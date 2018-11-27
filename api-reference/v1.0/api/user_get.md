@@ -1,3 +1,8 @@
+---
+title: "Get a user"
+description: "Retrieve the properties and relationships of user object."
+---
+
 # Get a user
 
 Retrieve the properties and relationships of user object.
@@ -5,7 +10,7 @@ Retrieve the properties and relationships of user object.
 > Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,9 @@
-﻿# embeddedSIMDeviceState resource type
+---
+title: "embeddedSIMDeviceState resource type"
+description: "Describes the embedded SIM activation code deployment state in relation to a device."
+---
+
+# embeddedSIMDeviceState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,11 +13,11 @@ Describes the embedded SIM activation code deployment state in relation to a dev
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List embeddedSIMDeviceStates](../api/intune_esim_embeddedsimdevicestate_list.md)|[embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) collection|List properties and relationships of the [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) objects.|
-|[Get embeddedSIMDeviceState](../api/intune_esim_embeddedsimdevicestate_get.md)|[embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md)|Read properties and relationships of the [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) object.|
-|[Create embeddedSIMDeviceState](../api/intune_esim_embeddedsimdevicestate_create.md)|[embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md)|Create a new [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) object.|
-|[Delete embeddedSIMDeviceState](../api/intune_esim_embeddedsimdevicestate_delete.md)|None|Deletes a [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md).|
-|[Update embeddedSIMDeviceState](../api/intune_esim_embeddedsimdevicestate_update.md)|[embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md)|Update the properties of a [embeddedSIMDeviceState](../resources/intune_esim_embeddedsimdevicestate.md) object.|
+|[List embeddedSIMDeviceStates](../api/intune-esim-embeddedsimdevicestate-list.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) collection|List properties and relationships of the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) objects.|
+|[Get embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-get.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Read properties and relationships of the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.|
+|[Create embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-create.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Create a new [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.|
+|[Delete embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-delete.md)|None|Deletes a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).|
+|[Update embeddedSIMDeviceState](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|Update the properties of a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +29,7 @@ Describes the embedded SIM activation code deployment state in relation to a dev
 |universalIntegratedCircuitCardIdentifier|String|The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.|
 |deviceName|String|Device name to which the subscription was provisioned e.g. DESKTOP-JOE|
 |userName|String|Username which the subscription was provisioned to e.g. joe@contoso.com|
-|state|[embeddedSIMDeviceStateValue](../resources/intune_esim_embeddedsimdevicestatevalue.md)|The state of the profile operation applied to the device. Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|The state of the profile operation applied to the device. Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |stateDetails|String|String description of the provisioning state.|
 
 ## Relationships

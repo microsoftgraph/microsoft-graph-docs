@@ -1,4 +1,9 @@
-﻿# Update windowsOfficeClientConfiguration
+---
+title: "Update windowsOfficeClientConfiguration"
+description: "Patch a specific non-security policy payload."
+---
+
+# Update windowsOfficeClientConfiguration
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Patch a specific non-security policy payload.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,25 +35,25 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md) object.
+In the request body, supply a JSON representation for the [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) object.
 
-The following table shows the properties that are required when you create the [windowsOfficeClientConfiguration](../resources/intune_cirrus_windowsofficeclientconfiguration.md).
+The following table shows the properties that are required when you create the [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|policyPayload|Stream|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|description|String|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|displayName|String|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|priority|Int32|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune_cirrus_officeusercheckinsummary.md)|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune_cirrus_officeclientcheckinstatus.md) collection|Not yet documented Inherited from [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md)|
+|id|String|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userPreferencePayload|Stream|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|policyPayload|Stream|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|String|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|String|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|priority|Int32|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection|Not yet documented Inherited from [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [officeClientConfiguration](../resources/intune_cirrus_officeclientconfiguration.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) object in the response body.
 
 ## Example
 ### Request

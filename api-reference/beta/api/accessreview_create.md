@@ -1,15 +1,20 @@
+---
+title: "Create accessReview"
+description: "In the Azure AD access reviews feature, create a new accessReview object."
+---
+
 # Create accessReview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
-Prior to making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate_list.md), to have the value of `businessFlowTemplateId` to include in the request.
+Prior to making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.
 
-After making this request, the caller should [create a programControl](programcontrol_create.md), to link the access review to a program.  
+After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.  
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|

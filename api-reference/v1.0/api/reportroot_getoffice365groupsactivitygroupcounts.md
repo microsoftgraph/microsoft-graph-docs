@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getOffice365GroupsActivityGroupCounts"
+description: "Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities."
+---
+
 # reportRoot: getOffice365GroupsActivityGroupCounts
 
 Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
@@ -6,7 +11,7 @@ Get the daily total number of groups and how many of them were active based on e
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

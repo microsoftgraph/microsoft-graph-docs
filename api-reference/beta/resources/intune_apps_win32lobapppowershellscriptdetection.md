@@ -1,4 +1,9 @@
-﻿# win32LobAppPowerShellScriptDetection resource type
+---
+title: "win32LobAppPowerShellScriptDetection resource type"
+description: "Contains PowerShell script properties to detect a Win32 App"
+---
+
+# win32LobAppPowerShellScriptDetection resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +11,7 @@
 
 Contains PowerShell script properties to detect a Win32 App
 
-Inherits from [win32LobAppDetection](../resources/intune_apps_win32lobappdetection.md)
+Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## Properties
 |Property|Type|Description|

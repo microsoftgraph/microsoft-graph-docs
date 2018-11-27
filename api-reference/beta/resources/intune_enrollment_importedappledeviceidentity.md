@@ -1,4 +1,9 @@
-﻿# importedAppleDeviceIdentity resource type
+---
+title: "importedAppleDeviceIdentity resource type"
+description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."
+---
+
+# importedAppleDeviceIdentity resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,12 +13,12 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List importedAppleDeviceIdentities](../api/intune_enrollment_importedappledeviceidentity_list.md)|[importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) collection|List properties and relationships of the [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) objects.|
-|[Get importedAppleDeviceIdentity](../api/intune_enrollment_importedappledeviceidentity_get.md)|[importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|Read properties and relationships of the [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) object.|
-|[Create importedAppleDeviceIdentity](../api/intune_enrollment_importedappledeviceidentity_create.md)|[importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|Create a new [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) object.|
-|[Delete importedAppleDeviceIdentity](../api/intune_enrollment_importedappledeviceidentity_delete.md)|None|Deletes a [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md).|
-|[Update importedAppleDeviceIdentity](../api/intune_enrollment_importedappledeviceidentity_update.md)|[importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md)|Update the properties of a [importedAppleDeviceIdentity](../resources/intune_enrollment_importedappledeviceidentity.md) object.|
-|[importAppleDeviceIdentityList action](../api/intune_enrollment_importedappledeviceidentity_importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune_enrollment_importedappledeviceidentityresult.md) collection|Not yet documented|
+|[List importedAppleDeviceIdentities](../api/intune-enrollment-importedappledeviceidentity-list.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|List properties and relationships of the [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) objects.|
+|[Get importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-get.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Read properties and relationships of the [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object.|
+|[Create importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-create.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Create a new [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object.|
+|[Delete importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-delete.md)|None|Deletes a [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md).|
+|[Update importedAppleDeviceIdentity](../api/intune-enrollment-importedappledeviceidentity-update.md)|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|Update the properties of a [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object.|
+|[importAppleDeviceIdentityList action](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -23,12 +28,12 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 |requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device|
 |isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837|
-|discoverySource|[discoverySource](../resources/intune_enrollment_discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## Relationships
 None

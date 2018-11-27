@@ -1,4 +1,9 @@
-﻿# sharedPCAllowedAccountType enum type
+---
+title: "sharedPCAllowedAccountType enum type"
+description: "Type of accounts that are allowed to share the PC."
+---
+
+# sharedPCAllowedAccountType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

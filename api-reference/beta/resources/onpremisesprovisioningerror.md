@@ -1,3 +1,8 @@
+---
+title: "onPremisesProvisioningError resource type"
+description: "Represents directory synchronization errors for the user, group, or organizational contact entities when synchronizing on-premises directories to Azure Active Directory."
+---
+
 # onPremisesProvisioningError resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

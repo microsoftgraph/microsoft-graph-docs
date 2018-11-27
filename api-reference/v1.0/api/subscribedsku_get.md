@@ -1,8 +1,13 @@
+---
+title: "Get subscribedSku"
+description: "Retrieve a specific commercial subscription that an organization has acquired."
+---
+
 # Get subscribedSku
 Retrieve a specific commercial subscription that an organization has acquired.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

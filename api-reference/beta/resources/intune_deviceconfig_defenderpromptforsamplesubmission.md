@@ -1,4 +1,9 @@
-﻿# defenderPromptForSampleSubmission enum type
+---
+title: "defenderPromptForSampleSubmission enum type"
+description: "Possible values for prompting user for samples submission."
+---
+
+# defenderPromptForSampleSubmission enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

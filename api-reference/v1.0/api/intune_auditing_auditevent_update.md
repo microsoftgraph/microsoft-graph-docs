@@ -1,10 +1,15 @@
-﻿# Update auditEvent
+---
+title: "Update auditEvent"
+description: "Update the properties of a auditEvent object."
+---
+
+# Update auditEvent
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [auditEvent](../resources/intune_auditing_auditevent.md) object.
+Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -28,29 +33,29 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [auditEvent](../resources/intune_auditing_auditevent.md) object.
+In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.
 
-The following table shows the properties that are required when you create the [auditEvent](../resources/intune_auditing_auditevent.md).
+The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |displayName|String|Event display name.|
 |componentName|String|Component name.|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|AAD user and application that are associated with the audit event.|
+|actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD user and application that are associated with the audit event.|
 |activity|String|Friendly name of the activity.|
 |activityDateTime|DateTimeOffset|The date time in UTC when the activity was performed.|
 |activityType|String|The type of activity that was being performed.|
 |activityOperationType|String|The HTTP operation type of the activity.|
 |activityResult|String|The result of the activity.|
 |correlationId|Guid|The client request Id that is used to correlate activity within the system.|
-|resources|[auditResource](../resources/intune_auditing_auditresource.md) collection|Resources being modified.|
+|resources|[auditResource](../resources/intune-auditing-auditresource.md) collection|Resources being modified.|
 |category|String|Audit category.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune_auditing_auditevent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.
 
 ## Example
 ### Request

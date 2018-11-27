@@ -1,10 +1,15 @@
+---
+title: "Delete subscription"
+description: "Delete a subscription."
+---
+
 # Delete subscription
 
 Delete a subscription.
 
 ## Permissions
 
-The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|

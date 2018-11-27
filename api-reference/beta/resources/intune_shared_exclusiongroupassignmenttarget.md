@@ -1,4 +1,9 @@
-﻿# exclusionGroupAssignmentTarget resource type
+---
+title: "exclusionGroupAssignmentTarget resource type"
+description: "Represents a group that should be excluded from an assignment."
+---
+
+# exclusionGroupAssignmentTarget resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,12 +11,12 @@
 
 Represents a group that should be excluded from an assignment.
 
-Inherits from [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)
+Inherits from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md)|
+|groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
 ## Relationships
 None

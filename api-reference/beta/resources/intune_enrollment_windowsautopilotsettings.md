@@ -1,4 +1,9 @@
-﻿# windowsAutopilotSettings resource type
+---
+title: "windowsAutopilotSettings resource type"
+description: "The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service."
+---
+
+# windowsAutopilotSettings resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,9 +13,9 @@ The windowsAutopilotSettings resource represents a Windows Autopilot Account to 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get windowsAutopilotSettings](../api/intune_enrollment_windowsautopilotsettings_get.md)|[windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md)|Read properties and relationships of the [windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md) object.|
-|[Update windowsAutopilotSettings](../api/intune_enrollment_windowsautopilotsettings_update.md)|[windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md)|Update the properties of a [windowsAutopilotSettings](../resources/intune_enrollment_windowsautopilotsettings.md) object.|
-|[sync action](../api/intune_enrollment_windowsautopilotsettings_sync.md)|None|Not yet documented|
+|[Get windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Read properties and relationships of the [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object.|
+|[Update windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Update the properties of a [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object.|
+|[sync action](../api/intune-enrollment-windowsautopilotsettings-sync.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -18,7 +23,7 @@ The windowsAutopilotSettings resource represents a Windows Autopilot Account to 
 |id|String|The GUID for the object|
 |lastSyncDateTime|DateTimeOffset|Last data sync date time with DDS service.|
 |lastManualSyncTriggerDateTime|DateTimeOffset|Last data sync date time with DDS service.|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune_enrollment_windowsautopilotsyncstatus.md)|Indicates the status of sync with Device data sync (DDS) service. Possible values are: `unknown`, `inProgress`, `completed`, `failed`.|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indicates the status of sync with Device data sync (DDS) service. Possible values are: `unknown`, `inProgress`, `completed`, `failed`.|
 
 ## Relationships
 None

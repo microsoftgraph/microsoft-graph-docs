@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getSkypeForBusinessActivityUserCounts"
+description: "Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions."
+---
+
 # reportRoot: getSkypeForBusinessActivityUserCounts
 
 Get the trends on how many unique users organized and participated in conference sessions held in your organization through Skype for Business. The report also includes the number of peer-to-peer sessions.
@@ -6,7 +11,7 @@ Get the trends on how many unique users organized and participated in conference
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

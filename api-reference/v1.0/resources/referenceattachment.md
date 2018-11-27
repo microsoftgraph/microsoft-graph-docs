@@ -1,3 +1,8 @@
+---
+title: "referenceAttachment resource type"
+description: "A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post."
+---
+
 # referenceAttachment resource type
 
 A link to a file (such as a text file or Word document) on a OneDrive for Business cloud drive or other supported storage locations, attached to an event, message, or post.
@@ -8,8 +13,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete referenceAttachment object. |
+|[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Read properties and relationships of referenceAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete referenceAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|

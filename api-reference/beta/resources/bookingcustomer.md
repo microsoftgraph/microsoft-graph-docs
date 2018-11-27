@@ -1,3 +1,8 @@
+---
+title: "bookingCustomer resource type"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+---
+
 # bookingCustomer resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,11 +14,11 @@ Represents a customer of a [bookingBsiness](bookingbusiness.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List customers](../api/bookingbusiness_list_customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
-|[Create bookingCustomer](../api/bookingbusiness_post_customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
-|[Get bookingCustomer](../api/bookingcustomer_get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
-|[Update](../api/bookingcustomer_update.md) | [bookingCustomer](bookingcustomer.md)	|Update a **bookingCustomer** object. |
-|[Delete](../api/bookingcustomer_delete.md) | None |Delete a **bookingCustomer** object. |
+|[List customers](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
+|[Create bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
+|[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
+|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md)	|Update a **bookingCustomer** object. |
+|[Delete](../api/bookingcustomer-delete.md) | None |Delete a **bookingCustomer** object. |
 
 ## Properties
 | Property	   | Type	|Description|

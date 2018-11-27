@@ -1,4 +1,9 @@
-﻿# serviceStartType enum type
+---
+title: "serviceStartType enum type"
+description: "Possible values of xbox service start type"
+---
+
+# serviceStartType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

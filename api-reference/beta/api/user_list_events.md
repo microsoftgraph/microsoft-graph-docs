@@ -1,3 +1,8 @@
+---
+title: "List events"
+description: "Get a list of event objects from the user's default calendar or "
+---
+
 # List events
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,13 +10,13 @@
 Get a list of [event](../resources/event.md) objects from the user's default calendar or 
 from a specified calendar. The list contains single instance meetings and series masters.
 
-To get expanded event instances, you can [get the calendar view](calendar_list_calendarview.md), or 
-[get the instances of an event](event_list_instances.md).
+To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
+[get the instances of an event](event-list-instances.md).
 
 There are two scenarios where an app can get events in another user's calendar:
 
 * If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-events-calendars.md).
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
 
 ### Support various time zones
@@ -31,7 +36,7 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

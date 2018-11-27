@@ -1,4 +1,9 @@
-﻿# deviceManagementExchangeAccessStateReason enum type
+---
+title: "deviceManagementExchangeAccessStateReason enum type"
+description: "Device Exchange Access State Reason."
+---
+
+# deviceManagementExchangeAccessStateReason enum type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

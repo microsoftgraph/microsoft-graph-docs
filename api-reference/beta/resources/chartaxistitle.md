@@ -1,3 +1,8 @@
+---
+title: "ChartAxisTitle resource type"
+description: "Represents the title of a chart axis."
+---
+
 # ChartAxisTitle resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,8 +14,8 @@ Represents the title of a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
+|[Update](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|

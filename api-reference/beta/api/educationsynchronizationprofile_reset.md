@@ -1,3 +1,8 @@
+---
+title: "Reset sync on an educationSynchronizationProfile"
+description: "Reset the sync of a specific school data synchronization profile in the tenant."
+---
+
 # Reset sync on an educationSynchronizationProfile
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,7 +12,7 @@ Reset the sync of a specific school data [synchronization profile](../resources/
 > **Note:** This operation will cause synchronization to restart. Any errors encountered will be deleted. No data will be deleted from Azure Active Directory (Azure AD). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions |
 |:-----------|:----------|

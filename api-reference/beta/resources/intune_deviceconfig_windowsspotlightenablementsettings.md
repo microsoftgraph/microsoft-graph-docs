@@ -1,4 +1,9 @@
-﻿# windowsSpotlightEnablementSettings enum type
+---
+title: "windowsSpotlightEnablementSettings enum type"
+description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
+---
+
+# windowsSpotlightEnablementSettings enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

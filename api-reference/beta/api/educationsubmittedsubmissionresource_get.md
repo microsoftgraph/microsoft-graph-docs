@@ -1,3 +1,8 @@
+---
+title: "Get educationSubmittedSubmissionResource"
+description: "Returns a submitted resource. This will be available to a teacher after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources."
+---
+
 # Get educationSubmittedSubmissionResource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Returns a submitted resource. This will be available to a teacher after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

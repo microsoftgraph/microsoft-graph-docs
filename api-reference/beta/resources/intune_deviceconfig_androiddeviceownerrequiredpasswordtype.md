@@ -1,4 +1,9 @@
-﻿# androidDeviceOwnerRequiredPasswordType enum type
+---
+title: "androidDeviceOwnerRequiredPasswordType enum type"
+description: "Android Device Owner policy required password type."
+---
+
+# androidDeviceOwnerRequiredPasswordType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

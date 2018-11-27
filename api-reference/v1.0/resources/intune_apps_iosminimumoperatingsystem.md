@@ -1,4 +1,9 @@
-﻿# iosMinimumOperatingSystem resource type
+---
+title: "iosMinimumOperatingSystem resource type"
+description: "Contains properties of the minimum operating system required for an iOS mobile app."
+---
+
+# iosMinimumOperatingSystem resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 

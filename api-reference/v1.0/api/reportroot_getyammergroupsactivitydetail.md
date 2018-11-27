@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getYammerGroupsActivityDetail"
+description: "Get details about Yammer groups activity by group."
+---
+
 # reportRoot: getYammerGroupsActivityDetail
 
 Get details about Yammer groups activity by group.
@@ -6,7 +11,7 @@ Get details about Yammer groups activity by group.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

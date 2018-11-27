@@ -1,3 +1,8 @@
+---
+title: "logonUser resource type"
+description: "Contains stateful information about the logged on user on this host"
+---
+
 # logonUser resource type
 
 Contains stateful information about the logged on user on this host

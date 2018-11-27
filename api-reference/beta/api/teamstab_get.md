@@ -1,3 +1,8 @@
+---
+title: "Get tab"
+description: "Retrieve the properties and relationships of the specified tab. "
+---
+
 # Get tab
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Retrieve the properties and relationships of the specified [tab](../resources/teamstab.md). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -13,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All |
 
-> Currently, only [delegated permissions](../../../concepts/permissions_reference.md) are supported for this operation.
+> Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.
 
 ## HTTP request
 ```http
@@ -22,7 +27,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## Optional query parameters
 
-This method supports the $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |

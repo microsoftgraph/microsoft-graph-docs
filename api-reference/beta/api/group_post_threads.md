@@ -1,15 +1,20 @@
+---
+title: "Create conversation thread"
+description: "Start a new group conversation by first creating a thread. "
+---
+
 # Create conversation thread
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Start a new group conversation by first creating a thread. 
 
-A new conversation, conversation thread, and post are created in the group. Use [reply thread](conversationthread_reply.md) or [reply post](post_reply.md) to further post to that thread.
+A new conversation, conversation thread, and post are created in the group. Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that thread.
 
-Note: You can also [start a new thread in an existing conversation](conversation_post_threads.md). 
+Note: You can also [start a new thread in an existing conversation](conversation-post-threads.md). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

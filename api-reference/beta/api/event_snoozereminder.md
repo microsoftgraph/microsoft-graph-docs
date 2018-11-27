@@ -1,3 +1,8 @@
+---
+title: "event: snoozeReminder"
+description: "Postpone a reminder for an event in a user calendar until a new time."
+---
+
 # event: snoozeReminder
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

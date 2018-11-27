@@ -1,3 +1,8 @@
+---
+title: "timeConstraint resource type"
+description: "Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots."
+---
+
 # timeConstraint resource type
 
 Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.

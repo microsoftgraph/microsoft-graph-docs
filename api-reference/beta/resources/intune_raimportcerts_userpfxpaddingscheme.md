@@ -1,4 +1,9 @@
-﻿# userPfxPaddingScheme enum type
+---
+title: "userPfxPaddingScheme enum type"
+description: "Supported values for the padding scheme used by encryption provider."
+---
+
+# userPfxPaddingScheme enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

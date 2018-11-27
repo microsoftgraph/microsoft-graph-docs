@@ -1,12 +1,17 @@
-﻿# Update mobileAppIntentAndState
+---
+title: "Update mobileAppIntentAndState"
+description: "Update the properties of a mobileAppIntentAndState object."
+---
+
+# Update mobileAppIntentAndState
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [mobileAppIntentAndState](../resources/intune_troubleshooting_mobileappintentandstate.md) object.
+Update the properties of a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,21 +35,21 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [mobileAppIntentAndState](../resources/intune_troubleshooting_mobileappintentandstate.md) object.
+In the request body, supply a JSON representation for the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.
 
-The following table shows the properties that are required when you create the [mobileAppIntentAndState](../resources/intune_troubleshooting_mobileappintentandstate.md).
+The following table shows the properties that are required when you create the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|UUID for the object|
 |managedDeviceIdentifier|String|Device identifier created or collected by Intune.|
 |userId|String|Identifier for the user that tried to enroll the device.|
-|mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune_troubleshooting_mobileappintentandstatedetail.md) collection|The list of payload intents and states for the tenant.|
+|mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection|The list of payload intents and states for the tenant.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [mobileAppIntentAndState](../resources/intune_troubleshooting_mobileappintentandstate.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.
 
 ## Example
 ### Request

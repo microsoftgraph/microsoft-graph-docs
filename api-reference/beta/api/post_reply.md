@@ -1,3 +1,8 @@
+---
+title: "post: reply"
+description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
+---
+
 # post: reply
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,7 +11,7 @@ Reply to a post and add a new post to the specified thread in a group conversati
 both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

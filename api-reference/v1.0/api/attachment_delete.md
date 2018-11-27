@@ -1,8 +1,13 @@
+---
+title: "Delete attachment"
+description: "Delete an attachment from a calendar event, mail message, or group post."
+---
+
 # Delete attachment
 
 Delete an attachment from a calendar event, mail message, or group post.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 * If accessing attachments in messages: Mail.ReadWrite.
 * If accessing attachments in events: Calendars.ReadWrite.

@@ -1,4 +1,9 @@
-﻿# secureAssessmentAccountType enum type
+---
+title: "secureAssessmentAccountType enum type"
+description: "Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAccount."
+---
+
+# secureAssessmentAccountType enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -1,3 +1,8 @@
+---
+title: "section resource type"
+description: "A section in a OneNote notebook. Sections can contain pages."
+---
+
 # section resource type
 
 A section in a OneNote notebook. Sections can contain pages.
@@ -57,11 +62,11 @@ Here is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get section](../api/section_get.md) | [OnenoteSection](section.md) |Read the properties and relationships of the section.|
-|[Create page](../api/section_post_pages.md) |[Page](page.md)| Create a page by posting to the pages collection in the specified section.|
-|[List pages](../api/section_list_pages.md) |[Page](page.md) collection| Get a collection of pages in the specified section.|
-|[copyToNotebook](../api/section_copytonotebook.md)|None|Copy the section to a specific notebook.|
-|[copyToSectionGroup](../api/section_copytosectiongroup.md)|None|Copy the section to a specific section group.|
+|[Get section](../api/section-get.md) | [OnenoteSection](section.md) |Read the properties and relationships of the section.|
+|[Create page](../api/section-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection in the specified section.|
+|[List pages](../api/section-list-pages.md) |[Page](page.md) collection| Get a collection of pages in the specified section.|
+|[copyToNotebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

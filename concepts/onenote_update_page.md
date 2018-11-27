@@ -1,4 +1,9 @@
-﻿# Update OneNote page content
+---
+title: "Update OneNote page content"
+description: " Enterprise notebooks on Office 365"
+---
+
+# Update OneNote page content
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 
@@ -32,7 +37,7 @@ The **data-id** and **id** values are used as **target** identifiers for the ele
 Your full request URI will look like this:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
+Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
 
 
 <a name="message-body"></a>
@@ -74,8 +79,8 @@ The element to update. The value must be one of the following identifiers:
 
 | Identifier | Description |  
 |------|------|  
-| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote_update_page.md). Prefix the value with a #.</p><p> Example:<br/>`'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
-| id | <p>This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations. Do not prefix with a #.</p><p> Example:<br/>`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](onenote_input_output_html.md). All **id** values sent in the input HTML are discarded.</p> |  
+| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote-update-page.md). Prefix the value with a #.</p><p> Example:<br/>`'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
+| id | <p>This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations. Do not prefix with a #.</p><p> Example:<br/>`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](onenote-input-output-html.md). All **id** values sent in the input HTML are discarded.</p> |  
 | body | The keyword that targets the first div on the page. Do not prefix with a #. |  
 | title | The keyword that targets the page title. Do not prefix with a #. |  
  
@@ -112,9 +117,9 @@ Microsoft Graph generates **id** values for the elements on the page that can be
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
 > **Note:**
-> The API discards all **id** values that are defined in the [input HTML](onenote_input_output_html.md) of create-page and update-page requests.
+> The API discards all **id** values that are defined in the [input HTML](onenote-input-output-html.md) of create-page and update-page requests.
 
-The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote_input_output_html.md) of a page.
+The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote-input-output-html.md) of a page.
 
 ```html
 <p id="p:{33f8a242-7c33-4bb2-90c5-8425a68cc5bf}{40}">Some text on the page</p>
@@ -427,7 +432,7 @@ Content-Type: image/png
 | Request data | Description |  
 |------|------|  
 | Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions_reference.md).</p> |  
+| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p> |  
 | Content-Type header | <p>`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart-request-with-binary-content).</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</p> |  
 
 <br/> 
@@ -435,7 +440,7 @@ Content-Type: image/png
 | Response data | Description |  
 |------|------|  
 | Success code | A 204 HTTP status code. No JSON data is returned for a PATCH request. |  
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
  
  
 
@@ -466,15 +471,15 @@ To update OneNote pages, you'll need to request appropriate permissions. Choose 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
    
 
 <a name="see-also"></a>
 
 ## See also
 
-- [Add images and files](onenote_images_files.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Add images and files](onenote-images-files.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

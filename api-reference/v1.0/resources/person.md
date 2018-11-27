@@ -1,3 +1,8 @@
+---
+title: "person resource type"
+description: "An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype)."
+---
+
 # person resource type
 
 An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).
@@ -6,7 +11,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
+|[List people](../api/user-list-people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
 
 ## Properties
 

@@ -1,4 +1,9 @@
-﻿# iosHomeScreenItem resource type
+---
+title: "iosHomeScreenItem resource type"
+description: "Represents an item on the iOS Home Screen"
+---
+
+# iosHomeScreenItem resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

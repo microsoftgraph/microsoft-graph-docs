@@ -1,10 +1,15 @@
+---
+title: "Download contents of a DriveItemVersion resource"
+description: "Retrieve the contents of a specific version of a DriveItem."
+---
+
 # Download contents of a DriveItemVersion resource
 
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -62,7 +67,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
-When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveItemVersion.md) resource is returned that provides the available information about the specific version.
+When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 
 <!-- {
   "type": "#page.annotation",

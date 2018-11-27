@@ -1,4 +1,9 @@
-﻿# officeUserCheckinSummary resource type
+---
+title: "officeUserCheckinSummary resource type"
+description: "Entity that describes  tenant check-in stats."
+---
+
+# officeUserCheckinSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

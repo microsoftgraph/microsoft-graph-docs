@@ -1,3 +1,8 @@
+---
+title: "outlookUser: supportedTimeZones"
+description: "Get the list of time zones that are supported for the user, as configured on the user's mailbox server."
+---
+
 # outlookUser: supportedTimeZones
 
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.
@@ -5,11 +10,11 @@ Get the list of time zones that are supported for the user, as configured on the
 You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.
 
 When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by 
-[getting the user's mailbox settings](user_get_mailboxsettings.md).
+[getting the user's mailbox settings](user-get-mailboxsettings.md).
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,4 +1,9 @@
-﻿# iosBookmark resource type
+---
+title: "iosBookmark resource type"
+description: "iOS URL bookmark"
+---
+
+# iosBookmark resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

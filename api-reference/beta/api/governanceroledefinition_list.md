@@ -1,10 +1,15 @@
+---
+title: "List governanceRoleDefinitions"
+description: "Get a collection of governanceRoleDefinitions on a resource."
+---
+
 # List governanceRoleDefinitions
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
@@ -21,7 +26,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

@@ -1,3 +1,8 @@
+---
+title: "Update outlooktask"
+description: "Change writable properties of an Outlook task."
+---
+
 # Update outlooktask
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -7,12 +12,12 @@ Change writable properties of an Outlook task.
 The **completedDateTime** property can be set by the **complete** action, or explicitly by a PATCH operation. 
 If you use PATCH to set **completedDateTime**, make sure you set **status** to `completed` as well.
 
-By default, this operation (and the POST, GET, and [complete](../api/outlooktask_complete.md) task operations) returns date-related properties in UTC. 
+By default, this operation (and the POST, GET, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC. 
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

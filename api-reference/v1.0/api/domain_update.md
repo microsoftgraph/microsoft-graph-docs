@@ -1,3 +1,8 @@
+---
+title: "Update domain"
+description: "Update the properties of domain object."
+---
+
 # Update domain
 
 Update the properties of domain object.
@@ -7,7 +12,7 @@ Update the properties of domain object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

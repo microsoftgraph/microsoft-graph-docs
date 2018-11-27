@@ -1,9 +1,14 @@
+---
+title: "message: createReply"
+description: "Create a draft of the reply to the specified message. You can then update the draft to add reply content to the **body** or change other message properties, or, simply send the draft."
+---
+
 # message: createReply
 
-Create a draft of the reply to the specified [message](../resources/message.md). You can then [update](../api/message_update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.
+Create a draft of the reply to the specified [message](../resources/message.md). You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,10 +1,15 @@
+---
+title: "List recentPlans"
+description: "Retrieve a list of plannerPlans recently viewed by a user. You can update recently viewed plans by updating the plannerUser resource."
+---
+
 # List recentPlans
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of [plannerPlans](../resources/plannerPlan.md) recently viewed by a user. You can update recently viewed plans by [updating the plannerUser resource](plannerUser_update.md).
+Retrieve a list of [plannerPlans](../resources/plannerplan.md) recently viewed by a user. You can update recently viewed plans by [updating the plannerUser resource](planneruser-update.md).
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,3 +1,8 @@
+---
+title: "emailAppUsageUserDetail resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # emailAppUsageUserDetail resource type
 
 ## Properties

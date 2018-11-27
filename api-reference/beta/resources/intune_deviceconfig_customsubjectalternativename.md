@@ -1,4 +1,9 @@
-﻿# customSubjectAlternativeName resource type
+---
+title: "customSubjectAlternativeName resource type"
+description: "Custom Subject Alternative Name definition"
+---
+
+# customSubjectAlternativeName resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,7 +13,7 @@ Custom Subject Alternative Name definition
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|sanType|[subjectAlternativeNameType](../resources/intune_deviceconfig_subjectalternativenametype.md)|Custom SAN Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Custom SAN Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |name|String|Custom SAN Name|
 
 ## Relationships

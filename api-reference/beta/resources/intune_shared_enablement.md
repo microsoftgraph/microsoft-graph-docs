@@ -1,4 +1,9 @@
-﻿# enablement enum type
+---
+title: "enablement enum type"
+description: "Values used to indicate the status of a device. "
+---
+
+# enablement enum type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

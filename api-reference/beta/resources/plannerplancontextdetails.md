@@ -1,13 +1,18 @@
+---
+title: "plannerPlanContextDetails resource type"
+description: "The **plannerPlanContextDetails** resource contains additional information about a plannerPlanContext."
+---
+
 # plannerPlanContextDetails resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerPlanContextDetails** resource contains additional information about a [plannerPlanContext](plannerPlanContext.md).
+The **plannerPlanContextDetails** resource contains additional information about a [plannerPlanContext](plannerplancontext.md).
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|url|String|URL of the user experience represented by the associated [plannerPlanContext](plannerPlanContext.md). |
+|url|String|URL of the user experience represented by the associated [plannerPlanContext](plannerplancontext.md). |
 
 ## JSON representation
 

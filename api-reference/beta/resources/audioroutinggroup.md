@@ -1,18 +1,23 @@
+---
+title: "audioRoutingGroup resource type"
+description: "The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation."
+---
+
 # audioRoutingGroup resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
 
-> **Note:** [ConfigureMixer](../api/participant_configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
+> **Note:** [ConfigureMixer](../api/participant-configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
 
 ## Methods
 
 | Method                                                  | Return Type                               | Description                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [Get audioRoutingGroup](../api/audioroutinggroup_get.md)| [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
-| [Update](../api/audioroutinggroup_update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Update receivers list.                       |
-| [Delete](../api/audioRoutingGroup_delete.md)            | None                                      | Delete the audio routing group.              |
+| [Get audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Update receivers list.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | None                                      | Delete the audio routing group.              |
 
 ## Properties
 

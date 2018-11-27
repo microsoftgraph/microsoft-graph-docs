@@ -1,3 +1,8 @@
+---
+title: "settingTemplateValue resource type"
+description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
+---
+
 # settingTemplateValue resource type
 
 Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.

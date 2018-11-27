@@ -1,12 +1,17 @@
-﻿# Update microsoftStoreForBusinessContainedApp
+---
+title: "Update microsoftStoreForBusinessContainedApp"
+description: "Update the properties of a microsoftStoreForBusinessContainedApp object."
+---
+
+# Update microsoftStoreForBusinessContainedApp
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object.
+Update the properties of a [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -32,19 +37,19 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object.
+In the request body, supply a JSON representation for the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object.
 
-The following table shows the properties that are required when you create the [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md).
+The following table shows the properties that are required when you create the [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune_apps_mobilecontainedapp.md)|
+|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [microsoftStoreForBusinessContainedApp](../resources/intune_apps_microsoftstoreforbusinesscontainedapp.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) object in the response body.
 
 ## Example
 ### Request

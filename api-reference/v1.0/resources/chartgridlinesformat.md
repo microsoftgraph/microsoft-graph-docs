@@ -1,3 +1,8 @@
+---
+title: "ChartGridlinesFormat resource type"
+description: "Encapsulates the format properties for chart gridlines."
+---
+
 # ChartGridlinesFormat resource type
 
 Encapsulates the format properties for chart gridlines.

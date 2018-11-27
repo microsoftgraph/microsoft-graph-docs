@@ -1,3 +1,8 @@
+---
+title: "Update subscription"
+description: "Renew a subscription by extending its expiry time."
+---
+
 # Update subscription
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +13,7 @@ Subscriptions expire after a length of time that varies by resource type. In ord
 
 ## Permissions
 
-The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Resource type / Item        | Permission          |
 |-----------------------------|---------------------|

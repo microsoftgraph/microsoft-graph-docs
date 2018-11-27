@@ -1,12 +1,17 @@
+---
+title: "List overrides"
+description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."
+---
+
 # List overrides
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the [Focused Inbox](../resources/manage_focused_inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
+Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

@@ -1,3 +1,8 @@
+---
+title: "reportRoot: getEmailActivityUserCounts"
+description: "Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive."
+---
+
 # reportRoot: getEmailActivityUserCounts
 
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
@@ -6,7 +11,7 @@ Enables you to understand trends on the number of unique users who are performin
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |

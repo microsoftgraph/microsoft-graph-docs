@@ -1,4 +1,9 @@
-﻿# managedDeviceOverview resource type
+---
+title: "managedDeviceOverview resource type"
+description: "Summary data for managed devices"
+---
+
+# managedDeviceOverview resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -6,8 +11,8 @@ Summary data for managed devices
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get managedDeviceOverview](../api/intune_devices_manageddeviceoverview_get.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|Read properties and relationships of the [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.|
-|[Update managedDeviceOverview](../api/intune_devices_manageddeviceoverview_update.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|Update the properties of a [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) object.|
+|[Get managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Read properties and relationships of the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.|
+|[Update managedDeviceOverview](../api/intune-devices-manageddeviceoverview-update.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -16,8 +21,8 @@ Summary data for managed devices
 |enrolledDeviceCount|Int32|Total enrolled device count. Does not include PC devices managed via Intune PC Agent|
 |mdmEnrolledCount|Int32|The number of devices enrolled in MDM|
 |dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
-|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune_devices_deviceoperatingsystemsummary.md)|Device operating system summary.|
-|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune_devices_deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
+|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Device operating system summary.|
+|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
 
 ## Relationships
 None

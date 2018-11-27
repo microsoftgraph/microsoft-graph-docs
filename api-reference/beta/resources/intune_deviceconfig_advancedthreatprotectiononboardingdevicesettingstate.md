@@ -1,4 +1,9 @@
-﻿# advancedThreatProtectionOnboardingDeviceSettingState resource type
+---
+title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"
+description: "ATP onboarding State for a given device."
+---
+
+# advancedThreatProtectionOnboardingDeviceSettingState resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -8,17 +13,17 @@ ATP onboarding State for a given device.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List advancedThreatProtectionOnboardingDeviceSettingStates](../api/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate_list.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) collection|List properties and relationships of the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) objects.|
-|[Get advancedThreatProtectionOnboardingDeviceSettingState](../api/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate_get.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)|Read properties and relationships of the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) object.|
-|[Create advancedThreatProtectionOnboardingDeviceSettingState](../api/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate_create.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)|Create a new [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) object.|
-|[Delete advancedThreatProtectionOnboardingDeviceSettingState](../api/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate_delete.md)|None|Deletes a [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md).|
-|[Update advancedThreatProtectionOnboardingDeviceSettingState](../api/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate_update.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)|Update the properties of a [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md) object.|
+|[List advancedThreatProtectionOnboardingDeviceSettingStates](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) collection|List properties and relationships of the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) objects.|
+|[Get advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Read properties and relationships of the [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) object.|
+|[Create advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-create.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Create a new [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) object.|
+|[Delete advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-delete.md)|None|Deletes a [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).|
+|[Update advancedThreatProtectionOnboardingDeviceSettingState](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-update.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Update the properties of a [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity|
-|platformType|[deviceType](../resources/intune_shared_devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
 |deviceId|String|The Device Id that is being reported|
@@ -28,7 +33,7 @@ ATP onboarding State for a given device.
 |userName|String|The User Name that is being reported|
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 ## Relationships

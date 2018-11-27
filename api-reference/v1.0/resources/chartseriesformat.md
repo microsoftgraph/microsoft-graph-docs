@@ -1,3 +1,8 @@
+---
+title: "ChartSeriesFormat resource type"
+description: "encapsulates the format properties for the chart series"
+---
+
 # ChartSeriesFormat resource type
 
 encapsulates the format properties for the chart series

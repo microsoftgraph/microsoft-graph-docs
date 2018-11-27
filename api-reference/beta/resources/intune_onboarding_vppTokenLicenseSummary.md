@@ -1,4 +1,9 @@
-﻿# vppTokenLicenseSummary resource type
+---
+title: "vppTokenLicenseSummary resource type"
+description: "License summary of a given app in a token."
+---
+
+# vppTokenLicenseSummary resource type
 
 > **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

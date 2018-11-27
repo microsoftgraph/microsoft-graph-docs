@@ -1,10 +1,15 @@
+---
+title: "Update a group setting"
+description: "Update the properties of a specific group setting object."
+---
+
 # Update a group setting
 
 Update the properties of a specific group setting object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |

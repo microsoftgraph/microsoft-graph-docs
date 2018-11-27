@@ -1,3 +1,8 @@
+---
+title: "office365GroupsActivityDetail resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # office365GroupsActivityDetail resource type
 
 ## Properties
