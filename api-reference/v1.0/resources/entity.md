@@ -1,3 +1,8 @@
+---
+title: "entity resource type"
+description: "None"
+---
+
 # entity resource type
 
 ## Properties

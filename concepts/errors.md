@@ -1,10 +1,15 @@
+---
+title: "Microsoft Graph error responses and resource types"
+description: "  "
+---
+
 # Microsoft Graph error responses and resource types
 
 <!--In this article:
   
--	[Status code](#msg_status_code)
--	[Error resource type](#msg_error_resource_type)
--	[Code property](#msg_code_property)
+-	[Status code](#msg-status-code)
+-	[Error resource type](#msg-error-resource-type)
+-	[Code property](#msg-code-property)
 
 <a name="msg_error_response"> </a> -->
 

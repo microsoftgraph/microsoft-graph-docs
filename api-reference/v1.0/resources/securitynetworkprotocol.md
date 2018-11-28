@@ -1,3 +1,8 @@
+---
+title: "securityNetworkProtocol enum type"
+description: "Possible values for the network protocol."
+---
+
 # securityNetworkProtocol enum type
 
 Possible values for the network protocol.

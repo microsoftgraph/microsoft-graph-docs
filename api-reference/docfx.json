@@ -104,7 +104,7 @@
           "toc.yml"
         ],
         "src": "v1.0/",
-		"dest": "ref/",
+        "dest": "api/",
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
@@ -120,7 +120,7 @@
           "toc.yml"
         ],
         "src": "beta/",
-		"dest": "ref/",
+        "dest": "api/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
@@ -136,7 +136,7 @@
           "overview.md"
         ],
         "src": "v1.0/",
-		"dest": "api/",
+		    "dest": "api/",
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
@@ -152,7 +152,7 @@
           "overview.md"
         ],
         "src": "beta/",
-		"dest": "api/",
+		    "dest": "api/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
@@ -211,7 +211,8 @@
       "extendBreadcrumb": true,
       "author": "jthake-msft",
       "ms.author": "jthake-msft",
-      "ms.date": "06/11/2018"
+      "ms.date": "06/11/2018",
+      "uhfHeaderId": "MSDocsHeader-MSGraph"
     },
     "fileMetadata": {
       "breadcrumb_path": {
@@ -223,7 +224,7 @@
         "beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
-      "ms.service": {
+      "ms.technology": {
         "v1.0/api/*.md": "microsoft-graph",  
         "beta/api/*.md": "microsoft-graph",
         "v1.0/resources/*.md": "microsoft-graph",  
@@ -234,6 +235,14 @@
         "beta/api/*.md": "reference",
         "v1.0/resources/*.md": "reference",  
         "beta/resources/*.md": "reference" 
+      },
+      "titleSuffix": {
+        "v1.0/*.md": "Microsoft Graph v1.0", 
+        "beta/*.md": "Microsoft Graph beta",
+        "v1.0/api/*.md": "Microsoft Graph v1.0", 
+        "beta/api/*.md": "Microsoft Graph beta",
+        "v1.0/resources/*.md": "Microsoft Graph v1.0", 
+        "beta/resources/*.md": "Microsoft Graph beta" 
       }
     },
     "template": [],

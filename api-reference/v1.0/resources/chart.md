@@ -1,3 +1,8 @@
+---
+title: "Chart resource type"
+description: "Represents a chart object in a workbook."
+---
+
 # Chart resource type
 
 Represents a chart object in a workbook.
@@ -7,17 +12,17 @@ Represents a chart object in a workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [WorkbookChart](chart.md) |Read properties and relationships of chart object.|
-|[Create ChartSeries](../api/chart_post_series.md) |[WorkbookChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
-|[List series](../api/chart_list_series.md) |[WorkbookChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
-|[Update](../api/chart_update.md) | [WorkbookChart](chart.md)	|Update Chart object. |
-|[Image](../api/chart_image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
-|[Delete](../api/chart_delete.md)|None|Deletes the chart object.|
-|[Setdata](../api/chart_setdata.md)|None|Resets the source data for the chart.|
-|[Setposition](../api/chart_setposition.md)|None|Positions the chart relative to cells on the worksheet.|
-|[List](../api/chart_list.md) | [WorkbookChart](chart.md) collection |Get chart object collection. |
-|[Itemat](../api/chartcollection_itemat.md)|[WorkbookChart](chart.md)|Gets a chart based on its position in the collection.|
-|[Add](../api/chartcollection_add.md)|[WorkbookChart](chart.md)|Creates a new chart.|
+|[Get Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Read properties and relationships of chart object.|
+|[Create ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
+|[List series](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
+|[Update](../api/chart-update.md) | [WorkbookChart](chart.md)	|Update Chart object. |
+|[Image](../api/chart-image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
+|[Delete](../api/chart-delete.md)|None|Deletes the chart object.|
+|[Setdata](../api/chart-setdata.md)|None|Resets the source data for the chart.|
+|[Setposition](../api/chart-setposition.md)|None|Positions the chart relative to cells on the worksheet.|
+|[List](../api/chart-list.md) | [WorkbookChart](chart.md) collection |Get chart object collection. |
+|[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Gets a chart based on its position in the collection.|
+|[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Creates a new chart.|
 
 ## Properties
 | Property	   | Type	|Description|

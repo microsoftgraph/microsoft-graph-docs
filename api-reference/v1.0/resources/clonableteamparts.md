@@ -1,3 +1,8 @@
+---
+title: "clonableTeamParts enum type"
+description: "Describes which part of a team should be cloned. "
+---
+
 # clonableTeamParts enum type
 
 

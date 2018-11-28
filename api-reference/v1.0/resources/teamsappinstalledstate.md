@@ -1,3 +1,8 @@
+---
+title: "Members"
+description: "Describes the current installation status of a teamsApp."
+---
+
 #teamsAppInstalledState enum type
 
 

@@ -1,3 +1,8 @@
+---
+title: "Icon resource type"
+description: "Represents a cell icon."
+---
+
 # Icon resource type
 
 Represents a cell icon.
@@ -7,8 +12,8 @@ Represents a cell icon.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)	|Update Icon object. |
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
+|[Update](../api/icon-update.md) | [Icon](icon.md)	|Update Icon object. |
 
 ## Properties
 | Property	   | Type	|Description|

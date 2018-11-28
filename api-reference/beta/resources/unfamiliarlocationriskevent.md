@@ -1,3 +1,8 @@
+---
+title: "unfamiliarLocationRiskEvent resource type"
+description: "A risk event detected by Azure Active Directory Identity Protection where an account sign-in is attempted from a new location for that user. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+---
+
 # unfamiliarLocationRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +14,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent_get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |Read properties and relationships of unfamiliarLocationRiskEvent object.|
+|[Get unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |Read properties and relationships of unfamiliarLocationRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

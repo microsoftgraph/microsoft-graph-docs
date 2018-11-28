@@ -20,7 +20,6 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Get column values][Get]       | GET /items/{item-id}?expand=fields
-| [Get activities][]             | GET /items/{item-id}/activities
 | [Get analytics][]              | GET /items/{item-id}/analytics
 | [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
 | [Create][]                     | POST /items
@@ -28,13 +27,12 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}
 | [Update column values][Update] | PATCH /items/{item-id}/fields
 
-[Get]: ../api/listItem_get.md
-[Get activities]: ../api/itemActivities_list.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
-[Create]: ../api/listItem_create.md
-[Delete]: ../api/listItem_delete.md
-[Update]: ../api/listItem_update.md
+[Get]: ../api/listitem-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[Create]: ../api/listitem-create.md
+[Delete]: ../api/listitem-delete.md
+[Update]: ../api/listitem-update.md
 
 ## JSON representation
 
@@ -109,17 +107,17 @@ The following properties are inherited from **[baseItem][]**.
 | fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
 
-[baseItem]: baseItem.md
-[contentTypeInfo]: contentTypeInfo.md
-[driveItem]: driveItem.md
-[fieldValueSet]: fieldValueSet.md
-[identitySet]: identitySet.md
-[itemActivity]: itemActivity.md
-[itemAnalytics]: itemAnalytics.md
+[baseItem]: baseitem.md
+[contentTypeInfo]: contenttypeinfo.md
+[driveItem]: driveitem.md
+[fieldValueSet]: fieldvalueset.md
+[identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
-[listItemVersion]: listItemVersion.md
-[sharepointIds]: sharepointIds.md
+[listItemVersion]: listitemversion.md
+[sharepointIds]: sharepointids.md
 
 <!-- {
   "type": "#page.annotation",

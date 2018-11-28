@@ -1,4 +1,9 @@
-﻿# sectionLinks resource type
+---
+title: "sectionLinks resource type"
+description: "Links for opening a OneNote section."
+---
+
+# sectionLinks resource type
 
 Links for opening a OneNote section.
 

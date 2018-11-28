@@ -1,3 +1,8 @@
+---
+title: "Use OneNote API div tags to extract data from captures "
+description: " Enterprise notebooks on Office 365"
+---
+
 # Use OneNote API div tags to extract data from captures 
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
@@ -8,7 +13,7 @@ Use the OneNote API to extract business card data from an image, or recipe and p
 
 ## Extraction attributes
 
-To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote-create-page.md) or [update-page](onenote_update_page.md) request. The API renders extracted data on the page in an easy-to-read format. 
+To extract and transform data, simply include a div that specifies the source content, extraction method, and fallback behavior in your [create-page](onenote-create-page.md) or [update-page](onenote-update-page.md) request. The API renders extracted data on the page in an easy-to-read format. 
 
 ```html
 <div
@@ -96,7 +101,7 @@ Specify the `extract.businesscard` method and use the default `render` fallback.
 </div>
 ```
  
-For business card extractions, the image is sent as a named part in a multipart request. See [Add images and files](onenote_images_files.md) for examples that show how to send an image in a request.
+For business card extractions, the image is sent as a named part in a multipart request. See [Add images and files](onenote-images-files.md) for examples that show how to send an image in a request.
 
 
 <a name="recipe"></a>
@@ -252,7 +257,7 @@ Specify the `extract` method so the API automatically detects the content type, 
 | Response data | Description |  
 |------|------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors| Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
+| Errors| Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
 
 
 <a name="permissions"></a>
@@ -272,7 +277,7 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions_reference.md).
+For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions-reference.md).
 
 
 <a name="see-also"></a>
@@ -280,9 +285,9 @@ For more information about permission scopes and how they work, see [Microsoft G
 ## See also
 
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote_update_page.md)
-- [Add images and files](onenote_images_files.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Update OneNote page content](onenote-update-page.md)
+- [Add images and files](onenote-images-files.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

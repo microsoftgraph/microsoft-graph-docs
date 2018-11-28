@@ -1,3 +1,8 @@
+---
+title: "WorksheetProtectionOptions resource type"
+description: "Represents the options in sheet protection."
+---
+
 # WorksheetProtectionOptions resource type
 
 Represents the options in sheet protection.

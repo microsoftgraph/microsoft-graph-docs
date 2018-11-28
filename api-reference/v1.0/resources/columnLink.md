@@ -8,7 +8,7 @@ title: ColumnLink
 
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
-[contentType]: contentType.md
+[contentType]: contenttype.md
 
 ## JSON representation
 

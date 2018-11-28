@@ -1,3 +1,8 @@
+---
+title: "localeInfo resource type"
+description: "Information about the locale, including the preferred language and country/region, of the signed-in user."
+---
+
 # localeInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

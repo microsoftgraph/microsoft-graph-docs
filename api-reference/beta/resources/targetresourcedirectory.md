@@ -1,3 +1,8 @@
+---
+title: "targetResourceDirectory resource type"
+description: "Indicates the directory object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."
+---
+
 # targetResourceDirectory resource type
 Indicates the directory object that was added, updated or deleted by admins as part of audit activity. Derived from the [targetResource](targetresource.md) resource.
 

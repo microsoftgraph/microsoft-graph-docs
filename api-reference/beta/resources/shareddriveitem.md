@@ -8,7 +8,7 @@ title: SharedDriveItem
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **sharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [driveItem](driveitem.md).
+The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
 ## JSON representation
 
@@ -64,9 +64,9 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 | **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
 | **driveItem**     | [**driveItem**][driveItem]            | Used to access the underlying **driveItem**
 
-[driveItem]: driveItem.md
+[driveItem]: driveitem.md
 [list]: list.md
-[listItem]: listItem.md
+[listItem]: listitem.md
 [permission]: permission.md
 [site]: site.md
 
@@ -74,7 +74,7 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 
 | Method                                  | REST Path                |
 | :-------------------------------------- | :----------------------- |
-| [Get shared item](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## Remarks
 

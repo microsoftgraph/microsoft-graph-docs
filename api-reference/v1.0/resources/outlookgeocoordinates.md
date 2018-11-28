@@ -1,3 +1,8 @@
+---
+title: "outlookGeoCoordinates resource type"
+description: "The geographic coordinates, elevation, and their degree of accuracy for a physical location."
+---
+
 # outlookGeoCoordinates resource type
 
 The geographic coordinates, elevation, and their degree of accuracy for a physical location.

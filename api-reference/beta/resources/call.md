@@ -1,3 +1,8 @@
+---
+title: "call resource type"
+description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`."
+---
+
 # call resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -12,30 +17,30 @@ Although the same identity cannot be invited multiple times, it is possible for 
 
 | Method                                                            | Return Type                                       | Description                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Get call](../api/call_get.md)                                    | [call](call.md)                                   | Read properties of the **call** object.      |
-| [Delete](../api/call_delete.md)                                   |                                                   | Delete or Hang-up an active **call**.        |
+| [Get call](../api/call-get.md)                                    | [call](call.md)                                   | Read properties of the **call** object.      |
+| [Delete](../api/call-delete.md)                                   |                                                   | Delete or Hang-up an active **call**.        |
 | **Call Handling**                                                 |                                                   |                                              |
-| [Answer](../api/call_answer.md)                                   |                                                   | Answer an incoming call.                     |
-| [Reject](../api/call_reject.md)                                   |                                                   | Reject an incoming call.                     |
-| [Redirect](../api/call_redirect.md)                               |                                                   | Redirect an incoming call.                   |
-| [Transfer](../api/call_transfer.md)                               |                                                   | Transfer a call                              |
+| [Answer](../api/call-answer.md)                                   |                                                   | Answer an incoming call.                     |
+| [Reject](../api/call-reject.md)                                   |                                                   | Reject an incoming call.                     |
+| [Redirect](../api/call-redirect.md)                               |                                                   | Redirect an incoming call.                   |
+| [Transfer](../api/call-transfer.md)                               |                                                   | Transfer a call                              |
 | **Multi-party**                                                   |                                                   |                                              |
-| [List participants](../api/call_list_participants.md)             | [participant](participant.md) collection          | Get a participant object collection.         |
-| [Invite Participants](../api/participant_invite.md)               | [commsOperation](commsoperation.md)               | Invite participants to the active call.      |
-| [Mute All Participants](../api/participant_muteall.md)            | [commsOperation](commsoperation.md)               | Mute all participants in the call.           |
-| [Configure Audio Mixer](../api/participant_configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure audio in multiparty conversation.  |
-| [Create audioRoutingGroup](../api/call_post_audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Create a new audioRoutingGroup by posting to the audioRoutingGroups collection. |
-| [List audioRoutingGroups](../api/call_list_audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Get a audioRoutingGroup object collection.  |
+| [List participants](../api/call-list-participants.md)             | [participant](participant.md) collection          | Get a participant object collection.         |
+| [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Invite participants to the active call.      |
+| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Mute all participants in the call.           |
+| [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure audio in multiparty conversation.  |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Create a new audioRoutingGroup by posting to the audioRoutingGroups collection. |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Get a audioRoutingGroup object collection.  |
 | **Interactive-Voice-Response**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call_playprompt.md)                           | [commsOperation](commsoperation.md)               | Play prompt in the call.                     |
-| [Record](../api/call_record.md)                                   | [recordOperation](recordoperation.md)             | Record the call.                             |
-| [CancelMediaProcessing](../api/call_cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancel media processing.                     |
-| [SubscribeToTone](../api/call_subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Subscribe to DTMF tones.                     |
+| [PlayPrompt](../api/call-playprompt.md)                           | [commsOperation](commsoperation.md)               | Play prompt in the call.                     |
+| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Record the call.                             |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancel media processing.                     |
+| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Subscribe to DTMF tones.                     |
 | **Self Participant Operations**                                   |                                                   |                                              |
-| [Mute](../api/call_mute.md)                                       | [commsOperation](commsoperation.md)               | Mute self in the call.                       |
-| [Unmute](../api/call_unmute.md)                                   | [commsOperation](commsoperation.md)               | Unmute self in the call.                     |
-| [UpdateMetadata](../api/call_updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Update metadata for self in roster.          |
-| [ChangeScreenSharingRole](../api/call_changescreensharingrole.md) |                                                   | Start and stop sharing screen in the call                                             |
+| [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Mute self in the call.                       |
+| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Unmute self in the call.                     |
+| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Update metadata for self in roster.          |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Start and stop sharing screen in the call                                             |
 
 ## Properties
 

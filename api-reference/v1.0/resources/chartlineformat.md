@@ -1,3 +1,8 @@
+---
+title: "ChartLineFormat resource type"
+description: "Enapsulates the formatting options for line elements."
+---
+
 # ChartLineFormat resource type
 
 Enapsulates the formatting options for line elements.
@@ -7,9 +12,9 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat_get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat_update.md) | [WorkbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
-|[Clear](../api/chartlineformat_clear.md)|None|Clear the line format of a chart element.|
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
+|[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties
 | Property	   | Type	|Description|

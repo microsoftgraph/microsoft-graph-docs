@@ -1,3 +1,8 @@
+---
+title: "recordOperation resource type"
+description: "The recordOperation type"
+---
+
 # recordOperation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -10,10 +15,11 @@ The recordOperation type
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | completionReason               | String                      | Possible values are: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`. |
-| createdDateTime                | DateTimeOffset              | The time when the recording was created.                                                                                                                                                  |
+| createdDateTime                | DateTimeOffset              | The time when the recording was created.                                                                                                          |
 | id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | The time of the last action of the operation.                                                                                                                                                  |
-| recordResourceLocation         | String                      | The location where the recording is located. |
+| lastActionDateTime             | DateTimeOffset              | The time of the last action of the operation.                                                                                                     |
+| recordResourceLocation         | String                      | The location where the recording is located.                                                                                                      |
+| recordResourceAccessToken      | String                      | The access token required to retrieve the recording.                                                                                              |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 
@@ -39,6 +45,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "recordResourceLocation": "String",
+  "recordResourceAccessToken": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -56,10 +63,7 @@ The following is a JSON representation of the resource.
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "resultInfo": {
-    "code": "200",
-    "subCode": "callTerminated"
-  },
+  "recordResourceAccessToken": "<access-token>",
   "status": "completed"
 }
 ```

@@ -1,3 +1,8 @@
+---
+title: "userSecurityState resource type"
+description: "Contains stateful information about the user account."
+---
+
 # userSecurityState resource type
 
 Contains stateful information about the user account.

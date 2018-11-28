@@ -1,3 +1,8 @@
+---
+title: "domainDnsSrvRecord resource type"
+description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+---
+
 # domainDnsSrvRecord resource type
 
 Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.

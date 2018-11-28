@@ -1,3 +1,8 @@
+---
+title: "ChartTitleFormat resource type"
+description: "Encapsulates the format properties for the chart title."
+---
+
 # ChartTitleFormat resource type
 
 Encapsulates the format properties for the chart title.

@@ -1,3 +1,8 @@
+---
+title: "chunkedUploadSessionDescriptor resource type"
+description: "Here is a JSON representation of the resource"
+---
+
 # chunkedUploadSessionDescriptor resource type
 
 

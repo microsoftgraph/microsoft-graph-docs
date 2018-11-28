@@ -1,3 +1,8 @@
+---
+title: "messageRuleActions resource type"
+description: "Represents the set of actions that are available to a rule."
+---
+
 # messageRuleActions resource type
 
 

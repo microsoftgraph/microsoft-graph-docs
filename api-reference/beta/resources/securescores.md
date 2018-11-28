@@ -1,3 +1,8 @@
+---
+title: "secureScores resource type"
+description: "top=n, where n = the number of days of data that you want to retrieve. "
+---
+
 # secureScores resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +14,7 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScores](../api/securescores_list.md) | [secureScores](securescores.md) |Read properties and metadata of a secureScores object.|
+|[List secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Read properties and metadata of a secureScores object.|
 
 
 ## Properties

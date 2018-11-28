@@ -1,3 +1,8 @@
+---
+title: "ChartLineFormat resource type"
+description: "Enapsulates the formatting options for line elements."
+---
+
 # ChartLineFormat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,9 +14,9 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
-|[Clear](../api/chartlineformat_clear.md)|None|Clear the line format of a chart element.|
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
+|[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,9 +1,14 @@
+---
+title: "Creating a group with a Microsoft Teams team"
+description: "Creating a group that includes a team involves two steps: "
+---
+
 # Creating a group with a Microsoft Teams team
 
-Creating a [group](../api-reference/beta/resources/group.md) that includes a [team](../api-reference/beta/resources/team.md) involves two steps: 
+Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps: 
 
-- [Create a group](../api-reference/beta/api/group_post_groups.md) with the right properties.
-- [Add a team](../api-reference/beta/api/team_put_teams.md) to the group.
+- [Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.
+- [Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.
 
 ## Create a group
 
@@ -24,14 +29,14 @@ POST /groups
     "mailEnabled":true,
     "securityEnabled":false,
     "members@odata.bind":[
-        "https://graph.microsoft.com/beta/users/bec05f3d-a818-4b58-8c2e-2b4e74b0246d",
-        "https://graph.microsoft.com/beta/users/ae67a4f4-2308-4522-9021-9f402ff0fba8",
-        "https://graph.microsoft.com/beta/users/eab978dd-35d0-4885-8c46-891b7d618783",
-        "https://graph.microsoft.com/beta/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133"
+        "https://graph.microsoft.com/v1.0/users/bec05f3d-a818-4b58-8c2e-2b4e74b0246d",
+        "https://graph.microsoft.com/v1.0/users/ae67a4f4-2308-4522-9021-9f402ff0fba8",
+        "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783",
+        "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133"
     ],
     "owners@odata.bind":[
-        "https://graph.microsoft.com/beta/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133",
-        "https://graph.microsoft.com/beta/users/eab978dd-35d0-4885-8c46-891b7d618783"
+        "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133",
+        "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783"
     ]
 }
 ```
@@ -45,7 +50,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: xxx
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
     "id":"b7f968af-ca51-42f6-a77e-82c7147bc8f2"
 }
 ```
@@ -68,7 +73,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: xxx
 {
-    "@odata.context" : "https://graph.microsoft.com/beta/$metadata#teams/$entity",
+    "@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#teams/$entity",
     "id" : "b7f968af-ca51-42f6-a77e-82c7147bc8f2",
     "webUrl" : "https://example.com",
     "isArchived" : null,

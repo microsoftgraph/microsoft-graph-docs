@@ -1,10 +1,15 @@
+---
+title: "Working with Office 365 usage reports in Microsoft Graph"
+description: "With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all."
+---
+
 # Working with Office 365 usage reports in Microsoft Graph
 
 With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all.
 
 ## Authorization
 
-Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](../../../concepts/permissions_reference.md) and [Reports permissions](../../../concepts/permissions_reference.md#reports-permissions).
+Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
 ## Next steps
 

@@ -1,3 +1,8 @@
+---
+title: "TableSort resource type"
+description: "Manages sorting operations on Table objects."
+---
+
 # TableSort resource type
 
 Manages sorting operations on Table objects.
@@ -7,10 +12,10 @@ Manages sorting operations on Table objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [WorkbookTableSort](tablesort.md) |Read properties and relationships of tableSort object.|
-|[Apply](../api/tablesort_apply.md)|None|Perform a sort operation.|
-|[Clear](../api/tablesort_clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
-|[Reapply](../api/tablesort_reapply.md)|None|Reapplies the current sorting parameters to the table.|
+|[Get TableSort](../api/tablesort-get.md) | [WorkbookTableSort](tablesort.md) |Read properties and relationships of tableSort object.|
+|[Apply](../api/tablesort-apply.md)|None|Perform a sort operation.|
+|[Clear](../api/tablesort-clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
+|[Reapply](../api/tablesort-reapply.md)|None|Reapplies the current sorting parameters to the table.|
 
 ## Properties
 | Property	   | Type	|Description|

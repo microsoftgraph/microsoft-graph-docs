@@ -1,3 +1,8 @@
+---
+title: "Configure synchronization with directory extension attributes"
+description: "You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes. This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce. In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD. "
+---
+
 # Configure synchronization with directory extension attributes
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -186,16 +191,16 @@ HTTP/1.1 200 OK
 
 Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:
 
-1. Add an [attribute definition](synchronization_attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute. 
+1. Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute. 
 
     - Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.
     - Add the new attribute to the list, specifying the name and type, as shown in the following example.
 
-2. Add an [attribute mapping](synchronization_attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.
+2. Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.
 
-    - Under [synchronizationRules](synchronization_synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
-    - In the [objectMappings](synchronization_objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
-    - In the [attributeMappings](synchronization_attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.
+    - Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
+    - In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.
 
     ```json
     {

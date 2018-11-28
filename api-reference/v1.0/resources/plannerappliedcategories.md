@@ -1,3 +1,8 @@
+---
+title: "plannerAppliedCategories resource type"
+description: "The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the plannerTask object."
+---
+
 # plannerAppliedCategories resource type
 
 
