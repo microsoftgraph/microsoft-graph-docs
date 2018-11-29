@@ -1,3 +1,8 @@
+---
+title: "inferenceClassificationOverride resource type"
+description: "Represents a user's override for how incoming messages from a specific sender should always be classified as."
+---
+
 # inferenceClassificationOverride resource type
 
 Represents a user's override for how incoming messages from a specific sender should always be classified as.
@@ -7,13 +12,13 @@ Represents a user's override for how incoming messages from a specific sender sh
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | None |Delete an override specified by its ID. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
+|classifyAs|inferenceClassificationType| Specifies how incoming messages from a specific sender should always be classified as. The possible values are: `focused`, `other`.|
 |id|string| The unique identifier of the override. Read-only.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|The email address information of the sender for whom the override is created.|
 
@@ -27,6 +32,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

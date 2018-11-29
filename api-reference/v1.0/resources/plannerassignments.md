@@ -1,3 +1,8 @@
+---
+title: "plannerAssignments resource type"
+description: "The **plannerAssignments** resource represents assignments of a plannerTask resource. This type is an open type. Each property name in this type "
+---
+
 # plannerAssignments resource type
 
 The **plannerAssignments** resource represents assignments of a [plannerTask](plannertask.md) resource. This type is an open type. Each property name in this type 
@@ -12,12 +17,10 @@ Example:
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47", "4e98f8f1-bb03-4015-b8e0-19bb370949d8" ],
   "@odata.type": "microsoft.graph.plannerAssignments"
 }-->
-
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": null,

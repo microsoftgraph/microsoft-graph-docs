@@ -1,3 +1,8 @@
+---
+title: "passwordProfile resource type"
+description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."
+---
+
 # passwordProfile resource type
 
 Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.
@@ -18,7 +23,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

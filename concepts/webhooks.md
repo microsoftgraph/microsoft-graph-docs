@@ -1,3 +1,8 @@
+---
+title: "Set up notifications for changes in user data"
+description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
+---
+
 # Set up notifications for changes in user data
 
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
@@ -16,6 +21,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Group conversations
 - Content shared on OneDrive including drives associated with SharePoint sites
 - User's personal OneDrive folders
+- Security Alerts
 
 For instance, you can create a subscription to a specific mail folder:
 `me/mailFolders('inbox')/messages`
@@ -33,6 +39,10 @@ Or to a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
+Or to a new [Security API alert](security-concept-overview.md):
+`/security/alerts?$filter=status eq ‘New’`,
+`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+
 ### Azure AD resource limitations
 
 Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
@@ -49,7 +59,7 @@ Certain limits apply to Azure AD based resources (users, groups) and may generat
 
 ## Subscription lifetime
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type).
+Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
 
@@ -88,11 +98,11 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](../api-reference/v1.0/resources/subscription.md) for property definitions and values.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.
 
 Although `clientState` is not required, you must include it to comply with our recommended notification handling process. Setting this property will allow you to confirm that notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
 
 #### Notification endpoint validation
 
@@ -100,9 +110,11 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 1. Microsoft Graph sends a POST request to the notification URL:
 
-  ``` http
-  POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
-  ```
+    ``` http
+    POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
+    ```
+
+    > **Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices. If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail. Also, the client should treat the token value as opaque since the token format may change in the future, without notice.
 
 1. The client must provide a response with the following characteristics within 10 seconds:
 
@@ -127,7 +139,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body. The subscription object includes the new `expirationDateTime` value.
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 ### Deleting a subscription
 
@@ -152,7 +164,7 @@ The notification object has the following properties:
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | subscriptionId | string | The ID of the subscription that generated the notification. |
-| subscriptionExpirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
 | clientState | string | The `clientState` property specified in the subscription request (if any). |
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
@@ -222,12 +234,12 @@ The following code samples are available on GitHub.
 
 ## See also
 
-- [Subscription resource type](../api-reference/v1.0/resources/subscription.md)
-- [Get subscription](../api-reference/v1.0/api/subscription_get.md)
-- [Create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md)
+- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
+- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
+- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
-[contact]: ../api-reference/v1.0/resources/contact.md
-[conversation]: ../api-reference/v1.0/resources/conversation.md
-[drive]: ../api-reference/v1.0/resources/drive.md
-[event]: ../api-reference/v1.0/resources/event.md
-[message]: ../api-reference/v1.0/resources/message.md
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
+[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0

@@ -1,3 +1,8 @@
+---
+title: "privilegedRole resource type"
+description: "Represents an Azure AD administrator role, such as: **Global Administrator, Billing Administrator, Service Administrator, User Administrator, Password Administrator**, etc."
+---
+
 # privilegedRole resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,11 +14,11 @@ Represents an Azure AD administrator role, such as: **Global Administrator, Bill
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List privilegedRole objects](../api/privilegedrole_list.md) | [privilegedRole](privilegedrole.md) collection|Get the collection of privilegedRole.|
-|[Get privilegedRole](../api/privilegedrole_get.md) | [privilegedRole](privilegedrole.md) |Read properties and relationships of privilegedRole object.|
-|[List assignments](../api/privilegedrole_list_assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md) collection| Get a assignment object collection for this role.|
-|[selfActivate](../api/privilegedrole_selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Activate the assigned role.|
-|[selfDeactivate](../api/privilegedrole_selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Deactivate the assigned role.|
+|[List privilegedRole objects](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md) collection|Get the collection of privilegedRole.|
+|[Get privilegedRole](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |Read properties and relationships of privilegedRole object.|
+|[List assignments](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md) collection| Get a assignment object collection for this role.|
+|[selfActivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Activate the assigned role.|
+|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Deactivate the assigned role.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,0 +1,252 @@
+{
+  "build": {    
+    "content": [
+      {
+        "files": [
+          "api/**/*.md",
+          "api/**/*.yml"
+        ],
+        "src": "v1.0/",
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "resources/**/*.md",
+          "resources/**/*.yml"
+        ],
+        "src": "v1.0/",
+        "group": "v1.0",
+        "dest": "api/",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },  
+      {
+        "files": [
+            "api/**/*.md",
+            "api/**/*.yml"
+          ],
+          "src": "beta/",
+          "group": "beta",
+          "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices"
+          ]
+      },
+      {
+        "files": [
+          "resources/**/*.md",
+          "resources/**/*.yml"
+        ],
+        "src": "beta/",
+        "group": "beta",
+        "dest": "api/",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },  
+      {
+        "files": [
+            "toc.yml"
+          ],
+          "src": "v1.0/breadcrumb/",
+          "dest": "ref-breadcrumb/",
+          "group": "v1.0",
+          "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices"
+          ]
+      },
+      {
+        "files": [
+            "toc.yml"
+          ],
+          "src": "beta/breadcrumb/",
+          "dest": "ref-breadcrumb/",
+          "group": "beta",
+          "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices"
+          ]
+      },
+      {
+       "files": [
+          "toc.yml"
+        ],
+        "src": "v1.0/",
+        "dest": "api/",
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+       "files": [
+          "toc.yml"
+        ],
+        "src": "beta/",
+        "dest": "api/",
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+       "files": [
+          "overview.md"
+        ],
+        "src": "v1.0/",
+		    "dest": "api/",
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+       "files": [
+          "overview.md"
+        ],
+        "src": "beta/",
+		    "dest": "api/",
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "groups": {
+      "v1.0": {
+        "dest": "v1temp",
+        "moniker_range": ">= graph-rest-1.0"
+      },
+      "beta": {
+        "dest": "betatemp",
+        "moniker_range": "graph-rest-beta"
+      }     
+    },    
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": { 
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
+      "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
+      "extendBreadcrumb": true,
+      "author": "jthake-msft",
+      "ms.author": "jthake-msft",
+      "ms.date": "06/11/2018",
+      "uhfHeaderId": "MSDocsHeader-MSGraph"
+    },
+    "fileMetadata": {
+      "breadcrumb_path": {
+        "v1.0/**": "/graph/ref-breadcrumb/toc.json?view=graph-rest-1.0",
+        "beta/**": "/graph/ref-breadcrumb/toc.json?view=graph-rest-beta"
+      },
+      "monikerRange": {
+        "v1.0/**": "graph-rest-1.0",
+        "beta/**": "graph-rest-beta"
+      },
+      "feedback_system": {},
+      "ms.technology": {
+        "v1.0/api/*.md": "microsoft-graph",  
+        "beta/api/*.md": "microsoft-graph",
+        "v1.0/resources/*.md": "microsoft-graph",  
+        "beta/resources/*.md": "microsoft-graph"    
+      },
+      "ms.topic": {  
+        "v1.0/api/*.md": "reference",  
+        "beta/api/*.md": "reference",
+        "v1.0/resources/*.md": "reference",  
+        "beta/resources/*.md": "reference" 
+      },
+      "titleSuffix": {
+        "v1.0/*.md": "Microsoft Graph v1.0", 
+        "beta/*.md": "Microsoft Graph beta",
+        "v1.0/api/*.md": "Microsoft Graph v1.0", 
+        "beta/api/*.md": "Microsoft Graph beta",
+        "v1.0/resources/*.md": "Microsoft Graph v1.0", 
+        "beta/resources/*.md": "Microsoft Graph beta" 
+      }
+    },
+    "template": [],
+    "dest": "microsoft-graph-docs",
+    "markdownEngineName": "markdig"
+  }
+}

@@ -1,3 +1,8 @@
+---
+title: "signInLocation resource type"
+description: "Provides the city, state and country/region from where the sign-in happened."
+---
+
 # signInLocation resource type
 Provides the city, state and country/region from where the sign-in happened.
 

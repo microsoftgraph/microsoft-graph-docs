@@ -10,8 +10,13 @@ title: ColumnDefinition
 
 Here is a JSON representation of a ColumnDefinition resource.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnDefinition",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnDefinition"
+}-->
 
 ```json
 {
@@ -73,7 +78,7 @@ These properties are mutually exclusive -- a column can only have one of them sp
 | **text**          | [textColumn][]          | This column stores text values.
 
 Note: These properties correspond to SharePoint's [SPFieldType][] enumeration.
-While the most common field types are represented above, this beta API is still missing some.
+While the most common field types are represented above, this API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
 
 ## Remarks
@@ -82,21 +87,21 @@ ColumnDefinitions and field values for `hidden` columns are not shown by default
 To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
 To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
 
-[booleanColumn]: booleanColumn.md
-[calculatedColumn]: calculatedColumn.md
-[choiceColumn]: choiceColumn.md
-[currencyColumn]: currencyColumn.md
-[dateTimeColumn]: dateTimeColumn.md
-[defaultColumnValue]: defaultColumnValue.md
-[lookupColumn]: lookupColumn.md
-[numberColumn]: numberColumn.md
-[personOrGroupColumn]: personOrGroupColumn.md
-[textColumn]: textColumn.md
-[fieldValueSet]: fieldValueSet.md
+[booleanColumn]: booleancolumn.md
+[calculatedColumn]: calculatedcolumn.md
+[choiceColumn]: choicecolumn.md
+[currencyColumn]: currencycolumn.md
+[dateTimeColumn]: datetimecolumn.md
+[defaultColumnValue]: defaultcolumnvalue.md
+[lookupColumn]: lookupcolumn.md
+[numberColumn]: numbercolumn.md
+[personOrGroupColumn]: personorgroupcolumn.md
+[textColumn]: textcolumn.md
+[fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
 <!-- {
   "type": "#page.annotation",

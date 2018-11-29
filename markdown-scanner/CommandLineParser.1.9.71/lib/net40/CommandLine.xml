@@ -1230,7 +1230,7 @@
             Initializes a new instance of the <see cref="T:CommandLine.ParserSettings"/> class,
             setting the case comparison behavior.
             </summary>
-            <param name="caseSensitive">If set to true, parsing will be case sensitive.</param>
+            <param name="caseSensitive">If set to true, parsing will be case-sensitive.</param>
         </member>
         <member name="M:CommandLine.ParserSettings.#ctor(System.IO.TextWriter)">
             <summary>
@@ -1245,7 +1245,7 @@
             Initializes a new instance of the <see cref="T:CommandLine.ParserSettings"/> class,
             setting case comparison and help output options.
             </summary>
-            <param name="caseSensitive">If set to true, parsing will be case sensitive.</param>
+            <param name="caseSensitive">If set to true, parsing will be case-sensitive.</param>
             <param name="helpWriter">Any instance derived from <see cref="T:System.IO.TextWriter"/>,
             default <see cref="P:System.Console.Error"/>. Setting this argument to null, will disable help screen.</param>
         </member>
@@ -1254,7 +1254,7 @@
             Initializes a new instance of the <see cref="T:CommandLine.ParserSettings"/> class,
             setting case comparison and mutually exclusive behaviors.
             </summary>
-            <param name="caseSensitive">If set to true, parsing will be case sensitive.</param>
+            <param name="caseSensitive">If set to true, parsing will be case-sensitive.</param>
             <param name="mutuallyExclusive">If set to true, enable mutually exclusive behavior.</param>
         </member>
         <member name="M:CommandLine.ParserSettings.#ctor(System.Boolean,System.Boolean,System.IO.TextWriter)">
@@ -1262,7 +1262,7 @@
             Initializes a new instance of the <see cref="T:CommandLine.ParserSettings"/> class,
             setting case comparison, mutually exclusive behavior and help output option.
             </summary>
-            <param name="caseSensitive">If set to true, parsing will be case sensitive.</param>
+            <param name="caseSensitive">If set to true, parsing will be case-sensitive.</param>
             <param name="mutuallyExclusive">If set to true, enable mutually exclusive behavior.</param>
             <param name="helpWriter">Any instance derived from <see cref="T:System.IO.TextWriter"/>,
             default <see cref="P:System.Console.Error"/>. Setting this argument to null, will disable help screen.</param>
@@ -1272,7 +1272,7 @@
             Initializes a new instance of the <see cref="T:CommandLine.ParserSettings"/> class,
             setting case comparison, mutually exclusive behavior and help output option.
             </summary>
-            <param name="caseSensitive">If set to true, parsing will be case sensitive.</param>
+            <param name="caseSensitive">If set to true, parsing will be case-sensitive.</param>
             <param name="mutuallyExclusive">If set to true, enable mutually exclusive behavior.</param>
             <param name="ignoreUnknownArguments">If set to true, allow the parser to skip unknown argument, otherwise return a parse failure</param>
             <param name="helpWriter">Any instance derived from <see cref="T:System.IO.TextWriter"/>,
@@ -1290,7 +1290,7 @@
         </member>
         <member name="P:CommandLine.ParserSettings.CaseSensitive">
             <summary>
-            Gets or sets a value indicating whether perform case sensitive comparisons.
+            Gets or sets a value indicating whether perform case-sensitive comparisons.
             </summary>
         </member>
         <member name="P:CommandLine.ParserSettings.MutuallyExclusive">

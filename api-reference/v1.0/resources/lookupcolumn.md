@@ -6,7 +6,7 @@ title: LookupColumn
 ---
 # LookupColumn resource type
 
-The **lookupColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are looked up from another source in the site.
+The **lookupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are looked up from another source in the site.
 
 ## JSON representation
 

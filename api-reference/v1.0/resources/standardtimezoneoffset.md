@@ -1,3 +1,8 @@
+---
+title: "standardTimeZoneOffset resource type"
+description: "Specifies when a time zone switches from daylight saving time to standard time."
+---
+
 # standardTimeZoneOffset resource type
 
 Specifies when a time zone switches from daylight saving time to standard time.
@@ -15,11 +20,10 @@ That means the transition from daylight saving time to standard occurs at 2 AM o
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | dayOccurrence | Edm.Int32 | Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs. |
-| dayOfWeek | string | Represents the day of the week when the transition from daylight saving time to standard time. |
+| dayOfWeek | dayOfWeek | Represents the day of the week when the transition from daylight saving time to standard time. |
 | month | Edm.Int32 | Represents the month of the year when the transition from daylight saving time to standard time occurs. |
 | time | Edm.TimeOfDay | Represents the time of day when the transition from daylight saving time to standard time occurs. |
 | year | Edm.Int32 | Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.|
-
 
 ## JSON representation
 

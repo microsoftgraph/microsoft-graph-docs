@@ -23,23 +23,27 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}
 | [Update column values][Update] | PATCH /items/{item-id}/fields
 
-[Get]: ../api/listItem_get.md
-[Create]: ../api/listItem_create.md
-[Delete]: ../api/listItem_delete.md
-[Update]: ../api/listItem_update.md
+[Get]: ../api/listitem-get.md
+[Create]: ../api/listitem-create.md
+[Delete]: ../api/listitem-delete.md
+[Update]: ../api/listitem-update.md
 
 ## JSON representation
 
 Here is a JSON representation of a **listItem** resource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.listItem",
-       "keyProperty": "id" } -->
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
 
 ```json
 {
-  "contentType": { "@odata.type": "microsoft.graph.contentType" },
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
   /* relationships */
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
@@ -54,6 +58,7 @@ Here is a JSON representation of a **listItem** resource.
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
   "webUrl": "url"
 }
 ```
@@ -65,20 +70,22 @@ The **listItem** resource has the following properties.
 | Property name | Type                | Description
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | The content type of this list item
-| fields        | [fieldValueSet][]   | The values of the columns set on this list item.
 
 The following properties are inherited from **[baseItem][]**.
 
-| Property name        | Type             | Description
-|:---------------------|:-----------------|:-----------------------------------
-| id                   | string           | The unique identifier of the item. Read-only.
-| name                 | string           | The name / title of the item.
-| createdBy            | [identitySet][]  | Identity of the creator of this item. Read-only.
-| createdDateTime      | DateTimeOffset   | The date and time the item was created. Read-only.
-| description          | string           | The descriptive text for the item.
-| lastModifiedBy       | [identitySet][]  | Identity of the last modifier of this item. Read-only.
-| lastModifiedDateTime | DateTimeOffset   | The date and time the item was last modified. Read-only.
-| webUrl               | string (url)     | URL that displays the item in the browser. Read-only.
+| Property name        | Type              | Description
+|:---------------------|:------------------|:----------------------------------
+| id                   | string            | The unique identifier of the item. Read-only.
+| name                 | string            | The name / title of the item.
+| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.
+| createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.
+| description          | string            | The descriptive text for the item.
+| eTag                 | string            | ETag for the item. Read-only.                                                          |
+| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
+| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.
+| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.
+| sharepointIds        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.
 
 ## Relationships
 
@@ -87,15 +94,18 @@ The following properties are inherited from **[baseItem][]**.
 | Relationship name | Type                           | Description
 |:------------------|:-------------------------------|:-------------------------------
 | driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
+| fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
 
-[baseItem]: baseItem.md
-[contentTypeInfo]: contentTypeInfo.md
-[driveItem]: driveItem.md
-[fieldValueSet]: fieldValueSet.md
-[identitySet]: identitySet.md
+[baseItem]: baseitem.md
+[contentTypeInfo]: contenttypeinfo.md
+[driveItem]: driveitem.md
+[fieldValueSet]: fieldvalueset.md
+[identitySet]: identityset.md
+[itemReference]: itemreference.md
 [list]: list.md
-[listItemVersion]: listItemVersion.md
+[listItemVersion]: listitemversion.md
+[sharepointIds]: sharepointids.md
 
 <!-- {
   "type": "#page.annotation",

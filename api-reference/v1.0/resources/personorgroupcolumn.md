@@ -6,7 +6,7 @@ title: PersonOrGroupColumn
 ---
 # PersonOrGroupColumn resource type
 
-The **personOrGroupColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
+The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
 
 ## JSON representation
 
@@ -29,7 +29,7 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 | **displayAs**              | string  | How to display the information about the person or group chosen. See below.
 | **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`.
 
-## DisplayAs values
+## DisplayAs options
 
 | DisplayAs value               | Description
 |:------------------------------|:-----------------------
@@ -59,5 +59,11 @@ Note: Additional DisplayAs types may be returned.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->

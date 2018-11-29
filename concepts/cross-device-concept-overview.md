@@ -1,3 +1,8 @@
+---
+title: "Cross-device experiences in Microsoft Graph"
+description: "In today's multi-device world, the way consumers use devices spans different platforms and form factors: they might read the morning news on their tablets, check email during the morning commute on their phones, and use their desktop PCs when at work. At night, they might watch movies on their home media consoles and use smart speakers to catch up on news from the day. The average customer engages with multiple devices and platforms throughout the day. "
+---
+
 # Cross-device experiences in Microsoft Graph
 
 In today's multi-device world, the way consumers use devices spans different platforms and form factors: they might read the morning news on their tablets, check email during the morning commute on their phones, and use their desktop PCs when at work. At night, they might watch movies on their home media consoles and use smart speakers to catch up on news from the day. The average customer engages with multiple devices and platforms throughout the day. 
@@ -14,8 +19,22 @@ With activities, you have a way to capture the unique tasks for users of your ap
 ### Build rich cross-device experiences by using the device relay API 
 In addition to Microsoft devices (PCs, Windows Phones, Xbox, IoT, HoloLens, and more), the device relay API also exposes Android and iOS devices. This enables you to truly break down boundaries between your users' devices. You can build apps that utilize the user’s environment and create rich experiences that transcend a single device in real-time. 
 
+### Engage users with human-centric cross-device notifications (preview)
+
+Notifications are one of the most effective and direct ways to communicate to and engage with your users. 
+
+With the Microsoft Graph notifications API, you can deliver notifications in a human-centric, instead of a device-centric way. You can target a user to send notifications to, and rely on the Microsoft Graph notifications framework to deliver the notifications to each endpoint the user is signed in on. Cross-device notification management is made easy with the Microsoft Graph notifications API as well, so you can sync notifications across users' devices, and reduce the amount of redundancy and interruption for your users. 
+
+## API reference
+Looking for the API reference for these services?
+
+- [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project-rome-overview?view=graph-rest-1.0)
+- [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
+
+
 ## Next steps
 
-- [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)
+- [Use the Microsoft Graph API to enable cross-device experiences](/graph/api/resources/cross-device-reference-overview?view=graph-rest-1.0)
 - [Learn more about the activity feed API in Microsoft Graph](activity-feed-concept-overview.md)
-- [Learn more about the device replay API in Microsoft Graph](device-relay-concept-overview.md)
+- [Learn more about the device relay API in Microsoft Graph](device-relay-concept-overview.md)
+- [Learn more about the Microsoft Graph notifications API in Microsoft Graph](notifications-concept-overview.md)

@@ -1,16 +1,28 @@
-# resource resource type
+---
+title: "OneNoteResource resource type"
+description: "An image or other file resource on a OneNote page. "
+---
+
+# OneNoteResource resource type
 
 An image or other file resource on a OneNote page. 
 
 You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:
 
@@ -43,7 +55,11 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ```
 
 ## Properties
-None.
+
+| Property             | Type            | Description
+|:---------------------|:----------------|:---------------------------------
+| content              | Stream          | The content stream
+| contentUrl           | String (url)    | The URL for downloading the content
 
 ## Relationships
 None.
@@ -52,7 +68,7 @@ None.
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource_get.md) | Stream |Retrieve the binary data of a file or image resource.|
+|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -44,7 +44,7 @@ Here is a JSON representation of the resource
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares_get.md
+[Shares]: ../api/shares-get.md
 
 ## Remarks
 
@@ -64,5 +64,9 @@ To retrieve the human-readable path for a breadcrumb, you can safely ignore ever
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

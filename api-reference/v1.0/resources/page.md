@@ -1,3 +1,8 @@
+---
+title: "page resource type"
+description: "A page in a OneNote notebook."
+---
+
 # page resource type
 
 A page in a OneNote notebook.
@@ -6,12 +11,14 @@ A page in a OneNote notebook.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntitySchemaObjectModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSection"
   ],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -50,16 +57,16 @@ Here is a JSON representation of the resource.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the page.  Read-only.|
-|parentSection|[Section](section.md)|The section that contains the page. Read-only.|
+|parentSection|[OnenoteSection](section.md)|The section that contains the page. Read-only.|
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get page](../api/page_get.md) | [Page](page.md) |Read the properties and relationships of the page.|
-|[Update page content](../api/page_update.md) | None |Update the HTML content of the page. |
-|[Delete page](../api/page_delete.md) | None |Delete the page. |
-|[copyToSection](../api/page_copytosection.md)| None |Copies the page to a specific section.|
+|[Get page](../api/page-get.md) | [Page](page.md) |Read the properties and relationships of the page.|
+|[Update page content](../api/page-update.md) | None |Update the HTML content of the page. |
+|[Delete page](../api/page-delete.md) | None |Delete the page. |
+|[copyToSection](../api/page-copytosection.md)| None |Copies the page to a specific section.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

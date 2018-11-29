@@ -1,3 +1,8 @@
+---
+title: "Working with education APIs in Microsoft Graph"
+description: "The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. This makes it easy for you to build solutions that integrate with educational resources."
+---
+
 # Working with education APIs in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +13,7 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](../../../concepts/permissions_reference.md#education-permissions). 
+To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](/graph/permissions-reference#education-permissions). 
 
 ### App permissions to enable school IT admins to consent 
 
@@ -48,17 +53,17 @@ The rostering APIs provide the following key resources:
 
 The rostering APIs support the following scenarios:
 
-- [List all schools](../api/educationroot_list_schools.md) 
-- [List schools in which a class is taught](../api/educationclass_list_schools.md)
-- [List schools for a user](../api/educationuser_list_schools.md)
+- [List all schools](../api/educationroot-list-schools.md) 
+- [List schools in which a class is taught](../api/educationclass-list-schools.md)
+- [List schools for a user](../api/educationuser-list-schools.md)
 - [Get all classes](../api/educationroot_list_classes.md )
-- [Get classes in a school](../api/educationschool_list_classes.md)
-- [List classes for a user](../api/educationuser_list_classes.md)
-- [Add classes to a school](../api/educationschool_post_classes.md)
-- [Get students and teachers for a class](../api/educationclass_list_members.md)
-- [Add members to a class](../api/educationclass_post_members.md) 
-- [List teachers for a class](../api/educationclass_list_teachers.md)
-- [Get users in a school](../api/educationschool_list_users.md)
+- [Get classes in a school](../api/educationschool-list-classes.md)
+- [List classes for a user](../api/educationuser-list-classes.md)
+- [Add classes to a school](../api/educationschool-post-classes.md)
+- [Get students and teachers for a class](../api/educationclass-list-members.md)
+- [Add members to a class](../api/educationclass-post-members.md) 
+- [List teachers for a class](../api/educationclass-list-teachers.md)
+- [Get users in a school](../api/educationschool-list-users.md)
 
 <!-- Should you list delete scenarios here as well? -->
 
@@ -74,21 +79,21 @@ The assignment APIs provide the following key resources:
 
 The assignment APIs support the following scenarios:
 
-- [Create assignment](../api/educationclass_post_assignments.md)
-- [Publish assignment](../api/educationassignment_publish.md)
-- [Create assignment resource](../api/educationassignment_post_resources.md)
-- [Create submission resource](../api/educationsubmission_post_resources.md)
-- [Submit assignment](../api/educationsubmission_submit.md) 
-- [Unsubmit assignment](../api/educationsubmission_unsubmit.md)   
-- [Return grades and feedback to student](../api/educationsubmission_return.md) 
-- [Get assignment details](../api/educationuser_list_assignments.md)
+- [Create assignment](../api/educationclass-post-assignments.md)
+- [Publish assignment](../api/educationassignment-publish.md)
+- [Create assignment resource](../api/educationassignment-post-resources.md)
+- [Create submission resource](../api/educationsubmission-post-resources.md)
+- [Submit assignment](../api/educationsubmission-submit.md) 
+- [Unsubmit assignment](../api/educationsubmission-unsubmit.md)   
+- [Return grades and feedback to student](../api/educationsubmission-return.md) 
+- [Get assignment details](../api/educationuser-list-assignments.md)
 
 The following are some common use cases for the assignment-related education APIs.
 
 |Use case|Description|See also|
 |:-------|:----------|:-------|
-|Create assignments|An external system can create an assignment for the class and attach resources to the assignment.|[Create assignment](../api/educationassignment_post_resources.md)|
-|Read assignment information|An analytics application can get information about assignments and student submissions, including dates and grades.|[Get assignment](../api/educationassignment_get.md)|
+|Create assignments|An external system can create an assignment for the class and attach resources to the assignment.|[Create assignment](../api/educationassignment-post-resources.md)|
+|Read assignment information|An analytics application can get information about assignments and student submissions, including dates and grades.|[Get assignment](../api/educationassignment-get.md)|
 |Track student submissions|Your app can provide a teacher dashboard that shows how many submissions from students need to be graded.|[Submission resource](educationsubmission.md)|
 
 ## School data sync management
@@ -97,22 +102,22 @@ The following are some common use cases for the assignment-related education API
 
 The school data sync management APIs support the following scenarios:
 
-- [List synchronization profiles](../api/educationsynchronizationprofile_list.md)
-- [Get synchronization profile](../api/educationsynchronizationprofile_get.md)
-- [Create synchronization profile](../api/educationsynchronizationprofile_post.md)
-- [Delete synchronization profile](../api/educationsynchronizationprofile_delete.md)
-- [Pause an ongoing sync](../api/educationsynchronizationprofile_pause.md)
-- [Resume a paused sync](../api/educationsynchronizationprofile_resume.md)
-- [Reset a sync](../api/educationsynchronizationprofile_reset.md)
-- [Start sync for uploaded files](../api/educationsynchronizationprofile_start.md) 
-- [Get an upload URL](../api/educationsynchronizationprofile_uploadurl.md)
-- [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md)
-- [Get synchronization errors](../api/educationsynchronizationerrors_get.md)
+- [List synchronization profiles](../api/educationsynchronizationprofile-list.md)
+- [Get synchronization profile](../api/educationsynchronizationprofile-get.md)
+- [Create synchronization profile](../api/educationsynchronizationprofile-post.md)
+- [Delete synchronization profile](../api/educationsynchronizationprofile-delete.md)
+- [Pause an ongoing sync](../api/educationsynchronizationprofile-pause.md)
+- [Resume a paused sync](../api/educationsynchronizationprofile-resume.md)
+- [Reset a sync](../api/educationsynchronizationprofile-reset.md)
+- [Start sync for uploaded files](../api/educationsynchronizationprofile-start.md) 
+- [Get an upload URL](../api/educationsynchronizationprofile-uploadurl.md)
+- [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md)
+- [Get synchronization errors](../api/educationsynchronizationerrors-get.md)
 
 
 ## Next steps
 Use the Microsoft Graph education APIs to build education solutions that access student assignments and school rosters. To learn more:
 
 - Explore the resources and methods that are most helpful to your scenario.
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 

@@ -1,3 +1,8 @@
+---
+title: "siteUsageStorage resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # siteUsageStorage resource type
 
 ## Properties

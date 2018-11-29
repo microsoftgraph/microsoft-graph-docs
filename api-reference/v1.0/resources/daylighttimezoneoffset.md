@@ -1,3 +1,8 @@
+---
+title: "daylightTimeZoneOffset resource type"
+description: "Specifies when a time zone switches from standard time to daylight saving time."
+---
+
 # daylightTimeZoneOffset resource type
 
 Specifies when a time zone switches from standard time to daylight saving time.
@@ -35,6 +40,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.standardTimeZoneOffset",
   "@odata.type": "microsoft.graph.daylightTimeZoneOffset"
 }-->
 

@@ -15,10 +15,17 @@ The **Permission** resource represents these different forms through facets on t
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -42,8 +49,8 @@ Here is a JSON representation of the resource
 | invitation    | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
 | inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
 | link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
-| role          | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
-| shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares_get.md). Read-only.
+| roles         | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
+| shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -156,11 +163,11 @@ property will contain the information about the account that redeemed the permis
 
 | Method                                                   | REST Path
 |:---------------------------------------------------------|:-----------------------
-| [List permissions](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Add](../api/driveitem_invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [Add](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## Remarks

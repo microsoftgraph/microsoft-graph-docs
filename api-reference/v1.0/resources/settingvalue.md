@@ -1,3 +1,8 @@
+---
+title: "settingValue resource type"
+description: "A setting represented by a name/value pair."
+---
+
 # settingValue resource type
 
 A setting represented by a name/value pair.

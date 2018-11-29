@@ -1,12 +1,17 @@
+---
+title: "outlookCategory resource type"
+description: "Represents a category by which a user can group Outlook items such as messages and events. The user defines categories in a master list, and can apply one or more of these user-defined"
+---
+
 # outlookCategory resource type
 
 
 Represents a category by which a user can group Outlook items such as messages and events. The user defines categories in a master list, and can apply one or more of these user-defined
 categories to an item. 
 
-Using the REST API, you can [create](../api/outlookuser_post_mastercategories.md) and define categories in the master list of categories for a user. 
-You can also [get this master list of categories](../api/outlookuser_list_mastercategories.md), [get a specific category](../api/outlookcategory_get.md), 
-[update](../api/outlookcategory_update.md) the color associated with a category, or [delete](../api/outlookcategory_delete.md) a category. 
+Using the REST API, you can [create](../api/outlookuser-post-mastercategories.md) and define categories in the master list of categories for a user. 
+You can also [get this master list of categories](../api/outlookuser-list-mastercategories.md), [get a specific category](../api/outlookcategory-get.md), 
+[update](../api/outlookcategory-update.md) the color associated with a category, or [delete](../api/outlookcategory-delete.md) a category. 
 You can apply a category to an item by assigning the **displayName** property of the category to the **categories** collection of the item.
 Resources that can be assigned categories include [contact](contact.md), [event](event.md), [message](message.md), and [post](post.md).   
 
@@ -18,11 +23,10 @@ to 25 different colors to categories in a user's master list.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.|
-|color|String|A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below. |
+|color|categoryColor|A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below. |
 
 > **Note** The possible values for **color** are pre-set constants such as `None`, `preset0` and `preset1`. Each pre-set constant is further mapped to a color; the actual
 color is dependent on the Outlook client that the categories are being displayed in. The following table shows the colors mapped to each pre-set constant for Outlook (desktop client). 
-
 
 | Pre-set constant	| Color mapped to in Outlook |
 |:---------------|:--------|
@@ -61,6 +65,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookCategory"
 }-->
 
@@ -75,11 +80,11 @@ Here is a JSON representation of the resource.
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List categories](../api/outlookuser_list_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) collection |Get all the categories that have been defined for the user.|
-|[Get category](../api/outlookcategory_get.md) | [outlookCategory](../resources/outlookcategory.md) |Get the properties and relationships of the specified **outlookCategory** object.|
-|[Create](../api/outlookuser_post_mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
-|[Update](../api/outlookcategory_update.md) | [outlookCategory](../resources/outlookcategory.md) |Update the writable property, **color**, of the specified **outlookCategory** object. |
-|[Delete](../api/outlookcategory_delete.md) | None |Delete the specified **outlookCategory** object. |
+|[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) collection |Get all the categories that have been defined for the user.|
+|[Get category](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Get the properties and relationships of the specified **outlookCategory** object.|
+|[Create](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
+|[Update](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Update the writable property, **color**, of the specified **outlookCategory** object. |
+|[Delete](../api/outlookcategory-delete.md) | None |Delete the specified **outlookCategory** object. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -89,6 +94,10 @@ Here is a JSON representation of the resource.
   "description": "outlookCategory resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
+      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
+  ],
   "tocPath": ""
 }-->
  

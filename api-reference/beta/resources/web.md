@@ -1,3 +1,8 @@
+---
+title: "web resource type"
+description: "Specifies settings for a web application."
+---
+
 # web resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,9 +13,10 @@ Specifies settings for a web application.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
+|implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow.|
 |logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
-|oauth2AllowImplicitFlow|Boolean| Specifies whether this web application can request tokens using the oAuth 2.0 implicit flow. The default is false. |
-|redirectUrls|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
+|oauth2AllowImplicitFlow|Boolean| Deprecated. Do not use. | 
+|redirectUris|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -25,9 +31,10 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "implicitGrantSettings": {"@odata.type": "microsoft.graph.implicitGrantSettings"},
   "logoutUrl": "String",
-  "oauth2AllowImplicitFlow": true,
-  "redirectUrls": ["String"]
+  "oauth2AllowImplicitFlow": false,
+  "redirectUris": ["String"]
 }
 
 ```

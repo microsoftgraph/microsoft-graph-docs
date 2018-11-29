@@ -1,3 +1,8 @@
+---
+title: "domainState resource type"
+description: "Represents the status of asynchronous operations scheduled on a domain."
+---
+
 # domainState resource type
 
 Represents the status of asynchronous operations scheduled on a domain.

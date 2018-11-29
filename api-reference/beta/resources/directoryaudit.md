@@ -1,13 +1,18 @@
+---
+title: "directoryAudit resource type"
+description: "This resource represents the directory Audit items and its collection"
+---
+
 # directoryAudit resource type
-This is a resource representing the directory Audit items and its collection
+This resource represents the directory Audit items and its collection
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List directoryAudits](../api/directoryaudit_list.md) | [directoryAudit](directoryaudit.md) |List the directory audit items in the collection and their properties.|
-|[Get directoryAudit](../api/directoryaudit_get.md) | [directoryAudit](directoryaudit.md) |Get a specific directory audit item and its properties.|
+|[List directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |List the directory audit items in the collection and their properties.|
+|[Get directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Get a specific directory audit item and its properties.|
 
 
 ## Properties
@@ -16,8 +21,8 @@ This is a resource representing the directory Audit items and its collection
 |activityDateTime|DateTimeOffset|Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |activityDisplayName|String|Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged,refer to [Azure Ad activity list](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|[keyValue](keyvalue.md) collection|Indicates additional details on the activity.|
-|category|String|Indicates which resource category that's targetted by the activity. (For example: User Management, Group Management etc..)|
-|correlationId|Guid|Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.|
+|category|String|Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)|
+|correlationId|GUID|Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.|
 |id|String| Indicates the unique ID for the activity. This is a GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Indicates information about the user or app initiated the activity.|
 |loggedByService|String|Indicates information on which service initiated the activity (For example: Self-service Password Management, Core Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.|

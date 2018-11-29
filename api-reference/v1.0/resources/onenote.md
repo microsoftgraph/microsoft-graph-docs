@@ -1,3 +1,8 @@
+---
+title: "onenote resource type"
+description: "The entry point for OneNote resources."
+---
+
 # onenote resource type
 
 The entry point for OneNote resources.
@@ -30,29 +35,42 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ```
 ## Authorization
 
-For information about the permissions required to work with OneNote APIs, see [Notes permissions](../../../concepts/permissions_reference.md#notes-permissions).
+For information about the permissions required to work with OneNote APIs, see [Notes permissions](/graph/permissions-reference#notes-permissions).
 
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |notebooks|[Notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
-|operations|[Operation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
-|pages|[Page](page.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|resources|[Resource](resource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](resource.md). Read-only. Nullable.|
+|operations|[OnenoteOperation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
+|pages|[OnenotePage](page.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|resources|[OnenoteResource](resource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](resource.md). Read-only. Nullable.|
 |sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|sections|[OnenoteSection](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create notebook](../api/onenote_post_notebooks.md) |[Notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
-|[List notebooks](../api/onenote_list_notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
-|[Create page](../api/onenote_post_pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
-|[List pages](../api/onenote_list_pages.md) |[Page](page.md) collection| Get a collection of pages.|
-|[List section groups](../api/onenote_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
-|[List sections](../api/onenote_list_sections.md) |[Section](section.md) collection| Get a collection of sections.|
+|[Create notebook](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
+|[List notebooks](../api/onenote-list-notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
+|[Create page](../api/onenote-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
+|[List pages](../api/onenote-list-pages.md) |[Page](page.md) collection| Get a collection of pages.|
+|[List section groups](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
+|[List sections](../api/onenote-list-sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections.|
+
+
+## JSON Representation
+Here is a JSON representation of the resource.
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

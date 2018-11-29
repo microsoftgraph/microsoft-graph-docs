@@ -1,3 +1,8 @@
+---
+title: "mailboxSettings resource type"
+description: "Settings for the primary mailbox of the signed-in user."
+---
+
 # mailboxSettings resource type
 
 Settings for the primary mailbox of the signed-in user.

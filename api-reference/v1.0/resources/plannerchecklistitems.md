@@ -1,3 +1,8 @@
+---
+title: "plannerChecklistItems resource type"
+description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the task details object. The value in the property-value pair is the checklistItem object."
+---
+
 # plannerChecklistItems resource type
 
 The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
@@ -12,9 +17,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 

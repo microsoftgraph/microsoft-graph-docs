@@ -1,3 +1,8 @@
+---
+title: "FormatProtection resource type"
+description: "Represents the format protection of a range object."
+---
+
 # FormatProtection resource type
 
 Represents the format protection of a range object.
@@ -7,8 +12,8 @@ Represents the format protection of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get FormatProtection](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)	|Update FormatProtection object. |
+|[Get FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)	|Update FormatProtection object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -26,10 +31,11 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 }-->
 
 ```json

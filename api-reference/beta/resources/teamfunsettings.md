@@ -1,10 +1,15 @@
+---
+title: "teamFunSettings resource type"
+description: "Settings to configure use of Giphy, memes, and stickers in the team."
+---
+
 # teamFunSettings resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Settings to configure use of Giphy, memes, and stickers in the [team](team.md).
 
-## teamFunSettings Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowGiphy|Boolean|If set to true, enables Giphy use.|
@@ -18,7 +23,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamFunSettings"
 }-->
 

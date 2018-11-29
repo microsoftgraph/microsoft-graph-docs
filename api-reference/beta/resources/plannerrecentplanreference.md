@@ -1,8 +1,13 @@
+---
+title: "plannerRecentPlanReference resource type"
+description: "The **plannerRecentPlanReference** resource type repesents a reference to a plannerPlan that has recently been viewed by a user. "
+---
+
 # plannerRecentPlanReference resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerRecentPlanReference** resource type repesents a reference to a [plannerPlan](plannerPlan.md) that has recently been viewed by a user. 
+The **plannerRecentPlanReference** resource type repesents a reference to a [plannerPlan](plannerplan.md) that has recently been viewed by a user. 
 The **plannerRecentPlanReferences** for a user are explicitly maintained by apps. Any app that implements the recent plans feature should record when the user last viewed a plan, and update **plannerRecentPlanReference** entries accordingly.
 Apps should note that **plannerRecentPlanReference** entries can reference **plannerPlans** that are deleted, that the user can no longer access, or that have been updated with a different title.
 We recommend that apps notify users when there are discrepancies and keep the entries up to date.

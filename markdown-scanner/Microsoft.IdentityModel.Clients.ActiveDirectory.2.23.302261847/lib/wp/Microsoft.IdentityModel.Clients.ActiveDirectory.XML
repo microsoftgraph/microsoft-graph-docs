@@ -307,7 +307,7 @@
         <member name="P:Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult.StatusCode">
             <summary>
             Gets the status code returned from http layer if any error happens. This status code is either the HttpStatusCode in the inner WebException response or
-            NavigateError Event Status Code in browser based flow (See http://msdn.microsoft.com/en-us/library/bb268233(v=vs.85).aspx).
+            NavigateError Event Status Code in browser based flow (See https://msdn.microsoft.com/library/bb268233(v=vs.85).aspx).
             You can use this code for purposes such as implementing retry logic or error investigation.
             </summary>
         </member>
@@ -815,7 +815,7 @@
         <member name="P:Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException.StatusCode">
             <summary>
             Gets the status code returned from http layer. This status code is either the HttpStatusCode in the inner WebException response or
-            NavigateError Event Status Code in browser based flow (See http://msdn.microsoft.com/en-us/library/bb268233(v=vs.85).aspx).
+            NavigateError Event Status Code in browser based flow (See https://msdn.microsoft.com/library/bb268233(v=vs.85).aspx).
             You can use this code for purposes such as implementing retry logic or error investigation.
             </summary>
         </member>

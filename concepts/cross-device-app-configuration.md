@@ -1,3 +1,8 @@
+---
+title: "Build cross-device apps powered by Project Rome "
+description: "You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. For applications to share data across devices and platforms using Project Rome APIs, you need to configure a cross-device app that includes information about your platform-specific apps. "
+---
+
 # Build cross-device apps powered by Project Rome 
 
 You can use Project Rome to build experiences that cross devices and platforms seamlessly, reducing friction for users and helping to drive app engagement. For applications to share data across devices and platforms using Project Rome APIs, you need to configure a cross-device app that includes information about your platform-specific apps. 
@@ -33,7 +38,7 @@ You can access all Project Rome capabilities using a cross-device app managed in
 ### Externally hosted JSON file (limited) 
 You can use the following Project Rome capabilities on all supported platforms using a cross-device app managed as an externally hosted JSON file:  
 
-* Read and write user activities from all platforms using the [activity feed API](../api-reference/v1.0/resources/activity-feed-api-overview.md)
+* Read and write user activities from all platforms using the [activity feed API](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0)
 * Write user activities from all platforms (Windows, iOS, Android, web) using the Project Rome SDKs.
 
 If you **only** access these capabilities, you can host your cross-device app configuration externally on your domain as a JSON file.
@@ -52,7 +57,7 @@ When using the Windows Dev Center to manage your cross-device app configuration,
 To assert your domain ownership for your cross-device app, you'll need to add a [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) entry for your domain with a unique value provided to you in the Dev Center. This value is unique per cross-device app. To find the unique value for your app, sign in to the Windows Dev Center and choose **Cross-device experiences** from the left menu to start configuring a new cross-device app. After you give your new cross-device app a name, select **Verify your cross-device app domain** from the submenu. This page will display instructions with a unique value **inline** (for example, MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Make sure to copy the entire value including 'MS='.
 
 ### Step 2: Collect your platform-specific application IDs
-Collect the platform-specific application IDs for each application and platform that will use [Project Rome APIs](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/project_rome_overview).
+Collect the platform-specific application IDs for each application and platform that will use [Project Rome APIs](/graph/api/resources/project-rome-overview?view=graph-rest-1.0).
 
 You'll need to collect each of the platform-specific application IDs in order to associate them with your cross-device app identity. Using the Windows Dev Center, you'll be able to select from Universal Windows Platform apps associated with your developer account, but you'll need to manually provide application IDs for any of your win32, iOS, or Android apps and identify the primary URL for any associated web apps. You can associate up to 10 IDs per platform. 
 
@@ -172,7 +177,7 @@ The system will cache the contents of the JSON file to avoid generating frequent
 If you're using the client-side APIs for Windows, iOS, or Android, you'll need to make sure your app client is configured with the host value that represents your cross-device app identity (for example, contoso.com).
 
 ### Microsoft Graph apps 
-If you have an app using the activity feed API in Microsoft Graph, your host value must be supplied in the **activitySourceHost** property. For details, see [activity resource type](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/projectrome_activity).
+If you have an app using the activity feed API in Microsoft Graph, your host value must be supplied in the **activitySourceHost** property. For details, see [activity resource type](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
 
 ### Universal Windows apps
 If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see 

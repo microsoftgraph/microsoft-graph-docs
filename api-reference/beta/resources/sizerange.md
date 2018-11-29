@@ -1,3 +1,8 @@
+---
+title: "sizeRange resource type"
+description: "Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply."
+---
+
 # sizeRange resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

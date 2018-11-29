@@ -1,10 +1,15 @@
+---
+title: "teamGuestSettings resource type"
+description: "Settings to configure whether guests can create, update, or delete channels in the team."
+---
+
 # teamGuestSettings resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Settings to configure whether guests can create, update, or delete channels in the [team](team.md).
 
-## teamGuestSettings Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Boolean|If set to true, guests can add and update channels.|
@@ -16,7 +21,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamGuestSettings"
 }-->
 

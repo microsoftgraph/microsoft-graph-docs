@@ -1,3 +1,8 @@
+---
+title: "provisionedPlan resource type"
+description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
+---
+
 # provisionedPlan resource type
 
 The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
@@ -19,7 +24,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

@@ -1,3 +1,8 @@
+---
+title: "Best practices for working with Microsoft Graph"
+description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
+---
+
 # Best practices for working with Microsoft Graph
 
 This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users.
@@ -21,7 +26,7 @@ Use the Microsoft Authentication Library API, [MSAL](https://docs.microsoft.com/
 
 Apply the following best practices for consent and authorization in your app:
 
-- **Use least privilege**. Only request permissions that are absolutely necessary, and only when you need them. For the APIs your application calls, check the permissions section in the method topics (for example, see [creating a user](../api-reference/v1.0/api/user_post_users.md), and choose the least privileged permissions. For a full list of permissions, see [permissions reference](permissions_reference.md).
+- **Use least privilege**. Only request permissions that are absolutely necessary, and only when you need them. For the APIs your application calls, check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users?view=graph-rest-1.0), and choose the least privileged permissions. For a full list of permissions, see [permissions reference](permissions-reference.md).
 
 - **Use the correct permission type based on scenarios**. If you're building an interactive application where a signed in user is present, your application should use *delegated* permissions, where the application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
 
@@ -80,9 +85,10 @@ By default, unknown members are not returned by Microsoft Graph. If, however, yo
 
 >**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
 
+
 ## Storing data locally
 
-Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
 
 ## Optimizations
 
@@ -110,27 +116,29 @@ For some operations, such as PUT and PATCH (and in some cases POST), if your app
 
 If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed. This is more efficient than simply polling on a regular basis.
 
-Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) to get push notifications when data changes.
+Use [webhook notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) to get push notifications when data changes.
 
 If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This will avoid excessive computation by your application to retrieve data your application already has, minimize network traffic, and reduce the likelihood of reaching a throttling threshold.
 
-Use [delta query](delta_query_overview.md) to efficiently keep data up to date.
+Use [delta query](delta-query-overview.md) to efficiently keep data up to date.
 
 ### Using webhooks and delta query together
 
 Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
-Use [webhook notifications](../api-reference/v1.0/resources/webhooks.md) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
+Use [webhook notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
 ### Batching
 
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. Combining individual requests into a single batch request can save the application significant network latency and can conserve connection resources.
 
-Use [batching](json_batching.md) where significant network latency can have a big impact on the performance.
+Use [batching](json-batching.md) where significant network latency can have a big impact on the performance.
 
 ## Reliability and support
 To ensure reliability and facilitate support for your application:
 
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
-- Always log the *request-id* and *timestamp* from the HTTP response header. This is required when escalating issues or reporting issues in Stack Overflow or to Microsoft Customer Support.
+- Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
+  - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
+  - Always log the `request-id`, `timestamp` and `x-ms-ags-diagnostic` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) or to Microsoft Support.

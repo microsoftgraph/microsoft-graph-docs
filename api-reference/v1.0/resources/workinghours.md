@@ -1,10 +1,15 @@
+---
+title: "workingHours resource type"
+description: "Represents the days of the week and hours in a specific time zone that the user works."
+---
+
 # workingHours resource type
 
 Represents the days of the week and hours in a specific time zone that the user works.
 
 Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
-You can [get](../api/user_get_mailboxsettings.md#request-3) and [set](../api/user_update_mailboxsettings.md#request-2) the 
-working hours of a user as part of the user's [mailbox settings](mailboxSettings.md). 
+You can [get](../api/user-get-mailboxsettings.md#request-3) and [set](../api/user-update-mailboxsettings.md#request-2) the 
+working hours of a user as part of the user's [mailbox settings](mailboxsettings.md). 
 
 You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client. 
 This can be useful in cases like when you travel to a different time zone than you usually work in. You can set the Outlook client  
@@ -16,11 +21,10 @@ appropriate time zone.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| daysOfWeek | String collection | The days of the week on which the user works. |
+| daysOfWeek | dayOfWeek collection | The days of the week on which the user works. |
 | startTime | Edm.TimeOfDay | The time of the day that the user starts working. |
 | endTime | Edm.TimeOfDay | The time of the day that the user stops working. |
 | timeZone | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply. |
-
 
 ## JSON representation
 
@@ -51,5 +55,9 @@ Here is a JSON representation of the resource.
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

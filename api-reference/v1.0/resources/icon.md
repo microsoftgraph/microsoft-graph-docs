@@ -1,3 +1,8 @@
+---
+title: "Icon resource type"
+description: "Represents a cell icon."
+---
+
 # Icon resource type
 
 Represents a cell icon.
@@ -7,14 +12,14 @@ Represents a cell icon.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)	|Update Icon object. |
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
+|[Update](../api/icon-update.md) | [Icon](icon.md)	|Update Icon object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|int|Represents the index of the icon in the given set.|
-|set|string|Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|set|string|Represents the set that the icon is part of. The possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## Relationships
 None
@@ -29,7 +34,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

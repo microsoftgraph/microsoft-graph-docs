@@ -1,3 +1,8 @@
+---
+title: "educationSchool resource type"
+description: "A resource representing a school and used to manage the classes, teachers, and students of the represented school.  "
+---
+
 # educationSchool resource type
 
 A resource representing a school and used to manage the classes, teachers, and students of the represented school.  
@@ -7,15 +12,15 @@ A resource representing a school and used to manage the classes, teachers, and s
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get](../api/educationschool_get.md) | [educationSchool](educationschool.md) |Read properties and relationships of an **educationSchool** object.|
-|[Add class](../api/educationschool_post_classes.md) |[educationClass](educationclass.md)| Add a new **educationClass** for the school by posting to the classes navigation property.|
-|[List classes](../api/educationschool_list_classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection.|
-|[Remove class](../api/educationschool_delete_classes.md) |[educationClass](educationclass.md)| Remove an **educationClass** from the school through the classes navigation property.|
-|[Add user](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the school by posting to the **users** navigation property.|
-|[List users](../api/educationschool_list_users.md) |[educationUser](educationuser.md) collection| Get the **educationUser** object collection.|
-|[Remove user](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the school through the **users** navigation property.|
-|[Update](../api/educationschool_update.md) | [educationSchool](educationschool.md)	|Update an **educationSchool** object. |
-|[Delete](../api/educationschool_delete.md) | None |Delete an **educationSchool** object. |
+|[Get](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Read properties and relationships of an **educationSchool** object.|
+|[Add class](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Add a new **educationClass** for the school by posting to the classes navigation property.|
+|[List classes](../api/educationschool-list-classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection.|
+|[Remove class](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Remove an **educationClass** from the school through the classes navigation property.|
+|[Add user](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the school by posting to the **users** navigation property.|
+|[List users](../api/educationschool-list-users.md) |[educationUser](educationuser.md) collection| Get the **educationUser** object collection.|
+|[Remove user](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the school through the **users** navigation property.|
+|[Update](../api/educationschool-update.md) | [educationSchool](educationschool.md)	|Update an **educationSchool** object. |
+|[Delete](../api/educationschool-delete.md) | None |Delete an **educationSchool** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -23,8 +28,8 @@ A resource representing a school and used to manage the classes, teachers, and s
 |id|String|GUID of this school.|
 |displayName| String| Display name of the school.| 
 |description| String | Description of the school.| 
-|status| string| Read-Only. Possible values are: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| string| Read-Only.  Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+|status| string| Read-Only. The possible values are: `inactive`, `active`, `expired`, `deleteable`.|
+|externalSource| educationExternalSource| Read-Only.  The possible values are: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Email address of the principal.|
 |principalName| String | Name of the principal.|
 |externalPrincipalId| String | ID of principal in syncing system. |
@@ -37,7 +42,6 @@ A resource representing a school and used to manage the classes, teachers, and s
 |address|[physicalAddress](physicaladdress.md)| Address of the school.|
 |createdBy|[identitySet](identityset.md)|Entity who created the school.|
 
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -48,11 +52,10 @@ A resource representing a school and used to manage the classes, teachers, and s
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

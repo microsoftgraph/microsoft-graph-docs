@@ -1,3 +1,8 @@
+---
+title: "onenoteOperation resource type"
+description: "The status of certain long-running OneNote operations."
+---
+
 # onenoteOperation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -49,7 +54,7 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get operation](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |Get the status of the operation. |
+|[Get operation](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |Get the status of the operation. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

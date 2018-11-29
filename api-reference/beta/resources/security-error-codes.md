@@ -1,8 +1,13 @@
-# Security API error responses
+---
+title: "Microsoft Graph Security API error responses"
+description: "Errors in the Microsoft Graph Security API are returned using standard HTTP 206 Partial Content status code and are delivered by way of a warning header."
+---
 
-Errors in the security API in Microsoft Graph are returned using standard HTTP status codes and are delivered by way of a warning header.
+# Microsoft Graph Security API error responses
 
-The security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the security API, it will send back a warning header in the following format:
+Errors in the Microsoft Graph Security API are returned using standard HTTP 206 Partial Content status code and are delivered by way of a warning header.
+
+The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -19,7 +24,7 @@ If a data provider returns 2xx or 404, it’s not shown in the warning header be
 
 ## Example
 
-A user asks for `/alerts/{id}`.
+A user asks for `/alerts/{alert-id}`.
 
     Provider 1: 404 (provider does not have a record of this alert ID)
     Provider 2: 504 (provider timed out)
@@ -29,12 +34,12 @@ A user asks for `/alerts/{id}`.
 Because both 404 and 200 are expected conditions, the warning header contains the following: 
 
 ```HTTP
-Warning : 199 - "{Vendor2}/{Provider 2}/504/29000",    (usual timeout limit is set at 29 seconds)
+Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
 > **Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
 
-## Additional resources
+## See also
 
-If you’re having trouble with authorization see our [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).
+If you’re having trouble with authorization, see our [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).

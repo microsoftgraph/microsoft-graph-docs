@@ -1,3 +1,8 @@
+---
+title: "Define the /me as singleton"
+description: "These are things I had to add in the docs to make sure the Markdown-Scanner"
+---
+
 # Helpers (examples that aren't included in the docs)
 
 These are things I had to add in the docs to make sure the Markdown-Scanner
@@ -14,6 +19,7 @@ GET https://graph.microsoft.com/v1.0/me
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -29,6 +35,7 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.drive", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }
@@ -45,6 +52,7 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.user", truncated: true } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
 }

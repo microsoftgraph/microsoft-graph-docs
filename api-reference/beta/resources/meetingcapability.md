@@ -1,0 +1,45 @@
+---
+title: "meetingCapability resource type"
+description: "Contains the capabilities of a meeting"
+---
+
+# meetingCapability resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains the capabilities of a meeting
+
+## Properties
+
+| Property       | Type    | Description|
+|:---------------|:--------|:----------|
+| allowAnonymousUsersToDialOut | Boolean | Indicates whether anonymous users dialout is allowed in a meeting. |
+| autoAdmittedUsers | String | Possible values are: `everyoneInCompany`, `everyone`. |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.meetingCapability"
+}-->
+```json
+{
+  "allowAnonymousUsersToDialOut": true,
+  "autoAdmittedUsers": "everyoneInCompany | everyone"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "meetingCapability resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,3 +1,8 @@
+---
+title: "person resource type"
+description: "An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype)."
+---
+
 # person resource type
 
 An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).
@@ -6,7 +11,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
+|[List people](../api/user-list-people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
 
 ## Properties
 
@@ -24,12 +29,12 @@ An aggregation of information about a person from across mail, contacts, and soc
 |jobTitle|String|The person's job title.|
 |officeLocation|String|The location of the person's office.|
 |personNotes|String|Free-form notes that the user has taken about this person.|
-|personType|[personType](persontype.md) collection|The type of person.|
+|personType|[personType](persontype.md) |The type of person.|
 |phones|[phone](phone.md) collection|The person's phone numbers.|
 |postalAddresses|[location](location.md) collection|The person's addresses.|
 |profession|String|The person's profession.|
 |surname|String|The person's surname.|
-|userPrincipalName|String|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
+|userPrincipalName|String|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
 |websites|[website](website.md) collection|The person's websites.|
 |yomiCompany|String|The phonetic Japanese name of the person's company.|
 
@@ -41,11 +46,10 @@ None.
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.person"
 }-->
 

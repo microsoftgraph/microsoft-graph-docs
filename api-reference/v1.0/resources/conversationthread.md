@@ -1,3 +1,8 @@
+---
+title: "conversationThread resource type"
+description: "A conversationThread is a collection of posts."
+---
+
 # conversationThread resource type
 A conversationThread is a collection of [posts](post.md).
 
@@ -8,13 +13,13 @@ A new thread is created when a recipient is removed from the thread.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List threads](../api/group_list_threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
-|[Create thread](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
-|[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
-|[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
-|[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
-|[Reply](../api/conversationthread_reply.md)|None|Reply to this thread by creating a new Post entity.|
-|[List Posts](../api/conversationthread_list_posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
+|[List threads](../api/group-list-threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
+|[Create thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
+|[Get conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
+|[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
+|[Delete](../api/conversationthread-delete.md) | None |Delete conversationThread object. |
+|[Reply](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
+|[List Posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -38,13 +43,26 @@ A new thread is created when a recipient is removed from the thread.
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

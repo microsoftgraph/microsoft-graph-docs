@@ -1,3 +1,8 @@
+---
+title: "agreement resource type"
+description: "Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD). You can use the following methods to create and manage the Azure Active Directory Terms of Use feature according to your scenario."
+---
+
 # agreement resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,14 +13,14 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create agreements](../api/agreement_post_agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
-| [List agreements](../api/agreement_list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
-| [Get agreement](../api/agreement_get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
-| [Update agreement](../api/agreement_update.md) | [agreement](agreement.md) | Update an agreement object. |
-| [Delete agreement](../api/agreement_delete.md) | None | Delete an agreement object. |
+| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
+| [List agreements](../api/agreement-list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
+| [Get agreement](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
+| [Update agreement](../api/agreement-update.md) | [agreement](agreement.md) | Update an agreement object. |
+| [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object. |
 <!--
-| [Create agreementFile](../api/agreement_post_files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
-| [List files](../api/agreement_list_files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
+| [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
+| [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
 -->
 
 ## Properties

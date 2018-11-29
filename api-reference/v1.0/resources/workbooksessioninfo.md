@@ -1,3 +1,8 @@
+---
+title: "workbookSessionInfo resource type"
+description: "Provides information about workbook session."
+---
+
 # workbookSessionInfo resource type
 
 Provides information about workbook session.
@@ -25,5 +30,5 @@ Here is a JSON representation of the resource
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | Id of the workbook session. |
-| persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
+| persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
 

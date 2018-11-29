@@ -1,3 +1,8 @@
+---
+title: "onenoteOperation resource type"
+description: "The status of certain long-running OneNote operations."
+---
+
 # onenoteOperation resource type
 
 The status of certain long-running OneNote operations.
@@ -6,11 +11,10 @@ The status of certain long-running OneNote operations.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -47,7 +51,7 @@ None
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get operation](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |Get the status of the operation. |
+|[Get operation](../api/onenoteoperation-get.md) | [onenoteOperation](onenoteoperation.md) |Get the status of the operation. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

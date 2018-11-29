@@ -1,3 +1,8 @@
+---
+title: "targetResourcePolicy resource type"
+description: "Indicates the policy that was impacted by the audit activity. Derived from the targetResource resource.   "
+---
+
 # targetResourcePolicy resource type
 Indicates the policy that was impacted by the audit activity. Derived from the [targetResource](targetresource.md) resource.   
 

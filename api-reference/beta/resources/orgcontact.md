@@ -1,3 +1,8 @@
+---
+title: "orgContact resource type"
+description: "Here is a JSON representation of the resource"
+---
+
 # orgContact resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -53,7 +58,7 @@ Here is a JSON representation of the resource
 |givenName|String| The given name (first name) of the contact. |
 |jobTitle|String| The contact's job title. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector) during provisioning. |
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
 |mail|String| The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com". |
 |mailNickname|String| The mail alias for the contact. |
 |mobilePhone|String| The primary cellular telephone number for the contact. |
@@ -77,14 +82,14 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get orgContact](../api/orgcontact_get.md) | [orgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
-|[Get manager](../api/orgcontact_get_manager.md) |[directoryObject](directoryobject.md)| Get the contact's manager.|
-|[List directReports](../api/orgcontact_list_directreports.md) |[directoryObject](directoryobject.md) collection| List the contact's direct reports.|
-|[List memberOf](../api/orgcontact_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
-|[Delete](../api/orgcontact_delete.md) | None |Delete orgContact object. |
-|[checkMemberGroups](../api/orgcontact_checkmembergroups.md)|String collection| Check for group membership. |
-|[getMemberGroups](../api/orgcontact_getmembergroups.md)|String collection| Return all the groups that the specified contact is a member of. |
-|[getMemberObjects](../api/orgcontact_getmemberobjects.md)|String collection| Returns a list of directoryObjects the contact is a member of. |
+|[Get orgContact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Read properties and relationships of orgContact object.|
+|[Get manager](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Get the contact's manager.|
+|[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| List the contact's direct reports.|
+|[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
+|[Delete](../api/orgcontact-delete.md) | None |Delete orgContact object. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| Check for group membership. |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| Return all the groups that the specified contact is a member of. |
+|[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| Returns a list of directoryObjects the contact is a member of. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

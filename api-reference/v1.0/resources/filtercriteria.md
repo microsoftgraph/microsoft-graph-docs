@@ -1,3 +1,8 @@
+---
+title: "FilterCriteria resource type"
+description: "Represents the filtering criteria applied to a column."
+---
+
 # FilterCriteria resource type
 
 Represents the filtering criteria applied to a column.
@@ -11,7 +16,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterCriteria"
+  "@odata.type": "microsoft.graph.workbookFilterCriteria"
 }-->
 
 ```json
@@ -21,7 +26,28 @@ Here is a JSON representation of the resource.
   "criterion2": "string",
   "dynamicCriteria": "string",
   "filterOn": "string",
-  "values": "string"
+  "icon": {"@odata.type": "microsoft.graph.workbookIcon"},
+  "values": {"@odata.type": "microsoft.graph.Json"}
 }
 
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'color' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'criterion1' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'criterion2' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'dynamicCriteria' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'filterOn' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'icon' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'values' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table."
+  ]
+} -->
