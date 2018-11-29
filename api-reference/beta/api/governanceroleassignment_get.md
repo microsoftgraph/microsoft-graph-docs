@@ -68,7 +68,6 @@ Content-length: 182
     "subjectId": "74487eb5-1630-4fa8-9581-0bb076ea5de3",
     "linkedEligibleRoleAssignmentId": null,
     "externalId": null,
-    "isPermanent": false,
     "startDateTime": "2018-01-22T23:47:19.687Z",
     "endDateTime": "2018-07-21T23:47:02.887Z",
     "memberType": "Direct",

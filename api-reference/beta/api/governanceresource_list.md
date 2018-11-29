@@ -65,7 +65,8 @@ Content-Length: 1289
             "type": "Microsoft.Storage/storageAccounts",
             "displayName": "anujstoragefimdev",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
         },
         {
             "id": "0e0e4461-0c46-4d13-bf69-7cacbec75471",
@@ -73,7 +74,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines",
             "displayName": "APRJ-VM-01-T",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
         },
         {
             "id": "c072eb85-e47b-4627-81cb-5af82a8fc9fb",
@@ -81,7 +83,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "displayName": "APRJ-VM-01-T/IaaSAntimalware",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d"
         }
 	]
 }

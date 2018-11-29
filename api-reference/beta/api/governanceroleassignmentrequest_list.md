@@ -89,8 +89,6 @@ Content-length: 279
             "type": "UserRemove",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-09T23:41:34.367Z",
-            "roleAssignmentStartDateTime": null,
-            "roleAssignmentEndDateTime": null,
             "reason": "Deactivation request",
             "schedule": null,
             "status": {
@@ -108,8 +106,6 @@ Content-length: 279
             "type": "UserAdd",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-10T20:58:09.163Z",
-            "roleAssignmentStartDateTime": "2018-01-10T20:58:11.363Z",
-            "roleAssignmentEndDateTime": "2018-01-11T01:58:11.363914Z",
             "reason": "test activations",
             "status": {
                 "status": "Closed",

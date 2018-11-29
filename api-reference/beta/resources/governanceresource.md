@@ -11,6 +11,7 @@ Represents resources that could be managed by Privileged Identity Management (PI
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource_list.md) | [governanceResource](../resources/governanceresource.md) collection|List a collection of resources the requestor has access to.|
 |[Get](../api/governanceresource_get.md) | [governanceResource](../resources/governanceresource.md) |Read properties and relationships of a resource entity specified by id.|
+|[Register](../api/governanceresource_register.md) | [governanceResource](../resources/governanceresource.md) |Register an unmanaged Azure resource to PIM.|
 
 No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity set for now.
 
@@ -18,11 +19,12 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 | Property	        |Type	      |Description|
 |:------------------|:----------|:----------|
 |id                 |String     |The id of the resource. It is in GUID format.|
-|externalId           |String   |The external id of the resource, representing its original id in the external database. For example, a subscription resource's external id can be "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
+|externalId           |String   |The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
 |type               |String     |Required. Resource type. For example, for Azure resources, the type could be "Subscription", "ResourceGroup", "Microsoft.Sql/server", etc.|
 |displayName        |String     |The display name of the resource.|
 |status             |String     |The status of a given resource. For example, it could represent whether the resource is locked or not (values: `Active`/`Locked`). Note: This property may be extended in the future to support more scenarios.|
-|onboardDateTime|DateTimeOffset      |It represents the date time when the resource starts to be managed by PIM.|
+|registeredDateTime|DateTimeOffset      |It represents the date time when the resource was registered in PIM.|
+|registeredRoot|String      |The externalId of the resource's highest scope registered in PIM.|
 |roleAssignmentCount|Int32      |Optional. The number of role assignments for the given resource. To get the property, please explictly use `$select=roleAssignmentCount` in the query.|
 |roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, please explictly use `$select=roleDefinitionCount` in the query.|
 |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|
@@ -53,7 +55,9 @@ Here is a JSON representation of the resource.
   "externalId": "String",
   "type": "String",
   "displayName": "String",
-  "status": "String"
+  "status": "String",
+  "registeredDateTime": "String (timestamp)",
+  "registeredRoot": "String"
 }
 
 ```
