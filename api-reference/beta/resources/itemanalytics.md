@@ -34,7 +34,7 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 | Property      | Type                 | Description
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
 [itemActivityStat]: itemactivitystat.md
