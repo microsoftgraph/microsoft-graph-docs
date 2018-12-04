@@ -119,6 +119,10 @@ To learn more about formulating membershipRules, see [Create attribute-based rul
 
 Office 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Office 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
 
+## Group-based licensing 
+
+Group-based licensing capability can be used to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups, and Office 365 groups that have securityEnabled=TRUE. To learn more about group-based licensing see [here](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+
 ## Common use cases
 
 Using Microsoft Graph, you can perform the following common operations.
