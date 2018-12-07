@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
   "id": "string",
   "displayName": "string",
   "teamsAppId": "string",
-  "sortOrderIndex": "string",
+  "sortOrderIndex": 10,
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }
