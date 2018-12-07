@@ -24,32 +24,33 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-### Optional request headers
+## Query parameters
+
+| Parameter      | Type  | Description                                                    |
+|:----------|:-------|:---------------------------------------------------------------|
+| _format_  | string | Specify the format the item's content should be downloaded as. |
+
+
+### Format options
+
+The following values are valid for the **format** parameter:
+
+| Format value | Description                        | Supported source extensions
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
+
+## Optional request headers
 
 | Name            | Value   | Description                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
-
-### Query string parameters
-
-| Name      | Value  | Description                                                    |
-|:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | Specify the format the item's content should be downloaded as. |
-
-
-The following values are valid for the **convert** parameter:
-
-| Value   | Description                        | Supported source extensions |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx | 
-
-### Example
+## Example
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## Response

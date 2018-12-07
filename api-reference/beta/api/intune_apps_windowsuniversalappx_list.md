@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1560
+Content-Length: 1668
 
 {
   "value": [
@@ -85,13 +85,19 @@ Content-Length: 1560
         "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
         "v8_0": true,
         "v8_1": true,
-        "v10_0": true
+        "v10_0": true,
+        "v10_1607": true,
+        "v10_1703": true,
+        "v10_1709": true,
+        "v10_1803": true
       },
       "identityVersion": "Identity Version value"
     }
   ]
 }
 ```
+
+
 
 
 

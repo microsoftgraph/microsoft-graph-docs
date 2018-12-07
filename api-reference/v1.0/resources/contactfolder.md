@@ -42,7 +42,7 @@ by providing a [delta](../api/contactfolder_delta.md) function.
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -51,7 +51,26 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

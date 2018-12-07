@@ -28,11 +28,11 @@ With their consent, you can use Microsoft Graph to reach users and organizations
 
 ## Connect to school services
 
-Use Microsoft Graph to reach students, teachers, and schools with licenses to Microsoft 365 services for education. With their consent, you can use education APIs in Microsoft Graph that enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. 
+Use Microsoft Graph to reach students, teachers, and schools with licenses to Microsoft 365 services for education. With their consent, you can use education APIs in Microsoft Graph that enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. Learn more about [integrating with the education API](education-concept-overview.md).
 
 ## Next steps
 
-- Check out some [Featured scenarios](https://developer.microsoft.com/en-us/graph/examples).
+- Check out some [Featured scenarios](https://developer.microsoft.com/graph/examples).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 

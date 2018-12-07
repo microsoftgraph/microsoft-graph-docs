@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,17 +51,27 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 12068
+Content-Length: 12903
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
     "id": "a4235d71-5d71-a423-715d-23a4715d23a4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "windows10AppsForceUpdateSchedule": {
+      "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "recurrence": "daily",
+      "runImmediatelyIfAfterStartDateTime": true
+    },
     "enableAutomaticRedeployment": true,
     "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
     "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
@@ -94,6 +104,7 @@ Content-Length: 12068
     "searchDisableIndexingEncryptedItems": true,
     "searchEnableRemoteQueries": true,
     "searchDisableUseLocation": true,
+    "searchDisableLocation": true,
     "searchDisableIndexerBackoff": true,
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
@@ -103,6 +114,7 @@ Content-Length: 12068
     "oneDriveDisableFileSync": true,
     "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
     "inkWorkspaceAccess": "enabled",
+    "inkWorkspaceAccessState": "blocked",
     "inkWorkspaceBlockSuggestedApps": true,
     "smartScreenEnableAppInstallControl": true,
     "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
@@ -154,6 +166,7 @@ Content-Length: 12068
     "defenderScanMaxCpu": 2,
     "defenderMonitorFileActivity": "disable",
     "defenderPotentiallyUnwantedAppAction": "block",
+    "defenderPotentiallyUnwantedAppActionSetting": "enable",
     "defenderProcessesToExclude": [
       "Defender Processes To Exclude value"
     ],
@@ -175,6 +188,7 @@ Content-Length: 12068
     "defenderScheduledQuickScanTime": "11:58:49.3840000",
     "defenderCloudBlockLevel": "high",
     "defenderCloudExtendedTimeout": 12,
+    "defenderCloudExtendedTimeoutInSeconds": 5,
     "defenderBlockOnAccessProtection": true,
     "defenderScheduleScanDay": "monday",
     "defenderSubmitSamplesConsentType": "alwaysPrompt",
@@ -193,6 +207,7 @@ Content-Length: 12068
     "passwordRequireWhenResumeFromIdleState": true,
     "passwordRequiredType": "alphanumeric",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "passwordMinimumAgeInDays": 8,
     "privacyAdvertisingId": "blocked",
     "privacyAutoAcceptPairingAndConsentPrompts": true,
     "privacyBlockInputPersonalization": true,
@@ -322,10 +337,16 @@ Content-Length: 12068
     "experienceBlockDeviceDiscovery": true,
     "experienceBlockErrorDialogWhenNoSIM": true,
     "experienceBlockTaskSwitcher": true,
-    "logonBlockFastUserSwitching": true
+    "logonBlockFastUserSwitching": true,
+    "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
+    "appManagementMSIAllowUserControlOverInstall": true,
+    "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
+    "dataProtectionBlockDirectMemoryAccess": true
   }
 }
 ```
+
+
 
 
 

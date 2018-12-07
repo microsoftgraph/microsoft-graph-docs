@@ -14,6 +14,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Group conversations
 - Content shared on OneDrive, including drives associated with SharePoint sites
 - Users' personal OneDrive folders
+- Security alerts
 
 ## Permissions
 
@@ -21,9 +22,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types in beta                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][] |
+| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
 | Delegated - personal Microsoft account | [contact][], [drive][], [event][], [message][]                                        |
-| Application                            | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][] |
+| Application                            | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
 
 ## See also
 
@@ -41,3 +42,4 @@ In general, subscription operations require read permission to the resource. For
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
+[alert]: ./alert.md

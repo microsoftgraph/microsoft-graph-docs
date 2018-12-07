@@ -1,6 +1,6 @@
 # Get section
 
-Retrieve the properties and relationships of a [section](../resources/section.md) object.
+Retrieve the properties and relationships of a [onenoteSection](../resources/section.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## Optional query parameters
-This method supports the `select` and `expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the `select` and `expand` [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.
 
@@ -34,7 +34,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [section](../resources/section.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/section.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

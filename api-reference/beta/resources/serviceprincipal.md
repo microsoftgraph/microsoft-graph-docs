@@ -4,6 +4,10 @@
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
+This resource supports:
+
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal_delta.md) function.
+
 ## JSON representation
 Here is a JSON representation of the resource
 
@@ -67,7 +71,7 @@ Here is a JSON representation of the resource
 |publisherName|String|The display name of the tenant in which the associated application is specified.|
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
 |samlMetadataUrl|String| |
-|servicePrincipalNames|String collection|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/en-us/library/azure/dn132633.aspx).The **any** operator is required for filter expressions on multi-valued properties.  Not nullable. |
+|servicePrincipalNames|String collection|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/library/azure/dn132633.aspx).The **any** operator is required for filter expressions on multi-valued properties.  Not nullable. |
 |tags|String collection| Not nullable. |
 
 ## Relationships
@@ -91,7 +95,8 @@ Here is a JSON representation of the resource
 |[Create appRoleAssignment](../api/serviceprincipal_post_approleassignments.md) |[appRoleAssignment](approleassignment.md)| Create a new appRoleAssignment by posting to the appRoleAssignments collection.|
 |[List appRoleAssignments](../api/serviceprincipal_list_approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get a appRoleAssignment object collection.|
 |[List createdObjects](../api/serviceprincipal_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
-|[List memberOf](../api/serviceprincipal_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get a memberOf object collection.|
+|[List memberOf](../api/serviceprincipal_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this service principal is a direct member of from the memberOf navigation property.|
+|[List transitive memberOf](../api/serviceprincipal_list_transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this service principal is a member of. This operation is transitive and includes the groups that this service principal is a nested member of. |
 |[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[List oauth2PermissionGrants](../api/serviceprincipal_list_oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get a oAuth2PermissionGrant object collection.|
 |[List ownedObjects](../api/serviceprincipal_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
@@ -102,6 +107,7 @@ Here is a JSON representation of the resource
 |[checkMemberGroups](../api/serviceprincipal_checkmembergroups.md)|String collection||
 |[getMemberGroups](../api/serviceprincipal_getmembergroups.md)|String collection||
 |[getMemberObjects](../api/serviceprincipal_getmemberobjects.md)|String collection||
+|[delta](../api/serviceprincipal_delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

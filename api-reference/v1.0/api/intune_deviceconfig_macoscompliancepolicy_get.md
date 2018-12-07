@@ -22,7 +22,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 979
+Content-Length: 1088
 
 {
   "value": {
@@ -71,7 +71,10 @@ Content-Length: 979
     "systemIntegrityProtectionEnabled": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "storageRequireEncryption": true
+    "storageRequireEncryption": true,
+    "firewallEnabled": true,
+    "firewallBlockAllIncoming": true,
+    "firewallEnableStealthMode": true
   }
 }
 ```

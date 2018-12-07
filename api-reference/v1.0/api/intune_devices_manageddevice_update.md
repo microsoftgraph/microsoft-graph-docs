@@ -82,7 +82,7 @@ The following table shows the properties that are required when you create the [
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 
 
 
@@ -95,9 +95,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 4604
+Content-length: 4656
 
 {
+  "@odata.type": "#microsoft.graph.managedDevice",
   "userId": "User Id value",
   "deviceName": "Device Name value",
   "managedDeviceOwnerType": "company",

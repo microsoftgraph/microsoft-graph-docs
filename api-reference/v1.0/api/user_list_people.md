@@ -5,6 +5,7 @@ Retrieve a collection of [person](../resources/person.md) objects ordered by the
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](../../../concepts/people_example.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -14,49 +15,59 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | People.Read.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
 
 ## Optional query parameters
+
 This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response, as shown in the examples in the article [Get relevant information about people](../../../concepts/people_example.md).
 
-|Name|Value|Description| 
-|:---------------|:--------|:-------| 
-|$filter|string|Limits the response to only those people whose record contains the specified criteria.| 
-|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.| 
-|$search|string|Search for people by name or alias. Supports Fuzzy matching.| 
-|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.| 
-|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.| 
-|$top|int|Number of results to be returned.| 
+|Name|Value|Description|
+|:---------------|:--------|:-------|
+|$filter|string|Limits the response to only those people whose record contains the specified criteria.|
+|$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
+|$search|string|Search for people by name or alias. Supports Fuzzy matching. Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users. Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person. See the *Perform a fuzzy search* section at [Get relevant information about people](../../../concepts/people_example.md#perform-a-fuzzy-search) for information and examples. |
+|$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
+|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
+|$top|int|Number of results to be returned.|
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Accept | application/json |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects.
 
 ## Examples
+
 #### Request
+
 The following is an example of the request.
 
 <!-- {
   "blockType": "request",
   "name": "get_person_collection"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/people
 ```
 
 #### Response
+
 The following is an example of the response.
 
 <!-- {

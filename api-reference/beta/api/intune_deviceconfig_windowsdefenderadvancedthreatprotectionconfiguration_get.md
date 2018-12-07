@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,19 +51,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 892
+Content-Length: 1057
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
     "id": "294373aa-73aa-2943-aa73-4329aa734329",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
     "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
     "advancedThreatProtectionOnboardingFilename": "Advanced Threat Protection Onboarding Filename value",
+    "advancedThreatProtectionAutoPopulateOnboardingBlob": true,
     "allowSampleSharing": true,
     "enableExpeditedTelemetryReporting": true,
     "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value",
@@ -71,6 +76,8 @@ Content-Length: 892
   }
 }
 ```
+
+
 
 
 

@@ -39,5 +39,11 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(boolean,currency,dateTime,number,text) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/CalculatedColumn"
 } -->

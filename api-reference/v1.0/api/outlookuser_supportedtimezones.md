@@ -2,7 +2,7 @@
 
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.
 
-You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](http://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.
+You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.
 
 When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by 
 [getting the user's mailbox settings](user_get_mailboxsettings.md).
@@ -26,17 +26,16 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
 GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
+
+## Function parameters
+| Parameter       | Type | Description|
+|:---------------|:--------|:----------|
+| TimeZoneStandard  | timeZoneStandard  | A time zone format. Supported values are: `Windows`, and `Iana`. Optional. |
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-
-
-## Parameters
-| Function parameter       | Type | Description|
-|:---------------|:--------|:----------|
-| TimeZoneStandard  | String  | A time zone format. Supported values are: `Windows`, and `Iana`. Optional. |
-
 
 ## Request body
 Do not supply a request body for this method.

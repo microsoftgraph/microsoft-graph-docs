@@ -61,12 +61,12 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -93,7 +93,7 @@ Here is a JSON representation of the resource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "Guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -193,6 +193,8 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
+
 
 
 

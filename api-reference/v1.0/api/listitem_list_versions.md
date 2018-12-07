@@ -35,10 +35,10 @@ This example retrieves the versions of a listItem in a SharePoint list:
 
 ### HTTP request
 
-<!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/items/{item-id}/versions
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 
 ### Response

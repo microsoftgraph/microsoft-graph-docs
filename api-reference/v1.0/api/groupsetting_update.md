@@ -33,7 +33,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| values | settingValue | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
+| values | settingValue collection | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
 ## Response
 

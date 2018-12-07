@@ -17,7 +17,7 @@ Inherits from [vppTokenActionResult](../resources/intune_onboarding_vpptokenacti
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated Inherited from [vppTokenActionResult](../resources/intune_onboarding_vpptokenactionresult.md)|
 |totalLicensesCount|Int32|A count of the number of licenses that were attempted to revoke.|
 |failedLicensesCount|Int32|A count of the number of licenses that failed to revoke.|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune_onboarding_vpptokenactionfailurereason.md)|The reason for the revoke licenses action failure. Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune_shared_vpptokenactionfailurereason.md)|The reason for the revoke licenses action failure. Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
 ## Relationships
 None
@@ -25,7 +25,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.vppTokenRevokeLicensesActionResult"
 }
 -->
@@ -41,6 +40,8 @@ Here is a JSON representation of the resource.
   "actionFailureReason": "String"
 }
 ```
+
+
 
 
 

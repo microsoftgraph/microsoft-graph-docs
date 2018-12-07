@@ -19,7 +19,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsKioskActiveDirectoryGroup"
 }
 -->
@@ -29,6 +28,8 @@ Here is a JSON representation of the resource.
   "groupName": "String"
 }
 ```
+
+
 
 
 

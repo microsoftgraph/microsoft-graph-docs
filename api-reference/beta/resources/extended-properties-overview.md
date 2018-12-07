@@ -26,7 +26,7 @@ Or, in the following Office 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as 
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the 
-[Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api).
+[Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
 
 ## Types of extended properties
 
@@ -42,34 +42,41 @@ a single-value extended property to get all the instances that have that propert
 **Note** You cannot use the REST API to get all the extended properties of a specific instance in one call.
   
 
-## id Formats
+### id formats
 
-When creating a single-value or multi-value extended property, you can specify **id** in one of two formats, 
-based on either a string name or numeric identifier, and on the actual type of value or values of the property. 
-The next 2 tables below describe the supported formats to specify single and multi-value extended properties. {_type_} represents the type of the value or values of the property. Shown in the examples are string, integer, and arrays of these types.
+You can specify **id** of an extended property in one of three formats:
 
-Since extended properties are in most cases inter-operating with defined MAPI properties not exposed in the 
-Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI 
-property uses a character string or numeric value in its [MAPI property identifier](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx).
-You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, 
-in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
+- As a named property, identified by the extended property type, namespace, and a string name.
+- As a named property, identified by the extended property type, namespace, and a numeric identifier.
+- In a proptag format, identified by the extended property type and a [MAPI property tag](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags).
 
-**Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
-
+The next 2 tables describe these formats as applied to single and multi-value extended properties. {_type_} represents the type of the value or values of the extended property. Shown in the examples are string, integer, and arrays of these types.
 
 **Valid id formats for single-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a name.         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and an identifier.  |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a string name.         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and a numeric identifier.  |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | Identifies a pre-defined property by its property tag. |
 
 **Valid id formats for multi-value extended properties**
 
 |**Format**|**Example**|**Description**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by namespace (the GUID) and name.         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by namespace (the GUID) and identifier.   |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) and a string name.         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by the namespace (the GUID) and a numeric identifier.   |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifies a pre-defined property by its property tag. |
+
+
+Use either of the named property formats to define a single-value or multi-value extended property as a custom property. Among the two formats, the first one that takes a string name (**Name**) is the preferred format for ease of reference. Named properties have their [property identifiers](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview) in the 0x8000-0xfffe range.
+
+Use the proptag format to access properties predefined by MAPI, or by a client or server, and that have not already been exposed in Microsoft Graph. These properties have property identifiers in the 0x0001-0x7fff range. Do not try to define a custom property using the proptag format. 
+
+You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, 
+in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
+
+**Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
 
 ## REST API operations
  

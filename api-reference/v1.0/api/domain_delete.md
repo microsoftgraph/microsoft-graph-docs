@@ -45,6 +45,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "delete_domain"
 }-->
 ```http

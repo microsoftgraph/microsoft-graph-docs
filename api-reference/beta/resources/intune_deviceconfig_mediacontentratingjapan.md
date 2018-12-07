@@ -17,7 +17,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingJapan"
 }
 -->
@@ -28,6 +27,8 @@ Here is a JSON representation of the resource.
   "tvRating": "String"
 }
 ```
+
+
 
 
 

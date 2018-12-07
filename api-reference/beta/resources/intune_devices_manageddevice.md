@@ -52,7 +52,7 @@ Devices that are managed or pre-enrolled through Intune
 |deviceType|[deviceType](../resources/intune_shared_devicetype.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|Operating system version of the device.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
 |easDeviceId|String|Exchange ActiveSync Id of the device.|
@@ -72,7 +72,6 @@ Devices that are managed or pre-enrolled through Intune
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
-|remoteAssistanceSessionErrorString|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects.|
 |isEncrypted|Boolean|Device encryption status|
 |userPrincipalName|String|Device user principal name|
@@ -92,7 +91,7 @@ Devices that are managed or pre-enrolled through Intune
 |totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune_devices_loggedonuser.md) collection|Indicates the last logged on users of a device|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only.|
 |autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot.|
@@ -100,6 +99,11 @@ Devices that are managed or pre-enrolled through Intune
 |managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date|
 |iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number.|
 |udid|String|Unique Device Identifier for iOS and macOS devices.|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this Device instance.|
+|windowsActiveMalwareCount|Int32|Count of active malware for this windows device|
+|windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device|
+|notes|String|Notes on the device created by IT Admin|
+|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune_devices_configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -194,7 +198,6 @@ Here is a JSON representation of the resource.
   "exchangeAccessState": "String",
   "exchangeAccessStateReason": "String",
   "remoteAssistanceSessionUrl": "String",
-  "remoteAssistanceSessionErrorString": "String",
   "remoteAssistanceSessionErrorDetails": "String",
   "isEncrypted": true,
   "userPrincipalName": "String",
@@ -269,9 +272,23 @@ Here is a JSON representation of the resource.
   "requireUserEnrollmentApproval": true,
   "managementCertificateExpirationDate": "String (timestamp)",
   "iccid": "String",
-  "udid": "String"
+  "udid": "String",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "windowsActiveMalwareCount": 1024,
+  "windowsRemediatedMalwareCount": 1024,
+  "notes": "String",
+  "configurationManagerClientHealthState": {
+    "@odata.type": "microsoft.graph.configurationManagerClientHealthState",
+    "state": "String",
+    "errorCode": 1024,
+    "lastSyncDateTime": "String (timestamp)"
+  }
 }
 ```
+
+
 
 
 

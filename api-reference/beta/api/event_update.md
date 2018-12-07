@@ -49,7 +49,6 @@ In the request body, supply the values for relevant fields that should be update
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
-| onlineMeetingUrl|String|A URL for an online meeting.|
 | location|Location|The location of the event.|
 |locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|
@@ -60,14 +59,14 @@ In the request body, supply the values for relevant fields that should be update
 | start|DateTimeTimeZone|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
 | subject|String|The text of the event's subject line.|
 
-Because the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to 
-add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.  
-  
-If the **event** you're updating is the master event of a recurring series, contains multiple attendees, and has instances that have been updated separately, multiple notification emails will be sent out: one for the master series and one per instance that has been updated.   
+Because the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `PATCH` operation to
+add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.
+
+If the **event** you're updating is the master event of a recurring series, contains multiple attendees, and has instances that have been updated separately, multiple notification emails will be sent out: one for the master series and one per instance that has been updated.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.  
+If successful, this method returns a `200 OK` response code and updated [event](../resources/event.md) object in the response body.
 
 >**Note:** This method can return an HTTP 400 Bad Request response with an error code of `ErrorOccurrenceCrossingBoundary` and the following error message: Modified occurrence is crossing or overlapping adjacent occurrence. This indicates that the update violates the following Outlook restriction on recurrence exceptions: an occurrence cannot be moved to or before the day of the previous occurrence, and cannot be moved to or after the day of the following occurrence.
 
@@ -93,7 +92,7 @@ Content-length: 285
     "time": "2016-10-19T10:37:00Z"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
@@ -119,7 +118,7 @@ Content-length: 285
     "time": "2016-10-19T10:37:00Z"
   },
   "recurrence": null,
-  "iCalUId": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }

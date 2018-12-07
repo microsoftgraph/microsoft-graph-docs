@@ -24,7 +24,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1030
+Content-Length: 1033
 
 {
   "value": {
@@ -68,7 +68,7 @@ Content-Length: 1030
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "informationUrl": "https://example.com/informationUrl/",
     "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+    "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
     "appleId": "Apple Id value",
     "vppOrganizationName": "Vpp Organization Name value",
     "genres": [
@@ -81,6 +81,8 @@ Content-Length: 1030
   }
 }
 ```
+
+
 
 
 

@@ -76,8 +76,14 @@ The insights API provides a similar functionality with the [used](../api-referen
 
 ![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard_concept.png)
 
+## API reference
+Looking for the API reference for these services?
+
+- [People API in Microsoft Graph v1.0](../api-reference/v1.0/resources/social_overview.md)
+- [API for social intelligence and analytics in Microsoft Graph beta](../api-reference/beta/resources/social_overview.md)
+
 ## Next steps
 
-* Use the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out the people and insight APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People** and **Insights (beta)**.
+* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people and insight APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People** and **Insights (beta)**.
 * Find more about the [people API](people_example.md) and the [person](../api-reference/v1.0/resources/person.md) entity.
 * To get started with insights API, see [Use the insights API](../api-reference/beta/resources/insights.md).

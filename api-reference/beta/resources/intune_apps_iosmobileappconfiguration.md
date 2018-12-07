@@ -22,12 +22,12 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune_apps_man
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this App configuration entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settingXml|String|mdm app configuration.|
 |encodedSettingXml|Binary|mdm app configuration Base64 binary.|
 |settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 
@@ -55,12 +55,14 @@ Here is a JSON representation of the resource.
   "targetedMobileApps": [
     "String"
   ],
+  "roleScopeTagIds": [
+    "String"
+  ],
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
   "version": 1024,
-  "settingXml": "String",
   "encodedSettingXml": "binary",
   "settings": [
     {
@@ -72,6 +74,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

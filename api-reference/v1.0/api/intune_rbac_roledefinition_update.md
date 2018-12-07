@@ -52,9 +52,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 527
+Content-length: 580
 
 {
+  "@odata.type": "#microsoft.graph.roleDefinition",
   "displayName": "Display Name value",
   "description": "Description value",
   "rolePermissions": [

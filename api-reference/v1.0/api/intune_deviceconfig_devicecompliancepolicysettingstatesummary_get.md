@@ -22,7 +22,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -52,10 +52,10 @@ Content-Length: 483
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "setting": "Setting value",
     "settingName": "Setting Name value",
     "platformType": "iOS",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "unknownDeviceCount": 2,
     "notApplicableDeviceCount": 8,
     "compliantDeviceCount": 4,

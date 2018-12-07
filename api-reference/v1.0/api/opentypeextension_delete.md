@@ -4,15 +4,19 @@ Delete an open extension ([openTypeExtension](../resources/openTypeExtension.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API, depending on the resource you're deleting the extension from. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource you're deleting the extension from and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | [group event](../resources/event.md) | Group.ReadWrite.All |
-| [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
-| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Not supported | Not supported |
+| [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## HTTP request
 In the request, identify the resource instance, use the **extensions** 
@@ -34,10 +38,9 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
 All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
 
-## Parameters
-|**Parameter**|**Type**|**Description**|
+## Path parameters
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an instance in the corresponding collection. Required.|
 |extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
@@ -58,17 +61,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 The first example references an extension by its name and deletes the extension in the specified message.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "delete_opentypeextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 The second example deletes an extension in the specified group event.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVlN17IsAAA=')/extensions('Com.Contoso.Referral')
+DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
 
  

@@ -16,6 +16,12 @@ Contains properties for the minimum operating system required for an Android mob
 |v4_4|Boolean|Version 4.4 or later.|
 |v5_0|Boolean|Version 5.0 or later.|
 |v5_1|Boolean|Version 5.1 or later.|
+|v6_0|Boolean|Version 6.0 or later.|
+|v7_0|Boolean|Version 7.0 or later.|
+|v7_1|Boolean|Version 7.1 or later.|
+|v8_0|Boolean|Version 8.0 or later.|
+|v8_1|Boolean|Version 8.1 or later.|
+|v9_0|Boolean|Version 9.0 or later.|
 
 ## Relationships
 None
@@ -23,7 +29,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
 }
 -->
@@ -37,9 +42,17 @@ Here is a JSON representation of the resource.
   "v4_3": true,
   "v4_4": true,
   "v5_0": true,
-  "v5_1": true
+  "v5_1": true,
+  "v6_0": true,
+  "v7_0": true,
+  "v7_1": true,
+  "v8_0": true,
+  "v8_1": true,
+  "v9_0": true
 }
 ```
+
+
 
 
 

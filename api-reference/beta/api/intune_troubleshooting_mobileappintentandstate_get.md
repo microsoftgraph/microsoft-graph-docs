@@ -24,7 +24,7 @@ GET /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 585
+Content-Length: 943
 
 {
   "value": {
@@ -64,12 +64,22 @@ Content-Length: 585
         "displayName": "Display Name value",
         "mobileAppIntent": "notAvailable",
         "displayVersion": "Display Version value",
-        "installState": "failed"
+        "installState": "failed",
+        "supportedDeviceTypes": [
+          {
+            "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType",
+            "type": "windowsRT",
+            "minimumOperatingSystemVersion": "Minimum Operating System Version value",
+            "maximumOperatingSystemVersion": "Maximum Operating System Version value"
+          }
+        ]
       }
     ]
   }
 }
 ```
+
+
 
 
 

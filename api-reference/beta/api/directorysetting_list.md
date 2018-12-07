@@ -20,10 +20,10 @@ One of the following permissions is required to call this API. To learn more, in
 List tenant-wide or group settings
 ```http
 GET /settings
-GET group/{id}/settings
+GET /group/{id}/settings
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

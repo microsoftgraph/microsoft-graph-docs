@@ -22,7 +22,8 @@ Entity which represents a connection to an Exchange environment.
 |lastSyncDateTime|DateTimeOffset|Last sync time for the Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
-|serverName|String|The name of the server hosting the Exchange Connector.|
+|serverName|String|The name of the Exchange server.|
+|connectorServerName|String|The name of the server hosting the Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|String|The version of the ExchangeConnectorAgent|
 |exchangeAlias|String|An alias assigned to the Exchange server|
@@ -46,12 +47,15 @@ Here is a JSON representation of the resource.
   "status": "String",
   "primarySmtpAddress": "String",
   "serverName": "String",
+  "connectorServerName": "String",
   "exchangeConnectorType": "String",
   "version": "String",
   "exchangeAlias": "String",
   "exchangeOrganization": "String"
 }
 ```
+
+
 
 
 

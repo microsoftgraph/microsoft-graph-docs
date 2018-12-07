@@ -10,39 +10,46 @@ object that represents an extended property.
 
 The following user resources are supported:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md)
+- [contactFolder](../resources/contactfolder.md) 
+- [event](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md) 
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 
 As well as the following group resources:
 
-- group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
+- group [event](../resources/event.md)
 - group [post](../resources/post.md) 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
-One of the following permissions is required to call this API, depending on the resource you're
-getting. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Mail.Read
-- Calendars.Read
-- Contacts.Read
-- Tasks.Read
-- Group.Read.All 
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| group [calendar](../resources/calendar.md) | Group.Read.All | Not supported | Not supported |
+| group [event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
+| group [post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported |
+| [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported |
  
 ## HTTP request
 
 Get a resource instance expanded with the extended property which matches a filter on the 
 **id** property. Make sure you apply 
-[URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
@@ -117,10 +124,9 @@ GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($f
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## Parameters
+## Path parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 
 ## Request headers

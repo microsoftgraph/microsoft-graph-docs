@@ -38,12 +38,13 @@ The following table shows the properties that are required when you create the a
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String collection|the associated app. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this App configuration entity. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|packageName|String|Android For Work app configuration package name.|
+|packageId|String|Android For Work app configuration package id.|
 |payloadJson|String|Android For Work app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune_apps_androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 
@@ -58,18 +59,21 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 566
+Content-length: 624
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "packageName": "Package Name value",
+  "packageId": "Package Id value",
   "payloadJson": "Payload Json value",
   "permissionActions": [
     {
@@ -86,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 674
+Content-Length: 732
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkMobileAppConfiguration",
@@ -94,12 +98,15 @@ Content-Length: 674
   "targetedMobileApps": [
     "Targeted Mobile Apps value"
   ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "packageName": "Package Name value",
+  "packageId": "Package Id value",
   "payloadJson": "Payload Json value",
   "permissionActions": [
     {
@@ -110,6 +117,8 @@ Content-Length: 674
   ]
 }
 ```
+
+
 
 
 

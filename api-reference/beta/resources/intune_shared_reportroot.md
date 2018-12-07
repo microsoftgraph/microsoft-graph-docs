@@ -15,6 +15,8 @@ The resource that represents an instance of a device or troubleshooting report, 
 |[deviceConfigurationUserActivity function](../api/intune_shared_reportroot_deviceconfigurationuseractivity.md)|Metadata for the device configuration user activity report|
 |[deviceConfigurationDeviceActivity function](../api/intune_shared_reportroot_deviceconfigurationdeviceactivity.md)|Metadata for the device configuration device activity report|
 |**Troubleshooting**|
+|[managedDeviceEnrollmentAbandonmentDetails function](../api/intune_shared_reportroot_manageddeviceenrollmentabandonmentdetails.md)|[report](../resources/intune_shared_report.md)|Metadata for Enrollment abandonment details report|
+|[managedDeviceEnrollmentAbandonmentSummary function](../api/intune_shared_reportroot_manageddeviceenrollmentabandonmentsummary.md)|[report](../resources/intune_shared_report.md)|Metadata for Enrollment abandonment summary report|
 |[managedDeviceEnrollmentFailureDetails function](../api/intune_shared_reportroot_manageddeviceenrollmentfailuredetails.md)|Not yet documented|
 |[managedDeviceEnrollmentFailureTrends function](../api/intune_shared_reportroot_manageddeviceenrollmentfailuretrends.md)|Metadata for the enrollment failure trends report|
 |[managedDeviceEnrollmentTopFailures function](../api/intune_shared_reportroot_manageddeviceenrollmenttopfailures.md)|Not yet documented|

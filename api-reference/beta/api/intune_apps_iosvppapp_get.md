@@ -26,7 +26,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1587
+Content-Length: 2188
 
 {
   "value": {
@@ -94,10 +94,27 @@ Content-Length: 1587
     "vppTokenOrganizationName": "Vpp Token Organization Name value",
     "vppTokenAccountType": "education",
     "vppTokenAppleId": "Vpp Token Apple Id value",
-    "bundleId": "Bundle Id value"
+    "bundleId": "Bundle Id value",
+    "vppTokenId": "Vpp Token Id value",
+    "revokeLicenseActionResults": [
+      {
+        "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
+        "userId": "User Id value",
+        "managedDeviceId": "Managed Device Id value",
+        "totalLicensesCount": 2,
+        "failedLicensesCount": 3,
+        "actionFailureReason": "appleFailure",
+        "actionName": "Action Name value",
+        "actionState": "pending",
+        "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+        "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+      }
+    ]
   }
 }
 ```
+
+
 
 
 

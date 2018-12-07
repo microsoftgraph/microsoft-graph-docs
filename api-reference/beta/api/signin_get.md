@@ -1,5 +1,5 @@
 # Get signIn
-Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.
 
 
 ## Permissions
@@ -11,13 +11,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All | 
 
+In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
 
 ## Request headers
 | Name      |Description|
@@ -57,12 +59,12 @@ Content-length: 211
 	"value": [{
 		"id": "id",
 		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-		"userDisplayName": "Bill G",
-		"userPrincipalName": "billg@microsoft.com",
+		"userDisplayName": "Jamie Doe",
+		"userPrincipalName": "jdoe@contoso.com",
 		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
 		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
 		"appDisplayName": "Azure",
-		"ipAddress": "111.11.23.546",
+		"ipAddress": "127.0.0.1",
 		"status": {
 			"errorCode": 0,
 			"failureReason": null,
@@ -92,7 +94,7 @@ Content-length: 211
 			"mfaAuthMethod": "Phone Auth",
 			"mfaAuthDetail": null
 		},
-		"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
+		"correlationId": "17c47d3c-593d-4d08-ac20-813892b87e42",
 		"conditionalAccessApplied": true,
 		"conditionalAccessPolicies": [{
 			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",

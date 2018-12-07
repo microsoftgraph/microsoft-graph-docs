@@ -5,16 +5,22 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object.
+
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|(device configuration) DeviceManagementConfiguration.ReadWrite.All or (enrollment) DeviceManagementServiceConfig.ReadWrite.All, (device configuration) DeviceManagementServiceConfig.Read.All or (enrollment) DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 ## HTTP Request
+**Device configuration**
+
 <!-- {
   "blockType": "ignored"
 }
@@ -23,32 +29,50 @@ One of the following permissions is required to call this API. To learn more, in
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+```
+
+**Enrollment**
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile/domainJoinConfiguration
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
+
 |Header|Value|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
 |Accept|application/json|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [windowsDomainJoinConfiguration](../resources/intune_shared_windowsdomainjoinconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
+
 Here is an example of the request.
+
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call depend on the context.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -61,10 +61,11 @@ The following values are allowed for the **type** parameter.
 The following values are allowed for the **scope** parameter.
 If the **scope** parameter is not specified, the default link type for the organization is created.
 
-| Type value     | Description                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Creates a link to the DriveItem accessible to anyone with the link. Anonymous links may be disabled by an administrator.                 |
-| `organization` | Creates a link to the DriveItem accessible to anyone within the user's organization. Organization link scope is not available for OneDrive personal. |
+| Value          | Description
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
+| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+
 
 ## Response
 
@@ -81,11 +82,11 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -125,7 +126,7 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 ### Request
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -169,7 +170,7 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 
 ### Request
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -194,7 +195,7 @@ Content-Type: application/json
   "link": {
     "type": "embed",
     "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedive.live.com/...",
+    "webUrl": "https://onedrive.live.com/...",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"

@@ -50,9 +50,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
-Content-length: 122
+Content-length: 178
 
 {
+  "@odata.type": "#microsoft.graph.resourceOperation",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
   "description": "Description value"

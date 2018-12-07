@@ -16,7 +16,7 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |privacyUrl|String|URL to the company/organization’s privacy policy.|
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|themeColor|[rgbColor](../resources/intune_onboarding_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
+|themeColor|[rgbColor](../resources/intune_shared_rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
 |lightBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
 |darkBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
@@ -30,7 +30,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.intuneBrand"
 }
 -->
@@ -71,6 +70,8 @@ Here is a JSON representation of the resource.
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
 
 
 

@@ -40,6 +40,8 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -52,6 +54,8 @@ The following table shows the properties that are required when you create the [
 |enableSplitTunneling|Boolean|Enable split tunneling.|
 |enableAlwaysOn|Boolean|Enable Always On mode.|
 |enableDeviceTunnel|Boolean|Enable device tunnel.|
+|enableDnsRegistration|Boolean|Enable IP address registration with internal DNS.|
+|dnsSuffixes|String collection|Specify DNS suffixes to add to the DNS search list to properly route short names.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune_deviceconfig_windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
@@ -78,10 +82,14 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3081
+Content-length: 3259
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -100,6 +108,10 @@ Content-length: 3081
   "enableSplitTunneling": true,
   "enableAlwaysOn": true,
   "enableDeviceTunnel": true,
+  "enableDnsRegistration": true,
+  "dnsSuffixes": [
+    "Dns Suffixes value"
+  ],
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -191,12 +203,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3253
+Content-Length: 3431
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
   "id": "c23c9727-9727-c23c-2797-3cc227973cc2",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -216,6 +232,10 @@ Content-Length: 3253
   "enableSplitTunneling": true,
   "enableAlwaysOn": true,
   "enableDeviceTunnel": true,
+  "enableDnsRegistration": true,
+  "dnsSuffixes": [
+    "Dns Suffixes value"
+  ],
   "authenticationMethod": "usernameAndPassword",
   "rememberUserCredentials": true,
   "enableConditionalAccess": true,
@@ -301,6 +321,8 @@ Content-Length: 3253
   ]
 }
 ```
+
+
 
 
 

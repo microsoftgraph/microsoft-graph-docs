@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:-----------|:------|
 | Delegated (work or school account) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+|Application| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /synchronizationProfiles/{id}/errors
 ```
 ## Optional query parameters
-This method supports the following [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.
+This method supports the following [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.
 
 ## Request headers
 | Name       | Type | Description|

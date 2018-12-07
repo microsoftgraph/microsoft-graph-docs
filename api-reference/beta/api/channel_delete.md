@@ -2,15 +2,18 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete the channel.
+Delete the [channel](../resources/channel.md).
+
+> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](../../../concepts/known_issues.md#application-permissions).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All    |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

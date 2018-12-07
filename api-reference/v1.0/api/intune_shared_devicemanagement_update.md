@@ -11,14 +11,17 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account) |
 | &nbsp; &nbsp; Auditing | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; Company terms | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Corporate enrollment | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; Device configuration | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; Devices | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Enrollment | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Device management | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; Endpoint protection | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; Notification | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; Role-based access control | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; Remote assistance | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Telecom expense management | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.|
 | Application | Not supported. |
 
@@ -44,13 +47,13 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accountMoveCompletionDateTime|DateTimeOffset|The date & time when tenant data moved between scaleunits.|
 |id|String|Unique Identifier for the device|
-|intuneAccountId|Guid|Intune Account ID for given tenant|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
-|maximumDepTokens|Int32|Maximum number of dep tokens allowed per-tenant.|
+|**Device configuration**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Device management**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Onboarding**|
+|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 Request body property support varies according to workflow.
 
@@ -58,6 +61,7 @@ Request body property support varies according to workflow.
 If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_shared_devicemanagement.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -90,7 +94,9 @@ Content-length: 751
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Returned properties vary according to workflow and context.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

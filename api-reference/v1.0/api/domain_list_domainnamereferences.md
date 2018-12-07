@@ -23,7 +23,7 @@ GET /domains/{id}/domainNameReferences
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 
@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
 
 ##### Response

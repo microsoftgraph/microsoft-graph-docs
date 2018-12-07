@@ -20,7 +20,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppAppAssignmentSettings"
 }
 -->
@@ -31,6 +30,8 @@ Here is a JSON representation of the resource.
   "vpnConfigurationId": "String"
 }
 ```
+
+
 
 
 

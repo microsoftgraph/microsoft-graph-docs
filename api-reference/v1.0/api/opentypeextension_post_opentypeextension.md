@@ -6,15 +6,19 @@ Create an open extension ([openTypeExtension](../resources/openTypeExtension.md)
 
 ## Permissions
 
-One of the following permissions is required to call this API, depending on the resource you're creating the extension in. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Device.ReadWrite.All | [event](../resources/event.md) | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | [group event](../resources/event.md) | Group.ReadWrite.All |
-| [group post](../resources/post.md) | Group.ReadWrite.All | [message](../resources/message.md) | Mail.ReadWrite |
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | [personal contact](../resources/contact.md) | Contacts.ReadWrite |
-| [user](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
+| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Not supported | Not supported |
+| [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## HTTP request
 
@@ -58,11 +62,9 @@ extension in it. All other syntaxes that allows you to identify these resource i
 
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 
-## Parameters
-
-|**Parameter**|**Type**|**Description**|
+## Path parameters
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## Request headers
@@ -80,7 +82,7 @@ primitive types.
 
 | Name       | Value |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 When creating an extension in a _new_ resource instance, in addition to the
@@ -112,12 +114,12 @@ The first example creates a message and an extension in the same call. The reque
 - The **subject**, **body**, and **toRecipients** properties typical of a new message.
 - And for the extension:
 
-  - The type `Microsoft.Graph.OpenTypeExtension`.
+  - The type `microsoft.graph.openTypeExtension`.
   - The extension name "Com.Contoso.Referral".
   - Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_1"
 }-->
 ```http
@@ -138,7 +140,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -215,7 +217,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -235,19 +237,19 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 The second example creates an extension in the specified message. The request body includes the following for the
 extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Referral".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -266,7 +268,7 @@ Here is the response for the second example. The response body includes the foll
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -274,7 +276,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -292,19 +294,19 @@ Content-type: application/json
 The third example creates an extension in the specified group event. The request body includes the following for the
 extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Deal".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
+POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -319,7 +321,7 @@ Here is the response from the third example request.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -327,7 +329,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -344,16 +346,16 @@ The fourth example creates an extension in a new group post, using the same **re
 creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains
 the **body** of the new post, and the following data for the new extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.HR".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/microsoft.graph.reply
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
 
 {
   "post": {
@@ -402,16 +404,16 @@ creates a new conversation, thread and post, and a new extension embedded in the
 **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object
 in turn contains the **body** of the new post, and the following data for the extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.HR".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
 
 {
   "Topic": "Does anyone have a second?",

@@ -33,6 +33,7 @@ Represents an approval that is requested in Privileged Identity Management for g
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Read-only. Nullable.|
+|request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Read-only. The role assignment request for this approval object|
 
 ## JSON representation
 Here is a JSON representation of the resource.

@@ -18,6 +18,7 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
@@ -28,10 +29,11 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
   "name": "string",
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "permission": { "@odata.type": "microsoft.graph.permission" },
   "root": { "@odata.type": "microsoft.graph.driveItem" },
   "site": { "@odata.type": "microsoft.graph.site" }
 }
@@ -49,11 +51,11 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 | Relationship name | Type                | Description
 | ------------------|:--------------------|:-----------------------------------
-| **driveItem**     | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**
-| **list**          | [**list**][list]        | Used to access the underlying **list**
-| **listItem**      | [**listItem**][listItem]    | Used to access the underlying **listItem**
-| **site**          | [**site**][site]        | Used to access the underlying **site**
-
+| **driveItem**     | [**driveItem**][driveItem] | Used to access the underlying **driveItem**
+| **list**          | [**list**][list]           | Used to access the underlying **list**
+| **listItem**      | [**listItem**][listItem]   | Used to access the underlying **listItem**
+| **permission**    | [**permission**][permission] | Used to access the **permission** representing the underlying sharing link
+| **site**          | [**site**][site]           | Used to access the underlying **site**
 
 Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
 
@@ -65,6 +67,7 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 [driveItem]: driveItem.md
 [list]: list.md
 [listItem]: listItem.md
+[permission]: permission.md
 [site]: site.md
 
 ## Methods

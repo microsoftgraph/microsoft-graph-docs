@@ -21,7 +21,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 You can use the `$filter` query parameter to filter trending items. For example, based on Type:
 

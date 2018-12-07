@@ -20,6 +20,9 @@ Windows 10 Edition type.
 |windows10ProfessionalEducationN|9|Windows 10 Professional EducationN|
 |windows10ProfessionalWorkstation|10|Windows 10 Professional for Workstations|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional for Workstations N|
+|notConfigured|12|NotConfigured|
+
+
 
 
 

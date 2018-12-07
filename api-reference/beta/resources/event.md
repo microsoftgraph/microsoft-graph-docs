@@ -6,9 +6,9 @@ An event in a calendar.
 
 This resource supports:
 
-- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
-by providing a [delta](../api/event_delta.md) function.
+- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/event_delta.md) function.
 
 ## JSON representation
 
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iCalUId": "string",
+  "iud": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -84,7 +84,6 @@ Here is a JSON representation of the resource
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
 |id|String| Read-only.|
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
@@ -94,7 +93,7 @@ Here is a JSON representation of the resource
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|The location of the event.|
 |locations|[Location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
-|onlineMeetingUrl|String|A URL for an online meeting.|
+|onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as Skype. Read-only.|
 |organizer|[Recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
 |originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -109,6 +108,7 @@ Here is a JSON representation of the resource
 |start|[DateTimeTimeZone](datetimetimezone.md)|The start time of the event.|
 |subject|String|The text of the event's subject line.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
+|uid|String|A unique identifier that is shared by all instances of an event across different calendars. **Note:** this property serves the same purpose as the `iCalUid` property on the [event resource](../../v1.0/resources/event.md) on the v1.0 endpoint, but is not guaranteed to have the same value.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
 
 ## Relationships

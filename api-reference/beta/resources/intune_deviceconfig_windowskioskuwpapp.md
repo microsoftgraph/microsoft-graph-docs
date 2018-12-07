@@ -11,6 +11,8 @@ Inherits from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskios
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune_deviceconfig_windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune_deviceconfig_windowskioskappbase.md)|
 |appUserModelId|String|This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode|
 |appId|String|This references an Intune App that will be target to the same assignments as Kiosk configuration|
 |containedAppId|String|This references an contained App from an Intune App|
@@ -21,18 +23,21 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsKioskUWPApp"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsKioskUWPApp",
+  "startLayoutTileSize": "String",
+  "name": "String",
   "appUserModelId": "String",
   "appId": "String",
   "containedAppId": "String"
 }
 ```
+
+
 
 
 

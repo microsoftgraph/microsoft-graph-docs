@@ -32,7 +32,7 @@ An aggregation of information about a person from across mail, contacts and soci
 |sources|[personDataSource](persondatasource.md) collection|The sources the user data comes from, for example Directory or Outlook Contacts.|
 |surname|string|The person's surname.|
 |title|string|The person's title.|
-|userPrincipalName|string|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
+|userPrincipalName|string|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
 |websites|[website](website.md) collection|The person's websites.|
 |yomiCompany|string|The phonetic Japanese name of the person's company.|
 

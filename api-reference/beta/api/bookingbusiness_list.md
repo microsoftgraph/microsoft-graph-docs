@@ -4,7 +4,9 @@
  
 Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant. 
 
-This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _returned_ as null even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
+This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
+
+You can also query for Bookings businesses by specifying a string in a `query` parameter to do substring matching among the businesses of a tenant. See an [example](#request-2) below.
 
 
 ## Permissions
@@ -22,7 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. You can see an [example](#request-2) below.
+
 
 ## Request headers
 | Name      |Description|
@@ -34,8 +39,8 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [bookingBusiness](../resources/bookingbusiness.md) objects in the response body.
 ## Example
-##### Request
-The following is an example of the request.
+##### Request 1
+The following example gets the Bookings businesses in a tenant.
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusinesses"
@@ -43,8 +48,8 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
-##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+##### Response 1
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -54,42 +59,50 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 526
 
 {
-    "@odata.context":"https://graph.microsoft.com/testbookings/$metadata#bookingBusinesses",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
             "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
-            "businessType":null,
-            "phone":null,
-            "email":null,
-            "webSiteUrl":null,
-            "defaultCurrencyIso":null,
-            "isPublished":null,
-            "publicUrl":null,
-            "address":null,
-            "schedulingPolicy":null,
-            "businessHours":[
-
-            ]
         },
         {
             "id":"Fabrikam@M365B489948.onmicrosoft.com",
             "displayName":"Fabrikam",
-            "businessType":null,
-            "phone":null,
-            "email":null,
-            "webSiteUrl":null,
-            "defaultCurrencyIso":null,
-            "isPublished":null,
-            "publicUrl":null,
-            "address":null,
-            "schedulingPolicy":null,
-            "businessHours":[
+        }
+    ]
+}
+```
 
-            ]
+
+##### Request 2
+The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.
+<!-- {
+  "blockType": "request",
+  "name": "query_bookingbusinesses"
+}-->
+```http
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
+```
+##### Response 2
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bookingBusiness",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
+    "value":[
+        {
+            "id":"AdventureWorksCycles@M365B960066.onmicrosoft.com",
+            "displayName":"Adventure Works Cycles",
         }
     ]
 }

@@ -5,13 +5,14 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Returns the content appropriate for the context, including:
-- Device Configuration profile History reports.
+
+- Device Configuration profile history reports.
 - Enrollment failure reports.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Report content.|
+|content|Stream|Report content; details vary by report type.|
 
 ## Relationships
 None

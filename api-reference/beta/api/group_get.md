@@ -35,17 +35,27 @@ The following group properties are not returned by default:
 * accessType
 * allowExternalSenders
 * autoSubscribeNewMembers
+* hasMembersWithLicenseErrors
 * isSubscribedByMail
 * isFavorite
+* unseenConversationsCount
 * unseenCount
+* unseenMessagesCount
 
-To get these properties (except **isFavorite**), use the **$select** query parameter. The following are examples: 
+To get these properties (except **isFavorite** and **hasMembersWithLicenseErrors**), use the `$select` query parameter. The following are examples: 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 
 GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
+```
+
+To return groups containing members with license errors, use the **$filter** query parameter:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
 ```
 
 Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
@@ -79,7 +89,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -89,7 +99,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/{id}
 ```
 
-#### Response
+### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability. The default properties will be returned from an actual call, as described before.
 <!-- {
@@ -126,8 +136,8 @@ Content-length: xxx
 ## See also
 
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions (preview)](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
+- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

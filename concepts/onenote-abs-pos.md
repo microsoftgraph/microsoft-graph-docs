@@ -4,6 +4,7 @@
 The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page.
 
 <a name="attributes"></a>
+
 ## Attributes and positioning behavior
 
 Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) attributes to create absolute positioned elements on a page, as follows:
@@ -23,11 +24,11 @@ Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) a
 - Absolute positioned elements cannot be nested or contain positioned elements. The API ignores any position settings specified on nested elements inside an absolute positioned div, renders the nested content inside the absolute positioned parent div, and returns a warning in the **api.diagnostics** property in the response.
 
 
-# Example
+### Example
 
- The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
+The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
 
-## Input HTML  
+#### Input HTML  
 
    ```html 
    <body data-absolute-enabled="true">
@@ -41,9 +42,9 @@ Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) a
    </body>
    ```
 
-The API renders the non-absolute positioned div in the default div. Note that the nested  `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
+The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
 
-## Output HTML 
+#### Output HTML 
 
    ```html 
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -57,12 +58,12 @@ The API renders the non-absolute positioned div in the default div. Note that th
    </body>
    ```
 
-## Example
+### Example
 
- The following example creates a page that contains one absolute positioned div and one absolute positioned image.
+The following example creates a page that contains one absolute positioned div and one absolute positioned image.
 
 
-### Input HTML  
+#### Input HTML  
 
 ```html 
 <html>
@@ -72,12 +73,12 @@ The API renders the non-absolute positioned div in the default div. Note that th
     <body data-absolute-enabled="true">
         <div style="position:absolute;width:280px;top:120px;left:68px">
             <p>Some text</p>
-            <img style="width:120px" src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+            <img style="width:120px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
             <div>
                 <p>More text inside a regular, nested div</p>
             </div>
         </div>
-        <img style="position:absolute;width:360px;top:350px;left:300px" src="http://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
     </body>
 </html>
 ```
@@ -91,7 +92,8 @@ Notice the changes to the non-contributing, nested div from the input HTML. The 
 For more information about how the OneNote API handles input and output HTML, see [Input and output HTML for OneNote pages](onenote_input_output_html.md).
 
 <a name="style-attributes"></a>
-### Supported CSS style attributes
+
+## Supported CSS style attributes
 
 All absolute positioned elements can specify top and left positions. Divs and images can specify width, and images can also specify height. For example:
 
@@ -101,16 +103,18 @@ All absolute positioned elements can specify top and left positions. Divs and im
 
 | Attribute | Supported element | Description |  
 |:------|:------|:------|  
-| top | div, img, object | The y-axis coordinate of the element's top border, in pixels only. Default is 120 pixels.<p>Example: `top:140px`</p> |  
-| left |  div, img, object  | The x-axis coordinate of the element's left border, in pixels only. Default is 48 pixels.<p>Example: `left:95px`</p> |  
-| width |  div, img  | The width of the element, in pixels only.<p>Example: `width:480px`</p> |  
-| height | img | The height of the element, in pixels only. For divs, height is calculated at runtime and any specified height value is ignored.<p>Example: `height:665px`</p> |  
+| top | div, img, object | The y-axis coordinate of the element's top border, in pixels only. Default is 120 pixels.<br/><br/>Example: `top:140px` |  
+| left |  div, img, object  | The x-axis coordinate of the element's left border, in pixels only. Default is 48 pixels.<br/><br/>Example: `left:95px` |  
+| width |  div, img  | The width of the element, in pixels only.<br/><br/>Example: `width:480px` |  
+| height | img | The height of the element, in pixels only. For divs, height is calculated at runtime and any specified height value is ignored.<br/><br/>Example: `height:665px` |  
  
 Other position attributes, such as `z-index`, are ignored. Absolute positioned images can use either the `data-render-src` or `src` attribute.
 
 
 <a name="request-response-info"></a>
+
 ## Response information
+
 The OneNote API returns the following information in the response.
 
 | Response data | Description |  
@@ -121,17 +125,19 @@ The OneNote API returns the following information in the response.
 
 
 <a name="permissions"></a>
+
 ## Permissions
 
 To create or update OneNote pages, you'll need to request appropriate permissions. Choose the lowest level of permissions that your app needs to do its work.
 
-### Permissions for _POST pages_ 
+#### Permissions for POST pages 
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
 
-### Permissions for _PATCH pages_ 
+#### Permissions for PATCH pages 
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -140,12 +146,13 @@ For more information about permission scopes and how they work, see [OneNote per
 
 
 <a name="see-also"></a>
-## Additional resources
+
+## See also
 
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote_update_page.md)
 - [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
 

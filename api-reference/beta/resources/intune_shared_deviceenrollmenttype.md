@@ -5,7 +5,6 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Possible ways of adding a mobile device to management.
-
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -19,8 +18,8 @@ Possible ways of adding a mobile device to management.
 |windowsAutoEnrollment|7|Windows 10 automatic enrollment. (Add work account)|
 |windowsBulkAzureDomainJoin|8|Windows 10 bulk Azure AD Join.|
 |windowsCoManagement|9|Windows 10 Co-Management triggered by AutoPilot or Group Policy.|
-|**Troubleshooting**|
-|windowsAzureADJoinUsingDeviceAuth|10|Windows 10 Azure AD Join using Device Auth.|
+
+
 
 
 

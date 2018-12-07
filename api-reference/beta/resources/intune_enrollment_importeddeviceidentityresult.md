@@ -27,8 +27,8 @@ Inherits from [importedDeviceIdentity](../resources/intune_enrollment_importedde
 |createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
 |description|String|The description of the device Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md)|
-|enrollmentState|[enrollmentState](../resources/intune_shared_enrollmentstate.md)|The state of the device in Intune Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
-|platform|[platform](../resources/intune_shared_platform.md)|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|The state of the device in Intune Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[platform](../resources/intune_enrollment_platform.md)|The platform of the Device. Inherited from [importedDeviceIdentity](../resources/intune_enrollment_importeddeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
 ## Relationships
@@ -56,6 +56,8 @@ Here is a JSON representation of the resource.
   "status": true
 }
 ```
+
+
 
 
 

@@ -20,7 +20,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary"
 }
 -->
@@ -34,6 +33,8 @@ Here is a JSON representation of the resource.
   "unavailableDeviceCount": 1024
 }
 ```
+
+
 
 
 

@@ -51,9 +51,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}
 Content-type: application/json
-Content-length: 127
+Content-length: 189
 
 {
+  "@odata.type": "#microsoft.graph.userInstallStateSummary",
   "userName": "User Name value",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,

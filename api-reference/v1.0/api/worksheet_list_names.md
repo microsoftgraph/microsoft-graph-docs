@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /workbook/worksheets({id|name})/names
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -29,7 +29,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [NamedItem](../resources/nameditem.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [WorkbookNamedItem](../resources/nameditem.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -45,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem",
+  "@odata.type": "microsoft.graph.workbookNamedItem",
   "isCollection": true
 } -->
 ```http

@@ -22,6 +22,8 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -48,12 +50,20 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
 |workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
+|workProfilePasswordMinNumericCharacters|Int32|Minimum # of numeric characters required in work profile password. Valid values 1 to 10|
+|workProfilePasswordMinNonLetterCharacters|Int32|Minimum # of non-letter characters required in work profile password. Valid values 1 to 10|
+|workProfilePasswordMinLetterCharacters|Int32|Minimum # of letter characters required in work profile password. Valid values 1 to 10|
+|workProfilePasswordMinLowerCaseCharacters|Int32|Minimum # of lower-case characters required in work profile password. Valid values 1 to 10|
+|workProfilePasswordMinUpperCaseCharacters|Int32|Minimum # of upper-case characters required in work profile password. Valid values 1 to 10|
+|workProfilePasswordMinSymbolCharacters|Int32|Minimum # of symbols required in work profile password. Valid values 1 to 10|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune_deviceconfig_androidforworkrequiredpasswordtype.md)|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
+|vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
+|vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -79,6 +89,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
@@ -105,14 +119,24 @@ Here is a JSON representation of the resource.
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1024,
   "workProfilePasswordMinimumLength": 1024,
+  "workProfilePasswordMinNumericCharacters": 1024,
+  "workProfilePasswordMinNonLetterCharacters": 1024,
+  "workProfilePasswordMinLetterCharacters": 1024,
+  "workProfilePasswordMinLowerCaseCharacters": 1024,
+  "workProfilePasswordMinUpperCaseCharacters": 1024,
+  "workProfilePasswordMinSymbolCharacters": 1024,
   "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 1024,
   "workProfilePasswordPreviousPasswordBlockCount": 1024,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 1024,
   "workProfilePasswordRequiredType": "String",
   "workProfileRequirePassword": true,
-  "securityRequireVerifyApps": true
+  "securityRequireVerifyApps": true,
+  "vpnAlwaysOnPackageIdentifier": "String",
+  "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
+
+
 
 
 

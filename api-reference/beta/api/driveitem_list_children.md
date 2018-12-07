@@ -103,7 +103,7 @@ Content-type: application/json
 
 **Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
-You can control the page size through [optional query string parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
+You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
 ### Error responses
 

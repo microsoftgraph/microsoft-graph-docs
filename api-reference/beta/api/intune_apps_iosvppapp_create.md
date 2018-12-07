@@ -61,6 +61,8 @@ The following table shows the properties that are required when you create the i
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
 |bundleId|String|The Identity Name.|
+|vppTokenId|String|Identifier of the VPP token associated with this app.|
+|revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune_apps_iosvppapprevokelicensesactionresult.md) collection|Results of revoke license actions on this app.|
 
 
 
@@ -73,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1380
+Content-length: 1951
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -113,7 +115,22 @@ Content-length: 1380
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
   "vppTokenAppleId": "Vpp Token Apple Id value",
-  "bundleId": "Bundle Id value"
+  "bundleId": "Bundle Id value",
+  "vppTokenId": "Vpp Token Id value",
+  "revokeLicenseActionResults": [
+    {
+      "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
+      "userId": "User Id value",
+      "managedDeviceId": "Managed Device Id value",
+      "totalLicensesCount": 2,
+      "failedLicensesCount": 3,
+      "actionFailureReason": "appleFailure",
+      "actionName": "Action Name value",
+      "actionState": "pending",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+    }
+  ]
 }
 ```
 
@@ -122,7 +139,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1488
+Content-Length: 2059
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -164,9 +181,26 @@ Content-Length: 1488
   "vppTokenOrganizationName": "Vpp Token Organization Name value",
   "vppTokenAccountType": "education",
   "vppTokenAppleId": "Vpp Token Apple Id value",
-  "bundleId": "Bundle Id value"
+  "bundleId": "Bundle Id value",
+  "vppTokenId": "Vpp Token Id value",
+  "revokeLicenseActionResults": [
+    {
+      "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
+      "userId": "User Id value",
+      "managedDeviceId": "Managed Device Id value",
+      "totalLicensesCount": 2,
+      "failedLicensesCount": 3,
+      "actionFailureReason": "appleFailure",
+      "actionName": "Action Name value",
+      "actionState": "pending",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+    }
+  ]
 }
 ```
+
+
 
 
 

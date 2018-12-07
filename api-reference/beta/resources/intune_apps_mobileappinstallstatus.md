@@ -23,7 +23,8 @@ Contains properties for the installation state of a mobile app for a device.
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune_shared_resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|errorCode|Int32|The error code for install failures.|
+|installStateDetail|[resultantAppStateDetail](../resources/intune_apps_resultantappstatedetail.md)|The install state detail of the app. Possible values are: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|errorCode|Int32|The error code for install or uninstall failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|
 |userName|String|Device User Name|
@@ -52,6 +53,7 @@ Here is a JSON representation of the resource.
   "lastSyncDateTime": "String (timestamp)",
   "mobileAppInstallStatusValue": "String",
   "installState": "String",
+  "installStateDetail": "String",
   "errorCode": 1024,
   "osVersion": "String",
   "osDescription": "String",
@@ -60,6 +62,8 @@ Here is a JSON representation of the resource.
   "displayVersion": "String"
 }
 ```
+
+
 
 
 

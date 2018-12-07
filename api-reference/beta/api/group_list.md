@@ -16,6 +16,11 @@ values, as shown in the following example:
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
 
+To return groups containing members with license errors, use the **$filter** query parameter: 
+
+```http 
+GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true 
+```
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

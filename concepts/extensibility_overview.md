@@ -33,7 +33,7 @@ You can use extensions on all these resources when signed in with a work or scho
 ## Open extensions
 
 [Open extensions](../api-reference/v1.0/resources/opentypeextension.md) (formerly known as Office 365 data extensions) are
-[open types](http://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
+[open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
 add untyped app data directly to a resource instance.
 
 Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
@@ -85,7 +85,7 @@ Depending on the current state, the owner app may be able to update or delete th
 |:-------------|:------------|
 | InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (as long as the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
 | Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
-| Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li><li>The owner app can move the schema extension from **Deprecated** back to the **Available** state.</li></ul> |
+| Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
 
 ### Supported property data types
 
@@ -103,7 +103,7 @@ The following data types are supported when defining a property in a schema exte
 
 ### Azure AD directory schema extensions
 
-Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](../api-reference/v1.0/resources/directoryObject.md) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
+Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](../api-reference/v1.0/resources/directoryObject.md) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
 
@@ -122,7 +122,7 @@ The following limits apply to directory resources (such as **user**, **group**, 
 
 The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
 
-- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md).
+- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](../api-reference/v1.0/resources/opentypeextension.md).
 
 ### Schema extension limits
 
@@ -142,4 +142,4 @@ For known limitations using extensions, see the [extensions section](known_issue
 
 - [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
-- [Adding and verifying a domain for an Office 365 tenant](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Adding and verifying a domain for an Office 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

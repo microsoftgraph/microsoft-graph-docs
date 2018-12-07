@@ -13,7 +13,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All    |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 The following is an example of a response.
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams({id})/operations({opId})
+Location: /teams{id}/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

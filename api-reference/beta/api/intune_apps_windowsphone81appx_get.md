@@ -26,7 +26,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1526
+Content-Length: 1626
 
 {
   "value": {
@@ -86,7 +86,11 @@ Content-Length: 1526
       "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem",
       "v8_0": true,
       "v8_1": true,
-      "v10_0": true
+      "v10_0": true,
+      "v10_1607": true,
+      "v10_1703": true,
+      "v10_1709": true,
+      "v10_1803": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",
@@ -94,6 +98,8 @@ Content-Length: 1526
   }
 }
 ```
+
+
 
 
 

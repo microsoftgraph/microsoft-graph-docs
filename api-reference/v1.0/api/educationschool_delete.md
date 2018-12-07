@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "delete_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10002
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```
 ##### Response
 The following is an example of the response. 

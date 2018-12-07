@@ -14,15 +14,19 @@ The following table lists the three scenarios where you can get an open extensio
 
 ## Permissions
 
-One of the following permissions is required to call this API, depending on the resource that contains the extension. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-|**Supported resource**|**Permission**|**Supported resource**|**Permission** |
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [Administrative unit](../resources/administrativeunit.md) | Directory.Read.All | [Device](../resources/device.md) | Directory.Read.All |
-| [Event](../resources/event.md) | Calendars.Read | [Group](../resources/group.md) | Group.Read.All |
-| [Group event](../resources/event.md) | Group.Read.All | [Group post](../resources/post.md) | Group.Read.All |
-| [Message](../resources/message.md) | Mail.Read | [Organization](../resources/organization.md) | Directory.Read.All |
-| [Personal contact](../resources/contact.md) | Contacts.Read | [User](../resources/user.md) | User.Read.All |
+| [device](../resources/device.md) | Directory.Read.All | Not supported | Device.ReadWrite.All |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
+| [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
+| [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | Not supported | Not supported |
+| [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## HTTP request
 
@@ -95,16 +99,15 @@ in order to get an extension from it. All other syntax that allows you to identi
 instances or collections supports getting open extensions from them in a similar way.
 
 
-## Parameters
+## Path parameters
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|_URL parameters_|
 |Id|string|Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.|
 |extensionId|string|Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
 
 ## Optional query parameters
 
-Make sure you apply [URL encoding](http://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
+Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
 |**Name**|**Value**|**Description**|
 |:---------------|:--------|:-------|

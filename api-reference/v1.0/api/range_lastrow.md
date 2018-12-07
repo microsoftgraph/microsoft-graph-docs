@@ -13,9 +13,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/LastRow
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastRow
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastRow
+GET /workbook/names/{name}/range/lastRow
+GET /workbook/worksheets/{id|name}/range(address='<address>')/lastRow
+GET /workbook/tables/{id|name}/columns/{id|name}/range/lastRow
 
 ```
 ## Request headers
@@ -34,12 +34,13 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_lastrow"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastRow
 ```
 
 ##### Response
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

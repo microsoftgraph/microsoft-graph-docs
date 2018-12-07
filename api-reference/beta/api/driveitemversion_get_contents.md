@@ -8,7 +8,9 @@ title: Download a previous version
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
+Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md). 
+
+>**Note:** Getting the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem_get_content.md).
 
 ## Permissions
 
@@ -26,11 +28,11 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"} -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/contents
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/contents
-GET /me/drive/items/{item-id}/versions/{version-id}/contents
-GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/contents
-GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/contents
+GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /me/drive/items/{item-id}/versions/{version-id}/content
+GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
+GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
 ## Response
@@ -46,12 +48,12 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 This example retrieves a version of a file in the current user's drive.
 
-### HTTP request
+### Request
 
-<!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/items/{item-id}/versions/{version-id}/contents
+GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
 
 ### Response
@@ -70,7 +72,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
-When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveItemVersion.md) resource is returned that provides the available information about the specific version.
+When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveItemVersion.md) resource is returned that provides the available information about the specific version.
 
 <!-- {
   "type": "#page.annotation",

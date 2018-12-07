@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide the following parameter with a valid value.
 
@@ -65,9 +65,23 @@ The CSV file has the following headers for columns.
 - Teams Inactive
 - Report Period
 
+The following columns are not supported in Microsoft Graph China operated by 21Vianet:
+
+- Yammer Active
+- Yammer Inactive
+- Teams Active
+- Teams Inactive
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object in the response body.
+
+The following properties in **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
+
+- yammerActive
+- yammerInactive
+- teamsActive
+- teamsInactive
 
 ## Example
 

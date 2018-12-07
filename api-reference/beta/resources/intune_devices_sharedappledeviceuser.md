@@ -19,7 +19,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedAppleDeviceUser"
 }
 -->
@@ -32,6 +31,8 @@ Here is a JSON representation of the resource.
   "dataUsed": 1024
 }
 ```
+
+
 
 
 

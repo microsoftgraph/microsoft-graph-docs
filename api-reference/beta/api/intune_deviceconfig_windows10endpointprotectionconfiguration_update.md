@@ -40,10 +40,46 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
+|userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
+|userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
+|userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported|
+|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed and Blocked are all supported |
+|userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported|
+|userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported|
+|userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported|
+|userRightsCreatePageFile|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users and groups can call an internal API to create and change the size of a page file. Only states NotConfigured and Allowed are supported|
+|userRightsCreatePermanentSharedObjects|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which accounts can be used by processes to create a directory object using the object manager. Only states NotConfigured and Allowed are supported|
+|userRightsCreateSymbolicLinks|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines if the user can create a symbolic link from the computer to which they are logged on. Only states NotConfigured and Allowed are supported|
+|userRightsCreateToken|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users/groups can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal API to create an access token. Only states NotConfigured and Allowed are supported|
+|userRightsDebugPrograms|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can attach a debugger to any process or to the kernel. Only states NotConfigured and Allowed are supported|
+|userRightsRemoteDesktopServicesLogOn|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client. Only states NotConfigured and Blocked are supported|
+|userRightsDelegation|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can set the Trusted for Delegation setting on a user or computer object. Only states NotConfigured and Allowed are supported.|
+|userRightsGenerateSecurityAudits|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access.  Only states NotConfigured and Allowed are supported.|
+|userRightsImpersonateClient|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Only states NotConfigured and Allowed are supported.|
+|userRightsIncreaseSchedulingPriority|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process. Only states NotConfigured and Allowed are supported.|
+|userRightsLoadUnloadDrivers|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. Only states NotConfigured and Allowed are supported.|
+|userRightsLockMemory|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Only states NotConfigured and Allowed are supported.|
+|userRightsManageAuditingAndSecurityLogs|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. Only states NotConfigured and Allowed are supported.|
+|userRightsManageVolumes|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Only states NotConfigured and Allowed are supported.|
+|userRightsModifyFirmwareEnvironment|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines who can modify firmware environment values. Only states NotConfigured and Allowed are supported.|
+|userRightsModifyObjectLabels|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Only states NotConfigured and Allowed are supported.|
+|userRightsProfileSingleProcess|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can use performance monitoring tools to monitor the performance of system processes. Only states NotConfigured and Allowed are supported.|
+|userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.|
+|userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.|
+|userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.|
+|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune_deviceconfig_devicemanagementuserrightssetting.md)|This security setting determines which service accounts are prevented from registering a process as a service. Note: This security setting does not apply to the System, Local Service, or Network Service accounts. Only state Blocked is supported.|
+|xboxServicesEnableXboxGameSaveTask|Boolean|This setting determines whether xbox game save is enabled (1) or disabled (0).|
+|xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune_deviceconfig_servicestarttype.md)|This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
+|xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune_deviceconfig_servicestarttype.md)|This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
+|xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune_deviceconfig_servicestarttype.md)|This setting determines whether Live Game save service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
+|xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune_deviceconfig_servicestarttype.md)|This setting determines whether Networking service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled|
 |localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the Local Administrator account is enabled or disabled.|
@@ -64,6 +100,10 @@ The following table shows the properties that are required when you create the [
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Block PKU2U authentication requests to this device to use online identities.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|UI helper boolean for LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager entity|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.|
+|localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune_deviceconfig_localsecurityoptionsminimumsessionsecurity.md)|This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. Possible values are: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
+|localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune_deviceconfig_localsecurityoptionsminimumsessionsecurity.md)|This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. Possible values are: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
+|lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune_deviceconfig_lanmanagerauthenticationlevel.md)|This security setting determines which challenge/response authentication protocol is used for network logons. Possible values are: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
+|lanManagerWorkstationEnableInsecureGuestLogons|Boolean|If enabled,the SMB client will allow insecure guest logons. If not configured, the SMB client will reject insecure guest logons.|
 |localSecurityOptionsClearVirtualMemoryPageFile|Boolean|This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.|
 |localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|This security setting determines whether a computer can be shut down without having to log on to Windows.|
 |localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|Allow UIAccess apps to prompt for elevation without using the secure desktop.|
@@ -79,6 +119,7 @@ The following table shows the properties that are required when you create the [
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune_deviceconfig_localsecurityoptionsinformationshownonlockscreentype.md)|Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown. Possible values are: `notConfigured`, `userDisplayNameDomainUser`, `userDisplayNameOnly`, `doNotDisplayUser`.|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune_deviceconfig_localsecurityoptionsinformationdisplayedonlockscreentype.md)|Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown. Possible values are: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
 |localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|This security setting determines whether the SMB client attempts to negotiate SMB packet signing.|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|This security setting determines whether packet signing is required by the SMB client component.|
 |localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that do not support password encryption during authentication.|
 |localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Boolean|This security setting determines whether packet signing is required by the SMB server component.|
 |localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it.|
@@ -117,17 +158,27 @@ The following table shows the properties that are required when you create the [
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
 |defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
-|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeAppsLaunchChildProcess|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeMacroCodeAllowWin32ImportsType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderOfficeMacroCodeAllowWin32Imports|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderScriptObfuscatedMacroCodeType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderScriptObfuscatedMacroCode|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderScriptDownloadedPayloadExecutionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderScriptDownloadedPayloadExecution|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderPreventCredentialStealingType|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating if credential stealing from the Windows local security authority subsystem is permitted. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderProcessCreationType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderProcessCreation|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderUntrustedUSBProcessType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedUSBProcess|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderUntrustedExecutableType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderUntrustedExecutable|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderEmailContentExecutionType|[defenderAttackSurfaceType](../resources/intune_deviceconfig_defenderattacksurfacetype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `block`, `auditMode`.|
+|defenderEmailContentExecution|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune_deviceconfig_defenderprotectiontype.md)|Value indicating use of advanced protection against ransomeware. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune_deviceconfig_folderprotectiontype.md)|Value indicating the behavior of protected folders. Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
 |defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
@@ -143,6 +194,7 @@ The following table shows the properties that are required when you create the [
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
+|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune_deviceconfig_applicationguardenabledoptions.md)|Enable Windows Defender Application Guard for newer Windows builds. Possible values are: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
 |applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
 |applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
@@ -172,13 +224,370 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 11264
+Content-length: 26312
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "userRightsAccessCredentialManagerAsTrustedCaller": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsAllowAccessFromNetwork": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsBlockAccessFromNetwork": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsActAsPartOfTheOperatingSystem": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsBackupData": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsChangeSystemTime": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreateGlobalObjects": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreatePageFile": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreatePermanentSharedObjects": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreateSymbolicLinks": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreateToken": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDebugPrograms": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRemoteDesktopServicesLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDelegation": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsGenerateSecurityAudits": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsImpersonateClient": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsIncreaseSchedulingPriority": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsLoadUnloadDrivers": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsLockMemory": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsManageAuditingAndSecurityLogs": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsManageVolumes": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsModifyFirmwareEnvironment": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsModifyObjectLabels": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsProfileSingleProcess": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRemoteShutdown": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRestoreData": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsTakeOwnership": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRegisterProcessAsService": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "xboxServicesEnableXboxGameSaveTask": true,
+  "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
+  "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
+  "xboxServicesLiveGameSaveServiceStartupMode": "automatic",
+  "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
   "localSecurityOptionsEnableAdministratorAccount": true,
@@ -199,6 +608,10 @@ Content-length: 11264
   "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
   "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool": true,
   "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "Local Security Options Allow Remote Calls To Security Accounts Manager value",
+  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
+  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
+  "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
+  "lanManagerWorkstationEnableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -214,6 +627,7 @@ Content-length: 11264
   "localSecurityOptionsInformationShownOnLockScreen": "userDisplayNameDomainUser",
   "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
   "localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees": true,
+  "localSecurityOptionsClientDigitallySignCommunicationsAlways": true,
   "localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers": true,
   "localSecurityOptionsDisableServerDigitallySignCommunicationsAlways": true,
   "localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees": true,
@@ -251,62 +665,105 @@ Content-length: 11264
   "firewallProfileDomain": {
     "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
     "firewallEnabled": "blocked",
+    "stealthModeRequired": true,
     "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
     "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
     "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
     "inboundNotificationsBlocked": true,
     "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
     "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
     "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
     "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
     "inboundConnectionsBlocked": true,
     "securedPacketExemptionAllowed": true,
-    "policyRulesFromGroupPolicyMerged": true
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
   },
   "firewallProfilePublic": {
     "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
     "firewallEnabled": "blocked",
+    "stealthModeRequired": true,
     "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
     "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
     "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
     "inboundNotificationsBlocked": true,
     "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
     "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
     "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
     "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
     "inboundConnectionsBlocked": true,
     "securedPacketExemptionAllowed": true,
-    "policyRulesFromGroupPolicyMerged": true
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
   },
   "firewallProfilePrivate": {
     "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
     "firewallEnabled": "blocked",
+    "stealthModeRequired": true,
     "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
     "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
     "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
     "inboundNotificationsBlocked": true,
     "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
     "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
     "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
     "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
     "inboundConnectionsBlocked": true,
     "securedPacketExemptionAllowed": true,
-    "policyRulesFromGroupPolicyMerged": true
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
   },
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "block",
+  "defenderOfficeAppsOtherProcessInjection": "enable",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
+  "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
   "defenderOfficeAppsLaunchChildProcessType": "block",
+  "defenderOfficeAppsLaunchChildProcess": "enable",
   "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
+  "defenderOfficeMacroCodeAllowWin32Imports": "enable",
   "defenderScriptObfuscatedMacroCodeType": "block",
+  "defenderScriptObfuscatedMacroCode": "enable",
   "defenderScriptDownloadedPayloadExecutionType": "block",
+  "defenderScriptDownloadedPayloadExecution": "enable",
   "defenderPreventCredentialStealingType": "enable",
   "defenderProcessCreationType": "block",
+  "defenderProcessCreation": "enable",
   "defenderUntrustedUSBProcessType": "block",
+  "defenderUntrustedUSBProcess": "enable",
   "defenderUntrustedExecutableType": "block",
+  "defenderUntrustedExecutable": "enable",
   "defenderEmailContentExecutionType": "block",
+  "defenderEmailContentExecution": "enable",
   "defenderAdvancedRansomewareProtectionType": "enable",
   "defenderGuardMyFoldersType": "enable",
   "defenderGuardedFoldersAllowedAppPaths": [
@@ -326,6 +783,7 @@ Content-length: 11264
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
+  "applicationGuardEnabledOptions": "enabledForEdge",
   "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
   "applicationGuardBlockNonEnterpriseContent": true,
   "applicationGuardAllowPersistence": true,
@@ -393,16 +851,373 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11451
+Content-Length: 26499
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
   "id": "09709403-9403-0970-0394-700903947009",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "userRightsAccessCredentialManagerAsTrustedCaller": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsAllowAccessFromNetwork": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsBlockAccessFromNetwork": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsActAsPartOfTheOperatingSystem": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsBackupData": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsChangeSystemTime": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreateGlobalObjects": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreatePageFile": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreatePermanentSharedObjects": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreateSymbolicLinks": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsCreateToken": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDebugPrograms": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRemoteDesktopServicesLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDelegation": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsGenerateSecurityAudits": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsImpersonateClient": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsIncreaseSchedulingPriority": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsLoadUnloadDrivers": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsLockMemory": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsManageAuditingAndSecurityLogs": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsManageVolumes": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsModifyFirmwareEnvironment": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsModifyObjectLabels": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsProfileSingleProcess": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRemoteShutdown": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRestoreData": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsTakeOwnership": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsRegisterProcessAsService": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "xboxServicesEnableXboxGameSaveTask": true,
+  "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
+  "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
+  "xboxServicesLiveGameSaveServiceStartupMode": "automatic",
+  "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
   "localSecurityOptionsEnableAdministratorAccount": true,
@@ -423,6 +1238,10 @@ Content-Length: 11451
   "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
   "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool": true,
   "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "Local Security Options Allow Remote Calls To Security Accounts Manager value",
+  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
+  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
+  "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
+  "lanManagerWorkstationEnableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -438,6 +1257,7 @@ Content-Length: 11451
   "localSecurityOptionsInformationShownOnLockScreen": "userDisplayNameDomainUser",
   "localSecurityOptionsInformationDisplayedOnLockScreen": "administrators",
   "localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees": true,
+  "localSecurityOptionsClientDigitallySignCommunicationsAlways": true,
   "localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers": true,
   "localSecurityOptionsDisableServerDigitallySignCommunicationsAlways": true,
   "localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees": true,
@@ -475,62 +1295,105 @@ Content-Length: 11451
   "firewallProfileDomain": {
     "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
     "firewallEnabled": "blocked",
+    "stealthModeRequired": true,
     "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
     "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
     "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
     "inboundNotificationsBlocked": true,
     "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
     "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
     "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
     "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
     "inboundConnectionsBlocked": true,
     "securedPacketExemptionAllowed": true,
-    "policyRulesFromGroupPolicyMerged": true
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
   },
   "firewallProfilePublic": {
     "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
     "firewallEnabled": "blocked",
+    "stealthModeRequired": true,
     "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
     "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
     "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
     "inboundNotificationsBlocked": true,
     "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
     "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
     "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
     "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
     "inboundConnectionsBlocked": true,
     "securedPacketExemptionAllowed": true,
-    "policyRulesFromGroupPolicyMerged": true
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
   },
   "firewallProfilePrivate": {
     "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
     "firewallEnabled": "blocked",
+    "stealthModeRequired": true,
     "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
     "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
     "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
     "inboundNotificationsBlocked": true,
     "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
     "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
     "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
     "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
     "inboundConnectionsBlocked": true,
     "securedPacketExemptionAllowed": true,
-    "policyRulesFromGroupPolicyMerged": true
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
   },
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "block",
+  "defenderOfficeAppsOtherProcessInjection": "enable",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
+  "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
   "defenderOfficeAppsLaunchChildProcessType": "block",
+  "defenderOfficeAppsLaunchChildProcess": "enable",
   "defenderOfficeMacroCodeAllowWin32ImportsType": "block",
+  "defenderOfficeMacroCodeAllowWin32Imports": "enable",
   "defenderScriptObfuscatedMacroCodeType": "block",
+  "defenderScriptObfuscatedMacroCode": "enable",
   "defenderScriptDownloadedPayloadExecutionType": "block",
+  "defenderScriptDownloadedPayloadExecution": "enable",
   "defenderPreventCredentialStealingType": "enable",
   "defenderProcessCreationType": "block",
+  "defenderProcessCreation": "enable",
   "defenderUntrustedUSBProcessType": "block",
+  "defenderUntrustedUSBProcess": "enable",
   "defenderUntrustedExecutableType": "block",
+  "defenderUntrustedExecutable": "enable",
   "defenderEmailContentExecutionType": "block",
+  "defenderEmailContentExecution": "enable",
   "defenderAdvancedRansomewareProtectionType": "enable",
   "defenderGuardMyFoldersType": "enable",
   "defenderGuardedFoldersAllowedAppPaths": [
@@ -550,6 +1413,7 @@ Content-Length: 11451
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
+  "applicationGuardEnabledOptions": "enabledForEdge",
   "applicationGuardBlockFileTransfer": "blockImageAndTextFile",
   "applicationGuardBlockNonEnterpriseContent": true,
   "applicationGuardAllowPersistence": true,
@@ -611,6 +1475,8 @@ Content-Length: 11451
   }
 }
 ```
+
+
 
 
 

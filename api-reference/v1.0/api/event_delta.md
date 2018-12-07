@@ -24,11 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
 
 ```
 
-### Query parameters
+## Query parameters
 
 Tracking changes in events incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -75,7 +75,7 @@ appropriate [state tokens](../../../concepts/delta_query_overview.md), to get th
   "name": "event_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
 
 Prefer: odata.maxpagesize=2
 ```
@@ -101,7 +101,7 @@ Content-type: application/json
 Content-length: 359
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "originalStartTimeZone": "originalStartTimeZone-value",

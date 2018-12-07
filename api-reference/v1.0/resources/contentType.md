@@ -15,7 +15,10 @@ Content types allow you to define a set of columns that must be present on every
 ## JSON representation
 
 Here is a JSON representation of a **contentType** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {

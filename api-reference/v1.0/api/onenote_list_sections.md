@@ -1,6 +1,6 @@
 # List sections
 
-Retrieve a list of [section](../resources/section.md) objects.
+Retrieve a list of [onenoteSection](../resources/section.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sections
 GET /sites/{id}/onenote/sections
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 The default sort order is `name asc`.
 
@@ -36,7 +36,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [section](../resources/section.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [onenoteSection](../resources/section.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

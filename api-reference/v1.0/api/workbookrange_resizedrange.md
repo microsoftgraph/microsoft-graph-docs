@@ -16,26 +16,22 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
+
+## Function parameters
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|deltaRows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
+|deltaColumns|Int32|The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Parameters
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|deltarows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
-|deltaColumns|Int32|The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
-
 ## Request body
-In the request URL, provide following query parameters with values.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|deltaRows|Int32||
-|deltaColumns|Int32||
+Do not supply a request body for this method.
 
 ### Response
 If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
@@ -44,12 +40,14 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_resizedrange"
+  "isComposable": true,
+  "name": "workbookrange_resizedrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
 ##### Response
@@ -57,7 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

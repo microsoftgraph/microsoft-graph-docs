@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/teachers
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "get_teachers"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11023/teachers
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```
 ##### Response
 The following is an example of the response. 

@@ -30,7 +30,8 @@ The following table lists and describes the HTTP status codes that can be return
 | 413         | Request Entity Too Large        | The request size exceeds the maximum limit.                                                                                            |
 | 415         | Unsupported Media Type          | The content type of the request is a format that is not supported by the service.                                                      |
 | 416         | Requested Range Not Satisfiable | The specified byte range is invalid or unavailable.                                                                                    |
-| 422         | Unprocessable Entity            | Cannot process the request because it is semantically incorrect.                                                                       |
+| 422         | Unprocessable Entity            | Cannot process the request because it is semantically incorrect.                                                                        |
+| 423         | Locked                          | The resource that is being accessed is locked.                                                                                          |
 | 429         | Too Many Requests               | Client application has been throttled and should not attempt to repeat the request until an amount of time has elapsed.                |
 | 500         | Internal Server Error           | There was an internal server error while processing the request.                                                                       |
 | 501         | Not Implemented                 | The requested feature isn’t implemented.                                                                                               |
@@ -42,7 +43,7 @@ The following table lists and describes the HTTP status codes that can be return
 The error response is a single JSON object that contains a single property
 named **error**. This object includes all the details of the error. You can use the information returned here instead of or in addition to the HTTP status code. The following is an example of a full JSON error body.
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -63,14 +64,14 @@ named **error**. This object includes all the details of the error. You can use 
 The error resource is returned whenever an error occurs in the processing of a request.
 
 Error responses follow the definition in the
-[OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)
+[OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)
 specification for error responses.
 
 ### JSON representation
 
 The error resource is composed of these resources:
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -96,13 +97,6 @@ properties:
 | **code**       | string                 | An error code string for the error that occured                                                            |
 | **message**    | string                 | A developer ready message about the error that occured. This should not be displayed to the user directly. |
 | **innererror** | error object           | Optional. Additional error objects that may be more specific than the top level error.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
 
 <!--<a name="msg_code_property"> </a> -->
 
@@ -217,4 +211,16 @@ time, so it is important that all apps be able to handle the [basic error codes]
 <!-- ##Additional Resources##
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->

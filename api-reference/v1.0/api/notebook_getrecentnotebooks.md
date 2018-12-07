@@ -16,22 +16,21 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
 The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
+
+## Function parameters
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.|
 
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
-
-## Request parameters
-In the request URL, provide following query parameters with values.
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -46,7 +45,7 @@ The following example shows how to call this API.
 The following example shows the request.
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
 ```
 
 #### Response
@@ -55,7 +54,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.notebook",
+  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
   "isCollection": true
 } -->
 ```http
@@ -66,7 +65,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -74,7 +73,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{

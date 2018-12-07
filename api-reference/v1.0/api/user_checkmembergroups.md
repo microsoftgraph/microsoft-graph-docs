@@ -38,9 +38,9 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type   | Description           |
-| :-------- | :----- | :-------------------- |
-| groupIds  | String | An array of group ids |
+| Parameter | Type              | Description           |
+| :-------- | :---------------- | :-------------------- |
+| groupIds  | String collection | An array of group ids |
 
 ## Response
 

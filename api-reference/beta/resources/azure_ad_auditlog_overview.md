@@ -15,17 +15,17 @@ Azure AD provides two types of activity logs:
 
 The audit logs activity report provides you with access to the history of every task performed in your tenant. The audit logs report provides you with records of system activities for compliance. Amongst others, the provided data enables you to address common scenarios such as:
 
-- Someone in my directory got access to an admin group. Who gave them access? 
+- Who granted admin group access to a directory user?
 
-- I want to know which users are signing in to a recently acquired app and I want to know if it's doing well.
+- Which users are signing in to a recently acquired app?
 
-- How many passwords resets were made within the tenant?
+- How many passwords resets were made within the directory?
 
 ### Sign in logs
 
 The sign-ins activity report helps you determine who performed the tasks reported by audit log reports. The sign-ins activity report helps you answer questions like:
 
-- What is the sign-in pattern of a user?
+- What is the sign in pattern of a user?
 - How many users have signed in during the last week?
 - What's the status of these sign-ins?
 
@@ -46,9 +46,11 @@ For example, you need an Azure AD Premium P1 license to access self-service pass
 
 Sign-in reports require an Azure AD Premium license.
 
-To learn more, see [Azure AD pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## Next Steps
 
+- [Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy audit log prerequisites. 
+- Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Review [directoryAudit](directoryAudit.md) resource and actions.
 - Review [signIn](signIn.md) resource and actions. 

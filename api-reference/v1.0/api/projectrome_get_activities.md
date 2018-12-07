@@ -22,7 +22,7 @@ GET /me/activities
 
 ## Optional query parameters
 
-This method supports some [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response. The following query parameters are supported:
+This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. The following query parameters are supported:
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.
@@ -85,7 +85,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.userActivity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
@@ -93,15 +93,15 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
+              "addImageQuery": false,
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

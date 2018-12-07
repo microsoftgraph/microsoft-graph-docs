@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1711
+Content-Length: 1807
 
 {
   "value": [
@@ -99,11 +99,15 @@ Content-Length: 1711
         "Locales To Install value"
       ],
       "installProgressDisplayLevel": "full",
-      "shouldUninstallOlderVersionsOfOffice": true
+      "shouldUninstallOlderVersionsOfOffice": true,
+      "targetVersion": "Target Version value",
+      "updateVersion": "Update Version value"
     }
   ]
 }
 ```
+
+
 
 
 

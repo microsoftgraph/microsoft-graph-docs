@@ -6,33 +6,40 @@ Create one or more single-value extended properties in a new or existing instanc
 
 The following user resources are supported:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md)
+- [contactFolder](../resources/contactfolder.md) 
+- [event](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 
 As well as the following group resources:
 
-- group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)
+- group [event](../resources/event.md)
 - group [post](../resources/post.md) 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
-One of the following permissions is required to call this API, depending on the resource you're
-creating the extended property in. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource you're creating the extended property in and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Tasks.ReadWrite
-- Group.ReadWrite.All
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| group [calendar](../resources/calendar.md) | Group.ReadWrite.All | Not supported | Not supported |
+| group [event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
+| group [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [Outlook task](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
  
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
@@ -132,17 +139,6 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## Parameters
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|A unique identifier for an object, represented by its **id** property, in the corresponding collection. Required.|
-|_Body parameters_|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
-|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
-
 ## Request headers
 | Name       | Value |
 |:---------------|:----------|
@@ -153,6 +149,12 @@ PATCH /groups/{id}/events/{id}
 
 Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) object in the 
 **singleValueExtendedProperties** collection property of the resource instance.
+
+|**Property**|**Type**|**Description**|
+|:-----|:-----|:-----|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| An array of one or more single-valued extended properties. |
+|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
 
 When creating an extended property in a _new_ resource instance, in addition to the 
 new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 

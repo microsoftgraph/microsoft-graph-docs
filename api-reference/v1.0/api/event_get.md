@@ -4,41 +4,12 @@ Get the properties and relationships of the specified [event](../resources/event
 
 Currently, this operation returns event bodies in only HTML format.
 
+There are two scenarios where an app can get an event in another user's calendar:
+
+* If the app has application permissions, or,
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](../../../concepts/outlook-get-shared-events-calendars.md).
+
 Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
-
-
-### Get events in another user's calendar
-
-If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get events 
-from another user's calendar. This section focuses on scenarios that involve delegated permissions.
-
-For example, your app has acquired delegated permissions from the user, John. Suppose another user, Garth, has shared a calendar with John. 
-You can get an event in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
-```
-
-This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below . 
-It also applies if Garth has delegated his entire mailbox to John.
-
-If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations 
-will return an error. In such cases, specifying a user ID or user principal name only works for getting an event in the signed-in user’s own calendars, 
-and the query is equivalent to using the /me shortcut:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-```
-
-This capability is available in only GET operations of:
-
-- Shared contact folders, calendars, and message folders 
-- Contacts, events, and messages in shared folders
-- The above resources in delegated mailboxes
-
-This capability is not available in other operations for contacts, events, messages, and their folders.
 
 
 ### Support various time zones
@@ -88,7 +59,7 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
@@ -111,11 +82,12 @@ The first example gets the specified event. It specifies the following:
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGIAAAoZDOFAAA="],
   "name": "get_event"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
@@ -207,10 +179,11 @@ to return specific properties.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="],
   "name": "get_event_multiple_locations"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 ##### Response 2
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
@@ -267,7 +240,6 @@ Content-length: 1992
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

@@ -49,7 +49,7 @@ Here is an example of the request.
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
+PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 Content-type: application/json
 Content-length: 364
 
@@ -67,7 +67,7 @@ Here is an example of the response.
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.historyItem"
+    "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->
 
 ```http

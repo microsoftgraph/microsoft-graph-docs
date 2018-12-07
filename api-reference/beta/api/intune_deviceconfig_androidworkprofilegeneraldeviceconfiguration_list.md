@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1878
+Content-Length: 2435
 
 {
   "value": [
@@ -56,6 +56,10 @@ Content-Length: 1878
       "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
       "id": "6decda7e-da7e-6dec-7eda-ec6d7edaec6d",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -82,16 +86,26 @@ Content-Length: 1878
       "workProfilePasswordBlockTrustAgents": true,
       "workProfilePasswordExpirationDays": 1,
       "workProfilePasswordMinimumLength": 0,
+      "workProfilePasswordMinNumericCharacters": 7,
+      "workProfilePasswordMinNonLetterCharacters": 9,
+      "workProfilePasswordMinLetterCharacters": 6,
+      "workProfilePasswordMinLowerCaseCharacters": 9,
+      "workProfilePasswordMinUpperCaseCharacters": 9,
+      "workProfilePasswordMinSymbolCharacters": 6,
       "workProfilePasswordMinutesOfInactivityBeforeScreenTimeout": 9,
       "workProfilePasswordPreviousPasswordBlockCount": 13,
       "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
       "workProfilePasswordRequiredType": "lowSecurityBiometric",
       "workProfileRequirePassword": true,
-      "securityRequireVerifyApps": true
+      "securityRequireVerifyApps": true,
+      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
+      "vpnEnableAlwaysOnLockdownMode": true
     }
   ]
 }
 ```
+
+
 
 
 

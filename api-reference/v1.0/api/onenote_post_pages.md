@@ -63,7 +63,7 @@ Content-Type:text/html
   </head>
   <body>
     <p>Here's an image from an online source:</p>
-    <img src="http://..." alt="an image on the page" width="500" />
+    <img src="https://..." alt="an image on the page" width="500" />
     <p>Here's an image uploaded as binary data:</p>
     <img src="name:imageBlock1" alt="an image on the page" width="300" />
     <p>Here's a file attachment:</p>

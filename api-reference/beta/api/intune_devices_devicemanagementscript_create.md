@@ -43,7 +43,7 @@ The following table shows the properties that are required when you create the d
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
-|runAsAccount|[runAsAccountType](../resources/intune_devices_runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune_shared_runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
 
@@ -98,6 +98,8 @@ Content-Length: 530
   "fileName": "File Name value"
 }
 ```
+
+
 
 
 

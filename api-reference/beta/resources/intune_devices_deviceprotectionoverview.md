@@ -25,7 +25,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceProtectionOverview"
 }
 -->
@@ -44,6 +43,8 @@ Here is a JSON representation of the resource.
   "criticalFailuresDeviceCount": 1024
 }
 ```
+
+
 
 
 

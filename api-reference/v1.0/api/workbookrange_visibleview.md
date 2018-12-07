@@ -35,7 +35,7 @@ Here is an example of the request.
   "name": "workbookrange_visibleview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView
 ```
 
 ##### Response

@@ -36,7 +36,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-If successful, you'll get a 200 OK response that contains the collection of [user](..\api-reference\v1.0\resources\user.md) resources in the payload. Each user is 
+If successful, you'll get a 200 OK response that contains the collection of [user](../api-reference/v1.0/resources/user.md) resources in the payload. Each user is 
 identified by the **id** property and accompanied by its default properties. The payload shown below is truncated for brevity.
 
 ```no-highlight 
@@ -81,14 +81,14 @@ Content-type: application/json
 ```
 
 Microsoft Graph also lets you view collections by navigating the relationships of one resource with another. For example, through a user's **mailFolders** navigation property, 
-you can query for the collection of [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) resources in the user's mailbox:
+you can query for the collection of [mailFolder](../api-reference/v1.0/resources/mailfolder.md) resources in the user's mailbox:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-If successful, you'll get a 200 OK response that contains the collection of [mailFolder](..\api-reference\v1.0\resources\user.md) resources in the payload. Each **mailFolder** is 
+If successful, you'll get a 200 OK response that contains the collection of [mailFolder](../api-reference/v1.0/resources/user.md) resources in the payload. Each **mailFolder** is 
 identified by the **id** property and accompanied by its properties. The payload shown below is truncated for brevity.
 
 ```no-highlight 
@@ -320,7 +320,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -334,7 +334,7 @@ You can see all the functions that are available in the metadata. They appear as
 
 ## Use the Microsoft Graph SDKs
 
-Like the power and ease of SDKs? While you can always use REST APIs to call Microsoft Graph, we also provide SDKs for many popular platforms. To explore the SDKs that are available, see [Code samples and SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).
+Like the power and ease of SDKs? While you can always use REST APIs to call Microsoft Graph, we also provide SDKs for many popular platforms. To explore the SDKs that are available, see [Code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).
 
 ## See also
 

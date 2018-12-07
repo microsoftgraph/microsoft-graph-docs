@@ -11,11 +11,6 @@ The **planner** resource is the entry point for the Planner object model. It ret
 |[Create plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Create a new **plannerPlan** by posting to the plans collection.|
 |[Create plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Create a new **plannerTask** by posting to the tasks collection.|
 
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the **planner** resource.|
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -28,17 +23,37 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.planner"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
 }
+```
 
+## Example
+
+The **planner** resource is available at the root of the graph.
+
+<!--{
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/planner
+```
+
+<!--{
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.planner"
+}-->
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

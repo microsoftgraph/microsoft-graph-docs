@@ -1,6 +1,6 @@
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. 
+Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. 
 
 ## Users and groups
 
@@ -30,7 +30,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
+| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. Gives customers access to sign-in and account risk data in Azure AD.| [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
 
 
 ## Productivity
@@ -53,7 +53,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |:-----------|:--------------------|:-----------|:----------------|
 | Sites and lists  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](../concepts/sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Office 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](../concepts/planner-concept-overview.md) |
-|Teamwork (preview) |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
+|Teamwork |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](../concepts/teams-concept-overview.md) |
 
 
 ## Social intelligence and analytics
@@ -75,8 +75,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security integration (preview) | Azure AD Identity Protection, Azure Security Center | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
-| Identity protection (preview) | Azure AD | Gives access to sign-in and account risk data for users in Azure AD. | [Security in Microsoft Graph](../concepts/security-concept-overview.md)  |
+| Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Cloud Application Security, Windows Defender Advanced Threat Protection, and [more](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
 
 
 
@@ -113,7 +112,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 <!-- Need to update the destination page titles and URLs as Matt's v-team finalize on the examples and featured scenarios content 
 -->
 
-- See [examples](https://developer.microsoft.com/en-us/graph/examples) of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
+- See [examples](https://developer.microsoft.com/graph/examples) of creative solutions built on top of services in Microsoft Graph that solve real customer problems.
 - Look under **Learn** in the table of contents to read about services and features that _you_ can use in your scenarios.
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick starts](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.

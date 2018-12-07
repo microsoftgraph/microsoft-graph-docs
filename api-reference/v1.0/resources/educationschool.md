@@ -23,8 +23,8 @@ A resource representing a school and used to manage the classes, teachers, and s
 |id|String|GUID of this school.|
 |displayName| String| Display name of the school.| 
 |description| String | Description of the school.| 
-|status| string| Read-Only. Possible values are: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| string| Read-Only.  Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+|status| string| Read-Only. The possible values are: `inactive`, `active`, `expired`, `deleteable`.|
+|externalSource| educationExternalSource| Read-Only.  The possible values are: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Email address of the principal.|
 |principalName| String | Name of the principal.|
 |externalPrincipalId| String | ID of principal in syncing system. |
@@ -37,7 +37,6 @@ A resource representing a school and used to manage the classes, teachers, and s
 |address|[physicalAddress](physicaladdress.md)| Address of the school.|
 |createdBy|[identitySet](identityset.md)|Entity who created the school.|
 
-
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -48,11 +47,10 @@ A resource representing a school and used to manage the classes, teachers, and s
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

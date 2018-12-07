@@ -18,6 +18,7 @@ The following table lists the suggested permission needed for each resource. To 
 | Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
+|Security alert| SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 

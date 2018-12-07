@@ -10,13 +10,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All | 
 
+In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits/{id}
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
 
 ## Request headers
 | Name      |Description|
@@ -56,7 +58,7 @@ Content-length: 218
   "value": [{
 		"id": "id",
 		"category": "UserManagement",
-		"correlationId": "da159bfb-54fa-4092-8a38-6e1fa7870e30",
+		"correlationId": "dax59xfb-5xfa-4x92-8x38-6e1fx7870e30",
 		"result": "success",
 		"resultReason": "Successfully added member to group",
 		"activityDisplayName": "Add member to group",
@@ -64,16 +66,16 @@ Content-length: 218
 		"loggedByService": "Core Directory",
 		"initiatedBy": {
 			"user": {
-				"id": "728309ae-1a37-4937-9afe-e35d964db09b",
-				"displayName": "Audry Oliver",
-				"userPrincipalName": "bob@wingtiptoysonline.com",
-				"ipAddress": "10.34.33.555"
+				"id": "72xx09ae-1x37-49x7-9xfe-e3xx964db09b",
+				"displayName": "Jamie Doe",
+				"userPrincipalName": "jdoe@wingtiptoysonline.com",
+				"ipAddress": "127.0.0.1"
 			},
 			"app": null
 		},
 		"targetResources": [{
 			"@odata.type": "#microsoft.graph.TargetResourceGroup",
-			"id": "ef7e527d-6c92-4234-8c6d-cf6fdfb57f95",
+			"id": "ef7x527d-6xx2-4xx4-8xxd-cxxfdxx5xx95",
 			"displayName": "Lynda.com",
 			"modifiedProperties": [{
 				"displayName": "Action Client Name",
@@ -83,10 +85,10 @@ Content-length: 218
 			"groupType": "unifiedGroups"
 		}, {
 			"@odata.type": "#microsoft.graph.targetResourceUser",
-			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
+			"id": "1x0exxf5-3xx1-4xxb-9xx0-d4xx572xxbb7",
 			"displayName": null,
 			"modifiedProperties": [],
-			"userPrincipalName": "bmm3u@mtmail.mtsu.edu"
+			"userPrincipalName": "jdoe@contoso.com"
 		}],
 		"additionalDetails": [{
 			"key": "Additional Detail Name",

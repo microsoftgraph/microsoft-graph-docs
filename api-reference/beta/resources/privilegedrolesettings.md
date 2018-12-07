@@ -10,6 +10,7 @@ Represents the settings for a privileged role.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
+|[Update privilegedRoleSettings](../api/privilegedrolesettings_updatet.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Update privilegedRoleSettings object.|
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -22,6 +23,8 @@ Represents the settings for a privileged role.
 |minElevationDuration|duration|Minimal duration for the activated role.|
 |notificationToUserOnElevation|boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
 |ticketingInfoOnElevation|boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
+|approvalOnElevation|boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role.|
+|approverIds|array|List of Approval ids, if approval is required for activation.|
 
 ## Relationships
 None
@@ -49,7 +52,9 @@ Here is a JSON representation of the resource.
   "mfaOnElevation": true,
   "minElevationDuration": "String (timestamp)",
   "notificationToUserOnElevation": true,
-  "ticketingInfoOnElevation": true
+  "ticketingInfoOnElevation": true,
+  "approvalOnElevation": false,
+  "approverIds": []
 }
 
 ```

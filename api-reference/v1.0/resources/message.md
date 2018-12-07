@@ -4,7 +4,9 @@ A message in a mailFolder.
 
 This resource supports:
 
-- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". Once the message has been sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message_get.md) operation.
+- Adding your own data as custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/message_delta.md) function.
 
@@ -52,14 +54,14 @@ by providing a [delta](../api/message_delta.md) function.
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
-|from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|from|[recipient](recipient.md)|The mailbox owner and sender of the message. The value must correspond to the actual mailbox used.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
-|importance|String| The importance of the message: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
-|internetMessageId |String |The message ID in the format specified by [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|importance|importance| The importance of the message: `Low`, `Normal`, `High`.|
+|inferenceClassification | inferenceClassificationType | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. The possible values are: `focused` or `other`. |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | A collection of message headers defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message. |
+|internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
 |isRead|Boolean|Indicates whether the message has been read.|
@@ -68,7 +70,7 @@ by providing a [delta](../api/message_delta.md) function.
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
@@ -102,8 +104,10 @@ When a message is being composed, in most cases, the From and Sender properties 
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "extensions",
@@ -111,7 +115,23 @@ Here is a JSON representation of the resource
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.message",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

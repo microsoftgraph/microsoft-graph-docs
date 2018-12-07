@@ -12,7 +12,7 @@ Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune_troubles
 |Property|Type|Description|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune_troubleshooting_mobileappactiontype.md)|AAD security group id to which it was targeted. Possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`.|
+|actionType|[mobileAppActionType](../resources/intune_troubleshooting_mobileappactiontype.md)|AAD security group id to which it was targeted. Possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
 |runState|[runState](../resources/intune_shared_runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`.|
 |errorCode|String|Error code for the failure, empty if no failure.|
 
@@ -22,7 +22,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingAppStateHistory"
 }
 -->
@@ -35,6 +34,8 @@ Here is a JSON representation of the resource.
   "errorCode": "String"
 }
 ```
+
+
 
 
 

@@ -73,7 +73,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "Guid",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [
@@ -85,6 +85,8 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
+
+
 
 
 

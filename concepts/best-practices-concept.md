@@ -80,9 +80,10 @@ By default, unknown members are not returned by Microsoft Graph. If, however, yo
 
 >**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
 
+
 ## Storing data locally
 
-Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
 
 ## Optimizations
 
@@ -133,4 +134,6 @@ To ensure reliability and facilitate support for your application:
 
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
-- Always log the *request-id* and *timestamp* from the HTTP response header. This is required when escalating issues or reporting issues in Stack Overflow or to Microsoft Customer Support.
+- Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
+  - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
+  - Always log the `request-id`, `timestamp` and `x-ms-ags-diagnostic` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) or to Microsoft Support.

@@ -47,10 +47,10 @@ If successful, this method returns `204 No Content` response code.
 
 This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### Response

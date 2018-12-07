@@ -1,13 +1,13 @@
-# Microsoft Bookings API overview
+# Microsoft Bookings API overview (preview)
 
 Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any small business that provides service on an appointment basis, such as auto repair shops, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business. Microsoft Bookings is available to businesses that have an Office 365 Business Premium subscription.
 
 ## Why integrate with Microsoft Bookings using Microsoft Graph?
 
 ### Streamline appointment booking
-A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](../api-reference/beta/api/bookingbusiness_list_services.md) and [book appontments](../api-reference/beta/api/bookingbusiness_post_appointments.md) any time directly on the scheduling page, on the business web site or Facebook. 
+A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](../api-reference/beta/api/bookingbusiness_list_services.md) and [book appointments](../api-reference/beta/api/bookingbusiness_post_appointments.md) any time directly on the scheduling page, on the business web site or Facebook. 
 
-Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can [reschedule](../api-reference/beta//api/bookingappointment_update.md), [cancel](../api-reference/beta/api/bookingappointment_cancel.md), or [re-assign](../api-reference/beta/api/bookingappointment_update.md) an existing booking to another available staff member. 
+Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can [reschedule](../api-reference/beta/api/bookingappointment_update.md), [cancel](../api-reference/beta/api/bookingappointment_cancel.md), or [re-assign](../api-reference/beta/api/bookingappointment_update.md) an existing booking to another available staff member. 
 
 ### Reduce no-shows and increase productivity of the staff
 Business operators can specify [scheduling policies](../api-reference/beta/resources/bookingschedulingpolicy.md) that include minimum notice for bookings and cancellations, and customers can schedule or reschedule appointments themselves. Automated appointment confirmations and reminders decrease no-shows, and let the staff make better use of their production hours. 
@@ -17,6 +17,12 @@ Completing an appointment automatically verifies if the customer is already on t
 
 ### Integrate with productivity and team collaboration services in Microsoft Graph
 Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and [integrate with the best of Microsoft 365](overview-major-services.md) to support richer scenarios. For example, you can use [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) to track and analyze business financial data, and generate professional reports, or use [SharePoint](sharepoint-concept-overview.md) or [Microsoft Teams](teams-concept-overview.md) to enhance team collaboration.
+
+## API reference
+Looking for the API reference for this service?
+
+See [Microsoft Bookings API in Microsoft Graph beta](../api-reference/beta/resources/booking-api-overview.md).
+
 
 ## Next steps
 

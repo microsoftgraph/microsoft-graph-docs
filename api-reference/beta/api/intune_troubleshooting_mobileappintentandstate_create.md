@@ -52,7 +52,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 Content-type: application/json
-Content-length: 489
+Content-length: 831
 
 {
   "@odata.type": "#microsoft.graph.mobileAppIntentAndState",
@@ -65,7 +65,15 @@ Content-length: 489
       "displayName": "Display Name value",
       "mobileAppIntent": "notAvailable",
       "displayVersion": "Display Version value",
-      "installState": "failed"
+      "installState": "failed",
+      "supportedDeviceTypes": [
+        {
+          "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType",
+          "type": "windowsRT",
+          "minimumOperatingSystemVersion": "Minimum Operating System Version value",
+          "maximumOperatingSystemVersion": "Maximum Operating System Version value"
+        }
+      ]
     }
   ]
 }
@@ -76,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 538
+Content-Length: 880
 
 {
   "@odata.type": "#microsoft.graph.mobileAppIntentAndState",
@@ -90,11 +98,21 @@ Content-Length: 538
       "displayName": "Display Name value",
       "mobileAppIntent": "notAvailable",
       "displayVersion": "Display Version value",
-      "installState": "failed"
+      "installState": "failed",
+      "supportedDeviceTypes": [
+        {
+          "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType",
+          "type": "windowsRT",
+          "minimumOperatingSystemVersion": "Minimum Operating System Version value",
+          "maximumOperatingSystemVersion": "Maximum Operating System Version value"
+        }
+      ]
     }
   ]
 }
 ```
+
+
 
 
 

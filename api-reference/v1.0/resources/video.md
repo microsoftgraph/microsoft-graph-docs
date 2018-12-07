@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
 | **bitrate**               | Int32  | Bit rate of the video in bits per second.
 | **duration**              | Int64  | Duration of the file in milliseconds.
 | **fourCC**                | string | "Four character code" name of the video format.
-| **framerate**             | double | Frame rate of the video.
+| **frameRate**             | double | Frame rate of the video.
 | **height**                | Int32  | Height of the video, in pixels.
 | **width**                 | Int32  | Width of the video, in pixels.
 

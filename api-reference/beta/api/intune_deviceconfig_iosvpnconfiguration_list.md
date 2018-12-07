@@ -48,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1997
+Content-Length: 2547
 
 {
   "value": [
@@ -56,6 +56,10 @@ Content-Length: 1997
       "@odata.type": "#microsoft.graph.iosVpnConfiguration",
       "id": "bd12424c-424c-bd12-4c42-12bd4c4212bd",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -76,6 +80,13 @@ Content-Length: 1997
         {
           "@odata.type": "microsoft.graph.keyValue",
           "key": "Key value",
+          "value": "Value value"
+        }
+      ],
+      "customKeyValueData": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
           "value": "Value value"
         }
       ],
@@ -108,11 +119,21 @@ Content-Length: 1997
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
         "address": "Address value",
         "port": 4
-      }
+      },
+      "optInToDeviceIdSharing": true,
+      "providerType": "appProxy",
+      "userDomain": "User Domain value",
+      "strictEnforcement": true,
+      "cloudName": "Cloud Name value",
+      "excludeList": [
+        "Exclude List value"
+      ]
     }
   ]
 }
 ```
+
+
 
 
 

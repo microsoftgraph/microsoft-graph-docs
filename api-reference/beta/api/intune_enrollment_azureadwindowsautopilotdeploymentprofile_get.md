@@ -22,10 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile
+GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/intendedDeploymentProfile
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1318
+Content-Length: 1283
 
 {
   "value": {
@@ -67,7 +68,8 @@ Content-Length: 1318
       "hideEULA": true,
       "userType": "standard",
       "deviceUsageType": "shared",
-      "skipKeyboardSelectionPage": true
+      "skipKeyboardSelectionPage": true,
+      "hideEscapeLink": true
     },
     "enrollmentStatusScreenSettings": {
       "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
@@ -79,13 +81,13 @@ Content-Length: 1318
       "installProgressTimeoutInMinutes": 15,
       "allowDeviceUseOnInstallFailure": true
     },
-    "enrollmentSettings": {
-      "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
-      "blockWindowsConsumerFeatures": true
-    }
+    "extractHardwareHash": true,
+    "deviceNameTemplate": "Device Name Template value"
   }
 }
 ```
+
+
 
 
 

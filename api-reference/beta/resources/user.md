@@ -6,12 +6,14 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 
 This resource supports:
 
-- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
+
+| Method | Return Type | Description |
+|:-------|:------------|:------------|
 |[List users](../api/user_list.md) |[user](user.md) collection| Get a list of user objects.|
 |[Create user](../api/user_post_users.md) |[user](user.md)| Create a new user object.|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
@@ -36,6 +38,7 @@ This resource supports:
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property.|
+|[List transitive memberOf](../api/user_list_transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups, directory roles, and administrative units that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
 |[List joinedTeams](../api/user_list_joinedTeams.md) |[groups](group.md) collection| Get the Microsoft Teams that the user is a direct member of from the joinedTeams navigation property.|
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
@@ -56,6 +59,7 @@ This resource supports:
 |[invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md)| None |Invalidates all the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again.|
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[delta](../api/user_delta.md)|user collection| Get incremental changes for users. |
+|[Translate Outlook identifiers](../api/user_translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -63,46 +67,55 @@ This resource supports:
 |[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
+
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
-| accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
+|accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
 |ageGroup|String|Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
-| companyName | String | The company name which the user is associated. Read-only.
+|companyName| String | The company name which the user is associated. Read-only.
 |consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
-|country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|country|String|The country/region in which the user is located; for example, "US" or "UK". Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
+|externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation_post.md), this property represents the invited user's invitation status. For invited users, the state can be 'PendingAcceptance' or 'Accepted', or `null` for all other users. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
+|externalUserStateChangeDateTime|String|Shows the timestamp for the latest change to the externalUserState property.|
+|faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
 |legalAgeGroupClassification|String| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|
+|licenseAssignmentStates|[licenseAssignmentState](licenseAssignmentState.md) collection|State of license assignments for this user. Read-only.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user_get_mailboxsettings.md) or [update](../api/user_update_mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
 |officeLocation|String|The office location in the user's place of business.|
+|onPremisesDistinguishedName|String| Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
 |onPremisesDomainName|String| Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains ExtensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |
+|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s `userPrincipalName` (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property. Supports $filter. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
 |onPremisesSamAccountName|String| Contains the on-premises `sAMAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
 |onPremisesSyncEnabled|Boolean| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |
 |onPremisesUserPrincipalName|String| Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
+|otherMails|String| A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
+|preferredDataLocation|String|The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
@@ -117,23 +130,23 @@ This resource supports:
 |surname|String|The user's surname (family name or last name). Supports $filter.|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
-|userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
+|userType|String|A string value that can be used to classify user types in your directory, such as "Member" and "Guest". Supports $filter.          |
 
 ### Legal age group property definitions
 
-This section explains how the three age group properties (`legalAgeGroup`, `ageGroup` and `consentProvidedForMinor`) are used by Azure AD administrators and enterprise application developers to meet age-related regulations.
+This section explains how the three age group properties (`legalAgeGroupClassification`, `ageGroup` and `consentProvidedForMinor`) are used by Azure AD administrators and enterprise application developers to meet age-related regulations.
 
-For example: Cameron is administrator of a directory for an elementary school in Holyport in the United Kingdom. At the beginning of the school year he uses the admissions paperwork to obtain consent from the minor's parents based on the age-related regulations of the United Kingdom. The consent obtained from the parent allows the minor's account to be used by Holyport school and Microsoft apps. Cameron then creates all the accounts and sets ageGroup to "minor" and consentProvidedForMinor to "granted". Applications used by his students are then able to supress features that are not suitable for minors.
+For example: Cameron is administrator of a directory for an elementary school in Holyport in the United Kingdom. At the beginning of the school year he uses the admissions paperwork to obtain consent from the minor's parents based on the age-related regulations of the United Kingdom. The consent obtained from the parent allows the minor's account to be used by Holyport school and Microsoft apps. Cameron then creates all the accounts and sets ageGroup to "minor" and consentProvidedForMinor to "granted". Applications used by his students are then able to suppress features that are not suitable for minors.
 
 #### Legal age group classification
 
 This read-only property is used by enterprise application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's `ageGroup` and `consentProvidedForMinor` properties.
 
-| Value	   | #	|Description|
+| Value   | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minorWithoutParentalConsent |1|(Reserved for future use)|
-|minorWithParentalConsent|2| The user is considered a minor based on the age-related regulations of their country or region and the adminstrator of the account has obtained appropriate consent from a parent or guardian.|
+|minorWithParentalConsent|2| The user is considered a minor based on the age-related regulations of their country or region and the administrator of the account has obtained appropriate consent from a parent or guardian.|
 |adult|3|The user considered an adult based on the age-related regulations of their country or region.|
 |notAdult|4|The user is from a country or region that has additional age-related regulations (such as the United States, United Kingdom, European Union or South Korea), and the user's age is between a minor and an adult age (as stipulated based on country or region). Generally, this means that teenagers are considered as `notAdult` in regulated countries.|
 |minorNoParentalConsentRequired|5|The user is a minor but is from a country or region that has no age-related regulations.|
@@ -142,26 +155,27 @@ This read-only property is used by enterprise application developers to ensure t
 
 The age group and minor consent properties are optional properties used by Azure AD administrators to help ensure the use of an account is handled correctly based on the age-related regulatory rules governing the user's country or region.
 
-##### ageGroup property
+#### ageGroup property
 
-| Value	   | #	|Description|
+| Value    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minor|1|The user is consider a minor.|
 |notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user’s age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
 |adult|3|The user should be a treated as an adult.|
 
- ##### consentProvidedForMinor property
+#### consentProvidedForMinor property
 
-| Value	   | #	|Description|
+| Value    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `consentProvidedForMinor` has been set for the user.|
 |granted|1|Consent has been obtained for the user to have an account.|
 |denied|2|Consent has not been obtained for the user to have an account.|
 |notRequired|3|The user is from a location that does not require consent.|
- 
+
 ## Relationships
-| Relationship | Type	|Description|
+
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
@@ -237,21 +251,27 @@ Here is a JSON representation of the resource
 {
   "aboutMe": "string",
   "accountEnabled": true,
+  "ageGroup": "string",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
   "businessPhones": ["string"],
   "city": "string",
   "companyName": "string",
+  "consentProvidedForMinor": "string",
   "country": "string",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "externalUserState": "PendingAcceptance",
+  "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
   "interests": ["string"],
   "jobTitle": "string",
+  "legalAgeGroupClassification": "string",
+  "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
@@ -261,12 +281,14 @@ Here is a JSON representation of the resource
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
   "postalCode": "string",
+  "preferredDataLocation": "string",
   "preferredLanguage": "string",
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
@@ -305,7 +327,6 @@ Here is a JSON representation of the resource
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
-
 ```
 
 ## See also
@@ -313,7 +334,6 @@ Here is a JSON representation of the resource
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
 - [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
 - [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

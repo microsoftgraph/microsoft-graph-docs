@@ -6,12 +6,14 @@ A page in a OneNote notebook.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntitySchemaObjectModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSection"
   ],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -50,7 +52,7 @@ Here is a JSON representation of the resource.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|The notebook that contains the page.  Read-only.|
-|parentSection|[Section](section.md)|The section that contains the page. Read-only.|
+|parentSection|[OnenoteSection](section.md)|The section that contains the page. Read-only.|
 
 ## Methods
 

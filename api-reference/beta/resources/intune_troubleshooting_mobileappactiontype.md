@@ -12,6 +12,9 @@ Not yet documented
 |installCommandSent|1|Application install command was sent.|
 |installed|3|Application installed.|
 |uninstalled|4|Application uninstalled.|
+|userRequestedInstall|5|User requested installation|
+
+
 
 
 

@@ -62,9 +62,10 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/softwareUpdateStatusSummary
 Content-type: application/json
-Content-length: 452
+Content-length: 518
 
 {
+  "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
   "displayName": "Display Name value",
   "compliantDeviceCount": 4,
   "nonCompliantDeviceCount": 7,

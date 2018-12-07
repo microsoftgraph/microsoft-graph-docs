@@ -11,12 +11,29 @@ Manages the filtering of a table's column.
 |[Clear](../api/filter_clear.md)|None|Clear the filter on the given column.|
 
 ## Properties
-None
 
-## Relationships
-| Relationship | Type	|Description|
+| Name | Type	|Description|
 |:---------------|:--------|:----------|
-|criteria|[FilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
+|criteria|[WorkbookFilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
+
+## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.workbookFilter"
+}-->
+
+```json
+{
+  "criteria": {"@odata.type": "microsoft.graph.workbookFilterCriteria" }
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

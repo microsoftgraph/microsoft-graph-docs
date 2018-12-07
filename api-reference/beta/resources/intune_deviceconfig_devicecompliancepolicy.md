@@ -16,6 +16,7 @@ This is the base class for Compliance policy. Compliance policies are platform s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |id|String|Key of the entity.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
@@ -45,6 +46,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "description": "String",
@@ -53,6 +57,8 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
 
 
 

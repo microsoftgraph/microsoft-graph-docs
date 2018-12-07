@@ -17,7 +17,7 @@ GET /education/me
 GET /education/users/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -36,7 +36,7 @@ The following is an example of the request.
   "name": "get_educationuser"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/users/13012
+GET https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
 ##### Response
 The following is an example of the response. 

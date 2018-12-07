@@ -2,13 +2,13 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The name and email address of a contact or message recipient.
+Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|String|The email address of the person or entity.|
-|name|String|The display name of the person or entity.|
+|address|String|The email address of an entity instance.|
+|name|String|The display name of an entity instance.|
 
 ## JSON representation
 

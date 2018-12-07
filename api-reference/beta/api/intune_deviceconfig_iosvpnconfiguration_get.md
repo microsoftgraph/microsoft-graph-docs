@@ -26,7 +26,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -51,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1871
+Content-Length: 2383
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.iosVpnConfiguration",
     "id": "bd12424c-424c-bd12-4c42-12bd4c4212bd",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -78,6 +82,13 @@ Content-Length: 1871
       {
         "@odata.type": "microsoft.graph.keyValue",
         "key": "Key value",
+        "value": "Value value"
+      }
+    ],
+    "customKeyValueData": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
         "value": "Value value"
       }
     ],
@@ -110,10 +121,20 @@ Content-Length: 1871
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
       "address": "Address value",
       "port": 4
-    }
+    },
+    "optInToDeviceIdSharing": true,
+    "providerType": "appProxy",
+    "userDomain": "User Domain value",
+    "strictEnforcement": true,
+    "cloudName": "Cloud Name value",
+    "excludeList": [
+      "Exclude List value"
+    ]
   }
 }
 ```
+
+
 
 
 

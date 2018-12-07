@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /workbook/worksheets/{id|name}/protection
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -29,7 +29,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorksheetProtection](../resources/worksheetprotection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [WorkbookWorksheetProtection](../resources/worksheetprotection.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -45,7 +45,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

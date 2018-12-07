@@ -42,6 +42,12 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
+## Function parameters
+
+| Name   | Value  | Description                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token, returns new state since that token.
+
 ## Optional query parameters
 
 This method supports the `$select`, `$expand`, and `$top` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.
@@ -65,7 +71,7 @@ Here is an example of how to call this API to establish your local state.
 
 Here is an example of the initial request.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -114,7 +120,7 @@ Here is an example of how to call this API to update your local state.
 
 Here is an example request after the initial request.
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -174,7 +180,7 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 
 ### Request
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -182,7 +188,7 @@ GET /me/drive/root/delta?token=latest
 
 ### Response
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK

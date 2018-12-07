@@ -34,7 +34,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **alert** object in the response body.
+If successful, this method returns a `200 OK` response code and an **alert** object in the response body. If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the providers response in a warning header. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
 ## Example
 
@@ -64,41 +64,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "activityGroupStates": [
-    {
-      "aliases": [
-        "aliases-value"
-      ],
-      "name": "name-value"
-    }
-  ],
-  "applicationStates": [
-    {
-      "deploymentPackageUrl": "deploymentPackageUrl-value",
-      "name": "name-value",
-      "permissionsRequired": "permissionsRequired-value",
-      "publisher": "publisher-value",
-      "riskScore": "riskScore-value"
-    }
-  ],
-  "assignedTo": "assignedTo-value",
-  "azureSubscriptionId": "azureSubscriptionId-value",
+  "activityGroupName": "String",
+  "assignedTo": "String",
+  "azureSubscriptionId": "String",
   "azureTenantId": "String",
-  "category": "category-value",
+  "category": "String",
   "closedDateTime": "String (timestamp)",
-  "comments": "String",
+  "cloudAppStates": [
+    {
+      "destinationServiceIp": "String",
+      "destinationServiceName": "String",
+      "riskScore": "String"
+    }
+  ],
+  "comments": ["String"],
+  "confidence": 1024,
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "detectionIds": ["String"],
   "eventDateTime": "String (timestamp)",
-  "feedback": "String",
+  "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "fileStates": [
     {
-      "authenticodeHash256": "String",
+      "fileHash": {
+        "hashType": "@odata.type: microsoft.graph.fileHashType",
+        "hashValue": "String"
+      },
       "name": "String",
       "path": "String",
-      "riskScore": "String",
-      "sha256": "String"
+      "riskScore": "String"
     }
   ],
   "hostStates": [
@@ -108,6 +102,7 @@ Content-type: application/json
       "isAzureAadRegistered": true,
       "isHybridAzureDomainJoined": true,
       "netBiosName": "String",
+      "os": "String",
       "privateIpAddress": "String",
       "publicIpAddress": "String",
       "riskScore": "String"
@@ -117,44 +112,72 @@ Content-type: application/json
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [
     {
-      "aliases": ["String"],
+      "category": "String",
+      "family": "String",
       "name": "String",
-      "severity": "String"
+      "severity": "String",
+      "wasRunning": true
     }
   ],
-  "malwareWasRunning": true,
   "networkConnections": [
     {
+      "applicationName": "String",
       "destinationAddress": "String",
+      "destinationDomain": "String",
       "destinationPort": "String",
-      "protocol": "String",
+      "destinationUrl": "String",
+      "direction": "@odata.type: microsoft.graph.connectionDirection",
+      "domainRegisteredDateTime": "String (timestamp)",
+      "localDnsName": "String",
+      "natDestinationAddress": "String",
+      "natDestinationPort": "String",
+      "natSourceAddress": "String",
+      "natSourcePort": "String",
+      "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+      "riskScore": "String",
       "sourceAddress": "String",
       "sourcePort": "String",
-      "uri": "String"
+      "status": "@odata.type: microsoft.graph.connectionStatus",
+      "urlParameters": "String"
     }
   ],
   "processes": [
     {
       "accountName": "String",
-      "authenticodeHash256": "String",
       "commandLine": "String",
       "createdDateTime": "String (timestamp)",
-      "integrityLevel": "String",
+      "fileHash": {
+        "hashType": "@odata.type: microsoft.graph.fileHashType",
+        "hashValue": "String"
+      },
+      "integrityLevel": "@odata.type: microsoft.graph.processIntegrityLevel",
       "isElevated": true,
       "name": "String",
       "parentProcessCreatedDateTime": "String (timestamp)",
       "parentProcessId": 1024,
       "parentProcessName": "String",
       "path": "String",
-      "processId": 1024,
-      "sha256": "String"
+      "processId": 1024
     }
   ],
   "recommendedActions": ["String"],
-  "riskScore": "String",
-  "severity": "String",
+  "registryKeyStates": [
+    {
+      "hive": "@odata.type: microsoft.graph.registryHive",
+      "key": "String",
+      "oldKey": "String",
+      "oldValueData": "String",
+      "oldValueName": "String",
+      "operation": "@odata.type: microsoft.graph.registryOperation",
+      "processId": 1024,
+      "valueData": "String",
+      "valueName": "String",
+      "valueType": "@odata.type: microsoft.graph.registryValueType"
+    }
+  ],
+  "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
-  "status": "string",
+  "status": "@odata.type: microsoft.graph.alertStatus",
   "tags": ["String"],
   "title": "String",
   "triggers": [
@@ -164,24 +187,25 @@ Content-type: application/json
       "value": "String"
     }
   ],
-  "type": "string",
   "userStates": [
     {
+      "aadUserId": "String",
       "accountName": "String",
       "domainName": "String",
+      "emailRole": "@odata.type: microsoft.graph.emailRole",
+      "isVpn": true,
       "logonDateTime": "String (timestamp)",
       "logonId": "String",
-      "logonIpAddress": "String",
+      "logonIp": "String",
       "logonLocation": "String",
-      "logonType": "String",
+      "logonType": "@odata.type: microsoft.graph.logonType",
       "onPremisesSecurityIdentifier": "String",
       "riskScore": "String",
-      "userAccountType": "String",
+      "userAccountType": "@odata.type: microsoft.graph.userAccountSecurityType",
       "userPrincipalName": "String"
     }
   ],
-  "vendorInformation":
-  {
+  "vendorInformation": {
     "provider": "String",
     "providerVersion": "String",
     "subProvider": "String",
@@ -190,8 +214,8 @@ Content-type: application/json
   "vulnerabilityStates": [
     {
       "cve": "String",
-      "name": "String",
-      "severity": "String"
+      "severity": "String",
+      "wasRunning": true
     }
   ]
 }
