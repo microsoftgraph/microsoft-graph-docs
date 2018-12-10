@@ -9,9 +9,9 @@ description: "You can use the Planner API in Microsoft Graph to create tasks and
 
 You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
 
-Before you get started with Planner API, it is worth understanding how the main objects relate to each other as well as to Office 365 groups.
+Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Office 365 groups.
 
-## Groups
+## Office 365 Groups
 
 Office 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
@@ -20,7 +20,7 @@ To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the
 GET /groups/{id}/planner/plans
 ```
 
-When [creating a new plan](../api/planner-post-plans.md), give the plan a group owner by setting the `owner` property on a plan object. A plan must be owned by a group. A group can own multiple plans.
+When [creating a new plan](../api/planner-post-plans.md), make a group its owner by setting the `owner` property on a plan object. Plans must be owned by groups.
 
 >**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
@@ -42,11 +42,11 @@ The ID of the user to assign the task is the name of the open property on `assig
 
 ## Task and plan details 
 
-Planner resources are arranged into basic task and plan objects and detail task and plan objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.
+Planner resources are arranged into basic objects and detail objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.
 
 ## Visualization
 
-Aside from task and plan data, the Planner API also provides resources to provide common visualization of data across clients. Several types of visualization data are available for tasks:
+Aside from task and plan data, the Planner API also provides resources for creating a common visualization of data across clients. Several types of visualization data are available for tasks, as listed in the following table.
 
 | Tasks are shown as                                                                        | Tasks are ordered with information from                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -58,7 +58,7 @@ Aside from task and plan data, the Planner API also provides resources to provid
 
 The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.
 
-All the ordering is controlled by the principles identified in [Planner order hints](planner-order-hint-format.md).
+All the ordering is controlled by the principles described in [Planner order hints](planner-order-hint-format.md).
 
 ## <a name="delta">Track changes using delta query</a>
 
@@ -115,7 +115,7 @@ Planner's delta query call flow is as follows:
 ## Planner resource versioning
 
 Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
-Planner allows changes to older versions of resources if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
+Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
 Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
 The client apps are expected to handle versioning related [error codes](/graph/errors) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
 
@@ -125,32 +125,16 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 ### 400 Bad request
 
-There are several common cases where the `POST` and `PATCH` requests can get a 400 status code. Common problems include:
+In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties are not of correct types.
-* The type isn't specified.
-* The request does not contain any properties.
+* Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
+* Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
+* The data is logically inconsistent. For example, start date of task is later than due date of the task.
 
-#### Example
+### 403 Forbidden
 
-[plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
-
-* Order hint values do not have the [correct format](planner-order-hint-format.md).
-
-   For example, an order hint value is being set directly to the value returned to the client.
-
-* The data is logically inconsistent.
-
-   For example, start date of task is later than due date of the task.
-
-### Planner error status codes
-
-In addition to general error status codes, Planner indicates special error conditions by returning the following codes.
-
-#### 403 Forbidden
-
-The Planner API returns the **403** status code when a service-defined limit has been exceeded. In this case, the `code` property on the error resource type indicates the type of the limit exceeded by the request.
-The possible values for the limit types include:
+In addition to the general errors, the Planner API also returns the 403 status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
+The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -168,9 +152,10 @@ The possible values for the limit types include:
 | MaximumFavoritePlansForUser   | The `favoritePlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                            |
 | MaximumRecentPlansForUser     | The `recentPlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
 | MaximumContextsOnPlan         | The `contexts` property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
+| MaximumPlannerPlans       | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
 
-#### 412 Precondition Failed
+### 412 Precondition Failed 
 
-All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request.
-Additionally, 412 status code can be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and obtain a new etag.
+All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
+The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
 

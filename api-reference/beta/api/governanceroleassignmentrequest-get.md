@@ -73,8 +73,6 @@ Content-length: 279
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"2018-05-09T21:26:15.73-07:00",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",

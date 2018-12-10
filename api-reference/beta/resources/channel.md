@@ -30,6 +30,10 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
 |id|String|The channels's unique identifier. Read-only.|
+|isFavoriteByDefault|Boolean|Whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
+|email|Boolean| The email address for sending messages to the channel. Read-only.|
+|webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+
 
 ## Relationships
 | Relationship | Type	|Description|

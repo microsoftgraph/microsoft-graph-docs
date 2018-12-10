@@ -9,7 +9,55 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## December 2018
+
+### Directory APIs
+
+| Change type | Version                                    | Description                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| Addition    | Beta | Added the `createdDateTime` property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource.|
+| Addition | v1.0 | Added method `memberOf` to get a [devices](/graph/api/resources/device?view=graph-rest-1.0) direct [membership](/graph/api/device-list-memberOf?view=graph-rest-1.0). This method has been added for getting the list of memberships including nested memberships.|
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Introduced new resource type [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Addition |beta| Introduced new resource type [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Addition |beta| Added the isFavoriteByDefault, mail, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+|Addition |beta| Added the displayName property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the description property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the classification property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [visibility](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [template](/graph/api/resources/teamstemplate?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the owners collection to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamVisibilityType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to giphyRatingType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationStatus.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAppDistributionMethod.|
+|Addition |beta| Introduced new resource [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+
+
+### Privileged Identity Management APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added property `registeredRoot` to the [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) entity.|
+| Change | beta | Renamed property `onboardDateTime` of the [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) entity to `registeredDateTime`.|
+| Addition | beta | Added new action [register resource](/graph/api/governanceresource-register?view=graph-rest-beta).|
+| Removal | beta | Removed the `isPermanent` property on [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta) entity.|
+| Removal | beta | Removed the `roleAssignmentStartDateTime` property on [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) entity.|
+| Removal | beta | Removed the `roleAssignmentEndDateTime` property on [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) entity.|
+
 ## November 2018
+
+### Data Policy Operations API
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added new  **progress** property to [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta). This specifies the progress of an operation.
 
 ### Microsoft Teams APIs
 
@@ -107,10 +155,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Directory APIs
 
-| **Change type** | **Version**   | **Description**                          | 
-| :-------------- | :------------ | :--------------------------------------- | 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the **licenseAssignmentStates** property to the [User](/graph/api/resources/user?view=graph-rest-beta) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](/graph/api/resources/group?view=graph-rest-beta) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
 ### Microsoft Intune APIs

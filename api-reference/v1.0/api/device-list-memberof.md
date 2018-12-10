@@ -5,8 +5,6 @@ description: "Get groups that this device is a direct member of. This operation 
 
 # List device groups
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get groups that this device is a direct member of. This operation is not transitive.
 
 ## Permissions
@@ -49,7 +47,7 @@ Here is an example of the request.
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/devices/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 
 ### Response
@@ -88,4 +86,4 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->S
+}-->

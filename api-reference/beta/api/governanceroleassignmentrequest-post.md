@@ -37,17 +37,14 @@ One of the following permissions is required to call this API. To learn more, in
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## Optional query parameters
-This method does **not** support [OData query parameters](/graph/query-parameters).
-
-### Request headers
+## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-type  | application/json|
 
-### Request body
-In the request body, supply a JSON representation of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object. 
+## Request body
+In the request body, supply a JSON representation of a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object. 
 
 | Property	   | Type	 |Required|  Description|
 |:---------------|:--------|:----------|:----------|
@@ -59,11 +56,11 @@ In the request body, supply a JSON representation of [governanceRoleAssignmentRe
 |reason|String| |The reason needs to be provided for the role assignment request for audit and review purpose.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)| | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.|
 
-### Response
-If successful, this method returns a `201, Created` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
+## Response
+If successful, this method returns a `201 Created` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
 
-## Error codes
-This API follows the standard of HTTP codes, in addition to the error codes listed in the following table.
+### Error codes
+This API returns the standard HTTP error codes. In addition, it also returns the error codes listed in the following table.
 
 |Error code     | Error message              | Details |
 |:--------------------| :---------------------|:--------------------|
@@ -75,10 +72,13 @@ This API follows the standard of HTTP codes, in addition to the error codes list
 | 400 BadRequest | RoleAssignmentDoesNotExist    | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be updated/extended does not exist in the system.
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | The [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) does not meet internal policies and cannot be created.
 
-## Example 1
+## Examples
+The following examples show how to use this API.
+
+### Example 1
 In this example, administrators assign user nawu@fimdev.net to the Billing Reader role.
 
- >**Note:** Besides the permission, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource. 
+ >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource. 
 
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
@@ -132,8 +132,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -162,7 +160,7 @@ Content-length: 226
 }
 ```
 
-## Example 2
+### Example 2
 In this example, the user nawu@fimdev.net activates the eligible Billing Reader role.
 
 | Property	   | Type	 |Required|  Value |
@@ -217,8 +215,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -259,7 +255,7 @@ Content-type: application/json
 }
 ```
 
-## Example 3
+### Example 3
 In this example, the user nawu@fimdev.net deactivates the active Billing Reader role.
 
 | Property	   | Type	 |Required|  Value |
@@ -310,8 +306,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -325,7 +319,7 @@ Content-length: 226
 ### Example 4
 In this example, administrators remove the user nawu@fimdev.net from the Billing Reader role.
 
- >**Note:** Besides the permission scope, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.
+ >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.
  
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
@@ -374,8 +368,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -389,7 +381,8 @@ Content-length: 226
 ### Example 5
 In this example, administrators update the role assignment for the user nawu@fimdev.net to Owner.
 
- >**Note:** Besides the permission scope, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource. 
+ >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource. 
+
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|Yes|\<resourceId\>|
@@ -442,8 +435,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -470,7 +461,7 @@ Content-length: 226
 ### Example 6
 This example extends the expiring role assignment for user ANUJCUSER to API Management Service Contributor.
 
- >**Note:** Besides the permission scope, this example requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.
+ >**Note:** In additon to the permission, this example requires that the requester have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource.
  
 | Property	   | Type	 |Required|  Value |
 |:---------------|:--------|:----------|:----------|
@@ -525,8 +516,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

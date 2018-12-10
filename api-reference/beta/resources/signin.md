@@ -18,7 +18,6 @@ This resource details user or application sign-in activity in your directory.
 |:---------------|:--------|:----------|
 |appDisplayName|String|Refers to the application name displayed in the Azure Portal.|
 |appId|String|Refers to the Unique GUID representing Application Id in the Azure Active Directory.|
-|authenticationProcessingDetails|`authenticationProcessingDetails`|Provides the details associated with Authentication processor.|
 |clientAppUsed|String|Provides the legacy client used for sign-in activty.E.g. includes Browser, Exchange Active Sync,Modern clients, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |conditionalAccessStatus|string| Provides the status of the conditional access policy triggered. Possible values are: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
@@ -36,7 +35,7 @@ This resource details user or application sign-in activity in your directory.
 |riskDetail|`riskDetail`|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.|
 |riskLevelAggregated|`riskLevel`|Provides the aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
 |riskLevelDuringSignIn|`riskLevel`|Provides the risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
-|riskEventTypes|`riskEventTypes`|Provides the list of risk event types associated with the sign-in. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecurePasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`,  `adminConfirmedSigninCompromised`, `hidden`and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
+|riskEventTypes|`riskEventTypes`|Provides the list of risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`.|
 |riskState|`riskState`|Provides the 'risk state' of a risky user, sign-in or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Provides the MFA related information like MFA Required, MFA Status for the corresponding sign-in.|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Provides details about the network location.|
@@ -86,7 +85,14 @@ Here is a JSON representation of the resource.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskLevel": "string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 

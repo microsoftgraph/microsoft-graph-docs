@@ -35,7 +35,7 @@ You can assign users to predefined Azure AD administrative [directory roles](/gr
 
 ### Manage devices
 
-[Manage devices](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
+[Manage devices](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) registered in the organization. Devices are registered to users and include items like laptops, desktops, tablets, and mobile phones. Devices are typically created in the cloud using the Device Registration Service or by Microsoft Intune. They're used by conditional access policies for multifactor authentication.
 
 ### Partner tenant management
 
@@ -68,6 +68,7 @@ You can get secure access to resources by activating administrative privileges o
 You can configure access reviews of group memberships and application access. [Access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) is featured in Azure AD Premium P2.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Azure AD identity and access management API in Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
@@ -76,7 +77,7 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Find out how to [Use the Azure AD REST APIs](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Use Azure AD to [authenticate](auth-overview.md) to Microsoft Graph. 
+- Use Azure AD to [authenticate](auth-overview.md) to Microsoft Graph.
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
 - Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

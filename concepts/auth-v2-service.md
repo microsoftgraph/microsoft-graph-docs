@@ -117,7 +117,7 @@ You send a POST request to the `/token` v2.0 endpoint to acquire an access token
 ```
 // Line breaks are for legibility only.
 
-POST /{tenant}/oauth2/v2.0/token HTTP/1.1
+POST https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 

@@ -20,14 +20,14 @@ Alerts are potential security issues within a customer's tenant that Microsoft o
 
 Microsoft Graph Security-integrated solutions will receive alerts from the following security providers:
 
-- Azure Security Center
-- Azure Active Directory Identity Protection
-- Azure Information Protection
-- Microsoft Cloud Application Security
-- Windows Defender Advanced Threat Protection
-- Microsoft Intune (private preview)
-- Office 365 (coming soon)
-- Azure Advanced Threat Protection (coming soon)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**
+- Microsoft Intune **(private preview)**
+- Office 365 **(coming soon)**
+- Azure Advanced Threat Protection **(coming soon)**
 - Partner solutions, such as Palo Alto Networks App Framework
 
 > **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem.

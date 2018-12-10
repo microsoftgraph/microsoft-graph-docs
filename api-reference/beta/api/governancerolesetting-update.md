@@ -12,19 +12,20 @@ Update the properties of [governanceRoleSetting](../resources/governancerolesett
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+>**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
+
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
 
-Besides the permission scope, this API requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## Optional request headers
+## Request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
@@ -32,7 +33,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## Request body
-In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that needs to be updated. 
+In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated. 
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -42,10 +43,11 @@ In the request body, supply the values for [governanceRuleSettings](../resources
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ## Response
-If successful, this method returns `204 NoContent` response code. It does not return anything in the response body. 
+If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body. 
 
-## Error codes
-This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
+### Error codes
+This API returns the standard HTTP error codes. In addition, it returns the following custom error codes.
+
 |Error code     | Error message         | Details             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.

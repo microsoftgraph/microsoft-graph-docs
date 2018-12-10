@@ -3076,6 +3076,8 @@
           href: api/device-post-registeredowners.md
         - name: Create registered user
           href: api/device-post-registeredusers.md
+        - name: List device groups
+          href: api/device-list-memberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3830,7 +3832,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /en-us/concepts/teams-list-all-teams
+          href: /graph/teams-list-all-teams?toc=./ref/toc.json
       - name: Group (team)
         href: resources/group.md
         items:

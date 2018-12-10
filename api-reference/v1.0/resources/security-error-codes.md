@@ -1,11 +1,13 @@
 ---
 title: "Microsoft Graph Security API error responses"
-description: "Errors in the Microsoft Graph Security API in Microsoft Graph are returned using standard HTTP 206 Partial Content status code and are delivered by way of a warning header."
+description: "Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header."
 ---
 
 # Microsoft Graph Security API error responses
 
-Errors in the Microsoft Graph Security API in Microsoft Graph are returned using standard HTTP 206 Partial Content status code and are delivered by way of a warning header.
+Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header.
+
+## Errors
 
 The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format:
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +33,7 @@ A user asks for `security/alerts/{alert_id}`.
     Provider 3: 200 (success)
     Provider 4: 403 (customer has not licensed this provider)
 
-Because both 404 and 200 are expected conditions, the warning header contains the following: 
+Because both 404 and 200 are expected conditions, the warning header contains the following:
 
 ```HTTP
 Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
@@ -40,6 +42,12 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 > **Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
 
+## Constraints
+
+The `$top` OData query parameter has a limit of 1000 alerts, and a combination of `$top` + `$skip` OData query parameters cannot exceed 6000 alerts. For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.
+
+A work-around for this limit is to use the `$filter` OData query parameter with the `eventDateTime` of the alert entity from the Microsoft Graph Security API, using `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` and replacing the dateTime value with the last (6000th) alert. You can also set a range for the `eventDateTime`; for example, *alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z*
+
 ## See also
 
-If you’re having trouble with authorization, see our [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).
+If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).

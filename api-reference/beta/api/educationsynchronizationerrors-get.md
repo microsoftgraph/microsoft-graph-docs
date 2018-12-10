@@ -42,7 +42,7 @@ The following is an example of the request.
   "name": "get_educationSynchronizationProfile_error"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/error
+GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 
 ##### Response

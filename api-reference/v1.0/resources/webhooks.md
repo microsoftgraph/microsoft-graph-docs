@@ -32,6 +32,7 @@ In general, subscription operations require read permission to the resource. For
 ## See also
 
 - [Subscription resource type](./subscription.md)
+- [List subscriptions](../api/subscription-list.md)
 - [Get subscription](../api/subscription-get.md)
 - [Create subscription](../api/subscription-post-subscriptions.md)
 - [Update subscription](../api/subscription-update.md)

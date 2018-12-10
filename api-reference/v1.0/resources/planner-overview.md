@@ -7,9 +7,9 @@ description: "You can use the Planner API in Microsoft Graph to create tasks and
 
 You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
 
-Before you get started with Planner API, it is worth understanding how the main objects relate to each other as well as to Office 365 groups.
+Before you get started with Planner API, you will want to understand how the main objects relate to each other as well as to Office 365 groups.
 
-## Groups
+## Office 365 Groups
 
 Office 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
@@ -44,7 +44,7 @@ Planner resources are arranged into basic objects and detail objects. Basic obje
 
 ## Visualization
 
-Aside from task and plan data, the Planner API also provides resources to provide common visualization of data across clients. Several types of visualization data are available for tasks:
+Aside from task and plan data, the Planner API also provides resources for creating a common visualization of data across clients. Several types of visualization data are available for tasks, as listed in the following table.
 
 | Tasks are shown as                                                                        | Tasks are ordered with information from                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -56,14 +56,14 @@ Aside from task and plan data, the Planner API also provides resources to provid
 
 The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.
 
-All the ordering is controlled by the principles identified in [Planner order hints](planner-order-hint-format.md).
+All the ordering is controlled by the principles described in [Planner order hints](planner-order-hint-format.md).
 
 ## Planner resource versioning
 
-Planner versions all resources using etags. These etags are returned with `@odata.etag` property on each resource, and `PATCH` and `DELETE` requests require the last etag known by the client to be specified with `If-Match` header.
-Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which etag for the same resource is newer by calculating which etag value is greater in ordinal string comparison. 
-Each resource has a separate etag. Etag values for different resources, including those with containment relationships, cannot be compared.
-The client apps are expected to handle two versioning related error status codes 409 and 412 by reading the latest version of the item, and resolving the conflicting changes.
+Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
+Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
+Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
+The client apps are expected to handle versioning related [error codes](/graph/errors) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
 
 ## Common Planner error conditions
 
@@ -71,7 +71,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 ### 400 Bad request
 
-There are several common cases where the `POST` and `PATCH` requests can get a 400 status code. Common problems include:
+In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
 * Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
 * Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
@@ -79,8 +79,8 @@ There are several common cases where the `POST` and `PATCH` requests can get a 4
 
 ### 403 Forbidden
 
-In addition to the general errors, the Planner API also returns this status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
-The possible values for the limit types include:
+In addition to the general errors, the Planner API also returns the 403 status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
+The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,9 +95,10 @@ The possible values for the limit types include:
 | MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
+| MaximumPlannerPlans       | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
 
 ### 412 Precondition Failed 
 
-All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request.
-Additionally, 412 status code can be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and obtain a new etag.
+All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
+The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
 

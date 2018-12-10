@@ -67,7 +67,8 @@ Content-Length: 459
     "type": "subscription",
     "displayName": "Wingtip Toys - Prod",
     "status": "Active",
-    "onboardDateTime": "2018-04-05T22:30:37.13Z"
+    "registeredDateTime": "2018-04-05T22:30:37.13Z",
+    "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",    
 }
 ```
 

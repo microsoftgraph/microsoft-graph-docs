@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                               |
 | Delegated (personal Microsoft account) | Not supported.                               |
-| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

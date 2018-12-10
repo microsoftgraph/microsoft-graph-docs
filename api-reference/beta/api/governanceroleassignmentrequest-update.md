@@ -12,13 +12,13 @@ Enable administrators to update their decisions (`AdminApproved` or `AdminDenied
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+>**Note:** This API also requires that the requester have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource that the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to. 
+
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
-
-Besides the permission scope, this API requires the requestor to have at least one `Active` adminstrator role assignment (`owner` or `user access administrator`) on the resource, which the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -26,13 +26,14 @@ Besides the permission scope, this API requires the requestor to have at least o
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
-### Request headers
+## Request headers
 | Name           | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-type  | application/json|
 
-### Request body
+## Request body
+
 |Parameters	     |Type	                 |Required |Description|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
@@ -42,9 +43,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### Response
 This method can only be applied to requests that are in status of `PendingAdminDecision`.
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-### Example
+## Example
 ##### Request
 <!-- {
   "blockType": "request",

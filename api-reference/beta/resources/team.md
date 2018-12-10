@@ -18,7 +18,8 @@ For more information about working with groups and members in teams, see [Use th
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create team](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Create team](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Create a team from scratch. |
+|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](/graph/api/group-delete?view=graph-rest-1.0) | None |Delete the team and its associated group. |
@@ -36,6 +37,11 @@ For more information about working with groups and members in teams, see [Use th
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
+|displayName|string| The name of the team. |
+|description|string| An optional description for the team. |
+|classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
+|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of a the group and team. Defaults to Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |isArchived|Boolean|Whether this team is in read-only mode. |
@@ -50,6 +56,8 @@ For more information about working with groups and members in teams, see [Use th
 |apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
+|owners|[user](user.md)| The list of this team's owners. |
+|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. |
 
 ## JSON representation
 

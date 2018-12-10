@@ -44,6 +44,8 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
+> **Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts. For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.  For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
+
 ## Request headers
 
 | Name      |Description|
@@ -56,7 +58,7 @@ Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body. If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the providers response in a warning header. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
+If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body. If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
 ## Example
 
@@ -74,7 +76,7 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

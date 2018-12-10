@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [convertIdResult](../resources/meetingtimesuggestionsresult.md) collection in the response body.
+If successful, this method returns `200 OK` response code and a [convertIdResult](../resources/convertidresult.md) collection in the response body.
 
 ## Example
 

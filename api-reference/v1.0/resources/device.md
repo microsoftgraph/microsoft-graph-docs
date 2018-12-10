@@ -18,6 +18,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List devices](../api/device-list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
 |[Update device](../api/device-update.md) | [device](device.md) |Update the properties of a device object. |
 |[Delete device](../api/device-delete.md) | None |Delete a device object. |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a direct member of. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
 |**Open extensions**| | |
@@ -50,6 +51,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
+|memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection|The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. |
 |registeredUsers|[directoryObject](directoryobject.md) collection|Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.|
 

@@ -1,13 +1,13 @@
 ---
-title: "Create team"
-description: "Create a new team under a group."
+title: "Create team from group"
+description: "Create a new team from a group."
 ---
 
-# Create team
+# Create team from group
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [team](../resources/team.md) under a [group](../resources/group.md).
+Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
 
