@@ -20,12 +20,12 @@ The following properties form the JSON object that represents an activity-based 
 
 The maximum values for properties denoted in days are 1 second short of the denoted number of days. For example, the maximum value of 1 day is specified as 23:59:59.
 
-| Property	   | Type	|Description| Min Value | Max Value | Default Value|
-|:---------------|:--------|:----------|:--------|:--------|:----|
-|Version|Integer|Policy version. Set value of 1. Required.|None|None|None|
-|ApplicationPolicies|Array|Collection of application policies.|None|None|None|
-|ApplicationId|String|Application identifier the policy applies to. "default" designates default value which applies to all applications supporting Activity Based Timeout functionality but not having application specific overrides.|None|None|None|
-|WebSessionIdleTimeout|String|The period of user inactivity after which the user's web session is considered expired.|5 minutes|1 day|None|
+| Property	   | Type	|Description|
+|:-------------|:------|:---------|
+|Version|Integer|Policy version. Set value of 1. Required.|
+|ApplicationPolicies|Array|Collection of application policies.|
+|ApplicationId|String|Application identifier the policy applies to. A value of "default" indicates the default value that applies to all applications that support activity-based timeout functionality but do not have application-specific overrides.|
+|WebSessionIdleTimeout|String|The period of user inactivity after which the user's web session is considered expired. The minimum value is 5 minutes; the maximum value is 1  day.|5 minutes|1 day|None|
 
 ## JSON representation
 The following is a JSON representation of the resource.
