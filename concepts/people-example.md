@@ -939,3 +939,33 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+## Delve “Working With” feature implementation
+ 
+![Image of Working With relationships](images/working-with.png "Image of Working With relationships")
+
+**There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list**
+ 
+Examples of public relationships:
+* They are connected in the org chart: Manager, Direct, Peers (share the same manager) 
+* They are members of a public group or DL with fewer than 30 people. 
+Public group means that the membership list is available in the directory.
+ 
+If the profile owner communicates with someone and there is no public relationship between them, such as org chart connection or groups in common, the fact that they've been communicating will not be visible to others.
+
+**The ranking of people, i.e. the order in which they appear on the profile owner's page, is determined by the private and public communication between the profile owner and the person on the list.**
+ 
+Examples of private communication:
+* They send emails to each other where the name of the other person is in the TO line
+* They are invited to meetings using the name of the other person on the calendar invite 
+ 
+Examples of public interaction:
+* They send or receive emails to/from each other as part of public group 
+* They are invited to meetings as part of group, or where more than X people are invited
+ 
+The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
+ 
+In order for User C to appear, you must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).
+ 
+**People external to the organization will not show up**
+People you email or meet with, but who are not part of the same org/company, will not show up in the "Working with" section.
