@@ -5,7 +5,7 @@ description: " Security, and Windows 10. "
 
 # Overview of Microsoft Graph
 
-Update from desktop!
+Update from desktop!!
 
 Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security, and Windows 10.
 
