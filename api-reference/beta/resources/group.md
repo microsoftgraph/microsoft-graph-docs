@@ -99,6 +99,7 @@ This resource supports:
 |createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |description|String|An optional description for the group.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
+|expirationDateTime|DateTimeOffset| Timestamp of when the group will expire. The value cannot be modified and is populated based on expiration policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |groupTypes|String collection| Specifies the type of group to create. Possible values are `Unified` to create an Office 365 group, or `DynamicMembership` for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
 |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the current user is subscribed to receive email conversations.|
@@ -196,6 +197,7 @@ The following is a JSON representation of the resource
   "deletedDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
+  "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
   "id": "string (identifier)",
   "isFavorite": true,  
