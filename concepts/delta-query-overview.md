@@ -41,6 +41,9 @@ These tokens are opaque to the client. The following details are what you need t
 
 If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify their desired query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
 
+- `$orderby` is not a supported query parameter for Delta queries.
+  - It is best not to assume a specific sequence of the responses returned from a Delta query. Assume that the same item could show up anywhere in the `nextLink` sequence and handle that in your merge logic.
+
 For users and groups, there are restrictions on using some query parameters:
 
 - If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
