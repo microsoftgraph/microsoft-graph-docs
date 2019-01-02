@@ -1,11 +1,11 @@
 ---
-title: "List memberOf"
+title: "List group memberOf"
 description: "Get groups that the group is a direct member of. "
 author: "dkershaw10"
 ---
 
 # List memberOf
-Get groups that the group is a direct member of. 
+Get groups that the group is a direct member of.
 
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 groups.
 
