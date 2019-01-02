@@ -1,3 +1,8 @@
+---
+title: "openTypeExtension resource type (open extensions)"
+description: "Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph."
+---
+
 # openTypeExtension resource type (open extensions)
 
 Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
@@ -6,13 +11,13 @@ Open extensions are represented by the **openTypeExtension** resource. Any open 
 
 One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
 
-Open extension example: [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
+Open extension example: [Add custom data to users using open extensions](/graph/extensibility-open-users)
 
 Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
 
 |Resource |Version |
 |:---------------|:-------|
-| [Administrative unit](../../beta/resources/administrativeunit.md)  | Preview only |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | Preview only |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
@@ -75,10 +80,10 @@ None
 
 |Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension_delete.md) | None |Delete openTypeExtension object. |
+|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object | Create an openTypeExtension object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
+|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

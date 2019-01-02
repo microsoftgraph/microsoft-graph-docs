@@ -1,3 +1,8 @@
+---
+title: "verifiedDomain resource type"
+description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
+---
+
 # verifiedDomain resource type
 
 Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.

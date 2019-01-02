@@ -1,3 +1,9 @@
+---
+title: "pivotTable resource type"
+description: "Represents an Excel PivotTable."
+author: "lumine2008"
+---
+
 # pivotTable resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,9 +14,9 @@ Represents an Excel PivotTable.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
-|[Refresh](../api/workbookpivottable_refresh.md)|None|Refreshes the PivotTable.	|
-|[Refreshall](../api/workbookpivottable_refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
+|[Get workbookPivotTable](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
+|[Refresh](../api/workbookpivottable-refresh.md)|None|Refreshes the PivotTable.	|
+|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
 
 ## Properties
 | Property	   | Type	|Description|

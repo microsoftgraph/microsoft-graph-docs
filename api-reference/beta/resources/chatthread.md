@@ -1,16 +1,21 @@
+---
+title: "chatThread resource type"
+description: "A chatThread is a collection of chatMessages in Microsoft Teams."
+---
+
 # chatThread resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A chatThread is a collection of [chatMessages](chatMessage.md) in Microsoft Teams.
+A chatThread is a collection of [chatMessages](chatmessage.md) in Microsoft Teams.
 
-> Currently, chatThreads can be [created in channels](../api/channel_post_chatthreads.md).  Future API releases will support reading existing chatThreads, as well as reading/writing direct chats between users that are outside the scope of a team or channel.
+> Currently, chatThreads can be [created in channels](../api/channel-post-chatthreads.md).  Future API releases will support reading existing chatThreads, as well as reading/writing direct chats between users that are outside the scope of a team or channel.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create thread](../api/channel_post_chatthreads.md) | [chatThread](chatthread.md) |Start a new thread in the specified channel, providing the first message.|
+|[Create thread](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) |Start a new thread in the specified channel, providing the first message.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -20,8 +25,8 @@ A chatThread is a collection of [chatMessages](chatMessage.md) in Microsoft Team
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|rootMessage|[chatMessage](chatMessage.md)| Nullable.|
-|chatMessages|[chatMessage](chatMessage.md) collection| Nullable.|
+|rootMessage|[chatMessage](chatmessage.md)| Nullable.|
+|chatMessages|[chatMessage](chatmessage.md) collection| Nullable.|
 
 > Currently these relationships exist implicitly, but cannot read or written.  Future beta API releases will support this.
 
@@ -34,7 +39,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "posts"
   ],
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatThread"
 }-->
 

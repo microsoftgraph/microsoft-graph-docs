@@ -1,3 +1,9 @@
+---
+title: "domainDnsCnameRecord resource type"
+description: "Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+author: "lleonard-msft"
+---
+
 # domainDnsCnameRecord resource type
 
 Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.

@@ -1,3 +1,8 @@
+---
+title: "educationIdentityMatchingConfiguration resource type"
+description: "Defines the settings for matching school data profile identities. These identities include students and teachers. Based on these settings, the users will be updated in the directory."
+---
+
 ## educationIdentityMatchingConfiguration resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

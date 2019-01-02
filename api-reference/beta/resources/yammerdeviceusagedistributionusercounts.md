@@ -1,3 +1,8 @@
+---
+title: "yammerDeviceUsageDistributionUserCounts resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # yammerDeviceUsageDistributionUserCounts resource type
 
 ## Properties

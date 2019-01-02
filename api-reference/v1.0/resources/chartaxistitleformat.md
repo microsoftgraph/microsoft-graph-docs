@@ -1,3 +1,9 @@
+---
+title: "ChartAxisTitleFormat resource type"
+description: "Represents the chart axis title formatting."
+author: "lumine2008"
+---
+
 # ChartAxisTitleFormat resource type
 
 Represents the chart axis title formatting.

@@ -1,3 +1,9 @@
+---
+title: "educationOneRosterApiDataProvider resource"
+description: "Used to set up the school data synchronization profile when the OneRoster API is used as the input source."
+author: "mmast-msft"
+---
+
 # educationOneRosterApiDataProvider resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

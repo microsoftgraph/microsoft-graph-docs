@@ -1,3 +1,8 @@
+---
+title: "Define the /me as singleton"
+description: "These are things I had to add in the docs to make sure the Markdown-Scanner"
+---
+
 # Helpers (examples that aren't included in the docs)
 
 These are things I had to add in the docs to make sure the Markdown-Scanner

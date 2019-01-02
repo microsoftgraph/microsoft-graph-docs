@@ -1,3 +1,9 @@
+---
+title: "channel resource type"
+description: "A channel is a collection of chatMessages within a team. "
+author: "nkramer"
+---
+
 # channel resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -11,13 +17,13 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List channels](../api/group_list_channels.md) | [channel](channel.md) collection | Get the list of channels in this team.|
-|[Create channel](../api/group_post_channels.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
-|[Get channel](../api/channel_get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
-|[Update channel](../api/channel_patch.md) | [channel](channel.md) | Update properties of the channel.|
-|[Delete channel](../api/channel_delete.md) | None | Delete a channel.|
-|[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
-|[Create chat thread](../api/channel_post_chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
+|[List channels](../api/channel-list.md) | [channel](channel.md) collection | Get the list of channels in this team.|
+|[Create channel](../api/channel-post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
+|[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
+|[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
+|[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
+|[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
+|[Create chat thread](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -25,6 +31,10 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
 |id|String|The channels's unique identifier. Read-only.|
+|isFavoriteByDefault|Boolean|Whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
+|email|Boolean| The email address for sending messages to the channel. Read-only.|
+|webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+
 
 ## Relationships
 | Relationship | Type	|Description|

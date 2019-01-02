@@ -1,3 +1,9 @@
+---
+title: "Table resource type"
+description: "Represents an Excel table."
+author: "lumine2008"
+---
+
 # Table resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,22 +14,22 @@ Represents an Excel table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Table](../api/table_get.md) | [Table](table.md) |Read properties and relationships of table object.|
-|[Create TableColumn](../api/table_post_columns.md) |[TableColumn](tablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
-|[List columns](../api/table_list_columns.md) |[TableColumn](tablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table_post_rows.md) |[TableRow](tablerow.md)| Create a new TableRow by posting to the rows collection.|
-|[List rows](../api/table_list_rows.md) |[TableRow](tablerow.md) collection| Get a TableRow object collection.|
-|[Update](../api/table_update.md) | [Table](table.md)	|Update Table object. |
-|[Databodyrange](../api/table_databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the table.|
-|[Headerrowrange](../api/table_headerrowrange.md)|[Range](range.md)|Gets the range object associated with header row of the table.|
-|[Range](../api/table_range.md)|[Range](range.md)|Gets the range object associated with the entire table.|
-|[Totalrowrange](../api/table_totalrowrange.md)|[Range](range.md)|Gets the range object associated with totals row of the table.|
-|[Clearfilters](../api/table_clearfilters.md)|None|Clears all the filters currently applied on the table.|
-|[Converttorange](../api/table_converttorange.md)|[Range](range.md)|Converts the table into a normal range of cells. All data is preserved.|
-|[Delete](../api/table_delete.md)|None|Deletes the table.|
-|[Reapplyfilters](../api/table_reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
-|[List](../api/table_list.md) | [Table](table.md) collection |Get table object collection. |
-|[Add](../api/tablecollection_add.md)|[Table](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
+|[Get Table](../api/table-get.md) | [Table](table.md) |Read properties and relationships of table object.|
+|[Create TableColumn](../api/table-post-columns.md) |[TableColumn](tablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
+|[List columns](../api/table-list-columns.md) |[TableColumn](tablecolumn.md) collection| Get a TableColumn object collection.|
+|[Create TableRow](../api/table-post-rows.md) |[TableRow](tablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[List rows](../api/table-list-rows.md) |[TableRow](tablerow.md) collection| Get a TableRow object collection.|
+|[Update](../api/table-update.md) | [Table](table.md)	|Update Table object. |
+|[Databodyrange](../api/table-databodyrange.md)|[Range](range.md)|Gets the range object associated with the data body of the table.|
+|[Headerrowrange](../api/table-headerrowrange.md)|[Range](range.md)|Gets the range object associated with header row of the table.|
+|[Range](../api/table-range.md)|[Range](range.md)|Gets the range object associated with the entire table.|
+|[Totalrowrange](../api/table-totalrowrange.md)|[Range](range.md)|Gets the range object associated with totals row of the table.|
+|[Clearfilters](../api/table-clearfilters.md)|None|Clears all the filters currently applied on the table.|
+|[Converttorange](../api/table-converttorange.md)|[Range](range.md)|Converts the table into a normal range of cells. All data is preserved.|
+|[Delete](../api/table-delete.md)|None|Deletes the table.|
+|[Reapplyfilters](../api/table-reapplyfilters.md)|None|Reapplies all the filters currently on the table.|
+|[List](../api/table-list.md) | [Table](table.md) collection |Get table object collection. |
+|[Add](../api/tablecollection-add.md)|[Table](table.md)|Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.|
 
 ## Properties
 | Property	   | Type	|Description|

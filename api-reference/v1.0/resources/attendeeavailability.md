@@ -1,3 +1,8 @@
+---
+title: "attendeeAvailability resource type"
+description: "The type and availability of an attendee."
+---
+
 # attendeeAvailability resource type
 
 The type and availability of an attendee.

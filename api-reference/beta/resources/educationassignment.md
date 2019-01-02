@@ -1,10 +1,15 @@
+---
+title: "educationAssignment resource type"
+description: "The **educationAssignment** resource represents a task or unit of work assigned to a student or team member in a class as part of their study. Only teachers or team owners can create assignments. Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated submission that contains any work their teacher asked to be turned in. A teacher can add scores and feedback to the submission turned in by the student."
+---
+
 # educationAssignment resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The **educationAssignment** resource represents a task or unit of work assigned to a student or team member in a class as part of their study. Only teachers or team owners can create assignments. Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated [submission](educationsubmissionresource.md) that contains any work their teacher asked to be turned in. A teacher can add scores and feedback to the submission turned in by the student.
 
-When an assignment is created, it is in a Draft state. Students can't see the assignment and submissions won't be created. You can change the status of an assignment by using the [publish](../api/educationassignment_publish.md) action. You can't use a PATCH request to change the assignment status.
+When an assignment is created, it is in a Draft state. Students can't see the assignment and submissions won't be created. You can change the status of an assignment by using the [publish](../api/educationassignment-publish.md) action. You can't use a PATCH request to change the assignment status.
 
 The assignment APIs are exposed in the class namespace.
 
@@ -12,14 +17,14 @@ The assignment APIs are exposed in the class namespace.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get assignment](../api/educationassignment_get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
-|[Create assignment resource](../api/educationassignment_post_resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
-|[List resources](../api/educationassignment_list_resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|
-|[List submissions](../api/educationassignment_list_submissions.md) |[educationSubmission](educationsubmission.md) collection| Get an **educationSubmission** object collection.|
-|[Update](../api/educationassignment_update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
-|[Delete](../api/educationassignment_delete.md) | None |Delete an **educationAssignment** object. |
-|[Publish](../api/educationassignment_publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
-|[Get resource folder URL](../api/educationassignment_getresourcesfolderurl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
+|[Get assignment](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
+|[Create assignment resource](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
+|[List resources](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|
+|[List submissions](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md) collection| Get an **educationSubmission** object collection.|
+|[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
+|[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
+|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
+|[Get resource folder URL](../api/educationassignment-getresourcesfolderurl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,15 +1,20 @@
-# chatMention resource type
+---
+title: "chatMessageMention resource type"
+description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
+---
+
+# chatMessageMention resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a mention in a [chatMessage](chatMessage.md) entity. The mention can be to a user, team, bot or channel. 
+Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can be to a user, team, bot or channel. 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string| Entity type that is associated with this message. It supports the following values<br><ul><li>user - Represents a user mention. Populate the id field with the AAD id of the user</li><li>bot - Represents a bot mention. Populate the id field with the bot id</li><li>team - Represents a team mention. Populate the id field with the group id for the team</li><li>channel - Represents a channel mention. Populate the id field with the id of the channel| 
 |id|string|Id of the entity being mentioned|
 |mentionText|string|String used to represent the mention Ex: User display name, Team name etc|
+|mentioned|[identitySet](identityset.md)|The user that was mentioned|
 
 ## JSON representation
 
@@ -17,16 +22,16 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.chatMention"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 
 ```json
 {
-  "type": "string",
   "id": "string (identifier)",
-  "mentionText": "string"
-}
+  "mentionText": "string",
+  "mentioned": "microsoft.graph.identitySet"
+ }
 
 ```
 

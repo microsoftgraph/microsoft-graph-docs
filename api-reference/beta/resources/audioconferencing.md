@@ -1,3 +1,9 @@
+---
+title: "audioConferencing resource type"
+description: "Represents phone access information for an onlineMeeting."
+author: "VinodRavichandran"
+---
+
 # audioConferencing resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -16,7 +22,7 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

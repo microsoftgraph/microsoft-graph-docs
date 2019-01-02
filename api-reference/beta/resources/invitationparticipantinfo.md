@@ -1,3 +1,9 @@
+---
+title: "invitationParticipantInfo resource type"
+description: "The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters."
+author: "VinodRavichandran"
+---
+
 # invitationParticipantInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -16,7 +22,7 @@ The **InvitationParticipant** is used to represent a set of identities associate
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

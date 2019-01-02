@@ -1,3 +1,9 @@
+---
+title: "educationFeedback resource type"
+description: "Feedback from a teacher to a student. This property represents both the text part of the feedback along with the who."
+author: "mmast-msft"
+---
+
 # educationFeedback resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

@@ -1,3 +1,9 @@
+---
+title: "serviceHostedMediaConfig resource type"
+description: "The serviceHostedMediaConfig type."
+author: "VinodRavichandran"
+---
+
 # serviceHostedMediaConfig resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -13,7 +19,7 @@ The serviceHostedMediaConfig type.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -40,11 +46,11 @@ Here is a JSON representation of the resource.
   "preFetchMedia": [
     {
       "uri": "https://cdn.contoso.com/beep.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
     },
     {
       "uri": "https://cdn.contoso.com/cool.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
     }
   ],
   "removeFromDefaultAudioGroup": false

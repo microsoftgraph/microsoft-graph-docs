@@ -1,3 +1,8 @@
+---
+title: "leakedCredentialsRiskEvent resource type"
+description: "A risk event detected by Azure Active Directory Identity Protection where an account's credentials have been detected in the wild. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+---
+
 # leakedCredentialsRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +14,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent_get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |Read properties and relationships of leakedCredentialsRiskEvent object.|
+|[Get leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |Read properties and relationships of leakedCredentialsRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,11 +1,16 @@
+---
+title: "connector resource type"
+description: "Here is a JSON representation of the resource."
+---
+
 # connector resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 <!-- Not supported items
-|[Create connectorGroup](../api/connector_post_memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
-|[Update](../api/connector_update.md) | [connector](connector.md)	| Connectors are created when they are registed with the tenant. |
-|[Delete](../api/connector_delete.md) | None |Delete connector object. |
+|[Create connectorGroup](../api/connector-post-memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
+|[Update](../api/connector-update.md) | [connector](connector.md)	| Connectors are created when they are registed with the tenant. |
+|[Delete](../api/connector-delete.md) | None |Delete connector object. |
 
 -->
 
@@ -13,8 +18,8 @@
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get connector](../api/connector_get.md) | [connector](connector.md) |Read properties and relationships of connector object.|
-|[List memberOf](../api/connector_list_memberof.md) |[connectorGroup](connectorgroup.md) collection| Get the connectorGroup object associated with the connector.|
+|[Get connector](../api/connector-get.md) | [connector](connector.md) |Read properties and relationships of connector object.|
+|[List memberOf](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md) collection| Get the connectorGroup object associated with the connector.|
 
 ## Properties
 | Property	   | Type	|Description|

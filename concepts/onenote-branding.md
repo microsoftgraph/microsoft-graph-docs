@@ -1,3 +1,9 @@
+---
+title: "Branding guidelines for OneNote API developers "
+description: " "
+author: "Jewan-microsoft"
+---
+
 # Branding guidelines for OneNote API developers 
  
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
@@ -18,13 +24,13 @@ You can download the logos shown in this article and a PDF copy of these guideli
 
 The icon symbol is locked with the name. This is the preferred graphic representation of the OneNote logo.
 
-![Logos that includes both the icon and the name. Versions with purple on white and reversed.](images/OneNoteLogoBGs.png)
+![Logos that includes both the icon and the name. Versions with purple on white and reversed.](images/onenotelogobgs.png)
 
 ### Icon symbol 
 
 Certain environments, such as on small devices, don't provide enough room for the entire logo lockup. In those cases, the icon symbol alone may be used in an app or in digital marketing. When used in an app, use the icon symbol alone only when you need an icon or favicon to represent OneNote.
 
-![Logo that includes only the icon.  Versions with purple on white and reversed.](images/OneNoteLogoIcon.png)
+![Logo that includes only the icon.  Versions with purple on white and reversed.](images/onenotelogoicon.png)
 
 <a name="spacing"></a>
 
@@ -32,7 +38,7 @@ Certain environments, such as on small devices, don't provide enough room for th
 
 Treat the logo with respect and give it room to breathe. A minimum clear space equivalent to the height of the symbol must surround the logo.
 
-![Logo that includes only the icon--purple on white and reverse](images/OneNoteLogoClearSpace.png)
+![Logo that includes only the icon--purple on white and reverse](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -45,7 +51,7 @@ The logo should be at least 16 pixels high when it appears on-screen and at leas
  
 **Print:**&nbsp;&nbsp;5 mm (0.2 inches) 
 
-![Logo that includes only the icon--purple on white and reverse](images/OneNoteLogoMinSize.png)
+![Logo that includes only the icon--purple on white and reverse](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -58,7 +64,7 @@ When the OneNote logo is used on white or light backgrounds, the preferred logo 
 
 **Print:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Logo that includes only the icon--purple on white and reverse](images/OneNoteLogoBGs.png)
+  ![Logo that includes only the icon--purple on white and reverse](images/onenotelogobgs.png)
  
 In color-limited environments and one-color designs, the logo can appear in black. However, the logo should never appear in gray.
 <!--or white?-->
@@ -69,49 +75,49 @@ In color-limited environments and one-color designs, the logo can appear in blac
 
 **Don’t place the logo or icon on a color background** 
 
-![Icon on a color background](images/OneNoteLogoDonts1.png)
+![Icon on a color background](images/onenotelogodonts1.png)
 
 <br/>
 
 **Don’t change the scale or the proportions**
 
-![Skewed icon](images/OneNoteLogoDonts2.png)
+![Skewed icon](images/onenotelogodonts2.png)
 
 <br/>
 
 **Don’t use a drop shadow**
 
-![Icon with drop shadow](images/OneNoteLogoDonts3.png)
+![Icon with drop shadow](images/onenotelogodonts3.png)
 
 <br/>
 
 **Don’t change the color, except to black or white** (see [Color](#color))
 
-![Green icon](images/OneNoteLogoDonts4.png) 
+![Green icon](images/onenotelogodonts4.png) 
 
 <br/>
 
 **Don’t rotate the logo or icon**   
 
-![Rotated icon](images/OneNoteLogoDonts5.png)
+![Rotated icon](images/onenotelogodonts5.png)
 
 <br/>
 
 **Don’t rearrange the logo elements** 
 
-![Icon above name](images/OneNoteLogoDonts6.png)
+![Icon above name](images/onenotelogodonts6.png)
 
 <br/>
 
 **Don’t use an effect such as extrude and bevel**  
 
-![Icon with special effects](images/OneNoteLogoDonts7.png)
+![Icon with special effects](images/onenotelogodonts7.png)
 
 <br/>
 
 **Don’t create a new logo or icon**
 
-![Custom icon](images/OneNoteLogoDonts8.png)
+![Custom icon](images/onenotelogodonts8.png)
 
  
 <a name="name"></a>
@@ -137,27 +143,27 @@ See the following table for details about how to refer to OneNote in various con
 
 **Applications**
 
-![Good example of logo in a mobile app](images/OneNoteUsageApps.png)
+![Good example of logo in a mobile app](images/onenoteusageapps.png)
 
 <br/>
 
 **Advertising**
 
-![Good example of logo in advertising](images/OneNoteUsageAdvertising.jpg)
+![Good example of logo in advertising](images/onenoteusageadvertising.jpg)
 
 <br/>
 
 **Website**
 
-![Good example of logo in a website](images/OneNoteUsageWebsite.png)
+![Good example of logo in a website](images/onenoteusagewebsite.png)
 
 <br/>
 
 **Packaging**
 
-![Good example of logo in packaging](images/OneNoteUsagePackaging1.png)
+![Good example of logo in packaging](images/onenoteusagepackaging1.png)
 
-![Good example of logo in packaging](images/OneNoteUsagePackaging2.png)
+![Good example of logo in packaging](images/onenoteusagepackaging2.png)
 
 
 If you have any questions about these guidelines or are creating new communications using the brand assets shown here, contact us at [@onenotedev](https://twitter.com/onenotedev).
@@ -165,7 +171,7 @@ If you have any questions about these guidelines or are creating new communicati
 ## See also
 
 - [Branding guidelines for OneNote API developers](https://www.microsoft.com/download/details.aspx?id=42977) (download page)
-- [Integrate with OneNote](integrate_with_onenote.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  

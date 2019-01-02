@@ -1,3 +1,8 @@
+---
+title: "mailboxUsageMailboxCounts resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # mailboxUsageMailboxCounts resource type
 
 ## Properties

@@ -1,3 +1,8 @@
+---
+title: "PublicationFacet resource type"
+description: "The **publicationFacet** resource provides details on the published status of a driveItemVersion or driveItem resource."
+---
+
 # PublicationFacet resource type
 
 The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.

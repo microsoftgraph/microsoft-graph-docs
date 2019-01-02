@@ -1,3 +1,8 @@
+---
+title: "FilterCriteria resource type"
+description: "Represents the filtering criteria applied to a column."
+---
+
 # FilterCriteria resource type
 
 Represents the filtering criteria applied to a column.

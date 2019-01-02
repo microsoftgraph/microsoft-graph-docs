@@ -1,3 +1,8 @@
+---
+title: "signInStatus resource type"
+description: "Provides the sign-in status (Success or Failure) of the sign-in"
+---
+
 # signInStatus resource type
 Provides the sign-in status (Success or Failure) of the sign-in
 

@@ -1,3 +1,9 @@
+---
+title: "Microsoft Graph throttling guidance"
+description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
+author: "piotrci"
+---
+
 # Microsoft Graph throttling guidance
 
 
@@ -31,14 +37,14 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended Retry-After delay and retry the request until it succeeds.
 
 The following resources currently provide a retry-after header:
-- [User](../api-reference/v1.0/resources/user.md)
-- [Photo](../api-reference/v1.0/resources/profilephoto.md)
-- [Mail](../api-reference/v1.0/resources/message.md)
-- [Calendar (users and groups)](../api-reference/v1.0/resources/event.md)
-- [Contact](../api-reference/v1.0/resources/contact.md)
-- [Attachment](../api-reference/v1.0/resources/attachment.md)
-- [Group conversations](../api-reference/v1.0/resources/conversation.md)
-- [People and social](../api-reference/beta/resources/social_overview.md)
-- [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
+- [User](/graph/api/resources/user?view=graph-rest-1.0)
+- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
+- [Mail](/graph/api/resources/message?view=graph-rest-1.0)
+- [Calendar (users and groups)](/graph/api/resources/event?view=graph-rest-1.0)
+- [Contact](/graph/api/resources/contact?view=graph-rest-1.0)
+- [Attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [Group conversations](/graph/api/resources/conversation?view=graph-rest-1.0)
+- [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/library/office/dn589798.aspx).

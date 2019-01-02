@@ -1,3 +1,9 @@
+---
+title: "teamsUserActivityCounts resource type"
+description: "The following is a JSON representation of the resource."
+author: "nkramer"
+---
+
 # teamsUserActivityCounts resource type
 
 ## Properties

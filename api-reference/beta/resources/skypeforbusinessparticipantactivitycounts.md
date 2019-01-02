@@ -1,3 +1,8 @@
+---
+title: "skypeForBusinessParticipantActivityCounts resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # skypeForBusinessParticipantActivityCounts resource type
 
 ## Properties

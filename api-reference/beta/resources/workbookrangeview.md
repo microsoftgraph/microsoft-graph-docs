@@ -1,3 +1,9 @@
+---
+title: "rangeView resource type"
+description: "RangeView represents a set of visible cells of the parent range."
+author: "lumine2008"
+---
+
 # rangeView resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,9 +14,9 @@ RangeView represents a set of visible cells of the parent range.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List rows](../api/workbookrangeview_list_rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
-|[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
-|[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
+|[List rows](../api/workbookrangeview-list-rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
+|[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
 
 ## Properties
 | Property	   | Type	|Description|

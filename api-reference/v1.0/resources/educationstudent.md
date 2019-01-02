@@ -1,3 +1,9 @@
+---
+title: "educationStudent resource type"
+description: "Additional information added to an educationUser that is present when the primaryRole of a user is `student`."
+author: "mmast-msft"
+---
+
 # educationStudent resource type
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.

@@ -1,3 +1,9 @@
+---
+title: "ChartAxis resource type"
+description: "Represents a single axis in a chart."
+author: "lumine2008"
+---
+
 # ChartAxis resource type
 
 Represents a single axis in a chart.
@@ -7,8 +13,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [WorkbookChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis_update.md) | [WorkbookChartAxis](chartaxis.md)	|Update ChartAxis object. |
+|[Get ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)	|Update ChartAxis object. |
 
 ## Properties
 | Property	   | Type	|Description|

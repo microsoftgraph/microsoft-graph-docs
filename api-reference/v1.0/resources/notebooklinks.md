@@ -1,3 +1,9 @@
+---
+title: "notebookLinks resource type"
+description: "Links for opening a OneNote notebook."
+author: "Jewan-microsoft"
+---
+
 # notebookLinks resource type
 
 Links for opening a OneNote notebook.

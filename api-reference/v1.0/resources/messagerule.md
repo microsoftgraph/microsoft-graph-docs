@@ -1,3 +1,9 @@
+---
+title: "messageRule resource type"
+description: "A rule that applies to messages in the Inbox of a user."
+author: "angelgolfer-ms"
+---
+
 # messageRule resource type
 
 
@@ -53,11 +59,11 @@ Here is a JSON representation of the resource.
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List rules](../api/mailfolder_list_messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
-|[Get rule](../api/messagerule_get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
-|[Create](../api/mailfolder_post_messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
-|[Update](../api/messagerule_update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
-|[Delete](../api/messagerule_delete.md) | None |Delete the specified **messageRule** object. |
+|[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
+|[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
+|[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
+|[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
+|[Delete](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,3 +1,8 @@
+---
+title: "skypeForBusinessPeerToPeerActivityMinuteCounts resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # skypeForBusinessPeerToPeerActivityMinuteCounts resource type
 
 ## Properties

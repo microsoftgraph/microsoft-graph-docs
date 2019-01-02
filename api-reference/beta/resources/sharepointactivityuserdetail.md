@@ -1,3 +1,8 @@
+---
+title: "sharePointActivityUserDetail resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # sharePointActivityUserDetail resource type
 
 ## Properties

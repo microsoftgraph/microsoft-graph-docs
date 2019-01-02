@@ -1,3 +1,9 @@
+---
+title: "ChartAxisTitleFormat resource type"
+description: "Represents the chart axis title formatting."
+author: "lumine2008"
+---
+
 # ChartAxisTitleFormat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

@@ -1,3 +1,8 @@
+---
+title: "plannerUser resource type"
+description: "The **plannerUser** resource provide access to Planner resources for a user. It doesn't contain any usable properties."
+---
+
 # plannerUser resource type
 
 The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.
@@ -7,8 +12,8 @@ The **plannerUser** resource provide access to Planner resources for a [user](us
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List plans](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
-|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[List plans](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get a **plannerPlan** object collection.|
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 
 ## Properties
 | Property	   | Type	|Description|

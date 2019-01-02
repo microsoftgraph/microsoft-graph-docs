@@ -1,3 +1,8 @@
+---
+title: "internetMessageHeader resource type"
+description: "A key-value pair that represents an Internet message header, as defined by RFC5322, that provides "
+---
+
 # internetMessageHeader resource type
 
 
