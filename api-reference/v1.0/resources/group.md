@@ -15,28 +15,31 @@ This resource supports:
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Group management**| | |
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group. It can be an Office 365 group, dynamic group, or security group.|
-|[Get group](../api/group_get.md) | [group](group.md) |Read properties of a group object.|
-|[List groups](../api/group_list.md) |[group](group.md) collection |List group objects and their properties.|
-|[Update group](../api/group_update.md) | None |Update the properties of a group object. |
-|[Delete group](../api/group_delete.md) | None |Delete group object. |
-|[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
-|[List groupLifecyclePolicies](../api/group_list_grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
-|[Renew](../api/group_renew.md)|Boolean|Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.|
-|[Add owner](../api/group_post_owners.md) |None| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
-|[List owners](../api/group_list_owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
-|[Remove owner](../api/group_delete_owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
-|[Add member](../api/group_post_members.md) |None| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
-|[List members](../api/group_list_members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
-|[Remove member](../api/group_delete_members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
-|[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Check this group for membership in a list of groups. The function is transitive.|
-|[getMemberGroups](../api/group_getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
-|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
-|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
-|[List settings](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
-|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
-|[Delete setting](../api/groupsetting_delete.md) | None | Delete a setting object. |
+|[Create group](../api/group-post-groups.md) | [group](group.md) |Create a new group. It can be an Office 365 group, dynamic group, or security group.|
+|[Get group](../api/group-get.md) | [group](group.md) |Read properties of a group object.|
+|[List groups](../api/group-list.md) |[group](group.md) collection |List group objects and their properties.|
+|[Update group](../api/group-update.md) | None |Update the properties of a group object. |
+|[Delete group](../api/group-delete.md) | None |Delete group object. |
+|[delta](../api/group-delta.md)|group collection| Get incremental changes for groups. |
+|[List groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
+|[Renew](../api/group-renew.md)|Boolean|Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.|
+|[Add owner](../api/group-post-owners.md) |None| Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and mail-enabled security groups only).|
+|[List owners](../api/group-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|
+|[Remove owner](../api/group-delete-owners.md) | None |Remove an owner from an Office 365 group, a security group or a mail-enabled security group through the **owners** navigation property.|
+|[Add member](../api/group-post-members.md) |None| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
+|[List members](../api/group-list-members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
+|[List transitive members](../api/group_list_transitivemembers.md) |[directoryObject](directoryobject.md) collection| Get the users, groups, devices, and service principals that are members, including nested members of this group.|
+|[Remove member](../api/group-delete-members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
+|[List memberOf](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this group is a direct member of from the memberOf navigation property.|
+|[List transitive memberOf](../api/group_list_transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+|[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check this group for membership in a list of groups. The function is transitive.|
+|[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
+|[getMemberObjects](../api/group-getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
+|[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
+|[Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
+|[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+|[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
+|[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|

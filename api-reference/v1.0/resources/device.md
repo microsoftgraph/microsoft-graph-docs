@@ -9,12 +9,14 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get device](../api/device_get.md) | [device](device.md) |Read properties and relationships of a device object.|
-|[List devices](../api/device_list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
-|[Update device](../api/device_update.md) | [device](device.md) |Update the properties of a device object. |
-|[Delete device](../api/device_delete.md) | None |Delete a device object. |
-|[List registeredOwners](../api/device_list_registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
-|[List registeredUsers](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
+|[Get device](../api/device-get.md) | [device](device.md) |Read properties and relationships of a device object.|
+|[List devices](../api/device-list.md) | [device](device.md) collection| Retrieve a list of devices registered in the directory. |
+|[Update device](../api/device-update.md) | [device](device.md) |Update the properties of a device object. |
+|[Delete device](../api/device-delete.md) | None |Delete a device object. |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a direct member of. |
+|[List transitive memberOf](../api/device_list_transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
+|[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
+|[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
