@@ -535,7 +535,7 @@
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Calendar view
-        href: api/user-list-calendarview.md
+        href: api/calendar-list-calendarview.md
         items:
         - name: List calendar view
           href: api/calendar-list-calendarview.md

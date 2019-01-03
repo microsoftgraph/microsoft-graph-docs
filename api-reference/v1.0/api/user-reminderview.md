@@ -5,7 +5,7 @@ author: "dkershaw10"
 ---
 
 # user: reminderView
-Return a list of calendar reminders within the specified start and end times. 
+Return a list of event reminders in a user calendar within the specified start and end times. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
