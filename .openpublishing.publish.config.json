@@ -20,7 +20,7 @@
       "build_output_subfolder": "microsoft-graph-ref",
       "locale": "en-us",
       "moniker_ranges": [ "graph-rest-beta", ">= graph-rest-1.0" ], 
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
