@@ -9,7 +9,8 @@ description: "Represents an Azure AD policy. Policies are custom rules that can 
 
 Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to.
 
-## Policy types
+The following are the policy types:
+
 - [Token Lifetime Policy](tokenlifetimepolicy.md)
 - [Activity Based Timeout Policy](activitybasedtimeoutpolicy.md)
 
