@@ -11,8 +11,8 @@ Represents an Azure AD policy. Policies are custom rules that can be enforced on
 
 The following are the policy types:
 
-- [Token Lifetime Policy](tokenlifetimepolicy.md)
-- [Activity Based Timeout Policy](activitybasedtimeoutpolicy.md)
+- [Token lifetime policy](tokenlifetimepolicy.md)
+- [Activity-based timeout policy](activitybasedtimeoutpolicy.md)
 
 ## Methods
 | Method       | Return Type  |Description|
