@@ -10,11 +10,12 @@ description: "Specifies a shared activity-based timeout policy."
 A policy that enables you to configure idle timeout for web sessions for applications that support activity-based timeout functionality. Applications will enforce automatic signout after a period of inactivity. This type of policy must be applied at the organization level.
 
 The following applications support activity-based timeout functionality:
+
 - Azure portal
 - Office 365 applications
 
 ## Properties
-The following properties form the JSON object that represents an activity-based timeout policy. This JSON object must be converted to a string with quotations escaped to be inserted into the **definition**common policy property. 
+The following properties form the JSON object that represents an activity-based timeout policy. This JSON object must be converted to a string with quotations escaped to be inserted into the **definition** common policy property. 
 
 >**Note:** All time durations in these properties are specified in the following format: dd.hh:mm:ss.
 
