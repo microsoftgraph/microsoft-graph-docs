@@ -26,7 +26,7 @@ The maximum values for properties denoted in days are 1 second short of the deno
 |Version|Integer|Policy version. Set value of 1. Required.|
 |ApplicationPolicies|Array|Collection of application policies.|
 |ApplicationId|String|Application identifier the policy applies to. A value of "default" indicates the default value that applies to all applications that support activity-based timeout functionality but do not have application-specific overrides.|
-|WebSessionIdleTimeout|String|The period of user inactivity after which the user's web session is considered expired. The minimum value is 5 minutes; the maximum value is 1  day.|5 minutes|1 day|None|
+|WebSessionIdleTimeout|String|The period of user inactivity after which the user's web session is considered expired. The minimum value is 5 minutes; the maximum value is 1  day.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
