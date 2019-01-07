@@ -5,8 +5,6 @@ description: "Get groups, directory roles and administrative units that the user
 
 # List user transitive memberOf
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get groups, directory roles and administrative units that the user is a member of. This API request is transitive, and will also return all groups the user is a nested member of.
 
 ## Permissions
@@ -57,7 +55,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
 ```
 
 ### Response
