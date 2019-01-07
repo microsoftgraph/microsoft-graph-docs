@@ -5,8 +5,6 @@ description: "Get groups and administrative units that the group is a member of.
 
 # List group transitive memberOf
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get groups and administrative units that the group is a member of.  This operation is transitive and will also include all groups that this groups is a nested member of. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 Groups.
 
 ## Permissions
@@ -49,7 +47,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 ```
 
 ### Response
