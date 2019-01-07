@@ -37,9 +37,9 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ## Function parameters
 
-| Name | Value  | Description                                                                                                                          |
+| Parameter | Type  | Description                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## Example
 

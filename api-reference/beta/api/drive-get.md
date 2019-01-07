@@ -112,7 +112,7 @@ GET /drives/{driveId}
 
 These method support the [$select query parameter][odata-query-parameters] to shape the response.
 
-## HTTP response
+## Response
 
 Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.
 

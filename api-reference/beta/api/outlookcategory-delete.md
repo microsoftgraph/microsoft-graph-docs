@@ -25,8 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /me/outlook/masterCategories/{id}
 DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

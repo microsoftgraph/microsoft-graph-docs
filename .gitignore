@@ -6,3 +6,4 @@ nuget.exe
 *.nupkg
 apidoc.exe
 *.dll
+.vs/

@@ -66,7 +66,7 @@ Here is a JSON representation of the resource.
 "isDeleted": "boolean",
 "riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
 "riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"}
+"riskState":  {"@odata.type": "microsoft.graph.riskState"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }

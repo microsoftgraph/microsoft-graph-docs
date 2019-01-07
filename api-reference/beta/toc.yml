@@ -94,7 +94,7 @@
         - name: Create calendar group
           href: api/user-post-calendargroups.md
         - name: List calendar view
-          href: api/calendar-list-calendarview.md
+          href: api/user-list-calendarview.md
         - name: Reminder view
           href: api/user-reminderview.md
         - name: Get free/busy schedule
@@ -609,10 +609,10 @@
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
       - name: Calendar view
-        href: api/user-list-calendarview.md
+        href: api/calendar-list-calendarview.md
         items:
         - name: List calendar view
-          href: api/user-list-calendarview.md
+          href: api/calendar-list-calendarview.md
         - name: Get delta
           href: api/event-delta.md
         - name: Reminder view
