@@ -66,8 +66,12 @@ Specify other writable properties as necessary for your group. For more informat
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
-#### Request 1
-The first example request creates an Office 365 Group.
+
+### Create group (basic)
+
+This example creates an Office 365 group:
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -90,8 +94,6 @@ Content-length: 244
 ```
 
 #### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,8 +117,11 @@ Content-length: 244
 }
 ```
 
-#### Request 2
-The second example request creates an Office 365 Group with owners specified.
+### Create group with owners
+
+This example creates a group with specific owners.
+
+#### Request
 <!-- {
   "blockType": "request"
 }-->
@@ -138,9 +143,7 @@ Content-Type: application/json
 }
 ```
 
- #### Response 2
-The following is an example of the successful response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+#### Response: 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -161,6 +164,8 @@ Content-type: application/json
     "securityEnabled": false
 }
 ```
+
+> **Note**: Responses are truncated for brevity; actual responses vary according to context.
 
 ## See also
 
