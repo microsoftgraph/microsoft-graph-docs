@@ -5,8 +5,6 @@ description: "Get groups that the device is a member of. This API request is tra
 
 # List device transitive groups
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get groups that the device is a member of. This API request is transitive, and will also return all groups the device is a nested member of.
 
 ## Permissions
@@ -29,7 +27,7 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/v1.0/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 
@@ -57,7 +55,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 ```
 
 ### Response
