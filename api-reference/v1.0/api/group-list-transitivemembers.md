@@ -5,8 +5,6 @@ description: "Get a list of the group's members. A group can have users, contact
 
 # List group transitive members
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Get a list of the group's members. A group can have users, contacts, devices, service principals and other groups as members. This operation is transitive and will also return a flat list of all nested members.
 
 ## Permissions
@@ -58,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/v1.0/groups/{id}/tranisitiveMembers
 ```
 
 ### Response
