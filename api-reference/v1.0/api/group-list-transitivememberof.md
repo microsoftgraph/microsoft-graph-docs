@@ -5,7 +5,7 @@ description: "Get groups and administrative units that the group is a member of.
 
 # List group transitive memberOf
 
-Get groups and administrative units that the group is a member of.  This operation is transitive and will also include all groups that this groups is a nested member of. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 Groups.
+Get groups that the group is a member of.  This operation is transitive and will also include all groups that this groups is a nested member of. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 Groups.
 
 ## Permissions
 
