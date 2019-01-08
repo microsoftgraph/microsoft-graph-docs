@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 The identifier for an Android app.
 
+
 Inherits from [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## Properties
@@ -19,6 +20,7 @@ Inherits from [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

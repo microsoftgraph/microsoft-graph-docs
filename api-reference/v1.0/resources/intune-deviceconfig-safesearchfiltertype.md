@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Specifies what level of safe search (filtering adult content) is required
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|

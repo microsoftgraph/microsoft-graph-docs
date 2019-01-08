@@ -1,6 +1,7 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""author: "tfitzmac"
+description: ""
+author: "tfitzmac"
 ---
 
 # Device management in Microsoft Intune
@@ -19,7 +20,6 @@ description: ""author: "tfitzmac"
 - [Detected app](intune-devices-detectedapp.md)
 - [Device action result](intune-devices-deviceactionresult.md)
 - [Device enrollment failure reason](intune-troubleshooting-deviceenrollmentfailurereason.md)
-- [Device enrollment type](intune-devices-deviceenrollmenttype.md)
 - [Device exchange access state summary](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Device geolocation](intune-devices-devicegeolocation.md)
 - [Device health attestation state](intune-devices-devicehealthattestationstate.md)
@@ -28,7 +28,7 @@ description: ""author: "tfitzmac"
 - [Device management subscription state](intune-devices-devicemanagementsubscriptionstate.md)
 - [Device management troubleshooting event](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Device operating system summary](intune-devices-deviceoperatingsystemsummary.md)
-- [Device registration state](intune-devices-deviceregistrationstate.md)
+- [Device registration state](intune-devices-deviceraegistrationstate.md)
 - [Enrollment troubleshooting event](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Localized notification message](intune-notification-localizednotificationmessage.md)
 - [Locate device action result](intune-devices-locatedeviceactionresult.md)

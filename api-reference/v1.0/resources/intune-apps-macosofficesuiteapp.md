@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for the MacOS Office Suite App.
 
+
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods

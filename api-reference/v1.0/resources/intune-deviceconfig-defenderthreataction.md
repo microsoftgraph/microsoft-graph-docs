@@ -1,6 +1,7 @@
 ---
 title: "defenderThreatAction enum type"
 description: "Defender’s default action to take on detected Malware threats."
+author: "tfitzmac"
 ---
 
 # defenderThreatAction enum type
@@ -8,6 +9,7 @@ description: "Defender’s default action to take on detected Malware threats."
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Defender’s default action to take on detected Malware threats.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|

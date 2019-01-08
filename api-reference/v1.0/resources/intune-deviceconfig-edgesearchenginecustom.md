@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Allows IT admins to set a custom default search engine for MDM-Controlled devices.
 
+
 Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)
 
 ## Properties
@@ -19,6 +20,7 @@ Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearch
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

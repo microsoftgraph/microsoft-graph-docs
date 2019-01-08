@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 This class contains compliance settings for Windows 10 Mobile.
 
+
 Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
 ## Methods

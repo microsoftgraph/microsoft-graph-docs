@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The ManagedAppPolicy resource represents a base type for platform specific policies.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -28,6 +29,7 @@ The ManagedAppPolicy resource represents a base type for platform specific polic
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Lock action result with a pin to unlock
 
+
 Inherits from [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 
 ## Properties
@@ -23,6 +24,7 @@ Inherits from [deviceActionResult](../resources/intune-devices-deviceactionresul
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

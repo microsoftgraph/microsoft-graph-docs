@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Represents an assignment to all managed devices in the tenant.
 
+
 Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
 
 ## Properties
@@ -18,6 +19,7 @@ Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-share
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

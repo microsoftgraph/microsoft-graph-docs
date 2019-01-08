@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for iOS Volume-Purchased Program (VPP) Apps.
 
+
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods

@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties used to assign an iOS VPP mobile app to a group.
 
+
 Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
 
 ## Properties
@@ -20,6 +21,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappas
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Android Work Profile custom configuration
 
+
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## Methods
@@ -61,7 +62,7 @@ Here is a JSON representation of the resource.
   "version": 1024,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSetting",
+      "@odata.type": "microsoft.graph.omaSettingInteger",
       "displayName": "String",
       "description": "String",
       "omaUri": "String",

@@ -1,6 +1,7 @@
 ---
 title: "managedAppAvailability enum type"
 description: "A managed (MAM) application's availability."
+author: "tfitzmac"
 ---
 
 # managedAppAvailability enum type
@@ -8,6 +9,7 @@ description: "A managed (MAM) application's availability."
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A managed (MAM) application's availability.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|

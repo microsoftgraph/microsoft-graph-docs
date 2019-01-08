@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Not yet documented
 
+
 Inherits from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)
 
 ## Methods

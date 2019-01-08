@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 OMA Settings DateTime definition.
 
+
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
@@ -22,6 +23,7 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

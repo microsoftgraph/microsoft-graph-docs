@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 OMA Settings Base64 definition.
 
+
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
@@ -23,6 +24,7 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

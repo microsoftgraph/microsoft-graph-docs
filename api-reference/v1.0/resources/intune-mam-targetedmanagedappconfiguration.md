@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Configuration used to deliver a set of custom settings as-is to all users in the targeted security group
 
+
 Inherits from [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)
 
 ## Methods

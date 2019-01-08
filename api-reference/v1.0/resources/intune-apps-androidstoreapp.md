@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for Android store apps.
 
+
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods

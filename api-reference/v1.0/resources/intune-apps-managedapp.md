@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Abstract class that contains properties and inherited properties for apps that you can manage with an Intune app protection policy.
 
+
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods

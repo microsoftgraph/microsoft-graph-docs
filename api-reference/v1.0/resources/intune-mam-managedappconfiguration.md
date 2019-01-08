@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped
 
+
 Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
 ## Methods
@@ -31,6 +32,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

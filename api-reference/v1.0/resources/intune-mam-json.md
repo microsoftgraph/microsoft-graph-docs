@@ -9,12 +9,14 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Represents data returned in JSON format
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -28,14 +30,5 @@ Here is a JSON representation of the resource.
 }
 ```
 
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
 
-"Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune-mam-json.md, /api-reference/v1.0/resources/json.md"
-
-  ],
-
-}
--->
 

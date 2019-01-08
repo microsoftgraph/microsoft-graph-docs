@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for an iOS store app that you can manage with an Intune app protection policy.
 
+
 Inherits from [managedApp](../resources/intune-apps-managedapp.md)
 
 ## Methods

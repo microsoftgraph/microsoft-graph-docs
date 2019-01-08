@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for Android Line Of Business apps.
 
+
 Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
 ## Methods

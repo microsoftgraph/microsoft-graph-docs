@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Represents an un-typed status report about organizations app protection and configuration.
 
+
 Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 
 ## Methods
@@ -28,6 +29,7 @@ Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

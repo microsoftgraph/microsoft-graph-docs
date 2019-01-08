@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 This class contains compliance settings for Android.
 
+
 Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
 ## Methods

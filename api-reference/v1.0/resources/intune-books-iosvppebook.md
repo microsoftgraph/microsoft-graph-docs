@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 A class containing the properties for iOS Vpp eBook.
 
+
 Inherits from [managedEBook](../resources/intune-books-managedebook.md)
 
 ## Methods

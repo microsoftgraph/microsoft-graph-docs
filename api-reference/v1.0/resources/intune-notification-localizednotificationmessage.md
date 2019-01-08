@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 The text content of a Notification Message Template for the specified locale.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -30,6 +31,7 @@ The text content of a Notification Message Template for the specified locale.
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

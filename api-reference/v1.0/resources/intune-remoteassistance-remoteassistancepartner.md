@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -31,6 +32,7 @@ remoteAssistPartner resources represent the metadata and status of a given Remot
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

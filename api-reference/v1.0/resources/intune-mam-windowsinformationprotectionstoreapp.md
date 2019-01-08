@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Store App for Windows information protection
 
+
 Inherits from [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)
 
 ## Properties
@@ -23,6 +24,7 @@ Inherits from [windowsInformationProtectionApp](../resources/intune-mam-windowsi
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

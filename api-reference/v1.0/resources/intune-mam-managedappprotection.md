@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Policy used to configure detailed management settings for a specified set of apps
 
+
 Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
 ## Methods
@@ -57,6 +58,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -105,13 +107,5 @@ Here is a JSON representation of the resource.
 }
 ```
 
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
-      Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->
 
 

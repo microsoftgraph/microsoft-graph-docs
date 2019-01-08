@@ -1,6 +1,7 @@
 ---
 title: "iosNetworkUsageRule resource type"
 description: "Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks."
+author: "tfitzmac"
 ---
 
 # iosNetworkUsageRule resource type
@@ -8,6 +9,7 @@ description: "Network Usage Rules allow enterprises to specify how managed apps 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -17,6 +19,7 @@ Network Usage Rules allow enterprises to specify how managed apps use networks, 
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
 
+
 Inherits from [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 
 ## Methods
@@ -136,15 +137,6 @@ Here is a JSON representation of the resource.
   "faceIdBlocked": true
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-defaultmanagedappprotection.md/microsoft.graph.defaultManagedAppProtection/allowedDataStorageLocations:
-      Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->
 
 
 

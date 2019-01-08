@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Policy used to configure detailed management settings targeted to specific security groups
 
+
 Inherits from [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 
 ## Methods
@@ -112,11 +113,3 @@ Here is a JSON representation of the resource.
 
 
 
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-targetedmanagedappprotection.md/microsoft.graph.targetedManagedAppProtection/allowedDataStorageLocations:
-      Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->

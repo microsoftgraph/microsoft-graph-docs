@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Devices that are managed or pre-enrolled through Intune
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -90,7 +91,7 @@ Devices that are managed or pre-enrolled through Intune
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
+|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 IP V4 range
 
+
 Inherits from [ipRange](../resources/intune-mam-iprange.md)
 
 ## Properties
@@ -20,6 +21,7 @@ Inherits from [ipRange](../resources/intune-mam-iprange.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

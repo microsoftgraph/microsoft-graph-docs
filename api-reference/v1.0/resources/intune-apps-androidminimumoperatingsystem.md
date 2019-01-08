@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties for the minimum operating system required for an Android mobile app.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -23,6 +24,7 @@ Contains properties for the minimum operating system required for an Android mob
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

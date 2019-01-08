@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for Android store apps that you can manage with an Intune app protection policy.
 
+
 Inherits from [managedApp](../resources/intune-apps-managedapp.md)
 
 ## Methods

@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Apple device features configuration profile.
 
+
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## Methods

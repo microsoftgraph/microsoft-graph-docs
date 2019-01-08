@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Windows10 Enterprise Modern App Management Configuration.
 
+
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## Methods

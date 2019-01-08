@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Policy for Windows information protection with MDM
 
+
 Inherits from [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)
 
 ## Methods
@@ -102,7 +103,7 @@ Here is a JSON representation of the resource.
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -112,7 +113,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",

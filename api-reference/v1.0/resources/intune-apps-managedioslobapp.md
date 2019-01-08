@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for Managed iOS Line Of Business apps.
 
+
 Inherits from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)
 
 ## Methods

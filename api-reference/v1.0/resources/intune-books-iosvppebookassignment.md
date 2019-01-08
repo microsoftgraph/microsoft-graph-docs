@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties used to assign an iOS VPP EBook to a group.
 
+
 Inherits from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)
 
 ## Methods
@@ -30,6 +31,7 @@ Inherits from [managedEBookAssignment](../resources/intune-books-managedebookass
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

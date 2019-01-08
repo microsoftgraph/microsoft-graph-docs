@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Represents an icon for an app on the Home Screen
 
+
 Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
 
 ## Properties
@@ -20,6 +21,7 @@ Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreen
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

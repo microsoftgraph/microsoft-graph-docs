@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Metadata for the device configuration user activity report
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,6 +42,7 @@ Do not supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http

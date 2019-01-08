@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Represents a group that should be excluded from an assignment.
 
+
 Inherits from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)
 
 ## Properties
@@ -19,6 +20,7 @@ Inherits from [groupAssignmentTarget](../resources/intune-shared-groupassignment
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

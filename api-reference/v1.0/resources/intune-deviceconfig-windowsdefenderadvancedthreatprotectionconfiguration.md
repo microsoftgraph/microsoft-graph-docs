@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Windows Defender AdvancedThreatProtection Configuration.
 
+
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## Methods

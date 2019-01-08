@@ -2087,8 +2087,6 @@
           href: resources/intune-devices-deviceactionresult.md
         - name: Device enrollment failure reason
           href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-        - name: Device enrollment type
-          href: resources/intune-devices-deviceenrollmenttype.md
         - name: Device exchange access state summary
           href: resources/intune-devices-deviceexchangeaccessstatesummary.md
         - name: Device geolocation
@@ -2258,7 +2256,7 @@
           href: resources/intune-devices-windowsdeviceadaccount.md
         - name: Windows device Azure AD account
           href: resources/intune-devices-windowsdeviceazureadaccount.md
-      - name: Mobile app management
+      - name: Mobile app management (MAM)
         href: resources/intune-mam-conceptual.md
         items:
         - name: Android managed app protection
@@ -2730,8 +2728,8 @@
           href: resources/intune-onboarding-vpptokensyncstatus.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control
-        href: resources/intune-rbac-conceptual.md
+      - name: Role-based access control (RBAC)
+        href: /resources/intune-rbac-conceptual.md
         items:
         - name: Device and app management role assignment
           href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2835,6 +2833,8 @@
             href: api/intune-shared-devicecategory-delete.md
           - name: Update
             href: api/intune-shared-devicecategory-update.md
+        - name: Device enrollment type
+          href: resources/intune-shared-deviceenrollmenttype.md
         - name: Device management
           href: resources/intune-shared-devicemanagement.md
           items:

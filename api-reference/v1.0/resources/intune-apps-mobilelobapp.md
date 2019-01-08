@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 An abstract base class containing properties for all mobile line of business apps.
 
+
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods

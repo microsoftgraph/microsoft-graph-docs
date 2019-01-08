@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Not yet documented
 
+
 Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
 ## Properties
@@ -20,6 +21,7 @@ Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceac
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

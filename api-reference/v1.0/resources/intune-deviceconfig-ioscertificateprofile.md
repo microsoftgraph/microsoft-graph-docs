@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Device Configuration.
 
+
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## Methods

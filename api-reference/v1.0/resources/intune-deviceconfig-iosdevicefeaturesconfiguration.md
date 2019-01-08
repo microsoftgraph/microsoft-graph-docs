@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 iOS Device Features Configuration Profile.
 
+
 Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
 ## Methods
@@ -67,7 +68,7 @@ Here is a JSON representation of the resource.
   "lockScreenFootnote": "String",
   "homeScreenDockIcons": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenItem",
+      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
       "displayName": "String",
       "pages": [
         {
@@ -90,7 +91,7 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "icons": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenItem",
+          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
           "displayName": "String",
           "pages": [
             {

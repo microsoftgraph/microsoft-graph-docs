@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Contains properties and inherited properties for iOS store apps.
 
+
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
 ## Methods

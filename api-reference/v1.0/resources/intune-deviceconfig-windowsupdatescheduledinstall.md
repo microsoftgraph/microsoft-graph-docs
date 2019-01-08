@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Not yet documented
 
+
 Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)
 
 ## Properties
@@ -20,6 +21,7 @@ Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfi
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

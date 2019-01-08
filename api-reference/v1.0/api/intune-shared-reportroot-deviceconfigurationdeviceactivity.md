@@ -42,6 +42,7 @@ Do not supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http

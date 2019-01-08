@@ -10,6 +10,7 @@ author: "tfitzmac"
 
 Windows 10 Edition Upgrade configuration.
 
+
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## Methods

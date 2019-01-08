@@ -1,6 +1,6 @@
 ---
 title: "termsAndConditionsAssignment resource type"
-description: "C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."
+description: "A termsAndConditionsAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."
 author: "tfitzmac"
 ---
 
@@ -9,6 +9,7 @@ author: "tfitzmac"
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A termsAndConditionsAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ A termsAndConditionsAssignment entity represents the assignment of a given Terms
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

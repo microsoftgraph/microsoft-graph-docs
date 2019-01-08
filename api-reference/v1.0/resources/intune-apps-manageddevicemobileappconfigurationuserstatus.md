@@ -1,6 +1,7 @@
 ---
 title: "managedDeviceMobileAppConfigurationUserStatus resource type"
 description: "Contains properties, inherited properties and actions for an MDM mobile app configuration status for a user."
+author: "tfitzmac"
 ---
 
 # managedDeviceMobileAppConfigurationUserStatus resource type
@@ -8,6 +9,7 @@ description: "Contains properties, inherited properties and actions for an MDM m
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Contains properties, inherited properties and actions for an MDM mobile app configuration status for a user.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -29,6 +31,7 @@ Contains properties, inherited properties and actions for an MDM mobile app conf
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
