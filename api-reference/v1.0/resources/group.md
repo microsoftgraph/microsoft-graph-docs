@@ -34,7 +34,7 @@ This resource supports:
 |[Add member](../api/group-post-members.md) |None| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[List members](../api/group-list-members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
 |[List transitive members](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md) collection| Get the users, groups, devices, and service principals that are members, including nested members of this group.|
-|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[Remove member](../api/group-delete-members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check this group for membership in a list of groups. The function is transitive.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
@@ -82,7 +82,7 @@ This resource supports:
 |**User settings**| | |
 |[addFavorite](../api/group-addfavorite.md)|None|Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.|
 |[removeFavorite](../api/group-removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.|
-|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this user is a direct member of, from the **memberOf** navigation property.|
+|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this user is a direct member of, from the **memberOf** navigation property.|
 |[subscribeByMail](../api/group-subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
 |[resetUnseenCount](../api/group-resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
