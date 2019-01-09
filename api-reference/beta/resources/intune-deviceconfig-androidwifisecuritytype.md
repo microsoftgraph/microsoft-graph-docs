@@ -1,6 +1,7 @@
 ---
 title: "androidWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android."
+author: "tfitzmac"
 ---
 
 # androidWiFiSecurityType enum type

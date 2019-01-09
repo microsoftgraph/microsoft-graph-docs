@@ -1,6 +1,7 @@
 ---
 title: "Delete userInstallStateSummary"
 description: "Deletes a userInstallStateSummary."
+author: "tfitzmac"
 ---
 
 # Delete userInstallStateSummary

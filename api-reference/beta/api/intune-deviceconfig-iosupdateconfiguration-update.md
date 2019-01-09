@@ -1,6 +1,7 @@
 ---
 title: "Update iosUpdateConfiguration"
 description: "Update the properties of a iosUpdateConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update iosUpdateConfiguration

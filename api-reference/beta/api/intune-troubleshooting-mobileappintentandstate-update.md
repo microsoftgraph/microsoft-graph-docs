@@ -1,6 +1,7 @@
 ---
 title: "Update mobileAppIntentAndState"
 description: "Update the properties of a mobileAppIntentAndState object."
+author: "tfitzmac"
 ---
 
 # Update mobileAppIntentAndState

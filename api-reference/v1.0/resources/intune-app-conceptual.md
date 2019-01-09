@@ -1,6 +1,7 @@
 ---
 title: "Manage apps using Microsoft Intune"
 description: "The following Graph resources are available to manage mobile apps in Intune:  "
+author: "tfitzmac"
 ---
 
 # Manage apps using Microsoft Intune

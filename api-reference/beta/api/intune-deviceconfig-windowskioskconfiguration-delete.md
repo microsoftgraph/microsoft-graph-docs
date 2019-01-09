@@ -1,6 +1,7 @@
 ---
 title: "Delete windowsKioskConfiguration"
 description: "Deletes a windowsKioskConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete windowsKioskConfiguration

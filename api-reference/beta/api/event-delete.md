@@ -1,6 +1,7 @@
 ---
 title: "Delete event"
 description: "Delete event."
+author: "angelgolfer-ms"
 ---
 
 # Delete event

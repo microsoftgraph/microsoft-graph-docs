@@ -1,6 +1,7 @@
 ---
 title: "requestRemoteAssistance action"
 description: "Request remote assistance"
+author: "tfitzmac"
 ---
 
 # requestRemoteAssistance action

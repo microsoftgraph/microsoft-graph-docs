@@ -1,6 +1,7 @@
 ---
 title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
+author: "tfitzmac"
 ---
 
 # windowsUserAccountControlSettings enum type

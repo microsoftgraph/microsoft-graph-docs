@@ -1,6 +1,7 @@
 ---
 title: "Update iosVppApp"
 description: "Update the properties of a iosVppApp object."
+author: "tfitzmac"
 ---
 
 # Update iosVppApp

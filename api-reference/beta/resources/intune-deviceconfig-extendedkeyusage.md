@@ -1,6 +1,7 @@
 ---
 title: "extendedKeyUsage resource type"
 description: "Custom Extended Key Usage definition"
+author: "tfitzmac"
 ---
 
 # extendedKeyUsage resource type

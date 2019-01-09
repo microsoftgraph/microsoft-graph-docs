@@ -1,6 +1,7 @@
 ---
 title: "macOSEnterpriseWiFiConfiguration resource type"
 description: "MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile."
+author: "tfitzmac"
 ---
 
 # macOSEnterpriseWiFiConfiguration resource type

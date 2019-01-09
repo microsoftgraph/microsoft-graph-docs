@@ -1,6 +1,7 @@
 ---
 title: "Range: delete"
 description: "Deletes the cells associated with the range."
+author: "lumine2008"
 ---
 
 # Range: delete

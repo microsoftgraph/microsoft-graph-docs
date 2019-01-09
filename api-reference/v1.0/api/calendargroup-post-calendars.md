@@ -1,6 +1,7 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
+author: "angelgolfer-ms"
 ---
 
 # Create Calendar

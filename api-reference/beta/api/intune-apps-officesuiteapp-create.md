@@ -1,6 +1,7 @@
 ---
 title: "Create officeSuiteApp"
 description: "Create a new officeSuiteApp object."
+author: "tfitzmac"
 ---
 
 # Create officeSuiteApp

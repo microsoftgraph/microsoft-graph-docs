@@ -1,6 +1,7 @@
 ---
 title: "iosUpdatesInstallStatus enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # iosUpdatesInstallStatus enum type

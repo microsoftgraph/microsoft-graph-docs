@@ -1,6 +1,7 @@
 ---
 title: "managedEBookCategory resource type"
 description: "Contains properties for a single Intune eBook category."
+author: "tfitzmac"
 ---
 
 # managedEBookCategory resource type

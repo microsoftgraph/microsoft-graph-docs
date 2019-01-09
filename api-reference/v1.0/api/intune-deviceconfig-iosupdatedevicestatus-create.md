@@ -1,6 +1,7 @@
 ---
 title: "Create iosUpdateDeviceStatus"
 description: "Create a new iosUpdateDeviceStatus object."
+author: "tfitzmac"
 ---
 
 # Create iosUpdateDeviceStatus

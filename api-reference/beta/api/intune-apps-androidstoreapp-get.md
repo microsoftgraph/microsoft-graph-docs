@@ -1,6 +1,7 @@
 ---
 title: "Get androidStoreApp"
 description: "Read properties and relationships of the androidStoreApp object."
+author: "tfitzmac"
 ---
 
 # Get androidStoreApp

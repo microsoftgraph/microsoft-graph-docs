@@ -1,6 +1,7 @@
 ---
 title: "androidForWorkApp resource type"
 description: "Contains properties and inherited properties for Android for Work (AFW) Apps."
+author: "tfitzmac"
 ---
 
 # androidForWorkApp resource type

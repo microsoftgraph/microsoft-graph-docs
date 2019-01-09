@@ -1,6 +1,7 @@
 ---
 title: "Configuring the built-in tab types in Microsoft Teams"
-description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs, "
+description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs"
+author: "nkramer"
 ---
 
 # Configuring the built-in tab types in Microsoft Teams

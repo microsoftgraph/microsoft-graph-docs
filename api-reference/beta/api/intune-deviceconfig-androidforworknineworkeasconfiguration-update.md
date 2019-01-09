@@ -1,6 +1,7 @@
 ---
 title: "Update androidForWorkNineWorkEasConfiguration"
 description: "Update the properties of a androidForWorkNineWorkEasConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidForWorkNineWorkEasConfiguration

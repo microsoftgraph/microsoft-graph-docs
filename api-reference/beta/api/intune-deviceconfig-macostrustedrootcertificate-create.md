@@ -1,6 +1,7 @@
 ---
 title: "Create macOSTrustedRootCertificate"
 description: "Create a new macOSTrustedRootCertificate object."
+author: "tfitzmac"
 ---
 
 # Create macOSTrustedRootCertificate

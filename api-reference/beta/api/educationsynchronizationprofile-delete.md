@@ -1,6 +1,7 @@
 ---
 title: "Delete a educationSynchronizationProfile"
 description: "Delete a school data synchronization profile in the tenant based on the identifier."
+author: "mmast-msft"
 ---
 
 # Delete a educationSynchronizationProfile

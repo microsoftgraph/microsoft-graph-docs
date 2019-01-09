@@ -1,6 +1,7 @@
 ---
 title: "List androidCompliancePolicies"
 description: "List properties and relationships of the androidCompliancePolicy objects."
+author: "tfitzmac"
 ---
 
 # List androidCompliancePolicies

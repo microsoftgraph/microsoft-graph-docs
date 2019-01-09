@@ -1,6 +1,7 @@
 ---
 title: "Get WorksheetProtection"
 description: "Retrieve the properties and relationships of worksheetprotection object."
+author: "lumine2008"
 ---
 
 # Get WorksheetProtection

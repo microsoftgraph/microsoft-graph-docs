@@ -1,6 +1,7 @@
 ---
 title: "omaSettingBase64 resource type"
 description: "OMA Settings Base64 definition."
+author: "tfitzmac"
 ---
 
 # omaSettingBase64 resource type

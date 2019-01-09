@@ -1,6 +1,7 @@
 ---
 title: "Update termsAndConditionsAcceptanceStatus"
 description: "Update the properties of a termsAndConditionsAcceptanceStatus object."
+author: "tfitzmac"
 ---
 
 # Update termsAndConditionsAcceptanceStatus

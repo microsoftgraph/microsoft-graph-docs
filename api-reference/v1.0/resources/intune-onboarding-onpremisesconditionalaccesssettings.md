@@ -1,6 +1,7 @@
 ---
 title: "onPremisesConditionalAccessSettings resource type"
 description: "Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant."
+author: "tfitzmac"
 ---
 
 # onPremisesConditionalAccessSettings resource type

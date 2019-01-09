@@ -1,6 +1,7 @@
 ---
 title: "signInAssistantOptions enum type"
 description: "Values for the SignInAssistantSettings."
+author: "tfitzmac"
 ---
 
 # signInAssistantOptions enum type

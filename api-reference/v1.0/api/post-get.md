@@ -1,6 +1,7 @@
 ---
 title: "Get post"
 description: "Get the properties and relationships of a post in a specified thread. You can specify both the parent "
+author: "dkershaw10"
 ---
 
 # Get post

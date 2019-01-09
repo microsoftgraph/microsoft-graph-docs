@@ -1,6 +1,7 @@
 ---
 title: "iosStoreApp resource type"
 description: "Contains properties and inherited properties for iOS store apps."
+author: "tfitzmac"
 ---
 
 # iosStoreApp resource type

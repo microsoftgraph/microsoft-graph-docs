@@ -1,6 +1,7 @@
 ---
 title: "List androidForWorkEnrollmentProfiles"
 description: "List properties and relationships of the androidForWorkEnrollmentProfile objects."
+author: "tfitzmac"
 ---
 
 # List androidForWorkEnrollmentProfiles

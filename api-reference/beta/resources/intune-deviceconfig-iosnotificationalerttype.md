@@ -1,6 +1,7 @@
 ---
 title: "iosNotificationAlertType enum type"
 description: "Notification Settings Alert Type."
+author: "tfitzmac"
 ---
 
 # iosNotificationAlertType enum type

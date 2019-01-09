@@ -1,6 +1,7 @@
 ---
 title: "webApp resource type"
 description: "Contains properties and inherited properties for web apps."
+author: "tfitzmac"
 ---
 
 # webApp resource type

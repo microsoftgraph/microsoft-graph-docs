@@ -1,6 +1,7 @@
 ---
 title: "call: reject"
 description: "Reject an incoming call."
+author: "VinodRavichandran"
 ---
 
 # call: reject
@@ -105,7 +106,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_reject"
+  "name": "call-reject"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/reject

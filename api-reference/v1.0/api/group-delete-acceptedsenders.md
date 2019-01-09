@@ -1,6 +1,7 @@
 ---
 title: "Remove acceptedSender"
 description: "Remove a user or group from the acceptedSenders list. "
+author: "dkershaw10"
 ---
 
 # Remove acceptedSender

@@ -1,6 +1,7 @@
 ---
 title: "deviceCompliancePolicyAssignment resource type"
 description: "Device compliance policy assignment."
+author: "tfitzmac"
 ---
 
 # deviceCompliancePolicyAssignment resource type

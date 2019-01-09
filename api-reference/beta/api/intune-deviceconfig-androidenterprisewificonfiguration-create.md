@@ -1,6 +1,7 @@
 ---
 title: "Create androidEnterpriseWiFiConfiguration"
 description: "Create a new androidEnterpriseWiFiConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create androidEnterpriseWiFiConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "iPv6Range resource type"
 description: "IP V6 range"
+author: "tfitzmac"
 ---
 
 # iPv6Range resource type

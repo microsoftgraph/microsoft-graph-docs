@@ -1,6 +1,7 @@
 ---
 title: "macOSGatekeeperAppSources enum type"
 description: "App source options for macOS Gatekeeper."
+author: "tfitzmac"
 ---
 
 # macOSGatekeeperAppSources enum type

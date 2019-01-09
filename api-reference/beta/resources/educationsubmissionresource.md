@@ -1,6 +1,7 @@
 ---
 title: "educationSubmissionResource resource type"
 description: "A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if this was copied from the assignment.  "
+author: "dipakboyed"
 ---
 
 # educationSubmissionResource resource type

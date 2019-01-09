@@ -1,6 +1,7 @@
 ---
 title: "List managedDeviceMobileAppConfigurationAssignments"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationAssignment objects."
+author: "tfitzmac"
 ---
 
 # List managedDeviceMobileAppConfigurationAssignments

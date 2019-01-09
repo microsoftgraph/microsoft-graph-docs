@@ -1,6 +1,7 @@
 ---
 title: "Delete enterpriseCodeSigningCertificate"
 description: "Deletes a enterpriseCodeSigningCertificate."
+author: "tfitzmac"
 ---
 
 # Delete enterpriseCodeSigningCertificate

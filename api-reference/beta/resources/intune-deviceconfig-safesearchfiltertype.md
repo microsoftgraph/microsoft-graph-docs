@@ -1,6 +1,7 @@
 ---
 title: "safeSearchFilterType enum type"
 description: "Specifies what level of safe search (filtering adult content) is required"
+author: "tfitzmac"
 ---
 
 # safeSearchFilterType enum type

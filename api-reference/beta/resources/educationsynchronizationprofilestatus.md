@@ -1,6 +1,7 @@
 ---
 title: "educationSynchronizationProfileStatus resource type"
 description: "Represents the synchronization status of a school data synchronization profile. "
+author: "mmast-msft"
 ---
 
 # educationSynchronizationProfileStatus resource type

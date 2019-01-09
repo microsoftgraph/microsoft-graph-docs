@@ -1,6 +1,7 @@
 ---
 title: "installIntent enum type"
 description: "Possible values for the install intent chosen by the admin."
+author: "tfitzmac"
 ---
 
 # installIntent enum type

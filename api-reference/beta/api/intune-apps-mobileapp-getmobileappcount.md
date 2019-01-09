@@ -1,6 +1,7 @@
 ---
 title: "getMobileAppCount function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getMobileAppCount function

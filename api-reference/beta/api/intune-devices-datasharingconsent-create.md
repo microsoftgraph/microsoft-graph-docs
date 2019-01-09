@@ -1,6 +1,7 @@
 ---
 title: "Create dataSharingConsent"
 description: "Create a new dataSharingConsent object."
+author: "tfitzmac"
 ---
 
 # Create dataSharingConsent

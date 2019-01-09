@@ -1,6 +1,7 @@
 ---
 title: "Get androidWorkProfileCustomConfiguration"
 description: "Read properties and relationships of the androidWorkProfileCustomConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get androidWorkProfileCustomConfiguration

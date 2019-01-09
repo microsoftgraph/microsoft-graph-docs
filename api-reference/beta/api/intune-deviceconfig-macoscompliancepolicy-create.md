@@ -1,6 +1,7 @@
 ---
 title: "Create macOSCompliancePolicy"
 description: "Create a new macOSCompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Create macOSCompliancePolicy

@@ -1,6 +1,7 @@
 ---
 title: "macOSLobChildApp resource type"
 description: "Contains properties the MacOS LOB App in a bundle package"
+author: "tfitzmac"
 ---
 
 # macOSLobChildApp resource type

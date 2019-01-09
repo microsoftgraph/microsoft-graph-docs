@@ -1,6 +1,7 @@
 ---
 title: "Update managedIOSLobApp"
 description: "Update the properties of a managedIOSLobApp object."
+author: "tfitzmac"
 ---
 
 # Update managedIOSLobApp

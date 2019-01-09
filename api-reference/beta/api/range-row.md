@@ -1,6 +1,7 @@
 ---
 title: "Range: Row"
 description: "Gets a row contained in the range."
+author: "lumine2008"
 ---
 
 # Range: Row

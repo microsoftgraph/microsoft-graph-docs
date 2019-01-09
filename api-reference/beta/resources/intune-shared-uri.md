@@ -1,6 +1,7 @@
 ---
 title: "uri resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # uri resource type

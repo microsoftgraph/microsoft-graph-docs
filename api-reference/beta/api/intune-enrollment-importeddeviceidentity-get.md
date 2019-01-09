@@ -1,6 +1,7 @@
 ---
 title: "Get importedDeviceIdentity"
 description: "Read properties and relationships of the importedDeviceIdentity object."
+author: "tfitzmac"
 ---
 
 # Get importedDeviceIdentity

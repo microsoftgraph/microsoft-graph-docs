@@ -1,6 +1,7 @@
 ---
 title: "Create mobileAppIntentAndState"
 description: "Create a new mobileAppIntentAndState object."
+author: "tfitzmac"
 ---
 
 # Create mobileAppIntentAndState

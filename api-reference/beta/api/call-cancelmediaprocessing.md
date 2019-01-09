@@ -1,6 +1,7 @@
 ---
 title: "call: cancelMediaProcessing"
 description: "Cancels media processing for all in-progress any PlayPrompt or Record operations."
+author: "VinodRavichandran"
 ---
 
 # call: cancelMediaProcessing
@@ -49,7 +50,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_cancelMediaProcessing"
+  "name": "call-cancelMediaProcessing"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing

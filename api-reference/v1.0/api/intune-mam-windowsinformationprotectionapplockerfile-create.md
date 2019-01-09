@@ -1,6 +1,7 @@
 ---
 title: "Create windowsInformationProtectionAppLockerFile"
 description: "Create a new windowsInformationProtectionAppLockerFile object."
+author: "tfitzmac"
 ---
 
 # Create windowsInformationProtectionAppLockerFile

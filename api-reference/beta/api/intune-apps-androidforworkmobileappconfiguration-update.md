@@ -1,6 +1,7 @@
 ---
 title: "Update androidForWorkMobileAppConfiguration"
 description: "Update the properties of a androidForWorkMobileAppConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidForWorkMobileAppConfiguration

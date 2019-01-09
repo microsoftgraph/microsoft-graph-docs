@@ -1,6 +1,7 @@
 ---
 title: "List sectionGroups"
 description: "Retrieve a list of section groups from the specified notebook."
+author: "Jewan-microsoft"
 ---
 
 # List sectionGroups

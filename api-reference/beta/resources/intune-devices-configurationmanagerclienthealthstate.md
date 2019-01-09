@@ -1,6 +1,7 @@
 ---
 title: "configurationManagerClientHealthState resource type"
 description: "Configuration manager client health state"
+author: "tfitzmac"
 ---
 
 # configurationManagerClientHealthState resource type

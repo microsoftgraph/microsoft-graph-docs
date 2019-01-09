@@ -1,6 +1,7 @@
 ---
 title: "mdmWindowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection with MDM"
+author: "tfitzmac"
 ---
 
 # mdmWindowsInformationProtectionPolicy resource type

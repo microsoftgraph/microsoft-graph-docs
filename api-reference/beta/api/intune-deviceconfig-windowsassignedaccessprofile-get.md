@@ -1,6 +1,7 @@
 ---
 title: "Get windowsAssignedAccessProfile"
 description: "Read properties and relationships of the windowsAssignedAccessProfile object."
+author: "tfitzmac"
 ---
 
 # Get windowsAssignedAccessProfile

@@ -1,6 +1,7 @@
 ---
 title: "serviceHostedMediaConfig resource type"
 description: "The serviceHostedMediaConfig type."
+author: "VinodRavichandran"
 ---
 
 # serviceHostedMediaConfig resource type

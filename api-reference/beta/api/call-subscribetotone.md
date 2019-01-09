@@ -1,6 +1,7 @@
----
+﻿---
 title: "call: subscribeToTone"
-description: " phone."
+description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'touchtone' phone."
+author: "VinodRavichandran"
 ---
 
 # call: subscribeToTone
@@ -48,7 +49,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call-subscribeToTone"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone

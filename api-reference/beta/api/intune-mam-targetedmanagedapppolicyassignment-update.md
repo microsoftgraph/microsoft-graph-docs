@@ -1,6 +1,7 @@
 ---
 title: "Update targetedManagedAppPolicyAssignment"
 description: "Update the properties of a targetedManagedAppPolicyAssignment object."
+author: "tfitzmac"
 ---
 
 # Update targetedManagedAppPolicyAssignment

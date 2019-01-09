@@ -1,6 +1,7 @@
 ---
 title: "userEmailSource enum type"
 description: "Possible values for username source or email source."
+author: "tfitzmac"
 ---
 
 # userEmailSource enum type

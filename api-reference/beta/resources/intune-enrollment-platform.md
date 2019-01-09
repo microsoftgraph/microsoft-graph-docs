@@ -1,6 +1,7 @@
 ---
 title: "platform enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # platform enum type

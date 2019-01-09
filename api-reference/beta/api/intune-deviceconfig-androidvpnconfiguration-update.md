@@ -1,6 +1,7 @@
 ---
 title: "Update androidVpnConfiguration"
 description: "Update the properties of a androidVpnConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidVpnConfiguration

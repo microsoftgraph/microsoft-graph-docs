@@ -1,6 +1,7 @@
 ---
 title: "Create managedEBookAssignment"
 description: "Create a new managedEBookAssignment object."
+author: "tfitzmac"
 ---
 
 # Create managedEBookAssignment

@@ -1,6 +1,7 @@
 ---
 title: "assign action"
 description: "Replace all targeted groups for a policy."
+author: "tfitzmac"
 ---
 
 # assign action

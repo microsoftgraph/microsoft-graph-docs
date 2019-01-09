@@ -1,6 +1,7 @@
 ---
 title: "List webApps"
 description: "List properties and relationships of the webApp objects."
+author: "tfitzmac"
 ---
 
 # List webApps

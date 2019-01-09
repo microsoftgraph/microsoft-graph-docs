@@ -1,6 +1,7 @@
 ---
 title: "Update managedAppOperation"
 description: "Update the properties of a managedAppOperation object."
+author: "tfitzmac"
 ---
 
 # Update managedAppOperation

@@ -1,6 +1,7 @@
 ---
 title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
+author: "dkershaw10"
 ---
 
 # post resource type

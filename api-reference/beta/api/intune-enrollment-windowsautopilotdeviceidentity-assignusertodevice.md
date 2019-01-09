@@ -1,6 +1,7 @@
 ---
 title: "assignUserToDevice action"
 description: "Assigns user to Autopilot devices."
+author: "tfitzmac"
 ---
 
 # assignUserToDevice action

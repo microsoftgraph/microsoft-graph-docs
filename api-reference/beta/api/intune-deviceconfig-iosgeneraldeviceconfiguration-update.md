@@ -1,6 +1,7 @@
 ---
 title: "Update iosGeneralDeviceConfiguration"
 description: "Update the properties of a iosGeneralDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update iosGeneralDeviceConfiguration

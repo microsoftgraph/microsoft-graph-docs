@@ -1,6 +1,7 @@
 ---
 title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
+author: "tfitzmac"
 ---
 
 # List devices

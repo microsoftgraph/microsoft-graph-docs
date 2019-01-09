@@ -1,6 +1,7 @@
 ---
 title: "ratingJapanMoviesType enum type"
 description: "Movies rating labels in Japan"
+author: "tfitzmac"
 ---
 
 # ratingJapanMoviesType enum type

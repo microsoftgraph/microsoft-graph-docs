@@ -1,6 +1,7 @@
 ---
 title: "List managedMobileLobApps"
 description: "List properties and relationships of the managedMobileLobApp objects."
+author: "tfitzmac"
 ---
 
 # List managedMobileLobApps

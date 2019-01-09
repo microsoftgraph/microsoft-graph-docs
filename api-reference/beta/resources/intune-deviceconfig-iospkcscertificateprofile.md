@@ -1,6 +1,7 @@
 ---
 title: "iosPkcsCertificateProfile resource type"
 description: "iOS PKCS certificate profile."
+author: "tfitzmac"
 ---
 
 # iosPkcsCertificateProfile resource type

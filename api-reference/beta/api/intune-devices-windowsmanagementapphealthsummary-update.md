@@ -1,6 +1,7 @@
 ---
 title: "Update windowsManagementAppHealthSummary"
 description: "Update the properties of a windowsManagementAppHealthSummary object."
+author: "tfitzmac"
 ---
 
 # Update windowsManagementAppHealthSummary

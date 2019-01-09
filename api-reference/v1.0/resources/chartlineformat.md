@@ -1,6 +1,7 @@
 ---
 title: "ChartLineFormat resource type"
 description: "Enapsulates the formatting options for line elements."
+author: "lumine2008"
 ---
 
 # ChartLineFormat resource type

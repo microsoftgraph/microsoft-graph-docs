@@ -1,6 +1,7 @@
 ---
 title: "pivotTable resource type"
 description: "Represents an Excel PivotTable."
+author: "lumine2008"
 ---
 
 # pivotTable resource type

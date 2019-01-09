@@ -1,6 +1,7 @@
 ---
 title: "Delete iosLobApp"
 description: "Deletes a iosLobApp."
+author: "tfitzmac"
 ---
 
 # Delete iosLobApp

@@ -1,6 +1,7 @@
 ---
 title: "getRoleScopeTagsByIds function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getRoleScopeTagsByIds function

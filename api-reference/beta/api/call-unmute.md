@@ -1,6 +1,7 @@
 ---
 title: "call: unmute"
 description: "Allows the application to unmute itself."
+author: "VinodRavichandran"
 ---
 
 # call: unmute
@@ -48,7 +49,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_unmute"
+  "name": "call-unmute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/unmute

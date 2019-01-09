@@ -1,6 +1,7 @@
 ---
 title: "Get termsAndConditionsGroupAssignment"
 description: "Read properties and relationships of the termsAndConditionsGroupAssignment object."
+author: "tfitzmac"
 ---
 
 # Get termsAndConditionsGroupAssignment

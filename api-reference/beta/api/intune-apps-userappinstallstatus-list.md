@@ -1,6 +1,7 @@
 ---
 title: "List userAppInstallStatuses"
 description: "List properties and relationships of the userAppInstallStatus objects."
+author: "tfitzmac"
 ---
 
 # List userAppInstallStatuses

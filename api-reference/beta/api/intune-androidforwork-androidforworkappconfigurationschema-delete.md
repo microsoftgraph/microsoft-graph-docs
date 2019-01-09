@@ -1,6 +1,7 @@
 ---
 title: "Delete androidForWorkAppConfigurationSchema"
 description: "Deletes a androidForWorkAppConfigurationSchema."
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkAppConfigurationSchema

@@ -1,6 +1,7 @@
 ---
 title: "verifyWindowsEnrollmentAutoDiscovery function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # verifyWindowsEnrollmentAutoDiscovery function

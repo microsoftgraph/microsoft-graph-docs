@@ -1,6 +1,7 @@
 ---
 title: "deviceConfigurationAssignment resource type"
 description: "The device configuration assignment entity assigns an AAD group to a specific device configuration."
+author: "tfitzmac"
 ---
 
 # deviceConfigurationAssignment resource type

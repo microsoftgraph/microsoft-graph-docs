@@ -1,6 +1,7 @@
 ---
 title: "keyStorageProviderOption enum type"
 description: "Key Storage Provider (KSP) Import Options."
+author: "tfitzmac"
 ---
 
 # keyStorageProviderOption enum type

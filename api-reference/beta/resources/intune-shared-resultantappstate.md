@@ -1,6 +1,7 @@
 ---
 title: "resultantAppState enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # resultantAppState enum type

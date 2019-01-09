@@ -1,6 +1,7 @@
 ---
 title: "managedAppPolicyDeploymentSummaryPerApp resource type"
 description: "Represents policy deployment summary per app."
+author: "tfitzmac"
 ---
 
 # managedAppPolicyDeploymentSummaryPerApp resource type

@@ -1,6 +1,7 @@
 ---
 title: "windowsAutopilotProfileAssignmentDetailedStatus enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # windowsAutopilotProfileAssignmentDetailedStatus enum type

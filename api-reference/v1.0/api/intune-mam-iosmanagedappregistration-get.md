@@ -1,6 +1,7 @@
 ---
 title: "Get iosManagedAppRegistration"
 description: "Read properties and relationships of the iosManagedAppRegistration object."
+author: "tfitzmac"
 ---
 
 # Get iosManagedAppRegistration

@@ -1,6 +1,7 @@
 ---
 title: "Get microsoftStoreForBusinessApp"
 description: "Read properties and relationships of the microsoftStoreForBusinessApp object."
+author: "tfitzmac"
 ---
 
 # Get microsoftStoreForBusinessApp

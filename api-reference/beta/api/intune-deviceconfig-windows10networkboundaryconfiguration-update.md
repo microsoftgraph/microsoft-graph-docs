@@ -1,6 +1,7 @@
 ---
 title: "Update windows10NetworkBoundaryConfiguration"
 description: "Update the properties of a windows10NetworkBoundaryConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windows10NetworkBoundaryConfiguration

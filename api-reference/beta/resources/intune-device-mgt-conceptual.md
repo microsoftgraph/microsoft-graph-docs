@@ -1,6 +1,6 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""
+description: ""author: "tfitzmac"
 ---
 
 # Device management in Microsoft Intune

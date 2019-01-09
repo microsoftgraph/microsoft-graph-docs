@@ -1,6 +1,7 @@
 ---
 title: "call: transfer"
 description: "Transfer an active call."
+author: "VinodRavichandran"
 ---
 
 # call: transfer
@@ -36,8 +37,6 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|target|[identitySet](../resources/identityset.md)||
-|replacesCallId|String|Original call id of the participant that is being transferred.|
 |clientContext|String|The client context.|
 
 ## Response
@@ -54,7 +53,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_transfer"
+  "name": "call-transfer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
@@ -201,7 +200,7 @@ Content-Type: application/json
 ```
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "call_transfer"
+  "@odata.type": "call-transfer"
 }-->
 ```json
 {

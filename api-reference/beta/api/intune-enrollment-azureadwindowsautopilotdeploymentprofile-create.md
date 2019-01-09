@@ -1,6 +1,7 @@
 ---
 title: "Create azureADWindowsAutopilotDeploymentProfile"
 description: "Create a new azureADWindowsAutopilotDeploymentProfile object."
+author: "tfitzmac"
 ---
 
 # Create azureADWindowsAutopilotDeploymentProfile

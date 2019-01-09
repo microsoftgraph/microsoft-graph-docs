@@ -1,6 +1,7 @@
 ---
 title: "Get macOSEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the macOSEnterpriseWiFiConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get macOSEnterpriseWiFiConfiguration

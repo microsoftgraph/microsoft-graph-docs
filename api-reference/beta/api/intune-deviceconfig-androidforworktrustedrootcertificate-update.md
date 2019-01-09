@@ -1,6 +1,7 @@
 ---
 title: "Update androidForWorkTrustedRootCertificate"
 description: "Update the properties of a androidForWorkTrustedRootCertificate object."
+author: "tfitzmac"
 ---
 
 # Update androidForWorkTrustedRootCertificate

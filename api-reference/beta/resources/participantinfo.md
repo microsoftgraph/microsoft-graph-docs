@@ -1,6 +1,7 @@
 ---
 title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
+author: "VinodRavichandran"
 ---
 
 # participantInfo resource type

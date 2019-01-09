@@ -1,11 +1,14 @@
 ---
 title: "organizerMeetingInfo resource type"
-description: "The following is a JSON representation of the resource."
+description: "Meeting information containing the organizer of the meeting."
+author: "VinodRavichandran"
 ---
 
 # organizerMeetingInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Meeting information containing the organizer of the meeting.
 
 ## Properties
 

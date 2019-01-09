@@ -1,6 +1,7 @@
 ---
 title: "List windowsInformationProtections"
 description: "List properties and relationships of the windowsInformationProtection objects."
+author: "tfitzmac"
 ---
 
 # List windowsInformationProtections

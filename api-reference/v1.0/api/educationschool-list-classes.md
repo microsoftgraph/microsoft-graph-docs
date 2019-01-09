@@ -1,6 +1,7 @@
 ---
 title: "List educationClasses"
 description: "Retrieve a list of classes owned by a school."
+author: "mmast-msft"
 ---
 
 # List educationClasses

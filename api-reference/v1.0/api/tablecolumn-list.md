@@ -1,6 +1,7 @@
 ---
 title: "List TableColumnCollection"
 description: "Retrieve a list of tablecolumn objects."
+author: "lumine2008"
 ---
 
 # List TableColumnCollection

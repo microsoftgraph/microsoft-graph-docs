@@ -1,6 +1,7 @@
 ---
 title: "deviceActionResult resource type"
 description: "Device action result"
+author: "tfitzmac"
 ---
 
 # deviceActionResult resource type

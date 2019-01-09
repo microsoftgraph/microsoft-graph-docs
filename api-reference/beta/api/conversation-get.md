@@ -1,6 +1,7 @@
 ---
 title: "Get conversation"
 description: "Retrieve the properties and relationships of conversation object."
+author: "dkershaw10"
 ---
 
 # Get conversation

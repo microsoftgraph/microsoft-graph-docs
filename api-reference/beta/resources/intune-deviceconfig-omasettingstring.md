@@ -1,6 +1,7 @@
 ---
 title: "omaSettingString resource type"
 description: "OMA Settings String definition."
+author: "tfitzmac"
 ---
 
 # omaSettingString resource type

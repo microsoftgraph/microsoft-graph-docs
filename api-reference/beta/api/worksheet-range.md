@@ -1,6 +1,7 @@
 ---
 title: "Worksheet: Range"
 description: "Gets the range object specified by the address or name."
+author: "lumine2008"
 ---
 
 # Worksheet: Range

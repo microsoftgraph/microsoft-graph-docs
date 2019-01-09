@@ -1,6 +1,7 @@
 ---
 title: "getAuditCategories function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getAuditCategories function

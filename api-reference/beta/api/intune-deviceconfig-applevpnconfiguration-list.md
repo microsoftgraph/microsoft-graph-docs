@@ -1,6 +1,7 @@
 ---
 title: "List appleVpnConfigurations"
 description: "List properties and relationships of the appleVpnConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List appleVpnConfigurations

@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementExchangeAccessState enum type"
 description: "Device Exchange Access State."
+author: "tfitzmac"
 ---
 
 # deviceManagementExchangeAccessState enum type

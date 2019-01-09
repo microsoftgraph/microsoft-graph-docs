@@ -1,6 +1,7 @@
 ---
 title: "List tabs in channel"
 description: "Retrieve the list of tabs in the specified channel within a team. "
+author: "nkramer"
 ---
 
 # List tabs in channel

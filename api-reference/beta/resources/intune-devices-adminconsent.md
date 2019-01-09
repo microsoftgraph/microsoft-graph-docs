@@ -1,6 +1,7 @@
 ---
 title: "adminConsent resource type"
 description: "Admin consent information."
+author: "tfitzmac"
 ---
 
 # adminConsent resource type

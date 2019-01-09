@@ -1,6 +1,7 @@
 ---
 title: "Create deviceManagementExchangeConnector"
 description: "Create a new deviceManagementExchangeConnector object."
+author: "tfitzmac"
 ---
 
 # Create deviceManagementExchangeConnector

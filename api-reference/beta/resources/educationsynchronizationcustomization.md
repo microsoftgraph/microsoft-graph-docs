@@ -1,6 +1,7 @@
 ---
 title: "educationSynchronizationCustomization resource type"
 description: "Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized. "
+author: "mmast-msft"
 ---
 
 # educationSynchronizationCustomization resource type

@@ -1,6 +1,7 @@
 ---
 title: "Delete eventMessage"
 description: "Delete eventMessage."
+author: "angelgolfer-ms"
 ---
 
 # Delete eventMessage

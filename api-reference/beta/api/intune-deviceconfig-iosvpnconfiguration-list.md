@@ -1,6 +1,7 @@
 ---
 title: "List iosVpnConfigurations"
 description: "List properties and relationships of the iosVpnConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List iosVpnConfigurations

@@ -1,6 +1,7 @@
 ---
 title: "mobileAppContent resource type"
 description: "Contains content properties for a specific app version. Each mobileAppContent can have multiple mobileAppContentFile."
+author: "tfitzmac"
 ---
 
 # mobileAppContent resource type

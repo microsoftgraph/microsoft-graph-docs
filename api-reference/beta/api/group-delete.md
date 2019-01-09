@@ -1,6 +1,7 @@
 ---
 title: "Delete group"
 description: "Deletes a group."
+author: "dkershaw10"
 ---
 
 # Delete group

@@ -1,6 +1,7 @@
 ---
 title: "mobileAppSupportedDeviceType resource type"
 description: "Device properties"
+author: "tfitzmac"
 ---
 
 # mobileAppSupportedDeviceType resource type

@@ -1,6 +1,7 @@
 ---
 title: "Update androidCompliancePolicy"
 description: "Update the properties of a androidCompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Update androidCompliancePolicy

@@ -1,6 +1,7 @@
 ---
 title: "Create importedDeviceIdentityResult"
 description: "Create a new importedDeviceIdentityResult object."
+author: "tfitzmac"
 ---
 
 # Create importedDeviceIdentityResult

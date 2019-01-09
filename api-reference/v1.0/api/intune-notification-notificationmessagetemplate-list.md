@@ -1,6 +1,7 @@
 ---
 title: "List notificationMessageTemplates"
 description: "List properties and relationships of the notificationMessageTemplate objects."
+author: "tfitzmac"
 ---
 
 # List notificationMessageTemplates

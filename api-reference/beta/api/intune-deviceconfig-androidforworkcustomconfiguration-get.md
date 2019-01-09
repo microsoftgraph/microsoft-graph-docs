@@ -1,6 +1,7 @@
 ---
 title: "Get androidForWorkCustomConfiguration"
 description: "Read properties and relationships of the androidForWorkCustomConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get androidForWorkCustomConfiguration

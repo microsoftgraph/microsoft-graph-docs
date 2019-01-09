@@ -1,6 +1,7 @@
 ---
 title: "Add educationUser to an educationSchool"
 description: "Add a user to a school."
+author: "mmast-msft"
 ---
 
 # Add educationUser to an educationSchool

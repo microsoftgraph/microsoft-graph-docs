@@ -1,6 +1,7 @@
 ---
 title: "bitLockerRecoveryInformationType enum type"
 description: "BitLockerRecoveryInformationType types"
+author: "tfitzmac"
 ---
 
 # bitLockerRecoveryInformationType enum type

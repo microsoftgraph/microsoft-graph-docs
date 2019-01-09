@@ -1,6 +1,7 @@
 ---
 title: "windowsManagementAppHealthSummary resource type"
 description: "Contains properties for the health summary of the Windows management app."
+author: "tfitzmac"
 ---
 
 # windowsManagementAppHealthSummary resource type

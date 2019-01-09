@@ -1,6 +1,7 @@
 ---
 title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
+author: "tfitzmac"
 ---
 
 # Create mobileAppAssignment

@@ -1,6 +1,7 @@
 ---
 title: "Create windows10PkcsCertificateProfile"
 description: "Create a new windows10PkcsCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Create windows10PkcsCertificateProfile

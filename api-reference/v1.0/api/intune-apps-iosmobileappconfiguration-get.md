@@ -1,6 +1,7 @@
 ---
 title: "Get iosMobileAppConfiguration"
 description: "Read properties and relationships of the iosMobileAppConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get iosMobileAppConfiguration

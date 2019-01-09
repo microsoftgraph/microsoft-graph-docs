@@ -1,6 +1,7 @@
 ---
 title: "Get iosTrustedRootCertificate"
 description: "Read properties and relationships of the iosTrustedRootCertificate object."
+author: "tfitzmac"
 ---
 
 # Get iosTrustedRootCertificate

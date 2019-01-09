@@ -1,6 +1,7 @@
 ---
 title: "teamsTabConfiguration resource type (Open Type)"
 description: "The settings that determine the content of a tab."
+author: "nkramer"
 ---
 
 # teamsTabConfiguration resource type (Open Type)

@@ -1,6 +1,7 @@
 ---
 title: "Create managedDeviceCertificateState"
 description: "Create a new managedDeviceCertificateState object."
+author: "tfitzmac"
 ---
 
 # Create managedDeviceCertificateState

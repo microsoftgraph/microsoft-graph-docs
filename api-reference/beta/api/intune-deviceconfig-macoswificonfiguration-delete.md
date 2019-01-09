@@ -1,6 +1,7 @@
 ---
 title: "Delete macOSWiFiConfiguration"
 description: "Deletes a macOSWiFiConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete macOSWiFiConfiguration

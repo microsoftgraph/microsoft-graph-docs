@@ -1,6 +1,7 @@
 ---
 title: "defenderSecurityCenterITContactDisplayType enum type"
 description: "Possible values for defenderSecurityCenterITContactDisplay"
+author: "tfitzmac"
 ---
 
 # defenderSecurityCenterITContactDisplayType enum type

@@ -1,6 +1,7 @@
 ---
 title: "message: copy"
 description: "Copy a message to a folder."
+author: "angelgolfer-ms"
 ---
 
 # message: copy

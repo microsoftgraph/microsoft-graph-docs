@@ -1,6 +1,7 @@
 ---
 title: "Delete windowsPhoneXAP"
 description: "Deletes a windowsPhoneXAP."
+author: "tfitzmac"
 ---
 
 # Delete windowsPhoneXAP

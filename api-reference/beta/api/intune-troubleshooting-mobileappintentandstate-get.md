@@ -1,6 +1,7 @@
 ---
 title: "Get mobileAppIntentAndState"
 description: "Read properties and relationships of the mobileAppIntentAndState object."
+author: "tfitzmac"
 ---
 
 # Get mobileAppIntentAndState

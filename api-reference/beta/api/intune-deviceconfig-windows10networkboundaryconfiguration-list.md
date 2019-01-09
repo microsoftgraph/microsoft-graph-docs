@@ -1,6 +1,7 @@
 ---
 title: "List windows10NetworkBoundaryConfigurations"
 description: "List properties and relationships of the windows10NetworkBoundaryConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List windows10NetworkBoundaryConfigurations

@@ -1,6 +1,7 @@
 ---
 title: "Resume sync on an educationSynchronizationProfile"
 description: "Resume the sync of a specific school data synchronization profile in the tenant."
+author: "mmast-msft"
 ---
 
 # Resume sync on an educationSynchronizationProfile

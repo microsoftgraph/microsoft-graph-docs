@@ -1,6 +1,7 @@
 ---
 title: "applicationGuardEnabledOptions enum type"
 description: "Possible values for ApplicationGuardEnabledOptions"
+author: "tfitzmac"
 ---
 
 # applicationGuardEnabledOptions enum type

@@ -1,6 +1,7 @@
 ---
 title: "windowsHelloForBusinessPinUsage enum type"
 description: "Windows Hello for Business pin usage options"
+author: "tfitzmac"
 ---
 
 # windowsHelloForBusinessPinUsage enum type

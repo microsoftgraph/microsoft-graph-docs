@@ -1,6 +1,7 @@
 ---
 title: "Create iosGeneralDeviceConfiguration"
 description: "Create a new iosGeneralDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create iosGeneralDeviceConfiguration

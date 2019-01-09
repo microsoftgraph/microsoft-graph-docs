@@ -1,6 +1,7 @@
 ---
 title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get macOSGeneralDeviceConfiguration

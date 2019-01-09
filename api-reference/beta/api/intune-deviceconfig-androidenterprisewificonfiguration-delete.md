@@ -1,6 +1,7 @@
 ---
 title: "Delete androidEnterpriseWiFiConfiguration"
 description: "Deletes a androidEnterpriseWiFiConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete androidEnterpriseWiFiConfiguration

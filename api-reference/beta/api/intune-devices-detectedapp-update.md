@@ -1,6 +1,7 @@
 ---
 title: "Update detectedApp"
 description: "Update the properties of a detectedApp object."
+author: "tfitzmac"
 ---
 
 # Update detectedApp

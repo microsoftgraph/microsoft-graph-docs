@@ -1,6 +1,7 @@
 ---
 title: "androidWorkProfileEasEmailProfileBase resource type"
 description: "Base for Android Work Profile EAS Email profiles"
+author: "tfitzmac"
 ---
 
 # androidWorkProfileEasEmailProfileBase resource type

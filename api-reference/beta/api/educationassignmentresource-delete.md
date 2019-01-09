@@ -1,6 +1,7 @@
 ---
 title: "Delete educationAssignmentResource"
 description: "."
+author: "dipakboyed"
 ---
 
 # Delete educationAssignmentResource

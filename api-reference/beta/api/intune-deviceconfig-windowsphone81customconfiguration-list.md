@@ -1,6 +1,7 @@
 ---
 title: "List windowsPhone81CustomConfigurations"
 description: "List properties and relationships of the windowsPhone81CustomConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List windowsPhone81CustomConfigurations

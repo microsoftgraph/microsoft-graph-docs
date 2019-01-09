@@ -1,6 +1,7 @@
 ---
 title: "Get deviceCompliancePolicyDeviceStateSummary"
 description: "Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object."
+author: "tfitzmac"
 ---
 
 # Get deviceCompliancePolicyDeviceStateSummary

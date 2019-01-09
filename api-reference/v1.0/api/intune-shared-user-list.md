@@ -1,6 +1,7 @@
 ---
 title: "List users"
 description: "List properties and relationships of the user objects."
+author: "tfitzmac"
 ---
 
 # List users

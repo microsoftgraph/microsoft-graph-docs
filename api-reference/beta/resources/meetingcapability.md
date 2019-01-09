@@ -1,6 +1,7 @@
 ---
 title: "meetingCapability resource type"
 description: "Contains the capabilities of a meeting"
+author: "VinodRavichandran"
 ---
 
 # meetingCapability resource type
@@ -11,10 +12,11 @@ Contains the capabilities of a meeting
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| allowAnonymousUsersToDialOut | Boolean | Indicates whether anonymous users dialout is allowed in a meeting. |
-| autoAdmittedUsers | String | Possible values are: `everyoneInCompany`, `everyone`. |
+| Property                          | Type    | Description                                                        |
+|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| allowAnonymousUsersToDialOut      | Boolean | Indicates whether anonymous users dialout is allowed in a meeting. |
+| allowAnonymousUsersToStartMeeting | Boolean | Indicates whether anonymous users are allowed to start a meeting.  |
+| autoAdmittedUsers                 | String  | Possible values are: `everyoneInCompany`, `everyone`.              |
 
 ## JSON representation
 
@@ -30,6 +32,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
+  "allowAnonymousUsersToStartMeeting": true,
   "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```

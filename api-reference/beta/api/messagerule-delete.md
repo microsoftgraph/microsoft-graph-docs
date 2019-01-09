@@ -1,6 +1,7 @@
 ---
 title: "Delete messageRule"
 description: "Delete the specified messageRule object."
+author: "angelgolfer-ms"
 ---
 
 # Delete messageRule

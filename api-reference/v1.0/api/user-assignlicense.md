@@ -1,6 +1,7 @@
 ---
 title: "assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
+author: "dkershaw10"
 ---
 
 # assignLicense

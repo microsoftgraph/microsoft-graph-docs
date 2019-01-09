@@ -1,6 +1,7 @@
 ---
 title: "Create managementConditionStatement"
 description: "Create a new managementConditionStatement object."
+author: "tfitzmac"
 ---
 
 # Create managementConditionStatement

@@ -1,6 +1,7 @@
 ---
 title: "onenoteEntityHierarchyModel resource"
 description: "This is a base type for OneNote entities."
+author: "Jewan-microsoft"
 ---
 
 # onenoteEntityHierarchyModel resource

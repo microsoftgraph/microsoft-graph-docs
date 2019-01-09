@@ -1,6 +1,7 @@
 ---
 title: "vppTokenLicenseSummary resource type"
 description: "License summary of a given app in a token."
+author: "tfitzmac"
 ---
 
 # vppTokenLicenseSummary resource type

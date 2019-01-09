@@ -1,6 +1,7 @@
 ---
 title: "variableManagementConditionExpression resource type"
 description: "Evaluates the management condition state as a Boolean expression."
+author: "tfitzmac"
 ---
 
 # variableManagementConditionExpression resource type

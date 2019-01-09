@@ -1,6 +1,7 @@
 ---
 title: "Worksheet: delete"
 description: "Deletes the worksheet from the workbook."
+author: "lumine2008"
 ---
 
 # Worksheet: delete

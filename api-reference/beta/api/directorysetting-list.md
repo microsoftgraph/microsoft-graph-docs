@@ -1,6 +1,7 @@
 ---
 title: "List directory settings"
 description: "Retrieve a list of directory setting objects."
+author: "lleonard-msft"
 ---
 
 # List directory settings

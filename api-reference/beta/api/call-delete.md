@@ -1,6 +1,7 @@
 ---
 title: "Delete call"
 description: "Delete or hang up an active call."
+author: "VinodRavichandran"
 ---
 
 # Delete call
@@ -44,7 +45,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_call"
+  "name": "delete-call"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}

@@ -1,6 +1,7 @@
 ---
 title: "Get windowsIdentityProtectionConfiguration"
 description: "Read properties and relationships of the windowsIdentityProtectionConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get windowsIdentityProtectionConfiguration

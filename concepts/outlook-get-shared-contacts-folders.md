@@ -1,16 +1,18 @@
 ---
 title: "Get Outlook contacts in a shared folder"
-description: " this is also "
+description: "Outlook lets customers share folders with one another and provide read, create, modify, or delete access to individual contact folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
+author: "angelgolfer-ms"
 ---
 
 # Get Outlook contacts in a shared folder
 
-Outlook lets customers share folders with one another and provide "read", "create", "modify", or "delete" access to individual contact folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific folders or the customer's entire mailbox; this is also 
-known as "delegation" in Outlook.
+Outlook lets customers share folders with one another and provide "read", "create", "modify", or "delete" access to individual contact folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific folders or the customer's entire mailbox; this is also known as "delegation" in Outlook.
 
 Programmatically, Microsoft Graph supports getting contacts in contact folders that have been shared by other users, as well as getting the shared folders themselves. The support also applies to folders in a delegated mailbox.
 
 As an example, Garth has shared with John a custom contact folder and given John read access. If John has signed into your app and provided delegated permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared), your app will be able to access Garth's custom contact folder and contacts in that folder as described below.
+
+> **Note** The sharing permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared) allow you to read or write contacts in a shared or delegated folder. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on contacts in a shared, delegated, or any other user's contact folder in the tenant, use the application permission, Contacts.Read.
 
 ## Get a contact in the shared folder
 

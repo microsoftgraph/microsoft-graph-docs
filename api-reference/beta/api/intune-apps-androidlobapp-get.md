@@ -1,6 +1,7 @@
 ---
 title: "Get androidLobApp"
 description: "Read properties and relationships of the androidLobApp object."
+author: "tfitzmac"
 ---
 
 # Get androidLobApp

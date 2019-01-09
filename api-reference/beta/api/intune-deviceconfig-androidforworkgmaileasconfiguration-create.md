@@ -1,6 +1,7 @@
 ---
 title: "Create androidForWorkGmailEasConfiguration"
 description: "Create a new androidForWorkGmailEasConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create androidForWorkGmailEasConfiguration

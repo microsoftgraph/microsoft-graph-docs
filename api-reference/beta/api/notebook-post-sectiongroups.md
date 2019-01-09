@@ -1,6 +1,7 @@
 ---
 title: "Create sectionGroup"
 description: "Create a new section group in the specified notebook."
+author: "Jewan-microsoft"
 ---
 
 # Create sectionGroup

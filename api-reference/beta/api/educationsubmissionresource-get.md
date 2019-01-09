@@ -1,6 +1,7 @@
 ---
 title: "Get educationSubmissionResource"
-description: " resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment."
+description: "Retrieves the properties of a specific resource associated with the submission. This resource is in the 'working' resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment."
+author: "dipakboyed"
 ---
 
 # Get educationSubmissionResource

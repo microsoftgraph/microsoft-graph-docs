@@ -1,6 +1,7 @@
 ---
 title: "Get educationSynchronizationErrors"
 description: "Get the errors generated during validation and/or during a sync of a specific school data synchronization profile in the tenant. "
+author: "mmast-msft"
 ---
 
 # Get educationSynchronizationErrors

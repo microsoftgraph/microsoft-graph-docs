@@ -1,6 +1,7 @@
 ---
 title: "Update deviceConfigurationAssignment"
 description: "Update the properties of a deviceConfigurationAssignment object."
+author: "tfitzmac"
 ---
 
 # Update deviceConfigurationAssignment

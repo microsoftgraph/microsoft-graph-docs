@@ -1,6 +1,7 @@
 ---
 title: "List windowsPhone81AppXBundles"
 description: "List properties and relationships of the windowsPhone81AppXBundle objects."
+author: "tfitzmac"
 ---
 
 # List windowsPhone81AppXBundles

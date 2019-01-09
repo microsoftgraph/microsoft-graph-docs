@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceManagementPartner"
 description: "Deletes a deviceManagementPartner."
+author: "tfitzmac"
 ---
 
 # Delete deviceManagementPartner

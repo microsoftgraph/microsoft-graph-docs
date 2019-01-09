@@ -1,6 +1,7 @@
 ---
 title: "List educationUsers"
 description: "Retrieve a list of users at a school."
+author: "mmast-msft"
 ---
 
 # List educationUsers

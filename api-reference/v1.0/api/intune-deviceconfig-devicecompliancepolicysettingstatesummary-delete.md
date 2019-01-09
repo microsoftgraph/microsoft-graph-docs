@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceCompliancePolicySettingStateSummary"
 description: "Deletes a deviceCompliancePolicySettingStateSummary."
+author: "tfitzmac"
 ---
 
 # Delete deviceCompliancePolicySettingStateSummary

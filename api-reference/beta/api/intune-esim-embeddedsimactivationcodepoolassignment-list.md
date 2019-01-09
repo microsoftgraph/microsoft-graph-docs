@@ -1,6 +1,7 @@
 ---
 title: "List embeddedSIMActivationCodePoolAssignments"
 description: "List properties and relationships of the embeddedSIMActivationCodePoolAssignment objects."
+author: "tfitzmac"
 ---
 
 # List embeddedSIMActivationCodePoolAssignments

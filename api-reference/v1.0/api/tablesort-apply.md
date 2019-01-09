@@ -1,6 +1,7 @@
 ---
 title: "TableSort: apply"
 description: "Perform a sort operation."
+author: "lumine2008"
 ---
 
 # TableSort: apply

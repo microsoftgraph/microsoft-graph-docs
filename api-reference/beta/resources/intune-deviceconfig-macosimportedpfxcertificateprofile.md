@@ -1,6 +1,7 @@
 ---
 title: "macOSImportedPFXCertificateProfile resource type"
 description: "MacOS PFX Import certificate profile"
+author: "tfitzmac"
 ---
 
 # macOSImportedPFXCertificateProfile resource type

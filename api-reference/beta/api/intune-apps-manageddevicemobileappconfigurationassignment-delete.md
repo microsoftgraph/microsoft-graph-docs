@@ -1,6 +1,7 @@
 ---
 title: "Delete managedDeviceMobileAppConfigurationAssignment"
 description: "Deletes a managedDeviceMobileAppConfigurationAssignment."
+author: "tfitzmac"
 ---
 
 # Delete managedDeviceMobileAppConfigurationAssignment

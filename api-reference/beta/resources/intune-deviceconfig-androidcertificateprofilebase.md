@@ -1,6 +1,7 @@
 ---
 title: "androidCertificateProfileBase resource type"
 description: "Android certificate profile base."
+author: "tfitzmac"
 ---
 
 # androidCertificateProfileBase resource type

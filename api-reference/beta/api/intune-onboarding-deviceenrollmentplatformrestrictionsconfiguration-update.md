@@ -1,6 +1,7 @@
 ---
 title: "Update deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Update the properties of a deviceEnrollmentPlatformRestrictionsConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update deviceEnrollmentPlatformRestrictionsConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "participantMixerLevel resource type"
 description: "Configuration of mixer levels for given audio participant"
+author: "VinodRavichandran"
 ---
 
 # participantMixerLevel resource type

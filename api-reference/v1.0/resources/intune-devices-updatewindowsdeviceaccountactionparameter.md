@@ -1,6 +1,7 @@
 ---
 title: "updateWindowsDeviceAccountActionParameter resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # updateWindowsDeviceAccountActionParameter resource type

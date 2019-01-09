@@ -1,6 +1,7 @@
 ---
 title: "mediaContentRatingUnitedKingdom resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # mediaContentRatingUnitedKingdom resource type

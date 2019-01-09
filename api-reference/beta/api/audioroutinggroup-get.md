@@ -1,6 +1,7 @@
 ---
 title: "Get audio routing group"
 description: "Retrieve the properties and relationships of an audioRoutingGroup object."
+author: "VinodRavichandran"
 ---
 
 # Get audio routing group
@@ -16,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not Supported                               |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -26,7 +27,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -46,7 +47,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroup"
+  "name": "get-audioRoutingGroup"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

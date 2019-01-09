@@ -1,6 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
+author: "dkershaw10"
 ---
 
 # List memberOf

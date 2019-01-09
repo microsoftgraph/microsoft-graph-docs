@@ -1,6 +1,7 @@
 ---
 title: "Update macOSCustomConfiguration"
 description: "Update the properties of a macOSCustomConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update macOSCustomConfiguration

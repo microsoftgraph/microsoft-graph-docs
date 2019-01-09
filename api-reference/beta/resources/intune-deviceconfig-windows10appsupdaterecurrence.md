@@ -1,6 +1,7 @@
 ---
 title: "windows10AppsUpdateRecurrence enum type"
 description: "Possible values for App update on Windows10 recurrence."
+author: "tfitzmac"
 ---
 
 # windows10AppsUpdateRecurrence enum type

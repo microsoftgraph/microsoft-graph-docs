@@ -1,6 +1,7 @@
 ---
 title: "List cartToClassAssociations"
 description: "List properties and relationships of the cartToClassAssociation objects."
+author: "tfitzmac"
 ---
 
 # List cartToClassAssociations

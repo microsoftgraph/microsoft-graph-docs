@@ -1,6 +1,7 @@
 ---
 title: "renewUpload action"
 description: "Renews the SAS URI for an application file upload."
+author: "tfitzmac"
 ---
 
 # renewUpload action

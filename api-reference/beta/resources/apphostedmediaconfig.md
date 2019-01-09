@@ -1,6 +1,7 @@
 ---
 title: "appHostedMediaConfig resource type"
 description: "Media stack hosted by the application."
+author: "VinodRavichandran"
 ---
 
 # appHostedMediaConfig resource type

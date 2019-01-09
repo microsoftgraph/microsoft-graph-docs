@@ -1,6 +1,7 @@
 ---
 title: "List importedWindowsAutopilotDeviceIdentityUploads"
 description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentityUpload objects."
+author: "tfitzmac"
 ---
 
 # List importedWindowsAutopilotDeviceIdentityUploads

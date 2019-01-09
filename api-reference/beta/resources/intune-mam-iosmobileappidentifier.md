@@ -1,6 +1,7 @@
 ---
 title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
+author: "tfitzmac"
 ---
 
 # iosMobileAppIdentifier resource type

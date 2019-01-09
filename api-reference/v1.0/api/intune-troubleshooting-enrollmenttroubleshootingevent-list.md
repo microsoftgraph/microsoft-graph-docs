@@ -1,6 +1,7 @@
 ---
 title: "List enrollmentTroubleshootingEvents"
 description: "List properties and relationships of the enrollmentTroubleshootingEvent objects."
+author: "tfitzmac"
 ---
 
 # List enrollmentTroubleshootingEvents

@@ -1,6 +1,7 @@
 ---
 title: "Update macOSTrustedRootCertificate"
 description: "Update the properties of a macOSTrustedRootCertificate object."
+author: "tfitzmac"
 ---
 
 # Update macOSTrustedRootCertificate

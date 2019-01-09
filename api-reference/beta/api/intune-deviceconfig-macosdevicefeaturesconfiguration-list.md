@@ -1,6 +1,7 @@
 ---
 title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List macOSDeviceFeaturesConfigurations

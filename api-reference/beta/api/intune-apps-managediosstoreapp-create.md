@@ -1,6 +1,7 @@
 ---
 title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
+author: "tfitzmac"
 ---
 
 # Create managedIOSStoreApp

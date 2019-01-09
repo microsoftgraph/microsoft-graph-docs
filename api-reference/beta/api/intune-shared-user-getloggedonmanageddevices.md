@@ -1,6 +1,7 @@
 ---
 title: "getLoggedOnManagedDevices function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getLoggedOnManagedDevices function

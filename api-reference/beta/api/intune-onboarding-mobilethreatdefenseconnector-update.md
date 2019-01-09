@@ -1,6 +1,7 @@
 ---
 title: "Update mobileThreatDefenseConnector"
 description: "Update the properties of a mobileThreatDefenseConnector object."
+author: "tfitzmac"
 ---
 
 # Update mobileThreatDefenseConnector

@@ -1,6 +1,7 @@
 ---
 title: "Create importedAppleDeviceIdentity"
 description: "Create a new importedAppleDeviceIdentity object."
+author: "tfitzmac"
 ---
 
 # Create importedAppleDeviceIdentity

@@ -1,6 +1,7 @@
 ---
 title: "ratingGermanyMoviesType enum type"
 description: "Movies rating labels in Germany"
+author: "tfitzmac"
 ---
 
 # ratingGermanyMoviesType enum type

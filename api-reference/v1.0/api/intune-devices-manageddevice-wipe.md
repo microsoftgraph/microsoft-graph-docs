@@ -1,6 +1,7 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
+author: "tfitzmac"
 ---
 
 # wipe action

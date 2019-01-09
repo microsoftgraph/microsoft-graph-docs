@@ -1,6 +1,7 @@
 ---
 title: "Get educationSchool"
 description: "Retrieve the properties and relationships of the school object."
+author: "mmast-msft"
 ---
 
 # Get educationSchool

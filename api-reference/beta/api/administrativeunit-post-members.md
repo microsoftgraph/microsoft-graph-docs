@@ -1,6 +1,7 @@
 ---
 title: "Add a member"
 description: "Use this API to add a member (user or group) to an administrative unit."
+author: "lleonard-msft"
 ---
 
 # Add a member

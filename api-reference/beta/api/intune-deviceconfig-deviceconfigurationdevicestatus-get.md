@@ -1,6 +1,7 @@
 ---
 title: "Get deviceConfigurationDeviceStatus"
 description: "Read properties and relationships of the deviceConfigurationDeviceStatus object."
+author: "tfitzmac"
 ---
 
 # Get deviceConfigurationDeviceStatus

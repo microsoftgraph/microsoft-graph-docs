@@ -1,6 +1,7 @@
 ---
 title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
+author: "angelgolfer-ms"
 ---
 
 # List childFolders

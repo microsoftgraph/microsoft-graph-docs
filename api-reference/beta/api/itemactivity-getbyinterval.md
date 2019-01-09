@@ -38,7 +38,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Function parameters
 
-| Name           | Value              | Description
+| Parameter      | Type               | Description
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | string (timestamp) | The start time over which to aggregate activities.
 | endDateTime    | string (timestamp) | The end time over which to aggregate activities.

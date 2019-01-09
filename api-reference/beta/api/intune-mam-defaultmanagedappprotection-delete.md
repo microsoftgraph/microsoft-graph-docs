@@ -1,6 +1,7 @@
 ---
 title: "Delete defaultManagedAppProtection"
 description: "Deletes a defaultManagedAppProtection."
+author: "tfitzmac"
 ---
 
 # Delete defaultManagedAppProtection

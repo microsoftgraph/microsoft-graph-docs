@@ -1,6 +1,7 @@
 ---
 title: "Create windowsPhoneEASEmailProfileConfiguration"
 description: "Create a new windowsPhoneEASEmailProfileConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windowsPhoneEASEmailProfileConfiguration

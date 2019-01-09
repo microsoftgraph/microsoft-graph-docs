@@ -1,6 +1,7 @@
 ---
 title: "Update windowsWifiEnterpriseEAPConfiguration"
 description: "Update the properties of a windowsWifiEnterpriseEAPConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windowsWifiEnterpriseEAPConfiguration

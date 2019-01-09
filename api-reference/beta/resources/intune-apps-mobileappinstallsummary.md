@@ -1,6 +1,7 @@
 ---
 title: "mobileAppInstallSummary resource type"
 description: "Contains properties for the installation summary of a mobile app."
+author: "tfitzmac"
 ---
 
 # mobileAppInstallSummary resource type

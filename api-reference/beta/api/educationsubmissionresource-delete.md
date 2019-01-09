@@ -1,6 +1,7 @@
 ---
 title: "Delete educationSubmissionResource"
-description: " the resource to its original state. If the resource was not copied from the assignment but was added from the student, the resource is simply deleted."
+description: "Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted."
+author: "dipakboyed"
 ---
 
 # Delete educationSubmissionResource

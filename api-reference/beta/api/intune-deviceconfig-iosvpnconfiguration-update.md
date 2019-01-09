@@ -1,6 +1,7 @@
 ---
 title: "Update iosVpnConfiguration"
 description: "Update the properties of a iosVpnConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update iosVpnConfiguration

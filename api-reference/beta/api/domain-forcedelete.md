@@ -1,6 +1,7 @@
 ---
 title: "domain: forceDelete"
 description: "Deletes a domain using an asynchronous operation."
+author: "lleonard-msft"
 ---
 
 # domain: forceDelete

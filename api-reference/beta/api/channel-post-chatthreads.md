@@ -1,6 +1,7 @@
 ---
 title: "Create chat thread"
 description: "Create a new chat thread in the specified channel by supplying the root messages."
+author: "nkramer"
 ---
 
 # Create chat thread

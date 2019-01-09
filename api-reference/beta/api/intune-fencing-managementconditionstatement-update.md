@@ -1,6 +1,7 @@
 ---
 title: "Update managementConditionStatement"
 description: "Update the properties of a managementConditionStatement object."
+author: "tfitzmac"
 ---
 
 # Update managementConditionStatement

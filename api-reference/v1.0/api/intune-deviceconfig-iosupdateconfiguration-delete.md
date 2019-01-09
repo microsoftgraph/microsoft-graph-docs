@@ -1,6 +1,7 @@
 ---
 title: "Delete iosUpdateConfiguration"
 description: "Deletes a iosUpdateConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete iosUpdateConfiguration

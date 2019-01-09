@@ -1,6 +1,7 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
+author: "dkershaw10"
 ---
 
 # Get a user

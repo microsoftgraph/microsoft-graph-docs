@@ -1,6 +1,7 @@
 ---
 title: "Update enrollmentProfile"
 description: "Update the properties of a enrollmentProfile object."
+author: "tfitzmac"
 ---
 
 # Update enrollmentProfile

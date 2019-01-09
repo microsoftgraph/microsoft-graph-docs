@@ -1,6 +1,7 @@
 ---
 title: "deviceConfigurationDeviceActivity function"
 description: "Metadata for the device configuration device activity report"
+author: "tfitzmac"
 ---
 
 # deviceConfigurationDeviceActivity function

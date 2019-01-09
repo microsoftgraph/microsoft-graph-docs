@@ -1,17 +1,20 @@
 ---
 title: "mediaInfo resource type"
-description: "The following is a JSON representation of the resource."
+description: "The media information used in actions for prompts."
+author: "VinodRavichandran"
 ---
 
 # mediaInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+The media information used in actions for prompts.
+
 ## Properties
-| Property	 | Type	   |Description|
-|:---------------|:--------|:----------|
-| resourceId     | String  |           |
-| uri            | String  |           |
+| Property	     | Type	   | Description                      |
+|:---------------|:--------|:---------------------------------|
+| resourceId     | String  | Unique identity of the resource. |
+| uri            | String  | Path to the resource.            |
 
 ## JSON representation
 

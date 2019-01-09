@@ -1,6 +1,7 @@
 ---
 title: "Delete networkIPv4ConfigurationManagementCondition"
 description: "Deletes a networkIPv4ConfigurationManagementCondition."
+author: "tfitzmac"
 ---
 
 # Delete networkIPv4ConfigurationManagementCondition

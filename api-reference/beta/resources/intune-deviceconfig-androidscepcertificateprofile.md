@@ -1,6 +1,7 @@
 ---
 title: "androidScepCertificateProfile resource type"
 description: "Android SCEP certificate profile"
+author: "tfitzmac"
 ---
 
 # androidScepCertificateProfile resource type

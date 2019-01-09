@@ -1,6 +1,7 @@
 ---
 title: "teamsDeviceUsageUserDetail resource type"
 description: "The following is a JSON representation of the resource."
+author: "nkramer"
 ---
 
 # teamsDeviceUsageUserDetail resource type

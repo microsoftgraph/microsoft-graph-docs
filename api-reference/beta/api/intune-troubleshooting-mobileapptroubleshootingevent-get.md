@@ -1,6 +1,7 @@
 ---
 title: "Get mobileAppTroubleshootingEvent"
 description: "Read properties and relationships of the mobileAppTroubleshootingEvent object."
+author: "tfitzmac"
 ---
 
 # Get mobileAppTroubleshootingEvent

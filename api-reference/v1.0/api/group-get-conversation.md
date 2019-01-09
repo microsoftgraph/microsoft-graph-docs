@@ -1,6 +1,7 @@
 ---
 title: "Get conversation"
 description: "Get a conversation object."
+author: "dkershaw10"
 ---
 
 # Get conversation

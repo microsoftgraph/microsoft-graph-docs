@@ -1,6 +1,7 @@
 ---
 title: "Get deviceComplianceDeviceOverview"
 description: "Read properties and relationships of the deviceComplianceDeviceOverview object."
+author: "tfitzmac"
 ---
 
 # Get deviceComplianceDeviceOverview

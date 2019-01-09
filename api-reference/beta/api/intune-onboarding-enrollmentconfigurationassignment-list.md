@@ -1,6 +1,7 @@
 ---
 title: "List enrollmentConfigurationAssignments"
 description: "List properties and relationships of the enrollmentConfigurationAssignment objects."
+author: "tfitzmac"
 ---
 
 # List enrollmentConfigurationAssignments

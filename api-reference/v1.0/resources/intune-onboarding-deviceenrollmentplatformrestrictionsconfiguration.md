@@ -1,6 +1,7 @@
 ---
 title: "deviceEnrollmentPlatformRestrictionsConfiguration resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # deviceEnrollmentPlatformRestrictionsConfiguration resource type

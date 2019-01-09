@@ -1,6 +1,7 @@
 ---
 title: "Delete androidWorkProfileCompliancePolicy"
 description: "Deletes a androidWorkProfileCompliancePolicy."
+author: "tfitzmac"
 ---
 
 # Delete androidWorkProfileCompliancePolicy

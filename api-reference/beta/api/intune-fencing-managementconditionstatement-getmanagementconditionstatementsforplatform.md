@@ -1,6 +1,7 @@
 ---
 title: "getManagementConditionStatementsForPlatform function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getManagementConditionStatementsForPlatform function

@@ -1,6 +1,7 @@
 ---
 title: "win32LobAppProductCodeDetection resource type"
 description: "Contains product code and version properties to detect a Win32 App"
+author: "tfitzmac"
 ---
 
 # win32LobAppProductCodeDetection resource type

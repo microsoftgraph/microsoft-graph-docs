@@ -1,6 +1,7 @@
 ---
 title: "participant: invite"
 description: "Invite participants to the active call."
+author: "VinodRavichandran"
 ---
 
 # participant: invite
@@ -48,7 +49,7 @@ The following examples shows how to call this API.
 The following example shows the request.
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

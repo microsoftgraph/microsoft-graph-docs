@@ -1,6 +1,7 @@
 ---
 title: "loggedOnUser resource type"
 description: "Logged On User"
+author: "tfitzmac"
 ---
 
 # loggedOnUser resource type

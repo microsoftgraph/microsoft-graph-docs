@@ -1,6 +1,7 @@
 ---
 title: "Get deviceConfigurationGroupAssignment"
 description: "Read properties and relationships of the deviceConfigurationGroupAssignment object."
+author: "tfitzmac"
 ---
 
 # Get deviceConfigurationGroupAssignment

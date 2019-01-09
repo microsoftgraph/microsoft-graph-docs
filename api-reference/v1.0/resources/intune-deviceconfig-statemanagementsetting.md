@@ -1,6 +1,7 @@
 ---
 title: "stateManagementSetting enum type"
 description: "State Management Setting."
+author: "tfitzmac"
 ---
 
 # stateManagementSetting enum type

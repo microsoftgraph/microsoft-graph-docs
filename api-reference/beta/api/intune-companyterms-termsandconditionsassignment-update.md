@@ -1,6 +1,7 @@
 ---
 title: "Update termsAndConditionsAssignment"
 description: "Update the properties of a termsAndConditionsAssignment object."
+author: "tfitzmac"
 ---
 
 # Update termsAndConditionsAssignment

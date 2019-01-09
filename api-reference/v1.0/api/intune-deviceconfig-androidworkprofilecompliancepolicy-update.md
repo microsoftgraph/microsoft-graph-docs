@@ -1,6 +1,7 @@
 ---
 title: "Update androidWorkProfileCompliancePolicy"
 description: "Update the properties of a androidWorkProfileCompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Update androidWorkProfileCompliancePolicy

@@ -1,6 +1,7 @@
 ---
 title: "binaryManagementConditionExpressionOperatorType enum type"
 description: "Supported binary operators for management condition expressions."
+author: "tfitzmac"
 ---
 
 # binaryManagementConditionExpressionOperatorType enum type

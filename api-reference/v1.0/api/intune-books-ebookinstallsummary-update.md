@@ -1,6 +1,7 @@
 ---
 title: "Update eBookInstallSummary"
 description: "Update the properties of a eBookInstallSummary object."
+author: "tfitzmac"
 ---
 
 # Update eBookInstallSummary

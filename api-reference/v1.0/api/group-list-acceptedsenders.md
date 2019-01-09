@@ -1,6 +1,7 @@
 ---
 title: "List acceptedSenders"
 description: "Get a list of users or groups that are in the acceptedSenders list for this group."
+author: "dkershaw10"
 ---
 
 # List acceptedSenders

@@ -1,6 +1,7 @@
 ---
 title: "windowsSModeConfiguration enum type"
 description: "The possible options to configure S mode unlock"
+author: "tfitzmac"
 ---
 
 # windowsSModeConfiguration enum type

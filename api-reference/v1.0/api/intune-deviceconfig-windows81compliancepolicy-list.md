@@ -1,6 +1,7 @@
 ---
 title: "List windows81CompliancePolicies"
 description: "List properties and relationships of the windows81CompliancePolicy objects."
+author: "tfitzmac"
 ---
 
 # List windows81CompliancePolicies

@@ -1,6 +1,7 @@
 ---
 title: "dayOfWeek enum type"
 description: "Possible values for a weekday"
+author: "tfitzmac"
 ---
 
 # dayOfWeek enum type

@@ -1,6 +1,7 @@
 ---
 title: "Create Contact"
 description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
+author: "dkershaw10"
 ---
 
 # Create Contact

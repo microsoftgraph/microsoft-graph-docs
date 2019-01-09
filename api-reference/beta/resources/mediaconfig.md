@@ -1,11 +1,14 @@
 ---
 title: "mediaConfig resource type"
-description: "The following is a JSON representation of the resource."
+description: "The media configuration used to connect to a call."
+author: "VinodRavichandran"
 ---
 
 # mediaConfig resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+The media configuration used to connect to a call.
 
 ## Properties
 

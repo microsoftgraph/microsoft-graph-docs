@@ -1,6 +1,7 @@
 ---
 title: "Create iosTrustedRootCertificate"
 description: "Create a new iosTrustedRootCertificate object."
+author: "tfitzmac"
 ---
 
 # Create iosTrustedRootCertificate

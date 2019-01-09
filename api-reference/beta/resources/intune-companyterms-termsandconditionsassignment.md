@@ -1,6 +1,7 @@
 ---
 title: "termsAndConditionsAssignment resource type"
 description: "C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."
+author: "tfitzmac"
 ---
 
 # termsAndConditionsAssignment resource type

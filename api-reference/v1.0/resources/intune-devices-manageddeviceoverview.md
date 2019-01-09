@@ -1,6 +1,7 @@
 ---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
+author: "tfitzmac"
 ---
 
 # managedDeviceOverview resource type

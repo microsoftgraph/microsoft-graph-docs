@@ -1,6 +1,7 @@
 ---
 title: "deviceComplianceUserOverview resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # deviceComplianceUserOverview resource type

@@ -1,6 +1,7 @@
 ---
 title: "Create androidForWorkVpnConfiguration"
 description: "Create a new androidForWorkVpnConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create androidForWorkVpnConfiguration

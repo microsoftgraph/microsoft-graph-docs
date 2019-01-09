@@ -1,6 +1,7 @@
 ---
 title: "Delete macOSScepCertificateProfile"
 description: "Deletes a macOSScepCertificateProfile."
+author: "tfitzmac"
 ---
 
 # Delete macOSScepCertificateProfile

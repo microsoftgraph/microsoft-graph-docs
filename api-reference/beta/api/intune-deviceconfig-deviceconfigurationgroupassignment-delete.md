@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceConfigurationGroupAssignment"
 description: "Deletes a deviceConfigurationGroupAssignment."
+author: "tfitzmac"
 ---
 
 # Delete deviceConfigurationGroupAssignment

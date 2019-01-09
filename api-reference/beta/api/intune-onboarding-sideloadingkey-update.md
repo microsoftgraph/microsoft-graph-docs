@@ -1,6 +1,7 @@
 ---
 title: "Update sideLoadingKey"
 description: "Update the properties of a sideLoadingKey object."
+author: "tfitzmac"
 ---
 
 # Update sideLoadingKey

@@ -1,6 +1,7 @@
 ---
 title: "managedDeviceReportedApp resource type"
 description: "Application data for reporting"
+author: "tfitzmac"
 ---
 
 # managedDeviceReportedApp resource type

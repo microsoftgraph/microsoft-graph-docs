@@ -1,6 +1,7 @@
 ---
 title: "Delete webApp"
 description: "Deletes a webApp."
+author: "tfitzmac"
 ---
 
 # Delete webApp

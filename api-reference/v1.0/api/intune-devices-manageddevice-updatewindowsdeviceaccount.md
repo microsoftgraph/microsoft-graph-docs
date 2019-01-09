@@ -1,6 +1,7 @@
 ---
 title: "updateWindowsDeviceAccount action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # updateWindowsDeviceAccount action

@@ -1,6 +1,7 @@
 ---
 title: "bypassActivationLock action"
 description: "Bypass activation lock"
+author: "tfitzmac"
 ---
 
 # bypassActivationLock action

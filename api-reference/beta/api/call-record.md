@@ -1,6 +1,7 @@
 ---
 title: "call: record"
 description: "Record the call."
+author: "VinodRavichandran"
 ---
 
 # call: record
@@ -56,7 +57,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_record"
+  "name": "call-record"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/record

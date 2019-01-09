@@ -1,6 +1,7 @@
 ---
 title: "Outlook calendar API overview"
 description: "Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization,"
+author: "angelgolfer-ms"
 ---
 
 # Outlook calendar API overview

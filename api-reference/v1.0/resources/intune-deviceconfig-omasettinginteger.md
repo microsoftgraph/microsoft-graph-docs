@@ -1,6 +1,7 @@
 ---
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
+author: "tfitzmac"
 ---
 
 # omaSettingInteger resource type

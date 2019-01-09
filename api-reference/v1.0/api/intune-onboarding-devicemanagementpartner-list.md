@@ -1,6 +1,7 @@
 ---
 title: "List deviceManagementPartners"
 description: "List properties and relationships of the deviceManagementPartner objects."
+author: "tfitzmac"
 ---
 
 # List deviceManagementPartners

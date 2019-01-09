@@ -1,6 +1,7 @@
 ---
 title: "Update deviceManagementScript"
 description: "Update the properties of a deviceManagementScript object."
+author: "tfitzmac"
 ---
 
 # Update deviceManagementScript

@@ -1,6 +1,7 @@
 ---
 title: "officeConfiguration resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
+author: "tfitzmac"
 ---
 
 # officeConfiguration resource type

@@ -1,6 +1,7 @@
 ---
 title: "Get androidVpnConfiguration"
 description: "Read properties and relationships of the androidVpnConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get androidVpnConfiguration

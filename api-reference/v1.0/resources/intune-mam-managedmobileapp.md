@@ -1,6 +1,7 @@
 ---
 title: "managedMobileApp resource type"
 description: "The identifier for the deployment an app."
+author: "tfitzmac"
 ---
 
 # managedMobileApp resource type

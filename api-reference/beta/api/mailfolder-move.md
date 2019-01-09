@@ -1,6 +1,7 @@
 ---
 title: "mailFolder: move"
 description: "Move a mailfolder and its contents to another mailfolder."
+author: "angelgolfer-ms"
 ---
 
 # mailFolder: move

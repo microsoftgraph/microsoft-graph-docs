@@ -1,6 +1,7 @@
 ---
 title: "recoverPasscode action"
 description: "Recover passcode"
+author: "tfitzmac"
 ---
 
 # recoverPasscode action

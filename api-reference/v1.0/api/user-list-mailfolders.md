@@ -1,6 +1,7 @@
 ---
 title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
+author: "dkershaw10"
 ---
 
 # List mailFolders

@@ -1,6 +1,7 @@
 ---
 title: "educationSubmission: recall"
-description: "."
+description: "Indicates that a student wants to take back a submission. This action can only be done by a student. "
+author: "dipakboyed"
 ---
 
 # educationSubmission: recall

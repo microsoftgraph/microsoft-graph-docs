@@ -1,6 +1,7 @@
 ---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
+author: "VinodRavichandran"
 ---
 
 # Get participant
@@ -26,7 +27,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -45,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [participant](
 The following example shows the request.
 <!-- {
   "blockType": "request",
-  "name": "get_participant"
+  "name": "get-participant"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}

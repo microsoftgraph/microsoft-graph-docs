@@ -1,6 +1,7 @@
 ---
 title: "windows10NetworkBoundaryConfiguration resource type"
 description: "Windows10 Network Boundary Configuration"
+author: "tfitzmac"
 ---
 
 # windows10NetworkBoundaryConfiguration resource type

@@ -1,6 +1,7 @@
 ---
 title: "List windows10MobileCompliancePolicies"
 description: "List properties and relationships of the windows10MobileCompliancePolicy objects."
+author: "tfitzmac"
 ---
 
 # List windows10MobileCompliancePolicies

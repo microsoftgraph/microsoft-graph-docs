@@ -1,6 +1,7 @@
 ---
 title: "teamsAsyncOperationStatus enum type"
 description: "Describes the current status of a teamsAsyncOperation."
+author: "nkramer"
 ---
 
 # teamsAsyncOperationStatus enum type

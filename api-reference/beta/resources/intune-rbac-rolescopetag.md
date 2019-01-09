@@ -1,6 +1,7 @@
 ---
 title: "roleScopeTag resource type"
 description: "Role Scope Tag"
+author: "tfitzmac"
 ---
 
 # roleScopeTag resource type

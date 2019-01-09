@@ -1,6 +1,7 @@
 ---
 title: "List iosTrustedRootCertificates"
 description: "List properties and relationships of the iosTrustedRootCertificate objects."
+author: "tfitzmac"
 ---
 
 # List iosTrustedRootCertificates

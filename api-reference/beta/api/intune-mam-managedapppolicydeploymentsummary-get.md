@@ -1,6 +1,7 @@
 ---
 title: "Get managedAppPolicyDeploymentSummary"
 description: "Read properties and relationships of the managedAppPolicyDeploymentSummary object."
+author: "tfitzmac"
 ---
 
 # Get managedAppPolicyDeploymentSummary

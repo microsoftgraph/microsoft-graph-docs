@@ -1,6 +1,7 @@
 ---
 title: "roleAssignmentScopeType enum type"
 description: "Specifies the type of scope for a Role Assignment."
+author: "tfitzmac"
 ---
 
 # roleAssignmentScopeType enum type

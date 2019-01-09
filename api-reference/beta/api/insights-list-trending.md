@@ -1,6 +1,7 @@
 ---
 title: "List trending"
 description: "Calculated insight that returns the list of items trending around the user."
+author: "simonhult"
 ---
 
 # List trending

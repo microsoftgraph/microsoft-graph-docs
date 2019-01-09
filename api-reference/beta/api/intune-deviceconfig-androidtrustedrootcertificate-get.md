@@ -1,6 +1,7 @@
 ---
 title: "Get androidTrustedRootCertificate"
 description: "Read properties and relationships of the androidTrustedRootCertificate object."
+author: "tfitzmac"
 ---
 
 # Get androidTrustedRootCertificate

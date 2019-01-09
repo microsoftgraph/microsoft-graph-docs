@@ -1,6 +1,7 @@
 ---
 title: "Get cartToClassAssociation"
 description: "Read properties and relationships of the cartToClassAssociation object."
+author: "tfitzmac"
 ---
 
 # Get cartToClassAssociation

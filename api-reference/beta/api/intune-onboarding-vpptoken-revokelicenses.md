@@ -1,6 +1,7 @@
 ---
 title: "revokeLicenses action"
 description: "Revoke licenses associated with a specific appleVolumePurchaseProgramToken"
+author: "tfitzmac"
 ---
 
 # revokeLicenses action

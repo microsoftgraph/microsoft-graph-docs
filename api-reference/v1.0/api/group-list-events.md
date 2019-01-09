@@ -1,6 +1,7 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
+author: "dkershaw10"
 ---
 
 # List events

@@ -1,6 +1,7 @@
 ---
 title: "Create owner"
 description: "Use this API to create a new owner."
+author: "lleonard-msft"
 ---
 
 # Create owner

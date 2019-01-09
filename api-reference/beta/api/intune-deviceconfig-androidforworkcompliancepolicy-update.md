@@ -1,6 +1,7 @@
 ---
 title: "Update androidForWorkCompliancePolicy"
 description: "Update the properties of a androidForWorkCompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Update androidForWorkCompliancePolicy

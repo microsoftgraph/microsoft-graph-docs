@@ -1,6 +1,7 @@
 ---
 title: "List threads"
 description: "Get all the threads in a group conversation."
+author: "dkershaw10"
 ---
 
 # List threads

@@ -1,6 +1,7 @@
 ---
 title: "resultInfo resource type"
 description: "The resultInfo type."
+author: "VinodRavichandran"
 ---
 
 # resultInfo resource type

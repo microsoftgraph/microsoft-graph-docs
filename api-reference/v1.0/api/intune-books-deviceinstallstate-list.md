@@ -1,6 +1,7 @@
 ---
 title: "List deviceInstallStates"
 description: "List properties and relationships of the deviceInstallState objects."
+author: "tfitzmac"
 ---
 
 # List deviceInstallStates

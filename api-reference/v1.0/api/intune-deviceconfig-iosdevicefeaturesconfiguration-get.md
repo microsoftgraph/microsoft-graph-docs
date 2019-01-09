@@ -1,6 +1,7 @@
 ---
 title: "Get iosDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the iosDeviceFeaturesConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get iosDeviceFeaturesConfiguration

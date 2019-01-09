@@ -1,6 +1,7 @@
 ---
 title: "Get deviceAndAppManagementRoleAssignment"
 description: "Read properties and relationships of the deviceAndAppManagementRoleAssignment object."
+author: "tfitzmac"
 ---
 
 # Get deviceAndAppManagementRoleAssignment

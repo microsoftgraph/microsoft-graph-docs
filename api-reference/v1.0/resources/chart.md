@@ -1,6 +1,7 @@
 ---
 title: "Chart resource type"
 description: "Represents a chart object in a workbook."
+author: "lumine2008"
 ---
 
 # Chart resource type

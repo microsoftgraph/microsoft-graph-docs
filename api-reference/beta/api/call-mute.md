@@ -1,6 +1,7 @@
 ---
 title: "call: mute"
 description: "Allows the application to mute itself."
+author: "VinodRavichandran"
 ---
 
 # call: mute
@@ -48,7 +49,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_mute"
+  "name": "call-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/mute

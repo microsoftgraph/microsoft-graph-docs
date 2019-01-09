@@ -1,6 +1,7 @@
 ---
 title: "Delete windows10VpnConfiguration"
 description: "Deletes a windows10VpnConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete windows10VpnConfiguration

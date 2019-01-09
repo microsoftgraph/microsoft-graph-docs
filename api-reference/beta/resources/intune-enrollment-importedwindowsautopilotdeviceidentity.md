@@ -1,6 +1,7 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
+author: "tfitzmac"
 ---
 
 # importedWindowsAutopilotDeviceIdentity resource type

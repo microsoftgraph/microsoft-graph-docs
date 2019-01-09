@@ -1,6 +1,7 @@
 ---
 title: "educationTeacher resource type"
 description: "Additional information added to an educationUser that is present when the primaryRole of a user is `teacher`."
+author: "mmast-msft"
 ---
 
 # educationTeacher resource type

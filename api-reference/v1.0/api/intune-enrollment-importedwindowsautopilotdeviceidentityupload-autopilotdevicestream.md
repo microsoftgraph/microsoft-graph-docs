@@ -1,6 +1,7 @@
 ---
 title: "autopilotDeviceStream function"
 description: "Create a upload request with autopilot device stream in it."
+author: "tfitzmac"
 ---
 
 # autopilotDeviceStream function

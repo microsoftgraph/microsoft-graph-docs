@@ -1,6 +1,7 @@
 ---
 title: "Delete resourceOperation"
 description: "Deletes a resourceOperation."
+author: "tfitzmac"
 ---
 
 # Delete resourceOperation

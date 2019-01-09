@@ -1,6 +1,7 @@
 ---
 title: "Update androidWorkProfileVpnConfiguration"
 description: "Update the properties of a androidWorkProfileVpnConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidWorkProfileVpnConfiguration

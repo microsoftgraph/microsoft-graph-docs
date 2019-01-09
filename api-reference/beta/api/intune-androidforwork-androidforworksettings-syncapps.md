@@ -1,6 +1,7 @@
 ---
 title: "syncApps action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # syncApps action

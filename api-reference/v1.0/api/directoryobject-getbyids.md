@@ -1,6 +1,7 @@
 ---
 title: "Get directory objects from a list of ids"
 description: "select` query option is not available for this operation."
+author: "lleonard-msft"
 ---
 
 # Get directory objects from a list of ids

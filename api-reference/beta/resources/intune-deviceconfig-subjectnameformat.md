@@ -1,6 +1,7 @@
 ---
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
+author: "tfitzmac"
 ---
 
 # subjectNameFormat enum type

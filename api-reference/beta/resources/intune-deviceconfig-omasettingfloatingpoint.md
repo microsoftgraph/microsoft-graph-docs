@@ -1,6 +1,7 @@
 ---
 title: "omaSettingFloatingPoint resource type"
 description: "OMA Settings Floating Point definition."
+author: "tfitzmac"
 ---
 
 # omaSettingFloatingPoint resource type

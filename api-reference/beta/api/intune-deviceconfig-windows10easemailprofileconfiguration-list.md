@@ -1,6 +1,7 @@
 ---
 title: "List windows10EasEmailProfileConfigurations"
 description: "List properties and relationships of the windows10EasEmailProfileConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List windows10EasEmailProfileConfigurations

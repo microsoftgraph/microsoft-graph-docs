@@ -1,6 +1,7 @@
 ---
 title: "List iosEduDeviceConfigurations"
 description: "List properties and relationships of the iosEduDeviceConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List iosEduDeviceConfigurations

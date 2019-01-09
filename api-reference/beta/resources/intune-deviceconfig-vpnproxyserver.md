@@ -1,6 +1,7 @@
 ---
 title: "vpnProxyServer resource type"
 description: "VPN Proxy Server."
+author: "tfitzmac"
 ---
 
 # vpnProxyServer resource type

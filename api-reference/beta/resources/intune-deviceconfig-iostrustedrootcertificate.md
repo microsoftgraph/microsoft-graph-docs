@@ -1,6 +1,7 @@
 ---
 title: "iosTrustedRootCertificate resource type"
 description: "iOS Trusted Root Certificate configuration profile."
+author: "tfitzmac"
 ---
 
 # iosTrustedRootCertificate resource type

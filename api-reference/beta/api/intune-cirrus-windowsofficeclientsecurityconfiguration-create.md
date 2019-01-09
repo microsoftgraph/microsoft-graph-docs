@@ -1,6 +1,7 @@
 ---
 title: "Create windowsOfficeClientSecurityConfiguration"
 description: "Create a new windowsOfficeClientSecurityConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windowsOfficeClientSecurityConfiguration

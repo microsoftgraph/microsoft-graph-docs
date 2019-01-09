@@ -1,6 +1,7 @@
 ---
 title: "Create windows10CustomConfiguration"
 description: "Create a new windows10CustomConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windows10CustomConfiguration

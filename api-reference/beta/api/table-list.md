@@ -1,6 +1,7 @@
 ---
 title: "List TableCollection"
 description: "Retrieve a list of table objects."
+author: "lumine2008"
 ---
 
 # List TableCollection

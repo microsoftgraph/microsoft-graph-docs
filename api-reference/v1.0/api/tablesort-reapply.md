@@ -1,6 +1,7 @@
 ---
 title: "TableSort: reapply"
 description: "Reapplies the current sorting parameters to the table."
+author: "lumine2008"
 ---
 
 # TableSort: reapply

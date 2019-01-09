@@ -1,6 +1,7 @@
 ---
 title: "Add app to team"
 description: "Installs an app to the specified team."
+author: "nkramer"
 ---
 
 # Add app to team

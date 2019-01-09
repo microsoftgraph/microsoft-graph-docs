@@ -1,6 +1,7 @@
 ---
 title: "Delete enrollmentConfigurationAssignment"
 description: "Deletes a enrollmentConfigurationAssignment."
+author: "tfitzmac"
 ---
 
 # Delete enrollmentConfigurationAssignment

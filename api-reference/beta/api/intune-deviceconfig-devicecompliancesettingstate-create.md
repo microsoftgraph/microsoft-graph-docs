@@ -1,6 +1,7 @@
 ---
 title: "Create deviceComplianceSettingState"
 description: "Create a new deviceComplianceSettingState object."
+author: "tfitzmac"
 ---
 
 # Create deviceComplianceSettingState

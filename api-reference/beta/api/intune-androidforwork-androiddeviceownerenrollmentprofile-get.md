@@ -1,6 +1,7 @@
 ---
 title: "Get androidDeviceOwnerEnrollmentProfile"
 description: "Read properties and relationships of the androidDeviceOwnerEnrollmentProfile object."
+author: "tfitzmac"
 ---
 
 # Get androidDeviceOwnerEnrollmentProfile

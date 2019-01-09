@@ -1,6 +1,7 @@
 ---
 title: "Get iosVppEBook"
 description: "Read properties and relationships of the iosVppEBook object."
+author: "tfitzmac"
 ---
 
 # Get iosVppEBook

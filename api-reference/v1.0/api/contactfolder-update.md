@@ -1,6 +1,7 @@
 ---
 title: "Update contactfolder"
 description: "Update the properties of contactfolder object."
+author: "angelgolfer-ms"
 ---
 
 # Update contactfolder

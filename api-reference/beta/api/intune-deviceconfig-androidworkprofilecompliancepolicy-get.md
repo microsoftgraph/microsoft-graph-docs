@@ -1,6 +1,7 @@
 ---
 title: "Get androidWorkProfileCompliancePolicy"
 description: "Read properties and relationships of the androidWorkProfileCompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Get androidWorkProfileCompliancePolicy

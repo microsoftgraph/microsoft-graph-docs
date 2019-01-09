@@ -1,6 +1,7 @@
 ---
 title: "resourceReference resource type"
 description: "Complex type containing properties of Insights."
+author: "simonhult"
 ---
 
 # resourceReference resource type

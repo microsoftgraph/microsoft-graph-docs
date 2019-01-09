@@ -1,6 +1,7 @@
 ---
 title: "List macOSCompliancePolicies"
 description: "List properties and relationships of the macOSCompliancePolicy objects."
+author: "tfitzmac"
 ---
 
 # List macOSCompliancePolicies

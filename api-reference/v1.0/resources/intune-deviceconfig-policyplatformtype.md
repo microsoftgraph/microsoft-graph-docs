@@ -1,6 +1,7 @@
 ---
 title: "policyPlatformType enum type"
 description: "Suppoorted platform types for policies."
+author: "tfitzmac"
 ---
 
 # policyPlatformType enum type

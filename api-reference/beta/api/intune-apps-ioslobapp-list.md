@@ -1,6 +1,7 @@
 ---
 title: "List iosLobApps"
 description: "List properties and relationships of the iosLobApp objects."
+author: "tfitzmac"
 ---
 
 # List iosLobApps

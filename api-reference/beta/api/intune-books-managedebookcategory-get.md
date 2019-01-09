@@ -1,6 +1,7 @@
 ---
 title: "Get managedEBookCategory"
 description: "Read properties and relationships of the managedEBookCategory object."
+author: "tfitzmac"
 ---
 
 # Get managedEBookCategory

@@ -1,6 +1,7 @@
 ---
 title: "Delete androidManagedStoreAppConfiguration"
 description: "Deletes a androidManagedStoreAppConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete androidManagedStoreAppConfiguration

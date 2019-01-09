@@ -1,6 +1,7 @@
 ---
 title: "firewallPacketQueueingMethodType enum type"
 description: "Possible values for firewallPacketQueueingMethod"
+author: "tfitzmac"
 ---
 
 # firewallPacketQueueingMethodType enum type

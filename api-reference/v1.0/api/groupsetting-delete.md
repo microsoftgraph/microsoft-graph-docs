@@ -1,6 +1,7 @@
 ---
 title: "Delete a group setting"
 description: "Delete a group setting."
+author: "dkershaw10"
 ---
 
 # Delete a group setting

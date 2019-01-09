@@ -1,6 +1,7 @@
 ---
 title: "Update windowsPhoneXAP"
 description: "Update the properties of a windowsPhoneXAP object."
+author: "tfitzmac"
 ---
 
 # Update windowsPhoneXAP

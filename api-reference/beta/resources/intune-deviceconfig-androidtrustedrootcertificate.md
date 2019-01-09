@@ -1,6 +1,7 @@
 ---
 title: "androidTrustedRootCertificate resource type"
 description: "Android Trusted Root Certificate configuration profile"
+author: "tfitzmac"
 ---
 
 # androidTrustedRootCertificate resource type

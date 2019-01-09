@@ -1,6 +1,7 @@
 ---
 title: "List windowsIdentityProtectionConfigurations"
 description: "List properties and relationships of the windowsIdentityProtectionConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List windowsIdentityProtectionConfigurations

@@ -1,6 +1,7 @@
 ---
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
+author: "VinodRavichandran"
 ---
 
 # Create audio routing group
@@ -16,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                               |
 | Delegated (personal Microsoft account) | Not supported.                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +46,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_audioRoutingGroup_from_call"
+  "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -104,7 +105,7 @@ Content-Length: 233
 
 <!-- {
   "blockType": "example",
-  "name": "create_audioRoutingGroup_from_call",
+  "name": "create-audioRoutingGroup-from-call",
   "@odata.type": "microsoft.graph.audioRoutingGroup"
 }-->
 

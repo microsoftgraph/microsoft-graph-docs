@@ -1,6 +1,7 @@
 ---
 title: "Remove a scopedRoleMember"
 description: "Remove a scoped-role member from an adminstrative unit."
+author: "lleonard-msft"
 ---
 
 # Remove a scopedRoleMember

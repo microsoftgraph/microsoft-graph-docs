@@ -1,6 +1,7 @@
 ---
 title: "Update androidForWorkSettings"
 description: "Update the properties of a androidForWorkSettings object."
+author: "tfitzmac"
 ---
 
 # Update androidForWorkSettings

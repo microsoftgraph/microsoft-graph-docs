@@ -1,6 +1,7 @@
 ---
 title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
+author: "tfitzmac"
 ---
 
 # List managedAppProtections

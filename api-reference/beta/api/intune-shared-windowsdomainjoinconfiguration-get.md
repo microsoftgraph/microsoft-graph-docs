@@ -1,6 +1,7 @@
 ---
 title: "Get windowsDomainJoinConfiguration"
 description: "Read properties and relationships of the windowsDomainJoinConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get windowsDomainJoinConfiguration

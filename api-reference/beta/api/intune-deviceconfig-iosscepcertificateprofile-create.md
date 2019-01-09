@@ -1,6 +1,7 @@
 ---
 title: "Create iosScepCertificateProfile"
 description: "Create a new iosScepCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Create iosScepCertificateProfile

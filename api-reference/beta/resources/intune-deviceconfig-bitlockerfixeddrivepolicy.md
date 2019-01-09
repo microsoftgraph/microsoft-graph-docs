@@ -1,6 +1,7 @@
 ---
 title: "bitLockerFixedDrivePolicy resource type"
 description: "BitLocker Fixed Drive Policies."
+author: "tfitzmac"
 ---
 
 # bitLockerFixedDrivePolicy resource type

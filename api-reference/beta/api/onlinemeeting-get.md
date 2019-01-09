@@ -1,6 +1,7 @@
----
+﻿---
 title: "Get Online Meeting"
 description: "Retrieve the properties and relationships of an **onlineMeeting** object."
+author: "VinodRavichandran"
 ---
 
 # Get Online Meeting
@@ -30,7 +31,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -50,7 +51,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_onlineMeeting"
+  "name": "get-onlineMeeting"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}

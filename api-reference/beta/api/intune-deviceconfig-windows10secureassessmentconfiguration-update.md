@@ -1,6 +1,7 @@
 ---
 title: "Update windows10SecureAssessmentConfiguration"
 description: "Update the properties of a windows10SecureAssessmentConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windows10SecureAssessmentConfiguration

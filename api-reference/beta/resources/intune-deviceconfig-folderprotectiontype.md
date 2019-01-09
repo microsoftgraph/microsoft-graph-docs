@@ -1,6 +1,7 @@
 ---
 title: "folderProtectionType enum type"
 description: "Possible values of Folder Protection"
+author: "tfitzmac"
 ---
 
 # folderProtectionType enum type

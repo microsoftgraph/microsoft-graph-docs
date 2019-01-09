@@ -1,6 +1,7 @@
 ---
 title: "List windowsPhoneXAPs"
 description: "List properties and relationships of the windowsPhoneXAP objects."
+author: "tfitzmac"
 ---
 
 # List windowsPhoneXAPs

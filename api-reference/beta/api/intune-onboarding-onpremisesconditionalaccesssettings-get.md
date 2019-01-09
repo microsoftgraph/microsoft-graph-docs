@@ -1,6 +1,7 @@
 ---
 title: "Get onPremisesConditionalAccessSettings"
 description: "Read properties and relationships of the onPremisesConditionalAccessSettings object."
+author: "tfitzmac"
 ---
 
 # Get onPremisesConditionalAccessSettings

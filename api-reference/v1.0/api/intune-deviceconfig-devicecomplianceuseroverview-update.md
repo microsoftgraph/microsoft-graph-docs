@@ -1,6 +1,7 @@
 ---
 title: "Update deviceComplianceUserOverview"
 description: "Update the properties of a deviceComplianceUserOverview object."
+author: "tfitzmac"
 ---
 
 # Update deviceComplianceUserOverview

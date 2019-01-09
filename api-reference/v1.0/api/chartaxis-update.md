@@ -1,6 +1,7 @@
 ---
 title: "Update chartaxis"
 description: "Update the properties of chartaxis object."
+author: "lumine2008"
 ---
 
 # Update chartaxis

@@ -1,6 +1,7 @@
 ---
 title: "auditEvent resource type"
 description: "A class containing the properties for Audit Event."
+author: "tfitzmac"
 ---
 
 # auditEvent resource type

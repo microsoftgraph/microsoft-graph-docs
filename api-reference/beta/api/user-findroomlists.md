@@ -1,6 +1,7 @@
 ---
 title: "user: findRoomLists"
 description: "Get the room lists defined in a tenant."
+author: "dkershaw10"
 ---
 
 # user: findRoomLists

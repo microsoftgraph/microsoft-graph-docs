@@ -1,6 +1,7 @@
 ---
 title: "channel resource type"
 description: "A channel is a collection of messages within a team. "
+author: "nkramer"
 ---
 
 # channel resource type

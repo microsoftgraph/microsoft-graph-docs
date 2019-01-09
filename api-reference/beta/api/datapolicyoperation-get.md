@@ -12,9 +12,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegated (work or school account) |  User.Export.All and User.Read.All  |
 |Delegated (personal Microsoft account) |  Not applicable  |
-|Application | Directory.Read.All, Directory.ReadWrite.All | 
+|Application | User.Export.All and User.Read.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

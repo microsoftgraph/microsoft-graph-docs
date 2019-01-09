@@ -1,6 +1,7 @@
 ---
 title: "Create windowsPhone81ImportedPFXCertificateProfile"
 description: "Create a new windowsPhone81ImportedPFXCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Create windowsPhone81ImportedPFXCertificateProfile

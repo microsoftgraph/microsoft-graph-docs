@@ -1,6 +1,7 @@
 ---
 title: "Create windows10ImportedPFXCertificateProfile"
 description: "Create a new windows10ImportedPFXCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Create windows10ImportedPFXCertificateProfile

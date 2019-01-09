@@ -1,6 +1,7 @@
 ---
 title: "List educationAssignmentResources"
 description: "Get all the resources associated with this assignment."
+author: "dipakboyed"
 ---
 
 # List educationAssignmentResources

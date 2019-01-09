@@ -1,6 +1,7 @@
 ---
 title: "windows10AppsForceUpdateSchedule resource type"
 description: "Windows 10 force update schedule for Apps"
+author: "tfitzmac"
 ---
 
 # windows10AppsForceUpdateSchedule resource type

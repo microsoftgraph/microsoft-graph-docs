@@ -1,6 +1,7 @@
 ---
 title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
+author: "tfitzmac"
 ---
 
 # List devices

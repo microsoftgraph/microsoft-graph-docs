@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementSubscriptions enum type"
 description: "Tenant mobile device management subscriptions."
+author: "tfitzmac"
 ---
 
 # deviceManagementSubscriptions enum type

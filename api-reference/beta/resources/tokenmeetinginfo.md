@@ -1,6 +1,7 @@
 ---
 title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
+author: "VinodRavichandran"
 ---
 
 # tokenMeetingInfo resource type

@@ -1,6 +1,7 @@
----
+﻿---
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
+author: "VinodRavichandran"
 ---
 
 # Update audio routing group
@@ -49,7 +50,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_audioRoutingGroup"
+  "name": "update-audioRoutingGroup"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

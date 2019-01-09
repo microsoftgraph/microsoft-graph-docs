@@ -1,6 +1,7 @@
 ---
 title: "keyUsages enum type"
 description: "Key Usage Options."
+author: "tfitzmac"
 ---
 
 # keyUsages enum type

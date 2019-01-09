@@ -1,14 +1,14 @@
 ---
 title: "mention resource type"
-description: "Represents a notification to a person based on the person's email address. This type of notification is also known as "
+description: "Represents a notification to a person based on the person's email address."
+author: "simonhult"
 ---
 
 # mention resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a notification to a person based on the person's email address. This type of notification is also known as 
-@-mentions.
+Represents a notification to a person based on the person's email address. This type of notification is also known as @-mentions.
 
 The [message](../resources/message.md) resource supports **mention**. It includes a
 **mentionsPreview** property that indicates whether the signed-in user is mentioned in that message instance. It also

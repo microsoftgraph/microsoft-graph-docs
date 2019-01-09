@@ -1,6 +1,7 @@
 ---
 title: "List used"
 description: "Calculated insight that returns the list of files used with a user."
+author: "simonhult"
 ---
 
 # List used

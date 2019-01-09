@@ -1,6 +1,7 @@
 ---
 title: "List borders"
 description: "Retrieve a list of rangeborder objects."
+author: "lumine2008"
 ---
 
 # List borders

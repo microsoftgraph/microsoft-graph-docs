@@ -1,6 +1,7 @@
 ---
 title: "educationSubmission: unsubmit"
-description: ". During the submit process, all the resources will be copied from submittedResources to the workingResources bucket. The teacher will be looking at the working resources list for grading."
+description: "An action that indicates that a student wants to work on the submission of the assignment after it was turned in. This action can only be taken by the student. "
+author: "dipakboyed"
 ---
 
 # educationSubmission: unsubmit

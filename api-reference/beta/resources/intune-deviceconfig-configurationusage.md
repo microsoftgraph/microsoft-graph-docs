@@ -1,6 +1,7 @@
 ---
 title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
+author: "tfitzmac"
 ---
 
 # configurationUsage enum type

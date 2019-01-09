@@ -1,6 +1,7 @@
 ---
 title: "Update windowsPhone81StoreApp"
 description: "Update the properties of a windowsPhone81StoreApp object."
+author: "tfitzmac"
 ---
 
 # Update windowsPhone81StoreApp

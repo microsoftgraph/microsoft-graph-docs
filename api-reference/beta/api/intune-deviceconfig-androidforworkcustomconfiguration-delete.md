@@ -1,6 +1,7 @@
 ---
 title: "Delete androidForWorkCustomConfiguration"
 description: "Deletes a androidForWorkCustomConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkCustomConfiguration

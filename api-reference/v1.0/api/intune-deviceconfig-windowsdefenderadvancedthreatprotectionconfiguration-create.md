@@ -1,6 +1,7 @@
 ---
 title: "Create windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Create a new windowsDefenderAdvancedThreatProtectionConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windowsDefenderAdvancedThreatProtectionConfiguration

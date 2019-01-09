@@ -1,6 +1,7 @@
 ---
 title: "Create user"
 description: "Use this API to create a new user."
+author: "dkershaw10"
 ---
 
 # Create user

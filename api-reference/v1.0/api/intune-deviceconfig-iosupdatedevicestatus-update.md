@@ -1,6 +1,7 @@
 ---
 title: "Update iosUpdateDeviceStatus"
 description: "Update the properties of a iosUpdateDeviceStatus object."
+author: "tfitzmac"
 ---
 
 # Update iosUpdateDeviceStatus

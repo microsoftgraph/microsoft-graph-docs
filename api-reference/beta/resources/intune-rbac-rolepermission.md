@@ -1,6 +1,7 @@
 ---
 title: "rolePermission resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # rolePermission resource type

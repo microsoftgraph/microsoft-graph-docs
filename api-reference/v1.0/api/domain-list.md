@@ -1,6 +1,7 @@
 ---
 title: "List domains"
 description: "Retrieve a list of domain objects."
+author: "lleonard-msft"
 ---
 
 # List domains

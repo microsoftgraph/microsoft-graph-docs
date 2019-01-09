@@ -1,6 +1,7 @@
 ---
 title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
+author: "angelgolfer-ms"
 ---
 
 # event: dismissReminder

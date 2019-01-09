@@ -1,6 +1,7 @@
 ---
 title: "Get detectedApp"
 description: "Read properties and relationships of the detectedApp object."
+author: "tfitzmac"
 ---
 
 # Get detectedApp

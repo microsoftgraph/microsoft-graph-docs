@@ -1,6 +1,7 @@
 ---
 title: "Update deviceConfigurationConflictSummary"
 description: "Update the properties of a deviceConfigurationConflictSummary object."
+author: "tfitzmac"
 ---
 
 # Update deviceConfigurationConflictSummary

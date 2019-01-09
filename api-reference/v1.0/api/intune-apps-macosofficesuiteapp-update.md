@@ -1,6 +1,7 @@
 ---
 title: "Update macOSOfficeSuiteApp"
 description: "Update the properties of a macOSOfficeSuiteApp object."
+author: "tfitzmac"
 ---
 
 # Update macOSOfficeSuiteApp

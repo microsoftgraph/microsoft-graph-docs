@@ -1,6 +1,7 @@
 ---
 title: "Delete auditEvent"
 description: "Deletes a auditEvent."
+author: "tfitzmac"
 ---
 
 # Delete auditEvent

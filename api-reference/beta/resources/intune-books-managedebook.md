@@ -1,6 +1,7 @@
 ---
 title: "managedEBook resource type"
 description: "An abstract class containing the base properties for Managed eBook."
+author: "tfitzmac"
 ---
 
 # managedEBook resource type

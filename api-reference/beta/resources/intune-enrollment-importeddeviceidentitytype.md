@@ -1,6 +1,7 @@
 ---
 title: "importedDeviceIdentityType enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # importedDeviceIdentityType enum type

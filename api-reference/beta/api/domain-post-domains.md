@@ -1,6 +1,7 @@
 ---
 title: "Create domain"
 description: "Adds a domain to the tenant."
+author: "lleonard-msft"
 ---
 
 # Create domain

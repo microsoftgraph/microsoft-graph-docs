@@ -1,6 +1,7 @@
 ---
 title: "Create mobileAppContent"
 description: "Create a new mobileAppContent object."
+author: "tfitzmac"
 ---
 
 # Create mobileAppContent

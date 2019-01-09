@@ -1,6 +1,7 @@
 ---
 title: "Delete termsAndConditionsAcceptanceStatus"
 description: "Deletes a termsAndConditionsAcceptanceStatus."
+author: "tfitzmac"
 ---
 
 # Delete termsAndConditionsAcceptanceStatus

@@ -1,6 +1,7 @@
 ---
 title: "List mobileAppCategories"
 description: "List properties and relationships of the mobileAppCategory objects."
+author: "tfitzmac"
 ---
 
 # List mobileAppCategories

@@ -1,6 +1,7 @@
 ---
 title: "List androidForWorkNineWorkEasConfigurations"
 description: "List properties and relationships of the androidForWorkNineWorkEasConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List androidForWorkNineWorkEasConfigurations

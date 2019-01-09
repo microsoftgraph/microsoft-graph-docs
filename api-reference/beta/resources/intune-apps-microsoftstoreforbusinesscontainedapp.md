@@ -1,6 +1,7 @@
 ---
 title: "microsoftStoreForBusinessContainedApp resource type"
 description: "A class that represents a contained app of a MicrosoftStoreForBusinessApp."
+author: "tfitzmac"
 ---
 
 # microsoftStoreForBusinessContainedApp resource type

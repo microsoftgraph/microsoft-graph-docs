@@ -1,6 +1,7 @@
 ---
 title: "List windowsCertificateProfileBases"
 description: "List properties and relationships of the windowsCertificateProfileBase objects."
+author: "tfitzmac"
 ---
 
 # List windowsCertificateProfileBases

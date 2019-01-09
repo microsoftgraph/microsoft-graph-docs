@@ -1,6 +1,7 @@
 ---
 title: "Delete activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Deletes a activeDirectoryWindowsAutopilotDeploymentProfile."
+author: "tfitzmac"
 ---
 
 # Delete activeDirectoryWindowsAutopilotDeploymentProfile

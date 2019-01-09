@@ -1,6 +1,7 @@
 ---
 title: "Create vppToken"
 description: "Create a new vppToken object."
+author: "tfitzmac"
 ---
 
 # Create vppToken

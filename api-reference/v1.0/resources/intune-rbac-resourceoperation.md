@@ -1,6 +1,7 @@
 ---
 title: "resourceOperation resource type"
 description: " operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles."
+author: "tfitzmac"
 ---
 
 # resourceOperation resource type

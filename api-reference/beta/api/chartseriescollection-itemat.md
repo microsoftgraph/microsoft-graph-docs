@@ -1,6 +1,7 @@
 ---
 title: "ChartSeriesCollection: ItemAt"
 description: "Retrieves a series based on its position in the collection"
+author: "lumine2008"
 ---
 
 # ChartSeriesCollection: ItemAt

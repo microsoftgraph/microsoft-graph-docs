@@ -1,6 +1,7 @@
 ---
 title: "iosNotificationSettings resource type"
 description: "An item describing notification setting."
+author: "tfitzmac"
 ---
 
 # iosNotificationSettings resource type

@@ -1,6 +1,7 @@
 ---
 title: "setMobileDeviceManagementAuthority action"
 description: "Set mobile device management authority"
+author: "tfitzmac"
 ---
 
 # setMobileDeviceManagementAuthority action

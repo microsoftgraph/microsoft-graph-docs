@@ -1,6 +1,7 @@
 ---
 title: "Get unsupportedDeviceConfiguration"
 description: "Read properties and relationships of the unsupportedDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get unsupportedDeviceConfiguration

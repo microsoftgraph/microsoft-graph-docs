@@ -1,6 +1,7 @@
 ---
 title: "Delete device"
 description: "Delete a registered device."
+author: "tfitzmac"
 ---
 
 # Delete device

@@ -1,6 +1,7 @@
 ---
 title: "Create androidForWorkScepCertificateProfile"
 description: "Create a new androidForWorkScepCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Create androidForWorkScepCertificateProfile

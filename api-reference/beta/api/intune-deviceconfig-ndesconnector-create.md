@@ -1,6 +1,7 @@
 ---
 title: "Create ndesConnector"
 description: "Create a new ndesConnector object."
+author: "tfitzmac"
 ---
 
 # Create ndesConnector

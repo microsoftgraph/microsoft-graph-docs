@@ -1,6 +1,7 @@
 ---
 title: "Get TableRow"
 description: "Retrieve the properties and relationships of tablerow object."
+author: "lumine2008"
 ---
 
 # Get TableRow

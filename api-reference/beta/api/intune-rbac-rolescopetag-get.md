@@ -1,6 +1,7 @@
 ---
 title: "Get roleScopeTag"
 description: "Read properties and relationships of the roleScopeTag object."
+author: "tfitzmac"
 ---
 
 # Get roleScopeTag

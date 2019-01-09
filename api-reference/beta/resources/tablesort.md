@@ -1,6 +1,7 @@
 ---
 title: "TableSort resource type"
 description: "Manages sorting operations on Table objects."
+author: "lumine2008"
 ---
 
 # TableSort resource type

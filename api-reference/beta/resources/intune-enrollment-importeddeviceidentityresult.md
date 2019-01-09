@@ -1,6 +1,7 @@
 ---
 title: "importedDeviceIdentityResult resource type"
 description: "The importedDeviceIdentityResult resource represents the result of attempting to import a device identity."
+author: "tfitzmac"
 ---
 
 # importedDeviceIdentityResult resource type

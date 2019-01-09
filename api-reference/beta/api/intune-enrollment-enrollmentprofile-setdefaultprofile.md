@@ -1,6 +1,7 @@
 ---
 title: "setDefaultProfile action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # setDefaultProfile action

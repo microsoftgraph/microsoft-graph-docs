@@ -1,6 +1,7 @@
 ---
 title: "List attachments"
 description: "Retrieve a list of attachment objects."
+author: "angelgolfer-ms"
 ---
 
 # List attachments

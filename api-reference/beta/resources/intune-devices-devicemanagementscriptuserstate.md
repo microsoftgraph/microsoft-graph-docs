@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementScriptUserState resource type"
 description: "Contains properties for user run state of the device management script."
+author: "tfitzmac"
 ---
 
 # deviceManagementScriptUserState resource type

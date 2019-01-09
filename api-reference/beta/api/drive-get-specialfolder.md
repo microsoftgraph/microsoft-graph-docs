@@ -51,7 +51,7 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## HTTP Response
+## Response
 
 This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
@@ -86,7 +86,7 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 GET /me/drive/special/{name}/children
 ```
 
-### HTTP response
+### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

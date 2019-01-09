@@ -1,6 +1,7 @@
 ---
 title: "Create depEnrollmentProfile"
 description: "Create a new depEnrollmentProfile object."
+author: "tfitzmac"
 ---
 
 # Create depEnrollmentProfile

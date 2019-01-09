@@ -1,6 +1,7 @@
 ---
 title: "Get windowsUpdateForBusinessConfiguration"
 description: "Read properties and relationships of the windowsUpdateForBusinessConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get windowsUpdateForBusinessConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "Get windows81CompliancePolicy"
 description: "Read properties and relationships of the windows81CompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Get windows81CompliancePolicy

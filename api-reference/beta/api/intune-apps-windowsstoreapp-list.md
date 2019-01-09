@@ -1,6 +1,7 @@
 ---
 title: "List windowsStoreApps"
 description: "List properties and relationships of the windowsStoreApp objects."
+author: "tfitzmac"
 ---
 
 # List windowsStoreApps

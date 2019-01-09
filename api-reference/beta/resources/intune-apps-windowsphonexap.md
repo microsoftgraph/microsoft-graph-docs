@@ -1,6 +1,7 @@
 ---
 title: "windowsPhoneXAP resource type"
 description: "Contains properties and inherited properties for Windows Phone XAP Line Of Business apps."
+author: "tfitzmac"
 ---
 
 # windowsPhoneXAP resource type

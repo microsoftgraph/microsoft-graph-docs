@@ -1,6 +1,7 @@
 ---
 title: "windowsEnrollmentStatusScreenSettings resource type"
 description: "Enrollment status screen setting"
+author: "tfitzmac"
 ---
 
 # windowsEnrollmentStatusScreenSettings resource type

@@ -1,6 +1,7 @@
 ---
 title: "List scopedAdministratorOf"
 description: "Retrieve a list of scopedRoleMembership for the user."
+author: "dkershaw10"
 ---
 
 # List scopedAdministratorOf

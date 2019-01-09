@@ -1,6 +1,7 @@
 ---
 title: "Get androidForWorkGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidForWorkGeneralDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get androidForWorkGeneralDeviceConfiguration

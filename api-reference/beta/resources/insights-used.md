@@ -1,6 +1,7 @@
 ---
 title: "used resource type"
-description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:"
+description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed."
+author: "simonhult"
 ---
 
 # used resource type

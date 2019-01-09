@@ -1,6 +1,7 @@
 ---
 title: "consentToDataSharing action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # consentToDataSharing action

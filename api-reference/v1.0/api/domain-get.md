@@ -1,6 +1,7 @@
 ---
 title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
+author: "lleonard-msft"
 ---
 
 # Get domain

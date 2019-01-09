@@ -1,6 +1,7 @@
 ---
 title: "Update androidWorkProfileScepCertificateProfile"
 description: "Update the properties of a androidWorkProfileScepCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Update androidWorkProfileScepCertificateProfile

@@ -1,6 +1,7 @@
 ---
 title: "Create windows10CompliancePolicy"
 description: "Create a new windows10CompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Create windows10CompliancePolicy

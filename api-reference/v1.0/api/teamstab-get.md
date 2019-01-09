@@ -1,6 +1,7 @@
 ---
 title: "Get tab"
 description: "Retrieve the properties and relationships of the specified tab. "
+author: "nkramer"
 ---
 
 # Get tab

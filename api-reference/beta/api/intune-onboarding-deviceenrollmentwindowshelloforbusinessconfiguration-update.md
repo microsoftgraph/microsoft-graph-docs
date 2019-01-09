@@ -1,6 +1,7 @@
 ---
 title: "Update deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update deviceEnrollmentWindowsHelloForBusinessConfiguration

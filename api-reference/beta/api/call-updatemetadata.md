@@ -1,6 +1,7 @@
 ---
 title: "call: updateMetadata"
 description: "Update the appliation's metadata associated with a call."
+author: "VinodRavichandran"
 ---
 
 # call: updateMetadata
@@ -49,7 +50,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_updateMetadata"
+  "name": "call-updateMetadata"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata

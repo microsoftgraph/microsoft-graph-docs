@@ -1,6 +1,7 @@
 ---
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
+author: "tfitzmac"
 ---
 
 # iosDeviceFeaturesConfiguration resource type

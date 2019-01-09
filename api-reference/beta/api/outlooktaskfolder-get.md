@@ -1,6 +1,7 @@
 ---
 title: "Get outlookTaskFolder"
 description: "Get the properties and relationships of the specified Outlook task folder."
+author: "angelgolfer-ms"
 ---
 
 # Get outlookTaskFolder

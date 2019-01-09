@@ -1,6 +1,7 @@
 ---
 title: "userAppInstallStatus resource type"
 description: "Contains properties for the installation status for a user."
+author: "tfitzmac"
 ---
 
 # userAppInstallStatus resource type

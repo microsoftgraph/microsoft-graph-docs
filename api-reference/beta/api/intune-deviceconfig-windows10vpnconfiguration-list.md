@@ -1,6 +1,7 @@
 ---
 title: "List windows10VpnConfigurations"
 description: "List properties and relationships of the windows10VpnConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List windows10VpnConfigurations

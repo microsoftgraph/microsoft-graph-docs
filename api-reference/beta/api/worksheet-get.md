@@ -1,6 +1,7 @@
 ---
 title: "Get Worksheet"
 description: "Retrieve the properties and relationships of worksheet object."
+author: "lumine2008"
 ---
 
 # Get Worksheet

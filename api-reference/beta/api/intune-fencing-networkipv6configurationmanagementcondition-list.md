@@ -1,6 +1,7 @@
 ---
 title: "List networkIPv6ConfigurationManagementConditions"
 description: "List properties and relationships of the networkIPv6ConfigurationManagementCondition objects."
+author: "tfitzmac"
 ---
 
 # List networkIPv6ConfigurationManagementConditions

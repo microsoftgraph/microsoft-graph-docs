@@ -1,6 +1,7 @@
 ---
 title: "mediaStream resource type"
 description: "The mediaStream type."
+author: "VinodRavichandran"
 ---
 
 # mediaStream resource type

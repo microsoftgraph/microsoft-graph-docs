@@ -1,6 +1,7 @@
 ---
 title: "enablement enum type"
 description: "Values used to indicate the status of a device. "
+author: "tfitzmac"
 ---
 
 # enablement enum type

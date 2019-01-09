@@ -1,6 +1,7 @@
 ---
 title: "Get Outlook events in a shared or delegated calendar"
 description: "In Outlook, customers can share a calendar with other users and let them view or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar."
+author: "angelgolfer-ms"
 ---
 
 # Get Outlook events in a shared or delegated calendar
@@ -10,6 +11,8 @@ In Outlook, customers can share a calendar with other users and let them view or
 Programmatically, Microsoft Graph supports getting events in calendars that have been shared by other users, as well as getting the shared calendars themselves. The support also applies to calendars that have been delegated.
 
 As an example, Garth has shared with John his default calendar and given John read access. If John has signed into your app and provided delegated permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared), your app will be able to access Garth's default calendar and events in that calendar as described below.
+
+> **Note** The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
 ## Get an event in the shared calendar
 

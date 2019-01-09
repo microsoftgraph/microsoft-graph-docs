@@ -1,6 +1,7 @@
 ---
 title: "windowsKioskLocalGroup resource type"
 description: "The class used to identify a local group for the kiosk configuration"
+author: "tfitzmac"
 ---
 
 # windowsKioskLocalGroup resource type

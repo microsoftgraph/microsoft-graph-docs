@@ -1,6 +1,7 @@
 ---
 title: "Remove educationClass"
 description: "Delete a class from a school."
+author: "mmast-msft"
 ---
 
 # Remove educationClass

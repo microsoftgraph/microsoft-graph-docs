@@ -1,6 +1,7 @@
 ---
 title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create iosUpdateConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "Get windows10PkcsCertificateProfile"
 description: "Read properties and relationships of the windows10PkcsCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Get windows10PkcsCertificateProfile

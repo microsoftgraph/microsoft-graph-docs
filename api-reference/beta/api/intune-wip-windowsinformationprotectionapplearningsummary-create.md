@@ -1,6 +1,7 @@
 ---
 title: "Create windowsInformationProtectionAppLearningSummary"
 description: "Create a new windowsInformationProtectionAppLearningSummary object."
+author: "tfitzmac"
 ---
 
 # Create windowsInformationProtectionAppLearningSummary

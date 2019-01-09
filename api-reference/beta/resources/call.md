@@ -1,6 +1,7 @@
 ---
 title: "call resource type"
 description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`."
+author: "VinodRavichandran"
 ---
 
 # call resource type
@@ -32,7 +33,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Create a new audioRoutingGroup by posting to the audioRoutingGroups collection. |
 | [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Get a audioRoutingGroup object collection.  |
 | **Interactive-Voice-Response**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [commsOperation](commsoperation.md)               | Play prompt in the call.                     |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Play prompt in the call.                     |
 | [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Record the call.                             |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancel media processing.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Subscribe to DTMF tones.                     |

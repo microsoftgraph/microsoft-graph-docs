@@ -1,6 +1,7 @@
 ---
 title: "Get mobileAppInstallStatus"
 description: "Read properties and relationships of the mobileAppInstallStatus object."
+author: "tfitzmac"
 ---
 
 # Get mobileAppInstallStatus

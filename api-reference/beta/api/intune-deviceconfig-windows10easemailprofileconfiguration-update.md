@@ -1,6 +1,7 @@
 ---
 title: "Update windows10EasEmailProfileConfiguration"
 description: "Update the properties of a windows10EasEmailProfileConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windows10EasEmailProfileConfiguration

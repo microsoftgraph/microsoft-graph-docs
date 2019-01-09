@@ -1,6 +1,7 @@
 ---
 title: "win32LobAppRegistryDetection resource type"
 description: "Contains registry properties to detect a Win32 App"
+author: "tfitzmac"
 ---
 
 # win32LobAppRegistryDetection resource type

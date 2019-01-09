@@ -1,6 +1,7 @@
 ---
 title: "Create outlookTask"
 description: "Create an Outlook task in the specified task folder."
+author: "angelgolfer-ms"
 ---
 
 # Create outlookTask

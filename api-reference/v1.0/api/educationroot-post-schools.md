@@ -1,6 +1,7 @@
 ---
 title: "Create educationSchool"
 description: "Create a school."
+author: "mmast-msft"
 ---
 
 # Create educationSchool

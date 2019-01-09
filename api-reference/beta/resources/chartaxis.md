@@ -1,6 +1,7 @@
 ---
 title: "ChartAxis resource type"
 description: "Represents a single axis in a chart."
+author: "lumine2008"
 ---
 
 # ChartAxis resource type

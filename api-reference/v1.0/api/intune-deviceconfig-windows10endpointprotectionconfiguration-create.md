@@ -1,6 +1,7 @@
 ---
 title: "Create windows10EndpointProtectionConfiguration"
 description: "Create a new windows10EndpointProtectionConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windows10EndpointProtectionConfiguration

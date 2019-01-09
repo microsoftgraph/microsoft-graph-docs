@@ -1,6 +1,7 @@
 ---
 title: "Delete iosWiFiConfiguration"
 description: "Deletes a iosWiFiConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete iosWiFiConfiguration

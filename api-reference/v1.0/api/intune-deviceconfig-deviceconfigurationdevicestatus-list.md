@@ -1,6 +1,7 @@
 ---
 title: "List deviceConfigurationDeviceStatuses"
 description: "List properties and relationships of the deviceConfigurationDeviceStatus objects."
+author: "tfitzmac"
 ---
 
 # List deviceConfigurationDeviceStatuses

@@ -1,6 +1,7 @@
 ---
 title: "List createdObjects"
 description: "Get a list of directory objects that were created by the user."
+author: "dkershaw10"
 ---
 
 # List createdObjects

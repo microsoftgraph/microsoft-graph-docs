@@ -1,6 +1,7 @@
 ---
 title: "savedUIStateGenerationOptions enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # savedUIStateGenerationOptions enum type

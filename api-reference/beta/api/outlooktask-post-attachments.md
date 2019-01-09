@@ -1,6 +1,7 @@
 ---
 title: "Create attachment"
 description: "Use this API to add an attachment to an outlookTask."
+author: "angelgolfer-ms"
 ---
 
 # Create attachment
@@ -8,7 +9,9 @@ description: "Use this API to add an attachment to an outlookTask."
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -18,20 +21,23 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
-POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/attachments
-POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/attachments
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/outlook/tasks/{id}/attachments
+POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Content-Type | A string that represents the type of data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ## Response
@@ -39,12 +45,15 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.
 
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_attachment_from_outlooktask"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 Content-type: application/json
@@ -58,14 +67,16 @@ Content-length: 142
   "isInline": true
 }
 ```
-In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
-##### Response
+
+### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

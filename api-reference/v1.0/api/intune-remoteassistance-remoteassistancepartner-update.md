@@ -1,6 +1,7 @@
 ---
 title: "Update remoteAssistancePartner"
 description: "Update the properties of a remoteAssistancePartner object."
+author: "tfitzmac"
 ---
 
 # Update remoteAssistancePartner

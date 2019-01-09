@@ -1,6 +1,7 @@
 ---
 title: "Get advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Read properties and relationships of the advancedThreatProtectionOnboardingDeviceSettingState object."
+author: "tfitzmac"
 ---
 
 # Get advancedThreatProtectionOnboardingDeviceSettingState

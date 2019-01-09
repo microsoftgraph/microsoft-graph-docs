@@ -1,6 +1,7 @@
 ---
 title: "iosVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS VPP mobile app to a group."
+author: "tfitzmac"
 ---
 
 # iosVppAppAssignmentSettings resource type

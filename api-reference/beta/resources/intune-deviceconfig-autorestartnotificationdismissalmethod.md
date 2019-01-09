@@ -1,6 +1,7 @@
 ---
 title: "autoRestartNotificationDismissalMethod enum type"
 description: "Auto restart required notification dismissal method"
+author: "tfitzmac"
 ---
 
 # autoRestartNotificationDismissalMethod enum type

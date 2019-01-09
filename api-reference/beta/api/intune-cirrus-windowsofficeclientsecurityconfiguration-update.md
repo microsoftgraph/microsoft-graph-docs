@@ -1,6 +1,7 @@
 ---
 title: "Update windowsOfficeClientSecurityConfiguration"
 description: "Update the properties of a windowsOfficeClientSecurityConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windowsOfficeClientSecurityConfiguration

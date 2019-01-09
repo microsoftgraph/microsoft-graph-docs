@@ -1,6 +1,7 @@
 ---
 title: "getTopMobileApps function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getTopMobileApps function

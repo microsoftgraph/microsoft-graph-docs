@@ -1,6 +1,7 @@
 ---
 title: "Update outlooktaskfolder"
 description: "Update the writable properties of an Outlook task folder."
+author: "angelgolfer-ms"
 ---
 
 # Update outlooktaskfolder

@@ -1,6 +1,7 @@
 ---
 title: "Range: EntireColumn"
 description: "Gets an object that represents the entire column of the range."
+author: "lumine2008"
 ---
 
 # Range: EntireColumn

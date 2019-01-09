@@ -1,6 +1,7 @@
 ---
 title: "Get educationAssignment"
 description: " teachers can see all assignments in a class."
+author: "dipakboyed"
 ---
 
 # Get educationAssignment

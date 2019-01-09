@@ -1,6 +1,7 @@
 ---
 title: "Create deviceManagementPartner"
 description: "Create a new deviceManagementPartner object."
+author: "tfitzmac"
 ---
 
 # Create deviceManagementPartner

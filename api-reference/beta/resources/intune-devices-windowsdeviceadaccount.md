@@ -1,6 +1,7 @@
 ---
 title: "windowsDeviceADAccount resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # windowsDeviceADAccount resource type

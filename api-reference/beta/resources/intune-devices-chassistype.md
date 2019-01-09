@@ -1,6 +1,7 @@
 ---
 title: "chassisType enum type"
 description: "Chassis type."
+author: "tfitzmac"
 ---
 
 # chassisType enum type

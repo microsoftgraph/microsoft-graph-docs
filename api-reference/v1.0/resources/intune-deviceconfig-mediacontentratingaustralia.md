@@ -1,6 +1,7 @@
 ---
 title: "mediaContentRatingAustralia resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # mediaContentRatingAustralia resource type

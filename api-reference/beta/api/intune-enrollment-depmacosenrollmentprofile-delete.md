@@ -1,6 +1,7 @@
 ---
 title: "Delete depMacOSEnrollmentProfile"
 description: "Deletes a depMacOSEnrollmentProfile."
+author: "tfitzmac"
 ---
 
 # Delete depMacOSEnrollmentProfile

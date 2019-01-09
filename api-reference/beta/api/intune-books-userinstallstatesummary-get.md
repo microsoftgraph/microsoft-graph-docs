@@ -1,6 +1,7 @@
 ---
 title: "Get userInstallStateSummary"
 description: "Read properties and relationships of the userInstallStateSummary object."
+author: "tfitzmac"
 ---
 
 # Get userInstallStateSummary

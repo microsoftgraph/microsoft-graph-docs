@@ -1,6 +1,7 @@
 ---
 title: "visibilitySetting enum type"
 description: "Generic visibility state."
+author: "tfitzmac"
 ---
 
 # visibilitySetting enum type

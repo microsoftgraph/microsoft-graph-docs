@@ -1,6 +1,7 @@
 ---
 title: "windows10MobileCompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 10 Mobile."
+author: "tfitzmac"
 ---
 
 # windows10MobileCompliancePolicy resource type

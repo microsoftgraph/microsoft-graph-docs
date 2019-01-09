@@ -1,6 +1,7 @@
 ---
 title: "omaSettingStringXml resource type"
 description: "OMA Settings StringXML definition."
+author: "tfitzmac"
 ---
 
 # omaSettingStringXml resource type

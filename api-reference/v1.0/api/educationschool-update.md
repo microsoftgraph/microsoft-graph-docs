@@ -1,6 +1,7 @@
 ---
 title: "Update educationschool properties"
 description: "Update the properties of a school object."
+author: "mmast-msft"
 ---
 
 # Update educationschool properties

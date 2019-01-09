@@ -1,6 +1,7 @@
 ---
 title: "deviceCompliancePolicyDeviceStateSummary resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # deviceCompliancePolicyDeviceStateSummary resource type

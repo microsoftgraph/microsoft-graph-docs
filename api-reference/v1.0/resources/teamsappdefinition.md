@@ -1,6 +1,7 @@
 ---
 title: "teamsAppDefinition resource type"
 description: "The details of one version of a teamsApp."
+author: "nkramer"
 ---
 
 # teamsAppDefinition resource type

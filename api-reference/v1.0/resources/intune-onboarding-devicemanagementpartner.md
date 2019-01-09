@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementPartner resource type"
 description: "Entity which represents a connection to device management partner."
+author: "tfitzmac"
 ---
 
 # deviceManagementPartner resource type

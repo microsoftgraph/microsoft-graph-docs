@@ -1,6 +1,7 @@
 ---
 title: "Update managedAndroidStoreApp"
 description: "Update the properties of a managedAndroidStoreApp object."
+author: "tfitzmac"
 ---
 
 # Update managedAndroidStoreApp

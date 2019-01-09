@@ -1,6 +1,7 @@
 ---
 title: "importAppleDeviceIdentityList action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # importAppleDeviceIdentityList action

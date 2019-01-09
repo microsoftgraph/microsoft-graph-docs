@@ -1,6 +1,7 @@
 ---
 title: "List appleDeviceFeaturesConfigurationBases"
 description: "List properties and relationships of the appleDeviceFeaturesConfigurationBase objects."
+author: "tfitzmac"
 ---
 
 # List appleDeviceFeaturesConfigurationBases

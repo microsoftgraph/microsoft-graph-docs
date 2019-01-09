@@ -1,6 +1,7 @@
 ---
 title: "Get intuneBrandingProfile"
 description: "Read properties and relationships of the intuneBrandingProfile object."
+author: "tfitzmac"
 ---
 
 # Get intuneBrandingProfile

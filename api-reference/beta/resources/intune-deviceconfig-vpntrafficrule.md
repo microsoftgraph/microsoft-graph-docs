@@ -1,6 +1,7 @@
 ---
 title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
+author: "tfitzmac"
 ---
 
 # vpnTrafficRule resource type

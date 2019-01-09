@@ -1,6 +1,7 @@
 ---
 title: "androidManagedStoreAccountEnrollmentTarget enum type"
 description: "Android for Work device management targeting type for the account"
+author: "tfitzmac"
 ---
 
 # androidManagedStoreAccountEnrollmentTarget enum type

@@ -1,6 +1,7 @@
 ---
 title: "androidWorkProfileCompliancePolicy resource type"
 description: "This class contains compliance settings for Android Work Profile."
+author: "tfitzmac"
 ---
 
 # androidWorkProfileCompliancePolicy resource type

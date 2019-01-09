@@ -1,6 +1,7 @@
 ---
 title: "inkAccessSetting enum type"
 description: "Values for the InkWorkspaceAccess setting."
+author: "tfitzmac"
 ---
 
 # inkAccessSetting enum type

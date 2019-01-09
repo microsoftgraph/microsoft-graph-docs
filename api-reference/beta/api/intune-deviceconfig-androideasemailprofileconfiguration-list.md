@@ -1,6 +1,7 @@
 ---
 title: "List androidEasEmailProfileConfigurations"
 description: "List properties and relationships of the androidEasEmailProfileConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List androidEasEmailProfileConfigurations

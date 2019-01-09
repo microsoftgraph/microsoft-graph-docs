@@ -1,6 +1,7 @@
 ---
 title: "Create managedDeviceMobileAppConfigurationAssignment"
 description: "Create a new managedDeviceMobileAppConfigurationAssignment object."
+author: "tfitzmac"
 ---
 
 # Create managedDeviceMobileAppConfigurationAssignment

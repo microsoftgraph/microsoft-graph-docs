@@ -1,6 +1,7 @@
 ---
 title: "Update deviceConfigurationUserStateSummary"
 description: "Update the properties of a deviceConfigurationUserStateSummary object."
+author: "tfitzmac"
 ---
 
 # Update deviceConfigurationUserStateSummary

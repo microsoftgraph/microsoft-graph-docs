@@ -1,6 +1,7 @@
 ---
 title: "Get windowsPhone81CompliancePolicy"
 description: "Read properties and relationships of the windowsPhone81CompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Get windowsPhone81CompliancePolicy

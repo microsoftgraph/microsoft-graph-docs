@@ -1,6 +1,7 @@
 ---
 title: "List managedEBookCategories"
 description: "List properties and relationships of the managedEBookCategory objects."
+author: "tfitzmac"
 ---
 
 # List managedEBookCategories

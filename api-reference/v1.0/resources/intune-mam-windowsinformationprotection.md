@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtection resource type

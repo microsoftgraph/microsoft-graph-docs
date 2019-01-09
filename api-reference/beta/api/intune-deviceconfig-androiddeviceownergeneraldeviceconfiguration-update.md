@@ -1,6 +1,7 @@
 ---
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidDeviceOwnerGeneralDeviceConfiguration

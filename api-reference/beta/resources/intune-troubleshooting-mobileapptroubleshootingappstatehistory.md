@@ -1,6 +1,7 @@
 ---
 title: "mobileAppTroubleshootingAppStateHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
+author: "tfitzmac"
 ---
 
 # mobileAppTroubleshootingAppStateHistory resource type

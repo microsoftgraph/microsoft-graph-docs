@@ -1,6 +1,7 @@
 ---
 title: "windowsCertificateProfileBase resource type"
 description: "Device Configuration."
+author: "tfitzmac"
 ---
 
 # windowsCertificateProfileBase resource type

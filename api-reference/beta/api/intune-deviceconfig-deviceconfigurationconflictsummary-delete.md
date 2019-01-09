@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceConfigurationConflictSummary"
 description: "Deletes a deviceConfigurationConflictSummary."
+author: "tfitzmac"
 ---
 
 # Delete deviceConfigurationConflictSummary

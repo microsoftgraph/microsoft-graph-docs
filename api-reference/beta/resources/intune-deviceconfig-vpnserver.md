@@ -1,6 +1,7 @@
 ---
 title: "vpnServer resource type"
 description: "VPN Server definition."
+author: "tfitzmac"
 ---
 
 # vpnServer resource type

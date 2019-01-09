@@ -1,6 +1,7 @@
 ---
 title: "Creating a group with a Microsoft Teams team"
 description: "Creating a group that includes a team involves two steps: "
+author: "nkramer"
 ---
 
 # Creating a group with a Microsoft Teams team

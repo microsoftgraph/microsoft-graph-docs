@@ -1,6 +1,7 @@
 ---
 title: "Update importedAppleDeviceIdentity"
 description: "Update the properties of a importedAppleDeviceIdentity object."
+author: "tfitzmac"
 ---
 
 # Update importedAppleDeviceIdentity

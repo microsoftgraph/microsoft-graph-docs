@@ -1,6 +1,7 @@
 ---
 title: "List rejectedSenders"
 description: "Get a list of users or groups that are in the rejectedSenders list for this group. "
+author: "dkershaw10"
 ---
 
 # List rejectedSenders

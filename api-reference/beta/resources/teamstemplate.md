@@ -1,6 +1,7 @@
 ---
 title: "teamsTemplate resource type"
 description: "Describes the teamsTemplate entity."
+author: "nkramer"
 ---
 
 # teamsTemplate resource type

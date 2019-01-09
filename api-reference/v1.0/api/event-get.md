@@ -1,6 +1,7 @@
 ---
 title: "Get event"
 description: "Get the properties and relationships of the specified event object."
+author: "angelgolfer-ms"
 ---
 
 # Get event

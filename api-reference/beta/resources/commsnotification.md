@@ -1,11 +1,14 @@
 ---
-title: "notification resource type"
-description: "The following is a JSON representation of the resource."
+title: "commsNotification resource type"
+description: "Communications notification base type that is published by Communications servers to notify changes."
+author: "VinodRavichandran"
 ---
 
-# notification resource type
+# commsNotification resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Communications notification base type that is published by Communications servers to notify changes.
 
 ## Properties
 | Property	     | Type    | Description                                                |
@@ -85,7 +88,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notification resource",
+  "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

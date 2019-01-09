@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementExchangeAccessRule resource type"
 description: "Device Access Rules in Exchange."
+author: "tfitzmac"
 ---
 
 # deviceManagementExchangeAccessRule resource type

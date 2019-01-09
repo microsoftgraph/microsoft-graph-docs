@@ -1,6 +1,7 @@
 ---
 title: "remoteLockActionResult resource type"
 description: "Lock action result with a pin to unlock"
+author: "tfitzmac"
 ---
 
 # remoteLockActionResult resource type

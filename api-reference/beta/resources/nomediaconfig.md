@@ -1,11 +1,14 @@
 ---
 title: "noMediaConfig resource type"
-description: "The following is a JSON representation of the resource."
+description: "Media configuration for indicating no media."
+author: "VinodRavichandran"
 ---
 
 # noMediaConfig resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Media configuration for indicating no media.
 
 ## Properties
 

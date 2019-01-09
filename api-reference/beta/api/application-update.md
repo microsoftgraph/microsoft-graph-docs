@@ -1,6 +1,7 @@
 ---
 title: "Update application"
 description: "Update the properties of application object."
+author: "lleonard-msft"
 ---
 
 # Update application

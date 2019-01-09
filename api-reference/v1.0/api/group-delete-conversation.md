@@ -1,6 +1,7 @@
 ---
 title: "Delete conversation"
 description: "Delete a conversation object."
+author: "dkershaw10"
 ---
 
 # Delete conversation

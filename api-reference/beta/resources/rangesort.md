@@ -1,6 +1,7 @@
 ---
 title: "RangeSort resource type"
 description: "Manages sorting operations on Range objects."
+author: "lumine2008"
 ---
 
 # RangeSort resource type

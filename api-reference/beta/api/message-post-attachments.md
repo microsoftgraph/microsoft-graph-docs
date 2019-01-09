@@ -1,6 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
+author: "angelgolfer-ms"
 ---
 
 # Add attachment

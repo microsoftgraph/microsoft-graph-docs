@@ -1,6 +1,7 @@
 ---
 title: "Create online meeting"
 description: "Creates an online meeting on behalf of a user specified in the request body."
+author: "VinodRavichandran"
 ---
 
 # Create online meeting
@@ -45,7 +46,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_onlineMeeting_from_application"
+  "name": "create-onlinemeeting-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/onlineMeetings

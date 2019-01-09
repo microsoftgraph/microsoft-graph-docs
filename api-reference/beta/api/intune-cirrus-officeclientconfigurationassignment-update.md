@@ -1,6 +1,7 @@
 ---
 title: "Update officeClientConfigurationAssignment"
 description: "Update the properties of a officeClientConfigurationAssignment object."
+author: "tfitzmac"
 ---
 
 # Update officeClientConfigurationAssignment

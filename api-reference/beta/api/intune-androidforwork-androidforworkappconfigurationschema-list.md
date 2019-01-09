@@ -1,6 +1,7 @@
 ---
 title: "List androidForWorkAppConfigurationSchemas"
 description: "List properties and relationships of the androidForWorkAppConfigurationSchema objects."
+author: "tfitzmac"
 ---
 
 # List androidForWorkAppConfigurationSchemas

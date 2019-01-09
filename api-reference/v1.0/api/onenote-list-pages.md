@@ -1,6 +1,7 @@
 ---
 title: "List pages"
 description: "Retrieve a list of page objects."
+author: "Jewan-microsoft"
 ---
 
 # List pages

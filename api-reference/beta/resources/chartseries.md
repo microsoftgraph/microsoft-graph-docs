@@ -1,6 +1,7 @@
 ---
 title: "ChartSeries resource type"
 description: "Represents a series in a chart."
+author: "lumine2008"
 ---
 
 # ChartSeries resource type

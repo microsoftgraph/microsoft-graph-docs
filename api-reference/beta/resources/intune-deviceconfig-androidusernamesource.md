@@ -1,6 +1,7 @@
 ---
 title: "androidUsernameSource enum type"
 description: "Android username source."
+author: "tfitzmac"
 ---
 
 # androidUsernameSource enum type

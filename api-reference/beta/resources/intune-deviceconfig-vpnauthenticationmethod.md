@@ -1,6 +1,7 @@
 ---
 title: "vpnAuthenticationMethod enum type"
 description: "VPN Authentication Method."
+author: "tfitzmac"
 ---
 
 # vpnAuthenticationMethod enum type

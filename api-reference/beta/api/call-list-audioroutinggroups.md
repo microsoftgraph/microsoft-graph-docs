@@ -1,6 +1,7 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
+author: "VinodRavichandran"
 ---
 
 # List audio routing groups
@@ -26,7 +27,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -46,7 +47,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroups"
+  "name": "get-audioRoutingGroups"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups

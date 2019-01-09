@@ -1,6 +1,7 @@
 ---
 title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
+author: "angelgolfer-ms"
 ---
 
 # event: forward

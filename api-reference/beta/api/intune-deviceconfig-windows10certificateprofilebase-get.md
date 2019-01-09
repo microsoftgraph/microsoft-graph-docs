@@ -1,6 +1,7 @@
 ---
 title: "Get windows10CertificateProfileBase"
 description: "Read properties and relationships of the windows10CertificateProfileBase object."
+author: "tfitzmac"
 ---
 
 # Get windows10CertificateProfileBase

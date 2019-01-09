@@ -1,6 +1,7 @@
 ---
 title: "Create activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Create a new activeDirectoryWindowsAutopilotDeploymentProfile object."
+author: "tfitzmac"
 ---
 
 # Create activeDirectoryWindowsAutopilotDeploymentProfile

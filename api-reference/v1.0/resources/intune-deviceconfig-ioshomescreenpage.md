@@ -1,6 +1,7 @@
 ---
 title: "iosHomeScreenPage resource type"
 description: "A page containing apps and folders on the Home Screen"
+author: "tfitzmac"
 ---
 
 # iosHomeScreenPage resource type

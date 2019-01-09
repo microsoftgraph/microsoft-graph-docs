@@ -1,6 +1,7 @@
 ---
 title: "healthState enum type"
 description: "Indicates health state of the Windows management app."
+author: "tfitzmac"
 ---
 
 # healthState enum type

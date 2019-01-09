@@ -1,6 +1,7 @@
 ---
 title: "sharedPCAccountManagerPolicy resource type"
 description: "SharedPC Account Manager Policy. Only applies when the account manager is enabled."
+author: "tfitzmac"
 ---
 
 # sharedPCAccountManagerPolicy resource type

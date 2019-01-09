@@ -1,6 +1,7 @@
 ---
 title: "Get deviceEnrollmentConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get deviceEnrollmentConfiguration

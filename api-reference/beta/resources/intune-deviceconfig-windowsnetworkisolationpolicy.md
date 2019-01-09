@@ -1,6 +1,7 @@
 ---
 title: "windowsNetworkIsolationPolicy resource type"
 description: "Windows Network Isolation Policy"
+author: "tfitzmac"
 ---
 
 # windowsNetworkIsolationPolicy resource type

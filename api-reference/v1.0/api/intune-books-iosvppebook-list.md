@@ -1,6 +1,7 @@
 ---
 title: "List iosVppEBooks"
 description: "List properties and relationships of the iosVppEBook objects."
+author: "tfitzmac"
 ---
 
 # List iosVppEBooks

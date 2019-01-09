@@ -1,6 +1,7 @@
 ---
 title: "managedAppOperation resource type"
 description: "Represents an operation applied against an app registration."
+author: "tfitzmac"
 ---
 
 # managedAppOperation resource type

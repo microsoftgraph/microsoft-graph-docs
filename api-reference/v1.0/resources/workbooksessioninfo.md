@@ -1,6 +1,7 @@
 ---
 title: "workbookSessionInfo resource type"
 description: "Provides information about workbook session."
+author: "lumine2008"
 ---
 
 # workbookSessionInfo resource type

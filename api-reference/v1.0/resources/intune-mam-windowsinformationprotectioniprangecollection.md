@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtectionIPRangeCollection resource type"
 description: "Windows Information Protection IP Range Collection"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionIPRangeCollection resource type

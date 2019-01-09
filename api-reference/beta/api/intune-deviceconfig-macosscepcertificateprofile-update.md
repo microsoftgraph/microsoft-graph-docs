@@ -1,6 +1,7 @@
 ---
 title: "Update macOSScepCertificateProfile"
 description: "Update the properties of a macOSScepCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Update macOSScepCertificateProfile

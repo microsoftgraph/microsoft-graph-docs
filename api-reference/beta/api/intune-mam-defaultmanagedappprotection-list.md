@@ -1,6 +1,7 @@
 ---
 title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
+author: "tfitzmac"
 ---
 
 # List defaultManagedAppProtections

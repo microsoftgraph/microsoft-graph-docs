@@ -1,6 +1,7 @@
 ---
 title: "Get deleted item"
 description: "Retrieve the properties of a recently deleted item in deleted items."
+author: "lleonard-msft"
 ---
 
 # Get deleted item

@@ -1,6 +1,7 @@
 ---
 title: "Create restrictedAppsViolation"
 description: "Create a new restrictedAppsViolation object."
+author: "tfitzmac"
 ---
 
 # Create restrictedAppsViolation

@@ -1,6 +1,7 @@
 ---
 title: "workbookRange: rowsAbove"
 description: "Gets a certain number of rows above a given range."
+author: "lumine2008"
 ---
 
 # workbookRange: rowsAbove

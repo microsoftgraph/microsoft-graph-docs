@@ -1,6 +1,7 @@
 ---
 title: "Create rejectedSender"
 description: "Add a new user or group to the rejectedSender list."
+author: "dkershaw10"
 ---
 
 # Create rejectedSender

@@ -1,6 +1,7 @@
 ---
 title: "Get directoryRoleTemplate"
 description: "Retrieve the properties and relationships of a directoryroletemplate object."
+author: "lleonard-msft"
 ---
 
 # Get directoryRoleTemplate

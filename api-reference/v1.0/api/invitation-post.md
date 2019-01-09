@@ -97,7 +97,7 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
 

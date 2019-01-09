@@ -1,6 +1,7 @@
 ---
 title: "List termsAndConditionsAcceptanceStatuses"
 description: "List properties and relationships of the termsAndConditionsAcceptanceStatus objects."
+author: "tfitzmac"
 ---
 
 # List termsAndConditionsAcceptanceStatuses

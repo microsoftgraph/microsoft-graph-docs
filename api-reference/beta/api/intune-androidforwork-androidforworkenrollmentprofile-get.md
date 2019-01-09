@@ -1,6 +1,7 @@
 ---
 title: "Get androidForWorkEnrollmentProfile"
 description: "Read properties and relationships of the androidForWorkEnrollmentProfile object."
+author: "tfitzmac"
 ---
 
 # Get androidForWorkEnrollmentProfile

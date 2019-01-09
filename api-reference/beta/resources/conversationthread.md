@@ -1,6 +1,7 @@
 ---
 title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
+author: "dkershaw10"
 ---
 
 # conversationThread resource type

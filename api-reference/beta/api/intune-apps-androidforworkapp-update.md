@@ -1,6 +1,7 @@
 ---
 title: "Update androidForWorkApp"
 description: "Update the properties of a androidForWorkApp object."
+author: "tfitzmac"
 ---
 
 # Update androidForWorkApp

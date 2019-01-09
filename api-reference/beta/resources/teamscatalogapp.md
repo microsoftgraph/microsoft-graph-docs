@@ -1,6 +1,7 @@
 ---
 title: "teamsCatalogApp resource type"
 description: "see teamsApp."
+author: "nkramer"
 ---
 
 # teamsCatalogApp resource type

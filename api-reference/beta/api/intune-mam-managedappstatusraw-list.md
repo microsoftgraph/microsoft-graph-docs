@@ -1,6 +1,7 @@
 ---
 title: "List managedAppStatusRaws"
 description: "List properties and relationships of the managedAppStatusRaw objects."
+author: "tfitzmac"
 ---
 
 # List managedAppStatusRaws

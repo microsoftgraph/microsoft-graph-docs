@@ -1,6 +1,7 @@
 ---
 title: "Delete targetedManagedAppConfiguration"
 description: "Deletes a targetedManagedAppConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete targetedManagedAppConfiguration

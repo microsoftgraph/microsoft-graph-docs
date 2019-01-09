@@ -1,6 +1,7 @@
 ---
 title: "Get androidForWorkCertificateProfileBase"
 description: "Read properties and relationships of the androidForWorkCertificateProfileBase object."
+author: "tfitzmac"
 ---
 
 # Get androidForWorkCertificateProfileBase

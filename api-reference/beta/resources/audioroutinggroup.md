@@ -1,6 +1,7 @@
 ---
 title: "audioRoutingGroup resource type"
 description: "The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation."
+author: "VinodRavichandran"
 ---
 
 # audioRoutingGroup resource type

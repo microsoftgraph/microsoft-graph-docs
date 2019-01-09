@@ -1,6 +1,7 @@
 ---
 title: "contactFolder resource type"
 description: "A folder that contains contacts."
+author: "angelgolfer-ms"
 ---
 
 # contactFolder resource type

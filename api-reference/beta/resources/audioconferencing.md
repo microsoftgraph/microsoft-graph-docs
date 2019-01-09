@@ -1,6 +1,7 @@
 ---
 title: "audioConferencing resource type"
 description: "Represents phone access information for an onlineMeeting."
+author: "VinodRavichandran"
 ---
 
 # audioConferencing resource type

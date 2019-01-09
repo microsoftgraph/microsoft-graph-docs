@@ -1,6 +1,7 @@
 ---
 title: "riskyUsers resource type"
 description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
+author: "cloudhandler"
 ---
 
 # riskyUsers resource type
@@ -65,7 +66,7 @@ Here is a JSON representation of the resource.
 "isDeleted": "boolean",
 "riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
 "riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"}
+"riskState":  {"@odata.type": "microsoft.graph.riskState"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }

@@ -1,6 +1,7 @@
 ---
 title: "Authorization and the Microsoft Graph Security API"
 description: "Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles."
+author: "Preetikr"
 ---
 
 # Authorization and the Microsoft Graph Security API

@@ -1,6 +1,7 @@
 ---
 title: "Delete embeddedSIMActivationCodePool"
 description: "Deletes a embeddedSIMActivationCodePool."
+author: "tfitzmac"
 ---
 
 # Delete embeddedSIMActivationCodePool

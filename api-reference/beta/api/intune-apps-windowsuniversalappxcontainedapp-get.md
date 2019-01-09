@@ -1,6 +1,7 @@
 ---
 title: "Get windowsUniversalAppXContainedApp"
 description: "Read properties and relationships of the windowsUniversalAppXContainedApp object."
+author: "tfitzmac"
 ---
 
 # Get windowsUniversalAppXContainedApp

@@ -1,6 +1,7 @@
 ---
 title: "automaticUpdateMode enum type"
 description: "Possible values for automatic update mode."
+author: "tfitzmac"
 ---
 
 # automaticUpdateMode enum type

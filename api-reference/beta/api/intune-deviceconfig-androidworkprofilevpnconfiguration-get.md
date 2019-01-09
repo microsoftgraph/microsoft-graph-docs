@@ -1,6 +1,7 @@
 ---
 title: "Get androidWorkProfileVpnConfiguration"
 description: "Read properties and relationships of the androidWorkProfileVpnConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get androidWorkProfileVpnConfiguration

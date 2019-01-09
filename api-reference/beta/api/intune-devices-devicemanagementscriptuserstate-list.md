@@ -1,6 +1,7 @@
 ---
 title: "List deviceManagementScriptUserStates"
 description: "List properties and relationships of the deviceManagementScriptUserState objects."
+author: "tfitzmac"
 ---
 
 # List deviceManagementScriptUserStates

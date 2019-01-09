@@ -1,6 +1,7 @@
 ---
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windowsKioskConfiguration

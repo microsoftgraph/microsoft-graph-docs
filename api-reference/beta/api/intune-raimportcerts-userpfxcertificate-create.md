@@ -1,6 +1,7 @@
 ---
 title: "Create userPFXCertificate"
 description: "Create a new userPFXCertificate object."
+author: "tfitzmac"
 ---
 
 # Create userPFXCertificate

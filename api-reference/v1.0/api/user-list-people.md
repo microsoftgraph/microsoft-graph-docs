@@ -1,6 +1,7 @@
 ---
 title: "List people"
 description: "Retrieve a collection of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
+author: "simonhult"
 ---
 
 # List people

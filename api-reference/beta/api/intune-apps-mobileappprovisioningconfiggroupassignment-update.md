@@ -1,6 +1,7 @@
 ---
 title: "Update mobileAppProvisioningConfigGroupAssignment"
 description: "Update the properties of a mobileAppProvisioningConfigGroupAssignment object."
+author: "tfitzmac"
 ---
 
 # Update mobileAppProvisioningConfigGroupAssignment

@@ -1,6 +1,7 @@
 ---
 title: "Create windowsUniversalAppXContainedApp"
 description: "Create a new windowsUniversalAppXContainedApp object."
+author: "tfitzmac"
 ---
 
 # Create windowsUniversalAppXContainedApp

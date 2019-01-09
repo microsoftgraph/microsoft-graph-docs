@@ -1,6 +1,7 @@
 ---
 title: "windowsFirewallNetworkProfile resource type"
 description: "Windows Firewall Profile Policies."
+author: "tfitzmac"
 ---
 
 # windowsFirewallNetworkProfile resource type

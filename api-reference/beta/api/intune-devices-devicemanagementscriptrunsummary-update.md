@@ -1,6 +1,7 @@
 ---
 title: "Update deviceManagementScriptRunSummary"
 description: "Update the properties of a deviceManagementScriptRunSummary object."
+author: "tfitzmac"
 ---
 
 # Update deviceManagementScriptRunSummary

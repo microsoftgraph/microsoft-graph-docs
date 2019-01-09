@@ -1,6 +1,7 @@
 ---
 title: "Update networkIPv6ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv6ConfigurationManagementCondition object."
+author: "tfitzmac"
 ---
 
 # Update networkIPv6ConfigurationManagementCondition

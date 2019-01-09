@@ -1,6 +1,7 @@
 ---
 title: "Create officeClientConfigurationAssignment"
 description: "Add a target group to an existing policy."
+author: "tfitzmac"
 ---
 
 # Create officeClientConfigurationAssignment

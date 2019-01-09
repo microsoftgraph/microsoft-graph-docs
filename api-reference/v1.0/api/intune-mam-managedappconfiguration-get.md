@@ -1,6 +1,7 @@
 ---
 title: "Get managedAppConfiguration"
 description: "Read properties and relationships of the managedAppConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get managedAppConfiguration

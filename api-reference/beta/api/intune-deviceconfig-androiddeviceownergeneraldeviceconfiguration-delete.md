@@ -1,6 +1,7 @@
 ---
 title: "Delete androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Deletes a androidDeviceOwnerGeneralDeviceConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete androidDeviceOwnerGeneralDeviceConfiguration

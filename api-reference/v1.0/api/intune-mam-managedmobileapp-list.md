@@ -1,6 +1,7 @@
 ---
 title: "List managedMobileApps"
 description: "List properties and relationships of the managedMobileApp objects."
+author: "tfitzmac"
 ---
 
 # List managedMobileApps

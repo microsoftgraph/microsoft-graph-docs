@@ -1,6 +1,7 @@
 ---
 title: "Create unsupportedDeviceConfiguration"
 description: "Create a new unsupportedDeviceConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create unsupportedDeviceConfiguration

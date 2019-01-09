@@ -1,6 +1,7 @@
 ---
 title: "Create managedAppOperation"
 description: "Create a new managedAppOperation object."
+author: "tfitzmac"
 ---
 
 # Create managedAppOperation

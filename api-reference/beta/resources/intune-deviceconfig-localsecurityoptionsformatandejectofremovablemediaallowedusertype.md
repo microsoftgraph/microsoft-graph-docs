@@ -1,6 +1,7 @@
 ---
 title: "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type"
 description: "Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser"
+author: "tfitzmac"
 ---
 
 # localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type

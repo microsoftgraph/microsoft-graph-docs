@@ -1,6 +1,7 @@
 ---
 title: "windowsStartMenuAppListVisibilityType enum type"
 description: "Type of start menu app list visibility."
+author: "tfitzmac"
 ---
 
 # windowsStartMenuAppListVisibilityType enum type

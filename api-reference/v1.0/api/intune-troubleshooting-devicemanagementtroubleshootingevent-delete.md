@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceManagementTroubleshootingEvent"
 description: "Deletes a deviceManagementTroubleshootingEvent."
+author: "tfitzmac"
 ---
 
 # Delete deviceManagementTroubleshootingEvent

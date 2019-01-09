@@ -1,6 +1,7 @@
 ---
 title: "List device groups"
 description: "Get groups that this device is a direct member of. This operation is not transitive."
+author: "tfitzmac"
 ---
 
 # List device groups

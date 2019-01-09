@@ -1,6 +1,7 @@
 ---
 title: "Get locationManagementCondition"
 description: "Read properties and relationships of the locationManagementCondition object."
+author: "tfitzmac"
 ---
 
 # Get locationManagementCondition

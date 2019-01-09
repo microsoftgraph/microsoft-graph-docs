@@ -1,6 +1,7 @@
 ---
 title: "Range: LastColumn"
 description: "."
+author: "lumine2008"
 ---
 
 # Range: LastColumn

@@ -1,6 +1,7 @@
 ---
 title: "Update telecomExpenseManagementPartner"
 description: "Update the properties of a telecomExpenseManagementPartner object."
+author: "tfitzmac"
 ---
 
 # Update telecomExpenseManagementPartner

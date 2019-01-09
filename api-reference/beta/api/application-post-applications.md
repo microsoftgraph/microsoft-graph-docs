@@ -1,6 +1,7 @@
 ---
 title: "Create Application"
 description: "Use this API to create a new application."
+author: "lleonard-msft"
 ---
 
 # Create Application

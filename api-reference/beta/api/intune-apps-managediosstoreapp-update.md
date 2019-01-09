@@ -1,6 +1,7 @@
 ---
 title: "Update managedIOSStoreApp"
 description: "Update the properties of a managedIOSStoreApp object."
+author: "tfitzmac"
 ---
 
 # Update managedIOSStoreApp

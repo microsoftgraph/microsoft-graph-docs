@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtectionPinCharacterRequirements enum type"
 description: "Pin Character Requirements"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionPinCharacterRequirements enum type

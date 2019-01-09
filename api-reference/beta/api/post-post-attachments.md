@@ -1,6 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to add an attachment to a post. Since there"
+author: "dkershaw10"
 ---
 
 # Add attachment

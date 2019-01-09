@@ -1,6 +1,7 @@
 ---
 title: "win32LobAppRegistryDetectionType enum type"
 description: "Contains all supported registry data detection type."
+author: "tfitzmac"
 ---
 
 # win32LobAppRegistryDetectionType enum type

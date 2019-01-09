@@ -1,6 +1,7 @@
 ---
 title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
+author: "lleonard-msft"
 ---
 
 # Remove directory role member

@@ -1,6 +1,7 @@
 ---
 title: "List series"
 description: "Retrieve a list of chartseries objects."
+author: "lumine2008"
 ---
 
 # List series

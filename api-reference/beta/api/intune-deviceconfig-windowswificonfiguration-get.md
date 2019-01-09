@@ -1,6 +1,7 @@
 ---
 title: "Get windowsWifiConfiguration"
 description: "Read properties and relationships of the windowsWifiConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get windowsWifiConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "List roleScopeTags"
 description: "List properties and relationships of the roleScopeTag objects."
+author: "tfitzmac"
 ---
 
 # List roleScopeTags

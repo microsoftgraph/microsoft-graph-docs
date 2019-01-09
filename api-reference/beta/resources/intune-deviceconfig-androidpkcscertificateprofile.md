@@ -1,6 +1,7 @@
 ---
 title: "androidPkcsCertificateProfile resource type"
 description: "Android PKCS certificate profile"
+author: "tfitzmac"
 ---
 
 # androidPkcsCertificateProfile resource type

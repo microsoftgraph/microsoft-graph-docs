@@ -1,6 +1,7 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
+author: "dkershaw10"
 ---
 
 # Delete groupLifecyclePolicy

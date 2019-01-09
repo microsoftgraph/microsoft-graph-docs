@@ -1,6 +1,7 @@
 ---
 title: "List importedDeviceIdentities"
 description: "List properties and relationships of the importedDeviceIdentity objects."
+author: "tfitzmac"
 ---
 
 # List importedDeviceIdentities

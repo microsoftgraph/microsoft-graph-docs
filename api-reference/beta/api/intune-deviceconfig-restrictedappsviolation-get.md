@@ -1,6 +1,7 @@
 ---
 title: "Get restrictedAppsViolation"
 description: "Read properties and relationships of the restrictedAppsViolation object."
+author: "tfitzmac"
 ---
 
 # Get restrictedAppsViolation

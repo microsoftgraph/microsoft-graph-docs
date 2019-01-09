@@ -1,6 +1,7 @@
 ---
 title: "subjectAlternativeNameType enum type"
 description: "Subject Alternative Name Options."
+author: "tfitzmac"
 ---
 
 # subjectAlternativeNameType enum type

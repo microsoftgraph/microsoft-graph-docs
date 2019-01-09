@@ -1,6 +1,7 @@
 ---
 title: "deviceComplianceSettingState resource type"
 description: "Device compliance setting State for a given device."
+author: "tfitzmac"
 ---
 
 # deviceComplianceSettingState resource type

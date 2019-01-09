@@ -1,6 +1,7 @@
 ---
 title: "deviceComplianceDeviceStatus resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # deviceComplianceDeviceStatus resource type

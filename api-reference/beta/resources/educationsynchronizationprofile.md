@@ -1,6 +1,7 @@
 ---
 title: "educationSynchronizationProfile resource type"
 description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync."
+author: "mmast-msft"
 ---
 
 # educationSynchronizationProfile resource type

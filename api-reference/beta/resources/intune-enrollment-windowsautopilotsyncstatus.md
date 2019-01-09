@@ -1,6 +1,7 @@
 ---
 title: "windowsAutopilotSyncStatus enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # windowsAutopilotSyncStatus enum type

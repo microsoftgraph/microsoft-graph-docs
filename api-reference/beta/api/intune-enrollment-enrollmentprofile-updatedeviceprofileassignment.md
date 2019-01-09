@@ -1,6 +1,7 @@
 ---
 title: "updateDeviceProfileAssignment action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # updateDeviceProfileAssignment action

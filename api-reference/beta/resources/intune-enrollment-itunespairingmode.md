@@ -1,6 +1,7 @@
 ---
 title: "iTunesPairingMode enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # iTunesPairingMode enum type

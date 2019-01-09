@@ -1,6 +1,7 @@
 ---
 title: "participant resource type"
 description: "The participant type."
+author: "VinodRavichandran"
 ---
 
 # participant resource type

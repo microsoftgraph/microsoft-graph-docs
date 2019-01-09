@@ -1,6 +1,7 @@
 ---
 title: "Update windows81CompliancePolicy"
 description: "Update the properties of a windows81CompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Update windows81CompliancePolicy

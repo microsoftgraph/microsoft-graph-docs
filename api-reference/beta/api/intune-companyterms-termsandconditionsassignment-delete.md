@@ -1,6 +1,7 @@
 ---
 title: "Delete termsAndConditionsAssignment"
 description: "Deletes a termsAndConditionsAssignment."
+author: "tfitzmac"
 ---
 
 # Delete termsAndConditionsAssignment

@@ -1,6 +1,7 @@
 ---
 title: "Create windowsIdentityProtectionConfiguration"
 description: "Create a new windowsIdentityProtectionConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windowsIdentityProtectionConfiguration

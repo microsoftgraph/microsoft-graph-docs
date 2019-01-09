@@ -1,6 +1,7 @@
 ---
 title: "Get managementCondition"
 description: "Read properties and relationships of the managementCondition object."
+author: "tfitzmac"
 ---
 
 # Get managementCondition

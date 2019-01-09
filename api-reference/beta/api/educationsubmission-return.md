@@ -1,6 +1,7 @@
 ---
 title: "educationSubmission: return"
-description: " and indicates that feedback is provided or grading is done. This action can only be done by the teacher."
+description: "This action makes the grade and feedback associated with this submission available to the student."
+author: "dipakboyed"
 ---
 
 # educationSubmission: return

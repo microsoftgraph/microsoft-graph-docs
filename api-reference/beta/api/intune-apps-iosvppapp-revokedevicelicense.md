@@ -1,6 +1,7 @@
 ---
 title: "revokeDeviceLicense action"
 description: "Revoke assigned iOS VPP device license for given app."
+author: "tfitzmac"
 ---
 
 # revokeDeviceLicense action

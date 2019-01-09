@@ -1,6 +1,7 @@
 ---
 title: "Update windowsMobileMSI"
 description: "Update the properties of a windowsMobileMSI object."
+author: "tfitzmac"
 ---
 
 # Update windowsMobileMSI

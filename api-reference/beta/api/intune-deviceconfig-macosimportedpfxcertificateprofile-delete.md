@@ -1,6 +1,7 @@
 ---
 title: "Delete macOSImportedPFXCertificateProfile"
 description: "Deletes a macOSImportedPFXCertificateProfile."
+author: "tfitzmac"
 ---
 
 # Delete macOSImportedPFXCertificateProfile

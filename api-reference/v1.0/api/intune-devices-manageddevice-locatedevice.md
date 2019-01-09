@@ -1,6 +1,7 @@
 ---
 title: "locateDevice action"
 description: "Locate a device"
+author: "tfitzmac"
 ---
 
 # locateDevice action

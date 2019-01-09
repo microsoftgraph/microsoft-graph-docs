@@ -1,6 +1,7 @@
 ---
 title: "usageDetails resource type"
 description: "Complex type containing properties of Used items. Information on when the resource was last accessed (viewed) and modified (edited) by the user."
+author: "simonhult"
 ---
 
 # usageDetails resource type

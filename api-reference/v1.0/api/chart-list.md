@@ -1,6 +1,7 @@
 ---
 title: "List ChartCollection"
 description: "Retrieve a list of chart objects."
+author: "lumine2008"
 ---
 
 # List ChartCollection

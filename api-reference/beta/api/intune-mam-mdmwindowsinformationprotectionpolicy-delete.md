@@ -1,6 +1,7 @@
 ---
 title: "Delete mdmWindowsInformationProtectionPolicy"
 description: "Deletes a mdmWindowsInformationProtectionPolicy."
+author: "tfitzmac"
 ---
 
 # Delete mdmWindowsInformationProtectionPolicy

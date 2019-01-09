@@ -1,6 +1,7 @@
 ---
 title: "Get deviceManagementScript"
 description: "Read properties and relationships of the deviceManagementScript object."
+author: "tfitzmac"
 ---
 
 # Get deviceManagementScript

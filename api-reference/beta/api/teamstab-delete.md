@@ -1,6 +1,7 @@
 ---
 title: "Delete tab from channel"
 description: "Removes (unpins) a tab from the specified channel within a team. "
+author: "nkramer"
 ---
 
 # Delete tab from channel

@@ -1,6 +1,7 @@
 ---
 title: "Update worksheet"
 description: "Update the properties of worksheet object."
+author: "lumine2008"
 ---
 
 # Update worksheet

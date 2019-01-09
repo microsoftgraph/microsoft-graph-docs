@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtectionDataRecoveryCertificate resource type"
 description: "Windows Information Protection DataRecoveryCertificate"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionDataRecoveryCertificate resource type

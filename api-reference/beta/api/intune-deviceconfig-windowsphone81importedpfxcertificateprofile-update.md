@@ -1,6 +1,7 @@
 ---
 title: "Update windowsPhone81ImportedPFXCertificateProfile"
 description: "Update the properties of a windowsPhone81ImportedPFXCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Update windowsPhone81ImportedPFXCertificateProfile

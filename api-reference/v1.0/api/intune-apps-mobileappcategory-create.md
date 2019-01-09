@@ -1,6 +1,7 @@
 ---
 title: "Create mobileAppCategory"
 description: "Create a new mobileAppCategory object."
+author: "tfitzmac"
 ---
 
 # Create mobileAppCategory

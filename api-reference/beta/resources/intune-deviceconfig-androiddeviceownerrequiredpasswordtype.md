@@ -1,6 +1,7 @@
 ---
 title: "androidDeviceOwnerRequiredPasswordType enum type"
 description: "Android Device Owner policy required password type."
+author: "tfitzmac"
 ---
 
 # androidDeviceOwnerRequiredPasswordType enum type

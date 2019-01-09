@@ -1,6 +1,7 @@
 ---
 title: "enterpriseCodeSigningCertificate resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # enterpriseCodeSigningCertificate resource type

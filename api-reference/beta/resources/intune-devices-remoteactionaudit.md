@@ -1,6 +1,7 @@
 ---
 title: "remoteActionAudit resource type"
 description: "Report of remote actions initiated on the devices belonging to a certain tenant."
+author: "tfitzmac"
 ---
 
 # remoteActionAudit resource type

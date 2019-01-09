@@ -1,6 +1,7 @@
 ---
 title: "createGooglePlayWebToken action"
 description: "Generates a web token that is used in an embeddable component."
+author: "tfitzmac"
 ---
 
 # createGooglePlayWebToken action

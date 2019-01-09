@@ -1,6 +1,7 @@
 ---
 title: "symantecCodeSigningCertificate resource type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # symantecCodeSigningCertificate resource type

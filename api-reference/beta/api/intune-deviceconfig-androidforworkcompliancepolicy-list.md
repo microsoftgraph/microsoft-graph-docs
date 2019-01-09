@@ -1,6 +1,7 @@
 ---
 title: "List androidForWorkCompliancePolicies"
 description: "List properties and relationships of the androidForWorkCompliancePolicy objects."
+author: "tfitzmac"
 ---
 
 # List androidForWorkCompliancePolicies

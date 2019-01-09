@@ -1,6 +1,7 @@
 ---
 title: "iosHomeScreenItem resource type"
 description: "Represents an item on the iOS Home Screen"
+author: "tfitzmac"
 ---
 
 # iosHomeScreenItem resource type

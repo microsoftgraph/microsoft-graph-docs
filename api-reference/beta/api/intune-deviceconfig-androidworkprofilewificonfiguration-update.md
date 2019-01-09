@@ -1,6 +1,7 @@
 ---
 title: "Update androidWorkProfileWiFiConfiguration"
 description: "Update the properties of a androidWorkProfileWiFiConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidWorkProfileWiFiConfiguration

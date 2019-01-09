@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtectionEnforcementLevel enum type"
 description: "Possible values for WIP Protection enforcement levels"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionEnforcementLevel enum type

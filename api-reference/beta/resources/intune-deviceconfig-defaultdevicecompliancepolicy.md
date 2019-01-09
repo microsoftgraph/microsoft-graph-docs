@@ -1,6 +1,7 @@
 ---
 title: "defaultDeviceCompliancePolicy resource type"
 description: "Default device compliance policy rules that are enforced account wide."
+author: "tfitzmac"
 ---
 
 # defaultDeviceCompliancePolicy resource type

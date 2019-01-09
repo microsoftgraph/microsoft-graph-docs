@@ -1,6 +1,7 @@
 ---
 title: "Delete conversationThread"
 description: "Delete conversationThread."
+author: "dkershaw10"
 ---
 
 # Delete conversationThread

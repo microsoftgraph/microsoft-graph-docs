@@ -1,6 +1,7 @@
 ---
 title: "Create windowsPhone81CompliancePolicy"
 description: "Create a new windowsPhone81CompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Create windowsPhone81CompliancePolicy

@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceManagementScriptUserState"
 description: "Deletes a deviceManagementScriptUserState."
+author: "tfitzmac"
 ---
 
 # Delete deviceManagementScriptUserState

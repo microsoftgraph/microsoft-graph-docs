@@ -1,6 +1,7 @@
 ---
 title: "Create iosPkcsCertificateProfile"
 description: "Create a new iosPkcsCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Create iosPkcsCertificateProfile

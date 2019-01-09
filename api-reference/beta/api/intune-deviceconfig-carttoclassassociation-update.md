@@ -1,6 +1,7 @@
 ---
 title: "Update cartToClassAssociation"
 description: "Update the properties of a cartToClassAssociation object."
+author: "tfitzmac"
 ---
 
 # Update cartToClassAssociation

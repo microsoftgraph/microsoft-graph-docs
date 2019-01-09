@@ -1,6 +1,7 @@
 ---
 title: "domain: verify"
 description: "Validates the ownership of the domain."
+author: "lleonard-msft"
 ---
 
 # domain: verify

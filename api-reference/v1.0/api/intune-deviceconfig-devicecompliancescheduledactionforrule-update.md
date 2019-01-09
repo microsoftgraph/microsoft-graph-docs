@@ -1,6 +1,7 @@
 ---
 title: "Update deviceComplianceScheduledActionForRule"
 description: "Update the properties of a deviceComplianceScheduledActionForRule object."
+author: "tfitzmac"
 ---
 
 # Update deviceComplianceScheduledActionForRule

@@ -1,6 +1,7 @@
 ---
 title: "Create windowsMobileMSI"
 description: "Create a new windowsMobileMSI object."
+author: "tfitzmac"
 ---
 
 # Create windowsMobileMSI

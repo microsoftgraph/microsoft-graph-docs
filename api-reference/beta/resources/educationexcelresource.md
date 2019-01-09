@@ -1,6 +1,7 @@
 ---
 title: "educationExcelResource resource type"
 description: "A subclass of educationResource. This resource type represents an Excel document.  "
+author: "mmast-msft"
 ---
 
 # educationExcelResource resource type

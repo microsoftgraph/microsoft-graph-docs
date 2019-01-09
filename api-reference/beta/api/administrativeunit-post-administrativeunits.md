@@ -1,6 +1,7 @@
 ---
 title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
+author: "lleonard-msft"
 ---
 
 # Create administrativeUnit

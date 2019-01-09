@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceCategory"
 description: "Deletes a deviceCategory."
+author: "tfitzmac"
 ---
 
 # Delete deviceCategory

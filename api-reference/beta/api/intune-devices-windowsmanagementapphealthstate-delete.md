@@ -1,6 +1,7 @@
 ---
 title: "Delete windowsManagementAppHealthState"
 description: "Deletes a windowsManagementAppHealthState."
+author: "tfitzmac"
 ---
 
 # Delete windowsManagementAppHealthState

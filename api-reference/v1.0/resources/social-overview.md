@@ -1,6 +1,7 @@
 ---
 title: "People overview"
 description: "Microsoft Graph provides access to useful people data."
+author: "simonhult"
 ---
 
 # People overview

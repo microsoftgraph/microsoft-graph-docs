@@ -1,6 +1,7 @@
 ---
 title: "Update windows10ImportedPFXCertificateProfile"
 description: "Update the properties of a windows10ImportedPFXCertificateProfile object."
+author: "tfitzmac"
 ---
 
 # Update windows10ImportedPFXCertificateProfile

@@ -1,6 +1,7 @@
 ---
 title: "Get androidForWorkSettings"
 description: "Read properties and relationships of the androidForWorkSettings object."
+author: "tfitzmac"
 ---
 
 # Get androidForWorkSettings

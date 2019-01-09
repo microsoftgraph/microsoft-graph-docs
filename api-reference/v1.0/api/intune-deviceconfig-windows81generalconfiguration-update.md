@@ -1,6 +1,7 @@
 ---
 title: "Update windows81GeneralConfiguration"
 description: "Update the properties of a windows81GeneralConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windows81GeneralConfiguration

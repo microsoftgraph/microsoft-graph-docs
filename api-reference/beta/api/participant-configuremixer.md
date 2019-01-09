@@ -1,6 +1,7 @@
----
+﻿---
 title: "participant: configureMixer"
 description: "Configure how audio is mixed for different participants in a multiparty conversation."
+author: "VinodRavichandran"
 ---
 
 # participant: configureMixer
@@ -49,7 +50,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "participant_configureMixer"
+  "name": "participant-configureMixer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/configureMixer

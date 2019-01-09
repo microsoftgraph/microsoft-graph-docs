@@ -1,6 +1,7 @@
 ---
 title: "List iosVppAppAssignedDeviceLicenses"
 description: "List properties and relationships of the iosVppAppAssignedDeviceLicense objects."
+author: "tfitzmac"
 ---
 
 # List iosVppAppAssignedDeviceLicenses

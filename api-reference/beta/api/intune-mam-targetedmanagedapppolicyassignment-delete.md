@@ -1,6 +1,7 @@
 ---
 title: "Delete targetedManagedAppPolicyAssignment"
 description: "Deletes a targetedManagedAppPolicyAssignment."
+author: "tfitzmac"
 ---
 
 # Delete targetedManagedAppPolicyAssignment

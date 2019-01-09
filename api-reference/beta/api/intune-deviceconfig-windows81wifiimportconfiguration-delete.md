@@ -1,6 +1,7 @@
 ---
 title: "Delete windows81WifiImportConfiguration"
 description: "Deletes a windows81WifiImportConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete windows81WifiImportConfiguration

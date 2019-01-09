@@ -1,6 +1,7 @@
 ---
 title: "Delete managedDeviceMobileAppConfigurationUserStatus"
 description: "Deletes a managedDeviceMobileAppConfigurationUserStatus."
+author: "tfitzmac"
 ---
 
 # Delete managedDeviceMobileAppConfigurationUserStatus

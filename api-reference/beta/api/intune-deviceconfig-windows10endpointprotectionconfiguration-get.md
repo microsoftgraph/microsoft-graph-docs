@@ -1,6 +1,7 @@
 ---
 title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get windows10EndpointProtectionConfiguration

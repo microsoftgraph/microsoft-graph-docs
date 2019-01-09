@@ -1,6 +1,7 @@
 ---
 title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
+author: "dkershaw10"
 ---
 
 # List contacts

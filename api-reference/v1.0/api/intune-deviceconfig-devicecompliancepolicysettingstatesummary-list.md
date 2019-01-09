@@ -1,6 +1,7 @@
 ---
 title: "List deviceCompliancePolicySettingStateSummaries"
 description: "List properties and relationships of the deviceCompliancePolicySettingStateSummary objects."
+author: "tfitzmac"
 ---
 
 # List deviceCompliancePolicySettingStateSummaries

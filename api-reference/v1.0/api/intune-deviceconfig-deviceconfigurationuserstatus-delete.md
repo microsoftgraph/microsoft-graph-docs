@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceConfigurationUserStatus"
 description: "Deletes a deviceConfigurationUserStatus."
+author: "tfitzmac"
 ---
 
 # Delete deviceConfigurationUserStatus

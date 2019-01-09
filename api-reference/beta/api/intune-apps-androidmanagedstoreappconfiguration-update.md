@@ -1,6 +1,7 @@
 ---
 title: "Update androidManagedStoreAppConfiguration"
 description: "Update the properties of a androidManagedStoreAppConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update androidManagedStoreAppConfiguration

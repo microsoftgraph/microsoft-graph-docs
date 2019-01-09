@@ -1,6 +1,7 @@
 ---
 title: "List iosGeneralDeviceConfigurations"
 description: "List properties and relationships of the iosGeneralDeviceConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List iosGeneralDeviceConfigurations

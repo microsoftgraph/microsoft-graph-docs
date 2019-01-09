@@ -1,6 +1,7 @@
 ---
 title: "Delete unsupportedDeviceConfiguration"
 description: "Deletes a unsupportedDeviceConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete unsupportedDeviceConfiguration

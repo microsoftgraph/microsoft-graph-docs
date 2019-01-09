@@ -1,6 +1,7 @@
 ---
 title: "Create enrollmentTroubleshootingEvent"
 description: "Create a new enrollmentTroubleshootingEvent object."
+author: "tfitzmac"
 ---
 
 # Create enrollmentTroubleshootingEvent

@@ -1,6 +1,7 @@
 ---
 title: "domainDnsTxtRecord resource type"
 description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+author: "lleonard-msft"
 ---
 
 # domainDnsTxtRecord resource type

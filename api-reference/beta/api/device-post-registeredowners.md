@@ -1,6 +1,7 @@
 ---
 title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
+author: "tfitzmac"
 ---
 
 # Create registeredOwner

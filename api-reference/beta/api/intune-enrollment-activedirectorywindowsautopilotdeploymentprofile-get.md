@@ -1,6 +1,7 @@
 ---
 title: "Get activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile object."
+author: "tfitzmac"
 ---
 
 # Get activeDirectoryWindowsAutopilotDeploymentProfile

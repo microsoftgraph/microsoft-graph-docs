@@ -1,6 +1,7 @@
 ---
 title: "Update networkIPv4ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv4ConfigurationManagementCondition object."
+author: "tfitzmac"
 ---
 
 # Update networkIPv4ConfigurationManagementCondition

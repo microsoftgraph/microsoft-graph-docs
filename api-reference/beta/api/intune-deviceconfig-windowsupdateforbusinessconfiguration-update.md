@@ -1,6 +1,7 @@
 ---
 title: "Update windowsUpdateForBusinessConfiguration"
 description: "Update the properties of a windowsUpdateForBusinessConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update windowsUpdateForBusinessConfiguration

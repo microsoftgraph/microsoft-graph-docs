@@ -1,6 +1,7 @@
 ---
 title: "windowsPhone81SCEPCertificateProfile resource type"
 description: " SCEP certificate profile"
+author: "tfitzmac"
 ---
 
 # windowsPhone81SCEPCertificateProfile resource type

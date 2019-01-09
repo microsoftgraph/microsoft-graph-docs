@@ -1,6 +1,7 @@
 ---
 title: "Update depIOSEnrollmentProfile"
 description: "Update the properties of a depIOSEnrollmentProfile object."
+author: "tfitzmac"
 ---
 
 # Update depIOSEnrollmentProfile

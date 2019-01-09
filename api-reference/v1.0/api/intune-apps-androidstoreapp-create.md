@@ -1,6 +1,7 @@
 ---
 title: "Create androidStoreApp"
 description: "Create a new androidStoreApp object."
+author: "tfitzmac"
 ---
 
 # Create androidStoreApp

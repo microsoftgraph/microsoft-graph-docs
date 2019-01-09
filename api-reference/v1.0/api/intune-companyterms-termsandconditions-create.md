@@ -1,6 +1,7 @@
 ---
 title: "Create termsAndConditions"
 description: "Create a new termsAndConditions object."
+author: "tfitzmac"
 ---
 
 # Create termsAndConditions

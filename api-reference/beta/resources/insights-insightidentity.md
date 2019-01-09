@@ -1,13 +1,12 @@
 ---
 title: "insightIdentity"
-description: " resource type"
+description: "Complex type containing properties of Shared items."
+author: "simonhult"
 ---
 
 # insightIdentity
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
- resource type
 
 Complex type containing properties of [Shared](insights-shared.md) items. 
 

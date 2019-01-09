@@ -1,6 +1,7 @@
 ---
 title: "Get windows10NetworkBoundaryConfiguration"
 description: "Read properties and relationships of the windows10NetworkBoundaryConfiguration object."
+author: "tfitzmac"
 ---
 
 # Get windows10NetworkBoundaryConfiguration

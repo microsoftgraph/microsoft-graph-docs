@@ -1,6 +1,7 @@
 ---
 title: "Delete mobileThreatDefenseConnector"
 description: "Deletes a mobileThreatDefenseConnector."
+author: "tfitzmac"
 ---
 
 # Delete mobileThreatDefenseConnector

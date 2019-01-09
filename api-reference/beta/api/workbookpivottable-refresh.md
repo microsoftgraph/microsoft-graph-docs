@@ -1,6 +1,7 @@
 ---
 title: "workbookPivotTable: refresh"
 description: "Refreshes the PivotTable."
+author: "lumine2008"
 ---
 
 # workbookPivotTable: refresh

@@ -1,6 +1,7 @@
 ---
 title: "unsupportedDeviceConfigurationDetail resource type"
 description: "A description of why an entity is unsupported."
+author: "tfitzmac"
 ---
 
 # unsupportedDeviceConfigurationDetail resource type

@@ -1,6 +1,7 @@
 ---
 title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
+author: "tfitzmac"
 ---
 
 # siteSecurityLevel enum type

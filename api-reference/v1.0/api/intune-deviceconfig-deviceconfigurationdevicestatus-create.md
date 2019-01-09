@@ -1,6 +1,7 @@
 ---
 title: "Create deviceConfigurationDeviceStatus"
 description: "Create a new deviceConfigurationDeviceStatus object."
+author: "tfitzmac"
 ---
 
 # Create deviceConfigurationDeviceStatus

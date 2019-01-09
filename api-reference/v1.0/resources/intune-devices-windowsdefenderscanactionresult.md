@@ -1,6 +1,7 @@
 ---
 title: "windowsDefenderScanActionResult resource type"
 description: "Windows Defender last scan result"
+author: "tfitzmac"
 ---
 
 # windowsDefenderScanActionResult resource type

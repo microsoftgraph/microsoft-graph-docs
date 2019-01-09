@@ -1,6 +1,7 @@
 ---
 title: "shutDown action"
 description: "Shut down device"
+author: "tfitzmac"
 ---
 
 # shutDown action

@@ -1,6 +1,7 @@
 ---
 title: "windowsUniversalAppXContainedApp resource type"
 description: "A class that represents a contained app of a WindowsUniversalAppX app."
+author: "tfitzmac"
 ---
 
 # windowsUniversalAppXContainedApp resource type

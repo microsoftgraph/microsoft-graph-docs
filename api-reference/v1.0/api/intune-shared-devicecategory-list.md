@@ -1,6 +1,7 @@
 ---
 title: "List deviceCategories"
 description: "List properties and relationships of the deviceCategory objects."
+author: "tfitzmac"
 ---
 
 # List deviceCategories

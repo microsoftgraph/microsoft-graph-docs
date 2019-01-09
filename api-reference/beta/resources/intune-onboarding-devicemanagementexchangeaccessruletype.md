@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementExchangeAccessRuleType enum type"
 description: "Criteria which defines the type of device this access rule will apply to"
+author: "tfitzmac"
 ---
 
 # deviceManagementExchangeAccessRuleType enum type

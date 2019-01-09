@@ -1,6 +1,7 @@
 ---
 title: "Delete windowsAssignedAccessProfile"
 description: "Deletes a windowsAssignedAccessProfile."
+author: "tfitzmac"
 ---
 
 # Delete windowsAssignedAccessProfile

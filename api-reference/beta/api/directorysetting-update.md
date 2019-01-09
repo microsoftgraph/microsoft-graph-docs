@@ -1,6 +1,7 @@
 ---
 title: "Update a directory setting"
 description: "Update the properties of a specific directory setting object."
+author: "lleonard-msft"
 ---
 
 # Update a directory setting

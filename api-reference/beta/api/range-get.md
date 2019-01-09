@@ -1,6 +1,7 @@
 ---
 title: "Get Range"
 description: "Retrieve the properties and relationships of range object."
+author: "lumine2008"
 ---
 
 # Get Range

@@ -1,6 +1,7 @@
 ---
 title: "windowsAppStartLayoutTileSize enum type"
 description: "The tile size of Windows app in the start layout."
+author: "tfitzmac"
 ---
 
 # windowsAppStartLayoutTileSize enum type

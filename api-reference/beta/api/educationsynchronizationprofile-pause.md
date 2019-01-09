@@ -1,6 +1,7 @@
 ---
 title: "Pause sync on an educationSynchronizationProfile"
 description: "Pause the sync of a specific school data synchronization profile in the tenant."
+author: "mmast-msft"
 ---
 
 # Pause sync on an educationSynchronizationProfile

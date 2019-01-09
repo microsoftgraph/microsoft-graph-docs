@@ -1,6 +1,7 @@
 ---
 title: "officeUserCheckinSummary resource type"
 description: "Entity that describes  tenant check-in stats."
+author: "tfitzmac"
 ---
 
 # officeUserCheckinSummary resource type

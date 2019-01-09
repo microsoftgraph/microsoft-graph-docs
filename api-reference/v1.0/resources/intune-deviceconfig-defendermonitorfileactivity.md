@@ -1,6 +1,7 @@
 ---
 title: "defenderMonitorFileActivity enum type"
 description: "Possible values for monitoring file activity."
+author: "tfitzmac"
 ---
 
 # defenderMonitorFileActivity enum type

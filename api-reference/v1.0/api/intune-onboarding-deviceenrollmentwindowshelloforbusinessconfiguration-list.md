@@ -1,6 +1,7 @@
 ---
 title: "List deviceEnrollmentWindowsHelloForBusinessConfigurations"
 description: "List properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List deviceEnrollmentWindowsHelloForBusinessConfigurations

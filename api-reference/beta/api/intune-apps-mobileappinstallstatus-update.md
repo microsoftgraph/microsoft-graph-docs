@@ -1,6 +1,7 @@
 ---
 title: "Update mobileAppInstallStatus"
 description: "Update the properties of a mobileAppInstallStatus object."
+author: "tfitzmac"
 ---
 
 # Update mobileAppInstallStatus

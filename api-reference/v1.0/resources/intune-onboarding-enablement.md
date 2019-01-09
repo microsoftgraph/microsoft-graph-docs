@@ -1,6 +1,7 @@
 ---
 title: "enablement enum type"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # enablement enum type

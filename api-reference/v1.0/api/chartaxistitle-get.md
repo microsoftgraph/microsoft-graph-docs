@@ -1,6 +1,7 @@
 ---
 title: "Get ChartAxisTitle"
 description: "Retrieve the properties and relationships of chartaxistitle object."
+author: "lumine2008"
 ---
 
 # Get ChartAxisTitle

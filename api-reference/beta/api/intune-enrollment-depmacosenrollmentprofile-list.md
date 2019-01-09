@@ -1,6 +1,7 @@
 ---
 title: "List depMacOSEnrollmentProfiles"
 description: "List properties and relationships of the depMacOSEnrollmentProfile objects."
+author: "tfitzmac"
 ---
 
 # List depMacOSEnrollmentProfiles

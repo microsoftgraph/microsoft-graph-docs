@@ -1,6 +1,7 @@
 ---
 title: "List roleAssignments"
 description: "List properties and relationships of the roleAssignment objects."
+author: "tfitzmac"
 ---
 
 # List roleAssignments

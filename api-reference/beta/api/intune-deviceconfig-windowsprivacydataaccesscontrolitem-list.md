@@ -1,6 +1,7 @@
 ---
 title: "List windowsPrivacyDataAccessControlItems"
 description: "List properties and relationships of the windowsPrivacyDataAccessControlItem objects."
+author: "tfitzmac"
 ---
 
 # List windowsPrivacyDataAccessControlItems

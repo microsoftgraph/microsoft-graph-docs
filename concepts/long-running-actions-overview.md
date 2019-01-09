@@ -1,8 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
-ms.date: 09/10/2017
-ms.topic: conceptual
+title: "Working with long running actions (beta)"
+description: "This article describes working with long running actions."
 ---
 # Working with long running actions (beta)
 

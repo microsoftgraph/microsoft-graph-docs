@@ -1,6 +1,7 @@
 ---
 title: "vppTokenSyncStatus enum type"
 description: "Possible sync statuses associated with an Apple Volume Purchase Program token."
+author: "tfitzmac"
 ---
 
 # vppTokenSyncStatus enum type

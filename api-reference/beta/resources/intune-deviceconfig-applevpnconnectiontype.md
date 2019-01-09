@@ -1,6 +1,7 @@
 ---
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
+author: "tfitzmac"
 ---
 
 # appleVpnConnectionType enum type

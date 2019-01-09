@@ -1,6 +1,7 @@
 ---
 title: "vpnProviderType enum type"
 description: "Provider type for per-app VPN."
+author: "tfitzmac"
 ---
 
 # vpnProviderType enum type

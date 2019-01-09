@@ -1,6 +1,7 @@
 ---
 title: "Delete remoteActionAudit"
 description: "Deletes a remoteActionAudit."
+author: "tfitzmac"
 ---
 
 # Delete remoteActionAudit

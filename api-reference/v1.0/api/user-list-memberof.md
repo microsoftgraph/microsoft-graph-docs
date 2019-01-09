@@ -1,6 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
+author: "dkershaw10"
 ---
 
 # List memberOf

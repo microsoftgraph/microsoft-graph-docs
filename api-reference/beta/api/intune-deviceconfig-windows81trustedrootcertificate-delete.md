@@ -1,6 +1,7 @@
 ---
 title: "Delete windows81TrustedRootCertificate"
 description: "Deletes a windows81TrustedRootCertificate."
+author: "tfitzmac"
 ---
 
 # Delete windows81TrustedRootCertificate

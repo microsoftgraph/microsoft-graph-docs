@@ -1,6 +1,7 @@
 ---
 title: "Reset sync on an educationSynchronizationProfile"
 description: "Reset the sync of a specific school data synchronization profile in the tenant."
+author: "mmast-msft"
 ---
 
 # Reset sync on an educationSynchronizationProfile

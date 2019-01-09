@@ -1,6 +1,7 @@
 ---
 title: "Update androidManagedStoreAccountEnterpriseSettings"
 description: "Update the properties of a androidManagedStoreAccountEnterpriseSettings object."
+author: "tfitzmac"
 ---
 
 # Update androidManagedStoreAccountEnterpriseSettings

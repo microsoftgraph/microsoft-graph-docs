@@ -1,6 +1,7 @@
 ---
 title: "Get androidCompliancePolicy"
 description: "Read properties and relationships of the androidCompliancePolicy object."
+author: "tfitzmac"
 ---
 
 # Get androidCompliancePolicy

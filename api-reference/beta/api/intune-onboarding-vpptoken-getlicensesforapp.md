@@ -1,6 +1,7 @@
 ---
 title: "getLicensesForApp function"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # getLicensesForApp function

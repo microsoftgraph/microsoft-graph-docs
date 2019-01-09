@@ -1,6 +1,7 @@
 ---
 title: "Update conversation thread"
 description: "Update a thread object."
+author: "dkershaw10"
 ---
 
 # Update conversation thread

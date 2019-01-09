@@ -1,6 +1,7 @@
 ---
 title: "insights resource type"
 description: "Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive documents trending around users."
+author: "simonhult"
 ---
 
 # insights resource type

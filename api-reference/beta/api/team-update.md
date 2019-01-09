@@ -1,6 +1,7 @@
 ---
 title: "Update team"
 description: "Update the properties of the specified team."
+author: "nkramer"
 ---
 
 # Update team

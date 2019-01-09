@@ -1,6 +1,7 @@
 ---
 title: "managementState enum type"
 description: "Management state of device in Microsoft Intune."
+author: "tfitzmac"
 ---
 
 # managementState enum type

@@ -1,6 +1,7 @@
 ---
 title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
+author: "simonhult"
 ---
 
 # List shared

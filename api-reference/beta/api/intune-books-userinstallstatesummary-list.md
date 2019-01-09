@@ -1,6 +1,7 @@
 ---
 title: "List userInstallStateSummaries"
 description: "List properties and relationships of the userInstallStateSummary objects."
+author: "tfitzmac"
 ---
 
 # List userInstallStateSummaries

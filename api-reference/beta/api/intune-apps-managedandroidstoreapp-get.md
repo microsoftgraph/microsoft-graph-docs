@@ -1,6 +1,7 @@
 ---
 title: "Get managedAndroidStoreApp"
 description: "Read properties and relationships of the managedAndroidStoreApp object."
+author: "tfitzmac"
 ---
 
 # Get managedAndroidStoreApp

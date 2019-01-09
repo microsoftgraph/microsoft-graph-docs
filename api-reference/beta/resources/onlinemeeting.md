@@ -1,6 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
+author: "VinodRavichandran"
 ---
 
 # onlineMeeting resource type

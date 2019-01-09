@@ -1,6 +1,7 @@
 ---
 title: "windowsVpnConfiguration resource type"
 description: "Windows VPN configuration profile."
+author: "tfitzmac"
 ---
 
 # windowsVpnConfiguration resource type

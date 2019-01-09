@@ -1,6 +1,7 @@
 ---
 title: "windowsProtectionState resource type"
 description: "Device protection status entity."
+author: "tfitzmac"
 ---
 
 # windowsProtectionState resource type

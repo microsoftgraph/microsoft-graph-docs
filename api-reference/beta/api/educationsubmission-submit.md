@@ -1,6 +1,7 @@
 ---
 title: "educationSubmission: submit"
-description: ". During the submit process, all the resources will be copied to the submittedResources bucket. The teacher will be looking at the submitted resources list for grading."
+description: "An action that indicates that a student is done with the work and is ready to hand in the assignment. This action can only be taken by the student."
+author: "dipakboyed"
 ---
 
 # educationSubmission: submit

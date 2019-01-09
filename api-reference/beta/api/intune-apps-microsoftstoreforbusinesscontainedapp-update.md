@@ -1,6 +1,7 @@
 ---
 title: "Update microsoftStoreForBusinessContainedApp"
 description: "Update the properties of a microsoftStoreForBusinessContainedApp object."
+author: "tfitzmac"
 ---
 
 # Update microsoftStoreForBusinessContainedApp

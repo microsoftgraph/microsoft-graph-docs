@@ -1,6 +1,7 @@
 ---
 title: "Delete embeddedSIMDeviceState"
 description: "Deletes a embeddedSIMDeviceState."
+author: "tfitzmac"
 ---
 
 # Delete embeddedSIMDeviceState

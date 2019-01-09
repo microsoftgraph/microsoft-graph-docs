@@ -1,6 +1,7 @@
 ---
 title: "Create windowsWifiEnterpriseEAPConfiguration"
 description: "Create a new windowsWifiEnterpriseEAPConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windowsWifiEnterpriseEAPConfiguration

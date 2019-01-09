@@ -1,6 +1,7 @@
 ---
 title: "mdmAppConfigKeyType enum type"
 description: "App configuration key types."
+author: "tfitzmac"
 ---
 
 # mdmAppConfigKeyType enum type

@@ -1,6 +1,7 @@
 ---
 title: "Delete androidWorkProfileVpnConfiguration"
 description: "Deletes a androidWorkProfileVpnConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete androidWorkProfileVpnConfiguration

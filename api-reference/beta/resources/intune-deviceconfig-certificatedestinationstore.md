@@ -1,6 +1,7 @@
 ---
 title: "certificateDestinationStore enum type"
 description: "Possible values for the Certificate Destination Store."
+author: "tfitzmac"
 ---
 
 # certificateDestinationStore enum type

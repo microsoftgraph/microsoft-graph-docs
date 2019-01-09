@@ -1,6 +1,7 @@
 ---
 title: "Get groupLifecyclePolicy"
 description: "Retrieve the properties and relationships of a groupLifecyclePolicies object."
+author: "dkershaw10"
 ---
 
 # Get groupLifecyclePolicy

@@ -1,6 +1,7 @@
 ---
 title: "Create microsoftStoreForBusinessContainedApp"
 description: "Create a new microsoftStoreForBusinessContainedApp object."
+author: "tfitzmac"
 ---
 
 # Create microsoftStoreForBusinessContainedApp

@@ -1,6 +1,7 @@
 ---
 title: "administratorConfiguredDeviceComplianceState enum type"
 description: "Administrator configured device compliance state Enum"
+author: "tfitzmac"
 ---
 
 # administratorConfiguredDeviceComplianceState enum type

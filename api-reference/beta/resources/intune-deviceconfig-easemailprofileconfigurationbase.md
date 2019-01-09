@@ -1,6 +1,7 @@
 ---
 title: "easEmailProfileConfigurationBase resource type"
 description: "Apple device features configuration profile."
+author: "tfitzmac"
 ---
 
 # easEmailProfileConfigurationBase resource type

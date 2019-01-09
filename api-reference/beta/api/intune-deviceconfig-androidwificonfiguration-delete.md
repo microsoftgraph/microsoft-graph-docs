@@ -1,6 +1,7 @@
 ---
 title: "Delete androidWiFiConfiguration"
 description: "Deletes a androidWiFiConfiguration."
+author: "tfitzmac"
 ---
 
 # Delete androidWiFiConfiguration

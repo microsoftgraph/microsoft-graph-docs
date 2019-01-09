@@ -1,6 +1,7 @@
 ---
 title: "ChartSeriesFormat resource type"
 description: "encapsulates the format properties for the chart series"
+author: "lumine2008"
 ---
 
 # ChartSeriesFormat resource type

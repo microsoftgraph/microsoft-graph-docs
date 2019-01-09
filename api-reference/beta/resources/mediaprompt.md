@@ -1,6 +1,7 @@
 ---
 title: "mediaPrompt resource type"
 description: "The mediaPrompt type."
+author: "VinodRavichandran"
 ---
 
 # mediaPrompt resource type

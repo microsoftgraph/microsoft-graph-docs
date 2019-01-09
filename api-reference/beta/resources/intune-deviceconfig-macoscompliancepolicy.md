@@ -1,6 +1,7 @@
 ---
 title: "macOSCompliancePolicy resource type"
 description: "This class contains compliance settings for Mac OS."
+author: "tfitzmac"
 ---
 
 # macOSCompliancePolicy resource type

@@ -1,6 +1,7 @@
 ---
 title: "mobileAppAssignment resource type"
 description: "A class containing the properties used for Group Assignment of a Mobile App."
+author: "tfitzmac"
 ---
 
 # mobileAppAssignment resource type

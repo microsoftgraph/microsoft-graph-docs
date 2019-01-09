@@ -1,6 +1,7 @@
 ---
 title: "Update iosLobAppProvisioningConfiguration"
 description: "Update the properties of a iosLobAppProvisioningConfiguration object."
+author: "tfitzmac"
 ---
 
 # Update iosLobAppProvisioningConfiguration

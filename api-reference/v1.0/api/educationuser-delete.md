@@ -1,6 +1,7 @@
 ---
 title: "Delete educationUser"
 description: "Delete a user."
+author: "mmast-msft"
 ---
 
 # Delete educationUser

@@ -1,6 +1,7 @@
 ---
 title: "List windowsPhone81SCEPCertificateProfiles"
 description: "List properties and relationships of the windowsPhone81SCEPCertificateProfile objects."
+author: "tfitzmac"
 ---
 
 # List windowsPhone81SCEPCertificateProfiles

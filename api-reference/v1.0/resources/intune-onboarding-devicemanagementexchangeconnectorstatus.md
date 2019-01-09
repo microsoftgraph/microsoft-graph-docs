@@ -1,6 +1,7 @@
 ---
 title: "deviceManagementExchangeConnectorStatus enum type"
 description: "The current status of the Exchange Connector."
+author: "tfitzmac"
 ---
 
 # deviceManagementExchangeConnectorStatus enum type

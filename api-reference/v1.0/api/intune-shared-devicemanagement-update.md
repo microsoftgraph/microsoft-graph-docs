@@ -1,6 +1,7 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
+author: "tfitzmac"
 ---
 
 # Update deviceManagement

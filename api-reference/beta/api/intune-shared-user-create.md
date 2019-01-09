@@ -1,6 +1,7 @@
 ---
 title: "Create user"
 description: "Create a new user object."
+author: "tfitzmac"
 ---
 
 # Create user

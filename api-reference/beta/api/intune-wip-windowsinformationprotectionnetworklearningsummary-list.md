@@ -1,6 +1,7 @@
 ---
 title: "List windowsInformationProtectionNetworkLearningSummaries"
 description: "List properties and relationships of the windowsInformationProtectionNetworkLearningSummary objects."
+author: "tfitzmac"
 ---
 
 # List windowsInformationProtectionNetworkLearningSummaries

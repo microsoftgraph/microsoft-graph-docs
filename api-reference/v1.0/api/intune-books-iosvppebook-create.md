@@ -1,6 +1,7 @@
 ---
 title: "Create iosVppEBook"
 description: "Create a new iosVppEBook object."
+author: "tfitzmac"
 ---
 
 # Create iosVppEBook

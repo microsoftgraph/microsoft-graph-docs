@@ -1,6 +1,7 @@
 ---
 title: "Update chartlegend"
 description: "Update the properties of chartlegend object."
+author: "lumine2008"
 ---
 
 # Update chartlegend

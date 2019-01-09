@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceComplianceScheduledActionForRule"
 description: "Deletes a deviceComplianceScheduledActionForRule."
+author: "tfitzmac"
 ---
 
 # Delete deviceComplianceScheduledActionForRule

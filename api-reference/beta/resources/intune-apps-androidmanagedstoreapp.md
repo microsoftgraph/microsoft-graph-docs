@@ -1,6 +1,7 @@
 ---
 title: "androidManagedStoreApp resource type"
 description: "Contains properties and inherited properties for Android Managed Store Apps."
+author: "tfitzmac"
 ---
 
 # androidManagedStoreApp resource type

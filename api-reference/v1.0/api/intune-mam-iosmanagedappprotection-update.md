@@ -1,6 +1,7 @@
 ---
 title: "Update iosManagedAppProtection"
 description: "Update the properties of a iosManagedAppProtection object."
+author: "tfitzmac"
 ---
 
 # Update iosManagedAppProtection

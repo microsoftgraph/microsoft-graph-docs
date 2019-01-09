@@ -1,6 +1,7 @@
 ---
 title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
+author: "nkramer"
 ---
 
 # Get team

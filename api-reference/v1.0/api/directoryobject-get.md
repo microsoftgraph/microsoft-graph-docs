@@ -1,6 +1,7 @@
 ---
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
+author: "lleonard-msft"
 ---
 
 # Get directoryObject

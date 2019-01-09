@@ -1,6 +1,7 @@
 ---
 title: "defenderProtectionType enum type"
 description: "Possible values of Defender Protection"
+author: "tfitzmac"
 ---
 
 # defenderProtectionType enum type

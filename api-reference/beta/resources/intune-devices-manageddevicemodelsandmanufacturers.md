@@ -1,6 +1,7 @@
 ---
 title: "managedDeviceModelsAndManufacturers resource type"
 description: "Models and Manufactures meatadata for managed devices in the account"
+author: "tfitzmac"
 ---
 
 # managedDeviceModelsAndManufacturers resource type

@@ -1,6 +1,7 @@
 ---
 title: "List mobileThreatDefenseConnectors"
 description: "List properties and relationships of the mobileThreatDefenseConnector objects."
+author: "tfitzmac"
 ---
 
 # List mobileThreatDefenseConnectors

@@ -1,6 +1,7 @@
 ---
 title: "Get a directory setting"
 description: "Retrieve the properties of a specific directory setting object."
+author: "lleonard-msft"
 ---
 
 # Get a directory setting

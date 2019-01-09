@@ -1,6 +1,7 @@
 ---
 title: "unshareForSchoolDataSyncService action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # unshareForSchoolDataSyncService action

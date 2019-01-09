@@ -1,6 +1,7 @@
 ---
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
+author: "tfitzmac"
 ---
 
 # updateClassification enum type

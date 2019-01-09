@@ -1,6 +1,7 @@
 ---
 title: "invitationParticipantInfo resource type"
 description: "The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters."
+author: "VinodRavichandran"
 ---
 
 # invitationParticipantInfo resource type

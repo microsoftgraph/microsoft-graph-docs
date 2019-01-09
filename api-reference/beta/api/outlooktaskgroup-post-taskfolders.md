@@ -1,6 +1,7 @@
 ---
 title: "Create outlookTaskFolder"
 description: "Create an Outlook task folder under a specified outlookTaskGroup."
+author: "angelgolfer-ms"
 ---
 
 # Create outlookTaskFolder

@@ -1,6 +1,7 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
+author: "nkramer"
 ---
 
 # Get channel

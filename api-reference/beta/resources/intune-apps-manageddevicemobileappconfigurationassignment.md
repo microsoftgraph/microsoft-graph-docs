@@ -1,6 +1,7 @@
 ---
 title: "managedDeviceMobileAppConfigurationAssignment resource type"
 description: "Contains the properties used to assign an MDM app configuration to a group."
+author: "tfitzmac"
 ---
 
 # managedDeviceMobileAppConfigurationAssignment resource type

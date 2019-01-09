@@ -5,7 +5,8 @@ description: "Update the properties of the currently authenticated organization.
 
 # Update organization
 
-Update the properties of the currently authenticated organization.
+Update the properties of the currently authenticated organization. In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.  The **ID** is also known as the **tenantId** of the organization.
+
 
 ## Permissions
 
@@ -22,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
@@ -33,6 +34,7 @@ PATCH /organization
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -57,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 

@@ -94,7 +94,7 @@
       - name: Mail
         href: outlook-mail-concept-overview.md
         items:
-        - name: Create and send messages
+        - name: Automate messaging
           href: outlook-create-send-messages.md
         - name: Organize messages
           href: outlook-organize-messages.md

@@ -1,6 +1,7 @@
 ---
 title: "Create ChartPoints"
 description: "Use this API to create a new ChartPoints."
+author: "lumine2008"
 ---
 
 # Create ChartPoints

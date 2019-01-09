@@ -1,6 +1,7 @@
 ---
 title: "Create managedEBookCategory"
 description: "Create a new managedEBookCategory object."
+author: "tfitzmac"
 ---
 
 # Create managedEBookCategory

@@ -1,6 +1,7 @@
 ---
 title: "iPv4Range resource type"
 description: "IP V4 range"
+author: "tfitzmac"
 ---
 
 # iPv4Range resource type

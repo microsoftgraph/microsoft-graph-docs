@@ -1,6 +1,7 @@
 ---
 title: "Create managedIOSLobApp"
 description: "Create a new managedIOSLobApp object."
+author: "tfitzmac"
 ---
 
 # Create managedIOSLobApp

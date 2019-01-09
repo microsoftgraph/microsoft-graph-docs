@@ -1,6 +1,7 @@
 ---
 title: "List group settings"
 description: "Retrieve a list of group setting objects."
+author: "dkershaw10"
 ---
 
 # List group settings

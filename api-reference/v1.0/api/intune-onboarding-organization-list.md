@@ -1,6 +1,7 @@
 ---
 title: "List organizations"
 description: "List properties and relationships of the organization objects."
+author: "tfitzmac"
 ---
 
 # List organizations

@@ -1,6 +1,7 @@
 ---
 title: "androidForWorkRequiredPasswordType enum type"
 description: "Android For Work required password type."
+author: "tfitzmac"
 ---
 
 # androidForWorkRequiredPasswordType enum type

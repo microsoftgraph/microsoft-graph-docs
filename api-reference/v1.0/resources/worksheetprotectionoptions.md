@@ -1,6 +1,7 @@
 ---
 title: "WorksheetProtectionOptions resource type"
 description: "Represents the options in sheet protection."
+author: "lumine2008"
 ---
 
 # WorksheetProtectionOptions resource type

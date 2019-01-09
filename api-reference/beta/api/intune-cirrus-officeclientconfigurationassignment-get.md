@@ -1,6 +1,7 @@
 ---
 title: "Get officeClientConfigurationAssignment"
 description: "Read properties and relationships of the officeClientConfigurationAssignment object."
+author: "tfitzmac"
 ---
 
 # Get officeClientConfigurationAssignment

@@ -1,6 +1,7 @@
 ---
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
+author: "tfitzmac"
 ---
 
 # deviceConfiguration resource type

@@ -1,6 +1,7 @@
 ---
 title: "List managedDeviceMobileAppConfigurationUserStatuses"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationUserStatus objects."
+author: "tfitzmac"
 ---
 
 # List managedDeviceMobileAppConfigurationUserStatuses

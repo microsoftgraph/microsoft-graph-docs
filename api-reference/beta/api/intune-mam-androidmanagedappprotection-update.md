@@ -1,6 +1,7 @@
 ---
 title: "Update androidManagedAppProtection"
 description: "Update the properties of a androidManagedAppProtection object."
+author: "tfitzmac"
 ---
 
 # Update androidManagedAppProtection

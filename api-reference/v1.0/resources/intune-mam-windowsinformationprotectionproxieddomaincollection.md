@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtectionProxiedDomainCollection resource type"
 description: "Windows Information Protection Proxied Domain Collection"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionProxiedDomainCollection resource type

@@ -1,6 +1,7 @@
 ---
 title: "Update deviceCompliancePolicyAssignment"
 description: "Update the properties of a deviceCompliancePolicyAssignment object."
+author: "tfitzmac"
 ---
 
 # Update deviceCompliancePolicyAssignment

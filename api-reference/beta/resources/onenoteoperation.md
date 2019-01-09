@@ -1,6 +1,7 @@
 ---
 title: "onenoteOperation resource type"
 description: "The status of certain long-running OneNote operations."
+author: "Jewan-microsoft"
 ---
 
 # onenoteOperation resource type

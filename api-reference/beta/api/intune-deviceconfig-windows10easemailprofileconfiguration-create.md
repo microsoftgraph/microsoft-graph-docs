@@ -1,6 +1,7 @@
 ---
 title: "Create windows10EasEmailProfileConfiguration"
 description: "Create a new windows10EasEmailProfileConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create windows10EasEmailProfileConfiguration

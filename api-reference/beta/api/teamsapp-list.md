@@ -1,6 +1,7 @@
 ---
 title: "List the published apps from the Microsoft Teams app catalog"
 description: "List apps from the Microsoft Teams app catalog. "
+author: "nkramer"
 ---
 
 # List the published apps from the Microsoft Teams app catalog

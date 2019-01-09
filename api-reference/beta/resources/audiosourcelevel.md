@@ -1,6 +1,7 @@
 ---
 title: "audioSourceLevel resource type"
 description: "Level configuration for other sources."
+author: "VinodRavichandran"
 ---
 
 # audioSourceLevel resource type

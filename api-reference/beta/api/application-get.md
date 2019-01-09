@@ -1,6 +1,7 @@
 ---
 title: "Get application"
 description: "Retrieve the properties and relationships of application object."
+author: "lleonard-msft"
 ---
 
 # Get application

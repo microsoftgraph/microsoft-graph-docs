@@ -1,6 +1,7 @@
 ---
 title: "Get a scopedRoleMember"
 description: "Retrieve a specific scopedRoleMembership resource."
+author: "lleonard-msft"
 ---
 
 # Get a scopedRoleMember

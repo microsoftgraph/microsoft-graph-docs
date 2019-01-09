@@ -1,6 +1,7 @@
 ---
 title: "ratingFranceTelevisionType enum type"
 description: "TV content rating labels in France"
+author: "tfitzmac"
 ---
 
 # ratingFranceTelevisionType enum type

@@ -1,6 +1,7 @@
 ---
 title: "Create androidDeviceOwnerWiFiConfiguration"
 description: "Create a new androidDeviceOwnerWiFiConfiguration object."
+author: "tfitzmac"
 ---
 
 # Create androidDeviceOwnerWiFiConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "List androidCustomConfigurations"
 description: "List properties and relationships of the androidCustomConfiguration objects."
+author: "tfitzmac"
 ---
 
 # List androidCustomConfigurations

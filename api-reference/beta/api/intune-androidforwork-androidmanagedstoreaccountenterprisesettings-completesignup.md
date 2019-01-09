@@ -1,6 +1,7 @@
 ---
 title: "completeSignup action"
 description: "Not yet documented"
+author: "tfitzmac"
 ---
 
 # completeSignup action
