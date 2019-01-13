@@ -365,7 +365,7 @@ Content-Type: application/json
 * Use an exponential back off strategy if any 5xx server errors are returned when resuming or retrying upload requests.
 * For other errors, you should not use an exponential back off strategy but limit the number of retry attempts made.
 * Handle `404 Not Found` errors when doing resumable uploads by starting the entire upload over. This indicates the upload session no longer exists.
-* Use resumable file transfers for files larger than 10 MiB (10,485,760 bytes).
+* Use resumable file transfers for files larger than 4MB.
 * A byte range size of 10 MiB for stable high speed connections is optimal. For slower or less reliable connections you may get better results from a smaller fragment size. The recommended fragment size is between 5-10 MiB.
 * Use a byte range size that is a multiple of 320 KiB (327,680 bytes). Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.
 
