@@ -1,6 +1,7 @@
 ---
 title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
+localization_priority: Normal
 ---
 
 # Cancel governanceRoleAssignmentRequest

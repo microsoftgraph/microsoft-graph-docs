@@ -2,6 +2,8 @@
 title: "user: reminderView"
 description: "Return a list of calendar reminders within the specified start and end times. "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: reminderView

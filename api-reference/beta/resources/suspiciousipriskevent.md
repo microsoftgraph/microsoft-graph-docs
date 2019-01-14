@@ -1,6 +1,7 @@
 ---
 title: "suspiciousIpRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection where an account sign-in is attempted from a suspicious IP address. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+localization_priority: Normal
 ---
 
 # suspiciousIpRiskEvent resource type

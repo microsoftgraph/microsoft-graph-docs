@@ -2,6 +2,8 @@
 title: "Intune devices and apps API overview"
 description: "Microsoft Intune helps enterprises manage devices and apps within an organization. You can use the Intune API in Microsoft Graph to manage devices, apps, and even configure Intune while using your preferred tools. "
 author: "tfitzmac"
+localization_priority: Priority
+ms.prod: "intune"
 ---
 
 # Intune devices and apps API overview

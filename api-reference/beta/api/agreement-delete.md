@@ -1,6 +1,7 @@
 ---
 title: "Delete agreement"
 description: "Delete an agreement object."
+localization_priority: Normal
 ---
 
 # Delete agreement

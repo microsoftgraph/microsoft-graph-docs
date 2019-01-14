@@ -2,6 +2,8 @@
 title: "deviceCompliancePolicyAssignment resource type"
 description: "Device compliance policy assignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceCompliancePolicyAssignment resource type

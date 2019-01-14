@@ -2,6 +2,8 @@
 title: "Get depIOSEnrollmentProfile"
 description: "Read properties and relationships of the depIOSEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get depIOSEnrollmentProfile

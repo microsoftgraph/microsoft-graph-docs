@@ -2,6 +2,8 @@
 title: "Update conversation thread"
 description: "Update a thread object."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Update conversation thread

@@ -2,6 +2,8 @@
 title: "List androidForWorkWiFiConfigurations"
 description: "List properties and relationships of the androidForWorkWiFiConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidForWorkWiFiConfigurations

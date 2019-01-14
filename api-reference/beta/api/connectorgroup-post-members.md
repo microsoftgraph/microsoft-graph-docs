@@ -1,6 +1,7 @@
 ---
 title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
+localization_priority: Normal
 ---
 
 # Add connector to connectorGroup

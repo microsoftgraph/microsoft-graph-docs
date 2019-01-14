@@ -2,6 +2,8 @@
 title: "Upgrade an app in a team"
 description: "Upgrades an app installation in a team"
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Upgrade an app in a team

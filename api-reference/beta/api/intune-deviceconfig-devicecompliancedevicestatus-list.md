@@ -2,6 +2,8 @@
 title: "List deviceComplianceDeviceStatuses"
 description: "List properties and relationships of the deviceComplianceDeviceStatus objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceComplianceDeviceStatuses

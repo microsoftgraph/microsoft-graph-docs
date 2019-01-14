@@ -2,6 +2,8 @@
 title: "Delete app from team"
 description: "Uninstalls an app from the specified team."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Delete app from team

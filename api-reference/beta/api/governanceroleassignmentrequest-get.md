@@ -1,6 +1,7 @@
 ---
 title: "Get governanceRoleAssignmentRequest"
 description: "Get a governanceRoleAssignmentRequest. "
+localization_priority: Normal
 ---
 
 # Get governanceRoleAssignmentRequest

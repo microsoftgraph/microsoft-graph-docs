@@ -2,6 +2,8 @@
 title: "ndesConnectorState enum type"
 description: "The current status of the Ndes Connector."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ndesConnectorState enum type

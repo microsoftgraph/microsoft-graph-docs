@@ -2,6 +2,8 @@
 title: "Update embeddedSIMActivationCodePoolAssignment"
 description: "Update the properties of a embeddedSIMActivationCodePoolAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update embeddedSIMActivationCodePoolAssignment

@@ -1,7 +1,9 @@
-﻿---
+---
 title: "Get Online Meeting"
 description: "Retrieve the properties and relationships of an **onlineMeeting** object."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Get Online Meeting

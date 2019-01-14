@@ -2,6 +2,8 @@
 title: "settings resource type"
 description: "The current user settings. "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # settings resource type

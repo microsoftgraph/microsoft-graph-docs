@@ -2,6 +2,8 @@
 title: "win32LobAppFileSystemDetection resource type"
 description: "Contains file or folder path to detect a Win32 App"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # win32LobAppFileSystemDetection resource type

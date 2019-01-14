@@ -2,6 +2,8 @@
 title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List memberOf

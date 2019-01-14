@@ -2,6 +2,8 @@
 title: "Delete channel"
 description: "Delete the channel."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Delete channel

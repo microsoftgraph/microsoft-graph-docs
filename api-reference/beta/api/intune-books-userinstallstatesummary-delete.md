@@ -2,6 +2,8 @@
 title: "Delete userInstallStateSummary"
 description: "Deletes a userInstallStateSummary."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete userInstallStateSummary

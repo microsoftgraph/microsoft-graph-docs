@@ -2,6 +2,8 @@
 title: "List windowsUniversalAppXContainedApps"
 description: "List properties and relationships of the windowsUniversalAppXContainedApp objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsUniversalAppXContainedApps

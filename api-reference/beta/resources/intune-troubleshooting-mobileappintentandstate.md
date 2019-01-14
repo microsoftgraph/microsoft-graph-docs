@@ -2,6 +2,8 @@
 title: "mobileAppIntentAndState resource type"
 description: "MobileApp Intent and Install State for a given device."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mobileAppIntentAndState resource type

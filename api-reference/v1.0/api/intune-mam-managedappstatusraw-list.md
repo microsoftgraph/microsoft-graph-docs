@@ -2,6 +2,8 @@
 title: "List managedAppStatusRaws"
 description: "List properties and relationships of the managedAppStatusRaw objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedAppStatusRaws

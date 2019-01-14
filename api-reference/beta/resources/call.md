@@ -2,6 +2,8 @@
 title: "call resource type"
 description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`."
 author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # call resource type

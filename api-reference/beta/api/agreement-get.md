@@ -1,6 +1,7 @@
 ---
 title: "Get agreement"
 description: "Retrieve the properties and relationships of an agreement object."
+localization_priority: Normal
 ---
 
 # Get agreement

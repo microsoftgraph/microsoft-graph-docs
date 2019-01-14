@@ -2,6 +2,7 @@
 title: "Add custom data to groups using schema extensions "
 description: "We're going to walk you through an example to demonstrate how to use *schema extensions*. "
 author: "dkershaw10"
+localization_priority: Priority
 ---
 
 # Add custom data to groups using schema extensions 

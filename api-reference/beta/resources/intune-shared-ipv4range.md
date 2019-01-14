@@ -2,6 +2,8 @@
 title: "iPv4Range resource type"
 description: "IP V4 range"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iPv4Range resource type

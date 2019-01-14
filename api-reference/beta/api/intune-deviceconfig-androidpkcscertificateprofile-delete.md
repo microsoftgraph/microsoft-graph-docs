@@ -2,6 +2,8 @@
 title: "Delete androidPkcsCertificateProfile"
 description: "Deletes a androidPkcsCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidPkcsCertificateProfile

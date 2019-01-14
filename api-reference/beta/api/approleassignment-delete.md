@@ -1,6 +1,7 @@
 ---
 title: "Delete appRoleAssignment"
 description: "Delete appRoleAssignment."
+localization_priority: Normal
 ---
 
 # Delete appRoleAssignment

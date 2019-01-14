@@ -2,6 +2,8 @@
 title: "Get androidWorkProfileCertificateProfileBase"
 description: "Read properties and relationships of the androidWorkProfileCertificateProfileBase object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidWorkProfileCertificateProfileBase

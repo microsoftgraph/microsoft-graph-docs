@@ -2,6 +2,8 @@
 title: "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type"
 description: "Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type

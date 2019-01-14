@@ -2,6 +2,8 @@
 title: "Delete androidForWorkVpnConfiguration"
 description: "Deletes a androidForWorkVpnConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkVpnConfiguration

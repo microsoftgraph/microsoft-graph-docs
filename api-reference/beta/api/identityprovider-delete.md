@@ -1,6 +1,7 @@
 ---
 title: "Delete identityProvider"
 description: "Delete an existing identityProvider."
+localization_priority: Normal
 ---
 
 # Delete identityProvider

@@ -1,6 +1,7 @@
 ---
 title: "targetResourceRole resource type"
 description: "Indicates the role which was the target of the activity change. Derived from the targetResource resource."
+localization_priority: Normal
 ---
 
 # targetResourceRole resource type

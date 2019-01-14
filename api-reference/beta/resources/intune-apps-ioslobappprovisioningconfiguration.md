@@ -1,6 +1,9 @@
 ---
 title: "iosLobAppProvisioningConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the IOS Lob App Provisioning Configuration resource."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # iosLobAppProvisioningConfiguration resource type

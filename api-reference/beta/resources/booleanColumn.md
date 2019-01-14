@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: BooleanColumn
+localization_priority: Normal
 ---
 # BooleanColumn resource type
 

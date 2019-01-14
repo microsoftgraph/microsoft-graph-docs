@@ -2,6 +2,8 @@
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsUpdateForBusinessConfiguration resource type

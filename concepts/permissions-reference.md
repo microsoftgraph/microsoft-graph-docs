@@ -2,6 +2,7 @@
 title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. "
 author: "jackson-woods"
+localization_priority: Priority
 ---
 
 # Microsoft Graph permissions reference 
@@ -1093,6 +1094,7 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+ms.prod: "microsoft-identity-platform"
 ---
 ## User Activity permissions
 

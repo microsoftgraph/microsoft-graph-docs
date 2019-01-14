@@ -1,6 +1,9 @@
 ---
 title: "educationAssignment resource type"
 description: "The **educationAssignment** resource represents a task or unit of work assigned to a student or team member in a class as part of their study. Only teachers or team owners can create assignments. Assignments contain handouts and tasks that the teacher wants the student to work on. Each student assignment has an associated submission that contains any work their teacher asked to be turned in. A teacher can add scores and feedback to the submission turned in by the student."
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # educationAssignment resource type

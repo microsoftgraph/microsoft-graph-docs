@@ -2,6 +2,8 @@
 title: "Get managedDeviceMobileAppConfigurationDeviceSummary"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedDeviceMobileAppConfigurationDeviceSummary

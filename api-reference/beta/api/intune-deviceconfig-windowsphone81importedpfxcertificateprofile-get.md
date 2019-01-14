@@ -2,6 +2,8 @@
 title: "Get windowsPhone81ImportedPFXCertificateProfile"
 description: "Read properties and relationships of the windowsPhone81ImportedPFXCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsPhone81ImportedPFXCertificateProfile

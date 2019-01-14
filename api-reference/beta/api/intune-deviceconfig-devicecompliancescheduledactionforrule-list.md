@@ -2,6 +2,8 @@
 title: "List deviceComplianceScheduledActionForRules"
 description: "List properties and relationships of the deviceComplianceScheduledActionForRule objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceComplianceScheduledActionForRules

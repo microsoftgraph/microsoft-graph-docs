@@ -1,6 +1,7 @@
 ---
 title: "synchronizationProgress resource type"
 description: "Represents the progress of a synchronizationJob toward completion."
+localization_priority: Normal
 ---
 
 # synchronizationProgress resource type

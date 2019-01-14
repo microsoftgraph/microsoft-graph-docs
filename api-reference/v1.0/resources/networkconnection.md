@@ -1,6 +1,7 @@
 ---
 title: "networkConnection resource type"
 description: "Contains stateful information about the network connection related to the alert."
+localization_priority: Normal
 ---
 
 # networkConnection resource type

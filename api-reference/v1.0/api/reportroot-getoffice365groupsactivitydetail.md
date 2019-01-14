@@ -1,6 +1,8 @@
 ---
 title: "reportRoot: getOffice365GroupsActivityDetail"
 description: "Get details about Office 365 Groups activity by group."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getOffice365GroupsActivityDetail

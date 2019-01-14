@@ -1,6 +1,7 @@
 ---
 title: "governanceRoleAssignment resource type"
 description: "Represents the assignment of a user or group to a role."
+localization_priority: Normal
 ---
 
 # governanceRoleAssignment resource type

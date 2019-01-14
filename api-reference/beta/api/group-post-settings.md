@@ -2,6 +2,8 @@
 title: "Create a directory setting on groups"
 description: "Use this API to create a new directory setting for the group."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create a directory setting on groups

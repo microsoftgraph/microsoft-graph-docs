@@ -2,6 +2,8 @@
 title: "Create mailFolder"
 description: "Use this API to create a new child mailFolder."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create mailFolder

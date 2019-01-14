@@ -2,6 +2,8 @@
 title: "Update iosUpdateDeviceStatus"
 description: "Update the properties of a iosUpdateDeviceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosUpdateDeviceStatus

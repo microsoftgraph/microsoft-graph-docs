@@ -2,6 +2,8 @@
 title: "Create Message"
 description: "Use this API to create a new Message in a mailfolder."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create Message

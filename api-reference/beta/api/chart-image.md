@@ -2,6 +2,8 @@
 title: "Chart: Image"
 description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Chart: Image

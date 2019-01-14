@@ -2,6 +2,8 @@
 title: "ratingJapanTelevisionType enum type"
 description: "TV content rating labels in Japan"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingJapanTelevisionType enum type

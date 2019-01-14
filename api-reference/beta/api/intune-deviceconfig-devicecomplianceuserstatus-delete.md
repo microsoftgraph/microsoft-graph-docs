@@ -2,6 +2,8 @@
 title: "Delete deviceComplianceUserStatus"
 description: "Deletes a deviceComplianceUserStatus."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceComplianceUserStatus

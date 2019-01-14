@@ -2,6 +2,8 @@
 title: "RangeFill resource type"
 description: "Represents the background of a range object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # RangeFill resource type

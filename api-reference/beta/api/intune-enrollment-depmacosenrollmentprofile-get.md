@@ -2,6 +2,8 @@
 title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get depMacOSEnrollmentProfile

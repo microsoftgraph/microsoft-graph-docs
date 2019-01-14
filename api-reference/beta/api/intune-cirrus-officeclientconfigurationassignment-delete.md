@@ -2,6 +2,8 @@
 title: "Delete officeClientConfigurationAssignment"
 description: "Deletes a officeClientConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete officeClientConfigurationAssignment

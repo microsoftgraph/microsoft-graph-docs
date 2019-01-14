@@ -2,6 +2,8 @@
 title: "notificationMessageTemplate resource type"
 description: " section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # notificationMessageTemplate resource type

@@ -2,6 +2,8 @@
 title: "List mobileContainedApps"
 description: "List properties and relationships of the mobileContainedApp objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List mobileContainedApps

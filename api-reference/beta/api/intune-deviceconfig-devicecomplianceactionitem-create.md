@@ -2,6 +2,8 @@
 title: "Create deviceComplianceActionItem"
 description: "Create a new deviceComplianceActionItem object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceComplianceActionItem

@@ -1,6 +1,7 @@
 ---
 title: "settingTemplateValue resource type"
 description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
+localization_priority: Normal
 ---
 
 # settingTemplateValue resource type

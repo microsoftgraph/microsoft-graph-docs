@@ -1,6 +1,7 @@
 ---
 title: "connector resource type"
 description: "Here is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # connector resource type

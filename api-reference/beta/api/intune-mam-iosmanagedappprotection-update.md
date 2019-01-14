@@ -2,6 +2,8 @@
 title: "Update iosManagedAppProtection"
 description: "Update the properties of a iosManagedAppProtection object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosManagedAppProtection

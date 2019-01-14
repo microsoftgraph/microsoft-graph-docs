@@ -2,6 +2,8 @@
 title: "Get managedDeviceMobileAppConfigurationDeviceStatus"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedDeviceMobileAppConfigurationDeviceStatus

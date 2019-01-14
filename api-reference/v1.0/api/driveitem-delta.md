@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sync the contents of a drive
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Track changes for a Drive
 

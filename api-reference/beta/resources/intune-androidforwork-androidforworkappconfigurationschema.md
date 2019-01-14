@@ -1,6 +1,9 @@
 ---
 title: "androidForWorkAppConfigurationSchema resource type"
 description: "Schema describing an Android for Work application's custom configurations."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # androidForWorkAppConfigurationSchema resource type

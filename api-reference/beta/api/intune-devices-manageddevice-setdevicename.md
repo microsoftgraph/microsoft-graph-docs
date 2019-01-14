@@ -2,6 +2,8 @@
 title: "setDeviceName action"
 description: "Set device name of the device."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # setDeviceName action

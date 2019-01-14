@@ -1,6 +1,7 @@
 ---
 title: "Delete servicePrincipal"
 description: "Delete servicePrincipal."
+localization_priority: Normal
 ---
 
 # Delete servicePrincipal

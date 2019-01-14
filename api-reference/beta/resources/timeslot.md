@@ -1,6 +1,7 @@
 ---
 title: "timeSlot resource type"
 description: "A time period."
+localization_priority: Normal
 ---
 
 # timeSlot resource type

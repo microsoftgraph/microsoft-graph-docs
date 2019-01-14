@@ -2,6 +2,8 @@
 title: "Get windows81WifiImportConfiguration"
 description: "Read properties and relationships of the windows81WifiImportConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows81WifiImportConfiguration

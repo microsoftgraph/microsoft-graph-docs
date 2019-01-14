@@ -2,6 +2,8 @@
 title: "Get directory objects from a list of ids"
 description: "select` query option is not available for this operation."
 author: "lleonard-msft"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get directory objects from a list of ids

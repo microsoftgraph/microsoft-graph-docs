@@ -1,6 +1,7 @@
 ---
 title: "Get connector"
 description: "Retrieve the properties of a connector object."
+localization_priority: Normal
 ---
 
 # Get connector

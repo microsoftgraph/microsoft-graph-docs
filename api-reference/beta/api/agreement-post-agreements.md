@@ -1,6 +1,7 @@
 ---
 title: "Create agreement"
 description: "Create a new agreement object."
+localization_priority: Normal
 ---
 
 # Create agreement

@@ -2,6 +2,8 @@
 title: "List iosCompliancePolicies"
 description: "List properties and relationships of the iosCompliancePolicy objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosCompliancePolicies

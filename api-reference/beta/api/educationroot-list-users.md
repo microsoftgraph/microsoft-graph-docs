@@ -2,6 +2,8 @@
 title: "List users"
 description: "Retrieve a list of user objects. These user objects will include education-specific properties."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List users

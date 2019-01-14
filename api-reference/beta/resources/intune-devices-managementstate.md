@@ -2,6 +2,8 @@
 title: "managementState enum type"
 description: "Management state of device in Microsoft Intune."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managementState enum type

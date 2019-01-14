@@ -2,6 +2,8 @@
 title: "message: replyAll"
 description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # message: replyAll

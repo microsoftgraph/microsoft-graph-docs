@@ -2,6 +2,8 @@
 title: "List depIOSEnrollmentProfiles"
 description: "List properties and relationships of the depIOSEnrollmentProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List depIOSEnrollmentProfiles

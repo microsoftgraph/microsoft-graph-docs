@@ -2,6 +2,8 @@
 title: "Delete enrollmentConfigurationAssignment"
 description: "Deletes a enrollmentConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete enrollmentConfigurationAssignment

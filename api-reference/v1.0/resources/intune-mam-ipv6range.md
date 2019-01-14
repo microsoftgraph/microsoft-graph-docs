@@ -2,6 +2,8 @@
 title: "iPv6Range resource type"
 description: "IP V6 range"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iPv6Range resource type

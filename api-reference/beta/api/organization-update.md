@@ -1,14 +1,19 @@
 ---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update organization
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of the currently authenticated organization.
+Update the properties of the currently authenticated organization. In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.  The **ID** is also known as the **tenantId** of the organization.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type | Permissions (from least to most privileged) |
@@ -18,17 +23,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /organization
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{id}
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -53,8 +62,9 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_organization"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/beta/organization
+PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
 Content-length: 411
 
@@ -70,13 +80,16 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+
 ##### Response
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.organization"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -85,6 +98,7 @@ HTTP/1.1 204 No Content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

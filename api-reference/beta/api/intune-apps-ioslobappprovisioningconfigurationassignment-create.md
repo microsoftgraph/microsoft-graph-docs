@@ -2,6 +2,8 @@
 title: "Create iosLobAppProvisioningConfigurationAssignment"
 description: "Create a new iosLobAppProvisioningConfigurationAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosLobAppProvisioningConfigurationAssignment

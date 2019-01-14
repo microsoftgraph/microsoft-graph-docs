@@ -1,6 +1,7 @@
 ---
 title: "List unfamiliarLocationRiskEvents"
 description: "Retrieve a list of unfamiliarlocationriskevent objects."
+localization_priority: Normal
 ---
 
 # List unfamiliarLocationRiskEvents

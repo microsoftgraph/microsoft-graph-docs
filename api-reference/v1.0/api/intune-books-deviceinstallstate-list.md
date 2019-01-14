@@ -2,6 +2,8 @@
 title: "List deviceInstallStates"
 description: "List properties and relationships of the deviceInstallState objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceInstallStates

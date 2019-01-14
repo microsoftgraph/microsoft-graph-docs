@@ -2,6 +2,8 @@
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List licenseDetails

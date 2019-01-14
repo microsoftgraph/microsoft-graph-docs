@@ -2,6 +2,8 @@
 title: "deviceManagementExchangeAccessLevel enum type"
 description: "Access Level in Exchange."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementExchangeAccessLevel enum type

@@ -2,6 +2,8 @@
 title: "osVersionCount resource type"
 description: "Count of devices with malware for each OS version"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # osVersionCount resource type

@@ -2,6 +2,8 @@
 title: "Get windows81CompliancePolicy"
 description: "Read properties and relationships of the windows81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows81CompliancePolicy

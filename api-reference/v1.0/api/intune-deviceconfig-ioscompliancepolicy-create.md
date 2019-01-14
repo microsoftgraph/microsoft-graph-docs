@@ -2,6 +2,8 @@
 title: "Create iosCompliancePolicy"
 description: "Create a new iosCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosCompliancePolicy

@@ -2,6 +2,8 @@
 title: "Use the Azure AD identity protection API (preview)"
 description: "You can use Microsoft Graph to query the identityRiskEvent resource for each type of risk event detected by Azure AD Identity Protection. These events are available to customers with Azure AD Premium P2. A subset of events is available to customers with Azure AD Premium P1."
 author: "cloudhandler"
+localization_priority: Normal
+ms.prod: "security"
 ---
 
 # Use the Azure AD identity protection API (preview)

@@ -1,6 +1,7 @@
 ---
 title: "resource resource type"
 description: "An image or other file resource on a OneNote page. "
+localization_priority: Normal
 ---
 
 # resource resource type

@@ -2,6 +2,8 @@
 title: "call: cancelMediaProcessing"
 description: "Cancels media processing for all in-progress any PlayPrompt or Record operations."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: cancelMediaProcessing

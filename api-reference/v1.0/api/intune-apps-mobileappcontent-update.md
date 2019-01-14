@@ -2,6 +2,8 @@
 title: "Update mobileAppContent"
 description: "Update the properties of a mobileAppContent object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update mobileAppContent

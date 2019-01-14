@@ -2,6 +2,8 @@
 title: "Add educationClass to educationSchool"
 description: "Add a class to a school."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Add educationClass to educationSchool

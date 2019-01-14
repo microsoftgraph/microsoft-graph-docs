@@ -2,6 +2,8 @@
 title: "List androidManagedAppProtections"
 description: "List properties and relationships of the androidManagedAppProtection objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidManagedAppProtections

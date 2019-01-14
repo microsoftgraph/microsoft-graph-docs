@@ -1,6 +1,7 @@
 ---
 title: "secureScores resource type"
 description: "top=n, where n = the number of days of data that you want to retrieve. "
+localization_priority: Normal
 ---
 
 # secureScores resource type

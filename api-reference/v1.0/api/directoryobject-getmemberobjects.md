@@ -1,6 +1,9 @@
 ---
 title: "Get member objects"
 description: " Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. "
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get member objects

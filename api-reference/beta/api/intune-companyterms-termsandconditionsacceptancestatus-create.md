@@ -2,6 +2,8 @@
 title: "Create termsAndConditionsAcceptanceStatus"
 description: "Create a new termsAndConditionsAcceptanceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create termsAndConditionsAcceptanceStatus

@@ -2,6 +2,8 @@
 title: "variableManagementConditionExpression resource type"
 description: "Evaluates the management condition state as a Boolean expression."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # variableManagementConditionExpression resource type

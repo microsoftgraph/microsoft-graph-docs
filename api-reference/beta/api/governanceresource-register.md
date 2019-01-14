@@ -1,6 +1,7 @@
 ---
 title: "Register governanceResource"
 description: "Register an unmanaged governanceResource object in PIM."
+localization_priority: Normal
 ---
 
 # Register governanceResource

@@ -2,6 +2,8 @@
 title: "shutDown action"
 description: "Shut down device"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # shutDown action

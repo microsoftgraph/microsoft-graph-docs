@@ -2,6 +2,8 @@
 title: "androidWorkProfileScepCertificateProfile resource type"
 description: "Androif Work Profile SCEP certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidWorkProfileScepCertificateProfile resource type

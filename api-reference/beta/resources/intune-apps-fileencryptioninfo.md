@@ -2,6 +2,8 @@
 title: "fileEncryptionInfo resource type"
 description: "Contains properties for file encryption information for the content version of a line of business app."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # fileEncryptionInfo resource type

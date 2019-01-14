@@ -2,6 +2,8 @@
 title: "Get windowsStoreApp"
 description: "Read properties and relationships of the windowsStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsStoreApp

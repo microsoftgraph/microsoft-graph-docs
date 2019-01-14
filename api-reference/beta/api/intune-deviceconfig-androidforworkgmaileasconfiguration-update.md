@@ -2,6 +2,8 @@
 title: "Update androidForWorkGmailEasConfiguration"
 description: "Update the properties of a androidForWorkGmailEasConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidForWorkGmailEasConfiguration

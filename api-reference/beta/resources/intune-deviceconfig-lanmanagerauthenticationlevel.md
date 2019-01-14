@@ -2,6 +2,8 @@
 title: "lanManagerAuthenticationLevel enum type"
 description: "Possible values for LanManagerAuthenticationLevel"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # lanManagerAuthenticationLevel enum type

@@ -1,6 +1,9 @@
 ---
 title: "Get conversationThread"
 description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # Get conversationThread

@@ -1,6 +1,8 @@
 ---
 title: "Update open extension"
 description: "Update an open extension (openTypeExtension object) with the properties in the request body:"
+localization_priority: Normal
+author: "dkershaw10"
 ---
 
 # Update open extension

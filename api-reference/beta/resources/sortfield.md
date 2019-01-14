@@ -1,6 +1,7 @@
 ---
 title: "SortField resource type"
 description: "Represents a condition in a sorting operation."
+localization_priority: Normal
 ---
 
 # SortField resource type

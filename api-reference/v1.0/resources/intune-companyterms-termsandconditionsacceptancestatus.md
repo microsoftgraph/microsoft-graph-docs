@@ -2,6 +2,8 @@
 title: "termsAndConditionsAcceptanceStatus resource type"
 description: "C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # termsAndConditionsAcceptanceStatus resource type

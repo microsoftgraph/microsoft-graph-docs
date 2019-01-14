@@ -1,6 +1,7 @@
 ---
 title: "Update icon"
 description: "Update the properties of icon object."
+localization_priority: Normal
 ---
 
 # Update icon

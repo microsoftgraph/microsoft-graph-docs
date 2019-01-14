@@ -2,6 +2,8 @@
 title: "List taskFolders"
 description: "Get Outlook task folders in a specific outlookTaskGroup."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # List taskFolders

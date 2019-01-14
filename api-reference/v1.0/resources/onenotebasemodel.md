@@ -1,7 +1,9 @@
 ---
 title: "onenoteEntityBaseModel resource"
 description: "This is the base type for OneNote entities."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # onenoteEntityBaseModel resource

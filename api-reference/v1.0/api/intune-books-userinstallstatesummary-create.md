@@ -2,6 +2,8 @@
 title: "Create userInstallStateSummary"
 description: "Create a new userInstallStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create userInstallStateSummary

@@ -2,6 +2,8 @@
 title: "deviceConfigurationDeviceActivity function"
 description: "Metadata for the device configuration device activity report"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceConfigurationDeviceActivity function

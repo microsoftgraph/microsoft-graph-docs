@@ -1,6 +1,7 @@
 ---
 title: "Get connectorGroup"
 description: "Retrieve the properties of a connectorGroup object."
+localization_priority: Normal
 ---
 
 # Get connectorGroup

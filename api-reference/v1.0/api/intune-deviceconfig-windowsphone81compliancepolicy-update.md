@@ -2,6 +2,8 @@
 title: "Update windowsPhone81CompliancePolicy"
 description: "Update the properties of a windowsPhone81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsPhone81CompliancePolicy

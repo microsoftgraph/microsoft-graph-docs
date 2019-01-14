@@ -2,6 +2,8 @@
 title: "Get TableRow"
 description: "Retrieve the properties and relationships of tablerow object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get TableRow

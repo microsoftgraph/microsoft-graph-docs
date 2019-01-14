@@ -2,6 +2,8 @@
 title: "List androidForWorkAppConfigurationSchemas"
 description: "List properties and relationships of the androidForWorkAppConfigurationSchema objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidForWorkAppConfigurationSchemas

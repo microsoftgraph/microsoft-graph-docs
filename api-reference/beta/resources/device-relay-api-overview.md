@@ -1,7 +1,9 @@
 ---
 title: "See also"
 description: "{This is the API-level overview for the device relay module.}"
-author: "tfitzmac"
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Use the device relay API to transfer a user's experience across devices (preview)

@@ -2,6 +2,8 @@
 title: "Update educationAssignmentResource"
 description: "Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  "
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Update educationAssignmentResource

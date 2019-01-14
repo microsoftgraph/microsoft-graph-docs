@@ -2,6 +2,8 @@
 title: "List channel message replies"
 description: "List all the replies of a message in a channel of a team."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List channel message replies

@@ -2,6 +2,8 @@
 title: "ChartPoint resource type"
 description: "Represents a point of a series in a chart."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartPoint resource type

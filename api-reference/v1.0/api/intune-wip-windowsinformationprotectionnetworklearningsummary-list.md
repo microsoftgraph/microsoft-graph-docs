@@ -2,6 +2,8 @@
 title: "List windowsInformationProtectionNetworkLearningSummaries"
 description: "List properties and relationships of the windowsInformationProtectionNetworkLearningSummary objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsInformationProtectionNetworkLearningSummaries

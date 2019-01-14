@@ -2,6 +2,8 @@
 title: "retire action"
 description: "Retire a device"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # retire action

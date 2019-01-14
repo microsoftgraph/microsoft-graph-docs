@@ -2,6 +2,8 @@
 title: "platform enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # platform enum type

@@ -2,6 +2,8 @@
 title: "List submittedResources"
 description: "List the resources that have officially been submitted for grading. The student who owns the submission cannot change the submitted list without resubmitting the assignment. This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment."
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List submittedResources

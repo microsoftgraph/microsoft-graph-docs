@@ -2,6 +2,8 @@
 title: "Create windowsAutopilotDeviceIdentity"
 description: "Create a new windowsAutopilotDeviceIdentity object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsAutopilotDeviceIdentity

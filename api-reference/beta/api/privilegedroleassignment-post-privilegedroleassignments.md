@@ -1,6 +1,7 @@
 ---
 title: "Create privilegedRoleAssignment"
 description: "Use this API to create a new  privilegedRoleAssignment."
+localization_priority: Normal
 ---
 
 # Create privilegedRoleAssignment

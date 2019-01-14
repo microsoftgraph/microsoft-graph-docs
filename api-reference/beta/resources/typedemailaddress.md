@@ -1,6 +1,7 @@
 ---
 title: "typedEmailAddress resource type"
 description: "Represents the name, email addresses, and their corresponding email address type of a contact."
+localization_priority: Normal
 ---
 
 # typedEmailAddress resource type

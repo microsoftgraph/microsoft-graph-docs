@@ -1,6 +1,7 @@
 ---
 title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
+localization_priority: Normal
 ---
 
 # Update serviceprincipal

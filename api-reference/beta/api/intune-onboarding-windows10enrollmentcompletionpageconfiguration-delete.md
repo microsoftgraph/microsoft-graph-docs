@@ -2,6 +2,8 @@
 title: "Delete windows10EnrollmentCompletionPageConfiguration"
 description: "Deletes a windows10EnrollmentCompletionPageConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windows10EnrollmentCompletionPageConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "List existing synchronization templates"
 description: "List the synchronization templates associated with a given application or service principal."
+localization_priority: Normal
 ---
 
 # List existing synchronization templates

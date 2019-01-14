@@ -2,6 +2,8 @@
 title: "Delete macOSLobApp"
 description: "Deletes a macOSLobApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete macOSLobApp

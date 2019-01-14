@@ -1,6 +1,9 @@
 ---
 title: "windowsIdentityProtectionConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by Windows Hello for Business."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # windowsIdentityProtectionConfiguration resource type

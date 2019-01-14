@@ -2,6 +2,8 @@
 title: "List mobileAppInstallStatuses"
 description: "List properties and relationships of the mobileAppInstallStatus objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List mobileAppInstallStatuses

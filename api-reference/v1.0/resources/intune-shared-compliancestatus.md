@@ -2,6 +2,8 @@
 title: "complianceStatus enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # complianceStatus enum type

@@ -2,6 +2,8 @@
 title: "windowsPhoneXAP resource type"
 description: "Contains properties and inherited properties for Windows Phone XAP Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsPhoneXAP resource type

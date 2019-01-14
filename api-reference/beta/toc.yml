@@ -6547,6 +6547,15 @@
             href: api/privilegedroleassignmentrequest-cancel.md
           - name: Get my role assignments
             href: api/privilegedroleassignmentrequest-my.md
+        - name: Privileged approval
+          href: resources/privilegedapproval.md
+          items:
+          - name: List privileged approvals
+            href: api/privilegedapproval-list.md
+          - name: Get privileged approval
+            href: api/privilegedapproval-get.md
+          - name: Update role assignment
+            href: api/privilegedapproval-update.md
         - name: Audit event
           href: resources/privilegedoperationevent.md
           items:

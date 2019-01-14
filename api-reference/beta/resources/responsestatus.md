@@ -1,6 +1,7 @@
 ---
 title: "responseStatus resource type"
 description: "The response status of a meeting request."
+localization_priority: Normal
 ---
 
 # responseStatus resource type

@@ -1,6 +1,9 @@
 ---
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
+localization_priority: Priority
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create invitation
@@ -97,7 +100,7 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
 

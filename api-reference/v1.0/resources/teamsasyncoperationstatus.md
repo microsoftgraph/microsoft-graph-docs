@@ -2,6 +2,8 @@
 title: "teamsAsyncOperationStatus enum type"
 description: "Describes the current status of a teamsAsyncOperation."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # teamsAsyncOperationStatus enum type

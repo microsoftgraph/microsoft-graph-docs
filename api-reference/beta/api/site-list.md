@@ -1,6 +1,8 @@
 ---
 title: "Enumerate sites"
 description: "List the available [sites][] in an organization that match provided filter criteria and query options."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # Enumerate sites

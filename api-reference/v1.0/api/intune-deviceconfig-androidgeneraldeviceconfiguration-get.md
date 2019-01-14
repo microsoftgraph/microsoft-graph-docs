@@ -2,6 +2,8 @@
 title: "Get androidGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidGeneralDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidGeneralDeviceConfiguration

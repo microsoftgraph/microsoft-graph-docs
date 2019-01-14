@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Get a SharePoint Site
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Get a site resource
 

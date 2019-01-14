@@ -2,6 +2,8 @@
 title: "Remove educationClass"
 description: "Delete a class from a school."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Remove educationClass

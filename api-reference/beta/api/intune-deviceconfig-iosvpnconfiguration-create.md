@@ -2,6 +2,8 @@
 title: "Create iosVpnConfiguration"
 description: "Create a new iosVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosVpnConfiguration

@@ -2,6 +2,8 @@
 title: "deviceComplianceActionItem resource type"
 description: "Scheduled Action Configuration"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceComplianceActionItem resource type

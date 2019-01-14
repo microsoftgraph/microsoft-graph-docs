@@ -2,6 +2,8 @@
 title: "devicePlatformType enum type"
 description: "Supported platform types."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # devicePlatformType enum type

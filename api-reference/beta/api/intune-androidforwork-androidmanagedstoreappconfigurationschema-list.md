@@ -2,6 +2,8 @@
 title: "List androidManagedStoreAppConfigurationSchemas"
 description: "List properties and relationships of the androidManagedStoreAppConfigurationSchema objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidManagedStoreAppConfigurationSchemas

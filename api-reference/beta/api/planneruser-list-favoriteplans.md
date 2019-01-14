@@ -2,6 +2,8 @@
 title: "List favoritePlans"
 description: "Retrieve a list of plannerPlans that are marked as favorite by a user. You can mark a plan as favorite by updating the plannerUser resource."
 author: "TarkanSevilmis"
+localization_priority: Normal
+ms.prod: "planner"
 ---
 
 # List favoritePlans

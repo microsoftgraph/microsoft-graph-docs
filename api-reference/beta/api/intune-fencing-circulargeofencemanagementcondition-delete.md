@@ -2,6 +2,8 @@
 title: "Delete circularGeofenceManagementCondition"
 description: "Deletes a circularGeofenceManagementCondition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete circularGeofenceManagementCondition

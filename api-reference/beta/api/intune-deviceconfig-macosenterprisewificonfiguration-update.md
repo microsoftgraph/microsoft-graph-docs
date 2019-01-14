@@ -2,6 +2,8 @@
 title: "Update macOSEnterpriseWiFiConfiguration"
 description: "Update the properties of a macOSEnterpriseWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update macOSEnterpriseWiFiConfiguration

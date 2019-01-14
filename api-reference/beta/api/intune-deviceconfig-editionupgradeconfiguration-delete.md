@@ -2,6 +2,8 @@
 title: "Delete editionUpgradeConfiguration"
 description: "Deletes a editionUpgradeConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete editionUpgradeConfiguration

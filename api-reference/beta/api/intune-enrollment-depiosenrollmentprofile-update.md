@@ -2,6 +2,8 @@
 title: "Update depIOSEnrollmentProfile"
 description: "Update the properties of a depIOSEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update depIOSEnrollmentProfile

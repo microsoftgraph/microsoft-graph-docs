@@ -1,6 +1,9 @@
 ---
 title: "group: unsubscribeByMail"
 description: "Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group. Supported for Office 365 groups only. "
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # group: unsubscribeByMail

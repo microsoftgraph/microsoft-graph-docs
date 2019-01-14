@@ -1,6 +1,9 @@
 ---
 title: "outlookCategory resource type"
 description: "Represents a category by which a user can group Outlook items such as messages and events. The user defines categories in a master list, and can apply one or more of these user-defined"
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # outlookCategory resource type

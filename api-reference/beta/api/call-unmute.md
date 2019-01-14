@@ -2,6 +2,8 @@
 title: "call: unmute"
 description: "Allows the application to unmute itself."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: unmute

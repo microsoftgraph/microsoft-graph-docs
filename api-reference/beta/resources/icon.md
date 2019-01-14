@@ -1,6 +1,7 @@
 ---
 title: "Icon resource type"
 description: "Represents a cell icon."
+localization_priority: Normal
 ---
 
 # Icon resource type

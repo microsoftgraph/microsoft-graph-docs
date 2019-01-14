@@ -2,6 +2,8 @@
 title: "reportRoot resource type"
 description: "The resource that represents an instance of History Reports."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # reportRoot resource type

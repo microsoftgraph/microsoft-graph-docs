@@ -1,6 +1,7 @@
 ---
 title: "Create program"
 description: "In the Azure AD access reviews feature, create a new program object."
+localization_priority: Normal
 ---
 
 # Create program

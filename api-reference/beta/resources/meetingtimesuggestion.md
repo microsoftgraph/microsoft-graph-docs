@@ -1,6 +1,9 @@
 ---
 title: "meetingTimeSuggestion resource type"
 description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "
+localization_priority: Normal
+author: "VinodRavichandran"
+ms.prod: "microsoft-teams"
 ---
 
 # meetingTimeSuggestion resource type

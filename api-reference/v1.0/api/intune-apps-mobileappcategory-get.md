@@ -2,6 +2,8 @@
 title: "Get mobileAppCategory"
 description: "Read properties and relationships of the mobileAppCategory object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get mobileAppCategory

@@ -1,6 +1,9 @@
 ---
 title: "Delete orgContact"
 description: "Delete orgContact."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete orgContact

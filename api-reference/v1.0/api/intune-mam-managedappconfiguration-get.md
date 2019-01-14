@@ -2,6 +2,8 @@
 title: "Get managedAppConfiguration"
 description: "Read properties and relationships of the managedAppConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedAppConfiguration

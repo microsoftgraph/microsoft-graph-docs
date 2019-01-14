@@ -2,6 +2,8 @@
 title: "Get androidWorkProfileGmailEasConfiguration"
 description: "Read properties and relationships of the androidWorkProfileGmailEasConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidWorkProfileGmailEasConfiguration

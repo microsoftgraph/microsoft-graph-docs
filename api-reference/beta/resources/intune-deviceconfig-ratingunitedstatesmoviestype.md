@@ -2,6 +2,8 @@
 title: "ratingUnitedStatesMoviesType enum type"
 description: "Movies rating labels in United States"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingUnitedStatesMoviesType enum type

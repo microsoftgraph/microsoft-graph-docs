@@ -1,6 +1,9 @@
 ---
 title: "group: addFavorite"
 description: "Add the group to the list of the current user's favorite groups. Supported for Office 365 groups only."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # group: addFavorite

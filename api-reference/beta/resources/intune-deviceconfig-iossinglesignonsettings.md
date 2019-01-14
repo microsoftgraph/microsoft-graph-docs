@@ -2,6 +2,8 @@
 title: "iosSingleSignOnSettings resource type"
 description: "iOS Kerberos authentication settings for single sign-on"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosSingleSignOnSettings resource type

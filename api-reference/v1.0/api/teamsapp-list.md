@@ -2,6 +2,8 @@
 title: "List the published apps from the Microsoft Teams app catalog"
 description: "List apps from the Microsoft Teams app catalog. "
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List the published apps from the Microsoft Teams app catalog

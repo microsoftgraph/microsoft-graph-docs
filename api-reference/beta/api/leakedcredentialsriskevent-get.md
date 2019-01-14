@@ -1,6 +1,7 @@
 ---
 title: "Get leakedCredentialsRiskEvent"
 description: "Retrieve the properties and relationships of a leakedcredentialsriskevent object."
+localization_priority: Normal
 ---
 
 # Get leakedCredentialsRiskEvent

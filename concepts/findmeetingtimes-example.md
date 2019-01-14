@@ -1,6 +1,7 @@
 ---
 title: "Find possible meeting times on the Outlook calendar"
 description: "In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use "
+localization_priority: Priority
 ---
 
 # Find possible meeting times on the Outlook calendar

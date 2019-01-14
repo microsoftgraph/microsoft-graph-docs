@@ -2,6 +2,8 @@
 title: "Create iosImportedPFXCertificateProfile"
 description: "Create a new iosImportedPFXCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosImportedPFXCertificateProfile

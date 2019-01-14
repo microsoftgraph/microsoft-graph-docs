@@ -1,6 +1,9 @@
 ---
 title: "Update orgcontact"
 description: "Update the properties of orgcontact object."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update orgcontact

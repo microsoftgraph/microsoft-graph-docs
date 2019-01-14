@@ -1,6 +1,7 @@
 ---
 title: "web resource type"
 description: "Specifies settings for a web application."
+localization_priority: Normal
 ---
 
 # web resource type

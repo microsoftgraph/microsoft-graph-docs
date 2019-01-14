@@ -1,6 +1,8 @@
 ---
 title: "Office 365 Groups activity reports"
 description: "You can gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 groups are being created and used."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # Office 365 Groups activity reports

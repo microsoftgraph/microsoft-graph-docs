@@ -2,6 +2,8 @@
 title: "Permanently delete item"
 description: "Permanently deletes an item from deleted items."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Permanently delete item

@@ -2,6 +2,8 @@
 title: "Create embeddedSIMDeviceState"
 description: "Create a new embeddedSIMDeviceState object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create embeddedSIMDeviceState

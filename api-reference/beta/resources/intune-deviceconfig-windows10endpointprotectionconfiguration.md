@@ -1,6 +1,9 @@
 ---
 title: "windows10EndpointProtectionConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the Windows10EndpointProtectionConfiguration resource."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # windows10EndpointProtectionConfiguration resource type

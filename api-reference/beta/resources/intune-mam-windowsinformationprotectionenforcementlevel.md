@@ -2,6 +2,8 @@
 title: "windowsInformationProtectionEnforcementLevel enum type"
 description: "Possible values for WIP Protection enforcement levels"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsInformationProtectionEnforcementLevel enum type

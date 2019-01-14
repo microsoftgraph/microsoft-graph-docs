@@ -1,6 +1,9 @@
 ---
 title: "Create plannerTask"
 description: "Use this API to create a new **plannerTask**."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Create plannerTask

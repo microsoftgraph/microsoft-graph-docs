@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
+localization_priority: Normal
 ---
 # ColumnLink resource type
 

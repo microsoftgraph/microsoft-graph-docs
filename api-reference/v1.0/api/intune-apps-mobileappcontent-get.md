@@ -2,6 +2,8 @@
 title: "Get mobileAppContent"
 description: "Read properties and relationships of the mobileAppContent object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get mobileAppContent

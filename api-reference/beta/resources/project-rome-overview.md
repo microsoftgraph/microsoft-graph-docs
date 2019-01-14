@@ -1,6 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to work with Project Rome "
 description: "Project Rome is a Microsoft initiative to build a platform that enables app developers to build great cross-device experiences. Project Rome enables different capabilities that connect different services and client endpoints when the user signs in with the same Microsoft account or work or school account. This allows you to implement cross-device and cross-platform experiences that are centered around user tasks rather than devices. "
+localization_priority: Normal
 ---
 
 # Use the Microsoft Graph API to work with Project Rome 

@@ -2,6 +2,8 @@
 title: "Update detectedApp"
 description: "Update the properties of a detectedApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update detectedApp

@@ -2,6 +2,8 @@
 title: "List iosEasEmailProfileConfigurations"
 description: "List properties and relationships of the iosEasEmailProfileConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosEasEmailProfileConfigurations

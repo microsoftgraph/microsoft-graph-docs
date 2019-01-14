@@ -1,6 +1,7 @@
 ---
 title: "chatMessageAttachment resource type"
 description: "Represents an attachment to a chat message entity."
+localization_priority: Normal
 ---
 
 # chatMessageAttachment resource type

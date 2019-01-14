@@ -2,6 +2,7 @@
 title: "resultInfo resource type"
 description: "The resultInfo type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # resultInfo resource type

@@ -2,6 +2,8 @@
 title: "appleDeviceFeaturesConfigurationBase resource type"
 description: "Apple device features configuration profile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # appleDeviceFeaturesConfigurationBase resource type

@@ -1,6 +1,7 @@
 ---
 title: "Update photo"
 description: "Update the properties of photo object."
+localization_priority: Normal
 ---
 
 # Update photo

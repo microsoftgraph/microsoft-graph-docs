@@ -2,6 +2,8 @@
 title: "Update androidManagedStoreApp"
 description: "Update the properties of a androidManagedStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidManagedStoreApp

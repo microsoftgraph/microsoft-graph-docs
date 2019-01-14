@@ -2,6 +2,8 @@
 title: "Json resource type"
 description: "Represents data returned in JSON format"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Json resource type

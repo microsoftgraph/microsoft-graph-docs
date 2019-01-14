@@ -2,6 +2,8 @@
 title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List members

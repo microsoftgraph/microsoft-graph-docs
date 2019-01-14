@@ -2,6 +2,8 @@
 title: "Get TableSort"
 description: "Retrieve the properties and relationships of tablesort object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get TableSort

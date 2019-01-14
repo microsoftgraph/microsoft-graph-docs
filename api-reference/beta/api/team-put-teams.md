@@ -2,6 +2,8 @@
 title: "Create team from group"
 description: "Create a new team from a group."
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Create team from group

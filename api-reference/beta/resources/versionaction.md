@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: VersionAction
+localization_priority: Normal
 ---
 # VersionAction resource type
 

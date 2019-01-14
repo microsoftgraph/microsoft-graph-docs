@@ -2,6 +2,8 @@
 title: "Delete outlookTaskFolder"
 description: "Delete the specified Outlook task folder."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete outlookTaskFolder

@@ -2,6 +2,8 @@
 title: "healthState enum type"
 description: "Indicates health state of the Windows management app."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # healthState enum type

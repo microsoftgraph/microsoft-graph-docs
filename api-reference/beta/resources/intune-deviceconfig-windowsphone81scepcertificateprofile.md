@@ -2,6 +2,8 @@
 title: "windowsPhone81SCEPCertificateProfile resource type"
 description: " SCEP certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsPhone81SCEPCertificateProfile resource type

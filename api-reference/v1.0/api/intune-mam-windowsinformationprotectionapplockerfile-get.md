@@ -2,6 +2,8 @@
 title: "Get windowsInformationProtectionAppLockerFile"
 description: "Read properties and relationships of the windowsInformationProtectionAppLockerFile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsInformationProtectionAppLockerFile

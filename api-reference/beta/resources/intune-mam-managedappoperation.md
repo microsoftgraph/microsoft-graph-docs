@@ -2,6 +2,8 @@
 title: "managedAppOperation resource type"
 description: "Represents an operation applied against an app registration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedAppOperation resource type

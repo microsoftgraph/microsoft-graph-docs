@@ -2,6 +2,8 @@
 title: "List windowsPhone81CertificateProfileBases"
 description: "List properties and relationships of the windowsPhone81CertificateProfileBase objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsPhone81CertificateProfileBases

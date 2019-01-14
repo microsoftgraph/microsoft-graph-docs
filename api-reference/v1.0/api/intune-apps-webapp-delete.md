@@ -2,6 +2,8 @@
 title: "Delete webApp"
 description: "Deletes a webApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete webApp

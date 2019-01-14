@@ -2,6 +2,8 @@
 title: "Get macOSWiFiConfiguration"
 description: "Read properties and relationships of the macOSWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get macOSWiFiConfiguration

@@ -2,6 +2,8 @@
 title: "Create macOSWiFiConfiguration"
 description: "Create a new macOSWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create macOSWiFiConfiguration

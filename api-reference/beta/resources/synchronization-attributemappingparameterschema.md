@@ -1,6 +1,7 @@
 ---
 title: "attributeMappingParameterSchema resource type"
 description: "Describes a single parameter used in an attributeMappingFunctionSchema."
+localization_priority: Normal
 ---
 
 # attributeMappingParameterSchema resource type

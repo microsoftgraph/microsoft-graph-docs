@@ -2,6 +2,8 @@
 title: "List managedDeviceMobileAppConfigurationAssignments"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedDeviceMobileAppConfigurationAssignments

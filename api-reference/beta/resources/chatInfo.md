@@ -2,6 +2,8 @@
 title: "chatInfo resource type"
 description: "Information about a message in Microsoft Teams."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # chatInfo resource type

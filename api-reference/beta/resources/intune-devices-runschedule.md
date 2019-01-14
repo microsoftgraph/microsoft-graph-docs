@@ -2,6 +2,8 @@
 title: "runSchedule resource type"
 description: "Run schedule of a recurring device management script."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # runSchedule resource type

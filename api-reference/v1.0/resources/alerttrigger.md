@@ -1,7 +1,9 @@
 ---
 title: "alertTrigger resource type"
 description: "Contains information about the properties that triggered a detection (properties exist in the alert entity)."
-author: "Preetikr"
+author: "preetikr"
+localization_priority: Normal
+ms.prod: "security"
 ---
 
 # alertTrigger resource type

@@ -1,6 +1,9 @@
 ---
 title: "message: createForward"
 description: "Create a draft to forward the specified message. You can then update the draft to add content to the **body** or change other message properties, or, simply send the draft."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # message: createForward

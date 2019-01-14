@@ -2,6 +2,8 @@
 title: "List attachments"
 description: "Retrieve a list of attachment objects attached to a post."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # List attachments

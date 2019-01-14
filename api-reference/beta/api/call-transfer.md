@@ -2,6 +2,8 @@
 title: "call: transfer"
 description: "Transfer an active call."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: transfer

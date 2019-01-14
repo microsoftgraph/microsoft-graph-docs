@@ -2,6 +2,8 @@
 title: "Create officeSuiteApp"
 description: "Create a new officeSuiteApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create officeSuiteApp

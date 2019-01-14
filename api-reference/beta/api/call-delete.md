@@ -2,6 +2,8 @@
 title: "Delete call"
 description: "Delete or hang up an active call."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Delete call

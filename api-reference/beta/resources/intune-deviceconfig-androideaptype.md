@@ -2,6 +2,8 @@
 title: "androidEapType enum type"
 description: "Extensible Authentication Protocol (EAP) Configuration Types."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidEapType enum type

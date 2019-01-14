@@ -1,6 +1,7 @@
 ---
 title: "attendeeAvailability resource type"
 description: "The type and availability of an attendee."
+localization_priority: Normal
 ---
 
 # attendeeAvailability resource type

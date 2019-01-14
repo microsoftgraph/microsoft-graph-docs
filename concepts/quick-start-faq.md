@@ -4,6 +4,7 @@ description: "This FAQ answers questions related to the Microsoft Graph Quick St
 author: jasonjoh
 ms.author: jasonjoh
 ms.date: 12/13/2018
+localization_priority: Normal
 ---
 
 # Microsoft Graph quick start FAQ
@@ -54,7 +55,7 @@ The following table lists the corresponding tutorial and GitHub repository for e
 | Python | [Tutorial](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
 | Ruby | [Tutorial](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [Tutorial](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | None | [GitHub](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |
+| Xamarin | None | [GitHub](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) |
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 

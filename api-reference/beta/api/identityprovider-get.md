@@ -1,6 +1,7 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider."
+localization_priority: Normal
 ---
 
 # Get identityProvider

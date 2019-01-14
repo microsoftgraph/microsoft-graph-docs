@@ -1,6 +1,7 @@
 ---
 title: "List Applications and Service Principals with specific Policy assigned"
 description: "Retrieve the application and service principal objects with the specified policy assigned."
+localization_priority: Normal
 ---
 
 # List Applications and Service Principals with specific Policy assigned

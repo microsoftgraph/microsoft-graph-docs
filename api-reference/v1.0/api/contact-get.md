@@ -2,6 +2,8 @@
 title: "Get contact"
 description: "Retrieve the properties and relationships of a contact object."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Get contact

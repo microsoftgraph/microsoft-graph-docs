@@ -1,6 +1,9 @@
 ---
 title: "Get member groups"
 description: "Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get member groups

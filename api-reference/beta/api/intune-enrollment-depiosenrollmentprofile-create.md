@@ -2,6 +2,8 @@
 title: "Create depIOSEnrollmentProfile"
 description: "Create a new depIOSEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create depIOSEnrollmentProfile

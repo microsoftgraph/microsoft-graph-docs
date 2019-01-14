@@ -2,6 +2,8 @@
 title: "List managedEBookCategories"
 description: "List properties and relationships of the managedEBookCategory objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedEBookCategories

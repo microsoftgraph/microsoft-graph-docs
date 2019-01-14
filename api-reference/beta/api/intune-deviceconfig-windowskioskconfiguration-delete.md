@@ -2,6 +2,8 @@
 title: "Delete windowsKioskConfiguration"
 description: "Deletes a windowsKioskConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsKioskConfiguration

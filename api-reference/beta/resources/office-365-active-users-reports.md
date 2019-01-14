@@ -1,6 +1,8 @@
 ---
 title: "Office 365 active users reports"
 description: "You can use the Office 365 active users report to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. This report can help administrators identify underutilized products or users that might need additional training or information."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # Office 365 active users reports

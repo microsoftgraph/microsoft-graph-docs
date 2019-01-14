@@ -1,6 +1,9 @@
 ---
 title: "user: getMemberObjects"
 description: "Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: getMemberObjects

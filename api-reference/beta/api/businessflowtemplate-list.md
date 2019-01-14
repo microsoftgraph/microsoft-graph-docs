@@ -1,6 +1,7 @@
 ---
 title: "List businessFlowTemplates"
 description: "In the Azure AD access reviews feature, list all the businessFlowTemplate objects."
+localization_priority: Normal
 ---
 
 # List businessFlowTemplates

@@ -2,6 +2,8 @@
 title: "Create conversation thread"
 description: "Start a new group conversation by first creating a thread. "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create conversation thread

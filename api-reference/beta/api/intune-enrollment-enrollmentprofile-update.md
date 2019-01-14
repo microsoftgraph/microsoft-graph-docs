@@ -2,6 +2,8 @@
 title: "Update enrollmentProfile"
 description: "Update the properties of a enrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update enrollmentProfile

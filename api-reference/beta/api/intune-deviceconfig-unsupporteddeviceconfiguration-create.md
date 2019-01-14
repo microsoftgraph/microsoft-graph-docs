@@ -2,6 +2,8 @@
 title: "Create unsupportedDeviceConfiguration"
 description: "Create a new unsupportedDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create unsupportedDeviceConfiguration

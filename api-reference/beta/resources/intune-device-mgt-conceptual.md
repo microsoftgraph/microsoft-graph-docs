@@ -1,6 +1,9 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""author: "tfitzmac"
+description: ""
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Device management in Microsoft Intune

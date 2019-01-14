@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Restore a previous version
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Restore a previous version of a DriveItem
 

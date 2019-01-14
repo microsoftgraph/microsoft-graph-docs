@@ -1,6 +1,7 @@
 ---
 title: "List overrides"
 description: "Get the overrides that a user has set up to always classify messages from certain senders in specific ways."
+localization_priority: Normal
 ---
 
 # List overrides

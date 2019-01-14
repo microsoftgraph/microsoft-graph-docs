@@ -1,6 +1,7 @@
 ---
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
+localization_priority: Normal
 ---
 
 # List servicePrincipals

@@ -1,6 +1,7 @@
 ---
 title: "List impossibleTravelRiskEvents"
 description: "Retrieve a list of impossibletravelriskevent objects."
+localization_priority: Normal
 ---
 
 # List impossibleTravelRiskEvents

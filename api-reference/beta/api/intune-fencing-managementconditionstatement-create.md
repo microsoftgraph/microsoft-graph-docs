@@ -2,6 +2,8 @@
 title: "Create managementConditionStatement"
 description: "Create a new managementConditionStatement object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managementConditionStatement

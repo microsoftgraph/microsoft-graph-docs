@@ -2,6 +2,8 @@
 title: "deviceEnrollmentLimitConfiguration resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceEnrollmentLimitConfiguration resource type

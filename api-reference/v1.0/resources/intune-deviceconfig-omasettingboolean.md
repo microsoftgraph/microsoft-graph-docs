@@ -2,6 +2,8 @@
 title: "omaSettingBoolean resource type"
 description: "OMA Settings Boolean definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # omaSettingBoolean resource type

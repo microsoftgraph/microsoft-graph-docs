@@ -2,6 +2,8 @@
 title: "Delete androidForWorkImportedPFXCertificateProfile"
 description: "Deletes a androidForWorkImportedPFXCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkImportedPFXCertificateProfile

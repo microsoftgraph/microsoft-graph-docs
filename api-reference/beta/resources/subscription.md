@@ -1,6 +1,8 @@
 ---
 title: "subscription resource type"
 description: "A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
+localization_priority: Normal
+author: "piotrci"
 ---
 
 # subscription resource type

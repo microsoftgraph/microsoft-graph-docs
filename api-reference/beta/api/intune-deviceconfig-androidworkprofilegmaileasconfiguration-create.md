@@ -2,6 +2,8 @@
 title: "Create androidWorkProfileGmailEasConfiguration"
 description: "Create a new androidWorkProfileGmailEasConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidWorkProfileGmailEasConfiguration

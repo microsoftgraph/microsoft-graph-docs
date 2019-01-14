@@ -2,6 +2,8 @@
 title: "Get deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceEnrollmentPlatformRestrictionsConfiguration

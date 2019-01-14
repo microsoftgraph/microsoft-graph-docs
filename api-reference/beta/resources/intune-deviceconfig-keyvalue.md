@@ -2,6 +2,8 @@
 title: "keyValue resource type"
 description: "Key Value definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # keyValue resource type

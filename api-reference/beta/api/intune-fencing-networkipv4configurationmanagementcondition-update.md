@@ -2,6 +2,8 @@
 title: "Update networkIPv4ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv4ConfigurationManagementCondition object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update networkIPv4ConfigurationManagementCondition

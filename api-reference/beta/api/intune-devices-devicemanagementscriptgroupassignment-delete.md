@@ -2,6 +2,8 @@
 title: "Delete deviceManagementScriptGroupAssignment"
 description: "Deletes a deviceManagementScriptGroupAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceManagementScriptGroupAssignment

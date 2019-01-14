@@ -2,6 +2,8 @@
 title: "educationSubmission: recall"
 description: "Indicates that a student wants to take back a submission. This action can only be done by a student. "
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSubmission: recall

@@ -2,6 +2,8 @@
 title: "Delete androidManagedStoreAppConfiguration"
 description: "Deletes a androidManagedStoreAppConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidManagedStoreAppConfiguration

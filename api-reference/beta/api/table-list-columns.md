@@ -2,6 +2,8 @@
 title: "List columns"
 description: "Retrieve a list of tablecolumn objects."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List columns

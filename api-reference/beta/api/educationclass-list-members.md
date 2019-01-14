@@ -1,6 +1,9 @@
 ---
 title: "List members"
 description: "Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # List members

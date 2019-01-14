@@ -2,6 +2,8 @@
 title: "Get termsAndConditions"
 description: "Read properties and relationships of the termsAndConditions object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get termsAndConditions

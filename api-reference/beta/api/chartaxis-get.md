@@ -2,6 +2,8 @@
 title: "Get ChartAxis"
 description: "Retrieve the properties and relationships of chartaxis object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get ChartAxis

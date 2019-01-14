@@ -1,6 +1,7 @@
 ---
 title: "api resource type"
 description: "Specifies settings for a Web API application."
+localization_priority: Normal
 ---
 
 # api resource type

@@ -2,6 +2,8 @@
 title: "callRoute resource type"
 description: "The callRoute type."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # callRoute resource type

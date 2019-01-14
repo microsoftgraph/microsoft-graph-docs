@@ -1,6 +1,7 @@
 ---
 title: "governanceRoleSetting resource type"
 description: " rule, and so on."
+localization_priority: Normal
 ---
 
 # governanceRoleSetting resource type

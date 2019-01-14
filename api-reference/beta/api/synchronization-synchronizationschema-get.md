@@ -1,6 +1,7 @@
 ---
 title: "Get synchronizationSchema"
 description: "Retrieve the schema for a given synchronization job or template."
+localization_priority: Normal
 ---
 
 # Get synchronizationSchema

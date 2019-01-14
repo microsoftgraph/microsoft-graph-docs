@@ -1,6 +1,7 @@
 ---
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
+localization_priority: Normal
 ---
 
 # locationConstraint resource type

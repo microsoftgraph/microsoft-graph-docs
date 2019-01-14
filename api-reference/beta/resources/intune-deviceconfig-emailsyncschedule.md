@@ -2,6 +2,8 @@
 title: "emailSyncSchedule enum type"
 description: "Possible values for email sync schedule."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # emailSyncSchedule enum type

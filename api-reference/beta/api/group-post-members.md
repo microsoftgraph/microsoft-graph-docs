@@ -1,6 +1,9 @@
 ---
 title: "Add member"
 description: "Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # Add member

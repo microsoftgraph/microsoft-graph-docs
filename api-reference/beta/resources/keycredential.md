@@ -1,6 +1,7 @@
 ---
 title: "keyCredential resource type"
 description: "Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the application and servicePrincipal entities is a collection of **keyCredential**."
+localization_priority: Normal
 ---
 
 # keyCredential resource type

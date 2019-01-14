@@ -1,6 +1,8 @@
 ---
 title: "Create and send a notification"
 description: "Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  "
+localization_priority: Normal
+ms.prod: "project-rome"
 ---
 
 # Create and send a notification

@@ -2,6 +2,8 @@
 title: "List androidTrustedRootCertificates"
 description: "List properties and relationships of the androidTrustedRootCertificate objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidTrustedRootCertificates

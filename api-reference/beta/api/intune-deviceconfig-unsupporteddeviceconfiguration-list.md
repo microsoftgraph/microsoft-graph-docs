@@ -2,6 +2,8 @@
 title: "List unsupportedDeviceConfigurations"
 description: "List properties and relationships of the unsupportedDeviceConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List unsupportedDeviceConfigurations

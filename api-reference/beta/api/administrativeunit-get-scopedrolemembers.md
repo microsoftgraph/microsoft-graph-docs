@@ -2,6 +2,8 @@
 title: "Get a scopedRoleMember"
 description: "Retrieve a specific scopedRoleMembership resource."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get a scopedRoleMember

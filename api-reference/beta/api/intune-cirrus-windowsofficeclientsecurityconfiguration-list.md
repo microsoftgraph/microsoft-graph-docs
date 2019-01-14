@@ -2,6 +2,8 @@
 title: "List windowsOfficeClientSecurityConfigurations"
 description: "List properties and relationships of the windowsOfficeClientSecurityConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsOfficeClientSecurityConfigurations

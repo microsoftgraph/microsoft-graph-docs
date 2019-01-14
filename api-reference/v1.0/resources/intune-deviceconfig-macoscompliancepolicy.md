@@ -2,6 +2,8 @@
 title: "macOSCompliancePolicy resource type"
 description: "This class contains compliance settings for Mac OS."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # macOSCompliancePolicy resource type

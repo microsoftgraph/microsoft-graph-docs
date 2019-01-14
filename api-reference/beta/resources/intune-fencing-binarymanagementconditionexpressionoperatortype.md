@@ -2,6 +2,8 @@
 title: "binaryManagementConditionExpressionOperatorType enum type"
 description: "Supported binary operators for management condition expressions."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # binaryManagementConditionExpressionOperatorType enum type

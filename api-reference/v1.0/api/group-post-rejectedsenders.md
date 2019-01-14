@@ -2,6 +2,8 @@
 title: "Create rejectedSender"
 description: "Add a new user or group to the rejectedSender list."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create rejectedSender

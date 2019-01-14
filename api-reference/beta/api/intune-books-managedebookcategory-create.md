@@ -2,6 +2,8 @@
 title: "Create managedEBookCategory"
 description: "Create a new managedEBookCategory object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managedEBookCategory

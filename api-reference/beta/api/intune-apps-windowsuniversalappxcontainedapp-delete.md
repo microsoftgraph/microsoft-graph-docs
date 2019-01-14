@@ -2,6 +2,8 @@
 title: "Delete windowsUniversalAppXContainedApp"
 description: "Deletes a windowsUniversalAppXContainedApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsUniversalAppXContainedApp

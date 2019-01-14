@@ -1,6 +1,7 @@
 ---
 title: "Cancel privilegedRoleAssignmentRequest"
 description: "Cancel a privilegedRoleAssignmentRequest."
+localization_priority: Normal
 ---
 
 # Cancel privilegedRoleAssignmentRequest

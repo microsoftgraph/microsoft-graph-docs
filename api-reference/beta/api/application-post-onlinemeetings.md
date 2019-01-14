@@ -2,6 +2,8 @@
 title: "Create online meeting"
 description: "Creates an online meeting on behalf of a user specified in the request body."
 author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Create online meeting

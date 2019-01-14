@@ -2,6 +2,8 @@
 title: "meetingInfo resource type"
 description: "Meeting information specified to create or join a meeting."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # meetingInfo resource type

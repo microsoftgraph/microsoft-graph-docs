@@ -2,6 +2,8 @@
 title: "List deviceManagementTroubleshootingEvents"
 description: "List properties and relationships of the deviceManagementTroubleshootingEvent objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceManagementTroubleshootingEvents

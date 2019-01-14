@@ -1,6 +1,7 @@
 ---
 title: "List programs"
 description: "In the Azure AD access reviews feature, list all the program objects."
+localization_priority: Normal
 ---
 
 # List programs

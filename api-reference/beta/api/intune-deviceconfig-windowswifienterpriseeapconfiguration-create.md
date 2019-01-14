@@ -2,6 +2,8 @@
 title: "Create windowsWifiEnterpriseEAPConfiguration"
 description: "Create a new windowsWifiEnterpriseEAPConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsWifiEnterpriseEAPConfiguration

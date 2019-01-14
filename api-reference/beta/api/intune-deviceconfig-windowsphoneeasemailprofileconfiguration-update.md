@@ -2,6 +2,8 @@
 title: "Update windowsPhoneEASEmailProfileConfiguration"
 description: "Update the properties of a windowsPhoneEASEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsPhoneEASEmailProfileConfiguration

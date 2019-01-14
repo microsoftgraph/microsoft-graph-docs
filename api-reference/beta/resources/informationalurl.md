@@ -1,6 +1,7 @@
 ---
 title: "informationalUrl resource type"
 description: "Basic profile information of the application."
+localization_priority: Normal
 ---
 
 # informationalUrl resource type

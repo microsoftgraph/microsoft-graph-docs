@@ -2,6 +2,8 @@
 title: "Create deviceConfigurationConflictSummary"
 description: "Create a new deviceConfigurationConflictSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceConfigurationConflictSummary

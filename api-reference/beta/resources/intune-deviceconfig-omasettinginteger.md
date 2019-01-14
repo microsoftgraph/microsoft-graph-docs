@@ -2,6 +2,8 @@
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # omaSettingInteger resource type

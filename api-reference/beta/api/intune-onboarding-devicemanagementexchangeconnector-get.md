@@ -2,6 +2,8 @@
 title: "Get deviceManagementExchangeConnector"
 description: "Read properties and relationships of the deviceManagementExchangeConnector object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceManagementExchangeConnector

@@ -2,6 +2,8 @@
 title: "Update deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Update the properties of a deviceEnrollmentPlatformRestrictionsConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceEnrollmentPlatformRestrictionsConfiguration

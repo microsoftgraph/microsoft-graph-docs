@@ -2,6 +2,8 @@
 title: "Get windowsWifiEnterpriseEAPConfiguration"
 description: "Read properties and relationships of the windowsWifiEnterpriseEAPConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsWifiEnterpriseEAPConfiguration

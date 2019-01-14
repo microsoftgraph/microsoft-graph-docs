@@ -2,6 +2,8 @@
 title: "Chart: setPosition"
 description: "Positions the chart relative to cells on the worksheet."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Chart: setPosition

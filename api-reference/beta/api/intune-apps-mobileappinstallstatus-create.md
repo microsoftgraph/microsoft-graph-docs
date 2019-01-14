@@ -2,6 +2,8 @@
 title: "Create mobileAppInstallStatus"
 description: "Create a new mobileAppInstallStatus object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileAppInstallStatus

@@ -2,6 +2,8 @@
 title: "configurationManagerClientEnabledFeatures resource type"
 description: "configuration Manager client enabled features"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # configurationManagerClientEnabledFeatures resource type

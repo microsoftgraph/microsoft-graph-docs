@@ -2,6 +2,8 @@
 title: "Get roleScopeTag"
 description: "Read properties and relationships of the roleScopeTag object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get roleScopeTag

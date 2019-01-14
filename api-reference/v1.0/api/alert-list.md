@@ -1,7 +1,9 @@
 ---
 title: "List alerts"
 description: "Retrieve a list of alert objects."
-author: "Preetikr"
+author: "preetikr"
+localization_priority: Priority
+ms.prod: "security"
 ---
 
 # List alerts

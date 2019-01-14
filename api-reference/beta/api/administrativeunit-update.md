@@ -2,6 +2,8 @@
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update administrativeunit

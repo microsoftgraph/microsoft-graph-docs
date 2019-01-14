@@ -2,6 +2,8 @@
 title: "ChartDataLabels resource type"
 description: "Represents a collection of all the data labels on a chart point."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartDataLabels resource type

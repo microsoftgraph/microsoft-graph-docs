@@ -2,6 +2,8 @@
 title: "TableColumn: DataBodyRange"
 description: "Gets the range object associated with the data body of the column."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableColumn: DataBodyRange

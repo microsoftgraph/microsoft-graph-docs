@@ -1,6 +1,9 @@
 ---
 title: "Create educationAssignmentResource"
 description: "odata.type to indicate which type of resource is being created. Note that file-based resources must first be uploaded to the assignments **resourceFolder**."
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # Create educationAssignmentResource

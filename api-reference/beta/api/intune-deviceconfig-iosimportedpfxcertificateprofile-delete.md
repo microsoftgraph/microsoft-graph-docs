@@ -2,6 +2,8 @@
 title: "Delete iosImportedPFXCertificateProfile"
 description: "Deletes a iosImportedPFXCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosImportedPFXCertificateProfile

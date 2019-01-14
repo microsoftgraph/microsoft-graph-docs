@@ -2,6 +2,8 @@
 title: "Create deviceCompliancePolicyAssignment"
 description: "Create a new deviceCompliancePolicyAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceCompliancePolicyAssignment

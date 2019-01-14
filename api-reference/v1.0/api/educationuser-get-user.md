@@ -1,6 +1,9 @@
 ---
 title: "Get user"
 description: "Retrieve the simple directory **user** that corresponds to this **educationUser**."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # Get user

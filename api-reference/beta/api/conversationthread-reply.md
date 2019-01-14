@@ -2,6 +2,8 @@
 title: "conversationThread: reply"
 description: "Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # conversationThread: reply

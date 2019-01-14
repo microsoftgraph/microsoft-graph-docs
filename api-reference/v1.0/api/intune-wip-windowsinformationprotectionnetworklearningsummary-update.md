@@ -2,6 +2,8 @@
 title: "Update windowsInformationProtectionNetworkLearningSummary"
 description: "Update the properties of a windowsInformationProtectionNetworkLearningSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsInformationProtectionNetworkLearningSummary

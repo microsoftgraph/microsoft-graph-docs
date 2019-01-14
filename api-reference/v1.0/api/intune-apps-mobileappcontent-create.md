@@ -2,6 +2,8 @@
 title: "Create mobileAppContent"
 description: "Create a new mobileAppContent object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileAppContent

@@ -2,6 +2,7 @@
 title: "Overview of Microsoft Graph"
 description: "Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security, and Windows 10."
 author: "jthake-msft"
+localization_priority: Priority
 ---
 
 # Overview of Microsoft Graph

@@ -2,6 +2,8 @@
 title: "Create mobileAppIntentAndState"
 description: "Create a new mobileAppIntentAndState object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileAppIntentAndState

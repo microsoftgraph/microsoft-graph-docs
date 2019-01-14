@@ -2,6 +2,8 @@
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Create audio routing group

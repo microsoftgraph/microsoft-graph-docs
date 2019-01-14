@@ -1,6 +1,7 @@
 ---
 title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
+localization_priority: Normal
 ---
 
 # Delete connectorGroup

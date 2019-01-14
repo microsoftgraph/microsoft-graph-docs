@@ -2,6 +2,8 @@
 title: "customSubjectAlternativeName resource type"
 description: "Custom Subject Alternative Name definition"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # customSubjectAlternativeName resource type

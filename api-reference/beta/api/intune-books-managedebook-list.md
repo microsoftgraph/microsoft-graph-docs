@@ -2,6 +2,8 @@
 title: "List managedEBooks"
 description: "List properties and relationships of the managedEBook objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedEBooks

@@ -2,6 +2,8 @@
 title: "Create windows10SecureAssessmentConfiguration"
 description: "Create a new windows10SecureAssessmentConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows10SecureAssessmentConfiguration

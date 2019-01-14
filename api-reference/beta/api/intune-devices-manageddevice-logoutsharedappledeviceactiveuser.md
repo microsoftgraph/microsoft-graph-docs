@@ -2,6 +2,8 @@
 title: "logoutSharedAppleDeviceActiveUser action"
 description: "Logout shared Apple device active user"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # logoutSharedAppleDeviceActiveUser action

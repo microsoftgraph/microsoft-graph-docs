@@ -2,6 +2,8 @@
 title: "Get educationAssignmentResource"
 description: "Get the properties of a specific resource on an assignment.  "
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Get educationAssignmentResource

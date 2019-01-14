@@ -2,6 +2,8 @@
 title: "Get windows81TrustedRootCertificate"
 description: "Read properties and relationships of the windows81TrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows81TrustedRootCertificate

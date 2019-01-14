@@ -2,6 +2,8 @@
 title: "Table resource type"
 description: "Represents an Excel table."
 author: "lumine2008"
+localization_priority: Priority
+ms.prod: "excel"
 ---
 
 # Table resource type

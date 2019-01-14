@@ -2,6 +2,8 @@
 title: "Update macOSOfficeSuiteApp"
 description: "Update the properties of a macOSOfficeSuiteApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update macOSOfficeSuiteApp

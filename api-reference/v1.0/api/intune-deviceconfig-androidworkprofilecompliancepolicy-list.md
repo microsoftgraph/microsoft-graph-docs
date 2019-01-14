@@ -2,6 +2,8 @@
 title: "List androidWorkProfileCompliancePolicies"
 description: "List properties and relationships of the androidWorkProfileCompliancePolicy objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidWorkProfileCompliancePolicies

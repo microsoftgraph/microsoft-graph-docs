@@ -2,6 +2,8 @@
 title: "runAsAccountType enum type"
 description: "Indicates execution context of a device management script or an app."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # runAsAccountType enum type

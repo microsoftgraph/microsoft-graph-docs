@@ -2,6 +2,8 @@
 title: "windowsAppX resource type"
 description: "Contains properties and inherited properties for Windows AppX Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsAppX resource type

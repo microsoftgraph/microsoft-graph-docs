@@ -1,6 +1,7 @@
 ---
 title: "Update synchronizationTemplate"
 description: "Update (override) the synchronization template associated with a given application."
+localization_priority: Normal
 ---
 
 # Update synchronizationTemplate

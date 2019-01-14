@@ -2,6 +2,8 @@
 title: "Get deviceManagementScriptDeviceState"
 description: "Read properties and relationships of the deviceManagementScriptDeviceState object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceManagementScriptDeviceState

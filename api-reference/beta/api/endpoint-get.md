@@ -1,6 +1,7 @@
 ---
 title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
+localization_priority: Normal
 ---
 
 # Get endpoint

@@ -2,6 +2,8 @@
 title: "Get iosCertificateProfileBase"
 description: "Read properties and relationships of the iosCertificateProfileBase object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosCertificateProfileBase

@@ -2,6 +2,8 @@
 title: "Update macOSVpnConfiguration"
 description: "Update the properties of a macOSVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update macOSVpnConfiguration

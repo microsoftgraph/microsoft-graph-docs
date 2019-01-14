@@ -2,6 +2,8 @@
 title: "Get access on behalf of a user"
 description: "To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. In this topic, we will walk through an example using this flow. "
 author: "jackson-woods"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get access on behalf of a user

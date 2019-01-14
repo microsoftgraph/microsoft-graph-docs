@@ -1,6 +1,7 @@
 ---
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
+localization_priority: Normal
 ---
 
 # synchronizationSchema: parseExpression

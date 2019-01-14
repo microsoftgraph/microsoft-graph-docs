@@ -1,6 +1,9 @@
 ---
 title: "educationIdentityDomain resource type"
 description: "Represents the mapping between an education user type and the domain the user's account belongs to. The domain resource is part of the identity creation configuration. "
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # educationIdentityDomain resource type

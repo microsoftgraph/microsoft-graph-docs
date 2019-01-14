@@ -2,6 +2,8 @@
 title: "Create iosEducationDeviceConfiguration"
 description: "Create a new iosEducationDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosEducationDeviceConfiguration

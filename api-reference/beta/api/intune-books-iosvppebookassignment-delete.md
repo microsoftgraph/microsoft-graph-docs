@@ -2,6 +2,8 @@
 title: "Delete iosVppEBookAssignment"
 description: "Deletes a iosVppEBookAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosVppEBookAssignment

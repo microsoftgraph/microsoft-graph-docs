@@ -2,6 +2,8 @@
 title: "Delete resourceOperation"
 description: "Deletes a resourceOperation."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete resourceOperation

@@ -1,6 +1,7 @@
 ---
 title: "List anonymousIpRiskEvents"
 description: "Retrieve a list of anonymousipriskevent objects."
+localization_priority: Normal
 ---
 
 # List anonymousIpRiskEvents

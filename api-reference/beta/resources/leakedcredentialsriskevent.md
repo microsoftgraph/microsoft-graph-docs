@@ -1,6 +1,7 @@
 ---
 title: "leakedCredentialsRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection where an account's credentials have been detected in the wild. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+localization_priority: Normal
 ---
 
 # leakedCredentialsRiskEvent resource type

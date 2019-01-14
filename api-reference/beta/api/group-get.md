@@ -2,6 +2,8 @@
 title: "Get group"
 description: "Get the properties and relationships of a group object."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "groups"
 ---
 
 # Get group

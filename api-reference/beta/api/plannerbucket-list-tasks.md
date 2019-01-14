@@ -1,6 +1,9 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannerTask** objects associated to a plannerBucket object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # List tasks

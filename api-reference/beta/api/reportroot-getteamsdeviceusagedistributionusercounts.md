@@ -1,6 +1,8 @@
 ---
 title: "reportRoot: getTeamsDeviceUsageDistributionUserCounts"
 description: "Get the number of Microsoft Teams unique users by device type over the selected time period."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getTeamsDeviceUsageDistributionUserCounts

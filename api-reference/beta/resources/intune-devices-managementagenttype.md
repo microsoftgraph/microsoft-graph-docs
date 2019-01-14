@@ -2,6 +2,8 @@
 title: "managementAgentType enum type"
 description: "Management agent type."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managementAgentType enum type

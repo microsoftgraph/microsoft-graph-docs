@@ -1,6 +1,9 @@
 ---
 title: "oneNoteIdentity resource type"
 description: "**Support coming soon**"
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # oneNoteIdentity resource type

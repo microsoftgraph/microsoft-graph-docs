@@ -1,7 +1,9 @@
 ---
 title: "List pages"
 description: "Retrieve a list of page objects."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # List pages

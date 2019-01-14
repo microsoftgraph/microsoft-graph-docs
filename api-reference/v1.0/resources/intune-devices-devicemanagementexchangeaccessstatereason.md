@@ -2,6 +2,8 @@
 title: "deviceManagementExchangeAccessStateReason enum type"
 description: "Device Exchange Access State Reason."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementExchangeAccessStateReason enum type

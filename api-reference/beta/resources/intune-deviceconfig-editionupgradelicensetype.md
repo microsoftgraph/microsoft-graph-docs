@@ -2,6 +2,8 @@
 title: "editionUpgradeLicenseType enum type"
 description: "Edition Upgrade License type"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # editionUpgradeLicenseType enum type

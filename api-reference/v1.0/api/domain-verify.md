@@ -2,6 +2,8 @@
 title: "domain: verify"
 description: "Validates the ownership of the domain."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # domain: verify

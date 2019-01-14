@@ -2,6 +2,8 @@
 title: "Update mobileAppAssignment"
 description: "Update the properties of a mobileAppAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update mobileAppAssignment

@@ -2,6 +2,8 @@
 title: "Delete mobileAppAssignment"
 description: "Deletes a mobileAppAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete mobileAppAssignment

@@ -1,6 +1,7 @@
 ---
 title: "privilegedRoleSummary resource type"
 description: "The statistics summary for a particular role."
+localization_priority: Normal
 ---
 
 # privilegedRoleSummary resource type

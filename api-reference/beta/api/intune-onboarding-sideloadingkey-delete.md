@@ -2,6 +2,8 @@
 title: "Delete sideLoadingKey"
 description: "Deletes a sideLoadingKey."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete sideLoadingKey

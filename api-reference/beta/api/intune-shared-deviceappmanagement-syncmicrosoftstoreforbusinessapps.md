@@ -2,6 +2,8 @@
 title: "syncMicrosoftStoreForBusinessApps action"
 description: "Syncs Intune account with Microsoft Store For Business"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # syncMicrosoftStoreForBusinessApps action

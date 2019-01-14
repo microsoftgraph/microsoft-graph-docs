@@ -2,6 +2,8 @@
 title: "Create managedAndroidStoreApp"
 description: "Create a new managedAndroidStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managedAndroidStoreApp

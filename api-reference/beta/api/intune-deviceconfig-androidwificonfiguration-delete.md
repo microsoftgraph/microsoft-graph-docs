@@ -2,6 +2,8 @@
 title: "Delete androidWiFiConfiguration"
 description: "Deletes a androidWiFiConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidWiFiConfiguration

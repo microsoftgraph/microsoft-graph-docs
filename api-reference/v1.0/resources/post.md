@@ -2,6 +2,8 @@
 title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # post resource type

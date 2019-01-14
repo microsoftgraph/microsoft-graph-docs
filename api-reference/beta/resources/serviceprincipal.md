@@ -1,6 +1,7 @@
 ---
 title: "servicePrincipal resource type"
 description: "Represents an instance of an application in a directory. Inherits from directoryObject."
+localization_priority: Priority
 ---
 
 # servicePrincipal resource type

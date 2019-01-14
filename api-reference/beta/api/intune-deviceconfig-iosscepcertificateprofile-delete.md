@@ -2,6 +2,8 @@
 title: "Delete iosScepCertificateProfile"
 description: "Deletes a iosScepCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosScepCertificateProfile

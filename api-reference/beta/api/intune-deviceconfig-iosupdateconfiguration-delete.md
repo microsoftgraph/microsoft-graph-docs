@@ -2,6 +2,8 @@
 title: "Delete iosUpdateConfiguration"
 description: "Deletes a iosUpdateConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosUpdateConfiguration

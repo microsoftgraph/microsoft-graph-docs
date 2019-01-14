@@ -2,6 +2,8 @@
 title: "Delete macOSOfficeSuiteApp"
 description: "Deletes a macOSOfficeSuiteApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete macOSOfficeSuiteApp

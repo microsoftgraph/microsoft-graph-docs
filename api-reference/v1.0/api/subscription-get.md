@@ -1,6 +1,8 @@
 ---
 title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
+localization_priority: Priority
+author: "piotrci"
 ---
 
 # Get subscription

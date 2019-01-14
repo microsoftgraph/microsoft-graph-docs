@@ -1,6 +1,9 @@
 ---
 title: "plannerAssignedToTaskBoardTaskFormat resource type"
 description: "The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each task will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # plannerAssignedToTaskBoardTaskFormat resource type

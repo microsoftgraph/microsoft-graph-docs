@@ -2,6 +2,8 @@
 title: "Create call"
 description: "Create a new call."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Create call

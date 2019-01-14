@@ -1,7 +1,9 @@
 ---
 title: "Create OneNote pages"
 description: " Enterprise notebooks on Office 365"
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Priority
+ms.prod: "onenote"
 ---
 
 # Create OneNote pages

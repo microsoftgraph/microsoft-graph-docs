@@ -2,6 +2,8 @@
 title: "Create androidManagedAppRegistration"
 description: "Create a new androidManagedAppRegistration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidManagedAppRegistration

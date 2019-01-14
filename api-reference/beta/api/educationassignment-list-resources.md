@@ -2,6 +2,8 @@
 title: "List educationAssignmentResources"
 description: "Get all the resources associated with this assignment."
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List educationAssignmentResources

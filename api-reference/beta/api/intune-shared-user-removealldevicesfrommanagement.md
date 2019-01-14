@@ -2,6 +2,8 @@
 title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # removeAllDevicesFromManagement action

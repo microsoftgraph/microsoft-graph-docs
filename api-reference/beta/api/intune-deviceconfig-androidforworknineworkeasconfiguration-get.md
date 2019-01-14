@@ -2,6 +2,8 @@
 title: "Get androidForWorkNineWorkEasConfiguration"
 description: "Read properties and relationships of the androidForWorkNineWorkEasConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidForWorkNineWorkEasConfiguration

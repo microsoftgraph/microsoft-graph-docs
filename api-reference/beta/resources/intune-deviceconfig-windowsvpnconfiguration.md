@@ -2,6 +2,8 @@
 title: "windowsVpnConfiguration resource type"
 description: "Windows VPN configuration profile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsVpnConfiguration resource type

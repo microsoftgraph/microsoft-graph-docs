@@ -2,6 +2,8 @@
 title: "Create User"
 description: "Use this API to create a new User."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create User

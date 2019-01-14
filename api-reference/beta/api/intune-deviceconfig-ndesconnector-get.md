@@ -2,6 +2,8 @@
 title: "Get ndesConnector"
 description: "Read properties and relationships of the ndesConnector object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get ndesConnector

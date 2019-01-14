@@ -2,6 +2,8 @@
 title: "Update androidTrustedRootCertificate"
 description: "Update the properties of a androidTrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidTrustedRootCertificate

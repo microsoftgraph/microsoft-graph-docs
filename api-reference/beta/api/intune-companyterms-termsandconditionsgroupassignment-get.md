@@ -2,6 +2,8 @@
 title: "Get termsAndConditionsGroupAssignment"
 description: "Read properties and relationships of the termsAndConditionsGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get termsAndConditionsGroupAssignment

@@ -1,6 +1,7 @@
 ---
 title: "List suspiciousIpRiskEvents"
 description: "Retrieve a list of suspiciousipriskevent objects."
+localization_priority: Normal
 ---
 
 # List suspiciousIpRiskEvents

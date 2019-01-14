@@ -2,6 +2,8 @@
 title: "Get Outlook messages in a shared or delegated folder"
 description: "Outlook lets customers share mail folders with one another and provide read, create, modify, or delete access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
 author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # Get Outlook messages in a shared or delegated folder

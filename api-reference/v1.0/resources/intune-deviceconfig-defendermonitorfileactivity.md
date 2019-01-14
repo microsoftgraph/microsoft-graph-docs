@@ -2,6 +2,8 @@
 title: "defenderMonitorFileActivity enum type"
 description: "Possible values for monitoring file activity."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # defenderMonitorFileActivity enum type

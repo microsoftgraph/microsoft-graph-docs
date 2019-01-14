@@ -2,6 +2,8 @@
 title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create ContactFolder

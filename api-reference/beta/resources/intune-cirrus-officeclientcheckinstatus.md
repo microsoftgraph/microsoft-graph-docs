@@ -2,6 +2,8 @@
 title: "officeClientCheckinStatus resource type"
 description: "Entity that describes  tenant check-in stats."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # officeClientCheckinStatus resource type

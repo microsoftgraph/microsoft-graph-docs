@@ -2,6 +2,8 @@
 title: "TableColumn: delete"
 description: "Deletes the column from the table."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableColumn: delete

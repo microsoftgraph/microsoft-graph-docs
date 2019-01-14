@@ -2,6 +2,8 @@
 title: "Delete microsoftStoreForBusinessContainedApp"
 description: "Deletes a microsoftStoreForBusinessContainedApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete microsoftStoreForBusinessContainedApp

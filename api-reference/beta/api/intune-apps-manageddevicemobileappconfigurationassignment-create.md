@@ -2,6 +2,8 @@
 title: "Create managedDeviceMobileAppConfigurationAssignment"
 description: "Create a new managedDeviceMobileAppConfigurationAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managedDeviceMobileAppConfigurationAssignment

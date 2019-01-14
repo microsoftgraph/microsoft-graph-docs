@@ -2,6 +2,8 @@
 title: "Create notificationMessageTemplate"
 description: "Create a new notificationMessageTemplate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create notificationMessageTemplate

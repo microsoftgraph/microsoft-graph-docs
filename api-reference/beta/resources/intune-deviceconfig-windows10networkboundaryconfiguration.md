@@ -2,6 +2,8 @@
 title: "windows10NetworkBoundaryConfiguration resource type"
 description: "Windows10 Network Boundary Configuration"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windows10NetworkBoundaryConfiguration resource type

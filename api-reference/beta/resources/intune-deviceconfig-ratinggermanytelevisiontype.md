@@ -2,6 +2,8 @@
 title: "ratingGermanyTelevisionType enum type"
 description: "TV content rating labels in Germany"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingGermanyTelevisionType enum type

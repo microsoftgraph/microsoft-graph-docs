@@ -2,6 +2,8 @@
 title: "Create table"
 description: "Use this API to create a new Table."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Create table

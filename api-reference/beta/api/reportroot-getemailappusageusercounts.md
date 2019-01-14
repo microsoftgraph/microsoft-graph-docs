@@ -1,6 +1,8 @@
 ---
 title: "reportRoot: getEmailAppUsageUserCounts"
 description: "Get the count of unique users that connected to Exchange Online using any email app."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getEmailAppUsageUserCounts

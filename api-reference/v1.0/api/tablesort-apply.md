@@ -2,6 +2,8 @@
 title: "TableSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableSort: apply

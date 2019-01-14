@@ -1,6 +1,7 @@
 ---
 title: "synchronizationSchema: functions"
 description: "List all the functions currently supported in the attributeMappingSource."
+localization_priority: Normal
 ---
 
 # synchronizationSchema: functions

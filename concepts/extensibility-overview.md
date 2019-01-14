@@ -2,6 +2,7 @@
 title: "Add custom data to resources using extensions"
 description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
+localization_priority: Priority
 ---
 
 # Add custom data to resources using extensions

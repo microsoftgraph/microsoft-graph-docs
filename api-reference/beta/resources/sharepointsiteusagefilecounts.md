@@ -1,6 +1,8 @@
 ---
 title: "sharePointSiteUsageFileCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # sharePointSiteUsageFileCounts resource type

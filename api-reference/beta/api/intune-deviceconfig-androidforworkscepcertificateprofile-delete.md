@@ -2,6 +2,8 @@
 title: "Delete androidForWorkScepCertificateProfile"
 description: "Deletes a androidForWorkScepCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkScepCertificateProfile

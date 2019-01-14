@@ -2,6 +2,8 @@
 title: "windowsDeviceHealthState enum type"
 description: "Computer endpoint protection state"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsDeviceHealthState enum type

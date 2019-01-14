@@ -2,6 +2,8 @@
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "groups"
 ---
 
 # List memberOf

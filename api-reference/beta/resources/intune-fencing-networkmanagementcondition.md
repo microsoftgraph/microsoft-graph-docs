@@ -2,6 +2,8 @@
 title: "networkManagementCondition resource type"
 description: "Contains the information to define a network management condition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # networkManagementCondition resource type

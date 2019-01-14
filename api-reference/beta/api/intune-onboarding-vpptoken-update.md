@@ -2,6 +2,8 @@
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update vppToken

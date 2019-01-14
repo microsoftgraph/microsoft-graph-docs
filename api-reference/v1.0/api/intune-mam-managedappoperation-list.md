@@ -2,6 +2,8 @@
 title: "List managedAppOperations"
 description: "List properties and relationships of the managedAppOperation objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedAppOperations

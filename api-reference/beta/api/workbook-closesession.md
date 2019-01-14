@@ -2,6 +2,8 @@
 title: "Close Session"
 description: "Use this API to close an existing workbook session. "
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Close Session

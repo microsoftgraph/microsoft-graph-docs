@@ -1,6 +1,8 @@
 ---
 title: "Create subscription"
 description: "Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes."
+localization_priority: Normal
+author: "piotrci"
 ---
 
 # Create subscription

@@ -2,6 +2,8 @@
 title: "Delete importedDeviceIdentityResult"
 description: "Deletes a importedDeviceIdentityResult."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete importedDeviceIdentityResult

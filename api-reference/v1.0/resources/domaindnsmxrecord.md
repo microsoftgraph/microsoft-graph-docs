@@ -2,6 +2,8 @@
 title: "domainDnsMxRecord resource type"
 description: "Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # domainDnsMxRecord resource type

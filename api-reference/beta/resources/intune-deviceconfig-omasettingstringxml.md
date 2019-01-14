@@ -2,6 +2,8 @@
 title: "omaSettingStringXml resource type"
 description: "OMA Settings StringXML definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # omaSettingStringXml resource type

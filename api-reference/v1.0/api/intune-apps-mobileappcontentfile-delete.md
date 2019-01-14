@@ -2,6 +2,8 @@
 title: "Delete mobileAppContentFile"
 description: "Deletes a mobileAppContentFile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete mobileAppContentFile

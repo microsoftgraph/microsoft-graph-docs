@@ -2,6 +2,8 @@
 title: "Delete deviceManagementScriptDeviceState"
 description: "Deletes a deviceManagementScriptDeviceState."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceManagementScriptDeviceState

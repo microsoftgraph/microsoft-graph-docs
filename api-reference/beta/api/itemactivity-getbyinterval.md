@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: Get item activity stats by interval
+localization_priority: Normal
 ---
 # Get item activity stats by interval
 

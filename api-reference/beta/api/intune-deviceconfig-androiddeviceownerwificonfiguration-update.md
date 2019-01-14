@@ -2,6 +2,8 @@
 title: "Update androidDeviceOwnerWiFiConfiguration"
 description: "Update the properties of a androidDeviceOwnerWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidDeviceOwnerWiFiConfiguration

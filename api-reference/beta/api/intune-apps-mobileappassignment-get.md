@@ -2,6 +2,8 @@
 title: "Get mobileAppAssignment"
 description: "Read properties and relationships of the mobileAppAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get mobileAppAssignment

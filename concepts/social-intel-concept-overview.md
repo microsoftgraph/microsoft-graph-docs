@@ -2,6 +2,8 @@
 title: "Overview of social intelligence and analytics in Microsoft Graph"
 description: "The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting."
 author: "simonhult"
+localization_priority: Priority
+ms.prod: "insights"
 ---
 
 # Overview of social intelligence and analytics in Microsoft Graph

@@ -1,6 +1,7 @@
 ---
 title: "National cloud deployments"
 description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel. To learn more, see Microsoft National Clouds."
+localization_priority: Priority
 ---
 
 # National cloud deployments

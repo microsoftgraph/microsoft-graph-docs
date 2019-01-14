@@ -1,6 +1,9 @@
 ---
 title: "List device transitive groups"
 description: "Get groups that the device is a member of. This API request is transitive, and will also return all groups the device is a nested member of."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List device transitive groups

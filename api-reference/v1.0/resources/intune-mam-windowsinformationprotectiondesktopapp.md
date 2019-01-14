@@ -2,6 +2,8 @@
 title: "windowsInformationProtectionDesktopApp resource type"
 description: "Desktop App for Windows information protection"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsInformationProtectionDesktopApp resource type

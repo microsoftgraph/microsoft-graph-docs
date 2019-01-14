@@ -2,6 +2,8 @@
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Get channel

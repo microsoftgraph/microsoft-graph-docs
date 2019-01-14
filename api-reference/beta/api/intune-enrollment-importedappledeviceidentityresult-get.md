@@ -2,6 +2,8 @@
 title: "Get importedAppleDeviceIdentityResult"
 description: "Read properties and relationships of the importedAppleDeviceIdentityResult object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get importedAppleDeviceIdentityResult

@@ -2,6 +2,8 @@
 title: "remoteLock action"
 description: "Remote lock"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # remoteLock action

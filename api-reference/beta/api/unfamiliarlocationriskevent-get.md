@@ -1,6 +1,7 @@
 ---
 title: "Get unfamiliarLocationRiskEvent"
 description: "Retrieve the properties and relationships of an unfamiliarlocationriskevent object."
+localization_priority: Normal
 ---
 
 # Get unfamiliarLocationRiskEvent

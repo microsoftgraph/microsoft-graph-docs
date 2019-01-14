@@ -2,6 +2,8 @@
 title: "Update deviceConfigurationUserStatus"
 description: "Update the properties of a deviceConfigurationUserStatus object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceConfigurationUserStatus

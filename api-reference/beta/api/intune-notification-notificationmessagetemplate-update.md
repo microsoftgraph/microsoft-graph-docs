@@ -2,6 +2,8 @@
 title: "Update notificationMessageTemplate"
 description: "Update the properties of a notificationMessageTemplate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update notificationMessageTemplate

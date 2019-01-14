@@ -2,6 +2,8 @@
 title: "TableRowCollection: ItemAt"
 description: "Gets a row based on its position in the collection."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableRowCollection: ItemAt

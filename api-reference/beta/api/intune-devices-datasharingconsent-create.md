@@ -2,6 +2,8 @@
 title: "Create dataSharingConsent"
 description: "Create a new dataSharingConsent object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create dataSharingConsent

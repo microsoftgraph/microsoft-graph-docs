@@ -2,6 +2,8 @@
 title: "Update managedDeviceMobileAppConfigurationDeviceStatus"
 description: "Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update managedDeviceMobileAppConfigurationDeviceStatus

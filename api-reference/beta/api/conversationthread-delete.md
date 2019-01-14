@@ -2,6 +2,8 @@
 title: "Delete conversationThread"
 description: "Delete conversationThread."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Delete conversationThread

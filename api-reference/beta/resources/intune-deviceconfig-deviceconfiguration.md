@@ -2,6 +2,8 @@
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceConfiguration resource type

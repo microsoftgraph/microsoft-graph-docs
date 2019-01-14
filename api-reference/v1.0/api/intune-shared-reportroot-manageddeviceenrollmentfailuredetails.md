@@ -2,6 +2,8 @@
 title: "managedDeviceEnrollmentFailureDetails function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedDeviceEnrollmentFailureDetails function

@@ -2,6 +2,8 @@
 title: "RangeSort resource type"
 description: "Manages sorting operations on Range objects."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # RangeSort resource type

@@ -2,6 +2,8 @@
 title: "Delete mailFolder"
 description: "Delete the specified mailFolder or mailSearchFolder."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete mailFolder

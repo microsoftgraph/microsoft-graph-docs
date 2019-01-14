@@ -1,6 +1,7 @@
 ---
 title: "List leakedCredentialsRiskEvents"
 description: "Retrieve a list of leakedcredentialsriskevent objects."
+localization_priority: Normal
 ---
 
 # List leakedCredentialsRiskEvents

@@ -2,6 +2,8 @@
 title: "wipeManagedAppRegistrationByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # wipeManagedAppRegistrationByDeviceTag action

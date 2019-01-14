@@ -2,6 +2,8 @@
 title: "Create windows10CustomConfiguration"
 description: "Create a new windows10CustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows10CustomConfiguration

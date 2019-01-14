@@ -2,6 +2,8 @@
 title: "List contactFolders"
 description: "Get the contact folder collection in the default Contacts folder of the signed-in user."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List contactFolders

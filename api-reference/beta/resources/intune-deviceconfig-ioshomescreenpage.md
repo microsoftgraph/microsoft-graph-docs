@@ -2,6 +2,8 @@
 title: "iosHomeScreenPage resource type"
 description: "A page containing apps and folders on the Home Screen"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosHomeScreenPage resource type

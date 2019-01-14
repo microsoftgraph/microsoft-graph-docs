@@ -2,6 +2,8 @@
 title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # meetingParticipantInfo resource type

@@ -2,6 +2,8 @@
 title: "List all teams in Microsoft Teams for an organization"
 description: "To list all teams "
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # List all teams in Microsoft Teams for an organization

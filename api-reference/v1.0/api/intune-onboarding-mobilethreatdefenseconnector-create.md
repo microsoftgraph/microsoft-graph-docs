@@ -2,6 +2,8 @@
 title: "Create mobileThreatDefenseConnector"
 description: "Create a new mobileThreatDefenseConnector object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileThreatDefenseConnector

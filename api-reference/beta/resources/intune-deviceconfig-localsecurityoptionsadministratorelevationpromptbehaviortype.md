@@ -2,6 +2,8 @@
 title: "localSecurityOptionsAdministratorElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # localSecurityOptionsAdministratorElevationPromptBehaviorType enum type

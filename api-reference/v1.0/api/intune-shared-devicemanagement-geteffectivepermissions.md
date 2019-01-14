@@ -2,6 +2,8 @@
 title: "getEffectivePermissions function"
 description: "Retrieves the effective permissions of the currently authenticated user"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # getEffectivePermissions function

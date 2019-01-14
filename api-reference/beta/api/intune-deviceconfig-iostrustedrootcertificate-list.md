@@ -2,6 +2,8 @@
 title: "List iosTrustedRootCertificates"
 description: "List properties and relationships of the iosTrustedRootCertificate objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosTrustedRootCertificates

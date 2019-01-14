@@ -2,6 +2,8 @@
 title: "Create windowsPhone81StoreApp"
 description: "Create a new windowsPhone81StoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsPhone81StoreApp

@@ -2,6 +2,8 @@
 title: "TableColumnCollection: add"
 description: "Adds a new column to the table."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableColumnCollection: add

@@ -2,6 +2,8 @@
 title: "Get windows10PkcsCertificateProfile"
 description: "Read properties and relationships of the windows10PkcsCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows10PkcsCertificateProfile

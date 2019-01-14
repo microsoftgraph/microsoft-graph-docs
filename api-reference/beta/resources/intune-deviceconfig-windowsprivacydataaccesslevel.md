@@ -2,6 +2,8 @@
 title: "windowsPrivacyDataAccessLevel enum type"
 description: "Determine the access level to specific Windows privacy data category."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsPrivacyDataAccessLevel enum type

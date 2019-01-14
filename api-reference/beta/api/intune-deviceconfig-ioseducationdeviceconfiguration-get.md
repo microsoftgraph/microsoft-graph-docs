@@ -2,6 +2,8 @@
 title: "Get iosEducationDeviceConfiguration"
 description: "Read properties and relationships of the iosEducationDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosEducationDeviceConfiguration

@@ -2,6 +2,8 @@
 title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create administrativeUnit

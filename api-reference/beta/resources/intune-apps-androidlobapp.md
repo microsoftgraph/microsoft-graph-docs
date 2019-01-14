@@ -2,6 +2,8 @@
 title: "androidLobApp resource type"
 description: "Contains properties and inherited properties for Android Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidLobApp resource type

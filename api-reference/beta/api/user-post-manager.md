@@ -1,6 +1,9 @@
 ---
 title: "Assign a manager"
 description: "Use this API to assign a user's manager."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Assign a manager

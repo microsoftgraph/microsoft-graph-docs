@@ -1,6 +1,8 @@
 ---
 title: "reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts"
 description: "Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in. Types of conference sessions include audio/video."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts

@@ -1,6 +1,9 @@
 ---
 title: "Create Channel"
 description: "Create a new channel in a Microsoft Team, as specified in the request body."
+localization_priority: Normal
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Create Channel

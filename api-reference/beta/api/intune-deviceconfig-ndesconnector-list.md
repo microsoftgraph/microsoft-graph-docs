@@ -2,6 +2,8 @@
 title: "List ndesConnectors"
 description: "List properties and relationships of the ndesConnector objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List ndesConnectors

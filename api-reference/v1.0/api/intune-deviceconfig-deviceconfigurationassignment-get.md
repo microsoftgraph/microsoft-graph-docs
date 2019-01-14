@@ -2,6 +2,8 @@
 title: "Get deviceConfigurationAssignment"
 description: "Read properties and relationships of the deviceConfigurationAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceConfigurationAssignment

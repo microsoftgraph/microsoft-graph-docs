@@ -2,6 +2,8 @@
 title: "Create managedDevice"
 description: "Create a new managedDevice object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managedDevice

@@ -2,6 +2,8 @@
 title: "Update windowsManagedDevice"
 description: "Update the properties of a windowsManagedDevice object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsManagedDevice

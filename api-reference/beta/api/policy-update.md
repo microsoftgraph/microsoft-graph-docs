@@ -1,6 +1,7 @@
 ---
 title: "Update Policy"
 description: "Update properties in a preexisting policy."
+localization_priority: Normal
 ---
 
 # Update Policy

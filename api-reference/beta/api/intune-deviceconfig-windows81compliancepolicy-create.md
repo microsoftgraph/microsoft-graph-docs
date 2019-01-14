@@ -2,6 +2,8 @@
 title: "Create windows81CompliancePolicy"
 description: "Create a new windows81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows81CompliancePolicy

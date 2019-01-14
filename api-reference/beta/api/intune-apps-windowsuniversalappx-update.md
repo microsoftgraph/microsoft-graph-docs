@@ -2,6 +2,8 @@
 title: "Update windowsUniversalAppX"
 description: "Update the properties of a windowsUniversalAppX object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsUniversalAppX

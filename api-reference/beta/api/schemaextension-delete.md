@@ -1,6 +1,8 @@
 ---
 title: "Delete schemaExtension"
 description: "Delete the definition of a schema extension."
+localization_priority: Normal
+author: "dkershaw10"
 ---
 
 # Delete schemaExtension

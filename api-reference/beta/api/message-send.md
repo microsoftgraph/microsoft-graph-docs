@@ -1,6 +1,9 @@
 ---
 title: "message: send"
 description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # message: send

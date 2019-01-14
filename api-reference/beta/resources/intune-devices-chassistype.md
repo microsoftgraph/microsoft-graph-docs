@@ -2,6 +2,8 @@
 title: "chassisType enum type"
 description: "Chassis type."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # chassisType enum type

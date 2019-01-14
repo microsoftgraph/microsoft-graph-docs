@@ -1,6 +1,7 @@
 ---
 title: "policy resource type"
 description: "Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. Currently only one type of policy is available:"
+localization_priority: Normal
 ---
 
 # policy resource type

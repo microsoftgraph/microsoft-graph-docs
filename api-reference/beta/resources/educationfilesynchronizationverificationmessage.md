@@ -2,6 +2,8 @@
 title: "educationFileSynchronizationVerificationMessage resource type"
 description: "Represents an error returned to the client in response to a request to start synchronization for CSV-based school data profiles. The resource will contain errors that result from the verification. Users must fix the source data before you restart the request to synchronize with Azure Active Directory (Azure AD)."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationFileSynchronizationVerificationMessage resource type

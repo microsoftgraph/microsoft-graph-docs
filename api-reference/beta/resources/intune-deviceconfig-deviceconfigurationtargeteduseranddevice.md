@@ -2,6 +2,8 @@
 title: "deviceConfigurationTargetedUserAndDevice resource type"
 description: "Conflict summary for a set of device configuration policies."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceConfigurationTargetedUserAndDevice resource type

@@ -1,6 +1,9 @@
 ---
 title: "List plans"
 description: "Retrieve a list of **plannerplan** objects."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # List plans

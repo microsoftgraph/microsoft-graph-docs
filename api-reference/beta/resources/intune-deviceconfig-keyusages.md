@@ -2,6 +2,8 @@
 title: "keyUsages enum type"
 description: "Key Usage Options."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # keyUsages enum type

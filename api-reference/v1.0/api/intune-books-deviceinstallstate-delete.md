@@ -2,6 +2,8 @@
 title: "Delete deviceInstallState"
 description: "Deletes a deviceInstallState."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceInstallState

@@ -2,6 +2,8 @@
 title: "Get localizedNotificationMessage"
 description: "Read properties and relationships of the localizedNotificationMessage object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get localizedNotificationMessage

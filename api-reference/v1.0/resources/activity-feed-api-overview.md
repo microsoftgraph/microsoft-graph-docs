@@ -1,6 +1,8 @@
 ---
 title: "Use the activity feed REST API"
 description: "You can use the activity feed API in Microsoft Graph to resume a user's actiity across devices and platforms. Activity feed API requests are performed on behalf of a user via delegated permissions and the user activity permission, which can be used with either personal or work and school accounts. "
+localization_priority: Normal
+ms.prod: "project-rome"
 ---
 
 # Use the activity feed REST API

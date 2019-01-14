@@ -2,6 +2,8 @@
 title: "Remove a member"
 description: "Use this API to remove a member (user or group) from an administrative unit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Remove a member

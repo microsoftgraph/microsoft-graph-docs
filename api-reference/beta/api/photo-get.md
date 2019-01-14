@@ -1,6 +1,7 @@
 ---
 title: "Get photo"
 description: "Retrieve the properties and relationships of photo object."
+localization_priority: Normal
 ---
 
 # Get photo

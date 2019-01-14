@@ -1,6 +1,7 @@
 ---
 title: "appRole resource type"
 description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the servicePrincipal entity and of the application entity is a collection of **appRole**."
+localization_priority: Normal
 ---
 
 # appRole resource type

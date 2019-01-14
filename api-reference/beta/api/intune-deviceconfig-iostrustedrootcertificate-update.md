@@ -2,6 +2,8 @@
 title: "Update iosTrustedRootCertificate"
 description: "Update the properties of a iosTrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosTrustedRootCertificate

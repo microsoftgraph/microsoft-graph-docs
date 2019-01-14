@@ -1,6 +1,9 @@
 ---
 title: "managedAppClipboardSharingLevel enum type"
 description: "Represents the level to which the device's clipboard may be shared between apps"
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # managedAppClipboardSharingLevel enum type

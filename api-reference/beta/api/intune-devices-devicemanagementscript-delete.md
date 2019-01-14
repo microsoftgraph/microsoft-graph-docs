@@ -2,6 +2,8 @@
 title: "Delete deviceManagementScript"
 description: "Deletes a deviceManagementScript."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceManagementScript

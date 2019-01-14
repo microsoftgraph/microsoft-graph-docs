@@ -2,6 +2,8 @@
 title: "Update windows10PFXImportCertificateProfile"
 description: "Update the properties of a windows10PFXImportCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows10PFXImportCertificateProfile

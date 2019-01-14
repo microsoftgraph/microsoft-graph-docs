@@ -1,7 +1,9 @@
 ---
 title: "Delete device"
 description: "Delete a registered device."
-author: "tfitzmac"
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete device

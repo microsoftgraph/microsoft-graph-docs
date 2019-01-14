@@ -2,6 +2,8 @@
 title: "List directoryRoles"
 description: "List the directory roles that are activated in the tenant."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List directoryRoles

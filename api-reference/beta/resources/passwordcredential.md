@@ -1,6 +1,7 @@
 ---
 title: "passwordCredential resource type"
 description: "Contains a password credential associated with an application or a service principal. The **passwordCredentials** property of the servicePrincipal entity and of the application entity is a collection of **passwordCredential**."
+localization_priority: Normal
 ---
 
 # passwordCredential resource type

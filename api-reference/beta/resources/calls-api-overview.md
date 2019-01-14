@@ -2,6 +2,8 @@
 title: "Working with the calls and online meetings API in Microsoft Graph"
 description: "The Microsoft Graph calls and online meetings API adds a new dimension to how your apps and services can interact with users by enabling voice and video features. The API enables you to create calls and receive calls from users and applications in Microsoft Teams. You can use these APIs to build a service application (bot) that can act as a participant in a call or meeting."
 author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Working with the calls and online meetings API in Microsoft Graph

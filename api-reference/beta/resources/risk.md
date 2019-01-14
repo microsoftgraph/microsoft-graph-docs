@@ -1,6 +1,9 @@
 ---
 title: "risk resource type"
 description: "Aggregates the risk level, risk state and risk detail for the risky user, sign in, or risk event."
+localization_priority: Normal
+author: "cloudhandler"
+ms.prod: "security"
 ---
 
 # risk resource type

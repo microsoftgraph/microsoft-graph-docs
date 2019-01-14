@@ -2,6 +2,8 @@
 title: "safeSearchFilterType enum type"
 description: "Specifies what level of safe search (filtering adult content) is required"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # safeSearchFilterType enum type

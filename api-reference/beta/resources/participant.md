@@ -2,6 +2,8 @@
 title: "participant resource type"
 description: "The participant type."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # participant resource type

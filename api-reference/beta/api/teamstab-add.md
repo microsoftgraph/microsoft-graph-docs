@@ -2,6 +2,8 @@
 title: "Add tab to channel"
 description: "Adds (pins) a tab to the specified channel within a team. "
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Add tab to channel

@@ -2,6 +2,8 @@
 title: "Get TableColumn"
 description: "Retrieve the properties and relationships of tablecolumn object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get TableColumn

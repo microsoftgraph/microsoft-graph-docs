@@ -2,6 +2,8 @@
 title: "Update androidVpnConfiguration"
 description: "Update the properties of a androidVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidVpnConfiguration

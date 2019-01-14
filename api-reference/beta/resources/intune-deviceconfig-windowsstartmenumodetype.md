@@ -2,6 +2,8 @@
 title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsStartMenuModeType enum type

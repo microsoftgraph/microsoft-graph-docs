@@ -2,6 +2,8 @@
 title: "vpnAuthenticationMethod enum type"
 description: "VPN Authentication Method."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # vpnAuthenticationMethod enum type

@@ -1,6 +1,9 @@
 ---
 title: "androidForWorkMobileAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for AFW mobile app configurations."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # androidForWorkMobileAppConfiguration resource type

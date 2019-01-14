@@ -1,6 +1,7 @@
 ---
 title: "privilegedRoleAssignment: makePermanent"
 description: "Make the role assignment as permanent."
+localization_priority: Normal
 ---
 
 # privilegedRoleAssignment: makePermanent

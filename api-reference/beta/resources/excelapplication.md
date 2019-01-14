@@ -1,6 +1,9 @@
 ---
 title: "Application resource type"
 description: "Represents the Excel application that manages the workbook."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # Application resource type

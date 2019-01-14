@@ -1,6 +1,7 @@
 ---
 title: "synchronizationJob: validateCredentials"
 description: "Validate that the credentials are valid in the tenant."
+localization_priority: Normal
 ---
 
 # synchronizationJob: validateCredentials

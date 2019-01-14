@@ -2,6 +2,8 @@
 title: "List windowsPhone81SCEPCertificateProfiles"
 description: "List properties and relationships of the windowsPhone81SCEPCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsPhone81SCEPCertificateProfiles

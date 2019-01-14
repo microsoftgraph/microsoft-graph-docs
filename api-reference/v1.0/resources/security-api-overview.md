@@ -1,6 +1,9 @@
 ---
 title: "Use the Microsoft Graph Security API"
 description: "The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API can be used as a federated security aggregation service to submit queries to all onboarded security providers to get aggregated responses. Use Microsoft Graph Security API to build applications that:"
+localization_priority: Priority
+author: "preetikr"
+ms.prod: "security"
 ---
 
 # Use the Microsoft Graph Security API

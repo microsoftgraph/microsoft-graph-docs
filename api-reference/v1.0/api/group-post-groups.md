@@ -2,6 +2,8 @@
 title: "Create group"
 description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "groups"
 ---
 
 # Create group

@@ -2,6 +2,8 @@
 title: "Create androidWiFiConfiguration"
 description: "Create a new androidWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidWiFiConfiguration

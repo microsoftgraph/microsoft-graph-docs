@@ -1,6 +1,7 @@
 ---
 title: "privilegedRoleSettings resource type"
 description: "Represents the settings for a privileged role."
+localization_priority: Normal
 ---
 
 # privilegedRoleSettings resource type

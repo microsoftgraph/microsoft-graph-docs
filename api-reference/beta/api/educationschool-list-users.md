@@ -2,6 +2,8 @@
 title: "List educationUsers"
 description: "Retrieve a list of users at a school."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List educationUsers

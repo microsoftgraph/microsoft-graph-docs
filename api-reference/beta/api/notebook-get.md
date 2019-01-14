@@ -1,7 +1,9 @@
 ---
 title: "Get notebook"
 description: "Retrieve the properties and relationships of a notebook object."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Get notebook

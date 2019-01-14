@@ -2,6 +2,8 @@
 title: "Update importedDeviceIdentityResult"
 description: "Update the properties of a importedDeviceIdentityResult object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update importedDeviceIdentityResult

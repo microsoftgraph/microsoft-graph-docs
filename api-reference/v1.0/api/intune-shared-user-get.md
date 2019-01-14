@@ -2,6 +2,8 @@
 title: "Get user"
 description: "Read properties and relationships of the user object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get user

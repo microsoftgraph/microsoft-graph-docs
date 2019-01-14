@@ -2,6 +2,8 @@
 title: "workbookRange: columnsBefore"
 description: "Gets a certain number of columns to the left of the given range."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # workbookRange: columnsBefore

@@ -2,6 +2,8 @@
 title: "commsOperation resource type"
 description: "The status of certain long-running operations."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # commsOperation resource type

@@ -2,6 +2,8 @@
 title: "Delete windowsPhoneXAP"
 description: "Deletes a windowsPhoneXAP."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsPhoneXAP

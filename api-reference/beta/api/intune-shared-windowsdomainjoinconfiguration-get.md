@@ -2,6 +2,8 @@
 title: "Get windowsDomainJoinConfiguration"
 description: "Read properties and relationships of the windowsDomainJoinConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsDomainJoinConfiguration

@@ -2,6 +2,8 @@
 title: "configurationManagerClientState enum type"
 description: "Configuration manager client state"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # configurationManagerClientState enum type

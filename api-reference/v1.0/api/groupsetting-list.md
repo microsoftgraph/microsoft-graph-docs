@@ -2,6 +2,8 @@
 title: "List group settings"
 description: "Retrieve a list of group setting objects."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List group settings

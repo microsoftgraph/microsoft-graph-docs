@@ -1,7 +1,9 @@
 ---
 title: "Create owner"
 description: "Use this API to create a new owner."
-author: "lleonard-msft"
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Create owner

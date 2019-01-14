@@ -2,6 +2,8 @@
 title: "Get windowsPhoneEASEmailProfileConfiguration"
 description: "Read properties and relationships of the windowsPhoneEASEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsPhoneEASEmailProfileConfiguration

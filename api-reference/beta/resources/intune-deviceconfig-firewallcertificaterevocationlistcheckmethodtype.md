@@ -2,6 +2,8 @@
 title: "firewallCertificateRevocationListCheckMethodType enum type"
 description: "Possible values for firewallCertificateRevocationListCheckMethod"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # firewallCertificateRevocationListCheckMethodType enum type

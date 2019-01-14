@@ -2,6 +2,8 @@
 title: "Update iosVppAppAssignedUserLicense"
 description: "Update the properties of a iosVppAppAssignedUserLicense object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosVppAppAssignedUserLicense

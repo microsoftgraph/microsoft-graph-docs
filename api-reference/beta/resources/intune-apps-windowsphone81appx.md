@@ -2,6 +2,8 @@
 title: "windowsPhone81AppX resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsPhone81AppX resource type

@@ -2,6 +2,8 @@
 title: "List trendingAround"
 description: "Calculated insight that returns the list of items trending around a user."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List trendingAround

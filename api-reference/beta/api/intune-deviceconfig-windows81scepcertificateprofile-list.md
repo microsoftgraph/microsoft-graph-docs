@@ -2,6 +2,8 @@
 title: "List windows81SCEPCertificateProfiles"
 description: "List properties and relationships of the windows81SCEPCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windows81SCEPCertificateProfiles

@@ -1,6 +1,7 @@
 ---
 title: "Get governanceResource"
 description: "Retrieve the properties and relationships of a governanceResource object."
+localization_priority: Normal
 ---
 
 # Get governanceResource

@@ -2,6 +2,8 @@
 title: "defenderAttackSurfaceType enum type"
 description: "Possible values of Defender Attack Surface Reduction Rules"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # defenderAttackSurfaceType enum type

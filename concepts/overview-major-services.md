@@ -2,6 +2,7 @@
 title: "Major services and features in Microsoft Graph"
 description: "Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. "
 author: "jthake-msft"
+localization_priority: Priority
 ---
 
 # Major services and features in Microsoft Graph

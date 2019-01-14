@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Access shared items
+localization_priority: Normal
 ---
 # Accessing shared DriveItems
 

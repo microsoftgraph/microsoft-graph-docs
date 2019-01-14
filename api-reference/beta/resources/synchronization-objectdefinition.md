@@ -1,6 +1,7 @@
 ---
 title: "objectDefinition resource type"
 description: "Describes an object and its attributes. Object definitions are part of directoryDefinition, which is updated as part of synchronizationSchema."
+localization_priority: Normal
 ---
 
 # objectDefinition resource type

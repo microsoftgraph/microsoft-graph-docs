@@ -2,6 +2,8 @@
 title: "applicationType enum type"
 description: "Possible types of Application"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # applicationType enum type

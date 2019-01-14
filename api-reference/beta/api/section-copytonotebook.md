@@ -1,6 +1,9 @@
 ---
 title: "section: copyToNotebook"
 description: "Copies a section to a specific notebook."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # section: copyToNotebook

@@ -2,6 +2,8 @@
 title: "Get enrollmentProfile"
 description: "Read properties and relationships of the enrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get enrollmentProfile

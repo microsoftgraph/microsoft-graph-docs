@@ -1,6 +1,7 @@
 ---
 title: "privilegedApproval resource type"
 description: "Represents an approval that is requested in Privileged Identity Management for getting into a role."
+localization_priority: Normal
 ---
 
 # privilegedApproval resource type

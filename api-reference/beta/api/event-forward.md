@@ -2,6 +2,8 @@
 title: "event: forward"
 description: "This action allows the organizer or attendee of a meeting event to forward the "
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # event: forward

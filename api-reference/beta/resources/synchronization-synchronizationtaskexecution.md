@@ -1,6 +1,7 @@
 ---
 title: "synchronizationTaskExecution resource type"
 description: "Summarizes the results of the synchronization job run."
+localization_priority: Normal
 ---
 
 # synchronizationTaskExecution resource type

@@ -2,6 +2,8 @@
 title: "appListType enum type"
 description: "Possible values of the compliance app list."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # appListType enum type

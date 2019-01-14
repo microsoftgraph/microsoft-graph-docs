@@ -1,6 +1,7 @@
 ---
 title: "List identityProviders"
 description: "Retrieve all identityProviders in the directory."
+localization_priority: Normal
 ---
 
 # List identityProviders

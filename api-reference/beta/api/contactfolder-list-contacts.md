@@ -1,6 +1,9 @@
 ---
 title: "List contacts"
 description: "Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # List contacts

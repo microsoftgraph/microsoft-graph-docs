@@ -2,6 +2,8 @@
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceOperatingSystemSummary resource type

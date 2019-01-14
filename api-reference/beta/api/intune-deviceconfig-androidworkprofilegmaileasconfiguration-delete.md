@@ -2,6 +2,8 @@
 title: "Delete androidWorkProfileGmailEasConfiguration"
 description: "Deletes a androidWorkProfileGmailEasConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidWorkProfileGmailEasConfiguration

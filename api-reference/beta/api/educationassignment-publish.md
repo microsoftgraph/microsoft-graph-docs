@@ -1,6 +1,9 @@
 ---
 title: "educationAssignment: publish"
 description: "This action changes the state of an assignment from its original draft status to the published status. Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, submission objects are created and the assignment appears in the student's list."
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # educationAssignment: publish

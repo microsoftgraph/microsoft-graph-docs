@@ -2,6 +2,8 @@
 title: "numberRange resource type"
 description: "Number Range definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # numberRange resource type

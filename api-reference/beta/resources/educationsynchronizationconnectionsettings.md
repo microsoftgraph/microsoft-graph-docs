@@ -2,6 +2,8 @@
 title: "educationSynchronizationConnectionSettings resource type"
 description: "Represents the provider connection settings. This allows the system to know how to connect to the provider APIs. "
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSynchronizationConnectionSettings resource type

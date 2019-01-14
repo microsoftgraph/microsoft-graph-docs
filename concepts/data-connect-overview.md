@@ -2,6 +2,8 @@
 title: "Microsoft Graph data connect (preview)"
 description: "Microsoft Graph data connect brings Office 365 data and Microsoft Azure resources to you through a core data pipeline. You can use Microsoft Graph data connect to build intelligent applications that access valuable data using the best development tools offered by Microsoft, all within the Microsoft secure cloud. All businesses are interested in improving productivity, which means that building products that make knowledge workers more productive presents tremendous opportunities. "
 author: "ajacks-msft"
+localization_priority: Priority
+ms.prod: "data-connect"
 ---
 
 # Microsoft Graph data connect (preview)

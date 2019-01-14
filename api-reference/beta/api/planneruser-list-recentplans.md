@@ -2,6 +2,8 @@
 title: "List recentPlans"
 description: "Retrieve a list of plannerPlans recently viewed by a user. You can update recently viewed plans by updating the plannerUser resource."
 author: "TarkanSevilmis"
+localization_priority: Normal
+ms.prod: "planner"
 ---
 
 # List recentPlans

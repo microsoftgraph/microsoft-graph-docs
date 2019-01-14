@@ -1,6 +1,7 @@
 ---
 title: "genericError resource type"
 description: "A general-purpose error."
+localization_priority: Normal
 ---
 
 # genericError resource type

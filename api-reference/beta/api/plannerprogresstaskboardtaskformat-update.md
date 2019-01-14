@@ -1,6 +1,9 @@
 ---
 title: "Update plannerProgressTaskBoardTaskFormat"
 description: "Update the properties of **plannerProgressTaskBoardTaskFormat** object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Update plannerProgressTaskBoardTaskFormat

@@ -2,6 +2,8 @@
 title: "educationLinkResource resource type"
 description: "A subclass of educationResource. This resource is a link and does not have any additional data associated with it."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationLinkResource resource type

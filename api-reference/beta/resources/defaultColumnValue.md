@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
+localization_priority: Normal
 ---
 # DefaultColumnValue resource type
 

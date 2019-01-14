@@ -2,6 +2,8 @@
 title: "prereleaseFeatures enum type"
 description: "Possible values for pre-release features."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # prereleaseFeatures enum type

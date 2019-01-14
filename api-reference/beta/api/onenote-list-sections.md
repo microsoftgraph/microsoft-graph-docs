@@ -1,7 +1,9 @@
 ---
 title: "List sections"
 description: "Retrieve a list of section objects."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # List sections

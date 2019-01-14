@@ -2,6 +2,8 @@
 title: "List macOSCertificateProfileBases"
 description: "List properties and relationships of the macOSCertificateProfileBase objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List macOSCertificateProfileBases

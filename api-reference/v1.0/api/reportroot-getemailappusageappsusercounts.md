@@ -1,6 +1,8 @@
 ---
 title: "reportRoot: getEmailAppUsageAppsUserCounts"
 description: "Get the count of unique users per email app."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getEmailAppUsageAppsUserCounts

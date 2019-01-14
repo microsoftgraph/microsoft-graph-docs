@@ -2,6 +2,8 @@
 title: "Create windows81SCEPCertificateProfile"
 description: "Create a new windows81SCEPCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows81SCEPCertificateProfile

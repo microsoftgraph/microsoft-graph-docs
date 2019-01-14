@@ -2,6 +2,8 @@
 title: "restrictedAppsViolation resource type"
 description: "Violation of restricted apps configuration profile per device per user"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # restrictedAppsViolation resource type

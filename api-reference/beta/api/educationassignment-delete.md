@@ -2,6 +2,8 @@
 title: "Delete educationAssignment"
 description: "Delete an existing assignment. Only teachers within a class can delete assignments."
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Delete educationAssignment

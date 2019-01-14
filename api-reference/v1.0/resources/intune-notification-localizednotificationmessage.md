@@ -2,6 +2,8 @@
 title: "localizedNotificationMessage resource type"
 description: "The text content of a Notification Message Template for the specified locale."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # localizedNotificationMessage resource type

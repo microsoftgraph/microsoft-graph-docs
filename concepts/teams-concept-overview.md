@@ -2,6 +2,8 @@
 title: "Microsoft Teams API overview"
 description: "Microsoft Teams is the ultimate hub for teamwork and intelligent communications. "
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Microsoft Teams API overview

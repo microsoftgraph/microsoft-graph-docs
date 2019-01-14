@@ -1,6 +1,9 @@
 ---
 title: "Update conversationthread"
 description: "Lock or unlock a thread, to allow or avoid further posting to the thread."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # Update conversationthread

@@ -1,6 +1,7 @@
 ---
 title: "List agreements"
 description: "Retrieve a list of agreement objects."
+localization_priority: Normal
 ---
 
 # List agreements

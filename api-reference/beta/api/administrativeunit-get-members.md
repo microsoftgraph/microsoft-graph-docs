@@ -2,6 +2,8 @@
 title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get a member

@@ -1,6 +1,8 @@
 ---
 title: "reportRoot: getOneDriveUsageAccountDetail"
 description: "Get details about OneDrive usage by account."
+localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getOneDriveUsageAccountDetail

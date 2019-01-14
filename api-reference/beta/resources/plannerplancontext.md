@@ -1,6 +1,9 @@
 ---
 title: "plannerPlanContext resource type"
 description: "The **plannerPlanContext** resource represents the relationship of a plannerPlan to a user experience outside of Planner. Plans in Planner can be surfaced in other experiences, such as Microsoft Teams, to track work in the context of that experience."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # plannerPlanContext resource type

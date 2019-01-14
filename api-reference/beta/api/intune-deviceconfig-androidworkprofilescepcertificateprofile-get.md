@@ -2,6 +2,8 @@
 title: "Get androidWorkProfileScepCertificateProfile"
 description: "Read properties and relationships of the androidWorkProfileScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidWorkProfileScepCertificateProfile

@@ -2,6 +2,8 @@
 title: "Update windowsPhone81ImportedPFXCertificateProfile"
 description: "Update the properties of a windowsPhone81ImportedPFXCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsPhone81ImportedPFXCertificateProfile

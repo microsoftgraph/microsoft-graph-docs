@@ -2,6 +2,8 @@
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Add attachment

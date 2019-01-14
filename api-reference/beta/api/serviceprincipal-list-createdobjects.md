@@ -1,6 +1,7 @@
 ---
 title: "servicePrincipal: List createdObjects"
 description: "Retrieve a list of directoryobject objects."
+localization_priority: Normal
 ---
 
 # servicePrincipal: List createdObjects

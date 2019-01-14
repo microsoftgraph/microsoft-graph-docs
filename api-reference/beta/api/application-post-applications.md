@@ -1,7 +1,9 @@
 ---
 title: "Create Application"
 description: "Use this API to create a new application."
-author: "lleonard-msft"
+author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Create Application

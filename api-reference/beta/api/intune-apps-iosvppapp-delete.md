@@ -2,6 +2,8 @@
 title: "Delete iosVppApp"
 description: "Deletes a iosVppApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosVppApp

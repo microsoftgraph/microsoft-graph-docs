@@ -1,6 +1,8 @@
 ---
 title: "Use the notifications REST API in Microsoft Graph"
 description: "You can use the notifications API in Microsoft Graph to send push notifications to a user. Simply target a user account to send a notification to, and the platform will deliver the notification to all device endpoints. Notifications API requests are performed on behalf of a user via delegated permissions and the [notification permission]( /graph/permissions_reference), which can be used with either Microsoft accounts or work or school accounts."
+localization_priority: Priority
+ms.prod: "project-rome"
 ---
 
 # Use the notifications REST API in Microsoft Graph

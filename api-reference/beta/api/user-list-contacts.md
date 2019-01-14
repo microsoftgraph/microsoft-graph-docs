@@ -1,6 +1,9 @@
 ---
 title: "List contacts"
 description: "Get contacts in the user's mailbox."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List contacts

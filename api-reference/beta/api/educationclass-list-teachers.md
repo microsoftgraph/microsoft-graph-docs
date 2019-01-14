@@ -2,6 +2,8 @@
 title: "List teachers"
 description: "Retrieve a list teachers for a class. Delegated tokens must be members of the class to get the teacher list."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List teachers

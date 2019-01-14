@@ -1,6 +1,9 @@
 ---
 title: "educationAssignmentIndividualRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to individual recipient list, selected students in the class will "
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # educationAssignmentIndividualRecipient resource type

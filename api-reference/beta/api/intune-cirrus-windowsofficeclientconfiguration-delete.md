@@ -2,6 +2,8 @@
 title: "Delete windowsOfficeClientConfiguration"
 description: "Delete a specific non-security policy."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsOfficeClientConfiguration

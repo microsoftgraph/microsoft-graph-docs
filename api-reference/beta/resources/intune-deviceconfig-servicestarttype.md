@@ -2,6 +2,8 @@
 title: "serviceStartType enum type"
 description: "Possible values of xbox service start type"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # serviceStartType enum type

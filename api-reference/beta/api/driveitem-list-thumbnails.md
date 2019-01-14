@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List thumbnails for a DriveItem
 

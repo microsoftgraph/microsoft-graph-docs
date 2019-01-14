@@ -2,6 +2,8 @@
 title: "Delete application"
 description: "Deletes an application."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete application

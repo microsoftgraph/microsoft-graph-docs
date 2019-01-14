@@ -2,6 +2,8 @@
 title: "Get ChartPoint"
 description: "Retrieve the properties and relationships of chartpoint object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get ChartPoint

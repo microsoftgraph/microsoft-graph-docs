@@ -2,6 +2,8 @@
 title: "Get Outlook contacts in a shared folder"
 description: "Outlook lets customers share folders with one another and provide read, create, modify, or delete access to individual contact folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Get Outlook contacts in a shared folder

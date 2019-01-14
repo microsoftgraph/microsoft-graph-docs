@@ -2,6 +2,8 @@
 title: "ChartAxis resource type"
 description: "Represents a single axis in a chart."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartAxis resource type

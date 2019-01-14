@@ -2,6 +2,8 @@
 title: "Update rangeborder"
 description: "Update the properties of rangeborder object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update rangeborder

@@ -2,6 +2,8 @@
 title: "List iosImportedPFXCertificateProfiles"
 description: "List properties and relationships of the iosImportedPFXCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosImportedPFXCertificateProfiles

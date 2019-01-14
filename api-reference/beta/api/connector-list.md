@@ -1,6 +1,7 @@
 ---
 title: "List connectors"
 description: "Retrieve a list of connector objects."
+localization_priority: Normal
 ---
 
 # List connectors

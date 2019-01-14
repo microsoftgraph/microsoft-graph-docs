@@ -2,6 +2,8 @@
 title: "Delete win32LobApp"
 description: "Deletes a win32LobApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete win32LobApp

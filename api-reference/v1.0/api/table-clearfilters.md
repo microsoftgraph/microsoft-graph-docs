@@ -2,6 +2,8 @@
 title: "Table: clearFilters"
 description: "Clears all the filters currently applied on the table."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Table: clearFilters

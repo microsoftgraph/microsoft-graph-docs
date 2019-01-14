@@ -2,6 +2,8 @@
 title: "List windowsStoreApps"
 description: "List properties and relationships of the windowsStoreApp objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsStoreApps

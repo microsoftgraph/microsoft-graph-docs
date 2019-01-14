@@ -2,6 +2,8 @@
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windows10EditionType enum type

@@ -2,6 +2,8 @@
 title: "loggedOnUser resource type"
 description: "Logged On User"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # loggedOnUser resource type

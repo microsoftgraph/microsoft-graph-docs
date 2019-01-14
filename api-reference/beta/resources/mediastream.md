@@ -2,6 +2,8 @@
 title: "mediaStream resource type"
 description: "The mediaStream type."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # mediaStream resource type

@@ -2,6 +2,8 @@
 title: "signInAssistantOptions enum type"
 description: "Values for the SignInAssistantSettings."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # signInAssistantOptions enum type

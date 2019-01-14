@@ -2,6 +2,8 @@
 title: "workbookRange: columnsAfter"
 description: "Gets a certain number of columns to the right of the given range."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # workbookRange: columnsAfter

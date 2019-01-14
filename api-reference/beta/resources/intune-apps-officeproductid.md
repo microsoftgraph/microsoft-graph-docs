@@ -2,6 +2,8 @@
 title: "officeProductId enum type"
 description: "The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # officeProductId enum type

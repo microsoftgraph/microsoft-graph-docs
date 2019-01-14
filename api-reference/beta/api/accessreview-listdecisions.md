@@ -1,6 +1,9 @@
 ---
 title: "List accessReview decisions"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List accessReview decisions

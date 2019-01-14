@@ -1,6 +1,7 @@
 ---
 title: " controlScore resource type"
 description: "This resource contains a tenant score and description for an individual control."
+localization_priority: Normal
 ---
 
 #  controlScore resource type

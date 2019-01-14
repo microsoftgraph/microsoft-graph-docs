@@ -2,6 +2,8 @@
 title: "Delete event"
 description: "Delete event."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete event

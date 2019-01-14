@@ -2,6 +2,8 @@
 title: "Create iosTrustedRootCertificate"
 description: "Create a new iosTrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosTrustedRootCertificate

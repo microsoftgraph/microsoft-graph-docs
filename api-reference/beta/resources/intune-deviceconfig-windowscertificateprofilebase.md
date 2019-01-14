@@ -2,6 +2,8 @@
 title: "windowsCertificateProfileBase resource type"
 description: "Device Configuration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsCertificateProfileBase resource type

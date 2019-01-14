@@ -2,6 +2,8 @@
 title: "List iosMobileAppConfigurations"
 description: "List properties and relationships of the iosMobileAppConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosMobileAppConfigurations

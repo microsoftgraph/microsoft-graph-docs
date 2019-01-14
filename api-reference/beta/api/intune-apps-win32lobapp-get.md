@@ -2,6 +2,8 @@
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get win32LobApp

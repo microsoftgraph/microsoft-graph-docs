@@ -1,7 +1,9 @@
 ---
 title: "Update device"
 description: "Update the properties of a registered device."
-author: "tfitzmac"
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update device

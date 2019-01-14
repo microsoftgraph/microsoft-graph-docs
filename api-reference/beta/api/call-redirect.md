@@ -2,6 +2,8 @@
 title: "call: redirect"
 description: "Redirect an incoming call."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: redirect

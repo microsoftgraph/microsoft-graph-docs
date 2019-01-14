@@ -2,6 +2,8 @@
 title: "Create groupLifecyclePolicy"
 description: "Creates a new groupLifecyclePolicy."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create groupLifecyclePolicy

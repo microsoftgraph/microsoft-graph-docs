@@ -2,6 +2,8 @@
 title: "Delete a group setting"
 description: "Delete a group setting."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete a group setting

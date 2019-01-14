@@ -2,6 +2,8 @@
 title: "userEmailSource enum type"
 description: "Possible values for username source or email source."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # userEmailSource enum type

@@ -2,6 +2,8 @@
 title: "bitLockerRecoveryOptions resource type"
 description: "BitLocker Recovery Options."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # bitLockerRecoveryOptions resource type

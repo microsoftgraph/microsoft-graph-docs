@@ -2,6 +2,8 @@
 title: "Update deviceCompliancePolicyDeviceStateSummary"
 description: "Update the properties of a deviceCompliancePolicyDeviceStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceCompliancePolicyDeviceStateSummary

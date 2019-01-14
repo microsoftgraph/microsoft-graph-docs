@@ -2,6 +2,8 @@
 title: "omaSetting resource type"
 description: "OMA Settings definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # omaSetting resource type

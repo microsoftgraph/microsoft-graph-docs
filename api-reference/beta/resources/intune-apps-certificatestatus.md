@@ -2,6 +2,8 @@
 title: "certificateStatus enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # certificateStatus enum type

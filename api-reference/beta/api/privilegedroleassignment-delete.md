@@ -1,6 +1,7 @@
 ---
 title: "Delete privilegedRoleAssignment"
 description: "Delete privilegedRoleAssignment."
+localization_priority: Normal
 ---
 
 # Delete privilegedRoleAssignment

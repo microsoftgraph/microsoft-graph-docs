@@ -1,6 +1,7 @@
 ---
 title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
+localization_priority: Normal
 ---
 
 # List memberOf

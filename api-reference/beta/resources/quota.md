@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Quota
+localization_priority: Normal
 ---
 # quota resource type
 

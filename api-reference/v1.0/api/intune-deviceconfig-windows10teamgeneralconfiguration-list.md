@@ -2,6 +2,8 @@
 title: "List windows10TeamGeneralConfigurations"
 description: "List properties and relationships of the windows10TeamGeneralConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windows10TeamGeneralConfigurations

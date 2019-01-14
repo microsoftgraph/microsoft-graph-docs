@@ -1,6 +1,7 @@
 ---
 title: "Update oAuth2PermissionGrant"
 description: "Update the properties of oAuth2PermissionGrant object."
+localization_priority: Normal
 ---
 
 # Update oAuth2PermissionGrant

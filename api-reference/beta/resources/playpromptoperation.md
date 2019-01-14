@@ -2,6 +2,8 @@
 title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # playPromptOperation resource type

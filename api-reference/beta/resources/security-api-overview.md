@@ -1,6 +1,9 @@
 ---
 title: "Use the Microsoft Graph Security API"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Priority
+author: "preetikr"
+ms.prod: "security"
 ---
 
 # Use the Microsoft Graph Security API

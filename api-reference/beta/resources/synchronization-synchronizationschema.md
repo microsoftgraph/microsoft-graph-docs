@@ -1,6 +1,7 @@
 ---
 title: "synchronizationSchema resource type"
 description: "Defines what objects will be synchronized and how they will be synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you will customize some of the attribute mappings, or add a scoping filter to synchronize only objects that satisfy a certain condition."
+localization_priority: Normal
 ---
 
 # synchronizationSchema resource type

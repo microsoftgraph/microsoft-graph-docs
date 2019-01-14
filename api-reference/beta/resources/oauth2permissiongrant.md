@@ -1,6 +1,7 @@
 ---
 title: "oAuth2PermissionGrant resource type"
 description: "Represents the OAuth 2.0 scopes (delegated permissions) that have been granted to an application (represented by a service principal) as part of the user or admin consent process."
+localization_priority: Normal
 ---
 
 # oAuth2PermissionGrant resource type

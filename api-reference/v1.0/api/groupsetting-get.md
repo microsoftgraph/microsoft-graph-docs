@@ -2,6 +2,8 @@
 title: "Get a group setting"
 description: "Retrieve the properties of a specific of group setting object."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get a group setting

@@ -2,6 +2,8 @@
 title: "omaSettingDateTime resource type"
 description: "OMA Settings DateTime definition."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # omaSettingDateTime resource type

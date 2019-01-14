@@ -1,6 +1,9 @@
 ---
 title: "message: createReplyAll"
 description: "Create a draft of a reply-all message to include a comment or update any message properties, "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # message: createReplyAll

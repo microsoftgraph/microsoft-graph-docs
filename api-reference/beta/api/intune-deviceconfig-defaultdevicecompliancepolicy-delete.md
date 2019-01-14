@@ -2,6 +2,8 @@
 title: "Delete defaultDeviceCompliancePolicy"
 description: "Deletes a defaultDeviceCompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete defaultDeviceCompliancePolicy

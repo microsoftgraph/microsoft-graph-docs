@@ -1,6 +1,7 @@
 ---
 title: "governanceSchedule resource type"
 description: "Represents the schedule for a governanceRoleAssignmentRequest. For a role assignment request, the schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequently to do the role assignment operation. "
+localization_priority: Normal
 ---
 
 # governanceSchedule resource type

@@ -2,6 +2,8 @@
 title: "hourlySchedule resource type"
 description: "Hourly run schedule of a recurring device management script."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # hourlySchedule resource type

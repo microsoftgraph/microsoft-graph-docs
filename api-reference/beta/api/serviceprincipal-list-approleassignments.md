@@ -1,6 +1,7 @@
 ---
 title: "servicePrincipal: List appRoleAssignments"
 description: "Retrieve a list of approleassignment objects."
+localization_priority: Normal
 ---
 
 # servicePrincipal: List appRoleAssignments

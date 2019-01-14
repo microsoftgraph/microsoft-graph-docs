@@ -1,6 +1,7 @@
 ---
 title: "Create privilegedRoleAssignmentRequest"
 description: "Create a privilegedroleassignmentrequest object."
+localization_priority: Normal
 ---
 
 # Create privilegedRoleAssignmentRequest

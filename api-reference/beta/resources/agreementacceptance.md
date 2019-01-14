@@ -1,6 +1,7 @@
 ---
 title: "agreementAcceptance resource type"
 description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD)."
+localization_priority: Normal
 ---
 
 # agreementAcceptance resource type

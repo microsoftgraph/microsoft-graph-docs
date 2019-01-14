@@ -2,6 +2,8 @@
 title: "shared resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
 author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # shared resource type

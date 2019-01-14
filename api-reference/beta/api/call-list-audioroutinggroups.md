@@ -2,6 +2,8 @@
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List audio routing groups

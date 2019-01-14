@@ -2,6 +2,8 @@
 title: "Create azureADWindowsAutopilotDeploymentProfile"
 description: "Create a new azureADWindowsAutopilotDeploymentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create azureADWindowsAutopilotDeploymentProfile

@@ -2,6 +2,8 @@
 title: "windowsOfficeClientConfiguration resource type"
 description: "Entity that describes office policy settings for Windows."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsOfficeClientConfiguration resource type

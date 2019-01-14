@@ -2,6 +2,8 @@
 title: "userPfxPaddingScheme enum type"
 description: "Supported values for the padding scheme used by encryption provider."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # userPfxPaddingScheme enum type

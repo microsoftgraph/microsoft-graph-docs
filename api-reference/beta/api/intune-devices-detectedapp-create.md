@@ -2,6 +2,8 @@
 title: "Create detectedApp"
 description: "Create a new detectedApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create detectedApp

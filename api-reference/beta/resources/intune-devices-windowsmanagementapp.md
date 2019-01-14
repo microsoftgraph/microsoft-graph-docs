@@ -2,6 +2,8 @@
 title: "windowsManagementApp resource type"
 description: "Windows management app entity."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsManagementApp resource type

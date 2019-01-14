@@ -2,6 +2,8 @@
 title: "certificateDestinationStore enum type"
 description: "Possible values for the Certificate Destination Store."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # certificateDestinationStore enum type

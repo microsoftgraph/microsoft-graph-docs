@@ -2,6 +2,8 @@
 title: "Get iosManagedAppRegistration"
 description: "Read properties and relationships of the iosManagedAppRegistration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosManagedAppRegistration

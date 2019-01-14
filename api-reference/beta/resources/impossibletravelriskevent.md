@@ -1,6 +1,7 @@
 ---
 title: "impossibleTravelRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection where two account sign-ins occur from locations atypical for the user and it would be impossible to travel between the locations in the duration between the sign-ins. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+localization_priority: Normal
 ---
 
 # impossibleTravelRiskEvent resource type

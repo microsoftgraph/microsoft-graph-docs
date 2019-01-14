@@ -2,6 +2,8 @@
 title: "internetSiteSecurityLevel enum type"
 description: "Possible values for internet site security level."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # internetSiteSecurityLevel enum type

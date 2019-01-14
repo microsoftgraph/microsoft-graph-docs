@@ -1,7 +1,9 @@
 ---
 title: "Create sectionGroup"
 description: "Create a new section group in the specified notebook."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Create sectionGroup

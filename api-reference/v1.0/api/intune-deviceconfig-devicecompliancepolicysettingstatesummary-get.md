@@ -2,6 +2,8 @@
 title: "Get deviceCompliancePolicySettingStateSummary"
 description: "Read properties and relationships of the deviceCompliancePolicySettingStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceCompliancePolicySettingStateSummary

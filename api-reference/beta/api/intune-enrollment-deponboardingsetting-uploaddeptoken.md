@@ -2,6 +2,8 @@
 title: "uploadDepToken action"
 description: "Uploads a new Device Enrollment Program token"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # uploadDepToken action

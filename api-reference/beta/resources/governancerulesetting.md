@@ -1,6 +1,7 @@
 ---
 title: "governanceRuleSetting resource type"
 description: "Represents the rules that the role settings are composed of."
+localization_priority: Normal
 ---
 
 # governanceRuleSetting resource type

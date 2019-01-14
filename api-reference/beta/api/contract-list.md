@@ -1,6 +1,9 @@
 ---
 title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List contracts

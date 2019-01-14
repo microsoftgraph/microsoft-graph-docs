@@ -2,6 +2,8 @@
 title: "Get managedEBookAssignment"
 description: "Read properties and relationships of the managedEBookAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedEBookAssignment

@@ -2,6 +2,8 @@
 title: "Delete managedMobileApp"
 description: "Deletes a managedMobileApp."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete managedMobileApp

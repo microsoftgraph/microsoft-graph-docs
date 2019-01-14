@@ -3,6 +3,7 @@ author: psampath
 ms.author: psampath
 ms.date: 06/20/2018
 title: StoragePlanInformation
+localization_priority: Normal
 ---
 # storagePlanInformation resource type
 

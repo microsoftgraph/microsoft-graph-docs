@@ -3,6 +3,8 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # sitePage resource
 

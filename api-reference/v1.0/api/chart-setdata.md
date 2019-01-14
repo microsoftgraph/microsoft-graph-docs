@@ -2,6 +2,8 @@
 title: "Chart: setData"
 description: "Resets the source data for the chart."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Chart: setData

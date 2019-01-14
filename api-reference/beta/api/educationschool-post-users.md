@@ -2,6 +2,8 @@
 title: "Add educationUser to an educationSchool"
 description: "Add a user to a school."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Add educationUser to an educationSchool

@@ -2,6 +2,8 @@
 title: "Get androidTrustedRootCertificate"
 description: "Read properties and relationships of the androidTrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidTrustedRootCertificate

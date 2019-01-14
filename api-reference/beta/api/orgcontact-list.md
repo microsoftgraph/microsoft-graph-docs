@@ -1,6 +1,9 @@
 ---
 title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List orgContacts

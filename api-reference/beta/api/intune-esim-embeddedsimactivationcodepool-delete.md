@@ -2,6 +2,8 @@
 title: "Delete embeddedSIMActivationCodePool"
 description: "Deletes a embeddedSIMActivationCodePool."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete embeddedSIMActivationCodePool

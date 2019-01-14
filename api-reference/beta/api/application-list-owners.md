@@ -2,6 +2,8 @@
 title: "List owners"
 description: "Retrieve a list of directoryObject objects."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List owners

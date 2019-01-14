@@ -1,6 +1,7 @@
 ---
 title: "Create appRoleAssignment"
 description: "Use this API to create a new appRoleAssignment."
+localization_priority: Normal
 ---
 
 # Create appRoleAssignment

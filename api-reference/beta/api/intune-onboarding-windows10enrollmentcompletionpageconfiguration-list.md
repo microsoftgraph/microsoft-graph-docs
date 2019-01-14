@@ -2,6 +2,8 @@
 title: "List windows10EnrollmentCompletionPageConfigurations"
 description: "List properties and relationships of the windows10EnrollmentCompletionPageConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windows10EnrollmentCompletionPageConfigurations

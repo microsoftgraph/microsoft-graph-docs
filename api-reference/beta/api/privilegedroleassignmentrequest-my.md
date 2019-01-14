@@ -1,6 +1,7 @@
 ---
 title: "privilegedRoleAssignmentRequest: my"
 description: "Get the requester's privileged role assignment requests."
+localization_priority: Normal
 ---
 
 # privilegedRoleAssignmentRequest: my

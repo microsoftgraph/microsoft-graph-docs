@@ -2,6 +2,8 @@
 title: "vppTokenSyncStatus enum type"
 description: "Possible sync statuses associated with an Apple Volume Purchase Program token."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # vppTokenSyncStatus enum type

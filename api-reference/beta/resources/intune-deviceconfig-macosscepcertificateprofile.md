@@ -2,6 +2,8 @@
 title: "macOSScepCertificateProfile resource type"
 description: "Mac OS SCEP certificate profile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # macOSScepCertificateProfile resource type

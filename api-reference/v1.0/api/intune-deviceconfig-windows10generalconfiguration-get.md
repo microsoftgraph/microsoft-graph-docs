@@ -2,6 +2,8 @@
 title: "Get windows10GeneralConfiguration"
 description: "Read properties and relationships of the windows10GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows10GeneralConfiguration

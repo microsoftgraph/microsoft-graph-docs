@@ -1,6 +1,7 @@
 ---
 title: "page resource type"
 description: "A page in a OneNote notebook."
+localization_priority: Normal
 ---
 
 # page resource type

@@ -2,6 +2,8 @@
 title: "Create windowsAssignedAccessProfile"
 description: "Create a new windowsAssignedAccessProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsAssignedAccessProfile

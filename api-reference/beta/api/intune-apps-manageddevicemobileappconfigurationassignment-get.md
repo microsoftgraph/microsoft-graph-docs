@@ -2,6 +2,8 @@
 title: "Get managedDeviceMobileAppConfigurationAssignment"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedDeviceMobileAppConfigurationAssignment

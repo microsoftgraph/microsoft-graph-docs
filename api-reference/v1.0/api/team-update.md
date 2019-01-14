@@ -2,6 +2,8 @@
 title: "Update team"
 description: "Update the properties of the specified team."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update team

@@ -1,6 +1,7 @@
 ---
 title: "synchronizationError resource type"
 description: "Represents an error that occurred during the synchronization process."
+localization_priority: Normal
 ---
 
 # synchronizationError resource type

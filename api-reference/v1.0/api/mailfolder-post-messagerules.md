@@ -2,6 +2,8 @@
 title: "Create rule"
 description: "Create a messageRule object by specifying a set of conditions and actions. "
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create rule

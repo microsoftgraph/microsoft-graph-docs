@@ -1,6 +1,9 @@
 ---
 title: "securityNetworkProtocol enum"
 description: "Possible values for the network protocol."
+localization_priority: Normal
+author: "preetikr"
+ms.prod: "security"
 ---
 
 # securityNetworkProtocol enum

@@ -2,6 +2,8 @@
 title: "Update windows10EasEmailProfileConfiguration"
 description: "Update the properties of a windows10EasEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows10EasEmailProfileConfiguration

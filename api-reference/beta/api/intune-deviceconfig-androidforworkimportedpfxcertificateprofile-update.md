@@ -2,6 +2,8 @@
 title: "Update androidForWorkImportedPFXCertificateProfile"
 description: "Update the properties of a androidForWorkImportedPFXCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidForWorkImportedPFXCertificateProfile

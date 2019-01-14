@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018
 title: AccessAction
+localization_priority: Normal
 ---
 # accessAction resource type
 

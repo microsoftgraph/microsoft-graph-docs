@@ -2,6 +2,8 @@
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get a user

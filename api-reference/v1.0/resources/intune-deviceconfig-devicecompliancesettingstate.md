@@ -2,6 +2,8 @@
 title: "deviceComplianceSettingState resource type"
 description: "Device compliance setting State for a given device."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceComplianceSettingState resource type

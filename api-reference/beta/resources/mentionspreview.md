@@ -1,6 +1,9 @@
 ---
 title: "mentionsPreview resource type"
 description: "Represents information about mention objects in a resource instance."
+localization_priority: Normal
+author: "simonhult"
+ms.prod: "insights"
 ---
 
 # mentionsPreview resource type

@@ -2,6 +2,8 @@
 title: "Delete embeddedSIMDeviceState"
 description: "Deletes a embeddedSIMDeviceState."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete embeddedSIMDeviceState

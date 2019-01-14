@@ -1,6 +1,9 @@
 ---
 title: "iosVppAppRevokeLicensesActionResult resource type"
 description: "Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # iosVppAppRevokeLicensesActionResult resource type

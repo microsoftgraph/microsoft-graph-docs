@@ -1,6 +1,9 @@
 ---
 title: "Create outlookTask"
 description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Create outlookTask

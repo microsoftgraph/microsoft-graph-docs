@@ -2,6 +2,8 @@
 title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Get team
@@ -50,7 +52,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
 #### Response
 The following is an example of the response. 

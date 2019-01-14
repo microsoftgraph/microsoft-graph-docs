@@ -1,8 +1,9 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: "simonhult"
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
+localization_priority: Normal
+ms.prod: "insights"
 ---
 # PersonOrGroupColumn resource type
 

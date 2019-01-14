@@ -2,6 +2,8 @@
 title: "managedDeviceReportedApp resource type"
 description: "Application data for reporting"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedDeviceReportedApp resource type

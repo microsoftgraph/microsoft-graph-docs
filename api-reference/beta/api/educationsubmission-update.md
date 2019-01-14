@@ -2,6 +2,8 @@
 title: "Update educationsubmission"
 description: "Add a grade and feedback to a submission. Only teachers can perform this operation. Note that the Basic permission does not have access to the grade properties, and therefore cannot write to grade or feedback. This action does not release the grade and feedback to the student. A teacher must take an explicit release action for the grade data to be returned to the student."
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Update educationsubmission

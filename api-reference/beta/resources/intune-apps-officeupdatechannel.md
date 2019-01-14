@@ -2,6 +2,8 @@
 title: "officeUpdateChannel enum type"
 description: "The Enum to specify the Office365 Updates Channel."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # officeUpdateChannel enum type

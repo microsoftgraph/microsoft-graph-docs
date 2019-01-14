@@ -2,6 +2,8 @@
 title: "mobileAppIdentifier resource type"
 description: "The identifier for a mobile app."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mobileAppIdentifier resource type

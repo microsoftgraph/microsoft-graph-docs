@@ -1,6 +1,9 @@
 ---
 title: "mailTips resource type"
 description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # mailTips resource type

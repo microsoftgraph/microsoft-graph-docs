@@ -2,6 +2,8 @@
 title: "Get Range"
 description: "Retrieve the properties and relationships of range object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get Range

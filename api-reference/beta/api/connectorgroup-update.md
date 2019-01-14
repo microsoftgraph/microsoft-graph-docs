@@ -1,6 +1,7 @@
 ---
 title: "Update connectorGroups"
 description: "Update the properties of connectorgroup object."
+localization_priority: Normal
 ---
 
 # Update connectorGroups

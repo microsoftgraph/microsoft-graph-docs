@@ -1,6 +1,7 @@
 ---
 title: "filterOperand resource type"
 description: "Contains a collection of values for the operand."
+localization_priority: Normal
 ---
 
 # filterOperand resource type

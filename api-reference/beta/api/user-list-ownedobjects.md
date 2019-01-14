@@ -2,6 +2,8 @@
 title: "List ownedObjects"
 description: "Get the list of directory objects that are owned by the user."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List ownedObjects

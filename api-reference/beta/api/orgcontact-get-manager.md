@@ -1,6 +1,9 @@
 ---
 title: "orgContact: Get manager"
 description: "Get the contact's manager"
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # orgContact: Get manager

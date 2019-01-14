@@ -2,6 +2,8 @@
 title: "Get RangeFont"
 description: "Retrieve the properties and relationships of rangefont object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get RangeFont

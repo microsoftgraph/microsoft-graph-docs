@@ -1,6 +1,9 @@
 ---
 title: "report resource type"
 description: "Returns the content appropriate for the context, including:"
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # report resource type

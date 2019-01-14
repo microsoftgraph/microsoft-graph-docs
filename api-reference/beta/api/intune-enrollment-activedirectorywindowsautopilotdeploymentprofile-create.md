@@ -2,6 +2,8 @@
 title: "Create activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Create a new activeDirectoryWindowsAutopilotDeploymentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create activeDirectoryWindowsAutopilotDeploymentProfile

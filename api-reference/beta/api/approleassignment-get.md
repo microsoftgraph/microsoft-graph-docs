@@ -1,6 +1,7 @@
 ---
 title: "Get appRoleAssignment"
 description: "Retrieve the properties and relationships of approleassignment object."
+localization_priority: Priority
 ---
 
 # Get appRoleAssignment

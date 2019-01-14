@@ -2,6 +2,8 @@
 title: "Get managementConditionStatement"
 description: "Read properties and relationships of the managementConditionStatement object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managementConditionStatement

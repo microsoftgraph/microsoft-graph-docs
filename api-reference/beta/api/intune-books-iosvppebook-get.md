@@ -2,6 +2,8 @@
 title: "Get iosVppEBook"
 description: "Read properties and relationships of the iosVppEBook object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosVppEBook

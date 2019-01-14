@@ -2,6 +2,8 @@
 title: "meetingCapability resource type"
 description: "Contains the capabilities of a meeting"
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # meetingCapability resource type

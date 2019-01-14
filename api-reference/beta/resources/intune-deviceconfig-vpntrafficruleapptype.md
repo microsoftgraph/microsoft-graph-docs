@@ -2,6 +2,8 @@
 title: "vpnTrafficRuleAppType enum type"
 description: "Indicates the type of app that a VPN traffic rule is associated with."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # vpnTrafficRuleAppType enum type

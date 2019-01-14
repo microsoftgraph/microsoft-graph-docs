@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: List Files Shared With Me
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # List items shared with the signed-in user
 

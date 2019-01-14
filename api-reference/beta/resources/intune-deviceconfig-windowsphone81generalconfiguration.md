@@ -1,6 +1,9 @@
 ---
 title: "windowsPhone81GeneralConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windowsPhone81GeneralConfiguration resource."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # windowsPhone81GeneralConfiguration resource type

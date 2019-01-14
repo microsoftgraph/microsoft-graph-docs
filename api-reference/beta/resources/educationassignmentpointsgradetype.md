@@ -1,6 +1,9 @@
 ---
 title: "educationAssignmentPointsGradeType resource type"
 description: "Used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # educationAssignmentPointsGradeType resource type

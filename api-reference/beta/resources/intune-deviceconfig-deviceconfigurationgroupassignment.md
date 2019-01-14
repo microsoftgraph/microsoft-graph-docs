@@ -2,6 +2,8 @@
 title: "deviceConfigurationGroupAssignment resource type"
 description: "Device configuration group assignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceConfigurationGroupAssignment resource type

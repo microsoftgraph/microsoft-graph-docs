@@ -1,6 +1,9 @@
 ---
 title: "user: getMemberGroups"
 description: "Return all the groups that the user is a member of. The check is transitive, unlike reading the"
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: getMemberGroups

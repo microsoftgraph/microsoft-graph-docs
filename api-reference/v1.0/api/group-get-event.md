@@ -2,6 +2,8 @@
 title: "Get event"
 description: "Get an event object."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Get event

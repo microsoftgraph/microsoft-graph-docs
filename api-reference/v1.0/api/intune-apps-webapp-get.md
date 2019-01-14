@@ -2,6 +2,8 @@
 title: "Get webApp"
 description: "Read properties and relationships of the webApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get webApp

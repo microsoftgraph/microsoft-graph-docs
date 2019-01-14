@@ -2,6 +2,8 @@
 title: "Create windowsAppX"
 description: "Create a new windowsAppX object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsAppX

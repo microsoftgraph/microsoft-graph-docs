@@ -2,6 +2,8 @@
 title: "deviceComplianceActionType enum type"
 description: "Scheduled Action Type Enum"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceComplianceActionType enum type

@@ -2,6 +2,8 @@
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # updateClassification enum type

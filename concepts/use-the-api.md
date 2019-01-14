@@ -2,6 +2,7 @@
 title: "Use the Microsoft Graph API"
 description: "Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API."
 author: "jackson-woods"
+localization_priority: Priority
 ---
 
 # Use the Microsoft Graph API

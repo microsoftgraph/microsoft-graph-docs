@@ -1,6 +1,7 @@
 ---
 title: "List Policies"
 description: "Retrieve all policy objects in the directory."
+localization_priority: Normal
 ---
 
 # List Policies

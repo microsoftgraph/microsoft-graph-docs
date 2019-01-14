@@ -1,6 +1,7 @@
 ---
 title: "Assign Policy"
 description: "Assigns a policy to an application or service principal."
+localization_priority: Normal
 ---
 
 # Assign Policy

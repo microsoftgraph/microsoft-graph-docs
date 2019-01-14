@@ -2,6 +2,8 @@
 title: "Update table"
 description: "Update the properties of table object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update table

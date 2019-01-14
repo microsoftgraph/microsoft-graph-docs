@@ -2,6 +2,7 @@
 title: "Add custom data to users using open extensions"
 description: "We're going to walk you through an example to demonstrate how to use *open extensions*. "
 author: "dkershaw10"
+localization_priority: Priority
 ---
 
 # Add custom data to users using open extensions

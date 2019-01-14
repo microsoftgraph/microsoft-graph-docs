@@ -1,6 +1,7 @@
 ---
 title: "Get privilegedRoleSummary"
 description: "Retrieve the properties and relationships of privilegedRoleSummary object."
+localization_priority: Normal
 ---
 
 # Get privilegedRoleSummary

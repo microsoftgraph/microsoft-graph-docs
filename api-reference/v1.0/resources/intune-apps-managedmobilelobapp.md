@@ -2,6 +2,8 @@
 title: "managedMobileLobApp resource type"
 description: "An abstract base class containing properties for all managed mobile line of business apps."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedMobileLobApp resource type

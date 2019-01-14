@@ -2,6 +2,8 @@
 title: "Get defaultDeviceCompliancePolicy"
 description: "Read properties and relationships of the defaultDeviceCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get defaultDeviceCompliancePolicy

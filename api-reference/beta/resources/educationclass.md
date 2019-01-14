@@ -1,6 +1,9 @@
 ---
 title: "educationClass resource type"
 description: "Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # educationClass resource type

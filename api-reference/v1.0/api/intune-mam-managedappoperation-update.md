@@ -2,6 +2,8 @@
 title: "Update managedAppOperation"
 description: "Update the properties of a managedAppOperation object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update managedAppOperation

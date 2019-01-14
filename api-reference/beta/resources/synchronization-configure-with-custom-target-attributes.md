@@ -1,6 +1,7 @@
 ---
 title: "Configure synchronization with custom target attributes"
 description: "You can customize your synchronization schema to include custom attributes that are defined in the target directory. This article describes how to customize a Salesforce subscription by adding a new field called `officeCode`. You set up synchronization from Azure Active Directory (Azure AD) to Salesforce, and for each user, you will populate the `officeCode` field in Salesforce with the value from the `extensionAttribute10` field in Azure AD."
+localization_priority: Normal
 ---
 
 # Configure synchronization with custom target attributes

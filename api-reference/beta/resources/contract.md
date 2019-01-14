@@ -1,6 +1,9 @@
 ---
 title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Contract resource type

@@ -2,6 +2,8 @@
 title: "List managedIOSLobApps"
 description: "List properties and relationships of the managedIOSLobApp objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedIOSLobApps

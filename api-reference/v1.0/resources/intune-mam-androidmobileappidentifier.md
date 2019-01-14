@@ -2,6 +2,8 @@
 title: "androidMobileAppIdentifier resource type"
 description: "The identifier for an Android app."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidMobileAppIdentifier resource type

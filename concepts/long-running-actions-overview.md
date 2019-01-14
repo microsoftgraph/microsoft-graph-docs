@@ -1,6 +1,7 @@
 ---
 title: "Working with long running actions (beta)"
 description: "This article describes working with long running actions."
+localization_priority: Normal
 ---
 # Working with long running actions (beta)
 

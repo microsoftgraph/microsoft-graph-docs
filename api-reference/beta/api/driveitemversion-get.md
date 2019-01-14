@@ -1,6 +1,8 @@
 ---
 title: "Get a DriveItemVersion resource (preview)"
 description: "Retrieve the metadata for a specific version of a DriveItem."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # Get a DriveItemVersion resource (preview)

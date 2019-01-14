@@ -1,6 +1,7 @@
 ---
 title: "servicePrincipal: List oAuth2Permissiongrants"
 description: "Retrieve a list of oAuth2Permissiongrant objects."
+localization_priority: Normal
 ---
 
 # servicePrincipal: List oAuth2Permissiongrants

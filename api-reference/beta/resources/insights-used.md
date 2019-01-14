@@ -2,6 +2,8 @@
 title: "used resource type"
 description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed."
 author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # used resource type

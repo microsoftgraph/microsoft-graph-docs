@@ -1,6 +1,7 @@
 ---
 title: "List members"
 description: "Retrieve a list of connector objects associated with a connectorGroup."
+localization_priority: Normal
 ---
 
 # List members

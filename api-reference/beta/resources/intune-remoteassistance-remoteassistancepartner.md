@@ -2,6 +2,8 @@
 title: "remoteAssistancePartner resource type"
 description: "remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # remoteAssistancePartner resource type

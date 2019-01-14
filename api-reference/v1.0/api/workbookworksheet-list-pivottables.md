@@ -2,6 +2,8 @@
 title: "List pivotTables"
 description: "Retrieve a list of workbookpivottable objects."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List pivotTables

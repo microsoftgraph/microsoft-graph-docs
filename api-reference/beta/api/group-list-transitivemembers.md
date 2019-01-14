@@ -1,6 +1,9 @@
 ---
 title: "List group transitive members"
 description: "Get a list of the group's members. A group can have users, contacts, devices, service principals and other groups as members. This operation is transitive and will also return a flat list of all nested members."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # List group transitive members
@@ -58,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
 ### Response

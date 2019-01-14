@@ -2,6 +2,8 @@
 title: "Get androidWorkProfileCompliancePolicy"
 description: "Read properties and relationships of the androidWorkProfileCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidWorkProfileCompliancePolicy

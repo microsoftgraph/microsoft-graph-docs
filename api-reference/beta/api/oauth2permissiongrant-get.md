@@ -1,6 +1,7 @@
 ---
 title: "Get oAuth2Permissiongrant"
 description: "Retrieve the properties and relationships of oAuth2Permissiongrant object."
+localization_priority: Normal
 ---
 
 # Get oAuth2Permissiongrant

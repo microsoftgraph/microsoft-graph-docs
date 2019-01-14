@@ -2,6 +2,8 @@
 title: "macOSFirewallApplication resource type"
 description: "Represents an app in the list of macOS firewall applications"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # macOSFirewallApplication resource type

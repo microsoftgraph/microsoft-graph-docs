@@ -2,6 +2,8 @@
 title: "List windows10CompliancePolicies"
 description: "List properties and relationships of the windows10CompliancePolicy objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windows10CompliancePolicies

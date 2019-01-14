@@ -2,6 +2,8 @@
 title: "deviceManagementUserRightsSetting resource type"
 description: "Represents a user rights setting."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementUserRightsSetting resource type

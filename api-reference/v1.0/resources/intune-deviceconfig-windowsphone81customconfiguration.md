@@ -1,6 +1,9 @@
 ---
 title: "windowsPhone81CustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windowsPhone81CustomConfiguration resource."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # windowsPhone81CustomConfiguration resource type

@@ -2,6 +2,8 @@
 title: "Get iosLobApp"
 description: "Read properties and relationships of the iosLobApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosLobApp

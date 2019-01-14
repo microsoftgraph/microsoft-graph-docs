@@ -1,6 +1,7 @@
 ---
 title: "Update agreement"
 description: "Update the properties of an agreement object."
+localization_priority: Normal
 ---
 
 # Update agreement

@@ -2,6 +2,8 @@
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create defaultManagedAppProtection

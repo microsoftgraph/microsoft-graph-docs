@@ -2,6 +2,8 @@
 title: "Create androidVpnConfiguration"
 description: "Create a new androidVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidVpnConfiguration

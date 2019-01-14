@@ -2,6 +2,8 @@
 title: "Update deviceManagementScriptDeviceState"
 description: "Update the properties of a deviceManagementScriptDeviceState object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceManagementScriptDeviceState

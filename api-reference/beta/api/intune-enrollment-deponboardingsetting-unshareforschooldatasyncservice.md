@@ -2,6 +2,8 @@
 title: "unshareForSchoolDataSyncService action"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # unshareForSchoolDataSyncService action

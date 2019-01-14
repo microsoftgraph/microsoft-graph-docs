@@ -1,6 +1,8 @@
 ---
 title: "Working with Office 365 usage reports in Microsoft Graph"
 description: "With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all."
+localization_priority: Priority
+ms.prod: "reports"
 ---
 
 # Working with Office 365 usage reports in Microsoft Graph

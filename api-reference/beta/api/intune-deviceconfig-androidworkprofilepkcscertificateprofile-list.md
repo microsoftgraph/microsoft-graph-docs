@@ -2,6 +2,8 @@
 title: "List androidWorkProfilePkcsCertificateProfiles"
 description: "List properties and relationships of the androidWorkProfilePkcsCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidWorkProfilePkcsCertificateProfiles

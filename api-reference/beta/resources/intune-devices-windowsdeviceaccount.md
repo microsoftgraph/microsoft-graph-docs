@@ -2,6 +2,8 @@
 title: "windowsDeviceAccount resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsDeviceAccount resource type

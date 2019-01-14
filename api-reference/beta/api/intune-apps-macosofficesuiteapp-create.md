@@ -2,6 +2,8 @@
 title: "Create macOSOfficeSuiteApp"
 description: "Create a new macOSOfficeSuiteApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create macOSOfficeSuiteApp

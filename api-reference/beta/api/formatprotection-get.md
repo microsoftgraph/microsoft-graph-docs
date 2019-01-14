@@ -1,6 +1,7 @@
 ---
 title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
+localization_priority: Normal
 ---
 
 # Get FormatProtection

@@ -2,6 +2,8 @@
 title: "Delete androidForWorkTrustedRootCertificate"
 description: "Deletes a androidForWorkTrustedRootCertificate."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkTrustedRootCertificate

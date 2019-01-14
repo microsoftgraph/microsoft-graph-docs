@@ -2,6 +2,8 @@
 title: "Update an educationSynchronizationProfile"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Update an educationSynchronizationProfile

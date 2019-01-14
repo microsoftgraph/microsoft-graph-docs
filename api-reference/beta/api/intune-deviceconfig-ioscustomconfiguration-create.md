@@ -2,6 +2,8 @@
 title: "Create iosCustomConfiguration"
 description: "Create a new iosCustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosCustomConfiguration

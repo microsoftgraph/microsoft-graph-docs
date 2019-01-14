@@ -2,6 +2,8 @@
 title: "iosEduCertificateSettings resource type"
 description: "Trusted Root and PFX certificates for iOS EDU."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosEduCertificateSettings resource type

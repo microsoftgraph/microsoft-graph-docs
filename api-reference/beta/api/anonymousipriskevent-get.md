@@ -1,6 +1,7 @@
 ---
 title: "Get anonymousIpRiskEvent"
 description: "Retrieve the properties and relationships of an anonymousipriskevent object."
+localization_priority: Normal
 ---
 
 # Get anonymousIpRiskEvent

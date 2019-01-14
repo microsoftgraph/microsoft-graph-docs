@@ -2,6 +2,8 @@
 title: "mobileAppSupportedDeviceType resource type"
 description: "Device properties"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mobileAppSupportedDeviceType resource type

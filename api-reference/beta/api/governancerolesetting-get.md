@@ -1,6 +1,7 @@
 ---
 title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
+localization_priority: Normal
 ---
 
 # Get governanceRoleSetting

@@ -1,6 +1,9 @@
 ---
 title: "Create outlookTaskGroup"
 description: "Create an Outlook task group in the user's mailbox."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Create outlookTaskGroup

@@ -1,6 +1,9 @@
 ---
 title: "Start sync after uploading files to an educationSynchronizationProfile"
 description: "Verify the files uploaded to a specific school data synchronization profile in the tenant. If the verification is successful, synchronization will start on the profile. Otherwise, the response will contain errors and warnings. If the response contains errors, the synchronization will not start. If the response contains only warnings, synchronization will start."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # Start sync after uploading files to an educationSynchronizationProfile

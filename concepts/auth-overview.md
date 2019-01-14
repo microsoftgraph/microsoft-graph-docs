@@ -2,6 +2,8 @@
 title: "Get access tokens to call Microsoft Graph"
 description: "To call Microsoft Graph, your app must acquire an access token from Azure Active Directory (Azure AD), Microsoft's cloud identity service. The access token contains information (or claims) about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be able to authenticate with Azure AD and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs. "
 author: "jackson-woods"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get access tokens to call Microsoft Graph
@@ -139,7 +141,6 @@ There are some additional advantages with Azure AD v2.0. For example:
 Because Azure AD v2.0 is newer than Azure AD and features are still being added, there are some limitations with the v2.0 endpoint that you need to factor into your decision. For example:
 
 * Some features may not yet be fully implemented in v2.0. For example, your app might not work if your enterprise customer turns on enterprise mobility security features like [conditional device access](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies).
-* You cannot call Microsoft Graph from a [standalone web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types). 
 * You cannot call Cloud Solution provider apps.
 * [Windows integrated authentication for federated tenants](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts) is not supported. This means that users of federated Azure AD tenants cannot silently authenticate with their on-premises Active Directory instance. They will have to re-enter their credentials.
 

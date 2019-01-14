@@ -1,6 +1,9 @@
 ---
 title: "Get eventMessage"
 description: "expand` parameter on the **event**"
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Get eventMessage

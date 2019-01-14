@@ -2,6 +2,8 @@
 title: "Update calendargroup"
 description: "Update the properties of calendargroup object."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Update calendargroup

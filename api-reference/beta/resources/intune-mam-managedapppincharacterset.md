@@ -1,6 +1,9 @@
 ---
 title: "managedAppPinCharacterSet enum type"
 description: "Character set which is to be used for a user's app PIN"
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # managedAppPinCharacterSet enum type

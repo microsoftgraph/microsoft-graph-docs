@@ -2,6 +2,8 @@
 title: "deviceManagementExchangeDeviceClass resource type"
 description: "Device Class in Exchange."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementExchangeDeviceClass resource type

@@ -2,6 +2,8 @@
 title: "dailySchedule resource type"
 description: "Daily run schedule of a recurring device management script."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # dailySchedule resource type

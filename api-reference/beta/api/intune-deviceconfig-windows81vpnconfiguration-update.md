@@ -2,6 +2,8 @@
 title: "Update windows81VpnConfiguration"
 description: "Update the properties of a windows81VpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows81VpnConfiguration

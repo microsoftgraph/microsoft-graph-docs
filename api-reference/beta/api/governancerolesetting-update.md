@@ -1,6 +1,7 @@
 ---
 title: "Update governanceRoleSetting"
 description: "Update the properties of governanceRoleSetting."
+localization_priority: Normal
 ---
 
 # Update governanceRoleSetting

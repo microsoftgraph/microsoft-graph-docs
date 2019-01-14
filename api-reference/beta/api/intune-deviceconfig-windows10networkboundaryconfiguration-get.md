@@ -2,6 +2,8 @@
 title: "Get windows10NetworkBoundaryConfiguration"
 description: "Read properties and relationships of the windows10NetworkBoundaryConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows10NetworkBoundaryConfiguration

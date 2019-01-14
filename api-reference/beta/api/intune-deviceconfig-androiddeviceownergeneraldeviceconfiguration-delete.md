@@ -2,6 +2,8 @@
 title: "Delete androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Deletes a androidDeviceOwnerGeneralDeviceConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidDeviceOwnerGeneralDeviceConfiguration

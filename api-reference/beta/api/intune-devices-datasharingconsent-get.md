@@ -2,6 +2,8 @@
 title: "Get dataSharingConsent"
 description: "Read properties and relationships of the dataSharingConsent object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get dataSharingConsent

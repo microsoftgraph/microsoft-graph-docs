@@ -2,6 +2,8 @@
 title: "ratingNewZealandTelevisionType enum type"
 description: "TV content rating labels in New Zealand"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingNewZealandTelevisionType enum type

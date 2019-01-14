@@ -2,6 +2,8 @@
 title: "List importedAppleDeviceIdentityResults"
 description: "List properties and relationships of the importedAppleDeviceIdentityResult objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List importedAppleDeviceIdentityResults

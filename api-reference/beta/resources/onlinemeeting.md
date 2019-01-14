@@ -2,6 +2,8 @@
 title: "onlineMeeting resource type"
 description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # onlineMeeting resource type

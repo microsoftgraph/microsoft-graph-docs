@@ -1,6 +1,7 @@
 ---
 title: "governanceSubject resource type"
 description: "Represents users, groups, and service principals being managed in Privileged Identity Management (PIM)."
+localization_priority: Normal
 ---
 
 # governanceSubject resource type

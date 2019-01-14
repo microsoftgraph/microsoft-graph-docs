@@ -2,6 +2,8 @@
 title: "Delete androidWorkProfileCompliancePolicy"
 description: "Deletes a androidWorkProfileCompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidWorkProfileCompliancePolicy

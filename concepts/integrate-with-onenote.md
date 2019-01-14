@@ -2,6 +2,7 @@
 title: "OneNote API overview"
 description: "OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they left off, and collaborate on notes with others in real time."
 author: "Jewan-microsoft"
+localization_priority: Priority
 ---
 
 # OneNote API overview

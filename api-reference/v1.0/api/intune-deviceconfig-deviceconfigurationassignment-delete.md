@@ -2,6 +2,8 @@
 title: "Delete deviceConfigurationAssignment"
 description: "Deletes a deviceConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceConfigurationAssignment

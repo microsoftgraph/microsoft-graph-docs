@@ -2,6 +2,8 @@
 title: "androidWorkProfileVpnConnectionType enum type"
 description: "Android Work Profile VPN connection type."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidWorkProfileVpnConnectionType enum type

@@ -2,6 +2,8 @@
 title: "Get appleDeviceFeaturesConfigurationBase"
 description: "Read properties and relationships of the appleDeviceFeaturesConfigurationBase object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get appleDeviceFeaturesConfigurationBase

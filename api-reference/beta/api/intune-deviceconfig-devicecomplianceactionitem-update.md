@@ -2,6 +2,8 @@
 title: "Update deviceComplianceActionItem"
 description: "Update the properties of a deviceComplianceActionItem object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceComplianceActionItem

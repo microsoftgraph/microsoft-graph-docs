@@ -2,6 +2,8 @@
 title: "deviceType enum type"
 description: "Device type."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceType enum type

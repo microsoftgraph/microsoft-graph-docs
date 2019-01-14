@@ -1,6 +1,7 @@
 ---
 title: "Update approleassignment"
 description: "Update the properties of approleassignment object."
+localization_priority: Normal
 ---
 
 # Update approleassignment

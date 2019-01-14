@@ -2,6 +2,7 @@
 title: "Microsoft Graph tutorials"
 description: "Microsoft Graph tutorials are step-by-step training exercises that guide you through basic Microsoft Graph concepts, including how to create a basic application that uses Azure Active Directory authentication and accesses data via the Microsoft Graph."
 author: "jasonjoh"
+localization_priority: Priority
 ---
 
 # Microsoft Graph tutorials

@@ -2,6 +2,8 @@
 title: "Delete iosLobAppProvisioningConfigurationAssignment"
 description: "Deletes a iosLobAppProvisioningConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosLobAppProvisioningConfigurationAssignment

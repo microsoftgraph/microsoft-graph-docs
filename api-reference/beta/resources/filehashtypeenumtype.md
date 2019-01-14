@@ -1,6 +1,7 @@
 ---
 title: "fileHashType enum"
 description: "Enum for file hash types."
+localization_priority: Normal
 ---
 
 # fileHashType enum

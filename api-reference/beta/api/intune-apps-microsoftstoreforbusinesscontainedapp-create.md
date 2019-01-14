@@ -2,6 +2,8 @@
 title: "Create microsoftStoreForBusinessContainedApp"
 description: "Create a new microsoftStoreForBusinessContainedApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create microsoftStoreForBusinessContainedApp

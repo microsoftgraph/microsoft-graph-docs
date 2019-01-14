@@ -2,6 +2,8 @@
 title: "Create domain"
 description: "Adds a domain to the tenant."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create domain

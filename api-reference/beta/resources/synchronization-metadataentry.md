@@ -1,6 +1,7 @@
 ---
 title: "metadataEntry resource type"
 description: "Metadata for the given object."
+localization_priority: Normal
 ---
 
 # metadataEntry resource type

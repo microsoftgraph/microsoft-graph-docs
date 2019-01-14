@@ -1,6 +1,7 @@
 ---
 title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oauth2PermissionGrant objects."
+localization_priority: Normal
 ---
 
 # List oauth2PermissionGrants

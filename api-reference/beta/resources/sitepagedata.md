@@ -3,6 +3,8 @@ author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
 title: SitePageData
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # sitePageData resource
 

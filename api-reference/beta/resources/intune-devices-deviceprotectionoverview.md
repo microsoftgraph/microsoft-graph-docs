@@ -2,6 +2,8 @@
 title: "deviceProtectionOverview resource type"
 description: "Hardware information of a given device."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceProtectionOverview resource type

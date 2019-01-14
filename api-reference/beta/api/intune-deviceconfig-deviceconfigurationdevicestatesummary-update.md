@@ -2,6 +2,8 @@
 title: "Update deviceConfigurationDeviceStateSummary"
 description: "Update the properties of a deviceConfigurationDeviceStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceConfigurationDeviceStateSummary

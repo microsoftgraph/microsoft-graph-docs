@@ -2,6 +2,8 @@
 title: "Update windows81TrustedRootCertificate"
 description: "Update the properties of a windows81TrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows81TrustedRootCertificate

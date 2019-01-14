@@ -2,6 +2,8 @@
 title: "certificateValidityPeriodScale enum type"
 description: "Certificate Validity Period Options."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # certificateValidityPeriodScale enum type

@@ -2,6 +2,8 @@
 title: "Create resourceOperation"
 description: "Create a new resourceOperation object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create resourceOperation

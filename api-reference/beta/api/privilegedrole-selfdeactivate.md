@@ -1,6 +1,7 @@
 ---
 title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
+localization_priority: Normal
 ---
 
 # privilegedRole: selfDeactivate

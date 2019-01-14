@@ -2,6 +2,8 @@
 title: "macOSGatekeeperAppSources enum type"
 description: "App source options for macOS Gatekeeper."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # macOSGatekeeperAppSources enum type

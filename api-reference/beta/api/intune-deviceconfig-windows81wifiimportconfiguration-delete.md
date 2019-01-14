@@ -2,6 +2,8 @@
 title: "Delete windows81WifiImportConfiguration"
 description: "Deletes a windows81WifiImportConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windows81WifiImportConfiguration

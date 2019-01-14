@@ -1,6 +1,9 @@
 ---
 title: "plannerPlanContextDetails resource type"
 description: "The **plannerPlanContextDetails** resource contains additional information about a plannerPlanContext."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # plannerPlanContextDetails resource type

@@ -2,6 +2,8 @@
 title: "Create acceptedSender"
 description: "Add a new user or group to the acceptedSender list."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create acceptedSender

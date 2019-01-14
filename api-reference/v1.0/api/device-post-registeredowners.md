@@ -1,7 +1,9 @@
 ---
 title: "Create registeredOwner"
 description: "Add a user as a registered owner of the device."
-author: "tfitzmac"
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create registeredOwner

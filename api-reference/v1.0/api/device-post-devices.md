@@ -1,7 +1,9 @@
 ---
 title: "Create device"
 description: "Create and register a new device in the organization."
-author: "tfitzmac"
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create device

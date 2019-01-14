@@ -2,6 +2,8 @@
 title: "Archive team"
 description: "Archive the specified team. "
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Archive team

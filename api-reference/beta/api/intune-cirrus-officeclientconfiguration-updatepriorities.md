@@ -2,6 +2,8 @@
 title: "updatePriorities action"
 description: "Update policy priorities."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # updatePriorities action

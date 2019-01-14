@@ -2,6 +2,8 @@
 title: "Get conversation"
 description: "Retrieve the properties and relationships of conversation object."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Get conversation

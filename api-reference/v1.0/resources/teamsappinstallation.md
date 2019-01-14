@@ -2,6 +2,8 @@
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # teamsAppInstallation resource type

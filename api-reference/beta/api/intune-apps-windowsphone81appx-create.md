@@ -2,6 +2,8 @@
 title: "Create windowsPhone81AppX"
 description: "Create a new windowsPhone81AppX object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsPhone81AppX

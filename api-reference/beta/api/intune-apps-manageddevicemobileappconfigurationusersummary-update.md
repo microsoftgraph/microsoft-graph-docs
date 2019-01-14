@@ -2,6 +2,8 @@
 title: "Update managedDeviceMobileAppConfigurationUserSummary"
 description: "Update the properties of a managedDeviceMobileAppConfigurationUserSummary object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update managedDeviceMobileAppConfigurationUserSummary

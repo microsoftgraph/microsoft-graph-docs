@@ -1,6 +1,9 @@
 ---
 title: "message: forward"
 description: "Forward a message, add a comment or modify any updateable properties  "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # message: forward

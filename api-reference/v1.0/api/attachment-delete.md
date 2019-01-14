@@ -1,6 +1,7 @@
 ---
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, mail message, or group post."
+localization_priority: Normal
 ---
 
 # Delete attachment

@@ -1,6 +1,7 @@
 ---
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event,"
+localization_priority: Normal
 ---
 
 # fileAttachment resource type

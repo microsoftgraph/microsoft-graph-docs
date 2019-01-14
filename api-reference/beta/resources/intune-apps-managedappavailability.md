@@ -1,6 +1,9 @@
 ---
 title: "managedAppAvailability enum type"
 description: "A managed (MAM) application's availability."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # managedAppAvailability enum type

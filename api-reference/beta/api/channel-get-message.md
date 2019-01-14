@@ -2,6 +2,8 @@
 title: "Get channel message"
 description: "Retrieve a single message (without its replies) in a channel of a team."
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Get channel message

@@ -1,6 +1,7 @@
 ---
 title: "privilegedRole: selfActivate"
 description: "Activate the role that is assigned to the requester."
+localization_priority: Normal
 ---
 
 # privilegedRole: selfActivate

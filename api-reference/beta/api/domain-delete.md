@@ -2,6 +2,8 @@
 title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete domain

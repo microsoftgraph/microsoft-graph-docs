@@ -1,6 +1,7 @@
 ---
 title: "chatThread resource type"
 description: "A chatThread is a collection of chatMessages in Microsoft Teams."
+localization_priority: Priority
 ---
 
 # chatThread resource type

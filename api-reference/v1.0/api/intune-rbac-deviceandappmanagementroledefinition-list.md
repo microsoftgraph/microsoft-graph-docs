@@ -2,6 +2,8 @@
 title: "List deviceAndAppManagementRoleDefinitions"
 description: "List properties and relationships of the deviceAndAppManagementRoleDefinition objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceAndAppManagementRoleDefinitions

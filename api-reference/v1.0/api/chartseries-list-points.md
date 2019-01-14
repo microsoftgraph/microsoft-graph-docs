@@ -2,6 +2,8 @@
 title: "List points"
 description: "Retrieve a list of chartpoints objects."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List points

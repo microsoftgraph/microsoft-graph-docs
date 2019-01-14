@@ -2,6 +2,8 @@
 title: "List windows10SecureAssessmentConfigurations"
 description: "List properties and relationships of the windows10SecureAssessmentConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windows10SecureAssessmentConfigurations

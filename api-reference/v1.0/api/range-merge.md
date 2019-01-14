@@ -2,6 +2,8 @@
 title: "Range: merge"
 description: "Merge the range cells into one region in the worksheet."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Range: merge

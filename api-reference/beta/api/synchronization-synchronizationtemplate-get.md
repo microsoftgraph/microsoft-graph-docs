@@ -1,6 +1,7 @@
 ---
 title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
+localization_priority: Normal
 ---
 
 # Get synchronizationTemplate

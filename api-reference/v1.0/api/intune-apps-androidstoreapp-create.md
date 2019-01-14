@@ -2,6 +2,8 @@
 title: "Create androidStoreApp"
 description: "Create a new androidStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidStoreApp

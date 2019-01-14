@@ -2,6 +2,8 @@
 title: "windows10AppType enum type"
 description: "Windows 10 Application type."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windows10AppType enum type

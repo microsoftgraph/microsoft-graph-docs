@@ -2,6 +2,8 @@
 title: "certificateStore enum type"
 description: "CertificateStore types"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # certificateStore enum type

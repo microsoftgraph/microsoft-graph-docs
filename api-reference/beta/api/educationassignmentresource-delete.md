@@ -2,6 +2,8 @@
 title: "Delete educationAssignmentResource"
 description: "."
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Delete educationAssignmentResource

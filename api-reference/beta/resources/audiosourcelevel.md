@@ -2,6 +2,8 @@
 title: "audioSourceLevel resource type"
 description: "Level configuration for other sources."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # audioSourceLevel resource type

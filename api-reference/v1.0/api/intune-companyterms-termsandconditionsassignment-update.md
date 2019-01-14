@@ -2,6 +2,8 @@
 title: "Update termsAndConditionsAssignment"
 description: "Update the properties of a termsAndConditionsAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update termsAndConditionsAssignment

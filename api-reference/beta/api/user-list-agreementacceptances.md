@@ -1,6 +1,9 @@
 ---
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List agreementAcceptances

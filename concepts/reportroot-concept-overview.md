@@ -1,6 +1,8 @@
 ---
 title: "Microsoft Graph reports API overview"
 description: "Usage reports in the Microsoft 365 admin center enable admins to understand their company's usage across Office 365 services. You can use the reports API in Microsoft Graph to integrate with Office 365 usage reports."
+localization_priority: Priority
+ms.prod: "reports"
 ---
 
 # Microsoft Graph reports API overview

@@ -2,6 +2,8 @@
 title: "Delete messageRule"
 description: "Delete the specified messageRule object."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete messageRule

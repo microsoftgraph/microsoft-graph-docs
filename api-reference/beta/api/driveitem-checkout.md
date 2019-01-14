@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Check Out Files
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Check-out a DriveItem resource
 

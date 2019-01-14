@@ -2,6 +2,8 @@
 title: "Delete androidDeviceOwnerWiFiConfiguration"
 description: "Deletes a androidDeviceOwnerWiFiConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidDeviceOwnerWiFiConfiguration

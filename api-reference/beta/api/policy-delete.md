@@ -1,6 +1,7 @@
 ---
 title: "Delete Policy"
 description: "Delete a policy."
+localization_priority: Normal
 ---
 
 # Delete Policy

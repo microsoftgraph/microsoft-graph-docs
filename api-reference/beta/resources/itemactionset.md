@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
+localization_priority: Normal
 ---
 # ItemActionSet resource type
 

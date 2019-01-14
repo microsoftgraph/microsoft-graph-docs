@@ -2,6 +2,8 @@
 title: "ratingIrelandMoviesType enum type"
 description: "Movies rating labels in Ireland"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingIrelandMoviesType enum type

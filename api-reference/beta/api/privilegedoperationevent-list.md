@@ -1,6 +1,7 @@
 ---
 title: "List privilegedOperationEvents"
 description: "filter`` expression."
+localization_priority: Normal
 ---
 
 # List privilegedOperationEvents

@@ -2,6 +2,8 @@
 title: "Get androidForWorkApp"
 description: "Read properties and relationships of the androidForWorkApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidForWorkApp
