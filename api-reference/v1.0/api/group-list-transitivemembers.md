@@ -1,11 +1,11 @@
 ---
 title: "List group transitive members"
-description: "Get a list of the group's members. A group can have users, contacts, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members."
+description: "Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members."
 ---
 
 # List group transitive members
 
-Get a list of the group's members. A group can have users, contacts, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members.
+Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members.
 
 ## Permissions
 
