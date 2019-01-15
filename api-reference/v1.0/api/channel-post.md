@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {

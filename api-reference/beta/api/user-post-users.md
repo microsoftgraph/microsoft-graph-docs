@@ -68,7 +68,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"

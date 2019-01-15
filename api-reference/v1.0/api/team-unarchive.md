@@ -51,7 +51,7 @@ The following is an example of a request.
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### Response
