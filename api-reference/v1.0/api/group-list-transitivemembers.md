@@ -1,6 +1,9 @@
 ---
 title: "List group transitive members"
 description: "Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # List group transitive members
