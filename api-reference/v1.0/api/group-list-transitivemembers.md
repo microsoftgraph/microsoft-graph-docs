@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, User.Read.All |
 
-> Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
+>**Note:** To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
 
 ## HTTP request
 
