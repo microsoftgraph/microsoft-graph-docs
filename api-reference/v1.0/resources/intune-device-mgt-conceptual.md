@@ -28,7 +28,7 @@ author: "tfitzmac"
 - [Device management subscription state](intune-devices-devicemanagementsubscriptionstate.md)
 - [Device management troubleshooting event](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Device operating system summary](intune-devices-deviceoperatingsystemsummary.md)
-- [Device registration state](intune-devices-deviceraegistrationstate.md)
+- [Device registration state](intune-devices-deviceregistrationstate.md)
 - [Enrollment troubleshooting event](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Localized notification message](intune-notification-localizednotificationmessage.md)
 - [Locate device action result](intune-devices-locatedeviceactionresult.md)

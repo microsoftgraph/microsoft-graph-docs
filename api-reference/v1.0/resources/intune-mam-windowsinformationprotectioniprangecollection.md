@@ -32,7 +32,7 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "ranges": [
     {
-      "@odata.type": "microsoft.graph.iPv6Range",
+      "@odata.type": "microsoft.graph.ipRange",
       "lowerAddress": "String",
       "upperAddress": "String"
     }

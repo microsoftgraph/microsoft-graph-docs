@@ -78,7 +78,7 @@ Here is a JSON representation of the resource.
   "microsoftUpdateServiceAllowed": true,
   "driversExcluded": true,
   "installationSchedule": {
-    "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
+    "@odata.type": "microsoft.graph.windowsUpdateScheduled",
     "scheduledInstallDay": "String",
     "scheduledInstallTime": "String (time of day)"
   },

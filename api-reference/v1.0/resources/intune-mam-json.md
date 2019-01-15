@@ -30,5 +30,13 @@ Here is a JSON representation of the resource.
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
 
+"Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune-mam-json.md, /api-reference/v1.0/resources/json.md"
 
+  ],
+
+}
+-->
