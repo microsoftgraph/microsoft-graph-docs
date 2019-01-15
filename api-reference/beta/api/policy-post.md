@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create a pol
 |:---------------|:--------|:----------|
 |definition|String|The string version of the [policy](../resources/policy.md) object.|
 |displayName|String|A custom name for the policy.|
-|type|String|Specifies the [type of policy](../resources/policy.md#policy-types).|
+|type|String|Specifies the [type of policy](../resources/policy.md).|
 
 ## Response
 
