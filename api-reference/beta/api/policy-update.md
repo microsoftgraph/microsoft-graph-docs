@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the parameters that need to be u
 |definition|String|The stringified version of the [policy](../resources/policy.md) object.|
 |displayName|String|A custom name for the policy.|
 |isOrganizationDefault|Boolean|Specifies if this policy is applied by default.|
-|type|String|Specifies the [type of policy](../resources/policy.md#policy-types).|
+|type|String|Specifies the [type of policy](../resources/policy.md).|
 
 ## Response
 
