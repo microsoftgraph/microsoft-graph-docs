@@ -7,19 +7,19 @@ description: "Specifies the lifetimes of tokens issued for various purposes"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](../api/policy-assign.md) to applications and service principals. There are four kinds of tokens whose lifetimes can be configured. Access/Refresh token pairs are obtained during authentication through a client, whereas ID/Session token pairs are obtained during authentication through a browser.
+Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](../api/policy-assign.md) to applications and service principals. Lifetimes can be configured for four kinds of tokens: 
 
 - **Access Token** contains information about the identity and privileges associated with a user account that is used by clients to access protected resources like applications.
-- **Refresh Token** is obtained together with the access token when a user authenticates against Azure AD through a client to access a protected resource. While it is not revoked or left unused for more than the MaxInactiveTime (below), it can be used to obtain a new access/refresh token pair when the current access token expires.
-- **ID Token** behaves like an access token, but obtained through the browser.
-- **Session Token** behaves like a refresh token, but obtained through the browser.
+- **Refresh Token** is obtained together with the access token when a user authenticates against Azure AD through a client to access a protected resource. Although this token is not revoked or left unused for more than the **MaxInactiveTime**, it can be used to obtain a new access/refresh token pair when the current access token expires.
+- **ID Token** fucntions like an access token, but is obtained via the browser.
+- **Session Token** functions like a refresh token, but obtained via the browser.
+
+Access/Refresh token pairs are obtained during client authentication. ID/Session token pairs are obtained during browser authentication.
 
 ## Properties
-The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the "definition" common policy property. An example is shown below.
+The following properties form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** common policy property. The following is an example.
 
->Note: All time durations in these properties are specified in the format "dd.hh:mm:ss".
-
->Note: Max values for properties denoted in "days" are 1 second short of the denoted number of days. For example, the max value of 1 days is specified as "23:59:59".
+>**Note:** All time durations in these properties are specified in the format "dd.hh:mm:ss". The maximum values for properties denoted in days are 1 second short of the denoted number of days. For example, the maxiumum value of 1 day is specified as "23:59:59".
 
 | Property	   | Type	|Description| Min Value | Max Value | Default Value|
 |:---------------|:--------|:----------|:--------|:--------|:----|
