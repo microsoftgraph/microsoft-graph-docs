@@ -25,7 +25,7 @@ The following are the policy types:
 |[List policies](../api/policy-list.md)|Policy collection|Get all policy objects in the organization.|
 |[List assigned policies](../api/policy-list-assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
 
-### Common Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |definition|String|The string version of the specific policy. See below. Required.|
@@ -33,7 +33,7 @@ The following are the policy types:
 |IsOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 |type|String|Specifies the type of policy. Required.|
 
-#### Common Relationships
+## Relationships
 |Relationship|Type|Description|
 |:-------------|:-----------|:-----------|
 |appliesTo|[directoryObject](../resources/directoryobject.md) collection|The applications, service principals, groups, or organization the policy applies to.|
