@@ -1,7 +1,9 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""
+description: "Summarizes the device management endpoints supported by Microsoft Graph API for Intune"
+localization_priority: Normal
 author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # Device management in Microsoft Intune

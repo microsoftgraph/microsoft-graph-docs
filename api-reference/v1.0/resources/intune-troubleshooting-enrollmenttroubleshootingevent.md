@@ -1,7 +1,9 @@
 ---
 title: "enrollmentTroubleshootingEvent resource type"
 description: "Event representing an enrollment failure."
+localization_priority: Normal
 author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # enrollmentTroubleshootingEvent resource type

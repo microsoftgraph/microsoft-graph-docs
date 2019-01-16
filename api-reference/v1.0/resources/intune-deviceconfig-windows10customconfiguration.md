@@ -1,7 +1,9 @@
 ---
 title: "windows10CustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10CustomConfiguration resource."
+localization_priority: Normal
 author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # windows10CustomConfiguration resource type
