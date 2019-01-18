@@ -40,7 +40,7 @@ In the request body, supply the properties for the Data Loss Prevention (DLP) vi
 |:---------------|:--------|:----------|
 | generalText | string | This is the explanatory text shown to the sender of the message that was flagged. |
 | complianceUrl | string | This is the URL that represents the DLP policies of the organization or a page the admin chooses to configure to provide more information abour DLP policies in the organization |
-| matchedConditionDescriptions | IEnumerable\<string\> | This is the set of sensitive types that were a match during classification of the given message. Example: Credit Card Information, Social Security Number, etc.|
+| matchedConditionDescriptions | IEnumerable\<string\> | This is the set of sensitive types that were a match during classification of the given message. The values are defined by the DLP app. Example: Credit Card Information, Social Security Number, etc.|
 
 #### Verdict Details enum
 
