@@ -27,7 +27,7 @@ Or on a user's personal OneDrive:
 
 Or on Microsoft Teams with admin permissions you can access tenant wide data for both channel and chat messages. The teams message is called "chatMessage" and is different from Message (email)
 `/teams/all/channels/all/chatMessages
-/user/all/chat/all/chatMessages
+/user/all/chat/all/chatMessages`
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates cache and views, etc.
 
