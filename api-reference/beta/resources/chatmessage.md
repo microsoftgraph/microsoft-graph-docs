@@ -33,7 +33,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |importance| string | The importance of the message: Normal, High|
 |reactions| chatReactions collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
-|policyViolation|chatMessagePolicyViolation|Properties for the Data Loss prevention (DLP) violation|
+|policyViolation|chatMessagePolicyViolation|Properties for the Data Loss Prevention (DLP) violation|
 
 ## JSON representation
 
