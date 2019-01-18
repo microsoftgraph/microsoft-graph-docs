@@ -1,6 +1,6 @@
 ﻿# chatMessage DLPviolation
 
-Update a chatMessage with a data loss provention (DLP) policy violation
+Update a chatMessage with a Data Loss Prevention (DLP) policy violation.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated | not supported    |
 |Delegated | not supported    |
 |Application | chatMessage.PatchPolicyViolation.All for chat message patch |
-|Application | ChannelMessage.UpdatePolicyViolation.All for channel message patch |
+|Application | channelMessage.UpdatePolicyViolation.All for channel message patch |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +38,9 @@ In the request body, supply the properties for the Data Loss Prevention (DLP) vi
 #### Policy Tip JSON 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| generalText | string | General policy tip text. |
-| complianceUrl | string | Optional URL that provides additional help on the policy tip. |
-| matchedConditionDescriptions | IEnumerable\<string\> | An array that contains a description of each sensitive data condition that has been matched in the given message. Example: Credit Card Information, Social Security Number, etc.|
+| generalText | string | This is the explanatory text shown to the sender of the message that was flagged. |
+| complianceUrl | string | This is the URL that represents the DLP policies of the organization or a page the admin chooses to configure to provide more information abour DLP policies in the organization |
+| matchedConditionDescriptions | IEnumerable\<string\> | This is the set of sensitive types that were a match during classification of the given message. Example: Credit Card Information, Social Security Number, etc.|
 
 #### Verdict Details enum
 
