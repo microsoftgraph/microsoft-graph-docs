@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
+localization_priority: Normal
 ---
 # ContentTypeOrder resource type
 

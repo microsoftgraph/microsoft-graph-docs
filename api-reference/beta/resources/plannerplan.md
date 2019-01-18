@@ -1,8 +1,16 @@
+---
+title: "plannerPlan resource type"
+description: "The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a group and contains a collection of plannerTasks. It can also have a collection of plannerBuckets. Each plan object has a details object which can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see Planner."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+---
+
 # plannerPlan resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannerTask.md). It can also have a collection of [plannerBuckets](plannerBucket.md). Each plan object has a [details](plannerPlanDetails.md) object which can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner_overview.md).
+The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannertask.md). It can also have a collection of [plannerBuckets](plannerbucket.md). Each plan object has a [details](plannerplandetails.md) object which can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner-overview.md).
 
 
 
@@ -10,20 +18,20 @@ The **plannerPlan** resource represents a plan in Office 365. A plan can be owne
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
-|[List buckets](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
-|[List tasks](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
-|[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
+|[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
+|[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
+|[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id|String| Read-only. ID of the plan. It is 28 characters long and case-sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
-|owner|String|ID of the [Group](group.md) that owns the plan. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
+|id|String| Read-only. ID of the plan. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|owner|String|ID of the [Group](group.md) that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.|
 |title|String|Required. Title of the plan.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
-|contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerPlanContext.md) entries.|
+|contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 
 ## Relationships
 | Relationship | Type	|Description|

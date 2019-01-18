@@ -1,10 +1,16 @@
+---
+title: "Configure synchronization with custom target attributes"
+description: "You can customize your synchronization schema to include custom attributes that are defined in the target directory. This article describes how to customize a Salesforce subscription by adding a new field called `officeCode`. You set up synchronization from Azure Active Directory (Azure AD) to Salesforce, and for each user, you will populate the `officeCode` field in Salesforce with the value from the `extensionAttribute10` field in Azure AD."
+localization_priority: Normal
+---
+
 # Configure synchronization with custom target attributes
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 You can customize your synchronization schema to include custom attributes that are defined in the target directory. This article describes how to customize a Salesforce subscription by adding a new field called `officeCode`. You set up synchronization from Azure Active Directory (Azure AD) to Salesforce, and for each user, you will populate the `officeCode` field in Salesforce with the value from the `extensionAttribute10` field in Azure AD.
 
-This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph. For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview).
+This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph. For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
 ## Find the service principal object by display name
 
@@ -174,18 +180,18 @@ HTTP/1.1 200 OK
 
 ## Add a definition for the officeCode attribute and a mapping between attributes
 
-Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](http://www.jsoneditoronline.org/)) to:
+Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:
 
-1. Add an [attribute definition](synchronization_attributedefinition.md) for the `officeCode` attribute. 
+1. Add an [attribute definition](synchronization-attributedefinition.md) for the `officeCode` attribute. 
 
 	- Under directories, find the directory with the name salesforce.com, and in the object's array, find the one named **User**.
 	- Add the new attribute to the list, specifying the name and type, as shown in the following example.
 
-2. Add an [attribute mapping](synchronization_attributemapping.md) between `officeCode` and `extensionAttribute10`.
+2. Add an [attribute mapping](synchronization-attributemapping.md) between `officeCode` and `extensionAttribute10`.
 
-	- Under [synchronizationRules](synchronization_synchronizationrule.md), find the rule that specifies Azure AD as the source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
-	- In the [objectMappings](synchronization_objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
-	- In the [attributeMappings](synchronization_attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.
+	- Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as the source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
+	- In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
+	- In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.
 
 ```json
 {  

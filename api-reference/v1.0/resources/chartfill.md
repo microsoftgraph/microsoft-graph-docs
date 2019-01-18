@@ -1,3 +1,11 @@
+---
+title: "ChartFill resource type"
+description: "Represents the fill formatting for a chart element."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartFill resource type
 
 Represents the fill formatting for a chart element.
@@ -7,8 +15,8 @@ Represents the fill formatting for a chart element.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill_clear.md)|None|Clear the fill color of a chart element.|
-|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|None|Sets the fill formatting of a chart element to a uniform color.|
+|[Clear](../api/chartfill-clear.md)|None|Clear the fill color of a chart element.|
+|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|None|Sets the fill formatting of a chart element to a uniform color.|
 
 ## Properties
 None

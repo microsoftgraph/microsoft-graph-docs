@@ -1,3 +1,11 @@
+---
+title: "plannerPlanDetails resource type"
+description: "The **plannerPlanDetails** resource represents the additional information about a plan. Each plan object has a details object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+---
+
 # plannerPlanDetails resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,16 +17,16 @@ The **plannerPlanDetails** resource represents the additional information about 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Read the properties and relationships of a **plannerPlanDetails** object.|
-|[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update a **plannerPlanDetails** object. |
+|[Get plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Read the properties and relationships of a **plannerPlanDetails** object.|
+|[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)	|Update a **plannerPlanDetails** object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the six categories that can be associated with tasks in the plan|
-|id|String| Read-only. The ID of the plan details. It is 28 characters long and case-sensitive. [Format validation](tasks_identifiers_disclaimer.md) is done on the service.|
+|id|String| Read-only. The ID of the plan details. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |sharedWith|[plannerUserIds](planneruserids.md)|The set of user IDs that this plan is shared with. If you are using Office 365 Groups, use the groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection, although it is not required in order for them to access the plan owned by the group. |
-|contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|Read-only. A collection of additional information associated with [plannerPlanContext](plannerplancontext.md) entries that are defined for the [plannerPlan](plannerPlan.md) container. |
+|contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|Read-only. A collection of additional information associated with [plannerPlanContext](plannerplancontext.md) entries that are defined for the [plannerPlan](plannerplan.md) container. |
 
 ## Relationships
 None.

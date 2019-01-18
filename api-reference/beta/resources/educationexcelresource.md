@@ -1,3 +1,11 @@
+---
+title: "educationExcelResource resource type"
+description: "A subclass of educationResource. This resource type represents an Excel document.  "
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationExcelResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

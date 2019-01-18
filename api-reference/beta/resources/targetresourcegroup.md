@@ -1,3 +1,9 @@
+---
+title: "targetResourceGroup resource type"
+description: "Indicates the type of group that was impacted due to the audit activity. Includes values like unified groups versus Azure AD "
+localization_priority: Normal
+---
+
 # targetResourceGroup resource type
 Indicates the type of group that was impacted due to the audit activity. Includes values like unified groups versus Azure AD 
 

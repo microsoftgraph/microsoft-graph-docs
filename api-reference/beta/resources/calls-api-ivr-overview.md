@@ -1,3 +1,11 @@
+---
+title: "IVR scenarios in calls"
+description: "The following are the Interactive Voice Response (IVR) scenarios that the calling APIs in Microsoft Graph support:"
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # IVR scenarios in calls
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

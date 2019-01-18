@@ -1,3 +1,11 @@
+---
+title: "subscribedSku resource type"
+description: " create, update, and delete are not supported. Query filter expressions are not supported. Inherits from directoryObject."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
+---
+
 # subscribedSku resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,8 +16,8 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
-|[List subscribedsku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) collection |Retrieve the list of commercial subscriptions that an organization has acquired.|
+|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
+|[List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection |Retrieve the list of commercial subscriptions that an organization has acquired.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Site resource
 
@@ -20,11 +22,11 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 | [Get site for a group][] | GET /groups/{group-id}/sites/root
 | [Search for sites][]     | GET /sites?search={query}
 
-[Get site]: ../api/site_get.md
-[Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_getbypath.md
-[Get site for a group]: ../api/site_get.md
-[Search for sites]: ../api/site_search.md
+[Get site]: ../api/site-get.md
+[Get root site]: ../api/site-get.md
+[Get site by path]: ../api/site-getbypath.md
+[Get site for a group]: ../api/site-get.md
+[Search for sites]: ../api/site-search.md
 
 ## JSON representation
 
@@ -106,7 +108,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[contentType]: contentType.md
+[contentType]: contenttype.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [list]: list.md

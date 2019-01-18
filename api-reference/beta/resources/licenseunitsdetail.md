@@ -1,3 +1,9 @@
+---
+title: "licenseUnitsDetail resource type"
+description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
+localization_priority: Normal
+---
+
 # licenseUnitsDetail resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

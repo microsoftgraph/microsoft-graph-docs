@@ -1,31 +1,35 @@
-# PlayPromptOperation resource type
+---
+title: "playPromptOperation resource type"
+description: "The playPrompt operation to obtain the result of the playPrompt action."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
+# playPromptOperation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The playPromptOperation type.
-
-## Methods
-None
+The playPrompt operation to obtain the result of the playPrompt action.
 
 ## Properties
 
-| Property           | Type                        | Description                                                                           |
-| :----------------- | :---------------------------|:--------------------------------------------------------------------------------------|
-| clientContext      | String                      | The client context.                                                                   |
-| completionReason   | String                      | Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
-| createdDateTime    | DateTimeOffset              | The start time of the operation.                                                      |
-| id                 | String                      | The operation id. Read Only.                                                          |
-| lastActionDateTime | DateTimeOffset              | The time of the last action of the operation.                                         |
-| prompts            | [dtmfPrompt](dtmfprompt.md), [mediaPrompt](mediaprompt.md), [silencePrompt](silenceprompt.md) or [textPrompt](textprompt.md) collection | The collection of prompts. |
-| resultInfo         | [resultInfo](resultinfo.md) | The result information. Read Only.                                                    |
-| status             | String                      | Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`. Read Only.       |
+| Property            | Type                        | Description|
+|:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
+| clientContext       | String                      | The client context.                                                                |
+| completionReason    | String                      | Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
+| createdDateTime     | DateTimeOffset              | The start time of the operation.                                                   |
+| id                  | String                      | Read-only.                                                                         |
+| lastActionDateTime  | DateTimeOffset              | The time of the last action of the operation.                                      |
+| resultInfo          | [resultInfo](resultInfo.md) | The result information. Read-only. Server generated.                               |
+| status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
 None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -34,26 +38,15 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.playPromptOperation"
 }-->
-
 ```json
 {
   "clientContext": "String",
-  "completionReason": "String",
+  "completionReason": "unknown | completedSuccessfully | mediaOperationCanceled",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "status": "String"
-}
-```
-
-## Example
-
-``` json
-{
-    "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-    "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-    "status": "completed",
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "status": "notStarted | running | completed | failed"
 }
 ```
 

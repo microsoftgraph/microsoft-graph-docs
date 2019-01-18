@@ -1,3 +1,9 @@
+---
+title: "reminder resource type"
+description: "A reminder for an event in a user calendar."
+localization_priority: Normal
+---
+
 # reminder resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

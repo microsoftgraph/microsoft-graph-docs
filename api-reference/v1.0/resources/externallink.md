@@ -1,3 +1,9 @@
+---
+title: "externalLink resource type"
+description: "A url that opens a OneNote page or notebook."
+localization_priority: Normal
+---
+
 # externalLink resource type
 
 A url that opens a OneNote page or notebook.

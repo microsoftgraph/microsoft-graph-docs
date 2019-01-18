@@ -1,3 +1,9 @@
+---
+title: "Azure AD synchronization API overview"
+description: ") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:"
+localization_priority: Normal
+---
+
 # Azure AD synchronization API overview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -13,17 +19,17 @@ For more information about synchronization in Azure AD, see:
 * [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
 * [Managing user account provisioning for enterprise apps in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-You can also try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) in a sample tenant or your own tenant.
+You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.
 
 ## Synchronization job
 
 Synchronization jobs perform synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. The synchronization job is always specific to a particular instance of an application in your tenant. As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.
 
-For more information, see [synchronization job](synchronization_synchronizationjob.md).
+For more information, see [synchronization job](synchronization-synchronizationjob.md).
 
 ## Synchronization schema
 
-The synchronization schema defines what objects will be synchronized and how they will be synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you will customize some of the [attribute mappings](synchronization_attributemapping.md), or add a [scoping filter](synchronization_filter.md) to synchronize only objects that satisfy a certain condition.
+The synchronization schema defines what objects will be synchronized and how they will be synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you will customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.
 
 The synchronization schema includes the following components:
 
@@ -31,21 +37,21 @@ The synchronization schema includes the following components:
 - Synchronization rules
 - Object mappings
 
-For more information, see [synchronization schema](synchronization_synchronizationschema.md).
+For more information, see [synchronization schema](synchronization-synchronizationschema.md).
 
 ## Synchronization template
 
-The synchronization template provides pre-configured synchronization settings for a particular application. These settings (most importantly, [synchronization schema](synchronization_synchronizationschema.md)) will be used by default for any [synchronization job](synchronization_synchronizationjob.md) that is based on the template. Templates are specified by the application developer.
+The synchronization template provides pre-configured synchronization settings for a particular application. These settings (most importantly, [synchronization schema](synchronization-synchronizationschema.md)) will be used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template. Templates are specified by the application developer.
 
-For more information, see [synchronization template](synchronization_synchronizationtemplate.md).
+For more information, see [synchronization template](synchronization-synchronizationtemplate.md).
 
 ## Working with the synchronization API
 
-Working with synchronization API primarily involves accessing the [synchronizationJob](synchronization_synchronizationjob.md) and [synchronizationSchema](synchronization_synchronizationschema.md) resources. To find your [synchronizationJob](synchronization_synchronizationjob.md) resource, you need to know the ID of the service principal object that the synchronization job belongs to. The following examples show you how to work with the **synchronizationJob** and **synchronizationSchema** resources.
+Working with synchronization API primarily involves accessing the [synchronizationJob](synchronization-synchronizationjob.md) and [synchronizationSchema](synchronization-synchronizationschema.md) resources. To find your [synchronizationJob](synchronization-synchronizationjob.md) resource, you need to know the ID of the service principal object that the synchronization job belongs to. The following examples show you how to work with the **synchronizationJob** and **synchronizationSchema** resources.
 
 ### Authorization
 
-The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](../../../concepts/permissions_reference.md#directory-permissions).
+The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
 
 ### Find the service principal object by display name
 

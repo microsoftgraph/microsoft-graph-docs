@@ -1,3 +1,11 @@
+---
+title: "tokenMeetingInfo resource type"
+description: "The tokenMeetingInfo type."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # tokenMeetingInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -13,7 +21,7 @@ The tokenMeetingInfo type.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

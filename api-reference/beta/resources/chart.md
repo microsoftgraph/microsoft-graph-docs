@@ -1,3 +1,11 @@
+---
+title: "Chart resource type"
+description: "Represents a chart object in a workbook."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # Chart resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,17 +17,17 @@ Represents a chart object in a workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [Chart](chart.md) |Read properties and relationships of chart object.|
-|[Create ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
-|[List series](../api/chart_list_series.md) |[ChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)	|Update Chart object. |
-|[Image](../api/chart_image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
-|[Delete](../api/chart_delete.md)|None|Deletes the chart object.|
-|[Setdata](../api/chart_setdata.md)|None|Resets the source data for the chart.|
-|[Setposition](../api/chart_setposition.md)|None|Positions the chart relative to cells on the worksheet.|
-|[List](../api/chart_list.md) | [Chart](chart.md) collection |Get chart object collection. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Creates a new chart.|
+|[Get Chart](../api/chart-get.md) | [Chart](chart.md) |Read properties and relationships of chart object.|
+|[Create ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
+|[List series](../api/chart-list-series.md) |[ChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
+|[Update](../api/chart-update.md) | [Chart](chart.md)	|Update Chart object. |
+|[Image](../api/chart-image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
+|[Delete](../api/chart-delete.md)|None|Deletes the chart object.|
+|[Setdata](../api/chart-setdata.md)|None|Resets the source data for the chart.|
+|[Setposition](../api/chart-setposition.md)|None|Positions the chart relative to cells on the worksheet.|
+|[List](../api/chart-list.md) | [Chart](chart.md) collection |Get chart object collection. |
+|[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
+|[Add](../api/chartcollection-add.md)|[Chart](chart.md)|Creates a new chart.|
 
 ## Properties
 | Property	   | Type	|Description|

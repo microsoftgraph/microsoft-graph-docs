@@ -1,3 +1,11 @@
+---
+title: "commsOperation resource type"
+description: "The status of certain long-running operations."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # commsOperation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -23,7 +31,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -54,11 +62,11 @@ Here is a JSON representation of the resource.
   "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "createdDateTime": "2018-09-06T15:58:41Z",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
     "@odata.type": "#microsoft.graph.resultInfo",
     "code": "200"
   },
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "status": "completed"
 }
 ```

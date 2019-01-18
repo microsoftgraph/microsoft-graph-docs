@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
+localization_priority: Normal
 ---
 # ContentTypeInfo resource type
 

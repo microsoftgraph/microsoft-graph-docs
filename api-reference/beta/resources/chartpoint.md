@@ -1,3 +1,11 @@
+---
+title: "ChartPoint resource type"
+description: "Represents a point of a series in a chart."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartPoint resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,9 +17,9 @@ Represents a point of a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Read properties and relationships of chartPoint object.|
-|[List](../api/chartpoint_list.md) | [ChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
+|[Get ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |Read properties and relationships of chartPoint object.|
+|[List](../api/chartpoint-list.md) | [ChartPoint](chartpoint.md) collection |Get chartPoint object collection. |
+|[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|Retrieve a point based on its position within the series.|
 
 ## Properties
 | Property	   | Type	|Description|

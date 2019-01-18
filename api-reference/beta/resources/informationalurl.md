@@ -1,3 +1,9 @@
+---
+title: "informationalUrl resource type"
+description: "Basic profile information of the application."
+localization_priority: Normal
+---
+
 # informationalUrl resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

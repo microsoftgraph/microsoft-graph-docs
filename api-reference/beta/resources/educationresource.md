@@ -1,3 +1,11 @@
+---
+title: "educationResource resource type"
+description: "A superclass for all resource objects in the system. A resource is associated with an **Assignment** and/or **Submission**, which represents the learning object that is being"
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+---
+
 # educationResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

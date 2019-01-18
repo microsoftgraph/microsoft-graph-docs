@@ -3,8 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Drive
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
-# Drive resource type
+# drive resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
@@ -17,10 +21,26 @@ Here is a JSON representation of a Drive resource.
 
 The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.drive",
-       "keyProperty": "id", 
-       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "activities",
+    "createdBy",
+    "createdDateTime",
+    "description",
+    "lastModifiedBy",
+    "lastModifiedDateTime",
+    "name",
+    "webUrl",
+    "items",
+    "root",
+    "special",
+    "system"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.drive"
+}-->
 
 ```json
 {
@@ -30,6 +50,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
+  "following": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "string (timestamp)",
@@ -73,6 +94,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
 | root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
 | special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
 
 ## Methods
 
@@ -81,24 +103,26 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | [Get Drive metadata of another Drive][drive-get]           | `GET /drives/{drive-id}`    |
 | [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
 | [List activities under the Drive][drive-activities]        | `GET /drive/activities`     |
+| [List followed Items][drive-following]                     | `GET /drive/following`      |
 | [List children under the Drive][item-children]             | `GET /drive/root/children`  |
 | [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
 | [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
-| [Access special folder](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
+| [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-In the previous table, the examples use `/drive`, but other pathes are valid too.
+In the previous table, the examples use `/drive`, but other paths are valid too.
 
-[itemActivity]: itemActivity.md
+[itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-activities]: ../api/activities_list.md
-[drive-get]: ../api/drive_get.md
-[item-get]: ../api/driveitem_get.md
-[item-changes]: ../api/driveitem_delta.md
-[item-search]: ../api/driveitem_search.md
-[item-children]: ../api/driveitem_list_children.md
+[drive-activities]: ../api/activities-list.md
+[drive-following]: ../api/drive-list-following.md
+[drive-get]: ../api/drive-get.md
+[item-get]: ../api/driveitem-get.md
+[item-changes]: ../api/driveitem-delta.md
+[item-search]: ../api/driveitem-search.md
+[item-children]: ../api/driveitem-list-children.md
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

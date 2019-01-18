@@ -1,4 +1,10 @@
-﻿# sectionLinks resource type
+---
+title: "sectionLinks resource type"
+description: "Links for opening a OneNote section."
+localization_priority: Normal
+---
+
+# sectionLinks resource type
 
 Links for opening a OneNote section.
 

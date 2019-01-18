@@ -1,3 +1,9 @@
+---
+title: "onPremisesPublishing resource type"
+description: "Here is a JSON representation of the resource."
+localization_priority: Normal
+---
+
 # onPremisesPublishing resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +14,7 @@
 |customDomainCertificate|String|Details of the certificate associated with the applicaiton when a custom domain is in use. Null when using the default domain.|
 |externalAuthenticationType|String|Details the pre-authentication setting for the application Possible values are: `passthru`, `aadPreAuthentication`.|
 |externalUrl|String|The published external url for the application. For example https://intranet-contoso.msappproxy.net/  |
-|internalUrl|String|The internal url of the application. For example http://intranet/ |
+|internalUrl|String|The internal url of the application. For example https://intranet/ |
 |isOnPremPublishingEnabled|Boolean|Indicates if the application is currently being published or not.|
 |applicationServerTimeout|String|The duration the connector will wait for a response from the backend application before closing the connection. Possible values are `default`, `long`. Use `long` if your server takes more than 60-75 seconds to respond to requests. Also try `long` if you are unable to access the application and the error status is "Backend Timeout".|
 |isTranslateHostHeaderEnabled|Boolean|Indicates if the application should translate urls in the reponse headers. This includes setting the correct site for cookies.|

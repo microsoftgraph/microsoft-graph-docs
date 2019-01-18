@@ -1,27 +1,35 @@
+---
+title: "accessReview resource type"
+description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
+---
+
 # accessReview resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](accessreviews_root.md) feature, the `accessReview` represents an access review.  
+In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessReview` represents an access review.  
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](../api/accessreview_get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
-|[Create accessReview](../api/accessreview_create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
-|[Delete accessReview](../api/accessreview_delete.md) |	None.	| Delete an accessReview. |
-|[Update accessReview](../api/accessreview_update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
-|[List accessReview reviewers](../api/accessreview_listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview_addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview_removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
-|[List accessReview decisions](../api/accessreview_listdecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
-|[List my accessReview decisions](../api/accessreview_listmydecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
-|[Send accessReview reminder](../api/accessreview_sendreminder.md) |		None.	|	Send a reminder to the reviewers of an accessReview. |
-|[Stop accessReview](../api/accessreview_stop.md) |		None.	|	Stop an accessReview. |
-|[Reset accessReview decisions](../api/accessreview_reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
-|[Apply accessReview decisions](../api/accessreview_apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
+|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
+|[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
+|[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
+|[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
+|[List accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
+|[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
+|[List accessReview decisions](../api/accessreview-listdecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
+|[List my accessReview decisions](../api/accessreview-listmydecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
+|[Send accessReview reminder](../api/accessreview-sendreminder.md) |		None.	|	Send a reminder to the reviewers of an accessReview. |
+|[Stop accessReview](../api/accessreview-stop.md) |		None.	|	Stop an accessReview. |
+|[Reset accessReview decisions](../api/accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
+|[Apply accessReview decisions](../api/accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
 
 ## Permissions
 
@@ -39,12 +47,12 @@ In the Azure AD [access reviews](accessreviews_root.md) feature, the `accessRevi
 | `displayName`             |`String`                                                        | The access review name. Required on create. |
 | `startDateTime`           |`DateTimeOffset`                                                | The DateTime when the review is scheduled to be start.  This could be a date in the future.  Required on create. |
 | `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.  Required on create. |
-| `status`                  |`String`                                                        | This read-only field specifies the current status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
+| `status`                  |`String`                                                        | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | `description`             |`String`                                                        | The description provided by the access review creator, to show to the reviewers. |
 | `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier. Required on create. |
-| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the target object, one of `self`, `delegate` or `entityOwners`. Required on create. | 
-| `createdBy`               |[userIdentity](userIdentity.md)                                 | The user who created this review. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which the access reviews is of the access rights assignments, such as the memberships of users to a group or assignments of users to an application. Required on create. | 
+| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
+| `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | The settings of an accessReview, see type definition below. |
 
 
@@ -61,7 +69,7 @@ In the Azure AD [access reviews](accessreviews_root.md) feature, the `accessRevi
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for the caller, if the caller is a reviewer. |
 | `instances`               |[accessReview](accessreview.md) collection         | The collection of access reviews instances past, present and future, if this object is a recurring access review. |
 
-Whether there are relationships present on an object, depend upon whether the object is a one-time access review, the series of a recurring access review, or an instance of a recurring access review.
+Whether these relationships are present on an object, depends upon whether the object is a one-time access review, the series of a recurring access review, or an instance of a recurring access review.
 
 | Scenario | Has reviewers? | Has decisions and myDecisions? | Has instances? |
 |:---------|:---------------|:---------------|:---------------|
@@ -112,7 +120,7 @@ The `accessReviewSettings` provides additional settings when creating an access 
 | `autoReviewEnabled`|`Boolean` | Flag to indicate whether the feature should set a decision if the reviewer did not supply one, for use with auto-apply, is enabled. |
 | `autoReviewSettings`|`microsoft.graph.autoReviewSettings` | Detailed settings for how the feature should set the review decision, for use with auto-apply, described below. |
 | `recurrenceSettings`|`microsoft.graph.accessReviewRecurrenceSettings` | Detailed settings for recurrence, described below. |
-| `autoApplyReviewResultsEnabled`|`Boolean` | Flag to indicate whether auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must subsequently apply the change of the access review after the access review is completed. |
+| `autoApplyReviewResultsEnabled`|`Boolean` | Flag to indicate whether auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | `accessRecommendationsEnabled`|`Boolean` | Flag to indicate whether showing recommendations to reviewers is enabled. |
 
 
@@ -132,10 +140,10 @@ The `accessReviewRecurrenceSettings` is embedded within the access review settin
 
 | Property                     | Type                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
-| `recurrenceType`|`String`    | The recurrence interval, which must be one of `onetime`, `weekly`, `monthly`, `quarterly` or `annual`.                                                                   |
-| `recurrenceEndType`|`String` | How the recurrence will end. It can be one of `Never`,that there is no explicit end of the recurrence series, `Endby`, that the recurrence ends at a certain date, and `occurrences`, that the series ends after certain number of instances of the review have completed. |
+| `recurrenceType`|`String`    | The recurrence interval, which must be one of `onetime`, `weekly`, `monthly`, `quarterly`, or `annual`.                                                                   |
+| `recurrenceEndType`|`String` | How the recurrence ends. If it is `Never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrentCount` instances of the review have completed. |
 | `durationInDays`|`Int32`     | The duration in days for recurrence.                                                                              |
-| `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`.                                                        |
+| `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`, or 0 otherwise.                                                        |
 
 
 

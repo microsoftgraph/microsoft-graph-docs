@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: RenameAction
+localization_priority: Normal
 ---
 # RenameAction resource type
 
@@ -10,7 +11,7 @@ title: RenameAction
 
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

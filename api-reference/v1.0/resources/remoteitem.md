@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: RemoteItem
+localization_priority: Normal
 ---
 # RemoteItem resource type
 
@@ -63,7 +64,7 @@ This resource provides the unique IDs of the source drive and target item.
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
 
-[specialFolder]: specialFolder.md
+[specialFolder]: specialfolder.md
 
 ## Remarks
 

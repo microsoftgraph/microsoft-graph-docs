@@ -1,3 +1,9 @@
+---
+title: "privilegedAccess resource type"
+description: " for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources."
+localization_priority: Normal
+---
+
 # privilegedAccess resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

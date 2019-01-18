@@ -1,3 +1,11 @@
+---
+title: "Outlook extended properties overview"
+description: "Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+---
+
 # Outlook extended properties overview
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -26,13 +34,13 @@ Or, in the following Office 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as 
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the 
-[Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api).
+[Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
 
 ## Types of extended properties
 
 Depending on whether you intend to store a single or multiple values (of the same type) in an extended property, you can 
-create an extended property as a [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md), 
-or [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md).
+create an extended property as a [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), 
+or [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md).
 
 Each of these types identifies the property by its **id** and stores data in **value**. 
 
@@ -74,7 +82,7 @@ Use either of the named property formats to define a single-value or multi-value
 Use the proptag format to access properties predefined by MAPI, or by a client or server, and that have not already been exposed in Microsoft Graph. These properties have property identifiers in the 0x0001-0x7fff range. Do not try to define a custom property using the proptag format. 
 
 You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, 
-in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
+in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
 
 **Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
 
@@ -82,11 +90,11 @@ in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Prop
  
 Single-value extended property operations:
 
-- [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
-- [Get one or a collection of resource instances with an extended property using `$expand` or `$filter`](../api/singlevaluelegacyextendedproperty_get.md)
+- [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)
+- [Get one or a collection of resource instances with an extended property using `$expand` or `$filter`](../api/singlevaluelegacyextendedproperty-get.md)
 
 Multi-value extended property operations:
 
-- [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
-- [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty_get.md)
+- [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
+- [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty-get.md)
 

@@ -1,3 +1,11 @@
+---
+title: "educationUser resource type"
+description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationUser resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -10,12 +18,12 @@ This object provides a targeted subset of properties from the core [user](user.m
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationUser](../api/educationuser_get.md) | [educationUser](educationuser.md) |Read properties and relationships of an **educationUser** object.|
-|[List classes](../api/educationuser_list_classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection for which the user is member.|
-|[List schools](../api/educationuser_list_schools.md) |[educationSchool](educationschool.md) collection| Get the **educationSchool** object collection for which the user is a member.|
-|[Get user](../api/educationuser_get_user.md) |[user](user.md)| Get the simple directory **user** that corresponds to this **educationUser**.|
-|[Update](../api/educationuser_update.md) | [educationUser](educationuser.md)	|Update an **educationUser** object. |
-|[Delete](../api/educationuser_delete.md) | None |Delete an **educationUser** object. |
+|[Get educationUser](../api/educationuser-get.md) | [educationUser](educationuser.md) |Read properties and relationships of an **educationUser** object.|
+|[List classes](../api/educationuser-list-classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection for which the user is member.|
+|[List schools](../api/educationuser-list-schools.md) |[educationSchool](educationschool.md) collection| Get the **educationSchool** object collection for which the user is a member.|
+|[Get user](../api/educationuser-get-user.md) |[user](user.md)| Get the simple directory **user** that corresponds to this **educationUser**.|
+|[Update](../api/educationuser-update.md) | [educationUser](educationuser.md)	|Update an **educationUser** object. |
+|[Delete](../api/educationuser-delete.md) | None |Delete an **educationUser** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -53,7 +61,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes to which the user belongs. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
-|assignments| [educationAssignment](educationAssignment.md)| List of assignments for hte user. Nullable.|
+|assignments| [educationAssignment](educationassignment.md)| List of assignments for hte user. Nullable.|
 
 ## JSON representation
 

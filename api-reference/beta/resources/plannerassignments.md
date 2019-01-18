@@ -1,3 +1,11 @@
+---
+title: "plannerAssignments resource type"
+description: "The **plannerAssignments** resource represents assignments of a plannerTask resource. This type is an open type. Each property name in this type "
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+---
+
 # plannerAssignments resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

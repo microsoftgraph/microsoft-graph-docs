@@ -1,8 +1,9 @@
-﻿---
+---
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
+localization_priority: Normal
 ---
 # System facet
 

@@ -1,3 +1,9 @@
+---
+title: "suspiciousIpRiskEvent resource type"
+description: "A risk event detected by Azure Active Directory Identity Protection where an account sign-in is attempted from a suspicious IP address. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+localization_priority: Normal
+---
+
 # suspiciousIpRiskEvent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +15,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get suspiciousIpRiskEvent](../api/suspiciousipriskevent_get.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Read properties and relationships of suspiciousIpRiskEvent object.|
+|[Get suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) | [suspiciousIpRiskEvent](suspiciousipriskevent.md) |Read properties and relationships of suspiciousIpRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|

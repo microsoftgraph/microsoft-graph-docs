@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
+localization_priority: Normal
 ---
 # DefaultColumnValue resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **defaultColumnValue** on a [columnDefinition](columnDefinition.md) resource specifies the default value for this column.
+The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
 
 ## JSON representation

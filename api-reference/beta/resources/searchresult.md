@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SearchResult
+localization_priority: Normal
 ---
 # SearchResult resource type
 

@@ -1,3 +1,11 @@
+---
+title: "oneNoteIdentity resource type"
+description: "**Support coming soon**"
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
+---
+
 # oneNoteIdentity resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

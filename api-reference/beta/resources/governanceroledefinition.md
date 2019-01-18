@@ -1,3 +1,9 @@
+---
+title: "governanceRoleDefinition resource type"
+description: "Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc."
+localization_priority: Normal
+---
+
 # governanceRoleDefinition resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. 
@@ -10,8 +16,8 @@ Represents the role definitions. For Azure resources, it can represent Azure RBA
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
-|[List](../api/governanceroledefinition_list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) collection |List a collection of role definitions on a resource.|
-|[Get](../api/governanceroledefinition_get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
+|[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) collection |List a collection of role definitions on a resource.|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set for now.
 ## Properties
 | Property	| Type	    |Description|

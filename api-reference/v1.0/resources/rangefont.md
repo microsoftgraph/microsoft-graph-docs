@@ -1,3 +1,11 @@
+---
+title: "RangeFont resource type"
+description: "This object represents the font attributes (font name, font size, color, etc.) for an object."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
+---
+
 # RangeFont resource type
 
 This object represents the font attributes (font name, font size, color, etc.) for an object.
@@ -7,8 +15,8 @@ This object represents the font attributes (font name, font size, color, etc.) f
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [WorkbookRangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
-|[Update](../api/rangefont_update.md) | [WorkbookRangeFont](rangefont.md)	|Update RangeFont object. |
+|[Get RangeFont](../api/rangefont-get.md) | [WorkbookRangeFont](rangefont.md) |Read properties and relationships of rangeFont object.|
+|[Update](../api/rangefont-update.md) | [WorkbookRangeFont](rangefont.md)	|Update RangeFont object. |
 
 ## Properties
 | Property	   | Type	|Description|

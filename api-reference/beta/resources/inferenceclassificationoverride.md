@@ -1,17 +1,23 @@
+---
+title: "inferenceClassificationOverride resource type"
+description: "Represents a user's override for how incoming messages from a specific sender should always be classified as"
+localization_priority: Normal
+---
+
 # inferenceClassificationOverride resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a user's override for how incoming messages from a specific sender should always be classified as
-in a [Focused Inbox](manage_focused_inbox.md).
+in a [Focused Inbox](manage-focused-inbox.md).
 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | None |Delete an override specified by its ID. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
 
 ## Properties
 | Property	   | Type	|Description|

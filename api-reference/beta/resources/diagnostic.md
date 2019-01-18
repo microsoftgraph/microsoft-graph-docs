@@ -1,3 +1,9 @@
+---
+title: "diagnostic resource type"
+description: "Information about an error or warning for a OneNote operation."
+localization_priority: Normal
+---
+
 # diagnostic resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

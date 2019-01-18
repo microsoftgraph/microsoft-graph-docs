@@ -1,3 +1,9 @@
+---
+title: "website resource type"
+description: "Represents a website."
+localization_priority: Normal
+---
+
 # website resource type
 
 Represents a website.

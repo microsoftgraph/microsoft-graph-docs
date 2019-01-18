@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
+localization_priority: Normal
 ---
 # ItemActionSet resource type
 
@@ -10,7 +11,7 @@ title: ItemActionSet
 
 The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
 
-[itemActivity]: itemActivity.md
+[itemActivity]: itemactivity.md
 
 ## JSON representation
 
@@ -56,16 +57,16 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 | share         | [shareAction][]   | An item was shared.
 | version       | [versionAction][] | An item was versioned.
 
-[commentAction]: commentAction.md
-[createAction]: createAction.md
-[deleteAction]: deleteAction.md
-[editAction]: editAction.md
-[mentionAction]: mentionAction.md
-[moveAction]: moveAction.md
-[renameAction]: renameAction.md
-[restoreAction]: restoreAction.md
-[shareAction]: shareAction.md
-[versionAction]: versionAction.md
+[commentAction]: commentaction.md
+[createAction]: createaction.md
+[deleteAction]: deleteaction.md
+[editAction]: editaction.md
+[mentionAction]: mentionaction.md
+[moveAction]: moveaction.md
+[renameAction]: renameaction.md
+[restoreAction]: restoreaction.md
+[shareAction]: shareaction.md
+[versionAction]: versionaction.md
 
 ## Remarks
 

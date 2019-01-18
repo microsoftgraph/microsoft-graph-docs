@@ -1,3 +1,11 @@
+---
+title: "RangeBorder resource type"
+description: "Represents the border of an object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # RangeBorder resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,10 +17,10 @@ Represents the border of an object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
-|[Update](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)	|Update RangeBorder object. |
-|[List](../api/rangeborder_list.md) | [RangeBorder](rangeborder.md) collection |Get rangeBorder object collection. |
-|[Itemat](../api/rangebordercollection_itemat.md)|[RangeBorder](rangeborder.md)|Gets a border object using its index|
+|[Get RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |Read properties and relationships of rangeBorder object.|
+|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md)	|Update RangeBorder object. |
+|[List](../api/rangeborder-list.md) | [RangeBorder](rangeborder.md) collection |Get rangeBorder object collection. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|Gets a border object using its index|
 
 ## Properties
 | Property	   | Type	|Description|

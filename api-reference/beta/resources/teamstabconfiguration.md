@@ -1,8 +1,16 @@
+---
+title: "teamsTabConfiguration resource type (Open Type)"
+description: "The settings that determine the content of a tab."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # teamsTabConfiguration resource type (Open Type)
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The settings that determine the content of a [tab](teamstab.md). 
+The settings that determine the content of a [tab](teamstab.md).
 When a tab is interactively configured, this information is set by the tab provider application.
 In addition to the properties below, some tab provider applications specify additional custom properties.
 

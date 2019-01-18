@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: CommentAction
+localization_priority: Normal
 ---
 # CommentAction resource type
 
@@ -10,7 +11,7 @@ title: CommentAction
 
 The **CommentAction** resource provides information about a comment [activity][] made on an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 
@@ -36,7 +37,7 @@ The **CommentAction** resource provides information about a comment [activity][]
 | parentAuthor     | [identitySet][]            | The identity of the user who started the comment thread.
 | participants     | [identitySet][] collection | The identities of the users participating in this comment thread.
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 
 ## Remarks
 

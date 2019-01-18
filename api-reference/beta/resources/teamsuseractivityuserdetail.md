@@ -1,3 +1,11 @@
+---
+title: "teamsUserActivityUserDetail resource type"
+description: "The following is a JSON representaion of the resource."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # teamsUserActivityUserDetail resource type
 
 ## Properties

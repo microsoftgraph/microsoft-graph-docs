@@ -1,3 +1,11 @@
+---
+title: "educationAssignmentPointsGradeType resource type"
+description: "Used with the **assignments.grading** property. This is a subclass of educationAssignmentGradeType."
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
+---
+
 # educationAssignmentPointsGradeType resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

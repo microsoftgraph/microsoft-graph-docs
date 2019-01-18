@@ -1,3 +1,11 @@
+---
+title: "callRoute resource type"
+description: "The callRoute type."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # callRoute resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -14,7 +22,7 @@ The callRoute type.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -25,8 +33,8 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
-  "final": {"@odata.type": "microsoft.graph.identitySet"},
-  "original": {"@odata.type": "microsoft.graph.identitySet"},
+  "final": {"@odata.type": "#microsoft.graph.identitySet"},
+  "original": {"@odata.type": "#microsoft.graph.identitySet"},
   "routingType": "forwarded | lookup | selfFork"
 }
 ```

@@ -1,3 +1,11 @@
+---
+title: "educationSynchronizationProfileStatus resource type"
+description: "Represents the synchronization status of a school data synchronization profile. "
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationSynchronizationProfileStatus resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -10,7 +18,7 @@ Represents the synchronization status of a school data [synchronization profile]
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
+| [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
 
 ## Properties
 

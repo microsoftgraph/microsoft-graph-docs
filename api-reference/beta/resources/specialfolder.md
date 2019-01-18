@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SpecialFolder
+localization_priority: Normal
 ---
 # SpecialFolder resource type
 
@@ -11,7 +12,7 @@ title: SpecialFolder
 The **SpecialFolder** resource groups special folder-related data items into a single structure.
 
 If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.
-Special folders can be accessed directly via the [special folders collection](../api/drive_get_specialfolder.md).
+Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).
 
 Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.

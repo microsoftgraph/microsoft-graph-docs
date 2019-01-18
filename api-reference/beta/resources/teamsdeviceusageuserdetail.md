@@ -1,3 +1,11 @@
+---
+title: "teamsDeviceUsageUserDetail resource type"
+description: "The following is a JSON representation of the resource."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # teamsDeviceUsageUserDetail resource type
 
 ## Properties

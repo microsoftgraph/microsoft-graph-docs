@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: CreateAction
+localization_priority: Normal
 ---
 # CreateAction resource type
 
@@ -12,7 +13,7 @@ The presence of the **CreateAction** resource on an [**itemActivity**][activity]
 
 **Note**: While this resource is empty today, in future API revisions it may be populated with additional properties.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

@@ -1,3 +1,11 @@
+---
+title: "outlookItem resource type"
+description: "Here is a JSON representation of the resource"
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+---
+
 # outlookItem resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

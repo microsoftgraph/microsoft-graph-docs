@@ -1,3 +1,9 @@
+---
+title: "passwordProfile resource type"
+description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."
+localization_priority: Priority
+---
+
 # passwordProfile resource type
 
 Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.

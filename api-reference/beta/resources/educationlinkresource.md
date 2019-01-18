@@ -1,3 +1,11 @@
+---
+title: "educationLinkResource resource type"
+description: "A subclass of educationResource. This resource is a link and does not have any additional data associated with it."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationLinkResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

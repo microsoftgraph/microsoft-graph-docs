@@ -1,3 +1,9 @@
+---
+title: "privacyProfile resource type"
+description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."
+localization_priority: Normal
+---
+
 # privacyProfile resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

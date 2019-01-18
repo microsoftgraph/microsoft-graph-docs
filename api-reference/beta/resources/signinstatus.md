@@ -1,3 +1,9 @@
+---
+title: "signInStatus resource type"
+description: "Provides the sign-in status (Success or Failure) of the sign-in"
+localization_priority: Normal
+---
+
 # signInStatus resource type
 Provides the sign-in status (Success or Failure) of the sign-in
 

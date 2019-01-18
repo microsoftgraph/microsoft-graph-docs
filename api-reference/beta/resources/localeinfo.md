@@ -1,3 +1,9 @@
+---
+title: "localeInfo resource type"
+description: "Information about the locale, including the preferred language and country/region, of the signed-in user."
+localization_priority: Normal
+---
+
 # localeInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,7 +14,7 @@ Information about the locale, including the preferred language and country/regio
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|locale|string|A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](http://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](http://www.iso.org/iso/country_codes.htm).|
+|locale|string|A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
 |displayName|string|A name representing the user's locale in natural language, for example, "English (United States)".|
 
 ## JSON representation

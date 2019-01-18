@@ -1,3 +1,11 @@
+---
+title: "onenote resource type"
+description: "The entry point for OneNote resources."
+author: "jewan-microsoft"
+localization_priority: Priority
+ms.prod: "onenote"
+---
+
 # onenote resource type
 
 The entry point for OneNote resources.
@@ -30,7 +38,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ```
 ## Authorization
 
-For information about the permissions required to work with OneNote APIs, see [Notes permissions](../../../concepts/permissions_reference.md#notes-permissions).
+For information about the permissions required to work with OneNote APIs, see [Notes permissions](/graph/permissions-reference#notes-permissions).
 
 
 ## Relationships
@@ -47,12 +55,12 @@ For information about the permissions required to work with OneNote APIs, see [N
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create notebook](../api/onenote_post_notebooks.md) |[Notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
-|[List notebooks](../api/onenote_list_notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
-|[Create page](../api/onenote_post_pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
-|[List pages](../api/onenote_list_pages.md) |[Page](page.md) collection| Get a collection of pages.|
-|[List section groups](../api/onenote_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
-|[List sections](../api/onenote_list_sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections.|
+|[Create notebook](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
+|[List notebooks](../api/onenote-list-notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
+|[Create page](../api/onenote-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
+|[List pages](../api/onenote-list-pages.md) |[Page](page.md) collection| Get a collection of pages.|
+|[List section groups](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
+|[List sections](../api/onenote-list-sections.md) |[OnenoteSection](section.md) collection| Get a collection of sections.|
 
 
 ## JSON Representation

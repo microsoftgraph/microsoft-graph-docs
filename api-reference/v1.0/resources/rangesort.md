@@ -1,3 +1,11 @@
+---
+title: "RangeSort resource type"
+description: "Manages sorting operations on Range objects."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # RangeSort resource type
 
 Manages sorting operations on Range objects.
@@ -7,7 +15,7 @@ Manages sorting operations on Range objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Apply](../api/rangesort_apply.md)|None|Perform a sort operation.|
+|[Apply](../api/rangesort-apply.md)|None|Perform a sort operation.|
 
 ## Properties
 None

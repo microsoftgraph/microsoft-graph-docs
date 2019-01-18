@@ -1,3 +1,9 @@
+---
+title: "internetMessageHeader resource type"
+description: "A key-value pair that represents an Internet message header, as defined by RFC5322, that provides "
+localization_priority: Normal
+---
+
 # internetMessageHeader resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

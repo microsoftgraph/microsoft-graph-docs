@@ -1,3 +1,10 @@
+---
+title: "Overview of Microsoft Graph"
+description: "Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security, and Windows 10."
+author: "jthake-msft"
+localization_priority: Priority
+---
+
 # Overview of Microsoft Graph
 
 Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security, and Windows 10. 
@@ -14,15 +21,15 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 - Education
 
 To find out more, see 
-[Major services and features in Microsoft Graph](../concepts/overview-major-services.md).
+[Major services and features in Microsoft Graph](overview-major-services.md).
 
-Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](../api-reference/v1.0/api/user_list_memberof.md) relationship, and to another user through a [manager relationship](../api-reference/v1.0/api/user_list_manager.md). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
+Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
 
-You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](../api-reference/beta/resources/insights_trending.md) a particular user, or [get the most relevant people](../api-reference/beta/api/user_list_people.md) around a user.
+You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around a user.
 
 Discover the possibilities in the relationships within Microsoft Graph.
 
-![An image showing the primary resources and relationships that are part of the graph](images/microsoft_graph.png)
+![An image showing the primary resources and relationships that are part of the graph](images/microsoft-graph.png)
 
 ## What can you do with Microsoft Graph? 
 
@@ -36,11 +43,11 @@ You can use Microsoft Graph to build experiences around the user's unique contex
 
 You can do all this and more with the Microsoft Graph API.
 
->**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+>**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### Popular requests
 
-Check out some of these common scenarios for working with the Microsoft Graph API. The links take you to the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Check out some of these common scenarios for working with the Microsoft Graph API. The links take you to the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 | **Operation**	| **URL** |
 |:--------------------------|:----------------------------------------|
@@ -83,18 +90,18 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |
 
-For more information about Microsoft Graph Data Connect, see [Microsoft Graph Data Connect](../concepts/data-connect-overview.md). To get started, see [Overview of Microsoft Graph Data Connect](../concepts/data-connect-concept-overview.md). 
+For more information about Microsoft Graph Data Connect, see [Microsoft Graph Data Connect](data-connect-overview.md). To get started, see [Overview of Microsoft Graph Data Connect](data-connect-concept-overview.md). 
 
 ## Next steps
 
-- Check out some [featured scenarios](https://developer.microsoft.com/en-us/graph/examples).
+- Check out some [featured scenarios](https://developer.microsoft.com/graph/examples).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](../concepts/auth_overview.md) in your app.
-- Start [using the API](../concepts/use_the_api.md).
+- Find out how to [get an auth token](auth-overview.md) in your app.
+- Start [using the API](use-the-api.md).
 
 ## Feedback?
 
-Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
+Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
 

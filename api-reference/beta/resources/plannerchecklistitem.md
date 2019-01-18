@@ -1,3 +1,11 @@
+---
+title: "plannerChecklistItem resource type"
+description: "The **plannerChecklistItem** resource represents an item in the checklist of a task. The checklist on a task is represented by the checklistItems object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+---
+
 # plannerChecklistItem resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -11,7 +19,7 @@ The **plannerChecklistItem** resource represents an item in the checklist of a t
 |isChecked|Boolean|Value is `true` if the item is checked and `false` otherwise.|
 |lastModifiedBy|[identitySet](identityset.md)| Read-only. User ID by which this is last modified.|
 |lastModifiedDateTime|DateTimeOffset|Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).|
+|orderHint|String|Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner-order-hint-format.md).|
 |title|String|Title of the checklist item|
 
 ## JSON representation

@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: DeleteAction
+localization_priority: Normal
 ---
 # DeleteAction resource type
 
@@ -10,7 +11,7 @@ title: DeleteAction
 
 The presence of the **DeleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

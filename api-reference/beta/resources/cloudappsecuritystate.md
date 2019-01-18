@@ -1,3 +1,9 @@
+---
+title: "cloudAppSecurityState resource type"
+description: "Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp)."
+localization_priority: Normal
+---
+
 # cloudAppSecurityState resource type
 
 Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).

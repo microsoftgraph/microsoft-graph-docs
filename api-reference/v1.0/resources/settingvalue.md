@@ -1,3 +1,9 @@
+---
+title: "settingValue resource type"
+description: "A setting represented by a name/value pair."
+localization_priority: Normal
+---
+
 # settingValue resource type
 
 A setting represented by a name/value pair.

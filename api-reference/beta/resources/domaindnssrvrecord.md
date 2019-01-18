@@ -1,3 +1,11 @@
+---
+title: "domainDnsSrvRecord resource type"
+description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+---
+
 # domainDnsSrvRecord resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

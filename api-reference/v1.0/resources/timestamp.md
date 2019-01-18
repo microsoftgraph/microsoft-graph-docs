@@ -1,3 +1,9 @@
+---
+title: "timeStamp resource type"
+description: "Date and time information for a point in time."
+localization_priority: Normal
+---
+
 # timeStamp resource type
 
 Date and time information for a point in time.

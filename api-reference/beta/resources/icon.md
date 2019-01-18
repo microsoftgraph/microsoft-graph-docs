@@ -1,3 +1,9 @@
+---
+title: "Icon resource type"
+description: "Represents a cell icon."
+localization_priority: Normal
+---
+
 # Icon resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,8 +15,8 @@ Represents a cell icon.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)	|Update Icon object. |
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Read properties and relationships of icon object.|
+|[Update](../api/icon-update.md) | [Icon](icon.md)	|Update Icon object. |
 
 ## Properties
 | Property	   | Type	|Description|

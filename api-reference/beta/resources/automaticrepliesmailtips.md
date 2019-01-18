@@ -1,3 +1,9 @@
+---
+title: "automaticRepliesMailTips resource type"
+description: "MailTips about any automatic replies that have been set up on a mailbox."
+localization_priority: Normal
+---
+
 # automaticRepliesMailTips resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

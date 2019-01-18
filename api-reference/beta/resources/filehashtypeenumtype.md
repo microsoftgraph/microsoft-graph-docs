@@ -1,3 +1,9 @@
+---
+title: "fileHashType enum"
+description: "Enum for file hash types."
+localization_priority: Normal
+---
+
 # fileHashType enum
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

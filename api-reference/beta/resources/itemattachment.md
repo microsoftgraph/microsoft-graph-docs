@@ -1,3 +1,9 @@
+---
+title: "itemAttachment resource type"
+description: "A contact, event, or message that's attached to another event,"
+localization_priority: Normal
+---
+
 # itemAttachment resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -11,8 +17,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete itemAttachment object. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,3 +1,9 @@
+---
+title: "profilePhoto resource type"
+description: "A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64."
+localization_priority: Priority
+---
+
 # profilePhoto resource type
 A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
 
@@ -8,8 +14,8 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (profilePhoto properties).|
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.|
+|[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (profilePhoto properties).|
+|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.|
 
 ## Properties
 | Property	   | Type	|Description|

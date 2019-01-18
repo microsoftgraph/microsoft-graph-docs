@@ -3102,14 +3102,14 @@
         </member>
         <member name="M:Newtonsoft.Json.Utilities.LinqBridge.OrderedEnumerable`2.TagPosition(`0,System.Int32)">
             <remarks>
-            See <a href="http://code.google.com/p/linqbridge/issues/detail?id=11">issue #11</a>
+            See <a href="https://code.google.com/p/linqbridge/issues/detail?id=11">issue #11</a>
             for why this method is needed and cannot be expressed as a 
             lambda at the call site.
             </remarks>
         </member>
         <member name="M:Newtonsoft.Json.Utilities.LinqBridge.OrderedEnumerable`2.GetFirst(Newtonsoft.Json.Utilities.LinqBridge.Tuple{`0,System.Int32})">
             <remarks>
-            See <a href="http://code.google.com/p/linqbridge/issues/detail?id=11">issue #11</a>
+            See <a href="https://code.google.com/p/linqbridge/issues/detail?id=11">issue #11</a>
             for why this method is needed and cannot be expressed as a 
             lambda at the call site.
             </remarks>
@@ -3118,10 +3118,10 @@
             <remarks>
             This attribute allows us to define extension methods without 
             requiring .NET Framework 3.5. For more information, see the section,
-            <a href="http://msdn.microsoft.com/en-us/magazine/cc163317.aspx#S7">Extension Methods in .NET Framework 2.0 Apps</a>,
-            of <a href="http://msdn.microsoft.com/en-us/magazine/cc163317.aspx">Basic Instincts: Extension Methods</a>
-            column in <a href="http://msdn.microsoft.com/msdnmag/">MSDN Magazine</a>, 
-            issue <a href="http://msdn.microsoft.com/en-us/magazine/cc135410.aspx">Nov 2007</a>.
+            <a href="https://msdn.microsoft.com/magazine/cc163317.aspx#S7">Extension Methods in .NET Framework 2.0 Apps</a>,
+            of <a href="https://msdn.microsoft.com/magazine/cc163317.aspx">Basic Instincts: Extension Methods</a>
+            column in <a href="https://msdn.microsoft.com/msdnmag/">MSDN Magazine</a>, 
+            issue <a href="https://msdn.microsoft.com/magazine/cc135410.aspx">Nov 2007</a>.
             </remarks>
         </member>
         <member name="T:Newtonsoft.Json.Linq.JPropertyDescriptor">

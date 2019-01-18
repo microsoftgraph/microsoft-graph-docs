@@ -1,10 +1,18 @@
+---
+title: "Use note tags in OneNote pages"
+description: " Enterprise notebooks on Office 365"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
+---
+
 # Use note tags in OneNote pages
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
 
 Use the `data-tag` attribute to add and update check boxes, stars, and other built-in note tags on a OneNote page, as shown in the following image.
 
-![Three note tags displayed on a OneNote page.](images/note-tags-example.PNG)
+![Three note tags displayed on a OneNote page.](images/note-tags-example.png)
 
 
 <a name="attributes"></a>
@@ -144,14 +152,14 @@ Authorization: Bearer {token}
       <li data-tag="to-do-priority-1:completed">Make a to-do list</li>
     </ul>
     <p><b>Note tag on an image:</b></p>
-    <img data-tag="source-for-article" src="http://placecorgi.com/200" />
+    <img data-tag="source-for-article" src="https://placecorgi.com/200" />
     <p><b>Note tag with embedded style:</b></p>
     <p data-tag="important">Next time, <b>don't</b> forget to invite <span style="background-color:yellow">Dan</span>.</p>
   </body>
 </html>
 ``` 
 
-For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote_update_page.md).
+For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote-update-page.md).
 
 
 <a name="note-tags-lists"></a>
@@ -294,7 +302,7 @@ Microsoft Graph returns the following information in the response.
 | Response data | Description |  
 |------|------|  
 | Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote_error_codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
+| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
 
 
 <a name="permissions"></a>
@@ -314,7 +322,7 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-For more information about permission scopes and how they work, see [OneNote permission scopes](permissions_reference.md).
+For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
 
 
 <a name="see-also"></a>
@@ -322,11 +330,11 @@ For more information about permission scopes and how they work, see [OneNote per
 ## See also
 
 - [Create OneNote pages](onenote-create-page.md)
-- [Update OneNote page content](onenote_update_page.md)
-- [Integrate with OneNote](integrate_with_onenote.md)
-- [OneNote Developer Blog](http://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](http://go.microsoft.com/fwlink/?LinkID=390178)  
+- [Update OneNote page content](onenote-update-page.md)
+- [Integrate with OneNote](integrate-with-onenote.md)
+- [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
  
 
 

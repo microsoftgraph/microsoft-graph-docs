@@ -1,6 +1,16 @@
+---
+title: "noMediaConfig resource type"
+description: "Media configuration for indicating no media."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # noMediaConfig resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Media configuration for indicating no media.
 
 ## Properties
 
@@ -10,7 +20,7 @@
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

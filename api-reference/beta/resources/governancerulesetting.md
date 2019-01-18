@@ -1,3 +1,9 @@
+---
+title: "governanceRuleSetting resource type"
+description: "Represents the rules that the role settings are composed of."
+localization_priority: Normal
+---
+
 # governanceRuleSetting resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

@@ -1,3 +1,9 @@
+---
+title: "FilterDatetime resource type"
+description: "Represents how to filter a date when filtering on values."
+localization_priority: Normal
+---
+
 # FilterDatetime resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

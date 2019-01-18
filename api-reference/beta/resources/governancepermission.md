@@ -1,3 +1,9 @@
+---
+title: "governancePermission resource type"
+description: "Represents the access permission that a governanceSubject has to a specific governanceResource.  "
+localization_priority: Normal
+---
+
 # governancePermission resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

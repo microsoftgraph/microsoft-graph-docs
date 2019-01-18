@@ -1,3 +1,11 @@
+---
+title: "ChartGridlines resource type"
+description: "Represents major or minor gridlines on a chart axis."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartGridlines resource type
 
 Represents major or minor gridlines on a chart axis.
@@ -7,8 +15,8 @@ Represents major or minor gridlines on a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines_get.md) | [WorkbookChartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
-|[Update](../api/chartgridlines_update.md) | [WorkbookChartGridlines](chartgridlines.md)	|Update ChartGridlines object. |
+|[Get ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |Read properties and relationships of chartGridlines object.|
+|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)	|Update ChartGridlines object. |
 
 ## Properties
 | Property	   | Type	|Description|

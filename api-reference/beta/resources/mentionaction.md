@@ -3,6 +3,8 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: MentionAction
+localization_priority: Normal
+ms.prod: "insights"
 ---
 # MentionAction resource type
 
@@ -10,7 +12,7 @@ title: MentionAction
 
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 
@@ -32,7 +34,7 @@ The **MentionAction** resource provides information about an [activity][] that m
 |:--------------|:---------------------------|:-----------------------------
 | mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 
 ## Remarks
 

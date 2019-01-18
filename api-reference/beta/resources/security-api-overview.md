@@ -1,3 +1,11 @@
+---
+title: "Use the Microsoft Graph Security API"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Priority
+author: "preetikr"
+ms.prod: "security"
+---
+
 # Use the Microsoft Graph Security API
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -17,14 +25,14 @@ Alerts are potential security issues within a customer's tenant that Microsoft o
 
 Microsoft Graph Security-integrated solutions will receive alerts from the following security providers:
 
-- Azure Security Center
-- Azure Active Directory Identity Protection
-- Azure Information Protection
-- Microsoft Cloud Application Security
-- Windows Defender Advanced Threat Protection
-- Microsoft Intune (private preview)
-- Office 365 (coming soon)
-- Azure Advanced Threat Protection (coming soon)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**
+- Microsoft Intune **(private preview)**
+- Office 365 **(coming soon)**
+- Azure Advanced Threat Protection **(coming soon)**
 - Partner solutions, such as Palo Alto Networks App Framework
 
 > **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem.
@@ -39,13 +47,13 @@ The following are some of the most popular requests for working with the Microso
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
-| List alerts | [List alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Update alerts | [Update alert](../api/alert_update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
-|List secure scores|[List secureScores](../api/securescores_list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles_list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles_update.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+| List alerts | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Update alerts | [Update alert](../api/alert-update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
+|List secure scores|[List secureScores](../api/securescores-list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 
-You can use Microsoft Graph [webhooks](../../../concepts/webhooks.md) to subscribe to and receive notifications about updates to Microsoft Graph Security entities.
+You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph Security entities.
 
 ## Next steps
 
@@ -53,7 +61,7 @@ The Microsoft Graph Security API can open up new ways for you to engage with dif
 
 - Drill down into [alerts](alert.md), [secureScore](securescores.md) (Preview), and [secureScoreControlProfiles](securescorecontrolprofiles.md) (Preview).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
-- Try [subscribing to and receiving notifications](../../../concepts/webhooks.md) on entity changes.
+- Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 

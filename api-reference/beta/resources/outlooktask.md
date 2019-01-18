@@ -1,3 +1,11 @@
+---
+title: "outlookTask resource type"
+description: "An Outlook item that can track a work item. "
+author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
+---
+
 # outlookTask resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -15,7 +23,7 @@ Date-related properties in the **outlookTask** resource include the following:
 - reminderDateTime
 - startDateTime
 
-By default, the POST, GET, PATCH, and [complete](../api/outlooktask_complete.md) operations return date-related properties in their REST responses in UTC. 
+By default, the POST, GET, PATCH, and [complete](../api/outlooktask-complete.md) operations return date-related properties in their REST responses in UTC. 
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
 different than UTC. The following example returns date-related properties in EST in the corresponding response:
 
@@ -27,18 +35,18 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get outlookTask](../api/outlooktask_get.md) | [outlookTask](outlooktask.md) |Get the properties and relationships of an Outlook task in the user's mailbox.|
-|[Update](../api/outlooktask_update.md) | [outlookTask](outlooktask.md)	|Change writeable properties of an Outlook task. |
-|[Delete](../api/outlooktask_delete.md) | None |Delete the specified task in the user's mailbox. |
-|[Complete](../api/outlooktask_complete.md)|[outlookTask](outlooktask.md) collection|Complete an Outlook task which sets the **completedDateTime** property to the current date, and **status** property to `completed`.|
+|[Get outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Get the properties and relationships of an Outlook task in the user's mailbox.|
+|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md)	|Change writeable properties of an Outlook task. |
+|[Delete](../api/outlooktask-delete.md) | None |Delete the specified task in the user's mailbox. |
+|[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) collection|Complete an Outlook task which sets the **completedDateTime** property to the current date, and **status** property to `completed`.|
 |**Attachments**| | |
-|[List attachments](../api/outlooktask_list_attachments.md) |[attachment](attachment.md) collection| Get all attachments on an Outlook task.|
-|[Add attachment](../api/outlooktask_post_attachments.md) |[attachment](attachment.md)| Add a file, item (message, event or contact), or link to a file as an attachment to a task.|
+|[List attachments](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an Outlook task.|
+|[Add attachment](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Add a file, item (message, event or contact), or link to a file as an attachment to a task.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Create one or more single-value extended properties in a new or existing Outlook task.   |
-|[Get task with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get Outlook tasks that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
-|[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Create one or more single-value extended properties in a new or existing Outlook task.   |
+|[Get task with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Get Outlook tasks that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
+|[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|

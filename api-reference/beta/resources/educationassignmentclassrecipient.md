@@ -1,3 +1,11 @@
+---
+title: "educationAssignmentClassRecipient resource type"
+description: "Used inside the assignment.assignTo property. When set to class recipient, every student in the class will "
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
+---
+
 # educationAssignmentClassRecipient resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

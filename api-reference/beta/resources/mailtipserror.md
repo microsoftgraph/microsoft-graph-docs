@@ -1,3 +1,11 @@
+---
+title: "mailTipsError resource type"
+description: "An error that occurs during an action."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+---
+
 # mailTipsError resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

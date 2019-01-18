@@ -1,3 +1,9 @@
+---
+title: "agreementAcceptance resource type"
+description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD)."
+localization_priority: Normal
+---
+
 # agreementAcceptance resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,9 +15,9 @@ Represents the current status of a user within scope of a company's customizable
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementAcceptance](../api/agreementacceptance_get.md) | [agreementAcceptance](agreementacceptance.md) | Read properties and relationships of agreementAcceptance object. |
-| [Update](../api/agreementacceptance_update.md) | [agreementAcceptance](agreementacceptance.md) | Update an **agreementAcceptance** object. |
-| [Delete](../api/agreementacceptance_delete.md) | None | Delete an **agreementAcceptance** object. |
+| [Get agreementAcceptance](../api/agreementacceptance-get.md) | [agreementAcceptance](agreementacceptance.md) | Read properties and relationships of agreementAcceptance object. |
+| [Update](../api/agreementacceptance-update.md) | [agreementAcceptance](agreementacceptance.md) | Update an **agreementAcceptance** object. |
+| [Delete](../api/agreementacceptance-delete.md) | None | Delete an **agreementAcceptance** object. |
 -->
 
 ## Properties

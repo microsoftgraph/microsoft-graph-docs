@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ShareAction
+localization_priority: Normal
 ---
 # ShareAction resource type
 
@@ -10,7 +11,7 @@ title: ShareAction
 
 The **ShareAction** resource provides information about an [activity][activity] that shared an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 
@@ -32,7 +33,7 @@ The **ShareAction** resource provides information about an [activity][activity] 
 |:--------------|:---------------------------|:-----------------------------
 | recipients    | [identitySet][] collection | The identities the item was shared with in this action.
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 
 ## Remarks
 

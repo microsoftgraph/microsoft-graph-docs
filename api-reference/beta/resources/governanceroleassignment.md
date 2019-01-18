@@ -1,3 +1,9 @@
+---
+title: "governanceRoleAssignment resource type"
+description: "Represents the assignment of a user or group to a role."
+localization_priority: Normal
+---
+
 # governanceRoleAssignment resource type
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -5,16 +11,16 @@ Represents the assignment of a user or group to a role.
 
 Privileged Identity Management (PIM) supports two types of assignments:
 
-1. Active assignment - Represents the direct access to resources.
-2. Eligible assignment - Represents an intermediate stage of privileged access to resources, between no access and direct access. Administrators can temporarily assign users/groups to `eligible assignment` in advance. Whenever the access is needed for users/group members, `activation` on the `eligible assignment` is needed to gain the instant access to the resource for several hours. After activation, an `active assignment` will be created for the users/group members to indicate the activated status.
+1. Active assignment - Represents the direct/activated access to resources.
+2. Eligible assignment - Represents an intermediate stage of privileged access to resources, between no access and direct access. Administrators can assign users/groups to `eligible assignment` in advance, and whenever the access is needed, `activation` on the `eligible assignment` is needed to gain the instant access to the resource for several hours. After activation, an `active assignment` will be created for the users/group members to indicate the activated status.
 
 ## Methods
 
 | Method		  | Return Type	|Description|
 |:------------|:--------|:--------|
-|[Get](../api/governanceroleassignment_get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
-|[List](../api/governanceroleassignment_list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
-|[Export](../api/governanceroleassignment_export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file.|
+|[Get](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Read properties and relationships of a role assignment entity.|
+|[List](../api/governanceroleassignment-list.md) | [governanceRoleAssignment](../resources/governanceroleassignment.md) collection|List a collection of role assignments on a resource. |
+|[Export](../api/governanceroleassignment-export.md) | octet-stream |Download a collection of role assignments on a resource and save as a `.csv` file.|
 
 No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssignments` entity set. Any create, update, and delete operations on `governanceRoleAssignment` are done by `governanceRoleAssignmentRequest`.
 
@@ -27,7 +33,6 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 |subjectId|String       |Required. The ID of the subject which the role assignment is associated with. |
 |linkedEligibleRoleAssignmentId|String|If this is an `active assignment` and created due to activation on an `eligible assignment`, it represents the ID of that `eligible assignment`; Otherwise, the value is `null`. |
 |externalId   |String     |The external ID the resource that is used to identify the role assignment in the provider.|
-|isPermanent|Boolean    |Indicates whether the role assignment is a permanent assignment.|
 |startDateTime|DateTimeOffset|The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |assignmentState|String  |The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
@@ -63,7 +68,6 @@ Here is a JSON representation of the resource.
   "subjectId": "String",
   "linkedEligibleRoleAssignmentId": "String",
   "externalId": "String",
-  "isPermanent": true,
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "assignmentState": "String",

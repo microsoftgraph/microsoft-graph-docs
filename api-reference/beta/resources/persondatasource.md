@@ -1,3 +1,11 @@
+---
+title: "personDataSource resource type"
+description: "Represents the sources the user data comes from, such as Directory and Outlook Contacts."
+localization_priority: Normal
+author: "simonhult"
+ms.prod: "insights"
+---
+
 # personDataSource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

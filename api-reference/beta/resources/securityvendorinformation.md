@@ -1,3 +1,11 @@
+---
+title: "securityVendorInformation resource type"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
+author: "preetikr"
+ms.prod: "security"
+---
+
 # securityVendorInformation resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,11 +16,10 @@ Contains details about the security product/service vendor, provider, and subpro
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|provider *|String|Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.|
-|providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert.|
+|provider |String|Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.|
+|providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert. *Required*|
 |subProvider|String|Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.|
-|vendor *|String|Name of the alert vendor (for example, Microsoft, Dell, FireEye).|
-(\* Indicates a mandatory field.)
+|vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). *Required*|
 
 ## JSON representation
 

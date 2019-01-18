@@ -1,3 +1,11 @@
+---
+title: "invitation manager"
+description: "Use the invitation manager to create an invite, in order to add an external user to the organization. "
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
+---
+
 # invitation manager
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -17,7 +25,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create invitation](../api/invitation_post.md) | invitation | Write properties and relationships of invitation object.|
+|[Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
+localization_priority: Normal
 ---
 # ItemActivityTimeSet resource type
 
@@ -10,7 +11,7 @@ title: ItemActivityTimeSet
 
 The **ItemActivityTimeSet** resource provides information about when an [activity][activity] on an item took place.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

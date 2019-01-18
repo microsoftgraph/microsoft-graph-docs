@@ -1,3 +1,9 @@
+---
+title: "targetResourceServicePrincipal resource type"
+description: "Indicates the ServicePrincipalId for the resource that impacted the audit activity. Derived from the targetResource resource."
+localization_priority: Normal
+---
+
 # targetResourceServicePrincipal resource type
 Indicates the ServicePrincipalId for the resource that impacted the audit activity. Derived from the [targetResource](targetresource.md) resource.
 

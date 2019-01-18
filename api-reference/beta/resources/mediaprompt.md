@@ -1,3 +1,11 @@
+---
+title: "mediaPrompt resource type"
+description: "The mediaPrompt type."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # mediaPrompt resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -13,7 +21,7 @@ The mediaPrompt type.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +48,7 @@ Here is a JSON representation of the resource.
 {
   "mediaInfo": {
     "uri": "https://cdn.contoso.com/beep.wav",
-    "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+    "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
   },
   "loop": 5
 }

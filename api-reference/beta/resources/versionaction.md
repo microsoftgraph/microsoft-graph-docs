@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: VersionAction
+localization_priority: Normal
 ---
 # VersionAction resource type
 
@@ -10,7 +11,7 @@ title: VersionAction
 
 The presence of the **VersionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

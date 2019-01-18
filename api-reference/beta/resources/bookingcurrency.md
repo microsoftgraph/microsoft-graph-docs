@@ -1,3 +1,11 @@
+---
+title: "bookingCurrency resource type"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
+---
+
 # bookingCurrency resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,8 +17,8 @@ Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List bookingCurrencies](../api/bookingcurrency_list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
-|[Get bookingCurrency](../api/bookingcurrency_get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
+|[List bookingCurrencies](../api/bookingcurrency-list.md) | [bookingCurrency](bookingcurrency.md) collection |Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.|
+|[Get bookingCurrency](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Get the properties of a **bookingCurrency** object.|
 
 
 ## Properties

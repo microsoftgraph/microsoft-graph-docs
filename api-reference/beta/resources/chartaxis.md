@@ -1,3 +1,11 @@
+---
+title: "ChartAxis resource type"
+description: "Represents a single axis in a chart."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartAxis resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,8 +17,8 @@ Represents a single axis in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
+|[Get ChartAxis](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)	|Update ChartAxis object. |
 
 ## Properties
 | Property	   | Type	|Description|

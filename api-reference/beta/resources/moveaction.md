@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: MoveAction
+localization_priority: Normal
 ---
 # MoveAction resource type
 
@@ -10,7 +11,7 @@ title: MoveAction
 
 The presence of the **MoveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 

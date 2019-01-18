@@ -1,3 +1,11 @@
+---
+title: "ChartAxisFormat resource type"
+description: "Encapsulates the format properties for the chart axis."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartAxisFormat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

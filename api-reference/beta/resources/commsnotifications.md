@@ -1,16 +1,26 @@
-# notifications resource type
+---
+title: "commsNotifications resource type"
+description: "List of notifications used by the Communications servers for sending multiple notifications in a single batch."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
+# commsNotifications resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+List of notifications used by the Communications servers for sending multiple notifications in a single batch.
+
 ## Properties
 
-| Property       | Type                                       | Description |
-|:---------------|:-------------------------------------------|:------------|
-| value          | [notification](commsnotification.md) collection | The notification of a change in the resource. |
+| Property       | Type                                                 | Description                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| value          | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -29,7 +39,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notifications resource",
+  "description": "commsNotifications resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

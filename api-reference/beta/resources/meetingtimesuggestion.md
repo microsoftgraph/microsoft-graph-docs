@@ -1,3 +1,11 @@
+---
+title: "meetingTimeSuggestion resource type"
+description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "
+localization_priority: Normal
+author: "VinodRavichandran"
+ms.prod: "microsoft-teams"
+---
+
 # meetingTimeSuggestion resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

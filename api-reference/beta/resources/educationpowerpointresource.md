@@ -1,3 +1,11 @@
+---
+title: "educationPowerPointResource resource type"
+description: "A subclass of educationResource. This is a PowerPoint resource. The PowerPoint file must be uploaded in the **fileResource** directory associated with the "
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+---
+
 # educationPowerPointResource resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.

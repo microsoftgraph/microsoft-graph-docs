@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: AsyncJobStatus
+localization_priority: Normal
 ---
 # AsyncJobStatus resource
 
@@ -12,7 +13,7 @@ This resource provides information on the status of a asynchronous job progress.
 
 The following API calls return **AsyncJobStatus** resources:
 
-* [Copy Item](../api/driveitem_copy.md)
+* [Copy Item](../api/driveitem-copy.md)
 
 ## JSON representation
 

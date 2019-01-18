@@ -1,3 +1,10 @@
+---
+title: "yammerGroupsActivityDetail resource type"
+description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+ms.prod: "reports"
+---
+
 # yammerGroupsActivityDetail resource type
 
 ## Properties

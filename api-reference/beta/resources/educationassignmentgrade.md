@@ -1,3 +1,11 @@
+---
+title: "educationAssignmentGrade resource type"
+description: " however, all types of grading (points, pass/fail, and so on) are subclasses of this"
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
+---
+
 # educationAssignmentGrade resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
