@@ -1,4 +1,4 @@
-﻿# chatMessage DLPviolation
+﻿# Update chatMessage with DLP Violations
 
 Update a chatMessage with a Data Loss Prevention (DLP) policy violation.
 ## Permissions
