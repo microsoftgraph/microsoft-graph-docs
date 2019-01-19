@@ -1,6 +1,6 @@
   name: Graph Docs
   metadata:
-    experimental: true
+    experimental: false
     experiment_id: "b8938daf-1bcb-4f"
   items:
   - name: Overview of Microsoft Graph
@@ -236,9 +236,6 @@
             href: extensibility-open-users.md
           - name: Use schema extensions (example)
             href: extensibility-schema-groups.md
-      - name: Resources
-        expanded: true
-        items:
         - name: Best practices
           href: best-practices-concept.md
         - name: Known issues
