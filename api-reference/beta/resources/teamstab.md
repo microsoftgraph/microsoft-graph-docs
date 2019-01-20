@@ -28,7 +28,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |  displayName            |   string                  |  Name of the tab.     |
 |  name            |   string                  |  (Deprecated) Name of the tab.     |
 |  teamsAppId           |   string             |  App definition identifier of the tab. This value cannot be changed after tab creation.     |
-|  sortOrderIndex  |   int                     |  Index of the order used for sorting tabs     |
+|  sortOrderIndex  |   string                  |  Index of the order used for sorting tabs     |
 |  webUrl          |   string                  |  Deep link url of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
   "id": "string",
   "displayName": "string",
   "teamsAppId": "string",
-  "sortOrderIndex": 10,
+  "sortOrderIndex": "string",
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }
