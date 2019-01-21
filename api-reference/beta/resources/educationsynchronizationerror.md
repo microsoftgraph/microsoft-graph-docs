@@ -35,7 +35,7 @@ Represents an error during school data profile validation and/or sync. A unique 
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationError"
+  "@odata.type": "microsoft.graph.educationSynchronizationError"
 }-->
 
 ```json

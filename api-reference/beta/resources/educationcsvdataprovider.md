@@ -27,12 +27,12 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationCsvDataProvider"
+  "@odata.type": "microsoft.graph.educationCsvDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+    "@odata.type": "microsoft.graph.educationCsvDataProvider",
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```

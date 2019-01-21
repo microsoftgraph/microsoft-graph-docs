@@ -30,7 +30,7 @@ Provides settings for customizing the school data profile synchronization of the
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomization"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
 }-->
 
 ```json

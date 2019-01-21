@@ -11,24 +11,13 @@ ms.prod: "groups"
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 List all the groups available in an organization, including but not limited to Office 365 Groups.
-The [default properties](../api/group-get.md#default-properties) of each group are returned.
 
-To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
-```
-GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
-```
+This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. 
 
-You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** 
-values, as shown in the following example:
-```
-GET https://graph.microsoft.com/beta/groups?$orderby=displayName
-```
+To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
 
-To return groups containing members with license errors, use the **$filter** query parameter: 
+An exception is the **hasMembersWithLicenseErrors** property. See an [example](#request-2) of how to use this property.
 
-```http 
-GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true 
-```
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +34,21 @@ GET /groups
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
+<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
+```
+
+You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** 
+values, as shown in the following example:
+<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/beta/groups?$orderby=displayName
+```
+
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 | Name       | Type | Description|
@@ -56,10 +59,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body. The response includes only the default properties of each group.
 
 ## Example
-#### Request
+#### Request 1
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -69,45 +72,130 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups
 ```
 
-#### Response
+#### Response 1
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. The [default properties](../api/group-get.md#default-properties) will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned for each group in an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "isCollection": true,
+  "name": "get_groups"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
- {
-  "value": [
-    {
-      "id": "id-value",
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "groupTypes": [
-        "groupTypes-value"
-      ],
-      "mail": "mail-value",
-      "mailEnabled": true,
-      "mailNickname": "mailNickname-value",
-      "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-      "onPremisesSyncEnabled": true,
-      "proxyAddresses": [
-        "proxyAddresses-value"
-      ],
-      "securityEnabled": true,
-      "visibility": "visibility-value"
-    }
-  ]
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+    "value": [
+         {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "expirationDateTime": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfassist",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "expirationDateTime": null,
+            "groupTypes": [],
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golftalk",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 
+```
+
+#### Request 2
+This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments. It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_withlicenseerrors"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
+```
+
+#### Response 2
+The following is an example of the response which includes only the requested properties.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true,
+  "name": "get_groups_withlicenseerrors"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName)",
+    "value": [
+        {
+            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+            "displayName": "Library Assist"
+        },
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "displayName": "Golf Assist"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -16,6 +16,10 @@ Use this API to create a new [group](../resources/group.md) as specified in the 
 * Dynamic group
 * Security group
 
+This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
+
+To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
+
 > **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
 ## Permissions
@@ -65,7 +69,7 @@ Since the **group** resource supports [extensions](/graph/extensibility-overview
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
-If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
+If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
 ## Example
 #### Request 1
@@ -80,87 +84,134 @@ Content-type: application/json
 Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
   "groupTypes": [
     "Unified"
   ],
   "mailEnabled": true,
-  "mailNickname": "library",
+  "mailNickname": "golfassist",
   "securityEnabled": false
 }
 ```
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 244
 
 {
-  "description": "Self help community for library",
-  "displayName": "Library Assist",
-  "groupTypes": [
-    "Unified"
-  ],
-  "mail": "library@contoso.onmicrosoft.com",
-  "mailEnabled": true,
-  "mailNickname": "library",
-  "securityEnabled": false
+	 "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+	 "deletedDateTime": null,
+	 "classification": null,
+	 "createdDateTime": "2018-12-22T02:21:05Z",
+	 "description": "Self help community for golf",
+	 "displayName": "Golf Assist",
+	 "expirationDateTime": null,
+	 "groupTypes": [
+	     "Unified"
+	 ],
+	 "mail": "golfassist@contoso.com",
+	 "mailEnabled": true,
+	 "mailNickname": "golfassist",
+	 "membershipRule": null,
+	 "membershipRuleProcessingState": null,
+	 "onPremisesLastSyncDateTime": null,
+	 "onPremisesSecurityIdentifier": null,
+	 "onPremisesSyncEnabled": null,
+	 "preferredDataLocation": "CAN",
+	 "preferredLanguage": null,
+	 "proxyAddresses": [
+	     "SMTP:golfassist@contoso.onmicrosoft.com"
+	 ],
+	 "renewedDateTime": "2018-12-22T02:21:05Z",
+	 "resourceBehaviorOptions": [],
+	 "resourceProvisioningOptions": [],
+	 "securityEnabled": false,
+	 "theme": null,
+	 "visibility": "Public",
+	 "onPremisesProvisioningErrors": []
 }
 ```
 
 #### Request 2
-The second example request creates an Office 365 Group with owners specified.
+The second example request creates an Office 365 group with an owner specified.
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create_group_with_owner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups
+POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
- {
-  "description": "Group with owners",
-  "displayName": "Group1",
+
+{
+  "description": "Group with designated owner",
+  "displayName": "Operations group",
   "groupTypes": [
     "Unified"
   ],
   "mailEnabled": true,
-  "mailNickname": "group1",
+  "mailNickname": "operations2019",
   "securityEnabled": false,
   "owners@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+    "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ]
 }
 ```
 
  #### Response 2
-The following is an example of the successful response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of a successful response. It includes only default properties. You can subsequenty get the **owners** navigation property of the group to verify the details of the owner. 
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group_with_owner"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
- {
-    "description": "Group with owners",
-    "displayName": "Group1",
-    "groupTypes": [
-        "Unified"
-    ],
-    "mail": "group1@contoso.onmicrosoft.com",
-    "mailEnabled": true,
-    "mailNickname": "group1",
-    "securityEnabled": false
+
+{
+	 "id": "502df398-d59c-469d-944f-34a50e60db3f",
+	 "deletedDateTime": null,
+	 "classification": null,
+	 "createdDateTime": "2018-12-27T22:17:07Z",
+	 "description": "Group with designated owner",
+	 "displayName": "Operations group",
+	 "expirationDateTime": null,
+	 "groupTypes": [
+	     "Unified"
+	 ],
+	 "mail": "operations2019@contoso.com",
+	 "mailEnabled": true,
+	 "mailNickname": "operations2019",
+	 "membershipRule": null,
+	 "membershipRuleProcessingState": null,
+	 "onPremisesLastSyncDateTime": null,
+	 "onPremisesSecurityIdentifier": null,
+	 "onPremisesSyncEnabled": null,
+	 "preferredDataLocation": "CAN",
+	 "preferredLanguage": null,
+	 "proxyAddresses": [
+	     "SMTP:operations2019@contoso.com"
+	 ],
+	 "renewedDateTime": "2018-12-27T22:17:07Z",
+	 "resourceBehaviorOptions": [],
+	 "resourceProvisioningOptions": [],
+	 "securityEnabled": false,
+	 "theme": null,
+	 "visibility": "Public",
+	 "onPremisesProvisioningErrors": []
 }
 ```
 

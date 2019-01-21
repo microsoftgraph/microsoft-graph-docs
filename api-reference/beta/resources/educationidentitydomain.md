@@ -25,12 +25,12 @@ Represents the mapping between an education user type and the domain the user's 
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityDomain"
+  "@odata.type": "microsoft.graph.educationIdentityDomain"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "name": "String"
 }
 ```

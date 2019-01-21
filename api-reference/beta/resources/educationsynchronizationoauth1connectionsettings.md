@@ -12,7 +12,7 @@ ms.prod: "education"
 
 When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile.
 
-Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
+Derived from [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
 
 ## Properties
 
@@ -21,12 +21,12 @@ No additional properties are exposed by this type.
 ## JSON representation
 <!-- {
   "blockType": "resource",
-  "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"
+  "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"
 }-->
 
 ```json
-"connectionSettings": {
-    "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+{
+    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
     "clientId": "String",
     "clientSecret": "String"
 }

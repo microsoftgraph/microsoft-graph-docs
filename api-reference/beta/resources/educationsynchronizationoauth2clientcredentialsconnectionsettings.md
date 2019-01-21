@@ -28,7 +28,7 @@ Derived from [educationSynchronizationConnectionSettings](educationsynchronizati
 }-->
 
 ```json
-"connectionSettings": {
+{
     "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
     "clientId": "String",
     "clientSecret": "String",

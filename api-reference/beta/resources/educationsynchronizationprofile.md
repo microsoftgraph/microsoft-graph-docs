@@ -34,9 +34,9 @@ Represents a set of configurations used to synchronize education entities and ro
 |:-|:-|:-|
 | **displayName** | string |  Name of the configuration profile for syncing identities.         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  The data provider used for the profile.         |
-| **identitysynchronizationconfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Identity [creation](educationidentitycreationconfiguration.md) or [matching](educationidentitymatchingconfiguration.md) configuration .        |
+| **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Identity [creation](educationidentitycreationconfiguration.md) or [matching](educationidentitymatchingconfiguration.md) configuration .        |
 | **licensesToAssign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md) collection|  License setup configuration.        |
-| **state** | string |  The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
+| **state** | educationSynchronizationProfileState |  The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
 ## Relationships
 
@@ -53,7 +53,7 @@ The following is a JSON representation of the **educationSynchronizationProfile*
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
@@ -62,8 +62,8 @@ The following is a JSON representation of the **educationSynchronizationProfile*
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},
     "errors": [{"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus" }],
-    "dataProvider": { "@odata.type": "#microsoft.graph.educationcsvdataprovider" },
-    "identitySynchronizationConfiguration": { "@odata.type": "#microsoft.graph.educationIdentitySynchronizationConfiguration" },
+    "dataProvider": { "@odata.type": "microsoft.graph.educationCsvDataProvider" },
+    "identitySynchronizationConfiguration": { "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration" },
     "licensesToAssign": [{"@odata.type":"microsoft.graph.educationSynchronizationLicenseAssignment"}],
     "handleSpecialCharacterConstraint": "Boolean"
 }

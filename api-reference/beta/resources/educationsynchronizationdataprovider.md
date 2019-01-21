@@ -24,3 +24,18 @@ Represents the source SIS schema. This allows the system to know how to map the 
 ## Properties
 
 No properties are exposed by this type.
+
+
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationSynchronizationDataProvider "
+}-->
+
+```json
+{
+}
+```

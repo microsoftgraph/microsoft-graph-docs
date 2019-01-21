@@ -27,12 +27,12 @@ Provides a mapping between a source property and a target property for matching 
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityMatchingOptions"
+  "@odata.type": "microsoft.graph.educationIdentityMatchingOptions"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "sourcePropertyName": "String",
     "targetPropertyName": "String",
     "targetDomain": "String"

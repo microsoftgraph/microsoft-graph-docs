@@ -14,14 +14,14 @@ In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, re
 
 To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.
 
-If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current and future instances of the access review.
+If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to read an access review, or assigned as a reviewer on the access review. |
+|Delegated (work or school account)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  The signed in user must also be in a directory role that permits them to read an access review, or assigned as a reviewer on the access review. |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -72,16 +72,23 @@ Content-type: application/json
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "reviewerType": "self",
     "description": "",
+    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
     "settings": {
-        "reviewId": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
         "mailNotificationsEnabled": true,
         "remindersEnabled": true,
         "justificationRequiredOnApproval": true,
+        "autoReviewEnabled": false,
+        "activityDurationInDays": 30,
+        "autoApplyReviewResultsEnabled": false,
+        "accessRecommendationsEnabled": false,
         "recurrenceSettings": {
             "recurrenceType": "onetime",
             "recurrenceEndType": "endBy",
             "durationInDays": 0,
             "recurrenceCount": 0
+        },
+        "autoReviewSettings": {
+            "notReviewedResult": "Deny"
         }
     }
 }

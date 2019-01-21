@@ -18,7 +18,7 @@ Defines the settings for matching school data profile identities. These identiti
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **matchingOptions** | [educationIdentityMatchingOptions](educationidentitymatchingoptions.md) collection | Mapping between the user account and the options to use to uniquely identify the user to update. |
+| **matchingOptions** | [microsoft.graph.educationIdentityMatchingOptions](educationidentitymatchingoptions.md) collection | Mapping between the user account and the options to use to uniquely identify the user to update. |
 
 ## JSON representation
 <!-- {
@@ -26,15 +26,15 @@ Defines the settings for matching school data profile identities. These identiti
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration"
+  "@odata.type": "microsoft.graph.educationIdentityMatchingConfiguration"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityMatchingConfiguration",
     "matchingOptions": [
         {
-            "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+            "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
             "sourcePropertyName": "String",
             "targetPropertyName": "String",
             "targetDomain": "String"

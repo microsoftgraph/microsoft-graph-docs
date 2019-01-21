@@ -12,7 +12,7 @@ ms.prod: "microsoft-identity-platform"
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
 
-This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API, and to apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
+This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API. To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
 
 
 ## Permissions
@@ -35,7 +35,7 @@ PATCH /accessReviews('{reviewId}')
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a parameters of an [accessReview](../resources/accessreview.md) object.
+In the request body, supply a JSON representation of the parameters of an [accessReview](../resources/accessreview.md) object.
 
 The following table shows the properties that can be supplied when you update an accessReview.
 
@@ -89,7 +89,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

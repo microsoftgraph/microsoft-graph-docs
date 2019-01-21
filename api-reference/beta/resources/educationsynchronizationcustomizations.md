@@ -36,7 +36,7 @@ This resource is member of the following data providers:
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomizations"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
 }-->
 
 ```json
