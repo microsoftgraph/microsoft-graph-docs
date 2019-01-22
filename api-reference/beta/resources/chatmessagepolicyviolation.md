@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a property named policy violation in a Chat Message. Policy Violations are typically set by a Data Loss Prevention (DLP) application or provider.
+Represents a policy violation on a chatMessage. Policy Violations are typically set by a Data Loss Prevention (DLP) application or provider.
 
 An entity of type `chatMessagePolicyViolation` is a part of the [chatMessage](chatMessage.md) entity.
 
