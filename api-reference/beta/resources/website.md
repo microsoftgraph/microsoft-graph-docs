@@ -14,13 +14,13 @@ Represents a web site.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|String| Possible values are: `other`, `home`, `work`, `blog`, `profile`.|
+|type|websiteType| The possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|The URL of the website.|
 |displayName|string|The display name of the web site.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

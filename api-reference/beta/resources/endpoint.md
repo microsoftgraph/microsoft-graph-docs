@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 }-->
 
 ```json

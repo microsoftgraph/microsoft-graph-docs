@@ -8,12 +8,12 @@ localization_priority: Normal
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action.
+Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|error|odata.error|Error details, if expression evaluation resulted in an error.|
+|error| publicError |Error details, if expression evaluation resulted in an error.|
 |evaluationResult|String collection|A collection of values produced by the evaluation of the expression.|
 |evaluationSucceeded|Boolean|`true` if the evaluation was successful.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.|

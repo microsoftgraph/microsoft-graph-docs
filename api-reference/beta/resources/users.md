@@ -31,13 +31,23 @@ One of the following [permissions](https://developer.microsoft.com/graph/docs/au
 
 ## Common properties
 
-| Property | Description |
-|----------|-------------|
-| displayName | The name displayed in the address book for the user.|
+The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
+
+|Property |Description |
+|:----------|:-------------|
+|id | The unique identifier for the user.|
+|businessPhones | The user's phone numbers.|
+|displayName | The name displayed in the address book for the user.|
 |givenName| The first name of the user. |
+|jobTitle | The user's job title.|
+|mail| The user's email address. |
+|mobilePhone | The user's cellphone number.|
+|officeLocation | The user's physical office location.|
+|preferredLanguage | The user's language of preference.|
 |surname| The last name of the user. |
 |mail| The user's email address. |
 |photo| The user's profile photo. |
+|userPrincipalName| The user's principal name. |
 
 For details and a list of all the properties, see the [user](user.md) object.
 
@@ -45,7 +55,7 @@ For details and a list of all the properties, see the [user](user.md) object.
 >**Note:** Some of these operations require additional permissions.
 
 | Path    | Description |
-|---------|-------------|
+|:---------|:-------------|
 |[`/users`](../api/user-list.md) | Lists users in the organization. |
 |[`/users/{id}`](../api/user-get.md) | Gets a specific user by id. |
 |[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| Gets the user's profile photo. |

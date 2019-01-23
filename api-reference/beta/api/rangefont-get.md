@@ -70,7 +70,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 

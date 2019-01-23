@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 

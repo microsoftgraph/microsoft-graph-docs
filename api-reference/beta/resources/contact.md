@@ -27,9 +27,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueExtendedProperties",
+    "multiValueLegacyExtendedProperty",
     "photo",
-    "singleValueExtendedProperties"
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -121,9 +121,9 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the contact. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
 |photo|[photo](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
 
 ## Methods
 | Method		   | Return Type	|Description|
@@ -139,9 +139,9 @@ Here is a JSON representation of the resource
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[contact](contact.md)  |Create one or more single-value extended properties in a new or existing contact.   |
 |[Get contact with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get contacts that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | Create one or more multi-value extended properties in a new or existing contact.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [contact](contact.md) | Create one or more multi-value extended properties in a new or existing contact.  |
 |[Get contact with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Get a contact that contains a multi-value extended property by using `$expand`. |
 
 ## See also

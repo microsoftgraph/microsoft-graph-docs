@@ -39,7 +39,7 @@ Microsoft Graph Security-integrated solutions will receive alerts from the follo
 
 ## Secure Score (preview)
 
-[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfiles](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
+[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
 
 ## Common use cases
 
@@ -59,7 +59,7 @@ You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and rece
 
 The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
 
-- Drill down into [alerts](alert.md), [secureScore](securescores.md) (Preview), and [secureScoreControlProfiles](securescorecontrolprofiles.md) (Preview).
+- Drill down into [alerts](alert.md), [secureScore](securescores.md) (Preview), and [secureScoreControlProfile](securescorecontrolprofiles.md) (Preview).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 

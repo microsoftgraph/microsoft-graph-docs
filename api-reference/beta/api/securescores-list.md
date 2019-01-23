@@ -62,54 +62,45 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
-            "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
-            "enabledServices": "enabledServices.value",
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
-            "id": "id.value",
+            "activeUserCount": 12,
+            "createdDate": "createdDateTime.value",
+            "currentScore": 12,
+            "enabledServices": ["Skype"],
+            "licensedUserCount": 12,
+            "maxScore": 45,
+            "id": "id.value",            
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
                 {
-                    "basis": "AllTenants",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 12
                 },
                 {
-                    "basis": "TotalSeats",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "seatSizeRangeUpperValue": "seatSizeRangeUpperValue.value",
-                    "categoryValue": "categoryValue.value",
-                    "seatSizeRangeLowerValue": "seatSizeRangeLowerValue.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 12
                 },
                 {
-                    "basis": "IndustryTypes",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "categoryValue": "categoryValue.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 12
                 }
             ],
             "controlScores": [
                 {
+                    "@odata.type":"microsoft.graph.controlScores",
                     "controlCategory": "controlCategory.value",
                     "controlName": "controlName.value",
                     "description": "description.value",

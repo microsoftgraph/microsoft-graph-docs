@@ -104,7 +104,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": 2,
+    "id": "2",
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",

@@ -62,9 +62,9 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |[delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[move](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
 |[Get mailFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
@@ -97,8 +97,8 @@ Mail folders in Outlook can contain more than one type of items, for example, th
 |childFolders|[MailFolder](mailfolder.md) collection|The collection of child folders in the mailFolder.|
 |messageRules | [messageRule](messagerule.md) collection | The collection of rules that apply to the user's Inbox folder. |
 |messages|[Message](message.md) collection|The collection of messages in the mailFolder.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -110,8 +110,8 @@ The following is a JSON representation of the resource.
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -129,8 +129,8 @@ The following is a JSON representation of the resource.
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

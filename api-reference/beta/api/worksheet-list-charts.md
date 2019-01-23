@@ -39,7 +39,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Chart](../resources/chart.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [workbookChart](../resources/chart.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -55,7 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart",
+  "@odata.type": "microsoft.graph.workbookChart",
   "isCollection": true
 } -->
 ```http

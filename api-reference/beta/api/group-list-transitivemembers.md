@@ -80,8 +80,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

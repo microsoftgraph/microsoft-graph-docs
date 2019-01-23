@@ -28,7 +28,7 @@ This policy is described in further detail below.
 ### Common Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The string version of the specific policy. See below. Required.|
+|definition|String collection|The string version of the specific policy. See below. Required.|
 |displayName|String|A custom name for the policy. Required.|
 |IsOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy". Required.|
@@ -65,6 +65,13 @@ The properties below form the JSON object that represents a token lifetime polic
 
 ## JSON representation
 Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.policy"
+}-->
 
 ```json
 {

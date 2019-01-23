@@ -31,8 +31,8 @@ Here is a JSON representation of the resource
     "attachments",
     "extensions",
     "inReplyTo",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.post"
 }-->
@@ -80,8 +80,8 @@ Here is a JSON representation of the resource
 |attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the post. Read-only. Nullable.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the post. Read-only. Nullable.|
 |inReplyTo|[Post](post.md)|The earlier post that this post is replying to in the [conversationThread](conversationthread.md). Read-only.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the post. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the post. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
 
 ## Methods
 
@@ -100,9 +100,9 @@ Here is a JSON representation of the resource
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[post](post.md)  |Create one or more single-value extended properties in a new or existing post.   |
 |[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Get posts that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [post](post.md) | Create one or more multi-value extended properties in a new or existing post.  |
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
 
 ## See also

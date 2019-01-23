@@ -53,7 +53,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
   "isCollection": true
 } -->
 ```http

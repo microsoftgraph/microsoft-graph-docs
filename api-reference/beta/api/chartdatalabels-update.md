@@ -36,7 +36,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|DataLabelPosition value that represents the position of the data label. The possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |separator|string|String representing the separator used for the data labels on a chart.|
 |showBubbleSize|boolean|Boolean value representing if the data label bubble size is visible or not.|
 |showCategoryName|boolean|Boolean value representing if the data label category name is visible or not.|
@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [ChartDataLabels](../resources/chartdatalabels.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [WorkbookChartDataLabels](../resources/chartdatalabels.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -73,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

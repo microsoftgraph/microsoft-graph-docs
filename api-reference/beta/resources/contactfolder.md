@@ -29,9 +29,9 @@ by providing a [delta](../api/contactfolder-delta.md) function.
 |[List contacts in folder](../api/contactfolder-list-contacts.md) |[contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
 |[Create contact in folder](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[contactFolder](contactfolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
 |[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get contactFolders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [contactFolder](contactfolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
 |[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get a contactFolder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
@@ -47,8 +47,8 @@ by providing a [delta](../api/contactfolder-delta.md) function.
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md) collection|The collection of child folders in the folder. Navigation property. Read-only. Nullable.|
 |contacts|[Contact](contact.md) collection|The contacts in the folder. Navigation property. Read-only. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -59,8 +59,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "childFolders",
     "contacts",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.contactFolder"

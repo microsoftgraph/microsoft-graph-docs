@@ -36,9 +36,9 @@ This resource lets you add your own data to custom properties using [extensions]
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. default is true.|
-|alternativeSecurityIds|alternativeSecurityId collection| For internal use only. Not nullable. |
+|alternativeSecurityIds| microsoft.graph.alternativeSecurityId collection | For internal use only. Not nullable. |
 |approximateLastSignInDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
-|deviceId|Guid| Unique identifier set by Azure Device Registration Service at the time of registration. |
+|deviceId|String (identifier)| Unique identifier set by Azure Device Registration Service at the time of registration. |
 |deviceMetadata|String| For internal use only. Set to null. |
 |deviceVersion|Int32| For internal use only. |
 |displayName|String| The display name for the device. Required. |
@@ -67,7 +67,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
-|commands | Collection(microsoft.graph.command) | Set of commands sent to this device|
+|commands | microsoft.graph.command collection | Set of commands sent to this device|
 
 ## JSON representation
 
@@ -87,6 +87,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "accountEnabled": true,
+  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",

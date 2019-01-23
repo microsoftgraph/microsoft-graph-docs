@@ -91,10 +91,10 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | Relationship | Type                                 | Description
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | [itemActivity][] collection          | The list of recent activities that took place under this drive.
-| items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
-| root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
-| special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
-| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
+| items        | [driveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
+| root         | [driveItem](driveitem.md)            | The root folder of the drive. Read-only.
+| special      | [driveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| following    | [driveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
 
 ## Methods
 

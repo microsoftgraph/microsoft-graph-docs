@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
     "calendar",
     "extensions",
     "instances",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iud": "string",
+  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -82,8 +82,8 @@ Here is a JSON representation of the resource
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -132,8 +132,8 @@ Here is a JSON representation of the resource
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
 ## Methods
 
@@ -162,9 +162,9 @@ Here is a JSON representation of the resource
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
 |[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
 |[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
 ## See also

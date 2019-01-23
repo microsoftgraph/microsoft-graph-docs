@@ -1,5 +1,5 @@
 ---
-title: "RangeFormat resource type"
+title: "rangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 localization_priority: Normal
 author: "lumine2008"
@@ -18,9 +18,9 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
-|[Create RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
-|[List borders](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md)	|Update RangeFormat object. |
+|[Create RangeBorder](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
+|[List borders](../api/rangeformat-list-borders.md) |[rangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
+|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md)	|Update RangeFormat object. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
@@ -36,10 +36,10 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|borders|[RangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
-|fill|[RangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
-|font|[RangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
-|protection|[FormatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
+|borders|[rangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
+|fill|[rangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
+|font|[rangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
+|protection|[formatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
 
 ## JSON representation
 

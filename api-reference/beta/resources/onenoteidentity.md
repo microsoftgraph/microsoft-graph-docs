@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.onenoteidentity"
+  "@odata.type": "microsoft.graph.oneNoteIdentity"
 }-->
 
 ```json

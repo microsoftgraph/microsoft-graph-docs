@@ -32,8 +32,8 @@ Here is a JSON representation of the resource
     "attachments",
     "event",
     "extensions",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.eventMessage"
 }-->
@@ -66,10 +66,10 @@ Here is a JSON representation of the resource
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "DateTimeOffset",
   "location": {"@odata.type": "microsoft.graph.location"},
-  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
+  "meetingMessageType": "none | meetingRequest | meetingCancelled | meetingAccepted | meetingTenativelyAccepted | meetingDeclined",
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -114,7 +114,7 @@ Here is a JSON representation of the resource
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[location](location.md)|The location of the requested meeting.|
-|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType| enum-string | The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
@@ -136,8 +136,8 @@ Here is a JSON representation of the resource
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the message. Read-only. Nullable.|
 |event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the eventMessage. Read-only. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|
 
 ## Methods
 
@@ -163,9 +163,9 @@ Here is a JSON representation of the resource
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by name.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[eventMessage](eventmessage.md)  |Create one or more single-value extended properties in a new or existing eventMessage.   |
 |[Get eventMessage with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get eventMessages that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [eventMessage](eventmessage.md) | Create one or more multi-value extended properties in a new or existing eventMessage.  |
 |[Get eventMessage with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Get an eventMessage that contains a multi-value extended property by using `$expand`. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -49,10 +49,10 @@ In the request body, supply the values for relevant fields that should be update
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isRead|Boolean|Indicates whether the message has been read.|
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
+|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
 |replyTo|Recipient collection|The email addresses to use when replying. Updatable only if isDraft = true.|
 |sender|Recipient|The account that is actually used to generate the message. Updatable when sending a message from a [shared mailbox](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
+|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
 |subject|String|The subject of the message. Updatable only if isDraft = true.|
 |toRecipients|Recipient collection|The To recipients for the message. |
 

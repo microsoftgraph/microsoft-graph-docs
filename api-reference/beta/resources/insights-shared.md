@@ -36,11 +36,17 @@ An insight representing files shared with or by a specific user. The following s
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| Entity		| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| resource    	| entity collection	| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
 Here is a JSON representation of the resource
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.shared"
+}-->
 ```json
 {
   "id": "string",

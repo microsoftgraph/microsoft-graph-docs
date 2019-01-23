@@ -14,7 +14,7 @@ Represents a key-value pair where the key is a string and the value is an arbitr
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |key|String|Key.|
-|value|Any|Arbitrary JSON object.|
+|value|Json|Arbitrary JSON object.|
 
 ## JSON representation
 
@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value":"Json"
 }
 
 ```

@@ -46,8 +46,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |postalCode|String| Postal code of the address for the organization |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
-|provisioningErrors|ProvisioningError collection| Not nullable.            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) collection| Not nullable.            |
+|provisioningErrors|onPremisesProvisioningError collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| State name of the address for the organization |

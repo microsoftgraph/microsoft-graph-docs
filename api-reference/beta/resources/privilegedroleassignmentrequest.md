@@ -16,10 +16,10 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)  collection|List role assignment requests.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)  collection|List role assignment requests.|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Cancel a pending role assignment request.|
-|[My](../api/privilegedroleassignmentrequest-my.md)|  |Get role assignment request for current requstor.|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |Get role assignment request for current requestor.|
 
 ## Properties
 
@@ -31,7 +31,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |reason|String| The reason for the role assignment.|
 |requestedDateTime|DateTimeOffset| Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| The id of the role.|
-|schedule|[governanceSchedule](governanceschedule.md)| The schedule object of the role assignment request.|
+|schedule|[ microsoft.graph.governanceSchedule](governanceschedule.md)| The schedule object of the role assignment request.|
 |status|String| Read-only.The status of the role assignment request. The value can be `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
 |ticketNumber|String| The ticketNumber for the role assignment. |
 |ticketSystem|String| The ticketSystem for the role assignment.|

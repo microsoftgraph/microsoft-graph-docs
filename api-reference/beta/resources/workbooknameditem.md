@@ -33,7 +33,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 ## Relationships
 | Relationship	   | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)|Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only.|
+|worksheet|[workbookWorksheet](worksheet.md)|Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet. Read-only.|
 
 ## JSON representation
 
@@ -44,7 +44,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 }-->
 
 ```json

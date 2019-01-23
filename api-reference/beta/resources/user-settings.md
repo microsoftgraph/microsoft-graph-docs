@@ -34,7 +34,11 @@ This resource supports:
 ## JSON representation
 
 Here is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@type": "microsoft.graph.userSettings"
+}-->
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

@@ -20,17 +20,17 @@ Represents the settings for a privileged role.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|The duration when the role is activated.|
-|id|string| The unique identifier for the role settings. Read-only.|
+|elevationDuration| String (timestamp) |The duration when the role is activated.|
+|id| string (identifier)| The unique identifier for the role settings. Read-only.|
 |isMfaOnElevationConfigurable|boolean|**true** if mfaOnElevation is configurable. **false** if mfaOnElevation is not configurable.|
 |lastGlobalAdmin|boolean|Internal used only.|
-|maxElavationDuration|duration|Maximal duration for the activated role.|
+|maxElavationDuration| string (identifier)| |Maximal duration for the activated role.|
 |mfaOnElevation|boolean|**true** if MFA is required to activate the role. **false** if MFA is not required to activate the role.|
-|minElevationDuration|duration|Minimal duration for the activated role.|
+|minElevationDuration|string (identifier)||Minimal duration for the activated role.|
 |notificationToUserOnElevation|boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
 |ticketingInfoOnElevation|boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
 |approvalOnElevation|boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role.|
-|approverIds|array|List of Approval ids, if approval is required for activation.|
+|approverIds| String collection |List of Approval ids, if approval is required for activation.|
 
 ## Relationships
 None
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": [ "String (identifier)" ]
 }
 
 ```

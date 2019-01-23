@@ -10,12 +10,20 @@ ms.prod: "insights"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Complex type containing properties of [Insights](insights.md).
+Complex type containing properties of [insights](insights.md).
 
 ## JSON representation
 
 Here is a JSON representation of the resource
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.resourceReference"
+}-->
 ```json
 {
   "webUrl": "string",

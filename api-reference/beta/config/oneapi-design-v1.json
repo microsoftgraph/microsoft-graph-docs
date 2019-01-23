@@ -1,9 +1,8 @@
 {
-  "api-requirements":
-  {
+  "api-requirements": {
     "httpRequest": {
       "maxUrlLength": 2083,
-      "httpMethods": ["GET", "PUT", "DELETE", "POST", "PATCH", "OPTIONS"],
+      "httpMethods": [ "GET", "PUT", "DELETE", "POST", "HEAD", "PATCH", "OPTIONS" ],
       "standardHeaders": [
         "Authorization",
         "Date",
@@ -20,27 +19,23 @@
         "Content-Range",
         "Range"
       ],
-      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"]
+      "contentTypes": [ "application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream" ]
     },
     "httpResponse": {
-      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"],
-      "standardHeaders":
-      [
+      "contentTypes": [ "application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream" ],
+      "standardHeaders": [
         "Content-Range"
       ]
     },
-    "jsonSerialization": {
-      "collectionPropertyNames": ["value"],
-      "dateTimeFormats": ["yyyy-MM-ddThh:MM:SSz"]
-    },
     "ignorableProperties": [
-      "@odata.id",
       "@odata.context",
-      "@odata.etag",
       "@odata.type",
-      "@odata.nextLink",
-      "@odata.deltaLink"
+      "@odata.id",
+      "@odata.etag"
     ],
-    "caseSensativeHeaders": false
+    "jsonSerialization": {
+      "collectionPropertyNames": [ "value" ],
+      "dateTimeFormats": [ "yyyy-MM-ddThh:MM:SSz" ]
+    }
   }
 }

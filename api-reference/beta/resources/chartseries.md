@@ -8,8 +8,6 @@ ms.prod: "excel"
 
 # ChartSeries resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Represents a series in a chart.
 
 
@@ -17,12 +15,12 @@ Represents a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
-|[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
-|[List points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
-|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md)	|Update ChartSeries object. |
-|[List](../api/chartseries-list.md) | [ChartSeries](chartseries.md) collection |Get chartSeries object collection. |
-|[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
+|[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](chartseries.md) |Read properties and relationships of chartSeries object.|
+|[Create ChartPoints](../api/chartseries-post-points.md) |[chartPoints](chartpoint.md)| Create a new ChartPoints by posting to the points collection.|
+|[List points](../api/chartseries-list-points.md) |[chartPoints](chartpoint.md) collection| Get a ChartPoints object collection.|
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](chartseries.md)	|Update ChartSeries object. |
+|[List](../api/chartseries-list.md) | [workbookChartSeries](chartseries.md) collection |Get chartSeries object collection. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](chartseries.md)|Retrieves a series based on its position in the collection|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -32,8 +30,8 @@ Represents a series in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
-|points|[ChartPoints](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
+|format|[workbookChartSeriesFormat](chartseriesformat.md)|Represents the formatting of a chart series, which includes fill and line formatting. Read-only.|
+|points|[workbookChartPoint](chartpoint.md) collection|Represents a collection of all points in the series. Read-only.|
 
 ## JSON representation
 
@@ -41,10 +39,11 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

@@ -77,7 +77,7 @@ The data in the JSON payload can be primitive types, or arrays of primitive type
 
 | Name       | Value |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 ## Response
@@ -95,7 +95,7 @@ The first example shows how to update an extension in a message. The extension i
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -128,7 +128,7 @@ You can use either example request and the following request body to update the 
 <!-- { "blockType": "ignored" } -->
 ```http
 {
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "extensionName": "Com.Contoso.Referral",
     "companyName": "Wingtip Toys (USA)",
     "dealValue": "500100",
@@ -149,7 +149,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -198,7 +198,7 @@ PATCH https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364a
 Content-type: application/json
 
 {
-   "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+   "@odata.type": "microsoft.outlookServices.openTypeExtension",
    "extensionName": "Com.Contoso.Estimate",
    "companyName": "Contoso",
    "expirationDate": "2016-07-30T11:00:00.000Z",
@@ -218,7 +218,7 @@ Here is the response of the second example which shows the updated `expirationDa
 <!-- {  
   "blockType": "response",  
   "truncated": true,  
-  "@odata.type": "microsoft.graph.opentypeextension"  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -226,7 +226,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
-    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
     "extensionName": "Com.Contoso.Estimate",
     "companyName": "Contoso",

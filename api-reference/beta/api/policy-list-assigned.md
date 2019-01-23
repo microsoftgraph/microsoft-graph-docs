@@ -65,7 +65,7 @@ Content-Type: application/json
 			"alternativeIdentifier":null,
 			"definition":["policy-definition"],
 			"displayName":"name-value",
-			"isOrganizationDefault":boolean-value,
+			"isOrganizationDefault": true | false,
 			"keyCredentials":[key-credentials],
 			"type":"type-value"
 		}

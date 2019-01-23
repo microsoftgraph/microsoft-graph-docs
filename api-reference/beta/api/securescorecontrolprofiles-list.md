@@ -8,7 +8,7 @@ localization_priority: Normal
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object.
+Retrieve the properties and relationships of a [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) object.
 
 ## Permissions
 
@@ -62,36 +62,41 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
             "actionType": "actionType.value",
-            "actionUrl": "actionUrl.value",
-            "controlCategory": "controlCategory.value",
             "title": "title.value",
-            "deprecated": "deprecated.value",
+            "azureTenantId": "azureTenantId.value",
+            "referenceId": "referenceId.value",
+            "controlName": "controlName.value",
+            "maxScore": 12,
+            "controlCategory": "controlCategory.value",
+            "service": "service.value",
+            "tier": "tier.value",
+            "userImpact": "userImpact.value",
             "implementationCost": "implementationCost.value",
-            "lastModifiedDateTime": "lastModifiedDateTime.value",
-            "maxScore": "maxScore.value",
             "rank": "rank.value",
             "remediation": "remediation.value",
             "remediationImpact": "remediationImpact.value",
-            "service": "service.value",
+            "actionUrl": "actionUrl.value",
+            "deprecated": "deprecated.value",
+            "lastModifiedDateTime": "lastModifiedDateTime.value",            
+            "comments":"comments.value",
+            ""upn": "upn.value",
+            "tenantNotes": "tenantNotes.value",
             "threats": [
                 "threats.value"
-            ],
-            "tier": "tier.value",
-            "userImpact": "userImpact.value",
+            ],            
             "id": "id.value",
-            "azureTenantId": "azureTenantId.value",
             "controlStateUpdates": [
                 {
                     "assignedTo": "assignedTo.value",
@@ -111,8 +116,6 @@ Content-type: application/json
      ]
 }
 ```
-
-
 <!-- {
   "type": "#page.annotation",
   "description": "List secureScoreControlProfiles",

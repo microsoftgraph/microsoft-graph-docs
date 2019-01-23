@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **sitePageData** resource represents the properties of a [webPart][]. As these properties vary by web part, this is an OpenType with no fixed properties.
+The **sitePageData** resource represents the properties of a [webPart](webpart.md). As these properties vary by web part, this is an OpenType with no fixed properties.
 
 [webPart]: webpart.md
 

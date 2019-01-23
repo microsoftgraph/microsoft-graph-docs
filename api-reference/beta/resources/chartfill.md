@@ -8,8 +8,6 @@ ms.prod: "excel"
 
 # ChartFill resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Represents the fill formatting for a chart element.
 
 
@@ -25,6 +23,21 @@ None
 
 ## Relationships
 None
+
+
+## JSON representation
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartFill"
+}-->
+
+```json
+{
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

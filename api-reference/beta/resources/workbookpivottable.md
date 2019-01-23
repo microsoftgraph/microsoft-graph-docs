@@ -29,13 +29,14 @@ Represents an Excel PivotTable.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
+|worksheet|[WorkbookWorksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
 Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

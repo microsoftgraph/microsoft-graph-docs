@@ -34,16 +34,22 @@ Here is a JSON representation of a **driveItem** resource.
 
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+<!-- { 
+       "blockType": "resource", 
+       "@odata.type": "microsoft.graph.driveItem", 
+       "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
+       "keyProperty": "id", "openType": true 
+    } 
+-->
 
 ```json
 {
+  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -96,7 +102,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| audio                | [audio](audio.md)  | Audio metadata, if the item is an audio file. Read-only.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
@@ -138,7 +144,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | activities         | [itemActivity][] collection     | The list of recent activities that took place on this item.
 | analytics          | [itemAnalytics][] resource      | Analytics about the view activities that took place on this item.
 | content            | Stream                          | The content stream, if the item represents a file.
-| children           | driveitem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| children           | driveItem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | listItem           | [listItem][]                    | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection       | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection     | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.

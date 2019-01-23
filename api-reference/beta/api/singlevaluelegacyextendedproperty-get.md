@@ -69,75 +69,75 @@ Get a resource instance expanded with the extended property which matches a filt
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/messages/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **mailFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/events/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **calendar** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/calendars/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get a **contact** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contacts/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **contactFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactfolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get an **outlookTask** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/outlook/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/tasks/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/outlook/taskFolders/{id}/tasks/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get an **outlookTaskFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/taskFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/events/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
-GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 #### GET resource instances that include numeric extended properties matching a filter
@@ -154,74 +154,74 @@ The following syntax lines show a filter that uses an `eq` operator on the id, a
 Get **message** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **mailFolder** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 Get **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **calendar** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/calendars?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/calendars?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **contact** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/contacts?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/contacts?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/contactFolders/{id}/contacts?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get **contactFolder** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/contactfolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 Get an **outlookTask** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/outlook/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/outlook/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/outlook/tasks?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/outlook/tasks?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/outlook/taskFolders/{id}/tasks?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 Get an **outlookTaskFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/outlook/taskFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 Get group **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 Get group **post** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/threads/{id}/posts?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
 #### GET resource instances with string-typed extended properties matching a filter
@@ -235,46 +235,46 @@ forward slash, and space.
 Get **message** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
-GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
-GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 
-GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
-GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
-GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/mailFolders/{id}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 
-GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 
-GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
-GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
-GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/mailFolders/{id}/messages?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
 Get **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
-GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /me/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 
-GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
-GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /me/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /users/{id|userPrincipalName}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
 
-GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /me/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 
-GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
-GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /me/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /users/{id|userPrincipalName}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
 Get group **event** instances:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
-GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
-GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
-GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
+GET /groups/{id}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
+GET /groups/{id}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /groups/{id}/events?$filter=singleValueLegacyExtendedProperty/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
 ## Path parameters
@@ -313,7 +313,7 @@ extended property that has its **id** matching the string `String {66f5a359-4659
   "name": "get_singlevaluelegacyextendedproperty_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
+GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueLegacyExtendedProperty($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
 #### Response 1
 The response body includes all the properties of the specified message and extended property returned from the filter.
@@ -349,8 +349,8 @@ Content-type: application/json
             }
         }
     ],
-    "singleValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2_bs88AACHsLqWAAA%3D')/singleValueExtendedProperties",
-    "singleValueExtendedProperties": [
+    "singleValueLegacyExtendedProperty@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2_bs88AACHsLqWAAA%3D')/singleValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty": [
         {
             "id": "String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
             "value": "Green"
@@ -371,7 +371,7 @@ looks for the extended property that has:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueLegacyExtendedProperty%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
 #### Response 2
@@ -394,7 +394,7 @@ looks for the extended property that has:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
+GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueLegacyExtendedProperty/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
 ```
 
 #### Response 3
@@ -422,7 +422,7 @@ The following example shows a filter that looks for the extended property that h
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueLegacyExtendedProperty/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
 ```
 
 The next example shows a filter that looks for the extended property that has:
@@ -434,7 +434,7 @@ The next example shows a filter that looks for the extended property that has:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueLegacyExtendedProperty/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
 ```
 
 

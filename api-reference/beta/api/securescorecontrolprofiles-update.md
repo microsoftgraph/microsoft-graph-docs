@@ -79,19 +79,16 @@ The following is an example of a successful response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
-
-
 <!-- {
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfiles",
+  "description": "Update secureScoreControlProfile",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

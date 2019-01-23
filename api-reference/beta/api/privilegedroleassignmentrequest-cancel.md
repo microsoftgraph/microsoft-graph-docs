@@ -35,7 +35,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code. It returns [privilegedRoleAssignmentRequest] (../resources/privilegedRoleAssignmentRequest.md) in the response body.
+If successful, this method returns a `200 Ok` response code. It returns [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) in the response body.
 
 ### Error codes
 This API returns the standard HTTP error codes. In addition, it returns the custom error codes listed in the following table.
@@ -62,7 +62,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,7 +87,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

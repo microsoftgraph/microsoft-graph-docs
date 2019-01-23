@@ -43,9 +43,9 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[List attachments](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an Outlook task.|
 |[Add attachment](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Add a file, item (message, event or contact), or link to a file as an attachment to a task.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Create one or more single-value extended properties in a new or existing Outlook task.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[outlookTask](outlooktask.md)  |Create one or more single-value extended properties in a new or existing Outlook task.   |
 |[Get task with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Get Outlook tasks that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [outlookTask](outlooktask.md) | Create one or more multi-value extended properties in a new or existing Outlook task.  |
 |[Get task with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Get an Outlook task that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
@@ -76,8 +76,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the task.  Read-only. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task. Read-only. Nullable.|
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -86,8 +86,8 @@ Here is a JSON representation of the resource.
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.outlookTask"
 }-->

@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 } -->
 ```http
 HTTP/1.1 201 Created

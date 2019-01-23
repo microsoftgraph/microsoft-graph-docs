@@ -51,10 +51,10 @@ Represents an Excel table.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
-|rows|[TableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
-|sort|[TableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
-|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
+|columns|[tableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
+|rows|[tableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
+|sort|[tableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
+|worksheet|[workbookWorksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 
 ## JSON representation
 
@@ -65,7 +65,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 }-->
 
 ```json

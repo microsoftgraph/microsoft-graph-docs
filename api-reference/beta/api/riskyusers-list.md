@@ -58,18 +58,20 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isDeleted": "true",
+  "isGuest": true,
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }
@@ -97,10 +99,12 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
@@ -110,9 +114,9 @@ HTTP/1.1 200 OK
       "riskLevel": "medium",
       "riskState": "atRisk",
       "userDisplayName": "Jon Doe",
-      "userPrincipalName": "jon@contoso.com",
-      }
-    }
+      "userPrincipalName": "jon@contoso.com"
+      
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

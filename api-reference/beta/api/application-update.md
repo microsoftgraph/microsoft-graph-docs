@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md) collection| Lists applications and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications do not require the user to consent to the requested permissions. Permissions listed in preAuthorizedApplications do not require user consent. However, any additional requested permissions not listed in preAuthorizedApplications require user consent. |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 |tags|String collection| Custom strings that can be used to categorize and identify the application. |
-|web|[web](../resources/web.md)| Specifies settings for a web application. |
+|web|[webApplication](../resources/web.md)| Specifies settings for a web application. |
 
 ## Response
 

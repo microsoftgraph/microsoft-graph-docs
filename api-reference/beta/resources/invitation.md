@@ -25,14 +25,14 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
+| [Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|The display name of the user being invited.|
 |invitedUserEmailAddress|String|The email address of the user being invited. Required.|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Additional configuration for the message being sent to the invited user, including customizing message text, language and cc recipient list.|
+|invitedUserMessageInfo| [invitedUserMessageInfo](../resources/invitedusermessageinfo.md)|Additional configuration for the message being sent to the invited user, including customizing message text, language and cc recipient list.|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not. The default is false.|
 |inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed. Required.|
 |inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
@@ -42,7 +42,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
+|invitedUser| [User](../resources/user.md) collection|The user created as part of the invitation creation. Read-Only|
 
 ## JSON representation
 Here is a JSON representation of the resource
@@ -52,13 +52,13 @@ Here is a JSON representation of the resource
 {
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
-  "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
+  "invitedUserMessageInfo": {"@odata.type": "#microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
 
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": [{"@odata.type": "#microsoft.graph.user"}]
 }
 ```
 

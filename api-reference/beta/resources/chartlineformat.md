@@ -8,8 +8,6 @@ ms.prod: "excel"
 
 # ChartLineFormat resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 Enapsulates the formatting options for line elements.
 
 
@@ -17,8 +15,8 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
 |[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties
@@ -34,12 +32,11 @@ None
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

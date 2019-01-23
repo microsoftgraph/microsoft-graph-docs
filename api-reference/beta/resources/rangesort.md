@@ -1,5 +1,5 @@
 ---
-title: "RangeSort resource type"
+title: "rangeSort resource type"
 description: "Manages sorting operations on Range objects."
 author: "lumine2008"
 localization_priority: Normal
@@ -25,6 +25,19 @@ None
 ## Relationships
 None
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeSort"
+}-->
+
+```json
+{
+}
+
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

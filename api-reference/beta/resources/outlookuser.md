@@ -40,6 +40,17 @@ None
 |taskGroups|[outlookTaskGroup](outlooktaskgroup.md) collection| The user's Outlook task groups. Read-only. Nullable.|
 |tasks|[outlookTask](outlooktask.md) collection| The user's Outlook tasks. Read-only. Nullable.|
 
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@type": "microsoft.graph.outlookUser"
+}-->
+```json
+{
+}
+
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

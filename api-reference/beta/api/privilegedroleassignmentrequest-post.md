@@ -39,7 +39,7 @@ In the request body, supply a JSON representation of [privilegedroleassignmentre
 |type|String|Represents the the type of the operation on the role assignment. The value can be `AdminAdd`: Adminstrators add users to roles;`UserAdd`: Users add role assignments. Required.|
 |assignmentState|String|The state of the assignment. The value can be `Eligible` for eligible assignment `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users. Possible values are: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Required.|
 |reason|String|The reason needs to be provided for the role assignment request for audit and review purpose.|
-|schedule|[governanceSchedule](../resources/governanceschedule.md)|The schedule of the role assignment request.|
+|schedule|[ microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|The schedule of the role assignment request.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) object in the response body.
@@ -102,7 +102,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 304
 
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",
     "schedule": {
@@ -121,7 +120,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

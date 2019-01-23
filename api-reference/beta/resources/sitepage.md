@@ -50,7 +50,7 @@ Here is a JSON representation of a **sitePage** resource.
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },

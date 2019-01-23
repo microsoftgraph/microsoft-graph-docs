@@ -22,6 +22,13 @@ Represents the access permission that a [governanceSubject](../resources/governa
 
 Here is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.governancePermission"
+}-->
 ```json
 {
   "accessLevel": "String",

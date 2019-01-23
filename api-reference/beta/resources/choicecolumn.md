@@ -38,5 +38,9 @@ Here is a JSON representation of a **choiceColumn** resource.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/beta/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ChoiceColumn"
 } -->

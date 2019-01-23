@@ -38,7 +38,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
+|assignedLicenses|[ microsoft.graph.assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
@@ -55,7 +55,7 @@ In the request body, supply the values for relevant fields that should be update
 |officeLocation|String|The office location in the user's place of business.|
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property. Supports $filter.                            |
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
+|passwordProfile|[microsoft.graph.passwordProfile](../resources/passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|

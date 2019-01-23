@@ -103,7 +103,8 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -182,7 +183,8 @@ Content-type: application/json
 The next example shows the use of the alternative minimal response behavior:
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta"
+  "name": "directoryObject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -235,7 +237,8 @@ Content-type: application/json
 The next example shows the initial request using the `isOf` operator to filter out only user and group entities:
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta"
+  "name": "directoryobject_delta",
+  "truncated": true
 }-->
 
 ```http

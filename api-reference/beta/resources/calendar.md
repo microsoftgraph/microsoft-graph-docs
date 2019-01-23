@@ -58,8 +58,8 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |:---------------|:--------|:----------|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
 |events|[event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection | The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection | The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -70,11 +70,35 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "calendarView",
     "events",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendar"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendar",
+  "@odata.annotations": [
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

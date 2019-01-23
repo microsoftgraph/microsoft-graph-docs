@@ -637,3 +637,169 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
+
+
+
+### scopeOperatorType values
+
+| Member            |Value
+|:------------------|:-------
+| binary              | 0
+| unary         | 1
+
+
+### scopeOperatorMultiValuedComparisonType values
+
+| Member            |Value
+|:------------------|:-------
+| all              | 0
+| any         | 1
+
+
+### scopeOperatorMultiValuedComparisonType values
+
+| Member            |Value
+|:------------------|:-------
+| low              | 0
+| medium         | 1
+| high         | 2
+
+### exchangeIdFormat values
+
+| Member            |Value
+|:------------------|:-------
+| entryId              | 0
+| ewsId         | 1
+| immutableEntryId         | 2
+| restId         | 2
+| restImmutableEntryId         | 2
+
+### riskLevel values
+
+| Value           
+|:------------------
+| none
+| low
+| medium
+| high
+| hidden
+| unknownFutureValue
+
+### riskState values
+
+| Value           
+|:------------------
+| none
+| low
+| medium
+| high
+| hidden
+| unknownFutureValue
+
+### riskDetail values
+
+| Value           
+|:------------------
+| none
+| adminGeneratedTemporaryPassword
+| userPerformedSecuredPasswordChange
+| userPerformedSecuredPasswordReset
+| adminConfirmedSigninSafe
+| aiConfirmedSigninSafe
+| userPassedMFADrivenByRiskBasedPolicy
+| adminDismissedAllRiskForUser
+| adminConfirmedSigninCompromised
+| unknownFutureValue
+
+# securityNetworkProtocol values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|-1|Unknown protocol.|
+|ip|0|Internet Protocol.|
+|icmp|1| Internet Control Message Protocol.|
+|igmp|2| Internet Group Management Protocol.|
+|ggp|3| Gateway To Gateway Protocol.|
+|ipv4|4| Internet Protocol version 4.|
+|tcp|6| Transmission Control Protocol.|
+|pup|12| PARC Universal Packet Protocol.|
+|udp|17| User Datagram Protocol.|
+|idp|22| Internet Datagram Protocol.|
+|ipv6|41| Internet Protocol version 6 (ipv6).|
+|ipv6RoutingHeader|43| ipv6 Routing header.|
+|ipv6FragmentHeader|44| ipv6 Fragment header.|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 Encapsulating Security Payload header.|
+|ipSecAuthenticationHeader|51| ipv6 Authentication header.|
+|icmpV6|58| Internet Control Message Protocol for ipv6.|
+|ipv6NoNextHeader|59| ipv6 No next header.|
+|ipv6DestinationOptions|60| ipv6 Destination Options header.|
+|nd|77| Net Disk Protocol (unofficial).|
+|raw|255| Raw IP packet protocol.|
+|ipx|1000| Internet Packet Exchange Protocol.|
+|spx|1256| Sequenced Packet Exchange protocol.|
+|spxII|1257| Sequenced Packet Exchange version 2 protocol.|
+
+
+
+### referenceAttachmentPermission values
+
+| Member            |Value
+|:------------------|:-------
+| other             | 0
+| view              | 1
+| edit              | 2
+| anonymousView     | 3
+| anonymousEdit     | 4
+| organizationView  | 5
+| organizationEdit  | 6
+
+
+### referenceAttachmentProvider values
+
+| Member            |Value
+|:------------------|:-------
+| other             | 0
+| oneDriveBusiness  | 1
+| oneDriveConsumer  | 2
+| dropbox           | 3
+
+### modality values
+
+| Member                    |Value
+|:--------------------------|:-------
+| unknown                   | 0
+| audio                     | 1
+| video                     | 2
+| videoBasedScreenSharing   | 3
+| data                      | 4
+
+### routingPolicy values
+
+| Member                        |Value
+|:------------------------------|:-------
+| none                          | 0
+| noMissedCall                  | 1
+| disableForwardingExceptPhone  | 2
+| disableForwarding             | 3
+
+### callState values
+
+| Member               |Value
+|:---------------------|:-------
+| incoming             | 0
+| establishing         | 1
+| ringing              | 2
+| established          | 3
+| hold                 | 4
+| transferring         | 5
+| transferAccepted     | 6
+| redirecting          | 7
+| terminating          | 8
+| terminated           | 9
+
+### callDirection values
+
+| Member               |Value
+|:---------------------|:-------
+| incoming             | 0
+| outgoing             | 1

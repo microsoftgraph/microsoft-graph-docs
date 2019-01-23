@@ -41,9 +41,9 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|id|UserObjectId| The unique identifier of the user with which a given risk event is associated with.|
-|isGuest|isGuest| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
-|isDeleted|isDeleted| A user may or may not be deleted. |
+|id|string| The unique identifier of the user with which a given risk event is associated with.|
+|isGuest|boolean| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
+|isDeleted|boolean| A user may or may not be deleted. |
 |riskState|riskState| A risky user could exist in one of multiple states. |
 |riskDetail|riskDetail| A risky user could be in a certain state because of multiple reasons. |
 |riskLevel|riskLevel| A risky user could be considered one of multiple risk levels. |
@@ -55,9 +55,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json

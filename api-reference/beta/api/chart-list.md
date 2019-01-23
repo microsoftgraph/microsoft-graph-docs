@@ -55,7 +55,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart",
+  "@odata.type": "microsoft.graph.workbookChart",
   "isCollection": true
 } -->
 ```http

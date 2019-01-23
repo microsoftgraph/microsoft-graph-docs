@@ -10,11 +10,11 @@ ms.prod: "sharepoint"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the collection of [sitePages][] from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
+Get the collection of [sitePages](../resources/sitepage.md) from the site pages [list](../resources/list.md) in a site [site](../resources/site.md). All pages in the site are returned (with pagination).
 
-[sitePage]: ../resources/sitepage.md
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+[sitePage](../resources/sitepage.md)
+[list](../resources/list.md)
+[site](../resources/site.md)
 
 ## Permissions
 
@@ -45,9 +45,16 @@ GET /sites/{site-id}/pages
 
 #### Response
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
+<!-- 
+{ 
+    "blockType": "response", 
+    "@odata.type": "microsoft.graph.sitePage", 
+    "truncated": true,
+    "isCollection" : true
+} 
+-->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -112,12 +119,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": { ... },
+                            "query": {  },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": { ... },
+                            "displayMaps": {  },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -127,7 +134,7 @@ Content-type: application/json
             ]
         },
         {
-            "id": 2,
+            "id": "2",
             "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",

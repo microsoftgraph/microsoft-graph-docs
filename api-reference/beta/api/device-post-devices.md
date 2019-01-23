@@ -87,7 +87,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "binary"
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",

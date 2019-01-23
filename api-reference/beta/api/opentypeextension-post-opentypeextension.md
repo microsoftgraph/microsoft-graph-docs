@@ -94,7 +94,7 @@ primitive types.
 
 | Name       | Value |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 When creating an extension in a _new_ resource instance, in addition to the
@@ -126,7 +126,7 @@ The first example creates a message and an extension in the same call. The reque
 - The **subject**, **body**, and **toRecipients** properties typical of a new message.
 - And for the extension:
 
-  - The type `Microsoft.Graph.OpenTypeExtension`.
+  - The type `microsoft.graph.openTypeExtension`.
   - The extension name "Com.Contoso.Referral".
   - Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
 
@@ -152,7 +152,7 @@ POST https://graph.microsoft.com/beta/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -230,7 +230,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -250,7 +250,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 The second example creates an extension in the specified message. The request body includes the following for the
 extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Referral".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
@@ -262,7 +262,7 @@ extension:
 POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -281,7 +281,7 @@ Here is the response for the second example. The response body includes the foll
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -289,7 +289,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -307,7 +307,7 @@ Content-type: application/json
 The third example creates an extension in the specified group event. The request body includes the following for the
 extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Deal".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
@@ -319,7 +319,7 @@ extension:
 POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -334,7 +334,7 @@ Here is the response from the third example request.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -342,7 +342,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -378,7 +378,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
     },
   "extensions": [
     {
-      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+      "@odata.type": "microsoft.outlookServices.openTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",

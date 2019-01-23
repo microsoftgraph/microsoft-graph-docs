@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -57,10 +57,10 @@ Here is a JSON representation of the resource.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|The notebook that contains the section group. Read-only.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|The section group that contains the section group. Read-only.|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in the section group. Read-only. Nullable.|
+|parentNotebook|[notebook](notebook.md)|The notebook that contains the section group. Read-only.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|The section group that contains the section group. Read-only.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
+|sections|[onenoteSection](section.md) collection|The sections in the section group. Read-only. Nullable.|
 
 ## Methods
 

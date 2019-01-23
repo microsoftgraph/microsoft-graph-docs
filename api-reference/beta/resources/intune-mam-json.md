@@ -30,7 +30,7 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.Json"
+  "@odata.type": "microsoft.graph.Json"
 }
 ```
 

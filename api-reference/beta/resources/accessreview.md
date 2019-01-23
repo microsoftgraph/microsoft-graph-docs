@@ -99,10 +99,10 @@ Here is a JSON representation of the resource.
  "description": "string",
  "businessFlowTemplateId": "string (identifier)",
  "reviewerType": "string",
- "createdBy": "microsoft.graph.userIdentity",
- "reviewedEntity": "microsoft.graph.identity",
- "settings": "microsoft.graph.accessReviewSettings",
- "reviewers": "Collection(microsoft.graph.userIdentity)"
+ "createdBy": "microsoft.graph.useridentity",
+ "reviewedEntity": "microsoft.graph.entity",
+ "settings": "microsoft.graph.entity",
+ "reviewers": [ { "@odata.type": "#microsoft.graph.useridentity" } ]
 }
 
 ```

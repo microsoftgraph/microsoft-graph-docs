@@ -19,7 +19,13 @@ Specifies whether this web application can request tokens using the OAuth 2.0 im
 
 ## JSON representation
 Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.implicitGrantSettings"
+}-->
 ```json
 {
   "enableIdTokenIssuance": "Boolean",

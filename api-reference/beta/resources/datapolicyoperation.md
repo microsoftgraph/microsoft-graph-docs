@@ -28,7 +28,6 @@ Represents a submitted data policy operation. It contains necessary information 
 |storageLocation|String|The URL location to where data is being exported for export requests.|
 |userId|String|The id for the user on whom the operation is performed.|
 |submittedDateTime|DateTimeOffset|Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|progress|Double|Specifies the progress of an operation.|
 
 ## Relationships
 None
@@ -53,8 +52,7 @@ Here is a JSON representation of the resource.
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)",
-  "progress": "Double"
+  "submittedDateTime": "String (timestamp)"
 }
 
 ```

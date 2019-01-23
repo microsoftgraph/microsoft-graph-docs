@@ -49,7 +49,7 @@ Here is a JSON representation of the resource.
 |id|String|The unique identifier of the page.  Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |level|Int32|The indentation level of the page. Read-only.|
-|links|[PageLinks](pagelinks.md)|Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote Online. Read-only.|
+|links|[pageLinks](pagelinks.md)|Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote Online. Read-only.|
 |order|Int32|The order of the page within its parent section. Read-only.|
 |self|String|The endpoint where you can get details about the page. Read-only.|
 |title|String|The title of the page. |
@@ -57,14 +57,14 @@ Here is a JSON representation of the resource.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|The notebook that contains the page.  Read-only.|
-|parentSection|[Section](section.md)|The section that contains the page. Read-only.|
+|parentNotebook|[notebook](notebook.md)|The notebook that contains the page.  Read-only.|
+|parentSection|[onenoteSection](section.md)|The section that contains the page. Read-only.|
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get page](../api/page-get.md) | [Page](page.md) |Read the properties and relationships of the page.|
+|[Get page](../api/page-get.md) | [onenotePage](onenotepage.md) |Read the properties and relationships of the page.|
 |[Update page content](../api/page-update.md) | None |Update the HTML content of the page. |
 |[Delete page](../api/page-delete.md) | None |Delete the page. |
 |[copyToSection](../api/page-copytosection.md)| None |Copies the page to a specific section.|

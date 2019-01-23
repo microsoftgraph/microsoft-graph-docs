@@ -135,7 +135,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

@@ -29,7 +29,7 @@ Derived from [attachment](attachment.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|The base64-encoded contents of the file.|
+|contentBytes|String|The base64-encoded contents of the file.|
 |contentId|String|The ID of the attachment in the Exchange store.|
 |contentLocation|String|The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.|
 |contentType|String|The content type of the attachment.|
@@ -57,7 +57,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "String",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

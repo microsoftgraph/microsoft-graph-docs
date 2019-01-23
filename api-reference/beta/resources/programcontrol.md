@@ -38,7 +38,7 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 | `status`                 |`String`                | The life cycle status of the control.                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | The creation date and time of the program control.                                        |
 | `owner`                  |[userIdentity](useridentity.md)   | The user who created the program control.                                               |
-| `resource`               |`programResource`       | The resource, a group or an app, targeted by this program control's access review.                   |
+| `resource`               | [programResource](programresource.md)       | The resource, a group or an app, targeted by this program control's access review.                   |
 
 ## Relationships
 | Relationship | Type	|Description|

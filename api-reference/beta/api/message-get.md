@@ -307,7 +307,7 @@ Content-type: application/json
     },
     {
       "name":"Content-Transfer-Encoding",
-      "value":"binary"
+      "value":"String"
     },
     {
       "name":"Subject",

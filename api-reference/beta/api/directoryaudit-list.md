@@ -102,7 +102,7 @@ Content-length: 271
 			"app": null
 		},
 		"targetResources": [{
-			"@odata.type": "#microsoft.graph.TargetResourceGroup",
+			"@odata.type": "microsoft.graph.TargetResourceGroup",
 			"id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
 			"displayName": "Lynda.com",
 			"modifiedProperties": [{
@@ -112,7 +112,7 @@ Content-length: 271
 			}],
 			"groupType": "unifiedGroups"
 		}, {
-			"@odata.type": "#microsoft.graph.targetResourceUser",
+			"@odata.type": "microsoft.graph.targetResourceUser",
 			"id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
 			"displayName": null,
 			"modifiedProperties": [],
