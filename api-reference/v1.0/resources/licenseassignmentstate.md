@@ -1,6 +1,9 @@
 ---
 title: "licenseAssignmentState resource type"
 description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # licenseAssignmentState resource type
