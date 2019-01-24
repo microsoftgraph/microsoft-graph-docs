@@ -146,8 +146,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -156,8 +155,7 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
+      "displayName": "testgp"
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -169,11 +167,8 @@ Content-type: application/json
       "department": "string",
       "displayName": "string",
       "givenName": "string",
-      "id": "string (identifier)",
-      "jobTitle": "string",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "jobTitle": "string"
+    }    
   ]
 }
 ```
@@ -226,8 +221,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    },
-    <...response trimmed for brevity...>
+    }    
   ]
 }
 ```
@@ -278,8 +272,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -288,10 +281,8 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "displayName": "testgp"      
+    }    
   ]
 }
 ```
