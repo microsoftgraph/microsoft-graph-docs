@@ -91,7 +91,7 @@ Content-type: application/json
             "deprecated": "deprecated.value",
             "lastModifiedDateTime": "lastModifiedDateTime.value",            
             "comments":"comments.value",
-            ""upn": "upn.value",
+            "upn": "upn.value",
             "tenantNotes": "tenantNotes.value",
             "threats": [
                 "threats.value"
