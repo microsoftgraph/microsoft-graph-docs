@@ -803,3 +803,14 @@ Possible values for user account types (group membership), per Windows definitio
 |:---------------------|:-------
 | incoming             | 0
 | outgoing             | 1
+
+### attributeType values
+
+| Member               |Value
+|:---------------------|:-------
+| dateTime             | 5
+| boolean              | 4
+| binary               | 3
+| reference            | 2
+| integer              | 1
+| @string              | 0

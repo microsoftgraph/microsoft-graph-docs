@@ -71,15 +71,11 @@ Content-type: application/json
 {
     "value": [
         {
-            "name": "IS FALSE",
             "arity": "Unary",
             "multivaluedComparisonType": "All",
-            "supportedAttributeTypes": [
-                "Boolean",
-                "Integer",
-                "String",
-                "Binary"
-            ]
+            "supportedAttributeTypes": [                
+                "@string"
+             ]
         }
     ]
 }

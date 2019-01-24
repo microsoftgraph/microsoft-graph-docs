@@ -16,8 +16,7 @@ Describes an operator that can be used in a [filter](synchronization-filter.md).
 |:---------------------------|:--------------------------|:---------------|
 |arity                       | microsoft.graph.scopeOperatorType         |Arity of the operator. Possible values are: `Binary`, `Unary`. The default is `Binary`.|
 |multivaluedComparisonType   | microsoft.graph.scopeOperatorMultiValuedComparisonType          |Possible values are: `All`, `Any`. Applies only to multivalued attributes. `All` means that all values must satisfy the condition. `Any` means that at least one value has to satisfy the condition. The default is `All`.|
-|name                        | String                     |Operator name. |
-|supportedAttributeTypes     | String collection         |Attribute types supported by the operator. Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|supportedAttributeTypes     | attributeType collection         |Attribute types supported by the operator. Possible values are: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## JSON representation
 
@@ -34,11 +33,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "arity": "microsoft.graph.scopeOperatorType",
-  "multivaluedComparisonType": "microsoft.graph.scopeOperatorMultiValuedComparisonType",
-  "name": "String",
-  "supportedAttributeTypes": ["String"]
+  "multivaluedComparisonType": "microsoft.graph.scopeOperatorMultiValuedComparisonType",  
+  "supportedAttributeTypes": ["attributeType"]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
