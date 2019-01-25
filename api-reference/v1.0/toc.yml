@@ -3157,6 +3157,19 @@
           href: api/groupsettingtemplate-list.md
         - name: Get group setting template
           href: api/groupsettingtemplate-get.md
+      - name: Identity provider
+        href: resources/identityprovider.md
+        items:
+        - name: List identity providers
+          href: api/identityprovider-list.md
+        - name: Create identity provider
+          href: api/identityprovider-post-identityproviders.md
+        - name: Get identity provider
+          href: api/identityprovider-get.md
+        - name: Upate identity provider
+          href: api/identityprovider-update.md
+        - name: Delete identity provider
+          href: api/identityprovider-delete.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
