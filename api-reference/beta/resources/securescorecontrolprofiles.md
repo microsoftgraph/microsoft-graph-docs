@@ -28,7 +28,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure).	|
 |	actionType	|	String	|	Control action type (Config, Review, Behavior).	|
 |	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD).	|
-|	maxScore |	String	|	Current obtained max score on specified date.	|
+|	maxScore |	Double	|	Current obtained max score on specified date.	|
 |	tier |	String	|	Control tier (Core, Defense in Depth, Advanced.)	|
 |	userImpact |	String	| User impact of implementing control (low, moderate, high).	|
 |	implementationCost |	String	|	Resource cost of implemmentating control (low, moderate, high).	|
@@ -38,7 +38,9 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
+|	lastModifiedDateTime |	String (DateTimeOffset)	|	Date last modified |
 |	controlStateUpdates |	[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	vendorInformation |	[securityVendorInformation](securityvendorinformation.md) | Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
 
 ## Relationships
 
@@ -62,7 +64,7 @@ The following is a JSON representation of the resource.
     "azureTenantId": "String (identifier)", 
     "referenceId": "String", 
     "controlName": "String", 
-    "maxScore": "Int32",
+    "maxScore": "Double",
     "controlCategory": "string",
     "actionType": "string",
     "service": "String",
@@ -74,10 +76,11 @@ The following is a JSON representation of the resource.
     "remediation": "String",
     "remediationImpact ": "String",
     "actionUrl": "String",
+    "lastModifiedDateTime": "	String (DateTimeOffset)",
     "controlStateUpdates": [{"odata.type":"microsoft.graph.secureScorecontrolStateUpdates"}],
     "tenantNotes": "String",
-    "upn": "String",
-    "comments": "String"
+    "upn": "String",    
+    "vendorInformation" : "microsoft.graph.securityVendorInformation"
 }
 
 

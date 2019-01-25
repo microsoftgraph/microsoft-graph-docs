@@ -814,3 +814,33 @@ Possible values for user account types (group membership), per Windows definitio
 | reference            | 2
 | integer              | 1
 | @string              | 0
+
+### operationStatus values
+
+| Member               |Value
+|:---------------------|:-------
+| notStarted           | 0
+| running              | 1
+| completed            | 2
+| failed               | 3
+
+### operationStatus values
+
+| Member               |Value
+|:---------------------|:-------
+| default              | 0
+| voicemail             1
+
+### recordCompletionReason values
+
+| Member                    |Value
+|:--------------------------|:-------
+| operationCanceled         | 0
+| stopToneDetected          | 1
+| maxRecordDurationReached  | 2
+| initialSilenceTimeout     | 3
+| maxSilenceTimeout         | 4
+| playPromptFailed          | 5
+| playBeepFailed            | 6
+| mediaReceiveTimeout       | 7
+| unspecifiedError          | 8

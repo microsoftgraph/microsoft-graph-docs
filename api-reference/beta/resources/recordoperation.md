@@ -24,7 +24,6 @@ The recordOperation type
 | recordResourceAccessToken      | String                      | The access token required to retrieve the recording.                                                                                              |
 | recordResourceLocation         | String                      | The location where the recording is located.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 
 ## Relationships
 None
@@ -43,14 +42,13 @@ The following is a JSON representation of the resource.
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
+  "completionReason": "recordCompletionReason",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "recordResourceAccessToken": "String",
   "recordResourceLocation": "String",
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
-  "status": "notStarted | running | completed | failed"
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"}
 }
 ```
 

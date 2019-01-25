@@ -33,7 +33,7 @@ Entity type containing properties of the tenant security score (daily snapshot d
 |	enabledServices |	String collection	|	Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).	|
 |	averageComparativeScores |	[averageComparativeScore](averagecomparativescore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.	|
 |	controlScores |	[controlScore](controlscore.md) collection	|	Contains tenant scores for a set of controls.	|
-
+|	vendorInformation |	[securityVendorInformation](securityvendorinformation.md) | Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).|
 
 ## Relationships
 
@@ -55,14 +55,15 @@ The following is a JSON representation of the resource.
 {
     "id": "String",
     "azureTenantId": "String (identifier)",
-    "createdDate": "DateTimeOffset",
+    "createdDateTime": "DateTimeOffset",
     "licensedUserCount": "Int32",
     "activeUserCount": "Int32",
-    "currentScore": "Int32",
-    "maxScore": "Int32",    
+    "currentScore": "Double",
+    "maxScore": "Double",    
     "enabledServices": ["String"],
     "averageComparativeScores": [{ "@odata.type":"microsoft.graph.averageComparativeScores"}],
-    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}]
+    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}],
+    "vendorInformation" : "microsoft.graph.securityVendorInformation"
 }
 ```
 

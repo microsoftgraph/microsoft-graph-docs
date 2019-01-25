@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "isCollection": true,
   "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
@@ -78,7 +78,7 @@ Content-type: application/json
             "azureTenantId": "azureTenantId.value",
             "referenceId": "referenceId.value",
             "controlName": "controlName.value",
-            "maxScore": 12,
+            "maxScore": 346.4555,
             "controlCategory": "controlCategory.value",
             "service": "service.value",
             "tier": "tier.value",
@@ -89,10 +89,8 @@ Content-type: application/json
             "remediationImpact": "remediationImpact.value",
             "actionUrl": "actionUrl.value",
             "deprecated": "deprecated.value",
-            "lastModifiedDateTime": "lastModifiedDateTime.value",            
-            "comments":"comments.value",
+            "lastModifiedDateTime": "lastModifiedDateTime.value",                        
             "upn": "upn.value",
-            "tenantNotes": "tenantNotes.value",
             "threats": [
                 "threats.value"
             ],            

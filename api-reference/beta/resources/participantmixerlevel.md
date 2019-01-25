@@ -34,10 +34,10 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
+  "ducking": { "@odata.type": "microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
+  "sourceLevels": [ { "@odata.type": "microsoft.graph.audioSourceLevel" } ]
 }
 ```
 

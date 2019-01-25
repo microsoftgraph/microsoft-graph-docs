@@ -28,6 +28,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "isCollection": true,
   "@odata.type": "microsoft.graph.secureScore"
 } -->
@@ -75,27 +75,27 @@ Content-type: application/json
         {
             "activeUserCount": 12,
             "createdDate": "createdDateTime.value",
-            "currentScore": 12,
+            "currentScore": 12.4566633444,
             "enabledServices": ["Skype"],
             "licensedUserCount": 12,
-            "maxScore": 45,
+            "maxScore": 45.2324443,
             "id": "id.value",            
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
                 {
                     "@odata.type":"microsoft.graph.averageComparativeScores",
                     "basis": "basis.value",
-                    "averageScore": 12
+                    "averageScore": 34.2324443
                 },
                 {
                     "@odata.type":"microsoft.graph.averageComparativeScores",
                     "basis": "basis.value",
-                    "averageScore": 12
+                    "averageScore": 34.2324443
                 },
                 {
                     "@odata.type":"microsoft.graph.averageComparativeScores",
                     "basis": "basis.value",
-                    "averageScore": 12
+                    "averageScore": 34.2324443
                 }
             ],
             "controlScores": [

@@ -18,7 +18,7 @@ The **sitePageData** resource represents the properties of a [webPart](webpart.m
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [  ],  
   "@odata.type": "microsoft.graph.sitePageData"
 }-->
 
