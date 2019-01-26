@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Update identityProvider
 
-Update properties in an existing [identityProvider](../resources/identityProvider.md).
+Update properties in an existing [identityProvider](../resources/identityprovider.md).
 
 ## Permissions
 
