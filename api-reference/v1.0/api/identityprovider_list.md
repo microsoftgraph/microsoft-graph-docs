@@ -1,3 +1,11 @@
+---
+title: "List identityProviders"
+description: "Retrieve all identityProviders"
+localization_priority: Priority
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
+
 # List identityProviders
 
 Retrieve all [identityProviders](../resources/identityProvider.md) in the directory.
@@ -46,7 +54,7 @@ The following example retrieves all **identityProvider**.
   "name": "get_identityproviders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityProviders
+GET https://graph.microsoft.com/v1.0/identityProviders
 ```
 
 ##### Response

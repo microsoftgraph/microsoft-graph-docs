@@ -1,3 +1,11 @@
+---
+title: "Get identityProvider"
+description: "Retrieve the properties of an existing identityProvider"
+localization_priority: Priority
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
+
 # Get identityProvider
 
 Retrieve the properties of an existing [identityProvider](../resources/identityProvider.md).
@@ -46,7 +54,7 @@ The following example retrieves a specific **identityProvider**.
   "name": "get_identityprovider"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 
 ##### Response

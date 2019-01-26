@@ -1,3 +1,11 @@
+---
+title: "Update identityProvider"
+description: "Update properties in an existing identityProvider"
+localization_priority: Priority
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
+
 # Update identityProvider
 
 Update properties in an existing [identityProvider](../resources/identityProvider.md).
@@ -53,7 +61,7 @@ The following example updates the definition of the token lifetime **identityPro
   "name": "update_identityprovider"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 Content-type: application/json
 Content-length: 41
 

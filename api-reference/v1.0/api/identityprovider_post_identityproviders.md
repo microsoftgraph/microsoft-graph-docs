@@ -1,3 +1,11 @@
+---
+title: "Create identityProvider"
+description: "Create a new identityProvider"
+localization_priority: Priority
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
+
 # Create identityProvider
 
 Create a new [identityProvider](../resources/identityProvider.md) by specifying display name, identityProvider type, client ID, and client secret.
@@ -54,7 +62,7 @@ The following example creates an **identityProvider**.
   "name": "create_identityprovider_from_identityproviders"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/identityProviders
+POST https://graph.microsoft.com/v1.0/identityProviders
 Content-type: application/json
 
 {

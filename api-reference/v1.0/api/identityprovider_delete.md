@@ -1,3 +1,11 @@
+---
+title: "Delete identityProvider"
+description: "Delete an existing identityProvider"
+localization_priority: Priority
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
+
 # Delete identityProvider
 
 Delete an existing [identityProvider](../resources/identityprovider.md).
@@ -46,7 +54,7 @@ The following example deletes an **identityProvider**.
   "name": "delete_identityprovider"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 ```
 
 ##### Response
