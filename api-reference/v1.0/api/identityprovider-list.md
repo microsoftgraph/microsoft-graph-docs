@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # List identityProviders
 
-Retrieve all [identityProviders](../resources/identityProvider.md) in the directory.
+Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.
 
 ## Permissions
 
