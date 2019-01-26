@@ -51,7 +51,7 @@ The following example deletes an **identityProvider**.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "delete-identityprovider"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth

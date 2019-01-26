@@ -59,7 +59,7 @@ The following example creates an **identityProvider**.
 
 <!-- {
   "blockType": "request",
-  "name": "create_identityprovider_from_identityproviders"
+  "name": "create-identityprovider-from-identityproviders"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/identityProviders
@@ -101,3 +101,13 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+<!-- {
+      "type": "#page.annotation",
+      "suppressions": [
+    
+" Warning: /api-reference/v1.0/api/identityprovider-post-identityproviders.md/create-identityprovider-from-identityproviders/clientId:    Parameter 'clientId' type changed from Guid -> String because the latter was in the table description. Update the resource to match. "
+    
+      ],
+        }
+    -->
+

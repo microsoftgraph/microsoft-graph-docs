@@ -12,7 +12,7 @@ Update properties in an existing [identityProvider](../resources/identityProvide
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -58,7 +58,7 @@ The following example updates the definition of the token lifetime **identityPro
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityprovider"
+  "name": "update-identityprovider"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth

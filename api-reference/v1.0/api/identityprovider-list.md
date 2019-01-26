@@ -12,7 +12,7 @@ Retrieve all [identityProviders](../resources/identityProvider.md) in the direct
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,7 +51,7 @@ The following example retrieves all **identityProvider**.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviders"
+  "name": "list-identityproviders"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/identityProviders

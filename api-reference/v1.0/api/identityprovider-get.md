@@ -12,7 +12,7 @@ Retrieve the properties of an existing [identityProvider](../resources/identityP
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,7 +51,7 @@ The following example retrieves a specific **identityProvider**.
 
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get-identityprovider"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
