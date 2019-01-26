@@ -1,18 +1,18 @@
 ---
 title: "identityProvider resource type"
-description: "Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, , LinkedIn, or Twitter. The following Identity Providers are in Preview: Weibo, QQ, WeChat, GitHub and any OpenID Connect supported providers. "
+description: "Represents an Azure Active Directory (Azure AD) identity provider."
 localization_priority: Priority
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 ---
 # identityProvider resource type
 
-Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, , LinkedIn, or Twitter. The following Identity Providers are in Preview: Weibo, QQ, WeChat, GitHub and any OpenID Connect supported providers. 
+Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon,  LinkedIn, or Twitter. The following Identity Providers are in Preview: Weibo, QQ, WeChat, GitHub and any OpenID Connect supported providers. 
 
-Configuring an identity provider in your Azure AD B2C tenant enables:
+Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
-* Users to sign up and sign in using a social account in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
-* Users to link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
+* Sign up and sign in using a social account in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
+* Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
 
 Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Office 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
