@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Get identityProvider
 
-Retrieve the properties of an existing [identityProvider](../resources/identityProvider.md).
+Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).
 
 ## Permissions
 
