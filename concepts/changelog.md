@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition |v1.0|Introduced new resource type [identityProvider](../api-reference/v1.0/resources/identityprovider.md) entity and the [create](../api-reference/v1.0/api/identityprovider-post-identityproviders.md), [list](../api-reference/v1.0/api/identityprovider-list.md), [get](../api-reference/v1.0/api/identityprovider-get.md), [update](../api-reference/v1.0/api/identityprovider-update.md), and [delete](../api-reference/v1.0/api/identityprovider-delete.md) operations.|
+|Addition |v1.0|Introduced new resource type [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) entity and the [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [list](/graph/api/identityprovider-list?view=graph-rest-v1.0), [get](/graph/api/identityprovider-get?view=graph-rest-v1.0), [update](/graph/api/identityprovider-update?view=graph-rest-v1.0), and [delete](/graph/api/identityprovider-delete?view=graph-rest-v1.0) operations.|
 
 ### Reports APIs
 
