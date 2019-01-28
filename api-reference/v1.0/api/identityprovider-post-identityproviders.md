@@ -45,7 +45,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 |clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|String|The identity provider type. It must be one of the following values for B2C Scenarios: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B it can only be Google|
 
 ## Response
 
