@@ -19,7 +19,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationConstraint"
+  "@odata.type": "microsoft.graph.locationconstraint"
 }-->
 
 ```json

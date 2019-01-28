@@ -36,7 +36,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |id|string|Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.|
 |name|string|The display name of the worksheet.|
 |position|int|The zero-based position of the worksheet within the workbook.|
-|visibility|string|The Visibility of the worksheet. The possible values are: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|string|The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -44,8 +44,8 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |charts|[WorkbookChart](chart.md) collection|Returns collection of charts that are part of the worksheet. Read-only.|
 |names|[WorkbookNamedItem](nameditem.md) collection|Returns collection of names that are associated with the worksheet. Read-only.|
 |pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
-|protection|[WorkbookWorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
-|tables|[WorkbookTable](table.md) collection|Collection of tables that are part of the worksheet. Read-only.|
+|protection|[WorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
+|tables|[Table](table.md) collection|Collection of tables that are part of the worksheet. Read-only.|
 
 ## JSON representation
 
@@ -53,10 +53,10 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.worksheet"
 }-->
 
 ```json

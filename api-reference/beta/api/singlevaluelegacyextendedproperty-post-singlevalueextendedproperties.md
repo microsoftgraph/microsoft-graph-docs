@@ -154,16 +154,16 @@ PATCH /groups/{id}/events/{id}
 ## Request body
 
 Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object in the 
-**singleValueLegacyExtendedProperty** collection property of the resource instance.
+**singleValueExtendedProperties** collection property of the resource instance.
 
 |**Property**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| An array of one or more single-valued extended properties. |
-|id|String|For each property in the **singleValueLegacyExtendedProperty** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|value|string|For each property in the **singleValueLegacyExtendedProperty** collection, specify the property value. Required.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| An array of one or more single-valued extended properties. |
+|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
 
 When creating an extended property in a _new_ resource instance, in addition to the 
-new **singleValueLegacyExtendedProperty** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
+new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
 ## Response
@@ -189,7 +189,7 @@ a response code but not the new post nor the extended property.
 ##### Request 1
 
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
-include for a new event, the request body includes the **singleValueLegacyExtendedProperty** collection that contains one single-value 
+include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value 
 extended property, and the following for the property:
 
 - **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
@@ -223,7 +223,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -246,7 +246,7 @@ To see the newly created extended property, [get the event expanded with the ext
 ##### Request 2
 
 The second example creates one single-value extended property for the specified existing message. That extended property is the only
-element in the **singleValueLegacyExtendedProperty** array. The request body includes the following for the 
+element in the **singleValueExtendedProperties** array. The request body includes the following for the 
 extended property:
 - **id** specifies the property type as `String`, the GUID, and the property named `Color`.
 - **value** specifies `Green` as the value of the `Color` property.
@@ -258,7 +258,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"

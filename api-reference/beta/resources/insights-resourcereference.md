@@ -15,15 +15,7 @@ Complex type containing properties of [officeGraphInsights](officegraphinsights.
 ## JSON representation
 
 Here is a JSON representation of the resource
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.resourceReference"
-}-->
+
 ```json
 {
   "webUrl": "string",

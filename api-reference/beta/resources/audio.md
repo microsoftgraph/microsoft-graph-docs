@@ -45,11 +45,11 @@ The properties of the **Audio** resource are populated by extracting metadata fr
 | **album**             | string  | The title of the album for this audio file.                          |
 | **albumArtist**       | string  | The artist named on the album for the audio file.                    |
 | **artist**            | string  | The performing artist for the audio file.                            |
-| **bitrate**           | Int64   | Bitrate expressed in kbps.                                           |
+| **bitrate**           | Int32   | Bitrate expressed in kbps.                                           |
 | **composers**         | string  | The name of the composer of the audio file.                          |
 | **copyright**         | string  | Copyright information for the audio file.                            |
-| **disc**              | Int16   | The number of the disc this audio file came from.                    |
-| **discCount**         | Int16   | The total number of discs in this album.                             |
+| **disc**              | Int32   | The number of the disc this audio file came from.                    |
+| **discCount**         | Int32   | The total number of discs in this album.                             |
 | **duration**          | Int64   | Duration of the audio file, expressed in milliseconds                |
 | **genre**             | string  | The genre of this audio file.                                        |
 | **hasDrm**            | boolean | Indicates if the file is protected with digital rights management.   |

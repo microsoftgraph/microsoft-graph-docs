@@ -33,7 +33,7 @@ Derived from [attachment](attachment.md).
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|item|[outlookItem](outlookitem.md)|The attached contact, message or event. Navigation property.|
+|item|[OutlookItem](outlookitem.md)|The attached contact, message or event. Navigation property.|
 
 ## JSON representation
 

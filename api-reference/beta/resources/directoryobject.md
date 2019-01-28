@@ -20,7 +20,7 @@ This resource supports:
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](../resources/directoryobject.md) |Read the properties  of a directory object.|
+|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
 |[Delete](../api/directoryobject-delete.md) | None |Delete a directory object. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
@@ -56,6 +56,7 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)"
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

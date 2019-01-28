@@ -28,12 +28,11 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "preFetchMedia"
   ],
-   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```

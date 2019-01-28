@@ -36,7 +36,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
 }-->
 
 ```json

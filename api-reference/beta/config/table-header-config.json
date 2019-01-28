@@ -3,13 +3,12 @@
     "tables": [
       {
         "type": "AuthScopes",
-        "titles": [ "Permissions" ],
+        "titles": [ "Authentication Scopes" ],
         "parseAs": "AuthScopeDefinition"
       },
       {
         "type": "EnumerationValues",
-        "titles": [ "Enumerated Values", "{x} enumeration", "{x} enumeration values", "{x} members", "{x} values", "{x} flags", "Members" ],
-        "parents": [ "{x} enum type" ],
+        "titles": [ "Enumerated Values" ],
         "parseAs": "EnumerationDefinition"
       },
       {
@@ -19,17 +18,17 @@
       },
       {
         "type": "HttpHeaders",
-        "titles": [ "Request Headers", "Response Headers", "Optional request headers" ],
+        "titles": [ "Request Headers", "Response Headers" ],
         "parseAs": "ParameterDefinition"
       },
       {
         "type": "PathParameters",
-        "titles": [ "Path Parameters", "Function Parameters" ],
+        "titles": [ "Path Parameters" ],
         "parseAs": "ParameterDefinition"
       },
       {
         "type": "QueryStringParameters",
-        "titles": [ "Query parameters", "Optional query parameters" ],
+        "titles": [ "Query String Parameters" ],
         "parseAs": "ParameterDefinition"
       },
       {
@@ -61,7 +60,7 @@
       {
         "type": "ParameterDefinition",
         "columns": {
-          "name": [ "Parameter Name", "Parameter", "Property Name", "Property", "Name", "Relationship name", "Relationship", "Header", "Query parameter", "Header Name" ],
+          "name": [ "Parameter Name", "Property Name", "Property", "Name", "Relationship name", "Relationship" ],
           "type": [ "Type", "Value" ],
           "description": [ "Description" ],
           "required": [ "Description" ]
@@ -70,20 +69,19 @@
       {
         "type": "EnumerationDefinition",
         "columns": {
-          "memberName": [ "Member", "Name", "Value" ],
-          "numericValue": [ "Numeric Value", "Value" ],
+          "value": [ "Value" ],
           "description": [ "Description" ]
         }
       },
       {
         "type": "AuthScopeDefinition",
         "columns": {
-          "scope": [ "Permissions (from least to most privileged)" ],
-          "title": [ "Permission type" ],
+          "scope": [ "Scope Name" ],
+          "title": [ "Title" ],
           "description": [ "Description" ],
           "required": [ "Required" ]
         }
       }
     ]
   }
-}
+  }

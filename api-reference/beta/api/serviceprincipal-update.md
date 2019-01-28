@@ -37,14 +37,14 @@ In the request body, supply the values for relevant fields that should be update
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application.                            **Notes**: Requires version 1.5 or newer, not nullable.            |
-|appRoles| [microsoft.graph.appRole](../resources/approle.md) collection|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the application entity                            **Notes**: Requires version 1.5 or newer, not nullable.            |
+|appRoles|appRole|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the application entity                            **Notes**: Requires version 1.5 or newer, not nullable.            |
 |displayName|String|The display name for the service principal.|
 |errorUrl|String|            |
 |homepage|String|The URL to the homepage of the associated application.|
-|keyCredentials|microsoft.graph.keyCredential|The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            |
+|keyCredentials|keyCredential|The collection of key credentials associated with the service principal.                            **Notes**: not nullable.            |
 |logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
-|oauth2Permissions|microsoft.graph.oAuth2Permission|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the application entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            |
-|passwordCredentials|microsoft.graph.passwordCredential|The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            |
+|oauth2Permissions|oAuth2Permission|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the application entity.                            **Notes**: Requires version 1.5 or newer, not nullable.            |
+|passwordCredentials|passwordCredential|The collection of password credentials associated with the service principal.                            **Notes**: not nullable.            |
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.                            **Notes**: Requires version 1.5 or newer.            |
 |publisherName|String|The display name of the tenant in which the associated application is specified.|
 |replyUrls|String|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.            |
@@ -92,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

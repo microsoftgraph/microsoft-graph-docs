@@ -16,7 +16,7 @@ The **InvitationParticipant** is used to represent a set of identities associate
 
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | operationStatus               | Possible values are: `default`, `voicemail`. |
+| endpointType                       | String                        | Possible values are: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
 | languageId                         | String                        | The language culture string.                                                                                     |
 | region                             | String                        | Region of the participant.                                                           |
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "endpointType": "operationStatus",
+  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

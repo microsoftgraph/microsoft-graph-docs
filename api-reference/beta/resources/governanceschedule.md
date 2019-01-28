@@ -4,7 +4,7 @@ description: "Represents the schedule for a governanceRoleAssignmentRequest. For
 localization_priority: Normal
 ---
 
-# microsoft.graph.governanceSchedule resource type
+# governanceSchedule resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

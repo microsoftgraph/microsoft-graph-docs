@@ -34,18 +34,13 @@ Here is a JSON representation of a **driveItem** resource.
 
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
-<!-- { 
-       "blockType": "resource", 
-       "@odata.type": "microsoft.graph.driveItem", 
-       "@type.aka": "oneDrive.item",
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true 
-    } 
--->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {  
@@ -143,7 +138,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | activities         | [itemActivity][] collection     | The list of recent activities that took place on this item.
 | analytics          | [itemAnalytics][] resource      | Analytics about the view activities that took place on this item.
 | content            | Stream                          | The content stream, if the item represents a file.
-| children           | driveItem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| children           | driveitem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | listItem           | [listItem][]                    | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection       | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection     | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.

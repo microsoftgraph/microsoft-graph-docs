@@ -19,12 +19,7 @@ Specifies parental control settings for an application. These settings control t
 
 ## JSON representation
 Here is a JSON representation of the resource.
-<!-- 
-{
-    "blockType": "resource",
-    "@odata.type":"microsoft.graph.parentalControlSettings"
-}
--->
+
 ```json
 {
   "countriesBlockedForMinors": [ "String" ],

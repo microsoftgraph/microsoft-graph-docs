@@ -16,14 +16,16 @@ Complex type containing properties of [officeGraphInsights](officegraphinsights.
 
 Here is a JSON representation of the resource
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-  ],  
-  "@odata.type": "microsoft.graph.resourceVisualization"
-}-->
 ```json
 {
+  "title": "string",
+  "type"  : "string",
+  "mediaType": "string",
+  "previewImageUrl": "string",
+  "previewText": "string",
+  "containerWebUrl": "string",
+  "containerDisplayName": "string",
+  "containerType": "string"
 }
 ```
 

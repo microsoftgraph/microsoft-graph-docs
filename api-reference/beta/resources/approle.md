@@ -21,7 +21,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.appRole"
+  "@odata.type": "microsoft.graph.approle"
 }-->
 
 ```json

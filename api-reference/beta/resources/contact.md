@@ -27,9 +27,9 @@ Here is a JSON representation of the resource
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
     "photo",
-    "singleValueLegacyExtendedProperty"
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -121,9 +121,9 @@ Here is a JSON representation of the resource
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the contact. Nullable.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contact. Read-only. Nullable.|
 |photo|[photo](profilephoto.md)| Optional contact picture. You can get or set a photo for a contact.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contact. Read-only. Nullable.|
 
 ## Methods
 | Method		   | Return Type	|Description|

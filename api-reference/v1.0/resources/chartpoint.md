@@ -22,8 +22,7 @@ Represents a point of a series in a chart.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|value|Json|Returns the value of a chart point. Read-only.|
-|id|string|unique identifier|
+|value|object|Returns the value of a chart point. Read-only.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -34,18 +33,17 @@ Represents a point of a series in a chart.
 
 Here is a JSON representation of the resource.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartPoint"
 }-->
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "value": "string"
 }
 
 ```

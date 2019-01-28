@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "uid": "string",
+  "iud": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -128,7 +128,7 @@ Here is a JSON representation of the resource
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|

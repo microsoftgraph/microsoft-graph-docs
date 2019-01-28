@@ -12,7 +12,7 @@ Indicates details associated with the network location. .
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|networkType| enum-string |Provides the type of the network. Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
+|networkType|String|Provides the type of the network. Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
 |networkName|String|Name of the network.|
 
 
@@ -30,7 +30,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "networkTypes": " intranet | extranet | namedNetwork | trusted ",
+  "networkTypes": "namedNetork",
   "networkName": "String"
 }
 

@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sitePageData** resource represents the properties of a [webPart](webpart.md). As these properties vary by web part, this is an OpenType with no fixed properties.
+The **sitePageData** resource represents the properties of a [webPart][]. As these properties vary by web part, this is an OpenType with no fixed properties.
 
 [webPart]: webpart.md
 
@@ -18,7 +18,7 @@ The **sitePageData** resource represents the properties of a [webPart](webpart.m
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],  
+  "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sitePageData"
 }-->
 

@@ -32,14 +32,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Path parameters
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|height|Int32|The desired height of the resulting image. Optional.|
-|width|Int32|The desired width of the resulting image. Optional.|
-|fittingMode|string|The method used to scale the chart to the specified dimensions (if both height and width are set)."  The possible values are: `Fit`, `FitAndCenter`, `Fill`.|
+|height|number|Optional. The desired height of the resulting image.|
+|width|number|Optional. The desired width of the resulting image.|
+|fittingMode|string|Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## Response
 
@@ -49,15 +49,14 @@ If successful, this method returns `200 OK` response code and base-64 image stri
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -68,7 +67,7 @@ Content-length: 3
 }
 ```
 
-## Usage
+##### Usage
 
 You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 

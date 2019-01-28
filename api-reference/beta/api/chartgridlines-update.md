@@ -66,7 +66,6 @@ Here is an example of the response. Note: The response object shown here may be 
   "truncated": true,
   "@odata.type": "microsoft.graph.workbookChartGridlines"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -55,7 +55,7 @@ In the request body, supply a JSON representation of a [governanceRoleAssignment
 |assignmentState|String|Yes|The state of assignment. The value can be ``Eligible`` and ``Active``.|
 |type|String|Yes|The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`.|
 |reason|String| |The reason needs to be provided for the role assignment request for audit and review purpose.|
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.|
+|schedule|[governanceSchedule](../resources/governanceschedule.md)| | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
@@ -89,7 +89,7 @@ In this example, administrators assign user nawu@fimdev.net to the Billing Reade
 |assignmentState|String|Yes| Eligible / Active|
 |type|String|Yes| AdminAdd|
 |reason|String| depends on role Settings||
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 <!-- {
   "blockType": "request",
@@ -172,7 +172,7 @@ In this example, the user nawu@fimdev.net activates the eligible Billing Reader 
 |assignmentState|String|Yes| Active|
 |type|String|Yes| UserAdd|
 |reason|String| depends on role Settings||
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 <!-- {
   "blockType": "request",
@@ -267,7 +267,7 @@ In this example, the user nawu@fimdev.net deactivates the active Billing Reader 
 |assignmentState|String|Yes| Active|
 |type|String|Yes| UserRemove|
 |reason|String| No||
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|No|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### Request
 <!-- {
   "blockType": "request",
@@ -330,7 +330,7 @@ In this example, administrators remove the user nawu@fimdev.net from the Billing
 |assignmentState|String|Yes| Eligible / Active|
 |type|String|Yes| AdminRemove|
 |reason|String| No||
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|No|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|No|        |
 ##### Request
 <!-- {
   "blockType": "request",
@@ -392,7 +392,7 @@ In this example, administrators update the role assignment for the user nawu@fim
 |assignmentState|String|Yes| Eligible / Active|
 |type|String|Yes| AdminUpdate|
 |reason|String| depends on roleSettings||
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 <!-- {
   "blockType": "request",
@@ -472,7 +472,7 @@ This example extends the expiring role assignment for user ANUJCUSER to API Mana
 |assignmentState|String|Yes| Eligible / Active |
 |type|String|Yes| AdminExtend|
 |reason|String| depends on roleSettings||
-|schedule|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Yes|        |
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Yes|        |
 ##### Request
 <!-- {
   "blockType": "request",

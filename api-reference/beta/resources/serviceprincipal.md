@@ -29,7 +29,7 @@ Here is a JSON representation of the resource
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
 
 ```json
@@ -83,14 +83,14 @@ Here is a JSON representation of the resource
 ## Relationships
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo| [appRoleAssignment](approleassignment.md) |Principals (users, groups, and service principals) that are assigned to this service principal. Read-only.|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Principals (users, groups, and service principals) that are assigned to this service principal. Read-only.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Applications that the service principal is assigned to. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects created by this service principal. Read-only. Nullable.|
-|memberOf| [directoryObject](directoryobject.md) collection|Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.|
-|oauth2PermissionGrants| [oAuth2PermissionGrant](oauth2permissiongrant.md) collection|User impersonation grants associated with this service principal. Read-only. Nullable.|
-|ownedObjects| [directoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Read-only. Nullable.|
-|owners| [directoryObject](directoryobject.md) collection|Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Read-only. Nullable.|
-|policy| [policy](policy.md) collection|The policies assigned to this service principal.|
+|memberOf|[directoryObject](directoryobject.md) collection|Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|User impersonation grants associated with this service principal. Read-only. Nullable.|
+|ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Read-only. Nullable.|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of this service principal. The owners are a set of non-admin users who are allowed to modify this object. Read-only. Nullable.|
+|policy|[policy](policy.md) collection|The policies assigned to this service principal.|
 
 ## Methods
 

@@ -37,7 +37,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
-|position|string|Represents the position of the legend on the chart. The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|position|string|Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|A boolean value the represents the visibility of a ChartLegend object.|
 
 ## Response
@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartLegend"
+  "@odata.type": "microsoft.graph.chartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

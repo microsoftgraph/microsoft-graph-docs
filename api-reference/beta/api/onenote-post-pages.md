@@ -48,7 +48,6 @@ The body can contain HTML placed directly in the request body, or it can contain
 ## Response
 
 If successful, this method returns a `201 Created` response code and the new [onenotepage](../resources/onenotepage.md) object in the response body.
-If successful, this method returns a `201 Created` response code and the new [onenotePage](../resources/onenotepage.md) object in the response body.
 
 ## Example
 ##### Request

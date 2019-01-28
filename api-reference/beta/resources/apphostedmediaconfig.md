@@ -28,7 +28,6 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.appHostedMediaConfig"
 }-->
 ```json

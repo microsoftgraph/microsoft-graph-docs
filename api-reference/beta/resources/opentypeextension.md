@@ -56,11 +56,9 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-       "companyName",
-        "dealValue",
-        "expirationDate"
+
   ],
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 }-->
 
 ```json

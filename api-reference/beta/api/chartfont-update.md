@@ -38,12 +38,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold| boolean |Represents the bold status of font.|
-|color| string |HTML color code representation of the text color. E.g. #FF0000 represents Red.|
-|italic| boolean |Represents the italic status of the font.|
-|name| string |Font name (e.g. "Calibri")|
-|size| double |Size of the font (e.g. 11)|
-|underline| enum-string |Type of underline applied to the font. Possible values are: `None`, `Single`.|
+|bold|boolean|Represents the bold status of font.|
+|color|string|HTML color code representation of the text color. E.g. #FF0000 represents Red.|
+|italic|boolean|Represents the italic status of the font.|
+|name|string|Font name (e.g. "Calibri")|
+|size|double|Size of the font (e.g. 11)|
+|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|
 
 ## Response
 
@@ -66,7 +66,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### Response
@@ -87,7 +87,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

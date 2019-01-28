@@ -29,7 +29,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oneNoteIdentitySet"
+  "@odata.type": "microsoft.graph.onenoteidentityset"
 }-->
 
 ```json

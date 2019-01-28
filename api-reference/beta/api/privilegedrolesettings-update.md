@@ -39,17 +39,17 @@ The following table lists the properties that you can supply when you update a r
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|elevationDuration |String (timestamp) |The duration when the role is activated. Required.|
-|id| string (identifier) |The unique identifier for the role settings. Read-only. Required.|
+|elevationDuration|duration|The duration when the role is activated. Required.|
+|id|string|The unique identifier for the role settings. Read-only. Required.|
 |isMfaOnElevationConfigurable|boolean|**true** if mfaOnElevation is configurable. **false** if mfaOnElevation is not configurable. Required.|
-|lastGlobalAdmin| Boolean |For internal use only.|
-|maxElavationDuration| String (timestamp)|Maximum duration for the activated role. Required.|
-|mfaOnElevation| Boolean |**true** if MFA is required to activate the role. **false** if MFA is not required to activate the role. Required.|
-|minElevationDuration| String (timestamp) |Minimum duration for the activated role. Required.|
+|lastGlobalAdmin|Boolean|For internal use only.|
+|maxElavationDuration|duration|Maximum duration for the activated role. Required.|
+|mfaOnElevation|Boolean|**true** if MFA is required to activate the role. **false** if MFA is not required to activate the role. Required.|
+|minElevationDuration|duration|Minimum duration for the activated role. Required.|
 |notificationToUserOnElevation|Boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated. Required.|
 |ticketingInfoOnElevation|Boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role. Required.|
 |approvalOnElevation|Boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role. Required.|
-|approverIds| String (identifier) collection|List of Approval IDs, if approval is required for activation.|
+|approverIds|array|List of Approval IDs, if approval is required for activation.|
 
 ## Response
 
