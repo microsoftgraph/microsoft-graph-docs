@@ -284,6 +284,7 @@ The following is a JSON representation of the resource.
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isSubscribedByMail": true,
   "mail": "string",
