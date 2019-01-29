@@ -13,11 +13,7 @@ This operation returns by default only a subset of the properties for each group
 
 To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
 
-To return groups containing members with license errors, use the **$filter** query parameter: 
-
-```http 
-GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true 
-```
+An exception is the **hasMembersWithLicenseErrors** property. See an [example](#request-2) of how to use this property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
