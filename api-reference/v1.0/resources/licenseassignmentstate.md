@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
   "description": "licenseAssignmentState resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
   "suppressions": [
     Error: microsoft.graph.user/licenseAssignmentStates:
 2019-01-29T01:40:11.1024342Z       Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential sugge
