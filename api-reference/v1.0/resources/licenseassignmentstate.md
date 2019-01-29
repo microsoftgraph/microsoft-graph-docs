@@ -40,5 +40,15 @@ The following is a JSON representation of the resource.
 }
 
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 2015-10-25 14:57:30 UTC --> 
-<!-- { "type": "#page.annotation", "description": "licenseAssignmentState resource", "keywords": "", "section": "documentation", "tocPath": "" }-->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "licenseAssignmentState resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+  "suppressions": [
+    Error: microsoft.graph.user/licenseAssignmentStates:
+2019-01-29T01:40:11.1024342Z       Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential sugge
+  ]
+}-->
