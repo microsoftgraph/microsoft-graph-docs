@@ -57,10 +57,7 @@ The following example creates an **identityProvider**.
 
 ##### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "create-identityprovider-from-identityproviders"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/v1.0/identityProviders
 Content-type: application/json
@@ -75,11 +72,7 @@ Content-type: application/json
 
 ##### Response
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -101,13 +94,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-<!-- {
-      "type": "#page.annotation",
-      "suppressions": [
-    
-    "Warning: /api-reference/v1.0/api/identityprovider-post-identityproviders.md/create-identityprovider-from-identityproviders/clientId:    Parameter 'clientId' type changed from Guid --> String because the latter was in the table description. Update the resource to match. "
-    
-      ],
-        }
-    -->
+
 
