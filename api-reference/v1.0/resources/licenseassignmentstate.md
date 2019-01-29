@@ -1,6 +1,6 @@
 ---
 title: "licenseAssignmentState resource type"
-description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user."
+description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState** objects. It provides details about license assignments to a user."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -40,4 +40,5 @@ The following is a JSON representation of the resource.
 }
 
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 2015-10-25 14:57:30 UTC --> <!-- { "type": "#page.annotation", "description": "license assignment state resource", "keywords": "", "section": "documentation", "tocPath": "" }-->
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 2015-10-25 14:57:30 UTC --> 
+<!-- { "type": "#page.annotation", "description": "licenseAssignmentState resource", "keywords": "", "section": "documentation", "tocPath": "" }-->
