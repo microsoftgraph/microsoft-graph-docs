@@ -105,7 +105,7 @@ Content-type: application/json
       "type": "#page.annotation",
       "suppressions": [
     
-" Warning: /api-reference/v1.0/api/identityprovider-post-identityproviders.md/create-identityprovider-from-identityproviders/clientId:    Parameter 'clientId' type changed from Guid -> String because the latter was in the table description. Update the resource to match. "
+" Warning: /api-reference/v1.0/api/identityprovider-post-identityproviders.md/create-identityprovider-from-identityproviders/clientId:    Parameter 'clientId' type changed from Guid --> String because the latter was in the table description. Update the resource to match. "
     
       ],
         }
