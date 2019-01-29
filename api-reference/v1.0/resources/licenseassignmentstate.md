@@ -49,6 +49,6 @@ The following is a JSON representation of the resource.
   "tocPath": "",
   "suppressions": [
     "Error: microsoft.graph.user/licenseAssignmentStates:
-2019-01-29T01:40:11.1024342Z       Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential suggestion: UNKNOW"
+      Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential suggestion: UNKNOWN"
   ]
 }-->
