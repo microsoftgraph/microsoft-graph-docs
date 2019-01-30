@@ -17,6 +17,19 @@ Abstract base class for all school data profile identity synchronization configu
 |:-|:-|
 | [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Use this type to match existing user accounts in Azure Active Directory (Azure AD). |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | Use this type to create new user accounts in Azure AD. |
+
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration"
+}-->
+```json
+{
+}
+```
 <!--
 {
   "type": "#page.annotation",
