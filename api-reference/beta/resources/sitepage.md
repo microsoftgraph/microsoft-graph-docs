@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # sitePage resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents a page in the SitePages [list][].
 It contains the title, layout, and a collection of [webPart][]s.
@@ -122,7 +122,8 @@ The **sitePage** resource does not have relationships to other resources.
 [site]: site.md
 [webPart]: webpart.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -130,8 +131,12 @@ The **sitePage** resource does not have relationships to other resources.
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!--
 TODO:

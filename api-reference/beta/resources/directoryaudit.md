@@ -23,7 +23,7 @@ This resource represents the directory Audit items and its collection
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |activityDisplayName|String|Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged,refer to [Azure Ad activity list](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
-|additionalDetails|[keyValue](keyvalue.md) collection|Indicates additional details on the activity.|
+|additionalDetails|[keyvalue](keyvalue.md) collection|Indicates additional details on the activity.|
 |category|String|Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)|
 |correlationId| String (identifier) |Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.|
 |id|String| Indicates the unique ID for the activity. This is a GUID.|

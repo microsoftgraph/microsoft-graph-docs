@@ -101,7 +101,4 @@ For more information about Microsoft Graph Data Connect, see [Microsoft Graph Da
 - Find out how to [get an auth token](auth-overview.md) in your app.
 - Start [using the API](use-the-api.md).
 
-## Feedback?
-
-Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
 

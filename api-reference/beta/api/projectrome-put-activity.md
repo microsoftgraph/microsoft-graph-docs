@@ -7,7 +7,7 @@ ms.prod: "project-rome"
 
 # Create or replace an activity
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).
 
@@ -128,7 +128,7 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {
@@ -189,7 +189,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false",
+            "addImageQuery": "false"
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -208,7 +208,7 @@ Content-length: 364
         {
             "userTimezone": "Africa/Casablanca",
             "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
         }
     ]
 }
@@ -244,7 +244,7 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {
@@ -286,10 +286,15 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-put-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # Get analytics
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
@@ -72,10 +72,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get analytics"
-} -->
+  "tocPath": "BaseItem/Get analytics",
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

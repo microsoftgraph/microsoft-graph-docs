@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # event resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
 
@@ -36,7 +36,7 @@ Here is a JSON representation of the resource
     "extensions",
     "instances",
     "singleValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -82,8 +82,8 @@ Here is a JSON representation of the resource
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]  
 }
 
 ```
@@ -132,8 +132,8 @@ Here is a JSON representation of the resource
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
 ## Methods
 
@@ -177,10 +177,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/event.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

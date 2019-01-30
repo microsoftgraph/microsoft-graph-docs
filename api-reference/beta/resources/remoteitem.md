@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # RemoteItem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
@@ -68,10 +68,15 @@ This resource provides the unique IDs of the source drive and target item.
 
 For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/RemoteItem"
-} -->
+  "tocPath": "Facets/RemoteItem",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/remoteitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

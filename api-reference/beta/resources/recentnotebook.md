@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # recentNotebook resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](notebook.md) but has fewer properties.
 
@@ -45,3 +45,11 @@ The following is a JSON representation of the resource.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/recentnotebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

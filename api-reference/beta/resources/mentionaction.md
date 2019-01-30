@@ -8,7 +8,7 @@ ms.prod: "insights"
 ---
 # MentionAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
@@ -40,10 +40,15 @@ The **MentionAction** resource provides information about an [activity][] that m
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The MentionAction object provides information about who was mentioned during an activity.",
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
-  "tocPath": "Resources/MentionAction"
-} -->
+  "tocPath": "Resources/MentionAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mentionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

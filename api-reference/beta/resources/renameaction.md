@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # RenameAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 
@@ -39,10 +39,15 @@ The presence of the **RenameAction** resource on an [**itemActivity**][activity]
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The RenameAction object provides information about an activity that renamed an item.",
   "keywords": "activities,activity,action,rename,renamed",
   "section": "documentation",
-  "tocPath": "Resources/RenameAction"
-} -->
+  "tocPath": "Resources/RenameAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/renameaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

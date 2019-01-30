@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Copy a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
@@ -87,10 +87,15 @@ The response from the API will only indicate that the copy operation was accepte
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
-} -->
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-copy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,6 +3,7 @@ title: "reportRoot: getMailboxUsageStorage"
 description: "Get the amount of storage used in your organization."
 localization_priority: Normal
 ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getMailboxUsageStorage

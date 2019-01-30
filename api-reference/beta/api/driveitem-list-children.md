@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # List children of a driveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
 
@@ -115,10 +115,15 @@ how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "Items/List children"
-} -->
+  "tocPath": "Items/List children",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

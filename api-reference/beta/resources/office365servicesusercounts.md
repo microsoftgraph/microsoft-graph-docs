@@ -3,6 +3,7 @@ title: "office365ServicesUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # office365ServicesUserCounts resource type
@@ -22,8 +23,10 @@ ms.prod: "reports"
 | skypeForBusinessInactive | Int64  | The number of inactive users on Skype For Business. |
 | yammerActive             | Int64  | The number of active users on Yammer. Any user who can post, read, or like messages is considered an active user. |
 | yammerInactive           | Int64  | The number of inactive users on Yammer.  |
-| teamsActive              | Int64  | The number of active users on Teams. Any user who posted messages in team channels, sent messages in private chat sessions, or participated in meetings or calls is considered an active user. |
-| teamsInactive            | Int64  | The number of active users on Teams.     |
+| teamsActive              | Int64  | The number of active users on Microsoft Teams. Any user who posted messages in team channels, sent messages in private chat sessions, or participated in meetings or calls is considered an active user. |
+| teamsInactive            | Int64  | The number of inactive users on Microsoft Teams.     |
+| office365Active          | Int64  | The number of active users on Office 365.   |
+| office365Inactive        | Int64  | The number of inactive users on Office 365.     |
 | reportPeriod             | String | The number of days the report covers.    |
 
 ## JSON representation
@@ -50,6 +53,8 @@ The following is a JSON representation of the resource.
   "yammerInactive": 1024, 
   "teamsActive": 1024, 
   "teamsInactive": 1024, 
+  "office365Active": 1024,
+  "office365Inactive": 1024,
   "reportPeriod": "String"
 }
 ```

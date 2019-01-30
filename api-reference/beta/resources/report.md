@@ -3,11 +3,12 @@ title: "Working with Office 365 usage reports in Microsoft Graph"
 description: "With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all."
 localization_priority: Priority
 ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # Working with Office 365 usage reports in Microsoft Graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all.
 
@@ -48,3 +49,11 @@ Reports resources and APIs can open up new ways for you to engage with users and
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/report.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

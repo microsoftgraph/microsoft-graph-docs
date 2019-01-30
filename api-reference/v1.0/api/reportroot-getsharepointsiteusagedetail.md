@@ -3,6 +3,7 @@ title: "reportRoot: getSharePointSiteUsageDetail"
 description: "Get details about SharePoint site usage."
 localization_priority: Normal
 ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getSharePointSiteUsageDetail

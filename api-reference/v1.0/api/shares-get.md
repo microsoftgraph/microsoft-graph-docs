@@ -29,11 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### Path Parameters
+### Path parameters
 
-| Parameter Name        | Value    | Description                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
+| Parameter Name                 | Value    | Description                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
 
 ### Encoding sharing URLs
 
@@ -51,6 +51,22 @@ string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&auth
 string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
+
+## Optional request headers
+
+| Name       | Type   | Description                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
+
+### Prefer header values
+
+| Name                          | Description                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item    |
+| redeemSharingLinkIfNecessary  | Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request |
+
+redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture),
+whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.
 
 ## Response
 

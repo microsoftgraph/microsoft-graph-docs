@@ -8,7 +8,7 @@ ms.prod: "insights"
 
 # Use the Microsoft Graph API to integrate social intelligence in an app
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.
 
@@ -54,3 +54,11 @@ into individual users across Office 365.
 
 - List the items [trending around](../api/insights-list-trending.md) a user
 - List users who have been [working with](../api/user-list-people.md) a user
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/social-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

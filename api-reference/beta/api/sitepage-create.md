@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Create a page in the site pages list of a site
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
@@ -183,10 +183,15 @@ Content-type: application/json
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a sitePage in the SitePages list in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Create"
-} -->
+  "tocPath": "Pages/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # accessAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 
@@ -33,12 +33,15 @@ This resource type has no properties.
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The AccessAction object provides information about accesses of an item.",
   "keywords": "activities,activity,action,access",
   "section": "documentation",
+  "tocPath": "Resources/AccessAction",
   "suppressions": [
-  ],
-  "tocPath": "Resources/AccessAction"
-} -->
+    "Error: /api-reference/beta/resources/accessaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

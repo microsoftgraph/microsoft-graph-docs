@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Create a new list
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [list][] in a [site][].
 
@@ -102,10 +102,15 @@ Default properties will be returned from the actual call.
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 ---
 # Unfollow drive item
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unfollow a [driveItem](../resources/driveitem.md).
 
@@ -57,10 +57,15 @@ DELETE /me/drive/following/{item-id}
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unfollow an item that the user is following.",
   "keywords": "unfollow item",
   "section": "documentation",
-  "tocPath": "Items/Unfollow"
-} -->
+  "tocPath": "Items/Unfollow",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

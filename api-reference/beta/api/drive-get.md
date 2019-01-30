@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Get Drive
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
 
@@ -149,10 +149,15 @@ If the drive does not exist and cannot be provisioned automatically (when using 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "Drives/Get drive"
-} -->
+  "tocPath": "Drives/Get drive",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

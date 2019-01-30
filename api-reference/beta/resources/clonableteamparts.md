@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # clonableTeamParts enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes which part of a [team](../resources/team.md) should be cloned. 
 
@@ -19,3 +19,11 @@ Describes which part of a [team](../resources/team.md) should be cloned.
 |settings|4|Copies all settings within the team, along with key group settings.|
 |channels|8|copies the channel structure (but not the messages in the channel).|
 |members|16|copies the members and owners of the team.|
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/clonableteamparts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # Create educationAssignment
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  
 
@@ -56,7 +56,7 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z",
   "displayName": "Midterm 1",
     "instructions":  {
-      "contentType": "Text",
+      "contentType": "text",
       "content": "Read chapters 1 through 3"
     },
       "grading": {
@@ -110,7 +110,7 @@ Content-length: 279
     "maxPoints": 100
   },
   "instructions": {
-    "contentType": "Text",
+    "contentType": "text",
     "content": "Read chapters 1 through 3"
   },
   "lastModifiedBy": {
@@ -128,10 +128,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationclass-post-assignments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Track changes for a Drive
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This method allows your app to track changes to a drive and its children over time.
 
@@ -224,10 +224,15 @@ In addition to the resync errors detailed above, see [Error Responses][error-res
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes"
-} -->
+  "tocPath": "Items/Sync changes",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

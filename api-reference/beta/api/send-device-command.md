@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # Send device command
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the 
 *type*, *payload*, *packageFamilyName*, and *appServiceName* parameters.
@@ -198,3 +198,11 @@ HTTP/1.1 201 OK
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

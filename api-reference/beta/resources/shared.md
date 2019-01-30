@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # Shared resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Shared** resource indicates a DriveItem has been shared with others.
 The resource includes information about how the item is shared.
@@ -52,10 +52,15 @@ If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has
 
 For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Shared"
-} -->
+  "tocPath": "Facets/Shared",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Download a file in another format
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
@@ -80,10 +80,15 @@ See [Error Responses][error-response] for more information about how errors are 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Convert the contents of an item in OneDrive to a different format.",
   "keywords": "convert,pdf,convert to pdf",
   "section": "documentation",
-  "tocPath": "Items/Download formats"
-} -->
+  "tocPath": "Items/Download formats",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get-content-format.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

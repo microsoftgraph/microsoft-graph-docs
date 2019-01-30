@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # SearchResult resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **SearchResult** resource indicates than an item is the response to a search query.
 
@@ -35,10 +35,15 @@ The **SearchResult** resource indicates than an item is the response to a search
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The search result facet indicates an item is from a search.",
   "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": "Facets/SearchResult"
-} -->
+  "tocPath": "Facets/SearchResult",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/searchresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

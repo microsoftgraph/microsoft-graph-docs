@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # ItemActivity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemActivity** resource provides information about activities that took place on an item or within a container.
 Currently only available on SharePoint and OneDrive for Business.
@@ -96,10 +96,15 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 
 **ItemActivity** is currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivity object provides information about an activity that took place on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivity"
-} -->
+  "tocPath": "Resources/ItemActivity",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -13,57 +13,48 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2019
 
+### Reports APIs
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.|
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **forceChangePasswordNextSignInWithMfa** property to the [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) complex type.|
+
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|beta|Added new entities:<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/
-intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/
-intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/
-intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>|
-|Addition|beta|Added new complex types:<br/>[appLogCollectionDownloadDetails](/graph/api/resources/
-intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/
-intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/
-intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
-|Addition|beta|Added new enum types:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/
-intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/
-intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/
-intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/
-intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
-|Addition|beta|Added the **createDownloadUrl** action on [appLogCollectionRequest](/graph/api/resources/
-intune-devices-applogcollectionrequest?view=graph-rest-beta) |
+|Addition|beta|Added new entities:<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new complex types:<br/>[appLogCollectionDownloadDetails](/graph/api/resources/intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new enum types:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
+|Addition|beta|Added the **createDownloadUrl** action on [appLogCollectionRequest](/graph/api/resources/intune-devices-applogcollectionrequest?view=graph-rest-beta) |
 |Deletion|beta|Removed the following entities:<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
-|Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidCompliancePolicy](/graph/api/resources/
-intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) entity|
-|Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidForWorkCompliancePolicy](/graph/api/resources/
-intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta) entity|
-|Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidWorkProfileCompliancePolicy](/graph/api/resources/
-intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **defaultProfileDisplayName** property from the [depOnboardingSetting](/graph/api/resources/
-intune-enrollment-deponboardingsetting?view=graph-rest-beta) entity|
-|Addition|beta|Added the **runAs32Bit** property to the [deviceManagementScript](/graph/api/resources/
-intune-devices-devicemanagementscript?view=graph-rest-beta) entity|
-|Addition|beta|Added the **troubleshootingErrorDetails**, **eventName** and **additionalInformation** properties to the [deviceManagementTroubleshootingEvent](/graph/api/resources/
-intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta) entity|
-|Change|beta|Changed the following properties on the [macOSCertificateProfileBase](/graph/api/resources/
-intune-deviceconfig-macoscertificateprofilebase?view=graph-rest-beta) entity:<br/>**subjectAlternativeNameType** from required to optional<br/>|
-|Addition|beta|Added the **certificateStore** and **customSubjectAlternativeNames** properties to the [macOSScepCertificateProfile](/graph/api/resources/
-intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta) entity|
-|Addition|beta|Added the **officeConfigurationXml** property to the [officeSuiteApp](/graph/api/resources/
-intune-apps-officesuiteapp?view=graph-rest-beta) entity|
-|Addition|beta|Added the **createdDateTime** property to the [organization](/graph/api/resources/
-intune-onboarding-organization?view=graph-rest-beta) entity|
-|Addition|beta|Added the **bitLockerAllowStandardUserEncryption** property to the [windows10EndpointProtectionConfiguration](/graph/api/resources/
-intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) entity|
-|Deletion|beta|Removed the **localSecurityOptionsEnableAdministratorAccount**, **localSecurityOptionsEnableGuestAccount** and **lanManagerWorkstationEnableInsecureGuestLogons** properties from the [windows10EndpointProtectionConfiguration](/graph/api/resources/
-intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) entity|
-|Addition|beta|Added the **useSecurityKeyForSignin** property to the [windowsIdentityProtectionConfiguration](/graph/api/resources/
-intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta) entity|
-|Addition|beta|Added the **mobileAppTroubleshootingEvents** navigation property to the [deviceManagement](/graph/api/resources/
-intune-androidforwork-devicemanagement?view=graph-rest-beta) entity|
-|Addition|beta|Added the **appLogCollectionRequests** navigation property to the [mobileAppTroubleshootingEvent](/graph/api/resources/
-intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) entity|
+|Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) entity|
+|Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta) entity|
+|Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta) entity|
+|Deletion|beta|Removed the **defaultProfileDisplayName** property from the [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) entity|
+|Addition|beta|Added the **runAs32Bit** property to the [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta) entity|
+|Addition|beta|Added the **troubleshootingErrorDetails**, **eventName** and **additionalInformation** properties to the [deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta) entity|
+|Change|beta|Changed the following properties on the [macOSCertificateProfileBase](/graph/api/resources/intune-deviceconfig-macoscertificateprofilebase?view=graph-rest-beta) entity:<br/>**subjectAlternativeNameType** from required to optional<br/>|
+|Addition|beta|Added the **certificateStore** and **customSubjectAlternativeNames** properties to the [macOSScepCertificateProfile](/graph/api/resources/intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta) entity|
+|Addition|beta|Added the **officeConfigurationXml** property to the [officeSuiteApp](/graph/api/resources/intune-apps-officesuiteapp?view=graph-rest-beta) entity|
+|Addition|beta|Added the **createdDateTime** property to the [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) entity|
+|Addition|beta|Added the **bitLockerAllowStandardUserEncryption** property to the [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) entity|
+|Deletion|beta|Removed the **localSecurityOptionsEnableAdministratorAccount**, **localSecurityOptionsEnableGuestAccount** and **lanManagerWorkstationEnableInsecureGuestLogons** properties from the [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **useSecurityKeyForSignin** property to the [windowsIdentityProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **mobileAppTroubleshootingEvents** navigation property to the [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) entity|
+|Addition|beta|Added the **appLogCollectionRequests** navigation property to the [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) entity|
 
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Added educationStandard, educationClass, educationProfessionalLearningCommunity, educationStaff, and unknownFutureValue to the [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) enum.|
 
 ## December 2018
 

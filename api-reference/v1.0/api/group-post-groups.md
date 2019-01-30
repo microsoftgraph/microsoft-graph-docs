@@ -38,6 +38,7 @@ POST /groups
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-Type  | application/json  |
 
 ## Request body
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 

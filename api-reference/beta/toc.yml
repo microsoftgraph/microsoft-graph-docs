@@ -7409,8 +7409,8 @@
           href: api/sectiongroup-list-sections.md
         - name: Create section
           href: api/sectiongroup-post-sections.md
-      - name: Pages
-        href: resources/page.md
+      - name: Onenote Pages
+        href: resources/onenotepage.md
         items:
         - name: List pages
           href: api/onenote-list-pages.md

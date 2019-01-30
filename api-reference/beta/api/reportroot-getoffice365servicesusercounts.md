@@ -3,11 +3,12 @@ title: "reportRoot: getOffice365ServicesUserCounts"
 description: "Get the count of users by activity type and service."
 localization_priority: Normal
 ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getOffice365ServicesUserCounts
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of users by activity type and service.
 
@@ -70,6 +71,8 @@ The CSV file has the following headers for columns.
 - Yammer Inactive
 - Teams Active
 - Teams Inactive
+- Office 365 Active
+- Office 365 Inactive
 - Report Period
 
 The following columns are not supported in Microsoft Graph China operated by 21Vianet:
@@ -187,8 +190,18 @@ Content-Length: 458
       "yammerInactive": 2526, 
       "teamsActive": 846, 
       "teamsInactive": 1960, 
+      "office365Active": 2791,
+      "office365Inactive": 503,
       "reportPeriod": "7"
     }
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365servicesusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

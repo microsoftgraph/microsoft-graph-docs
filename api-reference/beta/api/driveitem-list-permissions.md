@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # List sharing permissions on a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the effective sharing permissions of on a [DriveItem](../resources/driveitem.md).
 
@@ -139,10 +139,15 @@ how errors are returned.
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions"
-} -->
+  "tocPath": "Sharing/Permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

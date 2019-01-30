@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # teamsTab resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
 
@@ -31,7 +31,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |  displayName            |   string                  |  Name of the tab.     |
 |  name            |   string                  |  (Deprecated) Name of the tab.     |
 |  teamsAppId           |   string             |  App definition identifier of the tab. This value cannot be changed after tab creation.     |
-|  sortOrderIndex  |   int                     |  Index of the order used for sorting tabs.     |
+|  sortOrderIndex  |   string                  |  Index of the order used for sorting tabs.     |
 |  webUrl          |   string                  |  Deep link url of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
@@ -66,13 +66,18 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsTab resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstab.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## See also
 

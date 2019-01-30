@@ -8,9 +8,9 @@ ms.prod: "outlook"
 
 # Update Outlook category
 
-> **Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property 
+Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property
 once you have created the category.
 
 ## Permissions
@@ -35,7 +35,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body 
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body
 will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -88,5 +88,7 @@ Content-length: 251
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookcategory-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

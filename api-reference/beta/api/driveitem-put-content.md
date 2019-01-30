@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Upload or replace the contents of a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
@@ -127,9 +127,14 @@ how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-put-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

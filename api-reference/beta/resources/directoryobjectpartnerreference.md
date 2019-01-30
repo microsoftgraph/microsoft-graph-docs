@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # directoryObjectPartnerReference resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](../resources/directoryobject.md).
 
@@ -48,10 +48,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryObjectPartnerReference resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/directoryobjectpartnerreference.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

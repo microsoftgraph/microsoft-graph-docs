@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # ListItemVersion resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
 
@@ -61,10 +61,15 @@ The following table defines the relationships that the **driveItemVersion** reso
 | **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
-  "tocPath": "Facets/Version"
-} -->
+  "tocPath": "Facets/Version",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/listitemversion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

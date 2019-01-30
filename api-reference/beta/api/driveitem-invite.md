@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Send a sharing invitation
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
@@ -133,10 +133,15 @@ how errors are returned.
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
-} -->
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

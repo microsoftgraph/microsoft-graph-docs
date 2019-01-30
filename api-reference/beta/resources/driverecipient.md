@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # DriveRecipient resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.
 
@@ -40,10 +40,15 @@ The recipients resource has these properties.
 When using [invite](../api/driveitem-invite.md) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**.
 Only one of these values is required.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
   "section": "documentation",
-  "tocPath": "Resources/Recipients"
-} -->
+  "tocPath": "Resources/Recipients",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driverecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # List items shared with the signed-in user
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
@@ -87,10 +87,15 @@ To access the shared DriveItem resource, you will need to make a request using t
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Sharing/Shared with me"
-} -->
+  "tocPath": "Sharing/Shared with me",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-sharedwithme.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # List thumbnails for a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
@@ -280,10 +280,15 @@ how errors are returned.
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
-  "tocPath": "Items/Thumbnails"
-} -->
+  "tocPath": "Items/Thumbnails",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

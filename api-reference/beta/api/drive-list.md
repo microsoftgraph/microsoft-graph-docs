@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # List available drives
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
 
@@ -116,10 +116,15 @@ To list them, include `system` in your `$select` statement.
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the available drives for a user, group, or site.",
   "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "Drives/List drives"
-} -->
+  "tocPath": "Drives/List drives",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

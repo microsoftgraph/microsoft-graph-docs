@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Listing versions of a ListItem (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 SharePoint can be configured to retain the history for list items.
 
@@ -99,10 +99,15 @@ Content-Type: application/json
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-list-versions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
