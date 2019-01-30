@@ -13,6 +13,8 @@ This operation returns by default only a subset of the properties for each group
 
 To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
 
+An exception is the **hasMembersWithLicenseErrors** property. See an [example](#request-2) of how to use this property.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -56,7 +58,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body. The response includes only the default properties of each group.
 
 ## Example
-#### Request
+#### Request 1
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -66,7 +68,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### Response
+#### Response 1
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned for each group in an actual call.
@@ -144,6 +146,44 @@ Content-type: application/json
     ]
 }
 
+```
+#### Request 2
+This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments. It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_withlicenseerrors"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
+```
+
+#### Response 2
+The following is an example of the response which includes only the requested properties.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true,
+  "name": "get_groups_withlicenseerrors"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+    "value": [
+        {
+            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+            "displayName": "Library Assist"
+        },
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "displayName": "Golf Assist"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

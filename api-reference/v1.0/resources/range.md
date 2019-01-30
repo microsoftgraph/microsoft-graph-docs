@@ -50,11 +50,11 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |columnCount|int|Represents the total number of columns in the range. Read-only.|
 |columnHidden|boolean|Represents if all columns of the current range are hidden.|
 |columnIndex|int|Represents the column number of the first cell in the range. Zero-indexed. Read-only.|
-|formulas|Json|Represents the formula in A1-style notation.|
-|formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
-|formulasR1C1|Json|Represents the formula in R1C1-style notation.|
+|formulas|json|Represents the formula in A1-style notation.|
+|formulasLocal|json|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
+|formulasR1C1|json|Represents the formula in R1C1-style notation.|
 |hidden|boolean|Represents if all cells of the current range are hidden. Read-only.|
-|numberFormat|Json|Represents Excel's number format code for the given cell.|
+|numberFormat|json|Represents Excel's number format code for the given cell.|
 |rowCount|int|Returns the total number of rows in the range. Read-only.|
 |rowHidden|boolean|Represents if all rows of the current range are hidden.|
 |rowIndex|int|Returns the row number of the first cell in the range. Zero-indexed. Read-only.|

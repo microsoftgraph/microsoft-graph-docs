@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.publicClientApplication"
+  "@odata.type": "microsoft.graph.installedClient"
 }-->
 
 ```json

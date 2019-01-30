@@ -61,46 +61,55 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.secureScore"
+  "truncated": false,
+  "@odata.type": "microsoft.graph.secureScores"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 {
     "value": [
         {
-            "activeUserCount": 12,
-            "createdDate": "createdDateTime.value",
-            "currentScore": 12.4566633444,
-            "enabledServices": ["Skype"],
-            "licensedUserCount": 12,
-            "maxScore": 45.2324443,
-            "id": "id.value",            
+            "activeUserCount": "activeUserCount.value",
+            "createdDateTime": "createdDateTime.value",
+            "currentScore": "currentScore.value",
+            "enabledServices": "enabledServices.value",
+            "licensedUserCount": "licensedUserCount.value",
+            "maxScore": "maxScore.value",
+            "id": "id.value",
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
                 {
-                    "@odata.type":"microsoft.graph.averageComparativeScores",
-                    "basis": "basis.value",
-                    "averageScore": 34.2324443
+                    "basis": "AllTenants",
+                    "averageScore": "averageScore.value",
+                    "deviceScore": "deviceScore.value",
+                    "dataScore": "dataScore.value",
+                    "identityScore": "identityScore.value"
                 },
                 {
-                    "@odata.type":"microsoft.graph.averageComparativeScores",
-                    "basis": "basis.value",
-                    "averageScore": 34.2324443
+                    "basis": "TotalSeats",
+                    "averageScore": "averageScore.value",
+                    "deviceScore": "deviceScore.value",
+                    "dataScore": "dataScore.value",
+                    "identityScore": "identityScore.value",
+                    "seatSizeRangeUpperValue": "seatSizeRangeUpperValue.value",
+                    "categoryValue": "categoryValue.value",
+                    "seatSizeRangeLowerValue": "seatSizeRangeLowerValue.value"
                 },
                 {
-                    "@odata.type":"microsoft.graph.averageComparativeScores",
-                    "basis": "basis.value",
-                    "averageScore": 34.2324443
+                    "basis": "IndustryTypes",
+                    "averageScore": "averageScore.value",
+                    "deviceScore": "deviceScore.value",
+                    "dataScore": "dataScore.value",
+                    "identityScore": "identityScore.value",
+                    "categoryValue": "categoryValue.value"
                 }
             ],
             "controlScores": [
                 {
-                    "@odata.type":"microsoft.graph.controlScores",
                     "controlCategory": "controlCategory.value",
                     "controlName": "controlName.value",
                     "description": "description.value",

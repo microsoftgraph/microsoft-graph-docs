@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 }-->
 
 ```json

@@ -7409,8 +7409,8 @@
           href: api/sectiongroup-list-sections.md
         - name: Create section
           href: api/sectiongroup-post-sections.md
-      - name: Onenote Pages
-        href: resources/onenotepage.md
+      - name: Pages
+        href: resources/page.md
         items:
         - name: List pages
           href: api/onenote-list-pages.md
@@ -8273,8 +8273,8 @@
           href: api/chart-setdata.md
         - name: Set position data
           href: api/chart-setposition.md
-      - name: Workbook Named item
-        href: resources/workbooknameditem.md
+      - name: Named item
+        href: resources/nameditem.md
         items:
         - name: List named item
           href: api/nameditem-get.md

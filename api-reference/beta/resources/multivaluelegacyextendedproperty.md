@@ -39,7 +39,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
+  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
 }-->
 
 ```json

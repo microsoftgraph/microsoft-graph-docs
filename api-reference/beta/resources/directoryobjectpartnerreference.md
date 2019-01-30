@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](../resources/directoryobject.md).
+Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](directoryobject.md?view=graph-rest-beta).
 
 ## Properties
 
@@ -19,7 +19,7 @@ Represents a reference to a directory object in a partner organization. Inherits
 |description|String| Description of the object returned. Read-only. |
 |displayName|String| Name of directory object being returned, like group or application. Read-only. |
 |externalPartnerTenantId|Guid| The tenant identifier for the partner tenant. Read-only. |
-|id|String| The unique identifier for the resource. Inherited from [directoryObject](../resources/directoryobject.md). Read-only. |
+|id|String| The unique identifier for the resource. Inherited from [directoryObject](directoryobject.md?view=graph-rest-beta). Read-only. |
 |objectType|String| The type of the referenced object in the partner tenant. Read-only. |
 
 ## JSON representation

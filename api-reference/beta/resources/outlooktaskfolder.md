@@ -43,8 +43,8 @@ You cannot rename or delete these default task group and folder, but you can cre
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task folder. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|The collection of multi-value extended properties defined for the task folder. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|The collection of single-value extended properties defined for the task folder. Read-only. Nullable.|
 |tasks|[outlookTask](outlooktask.md) collection|The tasks in this task folder. Read-only. Nullable.|
 
 ## JSON representation
@@ -53,8 +53,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties",
     "tasks"
   ],
   "@odata.type": "microsoft.graph.outlookTaskFolder"

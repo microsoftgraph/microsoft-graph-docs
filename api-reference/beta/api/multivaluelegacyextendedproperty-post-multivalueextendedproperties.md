@@ -154,16 +154,16 @@ PATCH /groups/{id}/events/{id}
 ## Request body
 
 Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object in the 
-**multiValueLegacyExtendedProperty** collection property of the resource instance.
+**multiValueExtendedProperties** collection property of the resource instance.
 
 |**Property**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| An array of one or more multi-valued extended properties. |
-|id|String|For each property in the **multiValueLegacyExtendedProperty** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|value|string|For each property in the **multiValueLegacyExtendedProperty** collection, specify the property value. Required.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| An array of one or more multi-valued extended properties. |
+|id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
 When creating an extended property in a _new_ resource instance, in addition to the 
-new **multiValueLegacyExtendedProperty** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
+new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
 ## Response
@@ -189,7 +189,7 @@ the extended property. You cannot create an extended property in an existing gro
 ##### Request 1
 
 The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally 
-include for a new event, the request body includes the **multiValueLegacyExtendedProperty** collection which contains one extended property. 
+include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property. 
 The request body includes the following for that multi-value extended property:
 
 - **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
@@ -231,7 +231,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "multiValueLegacyExtendedProperty": [
+  "multiValueExtendedProperties": [
      {
            "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
@@ -254,7 +254,7 @@ To see the newly created extended property, [get the event expanded with the ext
 ##### Request 2
 
 The second example creates one multi-value extended property for the specified message. That extended property is the only
-element in the **multiValueLegacyExtendedProperty** collection. The request body includes the following for the 
+element in the **multiValueExtendedProperties** collection. The request body includes the following for the 
 extended property:
 
 - **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
@@ -267,7 +267,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_as77AACHsLrBBBA='
 Content-Type: application/json
 
 {
-  "multiValueLegacyExtendedProperty": [
+  "multiValueExtendedProperties": [
       {
          "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]

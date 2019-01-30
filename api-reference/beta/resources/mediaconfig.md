@@ -27,7 +27,6 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
   ],
-  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json

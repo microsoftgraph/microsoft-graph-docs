@@ -21,10 +21,10 @@ None
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | The client context.                                                             |
 | createdDateTime    | DateTimeOffset              | The start time of the operation.                                                |
-| id                 | String (identifier)         | The operation id. Read-only. Server generated.                                  |
+| id                 | String                      | The operation id. Read-only. Server generated.                                  |
 | lastActionDateTime | DateTimeOffset              | The time of the last action of the operation.                                   |
-| errorInfo          | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                            |
-| status             | operationStatus             | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
+| resultInfo         | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                            |
+| status             | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
 None
@@ -38,7 +38,6 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.commsOperation"
 }-->
 ```json
@@ -47,8 +46,8 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "errorInfo": { "@odata.type": "microsoft.graph.resultInfo" },
-  "status": "operationStatus"
+  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
+  "status": "notStarted | running | completed | failed"
 }
 ```
 
@@ -65,7 +64,7 @@ The following is a JSON representation of the resource.
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo",
+    "@odata.type": "#microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"

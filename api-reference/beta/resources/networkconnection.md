@@ -26,7 +26,7 @@ Contains stateful information about the network connection related to the alert.
 |natDestinationPort|String|Network Address Translation destination port.|
 |natSourceAddress|String|Network Address Translation source IP address.|
 |natSourcePort|String|Network Address Translation source port.|
-|protocol| securityNetworkProtocol |Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a percentage.|
 |sourceAddress|String|Source (i.e. origin) IP address (of the network connection).|
 |sourcePort|String|Source (i.e. origin) IP port (of the network connection).|

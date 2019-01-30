@@ -28,13 +28,12 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 

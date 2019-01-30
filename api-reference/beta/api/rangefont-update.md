@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 |italic|boolean|Represents the italic status of the font.|
 |name|string|Font name (e.g. "Calibri")|
 |size|double|Font size.|
-|underline| enum-string |Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## Response
 
@@ -66,7 +66,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### Response
@@ -87,7 +87,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

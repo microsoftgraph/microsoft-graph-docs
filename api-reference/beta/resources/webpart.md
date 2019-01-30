@@ -16,14 +16,13 @@ The **webPart** resource represents type and rendering information for a web par
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  
-    ],
+  "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.webPart"
 }-->
 
 ```json
 {
-  "type": "String (identifier)",
+  "type": "string (guid)",
   "data": {
     "instanceId": "string (guid) (optional)"
   }
@@ -34,8 +33,8 @@ The **webPart** resource represents type and rendering information for a web par
 
 | Property                | Type             | Description
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String (identifier)         | A unique identifier specifying the webPart type. Read-only.
-| **data**                | [sitePageData](sitepagedata.md) | The required properties for the webPart (varies by webPart)
+| **type**                | String           | A unique identifier specifying the webPart type. Read-only.
+| **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
 
 [sitePageData]: sitepagedata.md
 
