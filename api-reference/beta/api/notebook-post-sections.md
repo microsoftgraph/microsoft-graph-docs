@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [section](../resources/section.md) in the specified notebook.
+Create a new [onenoteSection](../resources/onenotesection.md) in the specified notebook.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ Within the same hierarchy level, section names must be unique. The name cannot c
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [section](../resources/section.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/onenotesection.md) object in the response body.
 
 ## Example
 ##### Request

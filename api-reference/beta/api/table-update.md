@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Table](../resources/table.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [Table](../resources/workbooktable.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

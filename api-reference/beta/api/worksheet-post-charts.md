@@ -33,11 +33,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [workbookChart](../resources/chart.md) object.
+In the request body, supply a JSON representation of [workbookChart](../resources/workbookchart.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [workbookChart](../resources/chart.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookChart](../resources/workbookchart.md) object in the response body.
 
 ## Example
 ##### Request
@@ -57,7 +57,7 @@ Content-length: 52
   "left": 99
 }
 ```
-In the request body, supply a JSON representation of [workbookChart](../resources/chart.md) object.
+In the request body, supply a JSON representation of [workbookChart](../resources/workbookchart.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

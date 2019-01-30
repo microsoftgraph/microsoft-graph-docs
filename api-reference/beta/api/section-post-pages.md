@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [page](../resources/page.md) in the specified section.
+Create a new [onenotePage](../resources/onenotepage.md) in the specified section.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ The body can contain HTML placed directly in the request body, or it can contain
 
 ## Response
 
-If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.
+If successful, this method returns `201 Created` response code and the new [onenotePage](../resources/onenotepage.md) object in the response body.
 
 ## Example
 ##### Request

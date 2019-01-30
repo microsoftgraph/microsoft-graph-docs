@@ -1,5 +1,5 @@
 ---
-title: "pivotTable resource type"
+title: "workbookPivotTable resource type"
 description: "Represents an Excel PivotTable."
 author: "lumine2008"
 localization_priority: Normal
@@ -29,7 +29,7 @@ Represents an Excel PivotTable.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
+|worksheet|[workbookWorksheet](workbookworksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
 Here is a JSON representation of the resource.

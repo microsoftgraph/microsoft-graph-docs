@@ -18,7 +18,7 @@ RangeView represents a set of visible cells of the parent range.
 |:---------------|:--------|:----------|
 |[List rows](../api/workbookrangeview-list-rows.md) |[workbookRangeView](workbookrangeview.md) collection| Get a workbookRangeView object collection.|
 |[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|Get a range view item based in index.|
-|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Return the range object associated with the range view|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](workbookrange.md)|Return the range object associated with the range view|
 
 ## Properties
 | Property	   | Type	|Description|

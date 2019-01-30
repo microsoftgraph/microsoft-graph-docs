@@ -198,14 +198,14 @@ The age group and minor consent properties are optional properties used by Azure
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
-|insights|[officeGraphInsights](insights.md) collection| Read-only. Nullable.|
+|insights|[officeGraphInsights](officegraphinsights.md) collection| Read-only. Nullable.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
 |joinedTeams|[group](group.md) collection|The Microsoft Teams that the user is a member of. Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|onenote|[OneNote](onenote.md)| Read-only.|
+|onenote|[onenote](onenote.md)| Read-only.|
 |outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|

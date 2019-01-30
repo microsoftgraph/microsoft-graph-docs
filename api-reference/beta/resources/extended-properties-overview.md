@@ -90,11 +90,11 @@ in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Prop
  
 Single-value extended property operations:
 
-- [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md)
+- [Create an extended property in a new or existing resource instance](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)
 - [Get one or a collection of resource instances with an extended property using `$expand` or `$filter`](../api/singlevaluelegacyextendedproperty-get.md)
 
 Multi-value extended property operations:
 
-- [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md)
+- [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty-get.md)
 

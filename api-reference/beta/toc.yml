@@ -151,8 +151,8 @@
           href: api/user-list-joinedteams.md
         - name: List member of
           href: api/user-list-memberof.md
-      - name: Insights
-        href: resources/insights.md
+      - name: OfficeGraphInsights
+        href: resources/officegraphinsights.md
         items:
         - name: List trending
           href: api/insights-list-trending.md
@@ -7379,8 +7379,8 @@
           href: api/notebook-list-sectiongroups.md
         - name: Create section group
           href: api/notebook-post-sectiongroups.md
-      - name: Sections
-        href: resources/section.md
+      - name: Onenote Sections
+        href: resources/onenotesection.md
         items:
         - name: List sections
           href: api/onenote-list-sections.md
@@ -7789,8 +7789,8 @@
     - name: Social intelligence
       href: resources/social-overview.md
       items:
-      - name: Insights
-        href: resources/insights.md
+      - name: Office Graph Insights
+        href: resources/officegraphinsights.md
         items:
         - name: Trending
           href: resources/insights-trending.md
@@ -8190,7 +8190,7 @@
         - name: List names
           href: api/workbook-list-names.md
       - name: Worksheet
-        href: resources/worksheet.md
+        href: resources/workbookworksheet.md
         items:
         - name: Add worksheet
           href: api/worksheetcollection-add.md
@@ -8234,7 +8234,7 @@
         - name: Delete
           href: api/range-delete.md
       - name: Table
-        href: resources/table.md
+        href: resources/workbooktable.md
         items:
         - name: Add table
           href: api/tablecollection-add.md
@@ -8273,8 +8273,8 @@
           href: api/chart-setdata.md
         - name: Set position data
           href: api/chart-setposition.md
-      - name: Named item
-        href: resources/nameditem.md
+      - name: Workbook Named item
+        href: resources/workbooknameditem.md
         items:
         - name: List named item
           href: api/nameditem-get.md

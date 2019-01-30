@@ -38,7 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|fields|SortField|The list of conditions to sort on.|
+|fields|workbookSortField|The list of conditions to sort on.|
 |matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
 |method|string|Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.|
 

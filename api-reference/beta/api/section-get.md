@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a [section](../resources/section.md) object.
+Retrieve the properties and relationships of a [onenoteSection](../resources/onenotesection.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [section](../resources/section.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/onenotesection.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

@@ -10,7 +10,7 @@ ms.prod: "insights"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Complex type containing properties of [officeGraphInsights](insights.md).
+Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation
 
@@ -71,7 +71,7 @@ Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## containerType property values
-The supported types can differ based on containers from which the [Insight](insights.md) returns files. For example, only the [Shared](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
+The supported types can differ based on containers from which the [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
 
 -	OneDriveBusiness
 -	Site

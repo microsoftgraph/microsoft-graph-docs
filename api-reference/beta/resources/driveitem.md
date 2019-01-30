@@ -48,8 +48,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 -->
 
 ```json
-{
-  "@odata.type": "microsoft.graph.driveItem", 
+{  
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},

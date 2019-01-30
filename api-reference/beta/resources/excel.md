@@ -868,7 +868,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -971,7 +971,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27test!A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",

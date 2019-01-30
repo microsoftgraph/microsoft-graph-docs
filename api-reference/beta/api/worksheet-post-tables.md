@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [workbookTable](../resources/table.md) object in the response body.
+If successful, this method returns `201 Created` response code and [workbookTable](../resources/workbooktable.md) object in the response body.
 
 ## Example
 ##### Request

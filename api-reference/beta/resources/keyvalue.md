@@ -17,7 +17,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.keyvalue"
+  "@odata.type": "microsoft.graph.keyValue"
 }-->
 
 ```json

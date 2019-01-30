@@ -158,9 +158,9 @@ Here is a JSON representation of the resource
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[message](message.md)  |Create one or more single-value extended properties in a new or existing message.   |
 |[Get message with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [message](message.md) | Get messages that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [message](message.md) | Create one or more multi-value extended properties in a new or existing message.  |
 |[Get message with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | Get a message that contains a multi-value extended property by using `$expand`. |
 
 ## See also

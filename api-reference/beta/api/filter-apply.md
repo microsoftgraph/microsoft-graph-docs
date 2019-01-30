@@ -35,7 +35,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|The criteria to apply.|
+|criteria|workbookFilterCriteria|The criteria to apply.|
 
 ## Response
 

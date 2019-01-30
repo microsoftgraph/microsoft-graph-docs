@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [section group](../resources/sectiongroup.md) in the specified notebook.
+Create a new [sectionGroup](../resources/sectiongroup.md) in the specified notebook.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

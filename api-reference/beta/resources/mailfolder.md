@@ -62,9 +62,9 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |[delta](../api/mailfolder-delta.md)|[mailFolder](mailfolder.md) collection|Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.|
 |[move](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Move a mailFolder and its contents to another mailFolder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singleValueLegacyExtendedProperty.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Create one or more single-value extended properties in a new or existing mailFolder.   |
 |[Get mailFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get mailFolders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multiValueLegacyExtendedProperty.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Create one or more multi-value extended properties in a new or existing mailFolder.  |
 |[Get mailFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Get a mailFolder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties

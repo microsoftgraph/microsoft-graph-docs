@@ -1,5 +1,5 @@
 ---
-title: "shared resource type"
+title: "sharedInsight resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
 author: "simonhult"
 localization_priority: Normal
@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.shared"
+  "@odata.type": "microsoft.graph.sharedInsight"
 }-->
 ```json
 {
