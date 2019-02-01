@@ -8,7 +8,8 @@ localization_priority: Normal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of approleassignment object.
+Update the properties of [approleassignment](../resources/approleassignment.md) object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -20,11 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-```http
-PATCH /users/{id | userPrincipalName}/appRoleAssignments/{id}
-PATCH /servicePrincipals/{id}/appRoleAssignedTo
-PATCH /groups/{id}/appRoleAssignments/{id}
+``` http
+POST /users/{id | userPrincipalName}/appRoleAssignments/{id}
+POST /servicePrincipals/{id}/appRoleAssignedTo
+POST /groups/{id}/appRoleAssignments/{id}
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -46,15 +48,17 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [appRoleAssignment](../resources/approleassignment.md) object in the response body.
-## Example
-##### Request
+
+## Example 1: Update app role assignment
+
+### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_approleassignment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/appRoleAssignments/{id}
+POST https://graph.microsoft.com/beta/appRoleAssignments/{id}
 Content-type: application/json
 Content-length: 233
 
@@ -66,7 +70,8 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-##### Response
+
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
