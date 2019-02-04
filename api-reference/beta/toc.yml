@@ -6729,10 +6729,10 @@
           - name: Get application signin summary
             href: api/applicationsigninsummary-get.md
         - name: Application sign-in summary details
-          href: resources/applicationsignindetailsummary.md
+          href: resources/applicationsignindetailedsummary.md
           items:
           - name: Get application signin summary details
-            href: api/applicationsignindetailsummary-get.md
+            href: api/applicationsignindetailedsummary-get.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
