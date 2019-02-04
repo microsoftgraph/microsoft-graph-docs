@@ -6723,12 +6723,19 @@
           href: api/application-list-owners.md
         - name: Assign owner
           href: api/application-post-owners.md
+        - name: Application sign-in summary
+          href: resource/applicationsigninsummary.md
+          - name: Get application signin summary
+            href: applicationsigninsummary-get.md
+        - name: Application sign-in summary details
+          href: resource/applicationsignindetailsummary.md
+          - name: Get application signin summary details
+            href: applicationsignindetailsummary-get.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
         - name: Directory audit
           href: resources/directoryaudit.md
-          items:
           - name: List directory audits
             href: api/directoryaudit-list.md
           - name: Get directory audit

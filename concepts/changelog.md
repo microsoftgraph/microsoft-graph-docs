@@ -27,6 +27,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0|Introduced new resource type [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) entity and the [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [list](/graph/api/identityprovider-list?view=graph-rest-v1.0), [get](/graph/api/identityprovider-get?view=graph-rest-v1.0), [update](/graph/api/identityprovider-update?view=graph-rest-v1.0), and [delete](/graph/api/identityprovider-delete?view=graph-rest-v1.0) operations.|
+| Addition | Beta | Added the [applicationSignInSummary]()(/graph/api/applicationsigninsummary-get?view=graph-rest-beta) and [applicationSignInDetailedSummary](/graph/api/applicationsignindetailedsummary-get?view=graph-rest-beta) entity types |
+
 
 ### Reports APIs
 
