@@ -6738,6 +6738,7 @@
         items:
         - name: Directory audit
           href: resources/directoryaudit.md
+          items:
           - name: List directory audits
             href: api/directoryaudit-list.md
           - name: Get directory audit
