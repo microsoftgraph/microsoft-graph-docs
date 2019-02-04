@@ -6725,10 +6725,12 @@
           href: api/application-post-owners.md
         - name: Application sign-in summary
           href: resources/applicationsigninsummary.md
+          items:
           - name: Get application signin summary
             href: api/applicationsigninsummary-get.md
         - name: Application sign-in summary details
           href: resources/applicationsignindetailsummary.md
+          items:
           - name: Get application signin summary details
             href: api/applicationsignindetailsummary-get.md
       - name: Audit logs
