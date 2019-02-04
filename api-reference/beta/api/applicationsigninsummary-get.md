@@ -1,17 +1,19 @@
 ---
-title: "applicationSignInDetailedSummary resource type"
-description: "Describes the applicationSignInSummary resource of the MS Grph API"
+title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
+description: "Describes the applicationSignInSummary resource of the Microsoft Graph API"
 localization_priority: Normal
-author: arvinh-msft"
+author: lleonard-msft
 ms.prod: "microsoft-identity-platform"
 ---
 
 # Get applicationSignInSummary
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of [applicationSigninSummary](../resources/applicationsigninsummary.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|

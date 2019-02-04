@@ -6724,13 +6724,13 @@
         - name: Assign owner
           href: api/application-post-owners.md
         - name: Application sign-in summary
-          href: resource/applicationsigninsummary.md
+          href: resources/applicationsigninsummary.md
           - name: Get application signin summary
-            href: applicationsigninsummary-get.md
+            href: api/applicationsigninsummary-get.md
         - name: Application sign-in summary details
-          href: resource/applicationsignindetailsummary.md
+          href: resources/applicationsignindetailsummary.md
           - name: Get application signin summary details
-            href: applicationsignindetailsummary-get.md
+            href: api/applicationsignindetailsummary-get.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:

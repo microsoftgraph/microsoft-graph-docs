@@ -1,21 +1,22 @@
 ---
-title: "applicationSignInDetailedSummary resource type"
+title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
 description: "Describes the applicationSignInDetailSummary resource of the Microsoft Graph API"
 localization_priority: Normal
-author: arvinh-msft
+author: lleonard-msft
 ms.prod: "microsoft-identity-platform"
 ---
 
 # applicationSignInDetailedSummary resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the number of sign ins per application.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary_get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read properties and relationships of applicationSignInDetailedSummary object. |
-| [Update](../api/applicationsignindetailedsummary_update.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Update applicationSignInDetailedSummary object. |
-| [Delete](../api/applicationsignindetailedsummary_delete.md) | None | Delete applicationSignInDetailedSummary object. |
+| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read properties and relationships of applicationSignInDetailedSummary object. |
 
 ## Properties
 | Property     | Type        | Description |
