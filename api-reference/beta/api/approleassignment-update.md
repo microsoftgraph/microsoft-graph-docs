@@ -49,9 +49,9 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `200 OK` response code and an updated [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
-## Example 1: Update app role assignment
+## Example 
 
-### Request
+##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -71,7 +71,7 @@ Content-length: 233
 }
 ```
 
-### Response
+##### Response
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
