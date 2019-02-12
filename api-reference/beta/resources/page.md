@@ -1,6 +1,12 @@
+---
+title: "page resource type"
+description: "A page in a OneNote notebook."
+localization_priority: Normal
+---
+
 # page resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A page in a OneNote notebook.
 
@@ -58,17 +64,22 @@ Here is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get page](../api/page_get.md) | [Page](page.md) |Read the properties and relationships of the page.|
-|[Update page content](../api/page_update.md) | None |Update the HTML content of the page. |
-|[Delete page](../api/page_delete.md) | None |Delete the page. |
-|[copyToSection](../api/page_copytosection.md)| None |Copies the page to a specific section.|
+|[Get page](../api/page-get.md) | [Page](page.md) |Read the properties and relationships of the page.|
+|[Update page content](../api/page-update.md) | None |Update the HTML content of the page. |
+|[Delete page](../api/page-delete.md) | None |Delete the page. |
+|[copyToSection](../api/page-copytosection.md)| None |Copies the page to a specific section.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "page resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/page.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,3 +1,9 @@
+---
+title: "itemBody resource type"
+description: "Represents properties of the body of an item, such as a message, event or group post."
+localization_priority: Normal
+---
+
 # itemBody resource type
 
 Represents properties of the body of an item, such as a message, event or group post.
@@ -6,7 +12,7 @@ Represents properties of the body of an item, such as a message, event or group 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|bodyType|The type of the content. Possible values are `Text` and `HTML`.|
+|contentType|bodyType|The type of the content. Possible values are `text` and `HTML`.|
 
 ## JSON representation
 

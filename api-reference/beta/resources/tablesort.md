@@ -1,6 +1,14 @@
+---
+title: "TableSort resource type"
+description: "Manages sorting operations on Table objects."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # TableSort resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Manages sorting operations on Table objects.
 
@@ -9,10 +17,10 @@ Manages sorting operations on Table objects.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Read properties and relationships of tableSort object.|
-|[Apply](../api/tablesort_apply.md)|None|Perform a sort operation.|
-|[Clear](../api/tablesort_clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
-|[Reapply](../api/tablesort_reapply.md)|None|Reapplies the current sorting parameters to the table.|
+|[Get TableSort](../api/tablesort-get.md) | [TableSort](tablesort.md) |Read properties and relationships of tableSort object.|
+|[Apply](../api/tablesort-apply.md)|None|Perform a sort operation.|
+|[Clear](../api/tablesort-clear.md)|None|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|
+|[Reapply](../api/tablesort-reapply.md)|None|Reapplies the current sorting parameters to the table.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -47,10 +55,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "TableSort resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/tablesort.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,14 @@
+---
+title: "educationClass resource type"
+description: "Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+---
+
 # educationClass resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  
 
@@ -9,19 +17,19 @@ Represents a class within a school. The **educationClass** resource corresponds 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationClass](../api/educationclass_get.md) | [educationClass](educationclass.md) |Read properties and relationships of an **educationClass** object.|
-|[Add member](../api/educationclass_post_members.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the members navigation property.|
-|[List members](../api/educationclass_list_members.md) |[educationUser](educationuser.md) collection| Get an **educationUser** object collection.|
-|[Remove student](../api/educationclass_delete_members.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the members navigation property.|
-|[List schools](../api/educationclass_list_schools.md) |[educationSchool](educationschool.md) collection| Get an **educationSchool** object collection.|
-|[Add teacher](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
-|[List teachers](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
-|[Remove teacher](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
-|[Create educationAssignment](../api/educationclass_post_assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
-|[List assignments](../api/educationclass_list_assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
-|[Get group](../api/educationclass_get_group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
-|[Update](../api/educationclass_update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
-|[Delete](../api/educationclass_delete.md) | None |Delete **educationClass** object. |
+|[Get educationClass](../api/educationclass-get.md) | [educationClass](educationclass.md) |Read properties and relationships of an **educationClass** object.|
+|[Add member](../api/educationclass-post-members.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the members navigation property.|
+|[List members](../api/educationclass-list-members.md) |[educationUser](educationuser.md) collection| Get an **educationUser** object collection.|
+|[Remove student](../api/educationclass-delete-members.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the members navigation property.|
+|[List schools](../api/educationclass-list-schools.md) |[educationSchool](educationschool.md) collection| Get an **educationSchool** object collection.|
+|[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| Add a new **educationUser** for the class by posting to the teachers navigation property.|
+|[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) collection| Get a list of teachers for the class.|
+|[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Remove an **educationUser** from the class through the teachers navigation property.|
+|[Create educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
+|[List assignments](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
+|[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
+|[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
+|[Delete](../api/educationclass-delete.md) | None |Delete **educationClass** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -69,17 +77,22 @@ The following is a JSON representation of the resource.
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

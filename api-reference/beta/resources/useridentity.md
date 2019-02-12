@@ -1,15 +1,23 @@
+---
+title: "userIdentity type"
+description: "For the Azure AD access reviews, this type represents an Azure AD user identity for a reviewer of an access review.  "
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
+---
+
 # userIdentity type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For the Azure AD [access reviews](accessreviews_root.md), this type represents an Azure AD user identity for a reviewer of an access review.  
+For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a reviewer of an access review.  
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 
 This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
 
 ## Methods
 
-None.  You would include objects of this type in the body of a request when [creating an accessReview](../api/accessreview_create.md).
+None.  You would include objects of this type in the body of a request when [creating an accessReview](../api/accessreview-create.md).
 
 ## Properties
 | Property	   | Type	|Description|
@@ -32,9 +40,9 @@ None.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get accessReview reviewers](../api/accessreview_listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview_addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview_removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
+|[Get accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
+|[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
 
 ## JSON representation
 
@@ -57,10 +65,15 @@ Here is a JSON representation of the type.
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "userIdentity type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/useridentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

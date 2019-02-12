@@ -1,10 +1,18 @@
+---
+title: "meetingTimeCandidatesResult resource type"
+description: "A collection of meeting suggestions if there is any, or the reason if there isn't."
+localization_priority: Normal
+author: "VinodRavichandran"
+ms.prod: "microsoft-teams"
+---
+
 # meetingTimeCandidatesResult resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A collection of meeting suggestions if there is any, or the reason if there isn't.
 
-The following are the possible reasons that [findMeetingTimes](../api/user_findmeetingtimes.md) does not return any meeting suggestions.
+The following are the possible reasons that [findMeetingTimes](../api/user-findmeetingtimes.md) does not return any meeting suggestions.
 
 |**emptySuggestionsHint value**|**Reasons**|
 |:-----|:-----|
@@ -37,14 +45,19 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |emptySuggestionsHint|String|A reason for not returning any meeting suggestions. Possible values are: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, or `unknown`.|
-|meetingTimeSlots|[meetingTimeCandidate](meetingTimeCandidate.md) collection|An array of meeting suggestions.|
+|meetingTimeSlots|[meetingTimeCandidate](meetingtimecandidate.md) collection|An array of meeting suggestions.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "meetingTimeCandidatesResult resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/meetingtimecandidatesresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

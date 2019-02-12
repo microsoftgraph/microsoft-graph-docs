@@ -3,14 +3,15 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: VersionAction
+localization_priority: Normal
 ---
 # VersionAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **VersionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 
@@ -36,10 +37,15 @@ The presence of the **VersionAction** resource on an [**itemActivity**][activity
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The VersionAction object provides information about an activity that resulted in a new item version.",
   "keywords": "activities,activity,action,version",
   "section": "documentation",
-  "tocPath": "Resources/VersionAction"
-} -->
+  "tocPath": "Resources/VersionAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/versionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

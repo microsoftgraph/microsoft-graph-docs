@@ -1,3 +1,11 @@
+---
+title: "RangeFormat resource type"
+description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
+---
+
 # RangeFormat resource type
 
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.
@@ -7,12 +15,12 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFormat](../api/rangeformat_get.md) | [WorkbookRangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
-|[Create RangeBorder](../api/rangeformat_post_borders.md) |[WorkbookRangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
-|[List borders](../api/rangeformat_list_borders.md) |[WorkbookRangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat_update.md) | [WorkbookRangeFormat](rangeformat.md)	|Update RangeFormat object. |
-|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
-|[Autofitrows](../api/rangeformat_autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
+|[Get RangeFormat](../api/rangeformat-get.md) | [WorkbookRangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
+|[Create RangeBorder](../api/rangeformat-post-borders.md) |[WorkbookRangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
+|[List borders](../api/rangeformat-list-borders.md) |[WorkbookRangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
+|[Update](../api/rangeformat-update.md) | [WorkbookRangeFormat](rangeformat.md)	|Update RangeFormat object. |
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
+|[Autofitrows](../api/rangeformat-autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
 ## Properties
 | Property	   | Type	|Description|

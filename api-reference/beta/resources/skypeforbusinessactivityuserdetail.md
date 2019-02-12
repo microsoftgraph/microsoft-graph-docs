@@ -1,3 +1,9 @@
+---
+title: "skypeForBusinessActivityUserDetail resource type"
+description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+---
+
 # skypeForBusinessActivityUserDetail resource type
 
 ## Properties

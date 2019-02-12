@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ChoiceColumn
+localization_priority: Normal
 ---
 # ChoiceColumn resource type
 
-The **choiceColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values can be selected from a list of choices.
+The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.
 
 ## JSON representation
 

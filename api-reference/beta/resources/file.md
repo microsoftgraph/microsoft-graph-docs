@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: File
+localization_priority: Normal
 ---
 # File resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **File** resource groups file-related data items into a single structure.
 
@@ -41,10 +42,15 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The file facet describes properties of a file",
   "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/File"
-} -->
+  "tocPath": "Facets/File",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/file.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

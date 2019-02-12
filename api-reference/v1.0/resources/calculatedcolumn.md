@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CalculatedColumn
+localization_priority: Normal
 ---
 # CalculatedColumn resource type
 
-The **calculatedColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's data is calculated based on other columns in the site.
+The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's data is calculated based on other columns in the site.
 
 ## JSON representation
 

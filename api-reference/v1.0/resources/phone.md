@@ -1,3 +1,9 @@
+---
+title: "phone resource type"
+description: "Represents a phone number."
+localization_priority: Normal
+---
+
 # phone resource type
 
 Represents a phone number.

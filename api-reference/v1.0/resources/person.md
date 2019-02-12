@@ -1,3 +1,11 @@
+---
+title: "person resource type"
+description: "An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype)."
+author: "simonhult"
+localization_priority: Priority
+ms.prod: "insights"
+---
+
 # person resource type
 
 An aggregation of information about a person from across mail, contacts, and social networks. People can be local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).
@@ -6,7 +14,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List people](../api/user_list_people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
+|[List people](../api/user-list-people.md) | **person** |Get a collection of person objects ordered by their relevance to the [user](../resources/user.md).|
 
 ## Properties
 
@@ -29,7 +37,7 @@ An aggregation of information about a person from across mail, contacts, and soc
 |postalAddresses|[location](location.md) collection|The person's addresses.|
 |profession|String|The person's profession.|
 |surname|String|The person's surname.|
-|userPrincipalName|String|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
+|userPrincipalName|String|The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). By convention, this should map to the person's email name. The general format is alias@domain.|
 |websites|[website](website.md) collection|The person's websites.|
 |yomiCompany|String|The phonetic Japanese name of the person's company.|
 

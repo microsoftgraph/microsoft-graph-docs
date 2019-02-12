@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Folder
+localization_priority: Normal
 ---
 # Folder resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Folder** resource groups folder-related data on an item into a single structure. 
 [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.
@@ -42,13 +43,18 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem][].
 
-[folderView]: folderView.md
-[DriveItem]: driveItem.md
+[folderView]: folderview.md
+[DriveItem]: driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "folder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/folder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

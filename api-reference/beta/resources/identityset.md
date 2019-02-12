@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: IdentitySet
+localization_priority: Normal
 ---
 # identitySet resource type
 
@@ -11,7 +12,7 @@ It is used to represent a set of identities associated with various events for a
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

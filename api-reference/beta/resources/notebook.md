@@ -1,6 +1,14 @@
+---
+title: "notebook resource type"
+description: "A OneNote notebook."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
+---
+
 # notebook resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A OneNote notebook.
 
@@ -62,20 +70,25 @@ Here is a JSON representation of the resource
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get notebook](../api/notebook_get.md) | [Notebook](notebook.md) |Read the properties and relationships of the notebook.|
-|[getRecentNotebooks](../api/notebook_getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
-|[Create section group](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
-|[List section groups](../api/notebook_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
-|[Create section](../api/notebook_post_sections.md) |[Section](section.md)| Create a section by posting to the sections collection in the specified notebook.|
-|[List sections](../api/notebook_list_sections.md) |[Section](section.md) collection| Get a collection of sections in the specified notebook.|
-|[copyNotebook](../api/notebook_copynotebook.md)| None | Copies a notebook.|
+|[Get notebook](../api/notebook-get.md) | [Notebook](notebook.md) |Read the properties and relationships of the notebook.|
+|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+|[Create section group](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
+|[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
+|[Create section](../api/notebook-post-sections.md) |[Section](section.md)| Create a section by posting to the sections collection in the specified notebook.|
+|[List sections](../api/notebook-list-sections.md) |[Section](section.md) collection| Get a collection of sections in the specified notebook.|
+|[copyNotebook](../api/notebook-copynotebook.md)| None | Copies a notebook.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "notebook resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/notebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

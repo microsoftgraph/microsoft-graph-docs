@@ -1,3 +1,11 @@
+---
+title: "Microsoft Graph reports API overview"
+description: "Usage reports in the Microsoft 365 admin center enable admins to understand their company's usage across Office 365 services. You can use the reports API in Microsoft Graph to integrate with Office 365 usage reports."
+localization_priority: Priority
+ms.prod: "reports"
+author: "pranoychaudhuri"
+---
+
 # Microsoft Graph reports API overview
 
 Usage reports in the Microsoft 365 admin center enable admins to understand their company's usage across Office 365 services. You can use the reports API in Microsoft Graph to integrate with Office 365 usage reports.
@@ -16,21 +24,21 @@ You can use the reports API to access the data sets listed in the following tabl
 
 |Office 365 app|Data set|
 |:--------|:--------|
-|Microsoft Teams|[Device usage](../api-reference/v1.0/resources/microsoft_teams_device_usage_reports.md)<br/>|[User activity](../api-reference/v1.0/resources/microsoft_teams_user_activity_reports.md)|
-|Office 365 (general) |[Activations](../api-reference/v1.0/resources/office_365_activations_reports.md)<br/>[Active users](../api-reference/v1.0/resources/office_365_active_users_reports.md)<br/>[Groups activity](../api-reference/v1.0/resources/office_365_groups_activity_reports.md)|
-|OneDrive |[Activity](../api-reference/v1.0/resources/onedrive_activity_reports.md)<br/>[Usage](../api-reference/v1.0/resources/onedrive_usage_reports.md)|
-|Outlook|[Activity](../api-reference/v1.0/resources/email_activity_reports.md)<br/>[App usage](../api-reference/v1.0/resources/email_app_usage_reports.md)<br/>[Mailbox usage](../api-reference/v1.0/resources/mailbox_usage_reports.md)|
-|SharePoint |[Activity](../api-reference/v1.0/resources/sharepoint_activity_reports.md)<br/>[Site usage](../api-reference/v1.0/resources/sharepoint_site_usage_reports.md)|
-|Skype for Business |[Activity](../api-reference/v1.0/resources/skype_for_business_activity_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/skype_for_business_device_usage_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/skype_for_business_device_usage_reports.md)<br/>[Participant activity](../api-reference/v1.0/resources/skype_for_business_participant_activity_reports.md)<br/>[Peer to peer activity](../api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity.md)|
-|Yammer |[Activity](../api-reference/v1.0/resources/yammer_activity_reports.md)<br/>[Device usage](../api-reference/v1.0/resources/yammer_device_usage_reports.md)<br/>[Groups activity](../api-reference/v1.0/resources/yammer_groups_activity_reports.md)|
+|Microsoft Teams|[Device usage](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>|[User activity](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
+|Office 365 (general) |[Activations](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[Active users](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[Groups activity](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0)|
+|OneDrive |[Activity](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[Usage](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0)|
+|Outlook|[Activity](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[App usage](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[Mailbox usage](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0)|
+|SharePoint |[Activity](/graph/api/resources/sharepoint-activity-reports?view=graph-rest-1.0)<br/>[Site usage](/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-1.0)|
+|Skype for Business |[Activity](/graph/api/resources/skype-for-business-activity-reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Participant activity](/graph/api/resources/skype-for-business-participant-activity-reports?view=graph-rest-1.0)<br/>[Peer to peer activity](/graph/api/resources/skype-for-business-peer-to-peer-activity?view=graph-rest-1.0)|
+|Yammer |[Activity](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[Device usage](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[Groups activity](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0)|
 
 ## API reference
 Looking for the API reference for this service?
 
-- [Office 365 usage reports API in Microsoft Graph v1.0](../api-reference/v1.0/resources/report.md)
-- [Office 365 usage reports API in Microsoft Graph beta](../api-reference/beta/resources/report.md)
+- [Office 365 usage reports API in Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0)
+- [Office 365 usage reports API in Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta)
 
 ## Next steps
 
-* Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-* Learn more about how to [use the reports REST API](../api-reference/v1.0/resources/report.md).
+* Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+* Learn more about how to [use the reports REST API](/graph/api/resources/report?view=graph-rest-1.0).

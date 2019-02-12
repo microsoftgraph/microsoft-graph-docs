@@ -1,6 +1,12 @@
+---
+title: "Endpoint resource type"
+description: "Endpoints represent URLs for resources associated with an entity.  For example, when a new Office 365 group is created, additional resources are also created as part of the Office 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Office 365 group resources, including their associated resource URLs can now be read using the *endpoints* navigation on the group resource-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences. "
+localization_priority: Normal
+---
+
 # Endpoint resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Endpoints represent URLs for resources associated with an entity.  For example, when a new Office 365 group is created, additional resources are also created as part of the Office 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Office 365 group resources, including their associated resource URLs can now be read using the *endpoints* navigation on the group resource-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences. 
 
@@ -8,8 +14,8 @@ Endpoints represent URLs for resources associated with an entity.  For example, 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List endpoints](../api/group_list_endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
-|[Get endpoint](../api/endpoint_get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
+|[List endpoints](../api/group-list-endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
+|[Get endpoint](../api/endpoint-get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -51,10 +57,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Endpoint resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/endpoint.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

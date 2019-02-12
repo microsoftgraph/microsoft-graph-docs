@@ -1,3 +1,11 @@
+---
+title: "personType resource type"
+description: "Represents the type of person."
+localization_priority: Normal
+author: "simonhult"
+ms.prod: "insights"
+---
+
 # personType resource type
 
 Represents the type of person.

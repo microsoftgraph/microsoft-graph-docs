@@ -1,9 +1,15 @@
+---
+title: "Location resource type"
+description: "Represents location information of an event."
+localization_priority: Normal
+---
+
 # Location resource type
 
 Represents location information of an [event](event.md).
 
 There are multiple ways to create events in a calendar, for example, through an app using the 
-[create event](../api/user_post_events.md) REST API, or manually using the Outlook user interface. When you create an event using the user interface, 
+[create event](../api/user-post-events.md) REST API, or manually using the Outlook user interface. When you create an event using the user interface, 
 you can specify the location as plain text (for example, "Harry's Bar"), or from the rooms list provided by Outlook, 
 [Bing Autosuggest](https://blogs.bing.com/search/2013/02/20/a-look-at-autosuggest/), or 
 [Bing local search](https://blogs.bing.com/search/2010/08/17/local-search-on-m-bing-com/). 
@@ -12,7 +18,7 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 
 | How event was created  | Property   | Expected value |
 |:----------|:-------|:--------------------------------|
-| [create event](../api/user_post_events.md) REST API | **locationType** | `default` |
+| [create event](../api/user-post-events.md) REST API | **locationType** | `default` |
 | User interface in Outlook | **locationType** | One of the following: <ul><li>`default` for a location entered as plain text.</li><li>`conferenceRoom` for a room provided by the Outlook rooms list.</li><li>Or, any of this list - `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` - for a location from Bing Autosuggest or Bing local search.</li></ul> |
 
 ## Properties

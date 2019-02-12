@@ -1,3 +1,9 @@
+---
+title: "reminder resource type"
+description: "A reminder for an event in a user calendar."
+localization_priority: Normal
+---
+
 # reminder resource type
 
 A reminder for an [event](event.md) in a user [calendar](calendar.md).

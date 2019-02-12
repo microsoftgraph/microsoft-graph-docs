@@ -1,3 +1,11 @@
+---
+title: "mailboxSettings resource type"
+description: "Settings for the primary mailbox of the signed-in user."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+---
+
 # mailboxSettings resource type
 
 Settings for the primary mailbox of the signed-in user.

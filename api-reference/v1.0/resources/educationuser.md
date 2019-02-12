@@ -1,3 +1,11 @@
+---
+title: "educationUser resource type"
+description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationUser resource type
 
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
@@ -8,12 +16,12 @@ This object provides a targeted subset of properties from the core [user](user.m
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationUser](../api/educationuser_get.md) | [educationUser](educationuser.md) |Read properties and relationships of an **educationUser** object.|
-|[List classes](../api/educationuser_list_classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection for which the user is member.|
-|[List schools](../api/educationuser_list_schools.md) |[educationSchool](educationschool.md) collection| Get the **educationSchool** object collection for which the user is a member.|
-|[Get user](../api/educationuser_get_user.md) |[user](user.md)| Get the simple directory **user** that corresponds to this **educationUser**.|
-|[Update](../api/educationuser_update.md) | [educationUser](educationuser.md)	|Update an **educationUser** object. |
-|[Delete](../api/educationuser_delete.md) | None |Delete an **educationUser** object. |
+|[Get educationUser](../api/educationuser-get.md) | [educationUser](educationuser.md) |Read properties and relationships of an **educationUser** object.|
+|[List classes](../api/educationuser-list-classes.md) |[educationClass](educationclass.md) collection| Get the **educationClass** object collection for which the user is member.|
+|[List schools](../api/educationuser-list-schools.md) |[educationSchool](educationschool.md) collection| Get the **educationSchool** object collection for which the user is a member.|
+|[Get user](../api/educationuser-get-user.md) |[user](user.md)| Get the simple directory **user** that corresponds to this **educationUser**.|
+|[Update](../api/educationuser-update.md) | [educationUser](educationuser.md)	|Update an **educationUser** object. |
+|[Delete](../api/educationuser-delete.md) | None |Delete an **educationUser** object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -38,6 +46,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".|
 |primaryRole|educationUserRole| Default role for a user. The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `unknownFutureValue`. Supports $filter.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
+|relatedContacts|[relatedContact](relatedcontact.md) collection|Set of contacts related to the user.  This optional property must be specified in a $select clause and can only be retrieved for an individual user.|
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
@@ -51,10 +60,10 @@ This object provides a targeted subset of properties from the core [user](user.m
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes to which the user belongs. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
-|assignments| [educationAssignment](../../beta/resources/educationAssignment.md)| List of assignments for the user. Nullable.|
+|assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| List of assignments for the user. Nullable.|
 |user|[user](user.md)| The directory user corresponding to this user.|
 
->**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](../../../concepts/changelog.md) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
+>**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](/graph/changelog) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
 ```JavaScript
 var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
 var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
@@ -115,7 +124,9 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
+    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
+      Property 'relatedContacts' found in markdown table but not in resource definition."
   ],
   "tocPath": ""
 }-->

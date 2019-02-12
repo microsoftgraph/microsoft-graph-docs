@@ -1,6 +1,13 @@
+---
+title: "subscription resource type"
+description: "A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
+localization_priority: Normal
+author: "piotrci"
+---
+
 # subscription resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
@@ -8,6 +15,7 @@ A subscription allows a client app to receive notifications about changes to dat
 - Conversations from Office Groups.
 - Drive root items from OneDrive.
 - Users and Groups from Azure Active Directory.
+- Alerts from the Microsoft Graph Security API.
 
 ## JSON representation
 
@@ -56,6 +64,7 @@ Here is a JSON representation of the resource.
 | Contacts            | 4230 minutes (under 3 days)    |
 | Group conversations | 4230 minutes (under 3 days)    |
 | Drive root items    | 4230 minutes (under 3 days)    |
+| Security alerts     | 43200 minutes (under 30 days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
@@ -67,18 +76,23 @@ None
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [Create subscription](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive notifications when Microsoft Graph data changes. |
-| [Update subscription](../api/subscription_update.md) | [subscription](subscription.md) | Renew a subscription by updating its expiration time. |
-| [List subscriptions](../api/subscription_list.md) | [subscription](subscription.md) | Lists active subscriptions. |
-| [Get subscription](../api/subscription_get.md) | [subscription](subscription.md) | Read properties and relationships of subscription object. |
-| [Delete subscription](../api/subscription_delete.md) | None | Delete a subscription object. |
+| [Create subscription](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Subscribes a listener application to receive notifications when Microsoft Graph data changes. |
+| [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renew a subscription by updating its expiration time. |
+| [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
+| [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Read properties and relationships of subscription object. |
+| [Delete subscription](../api/subscription-delete.md) | None | Delete a subscription object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "subscription resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/subscription.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

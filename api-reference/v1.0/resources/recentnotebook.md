@@ -1,3 +1,9 @@
+---
+title: "recentNotebook resource type"
+description: "A recently accessed OneNote notebook. A **recentNotebook** is similar to a notebook but has fewer properties."
+localization_priority: Normal
+---
+
 # recentNotebook resource type
 
 A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](notebook.md) but has fewer properties.
@@ -35,4 +41,4 @@ The following is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[getRecentNotebooks](../api/notebook_getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |

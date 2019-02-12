@@ -1,3 +1,11 @@
+---
+title: "mailTipsError resource type"
+description: "An error that occurs during an action."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+---
+
 # mailTipsError resource type
 
 An error that occurs during an action.

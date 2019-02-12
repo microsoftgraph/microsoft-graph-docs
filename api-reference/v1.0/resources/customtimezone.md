@@ -1,3 +1,9 @@
+---
+title: "customTimeZone resource type"
+description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
+localization_priority: Normal
+---
+
 # customTimeZone resource type
 
 Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.

@@ -1,6 +1,14 @@
+---
+title: "participant resource type"
+description: "The participant type."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # participant resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The participant type.
 
@@ -8,11 +16,11 @@ The participant type.
 
 | Method                                                          | Return Type                              | Description                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Get participant](../api/participant_get.md)                    | [participant](participant.md)            | Read properties of the **participant** object.    |
-| [ConfigureMixer](../api/participant_configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure the participant audio mixer.            |
-| [Invite](../api/participant_invite.md)                          | [commsOperation](commsoperation.md)      | Invite a participant to the call.                 |
-| [Mute participant](../api/participant_mute.md)                  | [commsOperation](commsoperation.md)      | Mute a participant in a call.                     |
-| [Mute all participants](../api/participant_muteall.md)          | [commsOperation](commsoperation.md)      | Mute all the participants in the meeting.         |
+| [Get participant](../api/participant-get.md)                    | [participant](participant.md)            | Read properties of the **participant** object.    |
+| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure the participant audio mixer.            |
+| [Invite](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Invite a participant to the call.                 |
+| [Mute participant](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Mute a participant in a call.                     |
+| [Mute all participants](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Mute all the participants in the meeting.         |
 
 ## Properties
 
@@ -31,7 +39,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -92,10 +100,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participant resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,3 +1,11 @@
+---
+title: "ChartAreaFormat resource type"
+description: "Encapsulates the format properties for the overall chart area."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartAreaFormat resource type
 
 Encapsulates the format properties for the overall chart area.

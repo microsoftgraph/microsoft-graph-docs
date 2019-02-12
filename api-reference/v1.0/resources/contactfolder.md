@@ -1,27 +1,35 @@
+---
+title: "contactFolder resource type"
+description: "A folder that contains contacts."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+---
+
 # contactFolder resource type
 
 A folder that contains contacts.
 
-This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
-by providing a [delta](../api/contactfolder_delta.md) function.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/contactfolder-delta.md) function.
 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get contactFolder](../api/contactfolder_get.md) | [contactFolder](contactfolder.md) |Get a contact folder by using the contact folder ID.|
-|[Update](../api/contactfolder_update.md) | [contactFolder](contactfolder.md) |Update contactFolder object. |
-|[Delete](../api/contactfolder_delete.md) | None |Delete contactFolder object. |
-|[List childFolders](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
-|[Create child contactFolder](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
-|[delta](../api/contact_delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
-|[List contacts in folder](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
-|[Create contact in folder](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
-|[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Get contactFolders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
-|[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Get a contactFolder that contains a multi-value extended property by using `$expand`. |
+|[Get contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Get a contact folder by using the contact folder ID.|
+|[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Update contactFolder object. |
+|[Delete](../api/contactfolder-delete.md) | None |Delete contactFolder object. |
+|[List childFolders](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
+|[Create child contactFolder](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
+|[delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
+|[List contacts in folder](../api/contactfolder-list-contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
+|[Create contact in folder](../api/contactfolder-post-contacts.md) |[Contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
+|[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get contactFolders that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
+|[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get a contactFolder that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -84,8 +92,8 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to messages in a folder](../../../concepts/delta_query_messages.md)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
+- [Get incremental changes to messages in a folder](/graph/delta-query-messages)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

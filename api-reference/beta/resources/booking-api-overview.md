@@ -1,6 +1,14 @@
+---
+title: "Use the Microsoft Bookings API in Microsoft Graph"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "bookings"
+---
+
 # Use the Microsoft Bookings API in Microsoft Graph
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Microsoft Bookings lets small business owners manage customer bookings and information with minimal setup. A business owner can create one or more businesses, with each business offering a set of services. The owner can set up staff members, and specify the services that each staff member performs. A customer can book an appointment for a specific service in that business in an online or mobile app. Bookings ensures that the appointment time is kept up-to-date for the business, staff members, and customers involved.
 
@@ -13,7 +21,7 @@ Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API in
 
 ## Using the Bookings REST API
 
-Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokens](../../../concepts/auth_overview.md) for the corresponding operations.
+Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokens](/graph/auth-overview) for the corresponding operations.
 
 1. Make sure the business has an [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) subscription.
 2. Create a new **bookingBusiness** by sending a POST operation to the entity set. At minimum, you should specify a name for the new business that customers will see:
@@ -27,7 +35,7 @@ Content-Type: application/json
     "displayName":"Contoso"
 }
 ```
-Use the **id** property of the new **bookingBusiness** returned in the POST response to continue to [customize](../api/bookingbusiness_update.md) business settings, and add staff members and services for the business.
+Use the **id** property of the new **bookingBusiness** returned in the POST response to continue to [customize](../api/bookingbusiness-update.md) business settings, and add staff members and services for the business.
 
 3. Add individual staff members for the business:
 <!-- { "blockType": "ignored" } -->
@@ -74,17 +82,25 @@ The following table lists the common operations for a business in the Bookings A
 | Use cases		   | REST resources	| See also |
 |:---------------|:--------|:----------|
 | Create, get, update, or delete a business | [bookingBusiness](bookingbusiness.md) | [Methods of bookingBusiness](bookingbusiness.md#methods) |
-| Update the scheduling policy | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Update a bookingBusiness](../api/bookingbusiness_update.md) |
+| Update the scheduling policy | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Update a bookingBusiness](../api/bookingbusiness-update.md) |
 | Add, get, update, or delete staff members | [bookingStaffMember](bookingstaffmember.md) | [Methods of bookingStaffMember](bookingstaffmember.md#methods)  |
 | Add, get, update, or delete services | [bookingService](bookingservice.md) | [Methods of bookingService](bookingservice.md#methods)  |
-| Publish or unpublish the scheduling page | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness_publish.md) <br> [unpublish](../api/bookingbusiness_unpublish.md) |
+| Publish or unpublish the scheduling page | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness-publish.md) <br> [unpublish](../api/bookingbusiness-unpublish.md) |
 | Create, get, update, delete, or cancel an appointment | [bookingAppointment](bookingappointment.md) | [Methods of bookingAppointment](bookingappointment.md#methods)  |
-| Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness_list_calendarview.md) |
+| Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness-list-calendarview.md) |
 | Get currency | [bookingCurrency](bookingcurrency.md) | [Methods of bookingCurrency](bookingcurrency.md#methods) |
 
 
 ## See also
 
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
-- Learn how to choose [permissions](../../../concepts/permissions_reference.md) in Microsoft Graph.
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+- Learn how to choose [permissions](/graph/permissions-reference) in Microsoft Graph.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

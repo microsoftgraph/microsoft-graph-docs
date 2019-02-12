@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
@@ -28,12 +30,12 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | [Create list item][]      | POST /lists/{list-id}
 | [Get recent activities][] | GET /lists/{list-id}/activities
 
-[Get list]: ../api/list_get.md
-[Enumerate list items]: ../api/listitem_list.md
-[Update list item]: ../api/listItem_update.md
-[Delete list item]: ../api/listItem_delete.md
-[Create list item]: ../api/listItem_create.md
-[Get recent activities]: ../api/activities_list.md
+[Get list]: ../api/list-get.md
+[Enumerate list items]: ../api/listitem-list.md
+[Update list item]: ../api/listitem-update.md
+[Delete list item]: ../api/listitem-delete.md
+[Create list item]: ../api/listitem-create.md
+[Get recent activities]: ../api/activities-list.md
 
 ## JSON representation
 
@@ -107,19 +109,20 @@ The **list** resource has the following relationships to other resources.
 | **drive**         | [drive][]                   | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | All items contained in the list.
 
-[baseItem]: baseItem.md
-[contentType]: contentType.md
+[baseItem]: baseitem.md
+[contentType]: contenttype.md
 [drive]: drive.md
-[driveItem]: driveItem.md
-[columnDefinition]: columnDefinition.md
-[identitySet]: identitySet.md
-[itemActivity]: itemActivity.md
-[listInfo]: listInfo.md
-[listItem]: listItem.md
+[driveItem]: driveitem.md
+[columnDefinition]: columndefinition.md
+[identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[listInfo]: listinfo.md
+[listItem]: listitem.md
 [site]: site.md
 [systemFacet]: systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -127,5 +130,9 @@ The **list** resource has the following relationships to other resources.
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
     "Lists": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,14 @@
+---
+title: "pivotTable resource type"
+description: "Represents an Excel PivotTable."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # pivotTable resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Excel PivotTable.
 
@@ -8,9 +16,9 @@ Represents an Excel PivotTable.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
-|[Refresh](../api/workbookpivottable_refresh.md)|None|Refreshes the PivotTable.	|
-|[Refreshall](../api/workbookpivottable_refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
+|[Get workbookPivotTable](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
+|[Refresh](../api/workbookpivottable-refresh.md)|None|Refreshes the PivotTable.	|
+|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -41,3 +49,11 @@ Here is a JSON representation of the resource.
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/workbookpivottable.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,0 +1,108 @@
+---
+title: "Update advancedThreatProtectionOnboardingStateSummary"
+description: "Update the properties of a advancedThreatProtectionOnboardingStateSummary object."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
+---
+
+# Update advancedThreatProtectionOnboardingStateSummary
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Update the properties of a [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) object.
+
+## Prerequisites
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
+```
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt; Required.|
+|Accept|application/json|
+
+## Request body
+In the request body, supply a JSON representation for the [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) object.
+
+The following table shows the properties that are required when you create the [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique Identifier|
+|unknownDeviceCount|Int32|Number of unknown devices|
+|notApplicableDeviceCount|Int32|Number of not applicable devices|
+|compliantDeviceCount|Int32|Number of compliant devices|
+|remediatedDeviceCount|Int32|Number of remediated devices|
+|nonCompliantDeviceCount|Int32|Number of NonCompliant devices|
+|errorDeviceCount|Int32|Number of error devices|
+|conflictDeviceCount|Int32|Number of conflict devices|
+|notAssignedDeviceCount|Int32|Number of not assigned devices|
+
+
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) object in the response body.
+
+## Example
+
+### Request
+Here is an example of the request.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectionOnboardingStateSummary
+Content-type: application/json
+Content-length: 331
+
+{
+  "@odata.type": "#microsoft.graph.advancedThreatProtectionOnboardingStateSummary",
+  "unknownDeviceCount": 2,
+  "notApplicableDeviceCount": 8,
+  "compliantDeviceCount": 4,
+  "remediatedDeviceCount": 5,
+  "nonCompliantDeviceCount": 7,
+  "errorDeviceCount": 0,
+  "conflictDeviceCount": 3,
+  "notAssignedDeviceCount": 6
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 380
+
+{
+  "@odata.type": "#microsoft.graph.advancedThreatProtectionOnboardingStateSummary",
+  "id": "74089602-9602-7408-0296-087402960874",
+  "unknownDeviceCount": 2,
+  "notApplicableDeviceCount": 8,
+  "compliantDeviceCount": 4,
+  "remediatedDeviceCount": 5,
+  "nonCompliantDeviceCount": 7,
+  "errorDeviceCount": 0,
+  "conflictDeviceCount": 3,
+  "notAssignedDeviceCount": 6
+}
+```
+
+
+
+

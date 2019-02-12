@@ -1,0 +1,47 @@
+---
+title: "windows10NetworkProxyServer resource type"
+description: "Network Proxy Server Policy."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
+---
+
+# windows10NetworkProxyServer resource type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Network Proxy Server Policy.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|address|String|Address to the proxy server. Specify an address in the format <server>\[“:”<port>\]|
+|exceptions|String collection|Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node.|
+|useForLocalAddresses|Boolean|Specifies whether the proxy server should be used for local (intranet) addresses.|
+
+## Relationships
+None
+
+## JSON Representation
+Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.windows10NetworkProxyServer"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windows10NetworkProxyServer",
+  "address": "String",
+  "exceptions": [
+    "String"
+  ],
+  "useForLocalAddresses": true
+}
+```
+
+
+
+

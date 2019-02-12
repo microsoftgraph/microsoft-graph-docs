@@ -1,3 +1,11 @@
+---
+title: "ChartTitle resource type"
+description: "Represents a chart title object of a chart."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # ChartTitle resource type
 
 Represents a chart title object of a chart.
@@ -7,8 +15,8 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [WorkbookChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
-|[Update](../api/charttitle_update.md) | [WorkbookChartTitle](charttitle.md)	|Update ChartTitle object. |
+|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Read properties and relationships of chartTitle object.|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)	|Update ChartTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|

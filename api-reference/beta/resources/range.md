@@ -1,6 +1,14 @@
+---
+title: "Range resource type"
+description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
+---
+
 # Range resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
@@ -9,31 +17,31 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Range](../api/range_get.md) | [Range](range.md) |Read properties and relationships of range object.|
-|[Update](../api/range_update.md) | [Range](range.md)	|Update Range object. |
-|[Boundingrect](../api/range_boundingrect.md)|[Range](range.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
-|[Cell](../api/range_cell.md)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
-|[Column](../api/range_column.md)|[Range](range.md)|Gets a column contained in the range.|
-|[Columnsafter](../api/workbookrange_columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of columns to the right of the given range.|
-|[Columnsbefore](../api/workbookrange_columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of columns to the left of the given range.|
-|[Entirecolumn](../api/range_entirecolumn.md)|[Range](range.md)|Gets an object that represents the entire column of the range.|
-|[Entirerow](../api/range_entirerow.md)|[Range](range.md)|Gets an object that represents the entire row of the range.|
-|[Intersection](../api/range_intersection.md)|[Range](range.md)|Gets the range object that represents the rectangular intersection of the given ranges.|
-|[Lastcell](../api/range_lastcell.md)|[Range](range.md)|Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".|
-|[Lastcolumn](../api/range_lastcolumn.md)|[Range](range.md)|Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".|
-|[Lastrow](../api/range_lastrow.md)|[Range](range.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
-|[Offsetrange](../api/range_offsetrange.md)|[Range](range.md)|Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.|
-|[Row](../api/range_row.md)|[Range](range.md)|Gets a row contained in the range.|
-|[Rowsabove](../api/workbookrange_rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of rows above a given range.|
-|[Rowsbelow](../api/workbookrange_rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of rows below a given range.|
-|[Usedrange](../api/range_usedrange.md)|[Range](range.md)|Returns the used range of the given range object.|
-|[Clear](../api/range_clear.md)|None|Clear range values, format, fill, border, etc.|
-|[Delete](../api/range_delete.md)|None|Deletes the cells associated with the range.|
-|[Insert](../api/range_insert.md)|[Range](range.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
-|[Merge](../api/range_merge.md)|None|Merge the range cells into one region in the worksheet.|
-|[Resizedrange](../api/workbookrange_resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
-|[Unmerge](../api/range_unmerge.md)|None|Unmerge the range cells into separate cells.|
-|[Visibleview](../api/workbookrange_visibleview.md)|[workbookRangeView](workbookrangeview.md)|Get the range visible from a filtered range.|
+|[Get Range](../api/range-get.md) | [Range](range.md) |Read properties and relationships of range object.|
+|[Update](../api/range-update.md) | [Range](range.md)	|Update Range object. |
+|[Boundingrect](../api/range-boundingrect.md)|[Range](range.md)|Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".|
+|[Cell](../api/range-cell.md)|[Range](range.md)|Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.|
+|[Column](../api/range-column.md)|[Range](range.md)|Gets a column contained in the range.|
+|[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of columns to the right of the given range.|
+|[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of columns to the left of the given range.|
+|[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|Gets an object that represents the entire column of the range.|
+|[Entirerow](../api/range-entirerow.md)|[Range](range.md)|Gets an object that represents the entire row of the range.|
+|[Intersection](../api/range-intersection.md)|[Range](range.md)|Gets the range object that represents the rectangular intersection of the given ranges.|
+|[Lastcell](../api/range-lastcell.md)|[Range](range.md)|Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".|
+|[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".|
+|[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".|
+|[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.|
+|[Row](../api/range-row.md)|[Range](range.md)|Gets a row contained in the range.|
+|[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of rows above a given range.|
+|[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Gets a certain number of rows below a given range.|
+|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Returns the used range of the given range object.|
+|[Clear](../api/range-clear.md)|None|Clear range values, format, fill, border, etc.|
+|[Delete](../api/range-delete.md)|None|Deletes the cells associated with the range.|
+|[Insert](../api/range-insert.md)|[Range](range.md)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.|
+|[Merge](../api/range-merge.md)|None|Merge the range cells into one region in the worksheet.|
+|[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
+|[Unmerge](../api/range-unmerge.md)|None|Unmerge the range cells into separate cells.|
+|[Visibleview](../api/workbookrange-visibleview.md)|[workbookRangeView](workbookrangeview.md)|Get the range visible from a filtered range.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -100,10 +108,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Range resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/range.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

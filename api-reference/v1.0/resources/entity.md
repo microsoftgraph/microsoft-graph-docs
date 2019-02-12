@@ -1,3 +1,9 @@
+---
+title: "entity resource type"
+description: "None"
+localization_priority: Normal
+---
+
 # entity resource type
 
 ## Properties

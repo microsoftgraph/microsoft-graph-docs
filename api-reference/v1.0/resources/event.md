@@ -1,42 +1,55 @@
+---
+title: "event resource type"
+description: "An event in a calendar."
+author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
+---
+
 # event resource type
 
-An event in a calendar.
+An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
 
 This resource supports:
 
-- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
-- Subscribing to [change notifications](../../../concepts/webhooks.md).
-- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
-by providing a [delta](../api/event_delta.md) function.
+- Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
+- Subscribing to [change notifications](/graph/webhooks).
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+by providing a [delta](../api/event-delta.md) function.
 
+> **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
+
+ - You can organize only user calendars in a [calendarGroup](calendargroup.md).
+ - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
+  - Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List events](../api/user_list_events.md)|[event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
-|[Create event](../api/user_post_events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
-|[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
-|[Update](../api/event_update.md) | [event](event.md) |Update event object. |
-|[Delete](../api/event_delete.md) | None |Delete event object. |
-|[accept](../api/event_accept.md)|None|Accept the specified event.|
-|[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
-|[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
-|[delta](../api/event_delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
-|[dismissReminder](../api/event_dismissreminder.md)|None|Dismiss the reminder for the specified event.|
-|[snoozeReminder](../api/event_snoozereminder.md)|None|Snooze the reminder for the specified event.|
-|[List instances](../api/event_list_instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
+|[List events](../api/user-list-events.md)|[event](event.md) collection |Retrieve a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single instance meetings and series masters.|
+|[Create event](../api/user-post-events.md) |[event](event.md)| Create a new event by posting to the instances collection.|
+|[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
+|[Update](../api/event-update.md) | [event](event.md) |Update event object. |
+|[Delete](../api/event-delete.md) | None |Delete event object. |
+|[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
+|[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
+|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
+|[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
+|[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
+|[List instances](../api/event-list-instances.md) |[event](event.md) collection| Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.|
 |**Attachments**| | |
-|[List attachments](../api/event_list_attachments.md) |[attachment](attachment.md) collection| Get all attachments on an event.|
-|[Add attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Add a new attachment to an event by posting to the attachments collection.|
+|[List attachments](../api/event-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an event.|
+|[Add attachment](../api/event-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to an event by posting to the attachments collection.|
 |**Open extensions**| | |
-|[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
-|[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
+|[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties in a new or existing instance of a resource.|
+|[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension object or objects identified by name or fully qualified name.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
-|[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
-|[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Create one or more single-value extended properties in a new or existing event.   |
+|[Get event with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Get events that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Create one or more multi-value extended properties in a new or existing event.  |
+|[Get event with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Get an event that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -49,7 +62,7 @@ by providing a [delta](../api/event_delta.md) function.
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars.|
+|iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars. Read-only.|
 |id|String| Read-only.|
 |importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
@@ -79,7 +92,7 @@ by providing a [delta](../api/event_delta.md) function.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileAttachment.md) and [itemAttachment](itemAttachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Read-only. Nullable.|
 |instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
@@ -198,11 +211,11 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md)
-- [Get incremental changes to events in a folder](../../../concepts/delta_query_events.md)
-- [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
-- [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
-- [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
+- [Get incremental changes to events in a folder](/graph/delta-query-events)
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

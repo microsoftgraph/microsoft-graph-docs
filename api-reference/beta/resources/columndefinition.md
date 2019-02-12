@@ -3,17 +3,23 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
+localization_priority: Normal
 ---
-# ColumnDefinition resource
+# columnDefinition resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## JSON representation
 
-Here is a JSON representation of a ColumnDefinition resource.
+Here is a JSON representation of a columnDefinition resource.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnDefinition",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnDefinition"
+}-->
 
 ```json
 {
@@ -33,6 +39,7 @@ Here is a JSON representation of a ColumnDefinition resource.
   "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
   "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
   "defaultValue": { "@odata.type": "microsoft.graph.defaultColumnValue" },
+  "geolocation": { "@odata.type": "microsoft.graph.geolocationColumn" },
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
@@ -42,7 +49,9 @@ Here is a JSON representation of a ColumnDefinition resource.
 
 ## Properties
 
-The **columnDefinition** resource has the following properties.
+Columns can hold data of various types.
+The following properties indicate what type of data a column stores, as well as additional settings for that data.
+The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text) are mutually exclusive -- a column can only have one of them specified.
 
 | Property name           | Type    | Description
 |:------------------------|:--------|:-----------------------------------------
@@ -56,48 +65,54 @@ The **columnDefinition** resource has the following properties.
 | **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
 | **readOnly**            | bool    | Specifies whether the column values can be modified.
 | **required**            | boolean | Specifies whether the column value is not optional.
-
-Columns can hold data of various types.
-The following properties indicate what type of data a column stores, as well as additional settings for that data.
-These properties are mutually exclusive -- a column can only have one of them specified.
-
-| Property name     | Type                    | Description
-|:------------------|:------------------------|:-------------------------------
 | **boolean**       | [booleanColumn][]       | This column stores boolean values.
 | **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
 | **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
 | **currency**      | [currencyColumn][]      | This column stores currency values.
 | **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
 | **defaultValue**  | [defaultColumnValue][]  | The default value for this column.
+| **geolocation**   | [geolocationColumn][]   | This column stores a geolocation.
 | **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
 | **number**        | [numberColumn][]        | This column stores number values.
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
 | **text**          | [textColumn][]          | This column stores text values.
 
-Note: These properties correspond to SharePoint's [SPFieldType][] enumeration.
-While the most common field types are represented above, this beta API is still missing some.
+>**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
+While the most common field types are represented in the previous table, this beta API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
 
-[booleanColumn]: booleanColumn.md
-[calculatedColumn]: calculatedColumn.md
-[choiceColumn]: choiceColumn.md
-[currencyColumn]: currencyColumn.md
-[dateTimeColumn]: dateTimeColumn.md
-[defaultColumnValue]: defaultColumnValue.md
-[lookupColumn]: lookupColumn.md
-[numberColumn]: numberColumn.md
-[personOrGroupColumn]: personOrGroupColumn.md
-[textColumn]: textColumn.md
-[fieldValueSet]: fieldValueSet.md
+## Remarks
+
+ColumnDefinitions and field values for `hidden` columns are not shown by default.
+To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
+To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
+
+[booleanColumn]: booleancolumn.md
+[calculatedColumn]: calculatedcolumn.md
+[choiceColumn]: choicecolumn.md
+[currencyColumn]: currencycolumn.md
+[dateTimeColumn]: datetimecolumn.md
+[defaultColumnValue]: defaultcolumnvalue.md
+[geolocationColumn]: geolocationcolumn.md
+[lookupColumn]: lookupcolumn.md
+[numberColumn]: numbercolumn.md
+[personOrGroupColumn]: personorgroupcolumn.md
+[textColumn]: textcolumn.md
+[fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnDefinition"
-} -->
+  "tocPath": "Resources/ColumnDefinition",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,0 +1,28 @@
+---
+title: "windowsAppStartLayoutTileSize enum type"
+description: "The tile size of Windows app in the start layout."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
+---
+
+# windowsAppStartLayoutTileSize enum type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+The tile size of Windows app in the start layout.
+
+## Members
+|Member|Value|Description|
+|:---|:---|:---|
+|hidden|0|Hidden.|
+|small|1|Small 1x1.|
+|medium|2|Medium 2x2.|
+|wide|3|Wide 4x2.|
+|large|4|Large 4x4.|
+
+
+
+

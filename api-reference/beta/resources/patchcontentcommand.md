@@ -1,12 +1,18 @@
+---
+title: "patchContentCommand resource type"
+description: "The changes to make to a OneNote page in a PATCH request."
+localization_priority: Normal
+---
+
 # patchContentCommand resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The changes to make to a OneNote page in a PATCH request.
 
 ## JSON representation
 
-Here is a JSON representation of the resource, which is sent in the body of the [PATCH pages/{id}`](../api/page_update.md) request. 
+Here is a JSON representation of the resource, which is sent in the body of the [PATCH pages/{id}`](../api/page-update.md) request. 
 
 <!-- {
   "blockType": "resource",
@@ -36,10 +42,15 @@ Here is a JSON representation of the resource, which is sent in the body of the 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "patchContentCommand resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/patchcontentcommand.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

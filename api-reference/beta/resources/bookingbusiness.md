@@ -1,6 +1,14 @@
+---
+title: "bookingBusiness resource type"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
+---
+
 # bookingBusiness resource type
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents a business in Microsoft Bookings. This is the top level object in the Microsoft Bookings API. It contains business information and related business objects such as appointments, customers, services, and staff members.
 
@@ -8,22 +16,22 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List bookingBusinesses](../api/bookingbusiness_list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
-|[Create bookingBusiness](../api/bookingbusiness_post_bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
-|[Get bookingBusiness](../api/bookingbusiness_get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of bookingBusiness object.|
-|[Update](../api/bookingbusiness_update.md) | [bookingBusiness](bookingbusiness.md)	|Update properties in a **bookingBusiness** object. |
-|[Delete](../api/bookingbusiness_delete.md) | None |Delete a **bookingBusiness** object. |
-|[Create bookingAppointment](../api/bookingbusiness_post_appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new bookingAppointment by posting to the appointments collection.|
-|[List appointments](../api/bookingbusiness_list_appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a bookingAppointment object collection.|
-|[Create bookingCustomer](../api/bookingbusiness_post_customers.md) |[bookingCustomer](bookingcustomer.md)| Create a new bookingCustomer by posting to the customers collection.|
-|[List customers](../api/bookingbusiness_list_customers.md) |[bookingCustomer](bookingcustomer.md) collection| Get a bookingCustomer object collection.|
-|[Create bookingService](../api/bookingbusiness_post_services.md) |[bookingService](bookingservice.md)| Create a new bookingService by posting to the services collection.|
-|[List services](../api/bookingbusiness_list_services.md) |[bookingService](bookingservice.md) collection| Get a bookingService object collection.|
-|[Create bookingStaffMember](../api/bookingbusiness_post_staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
-|[List staffMembers](../api/bookingbusiness_list_staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
-|[List calendarView](../api/bookingbusiness_list_calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
-|[publish](../api/bookingbusiness_publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
-|[unpublish](../api/bookingbusiness_unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
+|[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
+|[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
+|[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of bookingBusiness object.|
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update properties in a **bookingBusiness** object. |
+|[Delete](../api/bookingbusiness-delete.md) | None |Delete a **bookingBusiness** object. |
+|[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new bookingAppointment by posting to the appointments collection.|
+|[List appointments](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a bookingAppointment object collection.|
+|[Create bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Create a new bookingCustomer by posting to the customers collection.|
+|[List customers](../api/bookingbusiness-list-customers.md) |[bookingCustomer](bookingcustomer.md) collection| Get a bookingCustomer object collection.|
+|[Create bookingService](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Create a new bookingService by posting to the services collection.|
+|[List services](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md) collection| Get a bookingService object collection.|
+|[Create bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
+|[List staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
+|[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
+|[publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
+|[unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -37,7 +45,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |id|String|A unique programmatic identifier for the business. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
 |phone|String|The telephone number for the business. The **phone** property, together with **address** and **webSiteUrl**, appear in the footer of a business scheduling page.|
-|publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness_publish.md) or [unpublish](../api/bookingbusiness_unpublish.md) the page. Read-only.|
+|publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness-publish.md) or [unpublish](../api/bookingbusiness-unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
 |webSiteUrl|String|The URL of the business web site. The **webSiteUrl** property, together with **address**, **phone**, appear in the footer of a business scheduling page.|
 
@@ -85,10 +93,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingBusiness resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingbusiness.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

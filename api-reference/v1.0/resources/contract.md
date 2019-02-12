@@ -1,3 +1,11 @@
+---
+title: "Contract resource type"
+description: "Represents an existing partnership that the partner tenant has with a customer tenant."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
+---
+
 # Contract resource type
 Represents an existing partnership that the partner tenant has with a customer tenant.
 
@@ -8,8 +16,8 @@ Represents an existing partnership that the partner tenant has with a customer t
 
 | Method   | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Get contract](../api/contract_get.md) | Contract |Read properties of a specific contract object. |
-|[List contracts](../api/contract_list.md) | Contract collection | List of contracts in the partner tenant. |
+|[Get contract](../api/contract-get.md) | Contract |Read properties of a specific contract object. |
+|[List contracts](../api/contract-list.md) | Contract collection | List of contracts in the partner tenant. |
 
 ## Properties
 | Property   | Type | Description |

@@ -1,0 +1,44 @@
+---
+title: "sharingDetail resource type"
+description: "Complex type containing properties of Shared items. "
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
+---
+
+# sharingDetail resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Complex type containing properties of [Shared](insights-shared.md) items. 
+
+## JSON representation
+Here is a JSON representation of the resource
+
+```json
+{
+  "sharedDateTime": "dateTimeOffset",
+  "sharingSubject": "string",
+  "sharingType": "string",
+  "sharedBy": "insightIdentity",
+  "resourceReference": "resourceReference"
+}
+```
+
+## Properties
+
+| Property              | Type          | Description  |
+| -------------         |-----------    | -------------|
+| sharedDateTime      	| DateTimeOffset| The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`. Read-only.  |
+| sharingSubject      	| String	      | The subject with which the document was shared. |
+| sharingType     		  | String        | Determines the way the document was shared, can be by a "Link", "Attachment", "Group", "Site".     |
+| sharedBy      	      | [insightIdentity](insights-insightidentity.md)	    | The user who shared the document.  |
+| sharingReference		  | [resourceReference](insights-resourcereference.md)	    |  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-sharingdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

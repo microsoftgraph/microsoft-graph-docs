@@ -1,6 +1,12 @@
+---
+title: "attachment resource type"
+description: "You can add related content to an event,"
+localization_priority: Normal
+---
+
 # attachment resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can add related content to an [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) in the form of an attachment.
@@ -9,7 +15,7 @@ You can add related content to an [event](../resources/event.md),
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource)
 * An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
-* A link to a file ([referenceAttachment](../resources/referenceAttachment.md) resource)
+* A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
 ## Methods
 
@@ -18,21 +24,21 @@ The following methods apply to any of the derived types of attachments (**fileAt
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment_get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post.|
-|[Add attachment to an event](../api/event_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event.|
-|[Add attachment to a message](../api/message_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
-|[Add attachment to an Outlook task](../api/outlooktask_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an Outlook task.|
-|[Add attachment to a post](../api/post_post_attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
-|[List attachments of an event](../api/event_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
-|[List attachments of a message](../api/message_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
-|[List attachments of an Outlook task](../api/outlooktask_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
-|[List attachments of a post](../api/post_list_attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
-|[Delete](../api/attachment_delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
+|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post.|
+|[Add attachment to an event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event.|
+|[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
+|[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an Outlook task.|
+|[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
+|[List attachments of an event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
+|[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
+|[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
+|[List attachments of a post](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
+|[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 
 ## Properties
 
 The following are the base properties of any attachment resource. Refer to the specific type of attachment ([fileAttachment](../resources/fileattachment.md),
-[itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceAttachment.md)) for additional properties.
+[itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md)) for additional properties.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -74,10 +80,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/attachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

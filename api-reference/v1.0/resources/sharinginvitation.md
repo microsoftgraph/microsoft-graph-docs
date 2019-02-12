@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingInvitation
+localization_priority: Normal
 ---
 # SharingInvitation resource type
 
@@ -40,8 +41,8 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-[DriveItem]: driveItem.md
-[IdentitySet]: identitySet.md
+[DriveItem]: driveitem.md
+[IdentitySet]: identityset.md
 
 <!-- {
   "type": "#page.annotation",

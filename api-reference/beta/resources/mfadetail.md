@@ -1,3 +1,9 @@
+---
+title: "mfaDetail resource type"
+description: "Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail) "
+localization_priority: Normal
+---
+
 # mfaDetail resource type
 Indicates MFA details for a specific sign-in. It includes the authentication method used for signing in as well as auth details (for example: Phone, SMS or voicemail) 
 

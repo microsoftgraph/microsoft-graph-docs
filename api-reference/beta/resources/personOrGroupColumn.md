@@ -1,14 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: "simonhult"
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
+localization_priority: Normal
+ms.prod: "insights"
 ---
 # PersonOrGroupColumn resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **personOrGroupColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
+The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
 
 ## JSON representation
 
@@ -56,10 +57,15 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 
 Note: Additional DisplayAs types may be returned.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/PersonOrGroupColumn"
-} -->
+  "tocPath": "Resources/PersonOrGroupColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/personOrGroupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,14 @@
+---
+title: "calendarGroup resource type"
+description: "A group of user calendars."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+---
+
 # calendarGroup resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A group of user calendars.
 
@@ -8,13 +16,13 @@ A group of user calendars.
 
 | Method                                                      | Return Type                        | Description                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
-| [List calendar groups](../api/user_list_calendargroups.md)  | [Calendar](calendar.md) collection | Get the user's calendar groups.                               |
-| [Create calendar group](../api/user_post_calendargroups.md) | [Calendar](calendar.md)            | Create a new calendar group.                                  |
-| [Get calendar group](../api/calendargroup_get.md)           | [calendarGroup](calendargroup.md)  | Read properties and relationships of a calendar group object. |
-| [Update](../api/calendargroup_update.md)                    | [calendarGroup](calendargroup.md)  | Update calendarGroup object.                                  |
-| [Delete](../api/calendargroup_delete.md)                    | None                               | Delete calendarGroup object.                                  |
-| [List calendars](../api/calendargroup_list_calendars.md)    | [Calendar](calendar.md) collection | List calendars in a calendar group.                           |
-| [Create Calendar](../api/calendargroup_post_calendars.md)   | [Calendar](calendar.md)            | Create a new Calendar in a calendar group.                    |
+| [List calendar groups](../api/user-list-calendargroups.md)  | [Calendar](calendar.md) collection | Get the user's calendar groups.                               |
+| [Create calendar group](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Create a new calendar group.                                  |
+| [Get calendar group](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Read properties and relationships of a calendar group object. |
+| [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Update calendarGroup object.                                  |
+| [Delete](../api/calendargroup-delete.md)                    | None                               | Delete calendarGroup object.                                  |
+| [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | List calendars in a calendar group.                           |
+| [Create Calendar](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Create a new Calendar in a calendar group.                    |
 
 ## Properties
 
@@ -56,10 +64,15 @@ Here is a JSON representation of the resource
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendarGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calendargroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,14 @@
+---
+title: "bookingService resource type"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
+---
+
 # bookingService resource type
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
@@ -8,11 +16,11 @@ Represents information about a particular service provided by a [bookingBusiness
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness_list_services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Create bookingService](../api/bookingbusiness_post_services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Get bookingService](../api/bookingservice_get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice_update.md) | [bookingService](bookingservice.md)	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Delete](../api/bookingservice_delete.md) | None |Delete a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingbusiness](../resources/bookingbusiness.md).|
+|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md).|
+|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -72,10 +80,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingService resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingservice.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

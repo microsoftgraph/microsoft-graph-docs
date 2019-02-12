@@ -1,3 +1,9 @@
+---
+title: "physicalAddress resource type"
+description: "Represents the street address of a resource such as a contact or event."
+localization_priority: Normal
+---
+
 # physicalAddress resource type
 
 Represents the street address of a resource such as a contact or event.

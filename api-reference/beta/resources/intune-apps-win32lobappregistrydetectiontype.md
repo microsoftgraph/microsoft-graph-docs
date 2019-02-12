@@ -1,0 +1,29 @@
+---
+title: "win32LobAppRegistryDetectionType enum type"
+description: "Contains all supported registry data detection type."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
+---
+
+# win32LobAppRegistryDetectionType enum type
+
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Contains all supported registry data detection type.
+
+## Members
+|Member|Value|Description|
+|:---|:---|:---|
+|notConfigured|0|Not configured.|
+|exists|1|The specified registry key or value exists.|
+|doesNotExist|2|The specified registry key or value does not exist.|
+|string|3|String value type.|
+|integer|4|Integer value type.|
+|version|5|Version value type.|
+
+
+
+

@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
+localization_priority: Normal
 ---
 # TextColumn resource type
 
-The **textColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are text.
+The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.
 
 ## JSON representation
 
