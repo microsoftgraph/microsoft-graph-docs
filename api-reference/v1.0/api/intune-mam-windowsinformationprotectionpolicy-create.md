@@ -1,6 +1,9 @@
 ---
 title: "Create windowsInformationProtectionPolicy"
 description: "Create a new windowsInformationProtectionPolicy object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsInformationProtectionPolicy

@@ -1,6 +1,9 @@
 ---
 title: "List deviceComplianceUserStatuses"
 description: "List properties and relationships of the deviceComplianceUserStatus objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceComplianceUserStatuses

@@ -1,6 +1,9 @@
 ---
 title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List verificationDnsRecords

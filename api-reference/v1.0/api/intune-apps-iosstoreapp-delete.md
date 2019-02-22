@@ -1,6 +1,9 @@
 ---
 title: "Delete iosStoreApp"
 description: "Deletes a iosStoreApp."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosStoreApp

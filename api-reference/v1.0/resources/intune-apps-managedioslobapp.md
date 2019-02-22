@@ -1,6 +1,9 @@
 ---
 title: "managedIOSLobApp resource type"
 description: "Contains properties and inherited properties for Managed iOS Line Of Business apps."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedIOSLobApp resource type

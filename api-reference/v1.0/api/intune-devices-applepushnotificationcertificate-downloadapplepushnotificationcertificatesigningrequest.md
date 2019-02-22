@@ -1,6 +1,9 @@
 ---
 title: "downloadApplePushNotificationCertificateSigningRequest function"
 description: "Download Apple push notification certificate signing request"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # downloadApplePushNotificationCertificateSigningRequest function

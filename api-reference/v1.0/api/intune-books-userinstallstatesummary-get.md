@@ -1,6 +1,9 @@
 ---
 title: "Get userInstallStateSummary"
 description: "Read properties and relationships of the userInstallStateSummary object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get userInstallStateSummary

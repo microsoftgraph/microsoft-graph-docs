@@ -1,6 +1,9 @@
 ---
 title: "rebootNow action"
 description: "Reboot device"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # rebootNow action

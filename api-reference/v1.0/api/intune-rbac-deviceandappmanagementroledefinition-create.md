@@ -1,6 +1,9 @@
 ---
 title: "Create deviceAndAppManagementRoleDefinition"
 description: "Create a new deviceAndAppManagementRoleDefinition object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceAndAppManagementRoleDefinition

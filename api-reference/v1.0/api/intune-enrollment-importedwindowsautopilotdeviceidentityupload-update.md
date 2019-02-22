@@ -1,6 +1,9 @@
 ---
 title: "Update importedWindowsAutopilotDeviceIdentityUpload"
 description: "Update the properties of a importedWindowsAutopilotDeviceIdentityUpload object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update importedWindowsAutopilotDeviceIdentityUpload

@@ -1,6 +1,9 @@
 ---
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosDeviceFeaturesConfiguration resource type

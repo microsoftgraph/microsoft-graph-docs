@@ -1,6 +1,9 @@
 ---
 title: "androidWorkProfileGeneralDeviceConfiguration resource type"
 description: "Android Work Profile general device configuration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidWorkProfileGeneralDeviceConfiguration resource type

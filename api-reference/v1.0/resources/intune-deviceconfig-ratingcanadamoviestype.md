@@ -1,6 +1,9 @@
 ---
 title: "ratingCanadaMoviesType enum type"
 description: "Movies rating labels in Canada"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingCanadaMoviesType enum type

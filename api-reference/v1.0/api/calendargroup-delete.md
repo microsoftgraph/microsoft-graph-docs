@@ -1,6 +1,9 @@
 ---
 title: "Delete calendarGroup"
 description: "Delete a calendar group other than the default calendar group."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete calendarGroup

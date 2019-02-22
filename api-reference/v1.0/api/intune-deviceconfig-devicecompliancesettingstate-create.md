@@ -1,6 +1,9 @@
 ---
 title: "Create deviceComplianceSettingState"
 description: "Create a new deviceComplianceSettingState object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceComplianceSettingState

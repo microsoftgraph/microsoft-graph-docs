@@ -1,6 +1,9 @@
 ---
 title: "List managedDeviceMobileAppConfigurationDeviceStatuses"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationDeviceStatus objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedDeviceMobileAppConfigurationDeviceStatuses

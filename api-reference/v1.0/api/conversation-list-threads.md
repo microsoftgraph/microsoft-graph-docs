@@ -1,6 +1,9 @@
 ---
 title: "List threads"
 description: "Get all the threads in a group conversation."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # List threads
@@ -16,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Group.Read.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

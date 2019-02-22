@@ -1,6 +1,9 @@
 ---
 title: "Update deviceConfigurationUserOverview"
 description: "Update the properties of a deviceConfigurationUserOverview object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceConfigurationUserOverview

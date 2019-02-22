@@ -1,6 +1,9 @@
 ---
 title: "Delete windowsUniversalAppX"
 description: "Deletes a windowsUniversalAppX."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsUniversalAppX

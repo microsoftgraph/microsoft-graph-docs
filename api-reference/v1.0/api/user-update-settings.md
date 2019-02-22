@@ -1,6 +1,9 @@
 ---
 title: "Update settings"
 description: "Update the properties of the settings object. "
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update settings

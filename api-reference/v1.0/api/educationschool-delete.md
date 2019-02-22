@@ -1,6 +1,9 @@
 ---
 title: "Delete educationSchool"
 description: "Delete a school."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Delete educationSchool

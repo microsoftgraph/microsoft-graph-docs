@@ -1,6 +1,9 @@
 ---
 title: "managedEBook resource type"
 description: "An abstract class containing the base properties for Managed eBook."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedEBook resource type

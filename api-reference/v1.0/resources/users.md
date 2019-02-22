@@ -1,6 +1,9 @@
 ---
 title: "Working with users in Microsoft Graph"
 description: "You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Working with users in Microsoft Graph

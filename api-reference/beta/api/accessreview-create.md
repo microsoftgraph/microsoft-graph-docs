@@ -1,15 +1,18 @@
 ---
 title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create accessReview
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
-Prior to making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.
+Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.
 
 After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.  
 
@@ -44,11 +47,11 @@ The following table shows the properties that are required when you create an ac
 | `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.   |
 | `description`             |`String`                                                        | The description, to show to the reviewers. |
 | `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegate` or `entityOwners`. | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which an access review is created, such as a memberships of an group or the assignments of users to an application. | 
+| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which an access review is created, such as the membership of a group or the assignments of users to an application. | 
 
 
-If the reviewerType being supplied has the value `delegate`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.
+If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.
 
 In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior. In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,
 
@@ -78,7 +81,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -92,10 +95,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -118,15 +133,20 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create accessReview",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

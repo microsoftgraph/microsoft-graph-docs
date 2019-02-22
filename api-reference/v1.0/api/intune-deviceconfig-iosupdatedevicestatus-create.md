@@ -1,6 +1,9 @@
 ---
 title: "Create iosUpdateDeviceStatus"
 description: "Create a new iosUpdateDeviceStatus object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosUpdateDeviceStatus

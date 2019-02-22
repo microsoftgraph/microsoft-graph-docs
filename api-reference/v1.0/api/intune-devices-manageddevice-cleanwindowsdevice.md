@@ -1,6 +1,9 @@
 ---
 title: "cleanWindowsDevice action"
 description: "Clean Windows device"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # cleanWindowsDevice action

@@ -1,6 +1,9 @@
 ---
 title: "Create plannerBucket"
 description: "Use this API to create a new **plannerBucket**."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Create plannerBucket

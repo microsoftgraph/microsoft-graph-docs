@@ -1,6 +1,7 @@
 ---
 title: "Update profilephoto"
 description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
+localization_priority: Priority
 ---
 
 # Update profilephoto

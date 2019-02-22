@@ -1,17 +1,21 @@
 ---
 title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create windowsManagedDevice
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -117,12 +121,13 @@ The following table shows the properties that are required when you create the w
 If successful, this method returns a `201 Created` response code and a [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
 Content-type: application/json
-Content-length: 7173
+Content-length: 7231
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -218,7 +223,9 @@ Content-length: 7173
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {
@@ -295,7 +302,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7222
+Content-Length: 7280
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -392,7 +399,9 @@ Content-Length: 7222
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {
@@ -463,7 +472,6 @@ Content-Length: 7222
   }
 }
 ```
-
 
 
 

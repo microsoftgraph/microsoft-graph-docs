@@ -1,6 +1,9 @@
 ---
 title: "Update androidWorkProfileCompliancePolicy"
 description: "Update the properties of a androidWorkProfileCompliancePolicy object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidWorkProfileCompliancePolicy

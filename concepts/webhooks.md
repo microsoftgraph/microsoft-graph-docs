@@ -1,6 +1,8 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
+author: "piotrci"
+localization_priority: Priority
 ---
 
 # Set up notifications for changes in user data
@@ -13,17 +15,17 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content shared on OneDrive including drives associated with SharePoint sites
-- User's personal OneDrive folders
-- Security Alerts
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- [user][]
+- [group][]
+- Office 365 group [conversation][]
+- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
+- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- Security [alert][]
 
-For instance, you can create a subscription to a specific mail folder:
+You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
@@ -32,14 +34,14 @@ Or to a top-level resource:
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
-Or to a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a user's personal OneDrive:
+Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Or to a new [Security API alert](security-concept-overview.md):
+Or to the root folder of a SharePoint/OneDrive for Business drive:
+`/drive/root`
+
+Or to a new [Security API](security-concept-overview.md) alert:
 `/security/alerts?$filter=status eq ‘New’`,
 `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
@@ -242,6 +244,9 @@ The following code samples are available on GitHub.
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
 [message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0

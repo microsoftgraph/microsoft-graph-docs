@@ -1,6 +1,9 @@
 ---
 title: "Delete a user"
 description: "Delete user."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete a user

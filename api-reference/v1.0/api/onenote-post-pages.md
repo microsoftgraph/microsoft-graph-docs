@@ -1,6 +1,9 @@
 ---
 title: "Create page"
 description: "Create a new OneNote page in the default section of the default notebook."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Create page

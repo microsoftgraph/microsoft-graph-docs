@@ -1,17 +1,21 @@
 ---
 title: "Create windowsPhone81AppXBundle"
 description: "Create a new windowsPhone81AppXBundle object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create windowsPhone81AppXBundle
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -56,10 +60,12 @@ The following table shows the properties that are required when you create the w
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md). Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md). Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |identityName|String|The Identity Name. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityPublisherHash|String|The Identity Publisher Hash. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|The Identity Resource Identifier. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
@@ -75,12 +81,13 @@ The following table shows the properties that are required when you create the w
 If successful, this method returns a `201 Created` response code and a [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2163
+Content-length: 2184
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -92,7 +99,6 @@ Content-length: 2163
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -101,6 +107,10 @@ Content-length: 2163
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -150,7 +160,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2271
+Content-Length: 2356
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -173,6 +183,10 @@ Content-Length: 2271
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -216,7 +230,6 @@ Content-Length: 2271
   ]
 }
 ```
-
 
 
 

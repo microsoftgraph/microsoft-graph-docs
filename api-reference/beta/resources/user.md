@@ -1,11 +1,14 @@
 ---
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
@@ -55,7 +58,7 @@ This resource supports:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Find time and locations to meet based on attendee availability, location, or time constraints.|
+|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|Find time and locations to meet based on attendee availability, location, or time constraints.|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant.|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) collection | Get all the meeting rooms in the user's tenant or in a specific room list. |
 |[getMailTips](../api/user-getmailtips.md)|[mailTips](mailtips.md) collection|Return the MailTips of one or more recipients as available to the signed-in user. |
@@ -82,9 +85,10 @@ This resource supports:
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |city|String|The city in which the user is located. Supports $filter.|
-|companyName| String | The company name which the user is associated. Read-only.
+|companyName| String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. |
 |consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, "US" or "UK". Supports $filter.|
+|createdDateTime|DateTimeOffset|The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
@@ -347,5 +351,7 @@ Here is a JSON representation of the resource
   "description": "user resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

@@ -1,6 +1,9 @@
 ---
 title: "Create deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Create a new deviceEnrollmentPlatformRestrictionsConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceEnrollmentPlatformRestrictionsConfiguration

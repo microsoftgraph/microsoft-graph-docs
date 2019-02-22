@@ -1,6 +1,9 @@
 ---
 title: "mobileThreatPartnerTenantState enum type"
 description: "Partner state of this tenant."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mobileThreatPartnerTenantState enum type

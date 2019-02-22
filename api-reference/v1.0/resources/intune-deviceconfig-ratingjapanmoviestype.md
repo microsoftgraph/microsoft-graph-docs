@@ -1,6 +1,9 @@
 ---
 title: "ratingJapanMoviesType enum type"
 description: "Movies rating labels in Japan"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingJapanMoviesType enum type

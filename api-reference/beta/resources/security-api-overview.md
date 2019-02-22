@@ -1,11 +1,14 @@
 ---
 title: "Use the Microsoft Graph Security API"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Priority
+author: "preetikr"
+ms.prod: "security"
 ---
 
 # Use the Microsoft Graph Security API
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API can be used as a federated security aggregation service to submit queries to all onboarded security providers to get aggregated responses. Use Microsoft Graph Security API to build applications that:
 
@@ -74,3 +77,11 @@ Engage with the community:
 
 - [Join the tech community](https://aka.ms/graphsecuritycommunity)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

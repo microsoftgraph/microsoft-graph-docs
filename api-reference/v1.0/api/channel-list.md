@@ -1,6 +1,9 @@
 ---
 title: "List channels"
 description: "Retrieve the list of channels in this team."
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # List channels
@@ -50,7 +53,7 @@ Here is an example of the request.
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

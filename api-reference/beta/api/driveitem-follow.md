@@ -2,10 +2,12 @@
 author: chackman
 ms.author: chackman
 title: Follow drive item
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Follow drive item
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Follow a [driveItem](../resources/driveitem.md).
 
@@ -51,13 +53,18 @@ This example follows an item identified by `{item-id}`.
 POST /me/drive/items/{item-id}/follow
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Follow an item.",
   "keywords": "follow item",
   "section": "documentation",
-  "tocPath": "Items/Follow"
-} -->
+  "tocPath": "Items/Follow",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

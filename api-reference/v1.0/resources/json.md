@@ -1,6 +1,7 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
+localization_priority: Normal
 ---
 
 # Json resource type

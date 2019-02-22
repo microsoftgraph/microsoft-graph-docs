@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Drive
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # drive resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
@@ -125,11 +127,18 @@ In the previous table, the examples use `/drive`, but other paths are valid too.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

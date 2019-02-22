@@ -1,6 +1,9 @@
 ---
 title: "Delete deviceComplianceActionItem"
 description: "Deletes a deviceComplianceActionItem."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceComplianceActionItem

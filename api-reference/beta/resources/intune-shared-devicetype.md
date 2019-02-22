@@ -1,15 +1,19 @@
 ---
 title: "deviceType enum type"
 description: "Device type."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # deviceType enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Device type.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -35,7 +39,6 @@ Device type.
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|
-
 
 
 

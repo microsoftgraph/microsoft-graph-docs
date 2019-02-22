@@ -1,6 +1,9 @@
 ---
 title: "Create deviceComplianceUserStatus"
 description: "Create a new deviceComplianceUserStatus object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceComplianceUserStatus

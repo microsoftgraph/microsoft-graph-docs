@@ -1,17 +1,21 @@
 ---
 title: "Create windowsIdentityProtectionConfiguration"
 description: "Create a new windowsIdentityProtectionConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create windowsIdentityProtectionConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -50,6 +54,7 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|useSecurityKeyForSignin|Boolean|Boolean value used to enable the Windows Hello security key as a logon credential.|
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Boolean value used to enable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication.|
 |pinMinimumLength|Int32|Integer value that sets the minimum number of characters required for the Windows Hello for Business PIN. Valid values are 4 to 127 inclusive and less than or equal to the value set for the maximum PIN. Valid values 4 to 127|
 |pinMaximumLength|Int32|Integer value that sets the maximum number of characters allowed for the work PIN. Valid values are 4 to 127 inclusive and greater than or equal to the value set for the minimum PIN. Valid values 4 to 127|
@@ -70,16 +75,16 @@ The following table shows the properties that are required when you create the w
 If successful, this method returns a `201 Created` response code and a [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 838
+Content-length: 810
 
 {
   "@odata.type": "#microsoft.graph.windowsIdentityProtectionConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -87,6 +92,7 @@ Content-length: 838
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
@@ -108,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 946
+Content-Length: 982
 
 {
   "@odata.type": "#microsoft.graph.windowsIdentityProtectionConfiguration",
@@ -122,6 +128,7 @@ Content-Length: 946
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
@@ -137,7 +144,6 @@ Content-Length: 946
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

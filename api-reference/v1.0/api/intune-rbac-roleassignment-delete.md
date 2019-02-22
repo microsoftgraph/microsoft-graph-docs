@@ -1,6 +1,9 @@
 ---
 title: "Delete roleAssignment"
 description: "Deletes a roleAssignment."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete roleAssignment

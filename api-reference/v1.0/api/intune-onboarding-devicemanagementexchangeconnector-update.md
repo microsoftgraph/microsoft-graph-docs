@@ -1,6 +1,9 @@
 ---
 title: "Update deviceManagementExchangeConnector"
 description: "Update the properties of a deviceManagementExchangeConnector object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceManagementExchangeConnector

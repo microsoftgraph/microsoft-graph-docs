@@ -1,6 +1,9 @@
 ---
 title: "workbookPivotTable: refreshAll"
 description: "Refreshes the PivotTable within a given worksheet."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # workbookPivotTable: refreshAll

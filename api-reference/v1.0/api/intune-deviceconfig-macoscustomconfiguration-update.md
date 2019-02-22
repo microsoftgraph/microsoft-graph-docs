@@ -1,6 +1,9 @@
 ---
 title: "Update macOSCustomConfiguration"
 description: "Update the properties of a macOSCustomConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update macOSCustomConfiguration

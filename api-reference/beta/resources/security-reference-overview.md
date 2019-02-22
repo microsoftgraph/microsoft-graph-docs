@@ -1,11 +1,14 @@
 ---
 title: "Use the Microsoft Graph API for security threat detection and protection (preview)"
 description: "The sophistication of security threats continues to escalate, affecting the global economy. Damage is often done long before organizations even discover it. You can use Microsoft Graph to build or extend security solutions that consolidate and correlate security alerts from multiple sources, detect threats that attempt to compromise user identity, unlock contextual data to inform investigations, and automate security operations for greater efficiency."
+localization_priority: Normal
+author: "preetikr"
+ms.prod: "security"
 ---
 
 # Use the Microsoft Graph API for security threat detection and protection (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The sophistication of security threats continues to escalate, affecting the global economy. Damage is often done long before organizations even discover it. You can use Microsoft Graph to build or extend security solutions that consolidate and correlate security alerts from multiple sources, detect threats that attempt to compromise user identity, unlock contextual data to inform investigations, and automate security operations for greater efficiency.
 
@@ -19,3 +22,11 @@ The [identity protection risk events API](identityprotection-root.md) gives easy
 - [Use the security API to integrate with Intelligent Security Graph](security-api-overview.md)
 - [Why use Azure AD to protect identities in your organization?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Use the Azure AD Identity Protection API](identityprotection-root.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

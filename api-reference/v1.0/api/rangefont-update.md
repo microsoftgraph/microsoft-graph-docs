@@ -1,6 +1,9 @@
 ---
 title: "Update rangefont"
 description: "Update the properties of rangefont object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update rangefont

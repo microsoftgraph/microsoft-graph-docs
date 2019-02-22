@@ -1,6 +1,9 @@
 ---
 title: "deviceComplianceUserStatus resource type"
 description: "Not yet documented"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceComplianceUserStatus resource type

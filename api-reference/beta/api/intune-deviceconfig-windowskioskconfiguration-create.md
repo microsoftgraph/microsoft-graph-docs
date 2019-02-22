@@ -1,17 +1,21 @@
 ---
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create windowsKioskConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -50,7 +54,7 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 500 elements.|
+|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 3 elements.|
 |kioskBrowserDefaultUrl|String|Specify the default URL the browser should navigate to on launch.|
 |kioskBrowserEnableHomeButton|Boolean|Enable the kiosk browser's home button. By default, the home button is disabled.|
 |kioskBrowserEnableNavigationButtons|Boolean|Enable the kiosk browser's navigation buttons(forward/back). By default, the navigation buttons are disabled.|
@@ -58,6 +62,8 @@ The following table shows the properties that are required when you create the w
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Specify the number of minutes the session is idle until the kiosk browser restarts in a fresh state.  Valid values are 1-1440. Valid values 1 to 1440|
 |kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
 |kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
+|edgeKioskEnablePublicBrowsing|Boolean|Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Specifies the time in minutes from the last user activity before Microsoft Edge kiosk resets.  Valid values are 0-1440. The default is 5. 0 indicates no reset. Valid values 0 to 1440|
 
 
 
@@ -65,16 +71,16 @@ The following table shows the properties that are required when you create the w
 If successful, this method returns a `201 Created` response code and a [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1662
+Content-length: 1719
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -94,6 +100,7 @@ Content-length: 1662
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "small",
             "name": "Name value",
+            "appType": "store",
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
@@ -120,7 +127,9 @@ Content-length: 1662
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true,
+  "edgeKioskResetAfterIdleTimeInMinutes": 4
 }
 ```
 
@@ -129,7 +138,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1770
+Content-Length: 1891
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -155,6 +164,7 @@ Content-Length: 1770
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "small",
             "name": "Name value",
+            "appType": "store",
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
@@ -181,10 +191,11 @@ Content-Length: 1770
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true,
+  "edgeKioskResetAfterIdleTimeInMinutes": 4
 }
 ```
-
 
 
 

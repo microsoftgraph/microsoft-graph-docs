@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Delete a file or folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Delete a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
 Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -66,10 +68,15 @@ how errors are returned.
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
-} -->
+  "tocPath": "Items/Delete",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

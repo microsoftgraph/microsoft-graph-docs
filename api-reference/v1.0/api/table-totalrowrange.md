@@ -1,6 +1,9 @@
 ---
 title: "Table: TotalRowRange"
 description: "Gets the range object associated with totals row of the table."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Table: TotalRowRange

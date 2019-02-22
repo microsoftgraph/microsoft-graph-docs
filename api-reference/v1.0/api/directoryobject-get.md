@@ -1,6 +1,9 @@
 ---
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
+author: "lleonard-msft"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get directoryObject

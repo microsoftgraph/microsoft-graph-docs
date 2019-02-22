@@ -1,6 +1,9 @@
 ---
 title: "Delete vppToken"
 description: "Deletes a vppToken."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete vppToken

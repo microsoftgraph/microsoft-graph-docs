@@ -1,11 +1,14 @@
 ---
 title: "Update educationassignment"
 description: "Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the publish action to change the assignment status."
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # Update educationassignment
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the assignment object. Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an assignment. Use the [publish](../api/educationassignment-publish.md) action to change the assignment status.
 
@@ -96,10 +99,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

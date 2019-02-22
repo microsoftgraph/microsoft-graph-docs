@@ -1,6 +1,9 @@
 ---
 title: "windowsSpotlightEnablementSettings enum type"
 description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsSpotlightEnablementSettings enum type

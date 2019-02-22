@@ -1,17 +1,21 @@
 ---
 title: "Create userPFXCertificate"
 description: "Create a new userPFXCertificate object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create userPFXCertificate
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,12 +65,13 @@ The following table shows the properties that are required when you create the u
 If successful, this method returns a `201 Created` response code and a [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userPfxCertificates
 Content-type: application/json
-Content-length: 587
+Content-length: 523
 
 {
   "@odata.type": "#microsoft.graph.userPFXCertificate",
@@ -79,8 +84,7 @@ Content-length: 587
   "keyName": "Key Name value",
   "paddingScheme": "pkcs1",
   "encryptedPfxBlob": "ZW5jcnlwdGVkUGZ4QmxvYg==",
-  "encryptedPfxPassword": "Encrypted Pfx Password value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "encryptedPfxPassword": "Encrypted Pfx Password value"
 }
 ```
 
@@ -108,7 +112,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -1,11 +1,14 @@
 ---
 title: "Office 365 Groups activity reports"
 description: "You can gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 groups are being created and used."
+localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # Office 365 Groups activity reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 groups are being created and used.
 
@@ -20,3 +23,11 @@ You can gain insights into the activity of Office 365 Groups in your organizatio
 | [Get group counts](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Stream          | [office365GroupsActivityGroupCounts](../resources/office365groupsactivitygroupcounts.md) | Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities. |
 | [Get storage](../api/reportroot-getoffice365groupsactivitystorage.md) | Stream          | [office365GroupsActivityStorage](../resources/office365groupsactivitystorage.md) | Get the total storage used across all group mailboxes and group sites. |
 | [Get file counts](../api/reportroot-getoffice365groupsactivityfilecounts.md) | Stream          | [office365GroupsActivityFileCounts](../resources/office365groupsactivityfilecounts.md) | Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group. |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/office-365-groups-activity-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

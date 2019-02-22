@@ -1,6 +1,9 @@
 ---
 title: "Create user"
 description: "Create a new user object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create user

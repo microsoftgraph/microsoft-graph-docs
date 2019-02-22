@@ -1,6 +1,9 @@
 ---
 title: "resetPasscodeActionResult resource type"
 description: "Reset passcode action result"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # resetPasscodeActionResult resource type

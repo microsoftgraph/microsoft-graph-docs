@@ -1,6 +1,7 @@
 ---
 title: "alternativeSecurityId resource type"
 description: "For internal use only."
+localization_priority: Normal
 ---
 
 # alternativeSecurityId resource type

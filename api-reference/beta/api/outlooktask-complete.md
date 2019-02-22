@@ -1,26 +1,25 @@
 ---
 title: "outlookTask: complete"
 description: "Complete an Outlook task which sets the **completedDateTime** property to the current date, "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # outlookTask: complete
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete an Outlook task which sets the **completedDateTime** property to the current date, 
-and the **status** property to `completed`.
+Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
 
-If you are completing a task in a recurring series, in the response, the task collection will contain the 
-completed task in the series, and the next task in the series.
+If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.
 
-The **completedDateTime** property represents the date when the task is finished. The time portion 
-of **completedDateTime** is set to midnight UTC by default. 
+The **completedDateTime** property represents the date when the task is finished. The time portion of **completedDateTime** is set to midnight UTC by default.
 
-By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC. 
-You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
-different than UTC.
+By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC. You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -30,14 +29,16 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/complete
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/outlook/tasks/{id}/complete
+POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
@@ -45,35 +46,41 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 
 ## Request body
 
+Do not supply a request body for this method.
+
 ## Response
 
-If successful, this method returns `200 OK` response code and [outlookTask](../resources/outlooktask.md) collection object in the response body.
+If successful, this method returns `200 OK` response code and the [outlookTask](../resources/outlooktask.md) object in the response body.
 
 ## Example
-The following example marks the specified task as complete. It specifies Pacific Standard Time (PST) 
-in the `Prefer: outlook.timezone` header.
-##### Request
+
+The following example marks the specified task as complete. It specifies Pacific Standard Time (PST) in the `Prefer: outlook.timezone` header.
+
+### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "outlooktask_complete"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### Response
-Here is an example of the response. The **completedDateTime** and other date-related properties in the response 
-are expressed in PST. 
+### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. The **completedDateTime** and other date-related properties in the response are expressed in PST.
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -122,10 +129,15 @@ Content-length: 465
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTask: complete",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-complete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

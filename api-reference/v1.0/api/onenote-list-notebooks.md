@@ -1,6 +1,9 @@
 ---
 title: "List notebooks"
 description: "Retrieve a list of notebook objects."
+author: "jewan-microsoft"
+localization_priority: Priority
+ms.prod: "onenote"
 ---
 
 # List notebooks

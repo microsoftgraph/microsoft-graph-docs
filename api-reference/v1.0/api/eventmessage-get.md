@@ -1,6 +1,9 @@
 ---
 title: "Get eventMessage"
 description: "expand parameter on the **event** navigation property to get the associated event in an attendee's calendar."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Get eventMessage

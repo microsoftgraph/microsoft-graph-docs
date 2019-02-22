@@ -1,6 +1,8 @@
 ---
 title: "Download contents of a DriveItemVersion resource"
 description: "Retrieve the contents of a specific version of a DriveItem."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # Download contents of a DriveItemVersion resource

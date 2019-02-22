@@ -1,6 +1,9 @@
 ---
 title: "Create androidWorkProfileCompliancePolicy"
 description: "Create a new androidWorkProfileCompliancePolicy object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidWorkProfileCompliancePolicy

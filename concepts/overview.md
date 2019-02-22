@@ -1,6 +1,8 @@
 ---
 title: "Overview of Microsoft Graph"
-description: " Security, and Windows 10. "
+description: "Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security, and Windows 10."
+author: "jthake-msft"
+localization_priority: Priority
 ---
 
 # Overview of Microsoft Graph
@@ -99,7 +101,4 @@ For more information about Microsoft Graph Data Connect, see [Microsoft Graph Da
 - Find out how to [get an auth token](auth-overview.md) in your app.
 - Start [using the API](use-the-api.md).
 
-## Feedback?
-
-Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with {MicrosoftGraph}.
 

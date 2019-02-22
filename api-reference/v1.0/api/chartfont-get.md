@@ -1,6 +1,9 @@
 ---
 title: "Get ChartFont"
 description: "Retrieve the properties and relationships of chartfont object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get ChartFont

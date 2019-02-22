@@ -1,6 +1,9 @@
 ---
 title: "Update windows10EnterpriseModernAppManagementConfiguration"
 description: "Update the properties of a windows10EnterpriseModernAppManagementConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows10EnterpriseModernAppManagementConfiguration

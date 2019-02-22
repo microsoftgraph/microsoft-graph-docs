@@ -1,6 +1,9 @@
 ---
 title: "Get androidLobApp"
 description: "Read properties and relationships of the androidLobApp object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidLobApp

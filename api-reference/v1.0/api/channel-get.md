@@ -1,6 +1,9 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Get channel
@@ -50,7 +53,7 @@ Here is an example of the request.
   "name": "get_channel"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 ##### Response
 Here is an example of the response. 

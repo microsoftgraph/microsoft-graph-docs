@@ -1,6 +1,9 @@
 ---
 title: "Create windows81GeneralConfiguration"
 description: "Create a new windows81GeneralConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows81GeneralConfiguration

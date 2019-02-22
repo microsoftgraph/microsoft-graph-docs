@@ -1,6 +1,9 @@
 ---
 title: "Get deviceAppManagement"
 description: "Read properties and relationships of the deviceAppManagement object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceAppManagement

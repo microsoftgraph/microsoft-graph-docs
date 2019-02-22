@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Create a new entry in a SharePoint list
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Create a new item in a list
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [listItem][] in a [list][].
 
@@ -85,10 +87,15 @@ Content-type: application/json
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
-} -->
+  "tocPath": "ListItem/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

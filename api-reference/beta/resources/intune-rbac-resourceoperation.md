@@ -1,15 +1,19 @@
 ---
 title: "resourceOperation resource type"
-description: " operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles."
+description: "Describes the resourceoperation resource (entity) of the Microsoft Graph API for Intune (REST), which supports role-based access control (RBAC) scenarios for tenant organizations."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # resourceOperation resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This defines an operation or action that can be performed on an Intune resource (or entity).  Common operations are Read, Delete, Update or Create.  These operations provide basic management of the underlying Intune resource itself.  In some cases, an Intune resource can have operations that are used by the resource to take action in combination with other resources.  For example, the Assign operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles.This defines an operation or action that can be performed on an Intune resource (or entity).  Common operations are Get, List, Delete, Update or Create.  These operations provide basic management of the underlying Intune resource itself.  In some cases, an Intune resource can have operations that are used by the resource to take action in combination with other resources.  For example, the "Assign" operation is used to assign a MobileApp resource to an AAD security group.  Resource operations cannot be modified for built-in roles.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -32,6 +36,7 @@ This defines an operation or action that can be performed on an Intune resource 
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -51,7 +56,6 @@ Here is a JSON representation of the resource.
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

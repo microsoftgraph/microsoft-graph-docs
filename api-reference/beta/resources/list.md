@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
@@ -119,7 +121,8 @@ The **list** resource has the following relationships to other resources.
 [site]: site.md
 [systemFacet]: systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -127,5 +130,9 @@ The **list** resource has the following relationships to other resources.
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
     "Lists": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

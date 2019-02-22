@@ -1,6 +1,9 @@
 ---
 title: "Create notebook"
 description: "Create a new OneNote notebook."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Create notebook

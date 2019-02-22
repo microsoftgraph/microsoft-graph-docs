@@ -3,10 +3,11 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
+localization_priority: Normal
 ---
 # ContentType resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **contentType** resource represents a _content type_ in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
@@ -64,10 +65,15 @@ See [Introduction to content types and content type publishing][contentTypeIntro
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contentType.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

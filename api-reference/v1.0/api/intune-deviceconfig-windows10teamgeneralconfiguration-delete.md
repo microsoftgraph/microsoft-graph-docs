@@ -1,6 +1,9 @@
 ---
 title: "Delete windows10TeamGeneralConfiguration"
 description: "Deletes a windows10TeamGeneralConfiguration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windows10TeamGeneralConfiguration

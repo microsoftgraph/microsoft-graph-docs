@@ -1,6 +1,9 @@
 ---
 title: "Delete macOSCustomConfiguration"
 description: "Deletes a macOSCustomConfiguration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete macOSCustomConfiguration

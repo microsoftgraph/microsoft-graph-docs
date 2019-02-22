@@ -1,6 +1,9 @@
 ---
 title: "List iosVppApps"
 description: "List properties and relationships of the iosVppApp objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosVppApps

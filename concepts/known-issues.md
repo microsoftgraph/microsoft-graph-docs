@@ -1,6 +1,8 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
+author: "jthake-msft"
+localization_priority: Priority
 ---
 
 # Known issues with Microsoft Graph
@@ -33,28 +35,6 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
-### Application permissions
-
-When making changes to teams and channels using application permissions, 
-Microsoft Teams renders the control message posted to the General channel with a blank name instead of the application name. 
-This will be addressed in a future update. 
-The fix will retroactively update control messages that are already posted.
-
-### Create chat thread API
-
-The current API to [create a chat thread](/graph/api/channel-post-chatthreads?view=graph-rest-beta) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### Graph Explorer and v1.0
-
-Graph Explorer sample queries have not been updated for v1.0 yet.
-You can still type v1.0 queries into the text box on the top.
-Make sure you have set up Graph Explorer with the appropriate permissions, such as Group.ReadWrite.All and User.Read.All.
-
-### Graph Explorer and Global Admins
-
-Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
-
 ### GET /teams and POST /teams are not supported
 
 See [list all teams](teams-list-all-teams.md) and 
@@ -70,6 +50,12 @@ New teams will be listed.
 Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
+
+### Installing and uninstalling applications using application permissions
+
+When uninstalling an app from a team using application permissions, the API will return a 500 error code even though the app was successfully uninstalled.
+
+When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not written.
 
 ## Groups
 
@@ -392,6 +378,3 @@ In the meantime, to unblock development and testing you can use the following wo
 
 Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/office/office365/api/api-catalog). For Azure Active Directory, please refer to the [Microsoft Graph or Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post on the features that are only available through Azure AD Graph API.
 
-## Feedback
-
-> Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph).

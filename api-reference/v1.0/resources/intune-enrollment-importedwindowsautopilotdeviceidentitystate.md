@@ -1,6 +1,9 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentityState resource type"
 description: "Not yet documented"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # importedWindowsAutopilotDeviceIdentityState resource type

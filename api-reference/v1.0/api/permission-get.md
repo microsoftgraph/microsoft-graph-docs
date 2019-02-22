@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Get permissions
+localization_priority: Normal
 ---
 # Get sharing permission for a file or folder
 

@@ -1,6 +1,9 @@
 ---
 title: "Permissions"
 description: "Update an app previously published to the Microsoft Teams app catalog. "
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update apps published to your organization's app catalog
@@ -54,7 +57,7 @@ HTTP/1.1 204 No Content
 ### Request
 
 ```
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
 

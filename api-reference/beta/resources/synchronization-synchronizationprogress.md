@@ -1,11 +1,12 @@
 ---
 title: "synchronizationProgress resource type"
 description: "Represents the progress of a synchronizationJob toward completion."
+localization_priority: Normal
 ---
 
 # synchronizationProgress resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.
 
@@ -44,10 +45,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 15571993-7e2f-4842-84d5-01ceb67cdc05
 20185-08-14 22:30:00 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationProcess resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationprogress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,9 @@
 ---
 title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update macOSDeviceFeaturesConfiguration

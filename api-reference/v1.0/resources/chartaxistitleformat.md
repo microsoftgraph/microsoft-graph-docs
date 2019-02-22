@@ -1,6 +1,9 @@
 ---
 title: "ChartAxisTitleFormat resource type"
 description: "Represents the chart axis title formatting."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartAxisTitleFormat resource type

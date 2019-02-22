@@ -1,6 +1,9 @@
 ---
 title: "List windowsPhone81CompliancePolicies"
 description: "List properties and relationships of the windowsPhone81CompliancePolicy objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsPhone81CompliancePolicies

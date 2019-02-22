@@ -1,6 +1,7 @@
 ---
 title: "Update inferenceclassificationoverride"
 description: "Change the **classifyAs** field of an override as specified. "
+localization_priority: Normal
 ---
 
 # Update inferenceclassificationoverride

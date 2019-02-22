@@ -1,20 +1,20 @@
 ---
 title: "Get Outlook messages in a shared or delegated folder"
-description: "These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder."
+description: "Outlook lets customers share mail folders with one another and provide read, create, modify, or delete access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
+author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # Get Outlook messages in a shared or delegated folder
 
-<!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
-These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
--->
-
-Outlook lets customers share mail folders with one another and provide "read", "create", "modify", or "delete" access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific mail folders or the customer's entire mailbox; this is also 
-known as "delegation" in Outlook.
+Outlook lets customers share mail folders with one another and provide "read", "create", "modify", or "delete" access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf, and access specific mail folders or the customer's entire mailbox; this is also known as "delegation" in Outlook.
 
 Programmatically, Microsoft Graph supports getting messages in mail folders that have been shared by other users, as well as getting the shared folders themselves. The support also applies to folders that have been delegated.
 
 As an example, Garth has shared with John and given read access to Garth's Inbox. If John has signed into your app and provided delegated permissions (Mail.Read.Shared or Mail.ReadWrite.Shared), your app will be able to access Garth's mail and Garth's Inbox as described below.
+
+> **Note** The sharing permissions (Mail.Read.Shared or Mail.ReadWrite.Shared) allow you to read or write messages in a shared or delegated folder. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on messages in a shared, delegated, or any other user's mail folder in the tenant, use the application permission, Mail.Read.
 
 ## Get a message in the shared folder
 

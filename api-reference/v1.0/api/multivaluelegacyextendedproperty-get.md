@@ -1,6 +1,7 @@
 ---
 title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
+localization_priority: Normal
 ---
 
 # Get multiValueLegacyExtendedProperty

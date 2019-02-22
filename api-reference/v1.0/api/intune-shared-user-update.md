@@ -1,6 +1,9 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update user

@@ -1,6 +1,9 @@
 ---
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # iosUpdateConfiguration resource type

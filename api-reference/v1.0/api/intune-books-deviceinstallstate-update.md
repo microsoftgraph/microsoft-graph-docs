@@ -1,6 +1,9 @@
 ---
 title: "Update deviceInstallState"
 description: "Update the properties of a deviceInstallState object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceInstallState

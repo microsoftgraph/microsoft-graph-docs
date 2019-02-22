@@ -1,6 +1,9 @@
 ---
 title: "WorksheetCollection: add"
 description: ".activate() on it."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # WorksheetCollection: add

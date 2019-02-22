@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Delete an item from a list
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes an item from a [list][].
 
@@ -60,10 +62,15 @@ If successful, this call returns a `204 No Content` response to indicate that re
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Delete"
-} -->
+  "tocPath": "ListItem/Delete",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

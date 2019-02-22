@@ -1,6 +1,9 @@
 ---
 title: "Get managedAppStatusRaw"
 description: "Read properties and relationships of the managedAppStatusRaw object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedAppStatusRaw

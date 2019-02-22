@@ -1,6 +1,9 @@
 ---
 title: "workbookSessionInfo resource type"
 description: "Provides information about workbook session."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # workbookSessionInfo resource type

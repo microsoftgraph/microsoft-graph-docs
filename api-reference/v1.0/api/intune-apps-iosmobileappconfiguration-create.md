@@ -1,6 +1,9 @@
 ---
 title: "Create iosMobileAppConfiguration"
 description: "Create a new iosMobileAppConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosMobileAppConfiguration

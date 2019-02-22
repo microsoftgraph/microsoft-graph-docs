@@ -1,6 +1,9 @@
 ---
 title: "Get onPremisesConditionalAccessSettings"
 description: "Read properties and relationships of the onPremisesConditionalAccessSettings object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get onPremisesConditionalAccessSettings

@@ -1,6 +1,9 @@
 ---
 title: "Get managedAppOperation"
 description: "Read properties and relationships of the managedAppOperation object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedAppOperation

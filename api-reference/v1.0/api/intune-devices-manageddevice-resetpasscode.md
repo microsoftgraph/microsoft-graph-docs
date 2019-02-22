@@ -1,6 +1,9 @@
 ---
 title: "resetPasscode action"
 description: "Reset passcode"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # resetPasscode action

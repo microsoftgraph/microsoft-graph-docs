@@ -1,6 +1,9 @@
 ---
 title: "Get deviceInstallState"
 description: "Read properties and relationships of the deviceInstallState object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceInstallState

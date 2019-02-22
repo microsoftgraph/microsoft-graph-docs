@@ -1,6 +1,9 @@
 ---
 title: "webApp resource type"
 description: "Contains properties and inherited properties for web apps."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # webApp resource type

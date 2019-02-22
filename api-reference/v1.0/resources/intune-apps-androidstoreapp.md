@@ -1,6 +1,9 @@
 ---
 title: "androidStoreApp resource type"
 description: "Contains properties and inherited properties for Android store apps."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidStoreApp resource type

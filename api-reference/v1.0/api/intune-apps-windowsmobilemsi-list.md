@@ -1,6 +1,9 @@
 ---
 title: "List windowsMobileMSIs"
 description: "List properties and relationships of the windowsMobileMSI objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsMobileMSIs

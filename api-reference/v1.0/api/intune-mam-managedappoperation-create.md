@@ -1,6 +1,9 @@
 ---
 title: "Create managedAppOperation"
 description: "Create a new managedAppOperation object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managedAppOperation

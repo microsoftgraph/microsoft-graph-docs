@@ -1,6 +1,9 @@
 ---
 title: "recoverPasscode action"
 description: "Recover passcode"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # recoverPasscode action

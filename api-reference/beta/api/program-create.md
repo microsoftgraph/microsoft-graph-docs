@@ -1,11 +1,12 @@
 ---
 title: "Create program"
 description: "In the Azure AD access reviews feature, create a new program object."
+localization_priority: Normal
 ---
 
 # Create program
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [program](../resources/program.md) object.
 ## Permissions
@@ -86,10 +87,15 @@ Content-type: application/json
 |[Update program](program-update.md) |	[program](../resources/program.md)|	Update a program.|
 |[Create programControl](programcontrol-create.md) |		[programControl](../resources/programcontrol.md)	|	Add a programControl to a program.|
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

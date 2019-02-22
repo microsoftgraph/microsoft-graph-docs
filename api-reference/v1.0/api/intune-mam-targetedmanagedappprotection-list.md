@@ -1,6 +1,9 @@
 ---
 title: "List targetedManagedAppProtections"
 description: "List properties and relationships of the targetedManagedAppProtection objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List targetedManagedAppProtections

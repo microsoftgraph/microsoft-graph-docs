@@ -1,6 +1,9 @@
 ---
 title: "calendarGroup resource type"
 description: "A group of user calendars."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # calendarGroup resource type

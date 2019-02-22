@@ -1,6 +1,7 @@
 ---
 title: "followupFlag resource type"
 description: "Allows setting a flag in an item for the user to follow up on later. "
+localization_priority: Normal
 ---
 
 # followupFlag resource type

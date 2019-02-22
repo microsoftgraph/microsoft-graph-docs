@@ -1,6 +1,9 @@
 ---
 title: "Update sharedPCConfiguration"
 description: "Update the properties of a sharedPCConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update sharedPCConfiguration

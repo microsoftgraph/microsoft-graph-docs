@@ -1,6 +1,9 @@
 ---
 title: "Create contact"
 description: "Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create contact

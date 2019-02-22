@@ -1,6 +1,9 @@
 ---
 title: "List deviceConfigurations"
 description: "List properties and relationships of the deviceConfiguration objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceConfigurations

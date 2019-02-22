@@ -1,6 +1,9 @@
 ---
 title: "Permissions"
 description: "Retrieves a list of recently deleted items owned by the specified user.  "
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # **List deleted items owned by a user**

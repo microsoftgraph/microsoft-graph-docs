@@ -1,6 +1,9 @@
 ---
 title: "Delete windowsInformationProtectionPolicy"
 description: "Deletes a windowsInformationProtectionPolicy."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsInformationProtectionPolicy

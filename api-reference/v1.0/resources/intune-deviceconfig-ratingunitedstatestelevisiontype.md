@@ -1,6 +1,9 @@
 ---
 title: "ratingUnitedStatesTelevisionType enum type"
 description: "TV content rating labels in United States"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingUnitedStatesTelevisionType enum type

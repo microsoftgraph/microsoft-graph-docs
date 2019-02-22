@@ -1,15 +1,19 @@
 ---
 title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # managedAppProtection resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Policy used to configure detailed management settings for a specified set of apps
+
 
 Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
@@ -27,6 +31,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet.|
@@ -57,12 +62,13 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |minimumWarningAppVersion|String|Versions less than the specified version will result in warning message on the managed app.|
 |minimumWipeOsVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
 |minimumWipeAppVersion|String|Versions less than or equal to the specified version will wipe the managed app and the associated company data.|
-|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Possible values are: `block`, `wipe`.|
-|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`.|
+|appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -78,6 +84,9 @@ Here is a JSON representation of the resource.
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -115,7 +124,6 @@ Here is a JSON representation of the resource.
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)"
 }
 ```
-
 
 
 

@@ -1,6 +1,9 @@
 ---
 title: "Update managedMobileApp"
 description: "Update the properties of a managedMobileApp object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update managedMobileApp

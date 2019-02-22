@@ -1,6 +1,9 @@
 ---
 title: "Delete androidGeneralDeviceConfiguration"
 description: "Deletes a androidGeneralDeviceConfiguration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidGeneralDeviceConfiguration

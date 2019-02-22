@@ -1,6 +1,9 @@
 ---
 title: "mediaContentRatingNewZealand resource type"
 description: "Not yet documented"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mediaContentRatingNewZealand resource type

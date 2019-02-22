@@ -1,6 +1,9 @@
 ---
 title: "Get sharedPCConfiguration"
 description: "Read properties and relationships of the sharedPCConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get sharedPCConfiguration

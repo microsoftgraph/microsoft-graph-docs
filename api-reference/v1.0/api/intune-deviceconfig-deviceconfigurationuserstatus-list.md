@@ -1,6 +1,9 @@
 ---
 title: "List deviceConfigurationUserStatuses"
 description: "List properties and relationships of the deviceConfigurationUserStatus objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceConfigurationUserStatuses

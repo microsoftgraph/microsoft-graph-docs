@@ -1,6 +1,9 @@
 ---
 title: "List appleDeviceFeaturesConfigurationBases"
 description: "List properties and relationships of the appleDeviceFeaturesConfigurationBase objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List appleDeviceFeaturesConfigurationBases

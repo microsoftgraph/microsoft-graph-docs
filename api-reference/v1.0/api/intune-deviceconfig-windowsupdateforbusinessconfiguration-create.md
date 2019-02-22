@@ -1,6 +1,9 @@
 ---
 title: "Create windowsUpdateForBusinessConfiguration"
 description: "Create a new windowsUpdateForBusinessConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsUpdateForBusinessConfiguration

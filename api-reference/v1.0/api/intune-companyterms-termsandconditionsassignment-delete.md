@@ -1,6 +1,9 @@
 ---
 title: "Delete termsAndConditionsAssignment"
 description: "Deletes a termsAndConditionsAssignment."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete termsAndConditionsAssignment

@@ -1,6 +1,9 @@
 ---
 title: "Range: OffsetRange"
 description: "Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # Range: OffsetRange

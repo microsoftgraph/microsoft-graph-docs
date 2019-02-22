@@ -1,6 +1,9 @@
 ---
 title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosUpdateConfiguration

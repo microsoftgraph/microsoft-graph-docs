@@ -1,6 +1,9 @@
 ---
 title: "Get androidManagedAppProtection"
 description: "Read properties and relationships of the androidManagedAppProtection object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidManagedAppProtection

@@ -1,15 +1,19 @@
 ---
 title: "sharedPCConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # sharedPCConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -34,7 +38,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.|
-|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `guest`, `domain`.|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `notConfigured`, `guest`, `domain`.|
 |localStorage|[enablement](../resources/intune-shared-enablement.md)|Specifies whether local storage is allowed on a shared PC. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |allowLocalStorage|Boolean|Specifies whether local storage is allowed on a shared PC.|
 |setAccountManager|[enablement](../resources/intune-shared-enablement.md)|Disables the account manager for shared PC mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
@@ -108,7 +112,6 @@ Here is a JSON representation of the resource.
   "maintenanceStartTime": "String (time of day)"
 }
 ```
-
 
 
 

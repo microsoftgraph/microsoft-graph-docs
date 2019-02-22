@@ -1,6 +1,9 @@
 ---
 title: "Delete educationClass"
 description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # Delete educationClass

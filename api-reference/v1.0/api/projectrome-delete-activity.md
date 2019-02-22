@@ -1,6 +1,8 @@
 ---
 title: "Delete an activity"
 description: "Delete an existing user activity for your app."
+localization_priority: Normal
+ms.prod: "project-rome"
 ---
 
 # Delete an activity

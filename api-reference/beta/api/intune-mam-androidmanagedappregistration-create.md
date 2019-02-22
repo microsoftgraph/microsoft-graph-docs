@@ -1,17 +1,21 @@
 ---
 title: "Create androidManagedAppRegistration"
 description: "Create a new androidManagedAppRegistration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create androidManagedAppRegistration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,6 +62,7 @@ The following table shows the properties that are required when you create the a
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|patchVersion|String|The patch version for the current android app registration|
 
 
 
@@ -65,12 +70,13 @@ The following table shows the properties that are required when you create the a
 If successful, this method returns a `201 Created` response code and a [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations
 Content-type: application/json
-Content-length: 837
+Content-length: 879
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -93,7 +99,8 @@ Content-length: 837
     "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "Package Id value"
   },
-  "version": "Version value"
+  "version": "Version value",
+  "patchVersion": "Patch Version value"
 }
 ```
 
@@ -102,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 945
+Content-Length: 987
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -127,10 +134,10 @@ Content-Length: 945
     "packageId": "Package Id value"
   },
   "id": "0e064997-4997-0e06-9749-060e9749060e",
-  "version": "Version value"
+  "version": "Version value",
+  "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

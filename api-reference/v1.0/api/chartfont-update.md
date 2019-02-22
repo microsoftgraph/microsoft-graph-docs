@@ -1,6 +1,9 @@
 ---
 title: "Update chartfont"
 description: "Update the properties of chartfont object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update chartfont

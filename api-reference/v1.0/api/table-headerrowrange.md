@@ -1,6 +1,9 @@
 ---
 title: "Table: HeaderRowRange"
 description: "Gets the range object associated with header row of the table."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Table: HeaderRowRange

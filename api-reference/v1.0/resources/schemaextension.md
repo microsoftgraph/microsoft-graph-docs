@@ -1,6 +1,8 @@
 ---
 title: "schemaExtension resource type (schema extensions)"
 description: "Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. "
+localization_priority: Priority
+author: "dkershaw10"
 ---
 
 # schemaExtension resource type (schema extensions)

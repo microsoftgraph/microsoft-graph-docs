@@ -1,6 +1,9 @@
 ---
 title: "Patch channel"
 description: "Update the properties of the specified channel."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Patch channel

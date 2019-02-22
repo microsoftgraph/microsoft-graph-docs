@@ -1,6 +1,9 @@
 ---
 title: "managedDeviceOwnerType enum type"
 description: "Owner type of device."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedDeviceOwnerType enum type

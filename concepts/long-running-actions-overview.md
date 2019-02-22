@@ -1,12 +1,11 @@
 ---
-author: rgregg
-ms.author: rgregg
-ms.date: 09/10/2017
-ms.topic: conceptual
+title: "Working with long running actions (beta)"
+description: "This article describes working with long running actions."
+localization_priority: Normal
+author: "daspek"
 ---
 # Working with long running actions (beta)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Some API responses require indeterminate time to complete.
 Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.

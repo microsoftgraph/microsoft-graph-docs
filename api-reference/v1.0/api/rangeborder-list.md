@@ -1,6 +1,9 @@
 ---
 title: "List RangeBorderCollection"
 description: "Retrieve a list of rangeborder objects."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List RangeBorderCollection

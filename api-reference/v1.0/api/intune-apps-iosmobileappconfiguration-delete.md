@@ -1,6 +1,9 @@
 ---
 title: "Delete iosMobileAppConfiguration"
 description: "Deletes a iosMobileAppConfiguration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosMobileAppConfiguration

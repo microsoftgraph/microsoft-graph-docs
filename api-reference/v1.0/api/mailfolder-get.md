@@ -1,6 +1,9 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
+author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # Get mailFolder

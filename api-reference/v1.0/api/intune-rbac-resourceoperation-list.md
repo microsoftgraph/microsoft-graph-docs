@@ -1,6 +1,9 @@
 ---
 title: "List resourceOperations"
 description: "List properties and relationships of the resourceOperation objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List resourceOperations

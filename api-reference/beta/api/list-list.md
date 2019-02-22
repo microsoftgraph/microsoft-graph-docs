@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List the SharePoint lists in a site
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Enumerate lists in a site
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the collection of [lists][] for a [site][].
 
@@ -80,10 +82,15 @@ To list them, include `system` in your `$select` statement.
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate"
-} -->
+  "tocPath": "Lists/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,7 @@
 ---
 title: "List NamedItemCollection"
 description: "Retrieve a list of nameditem objects."
+localization_priority: Normal
 ---
 
 # List NamedItemCollection

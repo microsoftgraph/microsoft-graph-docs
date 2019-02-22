@@ -1,6 +1,9 @@
 ---
 title: "List iosDeviceFeaturesConfigurations"
 description: "List properties and relationships of the iosDeviceFeaturesConfiguration objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosDeviceFeaturesConfigurations

@@ -1,14 +1,16 @@
 ---
 title: "mention resource type"
-description: "Represents a notification to a person based on the person's email address. This type of notification is also known as "
+description: "Represents a notification to a person based on the person's email address."
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # mention resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a notification to a person based on the person's email address. This type of notification is also known as 
-@-mentions.
+Represents a notification to a person based on the person's email address. This type of notification is also known as @-mentions.
 
 The [message](../resources/message.md) resource supports **mention**. It includes a
 **mentionsPreview** property that indicates whether the signed-in user is mentioned in that message instance. It also
@@ -85,10 +87,15 @@ None
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mention resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

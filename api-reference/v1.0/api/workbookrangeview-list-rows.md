@@ -1,6 +1,9 @@
 ---
 title: "List rangeView rows"
 description: "Retrieve a list of range view objects."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List rangeView rows

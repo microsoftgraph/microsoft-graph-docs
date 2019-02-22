@@ -1,6 +1,9 @@
 ---
 title: "iosLobApp resource type"
 description: "Contains properties and inherited properties for iOS Line Of Business apps."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosLobApp resource type

@@ -1,6 +1,9 @@
 ---
 title: "Update deviceAndAppManagementRoleDefinition"
 description: "Update the properties of a deviceAndAppManagementRoleDefinition object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceAndAppManagementRoleDefinition

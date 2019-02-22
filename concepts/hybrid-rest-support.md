@@ -1,6 +1,7 @@
 ---
 title: "Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)"
 description: "Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Office 365."
+localization_priority: Priority
 ---
 
 # Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)

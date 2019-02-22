@@ -1,6 +1,9 @@
 ---
 title: "Create Channel"
 description: "Create a new channel in a Microsoft Team, as specified in the request body."
+localization_priority: Priority
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Create Channel
@@ -49,7 +52,7 @@ Here is an example of the request.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {

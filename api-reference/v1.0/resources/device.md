@@ -1,6 +1,9 @@
 ---
 title: "device resource type"
 description: "Represents a device registered in the organization. Devices are created in the cloud using the Device Registration Service or by Intune. They're used by conditional access policies for multi-factor authentication. These devices can range from desktop and laptop machines to phones and tablets. Inherits from directoryObject."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # device resource type
@@ -52,6 +55,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
+|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
 |registeredOwners|[directoryObject](directoryobject.md) collection|The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. |
 |registeredUsers|[directoryObject](directoryobject.md) collection|Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.|
 

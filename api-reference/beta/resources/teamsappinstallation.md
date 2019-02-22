@@ -1,11 +1,14 @@
 ---
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # teamsAppInstallation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A [teamsApp](teamsapp.md) installed in a [team](team.md). 
 Any bots that are part of the app will become part of any team the app is added to.
@@ -17,7 +20,7 @@ Any bots that are part of the app will become part of any team the app is added 
 |[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
 |[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
 |[Remove app](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
-|[Upgrade app](../api/teamsappinstallation-delete.md) | None | Upgrades to the latest version of the app.|
+|[Upgrade app](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
 
 ## Properties
 
@@ -55,11 +58,16 @@ Any bots that are part of the app will become part of any team the app is added 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsappinstallation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

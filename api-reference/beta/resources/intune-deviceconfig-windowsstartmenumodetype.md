@@ -1,22 +1,25 @@
 ---
 title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsStartMenuModeType enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Type of display modes for the start menu.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
 |userDefined|0|User defined. Default value.|
 |fullScreen|1|Full screen.|
 |nonFullScreen|2|Non-full screen.|
-
 
 
 

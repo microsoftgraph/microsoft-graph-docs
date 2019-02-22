@@ -1,6 +1,9 @@
 ---
 title: "Unarchive team"
 description: "Restore an archived team. This restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the archive API."
+localization_priority: Normal
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Unarchive team
@@ -48,7 +51,7 @@ The following is an example of a request.
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### Response

@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Get a SharePoint list
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get metadata for a list
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the metadata for a [list][].
 
@@ -127,10 +129,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Get metadata"
-} -->
+  "tocPath": "Lists/Get metadata",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,9 @@
 ---
 title: "Update plannerBucketTaskBoardTaskFormat"
 description: "Update the properties of **plannerBucketTaskBoardTaskFormat** object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Update plannerBucketTaskBoardTaskFormat

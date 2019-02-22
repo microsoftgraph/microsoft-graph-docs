@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Download a file
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Download the contents of a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
@@ -98,10 +100,15 @@ how errors are returned.
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Download the contents of a DriveItem.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Items/Download"
-} -->
+  "tocPath": "Items/Download",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

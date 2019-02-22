@@ -1,6 +1,9 @@
 ---
 title: "message resource type"
 description: "A message in a mailFolder."
+author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # message resource type
@@ -52,7 +55,7 @@ by providing a [delta](../api/message-delta.md) function.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|The Bcc: recipients for the message.|
-|body|[itemBody](itembody.md)|The body of the message. It can be in HTML or text format.|
+|body|[itemBody](itembody.md)|The body of the message. It can be in HTML or text format. Find out about [safe HTML in a message body](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|The first 255 characters of the message body. It is in text format.|
 |categories|String collection|The categories associated with the message.|
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
@@ -60,12 +63,12 @@ by providing a [delta](../api/message-delta.md) function.
 |conversationId|String|The ID of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
-|from|[recipient](recipient.md)|The mailbox owner and sender of the message. The value must correspond to the actual mailbox used.|
+|from|[recipient](recipient.md)|The mailbox owner and sender of the message. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the **body** property to look for a `src` attribute, such as `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|importance| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification | inferenceClassificationType | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. The possible values are: `focused` or `other`. |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | A collection of message headers defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message. |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | A collection of message headers defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message. <br><br> Returned only on applying a `$select` query option. Read-only. |
 |internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
@@ -75,35 +78,21 @@ by providing a [delta](../api/message-delta.md) function.
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes), or sending a message as a [delegate](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |subject|String|The subject of the message.|
 |toRecipients|[recipient](recipient.md) collection|The To: recipients for the message.|
 |uniqueBody|[itemBody](itembody.md)|The part of the body of the message that is unique to the current message. **uniqueBody** is not returned by default but can be retrieved for a given message by use of the `?$select=uniqueBody` query. It can be in HTML or text format.|
 |webLink|String|The URL to open the message in Outlook Web App.<br><br>You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook Web App review pane.<br><br>The message will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br><br>This URL can be accessed from within an iFrame.|
 
-**Removing script from the body property**
-
-The message body can be either HTML or text. If the body is HTML, by default, any potentially unsafe HTML (for example, JavaScript) embedded in the **body** property would be removed before the body content is returned in a REST response.
-To get the entire, original HTML content, include the following HTTP request header:
-```
-Prefer: outlook.allow-unsafe-html
-```
-
-**Setting the from and sender properties**
-
-When a message is being composed, in most cases, the From and Sender properties represent the same signed-in user, unless either is updated as described in the following scenarios:
-
-- The **from** property can be changed if the Exchange administrator has assigned **sendAs** rights of the mailbox to some other users. The administrator can do this by selecting **Mailbox Permissions** of the mailbox owner in the Azure portal, or by using the Exchange Admin Center or a Windows PowerShell Add-ADPermission cmdlet. Then, you can programmatically set the **from** property to one of these users who have **sendAs** rights for that mailbox.
-- The **sender** property can be changed if the mailbox owner has delegated one or more users to be able to send messages from that mailbox. The mailbox owner can delegate in Outlook. When a delegate sends a message on behalf of the mailbox owner, the **sender** property is set to the delegate’s account, and the **from** property remains as the mailbox owner. Programmatically, you can set the **sender** property to a user who has got delegate right for that mailbox.
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the message.|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for the message. Read-only. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Read-only. Nullable.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the message. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
 
 ## JSON representation
 
@@ -117,7 +106,9 @@ Here is a JSON representation of the resource
     "attachments",
     "extensions",
     "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "multiValueExtendedProperties",
+
+    "internetMessageHeaders"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.message",

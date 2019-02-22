@@ -1,6 +1,9 @@
 ---
 title: "windowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection without MDM"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsInformationProtectionPolicy resource type

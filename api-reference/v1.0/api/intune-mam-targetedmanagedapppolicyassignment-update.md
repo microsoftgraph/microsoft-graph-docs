@@ -1,6 +1,9 @@
 ---
 title: "Update targetedManagedAppPolicyAssignment"
 description: "Update the properties of a targetedManagedAppPolicyAssignment object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update targetedManagedAppPolicyAssignment

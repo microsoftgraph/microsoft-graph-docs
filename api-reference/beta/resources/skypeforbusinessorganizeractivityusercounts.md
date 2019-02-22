@@ -1,6 +1,7 @@
 ---
 title: "skypeForBusinessOrganizerActivityUserCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # skypeForBusinessOrganizerActivityUserCounts resource type

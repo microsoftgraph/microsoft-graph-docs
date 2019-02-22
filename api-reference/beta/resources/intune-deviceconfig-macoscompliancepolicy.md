@@ -1,15 +1,19 @@
 ---
 title: "macOSCompliancePolicy resource type"
 description: "This class contains compliance settings for Mac OS."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # macOSCompliancePolicy resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This class contains compliance settings for Mac OS.
+
 
 Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -40,10 +44,12 @@ Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-deviceco
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
-|osMinimumVersion|String|Minimum IOS version.|
-|osMaximumVersion|String|Maximum IOS version.|
+|osMinimumVersion|String|Minimum MacOS version.|
+|osMaximumVersion|String|Maximum MacOS version.|
+|osMinimumBuildVersion|String|Minimum MacOS build version.|
+|osMaximumBuildVersion|String|Maximum MacOS build version.|
 |systemIntegrityProtectionEnabled|Boolean|Require that devices have enabled system integrity protection.|
-|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|System and Privacy setting that determines which download locations apps can be run from on a macOS device. Possible values are: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
@@ -92,6 +98,8 @@ Here is a JSON representation of the resource.
   "passwordRequiredType": "String",
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "osMinimumBuildVersion": "String",
+  "osMaximumBuildVersion": "String",
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
@@ -102,7 +110,6 @@ Here is a JSON representation of the resource.
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

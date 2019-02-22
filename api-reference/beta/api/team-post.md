@@ -1,11 +1,14 @@
 ---
 title: "Create a team"
 description: "Create a new team."
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Create team
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [team](../resources/team.md).
 
@@ -44,9 +47,9 @@ If successful, this API returns a `202 Accepted` response containing a link to t
 
 ## Examples
 
-### Example - delegated permissions
+### Example 1: Delegated permissions
 
-Here is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+The following is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
 
@@ -56,7 +59,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
+  "description": "My Sample Team’s Description"
 }
 ```
 
@@ -71,9 +74,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions
+### Example 2: Application permissions
 
-Here is request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
+The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.
 
 #### Request
 
@@ -81,7 +84,37 @@ Here is request with a full payload. The client can override values in the base 
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/beta/users('abc123')"
+  ]
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### Example 3: Create a team with an app installed, multiple channels with pinned tabs using delegated permissions
+
+The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`. 
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
@@ -169,9 +202,13 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### Example - application permissions
+### Example 4: Create a team with a non-standard base template type
 
-Here is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`. When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.
+Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.
+
+To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
+
+To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
@@ -179,12 +216,63 @@ Here is an example of a minimal request using application permissions. By omitti
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('abc123')"
-  ]
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "displayName": "My Class Team",
+  "description": "My Class Team’s Description"
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### Example 5: Create a team with a non-standard base template type with extended properties
+
+Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
+
+To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "displayName": "My Class Team",
+  "description": "My Class Team’s Description",
+  "channels": [
+        {
+            "displayName": "Class Announcements 📢",
+            "isFavoriteByDefault": true
+        },
+        {
+            "displayName": "Homework 🏋️",
+            "isFavoriteByDefault": true,
+        }
+    ],
+    "memberSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false,
+        "allowAddRemoveApps": false,
+        "allowCreateUpdateRemoveTabs": false,
+        "allowCreateUpdateRemoveConnectors": false
+    },
+    "installedApps": [
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        },
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    ]
 }
 ```
 
@@ -201,4 +289,13 @@ Content-Location: /teams/{teamId}
 
 ## See also
 
+- [Available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates)
+- [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error:{/api-reference/beta/api/team-post.md}:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+}-->

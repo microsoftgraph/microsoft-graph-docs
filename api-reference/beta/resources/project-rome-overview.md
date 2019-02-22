@@ -1,11 +1,12 @@
 ---
 title: "Use the Microsoft Graph API to work with Project Rome "
 description: "Project Rome is a Microsoft initiative to build a platform that enables app developers to build great cross-device experiences. Project Rome enables different capabilities that connect different services and client endpoints when the user signs in with the same Microsoft account or work or school account. This allows you to implement cross-device and cross-platform experiences that are centered around user tasks rather than devices. "
+localization_priority: Normal
 ---
 
 # Use the Microsoft Graph API to work with Project Rome 
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a platform that enables app developers to build great cross-device experiences. Project Rome enables different capabilities that connect different services and client endpoints when the user signs in with the same Microsoft account or work or school account. This allows you to implement cross-device and cross-platform experiences that are centered around user tasks rather than devices. 
 
@@ -56,3 +57,11 @@ You can publish a raw data notification or a direct visual notification. When a 
 
 For details, see [Create and send a notification](../api/projectrome-notification-post.md).
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

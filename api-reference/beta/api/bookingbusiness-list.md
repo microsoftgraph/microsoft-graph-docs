@@ -1,13 +1,16 @@
 ---
 title: "List bookingBusinesses"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Get a collection of bookingbusiness objects that has been created for the tenant."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
 ---
 
 # List bookingBusinesses
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
- 
-Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant. 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.
 
 This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
 
@@ -21,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  | 
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -115,10 +118,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List bookingBusinesses",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

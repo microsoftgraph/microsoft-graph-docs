@@ -1,6 +1,9 @@
 ---
 title: "Get deviceAndAppManagementRoleAssignment"
 description: "Read properties and relationships of the deviceAndAppManagementRoleAssignment object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceAndAppManagementRoleAssignment

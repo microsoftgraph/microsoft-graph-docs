@@ -1,11 +1,14 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List audio routing groups
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of **audioRoutingGroup** objects.
 
@@ -26,7 +29,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -46,7 +49,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroups"
+  "name": "get-audioRoutingGroups"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -86,10 +89,15 @@ Content-Length: 302
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List audioRoutingGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-list-audioroutinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

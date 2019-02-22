@@ -1,6 +1,9 @@
 ---
 title: "Update windowsPhone81CustomConfiguration"
 description: "Update the properties of a windowsPhone81CustomConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsPhone81CustomConfiguration

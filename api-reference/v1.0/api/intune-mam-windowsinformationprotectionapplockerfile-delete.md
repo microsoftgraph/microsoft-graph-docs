@@ -1,6 +1,9 @@
 ---
 title: "Delete windowsInformationProtectionAppLockerFile"
 description: "Deletes a windowsInformationProtectionAppLockerFile."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsInformationProtectionAppLockerFile

@@ -1,6 +1,9 @@
 ---
 title: "Get managedMobileApp"
 description: "Read properties and relationships of the managedMobileApp object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedMobileApp

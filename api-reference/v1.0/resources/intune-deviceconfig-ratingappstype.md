@@ -1,6 +1,9 @@
 ---
 title: "ratingAppsType enum type"
 description: "Apps rating as in media content"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingAppsType enum type

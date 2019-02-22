@@ -1,6 +1,9 @@
 ---
 title: "Update editionUpgradeConfiguration"
 description: "Update the properties of a editionUpgradeConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update editionUpgradeConfiguration

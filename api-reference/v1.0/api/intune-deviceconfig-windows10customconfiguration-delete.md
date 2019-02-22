@@ -1,6 +1,9 @@
 ---
 title: "Delete windows10CustomConfiguration"
 description: "Deletes a windows10CustomConfiguration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windows10CustomConfiguration

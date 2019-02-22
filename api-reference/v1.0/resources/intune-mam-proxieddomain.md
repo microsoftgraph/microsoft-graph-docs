@@ -1,6 +1,9 @@
 ---
 title: "proxiedDomain resource type"
 description: "Proxied Domain"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # proxiedDomain resource type

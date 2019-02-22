@@ -1,6 +1,9 @@
 ---
 title: "Get managedDevice"
 description: "Read properties and relationships of the managedDevice object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedDevice

@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Update a record in a SharePoint list
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Update an item in a list
 

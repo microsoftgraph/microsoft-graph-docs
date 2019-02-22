@@ -1,15 +1,19 @@
 ---
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iosDeviceFeaturesConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 iOS Device Features Configuration Profile.
+
 
 Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 
@@ -41,6 +45,8 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
+|wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -180,10 +186,15 @@ Here is a JSON representation of the resource.
     "displayName": "String",
     "kerberosPrincipalName": "String",
     "kerberosRealm": "String"
+  },
+  "wallpaperDisplayLocation": "String",
+  "wallpaperImage": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "String",
+    "value": "binary"
   }
 }
 ```
-
 
 
 

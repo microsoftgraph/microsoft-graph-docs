@@ -1,6 +1,9 @@
 ---
 title: "Get androidCustomConfiguration"
 description: "Read properties and relationships of the androidCustomConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidCustomConfiguration

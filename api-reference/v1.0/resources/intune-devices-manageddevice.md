@@ -1,6 +1,9 @@
 ---
 title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedDevice resource type

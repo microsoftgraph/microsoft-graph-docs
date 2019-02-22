@@ -1,6 +1,9 @@
 ---
 title: "groupAssignmentTarget resource type"
 description: "Represents an assignment to a group."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # groupAssignmentTarget resource type

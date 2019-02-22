@@ -1,6 +1,9 @@
 ---
 title: "TableRow: delete"
 description: "Deletes the row from the table."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableRow: delete

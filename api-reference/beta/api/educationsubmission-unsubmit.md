@@ -1,11 +1,14 @@
 ---
 title: "educationSubmission: unsubmit"
-description: ". During the submit process, all the resources will be copied from submittedResources to the workingResources bucket. The teacher will be looking at the working resources list for grading."
+description: "An action that indicates that a student wants to work on the submission of the assignment after it was turned in. This action can only be taken by the student. "
+author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSubmission: unsubmit
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An action that indicates that a student wants to work on the submission of the assignment after it was turned in. This action can only be taken by the student. This will change the status of the submission from "submitted" to "working". During the submit process, all the resources will be copied from submittedResources to the workingResources bucket. The teacher will be looking at the working resources list for grading.
 
@@ -61,10 +64,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission: unsubmit",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-unsubmit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

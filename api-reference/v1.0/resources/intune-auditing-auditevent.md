@@ -1,6 +1,9 @@
 ---
 title: "auditEvent resource type"
 description: "A class containing the properties for Audit Event."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # auditEvent resource type

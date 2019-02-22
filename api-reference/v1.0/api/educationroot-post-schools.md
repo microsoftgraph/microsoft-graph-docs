@@ -1,6 +1,9 @@
 ---
 title: "Create educationSchool"
 description: "Create a school."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Create educationSchool

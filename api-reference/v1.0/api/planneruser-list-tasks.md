@@ -1,6 +1,9 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannertask** objects assigned to a User."
+localization_priority: Priority
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # List tasks

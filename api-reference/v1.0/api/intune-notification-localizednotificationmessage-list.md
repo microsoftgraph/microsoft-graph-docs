@@ -1,6 +1,9 @@
 ---
 title: "List localizedNotificationMessages"
 description: "List properties and relationships of the localizedNotificationMessage objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List localizedNotificationMessages

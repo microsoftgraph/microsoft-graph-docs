@@ -1,6 +1,9 @@
 ---
 title: "user: findMeetingTimes"
 description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: findMeetingTimes

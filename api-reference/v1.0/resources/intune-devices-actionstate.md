@@ -1,6 +1,9 @@
 ---
 title: "actionState enum type"
 description: "State of the action on the device"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # actionState enum type

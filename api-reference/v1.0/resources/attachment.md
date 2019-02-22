@@ -1,6 +1,7 @@
 ---
 title: "attachment resource type"
 description: "You can add related content to an event,"
+localization_priority: Priority
 ---
 
 # attachment resource type

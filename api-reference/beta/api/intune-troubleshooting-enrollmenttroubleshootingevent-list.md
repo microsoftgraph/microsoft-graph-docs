@@ -1,17 +1,21 @@
 ---
 title: "List enrollmentTroubleshootingEvents"
 description: "List properties and relationships of the enrollmentTroubleshootingEvent objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # List enrollmentTroubleshootingEvents
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) objects.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -41,6 +45,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -52,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 639
+Content-Length: 1400
 
 {
   "value": [
@@ -61,6 +66,28 @@ Content-Length: 639
       "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
       "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
       "correlationId": "Correlation Id value",
+      "troubleshootingErrorDetails": {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+        "context": "Context value",
+        "failure": "Failure value",
+        "failureDetails": "Failure Details value",
+        "remediation": "Remediation value",
+        "resources": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+            "text": "Text value",
+            "link": "Link value"
+          }
+        ]
+      },
+      "eventName": "Event Name value",
+      "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
       "managedDeviceIdentifier": "Managed Device Identifier value",
       "operatingSystem": "Operating System value",
       "osVersion": "Os Version value",
@@ -73,7 +100,6 @@ Content-Length: 639
   ]
 }
 ```
-
 
 
 

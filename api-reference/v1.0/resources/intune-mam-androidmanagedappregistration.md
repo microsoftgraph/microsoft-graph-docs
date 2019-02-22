@@ -1,6 +1,9 @@
 ---
 title: "androidManagedAppRegistration resource type"
 description: "Represents the synchronization details of an android app, with management capabilities, for a specific user."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # androidManagedAppRegistration resource type

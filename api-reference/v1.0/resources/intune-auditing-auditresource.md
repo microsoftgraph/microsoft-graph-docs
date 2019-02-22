@@ -1,6 +1,9 @@
 ---
 title: "auditResource resource type"
 description: "A class containing the properties for Audit Resource."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # auditResource resource type

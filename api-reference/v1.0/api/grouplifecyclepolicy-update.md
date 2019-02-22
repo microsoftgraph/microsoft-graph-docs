@@ -1,6 +1,9 @@
 ---
 title: "Update groupLifecyclePolicy"
 description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Update groupLifecyclePolicy

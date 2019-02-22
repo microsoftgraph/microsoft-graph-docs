@@ -1,15 +1,19 @@
 ---
 title: "windowsIdentityProtectionConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by Windows Hello for Business."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsIdentityProtectionConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This entity provides descriptions of the declared methods, properties and relationships exposed by Windows Hello for Business.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -33,6 +37,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|useSecurityKeyForSignin|Boolean|Boolean value used to enable the Windows Hello security key as a logon credential.|
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Boolean value used to enable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication.|
 |pinMinimumLength|Int32|Integer value that sets the minimum number of characters required for the Windows Hello for Business PIN. Valid values are 4 to 127 inclusive and less than or equal to the value set for the maximum PIN. Valid values 4 to 127|
 |pinMaximumLength|Int32|Integer value that sets the maximum number of characters allowed for the work PIN. Valid values are 4 to 127 inclusive and greater than or equal to the value set for the minimum PIN. Valid values 4 to 127|
@@ -79,6 +84,7 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 1024,
   "pinMaximumLength": 1024,
@@ -94,7 +100,6 @@ Here is a JSON representation of the resource.
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

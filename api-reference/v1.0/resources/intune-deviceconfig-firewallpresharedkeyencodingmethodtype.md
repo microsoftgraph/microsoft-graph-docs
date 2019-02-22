@@ -1,6 +1,9 @@
 ---
 title: "firewallPreSharedKeyEncodingMethodType enum type"
 description: "Possible values for firewallPreSharedKeyEncodingMethod"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # firewallPreSharedKeyEncodingMethodType enum type

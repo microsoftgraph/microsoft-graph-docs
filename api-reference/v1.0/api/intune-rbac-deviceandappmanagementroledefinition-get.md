@@ -1,6 +1,9 @@
 ---
 title: "Get deviceAndAppManagementRoleDefinition"
 description: "Read properties and relationships of the deviceAndAppManagementRoleDefinition object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceAndAppManagementRoleDefinition

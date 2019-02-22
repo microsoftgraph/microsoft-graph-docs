@@ -1,15 +1,19 @@
 ---
 title: "ratingCanadaMoviesType enum type"
 description: "Movies rating labels in Canada"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # ratingCanadaMoviesType enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Movies rating labels in Canada
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -20,7 +24,6 @@ Movies rating labels in Canada
 |agesAbove14|4|The 14A classification is suitable for viewers above 14 or older|
 |agesAbove18|5|The 18A classification is suitable for viewers above 18 or older|
 |restricted|6|The R classification is restricted to 18 years and older|
-
 
 
 

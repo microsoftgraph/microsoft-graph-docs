@@ -1,6 +1,9 @@
 ---
 title: "Get ChartLegend"
 description: "Retrieve the properties and relationships of chartlegend object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get ChartLegend

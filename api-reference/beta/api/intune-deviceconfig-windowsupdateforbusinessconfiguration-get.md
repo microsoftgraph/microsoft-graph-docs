@@ -1,17 +1,21 @@
 ---
 title: "Get windowsUpdateForBusinessConfiguration"
 description: "Read properties and relationships of the windowsUpdateForBusinessConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Get windowsUpdateForBusinessConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,7 +35,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -45,6 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -56,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2076
+Content-Length: 2083
 
 {
   "value": {
@@ -90,8 +96,8 @@ Content-Length: 2076
     "businessReadyUpdatesOnly": "all",
     "skipChecksBeforeRestart": true,
     "updateWeeks": "firstWeek",
-    "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-    "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+    "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+    "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
     "featureUpdatesRollbackWindowInDays": 2,
     "qualityUpdatesWillBeRolledBack": true,
     "featureUpdatesWillBeRolledBack": true,
@@ -102,11 +108,11 @@ Content-Length: 2076
     "engagedRestartTransitionScheduleInDays": 6,
     "autoRestartNotificationDismissal": "automatic",
     "scheduleRestartWarningInHours": 13,
-    "scheduleImminentRestartWarningInMinutes": 7
+    "scheduleImminentRestartWarningInMinutes": 7,
+    "userPauseAccess": "enabled"
   }
 }
 ```
-
 
 
 

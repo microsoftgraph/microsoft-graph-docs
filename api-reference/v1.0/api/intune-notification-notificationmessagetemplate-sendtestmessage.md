@@ -1,6 +1,9 @@
 ---
 title: "sendTestMessage action"
 description: "Sends test message using the specified notificationMessageTemplate in the default locale"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # sendTestMessage action

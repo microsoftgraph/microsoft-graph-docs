@@ -1,6 +1,9 @@
 ---
 title: "Create remoteAssistancePartner"
 description: "Create a new remoteAssistancePartner object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create remoteAssistancePartner

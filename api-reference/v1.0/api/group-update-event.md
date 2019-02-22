@@ -1,6 +1,9 @@
 ---
 title: "Update event"
 description: "Update an event object."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Update event

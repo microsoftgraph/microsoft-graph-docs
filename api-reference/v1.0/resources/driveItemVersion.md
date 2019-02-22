@@ -1,6 +1,8 @@
 ---
 title: "DriveItemVersion resource type"
 description: "The **DriveItemVersion** resource represents a specific version of a DriveItem."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # DriveItemVersion resource type
@@ -17,7 +19,7 @@ The following tasks are available for driveItemVersion resources.
 | [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md

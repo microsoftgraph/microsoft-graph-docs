@@ -1,6 +1,9 @@
 ---
 title: "androidCompliancePolicy resource type"
 description: "This class contains compliance settings for Android."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidCompliancePolicy resource type

@@ -1,6 +1,9 @@
 ---
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List apps in team

@@ -1,6 +1,9 @@
 ---
 title: "Delete managedEBookAssignment"
 description: "Deletes a managedEBookAssignment."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete managedEBookAssignment

@@ -1,6 +1,9 @@
 ---
 title: "Delete managedIOSLobApp"
 description: "Deletes a managedIOSLobApp."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete managedIOSLobApp

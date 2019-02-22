@@ -1,6 +1,9 @@
 ---
 title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List devices

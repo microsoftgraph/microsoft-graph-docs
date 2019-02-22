@@ -1,6 +1,9 @@
 ---
 title: "List androidLobApps"
 description: "List properties and relationships of the androidLobApp objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidLobApps

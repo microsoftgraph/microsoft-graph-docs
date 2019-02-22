@@ -1,6 +1,7 @@
 ---
 title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
+localization_priority: Priority
 ---
 
 # dateTimeTimeZone resource type
@@ -10,7 +11,7 @@ Describes the date, time, and time zone of a point in time.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|dateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
+|dateTime|String|A single point of time in a combined date and time representation (`{date}T{time}`; for example, `2017-08-29T04:00:00.0000000`).|
 |timeZone|String|One of the following time zone names.|
 
 The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.

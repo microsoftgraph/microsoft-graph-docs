@@ -1,6 +1,9 @@
 ---
 title: "Create windowsPhone81CustomConfiguration"
 description: "Create a new windowsPhone81CustomConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsPhone81CustomConfiguration

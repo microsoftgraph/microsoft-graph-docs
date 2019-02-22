@@ -1,11 +1,14 @@
 ---
 title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: translateExchangeIds
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Translate identifiers of Outlook-related resources between formats.
 
@@ -48,9 +51,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | entryId | The binary entry ID format used by MAPI clients. |
 | ewsId | The ID format used by Exchange Web Services clients. |
-| immutableEntryId | The MAPI-compatible immutable ID format. |
+| immutableEntryId | The binary MAPI-compatible immutable ID format. |
 | restId | The default ID format used by Microsoft Graph. |
 | restImmutableEntryId | The immutable ID format used by Microsoft Graph. |
+
+The binary formats (`entryId` and `immutableEntryId`) are URL-safe base64 encoded. URL-safeness is implemented by modifying the base64 encoding of the binary data in the following way:
+
+- Replace `+` with `-`
+- Replace `/` with `_`
+- Remove any trailing padding characters (`=`)
+- Add an integer to the end of the string indicating how many padding characters were in the original (`0`, `1`, or `2`)
 
 ## Response
 
@@ -60,7 +70,7 @@ If successful, this method returns `200 OK` response code and a [convertIdResult
 
 The following example shows how to convert multiple identifiers from the normal REST API format (`restId`) to the REST immutable format (`restImmutableEntryId`).
 
-##### Request
+### Request
 
 Here is the example request.
 <!-- {
@@ -82,7 +92,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+### Response
 
 Here is the example response
 <!-- {
@@ -109,3 +119,11 @@ Content-type: application/json
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

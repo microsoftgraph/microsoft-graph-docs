@@ -1,17 +1,21 @@
 ---
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update androidDeviceOwnerGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -55,6 +59,7 @@ The following table shows the properties that are required when you create the [
 |appsAllowInstallFromUnknownSources|Boolean|Indicates whether or not the user is allowed to enable to unknown sources setting.|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Indicates the value of the app auto update policy. Possible values are: `notConfigured`, `userChoice`, `never`, `wiFiOnly`, `always`.|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Indicates the permission policy for requests for runtime permissions if one is not defined for the app specifically. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|appsRecommendSkippingFirstUseHints|Boolean|Whether or not to recommend all apps skip any first-time-use hints they may have added.|
 |bluetoothBlockConfiguration|Boolean|Indicates whether or not to block a user from configuring bluetooth.|
 |bluetoothBlockContactSharing|Boolean|Indicates whether or not to block a user from sharing contacts via bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
@@ -64,10 +69,14 @@ The following table shows the properties that are required when you create the [
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeWallpaperUrl|String|URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.|
+|kioskModeExitCode|String|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
+|kioskModeVirtualHomeButtonEnabled|Boolean|Whether or not to display a virtual home button when the device is in Kiosk Mode.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
+|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
 |passwordExpirationDays|Int32|Indicates the amount of time in seconds that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Milliseconds of inactivity before the screen times out.|
@@ -86,9 +95,12 @@ The following table shows the properties that are required when you create the [
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|The type of system update configuration. Possible values are: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
+|systemWindowsBlocked|Boolean|Whether or not to block Android system prompt windows, like toasts, phone activities, and system alerts.|
 |usersBlockAdd|Boolean|Indicates whether or not adding users and profiles is disabled.|
 |usersBlockRemove|Boolean|Indicates whether or not to disable removing other users from the device.|
 |volumeBlockAdjustment|Boolean|Indicates whether or not adjusting the master volume is disabled.|
+|vpnAlwaysOnPackageIdentifier|String|Android app package name for app that will handle an always-on VPN connection.|
+|vpnAlwaysOnLockdownMode|Boolean|If an always on VPN package name is specified, whether or not to lock network traffic when that VPN is disconnected.|
 |wifiBlockEditConfigurations|Boolean|Indicates whether or not to block the user from editing the wifi connection settings.|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|Indicates whether or not to block the user from editing just the networks defined by the policy.|
 
@@ -98,15 +110,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2073
+Content-length: 2517
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -118,6 +131,7 @@ Content-length: 2073
   "appsAllowInstallFromUnknownSources": true,
   "appsAutoUpdatePolicy": "userChoice",
   "appsDefaultPermissionPolicy": "prompt",
+  "appsRecommendSkippingFirstUseHints": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
@@ -137,10 +151,16 @@ Content-length: 2073
       "appId": "App Id value"
     }
   ],
+  "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
+  "kioskModeExitCode": "Kiosk Mode Exit Code value",
+  "kioskModeVirtualHomeButtonEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
   "passwordBlockKeyguard": true,
+  "passwordBlockKeyguardFeatures": [
+    "camera"
+  ],
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -161,9 +181,12 @@ Content-length: 2073
   "systemUpdateWindowStartMinutesAfterMidnight": 11,
   "systemUpdateWindowEndMinutesAfterMidnight": 9,
   "systemUpdateInstallType": "postpone",
+  "systemWindowsBlocked": true,
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
+  "vpnAlwaysOnLockdownMode": true,
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
@@ -174,7 +197,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2264
+Content-Length: 2689
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -192,6 +215,7 @@ Content-Length: 2264
   "appsAllowInstallFromUnknownSources": true,
   "appsAutoUpdatePolicy": "userChoice",
   "appsDefaultPermissionPolicy": "prompt",
+  "appsRecommendSkippingFirstUseHints": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
@@ -211,10 +235,16 @@ Content-Length: 2264
       "appId": "App Id value"
     }
   ],
+  "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
+  "kioskModeExitCode": "Kiosk Mode Exit Code value",
+  "kioskModeVirtualHomeButtonEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
   "passwordBlockKeyguard": true,
+  "passwordBlockKeyguardFeatures": [
+    "camera"
+  ],
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -235,14 +265,16 @@ Content-Length: 2264
   "systemUpdateWindowStartMinutesAfterMidnight": 11,
   "systemUpdateWindowEndMinutesAfterMidnight": 9,
   "systemUpdateInstallType": "postpone",
+  "systemWindowsBlocked": true,
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
+  "vpnAlwaysOnLockdownMode": true,
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
 
 
 

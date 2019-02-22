@@ -1,6 +1,9 @@
 ---
 title: "Create Event"
 description: "Create an event in the user's default calendar or specified calendar."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create Event

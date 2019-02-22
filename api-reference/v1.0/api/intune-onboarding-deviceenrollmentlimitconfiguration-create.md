@@ -1,6 +1,9 @@
 ---
 title: "Create deviceEnrollmentLimitConfiguration"
 description: "Create a new deviceEnrollmentLimitConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceEnrollmentLimitConfiguration

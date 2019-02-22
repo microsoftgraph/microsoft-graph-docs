@@ -1,6 +1,9 @@
 ---
 title: "Get macOSDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get macOSDeviceFeaturesConfiguration

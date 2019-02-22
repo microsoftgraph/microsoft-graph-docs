@@ -1,15 +1,19 @@
 ---
 title: "windowsPhone81AppXBundle resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsPhone81AppXBundle resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps.
+
 
 Inherits from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)
 
@@ -40,10 +44,12 @@ Inherits from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.m
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md). Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md). Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |identityName|String|The Identity Name. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityPublisherHash|String|The Identity Publisher Hash. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|The Identity Resource Identifier. Inherited from [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
@@ -93,6 +99,10 @@ Here is a JSON representation of the resource.
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "committedContentVersion": "String",
   "fileName": "String",
   "size": 1024,
@@ -136,7 +146,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

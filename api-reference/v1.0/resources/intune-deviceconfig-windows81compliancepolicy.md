@@ -1,6 +1,9 @@
 ---
 title: "windows81CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 8.1."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windows81CompliancePolicy resource type

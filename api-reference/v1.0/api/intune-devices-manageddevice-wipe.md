@@ -1,6 +1,9 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # wipe action

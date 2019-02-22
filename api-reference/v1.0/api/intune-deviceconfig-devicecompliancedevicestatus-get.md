@@ -1,6 +1,9 @@
 ---
 title: "Get deviceComplianceDeviceStatus"
 description: "Read properties and relationships of the deviceComplianceDeviceStatus object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceComplianceDeviceStatus

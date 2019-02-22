@@ -1,6 +1,9 @@
 ---
 title: "List managedDevices"
 description: "List properties and relationships of the managedDevice objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedDevices

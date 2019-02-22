@@ -1,6 +1,9 @@
 ---
 title: "List iosVppEBooks"
 description: "List properties and relationships of the iosVppEBook objects."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosVppEBooks

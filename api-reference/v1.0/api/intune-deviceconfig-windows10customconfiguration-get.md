@@ -1,6 +1,9 @@
 ---
 title: "Get windows10CustomConfiguration"
 description: "Read properties and relationships of the windows10CustomConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows10CustomConfiguration

@@ -1,17 +1,21 @@
 ---
 title: "Create androidCompliancePolicy"
 description: "Create a new androidCompliancePolicy object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create androidCompliancePolicy
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -52,8 +56,9 @@ The following table shows the properties that are required when you create the a
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
-|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 65535|
-|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
+|passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
+|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign-in failures allowed before factory reset. Valid values 1 to 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
@@ -70,7 +75,7 @@ The following table shows the properties that are required when you create the a
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|
 |conditionStatementId|String|Condition statement id.|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 100 elements.|
 
 
 
@@ -78,12 +83,13 @@ The following table shows the properties that are required when you create the a
 If successful, this method returns a `201 Created` response code and a [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1597
+Content-length: 1588
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -91,7 +97,6 @@ Content-length: 1597
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -100,6 +105,7 @@ Content-length: 1597
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -133,7 +139,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1705
+Content-Length: 1760
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -152,6 +158,7 @@ Content-Length: 1705
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
+  "passwordSignInFailureCountBeforeFactoryReset": 12,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -179,7 +186,6 @@ Content-Length: 1705
   ]
 }
 ```
-
 
 
 

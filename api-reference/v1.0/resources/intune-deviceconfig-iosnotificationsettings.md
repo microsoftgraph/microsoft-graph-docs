@@ -1,6 +1,9 @@
 ---
 title: "iosNotificationSettings resource type"
 description: "An item describing notification setting."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosNotificationSettings resource type

@@ -1,6 +1,9 @@
 ---
 title: "applicationGuardBlockClipboardSharingType enum type"
 description: "Possible values for applicationGuardBlockClipboardSharingType"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # applicationGuardBlockClipboardSharingType enum type

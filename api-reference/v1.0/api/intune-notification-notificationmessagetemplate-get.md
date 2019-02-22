@@ -1,6 +1,9 @@
 ---
 title: "Get notificationMessageTemplate"
 description: "Read properties and relationships of the notificationMessageTemplate object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get notificationMessageTemplate

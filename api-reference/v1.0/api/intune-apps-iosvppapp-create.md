@@ -1,6 +1,9 @@
 ---
 title: "Create iosVppApp"
 description: "Create a new iosVppApp object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosVppApp

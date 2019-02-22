@@ -1,6 +1,9 @@
 ---
 title: "Identifiers in Planner"
 description: "Identifiers for objects in Planner are service-generated string values. The values are 28 characters long and are case-sensitive. When passed as in, the service will do a simple format validation of the identifier, if the format validation fails, the callers will receive a Bad Request (400) error response indicating this problem. Receiving this error indicates a bug in the calling application, such as:"
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Identifiers in Planner

@@ -1,17 +1,21 @@
 ---
 title: "Create depIOSEnrollmentProfile"
 description: "Create a new depIOSEnrollmentProfile object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create depIOSEnrollmentProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,6 +51,7 @@ The following table shows the properties that are required when you create the d
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -63,6 +68,8 @@ The following table shows the properties that are required when you create the d
 |zoomDisabled|Boolean|Indicates if zoom setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |siriDisabled|Boolean|Indicates if siri setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
@@ -71,6 +78,13 @@ The following table shows the properties that are required when you create the d
 |enableSharedIPad|Boolean|This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.|
 |companyPortalVppTokenId|String|If set, indicates which Vpp token should be used to deploy the Company Portal w/ device licensing. 'enableAuthenticationViaCompanyPortal' must be set in order for this property to be set.|
 |enableSingleAppEnrollmentMode|Boolean|Tells the device to enable single app mode and apply app-lock during enrollment. Default is false. 'enableAuthenticationViaCompanyPortal' and 'companyPortalVppTokenId' must be set for this property to be set.|
+|homeButtonScreenDisabled|Boolean|Indicates if home button sensitivity screen is disabled|
+|iMessageAndFaceTimeScreenDisabled|Boolean|Indicates if iMessage and FaceTime screen is disabled|
+|onBoardingScreenDisabled|Boolean|Indicates if onboarding setup screen is disabled|
+|screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled|
+|simSetupScreenDisabled|Boolean|Indicates if the SIMSetup screen is disabled|
+|softwareUpdateScreenDisabled|Boolean|Indicates if the mandatory sofware update screen is disabled|
+|watchMigrationScreenDisabled|Boolean|Indicates if the watch migration screen is disabled|
 
 
 
@@ -78,12 +92,13 @@ The following table shows the properties that are required when you create the d
 If successful, this method returns a `201 Created` response code and a [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1329
+Content-length: 1736
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -92,6 +107,7 @@ Content-length: 1329
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
@@ -108,6 +124,8 @@ Content-length: 1329
   "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
+  "displayToneSetupDisabled": true,
+  "privacyPaneDisabled": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -121,7 +139,14 @@ Content-length: 1329
   "sharedIPadMaximumUserCount": 10,
   "enableSharedIPad": true,
   "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-  "enableSingleAppEnrollmentMode": true
+  "enableSingleAppEnrollmentMode": true,
+  "homeButtonScreenDisabled": true,
+  "iMessageAndFaceTimeScreenDisabled": true,
+  "onBoardingScreenDisabled": true,
+  "screenTimeScreenDisabled": true,
+  "simSetupScreenDisabled": true,
+  "softwareUpdateScreenDisabled": true,
+  "watchMigrationScreenDisabled": true
 }
 ```
 
@@ -130,7 +155,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1378
+Content-Length: 1785
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -140,6 +165,7 @@ Content-Length: 1378
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
@@ -156,6 +182,8 @@ Content-Length: 1378
   "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
+  "displayToneSetupDisabled": true,
+  "privacyPaneDisabled": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -169,10 +197,16 @@ Content-Length: 1378
   "sharedIPadMaximumUserCount": 10,
   "enableSharedIPad": true,
   "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-  "enableSingleAppEnrollmentMode": true
+  "enableSingleAppEnrollmentMode": true,
+  "homeButtonScreenDisabled": true,
+  "iMessageAndFaceTimeScreenDisabled": true,
+  "onBoardingScreenDisabled": true,
+  "screenTimeScreenDisabled": true,
+  "simSetupScreenDisabled": true,
+  "softwareUpdateScreenDisabled": true,
+  "watchMigrationScreenDisabled": true
 }
 ```
-
 
 
 

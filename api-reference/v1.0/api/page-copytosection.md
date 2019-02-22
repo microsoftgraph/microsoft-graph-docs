@@ -1,6 +1,9 @@
 ---
 title: "page: copyToSection"
 description: "Copies a page to a specific section."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # page: copyToSection

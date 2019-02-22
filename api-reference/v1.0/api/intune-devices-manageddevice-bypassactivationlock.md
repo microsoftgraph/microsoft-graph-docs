@@ -1,6 +1,9 @@
 ---
 title: "bypassActivationLock action"
 description: "Bypass activation lock"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # bypassActivationLock action

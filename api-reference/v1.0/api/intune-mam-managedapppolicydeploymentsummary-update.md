@@ -1,6 +1,9 @@
 ---
 title: "Update managedAppPolicyDeploymentSummary"
 description: "Update the properties of a managedAppPolicyDeploymentSummary object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update managedAppPolicyDeploymentSummary

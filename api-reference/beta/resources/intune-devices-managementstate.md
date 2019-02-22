@@ -1,15 +1,19 @@
 ---
 title: "managementState enum type"
 description: "Management state of device in Microsoft Intune."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # managementState enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Management state of device in Microsoft Intune.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -25,7 +29,6 @@ Management state of device in Microsoft Intune.
 |wipeCanceled|9|A wipe command for this device has been canceled|
 |retireCanceled|10|A retire command for this device has been canceled|
 |discovered|11|The device is discovered but not fully enrolled.|
-
 
 
 

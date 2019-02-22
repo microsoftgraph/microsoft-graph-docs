@@ -1,6 +1,9 @@
 ---
 title: "enablement enum type"
-description: "Values used to indicate the status of a device. "
+description: "Describes the enablement enumeration of the Microsoft Graph API for Intune, which supports multiple workflows." 
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # enablement enum type

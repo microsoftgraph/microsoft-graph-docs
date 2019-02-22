@@ -1,6 +1,9 @@
 ---
 title: "Get resourceOperation"
 description: "Read properties and relationships of the resourceOperation object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get resourceOperation

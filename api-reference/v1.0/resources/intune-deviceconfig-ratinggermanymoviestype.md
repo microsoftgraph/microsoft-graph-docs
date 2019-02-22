@@ -1,6 +1,9 @@
 ---
 title: "ratingGermanyMoviesType enum type"
 description: "Movies rating labels in Germany"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingGermanyMoviesType enum type

@@ -1,6 +1,9 @@
 ---
 title: "section: copyToSectionGroup"
 description: "Copies a section to a specific section group."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # section: copyToSectionGroup

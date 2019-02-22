@@ -1,6 +1,9 @@
 ---
 title: "deviceManagementExchangeConnectorSyncType enum type"
 description: "The type of Exchange Connector sync requested."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementExchangeConnectorSyncType enum type

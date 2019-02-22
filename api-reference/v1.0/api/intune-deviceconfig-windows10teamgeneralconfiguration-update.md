@@ -1,6 +1,9 @@
 ---
 title: "Update windows10TeamGeneralConfiguration"
 description: "Update the properties of a windows10TeamGeneralConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows10TeamGeneralConfiguration

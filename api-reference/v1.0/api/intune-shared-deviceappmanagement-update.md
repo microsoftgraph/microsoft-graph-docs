@@ -1,6 +1,9 @@
 ---
 title: "Update deviceAppManagement"
 description: "Update the properties of a deviceAppManagement object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceAppManagement

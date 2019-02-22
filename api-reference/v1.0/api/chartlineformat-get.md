@@ -1,6 +1,9 @@
 ---
 title: "Get ChartLineFormat"
 description: "Retrieve the properties and relationships of chartlineformat object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get ChartLineFormat

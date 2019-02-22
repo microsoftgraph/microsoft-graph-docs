@@ -1,17 +1,21 @@
 ---
 title: "Create deviceManagementTroubleshootingEvent"
 description: "Create a new deviceManagementTroubleshootingEvent object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create deviceManagementTroubleshootingEvent
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -44,6 +48,9 @@ The following table shows the properties that are required when you create the d
 |id|String|UUID for the object|
 |eventDateTime|DateTimeOffset|Time when the event occurred .|
 |correlationId|String|Id used for tracing the failure in the service.|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation.|
+|eventName|String|Event Name corresponding to the Troubleshooting Event. It is an Optional field|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event|
 
 
 
@@ -51,17 +58,40 @@ The following table shows the properties that are required when you create the d
 If successful, this method returns a `201 Created` response code and a [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 Content-type: application/json
-Content-length: 179
+Content-length: 852
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-  "correlationId": "Correlation Id value"
+  "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 
@@ -70,16 +100,37 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 228
+Content-Length: 901
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
   "id": "fb26dcee-dcee-fb26-eedc-26fbeedc26fb",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-  "correlationId": "Correlation Id value"
+  "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
-
 
 
 

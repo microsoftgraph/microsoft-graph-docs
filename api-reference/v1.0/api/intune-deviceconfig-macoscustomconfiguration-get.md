@@ -1,6 +1,9 @@
 ---
 title: "Get macOSCustomConfiguration"
 description: "Read properties and relationships of the macOSCustomConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get macOSCustomConfiguration

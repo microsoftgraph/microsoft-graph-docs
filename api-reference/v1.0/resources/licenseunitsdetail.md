@@ -1,6 +1,7 @@
 ---
 title: "licenseUnitsDetail resource type"
 description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
+localization_priority: Normal
 ---
 
 # licenseUnitsDetail resource type

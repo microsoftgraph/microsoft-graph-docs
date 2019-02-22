@@ -1,6 +1,9 @@
 ---
 title: "sync action"
 description: "Not yet documented"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # sync action

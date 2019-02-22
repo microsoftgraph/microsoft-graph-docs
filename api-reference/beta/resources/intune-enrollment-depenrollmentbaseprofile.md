@@ -1,15 +1,19 @@
 ---
 title: "depEnrollmentBaseProfile resource type"
 description: "The DepEnrollmentBaseProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # depEnrollmentBaseProfile resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The DepEnrollmentBaseProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
+
 
 Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)
 
@@ -28,6 +32,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |requiresUserAuthentication|Boolean|Indicates if the profile requires user authentication Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|Configuration endpoint url to use for Enrollment Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile|
 |supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
@@ -44,9 +49,12 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |zoomDisabled|Boolean|Indicates if zoom setup pane is disabled|
 |siriDisabled|Boolean|Indicates if siri setup pane is disabled|
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled|
+|displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled|
+|privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -64,6 +72,7 @@ Here is a JSON representation of the resource.
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "String",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "String",
@@ -79,10 +88,11 @@ Here is a JSON representation of the resource.
   "applePayDisabled": true,
   "zoomDisabled": true,
   "siriDisabled": true,
-  "diagnosticsDisabled": true
+  "diagnosticsDisabled": true,
+  "displayToneSetupDisabled": true,
+  "privacyPaneDisabled": true
 }
 ```
-
 
 
 

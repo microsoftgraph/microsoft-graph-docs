@@ -1,16 +1,21 @@
 ---
 title: "androidManagedAppRegistration resource type"
-description: "Represents the synchronization details of an android app, with management capabilities, for a specific user."
+description: "Represents the synchronization details of an android app, with management capabilities, for a specific user.
+The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # androidManagedAppRegistration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the synchronization details of an android app, with management capabilities, for a specific user.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
+
 
 Inherits from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
@@ -41,6 +46,7 @@ Inherits from [managedAppRegistration](../resources/intune-mam-managedappregistr
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|patchVersion|String|The patch version for the current android app registration|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -81,10 +87,10 @@ Here is a JSON representation of the resource.
     "packageId": "String"
   },
   "id": "String (identifier)",
-  "version": "String"
+  "version": "String",
+  "patchVersion": "String"
 }
 ```
-
 
 
 

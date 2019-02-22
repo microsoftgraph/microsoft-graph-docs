@@ -1,6 +1,9 @@
 ---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedDeviceOverview resource type

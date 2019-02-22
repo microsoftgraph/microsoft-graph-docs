@@ -1,6 +1,9 @@
 ---
 title: "keyValuePair resource type"
 description: "Key value pair for storing custom settings"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # keyValuePair resource type

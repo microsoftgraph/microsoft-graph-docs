@@ -1,13 +1,16 @@
 ---
 title: "bookingBusiness: publish"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Make the scheduling page of this business available to external customers."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
 ---
 
 # bookingBusiness: publish
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
- 
-Make the scheduling page of this business available to external customers. 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Make the scheduling page of this business available to external customers.
 
 Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.
 
@@ -18,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |  
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +52,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ```
 
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -61,10 +64,15 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingBusiness: publish",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

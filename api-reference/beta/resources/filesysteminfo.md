@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: FileSystemInfo
+localization_priority: Normal
 ---
 # FileSystemInfo facet
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
 This facet can be used to specify the last modified date or created date of the item as it was on the local device.
@@ -61,10 +62,15 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo"
-} -->
+  "tocPath": "Facets/FileSystemInfo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/filesysteminfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
