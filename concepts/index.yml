@@ -41,11 +41,11 @@ sections:
         image:
           src: ./images/index/i_overview.svg
         title: Services and features
-      - href: /graph/azuread-users-concept-overview
-        html: <p>Want to learn more about the APIs? Read the overviews for the Microsoft Graph APIs, such as users, groups, identity and access, and more.</p>
+      - href: https://developer.microsoft.com/graph/graph-explorer/
+        html: <p>Make requests and see responses against the Microsoft Graph.</p>
         image:
-          src: ./images/index/i_library.svg
-        title: Overviews of Microsoft Graph APIs
+          src: ./images/index/i_queries.svg
+        title: Graph Explorer
       - href: /graph/use-the-api
         html: <p>Find out how to start using the Microsoft Graph API to access Microsoft Cloud service resources.</p>
         image:
@@ -62,15 +62,16 @@ sections:
           src: ./images/index/i_api.svg
         title: Microsoft Graph REST API Beta
    
-  - title: Tutorials
+  - title: Supported platforms
     items:
     - type: paragraph
       text: 'Follow platform-specific, step-by-step training exercises that guide you through basic Microsoft Graph concepts, including how to create a basic app that uses Azure Active Directory authentication and accesses data through the Microsoft Graph.'
-    - type: paragraph
-      text: <b>Single-page apps</b>
     - type: table
       style: dataMatrix
       columns:
+        - image:
+            src: ./images/index/logo_android.svg
+          title: Android
         - image:
             src: ./images/index/logo_angular.svg
           title: Angular
@@ -78,8 +79,14 @@ sections:
             src: ./images/index/logo_NET.svg
           title: ASP.NET
         - image:
-            src: 
-          title: Microsoft Flow
+            src: ./images/index/logo_ios.svg
+          title: iOS
+        - image:
+            src: ./images/index/logo_java.svg
+          title: Java
+        - image:
+            src: ./images/index/logo_js.svg
+          title: JavaScript
         - image:
             src: ./images/index/logo_nodejs.svg
           title: Node.js
@@ -93,23 +100,54 @@ sections:
             src: ./images/index/logo_ruby.svg
           title: Ruby
         - image:
-            src: ./images/index/logo_react.svg
-          title: React
-        - image:
             src: ./images/index/logo_windows.svg
           title: UWP     
+        - image:
+            src: ./images/index/logo_xamarin.svg
+          title: Xamarin
       rows:
-        - title: Training
+        - title: Quickstart
           values:
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
+          - href: 
+          - href: 
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-node
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-php
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-Python
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
+        - title: Tutorial
+          values:
+          - href: 
           - href: /tutorials/angular
           - href: /tutorials/aspnet
-          - href: /tutorials/flow
+          - href: 
+          - href: 
+          - href: 
           - href: /tutorials/node
           - href: /tutorials/php
           - href: /tutorials/python
           - href: /tutorials/ruby
-          - href: /tutorials/react
           - href: /tutorials/uwp
+          - href: 
+        - title: SDK
+          values:
+          - href: https://github.com/microsoftgraph/msgraph-sdk-android
+          - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+          - href: https://www.nuget.org/packages/Microsoft.Graph
+          - href: https://github.com/microsoftgraph/msgraph-sdk-objc
+          - href: https://github.com/microsoftgraph/msgraph-sdk-java
+          - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+          - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+          - href: https://github.com/microsoftgraph/msgraph-sdk-php
+          - href: 
+          - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
+          - href: https://www.nuget.org/packages/Microsoft.Graph
+          - href: https://www.nuget.org/packages/Microsoft.Graph
 
   - title: Resources
     items:
@@ -118,11 +156,11 @@ sections:
       className: cardsM
       columns: 3
       items:
-      - href: https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g/search?query=microsoft+graph
-        html: <p>Subscribe to the Microsoft Developer channel and learn more about Microsoft Graph and the APIs through our videos.</p>
+      - href: /graph/changelog
+        html: <p>Find out what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.</p>
         image:
-          src: ./images/index/i_video.svg
-        title: Microsoft Developer videos
+          src: ./images/index/i_backlog.svg
+        title: Changelog
       - href: https://developer.microsoft.com/graph/blogs/
         html: <p>Read the blog for the latest news and updates.</p>
         image:
