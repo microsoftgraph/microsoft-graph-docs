@@ -1,6 +1,9 @@
 ---
 title: "Get conversation thread"
 description: "Get a thread object."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Get conversation thread

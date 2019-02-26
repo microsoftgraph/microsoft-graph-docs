@@ -1,6 +1,9 @@
 ---
 title: "Add app to team"
 description: "Installs an app to the specified team."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Add app to team
@@ -48,9 +51,9 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+POST /teams/{id}/installedApps
 {
-   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 #### Response

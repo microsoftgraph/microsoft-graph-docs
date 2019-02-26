@@ -1,15 +1,19 @@
 ---
 title: "iosCompliancePolicy resource type"
 description: "This class contains compliance settings for IOS."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iosCompliancePolicy resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This class contains compliance settings for IOS.
+
 
 Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -43,11 +47,13 @@ Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-deviceco
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |osMinimumVersion|String|Minimum IOS version.|
 |osMaximumVersion|String|Maximum IOS version.|
+|osMinimumBuildVersion|String|Minimum IOS build version.|
+|osMaximumBuildVersion|String|Maximum IOS build version.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 100 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,6 +97,8 @@ Here is a JSON representation of the resource.
   "passcodeRequired": true,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "osMinimumBuildVersion": "String",
+  "osMaximumBuildVersion": "String",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
@@ -106,7 +114,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

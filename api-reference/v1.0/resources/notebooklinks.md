@@ -1,6 +1,9 @@
 ---
 title: "notebookLinks resource type"
 description: "Links for opening a OneNote notebook."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # notebookLinks resource type

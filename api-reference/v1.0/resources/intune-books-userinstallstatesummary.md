@@ -1,13 +1,17 @@
 ---
 title: "userInstallStateSummary resource type"
 description: "Contains properties for the installation state summary for a user."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # userInstallStateSummary resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for the installation state summary for a user.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|

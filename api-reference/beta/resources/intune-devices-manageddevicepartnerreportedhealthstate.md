@@ -1,15 +1,19 @@
 ---
 title: "managedDevicePartnerReportedHealthState enum type"
 description: "Available health states for the Device Health API"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # managedDevicePartnerReportedHealthState enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Available health states for the Device Health API
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -23,7 +27,6 @@ Available health states for the Device Health API
 |unresponsive|7|Device is considered unresponsive by the mobile threat defense partner. The device health is not known.|
 |compromised|8|Device is considered compromised by the Threat Defense partner. This means the device has an active Threat or Risk which cannot be easily remediated by the end user and the user should contact their IT Admin.|
 |misconfigured|9|Device is considered misconfigured with the Threat Defense partner. This means the device is missing a required profile or configuration for the Threat Defense Partner to function properly and is thus threat or risk analysis is not able to complete.|
-
 
 
 

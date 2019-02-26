@@ -1,6 +1,9 @@
 ---
 title: "Create Channel"
 description: "Create a new channel in a Microsoft Team, as specified in the request body."
+localization_priority: Priority
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Create Channel
@@ -20,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.ReadWrite.All    |
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +52,7 @@ Here is an example of the request.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {

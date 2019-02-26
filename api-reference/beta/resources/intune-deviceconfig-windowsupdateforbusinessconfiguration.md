@@ -1,15 +1,19 @@
 ---
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsUpdateForBusinessConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Windows Update for business configuration.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -37,7 +41,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Delivery Optimization Mode. Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`, `windowsDefault`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Installation schedule|
@@ -50,8 +54,8 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Scheduled the update installation on the weeks of the month. Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|qualityUpdatesPauseStartDateTime|String|Quality Updates Pause Start datetime|
-|featureUpdatesPauseStartDateTime|String|Feature Updates Pause Start datetime|
+|qualityUpdatesPauseStartDate|Date|Quality Updates Pause start date. This property is read-only.|
+|featureUpdatesPauseStartDate|Date|Feature Updates Pause start date. This property is read-only.|
 |featureUpdatesRollbackWindowInDays|Int32|The number of days after a Feature Update for which a rollback is valid|
 |qualityUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Quality Updates on the next device check in|
 |featureUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Feature Updates on the next device check in|
@@ -63,6 +67,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
 |scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
+|userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to enable end user’s access to pause software updates. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -115,8 +120,8 @@ Here is a JSON representation of the resource.
   "businessReadyUpdatesOnly": "String",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "String",
-  "qualityUpdatesPauseStartDateTime": "String",
-  "featureUpdatesPauseStartDateTime": "String",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 1024,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -127,10 +132,10 @@ Here is a JSON representation of the resource.
   "engagedRestartTransitionScheduleInDays": 1024,
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
-  "scheduleImminentRestartWarningInMinutes": 1024
+  "scheduleImminentRestartWarningInMinutes": 1024,
+  "userPauseAccess": "String"
 }
 ```
-
 
 
 

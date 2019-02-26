@@ -1,6 +1,9 @@
 ---
 title: "Create Session"
 description: "Use this API to create a new workbook session. "
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Create Session
@@ -60,7 +63,7 @@ Content-type: application/json
 Content-length: 52
 
 {
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
@@ -79,7 +82,7 @@ Content-length: 52
 
 {
   "id": "id-value",
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 

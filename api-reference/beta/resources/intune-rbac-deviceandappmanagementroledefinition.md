@@ -1,15 +1,19 @@
 ---
 title: "deviceAndAppManagementRoleDefinition resource type"
 description: "The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # deviceAndAppManagementRoleDefinition resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
+
 
 Inherits from [roleDefinition](../resources/intune-rbac-roledefinition.md)
 
@@ -32,6 +36,7 @@ Inherits from [roleDefinition](../resources/intune-rbac-roledefinition.md)
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,10 +96,12 @@ Here is a JSON representation of the resource.
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

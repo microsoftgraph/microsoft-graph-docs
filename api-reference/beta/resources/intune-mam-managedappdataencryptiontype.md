@@ -1,15 +1,19 @@
 ---
 title: "managedAppDataEncryptionType enum type"
 description: "Represents the level to which app data is encrypted for managed apps"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # managedAppDataEncryptionType enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the level to which app data is encrypted for managed apps
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -17,7 +21,6 @@ Represents the level to which app data is encrypted for managed apps
 |afterDeviceRestart|1|App data is encrypted when the device is restarted.|
 |whenDeviceLockedExceptOpenFiles|2|App data associated with this policy is encrypted when the device is locked, except data in files that are open|
 |whenDeviceLocked|3|App data associated with this policy is encrypted when the device is locked|
-
 
 
 

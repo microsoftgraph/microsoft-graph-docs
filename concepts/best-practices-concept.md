@@ -1,6 +1,7 @@
 ---
 title: "Best practices for working with Microsoft Graph"
 description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
+localization_priority: Priority
 ---
 
 # Best practices for working with Microsoft Graph

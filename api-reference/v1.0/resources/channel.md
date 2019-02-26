@@ -1,6 +1,9 @@
 ---
 title: "channel resource type"
 description: "A channel is a collection of messages within a team. "
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # channel resource type
@@ -41,9 +44,6 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "chatthreads"
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
 }-->
@@ -52,7 +52,7 @@ Here is a JSON representation of the resource
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```

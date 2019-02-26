@@ -1,6 +1,9 @@
 ---
 title: "ChartDataLabelFormat resource type"
 description: "Encapsulates the format properties for the chart data labels."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartDataLabelFormat resource type

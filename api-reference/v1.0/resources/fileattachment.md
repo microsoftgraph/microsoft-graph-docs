@@ -1,6 +1,7 @@
 ---
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** "
+localization_priority: Priority
 ---
 
 # fileAttachment resource type
@@ -27,7 +28,7 @@ Derived from [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |contentBytes|Binary|The base64-encoded contents of the file.|
 |contentId|String|The ID of the attachment in the Exchange store.|
-|contentLocation|String|The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.|
+|contentLocation|String|Do not use this property as it is not supported.|
 |contentType|String|The content type of the attachment.|
 |id|String|The attachment ID.|
 |isInline|Boolean|Set to true if this is an inline attachment.|

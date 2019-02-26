@@ -1,6 +1,9 @@
 ---
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user resource type
@@ -41,6 +44,7 @@ This resource supports:
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
+|[List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and directory roles that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List registeredDevices](../api/user-list-registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are retistered for the user from the registeredDevices navigation property.|
@@ -70,12 +74,14 @@ This resource supports:
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
 |city|String|The city in which the user is located. Supports $filter.|
-|companyName | String | The company name which the user is associated. Read-only. |
+|companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. |
 |consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
 |createdDateTime | DateTimeOffset |The created date of the user object. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
+|employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
+|faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
@@ -83,12 +89,14 @@ This resource supports:
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title. Supports $filter.|
 |legalAgeGroupClassification|String| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|
+|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
 |officeLocation|String|The office location in the user's place of business.|
+|onPremisesDistinguishedName|String| Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
 |onPremisesDomainName|String| Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. Supports $filter.                            |
@@ -98,6 +106,7 @@ This resource supports:
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
 |onPremisesSyncEnabled|Boolean| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |
 |onPremisesUserPrincipalName|String| Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
+|otherMails|String| A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
@@ -109,6 +118,7 @@ This resource supports:
 |proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
+|showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
 |skills|String collection|A list for the user to enumerate their skills.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
@@ -366,6 +376,8 @@ Here is a JSON representation of the resource
   "country": "string",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
+  "faxNumber" : "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -373,12 +385,14 @@ Here is a JSON representation of the resource
   "interests": ["string"],
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
+  "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
   "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
@@ -388,6 +402,7 @@ Here is a JSON representation of the resource
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -399,6 +414,7 @@ Here is a JSON representation of the resource
   "proxyAddresses": ["string"],
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

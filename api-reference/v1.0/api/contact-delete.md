@@ -1,6 +1,9 @@
 ---
 title: "Delete contact"
 description: "Delete a contact."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete contact

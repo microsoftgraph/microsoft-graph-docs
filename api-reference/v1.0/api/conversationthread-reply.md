@@ -1,6 +1,9 @@
 ---
 title: "conversationThread: reply"
 description: "Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation "
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # conversationThread: reply
@@ -15,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

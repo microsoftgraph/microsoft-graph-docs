@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Resumable file upload
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Upload large files with an upload session
 
@@ -335,7 +337,7 @@ If-Match: {etag or ctag}
 
 **Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
 
-### HTTP response
+### Response
 
 If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.
 

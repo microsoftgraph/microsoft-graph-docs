@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Create a new folder
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Create a new folder in a drive
 
@@ -100,8 +102,9 @@ Content-Type: application/json
 
 ## Error response
 
-Read the [Error Responses][error-response] topic for more info about
+See [Error Responses][error-response] for more info about
 how errors are returned.
+
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md

@@ -1,6 +1,7 @@
 ---
 title: "attendeeBase resource type"
 description: "The type of attendee."
+localization_priority: Normal
 ---
 
 # attendeeBase resource type

@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Get Drive
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Get Drive
 
@@ -110,7 +112,7 @@ GET /drives/{drive-id}
 
 These method support the [$select query parameter][odata-query-parameters] to shape the response.
 
-## HTTP response
+## Response
 
 Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.
 

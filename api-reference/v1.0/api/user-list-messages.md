@@ -1,6 +1,9 @@
 ---
 title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders)."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List messages

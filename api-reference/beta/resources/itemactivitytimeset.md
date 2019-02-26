@@ -3,10 +3,11 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
+localization_priority: Normal
 ---
 # ItemActivityTimeSet resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemActivityTimeSet** resource provides information about when an [activity][activity] on an item took place.
 
@@ -45,10 +46,15 @@ At a later time when the user re-connects to the cloud and the changes get uploa
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionSet object provides information about an activity that took place on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionSet"
-} -->
+  "tocPath": "Resources/ItemActionSet",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivitytimeset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

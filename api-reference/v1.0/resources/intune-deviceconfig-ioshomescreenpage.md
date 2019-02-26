@@ -1,13 +1,17 @@
 ---
 title: "iosHomeScreenPage resource type"
 description: "A page containing apps and folders on the Home Screen"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iosHomeScreenPage resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 A page containing apps and folders on the Home Screen
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -16,6 +20,7 @@ A page containing apps and folders on the Home Screen
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

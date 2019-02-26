@@ -1,6 +1,9 @@
 ---
 title: "Get ChartDataLabels"
 description: "Retrieve the properties and relationships of chartdatalabels object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get ChartDataLabels

@@ -1,6 +1,9 @@
 ---
 title: "Update plannerAssignedToTaskBoardTaskFormat"
 description: "Update the properties of **plannerAssignedToTaskBoardTaskFormat** object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Update plannerAssignedToTaskBoardTaskFormat

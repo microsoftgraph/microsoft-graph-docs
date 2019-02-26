@@ -1,67 +1,20 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "groups"
 ---
 
 # Get group
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of a [group](../resources/group.md) object.
 
-##### Default properties
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. 
 
-The following represent the default set of properties that are returned when getting or listing groups. 
-These are a subset of all available properties. 
-
-* classification
-* createdDateTime
-* description
-* displayName
-* groupTypes
-* id
-* mail
-* mailEnabled
-* mailNickname
-* membershipRule
-* membershipRuleProcessingState
-* onPremisesLastSyncDateTime
-* onPremisesSecurityIdentifier
-* onPremisesSyncEnabled
-* preferredLanguage - Not supported; a value for this property cannot be set and returns `null` when called.
-* proxyAddresses
-* renewedDateTime
-* securityEnabled
-* theme
-* visibility
-
-The following group properties are not returned by default:
-
-* accessType
-* allowExternalSenders
-* autoSubscribeNewMembers
-* hasMembersWithLicenseErrors
-* isSubscribedByMail
-* isFavorite
-* unseenConversationsCount
-* unseenCount
-* unseenMessagesCount
-
-To get these properties (except **isFavorite** and **hasMembersWithLicenseErrors**), use the `$select` query parameter. The following are examples: 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-To return groups containing members with license errors, use the **$filter** query parameter:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
-```
+To get properties that are _not_ returned by default, specify them in a `$select` OData query option. See an [example](#request-2) of  `$select`. An exception is the **hasMembersWithLicenseErrors** property. See an [example](group-list.md#request-2) of how to use this property.
 
 Since the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
@@ -80,7 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /groups/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+You can use `$select` to get specific group properties, including those that are not returned by default. See an [example](#request-2) below.
+
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 | Name       | Type | Description|
@@ -91,50 +46,100 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 ## Example
-### Request
-The following is an example of the request.
+#### Request 1
+The following is an example of a GET request. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}
+GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability. The default properties will be returned from an actual call, as described before.
+#### Response 1
+The following is an example of the response. It includes only the default properties.
+
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T02:21:05Z",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
+  "expirationDateTime": null,
   "groupTypes": [
-    "groupTypes-value"
+      "Unified"
   ],
-  "mail": "mail-value",
+  "mail": "golfassist@contoso.com",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
+  "mailNickname": "golfassist",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "preferredLanguage": null,
   "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+      "smtp:golfassist@contoso.onmicrosoft.com",
+      "SMTP:golfassist@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T02:21:05Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "theme": null,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
+}
+```
+
+#### Request 2
+The next example uses a `$select` query option to get a few properties that are not returned by default. 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### Response 2
+The following is an example of the response which includes the requested non-default properties.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 
@@ -147,10 +152,15 @@ Content-length: xxx
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get group",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

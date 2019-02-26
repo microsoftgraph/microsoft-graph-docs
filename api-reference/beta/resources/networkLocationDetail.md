@@ -1,6 +1,7 @@
 ---
 title: "networkLocationDetail resource type"
 description: "Indicates details associated with the network location. ."
+localization_priority: Normal
 ---
 
 # networkLocationDetail resource type

@@ -1,6 +1,9 @@
 ---
-title: "Device management in Microsoft Intune"
-description: ""
+title: "Device management in Microsoft Intune - Microsoft Graph API"
+description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Device management in Microsoft Intune
@@ -11,7 +14,12 @@ description: ""
 
 - [Admin consent](intune-devices-adminconsent.md)
 - [Admin consent state](intune-devices-adminconsentstate.md)
+- [App log collection download details](intune-devices-applogcollectiondownloaddetails.md)
+- [App log collection request](intune-devices-applogcollectionrequest.md)
+- [App log decryption algorithm](intune-devices-applogdecryptionalgorithm.md)
+- [App log upload state](intune-devices-apploguploadstate.md)
 - [Apple push notification certificate](intune-devices-applepushnotificationcertificate.md)
+- [Apple VPP token troubleshooting event](intune-troubleshooting-applevpptokentroubleshootingevent.md)
 - [Audit actor](intune-auditing-auditactor.md)
 - [Audit event](intune-auditing-auditevent.md)
 - [Audit property](intune-auditing-auditproperty.md)
@@ -47,15 +55,17 @@ description: ""
 - [Device management script user state](intune-devices-devicemanagementscriptuserstate.md)
 - [Device management subscription state](intune-devices-devicemanagementsubscriptionstate.md)
 - [Device management subscriptions](intune-devices-devicemanagementsubscriptions.md)
+- [Device management troubleshooting error details](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
+- [Device management troubleshooting error resource](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Device management troubleshooting event](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Device operating system summary](intune-devices-deviceoperatingsystemsummary.md)
 - [Device protection overview](intune-devices-deviceprotectionoverview.md)
 - [Device registration state](intune-devices-deviceregistrationstate.md)
-- [Embedded s i m activation code](intune-esim-embeddedsimactivationcode.md)
-- [Embedded s i m activation code pool](intune-esim-embeddedsimactivationcodepool.md)
-- [Embedded s i m activation code pool assignment](intune-esim-embeddedsimactivationcodepoolassignment.md)
-- [Embedded s i m device state](intune-esim-embeddedsimdevicestate.md)
-- [Embedded s i m device state value](intune-esim-embeddedsimdevicestatevalue.md)
+- [Embedded SIM activation code](intune-esim-embeddedsimactivationcode.md)
+- [Embedded SIM activation code pool](intune-esim-embeddedsimactivationcodepool.md)
+- [Embedded SIM activation code pool assignment](intune-esim-embeddedsimactivationcodepoolassignment.md)
+- [Embedded SIM device state](intune-esim-embeddedsimdevicestate.md)
+- [Embedded SIM device state value](intune-esim-embeddedsimdevicestatevalue.md)
 - [Enrollment troubleshooting event](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Hardware information](intune-devices-hardwareinformation.md)
 - [Health state](intune-devices-healthstate.md)
@@ -89,7 +99,6 @@ description: ""
 - [Mobile app troubleshooting app target history](intune-troubleshooting-mobileapptroubleshootingapptargethistory.md)
 - [Mobile app troubleshooting app update history](intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md)
 - [Mobile app troubleshooting device checkin history](intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md)
-- [Mobile app troubleshooting event](intune-troubleshooting-mobileapptroubleshootingevent.md)
 - [Mobile app troubleshooting history item](intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 - [Network IPv4 configuration management condition](intune-fencing-networkipv4configurationmanagementcondition.md)
 - [Network IPv6 configuration management condition](intune-fencing-networkipv6configurationmanagementcondition.md)

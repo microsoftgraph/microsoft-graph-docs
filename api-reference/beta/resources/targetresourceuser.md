@@ -1,6 +1,7 @@
 ---
 title: "targetResourceUser resource type"
 description: "Indicates the user object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."
+localization_priority: Normal
 ---
 
 # targetResourceUser resource type

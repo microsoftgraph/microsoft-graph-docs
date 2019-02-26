@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Search for files
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Search for a DriveItems within a drive
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
@@ -39,9 +41,9 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ## Function parameters
 
-| Name | Value  | Description                                                                                                                          |
+| Parameter | Type  | Description                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## Example
 
@@ -141,10 +143,15 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "Items/Search"
-} -->
+  "tocPath": "Items/Search",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,9 @@
 ---
 title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # subscribedSku resource type

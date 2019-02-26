@@ -1,13 +1,17 @@
 ---
 title: "targetedManagedAppPolicyAssignment resource type"
 description: "The type for deployment of groups or apps."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # targetedManagedAppPolicyAssignment resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The type for deployment of groups or apps.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -24,6 +28,7 @@ The type for deployment of groups or apps.
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -3,10 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
+localization_priority: Normal
 ---
 # SharedDriveItem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
@@ -80,10 +81,15 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Share resource returns information about a shared item or collection of items.",
   "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": "Resources/Share"
-} -->
+  "tocPath": "Resources/Share",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shareddriveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

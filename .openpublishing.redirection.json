@@ -26764,6 +26764,11 @@
             "source_path": "concepts\\versioning_and_support.md",
             "redirect_url": "/graph/versioning-and-support",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/training.md",
+            "redirect_url": "/graph/tutorials",
+            "redirect_document_id": true
         }
     ]
 }

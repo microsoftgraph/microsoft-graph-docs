@@ -1,17 +1,21 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Get iosGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,7 +35,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -45,6 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -56,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9095
+Content-Length: 9800
 
 {
   "value": {
@@ -103,16 +109,20 @@ Content-Length: 9095
     "appStoreBlockInAppPurchases": true,
     "appStoreBlockUIAppInstallation": true,
     "appStoreRequirePassword": true,
+    "autoFillForceAuthentication": true,
     "bluetoothBlockModification": true,
     "cameraBlocked": true,
     "cellularBlockDataRoaming": true,
     "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
     "cellularBlockPerAppDataModification": true,
     "cellularBlockPersonalHotspot": true,
+    "cellularBlockPlanModification": true,
     "cellularBlockVoiceRoaming": true,
     "certificatesBlockUntrustedTlsCertificates": true,
     "classroomAppBlockRemoteScreenObservation": true,
     "classroomAppForceUnpromptedScreenObservation": true,
+    "classroomForceAutomaticallyJoinClasses": true,
+    "classroomForceUnpromptedAppAndDeviceLock": true,
     "compliantAppsList": [
       {
         "@odata.type": "microsoft.graph.appListItem",
@@ -137,6 +147,7 @@ Content-Length: 9095
     ],
     "enterpriseAppBlockTrust": true,
     "enterpriseAppBlockTrustModification": true,
+    "esimBlockModification": true,
     "faceTimeBlocked": true,
     "findMyFriendsBlocked": true,
     "gamingBlockGameCenterFriends": true,
@@ -263,6 +274,7 @@ Content-Length: 9095
     "passcodeRequiredType": "alphanumeric",
     "passcodeRequired": true,
     "podcastsBlocked": true,
+    "proximityBlockSetupToNewDevice": true,
     "safariBlockAutofill": true,
     "safariBlockJavaScript": true,
     "safariBlockPopups": true,
@@ -280,6 +292,8 @@ Content-Length: 9095
     "siriBlockedWhenLocked": true,
     "siriBlockUserGeneratedContent": true,
     "siriRequireProfanityFilter": true,
+    "softwareUpdatesEnforcedDelayInDays": 2,
+    "softwareUpdatesForceDelayed": true,
     "spotlightBlockInternetResults": true,
     "voiceDialingBlocked": true,
     "wallpaperBlockModification": true,
@@ -295,11 +309,18 @@ Content-Length: 9095
     "airPrintForceTrustedTLS": true,
     "airPrintBlockiBeaconDiscovery": true,
     "blockSystemAppRemoval": true,
-    "vpnBlockCreation": true
+    "vpnBlockCreation": true,
+    "appRemovalBlocked": true,
+    "usbRestrictedModeBlocked": true,
+    "passwordBlockAutoFill": true,
+    "passwordBlockProximityRequests": true,
+    "passwordBlockAirDropSharing": true,
+    "dateAndTimeForceSetAutomatically": true,
+    "contactsAllowManagedToUnmanagedWrite": true,
+    "contactsAllowUnmanagedToManagedRead": true
   }
 }
 ```
-
 
 
 

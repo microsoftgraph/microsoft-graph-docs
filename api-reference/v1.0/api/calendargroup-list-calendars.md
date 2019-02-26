@@ -1,6 +1,9 @@
 ---
 title: "List calendars"
 description: "Retrieve a list of calendars belonging to a calendar group."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # List calendars

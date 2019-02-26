@@ -1,6 +1,9 @@
 ---
 title: "onenoteOperation resource type"
 description: "The status of certain long-running OneNote operations."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # onenoteOperation resource type

@@ -1,6 +1,9 @@
 ---
 title: "Create Contact"
 description: "Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create Contact

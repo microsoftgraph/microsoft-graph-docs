@@ -1,15 +1,19 @@
 ---
 title: "androidWorkProfileCompliancePolicy resource type"
 description: "This class contains compliance settings for Android Work Profile."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # androidWorkProfileCompliancePolicy resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This class contains compliance settings for Android Work Profile.
+
 
 Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -37,7 +41,8 @@ Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-deviceco
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
-|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block.|
+|passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign-in failures allowed before factory reset. Valid values 1 to 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Require that devices disallow installation of apps from unknown sources.|
 |securityDisableUsbDebugging|Boolean|Disable USB debugging on Android devices.|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
@@ -91,6 +96,7 @@ Here is a JSON representation of the resource.
   "passwordMinutesOfInactivityBeforeLock": 1024,
   "passwordExpirationDays": 1024,
   "passwordPreviousPasswordBlockCount": 1024,
+  "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -108,7 +114,6 @@ Here is a JSON representation of the resource.
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
 
 
 

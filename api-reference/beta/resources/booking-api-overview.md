@@ -1,11 +1,14 @@
 ---
 title: "Use the Microsoft Bookings API in Microsoft Graph"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "bookings"
 ---
 
 # Use the Microsoft Bookings API in Microsoft Graph
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Microsoft Bookings lets small business owners manage customer bookings and information with minimal setup. A business owner can create one or more businesses, with each business offering a set of services. The owner can set up staff members, and specify the services that each staff member performs. A customer can book an appointment for a specific service in that business in an online or mobile app. Bookings ensures that the appointment time is kept up-to-date for the business, staff members, and customers involved.
 
@@ -93,3 +96,11 @@ The following table lists the common operations for a business in the Bookings A
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Learn how to choose [permissions](/graph/permissions-reference) in Microsoft Graph.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

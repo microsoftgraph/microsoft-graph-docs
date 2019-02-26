@@ -1,11 +1,14 @@
 ---
 title: "Resume sync on an educationSynchronizationProfile"
 description: "Resume the sync of a specific school data synchronization profile in the tenant."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Resume sync on an educationSynchronizationProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
@@ -56,3 +59,11 @@ There is no response body.
 ```
 HTTP/1.1 200 OK
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-resume.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

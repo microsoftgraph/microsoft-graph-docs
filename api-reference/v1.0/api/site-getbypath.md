@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Get SharePoint site by path
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a site resource by path
 
@@ -41,7 +43,7 @@ To access the root SharePoint site with a relative path:
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## HTTP Response
+## Response
 
 This method returns a [site][] resource for the site referenced by the unique identifier.
 

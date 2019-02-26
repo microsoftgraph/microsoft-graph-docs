@@ -38,10 +38,12 @@
       "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "author": "jthake-msft",
-      "ms.author": "jthake-msft",
-      "ms.date": "06/11/2018",
-      "uhfHeaderId": "MSDocsHeader-MSGraph"
+      "author": "MSGraphDocsVteam",
+      "ms.author": "MSGraphDocsVteam",
+      "uhfHeaderId": "MSDocsHeader-MSGraph",
+      "ms.suite": "microsoft-graph",
+      "ms.prod": "non-product-specific",
+      "searchScope": ["graph"]
     },
     "fileMetadata": {
       "ms.technology": {

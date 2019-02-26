@@ -2,10 +2,12 @@
 author: chackman
 ms.author: chackman
 title: List followed items
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List followed items
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the [items](../resources/driveitem.md) that have been followed by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
@@ -57,10 +59,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the items a user is following.",
   "keywords": "drive,onedrive.drive,list followed items",
   "section": "documentation",
-  "tocPath": "Drives/List followed items"
-} -->
+  "tocPath": "Drives/List followed items",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Access shared items
+localization_priority: Normal
 ---
 # Accessing shared DriveItems
 
@@ -25,14 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### Path Parameters
+### Path parameters
 
-| Parameter Name        | Value    | Description                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
+| Parameter Name                 | Value    | Description                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
 
 ### Encoding sharing URLs
 
@@ -51,6 +52,22 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
+## Optional request headers
+
+| Name       | Type   | Description                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
+
+### Prefer header values
+
+| Name                          | Description                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item    |
+| redeemSharingLinkIfNecessary  | Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request |
+
+redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture),
+whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.
@@ -64,7 +81,7 @@ Here is an example of the request to retrieve a shared item:
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### Response
@@ -85,10 +102,6 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
-  },
-  "remoteItem": { 
-    "driveId": "",
-    "id": ""
   }
 }
 ```
@@ -136,7 +149,7 @@ By requesting the **driveItem** relationship and expanding the **children** coll
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrUrl}/driveItem?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
 ### Response
@@ -170,9 +183,16 @@ Content-Type: application/json
 }
 ```
 
+## Error Responses
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
 ## Remarks
 
 * For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

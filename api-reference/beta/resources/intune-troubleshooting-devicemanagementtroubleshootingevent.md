@@ -1,15 +1,19 @@
 ---
 title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # deviceManagementTroubleshootingEvent resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Event representing an general failure.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -25,9 +29,13 @@ Event representing an general failure.
 |id|String|UUID for the object|
 |eventDateTime|DateTimeOffset|Time when the event occurred .|
 |correlationId|String|Id used for tracing the failure in the service.|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation.|
+|eventName|String|Event Name corresponding to the Troubleshooting Event. It is an Optional field|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -41,10 +49,31 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
   "id": "String (identifier)",
   "eventDateTime": "String (timestamp)",
-  "correlationId": "String"
+  "correlationId": "String",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "String",
+    "failure": "String",
+    "failureDetails": "String",
+    "remediation": "String",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "String",
+        "link": "String"
+      }
+    ]
+  },
+  "eventName": "String",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "String",
+      "value": "String"
+    }
+  ]
 }
 ```
-
 
 
 

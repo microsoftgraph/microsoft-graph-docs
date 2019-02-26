@@ -3,10 +3,12 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: List the pages in a site
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List the pages in the site pages list of a site
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the collection of [sitePages][] from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
 
@@ -209,10 +211,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Enumerate the list of pages in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Enumerate"
-} -->
+  "tocPath": "Pages/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,6 +1,9 @@
 ---
 title: "onenote resource type"
 description: "The entry point for OneNote resources."
+author: "jewan-microsoft"
+localization_priority: Priority
+ms.prod: "onenote"
 ---
 
 # onenote resource type

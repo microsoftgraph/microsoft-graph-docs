@@ -1,6 +1,9 @@
 ---
 title: "Update chart"
 description: "Update the properties of chart object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update chart

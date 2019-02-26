@@ -1,13 +1,17 @@
 ---
 title: "sharedPCAccountManagerPolicy resource type"
 description: "SharedPC Account Manager Policy. Only applies when the account manager is enabled."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # sharedPCAccountManagerPolicy resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 SharedPC Account Manager Policy. Only applies when the account manager is enabled.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -18,6 +22,7 @@ SharedPC Account Manager Policy. Only applies when the account manager is enable
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

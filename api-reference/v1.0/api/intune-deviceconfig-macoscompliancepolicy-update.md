@@ -1,15 +1,19 @@
 ---
 title: "Update macOSCompliancePolicy"
 description: "Update the properties of a macOSCompliancePolicy object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update macOSCompliancePolicy
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -53,10 +57,10 @@ The following table shows the properties that are required when you create the [
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
-|osMinimumVersion|String|Minimum IOS version.|
-|osMaximumVersion|String|Maximum IOS version.|
+|osMinimumVersion|String|Minimum MacOS version.|
+|osMaximumVersion|String|Maximum MacOS version.|
 |systemIntegrityProtectionEnabled|Boolean|Require that devices have enabled system integrity protection.|
-|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Require encryption on Mac OS devices.|
 |firewallEnabled|Boolean|Whether the firewall should be enabled or not.|
@@ -69,6 +73,7 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http

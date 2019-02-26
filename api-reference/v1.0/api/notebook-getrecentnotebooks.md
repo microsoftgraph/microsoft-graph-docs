@@ -1,6 +1,9 @@
 ---
 title: "notebook: getRecentNotebooks"
 description: "Get a list of recentNotebook instances that have been accessed by the signed-in user."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # notebook: getRecentNotebooks

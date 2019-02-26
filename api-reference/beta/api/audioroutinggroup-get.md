@@ -1,11 +1,14 @@
 ---
 title: "Get audio routing group"
 description: "Retrieve the properties and relationships of an audioRoutingGroup object."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Get audio routing group
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
@@ -16,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not Supported                               |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -26,7 +29,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -46,7 +49,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroup"
+  "name": "get-audioRoutingGroup"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
@@ -81,10 +84,15 @@ Content-Length: 233
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get audioRoutingGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/audioroutinggroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

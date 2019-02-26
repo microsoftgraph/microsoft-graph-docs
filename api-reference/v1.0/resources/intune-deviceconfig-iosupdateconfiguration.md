@@ -1,13 +1,17 @@
 ---
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iosUpdateConfiguration resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 IOS Update Configuration, allows you to configure time window within week to install iOS updates
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -70,13 +74,13 @@ Here is a JSON representation of the resource.
 }
 ```
 
-
-
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
      "Warning: /api-reference/v1.0/resources/intune-deviceconfig-iosupdateconfiguration.md/microsoft.graph.iosUpdateConfiguration/scheduledInstallDays:
-      Inconsistent types between parameter (String) and table (Object)"
+     Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->
+
+

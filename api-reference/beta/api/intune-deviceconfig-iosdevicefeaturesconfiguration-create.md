@@ -1,17 +1,21 @@
 ---
 title: "Create iosDeviceFeaturesConfiguration"
 description: "Create a new iosDeviceFeaturesConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create iosDeviceFeaturesConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,6 +62,8 @@ The following table shows the properties that are required when you create the i
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
+|wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.|
 
 
 
@@ -65,16 +71,16 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3543
+Content-length: 3656
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -187,6 +193,12 @@ Content-length: 3543
     "displayName": "Display Name value",
     "kerberosPrincipalName": "Kerberos Principal Name value",
     "kerberosRealm": "Kerberos Realm value"
+  },
+  "wallpaperDisplayLocation": "lockScreen",
+  "wallpaperImage": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
   }
 }
 ```
@@ -196,7 +208,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3651
+Content-Length: 3828
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -315,10 +327,15 @@ Content-Length: 3651
     "displayName": "Display Name value",
     "kerberosPrincipalName": "Kerberos Principal Name value",
     "kerberosRealm": "Kerberos Realm value"
+  },
+  "wallpaperDisplayLocation": "lockScreen",
+  "wallpaperImage": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
   }
 }
 ```
-
 
 
 

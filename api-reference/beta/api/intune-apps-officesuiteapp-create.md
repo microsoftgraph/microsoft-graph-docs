@@ -1,17 +1,21 @@
 ---
 title: "Create officeSuiteApp"
 description: "Create a new officeSuiteApp object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create officeSuiteApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -56,17 +60,20 @@ The following table shows the properties that are required when you create the o
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) collection|The Product Ids that represent the Office365 Suite SKU. Possible values are: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|The property to represent the apps which are excluded from the selected Office365 Product Id.|
 |useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 app suite.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The property to represent the Office365 app suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The property to represent the Office365 app suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|String collection|The property to represent the locales which are installed when the apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|To specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
 |shouldUninstallOlderVersionsOfOffice|Boolean|The property to determine whether to uninstall existing Office MSI if an Office365 app suite is deployed to the device or not.|
 |targetVersion|String|The property to represent the specific target version for the Office365 app suite that should be remained deployed on the devices.|
 |updateVersion|String|The property to represent the update version in which the specific target version is available for the Office365 app suite.|
+|officeConfigurationXml|Binary|The property to represent the XML configuration file that can be specified for Office ProPlus Apps. Takes precedence over all other properties. When present, the XML configuration file will be used to create the app.|
 
 
 
@@ -74,12 +81,13 @@ The following table shows the properties that are required when you create the o
 If successful, this method returns a `201 Created` response code and a [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1466
+Content-length: 1552
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -91,7 +99,6 @@ Content-length: 1466
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -100,6 +107,10 @@ Content-length: 1466
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -129,7 +140,8 @@ Content-length: 1466
   "installProgressDisplayLevel": "full",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value"
+  "updateVersion": "Update Version value",
+  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
 
@@ -138,7 +150,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
+Content-Length: 1724
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -161,6 +173,10 @@ Content-Length: 1574
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -190,10 +206,10 @@ Content-Length: 1574
   "installProgressDisplayLevel": "full",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value"
+  "updateVersion": "Update Version value",
+  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

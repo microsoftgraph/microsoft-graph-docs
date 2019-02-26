@@ -1,10 +1,15 @@
 ---
 title: "Add group owner"
 description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # Add group owner
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+
+>**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams. Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,3 +75,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

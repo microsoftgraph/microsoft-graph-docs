@@ -1,11 +1,14 @@
 ---
 title: "plannerPlanContextCollection resource type"
 description: "The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the plannerPlan object. The value in the property-value pair is the plannerPlanContext object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # plannerPlanContextCollection resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the [plannerPlan](plannerplan.md) object. The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.
@@ -44,10 +47,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerPlanContextCollection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerplancontextcollection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

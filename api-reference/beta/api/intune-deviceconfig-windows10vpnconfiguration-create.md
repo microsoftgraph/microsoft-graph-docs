@@ -1,17 +1,21 @@
 ---
 title: "Create windows10VpnConfiguration"
 description: "Create a new windows10VpnConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create windows10VpnConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -74,6 +78,7 @@ The following table shows the properties that are required when you create the w
 |trafficRules|[vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md) collection|Traffic rules. This collection can contain a maximum of 1000 elements.|
 |routes|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
+|trustedNetworkDomains|String collection|Trusted Network Domains|
 
 
 
@@ -81,16 +86,16 @@ The following table shows the properties that are required when you create the w
 If successful, this method returns a `201 Created` response code and a [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3323
+Content-length: 3387
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -197,8 +202,13 @@ Content-length: 3323
       "servers": [
         "Servers value"
       ],
-      "proxyServerUri": "Proxy Server Uri value"
+      "proxyServerUri": "Proxy Server Uri value",
+      "autoTrigger": true,
+      "persistent": true
     }
+  ],
+  "trustedNetworkDomains": [
+    "Trusted Network Domains value"
   ]
 }
 ```
@@ -208,7 +218,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3431
+Content-Length: 3559
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -321,12 +331,16 @@ Content-Length: 3431
       "servers": [
         "Servers value"
       ],
-      "proxyServerUri": "Proxy Server Uri value"
+      "proxyServerUri": "Proxy Server Uri value",
+      "autoTrigger": true,
+      "persistent": true
     }
+  ],
+  "trustedNetworkDomains": [
+    "Trusted Network Domains value"
   ]
 }
 ```
-
 
 
 

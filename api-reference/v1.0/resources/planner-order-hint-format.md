@@ -1,6 +1,9 @@
 ---
 title: "Using order hints in Planner"
 description: "`)"
+author: "TarkanSevilmis"
+localization_priority: Normal
+ms.prod: "planner"
 ---
 
 # Using order hints in Planner

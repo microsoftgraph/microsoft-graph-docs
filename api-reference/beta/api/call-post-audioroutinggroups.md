@@ -1,11 +1,14 @@
 ---
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Create audio routing group
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new **audioRoutingGroup**.
 
@@ -16,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported.                               |
 | Delegated (personal Microsoft account) | Not supported.                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +48,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_audioRoutingGroup_from_call"
+  "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -104,7 +107,7 @@ Content-Length: 233
 
 <!-- {
   "blockType": "example",
-  "name": "create_audioRoutingGroup_from_call",
+  "name": "create-audioRoutingGroup-from-call",
   "@odata.type": "microsoft.graph.audioRoutingGroup"
 }-->
 
@@ -155,10 +158,15 @@ Content-Length: 233
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create audioRoutingGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Get a file or folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a DriveItem resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
 
@@ -111,10 +113,15 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
-} -->
+  "tocPath": "Items/Get item",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

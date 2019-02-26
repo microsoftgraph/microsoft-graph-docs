@@ -1,13 +1,17 @@
 ---
 title: "keyValuePair resource type"
 description: "Key value pair for storing custom settings"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # keyValuePair resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Key value pair for storing custom settings
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -16,6 +20,7 @@ Key value pair for storing custom settings
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -1,6 +1,9 @@
 ---
 title: "Get Chart"
 description: "Retrieve the properties and relationships of chart object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get Chart

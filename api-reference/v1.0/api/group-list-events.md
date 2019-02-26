@@ -1,6 +1,9 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "groups"
 ---
 
 # List events

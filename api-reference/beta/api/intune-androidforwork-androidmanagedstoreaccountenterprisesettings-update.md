@@ -1,17 +1,21 @@
 ---
 title: "Update androidManagedStoreAccountEnterpriseSettings"
 description: "Update the properties of a androidManagedStoreAccountEnterpriseSettings object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update androidManagedStoreAccountEnterpriseSettings
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -51,6 +55,8 @@ The following table shows the properties that are required when you create the [
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
+|companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
 
 
 
@@ -58,25 +64,39 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 Content-type: application/json
-Content-length: 458
+Content-length: 897
 
 {
+  "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
   "bindStatus": "bound",
   "lastAppSyncDateTime": "2016-12-31T23:57:22.8606813-08:00",
   "lastAppSyncStatus": "credentialsNotValid",
   "ownerUserPrincipalName": "Owner User Principal Name value",
   "ownerOrganizationName": "Owner Organization Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "enrollmentTarget": "all",
   "targetGroupIds": [
     "Target Group Ids value"
   ],
-  "deviceOwnerManagementEnabled": true
+  "deviceOwnerManagementEnabled": true,
+  "companyCodes": [
+    {
+      "@odata.type": "microsoft.graph.androidEnrollmentCompanyCode",
+      "enrollmentToken": "Enrollment Token value",
+      "qrCodeContent": "Qr Code Content value",
+      "qrCodeImage": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      }
+    }
+  ],
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
 
@@ -85,7 +105,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 1010
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
@@ -100,10 +120,22 @@ Content-Length: 590
   "targetGroupIds": [
     "Target Group Ids value"
   ],
-  "deviceOwnerManagementEnabled": true
+  "deviceOwnerManagementEnabled": true,
+  "companyCodes": [
+    {
+      "@odata.type": "microsoft.graph.androidEnrollmentCompanyCode",
+      "enrollmentToken": "Enrollment Token value",
+      "qrCodeContent": "Qr Code Content value",
+      "qrCodeImage": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      }
+    }
+  ],
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

@@ -1,15 +1,19 @@
 ---
 title: "enrollmentTroubleshootingEvent resource type"
 description: "Event representing an enrollment failure."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # enrollmentTroubleshootingEvent resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Event representing an enrollment failure.
+
 
 Inherits from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 
@@ -28,6 +32,9 @@ Inherits from [deviceManagementTroubleshootingEvent](../resources/intune-trouble
 |id|String|UUID for the object Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|Time when the event occurred . Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |correlationId|String|Id used for tracing the failure in the service. Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation. Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|eventName|String|Event Name corresponding to the Troubleshooting Event. It is an Optional field Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs which provides additional information on the Troubleshooting event Inherited from [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |managedDeviceIdentifier|String|Device identifier created or collected by Intune.|
 |operatingSystem|String|Operating System.|
 |osVersion|String|OS Version.|
@@ -39,6 +46,7 @@ Inherits from [deviceManagementTroubleshootingEvent](../resources/intune-trouble
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -53,6 +61,28 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "eventDateTime": "String (timestamp)",
   "correlationId": "String",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "String",
+    "failure": "String",
+    "failureDetails": "String",
+    "remediation": "String",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "String",
+        "link": "String"
+      }
+    ]
+  },
+  "eventName": "String",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "String",
+      "value": "String"
+    }
+  ],
   "managedDeviceIdentifier": "String",
   "operatingSystem": "String",
   "osVersion": "String",
@@ -63,7 +93,6 @@ Here is a JSON representation of the resource.
   "failureReason": "String"
 }
 ```
-
 
 
 

@@ -1,6 +1,7 @@
 ---
 title: "PublicationFacet resource type"
 description: "The **publicationFacet** resource provides details on the published status of a driveItemVersion or driveItem resource."
+localization_priority: Normal
 ---
 
 # PublicationFacet resource type

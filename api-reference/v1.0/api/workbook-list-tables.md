@@ -1,6 +1,9 @@
 ---
 title: "List tables"
 description: "Retrieve a list of table objects."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List tables

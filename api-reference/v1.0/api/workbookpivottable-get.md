@@ -1,6 +1,9 @@
 ---
 title: "Get workbookPivotTable"
 description: "Retrieve the properties and relationships of workbookPivotTable object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get workbookPivotTable

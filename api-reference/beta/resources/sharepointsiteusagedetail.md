@@ -1,6 +1,8 @@
 ---
 title: "sharePointSiteUsageDetail resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # sharePointSiteUsageDetail resource type

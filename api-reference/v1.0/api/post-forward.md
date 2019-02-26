@@ -1,6 +1,9 @@
 ---
 title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # post: forward

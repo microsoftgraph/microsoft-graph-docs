@@ -1,6 +1,7 @@
 ---
 title: "scoredEmailAddress resource type"
 description: "Represents a scored email address."
+localization_priority: Normal
 ---
 
 # scoredEmailAddress resource type

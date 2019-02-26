@@ -1,17 +1,21 @@
 ---
 title: "Create iosCompliancePolicy"
 description: "Create a new iosCompliancePolicy object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create iosCompliancePolicy
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,11 +63,13 @@ The following table shows the properties that are required when you create the i
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |osMinimumVersion|String|Minimum IOS version.|
 |osMaximumVersion|String|Maximum IOS version.|
+|osMinimumBuildVersion|String|Minimum IOS build version.|
+|osMaximumBuildVersion|String|Maximum IOS build version.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection .|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indicates whether or not to require a managed email profile.|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 10000 elements.|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Require the device to not have the specified apps installed. This collection can contain a maximum of 100 elements.|
 
 
 
@@ -71,12 +77,13 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1181
+Content-length: 1241
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -84,7 +91,6 @@ Content-length: 1181
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
@@ -98,6 +104,8 @@ Content-length: 1181
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "osMinimumBuildVersion": "Os Minimum Build Version value",
+  "osMaximumBuildVersion": "Os Maximum Build Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -119,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1289
+Content-Length: 1413
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -143,6 +151,8 @@ Content-Length: 1289
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "osMinimumBuildVersion": "Os Minimum Build Version value",
+  "osMaximumBuildVersion": "Os Maximum Build Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -158,7 +168,6 @@ Content-Length: 1289
   ]
 }
 ```
-
 
 
 

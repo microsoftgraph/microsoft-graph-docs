@@ -1,6 +1,9 @@
 ---
 title: "Get team"
 description: "Retrieve the properties and relationships of the specified team."
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Get team
@@ -18,7 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All    |
 
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}
@@ -46,7 +52,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
 #### Response
 The following is an example of the response. 

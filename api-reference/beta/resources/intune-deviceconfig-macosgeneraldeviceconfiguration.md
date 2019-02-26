@@ -1,15 +1,19 @@
 ---
 title: "macOSGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # macOSGeneralDeviceConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -67,6 +71,12 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |airDropBlocked|Boolean|Indicates whether or not to allow AirDrop.|
 |passwordBlockModification|Boolean|Indicates whether or not to allow passcode modification.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passwordBlockAutoFill|Boolean|Indicates whether or not to block the AutoFill Passwords feature.|
+|passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
+|passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
+|softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
+|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
+|contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -143,10 +153,15 @@ Here is a JSON representation of the resource.
   "iCloudBlockNotes": true,
   "airDropBlocked": true,
   "passwordBlockModification": true,
-  "passwordBlockFingerprintUnlock": true
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 1024,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true
 }
 ```
-
 
 
 

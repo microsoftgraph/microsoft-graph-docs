@@ -1,13 +1,17 @@
 ---
 title: "windows10NetworkProxyServer resource type"
 description: "Network Proxy Server Policy."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windows10NetworkProxyServer resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Network Proxy Server Policy.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -17,6 +21,7 @@ Network Proxy Server Policy.
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -1,6 +1,7 @@
 ---
 title: "signIn resource type"
 description: "This resource details user or application sign-in activity in your directory. "
+localization_priority: Priority
 ---
 
 # signIn resource type
@@ -32,9 +33,9 @@ This resource details user or application sign-in activity in your directory.
 |ipAddress|String|Provides the IP address of the client from where the sign-in occurred.|
 |location|[signInLocation](signinlocation.md)|Provides the city, state and 2 letter country code from where the sign-in occurred.|
 |processingTimeInMilliseconds|Int|Provides the request processing time in milliseconds in AD STS|
-|riskDetail|`riskDetail`|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.|
-|riskLevelAggregated|`riskLevel`|Provides the aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
-|riskLevelDuringSignIn|`riskLevel`|Provides the risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
+|riskDetail|`riskDetail`|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
+|riskLevelAggregated|`riskLevel`|Provides the aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
+|riskLevelDuringSignIn|`riskLevel`|Provides the risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
 |riskEventTypes|`riskEventTypes`|Provides the list of risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`.|
 |riskState|`riskState`|Provides the 'risk state' of a risky user, sign-in or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Provides the MFA related information like MFA Required, MFA Status for the corresponding sign-in.|

@@ -1,6 +1,7 @@
 ---
 title: "auditActivityInitiator resource type"
 description: "Identity the resource object that initiates the activity. The initiator can be a user, an app or a system (which is considered as an app)"
+localization_priority: Normal
 ---
 
 # auditActivityInitiator resource type

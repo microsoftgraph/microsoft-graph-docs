@@ -1,6 +1,9 @@
 ---
 title: "Permissions"
 description: "Publish an app to the Microsoft Teams apps catalog. "
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Publish apps to your organization's app catalog
@@ -51,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [teamsCatalogA
 ### Request
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 

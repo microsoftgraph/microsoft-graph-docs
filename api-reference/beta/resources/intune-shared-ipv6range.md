@@ -1,6 +1,9 @@
 ---
 title: "iPv6Range resource type"
-description: "IP V6 range"
+description: "Describes the iPv6Range resource of the Microsoft Graph API for Intune, which supports multiple workflows."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iPv6Range resource type

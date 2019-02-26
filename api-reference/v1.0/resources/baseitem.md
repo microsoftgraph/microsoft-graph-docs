@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
+localization_priority: Normal
 ---
 # BaseItem resource type
 

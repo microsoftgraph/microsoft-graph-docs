@@ -1,15 +1,19 @@
 ---
 title: "emailSyncSchedule enum type"
 description: "Possible values for email sync schedule."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # emailSyncSchedule enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Possible values for email sync schedule.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -20,7 +24,6 @@ Possible values for email sync schedule.
 |thirtyMinutes|4|Sync every thirty minutes.|
 |sixtyMinutes|5|Sync every sixty minutes.|
 |basedOnMyUsage|6|Sync based on my usage.|
-
 
 
 

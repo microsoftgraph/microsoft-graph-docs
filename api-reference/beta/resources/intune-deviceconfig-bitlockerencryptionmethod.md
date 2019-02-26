@@ -1,15 +1,19 @@
 ---
 title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # bitLockerEncryptionMethod enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 BitLockerEncryptionMethod types
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -17,7 +21,6 @@ BitLockerEncryptionMethod types
 |aesCbc256|4|AES-CBC 256-bit.|
 |xtsAes128|6|XTS-AES 128-bit.|
 |xtsAes256|7|XTS-AES 256-bit.|
-
 
 
 

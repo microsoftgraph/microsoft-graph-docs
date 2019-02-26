@@ -1,6 +1,9 @@
 ---
 title: "List serviceConfigurationRecords"
 description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List serviceConfigurationRecords

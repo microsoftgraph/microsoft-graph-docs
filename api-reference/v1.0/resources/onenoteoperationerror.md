@@ -1,6 +1,9 @@
 ---
 title: "onenoteOperationError resource type"
 description: "An error from a failed OneNote operation."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # onenoteOperationError resource type

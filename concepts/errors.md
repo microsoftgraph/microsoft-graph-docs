@@ -1,6 +1,7 @@
 ---
 title: "Microsoft Graph error responses and resource types"
 description: "  "
+localization_priority: Priority
 ---
 
 # Microsoft Graph error responses and resource types

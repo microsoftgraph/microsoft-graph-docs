@@ -1,15 +1,19 @@
 ---
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # androidManagedStoreAccountEnterpriseSettings resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Enterprise settings for an Android managed store account.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -20,6 +24,7 @@ Enterprise settings for an Android managed store account.
 |[syncApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|None|Not yet documented|
 |[unbind action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|None|Not yet documented|
 |[createGooglePlayWebToken action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Generates a web token that is used in an embeddable component.|
+|[setAndroidDeviceOwnerFullyManagedEnrollmentState action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|None|Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,9 +39,12 @@ Enterprise settings for an Android managed store account.
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
+|companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -59,10 +67,22 @@ Here is a JSON representation of the resource.
   "targetGroupIds": [
     "String"
   ],
-  "deviceOwnerManagementEnabled": true
+  "deviceOwnerManagementEnabled": true,
+  "companyCodes": [
+    {
+      "@odata.type": "microsoft.graph.androidEnrollmentCompanyCode",
+      "enrollmentToken": "String",
+      "qrCodeContent": "String",
+      "qrCodeImage": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      }
+    }
+  ],
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

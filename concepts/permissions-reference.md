@@ -1,6 +1,8 @@
 ---
 title: "Microsoft Graph permissions reference "
-description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that don't take a signed-in user, permissions can be pre-consented to by an administrator when the app is installed or during sign-up. "
+description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
+author: "jackson-woods"
+localization_priority: Priority
 ---
 
 # Microsoft Graph permissions reference 
@@ -9,7 +11,7 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 ## Delegated permissions, Application permissions, and effective permissions
 Microsoft Graph has two types of permissions: **delegated permissions** and **application permissions**. 
 
-- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require [administrator consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
+- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app is delegated permission to act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require [administrator consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
 
 - **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons.  Application permissions can only be [consented by an administrator](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
@@ -448,7 +450,9 @@ For application permissions, there are some limitations for the APIs that are su
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview?view=graph-rest-beta) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
+Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
+
+Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
 
 
 ### Example usage
@@ -945,10 +949,10 @@ Sites permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Read user tasks | Allows the app to read user tasks. | No | Yes |
-| _Tasks.Read.Shared_ | Read user and shared tasks | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
-| _Tasks.ReadWrite_ |    Create, read, update and delete user tasks and containers | Allows the app to create, read, update and delete tasks and containers (and tasks in them) that are assigned to or shared with the signed-in user.| No | Yes |
-| _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
+| _Tasks.Read_ | Read user tasks (preview) | Allows the app to read user tasks. | No | Yes |
+| _Tasks.Read.Shared_ | Read user and shared tasks (preview) | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
+| _Tasks.ReadWrite_ | Create, read, update and delete user tasks and containers (preview) | Allows the app to create, read, update and delete tasks and containers (and tasks in them) that are assigned to or shared with the signed-in user.| No | Yes |
+| _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks (preview) | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
 
 #### Application permissions
 
@@ -1092,7 +1096,6 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
----
 ## User Activity permissions
 
 #### Delegated permissions

@@ -1,15 +1,18 @@
 ---
 title: "Update accessReview"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update accessReview
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
 
-This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API, and to apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
+This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API. To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
 
 
 ## Permissions
@@ -32,7 +35,7 @@ PATCH /accessReviews('{reviewId}')
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a parameters of an [accessReview](../resources/accessreview.md) object.
+In the request body, supply a JSON representation of the parameters of an [accessReview](../resources/accessreview.md) object.
 
 The following table shows the properties that can be supplied when you update an accessReview.
 
@@ -86,15 +89,20 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update accessReview",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

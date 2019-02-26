@@ -1,15 +1,19 @@
 ---
 title: "Update windows10GeneralConfiguration"
 description: "Update the properties of a windows10GeneralConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update windows10GeneralConfiguration
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -194,8 +198,9 @@ The following table shows the properties that are required when you create the [
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
-|edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
+|edgeBlockSearchSuggestions|Boolean|Indicates whether or not to block the user from using the search suggestions in the address bar.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
 |edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
@@ -252,12 +257,13 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 9768
+Content-length: 9822
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -436,6 +442,7 @@ Content-length: 9768
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -497,7 +504,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9940
+Content-Length: 9994
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -679,6 +686,7 @@ Content-Length: 9940
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",

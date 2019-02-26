@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: LookupColumn
+localization_priority: Normal
 ---
 # LookupColumn resource type
 

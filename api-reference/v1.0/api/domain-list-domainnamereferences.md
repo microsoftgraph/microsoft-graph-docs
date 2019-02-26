@@ -1,6 +1,9 @@
 ---
 title: "List domainNameReferences"
 description: "Retrieve a list of directoryObject with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List domainNameReferences

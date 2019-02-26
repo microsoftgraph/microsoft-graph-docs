@@ -1,6 +1,9 @@
 ---
 title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List mailFolders

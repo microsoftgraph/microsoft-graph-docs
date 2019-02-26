@@ -1,11 +1,14 @@
 ---
 title: "Delete educationSubmissionResource"
-description: " the resource to its original state. If the resource was not copied from the assignment but was added from the student, the resource is simply deleted."
+description: "Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted."
+author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Delete educationSubmissionResource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a resource from the submission. This can only be done by the student. If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted. This allows you to "reset" the resource to its original state. If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.
 
@@ -59,10 +62,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete educationSubmissionResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmissionresource-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

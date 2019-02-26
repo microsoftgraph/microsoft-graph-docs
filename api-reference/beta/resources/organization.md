@@ -1,17 +1,18 @@
 ---
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # organization resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory tenant. 
+Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
 This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
-
-Only the read and update operations are supported on tenants; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
@@ -29,15 +30,16 @@ Only the read and update operations are supported on tenants; create and delete 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The collection of service plans associated with the tenant. Not nullable.            |
+| businessPhones                      | String collection                                         | Telephone number for the organization. **Note:** Although this is a string collection, only one number can be set for this property.                                                                                            |
 |city|String| City name of the address for the organization |
 |companyLastDirSyncTime|DateTimeOffset|The time and date at which the tenant was last synced with the on-premise directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |country|String| Country/region name of the address for the organization |
 |countryLetterCode|String| Country/region abbreviation for the organization |
 |createdDateTime|DateTimeOffset| Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
-|deletionTimestamp|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+| deletedDateTime                    | DateTimeOffset                                                    | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.                                                                                     |
 |dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String|The display name for the tenant.|
-|id|String|The unique identifier for the tenant. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|id|String|The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isMultipleDataLocationsForServicesEnabled|Boolean|**true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|String collection| Not nullable.            |
 |objectType|String|A string that identifies the object type. For tenants the value is always “Company”. |
@@ -51,10 +53,12 @@ Only the read and update operations are supported on tenants; create and delete 
 |state|String| State name of the address for the organization |
 |street|String| Street name of the address for organization |
 |technicalNotificationMails|String collection| Not nullable. |
-|telephoneNumber|String| Telephone number for the organization |
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
 
 ## Relationships
+
+| Relationship	   | Type	|Description|
+|:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.|
 
 ## JSON representation
@@ -77,10 +81,13 @@ Here is a JSON representation of the resource
   "city": "string",
   "country": "string",
   "countryLetterCode": "string",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -94,7 +101,6 @@ Here is a JSON representation of the resource
   "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## See also
@@ -105,10 +111,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

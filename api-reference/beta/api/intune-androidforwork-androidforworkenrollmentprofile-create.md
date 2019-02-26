@@ -1,17 +1,21 @@
 ---
 title: "Create androidForWorkEnrollmentProfile"
 description: "Create a new androidForWorkEnrollmentProfile object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create androidForWorkEnrollmentProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,19 +63,19 @@ The following table shows the properties that are required when you create the a
 If successful, this method returns a `201 Created` response code and a [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentProfiles
 Content-type: application/json
-Content-length: 560
+Content-length: 496
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkEnrollmentProfile",
   "accountId": "Account Id value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "tokenValue": "Token Value value",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
@@ -110,7 +114,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

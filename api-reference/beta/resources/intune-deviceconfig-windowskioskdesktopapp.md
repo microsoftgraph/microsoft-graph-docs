@@ -1,15 +1,19 @@
 ---
 title: "windowsKioskDesktopApp resource type"
 description: "The base class for a type of apps"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsKioskDesktopApp resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The base class for a type of apps
+
 
 Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
@@ -18,12 +22,14 @@ Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskios
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `unknown`, `store`, `desktop`, `aumId`.|
 |path|String|Define the path of a desktop app|
 |desktopApplicationId|String|Define the DesktopApplicationID of the app|
 |desktopApplicationLinkPath|String|Define the DesktopApplicationLinkPath of the app|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -36,12 +42,12 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsKioskDesktopApp",
   "startLayoutTileSize": "String",
   "name": "String",
+  "appType": "String",
   "path": "String",
   "desktopApplicationId": "String",
   "desktopApplicationLinkPath": "String"
 }
 ```
-
 
 
 

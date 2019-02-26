@@ -1,6 +1,9 @@
 ---
 title: "Creating a group with a Microsoft Teams team"
 description: "Creating a group that includes a team involves two steps: "
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Creating a group with a Microsoft Teams team

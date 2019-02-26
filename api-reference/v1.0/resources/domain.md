@@ -1,6 +1,9 @@
 ---
 title: "domain resource type"
 description: "Represents a domain associated with the tenant."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # domain resource type

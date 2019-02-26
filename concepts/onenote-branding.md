@@ -1,6 +1,9 @@
 ---
 title: "Branding guidelines for OneNote API developers "
 description: " "
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Branding guidelines for OneNote API developers 
@@ -37,7 +40,7 @@ Certain environments, such as on small devices, don't provide enough room for th
 
 Treat the logo with respect and give it room to breathe. A minimum clear space equivalent to the height of the symbol must surround the logo.
 
-![Logo that includes only the icon--purple on white and reverse](images/onenotelogoclearspace.png)
+![Logo showing clear psace that is the height of the symbol](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -50,7 +53,7 @@ The logo should be at least 16 pixels high when it appears on-screen and at leas
  
 **Print:**&nbsp;&nbsp;5 mm (0.2 inches) 
 
-![Logo that includes only the icon--purple on white and reverse](images/onenotelogominsize.png)
+![Logo showing the minimum size for screen and print](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -63,7 +66,7 @@ When the OneNote logo is used on white or light backgrounds, the preferred logo 
 
 **Print:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Logo that includes only the icon--purple on white and reverse](images/onenotelogobgs.png)
+  ![Logo shwoing the preferred brand color with white and brand color backgrounds](images/onenotelogobgs.png)
  
 In color-limited environments and one-color designs, the logo can appear in black. However, the logo should never appear in gray.
 <!--or white?-->
@@ -162,7 +165,7 @@ See the following table for details about how to refer to OneNote in various con
 
 ![Good example of logo in packaging](images/onenoteusagepackaging1.png)
 
-![Good example of logo in packaging](images/onenoteusagepackaging2.png)
+![Anoother view of a good example of logo in packaging](images/onenoteusagepackaging2.png)
 
 
 If you have any questions about these guidelines or are creating new communications using the brand assets shown here, contact us at [@onenotedev](https://twitter.com/onenotedev).

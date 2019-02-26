@@ -1,13 +1,17 @@
 ---
 title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsUserAccountControlSettings enum type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Possible values for Windows user account control settings.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|

@@ -1,15 +1,19 @@
 ---
 title: "windows10VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Windows 10 device (desktop or mobile) to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windows10VpnConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 By providing the configurations in this profile you can instruct the Windows 10 device (desktop or mobile) to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user.
+
 
 Inherits from [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)
 
@@ -57,6 +61,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune-deviceconfig-windows
 |trafficRules|[vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md) collection|Traffic rules. This collection can contain a maximum of 1000 elements.|
 |routes|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
+|trustedNetworkDomains|String collection|Trusted Network Domains|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -190,12 +195,16 @@ Here is a JSON representation of the resource.
       "servers": [
         "String"
       ],
-      "proxyServerUri": "String"
+      "proxyServerUri": "String",
+      "autoTrigger": true,
+      "persistent": true
     }
+  ],
+  "trustedNetworkDomains": [
+    "String"
   ]
 }
 ```
-
 
 
 

@@ -1,25 +1,27 @@
 ---
 title: "Use the Microsoft Graph API to get change notifications"
-description: "The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
+description: "The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
+localization_priority: Normal
+author: "piotrci"
 ---
 
 # Use the Microsoft Graph API to get change notifications
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
+The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content shared on OneDrive, including drives associated with SharePoint sites
-- Users' personal OneDrive folders
-- Security alerts
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- [user][]
+- [group][]
+- Office 365 group [conversation][]
+- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
+- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- Security [alert][]
 
 ## Permissions
 
@@ -27,9 +29,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
-| Delegated - personal Microsoft account | [contact][], [drive][], [event][], [message][]                                        |
-| Application                            | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
+| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
 
 ## See also
 
@@ -42,9 +44,17 @@ In general, subscription operations require read permission to the resource. For
 
 [contact]: ./contact.md
 [conversation]: ./conversation.md
-[drive]: ./drive.md
+[driveItem]: ./driveitem.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
 [alert]: ./alert.md
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

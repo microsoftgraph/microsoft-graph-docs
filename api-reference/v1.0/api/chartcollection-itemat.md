@@ -1,6 +1,9 @@
 ---
 title: "ChartCollection: ItemAt"
 description: "Gets a chart based on its position in the collection."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartCollection: ItemAt

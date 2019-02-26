@@ -1,17 +1,21 @@
 ---
 title: "Create deviceAndAppManagementRoleDefinition"
 description: "Create a new deviceAndAppManagementRoleDefinition object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Create deviceAndAppManagementRoleDefinition
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -48,6 +52,7 @@ The following table shows the properties that are required when you create the d
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) collection|List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltInRoleDefinition|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Boolean|Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 
@@ -55,12 +60,13 @@ The following table shows the properties that are required when you create the d
 If successful, this method returns a `201 Created` response code and a [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions
 Content-type: application/json
-Content-length: 1167
+Content-length: 1229
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
@@ -105,7 +111,10 @@ Content-length: 1167
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -114,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1216
+Content-Length: 1278
 
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
@@ -160,10 +169,12 @@ Content-Length: 1216
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

@@ -1,6 +1,9 @@
 ---
-title: "Manage resource access certificates in Intune"
-description: "You can import PFX certificates using Microsoft Graph API for Intune."
+title: "Manage resource access certificates in Intune - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) that manage resource access certificates for a tenant organization."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Manage resource access certificates in Intune

@@ -1,11 +1,14 @@
 ---
 title: "calendar resource type"
 description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of an Office 365 group."
+localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # calendar resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).
 
@@ -27,7 +30,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |[List calendarView](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
 |[Create event](../api/calendar-post-events.md) |[event](event.md)| Create a new event in the default or specified calendar.|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints. |
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[findMeetingTimesResponse](findmeetingtimesresponse.md) |Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints. |
 |[getSchedule (preview)](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) collection|Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period. |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Create one or more single-value extended properties in a new or existing calendar.   |
 |[Get calendar with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Get calendars that contain a single-value extended property by using `$expand` or `$filter`. |
@@ -93,10 +96,15 @@ Here is a JSON representation of the resource
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendar resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calendar.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

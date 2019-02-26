@@ -1,6 +1,9 @@
 ---
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List apps in team
@@ -56,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps
+GET /teams/{id}/installedApps
 ```
 
 ### Response
@@ -95,7 +98,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### Response

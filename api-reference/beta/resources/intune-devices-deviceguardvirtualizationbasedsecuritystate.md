@@ -1,15 +1,19 @@
 ---
 title: "deviceGuardVirtualizationBasedSecurityState enum type"
 description: "Not yet documented"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # deviceGuardVirtualizationBasedSecurityState enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Not yet documented
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -20,7 +24,6 @@ Not yet documented
 |notConfigured|4|Not configured|
 |doesNotMeetHardwareRequirements|5|System does not meet hardware requirements|
 |other|42|Other. Event logs in microsoft-Windows-DeviceGuard have more details.|
-
 
 
 

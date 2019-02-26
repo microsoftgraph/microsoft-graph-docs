@@ -1,11 +1,12 @@
 ---
 title: "Update privilegedapproval"
 description: "Update the properties of privilegedapproval object."
+localization_priority: Normal
 ---
 
 # Update privilegedapproval
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of privilegedapproval object.
 ## Permissions
@@ -14,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -45,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [privilegedApproval](../resources/privilegedapproval.md) object in the response body.
+If successful, this method returns a `204 No Content` response code
 
 Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forbidden status code will be returned.
 
@@ -57,16 +58,13 @@ Here is an example of the request.
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval/<id>
+PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
 Content-type: application/json
 Content-length: 180
 
 {
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
+  "approverReason": "approverReason-value"
 }
 ```
 ##### Response
@@ -77,26 +75,20 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.privilegedApproval"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
-
-{
-  "id": "id-value",
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
-  "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update privilegedapproval",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedapproval-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

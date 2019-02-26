@@ -1,17 +1,21 @@
 ---
 title: "Update windows10EndpointProtectionConfiguration"
 description: "Update the properties of a windows10EndpointProtectionConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update windows10EndpointProtectionConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -51,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe. Possible values are: `deviceDefault`, `blockAll`, `allowAll`.|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
@@ -87,9 +92,9 @@ The following table shows the properties that are required when you create the [
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Networking service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled|
-|localSecurityOptionsEnableAdministratorAccount|Boolean|Determines whether the Local Administrator account is enabled or disabled.|
+|localSecurityOptionsDisableAdministratorAccount|Boolean|Determines whether the Local Administrator account is enabled or disabled.|
 |localSecurityOptionsAdministratorAccountName|String|Define a different account name to be associated with the security identifier (SID) for the account “Administrator”.|
-|localSecurityOptionsEnableGuestAccount|Boolean|Determines if the Guest account is enabled or disabled.|
+|localSecurityOptionsDisableGuestAccount|Boolean|Determines if the Guest account is enabled or disabled.|
 |localSecurityOptionsGuestAccountName|String|Define a different account name to be associated with the security identifier (SID) for the account “Guest”.|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|Prevent a portable computer from being undocked without having to log in.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|Restrict installing printer drivers as part of connecting to a shared printer to admins only.|
@@ -108,7 +113,7 @@ The following table shows the properties that are required when you create the [
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. Possible values are: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. Possible values are: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|This security setting determines which challenge/response authentication protocol is used for network logons. Possible values are: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
-|lanManagerWorkstationEnableInsecureGuestLogons|Boolean|If enabled,the SMB client will allow insecure guest logons. If not configured, the SMB client will reject insecure guest logons.|
+|lanManagerWorkstationDisableInsecureGuestLogons|Boolean|If enabled,the SMB client will allow insecure guest logons. If not configured, the SMB client will reject insecure guest logons.|
 |localSecurityOptionsClearVirtualMemoryPageFile|Boolean|This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.|
 |localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|This security setting determines whether a computer can be shut down without having to log on to Windows.|
 |localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|Allow UIAccess apps to prompt for elevation without using the secure desktop.|
@@ -139,10 +144,13 @@ The following table shows the properties that are required when you create the [
 |defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
 |defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
 |defenderSecurityCenterDisableAccountUI|Boolean|Used to disable the display of the account protection area.|
+|defenderSecurityCenterDisableClearTpmUI|Boolean|Used to disable the display of the Clear TPM button.|
 |defenderSecurityCenterDisableHardwareUI|Boolean|Used to disable the display of the hardware protection area.|
+|defenderSecurityCenterDisableNotificationAreaUI|Boolean|Used to disable the display of the notification area control. The user needs to either sign out and sign in or reboot the computer for this setting to take effect.|
 |defenderSecurityCenterDisableRansomwareUI|Boolean|Used to disable the display of the ransomware protection area. |
 |defenderSecurityCenterDisableSecureBootUI|Boolean|Used to disable the display of the secure boot area under Device security.|
 |defenderSecurityCenterDisableTroubleshootingUI|Boolean|Used to disable the display of the security process troubleshooting under Device security.|
+|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|Used to disable the display of update TPM Firmware when a vulnerable firmware is detected.|
 |defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
 |defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
 |defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
@@ -162,9 +170,11 @@ The following table shows the properties that are required when you create the [
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for domain networks|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
+|defenderAdobeReaderLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Adobe Reader from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
 |defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderOfficeCommunicationAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office communication applications, including Microsoft Outlook, from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `block`, `auditMode`.|
@@ -196,6 +206,7 @@ The following table shows the properties that are required when you create the [
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
 |deviceGuardEnableSecureBootWithDMA|Boolean|Specifies whether Platform Security Level is enabled at next reboot.|
+|deviceGuardLaunchSystemGuard|[enablement](../resources/intune-shared-enablement.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
@@ -211,6 +222,7 @@ The following table shows the properties that are required when you create the [
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
 |applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
 |applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
+|bitLockerAllowStandardUserEncryption|Boolean|Allows the admin to allow standard users to enable encrpytion during Azure AD Join.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
 |bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
@@ -224,15 +236,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 26312
+Content-length: 26778
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -240,6 +253,7 @@ Content-length: 26312
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -595,9 +609,9 @@ Content-length: 26312
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -616,7 +630,7 @@ Content-length: 26312
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -647,10 +661,13 @@ Content-length: 26312
   "defenderSecurityCenterDisableNetworkUI": true,
   "defenderSecurityCenterDisableVirusUI": true,
   "defenderSecurityCenterDisableAccountUI": true,
+  "defenderSecurityCenterDisableClearTpmUI": true,
   "defenderSecurityCenterDisableHardwareUI": true,
+  "defenderSecurityCenterDisableNotificationAreaUI": true,
   "defenderSecurityCenterDisableRansomwareUI": true,
   "defenderSecurityCenterDisableSecureBootUI": true,
   "defenderSecurityCenterDisableTroubleshootingUI": true,
+  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
   "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
   "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
   "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -745,11 +762,13 @@ Content-length: 26312
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
+  "defenderAdobeReaderLaunchChildProcess": "enable",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "block",
   "defenderOfficeAppsOtherProcessInjection": "enable",
+  "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
   "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
   "defenderOfficeAppsLaunchChildProcessType": "block",
@@ -785,6 +804,7 @@ Content-length: 26312
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -800,6 +820,7 @@ Content-length: 26312
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -856,7 +877,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 26499
+Content-Length: 26950
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -870,6 +891,7 @@ Content-Length: 26499
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -1225,9 +1247,9 @@ Content-Length: 26499
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -1246,7 +1268,7 @@ Content-Length: 26499
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -1277,10 +1299,13 @@ Content-Length: 26499
   "defenderSecurityCenterDisableNetworkUI": true,
   "defenderSecurityCenterDisableVirusUI": true,
   "defenderSecurityCenterDisableAccountUI": true,
+  "defenderSecurityCenterDisableClearTpmUI": true,
   "defenderSecurityCenterDisableHardwareUI": true,
+  "defenderSecurityCenterDisableNotificationAreaUI": true,
   "defenderSecurityCenterDisableRansomwareUI": true,
   "defenderSecurityCenterDisableSecureBootUI": true,
   "defenderSecurityCenterDisableTroubleshootingUI": true,
+  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
   "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
   "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
   "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -1375,11 +1400,13 @@ Content-Length: 26499
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
+  "defenderAdobeReaderLaunchChildProcess": "enable",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "Defender Attack Surface Reduction Excluded Paths value"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "block",
   "defenderOfficeAppsOtherProcessInjection": "enable",
+  "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
   "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
   "defenderOfficeAppsLaunchChildProcessType": "block",
@@ -1415,6 +1442,7 @@ Content-Length: 26499
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -1430,6 +1458,7 @@ Content-Length: 26499
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -1480,7 +1509,6 @@ Content-Length: 26499
   }
 }
 ```
-
 
 
 

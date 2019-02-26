@@ -1,6 +1,9 @@
 ---
 title: "Update OneNote page content"
 description: " Enterprise notebooks on Office 365"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Update OneNote page content

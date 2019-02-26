@@ -1,17 +1,21 @@
 ---
 title: "Get microsoftStoreForBusinessApp"
 description: "Read properties and relationships of the microsoftStoreForBusinessApp object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Get microsoftStoreForBusinessApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,7 +35,8 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -45,6 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -56,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1032
+Content-Length: 1368
 
 {
   "value": {
@@ -80,15 +86,25 @@ Content-Length: 1032
     "notes": "Notes value",
     "uploadState": 11,
     "publishingState": "processing",
+    "isAssigned": true,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
     "productKey": "Product Key value",
     "licenseType": "online",
-    "packageIdentityName": "Package Identity Name value"
+    "packageIdentityName": "Package Identity Name value",
+    "licensingType": {
+      "@odata.type": "microsoft.graph.vppLicensingType",
+      "supportUserLicensing": true,
+      "supportDeviceLicensing": true,
+      "supportsUserLicensing": true,
+      "supportsDeviceLicensing": true
+    }
   }
 }
 ```
-
 
 
 

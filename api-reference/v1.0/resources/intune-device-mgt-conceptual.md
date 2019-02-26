@@ -1,6 +1,9 @@
 ---
 title: "Device management in Microsoft Intune"
 description: ""
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Device management in Microsoft Intune
@@ -19,7 +22,6 @@ description: ""
 - [Detected app](intune-devices-detectedapp.md)
 - [Device action result](intune-devices-deviceactionresult.md)
 - [Device enrollment failure reason](intune-troubleshooting-deviceenrollmentfailurereason.md)
-- [Device enrollment type](intune-devices-deviceenrollmenttype.md)
 - [Device exchange access state summary](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Device geolocation](intune-devices-devicegeolocation.md)
 - [Device health attestation state](intune-devices-devicehealthattestationstate.md)

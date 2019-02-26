@@ -1,6 +1,9 @@
 ---
 title: "Update plannerPlan"
 description: "Update the properties of **plannerPlan** object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Update plannerPlan

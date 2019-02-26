@@ -1,6 +1,9 @@
 ---
 title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationUser resource type
@@ -43,6 +46,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".|
 |primaryRole|educationUserRole| Default role for a user. The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `unknownFutureValue`. Supports $filter.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
+|relatedContacts|[relatedContact](relatedcontact.md) collection|Set of contacts related to the user.  This optional property must be specified in a $select clause and can only be retrieved for an individual user.|
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
@@ -120,7 +124,9 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
+    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
+      Property 'relatedContacts' found in markdown table but not in resource definition."
   ],
   "tocPath": ""
 }-->

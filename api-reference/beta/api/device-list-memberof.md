@@ -1,11 +1,14 @@
 ---
 title: "List device groups"
 description: "Get groups that this device is a direct member of. This operation is not transitive."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List device groups
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get groups that this device is a direct member of. This operation is not transitive.
 
@@ -87,5 +90,8 @@ Content-type: application/json
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->S
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/device-list-memberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}-->

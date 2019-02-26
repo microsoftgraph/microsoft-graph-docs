@@ -1,11 +1,14 @@
 ---
 title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels. "
+author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # team resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A team in Microsoft Teams is a collection of [channels](channel.md). 
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
@@ -32,6 +35,7 @@ For more information about working with groups and members in teams, see [Use th
 |[Add app to team](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel-list-messages.md) |
+|[Send channel message](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Send a message to a channel](../api/channel-post-chatmessage.md) |
 
 ## Properties
 
@@ -44,6 +48,7 @@ For more information about working with groups and members in teams, see [Use th
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of a the group and team. Defaults to Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
+|internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Whether this team is in read-only mode. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
@@ -57,7 +62,8 @@ For more information about working with groups and members in teams, see [Use th
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |owners|[user](user.md)| The list of this team's owners. |
-|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. |
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
+|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## JSON representation
 
@@ -75,6 +81,7 @@ The following is a JSON representation of the resource.
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }
@@ -83,13 +90,18 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "team resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/team.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## See Also
 - [Creating a group with a team](/graph/teams-create-group-and-team)

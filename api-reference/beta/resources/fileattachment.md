@@ -1,11 +1,12 @@
 ---
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event,"
+localization_priority: Normal
 ---
 
 # fileAttachment resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A file (such as a text file or Word document) attached to an [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). The  **contentBytes** 
@@ -30,7 +31,7 @@ Derived from [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |contentBytes|Binary|The base64-encoded contents of the file.|
 |contentId|String|The ID of the attachment in the Exchange store.|
-|contentLocation|String|The Uniform Resource Identifier (URI) that corresponds to the location of the content of the attachment.|
+|contentLocation|String|Do not use this property as it is not supported.|
 |contentType|String|The content type of the attachment.|
 |id|String|The attachment ID.|
 |isInline|Boolean|Set to true if this is an inline attachment.|
@@ -71,10 +72,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "fileAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

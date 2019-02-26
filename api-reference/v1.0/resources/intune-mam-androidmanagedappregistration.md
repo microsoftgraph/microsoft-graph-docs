@@ -1,14 +1,19 @@
 ---
 title: "androidManagedAppRegistration resource type"
-description: "Represents the synchronization details of an android app, with management capabilities, for a specific user."
+description: "Represents the synchronization details of an android app, with management capabilities, for a specific user.
+The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # androidManagedAppRegistration resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the synchronization details of an android app, with management capabilities, for a specific user.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
+
 
 Inherits from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
@@ -67,7 +72,7 @@ Here is a JSON representation of the resource.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
@@ -78,11 +83,12 @@ Here is a JSON representation of the resource.
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/flaggedReasons:
+     "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/appIdentifier:
+      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.androidMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
+      "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/flaggedReasons:
+
       Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->
-
-
-
+ 

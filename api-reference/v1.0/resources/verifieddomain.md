@@ -1,6 +1,7 @@
 ---
 title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
+localization_priority: Normal
 ---
 
 # verifiedDomain resource type

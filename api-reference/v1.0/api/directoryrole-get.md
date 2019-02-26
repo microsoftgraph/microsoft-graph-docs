@@ -1,6 +1,9 @@
 ---
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get directoryRole

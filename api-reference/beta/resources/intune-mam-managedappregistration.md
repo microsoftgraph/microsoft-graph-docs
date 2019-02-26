@@ -1,16 +1,21 @@
 ---
 title: "managedAppRegistration resource type"
-description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
+description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # managedAppRegistration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -80,7 +85,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
 
 
 

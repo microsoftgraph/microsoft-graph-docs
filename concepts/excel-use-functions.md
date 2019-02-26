@@ -1,6 +1,9 @@
 ---
 title: "Use workbook functions in Excel with Microsoft Graph"
 description: "You can invoke any workbook function by using the following syntax: `POST /workbook/functions/{function-name}`. You provide the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # Use workbook functions in Excel with Microsoft Graph

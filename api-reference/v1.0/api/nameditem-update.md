@@ -1,6 +1,7 @@
 ---
 title: "Update nameditem"
 description: "Update the properties of nameditem object."
+localization_priority: Normal
 ---
 
 # Update nameditem

@@ -1,6 +1,9 @@
 ---
 title: "Update Outlook category"
 description: "Update the writable property, **color**, of the specified outlookCategory object. You cannot modify the **displayName** property "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Update Outlook category
@@ -24,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

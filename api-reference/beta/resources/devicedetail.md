@@ -1,6 +1,9 @@
 ---
 title: "deviceDetail resource type"
 description: "Indicates device details associated with a device used for signing in. Includes information like device browser and  OS info, if device is Azure AD managed."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # deviceDetail resource type

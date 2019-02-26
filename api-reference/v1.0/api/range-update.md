@@ -1,6 +1,9 @@
 ---
 title: "Update range"
 description: "Update the properties of range object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update range

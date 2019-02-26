@@ -1,6 +1,9 @@
 ---
 title: "Get Table"
 description: "Retrieve the properties and relationships of table object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get Table

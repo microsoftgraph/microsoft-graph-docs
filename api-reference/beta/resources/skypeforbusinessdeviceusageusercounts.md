@@ -1,6 +1,7 @@
 ---
 title: "skypeForBusinessDeviceUsageUserCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # skypeForBusinessDeviceUsageUserCounts resource type

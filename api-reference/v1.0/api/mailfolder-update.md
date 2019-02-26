@@ -1,6 +1,9 @@
 ---
 title: "Update mailfolder"
 description: "Update the properties of mailfolder object."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Update mailfolder

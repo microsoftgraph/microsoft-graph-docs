@@ -1,15 +1,19 @@
 ---
 title: "macOSFirewallApplication resource type"
 description: "Represents an app in the list of macOS firewall applications"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # macOSFirewallApplication resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents an app in the list of macOS firewall applications
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -18,6 +22,7 @@ Represents an app in the list of macOS firewall applications
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -32,7 +37,6 @@ Here is a JSON representation of the resource.
   "allowsIncomingConnections": true
 }
 ```
-
 
 
 

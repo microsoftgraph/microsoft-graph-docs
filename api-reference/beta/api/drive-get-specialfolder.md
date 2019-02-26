@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Get Special Folders
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a special folder by name
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use the special collection to access a special folder by name.
 
@@ -51,7 +53,7 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## HTTP Response
+## Response
 
 This method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
@@ -86,7 +88,7 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 GET /me/drive/special/{name}/children
 ```
 
-### HTTP response
+### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 
@@ -112,10 +114,15 @@ If your app has read-only permissions, the request to get a special folder or
 the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden`
 error if the special folder does not already exist.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders"
-} -->
+  "tocPath": "OneDrive/Drive/Special folders",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-get-specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

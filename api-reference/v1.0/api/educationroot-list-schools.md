@@ -1,6 +1,9 @@
 ---
 title: "List educationSchools"
 description: "Retrieve a list of all school objects."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List educationSchools

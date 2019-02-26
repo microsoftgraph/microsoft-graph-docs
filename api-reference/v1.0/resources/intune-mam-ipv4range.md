@@ -1,24 +1,29 @@
 ---
 title: "iPv4Range resource type"
-description: "IP V4 range"
+description: "IPv4 Range definition."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iPv4Range resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-IP V4 range
+IPv4 Range definition.
+
 
 Inherits from [ipRange](../resources/intune-mam-iprange.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lowerAddress|String|Lower IP Address|
-|upperAddress|String|Upper IP Address|
+|lowerAddress|String|Lower address.|
+|upperAddress|String|Upper address.|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

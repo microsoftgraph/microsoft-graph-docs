@@ -1,11 +1,20 @@
 ---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
+author: "piotrci"
+localization_priority: Priority
 ---
 
 # Use query parameters to customize responses
 
-Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported.
+Microsoft Graph supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the v1.0 and beta endpoints. 
+
+> **Note:** On the v1.0 and beta endpoints, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`.
+
+Query parameters can be OData system query options or other query parameters. 
+
+## OData system query options
+A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
 >**Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
 
@@ -19,14 +28,14 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 | [$search](#search-parameter)       | Returns results based on search criteria. Currently supported on **messages** and **person** collections.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 | [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
 
 
+## Other query parameters
 
-These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs, and support might differ significantly between the `v1.0` and `beta` endpoints. 
-
-> **Note:** On the `beta` and `v1.0` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
+| Name                     | Description | Example
+|:-------------------------|:------------|:---------|
+| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## Encoding query parameters
 

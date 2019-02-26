@@ -1,15 +1,19 @@
 ---
 title: "deviceManagementScript resource type"
 description: "Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # deviceManagementScript resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -33,6 +37,8 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
+|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -65,10 +71,13 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",
   "enforceSignatureCheck": true,
-  "fileName": "String"
+  "fileName": "String",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "runAs32Bit": true
 }
 ```
-
 
 
 

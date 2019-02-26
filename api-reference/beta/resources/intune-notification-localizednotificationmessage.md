@@ -1,15 +1,19 @@
 ---
 title: "localizedNotificationMessage resource type"
 description: "The text content of a Notification Message Template for the specified locale."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # localizedNotificationMessage resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The text content of a Notification Message Template for the specified locale.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -31,6 +35,7 @@ The text content of a Notification Message Template for the specified locale.
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -50,7 +55,6 @@ Here is a JSON representation of the resource.
   "isDefault": true
 }
 ```
-
 
 
 

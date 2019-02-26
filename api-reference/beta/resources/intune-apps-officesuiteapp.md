@@ -1,15 +1,19 @@
 ---
 title: "officeSuiteApp resource type"
 description: "Contains properties and inherited properties for the Office365 Suite App."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # officeSuiteApp resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties and inherited properties for the Office365 Suite App.
+
 
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 
@@ -40,17 +44,20 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |autoAcceptEula|Boolean|The value to accept the EULA automatically on the enduser's device.|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) collection|The Product Ids that represent the Office365 Suite SKU.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|The property to represent the apps which are excluded from the selected Office365 Product Id.|
 |useSharedComputerActivation|Boolean|The property to represent that whether the shared computer activation is used not for Office365 app suite.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|The property to represent the Office365 Update Channel. Possible values are: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The property to represent the Office365 app suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The property to represent the Office365 app suite version. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|String collection|The property to represent the locales which are installed when the apps from Office365 is installed. It uses standard RFC 6033. Ref: https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|To specify the level of display for the Installation Progress Setup UI on the Device. Possible values are: `none`, `full`.|
 |shouldUninstallOlderVersionsOfOffice|Boolean|The property to determine whether to uninstall existing Office MSI if an Office365 app suite is deployed to the device or not.|
 |targetVersion|String|The property to represent the specific target version for the Office365 app suite that should be remained deployed on the devices.|
 |updateVersion|String|The property to represent the update version in which the specific target version is available for the Office365 app suite.|
+|officeConfigurationXml|Binary|The property to represent the XML configuration file that can be specified for Office ProPlus Apps. Takes precedence over all other properties. When present, the XML configuration file will be used to create the app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,6 +98,10 @@ Here is a JSON representation of the resource.
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "String"
@@ -120,10 +131,10 @@ Here is a JSON representation of the resource.
   "installProgressDisplayLevel": "String",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "String",
-  "updateVersion": "String"
+  "updateVersion": "String",
+  "officeConfigurationXml": "binary"
 }
 ```
-
 
 
 

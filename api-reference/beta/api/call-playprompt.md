@@ -1,11 +1,14 @@
 ---
 title: "call: playPrompt"
 description: "Play a prompt in the call."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: playPrompt
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Play a prompt in the call.
 
@@ -19,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | None.                                        |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
@@ -39,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+If successful, this method returns `200 OK` response code and [playPromptOperation](../resources/playPromptOperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -49,7 +53,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_playPrompt"
+  "name": "call-playPrompt"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/playPrompt
@@ -78,10 +82,10 @@ Content-Length: 166
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.playPromptOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
@@ -104,7 +108,7 @@ Content-Type: application/json
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.playPromptOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
@@ -117,10 +121,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: playPrompt",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-playprompt.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

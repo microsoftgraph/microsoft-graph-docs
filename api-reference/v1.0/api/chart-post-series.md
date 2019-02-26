@@ -1,6 +1,9 @@
 ---
 title: "Create ChartSeries"
 description: "Use this API to create a new ChartSeries."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Create ChartSeries

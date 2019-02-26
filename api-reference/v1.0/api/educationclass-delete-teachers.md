@@ -1,6 +1,9 @@
 ---
 title: "Remove teacher"
 description: "Remove a teacher from a class."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Remove teacher

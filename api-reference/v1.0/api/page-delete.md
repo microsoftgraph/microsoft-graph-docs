@@ -1,6 +1,9 @@
 ---
 title: "Delete page"
 description: "Delete a OneNote page."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # Delete page

@@ -1,15 +1,19 @@
 ---
 title: "officeUpdateChannel enum type"
 description: "The Enum to specify the Office365 Updates Channel."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # officeUpdateChannel enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The Enum to specify the Office365 Updates Channel.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -18,7 +22,6 @@ The Enum to specify the Office365 Updates Channel.
 |deferred|2|Not yet documented|
 |firstReleaseCurrent|3|Not yet documented|
 |firstReleaseDeferred|4|Not yet documented|
-
 
 
 

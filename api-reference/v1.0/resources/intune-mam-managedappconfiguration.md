@@ -1,13 +1,17 @@
 ---
 title: "managedAppConfiguration resource type"
 description: "Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # managedAppConfiguration resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped
+
 
 Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
@@ -30,6 +34,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

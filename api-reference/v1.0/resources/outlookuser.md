@@ -1,6 +1,9 @@
 ---
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # outlookUser resource type

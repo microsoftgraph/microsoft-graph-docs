@@ -1,6 +1,9 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar for a user."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create Calendar

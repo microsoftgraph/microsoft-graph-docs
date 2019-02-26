@@ -1,6 +1,9 @@
 ---
 title: "List rows"
 description: "Retrieve a list of tablerow objects."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List rows

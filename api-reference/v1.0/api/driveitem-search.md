@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Search for files
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Search for a DriveItems within a drive
 
@@ -37,9 +39,9 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ## Function parameters
 
-| Name | Value  | Description                                                                                                                          |
+| Parameter | Type  | Description                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## Example
 

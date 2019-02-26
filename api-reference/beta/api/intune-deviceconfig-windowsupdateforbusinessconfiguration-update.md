@@ -1,17 +1,21 @@
 ---
 title: "Update windowsUpdateForBusinessConfiguration"
 description: "Update the properties of a windowsUpdateForBusinessConfiguration object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update windowsUpdateForBusinessConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -53,7 +57,7 @@ The following table shows the properties that are required when you create the [
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Delivery Optimization Mode. Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`, `windowsDefault`.|
 |microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
 |driversExcluded|Boolean|Exclude Windows update Drivers|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Installation schedule|
@@ -66,8 +70,8 @@ The following table shows the properties that are required when you create the [
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
 |skipChecksBeforeRestart|Boolean|Set to skip all check before restart: Battery level = 40%, User presence, Display Needed, Presentation mode, Full screen mode, phone call state, game mode etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Scheduled the update installation on the weeks of the month. Possible values are: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|qualityUpdatesPauseStartDateTime|String|Quality Updates Pause Start datetime|
-|featureUpdatesPauseStartDateTime|String|Feature Updates Pause Start datetime|
+|qualityUpdatesPauseStartDate|Date|Quality Updates Pause start date. This property is read-only.|
+|featureUpdatesPauseStartDate|Date|Feature Updates Pause start date. This property is read-only.|
 |featureUpdatesRollbackWindowInDays|Int32|The number of days after a Feature Update for which a rollback is valid|
 |qualityUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Quality Updates on the next device check in|
 |featureUpdatesWillBeRolledBack|Boolean|Specifies whether to rollback Feature Updates on the next device check in|
@@ -79,6 +83,7 @@ The following table shows the properties that are required when you create the [
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
 |scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
+|userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to enable end user’s access to pause software updates. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -86,15 +91,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1787
+Content-length: 1804
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -121,8 +127,8 @@ Content-length: 1787
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -133,7 +139,8 @@ Content-length: 1787
   "engagedRestartTransitionScheduleInDays": 6,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
-  "scheduleImminentRestartWarningInMinutes": 7
+  "scheduleImminentRestartWarningInMinutes": 7,
+  "userPauseAccess": "enabled"
 }
 ```
 
@@ -142,7 +149,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1971
+Content-Length: 1976
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -175,8 +182,8 @@ Content-Length: 1971
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -187,10 +194,10 @@ Content-Length: 1971
   "engagedRestartTransitionScheduleInDays": 6,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
-  "scheduleImminentRestartWarningInMinutes": 7
+  "scheduleImminentRestartWarningInMinutes": 7,
+  "userPauseAccess": "enabled"
 }
 ```
-
 
 
 
