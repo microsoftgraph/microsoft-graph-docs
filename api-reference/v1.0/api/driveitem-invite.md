@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 {
   "requireSignIn": false,
   "sendInvitation": false,
-  "roles": [ "read | write"],
+  "roles": [ "read"],
   "recipients": [
     { "@odata.type": "microsoft.graph.driveRecipient" },
     { "@odata.type": "microsoft.graph.driveRecipient" }
