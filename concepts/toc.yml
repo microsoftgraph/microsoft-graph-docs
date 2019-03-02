@@ -98,7 +98,7 @@
       - name: Files
         href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
-      - name: Financials
+      - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
