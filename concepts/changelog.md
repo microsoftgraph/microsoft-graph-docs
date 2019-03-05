@@ -21,6 +21,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta and v1.0 | Add the **complianceExpirationDateTime**, **profileType** and **systemLabels** properties on the [device](/graph/api/resources/device?view=graph-rest-1.0) resource.|
 | Addition | beta and v1.0 | Add the **isResourceAccount** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.|
 
+ 
+### Exchange APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Update          | V1.0        | Migrated FindMeetingTimes calendar API from workload Microsoft.Exchange (Exchange Substrate backend) to workload Microsoft.Exchange.LocationsAndTime, (Griffin Microservices backend)  |
+
 ## February 2019
 
 ### Dynamics 365 Business Central API
