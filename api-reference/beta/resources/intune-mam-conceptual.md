@@ -1,6 +1,6 @@
 ---
-title: "How to protect your company app data with Microsoft Intune"
-description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
+title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"

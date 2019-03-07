@@ -3,14 +3,15 @@ title: "managedAppPolicyDeploymentSummary resource type"
 description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # managedAppPolicyDeploymentSummary resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -29,6 +30,7 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

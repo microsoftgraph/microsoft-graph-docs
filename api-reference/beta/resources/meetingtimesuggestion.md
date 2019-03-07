@@ -2,8 +2,8 @@
 title: "meetingTimeSuggestion resource type"
 description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "
 localization_priority: Normal
-author: "VinodRavichandran"
-ms.prod: "microsoft-teams"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # meetingTimeSuggestion resource type
@@ -27,10 +27,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
 }
@@ -39,11 +40,11 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
+|attendeeAvailability|[attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
 |confidence|Double|A percentage that represents the likelhood of all the attendees attending.|
-|locations|[location](location.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
-|meetingTimeSlot|[timeSlot](timeslot.md)|A time period suggested for the meeting.|
-|organizerAvailability|String| Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|locations|[locationDataModel](locationdatamodel.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
+|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|A time period suggested for the meeting.|
+|organizerAvailability|availabilityStatus| Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Reason for suggesting the meeting time.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

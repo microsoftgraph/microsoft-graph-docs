@@ -25,7 +25,8 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
-|[Create chat thread](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) collection| Create a chat thread in the specified channel.|
+|[Send channel message](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Send a message to a channel](../api/channel-post-chatmessage.md) |
+
 
 ## Properties
 | Property	   | Type	|Description|
@@ -42,7 +43,6 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
-|chatThreads|[chatThread](chatthread.md) collection|(This is being phased out in favor of the messages property) chatThreads supports creating new messages but not reading messages. ChatThreads is a navigation property, and is Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 
 
@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "chatthreads"
+    "messages"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"

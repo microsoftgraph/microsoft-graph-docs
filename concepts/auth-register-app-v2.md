@@ -1,6 +1,6 @@
 ---
 title: "Register your app with the Azure AD v2.0 endpoint"
-description: "Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens. For the Azure AD v2.0 endpoint, you register your app with the Microsoft App Registration Portal. You can use either a Microsoft account or a work or school account to register your app. Depending on the type of app you are developing, you will need to copy one or more properties during registration to use when you configure authentication and authorization for your app. "
+description: "Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens."
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -87,4 +87,4 @@ You use the [Azure portal](https://aka.ms/aadapplist) to register your app for t
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the portal.
 - You must pre-configure all the permissions (including Microsoft Graph permissions) that your app needs at the portal. 
 
-For guidance on using the Azure portal to add an app, see [Integrating applications with Azure Active Directory: Adding an application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+For guidance on using the Azure portal to add an app, see [Register an app with the Azure Active Directory v2.0 endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-register-an-app).

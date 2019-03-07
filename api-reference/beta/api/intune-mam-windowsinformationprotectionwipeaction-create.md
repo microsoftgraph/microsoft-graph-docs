@@ -1,14 +1,14 @@
 ---
 title: "Create windowsInformationProtectionWipeAction"
 description: "Create a new windowsInformationProtectionWipeAction object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Create windowsInformationProtectionWipeAction
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the w
 |targetedDeviceRegistrationId|String|The DeviceRegistrationId being targeted by this wipe action.|
 |targetedDeviceName|String|Targeted device name.|
 |targetedDeviceMacAddress|String|Targeted device Mac address.|
+|lastCheckInDateTime|DateTimeOffset|Last checkin time of the device that was targeted by this wipe action.|
 
 
 
@@ -64,7 +65,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions
 Content-type: application/json
-Content-length: 350
+Content-length: 412
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -72,7 +73,8 @@ Content-length: 350
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 
@@ -81,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 461
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -90,7 +92,8 @@ Content-Length: 399
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 

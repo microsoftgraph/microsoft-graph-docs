@@ -59,11 +59,11 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Outlook Mail | ✔ | ✔ | ✔ |
 | Outlook Calendar | ✔ | ✔ | ✔ |
 | Personal Contacts | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔* | ✔ |
-| Delta query | ✔ | ✔ | ✔ |
-| Webhooks  | ✔ | ✔ | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
+| Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
-| Microsoft Planner|➖|➖|➖|
+| Webhooks  | ➖|✔* |✔* |
+| Delta query | ➖ | ➖| ➖ |
 |Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
   
@@ -73,7 +73,7 @@ The following additional Microsoft Graph features are available in preview (on t
 * Applications
 * Service Principals
 
-(*) Limited support for this API in this cloud.
+(*) Limited support for Exchange and OneDrive services only. Azure AD services are not supported. 
 
  > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the national clouds. To find out what services are available, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 

@@ -117,7 +117,32 @@ in an un-configured wiki tab, the first user just needs to select **Set up tab**
 ## Document library tabs
 
 For document library tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.files.sharepoint`. 
-Configuration is not supported.
+The following is the configuration.
+
+| Property   | Type        | Description                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | Empty string ("")                                        |
+| contentUrl | string      | The URL of the root folder of the document library. You can find this URL by opening the SharePoint folder in your browser, copying the URL, and deleting "/Forms/AllItems.aspx" and everything after that. |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                                     |
+
+### Example: Create a configured document library tab
+
+The following example creates a configured Word tab.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
 
 ## OneNote tabs
 

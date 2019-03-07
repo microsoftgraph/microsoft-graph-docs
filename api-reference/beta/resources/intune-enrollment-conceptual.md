@@ -1,6 +1,6 @@
 ---
-title: "Enroll corporate-owned devices by using Intune"
-description: " (BYOD) scenario."
+title: "Enroll corporate devices by using Intune - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enroll devices for a tenant organization."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"

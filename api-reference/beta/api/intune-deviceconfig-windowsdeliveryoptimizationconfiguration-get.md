@@ -1,14 +1,14 @@
 ---
 title: "Get windowsDeliveryOptimizationConfiguration"
 description: "Read properties and relationships of the windowsDeliveryOptimizationConfiguration object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Get windowsDeliveryOptimizationConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 528
+Content-Length: 1313
 
 {
   "value": {
@@ -77,7 +77,26 @@ Content-Length: 528
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "deliveryOptimizationMode": "httpOnly"
+    "deliveryOptimizationMode": "httpOnly",
+    "restrictPeerSelectionBy": "subnetMask",
+    "groupIdSource": {
+      "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+    },
+    "bandwidthMode": {
+      "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+    },
+    "backgroundDownloadFromHttpDelayInSeconds": 8,
+    "foregroundDownloadFromHttpDelayInSeconds": 8,
+    "minimumRamAllowedToPeerInGigabytes": 2,
+    "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+    "minimumFileSizeToCacheInMegabytes": 1,
+    "minimumBatteryPercentageAllowedToUpload": 7,
+    "modifyCacheLocation": "Modify Cache Location value",
+    "maximumCacheAgeInDays": 5,
+    "maximumCacheSize": {
+      "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+    },
+    "vpnPeerCaching": "enabled"
   }
 }
 ```

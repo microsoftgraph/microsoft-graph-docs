@@ -28,8 +28,10 @@
       href: /graph/throttling?toc=./ref/toc.json
     - name: Change notifications
       href: /graph/webhooks?toc=./ref/toc.json
+      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
     - name: Track changes
       href: /graph/delta-query-overview?toc=./ref/toc.json
+      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Get changes to events (example)
         href: /graph/delta-query-events?toc=./ref/toc.json
@@ -41,6 +43,7 @@
         href: /graph/delta-query-users?toc=./ref/toc.json
     - name: Add custom data
       href: /graph/extensibility-overview?toc=./ref/toc.json
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?toc=./ref/toc.json
@@ -80,6 +83,7 @@
           href: api/user-delta.md
       - name: Calendar
         href: resources/event.md
+        displayName: Outlook, Outlook calendar
         items:
         - name: List events
           href: api/user-list-events.md
@@ -474,6 +478,7 @@
           href: api/opentypeextension-get.md
     - name: Calendar
       href: resources/calendar.md
+      displayname: Outlook calendar
       items:
       - name: Event
         href: resources/event.md
@@ -649,6 +654,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Calls and online meetings
       href: resources/calls-api-overview.md
+      displayName: Microsoft Teams
       items:
       - name: Call
         href: resources/call.md
@@ -719,6 +725,7 @@
           href: api/onlinemeeting-get.md
     - name: Cross-device experiences
       href: resources/project-rome-overview.md
+      displayName: Project Rome
       items:
       - name: List user devices
         href: api/user-list-devices.md
@@ -759,6 +766,7 @@
             href: api/projectrome-notification-post.md
     - name: Customer booking
       href: resources/booking-api-overview.md
+      displayName: Bookings, Microsoft Bookings
       items:
       - name: Booking business
         href: resources/bookingbusiness.md
@@ -842,6 +850,7 @@
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
       href: resources/intune-graph-overview.md
+      displayName: Intune
       items:
       - name: App management
         href: resources/intune-app-conceptual.md
@@ -1252,36 +1261,6 @@
             href: api/intune-books-iosvppebookassignment-delete.md
           - name: Update
             href: api/intune-books-iosvppebookassignment-update.md
-        - name: macOS VPP app
-          href: resources/intune-apps-macosvppapp.md
-          items:
-          - name: List
-            href: api/intune-apps-macosvppapp-list.md
-          - name: Get
-            href: api/intune-apps-macosvppapp-get.md
-          - name: Create
-            href: api/intune-apps-macosvppapp-create.md
-          - name: Delete
-            href: api/intune-apps-macosvppapp-delete.md
-          - name: Update
-            href: api/intune-apps-macosvppapp-update.md
-        - name: macOS VPP app assigned license
-          href: resources/intune-apps-macosvppappassignedlicense.md
-          items:
-          - name: List
-            href: api/intune-apps-macosvppappassignedlicense-list.md
-          - name: Get
-            href: api/intune-apps-macosvppappassignedlicense-get.md
-          - name: Create
-            href: api/intune-apps-macosvppappassignedlicense-create.md
-          - name: Delete
-            href: api/intune-apps-macosvppappassignedlicense-delete.md
-          - name: Update
-            href: api/intune-apps-macosvppappassignedlicense-update.md
-        - name: macOS VPP app assignment settings
-          href: resources/intune-apps-macosvppappassignmentsettings.md
-        - name: macOS VPP app revoke licenses action result
-          href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
         - name: macOS LOB app
           href: resources/intune-apps-macoslobapp.md
           items:
@@ -1312,6 +1291,36 @@
             href: api/intune-apps-macosofficesuiteapp-delete.md
           - name: Update
             href: api/intune-apps-macosofficesuiteapp-update.md
+        - name: macOS VPP app
+          href: resources/intune-apps-macosvppapp.md
+          items:
+          - name: List
+            href: api/intune-apps-macosvppapp-list.md
+          - name: Get
+            href: api/intune-apps-macosvppapp-get.md
+          - name: Create
+            href: api/intune-apps-macosvppapp-create.md
+          - name: Delete
+            href: api/intune-apps-macosvppapp-delete.md
+          - name: Update
+            href: api/intune-apps-macosvppapp-update.md
+        - name: macOS VPP app assigned license
+          href: resources/intune-apps-macosvppappassignedlicense.md
+          items:
+          - name: List
+            href: api/intune-apps-macosvppappassignedlicense-list.md
+          - name: Get
+            href: api/intune-apps-macosvppappassignedlicense-get.md
+          - name: Create
+            href: api/intune-apps-macosvppappassignedlicense-create.md
+          - name: Delete
+            href: api/intune-apps-macosvppappassignedlicense-delete.md
+          - name: Update
+            href: api/intune-apps-macosvppappassignedlicense-update.md
+        - name: macOS VPP app assignment settings
+          href: resources/intune-apps-macosvppappassignmentsettings.md
+        - name: macOS VPP app revoke licenses action result
+          href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
         - name: Managed android LOB app
           href: resources/intune-apps-managedandroidlobapp.md
           items:
@@ -2266,6 +2275,8 @@
         items:
         - name: Administrator configured device compliance state
           href: resources/intune-deviceconfig-administratorconfigureddevicecompliancestate.md
+        - name: Advanced BitLocker state
+          href: resources/intune-deviceconfig-advancedbitlockerstate.md
         - name: Advanced threat protection on-boarding device setting state
           href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
           items:
@@ -2593,6 +2604,19 @@
             href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
         - name: Android keyguard feature
           href: resources/intune-deviceconfig-androidkeyguardfeature.md
+        - name: Android OMA cp configuration
+          href: resources/intune-deviceconfig-androidomacpconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androidomacpconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androidomacpconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androidomacpconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androidomacpconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androidomacpconfiguration-update.md
         - name: Android PKCS certificate profile
           href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
           items:
@@ -2947,6 +2971,32 @@
           href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
         - name: Defender threat action
           href: resources/intune-deviceconfig-defenderthreataction.md
+        - name: Delivery optimization bandwidth
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidth.md
+        - name: Delivery optimization bandwidth absolute
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md
+        - name: Delivery optimization bandwidth business hours limit
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md
+        - name: Delivery optimization bandwidth hours with percentage
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md
+        - name: Delivery optimization bandwidth percentage
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md
+        - name: Delivery optimization group id custom
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidcustom.md
+        - name: Delivery optimization group id options type
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md
+        - name: Delivery optimization group id source
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md
+        - name: Delivery optimization group id source options
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md
+        - name: Delivery optimization max cache size
+          href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md
+        - name: Delivery optimization max cache size absolute
+          href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md
+        - name: Delivery optimization max cache size percentage
+          href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md
+        - name: Delivery optimization restrict peer selection by options
+          href: resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md
         - name: Derived credential provider type
           href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
         - name: Device compliance action item
@@ -3200,9 +3250,11 @@
           href: resources/intune-deviceconfig-devicemanagementuserrightssetting.md
         - name: Device threat protection level
           href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+        - name: Device types
+          href: resources/intune-deviceconfig-devicetypes.md
         - name: Diagnostic data submission mode
           href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-        - name: Dma guard device enumeration policy type
+        - name: DMA guard device enumeration policy type
           href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
         - name: Domain name source
           href: resources/intune-deviceconfig-domainnamesource.md
@@ -3231,6 +3283,8 @@
           href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
         - name: Edge home button opens new tab
           href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
+        - name: Edge kiosk mode restriction type
+          href: resources/intune-deviceconfig-edgekioskmoderestrictiontype.md
         - name: Edge open options
           href: resources/intune-deviceconfig-edgeopenoptions.md
         - name: Edge search engine
@@ -3262,6 +3316,12 @@
           href: resources/intune-deviceconfig-emailsyncduration.md
         - name: Email sync schedule
           href: resources/intune-deviceconfig-emailsyncschedule.md
+        - name: Encryption readiness state
+          href: resources/intune-deviceconfig-encryptionreadinessstate.md
+        - name: Encryption report policy details
+          href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
+        - name: Encryption state
+          href: resources/intune-deviceconfig-encryptionstate.md
         - name: Extended key usage
           href: resources/intune-deviceconfig-extendedkeyusage.md
         - name: Firewall certificate revocation list check method type
@@ -4005,6 +4065,19 @@
             href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
           - name: Update
             href: api/intune-deviceconfig-manageddevicecertificatestate-update.md
+        - name: Managed device encryption state
+          href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
         - name: Managed device reported app
           href: resources/intune-deviceconfig-manageddevicereportedapp.md
         - name: Media content rating Australia
@@ -4818,8 +4891,6 @@
           href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-        - name: Windows update state
-          href: resources/intune-deviceconfig-windowsupdatestate.md
         - name: Windows update status
           href: resources/intune-deviceconfig-windowsupdatestatus.md
         - name: Windows update type
@@ -6121,7 +6192,7 @@
             href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control
+      - name: Role-based access control 
         href: /resources/intune-rbac-conceptual.md
         items:
         - name: Device and app management assigned role details
@@ -6523,6 +6594,7 @@
           href: api/educationsynchronizationerrors-get.md
     - name: Files
       href: resources/onedrive.md
+      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Drives
         href: resources/drive.md
@@ -6603,8 +6675,243 @@
           href: api/permission-update.md
         - name: Delete permission
           href: api/permission-delete.md
+    - name: Financials
+      href: resources/dynamics-graph-reference.md
+      displayname: Dynamics, Dynamics 365 Business Central
+      items:
+      - name: Account
+        href: resources/dynamics-account.md
+        items:
+        - name: Get account
+          href: api/dynamics-account-get.md
+      - name: Aged accounts payable
+        href: resources/dynamics-agedaccountspayable.md
+        items:
+        - name: Get aged accounts payable
+          href: api/dynamics-agedaccountspayable-get.md
+      - name: Aged accounts receivable
+        href: resources/dynamics-agedaccountsreceivable.md
+        items:
+        - name: Get aged accounts payable
+          href: api/dynamics-agedaccountsreceivable-get.md
+      - name: Companies
+        href: resources/dynamics-companies.md
+        items:
+        - name: Get companies
+          href: api/dynamics-companies-get.md
+      - name: Company information
+        href: resources/dynamics-companyinformation.md
+        items:
+        - name: Get company information
+          href: api/dynamics-companyinformation-get.md
+        - name: Update company information
+          href: api/dynamics-companyinformation-update.md
+      - name: Countries/regions
+        href: resources/dynamics-countriesregions.md
+        items:
+        - name: Get countries/regions
+          href: api/dynamics-countriesregions-get.md
+        - name: Create countries/regions
+          href: api/dynamics-create-countriesregions.md
+        - name: Delete countries/regions
+          href: api/dynamics-countriesregions-delete.md
+      - name: Currencies
+        href: resources/dynamics-currencies.md
+        items:
+        - name: Get currencies
+          href: api/dynamics-currencies-get.md
+        - name: Create currencies
+          href: api/dynamics-create-currencies.md
+        - name: Delete currencies
+          href: api/dynamics-currencies-delete.md
+      - name: Customer
+        href: resources/dynamics-customer.md
+        items:
+        - name: Get customer
+          href: api/dynamics-customer-get.md
+        - name: Create customer
+          href: api/dynamics-create-customer.md
+        - name: Update customer
+          href: api/dynamics-customer-update.md
+        - name: Delete customer
+          href: api/dynamics-customer-delete.md
+      - name: Customer payment
+        href: resources/dynamics-customerpayment.md
+        items:
+        - name: Get customer payment
+          href: api/dynamics-customerpayment-get.md
+        - name: Create customer payment
+          href: api/dynamics-create-customerpayment.md
+        - name: Update customer payment
+          href: api/dynamics-customerpayment-update.md
+        - name: Delete customer payment
+          href: api/dynamics-customerpayment-delete.md
+      - name: Customer payments journal
+        href: resources/dynamics-customerpaymentsjournal.md
+        items:
+        - name: Get customer payments journal
+          href: api/dynamics-customerpaymentsjournal-get.md
+        - name: Create customer payments journal
+          href: api/dynamics-create-customerpaymentsjournal.md
+        - name: Update customer payments journal
+          href: api/dynamics-customerpaymentsjournal-update.md
+        - name: Delete customer payments journal
+          href: api/dynamics-customerpaymentsjournal-delete.md
+      - name: Dimension
+        href: resources/dynamics-dimension.md
+        items:
+        - name: Get dimension
+          href: api/dynamics-dimension-get.md
+      - name: Dimension value
+        href: resources/dynamics-dimensionvalue.md
+        items:
+        - name: Get dimension
+          href: api/dynamics-dimensionvalue-get.md
+      - name: Employee
+        href: resources/dynamics-employee.md
+        items:
+        - name: Get employee
+          href: api/dynamics-employee-get.md
+        - name: Create employee
+          href: api/dynamics-create-employee.md
+        - name: Update employee
+          href: api/dynamics-employee-update.md
+        - name: Delete employee
+          href: api/dynamics-employee-delete.md
+      - name: General ledger entries
+        href: resources/dynamics-generalledgerentries.md
+        items:
+        - name: Get general ledger entries
+          href: api/dynamics-generalledgerentries-get.md
+      - name: Item
+        href: resources/dynamics-item.md
+        items:
+        - name: Get item
+          href: api/dynamics-item-get.md
+        - name: Create item
+          href: api/dynamics-create-item.md
+        - name: Update item
+          href: api/dynamics-item-update.md
+        - name: Delete item
+          href: api/dynamics-item-delete.md
+      - name: Item categories
+        href: resources/dynamics-itemcategories.md
+        items:
+        - name: Get item categories
+          href: api/dynamics-itemcategories-get.md
+        - name: Create item categories
+          href: api/dynamics-create-itemcategories.md
+        - name: Update item categories
+          href: api/dynamics-itemcategories-update.md
+        - name: Delete item categories
+          href: api/dynamics-itemcategories-delete.md
+      - name: Journal
+        href: resources/dynamics-journal.md
+        items:
+        - name: Get journal
+          href: api/dynamics-journal-get.md
+        - name: Create journal
+          href: api/dynamics-create-journal.md
+        - name: Update journal
+          href: api/dynamics-journal-update.md
+        - name: Delete journal
+          href: api/dynamics-journal-delete.md
+      - name: Journal line
+        href: resources/dynamics-journalline.md
+        items:
+        - name: Get journal line
+          href: api/dynamics-journalline-get.md
+        - name: Create journal line
+          href: api/dynamics-create-journalline.md
+        - name: Update journal line
+          href: api/dynamics-journalline-update.md
+        - name: Delete journal line
+          href: api/dynamics-journalline-delete.md
+      - name: Payment methods
+        href: resources/dynamics-paymentmethods.md
+        items:
+        - name: Get payment methods
+          href: api/dynamics-paymentmethods-get.md
+        - name: Create payment methods
+          href: api/dynamics-create-paymentmethods.md
+        - name: Update payment methods
+          href: api/dynamics-paymentmethods-update.md
+        - name: Delete payment methods
+          href: api/dynamics-paymentmethods-delete.md
+      - name: Payment terms
+        href: resources/dynamics-paymentterms.md
+        items:
+        - name: Get payment terms
+          href: api/dynamics-paymentterms-get.md
+        - name: Create payment terms
+          href: api/dynamics-create-paymentterms.md
+        - name: Update payment terms
+          href: api/dynamics-paymentterms-update.md
+        - name: Delete payment terms
+          href: api/dynamics-paymentterms-delete.md
+      - name: Shipment methods
+        href: resources/dynamics-shipmentmethods.md
+        items:
+        - name: Get shipment methods
+          href: api/dynamics-shipmentmethods-get.md
+        - name: Create shipment methods
+          href: api/dynamics-create-shipmentmethods.md
+        - name: Update shipment methods
+          href: api/dynamics-shipmentmethods-update.md
+        - name: Delete shipment methods
+          href: api/dynamics-shipmentmethods-delete.md
+      - name: Tax area
+        href: resources/dynamics-taxarea.md
+        items:
+        - name: Get tax area
+          href: api/dynamics-taxarea-get.md
+        - name: Create tax area
+          href: api/dynamics-create-taxarea.md
+        - name: Update tax area
+          href: api/dynamics-taxarea-update.md
+        - name: Delete tax area
+          href: api/dynamics-taxarea-delete.md
+      - name: Tax groups
+        href: resources/dynamics-taxgroups.md
+        items:
+        - name: Get tax groups
+          href: api/dynamics-taxgroups-get.md
+        - name: Create tax groups
+          href: api/dynamics-create-taxgroups.md
+        - name: Update tax groups
+          href: api/dynamics-taxgroups-update.md
+        - name: Delete tax groups
+          href: api/dynamics-taxgroups-delete.md
+      - name: Trial balance
+        href: resources/dynamics-trialbalance.md
+        items:
+        - name: Get trial balance
+          href: api/dynamics-trialbalance-get.md
+      - name: Units of measure
+        href: resources/dynamics-unitsofmeasure.md
+        items:
+        - name: Get units of measure
+          href: api/dynamics-unitsofmeasure-get.md
+        - name: Create units of measure
+          href: api/dynamics-create-unitsofmeasure.md
+        - name: Update units of measure
+          href: api/dynamics-unitsofmeasure-update.md
+        - name: Delete units of measure
+          href: api/dynamics-unitsofmeasure-delete.md
+      - name: Vendor
+        href: resources/dynamics-vendor.md
+        items:
+        - name: Get vendor
+          href: api/dynamics-vendor-get.md
+        - name: Create vendor
+          href: api/dynamics-create-vendor.md
+        - name: Update vendor
+          href: api/dynamics-vendor-update.md
+        - name: Delete vendor
+          href: api/dynamics-vendor-delete.md
     - name: Identity and access
       href: resources/azure-ad-overview.md
+      displayName: Azure AD, Microsoft identity platform
       items:
       - name: Access reviews
         href: resources/accessreviews-root.md
@@ -7189,6 +7496,7 @@
           href: api/user-list-agreementacceptances.md
     - name: Mail
       href: resources/mail-api-overview.md
+      displayName: Outlook, Outlook mail
       items:
       - name: Message
         href: resources/message.md
@@ -7352,6 +7660,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
       href: resources/onenote-api-overview.md
+      displayName: OneNote
       items:
       - name: Notes
         href: resources/onenote.md
@@ -7381,6 +7690,8 @@
           href: api/notebook-copynotebook.md
         - name: Get recent notebooks
           href: api/notebook-getrecentnotebooks.md
+        - name: Get notebook from web URL
+          href: api/notebook-getnotebookfromweburl.md
         - name: List sections
           href: api/notebook-list-sections.md
         - name: Create section
@@ -7441,6 +7752,7 @@
           href: api/resource-get.md
     - name: Personal contacts
       href: resources/contact.md
+      displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
       - name: Contact
         href: resources/contact.md
@@ -7717,7 +8029,19 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
+      displayname: Security API, Microsoft Graph Security API
       items:
+      - name: Actions
+        href: resources/securityaction.md
+        items:
+        - name: List security actions
+          href: api/securityactions-list.md
+        - name: Create security action
+          href: api/securityactions-post.md
+        - name: Get security action
+          href: api/securityaction-get.md
+        - name: Cancel security action
+          href: api/securityaction-cancelsecurityaction.md
       - name: Alerts
         href: resources/alert.md
         items:
@@ -7727,6 +8051,8 @@
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -7739,10 +8065,32 @@
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
+      - name: Threat intelligence indicators
+        href: resources/tiindicator.md
+        items:
+        - name: List
+          href: api/tiindicators-list.md
+        - name: Create
+          href: api/tiindicators-post.md
+        - name: Submit multiple
+          href: api/tiindicator-submittiindicators.md
+        - name: Get
+          href: api/tiindicator-get.md
+        - name: Update
+          href: api/tiindicator-update.md
+        - name: Update multiple
+          href: api/tiindicator-updatetiindicators.md
+        - name: Delete
+          href: api/tiindicator-delete.md
+        - name: Delete multiple
+          href: api/tiindicator-deletetiindicators.md
+        - name: Delete multiple by external ID
+          href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
       href: resources/sharepoint.md
+      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
       items:
       - name: Sites
         href: resources/site.md
@@ -7826,6 +8174,7 @@
         href: resources/mention.md
     - name: Tasks and plans
       href: resources/planner-overview.md
+      displayName: Planner
       items:
       - name: Plan
         href: resources/plannerplan.md
@@ -7924,6 +8273,7 @@
           href: api/plannerprogresstaskboardtaskformat-update.md
     - name: Teamwork
       href: resources/teams-api-overview.md
+      displayName: Microsoft Teams
       items:
       - name: Team
         href: resources/team.md
@@ -8006,11 +8356,10 @@
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-      - name: Chat thread
-        href: resources/chatthread.md
-        items:
-        - name: Create chat thread
-          href: api/channel-post-chatthreads.md
+        - name: Send message
+          href: api/channel-post-chatmessage.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
       - name: Apps
         href: resources/teamsapp.md
         items:
@@ -8084,6 +8433,7 @@
           href: api/onenote-post-notebooks.md
     - name: To-do tasks
       href: resources/outlooktask.md
+      displayName: Outlook
       items:
       - name: Outlook task
         href: resources/outlooktask.md
@@ -8183,6 +8533,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Workbooks and charts
       href: resources/excel.md
+      displayName: Excel
       items:
       - name: Workbook
         href: resources/workbook.md
@@ -8299,6 +8650,7 @@
     - name: Tools
     - name: Open extensions
       href: resources/opentypeextension.md
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: Create open extension
         href: api/opentypeextension-post-opentypeextension.md
@@ -8310,6 +8662,7 @@
         href: api/opentypeextension-delete.md
     - name: Schema extensions
       href: resources/schemaextension.md
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: List schema extensions
         href: api/schemaextension-list.md
@@ -8323,6 +8676,7 @@
         href: api/schemaextension-delete.md
     - name: Change notifications
       href: resources/webhooks.md
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Subscription
         href: resources/subscription.md

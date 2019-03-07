@@ -1,14 +1,14 @@
 ---
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Get win32LobApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2626
+Content-Length: 2709
 
 {
   "value": {
@@ -138,7 +138,9 @@ Content-Length: 2626
       "productVersion": "Product Version value",
       "upgradeCode": "Upgrade Code value",
       "requiresReboot": true,
-      "packageType": "perUser"
+      "packageType": "perUser",
+      "productName": "Product Name value",
+      "publisher": "Publisher value"
     },
     "setupFilePath": "Setup File Path value"
   }

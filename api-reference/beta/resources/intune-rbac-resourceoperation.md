@@ -1,14 +1,14 @@
 ---
 title: "resourceOperation resource type"
-description: "Describes the resourceOperation resource of the Microsoft Graph API for Intune, which supports role-based access control (RBAC)."
-localization_priority: Normal
+description: "Describes the resourceoperation resource (entity) of the Microsoft Graph API for Intune (REST), which supports role-based access control (RBAC) scenarios for tenant organizations."
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # resourceOperation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 

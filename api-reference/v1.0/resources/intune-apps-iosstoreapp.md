@@ -3,14 +3,15 @@ title: "iosStoreApp resource type"
 description: "Contains properties and inherited properties for iOS store apps."
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # iosStoreApp resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties and inherited properties for iOS store apps.
+
 
 Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 

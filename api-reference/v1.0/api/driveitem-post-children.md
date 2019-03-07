@@ -102,8 +102,9 @@ Content-Type: application/json
 
 ## Error response
 
-Read the [Error Responses][error-response] topic for more info about
+See [Error Responses][error-response] for more info about
 how errors are returned.
+
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md

@@ -71,6 +71,7 @@ Here is a JSON representation of the resource
 |:---------------|:--------|:----------|
 |[Get notebook](../api/notebook-get.md) | [Notebook](notebook.md) |Read the properties and relationships of the notebook.|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | Retrieve the properties and relationships of a notebook object using its URL path. |
 |[Create section group](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified notebook.|
 |[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups in the specified notebook.|
 |[Create section](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| Create a section by posting to the sections collection in the specified notebook.|

@@ -1,14 +1,14 @@
 ---
 title: "List windowsInformationProtectionWipeActions"
 description: "List properties and relationships of the windowsInformationProtectionWipeAction objects."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # List windowsInformationProtectionWipeActions
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 460
+Content-Length: 526
 
 {
   "value": [
@@ -68,7 +68,8 @@ Content-Length: 460
       "targetedUserId": "Targeted User Id value",
       "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
       "targetedDeviceName": "Targeted Device Name value",
-      "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+      "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+      "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
     }
   ]
 }

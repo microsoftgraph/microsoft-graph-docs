@@ -79,13 +79,11 @@ For example, to send mail from the `sales@contoso.com` group, configure the mess
       }
     }
   ],
-  "from": [
-    {
-      "emailAddress": {
-        "address": "sales@contoso.com"
-      }
+  "from": {
+    "emailAddress": {
+      "address": "sales@contoso.com"
     }
-  ]
+  }
 }
 ```
 
@@ -132,13 +130,11 @@ Content-Type: application/json
         }
       }
     ],
-    "from": [
-      {
-        "emailAddress": {
-          "address": "AllanD@contoso.com"
-        }
+    "from": {
+      "emailAddress": {
+        "address": "AllanD@contoso.com"
       }
-    ]
+    }
   }
 }
 ```
@@ -175,13 +171,11 @@ Content-Type: application/json
         }
       }
     ],
-    "from": [
-      {
-        "emailAddress": {
-          "address": "PattiF@contoso.com"
-        }
+    "from": {
+      "emailAddress": {
+        "address": "PattiF@contoso.com"
       }
-    ]
+    }
   }
 }
 ```

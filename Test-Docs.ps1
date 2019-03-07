@@ -2,6 +2,7 @@ Param(
     [switch]$cleanUp,
     [string]$file
 )
+$apiDoctorVersion = "1.2.1811.291"
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
@@ -35,7 +36,7 @@ if (Get-Command "apidoc.exe" -ErrorAction SilentlyContinue) {
 
     # install apidoctor from nuget
     Write-Host "Running nuget.exe from ", $nugetPath
-    $nugetParams = "install", "ApiDoctor", "-OutputDirectory", $packagesPath, "-NonInteractive", "-DisableParallelProcessing"
+    $nugetParams = "install", "ApiDoctor", "-Version", $apiDoctorVersion, "-OutputDirectory", $packagesPath, "-NonInteractive", "-DisableParallelProcessing"
     & $nugetPath $nugetParams
 
     if ($LastExitCode -ne 0) { 

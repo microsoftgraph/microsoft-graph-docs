@@ -1,14 +1,14 @@
 ---
 title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Get windows10EndpointProtectionConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 27910
+Content-Length: 28223
 
 {
   "value": {
@@ -485,10 +485,13 @@ Content-Length: 27910
     "defenderSecurityCenterDisableNetworkUI": true,
     "defenderSecurityCenterDisableVirusUI": true,
     "defenderSecurityCenterDisableAccountUI": true,
+    "defenderSecurityCenterDisableClearTpmUI": true,
     "defenderSecurityCenterDisableHardwareUI": true,
+    "defenderSecurityCenterDisableNotificationAreaUI": true,
     "defenderSecurityCenterDisableRansomwareUI": true,
     "defenderSecurityCenterDisableSecureBootUI": true,
     "defenderSecurityCenterDisableTroubleshootingUI": true,
+    "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
     "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
     "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
     "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
@@ -583,11 +586,13 @@ Content-Length: 27910
       "policyRulesFromGroupPolicyMerged": true,
       "policyRulesFromGroupPolicyNotMerged": true
     },
+    "defenderAdobeReaderLaunchChildProcess": "enable",
     "defenderAttackSurfaceReductionExcludedPaths": [
       "Defender Attack Surface Reduction Excluded Paths value"
     ],
     "defenderOfficeAppsOtherProcessInjectionType": "block",
     "defenderOfficeAppsOtherProcessInjection": "enable",
+    "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
     "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
     "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
     "defenderOfficeAppsLaunchChildProcessType": "block",

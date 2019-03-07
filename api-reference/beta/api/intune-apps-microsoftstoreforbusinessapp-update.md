@@ -1,14 +1,14 @@
 ---
 title: "Update microsoftStoreForBusinessApp"
 description: "Update the properties of a microsoftStoreForBusinessApp object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Update microsoftStoreForBusinessApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -69,6 +69,7 @@ The following table shows the properties that are required when you create the [
 |productKey|String|The app product key|
 |licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|The app license type. Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
+|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|The supported License Type.|
 
 
 
@@ -82,7 +83,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 876
+Content-length: 1105
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -110,7 +111,14 @@ Content-length: 876
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
   "licenseType": "online",
-  "packageIdentityName": "Package Identity Name value"
+  "packageIdentityName": "Package Identity Name value",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 
@@ -119,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1277
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -150,7 +158,14 @@ Content-Length: 1048
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
   "licenseType": "online",
-  "packageIdentityName": "Package Identity Name value"
+  "packageIdentityName": "Package Identity Name value",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 

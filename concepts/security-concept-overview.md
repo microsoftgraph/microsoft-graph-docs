@@ -16,11 +16,17 @@ For information about authorization, see [Authorization and the Microsoft Graph 
 
 ## Why use the Microsoft Graph Security API?
 
-The [Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) makes it easy to connect with different Microsoft and Microsoft partner security products and services. It allows you to more readily realize and enrich the value of these solutions.
+The [Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) makes it easy to connect with security solutions from Microsoft and partners. It allows you to more readily realize and enrich the value of these solutions. You can connect easily with the Microsoft Graph Security API by using one of the following approaches, depending on your requirements:
+
+- [Write code](https://aka.ms/graphsecuritysdk) – Find [code samples](https://aka.ms/graphsecurityapicode) in C#, Java, NodeJS, and more.
+- [Connect using scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Find [PowerShell samples](https://aka.ms/graphsecuritypowershellsample).
+- [Drag and drop into workflows and playbooks](https://aka.ms/graphsecurityconnectorsblogpost) – Use [Microsoft Graph Security connectors](https://aka.ms/graphsecurityconnectors) for [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/), and [PowerApps](https://powerapps.microsoft.com/).
+- [Get data into reports and dashboards](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – Use the [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc).
+- [Connect using Jupyter notebooks](https://jupyter.org/) – Find [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks).  
 
 ### Unify and standardize alert tracking
 
-Write code once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security-siemintegration.md).
+Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security-siemintegration.md).
 
 ### Correlate security alerts to improve threat protection and response
 
@@ -34,6 +40,22 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
 
+### Automate security workflows and reporting
+
+Automate security management, monitoring, and investigations to improve operational efficiencies-and response times. Get deeper insights and context by integrating Microsoft Graph Security into your reports and dashboards.
+
+### Get deep insights to train security solutions
+
+Visualize your data across different security products running in your organization to get deeper security insights. Discover opportunities to learn from the data and train your security solutions. The schema provides multiple properties to pivot on to build rich exploratory datasets using your security data.
+
+### Utilize your threat intelligence in Microsoft security solutions (preview)
+
+Automatically send your threat indicators to Microsoft security solutions to enable `alert`, `block`, or `allow` actions. Use the Microsoft Graph Security API directly or take advantage of integrations with leading threat intelligence platforms.
+
+### Act quickly in response to new threats (preview)
+
+Enable swift action to defend against new threats, such as actions to block files, URLs, domains, or IP addresses from within your security tools and workflows.
+
 ### Proactively manage security risks (preview)
 
 Use the Microsoft Secure Score (preview) to provide visibility into your organization’s security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
@@ -44,9 +66,9 @@ The following table lists the benefits that different security solutions can acc
 
 |**Area**     | **Benefits**|
 |:---------------|:---------|
-|**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools and services.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
+|**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools, workflows, and reporting.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Automated response to alerts by taking action on threats.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
 |**SIEM and IT Risk management solutions**|<ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>|
-|**Applications** <br>(Threat Intelligence, Mobile, Cloud, IOT, Fraud detection, Identity & Access, Risk & Compliance, Firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, inventory, config, and actions exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li></ul>|
+|**Applications** <br>(Threat intelligence, mobile, cloud, IOT, fraud detection, identity & access, risk & compliance, firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, actions, and customer threat intelligence exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li> <li>Gain deep security insights to train other security solutions.</li> </ul>|
 
 ## API reference
 Looking for the API reference for this service?

@@ -1,6 +1,6 @@
 ---
-title: "Using the Intune Graph API"
-description: " Intune hybrid deployments are not supported. "
+title: "Using the Intune Graph API - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization, its devices, apps, access, and resources."
 author: "tfitzmac"
 localization_priority: Priority
 ms.prod: "intune"

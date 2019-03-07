@@ -1,14 +1,14 @@
 ---
 title: "Update macOSGeneralDeviceConfiguration"
 description: "Update the properties of a macOSGeneralDeviceConfiguration object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Update macOSGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -92,6 +92,9 @@ The following table shows the properties that are required when you create the [
 |passwordBlockAutoFill|Boolean|Indicates whether or not to block the AutoFill Passwords feature.|
 |passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
+|softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
+|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
+|contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 
 
 
@@ -105,7 +108,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1870
+Content-length: 1988
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -162,7 +165,10 @@ Content-length: 1870
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true
 }
 ```
 
@@ -171,7 +177,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2042
+Content-Length: 2160
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -231,7 +237,10 @@ Content-Length: 2042
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true
 }
 ```
 

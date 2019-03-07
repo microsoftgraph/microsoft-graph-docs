@@ -1,14 +1,14 @@
 ---
 title: "windowsInformationProtectionWipeAction resource type"
 description: "Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # windowsInformationProtectionWipeAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -32,6 +32,7 @@ Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) 
 |targetedDeviceRegistrationId|String|The DeviceRegistrationId being targeted by this wipe action.|
 |targetedDeviceName|String|Targeted device name.|
 |targetedDeviceMacAddress|String|Targeted device Mac address.|
+|lastCheckInDateTime|DateTimeOffset|Last checkin time of the device that was targeted by this wipe action.|
 
 ## Relationships
 None
@@ -52,7 +53,8 @@ Here is a JSON representation of the resource.
   "targetedUserId": "String",
   "targetedDeviceRegistrationId": "String",
   "targetedDeviceName": "String",
-  "targetedDeviceMacAddress": "String"
+  "targetedDeviceMacAddress": "String",
+  "lastCheckInDateTime": "String (timestamp)"
 }
 ```
 

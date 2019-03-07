@@ -8,32 +8,35 @@ ms.prod: "security"
 
 # Use the Microsoft Graph Security API
 
-The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API can be used as a federated security aggregation service to submit queries to all onboarded security providers to get aggregated responses. Use Microsoft Graph Security API to build applications that:
+The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph Security API to build applications that:
 
 - Consolidate and correlate security alerts from multiple sources
 - Unlock contextual data to inform investigations
-- Automate security operations for greater efficiency
+- Automate security tasks, business processes, workflows, and reporting
+- Send threat indicators to Microsoft products for customized detections
+- Invoke actions to in response to new threats
 - Provide visibility into security data to enable proactive risk management
 
 The Microsoft Graph Security API includes the following key entities.
 
 ## Alerts
 
-Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and are flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline security  issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. These unlock security operational efficiencies by reducing investigation time and time to resolution for incidents. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
+Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline management of security issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
 
-Microsoft Graph Security-integrated solutions will receive alerts from the following security providers:
+Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts (updates are available via the Microsoft Graph Security API but might not be exposed in the provider’s management experience), and Subscribe (via webhooks) is indicated in the following table.
 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
-- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
-- [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
-- [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**
-- Microsoft Intune **(private preview)**
-- Office 365 **(coming soon)**
-- Azure Advanced Threat Protection **(coming soon)**
-- Partner solutions, such as Palo Alto Networks App Framework
-
-> **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem.
+| Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
+|:------------------|:---------|:-----------|:------------------|
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Cloud Application Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|Office 365 <ul><li> [Default](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/en-us/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(preview)**| <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+> **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph Security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
 ## Common use cases
 
@@ -68,3 +71,24 @@ The Microsoft Graph Security API can open up new ways for you to engage with dif
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+## See also
+
+[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph Security API samples:
+
+- [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
+- [PowerShell sample](https://aka.ms/graphsecuritypowershellsample)
+- [Other samples or contribute a new sample](https://aka.ms/graphsecurityapicode)
+
+Explore other options to connect with the Microsoft Graph Security API:
+
+- [Microsoft Graph Security connectors for Logic Apps, Flow and PowerApps](https://aka.ms/graphsecurityconnectors)
+- [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
+- [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
+
+Engage with the community:
+
+- [Join the tech community](https://aka.ms/graphsecuritycommunity)
+- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)

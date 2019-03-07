@@ -1,14 +1,14 @@
 ---
 title: "microsoftStoreForBusinessApp resource type"
 description: "Microsoft Store for Business Apps. This class does not support Create, Delete, or Update."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # microsoftStoreForBusinessApp resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -51,6 +51,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |productKey|String|The app product key|
 |licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|The app license type. Possible values are: `offline`, `online`.|
 |packageIdentityName|String|The app package identifier|
+|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|The supported License Type.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -100,7 +101,14 @@ Here is a JSON representation of the resource.
   "totalLicenseCount": 1024,
   "productKey": "String",
   "licenseType": "String",
-  "packageIdentityName": "String"
+  "packageIdentityName": "String",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 

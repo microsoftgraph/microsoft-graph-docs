@@ -1,6 +1,6 @@
 ---
-title: "How to protect your company app data with Microsoft Intune"
-description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
+title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
+description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
@@ -69,14 +69,14 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS VPP app revoke licenses action result](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP e-book](intune-books-iosvppebook.md)
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
-- [Mac os VPP app](intune-apps-macosvppapp.md)
-- [Mac os VPP app assigned license](intune-apps-macosvppappassignedlicense.md)
-- [Mac os VPP app assignment settings](intune-apps-macosvppappassignmentsettings.md)
-- [Mac os VPP app revoke licenses action result](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
 - [macOS minimum operating system](intune-apps-macosminimumoperatingsystem.md)
 - [macOS office suite app](intune-apps-macosofficesuiteapp.md)
+- [macOS VPP app](intune-apps-macosvppapp.md)
+- [macOS VPP app assigned license](intune-apps-macosvppappassignedlicense.md)
+- [macOS VPP app assignment settings](intune-apps-macosvppappassignmentsettings.md)
+- [macOS VPP app revoke licenses action result](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Managed android LOB app](intune-apps-managedandroidlobapp.md)
 - [Managed android store app](intune-apps-managedandroidstoreapp.md)
 - [Managed app](intune-apps-managedapp.md)

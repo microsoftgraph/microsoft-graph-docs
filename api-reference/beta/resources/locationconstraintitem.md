@@ -2,6 +2,8 @@
 title: "locationConstraintItem resource type"
 description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # locationConstraintItem resource type
@@ -10,7 +12,7 @@ localization_priority: Normal
 
 The conditions stated by a client for the location of a meeting.
 
-Derived from [location](location.md).
+Derived from [locationDataModel](locationdatamodel.md).
 
 ## JSON representation
 

@@ -1,26 +1,27 @@
 ---
 title: "iPv4Range resource type"
-description: "Describes the iPv4Range resource of the Microsoft Graph API for Intune, which supports multiple workflows."
+description: "IPv4 Range definition."
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # iPv4Range resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-IP V4 range
+IPv4 Range definition.
+
 
 Inherits from [ipRange](../resources/intune-shared-iprange.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lowerAddress|String|Lower IP Address|
-|upperAddress|String|Upper IP Address|
+|lowerAddress|String|Lower address.|
+|upperAddress|String|Upper address.|
 
 ## Relationships
 None
@@ -29,7 +30,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->
@@ -40,6 +40,7 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
+
 
 
 

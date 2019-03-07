@@ -21,8 +21,6 @@ When activities are rendered in Microsoft experiences such as Windows Timeline, 
 ### Let Microsoft help drive app usage with features that reach hundreds of millions of customers
 Integrating with user activities not only enables users to resume activities in your app seamlessly, it means tapping into a growing set of Microsoft experiences for Windows, iOS, and Android - experiences designed to drive user productivity and help users engage with your app on all devices. Using Microsoft Graph, you can integrate with user activities just once and reach hundreds of millions of consumers, and tens of millions of customers in organizations who use Windows as well as Microsoft products for iOS and Android devices.
 
-![Screenshot of Windows Timeline](https://winblogs.azureedge.net/win/2017/05/22-591a3ec9833f4.jpg)
-
 ## See also
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)

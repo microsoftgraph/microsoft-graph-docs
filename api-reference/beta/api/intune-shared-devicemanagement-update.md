@@ -16,7 +16,7 @@ Update the properties of a [deviceManagement](../resources/intune-shared-devicem
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).
 
 Note that the permission vary according to workflow.
 

@@ -1,14 +1,14 @@
 ---
 title: "depOnboardingSetting resource type"
 description: "The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # depOnboardingSetting resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -43,6 +43,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Gets synced device count|
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with Apple Dep Service|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -74,7 +75,10 @@ Here is a JSON representation of the resource.
   "tokenType": "String",
   "tokenName": "String",
   "syncedDeviceCount": 1024,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

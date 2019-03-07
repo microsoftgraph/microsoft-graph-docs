@@ -3,14 +3,15 @@ title: "iosDeviceType resource type"
 description: "Contains properties of the possible iOS device types the mobile app can run on."
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # iosDeviceType resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties of the possible iOS device types the mobile app can run on.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -19,6 +20,7 @@ Contains properties of the possible iOS device types the mobile app can run on.
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

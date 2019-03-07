@@ -12,9 +12,9 @@ ms.prod: "outlook"
 
 Get all the Outlook tasks in the user's mailbox.
 
-By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC. 
-You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
-different than UTC. See an [example](outlooktask-get.md#example-2) for getting a single task. You can apply the header similarly to get multiple tasks. 
+By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone
+different than UTC. See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task. You can apply the header similarly to get multiple tasks.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +56,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
 ##### Response
-Here is an example of the response. By default, the date-time properties in the response are in UTC. 
+Here is an example of the response. By default, the date-time properties in the response are in UTC.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

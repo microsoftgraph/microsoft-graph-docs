@@ -1,14 +1,14 @@
 ---
 title: "List iosGeneralDeviceConfigurations"
 description: "List properties and relationships of the iosGeneralDeviceConfiguration objects."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # List iosGeneralDeviceConfigurations
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9939
+Content-Length: 10318
 
 {
   "value": [
@@ -106,16 +106,20 @@ Content-Length: 9939
       "appStoreBlockInAppPurchases": true,
       "appStoreBlockUIAppInstallation": true,
       "appStoreRequirePassword": true,
+      "autoFillForceAuthentication": true,
       "bluetoothBlockModification": true,
       "cameraBlocked": true,
       "cellularBlockDataRoaming": true,
       "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
       "cellularBlockPerAppDataModification": true,
       "cellularBlockPersonalHotspot": true,
+      "cellularBlockPlanModification": true,
       "cellularBlockVoiceRoaming": true,
       "certificatesBlockUntrustedTlsCertificates": true,
       "classroomAppBlockRemoteScreenObservation": true,
       "classroomAppForceUnpromptedScreenObservation": true,
+      "classroomForceAutomaticallyJoinClasses": true,
+      "classroomForceUnpromptedAppAndDeviceLock": true,
       "compliantAppsList": [
         {
           "@odata.type": "microsoft.graph.appListItem",
@@ -140,6 +144,7 @@ Content-Length: 9939
       ],
       "enterpriseAppBlockTrust": true,
       "enterpriseAppBlockTrustModification": true,
+      "esimBlockModification": true,
       "faceTimeBlocked": true,
       "findMyFriendsBlocked": true,
       "gamingBlockGameCenterFriends": true,
@@ -266,6 +271,7 @@ Content-Length: 9939
       "passcodeRequiredType": "alphanumeric",
       "passcodeRequired": true,
       "podcastsBlocked": true,
+      "proximityBlockSetupToNewDevice": true,
       "safariBlockAutofill": true,
       "safariBlockJavaScript": true,
       "safariBlockPopups": true,
@@ -283,6 +289,8 @@ Content-Length: 9939
       "siriBlockedWhenLocked": true,
       "siriBlockUserGeneratedContent": true,
       "siriRequireProfanityFilter": true,
+      "softwareUpdatesEnforcedDelayInDays": 2,
+      "softwareUpdatesForceDelayed": true,
       "spotlightBlockInternetResults": true,
       "voiceDialingBlocked": true,
       "wallpaperBlockModification": true,

@@ -1,14 +1,14 @@
 ---
 title: "List windows10GeneralConfigurations"
 description: "List properties and relationships of the windows10GeneralConfiguration objects."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # List windows10GeneralConfigurations
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14497
+Content-Length: 14803
 
 {
   "value": [
@@ -172,6 +172,8 @@ Content-Length: 14497
       "edgeBlockPrelaunch": true,
       "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
       "edgePreventCertificateErrorOverride": true,
+      "edgeKioskModeRestriction": "digitalSignage",
+      "edgeKioskResetAfterIdleTimeInMinutes": 4,
       "cellularBlockDataWhenRoaming": true,
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
@@ -206,6 +208,9 @@ Content-Length: 14497
       "defenderRequireRealTimeMonitoring": true,
       "defenderScanArchiveFiles": true,
       "defenderScanDownloads": true,
+      "defenderScheduleScanEnableLowCpuPriority": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderDisableCatchupFullScan": true,
       "defenderScanNetworkFiles": true,
       "defenderScanIncomingMail": true,
       "defenderScanMappedNetworkDrivesDuringFullScan": true,
@@ -314,6 +319,7 @@ Content-Length: 14497
       "safeSearchFilter": "strict",
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,
+      "edgeBlockSearchEngineCustomization": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
       "edgeSendIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,

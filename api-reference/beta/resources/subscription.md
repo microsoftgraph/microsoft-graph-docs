@@ -11,11 +11,12 @@ author: "piotrci"
 
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
-- Mail, events, and contacts from Outlook.
-- Conversations from Office Groups.
-- Drive root items from OneDrive.
-- Users and Groups from Azure Active Directory.
-- Alerts from the Microsoft Graph Security API.
+- A [message][], [event][], or [contact][] in Outlook
+- A [conversation][] of an Office 365 group
+- Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
+- A [user][] or [group][] in Azure Active Directory
+- An [alert][] from the Microsoft Graph Security API
+
 
 ## JSON representation
 
@@ -81,6 +82,15 @@ None
 | [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Read properties and relationships of subscription object. |
 | [Delete subscription](../api/subscription-delete.md) | None | Delete a subscription object. |
+
+[contact]: ./contact.md
+[conversation]: ./conversation.md
+[driveItem]: ./driveitem.md
+[event]: ./event.md
+[group]: ./group.md
+[message]: ./message.md
+[user]: ./user.md
+[alert]: ./alert.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
