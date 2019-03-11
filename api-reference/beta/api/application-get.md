@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/{id}
+GET /applications/{objectid}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -48,8 +48,10 @@ Here is an example of the request.
   "name": "get_application"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/applications/{id}
+GET https://graph.microsoft.com/beta/applications/{objectid}
 ```
+> **Note:** ObjectId references the application Object Id in the directory. 
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
