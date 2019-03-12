@@ -74,7 +74,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_accessReview_decisions-snippets.md)]
 
 ## See also
 

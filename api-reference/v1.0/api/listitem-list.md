@@ -78,7 +78,6 @@ Content-type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/get-list-items-snippets.md)]
 
 <!-- {
   "type": "#page.annotation",

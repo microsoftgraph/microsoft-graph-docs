@@ -41,7 +41,6 @@ To list the document libraries for a site, your app requests the **drives** rela
 ```http
 GET /sites/{siteId}/drives
 ```
-[!include[Sample Code]( ../includes/group-list-drives-snippets.md)]
 
 ## List a user's drives
 
@@ -50,7 +49,6 @@ GET /sites/{siteId}/drives
 ```http
 GET /users/{userId}/drives
 ```
-[!include[Sample Code]( ../includes/site-list-drives-snippets.md)]
 
 ## List the current user's drives
 
@@ -59,7 +57,6 @@ GET /users/{userId}/drives
 ```http
 GET /me/drives
 ```
-[!include[Sample Code]( ../includes/user-list-drives-snippets.md)]
 
 ## Optional query parameters
 
@@ -106,7 +103,6 @@ Content-Type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/enum-drives-snippets.md)]
 
 ## Remarks
 

@@ -51,7 +51,6 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 ```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
-[!include[Sample Code]( ../includes/get-drive-default-snippets.md)]
 
 ### Path parameters
 
@@ -70,7 +69,6 @@ To access a Group's default document library, your app requests the **drive** re
 ```http
 GET /groups/{groupId}/drive
 ```
-[!include[Sample Code]( ../includes/get-drive-by-user-snippets.md)]
 
 ### Path parameters
 
@@ -87,7 +85,6 @@ To access a [Site's](../resources/site.md) default document library, your app re
 ```http
 GET /sites/{siteId}/drive
 ```
-[!include[Sample Code]( ../includes/get-drive-by-group-snippets.md)]
 
 ### Path parameters
 
@@ -144,7 +141,6 @@ Content-type: application/json
     }
 }
 ```
-[!include[Sample Code]( ../includes/get-drive-by-id-snippets.md)]
 
 ### Error response codes
 

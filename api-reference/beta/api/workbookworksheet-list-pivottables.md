@@ -74,7 +74,6 @@ Content-length: 83
   ]
 }
 ```
-[!include[Sample Code]( ../includes/get_pivottables-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

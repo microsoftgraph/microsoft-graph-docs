@@ -81,7 +81,6 @@ Content-length: xxx
    "visibility": "visibility-value"
 }
 ```
-[!include[Sample Code]( ../includes/get_group-snippets.md)]
 
 <!-- uuid: 0087D9B3-1418-4C87-91C9-A18C6D93706B
 2015-10-25 14:57:30 UTC -->

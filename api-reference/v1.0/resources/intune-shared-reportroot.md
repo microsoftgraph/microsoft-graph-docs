@@ -63,4 +63,3 @@ Content-Type: application/json
 {
 }
 ```
-[!include[Sample Code]( ../includes/api-referencev10resourcesintune-shared-reportrootmd#0-snippets.md)]

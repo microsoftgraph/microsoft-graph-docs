@@ -157,7 +157,6 @@ Content-type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/group_delta-snippets.md)]
 
 #### Request 2
 
@@ -198,8 +197,6 @@ Content-type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/group_delta-snippets.md)]
-[!include[Sample Code]( ../includes/group_delta-snippets.md)]
 
 #### Request 3
 

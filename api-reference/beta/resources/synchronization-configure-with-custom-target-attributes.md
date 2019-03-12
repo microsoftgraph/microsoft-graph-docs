@@ -177,7 +177,6 @@ HTTP/1.1 200 OK
 		}]
 }
 ```
-[!include[Sample Code]( ../includes/get_synchronizationschema-snippets.md)]
 
 ## Add a definition for the officeCode attribute and a mapping between attributes
 

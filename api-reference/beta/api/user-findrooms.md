@@ -124,7 +124,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/user_get_rooms_in_tenant-snippets.md)]
 
 ##### Request 2
 

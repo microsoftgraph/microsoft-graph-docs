@@ -58,7 +58,6 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /me/drive/root/children
 ```
-[!include[Sample Code]( ../includes/list-children-snippets.md)]
 
 
 ### List children of a DriveItem with a known ID
@@ -70,7 +69,6 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
-[!include[Sample Code]( ../includes/list-children-root-snippets.md)]
 
 ### List children of a DriveItem with a known path
 

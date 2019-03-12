@@ -161,7 +161,6 @@ Content-length: 1370
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_person_collection-snippets.md)]
 
 For more examples, see the article [Get relevant information about people](/graph/people-example).
 

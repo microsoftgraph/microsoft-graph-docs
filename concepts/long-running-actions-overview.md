@@ -135,7 +135,6 @@ Content-type: application/json
     "size": 12019
 }
 ```
-[!include[Sample Code]( ../includes/lro-copy-item-example-complete-snippets.md)]
 
 ## Supported resources
 

@@ -155,7 +155,6 @@ Second, by its ID (fully qualified name):
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
-[!include[Sample Code]( ../includes/get_opentypeextension_1-snippets.md)]
 
 #### Response 1
 Here is the response for the first example.
@@ -220,7 +219,6 @@ Content-type: application/json
     "expirationDate": "2015-07-03T13:04:00Z"
 }
 ```
-[!include[Sample Code]( ../includes/get_opentypeextension_2-snippets.md)]
 
 ****
 
@@ -320,7 +318,6 @@ Content-type: application/json
      ]
 }
 ```
-[!include[Sample Code]( ../includes/get_opentypeextension_3-snippets.md)]
 
 ****
 
@@ -472,7 +469,6 @@ Content-Type: application/json
 }
 
 ```
-[!include[Sample Code]( ../includes/get_opentypeextension_5-snippets.md)]
 
 
 

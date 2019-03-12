@@ -80,7 +80,6 @@ Content-length: 55
   ]
 }
 ```
-[!include[Sample Code]( ../includes/get_joinedteams-snippets.md)]
 
 ## See also
 [List all teams](/graph/teams-list-all-teams)

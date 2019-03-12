@@ -69,7 +69,6 @@ Content-length: 46
   "name": "name-value"
 }
 ```
-[!include[Sample Code]( ../includes/get_workbookpivottable-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

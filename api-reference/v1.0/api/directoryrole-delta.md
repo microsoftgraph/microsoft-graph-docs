@@ -113,7 +113,6 @@ Content-type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/directoryRole_delta-snippets.md)]
 
 ### See also
 

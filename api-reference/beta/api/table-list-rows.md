@@ -73,7 +73,6 @@ Content-length: 82
   ]
 }
 ```
-[!include[Sample Code]( ../includes/get_rows-snippets.md)]
 
 > **Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of rows.
 

@@ -92,7 +92,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/user_get_room_lists-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
