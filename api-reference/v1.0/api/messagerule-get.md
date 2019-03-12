@@ -90,6 +90,7 @@ Content-type: application/json
   }
 }
 ```
+[!include[Example Code]( ../includes/get_messagerule-snippets.md)]
 
 
 

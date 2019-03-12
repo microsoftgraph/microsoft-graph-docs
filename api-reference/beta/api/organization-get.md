@@ -103,6 +103,7 @@ Content-length: 411
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_organization-snippets.md)]
 
 ## See also
 

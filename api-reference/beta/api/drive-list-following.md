@@ -58,6 +58,7 @@ Content-type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/get-followed-items-snippets.md)]
 
 <!--
 {

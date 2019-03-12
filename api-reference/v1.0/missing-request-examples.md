@@ -25,6 +25,7 @@ Content-Type: application/json
 {
 }
 ```
+[!include[Example Code]( ../includes/get_current_user-snippets.md)]
 
 
 ## Define drives as an queryable entityset
@@ -41,6 +42,7 @@ Content-Type: application/json
 {
 }
 ```
+[!include[Example Code]( ../includes/get_drive_from_id-snippets.md)]
 
 
 ## define users as an queryable entityset
@@ -58,3 +60,4 @@ Content-Type: application/json
 {
 }
 ```
+[!include[Example Code]( ../includes/get_users-snippets.md)]

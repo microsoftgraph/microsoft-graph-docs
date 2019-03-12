@@ -46,6 +46,7 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```http
 GET /me/drive/root/subscriptions/socketIo
 ```
+[!include[Example Code]( ../includes/drive_root_subscriptions_socketIo-snippets.md)]
 
 ### Response
 

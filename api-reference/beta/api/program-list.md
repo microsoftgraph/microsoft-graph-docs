@@ -73,6 +73,7 @@ Content-type: application/json
 }
 
 ```
+[!include[Example Code]( ../includes/get_program-snippets.md)]
 
 ## See also
 

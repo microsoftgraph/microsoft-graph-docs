@@ -47,6 +47,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```http
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
+[!include[Example Code]( ../includes/get-analytics-snippets.md)]
 
 #### Response
 

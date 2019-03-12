@@ -112,6 +112,7 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/delta(token=1230919asd190410jlka)"
 }
 ```
+[!include[Example Code]( ../includes/get_item_delta_first-snippets.md)]
 
 This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
 Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
@@ -203,6 +204,7 @@ Content-type: application/json
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
 }
 ```
+[!include[Example Code]( ../includes/get-delta-latest-snippets.md)]
 
 ## Remarks
 

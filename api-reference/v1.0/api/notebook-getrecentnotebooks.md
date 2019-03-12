@@ -92,3 +92,4 @@ Content-Length: 1110
   ]
 }
 ```
+[!include[Example Code]( ../includes/recent_notebooks-snippets.md)]

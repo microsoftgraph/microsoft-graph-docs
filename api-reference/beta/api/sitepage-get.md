@@ -41,6 +41,7 @@ GET /sites/{site-id}/pages/{page-id}
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
+[!include[Example Code]( ../includes/get-page-snippets.md)]
 
 ##### Response
 

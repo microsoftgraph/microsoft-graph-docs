@@ -75,6 +75,7 @@ Content-length: 322
   "deviceVersion": 99
 }
 ```
+[!include[Example Code]( ../includes/get_device-snippets.md)]
 
 ## See also
 

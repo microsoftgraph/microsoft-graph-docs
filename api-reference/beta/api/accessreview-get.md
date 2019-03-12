@@ -93,6 +93,7 @@ Content-type: application/json
     }
 }
 ```
+[!include[Example Code]( ../includes/get_accessReview-snippets.md)]
 
 ## See also
 

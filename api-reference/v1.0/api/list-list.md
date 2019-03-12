@@ -38,6 +38,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
+[!include[Example Code]( ../includes/enum-lists-snippets.md)]
 
 ##### Response
 

@@ -64,6 +64,7 @@ Content-type: application/json
     }
 }
 ```
+[!include[Example Code]( ../includes/get-list-snippets.md)]
 
 With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
 
@@ -128,6 +129,7 @@ Content-type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/get-list-multi-expand-snippets.md)]
 
 <!--
 {

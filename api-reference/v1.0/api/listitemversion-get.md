@@ -69,6 +69,7 @@ Content-Type: application/json
     "fields": {  }
 }
 ```
+[!include[Example Code]( ../includes/get-single-version-listItem-snippets.md)]
 
 <!-- {
   "type": "#page.annotation",

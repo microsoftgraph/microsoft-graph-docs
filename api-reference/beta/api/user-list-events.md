@@ -179,6 +179,7 @@ Content-length: 1932
     ]
 }
 ```
+[!include[Example Code]( ../includes/get_events-snippets.md)]
 
 ##### Request 2
 The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.
@@ -222,6 +223,7 @@ Content-length: 640
     ]
 }
 ```
+[!include[Example Code]( ../includes/get_events_in_text-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

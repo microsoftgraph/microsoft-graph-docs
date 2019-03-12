@@ -78,6 +78,7 @@ Content-length: 237
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_privilegedroleassignments-snippets.md)]
 ### Get active role assignments
 ##### Request 
 The following example shows a request to query active role assignments:
@@ -122,6 +123,7 @@ Content-length: 237
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_privilegedroleassignments-snippets.md)]
 ### Get permanent role assignments
 ##### Request 
 The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:
@@ -166,6 +168,7 @@ Content-length: 237
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_privilegedroleassignments-snippets.md)]
 ### Get eligible role assignments
 ##### Request 
 The following example shows a request to query eligible role assignments, including the active and non-active ones:
@@ -226,6 +229,7 @@ Content-length: 237
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_privilegedroleassignments-snippets.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -59,6 +59,7 @@ Content-type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/search-sites-snippets.md)]
 
 <!-- {
   "type": "#page.annotation",

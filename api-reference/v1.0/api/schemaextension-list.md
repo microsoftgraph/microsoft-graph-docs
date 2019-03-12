@@ -83,6 +83,7 @@ Content-length: 274
   ]
 }
 ```
+[!include[Example Code]( ../includes/get_schemaextensions-snippets.md)]
 
 ## See also
 

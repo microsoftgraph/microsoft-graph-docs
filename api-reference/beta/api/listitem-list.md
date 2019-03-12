@@ -80,6 +80,7 @@ Content-type: application/json
   ]
 }
 ```
+[!include[Example Code]( ../includes/get-list-items-snippets.md)]
 
 <!--
 {

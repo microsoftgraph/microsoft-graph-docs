@@ -48,6 +48,7 @@ This example retrieves a version of a file in the current user's drive.
 ```http
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
+[!include[Example Code]( ../includes/get-single-version-snippets.md)]
 
 ### Response
 

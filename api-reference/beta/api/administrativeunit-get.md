@@ -72,6 +72,7 @@ Content-length: 134
   "id": "id-value"
 }
 ```
+[!include[Example Code]( ../includes/get_administrativeunit-snippets.md)]
 
 ## See also
 

@@ -142,6 +142,7 @@ Content-type: application/json
     ]
 }
 ```
+[!include[Example Code]( ../includes/list-activities-snippets.md)]
 
 <!--
 {

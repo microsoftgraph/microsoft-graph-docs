@@ -147,6 +147,7 @@ Content-length: 199
   "size": 99
 }
 ```
+[!include[Example Code]( ../includes/get_file_attachment-snippets.md)]
 
 ## Example (item attachment)
 
@@ -185,6 +186,7 @@ Content-type: application/json
   "isInline":false
 }
 ```
+[!include[Example Code]( ../includes/get_item_attachment-snippets.md)]
 
 ### Request 2
 
@@ -277,6 +279,7 @@ Content-type: application/json
   }
 }
 ```
+[!include[Example Code]( ../includes/get_and_expand_item_attachment-snippets.md)]
 
 ## Example (reference attachment)
 
@@ -321,6 +324,7 @@ Content-type: application/json
   "isFolder": true
 }
 ```
+[!include[Example Code]( ../includes/get_reference_attachment-snippets.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

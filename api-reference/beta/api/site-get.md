@@ -96,6 +96,7 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
+[!include[Example Code]( ../includes/get-site-snippets.md)]
 
 <!--
 {

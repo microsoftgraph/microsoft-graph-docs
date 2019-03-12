@@ -100,6 +100,7 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+[!include[Example Code]( ../includes/get-drive-root-snippets.md)]
 
 ## Remarks
 

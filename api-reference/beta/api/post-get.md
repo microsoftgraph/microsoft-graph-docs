@@ -95,6 +95,7 @@ Content-type: application/json
     }
 }
 ```
+[!include[Example Code]( ../includes/get_post-snippets.md)]
 
 ## See also
 

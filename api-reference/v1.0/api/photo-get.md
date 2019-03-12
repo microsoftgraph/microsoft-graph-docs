@@ -65,6 +65,7 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+[!include[Example Code]( ../includes/get_photo-snippets.md)]
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {
@@ -95,6 +96,7 @@ Content-Length: 250526
 
 <binary image data>
 ```
+[!include[Example Code]( ../includes/get_photo_value-snippets.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
