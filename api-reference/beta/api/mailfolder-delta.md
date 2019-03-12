@@ -123,6 +123,7 @@ Content-length: 254
   ]
 }
 ```
+[!include[Sample Code]( ../includes/mailfolder_delta-snippets.md)]
 
 ### See also
 

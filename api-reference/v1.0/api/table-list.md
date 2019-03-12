@@ -74,6 +74,7 @@ Content-length: 158
   ]
 }
 ```
+[!include[Sample Code]( ../includes/get_tablecollection-snippets.md)]
 > **Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) query parameters to page through large numbers of tables.
 
 Example: 

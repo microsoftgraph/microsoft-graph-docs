@@ -132,6 +132,7 @@ Content-length: 491
    "id": "id-value"
 }
 ```
+[!include[Sample Code]( ../includes/get_user-snippets.md)]
 
 ### Example 3: Users request using $select
 

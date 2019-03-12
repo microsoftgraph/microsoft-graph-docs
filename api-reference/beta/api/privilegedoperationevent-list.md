@@ -107,6 +107,7 @@ Content-length: 547
 	]
 }
 ```
+[!include[Sample Code]( ../includes/api-referencebetaapiprivilegedoperationevent-listmd#0-snippets.md)]
 ### Get audit events for the operations of self role activation and makePermanent
 ##### Request
 The following example shows a request to get the audit events for the operations of self role activation and makePermanent. In this case, ``requestType`` value is ``Activate``.
@@ -167,6 +168,7 @@ Content-length: 547
 	]
 }
 ```
+[!include[Sample Code]( ../includes/api-referencebetaapiprivilegedoperationevent-listmd#1-snippets.md)]
 
 ### Get audit events for role assignment deactivation
 ##### Request
@@ -211,6 +213,7 @@ Content-length: 547
 	]
 }
 ```
+[!include[Sample Code]( ../includes/api-referencebetaapiprivilegedoperationevent-listmd#2-snippets.md)]
 ### Get audit events created in a time range
 ##### Request 
 The following example shows a request to get the audit events created in a time range.
@@ -273,6 +276,7 @@ Content-length: 547
 	]
 }
 ```
+[!include[Sample Code]( ../includes/api-referencebetaapiprivilegedoperationevent-listmd#3-snippets.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

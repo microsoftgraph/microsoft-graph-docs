@@ -128,6 +128,7 @@ Content-type: application/json
     ]
 }
 ```
+[!include[Sample Code]( ../includes/get_eventmessage-snippets.md)]
 
 ##### Request 2
 The second example shows how to get the event associated with an event message. It uses 

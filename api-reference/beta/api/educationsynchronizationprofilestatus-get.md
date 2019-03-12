@@ -68,6 +68,7 @@ Content-length: 232
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }
 ```
+[!include[Sample Code]( ../includes/get_educationSynchronizationProfile_status-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

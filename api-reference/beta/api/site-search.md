@@ -61,6 +61,7 @@ Content-type: application/json
   ]
 }
 ```
+[!include[Sample Code]( ../includes/search-sites-snippets.md)]
 
 <!--
 {

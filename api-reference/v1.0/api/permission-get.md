@@ -57,6 +57,7 @@ Here is an example of the request to access a permission on a folder.
 ```http
 GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
+[!include[Sample Code]( ../includes/get-item-permission-snippets.md)]
 
 ### Response
 
