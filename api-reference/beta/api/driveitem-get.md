@@ -102,6 +102,7 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get-item-metadata-snippets.md)]
 
 ## Remarks
 

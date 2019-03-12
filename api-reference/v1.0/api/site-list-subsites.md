@@ -59,6 +59,7 @@ Content-type: application/json
   ]
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/list-subsites-snippets.md)]
 
 <!-- {
   "type": "#page.annotation",

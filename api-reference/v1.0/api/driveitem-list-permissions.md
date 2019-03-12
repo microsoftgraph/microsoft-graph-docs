@@ -74,6 +74,7 @@ This example retrieves the collection of permissions on an item in the signed in
 ```http
 GET /me/drive/items/{item-id}/permissions
 ```
+[!INCLUDE[Sample Code]( ../includes/get-item-permissions-snippets.md)]
 
 ### Response
 

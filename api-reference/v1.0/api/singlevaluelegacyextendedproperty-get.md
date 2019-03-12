@@ -313,6 +313,7 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get_singlevaluelegacyextendedproperty_1-snippets.md)]
 
 #### Request 2
 

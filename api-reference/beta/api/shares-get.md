@@ -51,6 +51,7 @@ string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&auth
 string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
+[!INCLUDE[Sample Code]( ../includes/get-shared-root-snippets.md)]
 
 ## Optional request headers
 
@@ -139,6 +140,7 @@ Content-Type: application/json
   "size": 109112
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get-shared-driveitem-snippets.md)]
 
 ## Example (shared folder)
 

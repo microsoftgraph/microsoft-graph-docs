@@ -94,3 +94,4 @@ Content-length: 1568
     ]
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get_educationSynchronizationProfile_error-snippets.md)]

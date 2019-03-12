@@ -47,6 +47,7 @@ This example retrieves the versions of a listItem in a SharePoint list:
 ```http
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
+[!INCLUDE[Sample Code]( ../includes/get-previous-versions-listitem-snippets.md)]
 
 ### Response
 

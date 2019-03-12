@@ -72,6 +72,7 @@ Content-type: application/json
   }
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get-special-folder-snippets.md)]
 
 ## Get children of a special folder
 
@@ -103,6 +104,7 @@ Content-Type: application/json
   ]
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get-special-children-snippets.md)]
 
 ## Remarks
 

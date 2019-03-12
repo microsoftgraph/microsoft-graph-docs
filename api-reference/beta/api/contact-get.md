@@ -150,6 +150,7 @@ Content-type: application/json
   "weddingAnniversary": null
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get_contact-snippets.md)]
 
 ## See also
 

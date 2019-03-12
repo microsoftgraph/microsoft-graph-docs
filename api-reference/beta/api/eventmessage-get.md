@@ -173,6 +173,7 @@ Content-type: application/json
     "previousEndDateTime":null
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get_eventmessage-snippets.md)]
 
 
 ##### Request 2
@@ -384,6 +385,7 @@ Content-type: application/json
     }
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get_event_based_on_eventmessage-snippets.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

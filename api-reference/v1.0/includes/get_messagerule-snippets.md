@@ -1,0 +1,10 @@
+#### Sample Code
+#sample-code 
+
+```C#
+
+GraphServiceClient graphClient = new GraphServiceClient();
+var messageRules = await graphClient.Me.MailFolders.MailFolders.MessageRules.MessageRules.Request().GetAsync();
+*** 
+
+```

@@ -67,6 +67,7 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE[Sample Code]( ../includes/get_accessReview_reviewers-snippets.md)]
 
 ## See also
 

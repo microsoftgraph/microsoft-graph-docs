@@ -53,6 +53,7 @@ This example retrieves the versions of a file in the current user's drive.
 ```http
 GET /me/drive/items/{item-id}/versions
 ```
+[!INCLUDE[Sample Code]( ../includes/get-previous-versions-snippets.md)]
 
 ### Response
 
