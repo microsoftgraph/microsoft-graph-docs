@@ -9,6 +9,14 @@
     ],
     "notLowerCamel": [
       "Json"
+    ],
+    "requiredYamlHeaders": [
+      "title",
+      "description",
+      "author",
+      "ms.prod",
+      "localization_priority",
+      "doc_type"
     ]
   },
   "schemaDiffConfig": {
