@@ -1,0 +1,10 @@
+#### Sample Code
+# [C#](#tab/c-sharp)
+
+```C#
+
+GraphServiceClient graphClient = new GraphServiceClient();
+var summary = await graphClient.PrivilegedRoles.PrivilegedRoles.Summary.Request().GetAsync();
+*** 
+
+```

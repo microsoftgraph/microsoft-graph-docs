@@ -40,6 +40,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
+[!include[Sample Code]( ../includes/enum-lists-snippets.md)]
 
 ##### Response
 

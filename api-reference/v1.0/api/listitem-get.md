@@ -40,6 +40,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
+[!include[Sample Code]( ../includes/get-list-item-snippets.md)]
 
 ##### Response
 

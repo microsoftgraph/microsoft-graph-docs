@@ -84,6 +84,7 @@ Content-length: 414
   }
 }
 ```
+[!include[Sample Code]( ../includes/get_post-snippets.md)]
 
 ## See also
 

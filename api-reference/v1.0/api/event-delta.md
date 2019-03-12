@@ -125,6 +125,7 @@ Content-length: 359
   ]
 }
 ```
+[!include[Sample Code]( ../includes/event_delta-snippets.md)]
 
 ### See also
 

@@ -57,6 +57,7 @@ The following values are valid for the **format** parameter:
 ```http
 GET /drive/items/{item-id}/content?format={format}
 ```
+[!include[Sample Code]( ../includes/convert-item-content-snippets.md)]
 
 ## Response
 
