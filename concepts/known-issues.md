@@ -51,6 +51,14 @@ Certain old teams don't have a **resourceProvisioningOptions** property that con
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
 
+### Clone a team ignores mailNickName attribute
+
+The mailNickName attribute of the request body for [Clone a team](/graph/api/team-clone?view=graph-rest-1.0) is ignored. The mailNickName for the new Group/Team will always be computed from the provided displayName attribute.
+
+### Removing an Owner also removes them as a Member
+
+Using [Remove owner](/graph/api/group-delete-owners?view=graph-rest-1.0) to demote a user from Owner to Member, currently the user will also be removed as a Member in Teams (not in Azure AD). To work around this, we recommend that you remove the user from both owners and members (in this order), wait 10 seconds, then add them back to members.
+
 ## Groups
 
 ### Permissions for groups and Microsoft Teams
@@ -88,6 +96,10 @@ and is expected to be widely available by the end of January 2016.
 ### Setting the allowExternalSenders property
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+
+### Removing an Owner also removes them as a Member
+
+Using [Remove owner](/graph/api/group-delete-owners?view=graph-rest-1.0) to demote a user from Owner to Member, currently the user will also be removed as a Member in Teams (not in Azure AD). To work around this, we recommend that you remove the user from both owners and members (in this order), wait 10 seconds, then add them back to members.
 
 ### Using delta query
 

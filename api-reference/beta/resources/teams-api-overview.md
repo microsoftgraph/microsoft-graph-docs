@@ -63,8 +63,6 @@ In addition, different apps and APIs will handle that differently.
 For example, Microsoft Teams will show teams that the user is either a member or an owner of, while the Microsoft Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
 To avoid confusion, add all owners to the members list as well. 
 
-Known issue: when DELETE /groups/{id}/owners is called, the user is also removed from the /groups/{id}/members list. To work around this, we recommend that you remove the user from both owners and members, then wait 10 seconds, then add them back to members.
-
 When adding and removing members and owners, don't put braces { } around the ID.
 
 | Speed | Syntax | 

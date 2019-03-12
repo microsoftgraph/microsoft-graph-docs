@@ -57,7 +57,7 @@ POST /teams/{id}/clone
 |classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). If classification is not specified, the classification will be copied from the original team/group.|
 |description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName. Known issue: this property is currently ignored.|
+|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName. |
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
