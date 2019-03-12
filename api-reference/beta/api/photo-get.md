@@ -67,7 +67,6 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-[!include[Sample Code]( ../includes/get_photo-snippets.md)]
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {

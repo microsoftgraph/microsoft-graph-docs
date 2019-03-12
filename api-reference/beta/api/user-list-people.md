@@ -171,7 +171,6 @@ Content-length: 1326
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_person_collection_beta-snippets.md)]
 
 #### Requesting a subsequent page of people
 

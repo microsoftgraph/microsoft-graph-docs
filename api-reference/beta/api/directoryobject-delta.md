@@ -176,8 +176,6 @@ Content-type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/directoryObject_delta-snippets.md)]
-[!include[Sample Code]( ../includes/user_delta-snippets.md)]
 
 ### Request 2
 
@@ -294,7 +292,6 @@ Content-type: application/json
   ]
 }
 ```
-[!include[Sample Code]( ../includes/directoryobject_delta-snippets.md)]
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).

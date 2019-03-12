@@ -108,7 +108,6 @@ Content-type: application/json
   "onPremisesProvisioningErrors": []
 }
 ```
-[!include[Sample Code]( ../includes/get_group-snippets.md)]
 
 #### Request 2
 The next example uses a `$select` query option to get a few properties that are not returned by default. 
@@ -143,7 +142,6 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
-[!include[Sample Code]( ../includes/get_group_non_default-snippets.md)]
 
 ## See also
 

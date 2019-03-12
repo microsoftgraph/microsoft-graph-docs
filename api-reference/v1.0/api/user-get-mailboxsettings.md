@@ -130,7 +130,6 @@ Content-type: application/json
     }
 }
 ```
-[!include[Sample Code]( ../includes/get_mailboxsettings_1-snippets.md)]
 
 ##### Request 2
 The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
@@ -170,7 +169,6 @@ Content-type: application/json
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
 }
 ```
-[!include[Sample Code]( ../includes/get_mailboxsettings_2-snippets.md)]
 
 
 ##### Request 3

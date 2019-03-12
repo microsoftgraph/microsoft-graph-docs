@@ -51,7 +51,6 @@ Here is an example to download a complete file.
 ```http
 GET /me/drive/items/{item-id}/content
 ```
-[!include[Sample Code]( ../includes/download-item-content-snippets.md)]
 
 ### Response
 

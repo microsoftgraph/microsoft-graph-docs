@@ -99,7 +99,6 @@ Content-type: application/json
   "wellKnownName": "inbox"
 }
 ```
-[!include[Sample Code]( ../includes/get_mailfolder-snippets.md)]
 
 ### Example 2: Get a mail search folder
 
@@ -149,7 +148,6 @@ Content-type: application/json
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
-[!include[Sample Code]( ../includes/get_mailSearchfolder-snippets.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

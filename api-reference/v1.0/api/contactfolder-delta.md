@@ -117,7 +117,6 @@ Content-length: 254
   ]
 }
 ```
-[!include[Sample Code]( ../includes/contactfolder_delta-snippets.md)]
 
 ### See also
 

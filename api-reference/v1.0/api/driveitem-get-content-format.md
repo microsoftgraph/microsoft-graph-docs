@@ -69,7 +69,6 @@ Pre-authenticated URLs are only valid for a short period of time (a few minutes)
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
-[!include[Sample Code]( ../includes/convert-item-content-snippets.md)]
 
 ### Error responses
 

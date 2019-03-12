@@ -176,7 +176,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_calendarview_delta_1-snippets.md)]
 
 ### Step 2: sample second request
 
@@ -268,7 +267,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_calendarview_delta_2-snippets.md)]
 
 
 ### Step 3: sample third request
@@ -339,7 +337,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_calendarview_delta_3-snippets.md)]
 
 
 ### The next round: sample first request
@@ -424,7 +421,6 @@ Content-type: application/json
     ]
 }
 ```
-[!include[Sample Code]( ../includes/get_calendarview_delta_next-snippets.md)]
 
 ## See also
 
