@@ -123,16 +123,16 @@ sections:
         - title: Tutorial
           values:
           - href: 
-          - href: /tutorials/angular
-          - href: /tutorials/aspnet
+          - href: /graph/tutorials/angular
+          - href: /graph/tutorials/aspnet
           - href: 
           - href: 
           - href: 
-          - href: /tutorials/node
-          - href: /tutorials/php
-          - href: /tutorials/python
-          - href: /tutorials/ruby
-          - href: /tutorials/uwp
+          - href: /graph/tutorials/node
+          - href: /graph/tutorials/php
+          - href: /graph/tutorials/python
+          - href: /graph/tutorials/ruby
+          - href: /graph/tutorials/uwp
           - href: 
         - title: SDK
           values:
