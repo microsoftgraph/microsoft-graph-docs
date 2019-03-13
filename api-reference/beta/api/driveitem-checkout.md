@@ -5,6 +5,7 @@ ms.date: 09/10/2017
 title: Check Out Files
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Check-out a DriveItem resource
 

@@ -4,6 +4,7 @@ description: "Set mobile device management authority"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # setMobileDeviceManagementAuthority action

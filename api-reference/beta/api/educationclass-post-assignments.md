@@ -4,6 +4,7 @@ description: "Creates a new assignment. Only teachers in a class can create an a
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create educationAssignment

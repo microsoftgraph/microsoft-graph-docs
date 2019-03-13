@@ -4,6 +4,7 @@ description: "Device compliance policy assignment."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceCompliancePolicyAssignment resource type

@@ -4,6 +4,7 @@ description: "Retrieve a particular submission. A submission object represents a
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationSubmission

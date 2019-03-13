@@ -4,6 +4,7 @@ description: "Reset the sync of a specific school data synchronization profile i
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Reset sync on an educationSynchronizationProfile

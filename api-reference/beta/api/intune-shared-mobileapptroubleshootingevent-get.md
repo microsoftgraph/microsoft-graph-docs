@@ -4,6 +4,7 @@ description: "Describes the Get mobileAppTroubleshootingEvent method of the Micr
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get mobileAppTroubleshootingEvent

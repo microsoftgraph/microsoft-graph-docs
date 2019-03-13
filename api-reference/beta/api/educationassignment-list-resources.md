@@ -4,6 +4,7 @@ description: "Get all the resources associated with this assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List educationAssignmentResources

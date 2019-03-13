@@ -4,6 +4,7 @@ description: "A user in the system. This is an education-specific variant of the
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationUser resource type

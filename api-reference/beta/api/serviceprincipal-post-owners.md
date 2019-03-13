@@ -2,6 +2,7 @@
 title: "servicePrincipal: Add owner"
 description: "Use this API to add an owner for the service principal."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # servicePrincipal: Add owner

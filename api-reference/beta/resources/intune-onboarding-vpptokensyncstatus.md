@@ -4,6 +4,7 @@ description: "Possible sync statuses associated with an Apple Volume Purchase Pr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vppTokenSyncStatus enum type

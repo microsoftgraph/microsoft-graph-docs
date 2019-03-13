@@ -4,6 +4,7 @@ description: "Get the total number of user mailboxes in your organization and ho
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getMailboxUsageMailboxCounts

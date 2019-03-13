@@ -4,6 +4,7 @@ description: "Add a contact to the root Contacts folder or to the `contacts` end
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create Contact

@@ -4,6 +4,7 @@ description: "Retrieve a shared access signature (SAS) for uploading source file
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationSynchronizationProfile: uploadUrl

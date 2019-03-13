@@ -2,6 +2,7 @@
 title: "Azure AD Privileged Identity Management"
 description: "Here is the list of methods that are provided by Privileged Identity Management service."
 localization_priority: Priority
+doc_type: conceptualPageType
 ---
 
 # Azure AD Privileged Identity Management

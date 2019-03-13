@@ -4,6 +4,7 @@ description: "VPN On-Demand Rule Connection Domain Action."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnOnDemandRuleConnectionDomainAction enum type

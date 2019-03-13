@@ -4,6 +4,7 @@ description: "Get the status of a long-running OneNote operation. This applies t
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # Get onenoteOperation

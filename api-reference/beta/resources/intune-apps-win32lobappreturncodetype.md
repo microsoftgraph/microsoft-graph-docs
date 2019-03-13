@@ -4,6 +4,7 @@ description: "Indicates the type of return code."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # win32LobAppReturnCodeType enum type

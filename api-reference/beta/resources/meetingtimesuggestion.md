@@ -4,6 +4,7 @@ description: "A meeting suggestion that includes information like meeting time, 
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # meetingTimeSuggestion resource type

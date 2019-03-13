@@ -4,6 +4,7 @@ description: "List all the groups available in an organization, including but no
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List groups

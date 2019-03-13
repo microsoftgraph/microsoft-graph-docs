@@ -4,6 +4,7 @@ description: "Return all the groups that the specified group is a member of. The
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: getMemberGroups

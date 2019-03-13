@@ -4,6 +4,7 @@ description: "The callRoute type."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # callRoute resource type

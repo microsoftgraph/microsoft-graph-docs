@@ -4,7 +4,9 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: CreateAction
 localization_priority: Normal
+doc_type: resourcePageType
 ---
+
 # CreateAction resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

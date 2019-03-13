@@ -4,6 +4,7 @@ description: "Describes the resourceoperation resource (entity) of the Microsoft
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # resourceOperation resource type

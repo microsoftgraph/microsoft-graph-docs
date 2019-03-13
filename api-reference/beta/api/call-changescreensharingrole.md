@@ -4,6 +4,7 @@ description: "Start and stop sharing screen in the call. This API is used to all
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: changeScreenSharingRole

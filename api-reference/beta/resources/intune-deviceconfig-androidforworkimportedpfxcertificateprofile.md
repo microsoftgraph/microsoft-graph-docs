@@ -4,6 +4,7 @@ description: "Android For Work PFX Import certificate profile"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkImportedPFXCertificateProfile resource type

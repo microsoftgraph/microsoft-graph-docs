@@ -4,6 +4,7 @@ description: "Get the trend in the number of active OneDrive for Business sites.
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOneDriveUsageAccountCounts

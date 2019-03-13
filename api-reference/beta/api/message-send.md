@@ -4,6 +4,7 @@ description: "Send a message in the draft folder. The draft message can be a new
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: send

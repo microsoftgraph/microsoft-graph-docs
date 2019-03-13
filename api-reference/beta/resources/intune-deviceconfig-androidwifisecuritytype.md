@@ -4,6 +4,7 @@ description: "Wi-Fi Security Types for Android."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidWiFiSecurityType enum type

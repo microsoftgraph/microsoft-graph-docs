@@ -4,6 +4,7 @@ description: "The base entity for the display presentation of any of the additio
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentation resource type

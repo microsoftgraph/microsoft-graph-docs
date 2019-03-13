@@ -4,6 +4,7 @@ description: "Partner App Type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementPartnerAppType enum type

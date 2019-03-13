@@ -2,6 +2,7 @@
 title: "Update identityProvider"
 description: "Update properties in an existing identityProvider."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Update identityProvider

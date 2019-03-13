@@ -4,6 +4,7 @@ description: "Get groups and administrative units that the group is a member of.
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List group transitive memberOf

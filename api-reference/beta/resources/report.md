@@ -4,6 +4,7 @@ description: "With Microsoft Graph, you can access Office 365 usage reports reso
 localization_priority: Priority
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Working with Office 365 usage reports in Microsoft Graph

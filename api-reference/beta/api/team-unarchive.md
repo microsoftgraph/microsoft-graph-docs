@@ -4,6 +4,7 @@ description: "Restore an archived team. This restores users' ability to send mes
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Unarchive team

@@ -4,6 +4,7 @@ description: "Deletes a domain using an asynchronous operation."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # domain: forceDelete

@@ -4,6 +4,7 @@ description: "You can gain insights into the activity of Office 365 Groups in yo
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Office 365 Groups activity reports

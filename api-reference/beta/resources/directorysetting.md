@@ -4,6 +4,7 @@ description: "Directory settings can be created based on the available directory
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directorySetting resource type

@@ -2,6 +2,7 @@
 title: "attributeMappingFunctionSchema resource type"
 description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # attributeMappingFunctionSchema resource type

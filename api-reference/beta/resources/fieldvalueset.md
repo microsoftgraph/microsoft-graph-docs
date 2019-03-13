@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # FieldValueSet resource
 

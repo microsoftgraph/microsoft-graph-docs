@@ -4,6 +4,7 @@ description: "IPv4 configuration-based management conditions may be defined that
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # networkIPv4ConfigurationManagementCondition resource type

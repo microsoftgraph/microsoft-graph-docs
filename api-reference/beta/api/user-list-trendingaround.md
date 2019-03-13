@@ -4,6 +4,7 @@ description: "Calculated insight that returns the list of items trending around 
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List trendingAround

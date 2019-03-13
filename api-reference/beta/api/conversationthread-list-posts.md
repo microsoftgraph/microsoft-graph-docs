@@ -4,6 +4,7 @@ description: "Get the posts of the specified thread. You can specify both the pa
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List posts

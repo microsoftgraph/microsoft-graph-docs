@@ -4,6 +4,7 @@ description: "Use this API to create a new owner."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create owner

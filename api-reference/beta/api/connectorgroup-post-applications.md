@@ -2,6 +2,7 @@
 title: "Create application"
 description: "Use this API to create a new application."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Create application

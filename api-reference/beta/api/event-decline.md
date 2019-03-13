@@ -4,6 +4,7 @@ description: "Decline invitation to the specified event in a user calendar."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: decline

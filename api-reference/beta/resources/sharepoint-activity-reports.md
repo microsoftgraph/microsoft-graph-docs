@@ -4,6 +4,7 @@ description: "You can get the activity of every user licensed to use SharePoint 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # SharePoint activity reports

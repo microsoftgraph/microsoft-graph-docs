@@ -4,6 +4,7 @@ description: "Delete a user."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Delete educationUser

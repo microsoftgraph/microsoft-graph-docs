@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/14/2017
 title: Identity
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # identity resource type
 

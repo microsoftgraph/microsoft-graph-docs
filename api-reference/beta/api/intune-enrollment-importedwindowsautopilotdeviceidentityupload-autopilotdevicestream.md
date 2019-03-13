@@ -4,6 +4,7 @@ description: "Create a upload request with autopilot device stream in it."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # autopilotDeviceStream function

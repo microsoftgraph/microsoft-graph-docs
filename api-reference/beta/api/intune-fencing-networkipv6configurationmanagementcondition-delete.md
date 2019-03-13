@@ -4,6 +4,7 @@ description: "Deletes a networkIPv6ConfigurationManagementCondition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete networkIPv6ConfigurationManagementCondition

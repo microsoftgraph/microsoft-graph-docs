@@ -3,6 +3,7 @@ title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
 ---
 
 # Get subscription

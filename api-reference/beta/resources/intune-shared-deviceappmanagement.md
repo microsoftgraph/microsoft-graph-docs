@@ -4,6 +4,7 @@ description: "Singleton entity that acts as a container for all device app manag
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceAppManagement resource type

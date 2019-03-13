@@ -4,6 +4,7 @@ description: "Create a draft of a reply-all message to include a comment or upda
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: createReplyAll

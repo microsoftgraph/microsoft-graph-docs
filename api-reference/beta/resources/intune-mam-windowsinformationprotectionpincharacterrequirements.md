@@ -4,6 +4,7 @@ description: "Pin Character Requirements"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsInformationProtectionPinCharacterRequirements enum type

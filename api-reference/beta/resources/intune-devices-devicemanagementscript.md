@@ -4,6 +4,7 @@ description: "Intune will provide customer the ability to run their Powershell s
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScript resource type

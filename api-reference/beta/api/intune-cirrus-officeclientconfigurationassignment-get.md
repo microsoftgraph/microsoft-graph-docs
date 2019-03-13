@@ -4,6 +4,7 @@ description: "Read properties and relationships of the officeClientConfiguration
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get officeClientConfigurationAssignment

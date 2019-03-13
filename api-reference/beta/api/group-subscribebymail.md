@@ -4,6 +4,7 @@ description: "Calling this method will enable the current user to receive email 
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: subscribeByMail

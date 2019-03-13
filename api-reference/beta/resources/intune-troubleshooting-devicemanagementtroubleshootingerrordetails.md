@@ -4,6 +4,7 @@ description: "Object containing detailed information about the error and its rem
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingErrorDetails resource type

@@ -4,6 +4,7 @@ description: "Mapping between an Android app permission and the action Android s
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidPermissionAction resource type

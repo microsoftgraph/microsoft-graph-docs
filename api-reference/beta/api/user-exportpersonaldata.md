@@ -4,6 +4,7 @@ description: "Submits a data policy operation request, made by a Company Adminis
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: exportPersonalData

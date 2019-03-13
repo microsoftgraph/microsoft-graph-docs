@@ -4,6 +4,7 @@ description: "Meeting information containing the organizer of the meeting."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # organizerMeetingInfo resource type

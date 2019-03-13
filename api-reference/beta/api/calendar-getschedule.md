@@ -4,6 +4,7 @@ description: "Get the free/busy availability information for a collection of use
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # calendar: getSchedule

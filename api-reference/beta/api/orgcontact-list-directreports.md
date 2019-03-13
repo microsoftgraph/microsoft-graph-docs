@@ -4,6 +4,7 @@ description: "Get the contact's direct reports."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # orgContact: List directReports

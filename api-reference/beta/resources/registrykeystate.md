@@ -2,6 +2,7 @@
 title: "registryKeyState resource type"
 description: "Contains information about registry key changes related to the alert, and the process that changed the registry keys."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # registryKeyState resource type

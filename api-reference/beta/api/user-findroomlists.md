@@ -4,6 +4,7 @@ description: "Get the room lists defined in a tenant."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: findRoomLists

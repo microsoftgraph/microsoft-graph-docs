@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of the specified team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get team

@@ -4,6 +4,7 @@ description: "VPN Route definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vpnRoute resource type

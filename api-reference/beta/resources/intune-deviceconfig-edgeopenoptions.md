@@ -4,6 +4,7 @@ description: "Possible values for the EdgeOpensWith setting."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # edgeOpenOptions enum type

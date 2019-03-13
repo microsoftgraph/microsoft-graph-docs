@@ -4,6 +4,7 @@ description: "Possible values of xbox service start type"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # serviceStartType enum type

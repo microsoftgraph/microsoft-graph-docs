@@ -4,6 +4,7 @@ description: "Type of browsing data sent to Microsoft 365 analytics"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # edgeTelemetryMode enum type

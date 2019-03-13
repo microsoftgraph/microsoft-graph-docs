@@ -4,6 +4,7 @@ description: "Office Client Configuration."
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # officeClientConfiguration resource type

@@ -4,6 +4,7 @@ description: "Get the number of unique, licensed users that performed file inter
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOneDriveActivityFileCounts

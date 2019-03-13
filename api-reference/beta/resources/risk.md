@@ -4,6 +4,7 @@ description: "Aggregates the risk level, risk state and risk detail for the risk
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # risk resource type

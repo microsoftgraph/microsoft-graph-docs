@@ -2,6 +2,7 @@
 title: "Location resource type"
 description: "Represents location information of an event."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # Location resource type

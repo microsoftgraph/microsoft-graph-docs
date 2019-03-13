@@ -4,6 +4,7 @@ description: "Retrieve a list of nameditem objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # List names

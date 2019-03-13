@@ -4,6 +4,7 @@ description: "Get the number of Yammer messages posted, read, and liked in group
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerGroupsActivityCounts

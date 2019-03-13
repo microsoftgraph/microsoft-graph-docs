@@ -4,6 +4,7 @@ description: "Create a new conversation by including a thread and a post. "
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Create conversation

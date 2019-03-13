@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of an audioRoutingGroup 
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get audio routing group

@@ -4,6 +4,7 @@ description: "Renders the chart as a base64-encoded image by scaling the chart t
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Chart: Image

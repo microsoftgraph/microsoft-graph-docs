@@ -4,6 +4,7 @@ description: "Creates an online meeting on behalf of a user specified in the req
 author: "VinodRavichandran"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create online meeting

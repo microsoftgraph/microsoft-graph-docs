@@ -4,6 +4,7 @@ description: "Update one or more settings for the user's mailbox. This includes 
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update user mailbox settings

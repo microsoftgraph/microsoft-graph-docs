@@ -4,6 +4,7 @@ description: "Update the properties of resource associated with an assignment. O
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationAssignmentResource

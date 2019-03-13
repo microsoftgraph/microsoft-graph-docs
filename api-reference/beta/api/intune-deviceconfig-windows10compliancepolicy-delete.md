@@ -4,6 +4,7 @@ description: "Deletes a windows10CompliancePolicy."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete windows10CompliancePolicy

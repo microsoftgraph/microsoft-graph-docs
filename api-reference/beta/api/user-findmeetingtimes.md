@@ -4,6 +4,7 @@ description: "Suggest meeting times and locations based on organizer and attende
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # user: findMeetingTimes

@@ -3,6 +3,7 @@ title: "Use the Microsoft Graph API to enable cross-device experiences"
 description: "{This is the beta version. Content is similar to the existing project_rome_overview.md.}"
 localization_priority: Normal
 ms.prod: "project-rome"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to enable cross-device experiences

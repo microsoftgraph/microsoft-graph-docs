@@ -4,6 +4,7 @@ description: "Retrieve the list of messages (without the replies) in a channel o
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List channel messages

@@ -4,6 +4,7 @@ description: "Get all the meeting rooms in the user's tenant or in a specific ro
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: findRooms

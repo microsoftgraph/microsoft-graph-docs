@@ -4,6 +4,7 @@ ms.author: psampath
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # storagePlanInformation resource type
 

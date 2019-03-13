@@ -2,6 +2,7 @@
 title: "privilegedRoleAssignment resource type"
 description: "Represents a privileged role assignment for a particular user. "
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # privilegedRoleAssignment resource type

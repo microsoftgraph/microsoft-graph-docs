@@ -4,6 +4,7 @@ description: "List of notifications used by the Communications servers for sendi
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # commsNotifications resource type

@@ -4,6 +4,7 @@ description: "Microsoft Graph supports social gestures in a user's social contex
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to integrate social intelligence in an app

@@ -4,6 +4,7 @@ description: "The **call** resource is created when there is an incoming call fo
 author: "VinodRavichandran"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # call resource type

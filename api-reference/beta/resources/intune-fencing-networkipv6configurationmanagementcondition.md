@@ -5,6 +5,7 @@ IPv6 DHCP server addresses may not be matched. This is because Windows(circa Red
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # networkIPv6ConfigurationManagementCondition resource type

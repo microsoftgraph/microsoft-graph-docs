@@ -4,6 +4,7 @@ description: "Return all of the groups, directory roles and administrative units
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: getMemberObjects

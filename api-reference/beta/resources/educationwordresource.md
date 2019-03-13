@@ -4,6 +4,7 @@ description: "A subclass of educationResource. This is a Word document resource.
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationWordResource resource type

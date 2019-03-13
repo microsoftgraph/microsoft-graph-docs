@@ -2,6 +2,7 @@
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # synchronizationSchema: parseExpression

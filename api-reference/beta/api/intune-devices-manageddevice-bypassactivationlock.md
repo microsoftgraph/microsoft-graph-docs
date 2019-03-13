@@ -4,6 +4,7 @@ description: "Bypass activation lock"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # bypassActivationLock action

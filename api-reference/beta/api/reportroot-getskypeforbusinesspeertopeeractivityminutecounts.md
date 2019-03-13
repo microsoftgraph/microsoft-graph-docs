@@ -4,6 +4,7 @@ description: "Get usage trends on the length in minutes and type of peer-to-peer
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts

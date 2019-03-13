@@ -4,6 +4,7 @@ description: "The enrollmentProfile resource represents a collection of configur
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # enrollmentProfile resource type

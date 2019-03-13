@@ -4,6 +4,7 @@ description: "Create an Outlook task folder under a specified outlookTaskGroup."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create outlookTaskFolder

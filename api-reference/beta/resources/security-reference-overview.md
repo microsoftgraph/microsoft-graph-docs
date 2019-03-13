@@ -4,6 +4,7 @@ description: "The sophistication of security threats continues to escalate, affe
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API for security threat detection and protection (preview)

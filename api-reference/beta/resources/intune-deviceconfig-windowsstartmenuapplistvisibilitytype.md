@@ -4,6 +4,7 @@ description: "Type of start menu app list visibility."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsStartMenuAppListVisibilityType enum type

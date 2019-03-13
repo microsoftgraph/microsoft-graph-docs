@@ -4,6 +4,7 @@ description: "Deletes a iosScepCertificateProfile."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete iosScepCertificateProfile

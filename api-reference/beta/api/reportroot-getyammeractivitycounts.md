@@ -4,6 +4,7 @@ description: "Get the trends on the amount of Yammer activity in your organizati
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerActivityCounts

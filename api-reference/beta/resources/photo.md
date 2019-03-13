@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # Photo resource type
 

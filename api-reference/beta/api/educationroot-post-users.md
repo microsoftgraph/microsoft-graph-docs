@@ -4,6 +4,7 @@ description: "Create a new user."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create educationUser

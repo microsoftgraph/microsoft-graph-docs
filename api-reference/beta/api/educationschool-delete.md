@@ -4,6 +4,7 @@ description: "Delete a school."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Delete educationSchool

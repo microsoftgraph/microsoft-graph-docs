@@ -4,6 +4,7 @@ description: "List all the submissions associated with this assignment. A teache
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List submissions

@@ -4,6 +4,7 @@ description: "Reapplies the current sorting parameters to the table."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # TableSort: reapply

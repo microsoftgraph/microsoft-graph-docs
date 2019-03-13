@@ -4,6 +4,7 @@ description: "Contains properties used to assign an Mac VPP mobile app to a grou
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOsVppAppAssignmentSettings resource type

@@ -4,6 +4,7 @@ description: "Represents a MX record added to the DNS zone file of a particular 
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainDnsMxRecord resource type

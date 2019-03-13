@@ -2,6 +2,7 @@
 title: "referencedObject resource type"
 description: "Describes a reference to another object defined in the same directory definition."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # referencedObject resource type

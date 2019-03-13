@@ -4,7 +4,9 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
+doc_type: resourcePageType
 ---
+
 # RemoteItem resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -4,6 +4,7 @@ description: "Revoke licenses associated with a specific appleVolumePurchaseProg
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # revokeLicenses action

@@ -2,6 +2,7 @@
 title: "targetResourceOther resource type"
 description: "Indicates information on a target that doesn't fall into the rest of target resource categories like User, App, Role, Group, Key. Derived from the targetResource resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # targetResourceOther resource type

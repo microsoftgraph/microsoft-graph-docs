@@ -5,6 +5,7 @@ ms.date: 09/11/2017
 title: Get a SharePoint list
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get metadata for a list
 

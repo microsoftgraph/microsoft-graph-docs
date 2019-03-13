@@ -4,6 +4,7 @@ description: "OMA Settings Boolean definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingBoolean resource type

@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Video
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # Video resource type
 

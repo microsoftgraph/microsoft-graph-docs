@@ -4,6 +4,7 @@ description: "Contains properties for the health summary of the Windows manageme
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsManagementAppHealthSummary resource type

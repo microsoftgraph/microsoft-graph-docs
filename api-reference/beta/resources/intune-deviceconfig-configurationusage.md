@@ -4,6 +4,7 @@ description: "Possible values of the ConfigurationUsage list."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # configurationUsage enum type

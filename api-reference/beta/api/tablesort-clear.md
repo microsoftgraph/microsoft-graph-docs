@@ -4,6 +4,7 @@ description: "Clears the sorting that is currently on the table. While this does
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # TableSort: clear

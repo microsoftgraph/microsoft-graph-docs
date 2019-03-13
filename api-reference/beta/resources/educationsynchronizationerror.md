@@ -4,6 +4,7 @@ description: "Represents an error during school data profile validation and/or s
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationError resource type

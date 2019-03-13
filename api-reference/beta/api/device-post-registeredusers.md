@@ -4,6 +4,7 @@ description: "Add a registered user for the device."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create registeredUser

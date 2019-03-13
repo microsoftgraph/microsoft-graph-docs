@@ -4,6 +4,7 @@ description: "Certificate connector settings."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # certificateConnectorSetting resource type

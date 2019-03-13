@@ -4,6 +4,7 @@ description: "Update the properties of a termsAndConditionsGroupAssignment objec
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update termsAndConditionsGroupAssignment

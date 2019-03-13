@@ -4,6 +4,7 @@ description: "Delete **plannerTask**."
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Delete plannerTask

@@ -4,6 +4,7 @@ description: "Get all policies."
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List officeClientConfigurations

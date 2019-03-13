@@ -4,6 +4,7 @@ description: "Apple device features configuration profile."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # easEmailProfileConfigurationBase resource type

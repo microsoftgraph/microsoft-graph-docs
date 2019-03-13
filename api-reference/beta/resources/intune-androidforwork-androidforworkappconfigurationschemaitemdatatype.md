@@ -4,6 +4,7 @@ description: "Data type for a configuration item inside an Android for Work appl
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidForWorkAppConfigurationSchemaItemDataType enum type

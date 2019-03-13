@@ -4,6 +4,7 @@ description: "Contains properties used when assigning a Windows AppX mobile app 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAppXAppAssignmentSettings resource type

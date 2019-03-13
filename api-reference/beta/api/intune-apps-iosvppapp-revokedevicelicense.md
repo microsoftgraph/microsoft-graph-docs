@@ -4,6 +4,7 @@ description: "Revoke assigned iOS VPP device license for given app."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # revokeDeviceLicense action

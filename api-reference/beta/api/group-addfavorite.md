@@ -4,6 +4,7 @@ description: "Add the group to the list of the current user's favorite groups. S
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: addFavorite

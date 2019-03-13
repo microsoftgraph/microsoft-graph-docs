@@ -4,6 +4,7 @@ description: "Errors in the Microsoft Graph Security API are returned using the 
 author: "preetikr"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: conceptualPageType
 ---
 
 # Microsoft Graph Security API error responses

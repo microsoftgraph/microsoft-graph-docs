@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # CommentAction resource type
 

@@ -4,6 +4,7 @@ description: "Represents an AirPrint destination."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # airPrintDestination resource type

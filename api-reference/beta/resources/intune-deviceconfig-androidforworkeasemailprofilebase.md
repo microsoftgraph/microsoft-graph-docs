@@ -4,6 +4,7 @@ description: "Base for Android For Work EAS Email profiles"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkEasEmailProfileBase resource type

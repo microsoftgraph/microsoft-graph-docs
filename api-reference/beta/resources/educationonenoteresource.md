@@ -4,6 +4,7 @@ description: "A subclass of educationResource. This represents the location of t
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationOneNoteResource resource type

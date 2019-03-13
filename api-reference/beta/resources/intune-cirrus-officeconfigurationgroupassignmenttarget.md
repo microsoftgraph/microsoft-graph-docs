@@ -4,6 +4,7 @@ description: "Office client configuration AAD group assignment target."
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # officeConfigurationGroupAssignmentTarget resource type

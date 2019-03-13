@@ -4,6 +4,7 @@ description: "List properties and relationships of the iosVpnConfiguration objec
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosVpnConfigurations

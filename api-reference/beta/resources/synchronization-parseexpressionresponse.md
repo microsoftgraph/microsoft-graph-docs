@@ -2,6 +2,7 @@
 title: "parseExpressionResponse resource type"
 description: "Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # parseExpressionResponse resource type

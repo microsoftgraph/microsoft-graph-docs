@@ -4,6 +4,7 @@ description: "The base presentation value entity that stores the value for a sin
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValue resource type

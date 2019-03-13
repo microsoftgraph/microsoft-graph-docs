@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, create a new accessReview 
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create accessReview

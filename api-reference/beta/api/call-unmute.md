@@ -4,6 +4,7 @@ description: "Allows the application to unmute itself."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: unmute

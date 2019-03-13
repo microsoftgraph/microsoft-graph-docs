@@ -4,6 +4,7 @@ description: "A directory setting template represents a template of settings fro
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get a directory setting template

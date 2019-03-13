@@ -4,6 +4,7 @@ description: "Deletes a win32LobApp."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete win32LobApp

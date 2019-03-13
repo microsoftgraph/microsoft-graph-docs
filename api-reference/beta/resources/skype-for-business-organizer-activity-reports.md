@@ -4,6 +4,7 @@ description: "You can get details on organized conferences activity across your 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business organizer activity reports

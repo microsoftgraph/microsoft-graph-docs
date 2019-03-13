@@ -4,6 +4,7 @@ description: "Event representing an enrollment failure."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # enrollmentTroubleshootingEvent resource type

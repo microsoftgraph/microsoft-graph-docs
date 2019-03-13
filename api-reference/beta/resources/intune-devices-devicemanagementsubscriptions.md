@@ -4,6 +4,7 @@ description: "Tenant mobile device management subscriptions."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementSubscriptions enum type

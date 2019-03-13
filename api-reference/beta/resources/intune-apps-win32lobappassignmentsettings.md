@@ -4,6 +4,7 @@ description: "Contains properties used to assign an Win32 LOB mobile app to a gr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobAppAssignmentSettings resource type

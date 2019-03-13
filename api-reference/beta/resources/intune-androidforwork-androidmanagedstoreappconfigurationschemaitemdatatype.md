@@ -4,6 +4,7 @@ description: "Data type for a configuration item inside an Android application's
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidManagedStoreAppConfigurationSchemaItemDataType enum type

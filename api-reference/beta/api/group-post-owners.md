@@ -4,6 +4,7 @@ description: "Add a user to the group's owners. The owners are a set of non-admi
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Add group owner

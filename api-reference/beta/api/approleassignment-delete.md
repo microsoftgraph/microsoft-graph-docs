@@ -2,6 +2,7 @@
 title: "Delete appRoleAssignment"
 description: "Delete appRoleAssignment."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Delete appRoleAssignment

@@ -2,6 +2,7 @@
 title: "servicePrincipals: List ownedObjects"
 description: "Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # servicePrincipals: List ownedObjects

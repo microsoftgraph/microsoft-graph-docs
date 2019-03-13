@@ -4,6 +4,7 @@ description: "A class containing the properties for iOS Vpp eBook."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppEBook resource type

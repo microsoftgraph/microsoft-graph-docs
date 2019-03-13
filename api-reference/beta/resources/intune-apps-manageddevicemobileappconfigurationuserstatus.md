@@ -4,6 +4,7 @@ description: "Contains properties, inherited properties and actions for an MDM m
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationUserStatus resource type

@@ -4,6 +4,7 @@ description: "VPN Proxy Server."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows81VpnProxyServer resource type

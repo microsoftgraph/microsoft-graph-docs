@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceComplianceDeviceOverview resource type

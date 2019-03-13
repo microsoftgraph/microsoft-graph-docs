@@ -4,6 +4,7 @@ description: "Provides a mapping between a source property and a target property
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationIdentityMatchingOptions resource type

@@ -4,6 +4,7 @@ description: "Reply to a post and add a new post to the specified thread in a gr
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # post: reply

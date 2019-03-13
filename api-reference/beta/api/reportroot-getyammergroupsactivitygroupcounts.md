@@ -4,6 +4,7 @@ description: "Get the total number of groups that existed and how many included 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerGroupsActivityGroupCounts

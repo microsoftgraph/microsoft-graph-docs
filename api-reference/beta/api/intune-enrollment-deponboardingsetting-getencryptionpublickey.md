@@ -4,6 +4,7 @@ description: "Get a public key to use to encrypt the Apple device enrollment pro
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # getEncryptionPublicKey function

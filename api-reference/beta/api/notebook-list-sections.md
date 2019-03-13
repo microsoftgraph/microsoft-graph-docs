@@ -4,6 +4,7 @@ description: "Retrieve a list of section objects from the specified notebook."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sections

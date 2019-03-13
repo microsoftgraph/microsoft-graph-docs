@@ -4,6 +4,7 @@ description: "Copies a page to a specific section."
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # page: copyToSection

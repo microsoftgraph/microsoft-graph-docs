@@ -4,6 +4,7 @@ description: "Get the count of unique users that connected to Exchange Online us
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getEmailAppUsageUserCounts

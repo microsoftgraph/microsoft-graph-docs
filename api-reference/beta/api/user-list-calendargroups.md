@@ -4,6 +4,7 @@ description: "Get the user's calendar groups."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List calendarGroups

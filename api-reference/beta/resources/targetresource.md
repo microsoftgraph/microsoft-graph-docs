@@ -2,6 +2,7 @@
 title: "targetResource resource type"
 description: "Indicates a collection of  target resource types associated with the audit activity. Each target resource type will inherit the properties outlined below from this resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # targetResource resource type

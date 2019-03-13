@@ -4,6 +4,7 @@ description: "Create a new table. The range source address determines the worksh
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # TableCollection: add

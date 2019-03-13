@@ -4,6 +4,7 @@ description: "Restricted apps state"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # restrictedAppsState enum type

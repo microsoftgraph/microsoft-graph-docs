@@ -4,6 +4,7 @@ description: "The text content of a Notification Message Template for the specif
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # localizedNotificationMessage resource type

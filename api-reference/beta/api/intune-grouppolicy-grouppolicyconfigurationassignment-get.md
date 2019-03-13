@@ -4,6 +4,7 @@ description: "Read properties and relationships of the groupPolicyConfigurationA
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get groupPolicyConfigurationAssignment

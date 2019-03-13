@@ -4,6 +4,7 @@ description: "Represents the name and SMTP address of an entity instance, for ex
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # emailAddress resource type

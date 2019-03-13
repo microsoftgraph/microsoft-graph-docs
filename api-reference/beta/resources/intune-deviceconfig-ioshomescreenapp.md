@@ -4,6 +4,7 @@ description: "Represents an icon for an app on the Home Screen"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosHomeScreenApp resource type

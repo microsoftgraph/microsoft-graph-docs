@@ -4,6 +4,7 @@ description: "Defines the settings for matching school data profile identities. 
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 ## educationIdentityMatchingConfiguration resource type

@@ -4,6 +4,7 @@ description: "Create a new managedAndroidStoreApp object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create managedAndroidStoreApp

@@ -4,6 +4,7 @@ description: "The depOnboardingSetting represents an instance of the Apple DEP s
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depOnboardingSetting resource type

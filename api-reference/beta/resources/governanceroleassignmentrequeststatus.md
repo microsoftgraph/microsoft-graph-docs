@@ -2,6 +2,7 @@
 title: "governanceRoleAssignmentRequestStatus resource type"
 description: "Represents the status of the governanceRoleAssignmentRequest."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # governanceRoleAssignmentRequestStatus resource type

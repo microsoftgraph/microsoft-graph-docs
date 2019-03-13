@@ -4,6 +4,7 @@ description: "Criteria which defines the type of device this access rule will ap
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeAccessRuleType enum type

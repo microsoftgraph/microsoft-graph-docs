@@ -4,6 +4,7 @@ description: "Get the teams in Microsoft Teams that the user is a direct member 
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List joinedTeams

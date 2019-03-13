@@ -4,6 +4,7 @@ description: "Device protection status entity."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsProtectionState resource type

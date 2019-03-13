@@ -4,6 +4,7 @@ description: "Remote lock"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # playLostModeSound action

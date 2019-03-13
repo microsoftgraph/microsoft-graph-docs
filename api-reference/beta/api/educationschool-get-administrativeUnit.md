@@ -4,6 +4,7 @@ description: "Retrieve the simple directory **administrativeUnit** that correspo
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get administrativeUnit

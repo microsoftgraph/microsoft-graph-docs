@@ -4,6 +4,7 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Bookings API in Microsoft Graph

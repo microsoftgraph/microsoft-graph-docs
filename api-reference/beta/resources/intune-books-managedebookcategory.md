@@ -4,6 +4,7 @@ description: "Contains properties for a single Intune eBook category."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedEBookCategory resource type

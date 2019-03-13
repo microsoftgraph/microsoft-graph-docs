@@ -4,6 +4,7 @@ description: "Create a new section group in the specified notebook."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # Create sectionGroup

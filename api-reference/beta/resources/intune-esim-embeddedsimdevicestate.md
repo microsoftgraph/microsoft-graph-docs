@@ -4,6 +4,7 @@ description: "Describes the embedded SIM activation code deployment state in rel
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # embeddedSIMDeviceState resource type

@@ -4,6 +4,7 @@ description: "Dismiss a reminder that has been triggered for an event in a user 
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: dismissReminder

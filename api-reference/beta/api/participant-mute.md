@@ -4,6 +4,7 @@ description: "Mute a specific participant in the call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # participant: mute

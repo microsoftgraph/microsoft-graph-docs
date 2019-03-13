@@ -4,6 +4,7 @@ description: "Represents an Excel table."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Table resource type

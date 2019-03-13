@@ -4,6 +4,7 @@ description: "The class used to identify an AzureAD user account for the kiosk c
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskAzureADUser resource type

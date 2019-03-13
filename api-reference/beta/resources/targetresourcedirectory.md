@@ -2,6 +2,7 @@
 title: "targetResourceDirectory resource type"
 description: "Indicates the directory object that was added, updated or deleted by admins as part of audit activity. Derived from the targetResource resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # targetResourceDirectory resource type

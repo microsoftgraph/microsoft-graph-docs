@@ -4,6 +4,7 @@ description: "A description of why an entity is unsupported."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # unsupportedDeviceConfigurationDetail resource type

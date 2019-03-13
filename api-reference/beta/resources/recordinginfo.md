@@ -4,6 +4,7 @@ description: "Recording information for a participant."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # recordingInfo resource type

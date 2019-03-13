@@ -4,6 +4,7 @@ description: "Here is a JSON representation of the resource"
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # orgContact resource type

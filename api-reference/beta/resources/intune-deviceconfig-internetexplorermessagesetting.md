@@ -4,6 +4,7 @@ description: "What message will be displayed by Edge before switching to Interne
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # internetExplorerMessageSetting enum type

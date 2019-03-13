@@ -2,6 +2,7 @@
 title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # dateTimeTimeZone resource type

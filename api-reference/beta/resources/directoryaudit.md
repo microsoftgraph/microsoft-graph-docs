@@ -4,6 +4,7 @@ description: "This resource represents the directory Audit items and its collect
 author: "lleonard-msft"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directoryAudit resource type

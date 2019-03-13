@@ -4,6 +4,7 @@ description: "iOS Volume Purchase Program user license assignment. This class do
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppAppAssignedUserLicense resource type

@@ -2,6 +2,7 @@
 title: "itemBody resource type"
 description: "Represents properties of the body of an item, such as a message, event or group post."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # itemBody resource type

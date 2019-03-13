@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, update an existing accessR
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Remove accessReview reviewer

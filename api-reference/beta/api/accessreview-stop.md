@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, stop a currently active ac
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Stop accessReview

@@ -4,6 +4,7 @@ description: "Values for the SignInAssistantSettings."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # signInAssistantOptions enum type

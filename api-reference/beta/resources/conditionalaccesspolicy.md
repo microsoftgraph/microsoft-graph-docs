@@ -2,6 +2,7 @@
 title: "conditionalAccessPolicy resource type"
 description: "Indicates the attributes related a conditional access policy or policies that's triggered by the corresponding sign-in activity"
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # conditionalAccessPolicy resource type

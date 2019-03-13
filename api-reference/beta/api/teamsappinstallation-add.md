@@ -4,6 +4,7 @@ description: "Installs an app to the specified team."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Add app to team

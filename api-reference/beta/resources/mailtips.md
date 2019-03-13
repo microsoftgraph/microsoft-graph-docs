@@ -4,6 +4,7 @@ description: "Informative messages about a recipient, that are displayed to user
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # mailTips resource type

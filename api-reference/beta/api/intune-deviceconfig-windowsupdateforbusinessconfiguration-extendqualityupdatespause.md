@@ -4,6 +4,7 @@ description: "Extend Quality Updates Pause for a Windows Update for Business rin
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # extendQualityUpdatesPause action

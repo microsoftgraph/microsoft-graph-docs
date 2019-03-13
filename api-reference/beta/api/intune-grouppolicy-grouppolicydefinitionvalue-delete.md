@@ -4,6 +4,7 @@ description: "Deletes a groupPolicyDefinitionValue."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete groupPolicyDefinitionValue

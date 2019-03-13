@@ -4,6 +4,7 @@ description: "Inserts a cell or a range of cells into the worksheet in place of 
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: insert

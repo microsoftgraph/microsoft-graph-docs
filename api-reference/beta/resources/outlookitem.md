@@ -4,6 +4,7 @@ description: "Here is a JSON representation of the resource"
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookItem resource type

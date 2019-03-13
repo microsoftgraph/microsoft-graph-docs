@@ -4,6 +4,7 @@ description: "A message that represents a meeting request, cancellation, or resp
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # eventMessage resource type

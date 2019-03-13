@@ -4,6 +4,7 @@ description: "Represents a single axis in a chart."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartAxis resource type

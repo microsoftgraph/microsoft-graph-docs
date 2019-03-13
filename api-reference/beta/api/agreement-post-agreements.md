@@ -2,6 +2,7 @@
 title: "Create agreement"
 description: "Create a new agreement object."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Create agreement

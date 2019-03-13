@@ -4,6 +4,7 @@ description: "Get the status of a specific school data synchronization profile i
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get the status of an educationSynchronizationProfile

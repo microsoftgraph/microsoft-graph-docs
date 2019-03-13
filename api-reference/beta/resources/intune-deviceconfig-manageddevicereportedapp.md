@@ -4,6 +4,7 @@ description: "Application data for reporting"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceReportedApp resource type

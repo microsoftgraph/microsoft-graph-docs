@@ -4,6 +4,7 @@ description: "Movies rating labels in United Kingdom"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingUnitedKingdomMoviesType enum type

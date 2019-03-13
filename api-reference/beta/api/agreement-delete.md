@@ -2,6 +2,7 @@
 title: "Delete agreement"
 description: "Delete an agreement object."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Delete agreement

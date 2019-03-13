@@ -4,6 +4,7 @@ description: "Create an Outlook task in the default task group (`My Tasks`) and 
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create outlookTask

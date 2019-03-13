@@ -4,6 +4,7 @@ description: "Create a messageRule object by specifying a set of conditions and 
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create rule

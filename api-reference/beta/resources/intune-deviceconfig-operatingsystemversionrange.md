@@ -4,6 +4,7 @@ description: "Operating System version range."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # operatingSystemVersionRange resource type

@@ -4,6 +4,7 @@ description: "Android For Work custom configuration"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkCustomConfiguration resource type

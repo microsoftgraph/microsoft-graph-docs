@@ -4,6 +4,7 @@ description: "Retrieve a list of plannerPlans recently viewed by a user. You can
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List recentPlans

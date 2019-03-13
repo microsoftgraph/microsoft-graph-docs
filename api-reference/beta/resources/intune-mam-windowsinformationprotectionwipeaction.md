@@ -4,6 +4,7 @@ description: "Represents wipe requests issued by tenant admin for Bring-Your-Own
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionWipeAction resource type

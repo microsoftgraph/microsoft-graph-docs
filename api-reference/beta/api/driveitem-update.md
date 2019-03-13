@@ -5,6 +5,7 @@ ms.date: 09/10/2017
 title: Update a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Update DriveItem properties
 

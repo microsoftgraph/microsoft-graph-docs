@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of an **onlineMeeting** 
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get Online Meeting

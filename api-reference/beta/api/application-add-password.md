@@ -4,6 +4,7 @@ description: "Adds a strong password to an application."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Add application password

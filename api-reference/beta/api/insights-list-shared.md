@@ -4,6 +4,7 @@ description: "Calculated insight that returns the list of files shared with a us
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: apiPageType
 ---
 
 # List shared

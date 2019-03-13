@@ -4,6 +4,7 @@ description: "Represents an ADMX longDecimalTextBox element and an ADMX longDeci
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationLongDecimalTextBox resource type

@@ -4,6 +4,7 @@ description: "Level configuration for other sources."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # audioSourceLevel resource type

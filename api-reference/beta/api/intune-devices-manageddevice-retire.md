@@ -4,6 +4,7 @@ description: "Retire a device"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # retire action

@@ -4,6 +4,7 @@ description: "Changes the width of the columns of the current range to achieve t
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # RangeFormat: autofitColumns

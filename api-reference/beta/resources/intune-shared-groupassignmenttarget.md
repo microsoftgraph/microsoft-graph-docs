@@ -4,6 +4,7 @@ description: "Represents an assignment to a group."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupAssignmentTarget resource type

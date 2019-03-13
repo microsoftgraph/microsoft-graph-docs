@@ -2,6 +2,7 @@
 title: "synchronizationSchedule resource type"
 description: "Defines the schedule used to run a synchronizationJob."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # synchronizationSchedule resource type

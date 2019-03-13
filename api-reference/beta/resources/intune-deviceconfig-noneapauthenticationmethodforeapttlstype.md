@@ -4,6 +4,7 @@ description: "Non-EAP methods for authentication."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # nonEapAuthenticationMethodForEapTtlsType enum type

@@ -2,6 +2,7 @@
 title: "synchronizationJob: validateCredentials"
 description: "Validate that the credentials are valid in the tenant."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # synchronizationJob: validateCredentials

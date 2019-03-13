@@ -4,6 +4,7 @@ description: "Report of remote actions initiated on the devices belonging to a c
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # remoteActionAudit resource type

@@ -4,6 +4,7 @@ description: "Get the errors generated during validation and/or during a sync of
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationSynchronizationErrors

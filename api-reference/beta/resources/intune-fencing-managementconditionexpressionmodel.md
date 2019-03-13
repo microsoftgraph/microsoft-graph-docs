@@ -4,6 +4,7 @@ description: "A management condition expression model is an model representation
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementConditionExpressionModel resource type

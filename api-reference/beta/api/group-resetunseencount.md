@@ -4,6 +4,7 @@ description: "Reset the unseenCount of all the posts that the current user has n
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: resetUnseenCount

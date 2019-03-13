@@ -2,6 +2,7 @@
 title: "Get Policy"
 description: "Retrieve the properties of a policy."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get Policy

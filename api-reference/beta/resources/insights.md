@@ -4,6 +4,7 @@ description: "Insights are relationships calculated using advanced analytics and
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # insights resource type

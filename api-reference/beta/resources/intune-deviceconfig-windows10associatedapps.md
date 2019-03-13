@@ -4,6 +4,7 @@ description: "Windows 10 Associated Application definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10AssociatedApps resource type

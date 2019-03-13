@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a section object."
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # Get section

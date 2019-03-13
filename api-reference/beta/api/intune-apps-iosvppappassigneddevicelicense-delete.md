@@ -4,6 +4,7 @@ description: "Deletes a iosVppAppAssignedDeviceLicense."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete iosVppAppAssignedDeviceLicense

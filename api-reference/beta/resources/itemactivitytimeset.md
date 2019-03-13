@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # ItemActivityTimeSet resource type
 

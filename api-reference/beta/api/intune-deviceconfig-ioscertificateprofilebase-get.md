@@ -4,6 +4,7 @@ description: "Read properties and relationships of the iosCertificateProfileBase
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosCertificateProfileBase

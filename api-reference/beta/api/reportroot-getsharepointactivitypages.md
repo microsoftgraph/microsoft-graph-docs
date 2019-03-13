@@ -4,6 +4,7 @@ description: "Get the number of unique pages visited by users."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointActivityPages

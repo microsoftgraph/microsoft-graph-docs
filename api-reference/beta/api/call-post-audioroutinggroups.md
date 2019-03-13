@@ -4,6 +4,7 @@ description: "Create a new **audioRoutingGroup**."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create audio routing group

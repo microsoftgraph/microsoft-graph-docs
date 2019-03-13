@@ -4,6 +4,7 @@ description: "Get all the threads of a group."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List threads

@@ -4,6 +4,7 @@ description: "Possible values for username source or email source."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # userEmailSource enum type

@@ -4,6 +4,7 @@ description: "Represents a directory role template. A directory role template sp
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directoryRoleTemplate resource type

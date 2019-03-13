@@ -4,6 +4,7 @@ description: "Describes the current installation status of a teamsApp."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 #teamsAppInstalledState enum type

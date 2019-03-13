@@ -2,6 +2,7 @@
 title: "Restart synchronizationJob"
 description: "Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Restart synchronizationJob

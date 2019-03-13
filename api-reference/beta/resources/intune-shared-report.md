@@ -4,6 +4,7 @@ description: "Describes the report resource of the Microsoft Graph API for Intun
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # report resource type

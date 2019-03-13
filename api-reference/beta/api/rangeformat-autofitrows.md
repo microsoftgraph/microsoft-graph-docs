@@ -4,6 +4,7 @@ description: "Changes the height of the rows of the current range to achieve the
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # RangeFormat: autofitRows

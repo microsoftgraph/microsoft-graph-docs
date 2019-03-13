@@ -4,6 +4,7 @@ description: "Indicates the type of app that a VPN traffic rule is associated wi
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnTrafficRuleAppType enum type

@@ -4,6 +4,7 @@ description: "Contains properties for a generic mime content."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mimeContent resource type

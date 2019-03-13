@@ -2,6 +2,7 @@
 title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # List governanceResources

@@ -2,6 +2,7 @@
 title: "web resource type"
 description: "Specifies settings for a web application."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # web resource type

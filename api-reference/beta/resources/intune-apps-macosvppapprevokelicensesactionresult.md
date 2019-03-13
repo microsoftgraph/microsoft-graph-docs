@@ -4,6 +4,7 @@ description: "Defines results for actions on MacOS Vpp Apps, contains inherited 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOsVppAppRevokeLicensesActionResult resource type

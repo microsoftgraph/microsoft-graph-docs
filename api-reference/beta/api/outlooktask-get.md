@@ -4,6 +4,7 @@ description: "Get the properties and relationships of an Outlook task in the use
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get outlookTask

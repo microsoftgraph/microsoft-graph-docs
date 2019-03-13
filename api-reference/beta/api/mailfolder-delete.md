@@ -4,6 +4,7 @@ description: "Delete the specified mailFolder or mailSearchFolder."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete mailFolder

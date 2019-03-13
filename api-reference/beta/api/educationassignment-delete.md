@@ -4,6 +4,7 @@ description: "Delete an existing assignment. Only teachers within a class can de
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Delete educationAssignment

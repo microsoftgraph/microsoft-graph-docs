@@ -2,6 +2,7 @@
 title: "Get governanceRoleAssignmentRequest"
 description: "Get a governanceRoleAssignmentRequest. "
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get governanceRoleAssignmentRequest

@@ -4,6 +4,7 @@ description: "Check for membership in a specified list of groups, and returns fr
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Check member groups

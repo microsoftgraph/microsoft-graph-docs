@@ -4,6 +4,7 @@ description: "A class that represents a contained app of a MicrosoftStoreForBusi
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # microsoftStoreForBusinessContainedApp resource type

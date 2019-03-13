@@ -4,6 +4,7 @@ description: "Restricts meeting time suggestions to certain hours and days of th
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # findMeetingTimesTimeConstraints resource type

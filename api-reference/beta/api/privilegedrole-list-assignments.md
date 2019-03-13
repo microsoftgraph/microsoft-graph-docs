@@ -2,6 +2,7 @@
 title: "List assignments"
 description: "Retrieve a list of privilegedRoleAssignment objects that are associated with the role. Each privilegedRoleAssignment represents a role assignment to a user."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # List assignments

@@ -4,6 +4,7 @@ description: "select` query option is not available for this operation."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get directory objects from a list of ids

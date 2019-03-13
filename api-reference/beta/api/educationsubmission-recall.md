@@ -4,6 +4,7 @@ description: "Indicates that a student wants to take back a submission. This act
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationSubmission: recall

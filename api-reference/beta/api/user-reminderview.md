@@ -4,6 +4,7 @@ description: "Return a list of calendar reminders within the specified start and
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: reminderView

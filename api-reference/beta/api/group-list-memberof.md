@@ -4,6 +4,7 @@ description: "Get groups and administrative units that the group is a direct mem
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List group memberOf

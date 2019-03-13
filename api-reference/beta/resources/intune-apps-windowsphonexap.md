@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Phone XAP
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPhoneXAP resource type

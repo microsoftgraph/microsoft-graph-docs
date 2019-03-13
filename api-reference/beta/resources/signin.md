@@ -2,6 +2,7 @@
 title: "signIn resource type"
 description: "This resource details user or application sign-in activity in your directory. "
 localization_priority: Priority
+doc_type: resourcePageType
 ---
 
 # signIn resource type

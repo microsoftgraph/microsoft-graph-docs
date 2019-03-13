@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Managed iOS Line 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedIOSLobApp resource type

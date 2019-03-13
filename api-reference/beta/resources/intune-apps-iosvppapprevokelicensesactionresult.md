@@ -4,6 +4,7 @@ description: "Defines results for actions on iOS Vpp Apps, contains inherited pr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppAppRevokeLicensesActionResult resource type

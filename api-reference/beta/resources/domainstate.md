@@ -4,6 +4,7 @@ description: "Represents the status of asynchronous operations scheduled on a do
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainState resource type

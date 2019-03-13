@@ -4,6 +4,7 @@ description: "Contains return code properties for a Win32 App"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobAppReturnCode resource type

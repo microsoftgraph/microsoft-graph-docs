@@ -4,6 +4,7 @@ description: "Show the home button; clicking the home button loads the Start pag
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # edgeHomeButtonLoadsStartPage resource type

@@ -4,6 +4,7 @@ description: "Encryption report per device"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceEncryptionState resource type

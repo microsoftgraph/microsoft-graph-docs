@@ -4,6 +4,7 @@ ms.author: chackman
 title: Unfollow drive item
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Unfollow drive item
 

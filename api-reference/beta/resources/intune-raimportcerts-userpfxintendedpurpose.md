@@ -4,6 +4,7 @@ description: "Supported values for the intended purpose of a user PFX certificat
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # userPfxIntendedPurpose enum type

@@ -4,6 +4,7 @@ description: "Gets an object that represents the entire row of the range."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: EntireRow

@@ -4,6 +4,7 @@ description: "This action changes the state of an assignment from its original d
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationAssignment: publish

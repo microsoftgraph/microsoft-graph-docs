@@ -4,6 +4,7 @@ description: "Represents device registration records for Bring-Your-Own-Device(B
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDeviceRegistration resource type

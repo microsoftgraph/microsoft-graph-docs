@@ -4,6 +4,7 @@ description: "Update the properties of chartseries object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Update chartseries

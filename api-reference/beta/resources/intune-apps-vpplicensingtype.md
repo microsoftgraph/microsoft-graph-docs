@@ -4,6 +4,7 @@ description: "Contains properties for iOS Volume-Purchased Program (Vpp) Licensi
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppLicensingType resource type

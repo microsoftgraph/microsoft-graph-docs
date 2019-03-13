@@ -2,6 +2,7 @@
 title: "Delete privilegedRoleAssignment"
 description: "Delete privilegedRoleAssignment."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Delete privilegedRoleAssignment

@@ -4,6 +4,7 @@ description: "A mailSearchFolder is a virtual folder in the user's mailbox that 
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # mailSearchFolder resource type

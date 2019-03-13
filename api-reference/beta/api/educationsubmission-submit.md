@@ -4,6 +4,7 @@ description: "An action that indicates that a student is done with the work and 
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationSubmission: submit

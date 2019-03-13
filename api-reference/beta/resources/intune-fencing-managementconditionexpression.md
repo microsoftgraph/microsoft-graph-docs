@@ -4,6 +4,7 @@ description: "A management condition expression is an expression that produces a
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementConditionExpression resource type

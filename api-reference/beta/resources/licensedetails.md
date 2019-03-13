@@ -2,6 +2,7 @@
 title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # licenseDetails resource type

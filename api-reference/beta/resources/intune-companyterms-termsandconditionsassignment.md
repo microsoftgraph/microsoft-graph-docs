@@ -4,6 +4,7 @@ description: "A termsAndConditionsAssignment entity represents the assignment of
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditionsAssignment resource type

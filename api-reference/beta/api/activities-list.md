@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/10/2017
 title: File Activities
 localization_priority: Normal
+doc_type: apiPageType
 ---
 # Enumerate activities (preview)
 

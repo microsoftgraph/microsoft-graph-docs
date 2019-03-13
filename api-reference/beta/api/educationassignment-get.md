@@ -4,6 +4,7 @@ description: " teachers can see all assignments in a class."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationAssignment

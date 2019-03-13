@@ -4,6 +4,7 @@ description: "Device configuration group assignment."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceConfigurationGroupAssignment resource type

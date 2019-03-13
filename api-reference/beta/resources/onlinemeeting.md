@@ -4,6 +4,7 @@ description: "Captures information about the meeting, including the join URL, th
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # onlineMeeting resource type

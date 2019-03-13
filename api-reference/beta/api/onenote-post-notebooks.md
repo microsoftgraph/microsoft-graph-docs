@@ -4,6 +4,7 @@ description: "Create a new OneNote notebook."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # Create notebook

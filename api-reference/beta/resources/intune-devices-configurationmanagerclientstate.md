@@ -4,6 +4,7 @@ description: "Configuration manager client state"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # configurationManagerClientState enum type

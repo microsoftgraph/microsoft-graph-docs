@@ -4,6 +4,7 @@ description: "Contains properties, inherited properties and actions for AFW mobi
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkMobileAppConfiguration resource type

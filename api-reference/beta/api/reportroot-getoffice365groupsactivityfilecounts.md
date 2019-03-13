@@ -4,6 +4,7 @@ description: "Get the total number of files and how many of them were active acr
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365GroupsActivityFileCounts

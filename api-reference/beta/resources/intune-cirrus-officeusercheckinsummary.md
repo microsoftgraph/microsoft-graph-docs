@@ -4,6 +4,7 @@ description: "Entity that describes  tenant check-in stats."
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # officeUserCheckinSummary resource type

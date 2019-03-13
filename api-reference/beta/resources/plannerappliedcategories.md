@@ -4,6 +4,7 @@ description: "The **AppliedCategoriesCollection** resource represents the collec
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerAppliedCategories resource type

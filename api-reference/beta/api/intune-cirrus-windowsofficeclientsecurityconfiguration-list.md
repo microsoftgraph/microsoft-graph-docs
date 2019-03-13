@@ -4,6 +4,7 @@ description: "List properties and relationships of the windowsOfficeClientSecuri
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsOfficeClientSecurityConfigurations

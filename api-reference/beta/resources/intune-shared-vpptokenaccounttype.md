@@ -4,6 +4,7 @@ description: "Possible types of an Apple Volume Purchase Program token."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vppTokenAccountType enum type

@@ -4,6 +4,7 @@ description: "Android For Work VPN connection type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidForWorkVpnConnectionType enum type

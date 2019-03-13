@@ -4,6 +4,7 @@ description: "Windows 8.1 Phone and Mobile PFX Import certificate profile"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPhone81ImportedPFXCertificateProfile resource type

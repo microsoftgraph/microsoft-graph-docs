@@ -4,6 +4,7 @@ description: "Gets the range object associated with the entire table."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Table: Range

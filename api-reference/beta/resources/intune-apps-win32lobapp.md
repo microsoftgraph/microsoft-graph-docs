@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Win32 apps."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobApp resource type

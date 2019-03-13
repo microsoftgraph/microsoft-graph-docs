@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, retrieve an accessReview o
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get accessReview

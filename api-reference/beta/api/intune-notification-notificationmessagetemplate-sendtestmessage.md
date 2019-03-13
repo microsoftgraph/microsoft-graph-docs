@@ -4,6 +4,7 @@ description: "Sends test message using the specified notificationMessageTemplate
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # sendTestMessage action

@@ -4,6 +4,7 @@ description: "Object representing a link to troubleshooting information, the lin
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingErrorResource resource type

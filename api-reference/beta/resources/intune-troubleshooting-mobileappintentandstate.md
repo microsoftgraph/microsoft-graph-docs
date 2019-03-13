@@ -4,6 +4,7 @@ description: "MobileApp Intent and Install State for a given device."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppIntentAndState resource type

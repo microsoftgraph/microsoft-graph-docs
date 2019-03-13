@@ -4,6 +4,7 @@ description: "An abstract class that represents a contained app in a mobileApp a
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileContainedApp resource type

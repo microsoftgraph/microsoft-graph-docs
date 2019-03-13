@@ -4,6 +4,7 @@ description: "Partner state of this tenant."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementPartnerTenantState enum type

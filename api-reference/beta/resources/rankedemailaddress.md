@@ -2,6 +2,7 @@
 title: "rankedEmailAddress resource type"
 description: "Represents a ranked email address."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # rankedEmailAddress resource type

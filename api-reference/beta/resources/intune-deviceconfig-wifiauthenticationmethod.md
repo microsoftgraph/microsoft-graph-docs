@@ -4,6 +4,7 @@ description: "Wi-Fi authentication method."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # wiFiAuthenticationMethod enum type

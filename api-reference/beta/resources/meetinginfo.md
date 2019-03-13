@@ -4,6 +4,7 @@ description: "Meeting information specified to create or join a meeting."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # meetingInfo resource type

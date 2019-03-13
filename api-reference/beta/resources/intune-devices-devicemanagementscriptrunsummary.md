@@ -4,6 +4,7 @@ description: "Contains properties for the run summary of a device management scr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptRunSummary resource type

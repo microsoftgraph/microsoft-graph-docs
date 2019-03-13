@@ -4,6 +4,7 @@ description: "List all the messages in the signed-in user's mailbox, or those me
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List messages

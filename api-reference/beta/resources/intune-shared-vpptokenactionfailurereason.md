@@ -4,6 +4,7 @@ description: "Possible types of reasons for an Apple Volume Purchase Program tok
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vppTokenActionFailureReason enum type

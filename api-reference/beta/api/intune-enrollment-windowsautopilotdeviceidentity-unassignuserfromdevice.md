@@ -4,6 +4,7 @@ description: "Unassigns the user from an Autopilot device."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # unassignUserFromDevice action

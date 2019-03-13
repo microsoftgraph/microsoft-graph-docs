@@ -4,6 +4,7 @@ description: "Describes the runAsAccountType enum of the Microsoft Graph API for
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # runAsAccountType enum type

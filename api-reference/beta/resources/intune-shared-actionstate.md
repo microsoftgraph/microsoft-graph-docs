@@ -4,6 +4,7 @@ description: "State of the action on the device"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # actionState enum type

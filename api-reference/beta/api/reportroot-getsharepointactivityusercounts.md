@@ -4,6 +4,7 @@ description: "Get the trend in the number of active users. A user is considered 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointActivityUserCounts

@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of contact object."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get contact

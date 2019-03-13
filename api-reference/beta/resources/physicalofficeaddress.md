@@ -2,6 +2,7 @@
 title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # physicalOfficeAddress resource type

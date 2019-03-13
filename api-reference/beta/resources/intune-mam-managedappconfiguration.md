@@ -4,6 +4,7 @@ description: "Configuration used to deliver a set of custom settings as-is to ap
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppConfiguration resource type

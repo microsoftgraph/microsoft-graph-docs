@@ -4,6 +4,7 @@ description: "Retrieve a list of class objects. Note that if the delegated token
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List classes

@@ -4,6 +4,7 @@ description: "Get the messages in the signed-in user's mailbox (including the De
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List messages

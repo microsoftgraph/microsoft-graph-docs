@@ -4,6 +4,7 @@ description: "Contains properties for the package information for a Windows line
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPackageInformation resource type

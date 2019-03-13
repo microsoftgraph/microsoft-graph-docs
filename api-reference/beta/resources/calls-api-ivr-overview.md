@@ -4,6 +4,7 @@ description: "The following are the Interactive Voice Response (IVR) scenarios t
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: conceptualPageType
 ---
 
 # IVR scenarios in calls

@@ -2,6 +2,7 @@
 title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
 localization_priority: Priority
+doc_type: apiPageType
 ---
 
 # Get servicePrincipal

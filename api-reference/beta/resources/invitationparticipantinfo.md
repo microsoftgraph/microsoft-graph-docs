@@ -4,6 +4,7 @@ description: "The **InvitationParticipant** is used to represent a set of identi
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # invitationParticipantInfo resource type

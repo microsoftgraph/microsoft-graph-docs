@@ -4,6 +4,7 @@ description: "Get the count of users by activity type and service."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365ServicesUserCounts

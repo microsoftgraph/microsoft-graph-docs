@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of an administrativeUnit
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get administrativeUnit

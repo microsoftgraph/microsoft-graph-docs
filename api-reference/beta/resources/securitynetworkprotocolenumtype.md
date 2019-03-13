@@ -4,6 +4,7 @@ description: "Possible values for the network protocol."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: enumPageType
 ---
 
 # securityNetworkProtocol enum

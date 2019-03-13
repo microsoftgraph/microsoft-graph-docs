@@ -4,6 +4,7 @@ description: "Retrieve a list of **plannertask** objects associated to a planner
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List tasks

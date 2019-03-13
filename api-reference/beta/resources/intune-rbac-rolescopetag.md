@@ -4,6 +4,7 @@ description: "Role Scope Tag"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # roleScopeTag resource type

@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: Get item activity stats by interval
 localization_priority: Normal
+doc_type: apiPageType
 ---
 # Get item activity stats by interval
 

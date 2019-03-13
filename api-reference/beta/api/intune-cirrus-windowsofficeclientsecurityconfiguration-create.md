@@ -4,6 +4,7 @@ description: "Create a new windowsOfficeClientSecurityConfiguration object."
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windowsOfficeClientSecurityConfiguration

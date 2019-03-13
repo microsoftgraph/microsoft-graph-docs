@@ -4,6 +4,7 @@ description: "List all the replies of a message in a channel of a team."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List channel message replies

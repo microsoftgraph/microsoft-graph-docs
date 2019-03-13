@@ -2,6 +2,7 @@
 title: "List agreements"
 description: "Retrieve a list of agreement objects."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # List agreements

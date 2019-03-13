@@ -4,6 +4,7 @@ description: "The DepIOSEnrollmentProfile resource represents an Apple Device En
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depIOSEnrollmentProfile resource type

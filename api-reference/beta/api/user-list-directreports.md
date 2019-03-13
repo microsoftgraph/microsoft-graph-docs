@@ -4,6 +4,7 @@ description: "Get user's direct reports. Returns the users and contacts for whom
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List directReports

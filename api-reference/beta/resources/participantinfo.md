@@ -4,6 +4,7 @@ description: "Contains additional properties about the participant identity"
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # participantInfo resource type

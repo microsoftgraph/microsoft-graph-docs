@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: Get analytics
 localization_priority: Normal
+doc_type: apiPageType
 ---
 # Get analytics
 

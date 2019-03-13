@@ -4,6 +4,7 @@ description: "Describes the Delete mobileAppTroubleshootingEvent method of the M
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete mobileAppTroubleshootingEvent

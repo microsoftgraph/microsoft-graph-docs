@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Enroll corporate-owned devices by using Intune

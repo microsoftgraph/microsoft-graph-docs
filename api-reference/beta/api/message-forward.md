@@ -4,6 +4,7 @@ description: "Forward a message, add a comment or modify any updateable properti
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: forward

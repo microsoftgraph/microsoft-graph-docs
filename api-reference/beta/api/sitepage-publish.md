@@ -5,6 +5,7 @@ ms.date: 09/10/2018
 title: Publish Page
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # sitePage: publish
 

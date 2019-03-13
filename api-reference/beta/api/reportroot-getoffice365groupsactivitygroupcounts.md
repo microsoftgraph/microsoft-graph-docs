@@ -4,6 +4,7 @@ description: "Get the daily total number of groups and how many of them were act
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365GroupsActivityGroupCounts

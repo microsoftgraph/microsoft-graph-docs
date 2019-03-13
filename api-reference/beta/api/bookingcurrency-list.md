@@ -4,6 +4,7 @@ description: "Get a list of bookingCurrency objects available to a Microsoft Boo
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # List bookingCurrencies

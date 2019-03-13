@@ -4,6 +4,7 @@ description: "Add or remove licenses for the user to enable or disable their use
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # assignLicense

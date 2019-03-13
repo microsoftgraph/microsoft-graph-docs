@@ -4,6 +4,7 @@ description: "IOS Update Configuration, allows you to configure time window with
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosUpdateConfiguration resource type

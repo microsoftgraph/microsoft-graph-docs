@@ -4,6 +4,7 @@ description: "Enum indicating additional details regarding why an application ha
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # resultantAppStateDetail enum type

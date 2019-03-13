@@ -4,6 +4,7 @@ description: "Get usage trends on the number and type of sessions held in your o
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityCounts

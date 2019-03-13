@@ -1,6 +1,7 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
+doc_type: enumPageType
 ---
 
 ### contactRelationship values

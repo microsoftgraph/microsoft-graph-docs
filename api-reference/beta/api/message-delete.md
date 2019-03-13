@@ -4,6 +4,7 @@ description: "Delete a message in the specified user's mailbox, or delete a rela
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete message

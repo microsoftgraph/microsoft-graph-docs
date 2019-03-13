@@ -4,6 +4,7 @@ description: "Represents an ADMX textBox element and an ADMX text element."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationTextBox resource type

@@ -4,6 +4,7 @@ description: "Retrieve a list teachers for a class. Delegated tokens must be mem
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List teachers

@@ -4,6 +4,7 @@ description: "Indicates the type of execution status of the device management sc
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # runState enum type

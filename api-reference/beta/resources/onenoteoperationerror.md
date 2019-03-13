@@ -4,6 +4,7 @@ description: "An error from a failed OneNote operation."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # onenoteOperationError resource type

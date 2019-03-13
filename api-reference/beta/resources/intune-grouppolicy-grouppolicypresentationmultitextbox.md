@@ -4,6 +4,7 @@ description: "Represents an ADMX multiTextBox element and an ADMX multiText elem
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationMultiTextBox resource type

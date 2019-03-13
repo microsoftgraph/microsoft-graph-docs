@@ -4,6 +4,7 @@ description: "Android For Work certificate profile base."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkCertificateProfileBase resource type

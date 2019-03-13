@@ -4,6 +4,7 @@ description: "A class containing the properties used for Group Assignment of an 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosLobAppProvisioningConfigurationAssignment resource type

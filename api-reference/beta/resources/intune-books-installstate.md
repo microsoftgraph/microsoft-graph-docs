@@ -4,6 +4,7 @@ description: "Possible values for install state."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # installState enum type

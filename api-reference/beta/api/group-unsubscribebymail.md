@@ -4,6 +4,7 @@ description: "Calling this method will disable the current user to receive email
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: unsubscribeByMail

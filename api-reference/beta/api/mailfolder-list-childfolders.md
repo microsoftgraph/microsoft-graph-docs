@@ -4,6 +4,7 @@ description: "Get the folder collection under the specified folder. You can use 
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List childFolders

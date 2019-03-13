@@ -4,6 +4,7 @@ description: "Retrieve the properties of the dataPolicyOperation object."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get dataPolicyOperation

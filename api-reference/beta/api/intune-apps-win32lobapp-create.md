@@ -4,6 +4,7 @@ description: "Create a new win32LobApp object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create win32LobApp

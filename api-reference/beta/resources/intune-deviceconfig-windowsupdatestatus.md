@@ -4,6 +4,7 @@ description: "Windows update for business configuration device states"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsUpdateStatus enum type

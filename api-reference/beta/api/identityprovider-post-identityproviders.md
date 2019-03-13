@@ -2,6 +2,7 @@
 title: "Create identityProvider"
 description: "Create a new identityProvider by specifying display name, identityProvider type, client ID, and client secret."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Create identityProvider

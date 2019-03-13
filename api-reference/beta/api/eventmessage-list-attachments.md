@@ -4,6 +4,7 @@ description: "Retrieve a list of attachment objects."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List attachments

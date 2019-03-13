@@ -4,6 +4,7 @@ description: "An Excel worksheet is a grid of cells. It can contain data, tables
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Worksheet resource type

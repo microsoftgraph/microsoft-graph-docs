@@ -4,6 +4,7 @@ description: "Microsoft Teams is a chat-based workspace in Office 365 that provi
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to work with Microsoft Teams

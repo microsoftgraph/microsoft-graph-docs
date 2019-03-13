@@ -4,6 +4,7 @@ description: "Use this API to create a new application."
 author: "VinodRavichandran"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create Application

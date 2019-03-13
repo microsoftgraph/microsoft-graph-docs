@@ -4,6 +4,7 @@ description: "The entity represents a string value for a drop-down list, combo b
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueText resource type

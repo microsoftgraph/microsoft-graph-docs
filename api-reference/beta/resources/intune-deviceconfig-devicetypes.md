@@ -4,6 +4,7 @@ description: "Device type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceTypes enum type

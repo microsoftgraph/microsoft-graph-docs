@@ -4,6 +4,7 @@ description: "The resource that represents an instance of a device or troublesho
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # reportRoot resource type

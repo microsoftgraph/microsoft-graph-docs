@@ -2,6 +2,7 @@
 title: "parentalControlSettings resource type"
 description: "Specifies parental control settings for an application. These settings control the consent experience."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # parentalControlSettings resource type

@@ -2,6 +2,7 @@
 title: "entity resource type"
 description: "None"
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # entity resource type

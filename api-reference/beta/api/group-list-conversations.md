@@ -4,6 +4,7 @@ description: "Retrieve the list of conversations in this group."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List conversations

@@ -4,6 +4,7 @@ description: "Update the assignment object. Only teachers in the class can do th
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationassignment

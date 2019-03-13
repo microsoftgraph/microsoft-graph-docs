@@ -4,6 +4,7 @@ description: "Update the properties of a bookingAppointment object in the specif
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # Update bookingappointment

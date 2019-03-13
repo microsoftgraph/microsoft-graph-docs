@@ -4,6 +4,7 @@ description: "Get all the messageRule objects defined for the user's Inbox."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List rules

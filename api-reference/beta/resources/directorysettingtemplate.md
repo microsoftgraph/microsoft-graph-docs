@@ -4,6 +4,7 @@ description: "Directory setting templates represent system-defined settings avai
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directorySettingTemplate resource type

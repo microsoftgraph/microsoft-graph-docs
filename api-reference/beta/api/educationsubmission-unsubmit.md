@@ -4,6 +4,7 @@ description: "An action that indicates that a student wants to work on the submi
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationSubmission: unsubmit

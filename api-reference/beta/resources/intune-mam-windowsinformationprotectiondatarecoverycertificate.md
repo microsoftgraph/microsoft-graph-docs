@@ -4,6 +4,7 @@ description: "Windows Information Protection DataRecoveryCertificate"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDataRecoveryCertificate resource type

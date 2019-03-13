@@ -4,6 +4,7 @@ description: "You can see how many email apps are used to connect to Exchange On
 localization_priority: Normal
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Email app usage reports

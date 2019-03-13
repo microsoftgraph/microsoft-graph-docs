@@ -4,6 +4,7 @@ description: "Retrieve a list of devices registered in the directory. "
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List devices

@@ -4,6 +4,7 @@ description: "Create a new Microsoft Bookings business in a tenant."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # Create bookingBusiness

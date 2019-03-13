@@ -4,6 +4,7 @@ description: "Android Device Owner possible values for states of the device's ap
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidDeviceOwnerAppAutoUpdatePolicyType enum type

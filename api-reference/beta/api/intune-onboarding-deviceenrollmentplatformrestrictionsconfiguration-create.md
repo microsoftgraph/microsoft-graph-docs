@@ -4,6 +4,7 @@ description: "Create a new deviceEnrollmentPlatformRestrictionsConfiguration obj
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceEnrollmentPlatformRestrictionsConfiguration

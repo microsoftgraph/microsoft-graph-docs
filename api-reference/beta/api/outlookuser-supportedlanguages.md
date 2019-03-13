@@ -4,6 +4,7 @@ description: "Get the list of locales and languages that are supported for the u
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # outlookUser: supportedLanguages

@@ -4,6 +4,7 @@ description: "A subclass of educationResource that represents a file object that
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationFileResource resource type

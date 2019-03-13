@@ -4,6 +4,7 @@ description: "Singleton entity which represents the Exchange OnPremises policy c
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementExchangeOnPremisesPolicy resource type

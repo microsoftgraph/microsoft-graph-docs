@@ -4,6 +4,7 @@ description: "State of lost mode, indicating if lost mode is enabled or disabled
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # lostModeState enum type

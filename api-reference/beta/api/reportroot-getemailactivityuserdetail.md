@@ -4,6 +4,7 @@ description: "Get details about email activity users have performed."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getEmailActivityUserDetail

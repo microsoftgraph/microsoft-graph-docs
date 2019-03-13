@@ -4,6 +4,7 @@ description: "Deletes a iosGeneralDeviceConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete iosGeneralDeviceConfiguration

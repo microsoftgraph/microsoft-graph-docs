@@ -2,6 +2,7 @@
 title: "servicePrincipal: List createdObjects"
 description: "Retrieve a list of directoryobject objects."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # servicePrincipal: List createdObjects

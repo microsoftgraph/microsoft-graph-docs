@@ -4,6 +4,7 @@ description: "The media information used in actions for prompts."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # mediaInfo resource type

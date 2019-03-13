@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a notebook object usi
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # notebook: getNotebookFromWebUrl

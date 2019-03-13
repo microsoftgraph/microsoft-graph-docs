@@ -4,6 +4,7 @@ description: "Represents a device registered in the directory. Devices are creat
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # device resource type

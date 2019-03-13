@@ -4,6 +4,7 @@ description: "Windows Autopilot Deployment Profile"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # azureADWindowsAutopilotDeploymentProfile resource type

@@ -4,6 +4,7 @@ description: "The entry point for OneNote resources."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # onenote resource type

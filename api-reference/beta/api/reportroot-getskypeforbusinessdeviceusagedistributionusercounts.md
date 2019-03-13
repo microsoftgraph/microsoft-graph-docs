@@ -4,6 +4,7 @@ description: "Get the number of users using unique devices in your organization.
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts

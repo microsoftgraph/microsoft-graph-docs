@@ -4,6 +4,7 @@ description: "Create a new groupPolicyPresentationDropdownList object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create groupPolicyPresentationDropdownList

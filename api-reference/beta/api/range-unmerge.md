@@ -4,6 +4,7 @@ description: "Unmerge the range cells into separate cells."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: unmerge

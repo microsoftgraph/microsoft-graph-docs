@@ -4,6 +4,7 @@ description: "Get all the user's calendars (`/calendars` navigation property), g
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List calendars

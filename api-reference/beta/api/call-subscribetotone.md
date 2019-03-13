@@ -4,6 +4,7 @@ description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allo
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: subscribeToTone

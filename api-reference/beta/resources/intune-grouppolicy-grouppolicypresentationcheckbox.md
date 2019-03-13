@@ -4,6 +4,7 @@ description: "Represents an ADMX checkBox element and an ADMX boolean element."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationCheckBox resource type

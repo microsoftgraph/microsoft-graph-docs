@@ -4,6 +4,7 @@ description: "Configure how audio is mixed for different participants in a multi
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # participant: configureMixer

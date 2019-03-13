@@ -4,6 +4,7 @@ description: "Represents a submitted data policy operation. It contains necessar
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # dataPolicyOperation resource type

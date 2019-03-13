@@ -4,6 +4,7 @@ description: "Deletes a groupPolicyPresentationValueBoolean."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete groupPolicyPresentationValueBoolean

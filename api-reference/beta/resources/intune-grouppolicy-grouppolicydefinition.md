@@ -4,6 +4,7 @@ description: "The entity describes all of the information about a single group p
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyDefinition resource type

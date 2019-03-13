@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of orgcontact object."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get orgContact

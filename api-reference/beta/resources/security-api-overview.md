@@ -4,6 +4,7 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Priority
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # Use the Microsoft Graph Security API

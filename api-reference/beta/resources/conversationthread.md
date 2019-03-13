@@ -4,6 +4,7 @@ description: "A conversationThread is a collection of posts."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # conversationThread resource type

@@ -4,6 +4,7 @@ description: "Values to restrict peer selection by."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationRestrictPeerSelectionByOptions enum type

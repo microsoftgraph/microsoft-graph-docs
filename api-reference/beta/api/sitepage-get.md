@@ -5,6 +5,7 @@ ms.date: 03/15/2018
 title: Get a page in a site
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get a page in the site pages list of a site
 

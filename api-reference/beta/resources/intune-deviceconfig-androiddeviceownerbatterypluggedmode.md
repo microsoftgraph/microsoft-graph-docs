@@ -4,6 +4,7 @@ description: "Android Device Owner possible values for states of the device's pl
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidDeviceOwnerBatteryPluggedMode enum type

@@ -4,6 +4,7 @@ description: "The ManagedAppPolicy resource represents a base type for platform 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppPolicy resource type

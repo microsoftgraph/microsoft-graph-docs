@@ -4,6 +4,7 @@ description: "Get a specific thread that belongs to a group. You can specify bot
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Get conversationThread

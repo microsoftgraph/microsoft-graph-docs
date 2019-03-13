@@ -4,6 +4,7 @@ description: "Return all the groups that the user is a member of. The check is t
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: getMemberGroups

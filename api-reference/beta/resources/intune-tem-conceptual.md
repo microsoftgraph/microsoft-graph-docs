@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) related 
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Telecom expense management in Microsoft Intune

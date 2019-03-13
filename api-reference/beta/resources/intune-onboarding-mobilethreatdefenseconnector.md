@@ -4,6 +4,7 @@ description: "Entity which represents a connection to Mobile threat defense part
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileThreatDefenseConnector resource type

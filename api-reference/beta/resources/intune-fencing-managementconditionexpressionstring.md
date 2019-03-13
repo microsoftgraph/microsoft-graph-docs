@@ -4,6 +4,7 @@ description: "A management condition expression string is a string representatio
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementConditionExpressionString resource type

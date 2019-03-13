@@ -4,6 +4,7 @@ description: "Policy for Windows information protection without MDM"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionPolicy resource type

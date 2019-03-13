@@ -4,6 +4,7 @@ description: "Retrieve a list of the group's owners. The owners are a set of non
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List owners

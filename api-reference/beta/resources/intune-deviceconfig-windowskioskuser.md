@@ -4,6 +4,7 @@ description: "The user base class used to identify the account info for the kios
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskUser resource type

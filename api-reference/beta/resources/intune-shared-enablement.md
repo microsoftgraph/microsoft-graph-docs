@@ -4,6 +4,7 @@ description: "Describes the enablement enumeration of the Microsoft Graph API fo
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: enumPageType
 ---
 
 # enablement enum type

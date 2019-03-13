@@ -4,6 +4,7 @@ description: "Device Configuration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsCertificateProfileBase resource type

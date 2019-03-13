@@ -2,6 +2,7 @@
 title: "List programControls"
 description: "In the Azure AD access reviews feature, list all the programControl objects, across all programs in the tenant."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # List programControls

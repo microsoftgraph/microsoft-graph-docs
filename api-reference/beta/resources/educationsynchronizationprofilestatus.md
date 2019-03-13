@@ -4,6 +4,7 @@ description: "Represents the synchronization status of a school data synchroniza
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationProfileStatus resource type

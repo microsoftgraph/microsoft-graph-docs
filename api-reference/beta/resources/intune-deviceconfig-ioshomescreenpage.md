@@ -4,6 +4,7 @@ description: "A page containing apps and folders on the Home Screen"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosHomeScreenPage resource type

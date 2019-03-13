@@ -4,6 +4,7 @@ description: "A class containing the properties used for Group Assignment of a M
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppAssignment resource type

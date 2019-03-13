@@ -4,6 +4,7 @@ description: "Retrieves the teachers and students for a class. Note that if the 
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List members

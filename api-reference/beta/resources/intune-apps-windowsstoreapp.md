@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Store app
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsStoreApp resource type

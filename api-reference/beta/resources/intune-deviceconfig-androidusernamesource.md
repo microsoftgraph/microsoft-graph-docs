@@ -4,6 +4,7 @@ description: "Android username source."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidUsernameSource enum type

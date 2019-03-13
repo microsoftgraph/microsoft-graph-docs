@@ -4,6 +4,7 @@ description: "Remove the group from the list of the current user's favorite grou
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: removeFavorite

@@ -4,6 +4,7 @@ description: "Uploads a new Device Enrollment Program token"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # uploadDepToken action

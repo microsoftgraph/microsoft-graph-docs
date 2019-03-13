@@ -4,6 +4,7 @@ ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # ItemPreviewInfo resource type
 

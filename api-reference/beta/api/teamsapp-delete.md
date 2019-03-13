@@ -4,6 +4,7 @@ description: "Remove the app from your organization's app catalog (the tenant ap
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Remove an app from your organization's app catalog

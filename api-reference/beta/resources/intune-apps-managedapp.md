@@ -4,6 +4,7 @@ description: "Abstract class that contains properties and inherited properties f
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedApp resource type

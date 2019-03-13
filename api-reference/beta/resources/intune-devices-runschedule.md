@@ -4,6 +4,7 @@ description: "Run schedule of a recurring device management script."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # runSchedule resource type

@@ -4,6 +4,7 @@ description: "Represents a notification to a person based on the person's email 
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # mention resource type

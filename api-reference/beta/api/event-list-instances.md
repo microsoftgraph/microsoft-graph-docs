@@ -4,6 +4,7 @@ description: "Get the instances (occurrences) of an event for a specified time r
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List instances

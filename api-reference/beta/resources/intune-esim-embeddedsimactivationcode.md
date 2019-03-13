@@ -4,6 +4,7 @@ description: "The embedded SIM activation code as provided by the mobile operato
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # embeddedSIMActivationCode resource type

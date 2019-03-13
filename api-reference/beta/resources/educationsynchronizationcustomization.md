@@ -4,6 +4,7 @@ description: "Provides settings for customizing the school data profile synchron
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationCustomization resource type

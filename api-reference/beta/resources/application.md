@@ -4,6 +4,7 @@ description: "Represents an application. Any application that outsources authent
 localization_priority: Priority
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # application resource type

@@ -4,6 +4,7 @@ description: "Change writable properties of an Outlook task."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update outlooktask

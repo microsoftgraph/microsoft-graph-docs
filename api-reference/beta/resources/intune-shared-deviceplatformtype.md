@@ -4,6 +4,7 @@ description: "Supported platform types."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # devicePlatformType enum type

@@ -4,6 +4,7 @@ description: "A collection of meeting suggestions if there is any, or the reason
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # findMeetingTimesResponse resource type

@@ -4,6 +4,7 @@ description: "Contains properties for a single Intune app category."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppCategory resource type

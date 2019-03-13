@@ -4,6 +4,7 @@ description: "Retrieve a list of person objects ordered by their relevance to th
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: apiPageType
 ---
 
 # List people

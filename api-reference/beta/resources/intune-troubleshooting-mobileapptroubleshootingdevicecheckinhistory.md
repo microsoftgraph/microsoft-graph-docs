@@ -4,6 +4,7 @@ description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppTroubleshootingDeviceCheckinHistory resource type

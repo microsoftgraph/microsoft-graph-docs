@@ -4,6 +4,7 @@ description: "Create a request for a new school data synchronization profile in 
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create an educationSynchronizationProfile

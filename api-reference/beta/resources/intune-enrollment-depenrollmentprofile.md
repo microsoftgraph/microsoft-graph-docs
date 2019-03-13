@@ -4,6 +4,7 @@ description: "The depEnrollmentProfile resource represents an Apple Device Enrol
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depEnrollmentProfile resource type

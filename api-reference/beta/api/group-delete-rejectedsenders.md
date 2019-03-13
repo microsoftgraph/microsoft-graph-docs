@@ -4,6 +4,7 @@ description: "Remove a user or group from the rejectedSenders list."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Remove rejectedSender

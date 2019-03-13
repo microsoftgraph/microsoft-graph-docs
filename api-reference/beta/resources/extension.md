@@ -2,6 +2,7 @@
 title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # extension resource type

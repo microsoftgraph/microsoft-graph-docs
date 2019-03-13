@@ -4,6 +4,7 @@ description: "Delivery Optimization Max cache size percentage types."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationMaxCacheSizePercentage resource type

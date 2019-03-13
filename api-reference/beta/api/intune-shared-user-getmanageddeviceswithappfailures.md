@@ -4,6 +4,7 @@ description: "Retrieves the list of devices with failed apps"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getManagedDevicesWithAppFailures function

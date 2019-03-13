@@ -4,6 +4,7 @@ description: "Retrieve the list of groups and adminstrative units the contact is
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # orgContact: List memberOf

@@ -4,6 +4,7 @@ description: "Submits a email request on behalf of the signed-in user to unsubsc
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: unsubscribe

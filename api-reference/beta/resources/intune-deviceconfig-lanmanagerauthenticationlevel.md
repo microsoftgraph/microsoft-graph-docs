@@ -4,6 +4,7 @@ description: "Possible values for LanManagerAuthenticationLevel"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # lanManagerAuthenticationLevel enum type

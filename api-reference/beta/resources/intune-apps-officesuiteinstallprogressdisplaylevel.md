@@ -4,6 +4,7 @@ description: "The Enum to specify the level of display for the Installation Prog
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # officeSuiteInstallProgressDisplayLevel enum type

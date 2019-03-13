@@ -4,6 +4,7 @@ description: "Represents phone access information for an onlineMeeting."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # audioConferencing resource type

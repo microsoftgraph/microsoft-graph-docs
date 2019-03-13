@@ -4,6 +4,7 @@ description: "Enables you to understand trends on the number of unique users who
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getEmailActivityUserCounts

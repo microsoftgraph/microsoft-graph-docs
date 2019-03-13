@@ -4,6 +4,7 @@ description: "Contains product code and version properties to detect a Win32 App
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobAppProductCodeDetection resource type

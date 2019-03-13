@@ -4,6 +4,7 @@ description: "Make the scheduling page of this business available to external cu
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # bookingBusiness: publish

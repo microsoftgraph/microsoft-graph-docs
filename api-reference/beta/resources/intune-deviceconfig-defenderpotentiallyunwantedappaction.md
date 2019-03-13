@@ -4,6 +4,7 @@ description: "Defender’s action to take on detected Potentially Unwanted Appli
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderPotentiallyUnwantedAppAction enum type

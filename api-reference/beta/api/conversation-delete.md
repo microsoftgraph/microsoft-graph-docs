@@ -4,6 +4,7 @@ description: "Delete conversation."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Delete conversation

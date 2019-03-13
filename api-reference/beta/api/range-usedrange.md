@@ -4,6 +4,7 @@ description: "Returns the used range of the given range object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: UsedRange

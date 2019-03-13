@@ -4,6 +4,7 @@ description: "Contains the information to define a circular geo-fence management
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # circularGeofenceManagementCondition resource type

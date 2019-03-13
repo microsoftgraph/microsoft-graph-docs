@@ -4,6 +4,7 @@ description: "Encryption readiness state"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # encryptionReadinessState enum type

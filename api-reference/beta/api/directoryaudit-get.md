@@ -4,6 +4,7 @@ description: "Provides (or gets) a specific Azure Active Directory audit log ite
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get directoryAudit

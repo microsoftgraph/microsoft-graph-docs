@@ -4,6 +4,7 @@ description: "Contains PowerShell script properties to detect a Win32 App"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobAppPowerShellScriptDetection resource type

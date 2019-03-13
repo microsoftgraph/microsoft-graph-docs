@@ -5,6 +5,7 @@ ms.date: 09/10/2017
 title: Move a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
 

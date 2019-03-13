@@ -4,6 +4,7 @@ description: "Windows privacy data category specifier for privacy data access."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsPrivacyDataCategory enum type

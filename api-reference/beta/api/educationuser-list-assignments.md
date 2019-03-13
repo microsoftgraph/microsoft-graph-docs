@@ -4,6 +4,7 @@ description: "Returns a list of assignments assigned to a user for all classes. 
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List assignments

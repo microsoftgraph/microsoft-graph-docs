@@ -4,6 +4,7 @@ description: "Synchronizes between Apple Device Enrollment Program and Intune"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # syncWithAppleDeviceEnrollmentProgram action

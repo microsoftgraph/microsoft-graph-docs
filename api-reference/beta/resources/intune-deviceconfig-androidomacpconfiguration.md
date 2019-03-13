@@ -4,6 +4,7 @@ description: "By providing a configuration in this profile you can configure And
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidOmaCpConfiguration resource type

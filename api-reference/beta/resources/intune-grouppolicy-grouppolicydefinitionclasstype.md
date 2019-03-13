@@ -4,6 +4,7 @@ description: "Group Policy Definition Class Type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # groupPolicyDefinitionClassType enum type

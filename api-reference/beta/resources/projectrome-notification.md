@@ -3,6 +3,7 @@ title: "notification resource type"
 description: "Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. "
 localization_priority: Normal
 ms.prod: "project-rome"
+doc_type: resourcePageType
 ---
 
 # notification resource type

@@ -4,6 +4,7 @@ description: "The base class for a type of apps"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskAppBase resource type

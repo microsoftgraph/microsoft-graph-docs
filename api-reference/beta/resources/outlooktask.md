@@ -4,6 +4,7 @@ description: "An Outlook item that can track a work item. "
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookTask resource type

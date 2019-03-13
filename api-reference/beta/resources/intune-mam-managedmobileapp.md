@@ -4,6 +4,7 @@ description: "The identifier for the deployment an app."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedMobileApp resource type

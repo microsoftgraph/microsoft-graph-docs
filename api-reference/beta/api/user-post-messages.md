@@ -4,6 +4,7 @@ description: "Use this API to create a draft of a new message. Drafts can be cre
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create Message

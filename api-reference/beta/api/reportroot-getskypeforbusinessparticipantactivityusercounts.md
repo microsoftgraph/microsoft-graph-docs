@@ -4,6 +4,7 @@ description: "Get usage trends on the number of unique users and type of confere
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessParticipantActivityUserCounts

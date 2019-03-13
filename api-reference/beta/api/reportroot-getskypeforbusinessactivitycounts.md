@@ -4,6 +4,7 @@ description: "Get the trends on how many users organized and participated in con
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessActivityCounts

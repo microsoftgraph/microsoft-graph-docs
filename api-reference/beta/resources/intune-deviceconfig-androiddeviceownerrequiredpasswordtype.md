@@ -4,6 +4,7 @@ description: "Android Device Owner policy required password type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidDeviceOwnerRequiredPasswordType enum type

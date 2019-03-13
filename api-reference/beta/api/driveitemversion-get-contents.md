@@ -5,6 +5,7 @@ ms.date: 09/10/2017
 title: Download a previous version
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Download contents of a DriveItemVersion resource (preview)
 

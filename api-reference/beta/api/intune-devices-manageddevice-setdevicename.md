@@ -4,6 +4,7 @@ description: "Set device name of the device."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # setDeviceName action

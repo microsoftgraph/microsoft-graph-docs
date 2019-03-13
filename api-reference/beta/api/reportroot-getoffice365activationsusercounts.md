@@ -4,6 +4,7 @@ description: "Get the count of users that are enabled and those that have activa
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365ActivationsUserCounts

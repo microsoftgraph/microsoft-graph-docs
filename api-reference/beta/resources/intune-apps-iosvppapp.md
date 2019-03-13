@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for iOS Volume-Purcha
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppApp resource type

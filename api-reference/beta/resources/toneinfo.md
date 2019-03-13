@@ -4,6 +4,7 @@ description: "A single DTMF event."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # toneInfo resource type

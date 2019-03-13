@@ -3,6 +3,7 @@ title: "resultInfo resource type"
 description: "The resultInfo type."
 author: "VinodRavichandran"
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # resultInfo resource type

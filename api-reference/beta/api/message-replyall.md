@@ -4,6 +4,7 @@ description: "Reply to all recipients of a message by specifying a comment and m
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: replyAll

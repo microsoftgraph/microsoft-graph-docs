@@ -4,6 +4,7 @@ description: "Update the properties of **plannerBucketTaskBoardTaskFormat** obje
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Update plannerBucketTaskBoardTaskFormat

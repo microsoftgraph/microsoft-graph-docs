@@ -4,6 +4,7 @@ description: "Possible values for automatic update mode."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # automaticUpdateMode enum type

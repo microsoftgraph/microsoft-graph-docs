@@ -4,6 +4,7 @@ description: "The DepMacOSEnrollmentProfile resource represents an Apple Device 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depMacOSEnrollmentProfile resource type

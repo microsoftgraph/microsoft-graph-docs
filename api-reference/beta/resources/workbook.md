@@ -4,6 +4,7 @@ description: "Workbook is the top level object which contains related workbook o
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Workbook resource type

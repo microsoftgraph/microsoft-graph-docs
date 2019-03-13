@@ -2,6 +2,7 @@
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get attachment

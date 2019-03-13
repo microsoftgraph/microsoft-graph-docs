@@ -4,6 +4,7 @@ description: "Possible values of DefenderScheduleScanDay "
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderScheduleScanDay enum type

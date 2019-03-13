@@ -4,6 +4,7 @@ description: "Get a collection of child folders under the specified contact fold
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List childFolders

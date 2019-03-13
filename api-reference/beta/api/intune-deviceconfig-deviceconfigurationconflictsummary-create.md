@@ -4,6 +4,7 @@ description: "Create a new deviceConfigurationConflictSummary object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceConfigurationConflictSummary

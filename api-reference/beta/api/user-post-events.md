@@ -4,6 +4,7 @@ description: "Create an event in the user's default calendar or specified calend
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create Event

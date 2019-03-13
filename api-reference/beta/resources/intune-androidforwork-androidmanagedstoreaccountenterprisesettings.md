@@ -4,6 +4,7 @@ description: "Enterprise settings for an Android managed store account."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidManagedStoreAccountEnterpriseSettings resource type

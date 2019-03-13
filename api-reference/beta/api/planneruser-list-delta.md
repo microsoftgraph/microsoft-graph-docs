@@ -4,6 +4,7 @@ description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Planner: delta

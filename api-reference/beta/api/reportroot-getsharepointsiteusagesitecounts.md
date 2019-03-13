@@ -4,6 +4,7 @@ description: "Get the total number of files across all sites and the number of a
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointSiteUsageSiteCounts

@@ -4,6 +4,7 @@ description: "The class used to identify an AzureAD group for the kiosk configur
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskAzureADGroup resource type

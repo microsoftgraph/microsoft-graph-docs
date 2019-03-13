@@ -4,6 +4,7 @@ description: "Get newly created, updated, or deleted applications without having
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # application: delta

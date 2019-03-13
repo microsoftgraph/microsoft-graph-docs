@@ -4,6 +4,7 @@ description: "Update properties for an existing school data synchronization prof
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update an educationSynchronizationProfile

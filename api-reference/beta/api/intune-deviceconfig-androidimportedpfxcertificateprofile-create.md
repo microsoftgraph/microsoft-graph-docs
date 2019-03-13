@@ -4,6 +4,7 @@ description: "Create a new androidImportedPFXCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create androidImportedPFXCertificateProfile

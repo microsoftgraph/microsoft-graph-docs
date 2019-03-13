@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # accessAction resource type
 

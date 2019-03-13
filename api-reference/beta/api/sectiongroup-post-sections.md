@@ -4,6 +4,7 @@ description: "Create a new section in the specified section group."
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # Create section

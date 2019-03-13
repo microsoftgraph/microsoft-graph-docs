@@ -2,6 +2,7 @@
 title: "importStatusModel resource type"
 description: "Here is a JSON representation of the resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # importStatusModel resource type

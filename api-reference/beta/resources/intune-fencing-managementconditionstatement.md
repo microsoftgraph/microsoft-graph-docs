@@ -4,6 +4,7 @@ description: "A management condition statement is a group of management conditio
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementConditionStatement resource type

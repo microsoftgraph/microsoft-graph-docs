@@ -4,6 +4,7 @@ description: "A Microsoft Teams async operation is an operation that transcends 
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamsAsyncOperation resource type

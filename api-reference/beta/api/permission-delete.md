@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal
+doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
 

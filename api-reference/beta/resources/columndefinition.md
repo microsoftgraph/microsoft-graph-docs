@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # columnDefinition resource type
 

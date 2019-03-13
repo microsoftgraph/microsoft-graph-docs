@@ -4,6 +4,7 @@ description: "Certificate Issuance State Options."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # certificateIssuanceStates enum type

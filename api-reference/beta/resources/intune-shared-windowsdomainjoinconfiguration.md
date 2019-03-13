@@ -4,6 +4,7 @@ description: "Windows Domain Join device configuration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # windowsDomainJoinConfiguration resource type

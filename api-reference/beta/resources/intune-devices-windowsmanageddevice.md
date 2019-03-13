@@ -4,6 +4,7 @@ description: "Windows devices that are managed or pre-enrolled through Intune"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsManagedDevice resource type

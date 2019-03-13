@@ -4,6 +4,7 @@ description: "Defines the settings on creation of school data profile identities
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 ## educationIdentityCreationConfiguration resource type

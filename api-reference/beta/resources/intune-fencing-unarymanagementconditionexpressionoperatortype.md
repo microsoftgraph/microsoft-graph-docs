@@ -4,6 +4,7 @@ description: "Supported operators for unary management condition expressions"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # unaryManagementConditionExpressionOperatorType enum type

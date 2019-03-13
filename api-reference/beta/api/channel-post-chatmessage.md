@@ -4,6 +4,7 @@ description: "Create a new message in the specified channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create a message in a channel

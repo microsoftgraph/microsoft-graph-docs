@@ -4,6 +4,7 @@ description: "Create a new deviceCategory object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Create deviceCategory

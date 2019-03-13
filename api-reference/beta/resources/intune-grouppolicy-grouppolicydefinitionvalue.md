@@ -4,6 +4,7 @@ description: "The definition value entity stores the value for a single group po
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyDefinitionValue resource type

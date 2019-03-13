@@ -4,6 +4,7 @@ description: "Read properties and relationships of the windowsPhone81ComplianceP
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsPhone81CompliancePolicy

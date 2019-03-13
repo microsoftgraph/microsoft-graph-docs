@@ -4,6 +4,7 @@ description: "The importedAppleDeviceIdentity resource represents the imported d
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # importedAppleDeviceIdentity resource type

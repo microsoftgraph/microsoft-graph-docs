@@ -4,6 +4,7 @@ description: "This entity contains the properties used to assign a branding prof
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # intuneBrandingProfileAssignment resource type

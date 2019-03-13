@@ -4,6 +4,7 @@ description: "UnsupportedDeviceConfiguration is used when an entity cannot be ma
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # unsupportedDeviceConfiguration resource type

@@ -1,10 +1,12 @@
-    ---
+---
 title: "educationIdentitySynchronizationConfiguration resource type"
 description: "Abstract base class for all school data profile identity synchronization configurations. The derived classes define the behavior for synchronizing identities. The following are the derived types."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
+
 
 # educationIdentitySynchronizationConfiguration resource type
 

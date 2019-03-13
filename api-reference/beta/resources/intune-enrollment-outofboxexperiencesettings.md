@@ -4,6 +4,7 @@ description: "Out of box experience setting"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # outOfBoxExperienceSettings resource type

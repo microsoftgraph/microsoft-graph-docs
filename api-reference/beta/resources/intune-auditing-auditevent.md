@@ -4,6 +4,7 @@ description: "A class containing the properties for Audit Event."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # auditEvent resource type

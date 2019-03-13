@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # ItemActionSet resource type
 

@@ -4,6 +4,7 @@ description: "Subject Name Format Options for Apple devices."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # appleSubjectNameFormat enum type

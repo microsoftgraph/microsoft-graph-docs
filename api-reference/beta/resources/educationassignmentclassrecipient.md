@@ -4,6 +4,7 @@ description: "Used inside the assignment.assignTo property. When set to class re
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentClassRecipient resource type

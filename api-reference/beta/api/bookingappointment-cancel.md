@@ -4,6 +4,7 @@ description: "Cancel the specified bookingAppointment in the specified bookingbu
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # bookingAppointment: cancel

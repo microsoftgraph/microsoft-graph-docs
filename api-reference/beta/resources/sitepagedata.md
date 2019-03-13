@@ -5,6 +5,7 @@ ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # sitePageData resource
 

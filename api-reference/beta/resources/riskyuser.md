@@ -4,6 +4,7 @@ description: "Represents Azure AD users who are at risk. Azure AD continually ev
 author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # riskyUsers resource type

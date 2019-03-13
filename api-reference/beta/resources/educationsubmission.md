@@ -4,6 +4,7 @@ description: "Submissions are owned by an assignment. A submission represents th
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSubmission resource type

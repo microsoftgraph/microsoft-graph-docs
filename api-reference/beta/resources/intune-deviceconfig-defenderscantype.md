@@ -4,6 +4,7 @@ description: "Possible values for system scan type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderScanType enum type

@@ -4,6 +4,7 @@ description: "Indicates device details associated with a device used for signing
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # deviceDetail resource type

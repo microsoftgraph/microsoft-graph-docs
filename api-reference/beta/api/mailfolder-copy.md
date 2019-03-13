@@ -4,6 +4,7 @@ description: "Copy a mailfolder and its contents to another mailfolder."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # mailFolder: copy

@@ -4,6 +4,7 @@ description: "Create a new channel in a Microsoft Team, as specified in the requ
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create Channel

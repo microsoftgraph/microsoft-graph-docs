@@ -4,6 +4,7 @@ description: "Administrator configured device compliance state Enum"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # administratorConfiguredDeviceComplianceState enum type

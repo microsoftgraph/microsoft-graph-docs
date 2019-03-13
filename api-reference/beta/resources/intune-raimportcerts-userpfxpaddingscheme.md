@@ -4,6 +4,7 @@ description: "Supported values for the padding scheme used by encryption provide
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # userPfxPaddingScheme enum type

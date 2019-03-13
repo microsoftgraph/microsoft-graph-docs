@@ -4,6 +4,7 @@ description: "Non-EAP methods for authentication when PEAP is the selected EAP t
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # nonEapAuthenticationMethodForPeap enum type

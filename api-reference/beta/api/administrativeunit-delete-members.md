@@ -4,6 +4,7 @@ description: "Use this API to remove a member (user or group) from an administra
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Remove a member

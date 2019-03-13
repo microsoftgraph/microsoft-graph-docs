@@ -4,6 +4,7 @@ description: "PFX Import Options."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # intendedPurpose enum type

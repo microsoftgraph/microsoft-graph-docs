@@ -4,6 +4,7 @@ description: "Retrieve the simple directory **user** that corresponds to this **
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get user

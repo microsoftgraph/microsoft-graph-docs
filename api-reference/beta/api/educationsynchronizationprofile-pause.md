@@ -4,6 +4,7 @@ description: "Pause the sync of a specific school data synchronization profile i
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Pause sync on an educationSynchronizationProfile

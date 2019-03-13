@@ -4,6 +4,7 @@ description: "The identifier for an iOS app."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosMobileAppIdentifier resource type

@@ -4,6 +4,7 @@ description: "Default device compliance policy rules that are enforced account w
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # defaultDeviceCompliancePolicy resource type

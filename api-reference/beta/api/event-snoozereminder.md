@@ -4,6 +4,7 @@ description: "Postpone a reminder for an event in a user calendar until a new ti
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: snoozeReminder

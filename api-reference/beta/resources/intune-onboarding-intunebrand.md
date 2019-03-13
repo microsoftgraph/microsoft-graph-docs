@@ -4,6 +4,7 @@ description: "intuneBrand contains data which is used in customizing the appeara
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # intuneBrand resource type

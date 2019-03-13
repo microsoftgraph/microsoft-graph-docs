@@ -4,6 +4,7 @@ description: "Retrieve a list of **audioRoutingGroup** objects."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List audio routing groups

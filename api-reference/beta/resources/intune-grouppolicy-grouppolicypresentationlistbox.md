@@ -4,6 +4,7 @@ description: "Represents an ADMX listBox element and an ADMX list element."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationListBox resource type

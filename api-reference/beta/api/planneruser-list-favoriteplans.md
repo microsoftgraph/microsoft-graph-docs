@@ -4,6 +4,7 @@ description: "Retrieve a list of plannerPlans that are marked as favorite by a u
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List favoritePlans

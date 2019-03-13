@@ -2,6 +2,7 @@
 title: "attendeeBase resource type"
 description: "The type of attendee."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # attendeeBase resource type

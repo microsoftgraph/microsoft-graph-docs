@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a **riskyUsers** obje
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # List riskyUsers

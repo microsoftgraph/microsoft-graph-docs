@@ -4,6 +4,7 @@ description: "List properties and relationships of the windowsUniversalAppXConta
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsUniversalAppXContainedApps

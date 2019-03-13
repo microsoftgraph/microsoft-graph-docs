@@ -4,6 +4,7 @@ description: "Policy used to configure detailed management settings targeted to 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosManagedAppProtection resource type

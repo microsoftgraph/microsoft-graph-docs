@@ -4,6 +4,7 @@ ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 # PersonOrGroupColumn resource type
 

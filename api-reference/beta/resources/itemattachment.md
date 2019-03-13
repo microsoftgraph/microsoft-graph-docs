@@ -2,6 +2,7 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # itemAttachment resource type

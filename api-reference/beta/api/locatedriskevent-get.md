@@ -2,6 +2,7 @@
 title: "Get locatedRiskEvent"
 description: "Retrieve the properties and relationships of a locatedriskevent object."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get locatedRiskEvent

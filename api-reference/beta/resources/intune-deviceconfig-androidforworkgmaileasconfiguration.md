@@ -4,6 +4,7 @@ description: "By providing configurations in this profile you can instruct the G
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkGmailEasConfiguration resource type

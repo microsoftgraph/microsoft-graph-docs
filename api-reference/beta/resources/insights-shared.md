@@ -4,6 +4,7 @@ description: "An insight representing files shared with or by a specific user. T
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # shared resource type

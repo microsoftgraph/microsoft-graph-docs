@@ -4,6 +4,7 @@ description: "One of the following permissions is required to call this API. To 
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # orgContact: getMemberObjects

@@ -4,6 +4,7 @@ description: "Retrieve a list of directory setting objects."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List directory settings

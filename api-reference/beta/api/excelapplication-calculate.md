@@ -4,6 +4,7 @@ description: "Recalculate all currently opened workbooks in Excel."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Application: calculate

@@ -4,6 +4,7 @@ description: "Entity which represents a connection to an Exchange environment."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementExchangeConnector resource type

@@ -2,6 +2,7 @@
 title: "privilegedAccess resource type"
 description: " for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # privilegedAccess resource type

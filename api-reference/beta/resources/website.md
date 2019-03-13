@@ -2,6 +2,7 @@
 title: "website resource type"
 description: "Represents a web site."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # website resource type

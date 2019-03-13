@@ -4,6 +4,7 @@ description: "Possible states associated with an Apple Volume Purchase Program t
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vppTokenState enum type

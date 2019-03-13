@@ -4,6 +4,7 @@ description: "Windows 10 force update schedule for Apps"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10AppsForceUpdateSchedule resource type

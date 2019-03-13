@@ -4,6 +4,7 @@ description: "Represents an assignment to all licensed users in the tenant."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # allLicensedUsersAssignmentTarget resource type

@@ -4,6 +4,7 @@ description: "Encryption state"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # encryptionState enum type

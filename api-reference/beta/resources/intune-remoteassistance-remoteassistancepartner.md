@@ -4,6 +4,7 @@ description: "remoteAssistPartner resources represent the metadata and status of
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # remoteAssistancePartner resource type

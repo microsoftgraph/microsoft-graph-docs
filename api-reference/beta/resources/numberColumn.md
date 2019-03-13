@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # NumberColumn resource type
 

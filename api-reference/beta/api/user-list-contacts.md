@@ -4,6 +4,7 @@ description: "Get contacts in the user's mailbox."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List contacts

@@ -4,6 +4,7 @@ description: "The entity represents an unsigned long value of a long decimal tex
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueLongDecimal resource type

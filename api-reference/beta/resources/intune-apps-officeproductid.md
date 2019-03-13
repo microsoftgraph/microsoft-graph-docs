@@ -4,6 +4,7 @@ description: "The Enum to specify the Office365 ProductIds that represent the Of
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # officeProductId enum type

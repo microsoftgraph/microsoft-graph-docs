@@ -4,6 +4,7 @@ description: "Possible values for ApplicationGuardEnabledOptions"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # applicationGuardEnabledOptions enum type

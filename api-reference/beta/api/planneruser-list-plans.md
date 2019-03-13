@@ -4,6 +4,7 @@ description: "Retrieve a list of **plannerplan** objects shared with a user obje
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List plans

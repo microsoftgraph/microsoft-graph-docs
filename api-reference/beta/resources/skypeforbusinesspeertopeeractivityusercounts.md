@@ -2,6 +2,7 @@
 title: "skypeForBusinessPeerToPeerActivityUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # skypeForBusinessPeerToPeerActivityUserCounts resource type

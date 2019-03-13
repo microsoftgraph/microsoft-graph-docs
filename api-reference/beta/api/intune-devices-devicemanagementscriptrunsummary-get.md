@@ -4,6 +4,7 @@ description: "Read properties and relationships of the deviceManagementScriptRun
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceManagementScriptRunSummary

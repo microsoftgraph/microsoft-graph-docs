@@ -4,6 +4,7 @@ description: "List properties and relationships of the managedDeviceCertificateS
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedDeviceCertificateStates

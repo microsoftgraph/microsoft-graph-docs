@@ -4,6 +4,7 @@ description: "Add a class to a school."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Add educationClass to educationSchool

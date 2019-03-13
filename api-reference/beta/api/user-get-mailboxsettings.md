@@ -4,6 +4,7 @@ description: "Get the user's mailboxSettings. This includes settings for automat
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get user mailbox settings

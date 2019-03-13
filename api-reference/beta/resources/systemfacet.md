@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # System facet
 

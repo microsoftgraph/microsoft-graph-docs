@@ -4,6 +4,7 @@ description: "Renews a group's expiration. When a group is renewed, the group ex
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # groupLifecyclePolicy: renewGroup

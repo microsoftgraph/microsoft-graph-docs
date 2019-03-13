@@ -4,6 +4,7 @@ description: "Custom Subject Alternative Name definition"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # customSubjectAlternativeName resource type

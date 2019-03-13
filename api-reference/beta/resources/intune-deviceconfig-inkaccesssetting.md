@@ -4,6 +4,7 @@ description: "Values for the InkWorkspaceAccess setting."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # inkAccessSetting enum type

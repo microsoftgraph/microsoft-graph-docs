@@ -4,6 +4,7 @@ description: "Use the invitation manager to create an invite, in order to add an
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # invitation manager

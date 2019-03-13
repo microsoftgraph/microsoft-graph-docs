@@ -4,6 +4,7 @@ description: "Deletes a iosManagedAppProtection."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete iosManagedAppProtection

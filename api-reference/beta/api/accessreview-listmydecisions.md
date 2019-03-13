@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, retrieve the decisions of 
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List my accessReview decisions

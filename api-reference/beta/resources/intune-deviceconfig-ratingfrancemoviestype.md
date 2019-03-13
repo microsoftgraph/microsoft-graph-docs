@@ -4,6 +4,7 @@ description: "Movies rating labels in France"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingFranceMoviesType enum type

@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows AppX Line
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAppX resource type

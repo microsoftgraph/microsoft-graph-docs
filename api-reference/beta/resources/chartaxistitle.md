@@ -4,6 +4,7 @@ description: "Represents the title of a chart axis."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartAxisTitle resource type

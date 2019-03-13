@@ -2,6 +2,7 @@
 title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Delete connectorGroup

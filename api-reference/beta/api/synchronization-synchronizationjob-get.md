@@ -2,6 +2,7 @@
 title: "Get synchronizationJob"
 description: "Retrieve the existing synchronization job and its properties."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get synchronizationJob

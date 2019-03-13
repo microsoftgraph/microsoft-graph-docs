@@ -4,6 +4,7 @@ description: "The entity represents an ADMX (Administrative Template) XML file. 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyDefinitionFile resource type

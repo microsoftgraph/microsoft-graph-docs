@@ -4,6 +4,7 @@ description: "Permanently deletes an item from deleted items."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Permanently delete item

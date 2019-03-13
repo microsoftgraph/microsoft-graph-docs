@@ -4,6 +4,7 @@ description: "Get the list of time zones that are supported for the user, as con
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # outlookUser: supportedTimeZones

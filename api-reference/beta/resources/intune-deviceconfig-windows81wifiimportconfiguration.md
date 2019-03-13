@@ -4,6 +4,7 @@ description: "Windows 8.1+ Wi-Fi import configuration. By configuring this profi
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows81WifiImportConfiguration resource type

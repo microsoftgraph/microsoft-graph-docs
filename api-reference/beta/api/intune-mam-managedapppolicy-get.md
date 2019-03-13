@@ -4,6 +4,7 @@ description: "Read properties and relationships of the managedAppPolicy object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedAppPolicy

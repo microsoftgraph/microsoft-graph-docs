@@ -4,6 +4,7 @@ description: "Reply to the sender of a message, add a comment or modify any upda
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: reply

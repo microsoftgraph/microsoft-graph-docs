@@ -4,6 +4,7 @@ description: "Use this API to create a new administrativeUnit."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create administrativeUnit

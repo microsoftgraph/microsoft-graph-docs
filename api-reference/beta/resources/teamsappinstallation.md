@@ -4,6 +4,7 @@ description: "A teamsApp installed in a team. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamsAppInstallation resource type

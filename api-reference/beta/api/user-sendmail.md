@@ -4,6 +4,7 @@ description: "Send the message specified in the request body. The message is sav
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Send mail

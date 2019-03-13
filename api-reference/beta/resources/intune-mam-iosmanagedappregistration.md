@@ -5,6 +5,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosManagedAppRegistration resource type

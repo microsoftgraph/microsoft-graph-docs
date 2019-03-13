@@ -4,6 +4,7 @@ description: "Create an outlookCategory object in the user's master list of cate
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create Outlook category

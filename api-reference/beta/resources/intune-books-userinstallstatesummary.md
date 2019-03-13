@@ -4,6 +4,7 @@ description: "Contains properties for the installation state summary for a user.
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # userInstallStateSummary resource type

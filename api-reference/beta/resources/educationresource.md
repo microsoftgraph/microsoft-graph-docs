@@ -4,6 +4,7 @@ description: "A superclass for all resource objects in the system. A resource is
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationResource resource type

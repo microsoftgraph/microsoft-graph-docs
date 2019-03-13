@@ -4,6 +4,7 @@ description: "The windowsAutopilotDeviceIdentity resource represents a Windows A
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAutopilotDeviceIdentity resource type

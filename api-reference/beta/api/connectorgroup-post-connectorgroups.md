@@ -2,6 +2,7 @@
 title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Create connectorGroup

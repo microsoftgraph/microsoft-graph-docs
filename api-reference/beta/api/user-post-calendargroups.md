@@ -4,6 +4,7 @@ description: "Use this API to create a new CalendarGroup."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create CalendarGroup

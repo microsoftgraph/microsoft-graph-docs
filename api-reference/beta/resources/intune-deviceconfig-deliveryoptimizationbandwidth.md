@@ -4,6 +4,7 @@ description: "Bandwidth restriction types"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationBandwidth resource type

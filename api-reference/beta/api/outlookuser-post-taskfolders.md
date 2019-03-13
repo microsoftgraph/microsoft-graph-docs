@@ -4,6 +4,7 @@ description: "Create a task folder in the default task group (`My Tasks`) of the
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create outlookTaskFolder

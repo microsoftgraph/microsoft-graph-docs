@@ -4,6 +4,7 @@ description: "Represents an Azure Active Directory (Azure AD) group, which can b
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # group resource type

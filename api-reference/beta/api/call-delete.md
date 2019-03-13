@@ -4,6 +4,7 @@ description: "Delete or hang up an active call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete call

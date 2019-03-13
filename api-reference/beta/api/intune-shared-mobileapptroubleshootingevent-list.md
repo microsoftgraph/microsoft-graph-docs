@@ -4,6 +4,7 @@ description: "Describes the List mobileAppTroubleshootingEvent method of the Mic
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List mobileAppTroubleshootingEvents

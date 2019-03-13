@@ -4,6 +4,7 @@ description: "The DepEnrollmentBaseProfile resource represents an Apple Device E
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depEnrollmentBaseProfile resource type

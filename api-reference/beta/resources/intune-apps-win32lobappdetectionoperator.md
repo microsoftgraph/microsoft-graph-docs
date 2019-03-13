@@ -4,6 +4,7 @@ description: "Contains properties for detection operator."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # win32LobAppDetectionOperator enum type

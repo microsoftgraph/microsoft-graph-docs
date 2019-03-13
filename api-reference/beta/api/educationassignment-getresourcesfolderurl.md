@@ -4,6 +4,7 @@ description: "This function returns the OneDrive URL where all file-based resour
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationAssignment: getResourcesFolderUrl

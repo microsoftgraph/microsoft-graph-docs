@@ -4,6 +4,7 @@ description: "Retrieve a list of user objects. These user objects will include e
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List users

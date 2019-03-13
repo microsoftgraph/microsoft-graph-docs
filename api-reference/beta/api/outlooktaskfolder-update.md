@@ -4,6 +4,7 @@ description: "Update the writable properties of an Outlook task folder."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update outlooktaskfolder

@@ -4,6 +4,7 @@ description: "Uninstalls an app from the specified team."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete app from team

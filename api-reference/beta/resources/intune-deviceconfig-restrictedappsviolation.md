@@ -4,6 +4,7 @@ description: "Violation of restricted apps configuration profile per device per 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # restrictedAppsViolation resource type

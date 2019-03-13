@@ -4,6 +4,7 @@ description: "Create a new class. This will also create a universal group. When 
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create educationClass

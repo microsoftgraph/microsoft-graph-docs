@@ -4,6 +4,7 @@ description: "Indicates the publishing state of an app."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileAppPublishingState enum type

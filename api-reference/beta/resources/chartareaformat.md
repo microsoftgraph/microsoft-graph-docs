@@ -4,6 +4,7 @@ description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartAreaFormat resource type

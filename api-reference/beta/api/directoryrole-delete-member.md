@@ -4,6 +4,7 @@ description: "Remove a member from a directoryRole."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Remove directory role member

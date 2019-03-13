@@ -4,6 +4,7 @@ description: "A pool represents a group of embedded SIM activation codes."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # embeddedSIMActivationCodePool resource type

@@ -4,6 +4,7 @@ description: "Bandwidth limits in kilobytes per second."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationBandwidthAbsolute resource type

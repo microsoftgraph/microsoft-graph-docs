@@ -2,6 +2,7 @@
 title: "Update profilephoto"
 description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there"
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Update profilephoto

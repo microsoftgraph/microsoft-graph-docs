@@ -2,6 +2,7 @@
 title: "timeZoneInformation resource type"
 description: "Represents a time zone. The supported format is Windows, and Internet Assigned Numbers Authority (IANA) time zone (also known as Olson time zone)"
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # timeZoneInformation resource type

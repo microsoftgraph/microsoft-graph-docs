@@ -4,6 +4,7 @@ description: "The status of the revoke licenses action performed on the Apple Vo
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppTokenRevokeLicensesActionResult resource type

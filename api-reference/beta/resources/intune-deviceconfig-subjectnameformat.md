@@ -4,6 +4,7 @@ description: "Subject Name Format Options."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # subjectNameFormat enum type

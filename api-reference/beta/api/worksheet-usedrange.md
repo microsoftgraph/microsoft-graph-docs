@@ -4,6 +4,7 @@ description: "The used range is the smallest range that encompasses any cells th
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Worksheet: UsedRange

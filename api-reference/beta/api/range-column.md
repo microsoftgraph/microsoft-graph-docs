@@ -4,6 +4,7 @@ description: "Gets a column contained in the range."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: Column

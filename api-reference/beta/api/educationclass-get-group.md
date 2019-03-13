@@ -4,6 +4,7 @@ description: "Retrieve the Office 365 **group** that corresponds to this **educa
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get group

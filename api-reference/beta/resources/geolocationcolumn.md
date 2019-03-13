@@ -4,6 +4,7 @@ ms.author: kevinlam
 ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # geolocationColumn resource type
 

@@ -4,6 +4,7 @@ description: " create, update, and delete are not supported. Query filter expres
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # subscribedSku resource type

@@ -4,6 +4,7 @@ description: "Revoke Apple Vpp licenses action result"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # revokeAppleVppLicensesActionResult resource type

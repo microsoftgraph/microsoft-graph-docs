@@ -3,6 +3,7 @@ title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
 ---
 
 # Update subscription

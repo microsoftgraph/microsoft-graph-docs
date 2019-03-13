@@ -4,6 +4,7 @@ description: "Get the usage trends on how many users in your organization have c
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessDeviceUsageUserCounts

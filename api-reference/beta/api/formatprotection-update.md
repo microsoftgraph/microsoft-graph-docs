@@ -2,6 +2,7 @@
 title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Update formatprotection

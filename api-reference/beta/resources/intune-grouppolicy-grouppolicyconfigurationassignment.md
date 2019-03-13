@@ -4,6 +4,7 @@ description: "The group policy configuration assignment entity assigns one or mo
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyConfigurationAssignment resource type

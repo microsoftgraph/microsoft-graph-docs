@@ -4,6 +4,7 @@ description: "Contains properties for device run state of the device management 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptDeviceState resource type

@@ -4,6 +4,7 @@ description: "A time period."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # searchWindowTimeSlot resource type

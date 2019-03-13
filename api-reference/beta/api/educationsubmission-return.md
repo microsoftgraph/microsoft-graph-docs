@@ -4,6 +4,7 @@ description: "This action makes the grade and feedback associated with this subm
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationSubmission: return

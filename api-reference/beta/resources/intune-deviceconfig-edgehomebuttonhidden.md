@@ -4,6 +4,7 @@ description: "Hide the home button."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # edgeHomeButtonHidden resource type

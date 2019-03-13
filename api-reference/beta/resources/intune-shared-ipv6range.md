@@ -4,6 +4,7 @@ description: "Describes the iPv6Range resource of the Microsoft Graph API for In
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # iPv6Range resource type

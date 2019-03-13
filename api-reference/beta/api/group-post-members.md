@@ -4,6 +4,7 @@ description: "Use this API to add a member to an Office 365 Group, a security gr
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Add member

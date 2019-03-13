@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Universal
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsUniversalAppX resource type

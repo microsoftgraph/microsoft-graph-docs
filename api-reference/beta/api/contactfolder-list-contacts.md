@@ -4,6 +4,7 @@ description: "Get all the contacts in the signed-in user's mailbox (.../me/conta
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List contacts

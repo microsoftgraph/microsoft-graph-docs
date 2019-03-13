@@ -4,6 +4,7 @@ description: "Possible values for App update on Windows10 recurrence."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windows10AppsUpdateRecurrence enum type

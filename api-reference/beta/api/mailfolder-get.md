@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a message folder obje
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get mailFolder

@@ -2,6 +2,7 @@
 title: "Get synchronizationSchema"
 description: "Retrieve the schema for a given synchronization job or template."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get synchronizationSchema

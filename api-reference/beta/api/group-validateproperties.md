@@ -4,6 +4,7 @@ description: "Validate if an Office 365 group's display name or mail nickname co
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: validateProperties

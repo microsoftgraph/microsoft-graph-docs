@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of application object."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Get Application

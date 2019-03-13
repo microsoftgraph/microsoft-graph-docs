@@ -4,6 +4,7 @@ description: "Possible values for the DeliveryOptimizationGroupIdOptionsType set
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deliveryOptimizationGroupIdOptionsType enum type

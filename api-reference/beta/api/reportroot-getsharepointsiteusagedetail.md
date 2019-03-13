@@ -4,6 +4,7 @@ description: "Get details about SharePoint site usage."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointSiteUsageDetail

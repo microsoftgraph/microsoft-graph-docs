@@ -4,6 +4,7 @@ description: "Retrieve the properties of a specific directory setting object."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get a directory setting

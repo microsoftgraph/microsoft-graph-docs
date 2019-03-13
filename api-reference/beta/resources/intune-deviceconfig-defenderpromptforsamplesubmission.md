@@ -4,6 +4,7 @@ description: "Possible values for prompting user for samples submission."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderPromptForSampleSubmission enum type

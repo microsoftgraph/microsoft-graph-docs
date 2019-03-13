@@ -4,6 +4,7 @@ description: "Windows Information Protection IP Range Collection"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionIPRangeCollection resource type

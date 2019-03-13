@@ -4,6 +4,7 @@ description: "Possible values for defenderSecurityCenterITContactDisplay"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderSecurityCenterITContactDisplayType enum type

@@ -4,6 +4,7 @@ description: "Retrieves a list of domainDnsRecord objects needed to enable servi
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List serviceConfigurationRecords

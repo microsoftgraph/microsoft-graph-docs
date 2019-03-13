@@ -4,6 +4,7 @@ description: "Complex type containing properties of Shared items. "
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # sharingDetail resource type

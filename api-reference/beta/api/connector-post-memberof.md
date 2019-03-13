@@ -2,6 +2,7 @@
 title: "Add Connector to connectorGroup"
 description: "Use this API to add a connector to a new connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Add Connector to connectorGroup

@@ -4,6 +4,7 @@ description: "Lists Microsoft Graph API for Intune endpoints (REST) that define 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Device configuration in Microsoft Intune

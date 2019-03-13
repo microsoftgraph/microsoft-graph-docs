@@ -4,6 +4,7 @@ description: "An abstract base class containing properties for all mobile line o
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileLobApp resource type

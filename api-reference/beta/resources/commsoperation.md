@@ -4,6 +4,7 @@ description: "The status of certain long-running operations."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # commsOperation resource type

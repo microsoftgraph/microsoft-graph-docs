@@ -4,6 +4,7 @@ description: "Delivery Optimization max cache size absolute type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationMaxCacheSizeAbsolute resource type

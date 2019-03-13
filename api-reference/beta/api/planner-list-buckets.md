@@ -4,6 +4,7 @@ description: "Retrieve a list of **plannerbucket** objects."
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List buckets

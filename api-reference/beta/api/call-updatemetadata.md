@@ -4,6 +4,7 @@ description: "Update the appliation's metadata associated with a call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: updateMetadata

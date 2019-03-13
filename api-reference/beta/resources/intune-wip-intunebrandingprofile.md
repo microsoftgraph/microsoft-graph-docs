@@ -4,6 +4,7 @@ description: "This entity contains data which is used in customizing the tenant 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # intuneBrandingProfile resource type

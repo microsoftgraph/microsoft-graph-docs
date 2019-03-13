@@ -4,6 +4,7 @@ description: "Get all the mail folders in the signed-in user's mailbox."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List mailFolders

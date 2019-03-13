@@ -4,6 +4,7 @@ description: "Delete the specified outlookCategory object."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete Outlook category

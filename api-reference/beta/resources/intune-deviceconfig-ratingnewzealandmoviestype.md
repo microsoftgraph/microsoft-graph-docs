@@ -4,6 +4,7 @@ description: "Movies rating labels in New Zealand"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingNewZealandMoviesType enum type

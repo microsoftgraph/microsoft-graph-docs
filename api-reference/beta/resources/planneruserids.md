@@ -4,6 +4,7 @@ description: "The **plannerUserIds** resource represents the list of users ids t
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerUserIds resource type

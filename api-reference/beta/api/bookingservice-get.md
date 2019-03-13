@@ -4,6 +4,7 @@ description: "Get the properties and relationships of a bookingService object in
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # Get bookingService

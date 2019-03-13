@@ -4,6 +4,7 @@ description: "Reject an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: reject

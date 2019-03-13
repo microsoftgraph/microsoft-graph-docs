@@ -4,6 +4,7 @@ description: "Deletes a macOSCompliancePolicy."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete macOSCompliancePolicy

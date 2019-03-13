@@ -4,6 +4,7 @@ description: "Get newly created, updated, or deleted groups, including group mem
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: delta

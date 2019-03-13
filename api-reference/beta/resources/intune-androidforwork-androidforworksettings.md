@@ -4,6 +4,7 @@ description: "Settings for Android For Work."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkSettings resource type

@@ -4,6 +4,7 @@ description: "Get groups, directory roles and administrative units that the user
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List user memberOf

@@ -4,6 +4,7 @@ description: "Models and Manufactures meatadata for managed devices in the accou
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceModelsAndManufacturers resource type

@@ -4,6 +4,7 @@ description: "Return all of the groups and administrative units that the group i
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: getMemberObjects

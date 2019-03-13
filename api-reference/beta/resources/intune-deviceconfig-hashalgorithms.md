@@ -4,6 +4,7 @@ description: "Hash Algorithm Options."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # hashAlgorithms enum type

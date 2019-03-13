@@ -4,6 +4,7 @@ description: "Get the properties of a bookingCurrency object that is available t
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # Get bookingCurrency

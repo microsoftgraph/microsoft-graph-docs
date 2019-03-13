@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Get permissions
 localization_priority: Normal
+doc_type: apiPageType
 ---
 # Get sharing permission for a file or folder
 

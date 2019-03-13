@@ -4,6 +4,7 @@ description: "Get a list of the group's direct members. A group can have users, 
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List group members

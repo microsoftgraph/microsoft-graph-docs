@@ -4,6 +4,7 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # securityVendorInformation resource type

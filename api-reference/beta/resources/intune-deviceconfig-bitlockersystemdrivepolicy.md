@@ -4,6 +4,7 @@ description: "BitLocker Encryption Base Policies."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # bitLockerSystemDrivePolicy resource type

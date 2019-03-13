@@ -4,6 +4,7 @@ description: "Reply to an existing message in a channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Reply to a message in a channel

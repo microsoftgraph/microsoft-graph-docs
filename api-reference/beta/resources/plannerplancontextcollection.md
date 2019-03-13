@@ -4,6 +4,7 @@ description: "The **plannerPlanContextCollection** resource represents the colle
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerPlanContextCollection resource type

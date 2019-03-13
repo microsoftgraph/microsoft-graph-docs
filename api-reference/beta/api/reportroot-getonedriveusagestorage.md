@@ -4,6 +4,7 @@ description: "Get the trend on the amount of storage you are using in OneDrive f
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOneDriveUsageStorage

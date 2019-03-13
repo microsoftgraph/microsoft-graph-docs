@@ -4,6 +4,7 @@ description: "Data sharing consent information."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # dataSharingConsent resource type

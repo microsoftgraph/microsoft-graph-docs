@@ -4,6 +4,7 @@ description: "Exports the mobile configuration"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # exportMobileConfig function

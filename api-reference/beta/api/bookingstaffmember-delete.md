@@ -4,6 +4,7 @@ description: "Delete a staff member in the specified bookingbusiness."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # Delete bookingStaffMember

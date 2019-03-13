@@ -4,6 +4,7 @@ description: "Get a set of messages that have been added, deleted, or updated in
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: delta

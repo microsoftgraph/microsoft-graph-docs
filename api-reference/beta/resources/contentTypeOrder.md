@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # ContentTypeOrder resource type
 

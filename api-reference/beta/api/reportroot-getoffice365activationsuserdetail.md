@@ -4,6 +4,7 @@ description: "Get details about users who have activated Office 365."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365ActivationsUserDetail

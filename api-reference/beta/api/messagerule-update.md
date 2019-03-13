@@ -4,6 +4,7 @@ description: "Change writable properties on a messageRule object and save the ch
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update rule

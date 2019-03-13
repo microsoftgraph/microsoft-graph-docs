@@ -4,6 +4,7 @@ description: "Use this API to create a new directReport."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create directReport

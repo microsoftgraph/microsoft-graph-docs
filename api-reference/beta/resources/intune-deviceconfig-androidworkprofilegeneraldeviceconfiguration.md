@@ -4,6 +4,7 @@ description: "Android Work Profile general device configuration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidWorkProfileGeneralDeviceConfiguration resource type

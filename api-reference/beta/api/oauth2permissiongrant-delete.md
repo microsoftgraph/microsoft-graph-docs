@@ -2,6 +2,7 @@
 title: "Delete oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Delete oAuth2PermissionGrant

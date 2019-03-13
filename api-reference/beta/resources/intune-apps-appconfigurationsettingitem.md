@@ -4,6 +4,7 @@ description: "Contains properties for App configuration setting item."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # appConfigurationSettingItem resource type

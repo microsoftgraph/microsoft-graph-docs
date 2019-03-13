@@ -2,6 +2,7 @@
 title: "targetResourcePolicy resource type"
 description: "Indicates the policy that was impacted by the audit activity. Derived from the targetResource resource.   "
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # targetResourcePolicy resource type

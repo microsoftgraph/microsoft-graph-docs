@@ -4,6 +4,7 @@ description: "Deletes a androidStoreApp."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete androidStoreApp

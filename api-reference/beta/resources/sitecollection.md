@@ -5,6 +5,7 @@ ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # SiteCollection resource
 

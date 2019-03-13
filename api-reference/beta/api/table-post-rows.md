@@ -4,6 +4,7 @@ description: "Adds rows to the end of the table. Note that the API can accept mu
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Create TableRow

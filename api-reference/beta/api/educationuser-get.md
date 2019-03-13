@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a user."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationUser

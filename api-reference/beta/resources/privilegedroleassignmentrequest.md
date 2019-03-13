@@ -2,6 +2,7 @@
 title: "privilegedRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privilegd Identity Management."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # privilegedRoleAssignmentRequest resource type

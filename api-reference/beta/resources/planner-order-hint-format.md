@@ -4,6 +4,7 @@ description: "`)"
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: conceptualPageType
 ---
 
 # Using order hints in Planner

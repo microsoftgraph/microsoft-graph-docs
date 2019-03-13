@@ -4,6 +4,7 @@ description: "Update the properties of a androidWorkProfilePkcsCertificateProfil
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update androidWorkProfilePkcsCertificateProfile

@@ -4,6 +4,7 @@ description: "Represents an ADMX decimalTextBox element and an ADMX decimal elem
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationDecimalTextBox resource type

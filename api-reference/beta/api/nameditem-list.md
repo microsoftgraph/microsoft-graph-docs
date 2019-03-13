@@ -2,6 +2,7 @@
 title: "List NamedItemCollection"
 description: "Retrieve a list of nameditem objects."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # List NamedItemCollection

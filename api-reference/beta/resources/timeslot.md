@@ -2,6 +2,7 @@
 title: "timeSlot resource type"
 description: "A time period."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # timeSlot resource type

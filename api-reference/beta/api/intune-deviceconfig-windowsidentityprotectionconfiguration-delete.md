@@ -4,6 +4,7 @@ description: "Deletes a windowsIdentityProtectionConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete windowsIdentityProtectionConfiguration

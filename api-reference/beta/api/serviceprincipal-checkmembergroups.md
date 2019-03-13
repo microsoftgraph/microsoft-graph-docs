@@ -2,6 +2,7 @@
 title: "servicePrincipal: checkMemberGroups"
 description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # servicePrincipal: checkMemberGroups

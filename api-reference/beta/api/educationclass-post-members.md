@@ -4,6 +4,7 @@ description: "Add a member to a class."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Add a student

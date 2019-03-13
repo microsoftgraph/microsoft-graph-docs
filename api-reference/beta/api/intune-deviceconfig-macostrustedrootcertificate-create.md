@@ -4,6 +4,7 @@ description: "Create a new macOSTrustedRootCertificate object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create macOSTrustedRootCertificate

@@ -2,6 +2,7 @@
 title: "skypeForBusinessActivityUserDetail resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # skypeForBusinessActivityUserDetail resource type

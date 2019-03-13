@@ -4,6 +4,7 @@ description: "Add a contact to the root Contacts folder or to the contacts endpo
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create Contact

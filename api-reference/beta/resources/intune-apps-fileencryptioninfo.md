@@ -4,6 +4,7 @@ description: "Contains properties for file encryption information for the conten
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # fileEncryptionInfo resource type

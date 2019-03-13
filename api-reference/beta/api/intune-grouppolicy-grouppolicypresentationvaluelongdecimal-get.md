@@ -4,6 +4,7 @@ description: "Read properties and relationships of the groupPolicyPresentationVa
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get groupPolicyPresentationValueLongDecimal

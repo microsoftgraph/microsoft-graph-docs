@@ -4,6 +4,7 @@ description: "Use this API to create a new mailSearchFolder in the specified use
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create mailSearchFolder

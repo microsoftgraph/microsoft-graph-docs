@@ -4,6 +4,7 @@ description: "Get the count of Office 365 activations on desktops and devices."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365ActivationCounts

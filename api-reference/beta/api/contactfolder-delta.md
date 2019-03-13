@@ -4,6 +4,7 @@ description: "Get a set of contact folders that have been added, deleted, or rem
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # contactFolder: delta

@@ -4,6 +4,7 @@ description: "Copies a notebook to the Notebooks folder in the destination Docum
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # notebook: copyNotebook

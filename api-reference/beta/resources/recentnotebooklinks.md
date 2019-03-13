@@ -2,6 +2,7 @@
 title: "recentNotebookLinks resource type"
 description: "Links to open a OneNote notebook. This resource type exists as a property on a recentNotebook resource."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # recentNotebookLinks resource type

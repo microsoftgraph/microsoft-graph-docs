@@ -4,6 +4,7 @@ description: "An insight representing documents used by a specific user. The ins
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # used resource type

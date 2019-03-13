@@ -4,6 +4,7 @@ description: "Windows 10 Edition Upgrade configuration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # editionUpgradeConfiguration resource type

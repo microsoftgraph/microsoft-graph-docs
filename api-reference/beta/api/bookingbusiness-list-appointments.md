@@ -4,6 +4,7 @@ description: "Get a list of bookingAppointment objects for the specified booking
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # List appointments

@@ -4,6 +4,7 @@ description: "Create a new contactFolder under the user's default contacts folde
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create ContactFolder

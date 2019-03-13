@@ -4,6 +4,7 @@ description: "Forward a post to a recipient. You can specify both the parent con
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # post: forward

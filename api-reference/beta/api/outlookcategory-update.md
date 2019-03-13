@@ -4,6 +4,7 @@ description: "Update the writable property, **color**, of the specified outlookC
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update Outlook category

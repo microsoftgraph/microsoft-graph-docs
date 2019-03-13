@@ -4,6 +4,7 @@ description: "The app base class used to identify the application info for the k
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskAppConfiguration resource type

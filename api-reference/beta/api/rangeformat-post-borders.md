@@ -4,6 +4,7 @@ description: "Use this API to create a new RangeBorder."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Create RangeBorder

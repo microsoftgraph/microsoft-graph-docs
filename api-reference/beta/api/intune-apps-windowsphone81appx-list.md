@@ -4,6 +4,7 @@ description: "List properties and relationships of the windowsPhone81AppX object
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsPhone81AppXs

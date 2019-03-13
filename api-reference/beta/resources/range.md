@@ -4,6 +4,7 @@ description: "Range represents a set of one or more contiguous cells such as a c
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Range resource type

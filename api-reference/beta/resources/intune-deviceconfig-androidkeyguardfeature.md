@@ -4,6 +4,7 @@ description: "Android keyguard feature."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidKeyguardFeature enum type

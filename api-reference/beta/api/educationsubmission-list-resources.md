@@ -4,6 +4,7 @@ description: "List the resources associated with this submission. The **submissi
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List resources

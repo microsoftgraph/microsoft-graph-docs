@@ -4,6 +4,7 @@ description: "Deletes a user."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Delete user

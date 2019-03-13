@@ -4,6 +4,7 @@ description: "Admin consent information."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # adminConsent resource type

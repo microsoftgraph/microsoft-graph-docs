@@ -4,6 +4,7 @@ description: "Determine the access level to specific Windows privacy data catego
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsPrivacyDataAccessLevel enum type

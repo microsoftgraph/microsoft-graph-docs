@@ -4,6 +4,7 @@ description: " the value is the plannerPlanContextDetails object."
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerPlanContextDetailsCollection resource type

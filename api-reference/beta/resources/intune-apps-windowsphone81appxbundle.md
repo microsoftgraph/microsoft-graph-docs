@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Phone 8.1
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPhone81AppXBundle resource type

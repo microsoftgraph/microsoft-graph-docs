@@ -2,6 +2,7 @@
 title: "synchronizationQuarantine resource type"
 description: "Provides information about the quarantine state of a synchronizationJob."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # synchronizationQuarantine resource type

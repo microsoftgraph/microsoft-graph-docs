@@ -4,6 +4,7 @@ description: "Singleton entity which represents the Exchange OnPremises Conditio
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # onPremisesConditionalAccessSettings resource type

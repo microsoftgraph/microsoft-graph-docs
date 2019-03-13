@@ -4,6 +4,7 @@ description: "Group id options type"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationGroupIdSourceOptions resource type

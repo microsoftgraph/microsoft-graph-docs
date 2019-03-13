@@ -2,6 +2,7 @@
 title: "Icon resource type"
 description: "Represents a cell icon."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # Icon resource type

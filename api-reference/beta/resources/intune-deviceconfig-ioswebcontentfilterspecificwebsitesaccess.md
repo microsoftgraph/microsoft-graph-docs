@@ -4,6 +4,7 @@ description: "Represents an iOS Web Content Filter setting type, which installs 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosWebContentFilterSpecificWebsitesAccess resource type

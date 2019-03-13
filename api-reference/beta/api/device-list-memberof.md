@@ -4,6 +4,7 @@ description: "Get groups that this device is a direct member of. This operation 
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List device groups

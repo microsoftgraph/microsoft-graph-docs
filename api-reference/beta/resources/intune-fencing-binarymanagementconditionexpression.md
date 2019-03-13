@@ -4,6 +4,7 @@ description: "A management condition expression that is evaluated using a binary
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # binaryManagementConditionExpression resource type

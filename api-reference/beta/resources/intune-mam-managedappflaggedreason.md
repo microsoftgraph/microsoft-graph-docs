@@ -4,6 +4,7 @@ description: "The reason for which a user has been flagged"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedAppFlaggedReason enum type

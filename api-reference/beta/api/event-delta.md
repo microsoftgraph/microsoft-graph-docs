@@ -4,6 +4,7 @@ description: "Get a set of events that have been added, deleted, or updated in a
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: delta

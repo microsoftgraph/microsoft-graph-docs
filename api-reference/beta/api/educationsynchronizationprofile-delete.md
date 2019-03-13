@@ -4,6 +4,7 @@ description: "Delete a school data synchronization profile in the tenant based o
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Delete a educationSynchronizationProfile

@@ -4,6 +4,7 @@ description: "Type of Group Policy File or Definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # groupPolicyType enum type

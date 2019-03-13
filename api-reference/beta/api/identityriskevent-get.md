@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of identityriskevent obj
 author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get identityRiskEvent

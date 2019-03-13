@@ -4,6 +4,7 @@ description: "Get the number of users by device type."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerDeviceUsageDistributionUserCounts

@@ -4,6 +4,7 @@ description: "Gets the range object associated with the data body of the column.
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # TableColumn: DataBodyRange

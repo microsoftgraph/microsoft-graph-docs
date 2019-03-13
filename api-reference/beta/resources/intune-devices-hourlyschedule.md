@@ -4,6 +4,7 @@ description: "Hourly run schedule of a recurring device management script."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # hourlySchedule resource type

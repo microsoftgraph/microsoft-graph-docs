@@ -4,6 +4,7 @@ description: "Get the occurrences, exceptions, and single instances of events in
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List calendarView

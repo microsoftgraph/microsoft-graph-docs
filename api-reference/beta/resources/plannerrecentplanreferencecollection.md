@@ -4,6 +4,7 @@ description: "The **plannerRecentPlanReferenceCollection** resource represents t
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerRecentPlanReferenceCollection resource type

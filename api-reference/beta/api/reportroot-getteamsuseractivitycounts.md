@@ -4,6 +4,7 @@ description: "Get the number of Microsoft Teams activities by activity type. The
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getTeamsUserActivityCounts

@@ -4,6 +4,7 @@ description: "Resume the sync of a specific school data synchronization profile 
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Resume sync on an educationSynchronizationProfile

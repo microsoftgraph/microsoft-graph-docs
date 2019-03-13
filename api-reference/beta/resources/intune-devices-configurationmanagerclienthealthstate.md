@@ -4,6 +4,7 @@ description: "Configuration manager client health state"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # configurationManagerClientHealthState resource type

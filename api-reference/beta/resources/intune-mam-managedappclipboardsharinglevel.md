@@ -4,6 +4,7 @@ description: "Represents the level to which the device's clipboard may be shared
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedAppClipboardSharingLevel enum type

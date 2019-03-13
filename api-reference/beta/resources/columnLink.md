@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 # ColumnLink resource type
 

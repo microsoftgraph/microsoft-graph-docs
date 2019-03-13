@@ -4,6 +4,7 @@ description: "This action allows the organizer of a meeting to send a cancellati
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: cancel

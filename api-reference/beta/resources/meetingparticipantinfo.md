@@ -4,6 +4,7 @@ description: "Information about a participant in a meeting."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # meetingParticipantInfo resource type

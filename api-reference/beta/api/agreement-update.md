@@ -2,6 +2,7 @@
 title: "Update agreement"
 description: "Update the properties of an agreement object."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Update agreement

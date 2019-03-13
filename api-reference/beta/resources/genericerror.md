@@ -2,6 +2,7 @@
 title: "genericError resource type"
 description: "A general-purpose error."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # genericError resource type

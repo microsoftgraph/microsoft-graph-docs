@@ -4,6 +4,7 @@ description: "Key Usage Options."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # keyUsages enum type

@@ -5,7 +5,9 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
+
 # driveItem resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

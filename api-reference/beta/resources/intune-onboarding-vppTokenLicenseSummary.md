@@ -4,6 +4,7 @@ description: "License summary of a given app in a token."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppTokenLicenseSummary resource type

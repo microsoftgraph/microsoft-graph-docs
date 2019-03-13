@@ -4,6 +4,7 @@ description: "This entity provides descriptions of the declared methods, propert
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsWifiEnterpriseEAPConfiguration resource type

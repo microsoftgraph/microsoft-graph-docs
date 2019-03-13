@@ -4,6 +4,7 @@ description: "Retrieve a single message (without its replies) in a channel of a 
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get channel message

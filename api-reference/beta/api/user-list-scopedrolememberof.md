@@ -4,6 +4,7 @@ description: "Retrieve a list of scopedRoleMembership for the user."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List scopedAdministratorOf

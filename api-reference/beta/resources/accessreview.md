@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, the `accessReview` represe
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # accessReview resource type

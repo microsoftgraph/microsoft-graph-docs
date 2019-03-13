@@ -4,6 +4,7 @@ description: "Retrieve a list of identityriskevent objects."
 author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # List identityRiskEvents

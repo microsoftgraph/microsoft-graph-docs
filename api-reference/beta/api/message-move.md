@@ -4,6 +4,7 @@ description: "Move a message to a folder. This creates a new copy of the message
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: move

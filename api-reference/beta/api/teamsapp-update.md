@@ -4,6 +4,7 @@ description: "Update an app previously published to the Microsoft Teams app cata
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Update apps published to your organization's app catalog

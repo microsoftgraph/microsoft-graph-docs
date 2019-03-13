@@ -4,6 +4,7 @@ description: "Update an editable alert property within any integrated solution t
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Update alert

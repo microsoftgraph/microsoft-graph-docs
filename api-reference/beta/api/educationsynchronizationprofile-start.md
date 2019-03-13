@@ -4,6 +4,7 @@ description: "Verify the files uploaded to a specific school data synchronizatio
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Start sync after uploading files to an educationSynchronizationProfile

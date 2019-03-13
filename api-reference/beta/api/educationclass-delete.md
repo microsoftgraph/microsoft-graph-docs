@@ -4,6 +4,7 @@ description: "Delete a class. Because a class is also a universal group, deletin
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Delete educationClass

@@ -4,6 +4,7 @@ description: "Update the properties of a groupPolicyPresentationMultiTextBox obj
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update groupPolicyPresentationMultiTextBox

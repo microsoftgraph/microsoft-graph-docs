@@ -4,6 +4,7 @@ description: "You can use Microsoft Graph to allow web and mobile applications t
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: conceptualPageType
 ---
 
 # Working with Excel in Microsoft Graph

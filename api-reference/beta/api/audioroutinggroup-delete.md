@@ -4,6 +4,7 @@ description: "Delete the specified audio routing group."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete audio routing group

@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for the MacOS Office 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSOfficeSuiteApp resource type

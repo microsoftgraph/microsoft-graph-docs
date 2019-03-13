@@ -4,6 +4,7 @@ description: "BitLocker Fixed Drive Policies."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # bitLockerFixedDrivePolicy resource type

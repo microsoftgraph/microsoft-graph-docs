@@ -4,6 +4,7 @@ description: "Allow the device to send diagnostic and usage telemetry data, such
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # diagnosticDataSubmissionMode enum type

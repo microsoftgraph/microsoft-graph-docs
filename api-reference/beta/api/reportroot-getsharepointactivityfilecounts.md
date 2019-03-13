@@ -4,6 +4,7 @@ description: "Get the number of unique, licensed users who interacted with files
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointActivityFileCounts

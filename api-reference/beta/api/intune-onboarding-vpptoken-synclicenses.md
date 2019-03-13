@@ -4,6 +4,7 @@ description: "Syncs licenses associated with a specific appleVolumePurchaseProgr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # syncLicenses action

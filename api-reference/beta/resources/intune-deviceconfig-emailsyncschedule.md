@@ -4,6 +4,7 @@ description: "Possible values for email sync schedule."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # emailSyncSchedule enum type

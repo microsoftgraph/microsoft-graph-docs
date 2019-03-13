@@ -2,6 +2,7 @@
 title: "patchContentCommand resource type"
 description: "The changes to make to a OneNote page in a PATCH request."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # patchContentCommand resource type

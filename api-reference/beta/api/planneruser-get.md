@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a plannerUser object.
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerUser

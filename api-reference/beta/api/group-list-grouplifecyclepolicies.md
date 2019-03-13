@@ -4,6 +4,7 @@ description: "Retrieves a list of groupLifecyclePolicy objects to which a group 
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List groupLifecyclePolicies

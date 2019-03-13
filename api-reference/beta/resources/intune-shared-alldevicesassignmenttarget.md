@@ -4,6 +4,7 @@ description: "Represents an assignment to all managed devices in the tenant."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # allDevicesAssignmentTarget resource type

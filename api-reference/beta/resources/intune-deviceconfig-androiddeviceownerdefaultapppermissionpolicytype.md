@@ -4,6 +4,7 @@ description: "Android Device Owner default app permission policy type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidDeviceOwnerDefaultAppPermissionPolicyType enum type

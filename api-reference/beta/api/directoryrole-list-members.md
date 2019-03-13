@@ -4,6 +4,7 @@ description: "Retrieve a list of the users that are assigned to the directory ro
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List members

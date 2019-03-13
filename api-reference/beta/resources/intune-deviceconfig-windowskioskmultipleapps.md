@@ -4,6 +4,7 @@ description: "The class used to identify the MultiMode app configuration for the
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskMultipleApps resource type

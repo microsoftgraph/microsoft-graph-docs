@@ -4,6 +4,7 @@ description: "Define the rule when the admin wants the devices to be cleaned up.
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceCleanupSettings resource type

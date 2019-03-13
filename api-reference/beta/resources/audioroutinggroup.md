@@ -4,6 +4,7 @@ description: "The audio routing group stores a private audio route between parti
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # audioRoutingGroup resource type

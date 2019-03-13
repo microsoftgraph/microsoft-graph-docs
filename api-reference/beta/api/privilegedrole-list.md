@@ -2,6 +2,7 @@
 title: "List privilegedRoles"
 description: "Retrieve a list of privilegedRole objects."
 localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # List privilegedRoles

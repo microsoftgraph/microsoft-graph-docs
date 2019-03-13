@@ -4,6 +4,7 @@ description: "The **plannerTask** resource represents a Planner task in Office 3
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerTask resource type

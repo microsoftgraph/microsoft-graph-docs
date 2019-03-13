@@ -2,6 +2,7 @@
 title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
 localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # FilterDatetime resource type

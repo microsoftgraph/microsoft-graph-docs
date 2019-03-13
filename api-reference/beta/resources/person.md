@@ -4,6 +4,7 @@ description: "An aggregation of information about a person from across mail, con
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # person resource type

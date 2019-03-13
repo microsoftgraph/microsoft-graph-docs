@@ -4,6 +4,7 @@ description: "The type and availability of an attendee."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # attendeeAvailabilityDataModel resource type

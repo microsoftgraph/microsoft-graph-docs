@@ -4,6 +4,7 @@ description: "Windows Network Isolation Policy"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsNetworkIsolationPolicy resource type

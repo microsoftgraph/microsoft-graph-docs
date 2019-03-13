@@ -4,6 +4,7 @@ description: "The entity represents an unsigned integer value of a decimal text 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueDecimal resource type

@@ -4,6 +4,7 @@ description: "Windows 8.1+ SCEP certificate profile"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows81SCEPCertificateProfile resource type

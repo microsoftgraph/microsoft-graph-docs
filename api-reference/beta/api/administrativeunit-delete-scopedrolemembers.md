@@ -4,6 +4,7 @@ description: "Remove a scoped-role member from an adminstrative unit."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Remove a scopedRoleMember

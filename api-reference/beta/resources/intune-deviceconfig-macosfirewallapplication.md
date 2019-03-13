@@ -4,6 +4,7 @@ description: "Represents an app in the list of macOS firewall applications"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSFirewallApplication resource type
