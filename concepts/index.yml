@@ -57,7 +57,7 @@ sections:
           src: ./images/index/i_api-reference.svg
         title: Microsoft Graph REST API v1.0
       - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-        html: <p>Try out the Microsoft Graph beta endpoint and send us feedback.</p>
+        html: <p>Try out the Microsoft Graph beta endpoint.</p>
         image: 
           src: ./images/index/i_api.svg
         title: Microsoft Graph REST API Beta
@@ -73,7 +73,7 @@ sections:
             src: ./images/index/logo_android.svg
           title: Android
         - image:
-            src: ./images/index/logo_angular.svg
+            src: ./images/index/angular.svg
           title: Angular
         - image:
             src: ./images/index/logo_NET.svg
