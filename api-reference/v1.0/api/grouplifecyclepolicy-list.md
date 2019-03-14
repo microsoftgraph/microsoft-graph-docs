@@ -77,6 +77,7 @@ Content-length: 223
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_grouplifecyclepolicy-snippets.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

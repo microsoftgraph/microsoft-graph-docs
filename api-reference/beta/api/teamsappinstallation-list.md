@@ -86,6 +86,7 @@ Content-length: 55
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_owners-snippets.md)]
 
 ## Example -- getting the names of the installed apps
 

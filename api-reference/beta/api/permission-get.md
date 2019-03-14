@@ -80,6 +80,7 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get-item-permission-snippets.md)]
 
 ## Remarks
 

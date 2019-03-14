@@ -64,6 +64,7 @@ HTTP/1.1 200 OK
 
 ...binary data...
 ```
+[!INCLUDE [Sample Code]( ../includes/get_resource-snippets.md)]
 <!-- {
   "blockType": "response",
   "truncated": false,

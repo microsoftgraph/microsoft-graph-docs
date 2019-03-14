@@ -143,6 +143,8 @@ Content-length: 199
   "size": 99
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_reference_attachment-snippets.md)]
+[!INCLUDE [Sample Code]( ../includes/get_file_attachment-snippets.md)]
 ## Example (item attachment)
 
 ##### Request 1
@@ -177,6 +179,7 @@ Content-type: application/json
   "isInline":false
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_item_attachment-snippets.md)]
 
 ##### Request 2
 The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is 

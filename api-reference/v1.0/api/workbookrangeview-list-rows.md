@@ -74,3 +74,4 @@ Content-length: 247
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_rows-snippets.md)]

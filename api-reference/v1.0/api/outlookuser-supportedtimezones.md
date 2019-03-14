@@ -98,6 +98,7 @@ Content-type: application/json
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/user_supportedtimezones_default-snippets.md)]
 
 ##### Request 2
 The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format. 
@@ -148,6 +149,7 @@ Content-type: application/json
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/user_supportedtimezones_iana-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

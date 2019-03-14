@@ -79,6 +79,7 @@ Content-type: application/json
 }
 
 ```
+[!INCLUDE [Sample Code]( ../includes/get_programcontroltype-snippets.md)]
 
 ## See also
 

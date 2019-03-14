@@ -178,6 +178,7 @@ Content-length: 1928
     }
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_event-snippets.md)]
 
 
 ##### Request 2
@@ -297,6 +298,7 @@ Content-length: 1992
   }
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_event_multiple_locations-snippets.md)]
 
 
 

@@ -124,6 +124,7 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/user_get_rooms_in_tenant-snippets.md)]
 
 ##### Request 2
 
@@ -170,6 +171,7 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/user_get_rooms_from_specific_list-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

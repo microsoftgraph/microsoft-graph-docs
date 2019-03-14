@@ -111,6 +111,7 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+[!INCLUDE [Sample Code]( ../includes/reportroot_getsharepointactivityuserdetail_csv-snippets.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -183,6 +184,7 @@ Content-Length: 473
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/reportroot_getsharepointactivityuserdetail_json-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

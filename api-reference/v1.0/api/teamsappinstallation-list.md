@@ -61,6 +61,7 @@ The following is an example of the request.
 ```http
 GET /teams/{id}/installedApps
 ```
+[!INCLUDE [Sample Code]( ../includes/get_owners-snippets.md)]
 
 ### Response
 

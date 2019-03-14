@@ -75,6 +75,7 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/range_usedrange-snippets.md)]
 
 Here is an example specifying the optional `valuesOnly` parameter.
 
@@ -110,6 +111,7 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/range_usedrange_valuesonly-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

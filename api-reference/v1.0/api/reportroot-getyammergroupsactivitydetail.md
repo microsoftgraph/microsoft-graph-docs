@@ -96,6 +96,7 @@ The following is an example of the response.
 HTTP/1.1 302 Found
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+[!INCLUDE [Sample Code]( ../includes/reportroot_getyammergroupsactivityuserdetail-snippets.md)]
 
 #### Request
 If called with a `date`, the report is scoped to activity on the given date.

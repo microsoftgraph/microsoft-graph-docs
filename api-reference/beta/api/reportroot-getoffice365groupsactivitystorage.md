@@ -98,6 +98,7 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+[!INCLUDE [Sample Code]( ../includes/reportroot_getoffice365groupsactivitystorage_csv-snippets.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -161,6 +162,7 @@ Content-Length: 285
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/reportroot_getoffice365groupsactivitystorage_json-snippets.md)]
 <!--
 {
   "type": "#page.annotation",

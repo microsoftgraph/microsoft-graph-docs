@@ -173,6 +173,7 @@ Content-type: application/json
     "previousEndDateTime":null
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_eventmessage-snippets.md)]
 
 
 ##### Request 2

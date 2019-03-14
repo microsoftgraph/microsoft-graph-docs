@@ -123,6 +123,7 @@ Content-length: 337
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/contact_delta-snippets.md)]
 
 ### See also
 

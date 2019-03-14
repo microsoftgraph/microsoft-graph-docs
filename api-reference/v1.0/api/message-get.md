@@ -136,6 +136,7 @@ Content-type: application/json
     }
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_message-snippets.md)]
 
 ##### Request 2
 The next example uses a `$select` query parameter to get the Internet message headers of a message. 
@@ -182,6 +183,7 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/get_message_headers-snippets.md)]
 
 
 ## See also

@@ -67,6 +67,7 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 "value" : "base-64 chart image string"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/api-referencev10apichart-imagemd#0-snippets.md)]
 
 ## Usage
 

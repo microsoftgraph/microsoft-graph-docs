@@ -73,6 +73,7 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/worksheet_range-snippets.md)]
 
 If the optional `address` parameter is not specified, this function returns the entire worksheet range.
 
@@ -107,6 +108,7 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/worksheet_range_noaddress-snippets.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -111,6 +111,7 @@ Content-type: application/json
      ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/securescorecontrolprofiles_list-snippets.md)]
 
 
 <!--

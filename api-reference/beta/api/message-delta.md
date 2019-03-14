@@ -127,6 +127,7 @@ Content-length: 337
   ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/message_delta-snippets.md)]
 
 ### See also
 

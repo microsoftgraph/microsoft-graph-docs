@@ -82,6 +82,7 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/synchronizationschema_filteroperators-snippets.md)]
 <!--
 Below is the full response, which had to be redacted above as Markdown Scanner tool trips over "type" values containing 
 non-string type names like "Integer" or "Boolean"

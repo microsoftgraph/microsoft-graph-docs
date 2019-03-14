@@ -86,6 +86,7 @@ The following is an example of the response.
 HTTP/1.1 302 Found
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+[!INCLUDE [Sample Code]( ../includes/reportroot_getemailactivitycounts-snippets.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 

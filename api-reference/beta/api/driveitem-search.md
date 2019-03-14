@@ -89,6 +89,7 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/item_search-snippets.md)]
 
 ## Searching for items a user can access
 
@@ -133,6 +134,7 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
+[!INCLUDE [Sample Code]( ../includes/item_search_all-snippets.md)]
 
 ## Error responses
 

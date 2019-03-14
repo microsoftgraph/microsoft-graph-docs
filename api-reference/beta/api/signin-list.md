@@ -94,6 +94,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
+[!INCLUDE [Sample Code]( ../includes/get_signins-snippets.md)]
 ```json
 {
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
