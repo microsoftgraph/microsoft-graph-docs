@@ -4,6 +4,7 @@ description: "Flags representing which network profile types apply to a firewall
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsFirewallRuleNetworkProfileTypes enum type

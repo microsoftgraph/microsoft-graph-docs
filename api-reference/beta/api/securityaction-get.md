@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of securityAction object
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get securityAction

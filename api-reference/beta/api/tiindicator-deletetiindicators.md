@@ -4,6 +4,7 @@ description: "Delete multiple threat intelligence (TI) indicators in one request
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # tiIndicator: deleteTiIndicators

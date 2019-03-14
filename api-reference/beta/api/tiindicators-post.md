@@ -4,6 +4,7 @@ description: "Create a new tiIndicator."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Create threat intelligence indicator

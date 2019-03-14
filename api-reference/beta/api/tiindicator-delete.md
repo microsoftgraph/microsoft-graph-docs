@@ -4,6 +4,7 @@ description: "Delete a tiIndicator object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Delete threat intelligence indicator

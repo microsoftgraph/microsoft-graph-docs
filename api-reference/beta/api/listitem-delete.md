@@ -4,7 +4,7 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
 localization_priority: Normal
-ms.prod: "sharepoint
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # Delete an item from a list

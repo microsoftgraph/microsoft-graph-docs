@@ -4,6 +4,7 @@ description: Create a new securityAction object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Create securityAction

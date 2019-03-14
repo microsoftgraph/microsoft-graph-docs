@@ -4,6 +4,7 @@ description: "A rule controlling traffic through the Windows Firewall."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsFirewallRule resource type

@@ -4,6 +4,7 @@ description: "Update the properties of a tiIndicator object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Update tiIndicator

@@ -4,6 +4,7 @@ description: "Windows device health monitoring configuration"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsHealthMonitoringConfiguration resource type

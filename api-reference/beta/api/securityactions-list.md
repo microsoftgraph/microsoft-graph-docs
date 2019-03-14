@@ -4,6 +4,7 @@ description: "Retrieve a list of securityAction objects."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # List securityActions

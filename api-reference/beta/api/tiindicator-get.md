@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a tiindicator object.
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get threat intelligence indicator

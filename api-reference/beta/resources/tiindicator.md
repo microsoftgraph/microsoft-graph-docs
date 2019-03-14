@@ -4,6 +4,7 @@ description: "Threat intelligence (TI) indicators represent data used to identif
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # tiIndicator resource type

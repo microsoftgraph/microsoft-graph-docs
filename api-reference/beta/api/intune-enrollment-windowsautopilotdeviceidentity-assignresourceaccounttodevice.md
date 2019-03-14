@@ -4,6 +4,7 @@ description: "Assigns resource account to Autopilot devices."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # assignResourceAccountToDevice action

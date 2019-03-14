@@ -4,6 +4,7 @@ description: "Stores changes made to alerts."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # alertHistoryState resource type

@@ -6,6 +6,7 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.author: solsen
+doc_type: apiPageType
 ---
 
 # Get agedAccountsReceivable
