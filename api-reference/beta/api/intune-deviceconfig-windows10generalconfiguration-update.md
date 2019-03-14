@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the [
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
+|authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indicates whether or not Web Credential Provider will be enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Specifies the preferred domain among available domains in the Azure AD tenant.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
@@ -177,7 +178,6 @@ The following table shows the properties that are required when you create the [
 |defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
-|defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Selects the day that the Windows Defender scan should run. Possible values are: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
@@ -197,6 +197,7 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumAgeInDays|Int32|This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
+|privacyDisableLaunchExperience|Boolean|This policy prevents the privacy experience from launching during user logon for new and upgraded users.​|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
 |privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
@@ -320,6 +321,7 @@ The following table shows the properties that are required when you create the [
 |appManagementMSIAllowUserControlOverInstall|Boolean|This policy setting permits users to change installation options that typically are available only to system administrators.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​|
 
 
 
@@ -333,7 +335,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 13338
+Content-length: 13518
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -354,6 +356,7 @@ Content-length: 13338
   "enableAutomaticRedeployment": true,
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -494,7 +497,6 @@ Content-length: 13338
   "defenderCloudExtendedTimeout": 12,
   "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
@@ -514,6 +516,7 @@ Content-length: 13338
   "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -647,7 +650,10 @@ Content-length: 13338
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "App Management Package Family Names To Launch After Log On value"
+  ]
 }
 ```
 
@@ -656,7 +662,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 13510
+Content-Length: 13690
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -680,6 +686,7 @@ Content-Length: 13510
   "enableAutomaticRedeployment": true,
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -820,7 +827,6 @@ Content-Length: 13510
   "defenderCloudExtendedTimeout": 12,
   "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
@@ -840,6 +846,7 @@ Content-Length: 13510
   "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -973,7 +980,10 @@ Content-Length: 13510
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "App Management Package Family Names To Launch After Log On value"
+  ]
 }
 ```
 

@@ -38,7 +38,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. default is true.|
 |alternativeSecurityIds|alternativeSecurityId collection| For internal use only. Not nullable. |
-|approximateLastSignInDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+|approximateLastSignInDateTime|DateTimeOffset| The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+|complianceExpirationDateTime|DateTimeOffset| The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |deviceId|Guid| Unique identifier set by Azure Device Registration Service at the time of registration. |
 |deviceMetadata|String| For internal use only. Set to null. |
 |deviceVersion|Int32| For internal use only. |
@@ -51,6 +52,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |operatingSystem|String| The type of operating system on the device. Required. |
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
+|profileType|String|The profile type of the device. Possible values:<br />**RegisteredDevice** (default)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
+|systemLabels|String collection| List of labels applied to the device by the system. |
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |Name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |Status | String| Device is online or offline. Only returned if user signs in with a Microsoft account as part of Project Rome. |
@@ -89,6 +92,7 @@ The following is a JSON representation of the resource.
 {
   "accountEnabled": true,
   "approximateLastSignInDateTime": "String (timestamp)",
+  "complianceExpirationDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
   "deviceVersion": 1024,
@@ -101,6 +105,8 @@ The following is a JSON representation of the resource.
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
+  "profileType": "string",
+  "systemLabels": ["string"],
   "trustType": "string",
   "Name": "string",
   "Status": "string",

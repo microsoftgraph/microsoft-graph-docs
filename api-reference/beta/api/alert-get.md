@@ -104,6 +104,19 @@ Content-type: application/json
       "riskScore": "String"
     }
   ],
+  "historyStates": [
+    {
+      "appId": "appId-value",
+      "assignedTo": "assignedTo-value",
+      "comments": [
+        "comments-value"
+      ],
+      "feedback": "feedback-value",
+      "status": "status-value",
+      "updatedDateTime": "datetime-value",
+      "user": "user-value"
+    }
+  ],
   "hostStates": [
     {
       "fqdn": "String",

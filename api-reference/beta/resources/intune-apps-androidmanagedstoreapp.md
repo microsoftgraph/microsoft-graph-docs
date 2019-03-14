@@ -52,6 +52,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |appStoreUrl|String|The Play for Work Store app URL.|
+|supportsOemConfig|Boolean|Whether this app supports OEMConfig policy.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -100,7 +101,8 @@ Here is a JSON representation of the resource.
   "appIdentifier": "String",
   "usedLicenseCount": 1024,
   "totalLicenseCount": 1024,
-  "appStoreUrl": "String"
+  "appStoreUrl": "String",
+  "supportsOemConfig": true
 }
 ```
 

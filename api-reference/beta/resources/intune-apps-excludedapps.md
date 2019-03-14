@@ -29,6 +29,7 @@ Contains properties for Excluded Office365 Apps.
 |powerPoint|Boolean|The value for if MS Office PowerPoint should be excluded or not.|
 |publisher|Boolean|The value for if MS Office Publisher should be excluded or not.|
 |sharePointDesigner|Boolean|The value for if MS Office SharePointDesigner should be excluded or not.|
+|teams|Boolean|The value for if MS Office Teams should be excluded or not.|
 |visio|Boolean|The value for if MS Office Visio should be excluded or not.|
 |word|Boolean|The value for if MS Office Word should be excluded or not.|
 
@@ -56,6 +57,7 @@ Here is a JSON representation of the resource.
   "powerPoint": true,
   "publisher": true,
   "sharePointDesigner": true,
+  "teams": true,
   "visio": true,
   "word": true
 }

@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2136
+Content-Length: 2174
 
 {
   "value": [
@@ -88,12 +88,14 @@ Content-Length: 2136
                 "startLayoutTileSize": "small",
                 "name": "Name value",
                 "appType": "store",
+                "autoLaunch": true,
                 "appUserModelId": "App User Model Id value",
                 "appId": "App Id value",
                 "containedAppId": "Contained App Id value"
               }
             ],
             "showTaskBar": true,
+            "allowAccessToDownloadsFolder": true,
             "disallowDesktopApps": true,
             "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
           },
@@ -115,8 +117,7 @@ Content-Length: 2136
       "kioskBrowserBlockedUrlExceptions": [
         "Kiosk Browser Blocked Url Exceptions value"
       ],
-      "edgeKioskEnablePublicBrowsing": true,
-      "edgeKioskResetAfterIdleTimeInMinutes": 4
+      "edgeKioskEnablePublicBrowsing": true
     }
   ]
 }

@@ -17,7 +17,7 @@ Read properties and relationships of the [deviceAppManagement](../resources/intu
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).  Note that the appropriate permission varies according to the workflow.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).  Note that the appropriate permission varies according to the workflow.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

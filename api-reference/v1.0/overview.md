@@ -47,5 +47,3 @@ Find more information about [versioning and support](/graph/versioning-and-suppo
 Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
 
 Have feedback for existing Microsoft Graph APIs? Connect with us on [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
-
-For questions or help with your code using Microsof

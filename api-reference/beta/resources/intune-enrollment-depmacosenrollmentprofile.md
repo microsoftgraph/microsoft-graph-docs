@@ -58,6 +58,8 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |registrationDisabled|Boolean|Indicates if registration is disabled|
 |fileVaultDisabled|Boolean|Indicates if file vault is disabled|
 |iCloudDiagnosticsDisabled|Boolean|Indicates if iCloud Analytics screen is disabled|
+|iCloudStorageDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
+|chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 
 ## Relationships
 None
@@ -100,7 +102,9 @@ Here is a JSON representation of the resource.
   "privacyPaneDisabled": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
-  "iCloudDiagnosticsDisabled": true
+  "iCloudDiagnosticsDisabled": true,
+  "iCloudStorageDisabled": true,
+  "chooseYourLockScreenDisabled": true
 }
 ```
 

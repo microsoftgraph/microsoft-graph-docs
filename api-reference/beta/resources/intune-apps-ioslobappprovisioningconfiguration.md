@@ -1,6 +1,6 @@
 ---
 title: "iosLobAppProvisioningConfiguration resource type"
-description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the IOS Lob App Provisioning Configuration resource."
+description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-This topic provides descriptions of the declared methods, properties and relationships exposed by the IOS Lob App Provisioning Configuration resource.
+This topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource.
 
 ## Methods
 |Method|Return Type|Description|
@@ -32,6 +32,7 @@ This topic provides descriptions of the declared methods, properties and relatio
 |expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
 |payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|roleScopeTagIds|String collection|List of Scope Tags for this iOS LOB app provisioning configuration entity.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
@@ -61,6 +62,9 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)",
   "payloadFileName": "String",
   "payload": "binary",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",

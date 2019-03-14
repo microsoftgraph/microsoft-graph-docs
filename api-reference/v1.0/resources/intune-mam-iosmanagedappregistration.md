@@ -1,17 +1,19 @@
 ---
 title: "iosManagedAppRegistration resource type"
-description: "Represents the synchronization details of an ios app, with management capabilities, for a specific user."
-localization_priority: Normal
+description: "Represents the synchronization details of an ios app, with management capabilities, for a specific user.
+The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
 author: "tfitzmac"
-ms.prod: "intune"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iosManagedAppRegistration resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the synchronization details of an ios app, with management capabilities, for a specific user.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.
+
 
 Inherits from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
@@ -82,7 +84,8 @@ Here is a JSON representation of the resource.
   "type": "#page.annotation",
   "suppressions": [
      "Warning: /api-reference/v1.0/resources/intune-mam-iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
-      Inconsistent types between parameter (String) and table (Object)"
+    Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->
+

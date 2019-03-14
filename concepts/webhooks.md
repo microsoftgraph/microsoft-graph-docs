@@ -52,8 +52,8 @@ Certain limits apply to Azure AD based resources (users, groups) and may generat
 - Maximum subscription quotas:
 
   - Per app: 50,000 total subscriptions
-  - Per tenant: 35 total subscriptions across all apps
-  - Per app and tenant combination: 7 total subscriptions
+  - Per tenant: 1000 total subscriptions across all apps
+  - Per app and tenant combination: 100 total subscriptions
 
 - Azure AD B2C tenants are not supported.
 

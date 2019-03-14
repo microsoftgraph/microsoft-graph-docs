@@ -2157,6 +2157,10 @@
             href: api/intune-enrollment-importeddeviceidentity-update.md
           - name: importDeviceIdentityList action
             href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+          - name: searchExistingIdentities action
+            href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+          - name: searchExistingIdentities action
+            href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
         - name: Imported device identity result
           href: resources/intune-enrollment-importeddeviceidentityresult.md
           items:
@@ -2249,6 +2253,12 @@
             href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
           - name: unassignUserFromDevice action
             href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+          - name: assignResourceAccountToDevice action
+            href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+          - name: unassignResourceAccountFromDevice action
+            href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+        - name: Windows autopilot device type
+          href: resources/intune-enrollment-windowsautopilotdevicetype.md
         - name: Windows autopilot profile assignment detailed status
           href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
         - name: Windows autopilot profile assignment status
@@ -2961,8 +2971,6 @@
           href: resources/intune-deviceconfig-defenderprotectiontype.md
         - name: Defender scan type
           href: resources/intune-deviceconfig-defenderscantype.md
-        - name: Defender schedule scan day
-          href: resources/intune-deviceconfig-defenderschedulescanday.md
         - name: Defender security center IT contact display type
           href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
         - name: Defender security center notifications from app type
@@ -4670,6 +4678,29 @@
           href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
         - name: Windows firewall network profile
           href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+        - name: Windows firewall rule
+          href: resources/intune-deviceconfig-windowsfirewallrule.md
+        - name: Windows firewall rule interface types
+          href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+        - name: Windows firewall rule network profile types
+          href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+        - name: Windows firewall rule traffic direction type
+          href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+        - name: Windows health monitoring configuration
+          href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+        - name: Windows health monitoring scope
+          href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
         - name: Windows identity protection configuration
           href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
           items:
@@ -4889,6 +4920,8 @@
           href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
         - name: Windows update install schedule type
           href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+        - name: Windows update notification display option
+          href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
         - name: Windows update status
@@ -5619,7 +5652,7 @@
             href: api/intune-devices-windowsprotectionstate-get.md
           - name: Update
             href: api/intune-devices-windowsprotectionstate-update.md
-      - name: Mobile app management
+      - name: Mobile app management (MAM)
         href: resources/intune-mam-conceptual.md
         items:
         - name: Android managed app protection
@@ -5644,6 +5677,10 @@
             href: api/intune-mam-androidmanagedappregistration-get.md
           - name: Create
             href: api/intune-mam-androidmanagedappregistration-create.md
+        - name: Android managed app safety net apps verification type
+          href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+        - name: Android managed app safety net device attestation type
+          href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
         - name: Android mobile app identifier
           href: resources/intune-mam-androidmobileappidentifier.md
         - name: App management level
@@ -6192,7 +6229,7 @@
             href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control 
+      - name: Role-based access control (RBAC)
         href: /resources/intune-rbac-conceptual.md
         items:
         - name: Device and app management assigned role details
@@ -6675,6 +6712,240 @@
           href: api/permission-update.md
         - name: Delete permission
           href: api/permission-delete.md
+    - name: Financials
+      href: resources/dynamics-graph-reference.md
+      displayname: Dynamics, Dynamics 365 Business Central
+      items:
+      - name: Account
+        href: resources/dynamics-account.md
+        items:
+        - name: Get account
+          href: api/dynamics-account-get.md
+      - name: Aged accounts payable
+        href: resources/dynamics-agedaccountspayable.md
+        items:
+        - name: Get aged accounts payable
+          href: api/dynamics-agedaccountspayable-get.md
+      - name: Aged accounts receivable
+        href: resources/dynamics-agedaccountsreceivable.md
+        items:
+        - name: Get aged accounts payable
+          href: api/dynamics-agedaccountsreceivable-get.md
+      - name: Companies
+        href: resources/dynamics-companies.md
+        items:
+        - name: Get companies
+          href: api/dynamics-companies-get.md
+      - name: Company information
+        href: resources/dynamics-companyinformation.md
+        items:
+        - name: Get company information
+          href: api/dynamics-companyinformation-get.md
+        - name: Update company information
+          href: api/dynamics-companyinformation-update.md
+      - name: Countries/regions
+        href: resources/dynamics-countriesregions.md
+        items:
+        - name: Get countries/regions
+          href: api/dynamics-countriesregions-get.md
+        - name: Create countries/regions
+          href: api/dynamics-create-countriesregions.md
+        - name: Delete countries/regions
+          href: api/dynamics-countriesregions-delete.md
+      - name: Currencies
+        href: resources/dynamics-currencies.md
+        items:
+        - name: Get currencies
+          href: api/dynamics-currencies-get.md
+        - name: Create currencies
+          href: api/dynamics-create-currencies.md
+        - name: Delete currencies
+          href: api/dynamics-currencies-delete.md
+      - name: Customer
+        href: resources/dynamics-customer.md
+        items:
+        - name: Get customer
+          href: api/dynamics-customer-get.md
+        - name: Create customer
+          href: api/dynamics-create-customer.md
+        - name: Update customer
+          href: api/dynamics-customer-update.md
+        - name: Delete customer
+          href: api/dynamics-customer-delete.md
+      - name: Customer payment
+        href: resources/dynamics-customerpayment.md
+        items:
+        - name: Get customer payment
+          href: api/dynamics-customerpayment-get.md
+        - name: Create customer payment
+          href: api/dynamics-create-customerpayment.md
+        - name: Update customer payment
+          href: api/dynamics-customerpayment-update.md
+        - name: Delete customer payment
+          href: api/dynamics-customerpayment-delete.md
+      - name: Customer payments journal
+        href: resources/dynamics-customerpaymentsjournal.md
+        items:
+        - name: Get customer payments journal
+          href: api/dynamics-customerpaymentsjournal-get.md
+        - name: Create customer payments journal
+          href: api/dynamics-create-customerpaymentsjournal.md
+        - name: Update customer payments journal
+          href: api/dynamics-customerpaymentsjournal-update.md
+        - name: Delete customer payments journal
+          href: api/dynamics-customerpaymentsjournal-delete.md
+      - name: Dimension
+        href: resources/dynamics-dimension.md
+        items:
+        - name: Get dimension
+          href: api/dynamics-dimension-get.md
+      - name: Dimension value
+        href: resources/dynamics-dimensionvalue.md
+        items:
+        - name: Get dimension
+          href: api/dynamics-dimensionvalue-get.md
+      - name: Employee
+        href: resources/dynamics-employee.md
+        items:
+        - name: Get employee
+          href: api/dynamics-employee-get.md
+        - name: Create employee
+          href: api/dynamics-create-employee.md
+        - name: Update employee
+          href: api/dynamics-employee-update.md
+        - name: Delete employee
+          href: api/dynamics-employee-delete.md
+      - name: General ledger entries
+        href: resources/dynamics-generalledgerentries.md
+        items:
+        - name: Get general ledger entries
+          href: api/dynamics-generalledgerentries-get.md
+      - name: Item
+        href: resources/dynamics-item.md
+        items:
+        - name: Get item
+          href: api/dynamics-item-get.md
+        - name: Create item
+          href: api/dynamics-create-item.md
+        - name: Update item
+          href: api/dynamics-item-update.md
+        - name: Delete item
+          href: api/dynamics-item-delete.md
+      - name: Item categories
+        href: resources/dynamics-itemcategories.md
+        items:
+        - name: Get item categories
+          href: api/dynamics-itemcategories-get.md
+        - name: Create item categories
+          href: api/dynamics-create-itemcategories.md
+        - name: Update item categories
+          href: api/dynamics-itemcategories-update.md
+        - name: Delete item categories
+          href: api/dynamics-itemcategories-delete.md
+      - name: Journal
+        href: resources/dynamics-journal.md
+        items:
+        - name: Get journal
+          href: api/dynamics-journal-get.md
+        - name: Create journal
+          href: api/dynamics-create-journal.md
+        - name: Update journal
+          href: api/dynamics-journal-update.md
+        - name: Delete journal
+          href: api/dynamics-journal-delete.md
+      - name: Journal line
+        href: resources/dynamics-journalline.md
+        items:
+        - name: Get journal line
+          href: api/dynamics-journalline-get.md
+        - name: Create journal line
+          href: api/dynamics-create-journalline.md
+        - name: Update journal line
+          href: api/dynamics-journalline-update.md
+        - name: Delete journal line
+          href: api/dynamics-journalline-delete.md
+      - name: Payment methods
+        href: resources/dynamics-paymentmethods.md
+        items:
+        - name: Get payment methods
+          href: api/dynamics-paymentmethods-get.md
+        - name: Create payment methods
+          href: api/dynamics-create-paymentmethods.md
+        - name: Update payment methods
+          href: api/dynamics-paymentmethods-update.md
+        - name: Delete payment methods
+          href: api/dynamics-paymentmethods-delete.md
+      - name: Payment terms
+        href: resources/dynamics-paymentterms.md
+        items:
+        - name: Get payment terms
+          href: api/dynamics-paymentterms-get.md
+        - name: Create payment terms
+          href: api/dynamics-create-paymentterms.md
+        - name: Update payment terms
+          href: api/dynamics-paymentterms-update.md
+        - name: Delete payment terms
+          href: api/dynamics-paymentterms-delete.md
+      - name: Shipment methods
+        href: resources/dynamics-shipmentmethods.md
+        items:
+        - name: Get shipment methods
+          href: api/dynamics-shipmentmethods-get.md
+        - name: Create shipment methods
+          href: api/dynamics-create-shipmentmethods.md
+        - name: Update shipment methods
+          href: api/dynamics-shipmentmethods-update.md
+        - name: Delete shipment methods
+          href: api/dynamics-shipmentmethods-delete.md
+      - name: Tax area
+        href: resources/dynamics-taxarea.md
+        items:
+        - name: Get tax area
+          href: api/dynamics-taxarea-get.md
+        - name: Create tax area
+          href: api/dynamics-create-taxarea.md
+        - name: Update tax area
+          href: api/dynamics-taxarea-update.md
+        - name: Delete tax area
+          href: api/dynamics-taxarea-delete.md
+      - name: Tax groups
+        href: resources/dynamics-taxgroups.md
+        items:
+        - name: Get tax groups
+          href: api/dynamics-taxgroups-get.md
+        - name: Create tax groups
+          href: api/dynamics-create-taxgroups.md
+        - name: Update tax groups
+          href: api/dynamics-taxgroups-update.md
+        - name: Delete tax groups
+          href: api/dynamics-taxgroups-delete.md
+      - name: Trial balance
+        href: resources/dynamics-trialbalance.md
+        items:
+        - name: Get trial balance
+          href: api/dynamics-trialbalance-get.md
+      - name: Units of measure
+        href: resources/dynamics-unitsofmeasure.md
+        items:
+        - name: Get units of measure
+          href: api/dynamics-unitsofmeasure-get.md
+        - name: Create units of measure
+          href: api/dynamics-create-unitsofmeasure.md
+        - name: Update units of measure
+          href: api/dynamics-unitsofmeasure-update.md
+        - name: Delete units of measure
+          href: api/dynamics-unitsofmeasure-delete.md
+      - name: Vendor
+        href: resources/dynamics-vendor.md
+        items:
+        - name: Get vendor
+          href: api/dynamics-vendor-get.md
+        - name: Create vendor
+          href: api/dynamics-create-vendor.md
+        - name: Update vendor
+          href: api/dynamics-vendor-update.md
+        - name: Delete vendor
+          href: api/dynamics-vendor-delete.md
     - name: Identity and access
       href: resources/azure-ad-overview.md
       displayName: Azure AD, Microsoft identity platform
@@ -7785,8 +8056,19 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
-      displayname: Security API, Microsoft Intelligent Security Graph
+      displayname: Security API, Microsoft Graph Security API
       items:
+      - name: Actions
+        href: resources/securityaction.md
+        items:
+        - name: List security actions
+          href: api/securityactions-list.md
+        - name: Create security action
+          href: api/securityactions-post.md
+        - name: Get security action
+          href: api/securityaction-get.md
+        - name: Cancel security action
+          href: api/securityaction-cancelsecurityaction.md
       - name: Alerts
         href: resources/alert.md
         items:
@@ -7796,6 +8078,8 @@
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -7808,6 +8092,27 @@
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
+      - name: Threat intelligence indicators
+        href: resources/tiindicator.md
+        items:
+        - name: List
+          href: api/tiindicators-list.md
+        - name: Create
+          href: api/tiindicators-post.md
+        - name: Submit multiple
+          href: api/tiindicator-submittiindicators.md
+        - name: Get
+          href: api/tiindicator-get.md
+        - name: Update
+          href: api/tiindicator-update.md
+        - name: Update multiple
+          href: api/tiindicator-updatetiindicators.md
+        - name: Delete
+          href: api/tiindicator-delete.md
+        - name: Delete multiple
+          href: api/tiindicator-deletetiindicators.md
+        - name: Delete multiple by external ID
+          href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
@@ -8078,7 +8383,7 @@
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-        - name: Create message
+        - name: Send message
           href: api/channel-post-chatmessage.md
         - name: Reply to message
           href: api/channel-post-messagereply.md

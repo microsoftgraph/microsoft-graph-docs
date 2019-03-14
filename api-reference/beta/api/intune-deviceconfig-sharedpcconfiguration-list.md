@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1455
+Content-Length: 1492
 
 {
   "value": [
@@ -97,7 +97,8 @@ Content-Length: 1455
       "idleTimeBeforeSleepInSeconds": 12,
       "kioskAppDisplayName": "Kiosk App Display Name value",
       "kioskAppUserModelId": "Kiosk App User Model Id value",
-      "maintenanceStartTime": "11:59:24.7240000"
+      "maintenanceStartTime": "11:59:24.7240000",
+      "fastFirstSignIn": "enabled"
     }
   ]
 }

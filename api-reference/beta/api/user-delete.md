@@ -1,6 +1,6 @@
 ---
-title: "Delete a user"
-description: "Delete user."
+title: "Delete a user - Microsoft Graph API"
+description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,8 +11,12 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete user.
+Delete user.  
+
+When deleted, user resources are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -22,17 +26,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
 ## Request headers
+
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -40,7 +47,9 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -49,7 +58,8 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
-##### Response
+### Response
+
 Here is an example of the response. 
 <!-- {
   "blockType": "response",

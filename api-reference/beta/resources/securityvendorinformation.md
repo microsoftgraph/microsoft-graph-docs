@@ -18,9 +18,9 @@ Contains details about the security product/service vendor, provider, and subpro
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |provider |String|Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.|
-|providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert. *Required*|
+|providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert. **Required**|
 |subProvider|String|Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.|
-|vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). *Required*|
+|vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). **Required**|
 
 ## JSON representation
 

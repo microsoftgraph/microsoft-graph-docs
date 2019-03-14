@@ -41,6 +41,7 @@ Inherits from [managedDeviceMobileAppConfiguration](../resources/intune-apps-man
 |packageId|String|Android Enterprise app configuration package id.|
 |payloadJson|String|Android Enterprise app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
+|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -82,7 +83,8 @@ Here is a JSON representation of the resource.
       "permission": "String",
       "action": "String"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 

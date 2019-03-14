@@ -137,7 +137,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
     "configuration": {
         "entityId": "",
-        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
         "removeUrl": null,
         "websiteUrl": null
     }

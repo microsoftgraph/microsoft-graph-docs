@@ -120,6 +120,7 @@ Here is a JSON representation of the resource.
     "powerPoint": true,
     "publisher": true,
     "sharePointDesigner": true,
+    "teams": true,
     "visio": true,
     "word": true
   },

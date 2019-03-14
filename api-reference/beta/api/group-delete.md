@@ -1,6 +1,6 @@
 ---
-title: "Delete group"
-description: "Deletes a group."
+title: "Delete group - Microsoft Graph API"
+description: "Describes the delete method of the group resource (entity) of the Microsoft Graph API (REST)."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -11,11 +11,12 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a group.
+Deletes a group.  
 
-When a group is deleted, the item is added to [deleted items](../resources/directory.md). The group will remain in deleted items for up to 30 days. A group can be fully restored from deleted items during the 30 days. After 30 days, deleted items are permanently deleted.
+When deleted, Office 365 groups are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).  This applies only to Office 365 groups.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -25,24 +26,30 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
+
+### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -52,7 +59,8 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/groups/{id}
 ```
 
-#### Response
+### Response
+
 The following is an example of the response. 
 <!-- {
   "blockType": "response",

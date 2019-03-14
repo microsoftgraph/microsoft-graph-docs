@@ -146,7 +146,7 @@ localization_priority: Normal
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
-| meetingTentativelyAccepted
+| meetingTenativelyAccepted
 | meetingDeclined
 
 

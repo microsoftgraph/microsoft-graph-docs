@@ -51,12 +51,6 @@ Certain old teams don't have a **resourceProvisioningOptions** property that con
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
 
-### Installing and uninstalling applications using application permissions
-
-When uninstalling an app from a team using application permissions, the API will return a 500 error code even though the app was successfully uninstalled.
-
-When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not written.
-
 ## Groups
 
 ### Permissions for groups and Microsoft Teams

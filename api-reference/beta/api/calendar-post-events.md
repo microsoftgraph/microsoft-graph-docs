@@ -1,17 +1,17 @@
 ---
-title: "Create Event"
-description: "Use this API to create a new Event in the default or the specified calendar."
+title: "Create event"
+description: "Use this API to create a new event in the default or the specified calendar."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create Event
+# Create event
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new Event in the default or the specified calendar.
+Use this API to create a new event in the default or specified calendar.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,36 +49,54 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [Event](../resources/event.md) object.
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [Event](../resources/event.md) object in the response body.
+If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
 
 ## Example
 ##### Request
 Here is an example of the request.
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/events
+POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "2016-10-19T10:37:00Z"
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does next month work for you?"
   },
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "start": {
+      "dateTime": "2019-03-10T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2019-03-10T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"adelev@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
 }
 ```
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -87,20 +105,86 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "2016-10-19T10:37:00Z"
-  },
-  "uid": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
+    "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
+    "createdDateTime": "2019-02-28T21:36:26.7105485Z",
+    "lastModifiedDateTime": "2019-02-28T21:36:26.9577227Z",
+    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "uid": "040000008200C780DAE",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does next month work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "recurrence": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes next month work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2019-03-10T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2019-03-10T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "AdeleV@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Megan Bowen",
+            "address": "MeganB@contoso.OnMicrosoft.com"
+        }
+    }
 }
 ```
 
@@ -109,7 +193,7 @@ Content-length: 285
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create Event",
+  "description": "Create event",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

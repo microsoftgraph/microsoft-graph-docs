@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14803
+Content-Length: 14999
 
 {
   "value": [
@@ -85,6 +85,7 @@ Content-Length: 14803
       "enableAutomaticRedeployment": true,
       "microsoftAccountSignInAssistantSettings": "disabled",
       "authenticationAllowSecondaryDevice": true,
+      "authenticationWebSignIn": "enabled",
       "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
       "cryptographyAllowFipsAlgorithmPolicy": true,
       "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -225,7 +226,6 @@ Content-Length: 14803
       "defenderCloudExtendedTimeout": 12,
       "defenderCloudExtendedTimeoutInSeconds": 5,
       "defenderBlockOnAccessProtection": true,
-      "defenderScheduleScanDay": "monday",
       "defenderSubmitSamplesConsentType": "alwaysPrompt",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
@@ -245,6 +245,7 @@ Content-Length: 14803
       "passwordMinimumAgeInDays": 8,
       "privacyAdvertisingId": "blocked",
       "privacyAutoAcceptPairingAndConsentPrompts": true,
+      "privacyDisableLaunchExperience": true,
       "privacyBlockInputPersonalization": true,
       "privacyBlockPublishUserActivities": true,
       "privacyBlockActivityFeed": true,
@@ -378,7 +379,10 @@ Content-Length: 14803
       "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
       "appManagementMSIAllowUserControlOverInstall": true,
       "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-      "dataProtectionBlockDirectMemoryAccess": true
+      "dataProtectionBlockDirectMemoryAccess": true,
+      "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+        "App Management Package Family Names To Launch After Log On value"
+      ]
     }
   ]
 }

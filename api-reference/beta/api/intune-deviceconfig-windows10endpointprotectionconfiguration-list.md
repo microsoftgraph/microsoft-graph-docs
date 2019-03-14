@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29491
+Content-Length: 30466
 
 {
   "value": [
@@ -76,6 +76,34 @@ Content-Length: 29491
       "displayName": "Display Name value",
       "version": 7,
       "dmaGuardDeviceEnumerationPolicy": "blockAll",
+      "firewallRules": [
+        {
+          "@odata.type": "microsoft.graph.windowsFirewallRule",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "packageFamilyName": "Package Family Name value",
+          "filePath": "File Path value",
+          "serviceName": "Service Name value",
+          "protocol": 8,
+          "localPortRanges": [
+            "Local Port Ranges value"
+          ],
+          "remotePortRanges": [
+            "Remote Port Ranges value"
+          ],
+          "localAddressRanges": [
+            "Local Address Ranges value"
+          ],
+          "remoteAddressRanges": [
+            "Remote Address Ranges value"
+          ],
+          "profileTypes": "domain",
+          "action": "blocked",
+          "trafficDirection": "out",
+          "interfaceTypes": "remoteAccess",
+          "localUserAuthorizations": "Local User Authorizations value"
+        }
+      ],
       "userRightsAccessCredentialManagerAsTrustedCaller": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
