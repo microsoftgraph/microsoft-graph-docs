@@ -20,6 +20,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`id`|`string`|Unique id of the user at risk|
 |`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`|
 |`isGuest`|`bool`|Indicates whether the user is a guest user. Possible values are: `true`, `false`. True if user’s identity lies outside of the tenant in consideration. This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider. False if user’s identity lies inside the tenant in consideration|
+|`isProcessing`|`bool`|Indicates wehther a user's risky state is being processed by the backend|
 |`risk`|[risk](risk.md)|Risky user state|
 |`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
 |`userDisplayName`|`string`|Risky user display name|
@@ -53,6 +54,7 @@ Here is a JSON representation of the resource.
  "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
+"isProcessing": "boolean",
 "isDeleted": "boolean",
 "risk": {"@odata.type": "microsoft.graph.risk"},
 "userDisplayName": "string",

@@ -8,9 +8,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityriskyUser.Read.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityriskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ If successful, this method returns a `200 OK` response code and [identityRiskEve
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent"
+  "name": "list_riskyusers"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
@@ -55,6 +55,7 @@ HTTP/1.1 200 OK
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
   "isGuest": "true",
+  "isProcessing": true,
   "isDeleted": "true",
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
@@ -68,7 +69,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "List riskyUsers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
@@ -94,6 +95,7 @@ HTTP/1.1 200 OK
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
       "isGuest": false,
+      "isProcessing": true,
       "isDeleted": false,
       "riskDetail": "none",
       "riskLevel": "medium",
@@ -108,7 +110,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "List riskyUsers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
