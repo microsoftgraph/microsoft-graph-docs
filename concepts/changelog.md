@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2019
 
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |v1.0| Added the mail, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
