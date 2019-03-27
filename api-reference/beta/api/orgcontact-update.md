@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |state|String||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String||
+|businessPhones|String collection||
 
 ## Response
 

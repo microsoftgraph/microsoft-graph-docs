@@ -73,7 +73,15 @@ To register your application:
 3. On the registration page for the new application, choose **Add Platform** > **Web**. In the **Redirect URL** field, enter the redirect URL.
 4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
 
-    >The Microsoft Graph Security API requires the SecurityEvents.Read.All scope for GET queries, and the SecurityEvents.ReadWrite.All scope for PATCH/POST queries.
+    >**Note:** The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
+
+    |Permission | Entity | Supported requests |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (preview)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (preview) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (preview)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (preview) | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (preview) | GET, POST, PATCH, DELETE|
 
 5. Choose **Save**.
 

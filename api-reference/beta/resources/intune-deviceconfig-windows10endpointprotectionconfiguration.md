@@ -38,6 +38,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe. Possible values are: `deviceDefault`, `blockAll`, `allowAll`.|
+|firewallRules|[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md) collection|Configures the firewall rule settings. This collection can contain a maximum of 150 elements.|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
@@ -245,6 +246,34 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "version": 1024,
   "dmaGuardDeviceEnumerationPolicy": "String",
+  "firewallRules": [
+    {
+      "@odata.type": "microsoft.graph.windowsFirewallRule",
+      "displayName": "String",
+      "description": "String",
+      "packageFamilyName": "String",
+      "filePath": "String",
+      "serviceName": "String",
+      "protocol": 1024,
+      "localPortRanges": [
+        "String"
+      ],
+      "remotePortRanges": [
+        "String"
+      ],
+      "localAddressRanges": [
+        "String"
+      ],
+      "remoteAddressRanges": [
+        "String"
+      ],
+      "profileTypes": "String",
+      "action": "String",
+      "trafficDirection": "String",
+      "interfaceTypes": "String",
+      "localUserAuthorizations": "String"
+    }
+  ],
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "String",

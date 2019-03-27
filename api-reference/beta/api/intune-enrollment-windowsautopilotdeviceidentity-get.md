@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 1109
 
 {
   "value": {
@@ -79,7 +79,12 @@ Content-Length: 853
     "enrollmentState": "enrolled",
     "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
     "addressableUserName": "Addressable User Name value",
-    "userPrincipalName": "User Principal Name value"
+    "userPrincipalName": "User Principal Name value",
+    "resourceName": "Resource Name value",
+    "skuNumber": "Sku Number value",
+    "systemFamily": "System Family value",
+    "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+    "managedDeviceId": "Managed Device Id value"
   }
 }
 ```

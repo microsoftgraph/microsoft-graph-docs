@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2804
+Content-Length: 2863
 
 {
   "value": {
@@ -107,6 +107,7 @@ Content-Length: 2804
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+    "allowedOutboundClipboardSharingExceptionLength": 14,
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "appDataEncryptionType": "afterDeviceRestart",

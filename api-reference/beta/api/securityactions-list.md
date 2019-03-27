@@ -1,12 +1,12 @@
 ---
-title: "List security actions"
-description: "Retrieve a list of securityaction objects."
+title: "List securityActions"
+description: "Retrieve a list of securityAction objects."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# List security actions
+# List securityActions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 558
+Content-Length: 632
 
 {
   "value": [
@@ -67,6 +67,9 @@ Content-Length: 558
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "payloadFileName": "Payload File Name value",
       "payload": "cGF5bG9hZA==",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

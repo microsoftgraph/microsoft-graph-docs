@@ -87,7 +87,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1552
+Content-length: 1572
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -128,6 +128,7 @@ Content-length: 1552
     "powerPoint": true,
     "publisher": true,
     "sharePointDesigner": true,
+    "teams": true,
     "visio": true,
     "word": true
   },
@@ -150,7 +151,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1724
+Content-Length: 1744
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -194,6 +195,7 @@ Content-Length: 1724
     "powerPoint": true,
     "publisher": true,
     "sharePointDesigner": true,
+    "teams": true,
     "visio": true,
     "word": true
   },

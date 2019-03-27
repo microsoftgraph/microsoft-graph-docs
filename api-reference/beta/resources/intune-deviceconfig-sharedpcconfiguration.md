@@ -54,6 +54,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |kioskAppDisplayName|String|Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.|
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
 |maintenanceStartTime|TimeOfDay|Specifies the daily start time of maintenance hour.|
+|fastFirstSignIn|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -109,7 +110,8 @@ Here is a JSON representation of the resource.
   "idleTimeBeforeSleepInSeconds": 1024,
   "kioskAppDisplayName": "String",
   "kioskAppUserModelId": "String",
-  "maintenanceStartTime": "String (time of day)"
+  "maintenanceStartTime": "String (time of day)",
+  "fastFirstSignIn": "String"
 }
 ```
 

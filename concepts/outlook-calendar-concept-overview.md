@@ -56,7 +56,7 @@ Outlook and the calendar API offer many smart conveniences to schedule events:
 - Through Outlook calendar app settings, customers can enable automatic adding of events from emails, such as flight, hotel, or dining reservations, and billing invoices. Once added, you can interact with these events just like any other [event](/graph/api/resources/event?view=graph-rest-1.0) objects in the user's mailbox, and build creative scenarios upon this Outlook capability.
 - ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user-findrooms?view=graph-rest-beta) and
 [get room lists (preview)](/graph/api/user-findroomlists?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
-- ** You can [look up the free/busy information for users and resources (preview)](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.
+- ** You can [look up the free/busy information for users and resources](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.
 - ** If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes-example.md). The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.
 
 
@@ -87,7 +87,7 @@ Looking for the API reference for this service?
 - Select and try calendar sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
 - Learn about:
   - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
-  - [Getting the free/busy schedule for users and resources (preview)](outlook-get-free-busy-schedule.md)
+  - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)

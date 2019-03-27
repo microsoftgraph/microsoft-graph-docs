@@ -81,7 +81,7 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Milliseconds of inactivity before the screen times out.|
 |passwordPreviousPasswordCountToBlock|Int32|Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
-|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`.|
+|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
 |safeBootBlocked|Boolean|Indicates whether or not rebooting the device into safe boot is disabled.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to disable the capability to take screenshots.|

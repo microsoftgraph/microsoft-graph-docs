@@ -16,7 +16,7 @@ Read properties and relationships of the [user](../resources/intune-shared-user.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).  The specific permission depends on the context.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).  The specific permission depends on the context.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

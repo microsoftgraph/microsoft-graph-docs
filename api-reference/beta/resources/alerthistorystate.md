@@ -1,6 +1,6 @@
 ---
 title: "alertHistoryState resource type"
-description: "Each time an alert is patched, the change is saved in a new object of alertHistoryState, and will be returned as part of the modified alert."
+description: "Stores changes made to alerts."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each time an alert is patched, the change is saved in a new object of alertHistoryState, and will be returned as part of the modified alert.
+Stores changes made to alerts.
 
 ## Properties
 

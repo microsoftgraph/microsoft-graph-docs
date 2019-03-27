@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/messages
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {

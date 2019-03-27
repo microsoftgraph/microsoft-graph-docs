@@ -26,22 +26,21 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
-|replyToId| string | Id of the parent message/root message of the thread |
-|from|[identitySet](identityset.md)| Details of the sender of the message|
-|etag| string | Version number of the message |
-|messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
-|createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
-|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated|
-|deleted|Boolean|Indicates whether a message has been soft deleted|
-|deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
-|subject|string|Message subject line. Optional|
+|replyToId| string | Id of the parent message/root message of the thread. |
+|from|[identitySet](identityset.md)| Read only. Details of the sender of the message.|
+|etag| string | Version number of the message. |
+|messageType|String|The type of message, current supported values are: message, chatEvent, Typing.|
+|createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created.|
+|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
+|deleted|Boolean|Indicates whether a message has been soft deleted.|
+|deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
-|mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
-|importance| string | The importance of the message: Normal, High|
+|mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
+|importance| string | The importance of the message: Normal, High.|
 |reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
-|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files|
+|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 
 
 ## JSON representation
@@ -73,7 +72,6 @@ The following is a JSON representation of the resource.
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},

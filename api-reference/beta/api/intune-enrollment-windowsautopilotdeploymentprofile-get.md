@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1307
+Content-Length: 1341
 
 {
   "value": {
@@ -94,6 +94,7 @@ Content-Length: 1307
     },
     "extractHardwareHash": true,
     "deviceNameTemplate": "Device Name Template value",
+    "deviceType": "surfaceHub2",
     "enableWhiteGlove": true
   }
 }

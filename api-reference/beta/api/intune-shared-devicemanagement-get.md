@@ -16,7 +16,7 @@ Read properties and relationships of the [deviceManagement](../resources/intune-
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 | Permission&nbsp;type&nbsp;(by&nbsp;workflow) | Permissions (from most to least privileged) |
 |:---|:---|

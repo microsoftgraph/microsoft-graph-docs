@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1130
+Content-Length: 1162
 
 {
   "value": {
@@ -94,7 +94,8 @@ Content-Length: 1130
     "appIdentifier": "App Identifier value",
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
-    "appStoreUrl": "https://example.com/appStoreUrl/"
+    "appStoreUrl": "https://example.com/appStoreUrl/",
+    "supportsOemConfig": true
   }
 }
 ```

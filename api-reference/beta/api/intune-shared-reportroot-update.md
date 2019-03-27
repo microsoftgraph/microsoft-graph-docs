@@ -14,7 +14,7 @@ ms.prod: "intune"
 
 Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

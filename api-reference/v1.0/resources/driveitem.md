@@ -6,7 +6,7 @@ title: DriveItem
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
-# DriveItem resource type
+# driveItem resource type
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
@@ -70,6 +70,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
@@ -140,6 +141,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
+| subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 | workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
@@ -157,6 +159,7 @@ These properties are temporary and either a) define behavior the service should 
 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
+Removing file permissions for a user may not immediately invalidate the URL.
 
 ## Methods
 
@@ -180,6 +183,7 @@ The URL will only be available for a short period of time (1 hour) before it is 
 | [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
@@ -198,6 +202,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem-list-versions.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemReference]: itemreference.md
@@ -212,6 +217,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md

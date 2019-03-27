@@ -38,13 +38,13 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 |azureTenantId|String| Stamped by the system when the indicator is ingested. The Azure Active Directory tenant id of submitting client. **Required.**|
 |confidence|Int32|An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.|
 |description|String| Brief description (100 characters or less) of the threat represented by the indicator. **Required.**|
-|diamondModel|string|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
+|diamondModel|[diamondModel](#diamondModel-values)|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| DateTime string indicating when the Indicator expires. All indicators must have an expiration date to avoid stale indicators persisting in the system. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. **Required.**|
 |externalId|String| An identification number that ties the indicator back to the indicator provider’s system (e.g. a foreign key). |
 |id|String|Created by the system when the indicator is ingested. Generated GUID/unique identifier. Read-only.|
 |ingestedDateTime|DateTimeOffset| Stamped by the system when the indicator is ingested. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |isActive|Boolean| Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.|
-|killChain|String collection|A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values. |
+|killChain|[killChain](#killChain-values) collection|A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values. |
 |knownFalsePositives|String|Scenarios in which the indicator may cause false positives. This should be human-readable text.|
 |lastReportedDateTime|DateTimeOffset|The last time the indicator was seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |malwareFamilyNames|String collection|The malware family name associated with an indicator if it exists. Microsoft prefers the Microsoft malware family name if at all possible which can be found via the Windows Defender Security Intelligence [threat encyclopedia](https://www.microsoft.com/wdsi/threats).|
@@ -52,8 +52,8 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 |severity|Int32| An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero is not severe at all. Default value is 3. |
 |tags|String collection|A JSON array of strings that stores arbitrary tags/keywords. |
 |targetProduct|String|A string value representing a single security product to which the indicator should be applied. Acceptable values are: `Azure Sentinel`. **Required**|
-|threatType|String| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
-|tlpLevel|string| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
+|threatType|[threatType](#threatType-values)| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
+|tlpLevel|[tlpLevel](#tlpLevel-values)| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
 
 ### Indicator Observables - Email
 

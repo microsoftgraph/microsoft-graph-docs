@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```

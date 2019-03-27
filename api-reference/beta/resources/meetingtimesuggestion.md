@@ -27,10 +27,10 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
@@ -40,10 +40,11 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
+|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|An array that shows the availability status of each attendee for this meeting suggestion.|
 |confidence|Double|A percentage that represents the likelhood of all the attendees attending.|
-|locations|[locationDataModel](locationdatamodel.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
-|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|A time period suggested for the meeting.|
+|locations|[location](location.md) collection|An array that specifies the name and geographic location of each meeting location for this meeting suggestion.|
+|meetingTimeSlot|[timeSlot](timeslot.md)|A time period suggested for the meeting.|
+|order|Int32|Order of meeting time suggestions sorted by their computed confidence value from high to low, then by chronology if there are suggestions with the same confidence. |
 |organizerAvailability|availabilityStatus| Availability of the meeting organizer for this meeting suggestion. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Reason for suggesting the meeting time.|
 

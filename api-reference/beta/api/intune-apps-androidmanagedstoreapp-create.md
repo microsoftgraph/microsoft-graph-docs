@@ -67,6 +67,7 @@ The following table shows the properties that are required when you create the a
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |appStoreUrl|String|The Play for Work Store app URL.|
+|supportsOemConfig|Boolean|Whether this app supports OEMConfig policy.|
 
 
 
@@ -80,7 +81,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 881
+Content-length: 911
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -108,7 +109,8 @@ Content-length: 881
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "appStoreUrl": "https://example.com/appStoreUrl/"
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "supportsOemConfig": true
 }
 ```
 
@@ -117,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1083
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -148,7 +150,8 @@ Content-Length: 1053
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "appStoreUrl": "https://example.com/appStoreUrl/"
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "supportsOemConfig": true
 }
 ```
 

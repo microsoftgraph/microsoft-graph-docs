@@ -68,6 +68,8 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
 |scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to enable end user’s access to pause software updates. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to disable user’s access to scan Windows Update. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Specifies what Windows Update notifications users see. Possible values are: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -133,7 +135,9 @@ Here is a JSON representation of the resource.
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
   "scheduleImminentRestartWarningInMinutes": 1024,
-  "userPauseAccess": "String"
+  "userPauseAccess": "String",
+  "userWindowsUpdateScanAccess": "String",
+  "updateNotificationLevel": "String"
 }
 ```
 

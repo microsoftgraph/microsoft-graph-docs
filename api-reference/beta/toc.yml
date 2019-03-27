@@ -49,16 +49,16 @@
         href: /graph/extensibility-open-users?toc=./ref/toc.json
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-    - name: Resources
-      items:
-      - name: Best practices
-        href: /graph/best-practices-concept?toc=./ref/toc.json
-      - name: Known issues
-        href: /graph/known-issues?toc=./ref/toc.json
-      - name: Changelog
-        href: /graph/changelog?toc=./ref/toc.json
-      - name: Errors
-        href: /graph/errors?toc=./ref/toc.json
+  - name: Resources
+    items:
+    - name: Best practices
+      href: /graph/best-practices-concept?toc=./ref/toc.json
+    - name: Known issues
+      href: /graph/known-issues?toc=./ref/toc.json
+    - name: Changelog
+      href: /graph/changelog?toc=./ref/toc.json
+    - name: Errors
+      href: /graph/errors?toc=./ref/toc.json
   - name: Reference
     href: overview.md
     expanded: true
@@ -103,6 +103,8 @@
           href: api/user-reminderview.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
         - name: Find room lists
           href: api/user-findroomlists.md
         - name: Find rooms
@@ -588,10 +590,10 @@
           href: api/calendar-list-events.md
         - name: Create Event
           href: api/calendar-post-events.md
-        - name: Find meeting times
-          href: api/user-findmeetingtimes.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
         - name: Find room lists
           href: api/user-findroomlists.md
         - name: Find rooms
@@ -2157,6 +2159,10 @@
             href: api/intune-enrollment-importeddeviceidentity-update.md
           - name: importDeviceIdentityList action
             href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+          - name: searchExistingIdentities action
+            href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+          - name: searchExistingIdentities action
+            href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
         - name: Imported device identity result
           href: resources/intune-enrollment-importeddeviceidentityresult.md
           items:
@@ -2249,6 +2255,12 @@
             href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
           - name: unassignUserFromDevice action
             href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+          - name: assignResourceAccountToDevice action
+            href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+          - name: unassignResourceAccountFromDevice action
+            href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+        - name: Windows autopilot device type
+          href: resources/intune-enrollment-windowsautopilotdevicetype.md
         - name: Windows autopilot profile assignment detailed status
           href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
         - name: Windows autopilot profile assignment status
@@ -2961,8 +2973,6 @@
           href: resources/intune-deviceconfig-defenderprotectiontype.md
         - name: Defender scan type
           href: resources/intune-deviceconfig-defenderscantype.md
-        - name: Defender schedule scan day
-          href: resources/intune-deviceconfig-defenderschedulescanday.md
         - name: Defender security center IT contact display type
           href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
         - name: Defender security center notifications from app type
@@ -4670,6 +4680,29 @@
           href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
         - name: Windows firewall network profile
           href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+        - name: Windows firewall rule
+          href: resources/intune-deviceconfig-windowsfirewallrule.md
+        - name: Windows firewall rule interface types
+          href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+        - name: Windows firewall rule network profile types
+          href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+        - name: Windows firewall rule traffic direction type
+          href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+        - name: Windows health monitoring configuration
+          href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+        - name: Windows health monitoring scope
+          href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
         - name: Windows identity protection configuration
           href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
           items:
@@ -4889,6 +4922,8 @@
           href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
         - name: Windows update install schedule type
           href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+        - name: Windows update notification display option
+          href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
         - name: Windows update status
@@ -5619,7 +5654,7 @@
             href: api/intune-devices-windowsprotectionstate-get.md
           - name: Update
             href: api/intune-devices-windowsprotectionstate-update.md
-      - name: Mobile app management
+      - name: Mobile app management (MAM)
         href: resources/intune-mam-conceptual.md
         items:
         - name: Android managed app protection
@@ -5644,6 +5679,10 @@
             href: api/intune-mam-androidmanagedappregistration-get.md
           - name: Create
             href: api/intune-mam-androidmanagedappregistration-create.md
+        - name: Android managed app safety net apps verification type
+          href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+        - name: Android managed app safety net device attestation type
+          href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
         - name: Android mobile app identifier
           href: resources/intune-mam-androidmobileappidentifier.md
         - name: App management level
@@ -6192,7 +6231,7 @@
             href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control 
+      - name: Role-based access control (RBAC)
         href: /resources/intune-rbac-conceptual.md
         items:
         - name: Device and app management assigned role details
@@ -6498,6 +6537,10 @@
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md
+        - name: List categories
+          href: api/educationclass-list-categories.md
+        - name: Create category
+          href: api/educationclass-post-category.md
       - name: Users
         href: resources/educationuser.md
         items:
@@ -6536,6 +6579,19 @@
           href: api/educationassignment-list-submissions.md
         - name: Get resource folder URL
           href: api/educationassignment-getresourcesfolderurl.md
+        - name: List categories
+          href: api/educationassignment-list-categories.md
+        - name: Add category
+          href: api/educationassignment-add-categories.md
+        - name: Remove category
+          href: api/educationassignment-remove-category.md
+      - name: Category
+        href: resources/educationcategory.md
+        items:
+        - name: Get category
+          href: api/educationcategory-get.md
+        - name: Delete category
+          href: api/educationcategory-delete.md
       - name: Submission
         href: resources/educationsubmission.md
         items:
@@ -8402,6 +8458,67 @@
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Schedule
+        href: resources/schedule.md
+        items:
+        - name: Create or replace
+          href: api/team-put-schedule.md
+        - name: Get
+          href: api/schedule-get.md
+        - name: Share
+          href: api/schedule-share.md  
+      - name: Scheduling group
+        href: resources/schedulinggroup.md
+        items:
+        - name: Create
+          href: api/schedule-post-schedulinggroups.md
+        - name: List
+          href: api/schedule-list-schedulinggroups.md 
+        - name: Get
+          href: api/schedulinggroup-get.md
+        - name: Replace
+          href: api/schedulinggroup-put.md
+        - name: Delete
+          href: api/schedulinggroup-delete.md    
+      - name: Shift
+        href: resources/shift.md
+        items:
+          - name: Create
+            href: api/schedule-post-shifts.md
+          - name: List
+            href: api/schedule-list-shifts.md 
+          - name: Get
+            href: api/shift-get.md
+          - name: Replace
+            href: api/shift-put.md
+          - name: Delete
+            href: api/shift-delete.md    
+      - name: Time off
+        href: resources/timeoff.md
+        items:
+          - name: Create
+            href: api/schedule-post-timesoff.md
+          - name: List
+            href: api/schedule-list-timesoff.md 
+          - name: Get
+            href: api/timeoff-get.md
+          - name: Replace
+            href: api/timeoff-put.md
+          - name: Delete
+            href: api/timeoff-delete.md   
+      - name: Time off reason
+        href: resources/timeoffreason.md
+        items:
+          - name: Create
+            href: api/schedule-post-timeoffreasons.md
+          - name: List
+            href: api/schedule-list-timeoffreasons.md 
+          - name: Get
+            href: api/timeoffreason-get.md
+          - name: Replace
+            href: api/timeoffreason-put.md
+          - name: Delete
+            href: api/timeoffreason-delete.md   
       - name: Drive
         href: resources/drive.md
         items:

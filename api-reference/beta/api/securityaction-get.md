@@ -1,12 +1,12 @@
 ---
-title: "Get security action"
+title: "Get securityAction"
 description: "Retrieve the properties and relationships of securityAction object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Get security action
+# Get securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -32,6 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}/tasks
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```

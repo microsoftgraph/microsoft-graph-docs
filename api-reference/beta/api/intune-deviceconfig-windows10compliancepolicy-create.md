@@ -82,6 +82,7 @@ The following table shows the properties that are required when you create the w
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
+|tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
 
 
 
@@ -95,7 +96,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1666
+Content-length: 1690
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -141,7 +142,8 @@ Content-length: 1666
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
 
@@ -150,7 +152,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1838
+Content-Length: 1862
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -199,7 +201,8 @@ Content-Length: 1838
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
 

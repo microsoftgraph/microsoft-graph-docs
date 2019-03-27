@@ -1,27 +1,27 @@
 ---
-title: "Get free/busy schedule of users and resources (preview)"
+title: "Get free/busy schedule of users and resources"
 description: "In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Get free/busy schedule of users and resources (preview)
+# Get free/busy schedule of users and resources
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 
-The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
+The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action lets you get the availability information of one or more entities - users, distribution lists, or resources - for a specific period of time. 
 
 ## Example
 
-A simple example is to find the free/busy schedule of a coworker, Alex, on a specific day, from 9am to 6pm, Pacitfic Standard Time:
+A simple example is to find the free/busy schedule of a coworker, Alex, on a specific day, from 9am to 6pm, Pacific Standard Time:
 
 <!-- {
   "blockType": "ignored",
   "name": "calendar_getSchedule_concept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -52,14 +52,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
             "scheduleId":"AlexW@contoso.OnMicrosoft.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
-                    "isPrivate":false,
                     "status":"Tentative",
                     "start":{
                         "dateTime":"2018-08-06T09:00:00.0000000",
@@ -71,7 +70,6 @@ Content-type: application/json
                     }
                 },
                 {
-                    "isPrivate":false,
                     "status":"Busy",
                     "start":{
                         "dateTime":"2018-08-06T11:00:00.0000000",
@@ -130,7 +128,7 @@ Apart from the free/busy schedule and working hours of Alex, **getSchedule** als
 
 By default, the length of each time slot is 30 minutes. This example uses the **availabilityViewInterval** property to customize the time slot to be 15 minutes.
 
-## How is getSchedule different from findMeetingTimes
+## How does getSchedule compare with findMeetingTimes
 
 The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) action is similar to **getSchedule** in that both read the free/busy status and working hours of specified users and resources. The two actions differ in a few major ways.
 
@@ -144,7 +142,7 @@ The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) act
 
 It is appropriate for scenarios that depend on [streamlining appointment booking](findmeetingtimes-example.md).
 
-**getSchedule** simply returns the free/busy status of existing events in each of the requested calendars for a given time period, and assumes the remaining time in that time period tp be free. You would then apply further business logic to make use of this data to complete your scenario.
+**getSchedule** simply returns the free/busy status of existing events in each of the requested calendars for a given time period, and assumes the remaining time in that time period to be free. You would then apply further business logic to make use of this data to complete your scenario.
 
 ### App-only support
 
@@ -152,24 +150,30 @@ It is appropriate for scenarios that depend on [streamlining appointment booking
 
 **getSchedule** supports both delegated and app-only scenarios. In the latter, an administrator consents the app to access all calendars without a signed-in user.
 
+### Permissions
+The least privileged permissions required by **findmeetingtimes** is Calendars.Read.Shared.
+
+The least privileged permission required by **getSchedule** is Calendar.Read. 
 
 ### Version support
 
-**findmeetingtimes** is generally available for all apps. 
-
-**getSchedule** is currently available [in preview status](versioning-and-support.md#beta-version), and therefore is not appropriate for use in production apps.
+**findmeetingtimes** and **getSchedule** are both generally available and appropriate for use in production apps.
 
 
-## Permissions
-The least privileged permission you need to get free/busy information is Calendar.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
-Other than the free/busy status and working hours of requested entities, **getSchedule** can also return the subject and location of an event, provided that:
+## Event data returned
+The least privileged permission required by **getSchedule** for an app to get free/busy information is Calendar.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
 
-- If the event is marked with low sensitivity level - `normal` or `personal`
-AND one or more of the following conditions applies:
+While the consented permission lets an app use **getSchedule** on the requested users' calendars, through Outlook, the requested user controls which event data, if any, that **getSchedule** returns. 
 
-- The requested user’s calendar settings allow all the users in the organization to view titles and locations
-- The requested user’s calendar is shared with the signed-in user
-- The signed-in user is an administrator of the same organization as the requested user.
+For example, **getSchedule** can return the free/busy status and working hours of the requested users, or it can also return the **subject**, **location**, and **isPrivate** properties of an event, provided that:
+
+- The event is marked with low sensitivity level - `normal` or `personal` - 
+AND one or more of the following conditions apply:
+
+   - The requested user’s calendar settings allow the signed-in user to view subject lines and locations
+   - The requested user’s calendar is shared with the signed-in user
+
+These conditions apply regardless of whether the signed-in user is an administrator in the organization. The requested user has control over the event data returned.
 
 ## Time zone representation
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
@@ -183,6 +187,7 @@ Be aware of the following limits and error condition:
 - **getSchedule** can support looking up free/busy information for up to 20 entities at once. This limit applies to the number of users identified individually or as members of a distribution list, and to the number of resources as well.
 - The time period to look up must be less than 42 days.
 - If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
+
 
 ## See also
 - [Permissions reference](permissions-reference.md#calendars-permissions)

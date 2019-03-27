@@ -16,10 +16,10 @@ Take immediate action to defend against threats using the Microsoft Graph Securi
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get securityAction](../api/securityaction-get.md) | [securityAction](securityaction.md) | Read properties and relationships of securityAction object. |
-| [Create securityAction](../api/securityactions-post.md) | [securityAction](securityaction.md) | Create a new securityAction by posting to the securityActions collection. |
-| [List securityActions](../api/securityactions-list.md) | [securityAction](securityaction.md) collection | Get a securityAction object collection. |
-|[Cancel securityAction](../api/securityaction-cancelsecurityaction.md)|None|Cancel a security operation.|
+| [Get security action](../api/securityaction-get.md) | [securityAction](securityaction.md) | Read properties and relationships of securityAction object. |
+| [Create security action](../api/securityactions-post.md) | [securityAction](securityaction.md) | Create a new securityAction by posting to the securityActions collection. |
+| [List security actions](../api/securityactions-list.md) | [securityAction](securityaction.md) collection | Get a securityAction object collection. |
+|[Cancel security action](../api/securityaction-cancelsecurityaction.md)|None|Cancel a security operation.|
 
 ## Properties
 

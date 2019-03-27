@@ -72,6 +72,7 @@ The following table shows the properties that are required when you create the [
 |kioskAppDisplayName|String|Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.|
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
 |maintenanceStartTime|TimeOfDay|Specifies the daily start time of maintenance hour.|
+|fastFirstSignIn|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -85,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1114
+Content-length: 1147
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -118,7 +119,8 @@ Content-length: 1114
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
-  "maintenanceStartTime": "11:59:24.7240000"
+  "maintenanceStartTime": "11:59:24.7240000",
+  "fastFirstSignIn": "enabled"
 }
 ```
 
@@ -127,7 +129,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1286
+Content-Length: 1319
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -163,7 +165,8 @@ Content-Length: 1286
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
-  "maintenanceStartTime": "11:59:24.7240000"
+  "maintenanceStartTime": "11:59:24.7240000",
+  "fastFirstSignIn": "enabled"
 }
 ```
 

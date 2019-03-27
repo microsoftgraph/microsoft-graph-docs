@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 889
 
 {
   "value": [
@@ -83,7 +83,8 @@ Content-Length: 852
           "permission": "Permission value",
           "action": "autoGrant"
         }
-      ]
+      ],
+      "appSupportsOemConfig": true
     }
   ]
 }

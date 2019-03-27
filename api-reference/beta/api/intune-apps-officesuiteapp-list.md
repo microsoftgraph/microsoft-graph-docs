@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1977
+Content-Length: 2001
 
 {
   "value": [
@@ -103,6 +103,7 @@ Content-Length: 1977
         "powerPoint": true,
         "publisher": true,
         "sharePointDesigner": true,
+        "teams": true,
         "visio": true,
         "word": true
       },

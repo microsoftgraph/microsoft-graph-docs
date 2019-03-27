@@ -9,6 +9,9 @@
     ],
     "notLowerCamel": [
       "Json"
+    ],
+    "treatErrorsAsWarningsWorkloads": [
+      "intune"
     ]
   },
   "schemaDiffConfig": {

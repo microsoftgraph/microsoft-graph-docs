@@ -60,6 +60,11 @@ The following table shows the properties that are required when you create the w
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
 |addressableUserName|String|Addressable user name.|
 |userPrincipalName|String|User Principal Name.|
+|resourceName|String|Resource Name.|
+|skuNumber|String|SKU Number|
+|systemFamily|String|System Family|
+|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|managedDeviceId|String|Managed Device ID|
 
 
 
@@ -73,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 755
+Content-length: 1001
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -89,7 +94,12 @@ Content-length: 755
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -98,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 804
+Content-Length: 1050
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -115,7 +125,12 @@ Content-Length: 804
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 

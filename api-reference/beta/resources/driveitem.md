@@ -45,6 +45,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -68,11 +69,13 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "content": { "@odata.type": "Edm.Stream" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -97,6 +100,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| content              | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
@@ -133,16 +137,19 @@ The eTag value is only modified when the folder's properties are changed, except
 
 ## Relationships
 
-| Relationship       | Type                            | Description
-|:-------------------|:--------------------------------|:--------------------------
-| activities         | [itemActivity][] collection     | The list of recent activities that took place on this item.
-| analytics          | [itemAnalytics][] resource      | Analytics about the view activities that took place on this item.
-| content            | Stream                          | The content stream, if the item represents a file.
-| children           | driveitem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
-| listItem           | [listItem][]                    | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-| permissions        | [permission][] collection       | The set of permissions for the item. Read-only. Nullable.
-| thumbnails         | [thumbnailSet][] collection     | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+| Relationship       | Type                        | Description
+|:-------------------|:----------------------------|:--------------------------
+| activities         | [itemActivity][] collection | The list of recent activities that took place on this item.
+| analytics          | [itemAnalytics][] resource  | Analytics about the view activities that took place on this item.
+| children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
+| lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
+| listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
+| permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
+| subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
+| thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
+| workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
 
 ## Instance Attributes
 
@@ -156,7 +163,7 @@ These properties are temporary and either a) define behavior the service should 
 | @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
-The URL will only be available for a short period of time (1 hour) before it is invalidated. 
+The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
 ## Methods
@@ -223,8 +230,10 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
+[workbook]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 

@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1951
+Content-Length: 1977
 
 {
   "value": {
@@ -110,7 +110,8 @@ Content-Length: 1951
     ],
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "configurationManagerComplianceRequired": true
+    "configurationManagerComplianceRequired": true,
+    "tpmRequired": true
   }
 }
 ```

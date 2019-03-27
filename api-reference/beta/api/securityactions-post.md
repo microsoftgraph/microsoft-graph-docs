@@ -1,12 +1,12 @@
 ---
-title: "Create security action"
-description: Create a new security action object."
+title: "Create securityAction"
+description: Create a new securityAction object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Create security action
+# Create securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
