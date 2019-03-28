@@ -98,6 +98,15 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_group-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_group-Javascript-snippets.md)]
+
+---
+
 
 #### Request 2
 The next example uses a `$select` query option to get a few properties that are not returned by default. 
@@ -132,6 +141,15 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_group_non_default-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_group_non_default-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

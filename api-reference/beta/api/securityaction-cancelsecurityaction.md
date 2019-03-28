@@ -72,6 +72,15 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/securityaction_cancelsecurityaction-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/securityaction_cancelsecurityaction-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

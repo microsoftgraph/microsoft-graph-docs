@@ -74,6 +74,15 @@ Content-length: 306
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_approleassignments-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_approleassignments-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

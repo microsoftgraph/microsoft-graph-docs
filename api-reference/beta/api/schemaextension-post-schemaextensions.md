@@ -133,6 +133,15 @@ Content-length: 420
     ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_schemaextension_from_schemaextensions_1-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_schemaextension_from_schemaextensions_1-Javascript-snippets.md)]
+
+---
+
 
 ##### Request 2
 
@@ -209,6 +218,15 @@ Content-length: 420
     ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_schemaextension_from_schemaextensions_2-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_schemaextension_from_schemaextensions_2-Javascript-snippets.md)]
+
+---
+
 
 
 ## See also

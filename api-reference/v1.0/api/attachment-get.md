@@ -143,6 +143,15 @@ Content-length: 199
   "size": 99
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_file_attachment-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_file_attachment-Javascript-snippets.md)]
+
+---
+
 ## Example (item attachment)
 
 ##### Request 1
@@ -177,6 +186,15 @@ Content-type: application/json
   "isInline":false
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_item_attachment-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_item_attachment-Javascript-snippets.md)]
+
+---
+
 
 ##### Request 2
 The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is 
@@ -262,6 +280,15 @@ Content-type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_and_expand_item_attachment-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_and_expand_item_attachment-Javascript-snippets.md)]
+
+---
+
 
 
 
@@ -297,6 +324,15 @@ Content-length: 215
   "size": 99,
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_reference_attachment-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_reference_attachment-Javascript-snippets.md)]
+
+---
+
 
 
 

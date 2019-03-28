@@ -66,6 +66,15 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/download-item-content-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/download-item-content-Javascript-snippets.md)]
+
+---
+
 
 ## Partial range downloads
 

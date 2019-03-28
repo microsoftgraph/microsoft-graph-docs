@@ -57,6 +57,15 @@ There is no response body.
   "name": "post_educationSynchronizationProfile_resume"
 }-->
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/post_educationSynchronizationProfile_resume-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/post_educationSynchronizationProfile_resume-Javascript-snippets.md)]
+
+---
+
 HTTP/1.1 200 OK
 ```
 <!--

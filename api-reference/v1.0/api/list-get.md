@@ -62,6 +62,15 @@ Content-type: application/json
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-list-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-list-Javascript-snippets.md)]
+
+---
+
 
 With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
 
@@ -127,6 +136,15 @@ Content-type: application/json
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-list-multi-expand-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-list-multi-expand-Javascript-snippets.md)]
+
+---
+
 
 <!-- {
   "type": "#page.annotation",

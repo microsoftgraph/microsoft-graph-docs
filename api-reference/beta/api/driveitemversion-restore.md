@@ -57,6 +57,15 @@ If successful, the API call returns a `204 No content`.
 ```http
 HTTP/1.1 204 No content
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/restore-item-version-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/restore-item-version-Javascript-snippets.md)]
+
+---
+
 
 [item-resource]: ../resources/driveitem.md
 

@@ -128,6 +128,15 @@ Content-type: application/json
     ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_eventmessage-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_eventmessage-Javascript-snippets.md)]
+
+---
+
 
 ##### Request 2
 The second example shows how to get the event associated with an event message. It uses 
@@ -296,6 +305,15 @@ Content-type: application/json
    }
 }
 ``` 
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_event_based_on_eventmessage-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_event_based_on_eventmessage-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

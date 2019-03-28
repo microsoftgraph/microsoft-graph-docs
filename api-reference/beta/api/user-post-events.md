@@ -213,6 +213,15 @@ Content-length: 2197
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_event_from_user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_event_from_user-Javascript-snippets.md)]
+
+---
+
 
 
 ##### Request 2
@@ -418,6 +427,15 @@ Content-length: 2985
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_event_from_user_multiple_locations-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_event_from_user_multiple_locations-Javascript-snippets.md)]
+
+---
+
 
 
 ##### Request 3
@@ -584,6 +602,15 @@ Content-type: application/json
     "OnlineMeeting":null
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_event_recurring-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_event_recurring-Javascript-snippets.md)]
+
+---
+
 
 
 

@@ -91,6 +91,15 @@ Content-type: application/json
   "createdDateTime": "2018-05-18T20:26:05.2976279Z"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_programControl_from_programControls-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_programControl_from_programControls-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

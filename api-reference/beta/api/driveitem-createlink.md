@@ -120,6 +120,15 @@ Content-Type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/item_createlink-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/item_createlink-Javascript-snippets.md)]
+
+---
+
 
 ## Creating company sharable links
 
@@ -163,6 +172,15 @@ Content-Type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create-link-scoped-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create-link-scoped-Javascript-snippets.md)]
+
+---
+
 
 ## Creating embeddable links
 
@@ -206,6 +224,15 @@ Content-Type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create-embedded-link-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create-embedded-link-Javascript-snippets.md)]
+
+---
+
 
 ## Remarks
 

@@ -64,6 +64,15 @@ HTTP/1.1 200 OK
 
 ...binary data...
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_resource-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_resource-Javascript-snippets.md)]
+
+---
+
 <!-- {
   "blockType": "response",
   "truncated": false,

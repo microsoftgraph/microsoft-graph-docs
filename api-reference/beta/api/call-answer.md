@@ -83,6 +83,15 @@ Here is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/call-answer-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/call-answer-Javascript-snippets.md)]
+
+---
+
 
 ### Answer VOIP call with service hosted media
 

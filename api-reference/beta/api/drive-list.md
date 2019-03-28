@@ -43,6 +43,15 @@ To list the document libraries for a site, your app requests the **drives** rela
 ```http
 GET /sites/{siteId}/drives
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/group-list-drives-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/group-list-drives-Javascript-snippets.md)]
+
+---
+
 
 ## List a user's drives
 
@@ -51,6 +60,15 @@ GET /sites/{siteId}/drives
 ```http
 GET /users/{userId}/drives
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/site-list-drives-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/site-list-drives-Javascript-snippets.md)]
+
+---
+
 
 ## List the current user's drives
 
@@ -59,6 +77,15 @@ GET /users/{userId}/drives
 ```http
 GET /me/drives
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/user-list-drives-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/user-list-drives-Javascript-snippets.md)]
+
+---
+
 
 ## Optional query parameters
 
@@ -104,6 +131,15 @@ Content-Type: application/json
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/enum-drives-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/enum-drives-Javascript-snippets.md)]
+
+---
+
 
 ## Remarks
 

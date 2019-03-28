@@ -71,6 +71,15 @@ Content-type: application/json
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-analytics-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-analytics-Javascript-snippets.md)]
+
+---
+
 
 <!--
 {

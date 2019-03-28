@@ -77,6 +77,15 @@ Content-type: application/json
     "description": "test description"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_program_from_programs-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_program_from_programs-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

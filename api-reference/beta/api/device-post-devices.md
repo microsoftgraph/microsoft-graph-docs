@@ -96,6 +96,15 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_device_from_devices-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_device_from_devices-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

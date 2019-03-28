@@ -61,6 +61,15 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/workbookpivottable_refreshall-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/workbookpivottable_refreshall-Javascript-snippets.md)]
+
+---
+
 <!--
 {
   "type": "#page.annotation",

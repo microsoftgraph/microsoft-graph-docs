@@ -151,6 +151,15 @@ Content-type: application/json
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_message_from_user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_message_from_user-Javascript-snippets.md)]
+
+---
+
 
 ##### Request 2
 The next example shows a draft email by Randi Welch to Samantha Booth. The message also includes a mention of another user, Dana Swope.
@@ -245,6 +254,15 @@ Content-type: application/json
 }
 
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_message_with_mentions_from_user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_message_with_mentions_from_user-Javascript-snippets.md)]
+
+---
+
 
 ##### Request 3
 The next example adds a couple of customer Internet message headers when creating the message draft.
@@ -350,6 +368,15 @@ Content-type: application/json
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_message_with_headers_from_user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_message_with_headers_from_user-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

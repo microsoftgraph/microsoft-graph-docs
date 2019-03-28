@@ -141,6 +141,15 @@ Content-type: application/json
 	 "onPremisesProvisioningErrors": []
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_group-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_group-Javascript-snippets.md)]
+
+---
+
 
 #### Request 2
 The second example request creates an Office 365 group with an owner and members specified.
@@ -214,6 +223,15 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_prepopulated_group-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_prepopulated_group-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

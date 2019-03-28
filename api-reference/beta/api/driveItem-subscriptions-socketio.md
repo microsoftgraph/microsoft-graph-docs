@@ -65,6 +65,15 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/drive_root_subscriptions_socketIo-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
+
+---
+
 
 The `notificationUrl` returned is a socket.io endpoint URL.
 To use it with a socket.io client, split the string on the `/callback?` token.

@@ -68,6 +68,15 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
   "assignmentState": "Eligible"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/updaterequest_governanceroleassignmentrequest-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
 
 ##### Response
 <!-- {

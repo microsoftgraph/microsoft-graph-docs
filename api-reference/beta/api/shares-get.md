@@ -105,6 +105,15 @@ Content-type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-shared-root-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-shared-root-Javascript-snippets.md)]
+
+---
+
 
 ## Access the shared item directly
 
@@ -139,6 +148,15 @@ Content-Type: application/json
   "size": 109112
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-shared-driveitem-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-shared-driveitem-Javascript-snippets.md)]
+
+---
+
 
 ## Example (shared folder)
 
@@ -182,6 +200,15 @@ Content-Type: application/json
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-shared-driveitem-expand-children-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-shared-driveitem-expand-children-Javascript-snippets.md)]
+
+---
+
 
 ## Error Responses
 

@@ -79,6 +79,15 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/workbookrange_rowsAbove-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/workbookrange_rowsAbove-Javascript-snippets.md)]
+
+---
+
 
 If called without the optional `count` parameter, this function returns the single row above the range.
 

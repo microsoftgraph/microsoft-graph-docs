@@ -125,6 +125,15 @@ Content-length: 359
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/event_delta-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/event_delta-Javascript-snippets.md)]
+
+---
+
 
 ### See also
 

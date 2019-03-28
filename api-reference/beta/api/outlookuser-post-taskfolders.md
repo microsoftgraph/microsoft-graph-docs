@@ -76,6 +76,15 @@ Content-length: 151
   "parentGroupKey": "0006f0b7-0000-0000-c000-000000000046"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_outlooktaskfolder_from_outlookuser-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_outlooktaskfolder_from_outlookuser-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -97,6 +97,15 @@ Content-Length: 515
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/call-redirect-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/call-redirect-Javascript-snippets.md)]
+
+---
+
 
 ### Forward a call
 

@@ -87,6 +87,15 @@ Content-length: 185
   "removeLicenses": ["skuId-value-1", "skuId-value-2"]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/user_assignlicense-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/user_assignlicense-Javascript-snippets.md)]
+
+---
+
 
 ##### Response
 In both examples, the response is the updated user object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

@@ -124,6 +124,15 @@ Content-Type: application/json
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-item-permissions-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-item-permissions-Javascript-snippets.md)]
+
+---
+
 
 ## Remarks
 

@@ -56,6 +56,15 @@ POST https://graph.microsoft.com/beta/accessReviews('2975E9B5-44CE-4E71-93D3-30F
 ```http
 HTTP/1.1 204 No Content
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/reset_accessReview-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/reset_accessReview-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-25 00:00:01 UTC -->

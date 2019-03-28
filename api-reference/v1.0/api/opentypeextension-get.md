@@ -155,6 +155,15 @@ Second, by its ID (fully qualified name):
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_1-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_1-Javascript-snippets.md)]
+
+---
+
 
 #### Response 1
 Here is the response for the first example.
@@ -219,6 +228,15 @@ Content-type: application/json
     "expirationDate": "2015-07-03T13:04:00Z"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_2-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_2-Javascript-snippets.md)]
+
+---
+
 
 ****
 
@@ -318,6 +336,15 @@ Content-type: application/json
      ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_3-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_3-Javascript-snippets.md)]
+
+---
+
 
 ****
 
@@ -469,6 +496,15 @@ Content-Type: application/json
 }
 
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_5-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_opentypeextension_5-Javascript-snippets.md)]
+
+---
+
 
 
 

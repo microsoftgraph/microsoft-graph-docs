@@ -132,6 +132,15 @@ Content-length: 491
    "id": "id-value"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_user-Javascript-snippets.md)]
+
+---
+
 
 ### Example 3: Users request using $select
 

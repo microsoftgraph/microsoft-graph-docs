@@ -113,6 +113,15 @@ Content-type: application/json
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/directoryRole_delta-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/directoryRole_delta-Javascript-snippets.md)]
+
+---
+
 
 ### See also
 

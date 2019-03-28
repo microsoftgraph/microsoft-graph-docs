@@ -134,6 +134,15 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/reportroot_getskypeforbusinessactivityuserdetail_csv-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/reportroot_getskypeforbusinessactivityuserdetail_csv-Javascript-snippets.md)]
+
+---
+
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -229,6 +238,15 @@ Content-Length: 1419
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/reportroot_getskypeforbusinessactivityuserdetail_json-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/reportroot_getskypeforbusinessactivityuserdetail_json-Javascript-snippets.md)]
+
+---
+
 <!--
 {
   "type": "#page.annotation",

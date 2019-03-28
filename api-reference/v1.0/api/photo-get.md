@@ -65,6 +65,15 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_photo-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_photo-Javascript-snippets.md)]
+
+---
+
 ##### Request
 Here is an example of the request for the photo bytes.
 <!-- {
@@ -95,6 +104,15 @@ Content-Length: 250526
 
 <binary image data>
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_photo_value-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_photo_value-Javascript-snippets.md)]
+
+---
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

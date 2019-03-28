@@ -94,6 +94,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_signins-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_signins-Javascript-snippets.md)]
+
+---
+
 ```json
 {
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",

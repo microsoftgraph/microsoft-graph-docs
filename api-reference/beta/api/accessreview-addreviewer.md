@@ -75,6 +75,15 @@ Content-type: application/json
 HTTP/1.1 201 Created
 
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/add_accessReview_reviewer-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/add_accessReview_reviewer-Javascript-snippets.md)]
+
+---
+
 
 <!--
 {

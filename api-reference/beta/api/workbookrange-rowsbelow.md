@@ -80,6 +80,15 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/workbookrange_rowsBelow-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/workbookrange_rowsBelow-Javascript-snippets.md)]
+
+---
+
 <!--
 {
   "type": "#page.annotation",

@@ -57,6 +57,15 @@ There is no response body.
   "name": "post_synchronizationProfile_pause"
 }-->
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/post_synchronizationProfile_pause-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/post_synchronizationProfile_pause-Javascript-snippets.md)]
+
+---
+
 HTTP/1.1 200 OK
 ```
 <!--

@@ -103,6 +103,15 @@ Content-length: 411
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_organization-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_organization-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

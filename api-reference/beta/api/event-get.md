@@ -174,6 +174,15 @@ Content-length: 1928
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_event-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_event-Javascript-snippets.md)]
+
+---
+
 
 ##### Request 2
 The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
@@ -215,6 +224,15 @@ Content-length: 636
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_event_in_text-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_event_in_text-Javascript-snippets.md)]
+
+---
+
 
 
 ##### Request 3
@@ -332,6 +350,15 @@ Content-length: 1992
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_event_multiple_locations-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_event_multiple_locations-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

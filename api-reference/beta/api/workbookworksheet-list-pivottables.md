@@ -74,6 +74,15 @@ Content-length: 83
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_pivottables-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_pivottables-Javascript-snippets.md)]
+
+---
+
 <!--
 {
   "type": "#page.annotation",

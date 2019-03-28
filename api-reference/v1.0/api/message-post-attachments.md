@@ -111,6 +111,15 @@ Content-length: 202
 }
 
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_file_attachment_from_message-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_file_attachment_from_message-Javascript-snippets.md)]
+
+---
+
 
 ## Example (item attachment)
 
@@ -170,6 +179,15 @@ Content-length: 162
   "isInline":false
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_item_attachment_from_message-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_item_attachment_from_message-Javascript-snippets.md)]
+
+---
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

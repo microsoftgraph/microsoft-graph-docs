@@ -72,6 +72,15 @@ Content-type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-special-folder-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-special-folder-Javascript-snippets.md)]
+
+---
+
 
 ## Get children of a special folder
 
@@ -103,6 +112,15 @@ Content-Type: application/json
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-special-children-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-special-children-Javascript-snippets.md)]
+
+---
+
 
 ## Remarks
 

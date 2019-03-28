@@ -76,6 +76,15 @@ Content-length: 169
   "addressLocal": "addressLocal-value"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/worksheet_usedrange-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/worksheet_usedrange-Javascript-snippets.md)]
+
+---
+
 
 Alternatively, this function can be called with the optional `valuesOnly` parameter.
 
@@ -107,6 +116,15 @@ Content-length: 169
   "addressLocal": "addressLocal-value"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/worksheet_usedrange_valuesonly-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/worksheet_usedrange_valuesonly-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

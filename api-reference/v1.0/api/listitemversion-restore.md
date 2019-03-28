@@ -51,6 +51,15 @@ If successful, the API call returns a `204 No Content`.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/restore-item-version-listItem-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/restore-item-version-listItem-Javascript-snippets.md)]
+
+---
+
 
 <!-- {
   "type": "#page.annotation",

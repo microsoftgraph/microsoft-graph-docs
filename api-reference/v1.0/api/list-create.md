@@ -93,6 +93,15 @@ Content-type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create-list-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create-list-Javascript-snippets.md)]
+
+---
+
 
 **Note:** The response object is truncated for clarity.
 Default properties will be returned from the actual call.

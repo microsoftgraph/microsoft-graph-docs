@@ -85,6 +85,15 @@ Content-type: application/json
   "id": "98f5bdef-576a-404d-a2ea-07a3cf11a9b9"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_inferenceclassificationoverride_from_inferenceclassification-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_inferenceclassificationoverride_from_inferenceclassification-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

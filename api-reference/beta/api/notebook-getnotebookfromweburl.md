@@ -91,6 +91,15 @@ Content-Length: 544
     "self": "self-value",
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/notebook_fromweburl-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/notebook_fromweburl-Javascript-snippets.md)]
+
+---
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [

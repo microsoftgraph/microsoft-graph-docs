@@ -109,6 +109,19 @@ Content-length: 160
     "reactions": []
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_chatmessage_from_channel-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_chatmessage_from_channel-Javascript-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_chatmessage_from_channel-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_chatmessage_from_channel-Javascript-snippets.md)]
+
+---
+
 
 ### Example 2: @mentions
 

@@ -1,0 +1,227 @@
+
+```CS
+
+GraphServiceClient graphClient = new GraphServiceClient();
+
+var expression = "Replace([preferredLanguage], "-", , , "_", ,  )";
+
+
+//create String list and populate it
+var value = new List<String>();
+
+var valueVar@odata.type = "#Collection(String)";
+
+var key = "appRoleAssignments";
+
+var valueVar = "johns@contoso.com";
+
+var keyVar = "userPrincipalName";
+
+var valueVarVar = "425-555-0011";
+
+var keyVarVar = "telephoneNumber";
+
+var valueVarVarVar = "Smith";
+
+var keyVarVarVar = "surname";
+
+var valueVarVarVarVar = "";
+
+var keyVarVarVarVar = "proxyAddresses";
+
+var valueVarVarVarVarVar = "EN-US";
+
+var keyVarVarVarVarVar = "preferredLanguage";
+
+var valueVarVarVarVarVarVar = "Main Office";
+
+var keyVarVarVarVarVarVar = "physicalDeliveryOfficeName";
+
+var valueVarVarVarVarVarVarVar = "";
+
+var keyVarVarVarVarVarVarVar = "passwordProfile.password";
+
+var valueVarVarVarVarVarVarVarVar = "66E4A8CC-1B7B-435E-95F8-F06CEA133828";
+
+var keyVarVarVarVarVarVarVarVar = "onPremisesSecurityIdentifier";
+
+var valueVarVarVarVarVarVarVarVarVar = "425-555-0010";
+
+var keyVarVarVarVarVarVarVarVarVar = "mobile";
+
+var valueVarVarVarVarVarVarVarVarVarVar = "maxs@contoso.com";
+
+var keyVarVarVarVarVarVarVarVarVarVar = "manager";
+
+var valueVarVarVarVarVarVarVarVarVarVarVar = "johns";
+
+var keyVarVarVarVarVarVarVarVarVarVarVar = "mailNickname";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVar = "johns@contoso.com";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVar = "mail";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVar = "Finance manager";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVar = "jobTitle";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "John";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "givenName";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute15";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute14";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute13";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute12";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute11";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute10";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute9";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute8";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute7";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 6";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute6";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 5";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute5";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 4";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute4";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 3";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute3";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 2";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute2";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sample 1";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "extensionAttribute1";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "John Smith";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "displayName";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Sales";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "department";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "USA";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "country";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "98052";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "postalCode";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "WA";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "state";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "Redmond";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "city";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "1 Redmond Way";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "streetAddress";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "true";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "accountEnabled";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "false";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "IsSoftDeleted";
+
+var valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "66E4A8CC-1B7B-435E-95F8-F06CEA133828";
+
+var keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar = "objectId";
+
+//create String list and populate it
+var properties = new List<String>();
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVarVar,valueVarVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVarVar,valueVarVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVarVar,valueVarVarVarVarVar));
+properties.Add(new String(keyVarVarVarVar,valueVarVarVarVar));
+properties.Add(new String(keyVarVarVar,valueVarVarVar));
+properties.Add(new String(keyVarVar,valueVarVar));
+properties.Add(new String(keyVar,valueVar));
+properties.Add(new String(key,value@odata.type,value));
+
+//create instance of String
+var testInputObject = new String
+{
+	Definition = null,
+	Properties = properties,
+};
+
+await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"].Schema
+	.parseExpression(expression,testInputObject,targetAttributeDefinition);
+	.Request()
+	.PostAsync()
+
+```

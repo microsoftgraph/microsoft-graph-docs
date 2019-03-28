@@ -80,6 +80,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_directoryaudits-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_directoryaudits-Javascript-snippets.md)]
+
+---
+
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits

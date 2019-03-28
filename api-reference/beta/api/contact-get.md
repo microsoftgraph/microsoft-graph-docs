@@ -150,6 +150,15 @@ Content-type: application/json
   "weddingAnniversary": null
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_contact-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_contact-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

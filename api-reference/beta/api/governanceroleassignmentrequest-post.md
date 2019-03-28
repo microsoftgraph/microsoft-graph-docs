@@ -176,6 +176,35 @@ Content-type: application/json
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-C#-snippets.md)]
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+
+---
+
 
 ### Example 2: User activates eligible role
 

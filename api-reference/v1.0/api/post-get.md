@@ -84,6 +84,15 @@ Content-length: 414
   }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_post-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_post-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

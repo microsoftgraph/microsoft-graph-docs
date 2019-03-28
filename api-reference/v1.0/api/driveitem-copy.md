@@ -74,6 +74,15 @@ Returns details about how to [monitor the progress](/graph/long-running-actions-
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/copy-item-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/copy-item-Javascript-snippets.md)]
+
+---
+
 
 The value of the `Location` header provides a URL for a service that will return the current state of the copy operation.
 You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).

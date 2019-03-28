@@ -88,6 +88,15 @@ Content-length: 109
     "visible": true
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/NamedItemcollection_add-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/NamedItemcollection_add-Javascript-snippets.md)]
+
+---
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

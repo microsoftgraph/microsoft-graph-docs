@@ -70,6 +70,15 @@ Content-length: 134
   "id": "id-value"
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get_administrativeUnit-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get_administrativeUnit-Javascript-snippets.md)]
+
+---
+
 
 <!-- uuid: A681726F-B4A7-4BCF-9407-F87CB9A4771D
 2015-10-25 14:57:30 UTC -->

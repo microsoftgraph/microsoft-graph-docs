@@ -160,6 +160,15 @@ Content-type: application/json
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create_contact_from_user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create_contact_from_user-Javascript-snippets.md)]
+
+---
+
 
 ## See also
 

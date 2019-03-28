@@ -94,6 +94,15 @@ Content-Length: 233
   ]
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/create-audioRoutingGroup-from-call-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/create-audioRoutingGroup-from-call-Javascript-snippets.md)]
+
+---
+
 ### Example 2: Multicast audioRoutingGroup
 
 ##### Request

@@ -51,6 +51,15 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 ```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-drive-default-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-drive-default-Javascript-snippets.md)]
+
+---
+
 
 ### Path parameters
 
@@ -69,6 +78,15 @@ To access a Group's default document library, your app requests the **drive** re
 ```http
 GET /groups/{groupId}/drive
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-drive-by-user-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-drive-by-user-Javascript-snippets.md)]
+
+---
+
 
 ### Path parameters
 
@@ -85,6 +103,15 @@ To access a [Site's](../resources/site.md) default document library, your app re
 ```http
 GET /sites/{siteId}/drive
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-drive-by-group-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-drive-by-group-Javascript-snippets.md)]
+
+---
+
 
 ### Path parameters
 
@@ -141,6 +168,15 @@ Content-type: application/json
     }
 }
 ```
+#### Sample Code
+# [C#](#tab/CS)
+[!INCLUDE [Sample Code]( ../includes/get-drive-by-id-C#-snippets.md)]
+
+# [Javascript](#tab/Javascript)
+[!INCLUDE [Sample Code]( ../includes/get-drive-by-id-Javascript-snippets.md)]
+
+---
+
 
 ### Error response codes
 
