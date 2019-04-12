@@ -35,7 +35,8 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
-|orderIdentifier|String|Order Identifier of the Windows autopilot device.|
+|orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
+|groupTag|String|Group Tag of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
@@ -73,6 +74,7 @@ Here is a JSON representation of the resource.
   "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
   "orderIdentifier": "String",
+  "groupTag": "String",
   "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
   "productKey": "String",
@@ -89,6 +91,7 @@ Here is a JSON representation of the resource.
   "managedDeviceId": "String"
 }
 ```
+
 
 
 

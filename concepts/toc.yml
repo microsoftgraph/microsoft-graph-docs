@@ -3,6 +3,8 @@
     experimental: true
     experiment_id: "b8938daf-1bcb-4f"
   items:
+  - name: Microsoft Graph documentation
+    href: index.yml
   - name: Overview of Microsoft Graph
     href: overview.md
     expanded: true
@@ -30,6 +32,8 @@
       - name: Tutorials
         href: tutorials.md
         items:
+        - name: Android
+          href: /graph/tutorials/android
         - name: Angular
           href: /graph/tutorials/angular
         - name: ASP.NET
@@ -48,6 +52,8 @@
           href: /graph/tutorials/react
         - name: UWP
           href: /graph/tutorials/uwp
+        - name: Xamarin
+          href: /graph/tutorials/xamarin
     - name: Learn
       expanded: true
       items:

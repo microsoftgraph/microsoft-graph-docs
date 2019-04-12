@@ -25,18 +25,6 @@ doc_type: enumPageType
 | iana
 
 
-### availabilityStatus values
-
-| Value
-|:-------------------------
-| unknown
-| free
-| tentative
-| busy
-| oof  
-| workingElsewhere
-
-
 ### freeBusyStatus values
 
 | Member            |Value
@@ -47,16 +35,6 @@ doc_type: enumPageType
 | oof               | 3
 | workingElsewhere  | 4
 | unknown           | -1
-
-
-### addressType values
-
-| Value
-|:-------------------------
-| unknown 
-| home
-| business 
-| other
 
 
 ### physicalAddressType values

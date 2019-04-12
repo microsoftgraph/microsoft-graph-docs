@@ -50,7 +50,7 @@ The following table lists the properties that you can supply when you update a r
 |notificationToUserOnElevation|Boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated. Required.|
 |ticketingInfoOnElevation|Boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role. Required.|
 |approvalOnElevation|Boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role. Required.|
-|approverIds|array|List of Approval IDs, if approval is required for activation.|
+|approverIds|String collection|List of Approval IDs, if approval is required for activation.|
 
 ## Response
 
@@ -84,7 +84,10 @@ Content-type: application/json
 ```
 ##### Response
 Here is an example of the response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}-->
 ```http
 HTTP/1.1 204 No Content
 ```

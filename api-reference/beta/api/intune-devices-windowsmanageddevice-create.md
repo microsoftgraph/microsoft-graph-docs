@@ -16,7 +16,7 @@ doc_type: apiPageType
 Create a new [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices
 POST /deviceManagement/managedDevices
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
 
@@ -126,7 +126,7 @@ If successful, this method returns a `201 Created` response code and a [windowsM
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
 Content-length: 7231
 
@@ -473,6 +473,7 @@ Content-Length: 7280
   }
 }
 ```
+
 
 
 

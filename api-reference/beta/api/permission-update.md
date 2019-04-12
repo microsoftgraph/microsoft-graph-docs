@@ -51,7 +51,7 @@ For best performance you shouldn't include existing values that haven't changed.
 
 | Property     | Type   | Description                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | An array of permission types. |
+| **roles**    | String collection | An array of permission types. |
 
 ## Response
 

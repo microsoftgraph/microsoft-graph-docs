@@ -1,6 +1,6 @@
 ---
 title: "remoteAssistanceOnboardingStatus enum type"
-description: "Not yet documented"
+description: "The current TeamViewer connector status"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -13,14 +13,15 @@ doc_type: enumPageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+The current TeamViewer connector status
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|notOnboarded|0|Not yet documented|
-|onboarding|1|Not yet documented|
-|onboarded|2|Not yet documented|
+|notOnboarded|0|The status reported when there is no active TeamViewer connector configured or active|
+|onboarding|1|The status reported when the system has initiated a TeamViewer connection, but the service has not yet completed the confirmation of a connector|
+|onboarded|2|The status reported when the system has successfully exchanged account information with TeamViewer and can now initiate remote assistance sessions with clients|
+
 
 
 

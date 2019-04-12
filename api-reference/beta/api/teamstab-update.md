@@ -42,7 +42,7 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code.
 
 ## Example
 #### Request
@@ -58,7 +58,7 @@ Content-length: 211
 ```
 #### Response
 ```http
-HTTP/1.1 200 Success
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {

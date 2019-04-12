@@ -31,7 +31,8 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
 |showNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Compnay Portal app landing page|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal app landing page|
+|customPrivacyMessage|String|Custom privacy message.|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 
 ## Relationships
@@ -78,9 +79,11 @@ Here is a JSON representation of the resource.
     "type": "String",
     "value": "binary"
   },
+  "customPrivacyMessage": "String",
   "showDisplayNameNextToLogo": true
 }
 ```
+
 
 
 

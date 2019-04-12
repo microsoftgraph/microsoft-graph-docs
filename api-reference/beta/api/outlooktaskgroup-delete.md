@@ -24,8 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/outlook/taskGroups/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
-
 ```
 ## Request headers
 | Name       | Description|

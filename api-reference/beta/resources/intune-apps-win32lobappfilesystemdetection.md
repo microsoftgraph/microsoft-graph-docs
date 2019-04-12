@@ -24,7 +24,7 @@ Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetecti
 |path|String|The file or folder path to detect Win32 Line of Business (LoB) app|
 |fileOrFolderName|String|The file or folder name to detect Win32 Line of Business (LoB) app|
 |check32BitOn64System|Boolean|A value indicating whether this file or folder is for checking 32-bit app on 64-bit system|
-|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|The file system detection type. Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
+|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|The file system detection type. Possible values are: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|The operator for file or folder detection. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |detectionValue|String|The file or folder detection value|
 
@@ -49,6 +49,7 @@ Here is a JSON representation of the resource.
   "detectionValue": "String"
 }
 ```
+
 
 
 

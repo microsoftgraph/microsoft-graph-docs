@@ -16,7 +16,7 @@ doc_type: apiPageType
 Update the properties of a [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -83,7 +83,6 @@ The following table shows the properties that are required when you create the [
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
-|tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
 
 
 
@@ -97,7 +96,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1690
+Content-length: 1666
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -143,8 +142,7 @@ Content-length: 1690
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
 
@@ -153,7 +151,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1862
+Content-Length: 1838
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -202,10 +200,10 @@ Content-Length: 1862
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
+
 
 
 

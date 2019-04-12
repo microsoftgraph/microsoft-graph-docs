@@ -1,6 +1,6 @@
 ---
 title: "freeBusyError resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents error information from attempting to get the availability of a user, distribution list, or resource."
 localization_priority: Normal
 doc_type: resourcePageType
 ---

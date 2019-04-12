@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3014
+Content-Length: 3438
 
 {
   "value": [
@@ -102,6 +102,8 @@ Content-Length: 3014
       "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
       "kioskModeExitCode": "Kiosk Mode Exit Code value",
       "kioskModeVirtualHomeButtonEnabled": true,
+      "kioskModeBluetoothConfigurationEnabled": true,
+      "kioskModeWiFiConfigurationEnabled": true,
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -111,10 +113,17 @@ Content-Length: 3014
       ],
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
+      "passwordMinimumLetterCharacters": 15,
+      "passwordMinimumLowerCaseCharacters": 2,
+      "passwordMinimumNonLetterCharacters": 2,
+      "passwordMinimumNumericCharacters": 0,
+      "passwordMinimumSymbolCharacters": 15,
+      "passwordMinimumUpperCaseCharacters": 2,
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
       "passwordPreviousPasswordCountToBlock": 4,
       "passwordRequiredType": "required",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
+      "playStoreMode": "allowList",
       "safeBootBlocked": true,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
@@ -141,6 +150,7 @@ Content-Length: 3014
   ]
 }
 ```
+
 
 
 

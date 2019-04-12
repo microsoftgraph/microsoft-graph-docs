@@ -52,6 +52,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled|
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled|
+|deviceNameTemplate|String|Sets a literal or name pattern.|
 
 ## Relationships
 None
@@ -91,9 +92,11 @@ Here is a JSON representation of the resource.
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
-  "privacyPaneDisabled": true
+  "privacyPaneDisabled": true,
+  "deviceNameTemplate": "String"
 }
 ```
+
 
 
 

@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1977
+Content-Length: 1951
 
 {
   "value": {
@@ -111,11 +111,11 @@ Content-Length: 1977
     ],
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "configurationManagerComplianceRequired": true,
-    "tpmRequired": true
+    "configurationManagerComplianceRequired": true
   }
 }
 ```
+
 
 
 

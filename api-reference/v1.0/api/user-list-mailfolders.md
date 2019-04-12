@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## Optional query parameters

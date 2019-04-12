@@ -17,7 +17,7 @@ Update the properties of a [deviceManagement](../resources/intune-shared-devicem
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 Note that the permission vary according to workflow.
 
@@ -28,6 +28,7 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Auditing** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Company terms** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Device intent** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Electronic SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |

@@ -1,6 +1,6 @@
 ---
 title: "scheduleItem resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource as well."
 localization_priority: Normal
 doc_type: resourcePageType
 ---
@@ -9,16 +9,16 @@ doc_type: resourcePageType
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource as well.
+An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |The date, time, and time zone that the corresponding event ends. |
-|isPrivate |Boolean |The sensitivity of the corresponding event. True if the event is marked `private`, false otherwise. |
+|isPrivate |Boolean |The sensitivity of the corresponding event. True if the event is marked `private`, false otherwise. Optional. |
 |location |String | The location where the corresponding event is held or attended from. Optional.|
 |start |[dateTimeTimeZone](datetimetimezone.md) |The date, time, and time zone that the corresponding event starts. |
-|status |String | The availability status of the user or resource during the corresponding event. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
+|status |freeBusyStatus | The availability status of the user or resource during the corresponding event. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
 |subject |String | The corresponding event's subject line. Optional.|
 
 
@@ -29,7 +29,9 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "isPrivate",
+    "location",
+    "subject"
   ],
   "@odata.type": "microsoft.graph.scheduleItem"
 }-->

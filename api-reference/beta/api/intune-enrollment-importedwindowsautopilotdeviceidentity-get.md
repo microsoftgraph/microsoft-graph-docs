@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 635
+Content-Length: 671
 
 {
   "value": {
@@ -71,6 +71,7 @@ Content-Length: 635
     "orderIdentifier": "Order Identifier value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
+    "importId": "Import Id value",
     "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
     "state": {
       "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -82,6 +83,7 @@ Content-Length: 635
   }
 }
 ```
+
 
 
 

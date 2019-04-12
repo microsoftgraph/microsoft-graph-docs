@@ -49,16 +49,16 @@
         href: /graph/extensibility-open-users?toc=./ref/toc.json
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-    - name: Resources
-      items:
-      - name: Best practices
-        href: /graph/best-practices-concept?toc=./ref/toc.json
-      - name: Known issues
-        href: /graph/known-issues?toc=./ref/toc.json
-      - name: Changelog
-        href: /graph/changelog?toc=./ref/toc.json
-      - name: Errors
-        href: /graph/errors?toc=./ref/toc.json
+  - name: Resources
+    items:
+    - name: Best practices
+      href: /graph/best-practices-concept?toc=./ref/toc.json
+    - name: Known issues
+      href: /graph/known-issues?toc=./ref/toc.json
+    - name: Changelog
+      href: /graph/changelog?toc=./ref/toc.json
+    - name: Errors
+      href: /graph/errors?toc=./ref/toc.json
   - name: Reference
     href: overview.md
     expanded: true
@@ -101,6 +101,8 @@
           href: api/user-list-calendarview.md
         - name: Reminder view
           href: api/user-reminderview.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Contacts
@@ -537,6 +539,8 @@
           href: api/calendar-post-events.md
         - name: Reminder view
           href: api/user-reminderview.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Calendar view

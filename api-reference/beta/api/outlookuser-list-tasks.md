@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/tasks
 GET /users/{id|userPrincipalName}/outlook/tasks
 ```
 ## Optional query parameters

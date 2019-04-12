@@ -3,6 +3,8 @@
     experimental: false
     experiment_id: "b8938daf-1bcb-4f"
   items:
+  - name: Microsoft Graph documentation
+    href: index.yml
   - name: Overview of Microsoft Graph
     href: overview.md
     expanded: true

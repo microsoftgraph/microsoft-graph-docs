@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # notebook: getNotebookFromWebUrl
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.
 

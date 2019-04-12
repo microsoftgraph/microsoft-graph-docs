@@ -151,15 +151,13 @@ If the page has an image that can be used to build a preview UI, the **href** pr
 
 Get the HTML content of a page.
 
-`../pages/{page-id}/content[?includeIDs,preAuthenticated]`
+`../pages/{page-id}/content[?includeIDs]`
 
 (*learn more about [returned HTML content](onenote-input-output-html.md)*) 
 
 <br/>
 
 Use the **includeIDs=true** query string option to get generated IDs used to [update the page](onenote-update-page.md).
-
-Use the **preAuthenticated=true** query string option to get public URLs to the [image resources](#image-or-other-file-resource) that are on the page. The public URLs are valid for one hour. 
 
 
 
@@ -313,8 +311,6 @@ And an **object** tag includes the endpoint for the file resource in the **data*
     data-attachment="fileName.pdf" 
     type="application/pdf" ... />
 ```
-
-To get public, pre-authenticated URLs to the image resources on a page, include `preAuthenticated=true` in the query string when you [retrieve the page content](#page-html-content) (**example:**  `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned in the [output HTML](onenote-input-output-html.md#output-html-examples-for-images) are valid for one hour. Without this flag, retrieved images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. 
 
 > **Note:**
 > Getting a collection of resources is not supported. 

@@ -24,6 +24,8 @@ Contains all supported file system detection type.
 |createdDate|3|Created date.|
 |version|4|Version value type.|
 |sizeInMB|5|Size detection type.|
+|doesNotExist|6|The specified file or folder does not exist.|
+
 
 
 

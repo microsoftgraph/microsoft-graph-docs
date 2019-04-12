@@ -39,6 +39,24 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md) collection|An array of AirPrint printers that should always be shown. This collection can contain a maximum of 500 elements. Inherited from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
+|autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md) collection|List of applications, files, folders, and other items to launch when the user logs in. This collection can contain a maximum of 500 elements.|
+|adminShowHostInfo|Boolean|Whether to show admin host information on the login window.|
+|loginWindowText|String|Custom text to be displayed on the login window.|
+|authorizedUsersListHidden|Boolean|Whether to show the name and password dialog or a list of users on the login window.|
+|authorizedUsersListHideLocalUsers|Boolean|Whether to show only network and system users in the authorized users list on the login window.|
+|authorizedUsersListHideMobileAccounts|Boolean|Whether to hide mobile users in the authorized users list on the login window.|
+|authorizedUsersListIncludeNetworkUsers|Boolean|Whether to show network users in the authorized users list on the login window.|
+|authorizedUsersListHideAdminUsers|Boolean|Whether to hide admin users in the authorized users list on the login window.|
+|authorizedUsersListShowOtherManagedUsers|Boolean|Whether to show other users in the authorized users list on the login window.|
+|shutDownDisabled|Boolean|Whether to hide the Shut Down button item on the login window.|
+|restartDisabled|Boolean|Whether to hide the Restart button item on the login window.|
+|sleepDisabled|Boolean|Whether to hide the Sleep menu item on the login window.|
+|consoleAccessDisabled|Boolean|Whether the Other user will disregard use of the `>console> special user name.|
+|shutDownDisabledWhileLoggedIn|Boolean|Whether the Shut Down menu item on the login window will be disabled while the user is logged in.|
+|restartDisabledWhileLoggedIn|Boolean|Whether the Restart menu item on the login window will be disabled while the user is logged in.|
+|powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
+|logOutDisabledWhileLoggedIn|Boolean|Whether the Log Out menu item on the login window will be disabled while the user is logged in.|
+|screenLockDisableImmediate|Boolean|Whether to disable the immediate screen lock functions.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -80,9 +98,34 @@ Here is a JSON representation of the resource.
       "port": 1024,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "String",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "String",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
+
 
 
 

@@ -20,7 +20,7 @@ Group Policy Definition Class Type.
 |:---|:---|:---|
 |user|0|Identifies placement of the policy setting under the user configuration node.|
 |machine|1|Identifies placement of the policy setting under the computer configuration node.|
-|both|2|Identifies placement of the policy setting under both the computer and user configuration nodes.|
+
 
 
 

@@ -1,0 +1,144 @@
+---
+title: "Create deviceManagementSettingDefinition"
+description: "Create a new deviceManagementSettingDefinition object."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
+---
+
+# Create deviceManagementSettingDefinition
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Create a new [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) object.
+
+## Prerequisites
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/settingDefinitions
+POST /deviceManagement/categories/{deviceManagementSettingCategoryId}/settingDefinitions
+POST /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManagementIntentSettingCategoryId}/settingDefinitions
+POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/settingDefinitions
+```
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt; Required.|
+|Accept|application/json|
+
+## Request body
+In the request body, supply a JSON representation for the deviceManagementSettingDefinition object.
+
+The following table shows the properties that are required when you create the deviceManagementSettingDefinition.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The ID of the setting definition|
+|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|The data type of the value. Possible values are: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
+|displayName|String|The setting's display name|
+|isTopLevel|Boolean|If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting|
+|description|String|The setting's description|
+|documentationUrl|String|Url to setting documentation|
+|keywords|String collection|Keywords associated with the setting|
+|constraints|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection|Collection of constraints for the setting value|
+|dependencies|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) collection|Collection of dependencies on other settings|
+
+
+
+## Response
+If successful, this method returns a `201 Created` response code and a [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) object in the response body.
+
+## Example
+
+### Request
+Here is an example of the request.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/settingDefinitions
+Content-type: application/json
+Content-length: 728
+
+{
+  "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
+  "valueType": "boolean",
+  "displayName": "Display Name value",
+  "isTopLevel": true,
+  "description": "Description value",
+  "documentationUrl": "https://example.com/documentationUrl/",
+  "keywords": [
+    "Keywords value"
+  ],
+  "constraints": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+    }
+  ],
+  "dependencies": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementSettingDependency",
+      "definitionId": "Definition Id value",
+      "constraints": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 777
+
+{
+  "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
+  "id": "4ec3093d-093d-4ec3-3d09-c34e3d09c34e",
+  "valueType": "boolean",
+  "displayName": "Display Name value",
+  "isTopLevel": true,
+  "description": "Description value",
+  "documentationUrl": "https://example.com/documentationUrl/",
+  "keywords": [
+    "Keywords value"
+  ],
+  "constraints": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+    }
+  ],
+  "dependencies": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementSettingDependency",
+      "definitionId": "Definition Id value",
+      "constraints": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+
+

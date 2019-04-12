@@ -20,6 +20,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
+- Device intent settings
 - Device management
 - Electronic SIM (ESIM)
 - Fencing
@@ -101,6 +102,11 @@ The deviceManagement resource represents a container whose contents vary accordi
 |iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) collection|The IOS software update installation statuses for this account.|
 |ndesConnectors|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) collection|The collection of Ndes connectors for this account.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|The software update status summary.|
+|**Device intent**|
+|intents|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) collection|The device management intents|
+|settingDefinitions|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) collection|The device management intent setting definitions|
+|templates|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) collection|The available templates|
+|categories|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) collection|The available categories|
 |**Device management**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple push notification certificate.|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) collection|Data sharing consents.|

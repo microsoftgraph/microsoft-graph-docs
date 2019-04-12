@@ -1,6 +1,6 @@
 ---
 title: "scheduleInformation resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents the availability of a user, distribution list, or resource for a specified time period. "
 localization_priority: Normal
 doc_type: resourcePageType
 ---
@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Represents the availability of a user, distribution list, or resource for a specified time period.
+Represents the availability of a user, distribution list, or resource (room or equipment) for a specified time period.
 
 ## Properties
 | Property	   | Type	|Description|

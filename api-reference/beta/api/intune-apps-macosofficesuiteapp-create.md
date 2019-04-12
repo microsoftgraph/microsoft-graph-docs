@@ -16,7 +16,7 @@ doc_type: apiPageType
 Create a new [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,6 +63,7 @@ The following table shows the properties that are required when you create the m
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 
 
 
@@ -76,7 +77,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 691
+Content-length: 718
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -99,7 +100,8 @@ Content-length: 691
   "isAssigned": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "dependentAppCount": 1
 }
 ```
 
@@ -108,7 +110,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 863
+Content-Length: 890
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -134,9 +136,11 @@ Content-Length: 863
   "isAssigned": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "dependentAppCount": 1
 }
 ```
+
 
 
 

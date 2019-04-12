@@ -1,6 +1,6 @@
 ---
 title: "remoteAssistancePartner resource type"
-description: "remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
+description: "RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
 
 ## Methods
 |Method|Return Type|Description|
@@ -23,8 +23,8 @@ remoteAssistPartner resources represent the metadata and status of a given Remot
 |[Create remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-create.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|Create a new [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.|
 |[Delete remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-delete.md)|None|Deletes a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).|
 |[Update remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-update.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|Update the properties of a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.|
-|[beginOnboarding action](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|None|Not yet documented|
-|[disconnect action](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|None|Not yet documented|
+|[beginOnboarding action](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|None|A request to start onboarding.  Must be coupled with the appropriate TeamViewer account information|
+|[disconnect action](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|None|A request to remove the active TeamViewer connector|
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ remoteAssistPartner resources represent the metadata and status of a given Remot
 |id|String|Unique identifier of the partner.|
 |displayName|String|Display name of the partner.|
 |onboardingUrl|String|URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|A friendly description of the current TeamViewer connector status. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
 
 ## Relationships
@@ -56,6 +56,7 @@ Here is a JSON representation of the resource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
