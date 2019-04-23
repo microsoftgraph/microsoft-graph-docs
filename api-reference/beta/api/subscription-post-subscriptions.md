@@ -25,6 +25,7 @@ Creating a subscription requires read permission to the resource for which the a
 | Users                       | User.Read.All       |
 | Drive  (User's OneDrive)    | Files.ReadWrite     |
 | Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
+| List                        | Sites.ReadWrite     |
 | Security alert              | SecurityEvents.ReadWrite.All |
 
 > **Note:** The /beta endpoint allows application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with application permissions.
@@ -84,6 +85,7 @@ The following are valid values for the resource property:
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
+|List|site/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
 
 ##### Response
