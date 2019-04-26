@@ -1,13 +1,13 @@
 # onPremisesAgentGroup resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get onPremisesAgentGroup](../api/onpremisesagentgroup_get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read properties and relationships of onPremisesAgentGroup object. |
-| [Create onPremisesAgentGroup](../api/oonpremisesagentgroup_create.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new onPremisesAgentGroup. |
+| [Create onPremisesAgentGroup](../api/onpremisesagentgroup_create.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new onPremisesAgentGroup. |
 | [List onPremisesAgentGroups](../api/onpremisesagentgroup_list.md) | onPremisesAgentGroups collection | Get a onPremisesAgentGroup objects collection. |
 | [Update onPremisesAgentGroup](../api/onpremisesagentgroup_update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update onPremisesAgentGroup object. |
 | [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup_delete.md) | None | Delete onPremisesAgentGroup object. |

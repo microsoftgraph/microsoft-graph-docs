@@ -1,6 +1,6 @@
 # onPremisesPublishingProfile resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Methods
 
@@ -23,7 +23,7 @@
 |agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| Read-only. Nullable.|
 |agents|[onPremisesAgent](onpremisesagent.md) collection| Read-only. Nullable.|
 |publishedResources|[publishedResource](onpremisespublishedresource.md) collection| Read-only. Nullable.|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md.md) | |
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md) | |
 
 ## JSON representation
 

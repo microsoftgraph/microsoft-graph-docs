@@ -1,6 +1,6 @@
 # On-premises Publishing Profiles
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Various Azure services (AAD Connect Passthrough Authentication, Workday to AAD users provisioning, etc.) allow a conditional access to various on-premises resources  from outside of corp network. [On-premises agents](onpremisesagent.md) installed by tenant administrator could be configured to access/handle requests to a particular ["published" resource](onpremisespublishedresource.md).
 [Agent groups](onpremisesagentgroup.md) enable a tenant admin to assign specific agents to serve specific published on-premises resources. Tenant admin can group a number of agents together, and then assign each published resource to a group. The entire set of entities of the same on-premises publishing type is represented by [onPremisesPublishingProfile](onpremisespublishingprofile.md) .
