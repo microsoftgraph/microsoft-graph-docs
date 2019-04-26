@@ -196,6 +196,8 @@
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+      - name: Notifications
+        
       - name: Org hierarchy
         href: resources/organization.md
         items:
@@ -758,14 +760,6 @@
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-      - name: Notifications
-        href: resources/notifications-api-overview.md
-        items:
-        - name: Notification
-          href: resources/projectrome-notification.md
-          items:
-          - name: Create and send a notification
-            href: api/projectrome-notification-post.md
     - name: Customer booking
       href: resources/booking-api-overview.md
       displayName: Bookings, Microsoft Bookings
@@ -8148,6 +8142,15 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+    - name: Notifications
+      href: resources/notifications-api-overview.md
+      items:
+      - name: API reference Windows
+        href: resources/notifications-windows-api.md
+      - name: API reference iOS
+        href: resources/notifications-ios-api.md
+        - name: API reference Windows
+        href: resources/notifications-android-api.md 
     - name: Notes
       href: resources/onenote-api-overview.md
       displayName: OneNote
