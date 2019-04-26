@@ -83,8 +83,6 @@
         href: activity-feed-concept-overview.md
       - name: Device relay (preview)
         href: device-relay-concept-overview.md
-      - name: Notifications (preview)
-        href: notifications-concept-overview.md
       - name: Build cross-device apps
         href: cross-device-app-configuration.md
     - name: Customer booking (preview)
@@ -158,6 +156,16 @@
         href: onenote-branding.md
       - name: Error codes
         href: onenote-error-codes.md
+    - name: Notifications
+      items: 
+      - name: Overview
+        href: notifications-concept-overview.md
+      - name: How to guide for Windows
+        href: notifications-windows-guide.md 
+      - name: How to guide for iOS
+        href: notifications-ios-guide.md 
+      - name: How to guide for Android
+        href: notifications-android-guide.md    
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
