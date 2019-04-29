@@ -15,7 +15,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
+|[List secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) collection |Get a collection of secureScoreControlProfile objects.|
 
 
 ## Properties
@@ -39,7 +39,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofile-update.md)). |
 |	vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## Relationships
