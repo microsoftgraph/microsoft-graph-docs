@@ -8,7 +8,7 @@ localization_priority: Normal
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.
+Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofile.md) objects for a tenant.
 
 ## Permissions
 
