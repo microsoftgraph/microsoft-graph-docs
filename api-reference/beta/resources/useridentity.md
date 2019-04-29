@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a reviewer of an access review.  
+For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a creator or reviewer of an access review.  
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 
 This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
@@ -61,7 +61,8 @@ Here is a JSON representation of the type.
 {
   "displayName": "string",
   "id": "string",
- "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "ipAddress": "string"
 }
 
 ```
@@ -73,8 +74,6 @@ Here is a JSON representation of the type.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/useridentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -3,6 +3,8 @@ title: "Get anonymousIpRiskEvent"
 description: "Retrieve the properties and relationships of an anonymousipriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get anonymousIpRiskEvent
@@ -84,8 +86,6 @@ Content-length: 237
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/anonymousipriskevent-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

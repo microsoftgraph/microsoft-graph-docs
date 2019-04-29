@@ -27,8 +27,8 @@ This resource supports:
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
-|[delta](../api/directoryobject-delta.md)|directoryObject collection| Get incremental changes for directory objects. Supports filtering by derrived type. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
+|[delta](../api/directoryobject-delta.md)|[directoryObject](directoryobject.md) collection| Get incremental changes for directory objects. Supports filtering by derrived type. |
 
 ## Properties
 
@@ -50,7 +50,8 @@ Here is a JSON representation of the resource
 
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "openType": true
 }-->
 
 ```json
@@ -69,8 +70,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

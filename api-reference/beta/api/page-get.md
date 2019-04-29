@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [page](../resources/page.md) object.
+Retrieve the properties and relationships of a [page](../resources/onenotepage.md) object.
 
 **Getting page information**
 
@@ -65,7 +65,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [page](../resources/page.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the [onenotePage](../resources/onenotepage.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -108,8 +108,6 @@ Content-length: 312
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/page-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

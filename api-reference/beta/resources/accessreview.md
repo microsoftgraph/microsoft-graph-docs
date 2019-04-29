@@ -32,15 +32,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessRevi
 |[Reset accessReview decisions](../api/accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
 |[Apply accessReview decisions](../api/accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
 
-## Permissions
-
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
-
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -53,7 +44,7 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessRevi
 | `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier. Required on create. |
 | `reviewerType`            |`String`                                                        | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
+| `reviewedEntity`          |[identity](identity.md)                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | The settings of an accessReview, see type definition below. |
 
 
@@ -84,6 +75,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -124,8 +116,6 @@ The `accessReviewSettings` provides additional settings when creating an access 
 | `autoApplyReviewResultsEnabled`|`Boolean` | Flag to indicate whether auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | `accessRecommendationsEnabled`|`Boolean` | Flag to indicate whether showing recommendations to reviewers is enabled. |
 
-
-
 ## The autoReviewSettings type
 
 The `autoReviewSettings` is embedded within the access review settings, and specifies the behavior for the feature when an access review completes.  The type has one property, `notReviewedResult`.
@@ -147,7 +137,6 @@ The `accessReviewRecurrenceSettings` is embedded within the access review settin
 | `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`, or 0 otherwise.                                                        |
 
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -155,8 +144,6 @@ The `accessReviewRecurrenceSettings` is embedded within the access review settin
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

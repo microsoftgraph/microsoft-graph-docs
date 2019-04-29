@@ -25,7 +25,7 @@ When an app creates a session, a **historyItem** object should be added to the *
 
 |Name | Type | Description|
 |:----|:-----|:-----------|
-|status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
+|status | string | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 |userTimezone | String | Optional. The timezone in which the user's device used to generate the activity was located at activity creation time. Values supplied as Olson IDs in order to support cross-platform representation.|
 |createdDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was created on the server.|
 |lastModifiedDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object was modified on the server.|
@@ -52,6 +52,7 @@ Here is a JSON representation of the resource.
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.historyItem"
 }-->
 
@@ -78,8 +79,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

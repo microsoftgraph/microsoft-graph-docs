@@ -214,7 +214,8 @@
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",	
       "uhfHeaderId": "MSDocsHeader-MSGraph",
-      "searchScope": ["graph"]
+      "searchScope": ["graph"],
+      "toc_preview": true
     },
     "fileMetadata": {
       "breadcrumb_path": {

@@ -17,7 +17,6 @@ Get newly created, updated, or deleted directory roles without having to perform
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
@@ -26,11 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the directoryRole resource. 
+To begin tracking changes, you make a request including the delta function on the directoryRole resource.
 
 <!-- { "blockType": "ignored" } -->
 ```http
+
 GET /directoryRoles/delta
+
 ```
 
 ### Query parameters
@@ -125,8 +126,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryrole-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

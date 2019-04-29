@@ -19,7 +19,7 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md) collection    | Attribute mappings define which attributes to map from the source object into the target object and how they should flow. A number of functions are available to support the transformation of the original source values.|
 |enabled        |Boolean    |When `true`, this object mapping will be processed during synchronization. When `false`, this object mapping will be skipped.|
-|flowTypes      |objectFlowType    |Which flow types are enabled for this object mapping. `Add` creates new objects in the target directory, `Update` modifies existing objects, and `Delete` deprovisions existing users. The default is `Add, Update, Delete`. |
+|flowTypes      |objectFlowTypes    |Which flow types are enabled for this object mapping. `Add` creates new objects in the target directory, `Update` modifies existing objects, and `Delete` deprovisions existing users. The default is `Add, Update, Delete`. |
 |metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |name           |String     |Human-friendly name of the object mapping.|
 |scope          |[filter](synchronization-filter.md)     |Defines a filter to be used when deciding whether a given object should be provisioned. For example, you might want to only provision users that are located in the US.|
@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 ## JSON Example
 
 <!-- {
-  "blockType": "resource",
+  "blockType": "example",
   "optionalProperties": [
 
   ],
@@ -351,8 +351,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

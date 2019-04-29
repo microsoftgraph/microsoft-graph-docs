@@ -1,11 +1,11 @@
 ---
-title: "secureScoreControlProfiles resource type"
+title: "secureScoreControlProfile resource type"
 description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."
 localization_priority: Normal
 doc_type: resourcePageType
 ---
 
-# secureScoreControlProfiles resource type
+# secureScoreControlProfile resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -16,7 +16,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
 
 
 ## Properties
@@ -40,7 +40,8 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates |	[secureScoreControlStateUpdate](securescorecontrolstateupdate.md)	collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## Relationships
 
@@ -55,32 +56,30 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 }-->
 
 ```json
 {
-"title": "String", 
-"azureTenantId": "Guid", 
-"referenceId": "String", 
-"controlName": "String", 
-"maxScore": "Int32",
-"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
-"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
-"service": "String",
-"tier": "Collection(microsoft.graph.SecureScore.tier)",
-"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
-"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
-"rank ": "Int32",
-"threats": "Collection(microsoft.graph.SecureScore.threat)",
-"deprecated ": "Boolean",
-"remediation": "String",
-"remediationImpact ": "String",
-"actionUrl": "String",
-"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
-"tenantNotes": "String",
-"upn": "String",
-"comments": "String",
+  "title": "String",
+  "azureTenantId": "String (identifier)",
+  "maxScore": 1024.13,
+  "actionType": "String",
+  "service": "String",
+  "tier": "String",
+  "userImpact": "string",
+  "implementationCost ": "String",
+  "rank ": 100,
+  "threats": ["string"],
+  "deprecated ": false,
+  "remediation": "String",
+  "remediationImpact ": "String",
+  "actionUrl": "String",
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
+  "controlCategory": "string",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 
@@ -94,8 +93,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securescorecontrolprofiles.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

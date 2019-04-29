@@ -34,9 +34,9 @@ Here is a JSON representation of the resource
   "bitrate": 39101896,
   "duration": 8053,
   "fourCC": "H264",
-  "frameRate": 239.877,
   "height": 1280,
-  "width": 720
+  "width": 720,
+  "framerate": 2.75
 }
 ```
 
@@ -74,8 +74,6 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "keywords": "bitrate,duration,size,video",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/video.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

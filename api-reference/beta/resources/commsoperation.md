@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
+  "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
 }
 ```
@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "#microsoft.graph.resultInfo",
+    "@odata.type": "microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"
@@ -81,8 +81,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/commsoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

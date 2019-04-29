@@ -27,7 +27,7 @@ GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePer
 GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
-The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
+The `{id | userPrincipalName}` for the user must match the user encoded in the authorization token used to make the request.
 
 ## Function parameters
 

@@ -28,7 +28,7 @@ GET /me/insights/used
 ```
 Requesting other user's used documents returns results sorted by 'lastModifiedDateTime' and 'lastAccessedDateTime' is set to 'lastModifiedDateTime'.
 ```http
-GET /users/<id | userPrincipalName>/insights/used
+GET /users/{id | userPrincipalName}/insights/used
 ```
 
 ## Optional query parameters
@@ -103,11 +103,3 @@ The resource referenced by a used insight can be expanded.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used/{id}/resource
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/insights-list-used.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

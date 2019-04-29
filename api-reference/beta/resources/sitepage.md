@@ -42,7 +42,8 @@ Here is a JSON representation of a **sitePage** resource.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.sitePage"
+  "@odata.type": "microsoft.graph.sitePage",
+  "openType": true
 }-->
 
 ```json
@@ -51,19 +52,21 @@ Here is a JSON representation of a **sitePage** resource.
 
   /* page content */
   "title": "string",
-  "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "pageLayoutType": "String",
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
 
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "string",
+   /* inherited from baseItem */
+  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "String (timestamp)",
+  "description": "string",
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "webUrl": "url"
 }
@@ -134,9 +137,7 @@ The **sitePage** resource does not have relationships to other resources.
   "tocBookmarks": {
     "Page": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

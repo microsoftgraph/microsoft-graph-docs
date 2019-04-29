@@ -158,7 +158,7 @@
         - name: List member of
           href: api/user-list-memberof.md
       - name: Insights
-        href: resources/insights.md
+        href: resources/officegraphinsights.md
         items:
         - name: List trending
           href: api/insights-list-trending.md
@@ -7697,6 +7697,19 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
+      - name: Trust Framework policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List
+          href: api/trustframework-list-trustframeworkpolicies.md
+        - name: Create
+          href: api/trustframework-post-trustframeworkpolicy.md
+        - name: Get 
+          href: api/trustframeworkpolicy-get.md
+        - name: Update
+          href: api/trustframework-put-trustframeworkpolicy.md
+        - name: Delete
+          href: api/trustframeworkpolicy-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -7706,7 +7719,7 @@
           href: api/identityprovider-post-identityproviders.md
         - name: Get identity provider
           href: api/identityprovider-get.md
-        - name: Upate identity provider
+        - name: Update identity provider
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
@@ -7773,7 +7786,7 @@
           href: api/policy-post.md
         - name: Get policy
           href: api/policy-get.md
-        - name: Upate policy
+        - name: Update policy
           href: api/policy-update.md
         - name: Delete policy
           href: api/policy-delete.md
@@ -8178,7 +8191,7 @@
         - name: Create section group
           href: api/notebook-post-sectiongroups.md
       - name: Sections
-        href: resources/section.md
+        href: resources/onenotesection.md
         items:
         - name: List sections
           href: api/onenote-list-sections.md
@@ -8208,7 +8221,7 @@
         - name: Create section
           href: api/sectiongroup-post-sections.md
       - name: Pages
-        href: resources/page.md
+        href: resources/onenotepage.md
         items:
         - name: List pages
           href: api/onenote-list-pages.md
@@ -8223,7 +8236,7 @@
         - name: Copy to section
           href: api/page-copytosection.md
       - name: Resources
-        href: resources/resource.md
+        href: resources/onenoteresource.md
         items:
         - name: Get resource
           href: api/resource-get.md
@@ -8306,204 +8319,218 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
-      href: resources/report.md
       items:
-      - name: Microsoft Teams device usage
-        href: resources/microsoft-teams-device-usage-reports.md
+      - name: Identity and access reports
         items:
-        - name: Get user detail
-          href: api/reportroot-getteamsdeviceusageuserdetail.md
-        - name: Get user counts
-          href: api/reportroot-getteamsdeviceusageusercounts.md
-        - name: Get distribution user counts
-          href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
-      - name: Microsoft Teams user activity
-        href: resources/microsoft-teams-user-activity-reports.md
+        - name: Application sign-in summary
+          href: resources/applicationsigninsummary.md
+          items:
+          - name: Get
+            href: api/applicationsigninsummary-get.md
+        - name: Application sign-in summary details
+          href: resources/applicationsignindetailedsummary.md
+          items:
+          - name: Get
+            href: api/applicationsignindetailedsummary-get.md
+      - name: Office 365 usage reports
+        href: resources/report.md
         items:
-        - name: Get user detail
-          href: api/reportroot-getteamsuseractivityuserdetail.md
-        - name: Get activity counts
-          href: api/reportroot-getteamsuseractivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getteamsuseractivityusercounts.md
-      - name: Outlook activity
-        href: resources/email-activity-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getemailactivityuserdetail.md
-        - name: Get activity counts
-          href: api/reportroot-getemailactivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getemailactivityusercounts.md
-      - name: Outlook app usage
-        href: resources/email-app-usage-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getemailappusageuserdetail.md
-        - name: Get apps user counts
-          href: api/reportroot-getemailappusageappsusercounts.md
-        - name: Get user counts
-          href: api/reportroot-getemailappusageusercounts.md
-        - name: Get versions user counts
-          href: api/reportroot-getemailappusageversionsusercounts.md
-      - name: Outlook mailbox usage
-        href: resources/mailbox-usage-reports.md
-        items:
-        - name: Get mailbox detail
-          href: api/reportroot-getmailboxusagedetail.md
-        - name: Get mailbox counts
-          href: api/reportroot-getmailboxusagemailboxcounts.md
-        - name: Get quota status mailbox counts
-          href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
-        - name: Get  storage
-          href: api/reportroot-getmailboxusagestorage.md
-      - name: Office 365 activations
-        href: resources/office-365-activations-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getoffice365activationsuserdetail.md
-        - name: Get activation counts
-          href: api/reportroot-getoffice365activationcounts.md
-        - name: Get user counts
-          href: api/reportroot-getoffice365activationsusercounts.md
-      - name: Office 365 active users
-        href: resources/office-365-active-users-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getoffice365activeuserdetail.md
-        - name: Get user counts
-          href: api/reportroot-getoffice365activeusercounts.md
-        - name: Get services user counts
-          href: api/reportroot-getoffice365servicesusercounts.md
-      - name: Office 365 groups activity
-        href: resources/office-365-groups-activity-reports.md
-        items:
-        - name: Get group detail
-          href: api/reportroot-getoffice365groupsactivitydetail.md
-        - name: Get activity counts
-          href: api/reportroot-getoffice365groupsactivitycounts.md
-        - name: Get group counts
-          href: api/reportroot-getoffice365groupsactivitygroupcounts.md
-        - name: Get storage
-          href: api/reportroot-getoffice365groupsactivitystorage.md
-        - name: Get file counts
-          href: api/reportroot-getoffice365groupsactivityfilecounts.md
-      - name: OneDrive activity
-        href: resources/onedrive-activity-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getonedriveactivityuserdetail.md
-        - name: Get user counts
-          href: api/reportroot-getonedriveactivityusercounts.md
-        - name: Get file counts
-          href: api/reportroot-getonedriveactivityfilecounts.md
-      - name: OneDrive usage
-        href: resources/onedrive-usage-reports.md
-        items:
-        - name: Get account detail
-          href: api/reportroot-getonedriveusageaccountdetail.md
-        - name: Get account counts
-          href: api/reportroot-getonedriveusageaccountcounts.md
-        - name: Get file counts
-          href: api/reportroot-getonedriveusagefilecounts.md
-        - name: Get storage
-          href: api/reportroot-getonedriveusagestorage.md
-      - name: SharePoint activity
-        href: resources/sharepoint-activity-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getsharepointactivityuserdetail.md
-        - name: Get file counts
-          href: api/reportroot-getsharepointactivityfilecounts.md
-        - name: Get user counts
-          href: api/reportroot-getsharepointactivityusercounts.md
-        - name: Get pages
-          href: api/reportroot-getsharepointactivitypages.md
-      - name: SharePoint site usage
-        href: resources/sharepoint-site-usage-reports.md
-        items:
-        - name: Get site detail
-          href: api/reportroot-getsharepointsiteusagedetail.md
-        - name: Get file counts
-          href: api/reportroot-getsharepointsiteusagefilecounts.md
-        - name: Get site counts
-          href: api/reportroot-getsharepointsiteusagesitecounts.md
-        - name: Get storage
-          href: api/reportroot-getsharepointsiteusagestorage.md
-        - name: Get pages
-          href: api/reportroot-getsharepointsiteusagepages.md
-      - name: Skype for Business activity
-        href: resources/skype-for-business-activity-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getskypeforbusinessactivityuserdetail.md
-        - name: Get activity counts
-          href: api/reportroot-getskypeforbusinessactivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getskypeforbusinessactivityusercounts.md
-      - name: Skype for Business device usage
-        href: resources/skype-for-business-device-usage-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
-        - name: Get distribution user counts
-          href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
-        - name: Get user counts
-          href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
-      - name: Skype for Business organizer activity
-        href: resources/skype-for-business-organizer-activity-reports.md
-        items:
-        - name: Get activity counts
-          href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
-        - name: Get minute counts
-          href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
-      - name: Skype for Business participant activity
-        href: resources/skype-for-business-participant-activity-reports.md
-        items:
-        - name: Get activity counts
-          href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
-        - name: Get minute counts
-          href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
-      - name: Skype for Business peer-to-peer activity
-        href: resources/skype-for-business-peer-to-peer-activity.md
-        items:
-        - name: Get activity counts
-          href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
-        - name: Get minute counts
-          href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
-      - name: Yammer activity
-        href: resources/yammer-activity-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getyammeractivityuserdetail.md
-        - name: Get activity counts
-          href: api/reportroot-getyammeractivitycounts.md
-        - name: Get user counts
-          href: api/reportroot-getyammeractivityusercounts.md
-      - name: Yammer device usage
-        href: resources/yammer-device-usage-reports.md
-        items:
-        - name: Get user detail
-          href: api/reportroot-getyammerdeviceusageuserdetail.md
-        - name: Get distribution user counts
-          href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
-        - name: Get user counts
-          href: api/reportroot-getyammerdeviceusageusercounts.md
-      - name: Yammer groups activity
-        href: resources/yammer-groups-activity-reports.md
-        items:
-        - name: Get group detail
-          href: api/reportroot-getyammergroupsactivitydetail.md
-        - name: Get group counts
-          href: api/reportroot-getyammergroupsactivitygroupcounts.md
-        - name: Get activity counts
-          href: api/reportroot-getyammergroupsactivitycounts.md
+        - name: Microsoft Teams device usage
+          href: resources/microsoft-teams-device-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getteamsdeviceusageuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getteamsdeviceusageusercounts.md
+          - name: Get distribution user counts
+            href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
+        - name: Microsoft Teams user activity
+          href: resources/microsoft-teams-user-activity-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getteamsuseractivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getteamsuseractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getteamsuseractivityusercounts.md
+        - name: Outlook activity
+          href: resources/email-activity-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getemailactivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getemailactivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getemailactivityusercounts.md
+        - name: Outlook app usage
+          href: resources/email-app-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getemailappusageuserdetail.md
+          - name: Get apps user counts
+            href: api/reportroot-getemailappusageappsusercounts.md
+          - name: Get user counts
+            href: api/reportroot-getemailappusageusercounts.md
+          - name: Get versions user counts
+            href: api/reportroot-getemailappusageversionsusercounts.md
+        - name: Outlook mailbox usage
+          href: resources/mailbox-usage-reports.md
+          items:
+          - name: Get mailbox detail
+            href: api/reportroot-getmailboxusagedetail.md
+          - name: Get mailbox counts
+            href: api/reportroot-getmailboxusagemailboxcounts.md
+          - name: Get quota status mailbox counts
+            href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
+          - name: Get  storage
+            href: api/reportroot-getmailboxusagestorage.md
+        - name: Office 365 activations
+          href: resources/office-365-activations-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getoffice365activationsuserdetail.md
+          - name: Get activation counts
+            href: api/reportroot-getoffice365activationcounts.md
+          - name: Get user counts
+            href: api/reportroot-getoffice365activationsusercounts.md
+        - name: Office 365 active users
+          href: resources/office-365-active-users-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getoffice365activeuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getoffice365activeusercounts.md
+          - name: Get services user counts
+            href: api/reportroot-getoffice365servicesusercounts.md
+        - name: Office 365 groups activity
+          href: resources/office-365-groups-activity-reports.md
+          items:
+          - name: Get group detail
+            href: api/reportroot-getoffice365groupsactivitydetail.md
+          - name: Get activity counts
+            href: api/reportroot-getoffice365groupsactivitycounts.md
+          - name: Get group counts
+            href: api/reportroot-getoffice365groupsactivitygroupcounts.md
+          - name: Get storage
+            href: api/reportroot-getoffice365groupsactivitystorage.md
+          - name: Get file counts
+            href: api/reportroot-getoffice365groupsactivityfilecounts.md
+        - name: OneDrive activity
+          href: resources/onedrive-activity-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getonedriveactivityuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getonedriveactivityusercounts.md
+          - name: Get file counts
+            href: api/reportroot-getonedriveactivityfilecounts.md
+        - name: OneDrive usage
+          href: resources/onedrive-usage-reports.md
+          items:
+          - name: Get account detail
+            href: api/reportroot-getonedriveusageaccountdetail.md
+          - name: Get account counts
+            href: api/reportroot-getonedriveusageaccountcounts.md
+          - name: Get file counts
+            href: api/reportroot-getonedriveusagefilecounts.md
+          - name: Get storage
+            href: api/reportroot-getonedriveusagestorage.md
+        - name: SharePoint activity
+          href: resources/sharepoint-activity-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getsharepointactivityuserdetail.md
+          - name: Get file counts
+            href: api/reportroot-getsharepointactivityfilecounts.md
+          - name: Get user counts
+            href: api/reportroot-getsharepointactivityusercounts.md
+          - name: Get pages
+            href: api/reportroot-getsharepointactivitypages.md
+        - name: SharePoint site usage
+          href: resources/sharepoint-site-usage-reports.md
+          items:
+          - name: Get site detail
+            href: api/reportroot-getsharepointsiteusagedetail.md
+          - name: Get file counts
+            href: api/reportroot-getsharepointsiteusagefilecounts.md
+          - name: Get site counts
+            href: api/reportroot-getsharepointsiteusagesitecounts.md
+          - name: Get storage
+            href: api/reportroot-getsharepointsiteusagestorage.md
+          - name: Get pages
+            href: api/reportroot-getsharepointsiteusagepages.md
+        - name: Skype for Business activity
+          href: resources/skype-for-business-activity-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getskypeforbusinessactivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getskypeforbusinessactivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getskypeforbusinessactivityusercounts.md
+        - name: Skype for Business device usage
+          href: resources/skype-for-business-device-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
+          - name: Get distribution user counts
+            href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
+          - name: Get user counts
+            href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
+        - name: Skype for Business organizer activity
+          href: resources/skype-for-business-organizer-activity-reports.md
+          items:
+          - name: Get activity counts
+            href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
+          - name: Get minute counts
+            href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
+        - name: Skype for Business participant activity
+          href: resources/skype-for-business-participant-activity-reports.md
+          items:
+          - name: Get activity counts
+            href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
+          - name: Get minute counts
+            href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
+        - name: Skype for Business peer-to-peer activity
+          href: resources/skype-for-business-peer-to-peer-activity.md
+          items:
+          - name: Get activity counts
+            href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
+          - name: Get minute counts
+            href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
+        - name: Yammer activity
+          href: resources/yammer-activity-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getyammeractivityuserdetail.md
+          - name: Get activity counts
+            href: api/reportroot-getyammeractivitycounts.md
+          - name: Get user counts
+            href: api/reportroot-getyammeractivityusercounts.md
+        - name: Yammer device usage
+          href: resources/yammer-device-usage-reports.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getyammerdeviceusageuserdetail.md
+          - name: Get distribution user counts
+            href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
+          - name: Get user counts
+            href: api/reportroot-getyammerdeviceusageusercounts.md
+        - name: Yammer groups activity
+          href: resources/yammer-groups-activity-reports.md
+          items:
+          - name: Get group detail
+            href: api/reportroot-getyammergroupsactivitydetail.md
+          - name: Get group counts
+            href: api/reportroot-getyammergroupsactivitygroupcounts.md
+          - name: Get activity counts
+            href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
       displayname: Security API, Microsoft Graph Security API
@@ -8625,7 +8652,7 @@
       href: resources/social-overview.md
       items:
       - name: Insights
-        href: resources/insights.md
+        href: resources/officegraphinsights.md
         items:
         - name: Trending
           href: resources/insights-trending.md
@@ -8837,6 +8864,17 @@
           href: api/channel-post-chatmessage.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+      - name: Chat
+        href: resources/chat.md
+        items:
+        - name: List chats
+          href: api/chat-list.md
+        - name: Get chat
+          href: api/chat-get.md
+        - name: List messages in a chat
+          href: api/chat-list-messages.md
+        - name: Get message in chat
+          href: api/chat-get-message.md
       - name: Apps
         href: resources/teamsapp.md
         items:
@@ -9089,7 +9127,7 @@
         - name: List names
           href: api/workbook-list-names.md
       - name: Worksheet
-        href: resources/worksheet.md
+        href: resources/workbookworksheet.md
         items:
         - name: Add worksheet
           href: api/worksheetcollection-add.md
@@ -9112,7 +9150,7 @@
         - name: Add chart
           href: api/worksheet-post-charts.md
       - name: Range
-        href: resources/range.md
+        href: resources/workbookrange.md
         items:
         - name: Get range
           href: api/range-get.md
@@ -9133,7 +9171,7 @@
         - name: Delete
           href: api/range-delete.md
       - name: Table
-        href: resources/table.md
+        href: resources/workbooktable.md
         items:
         - name: Add table
           href: api/tablecollection-add.md
@@ -9154,7 +9192,7 @@
         - name: Get range
           href: api/table-range.md
       - name: Chart
-        href: resources/chart.md
+        href: resources/workbookchart.md
         items:
         - name: List charts
           href: api/chart-list.md
@@ -9173,7 +9211,7 @@
         - name: Set position data
           href: api/chart-setposition.md
       - name: Named item
-        href: resources/nameditem.md
+        href: resources/workbooknameditem.md
         items:
         - name: List named item
           href: api/nameditem-get.md

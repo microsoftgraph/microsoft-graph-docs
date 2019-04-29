@@ -58,7 +58,8 @@ The following example shows how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_updatetiindicators"
+  "name": "tiindicator_updatetiindicators",
+  "isCollection":true
 }-->
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators
@@ -96,6 +97,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

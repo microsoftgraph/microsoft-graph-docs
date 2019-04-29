@@ -2,17 +2,24 @@ Param(
     [switch]$cleanUp,
     [string]$file
 )
-#$apiDoctorVersion = $env:APIDOCTOR_VERSION
-$apiDoctorVersion = "https://github.com/onedrive/apidoctor.git"
+$apiDoctorVersion = $env:APIDOCTOR_VERSION
+$apiDoctorBranch = $env:APIDOCTOR_BRANCH
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
+$docSubPath = $env:APIDOCTOR_DOCSUBPATH
 
 Write-Host "Repository location: ", $repoPath
 
 # Check if ApiDoctor version has been set
 if ([string]::IsNullOrWhiteSpace($apiDoctorVersion)) {
 	Write-Host "API Doctor version has not been set. Aborting..."
+	exit 1
+}
+
+# Check if ApiDoctor subpath has been set
+if ([string]::IsNullOrWhiteSpace($docSubPath)) {
+	Write-Host "API Doctor subpath has not been set. Aborting..."
 	exit 1
 }
 
@@ -44,9 +51,17 @@ else {
 	
 	if ($apiDoctorVersion.StartsWith("https://"))
 	{
+		# Default to master branch of ApiDoctor if not set
+		if([string]::IsNullOrWhiteSpace($apiDoctorBranch)){
+			$apiDoctorBranch = "master"
+            Write-Host "API Doctor branch has not been set, defaulting to master branch."
+		}	
+		
 		# Download ApiDoctor from GitHub	
 		Write-Host "Cloning API Doctor repository from GitHub"
-		& git clone -b develop $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
+		Write-Host "`tRemote URL: $apiDoctorVersion"
+		Write-Host "`tBranch: $apiDoctorBranch"
+		& git clone -b $apiDoctorBranch $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
 		$downloadedApiDoctor = $true
 		
 		$nugetParams = "restore", "$apidocPath\SourceCode"
@@ -83,9 +98,10 @@ else {
 $lastResultCode = 0
 
 # Run validation at the root of the repository
-$appVeyorUrl = $env:APPVEYOR_API_URL
+$appVeyorUrl = $env:APPVEYOR_API_URL 
 
-$params = "check-all", "--path", $repoPath, "--ignore-warnings"
+$fullPath = Join-Path $repoPath -ChildPath $docSubPath
+$params = "check-all", "--path", $fullPath, "--ignore-warnings", "--log", "C:\Logs\api-doctor\Logs.txt"
 if ($appVeyorUrl -ne $null)
 {
     $params = $params += "--appveyor-url", $appVeyorUrl

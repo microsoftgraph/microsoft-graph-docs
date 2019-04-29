@@ -27,10 +27,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set
 |resourceId |String     |Required. The id of the resource associated with the role definition. |
 |externalId   |String     |The external id of the role definition.|
 |displayName|String     |The display name of the role definition.|
-|subjectCount|Int32     |Optional. The number of subjects that are assigned to the role. It represents the status of the requestor's access to the resource. To get the property, please explictly use `$select=subjectCount` in the query.|
-|eligibleAssignmentCount|Int32|Optional. The number of eligible role assignments associated with the role definition. To get the property, please explictly use `$select=eligibleAssignmentCount` in the query.|
-|activeAssignmentCount|Int32    |Optional. The number of active role assignments associated with the role definition.  To get the property, please explictly use `$select=activeAssignmentCount` in the query.|
-
+|templateId | String | |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -44,6 +41,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -55,7 +53,8 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "resourceId": "String",
   "externalId": "String",
-  "displayName": "String",
+  "displayName": "String",  
+  "templateId":"String"
 }
 
 ```
@@ -69,8 +68,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

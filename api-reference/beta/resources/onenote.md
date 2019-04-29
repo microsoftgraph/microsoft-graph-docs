@@ -47,23 +47,38 @@ For information about the permissions required to work with OneNote APIs, see [N
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|notebooks|[Notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
-|operations|[Operation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
-|pages|[Page](page.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|resources|[Resource](resource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](resource.md). Read-only. Nullable.|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|notebooks|[notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
+|operations|[onenoteOperation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
+|pages|[onenotePage](onenotepage.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|resources|[onenoteResource](onenoteresource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](onenoteresource.md). Read-only. Nullable.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|sections|[onenoteSection](onenotesection.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create notebook](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
-|[List notebooks](../api/onenote-list-notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
-|[Create page](../api/onenote-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
-|[List pages](../api/onenote-list-pages.md) |[Page](page.md) collection| Get a collection of pages.|
-|[List section groups](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
-|[List sections](../api/onenote-list-sections.md) |[Section](section.md) collection| Get a collection of sections.|
+|[Create notebook](../api/onenote-post-notebooks.md) |[notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
+|[List notebooks](../api/onenote-list-notebooks.md) |[notebook](notebook.md) collection| Get a collection of notebooks.|
+|[Create page](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md) | Create a page by posting to the pages collection.|
+|[List pages](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md)  collection| Get a collection of pages.|
+|[List section groups](../api/onenote-list-sectiongroups.md) |[sectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
+|[List sections](../api/onenote-list-sections.md) |[onenoteSection](onenotesection.md) collection| Get a collection of sections.|
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": [{ "@odata.type": "microsoft.graph.onenotePage" }],
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -74,8 +89,6 @@ For information about the permissions required to work with OneNote APIs, see [N
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenote.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

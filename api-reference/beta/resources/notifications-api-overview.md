@@ -16,11 +16,3 @@ This type of user-centric notification is represented by the [notification](../r
 ## Next steps
 - See the [notification resource](../resources/projectrome-notification.md) and create notifications to engage with your users. 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/notifications-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

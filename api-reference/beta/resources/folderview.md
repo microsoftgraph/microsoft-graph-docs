@@ -21,8 +21,8 @@ It is available from the [folder][folder-facet] property of [driveItem][item-res
 ```json
 {
   "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
-  "sortDescending": "ascending | descending",
-  "viewType": "default | icons | details | thumbnails"
+  "viewType": "default | icons | details | thumbnails",
+  "sortOrder": "string"
 }
 ```
 
@@ -85,8 +85,6 @@ The following values are defined for the **viewType** property.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/folderview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

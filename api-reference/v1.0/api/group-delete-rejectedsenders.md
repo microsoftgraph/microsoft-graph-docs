@@ -1,13 +1,13 @@
 ---
 title: "Remove rejectedSender"
-description: "Remove a user or group from the rejectedSenders list."
+description: "Remove a user or group from the rejected-senders list."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
 ---
 
 # Remove rejectedSender
-Remove a user or group from the rejectedSenders list.
+Remove a user or group from the rejected-senders list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

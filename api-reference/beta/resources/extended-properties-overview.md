@@ -99,11 +99,3 @@ Multi-value extended property operations:
 - [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty-get.md)
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extended-properties-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

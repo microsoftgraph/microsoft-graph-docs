@@ -23,8 +23,3 @@ Indicates whether the [team](../resources/team.md) is intended for a particular 
 | educationProfessionalLearningCommunity | 3 | Team experience optimized for a PLC. Learn more about PLC [here](https://en.wikipedia.org/wiki/Professional_learning_community). |
 | educationStaff     | 4     |  Team type for an optimized experience for staff in an organization, where a staff leader, like a principal, is the admin and teachers are members in a team that comes with a specialized notebook. For more details, see [OneNote staff notebook for education](https://www.onenote.com/staffnotebookedu). |
 | unknownFutureValue | 7     | Sentinel value reserved as a placeholder for future expansion of the enum. |
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error:{/api-reference/beta/resources/teamspecialization.md}:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-}-->

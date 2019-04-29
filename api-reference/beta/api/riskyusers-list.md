@@ -95,6 +95,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
+
 #### Response
 Here is an example of the response.
 <!-- {

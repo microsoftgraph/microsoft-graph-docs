@@ -47,21 +47,22 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 {
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
-  "following": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
 }
 ```
 
@@ -92,10 +93,10 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | Relationship | Type                                 | Description
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | [itemActivity][] collection          | The list of recent activities that took place under this drive.
-| items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
-| root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
-| special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
-| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
+| items        | [driveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
+| root         | [driveItem](driveitem.md)            | The root folder of the drive. Read-only.
+| special      | [driveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| following    | [driveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
 
 ## Methods
 
@@ -138,8 +139,6 @@ In the previous table, the examples use `/drive`, but other paths are valid too.
   "tocBookmarks": {
     "Resources/Drive": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

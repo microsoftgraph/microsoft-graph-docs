@@ -58,7 +58,8 @@ The following example shows how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_deletetiindicatorsbyexternalid"
+  "name": "tiindicator_deletetiindicatorsbyexternalid",
+  "isCollection":"true"
 }-->
 
 ```http
@@ -90,6 +91,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

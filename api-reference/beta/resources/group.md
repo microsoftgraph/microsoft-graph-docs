@@ -72,10 +72,10 @@ This resource supports:
 |[List threads](../api/group-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
 |[Update thread](../api/group-update-thread.md) |None| Update properties of a thread object.|
 |[Delete thread](../api/group-delete-thread.md) |None| Delete thread object
-|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the acceptedSenders list for this group.|
+|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the accepted-senders list for this group.|
 |[Add acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a User or Group to the acceptSenders collection.|
 |[Remove acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
-|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejectedSenders list for this group.|
+|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejected-senders list for this group.|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
 |[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
 |**Open extensions**| | |
@@ -158,8 +158,8 @@ Here's what each **visibility** property value means:
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|membersWithLicenseErrors|[User](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
-|onenote|[OneNote](onenote.md)| Read-only.|
+|membersWithLicenseErrors|[user](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
+|onenote|[onenote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo. |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
@@ -198,7 +198,6 @@ The following is a JSON representation of the resource
     "settings",
     "sites",
     "threads",
-
     "allowExternalSenders",
     "assignedLicenses",
     "autoSubscribeNewMembers",
@@ -226,7 +225,7 @@ The following is a JSON representation of the resource
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
   "id": "string (identifier)",
-  "isFavorite": true,  
+  "isFavorite": true,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
@@ -236,7 +235,7 @@ The following is a JSON representation of the resource
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": ["string"],
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
@@ -244,21 +243,27 @@ The following is a JSON representation of the resource
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
   "visibility": "string",
-  "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "conversations": [ { "@odata.type": "microsoft.graph.conversation" }],
-  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "events": [ { "@odata.type": "microsoft.graph.event" }],
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "conversations": [{"@odata.type": "microsoft.graph.conversation"}],
+  "createdOnBehalfOf": {"@odata.type": "microsoft.graph.directoryObject"},
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "members": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
-  "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
-  "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
+  "owners": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "sites": [{"@odata.type": "microsoft.graph.site"}],
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
+  "classification": "string",
+  "hasMembersWithLicenseErrors": true,
+  "membershipRule": "string",
+  "membershipRuleProcessingState": "string",
+  "preferredLanguage": "string",
+  "theme": "string"
 }
 
 ```
@@ -279,8 +284,6 @@ The following is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

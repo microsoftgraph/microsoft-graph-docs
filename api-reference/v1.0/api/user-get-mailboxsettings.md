@@ -122,8 +122,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.000",
-        "endTime":"17:00:00.000",
+        "startTime": "08:00:00.0000000",
+        "endTime": "17:00:00.0000000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }

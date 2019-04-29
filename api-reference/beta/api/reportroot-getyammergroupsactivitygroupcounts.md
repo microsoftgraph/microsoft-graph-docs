@@ -141,7 +141,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts"
+  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts",
+  "isCollection": true
 } -->
 
 ```http
@@ -153,7 +154,7 @@ Content-Length: 236
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityGroupCounts)", 
   "value": [
     {
-      "reportRefreshDate": "2017-09-01", 
+      "reportRefreshDate": "2017-09-01",
       "total": 50, 
       "active": 41, 
       "reportDate": "2017-09-01", 
@@ -162,11 +163,3 @@ Content-Length: 236
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getyammergroupsactivitygroupcounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

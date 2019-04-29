@@ -20,7 +20,8 @@ The **sitePageData** resource represents the properties of a [webPart][]. As the
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.sitePageData"
+  "@odata.type": "microsoft.graph.sitePageData",
+   "openType": true
 }-->
 
 ```json
@@ -38,8 +39,6 @@ This resource has no fixed properties, but is an OpenType containing all propert
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/SitePageData",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sitepagedata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

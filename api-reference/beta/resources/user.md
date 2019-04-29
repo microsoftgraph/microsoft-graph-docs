@@ -135,6 +135,7 @@ This resource supports:
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
 |showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
+|signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 |skills|String collection|A list for the user to enumerate their skills.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
@@ -198,27 +199,27 @@ The age group and minor consent properties are optional properties used by Azure
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
+|drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
-|insights|[insights](insights.md) collection| Read-only. Nullable.|
+|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
 |joinedTeams|[group](group.md) collection|The Microsoft Teams that the user is a member of. Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|onenote|[OneNote](onenote.md)| Read-only.|
+|onenote|[onenote](onenote.md)| Read-only.|
 |outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
-|photos|[Photo](photo.md) collection| Read-only. Nullable.|
+|photos|[photo](photo.md) collection| Read-only. Nullable.|
 |planner|[plannerUser](planneruser.md)| Selective Planner services available to the user. Read-only. Nullable. |
-|sharepoint|[sharepoint](sharepoint.md)| Access to the user's SharePoint site. Read-only. |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
-|settings|[settings](user-settings.md) collection| Read-only. Nullable.|
+|settings|[userSettings](user-settings.md) | Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 ## JSON representation
@@ -238,6 +239,7 @@ Here is a JSON representation of the resource
     "createdObjects",
     "directReports",
     "drive",
+    "drives",
     "events",
     "extensions",
     "joinedGroups",
@@ -314,30 +316,40 @@ Here is a JSON representation of the resource
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
-  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
-  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
-  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
-  "settings": { "@odata.type": "microsoft.graph.userSettings" },
-  "events": [ { "@odata.type": "microsoft.graph.event" } ],
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
-  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
-  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
-  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
-  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "calendars": [{"@odata.type": "microsoft.graph.calendar"}],
+  "contacts": [{"@odata.type": "microsoft.graph.contact"}],
+  "contactFolders": [{"@odata.type": "microsoft.graph.contactFolder"}],
+  "createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "drives": [{"@odata.type": "microsoft.graph.drive"}],
+  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "settings": {"@odata.type": "microsoft.graph.userSettings"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassification"},
+  "mailFolders": [{"@odata.type": "microsoft.graph.mailFolder"}],
+  "manager": {"@odata.type": "microsoft.graph.directoryObject"},
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "messages": [{ "@odata.type": "microsoft.graph.message"}],
+  "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
+  "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
+  "employeeId": "string",
+  "faxNumber": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
+  "onPremisesSamAccountName": "string",
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "showInAddressList": true
 }
 ```
 
@@ -349,12 +361,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-}-->
+  "suppressions": []
+}
+-->

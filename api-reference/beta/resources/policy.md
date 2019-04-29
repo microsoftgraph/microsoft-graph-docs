@@ -26,20 +26,43 @@ This policy is described in further detail below.
 |[List policies](../api/policy-list.md)|Policy collection|Get all policy objects in the organization.|
 |[List assigned policies](../api/policy-list-assigned.md)|Policy collection|Get all policy objects assigned to an application or service principal.|
 
-### Common Properties
+##  Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The string version of the specific policy. See below. Required.|
+|definition|String collection|The string version of the specific policy. See below. Required.|
 |displayName|String|A custom name for the policy. Required.|
 |IsOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy". Required.|
+|alternativeIdentifer|String| |
+|keyCredentials| [keyCredential](keycredential.md) collection| |
 
-#### Common Relationships
+## JSON representation
+Here is a JSON representation of the resource.
+
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.policy",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.directoryObject",  
+  "openType": true
+}-->
+```json
+{
+  "alternativeIdentifer": "String",
+  "definition": ["String"],
+  "displayName": "String",
+  "isOrganizationDefault": "Boolean",
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "type": "String"
+}
+```
+
+## Relationships
 |Relationship|Type|Description|
 |:-------------|:-----------|:-----------|
 |appliesTo|[directoryObject](../resources/directoryobject.md) collection|The applications, service principals, groups, or organization the policy applies to.|
 
-## Token Lifetime Policy
+### Token lifetime policy
 Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](../api/policy-assign.md) to applications and service principals. There are four kinds of tokens whose lifetimes can be configured. Access/Refresh token pairs are obtained during authentication through a client, whereas ID/Session token pairs are obtained during authentication through a browser.
 
 - **Access Token** contains information about the identity and privileges associated with a user account that is used by clients to access protected resources like applications.
@@ -47,8 +70,17 @@ Specifies the lifetimes of tokens issued for various purposes. This kind of poli
 - **ID Token** behaves like an access token, but obtained through the browser.
 - **Session Token** behaves like a refresh token, but obtained through the browser.
 
-## Properties
-The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the "definition" common policy property. An example is shown below.
+#### Properties of a token lifetime policy
+The properties below form the JSON object that represents a token lifetime policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the "definition" common policy property. An example is shown below in JSON format:
+
+<!-- {
+  "blockType": "ignored"
+}-->
+``` json
+"definition": [
+    "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"
+  ]
+```
 
 >Note: All time durations in these properties are specified in the format "dd.hh:mm:ss".
 
@@ -64,22 +96,4 @@ The properties below form the JSON object that represents a token lifetime polic
 |MaxAgeSessionMultiFactor|String|Controls how long a user can continue to use session tokens to get new ID/session tokens after the last time they authenticated successfully with multi factors.|10 minutes|until-revoked|365 or until-revoked|
 |Version|Integer|Set value of 1. Required.|None|None|None|
 
-## JSON representation
-Here is a JSON representation of the resource.
 
-```json
-{
-  "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"],
-  "displayName":"Test Policy",
-  "isOrganizationDefault":false,
-  "type":"TokenLifetimePolicy",
-}
-```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

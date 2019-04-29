@@ -30,7 +30,8 @@ Here is a JSON representation of the resource
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.servicePrincipal"
 }-->
 
 ```json
@@ -54,7 +55,8 @@ Here is a JSON representation of the resource
   "replyUrls": ["string"],
   "samlMetadataUrl": "string",
   "servicePrincipalNames": ["string"],
-  "tags": ["string"]
+  "tags": ["string"],
+  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}]
 }
 
 ```
@@ -125,8 +127,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/serviceprincipal.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

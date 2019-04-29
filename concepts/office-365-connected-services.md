@@ -28,7 +28,7 @@ You're now ready to add the Microsoft Graph service to your Visual Studio projec
 
 1. In Solution Explorer, choose **Connected Services** to open the Connected Services tab. 
 
-2. Choose the **Access Office 365 Services with Microsoft Graph** provider. Follow the wizard. Select the following permissions (you can change the permisssions later):
+2. Choose the **Access Office 365 Services with Microsoft Graph** provider. Follow the wizard. Select the following permissions (you can change the permissions later):
 
     - For the **File** APIs, set permissions to **Have full access to your files**.
     - For the **Mail** APIs, set permissions to **Send mail as you**.
