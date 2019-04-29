@@ -26,7 +26,7 @@ ms.prod: "microsoft-identity-platform"
 }-->
 ```json
 {
-    "eventTypes": [{"@odata.type":"microsoft.graph.riskEventType"}],
+    "eventTypes": ["String"],
     "detail": "string"
 }
 ```

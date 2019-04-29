@@ -58,7 +58,8 @@ The following example shows how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "alert_updatealerts"
+  "name": "alert_updatealerts",
+   "isCollection": "true"
 }-->
 
 ```http
@@ -71,9 +72,9 @@ Content-type: application/json
       "assignedTo": "String",
       "closedDateTime": "String (timestamp)",
       "comments": ["String"],
-      "feedback": "@odata.type: microsoft.graph.alertFeedback",
+      "feedback": {"@odata.type": "microsoft.graph.alertFeedback"},
       "id": "String (identifier)",
-      "status": "@odata.type: microsoft.graph.alertStatus",
+      "status": {"@odata.type": "microsoft.graph.alertStatus"},
       "tags": ["String"],
       "vendorInformation":
         {
@@ -102,6 +103,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

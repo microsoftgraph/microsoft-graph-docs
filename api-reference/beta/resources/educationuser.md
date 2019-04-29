@@ -63,7 +63,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes to which the user belongs. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
-|assignments| [educationAssignment](educationassignment.md)| List of assignments for hte user. Nullable.|
+|assignments| [educationAssignment](educationassignment.md)| List of assignments for the user. Nullable.|
 
 ## JSON representation
 
@@ -71,6 +71,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -92,7 +93,21 @@ The following is a JSON representation of the resource.
   "primaryRole": "string",
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "accountEnabled": true,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["string"],
+  "department": "string",
+  "mailNickname": "string",
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "relatedContacts": [{"@odata.type": "microsoft.graph.relatedContact"}],
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
@@ -106,8 +121,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

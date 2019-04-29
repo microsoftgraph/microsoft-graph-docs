@@ -104,5 +104,8 @@ Take advantage of the following common capabilities that are shared among Micros
 Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Get MIME content (preview)](outlook-get-mime-message.md)
+- [Get shared messages](outlook-share-messages-folders.md)
+- [Send Outlook messages from another user](outlook-send-mail-from-other-user.md)
 - [Get immutable identifiers for Outlook resources (preview)](outlook-immutable-id.md)
 - [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.

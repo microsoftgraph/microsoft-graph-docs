@@ -62,24 +62,24 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "truncated": true,
+  "isCollection":true,
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
+            "activeUserCount": 1,
             "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
+            "currentScore": 1,
             "enabledServices": "enabledServices.value",
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
+            "licensedUserCount": 1,
+            "maxScore": 1,
             "id": "id.value",
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
@@ -133,8 +133,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/securescores-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

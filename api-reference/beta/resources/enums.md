@@ -17,6 +17,54 @@ doc_type: enumPageType
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
 
+
+### scheduleEntityTheme values
+
+| Value
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| gray
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
+
+
+### timeOffReasonIconType values
+
+|Member|
+|:---|
+|none|
+|car|
+|calendar|
+|running|
+|plane|
+|firstAid|
+|doctor|
+|notWorking|
+|clock|
+|juryDuty|
+|globe|
+|cup|
+|phone|
+|weather|
+|umbrella|
+|piggyBank|
+|dog|
+|cake|
+|trafficCone|
+|pin|
+|sunny|
+|unknownFutureValue|
+
+
 ### timeZoneStandard values
 
 | Value
@@ -624,3 +672,135 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
+
+### scopeOperatorMultiValuedComparisonType values
+
+|Member|
+|:---|
+|all|
+|any|
+
+### riskLevel values
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
+
+### riskState values
+
+|Member|
+|:---|
+|none|
+|confirmedSafe|
+|remediated|
+|dismissed|
+|atRisk|
+|confirmedCompromised|
+|unknownFutureValue|
+
+### riskDetail values
+
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|unknownFutureValue|
+
+### referenceAttachmentPermission values
+
+|Member|
+|:---|
+|other|
+|view|
+|edit|
+|anonymousView|
+|anonymousEdit|
+|organizationView|
+|organizationEdit|
+
+### referenceAttachmentProvider values
+
+|Member|
+|:---|
+|other|
+|oneDriveBusiness|
+|oneDriveConsumer|
+|dropbox|
+
+### riskEventType values
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### networkType values
+
+|Member|
+|:---|
+|intranet|
+|extranet|
+|namedNetwork|
+|trusted|
+|unknownFutureValue|
+
+### exchangeIdFormat values
+
+|Member|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restId|
+|restImmutableEntryId|
+
+### attributeFlowBehavior values
+
+|Member|
+|:---|
+|flowWhenChanged|
+|flowAlways|
+
+### attributeFlowType values
+
+|Member|
+|:---|
+|always|
+|objectAddOnly|
+|multiValueAddOnly|
+|restId|
+
+### objectFlowTypes values
+
+|Member| Value|
+|:---|:-------|
+|None| 0      |
+|Add| 1       |
+|Update|2     |
+|Delete|4     |

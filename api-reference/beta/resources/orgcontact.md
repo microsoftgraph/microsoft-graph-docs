@@ -28,13 +28,12 @@ doc_type: resourcePageType
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| addresses                    | [physicalOfficeAddress](physicalofficeaddress.md)            | Postal addresses for this organizational contact. For now a contact can only have one physical address. |
+| addresses                    | [physicalOfficeAddress](physicalofficeaddress.md) collection           | Postal addresses for this organizational contact. For now a contact can only have one physical address. |
 | companyName                  | String                                                    | Name of the company that this organizational contact belong to.                                                                                                                                                                                                                                                                                                                 |
 | department                   | String                                                     | The name for the department in which the contact works.                                                                                                                                                                                                                                                                                                                                |
 | displayName                  | String                                                     | Display name for this organizational contact.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | First name for this organizational contact.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | String                                                     | Unique identifier for this organizational contact.                                                                                                                                                                                                                                                                                                                             |
-| imAddresses                  | String collection                          | List of IM addresses for this organizational contact. For now a contact can only have one SIP address.                                                                                                                                                                                                                        |
 | jobTitle                     | String                                                     | Job title for this organizational contact.                                                                                                                                                                                                                                                                                                                                      |
 |mail|String| The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com". |
 | mailNickname                 | String                                                     | Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.                                                                                                                                                                                                                                                                                |
@@ -42,7 +41,7 @@ doc_type: resourcePageType
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection       | List of any synchronization provisioning errors for this organizational contact.                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; **null** if this object has never been synced from an on-premises directory (default).|
 | phones                       | [phone](phone.md) collection                            | List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection.                                                                                                                       |
-| proxyAddresses               | String collection                                         | For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. The **any** operator is required for filter expressions on multi-valued properties. Supports \$filter.                                                                                                                                                                               |
+| proxyAddresses               | String collection                                         | For example: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". The **any** operator is required for filter expressions on multi-valued properties. Supports \$filter.                                                                                                                                                                               |
 | surname                      | String                                                     | Last name for this organizational contact.                          |
 
 ## Relationships
@@ -64,6 +63,8 @@ Here is a JSON representation of the resource
     "manager",
     "memberOf"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.orgcontact"
 }-->
 
@@ -96,8 +97,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/orgcontact.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

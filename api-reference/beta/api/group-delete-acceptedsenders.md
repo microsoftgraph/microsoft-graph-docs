@@ -1,6 +1,6 @@
 ---
 title: "Remove acceptedSender"
-description: "Remove a user or group from the acceptedSenders list. "
+description: "Remove a user or group from the accepted-senders list. "
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a user or group from the acceptedSenders list. 
+Remove a user or group from the accepted-senders list of the specified group. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 ```
 
 ## Request headers
@@ -39,18 +39,16 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+### Example 1: Remove a user from the accepted-senders list for the group.
 #### Request
-The following are a couple of examples of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "remove_user_from_acceptedsenderslist_of_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
-
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{user-id}
 ```
 
 #### Response
@@ -58,6 +56,30 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "remove_user_from_acceptedsenderslist_of_group",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Remove a group from the accepted-senders list for the group.
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "remove_group_from_acceptedsenderslist_of_group"
+}-->
+```http
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{other-group-id}
+```
+
+#### Response
+The following is an example of the response. 
+
+<!-- {
+  "blockType": "response",
+  "name": "remove_group_from_acceptedsenderslist_of_group",
   "truncated": true
 } -->
 ```http
@@ -69,12 +91,10 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create acceptedSender",
+  "description": "Remove acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-acceptedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

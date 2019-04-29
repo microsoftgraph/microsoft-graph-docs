@@ -44,7 +44,8 @@
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
-      "searchScope": ["graph"]
+      "searchScope": ["graph"],
+      "toc_preview": true
     },
     "fileMetadata": {
       "ms.technology": {

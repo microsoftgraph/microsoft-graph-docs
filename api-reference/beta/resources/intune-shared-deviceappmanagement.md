@@ -68,12 +68,14 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "optionalProperties":[
+    "managedAppRegistrations"
+    ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

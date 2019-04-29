@@ -60,7 +60,7 @@ The rostering APIs support the following scenarios:
 - [List all schools](../api/educationroot-list-schools.md) 
 - [List schools in which a class is taught](../api/educationclass-list-schools.md)
 - [List schools for a user](../api/educationuser-list-schools.md)
-- [Get all classes](../api/educationroot_list_classes.md )
+- [Get all classes](../api/educationroot-list-classes.md )
 - [Get classes in a school](../api/educationschool-list-classes.md)
 - [List classes for a user](../api/educationuser-list-classes.md)
 - [Add classes to a school](../api/educationschool-post-classes.md)
@@ -125,11 +125,3 @@ Use the Microsoft Graph education APIs to build education solutions that access 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

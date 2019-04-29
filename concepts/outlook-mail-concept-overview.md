@@ -23,9 +23,9 @@ connect to a wealth of other Outlook and non-Outlook relationships, resources, a
 
 ### Automate message organization and processing
 
-Customers like how Outlook help them stay organized. Microsoft Graph brings these features to app developers, enabling them to build customer workflows that optimize on discovery and improve efficiency and productivity:
+Customers like how Outlook helps them stay organized. Microsoft Graph brings these features to app developers, enabling them to build customer workflows that optimize on discovery and improve efficiency and productivity:
 
-- Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messsages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query-parameters.md) messages in specific folders or the user's entire mailbox.
+- Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query-parameters.md) messages in specific folders or the user's entire mailbox.
 
 - Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0). More, that list is shared across Outlook messages,
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
@@ -67,7 +67,8 @@ Looking for the API reference for this service?
 
   - [Creating and sending messages](outlook-create-send-messages.md)
   - Ways to [organize messages](outlook-organize-messages.md)
-  - How to [get shared messages](outlook-share-messages-folders.md)
+  - [Getting the MIME content of a message](outlook-get-mime-message.md)
+  - [Getting shared messages](outlook-share-messages-folders.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
 

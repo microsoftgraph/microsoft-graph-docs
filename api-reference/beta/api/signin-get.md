@@ -41,8 +41,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 ##### Request
 Here is an example of the request.
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http

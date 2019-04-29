@@ -35,6 +35,7 @@ Here is a JSON representation of the resource.
 {
   "changeType": "string",
   "notificationUrl": "string",
+  "lifecycleNotificationUrl": "string",
   "resource": "string",
   "applicationId" : "string",
   "expirationDateTime": "string (timestamp)",
@@ -49,7 +50,8 @@ Here is a JSON representation of the resource.
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>Note: Drive root item notifications support only the `updated` changeType. User and group notifications support `updated` and `deleted` changeType. |
-| notificationUrl | string | Required. The URL of the endpoint that will receive the notifications. This URL must make use of the HTTPS protocol. |
+| notificationUrl | string | Required. The URL of the endpoint that receives the notifications. This URL must make use of the HTTPS protocol. |
+| lifecycleNotificationUrl | string | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. If not provided, those notifications will be delivered to **notificationUrl**. [Read more](/graph/webhooks-outlook-authz.md) about how Outlook resources use lifecycle notifications.  This URL must make use of the HTTPS protocol. |
 | resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/beta/`). |
 | expirationDateTime | DateTimeOffset | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. |
 | clientState | string | Optional. Specifies the value of the `clientState` property sent by the service in each notification. The maximum length is 255 characters. The client can check that the notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each notification. |
@@ -102,8 +104,6 @@ None
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/subscription.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

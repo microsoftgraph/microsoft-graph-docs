@@ -47,13 +47,17 @@ Or to a new [Security API](security-concept-overview.md) alert:
 
 ### Azure AD resource limitations
 
-Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
+Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
+
+> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
 
 - Maximum subscription quotas:
 
   - Per app: 50,000 total subscriptions
   - Per tenant: 1000 total subscriptions across all apps
   - Per app and tenant combination: 100 total subscriptions
+
+When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
 
 - Azure AD B2C tenants are not supported.
 

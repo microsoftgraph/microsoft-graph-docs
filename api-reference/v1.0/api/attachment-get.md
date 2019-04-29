@@ -2,6 +2,8 @@
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, "
 localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Get attachment
@@ -267,34 +269,36 @@ Content-type: application/json
 
 ## Example (reference attachment)
 ##### Request
-Here is an example of the request to get a reference attachment on an event.
+Here is an example of the request to get a reference attachment on a message.
 <!-- {
   "blockType": "request",
-  "name": "get_reference_attachment"
+  "name": "get_reference_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKgAAA=","AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8="]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8=
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_reference_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
-  "@odata.type": "#microsoft.graph.referenceAttachment",
-  "contentType": "contentType-value",
-  "lastModifiedDateTime": "datetime-value",
-  "id": "id-value",
-  "isInline": false,
-  "name": "name-value",
-  "size": 99,
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages('AAMkAGUzY5QKgAAA%3D')/attachments/$entity",
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "id": "AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8=",
+    "lastModifiedDateTime": "2019-04-02T02:58:11Z",
+    "name": "Sales Invoice Template.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 1060,
+    "isInline": true
 }
 ```
 

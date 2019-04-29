@@ -58,12 +58,13 @@ The following example shows how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_submittiindicators"
+  "name": "tiindicator_submittiindicators",
+  "isCollection":"true"
 }-->
 
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators
-Content-type: application/json
+Content-Type: application/json
 
 {
   "value": [
@@ -120,6 +121,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

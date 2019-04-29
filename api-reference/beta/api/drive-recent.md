@@ -101,8 +101,6 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
   "tocPath": "Drives/Recent files",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-recent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

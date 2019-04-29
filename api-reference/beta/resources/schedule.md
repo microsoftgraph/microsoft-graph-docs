@@ -26,7 +26,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | id			        |`string`  |ID of the `schedule`.|
 | enabled 			    |`bool`    | Indicates whether the schedule is enabled for the team. Required.|
 | timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. Required.|
-| provisionStatus       |`enum`    | The status of the schedule provisioning. |
+| provisionStatus       |`operationStatus`    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
 | provisionStatusCode   |`string`  | Additional information about why schedule provisioning failed. |
 
 
@@ -69,8 +69,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

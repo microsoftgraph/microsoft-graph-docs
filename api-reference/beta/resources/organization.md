@@ -47,14 +47,13 @@ This resource lets you add your own data to custom properties using [extensions]
 |postalCode|String| Postal code of the address for the organization |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
-|provisioningErrors|ProvisioningError collection| Not nullable.            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| State name of the address for the organization |
 |street|String| Street name of the address for organization |
 |technicalNotificationMails|String collection| Not nullable. |
-|verifiedDomains|[VerifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
+|verifiedDomains|[verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
 
 ## Relationships
 
@@ -100,7 +99,9 @@ Here is a JSON representation of the resource
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
+  "dirSyncEnabled": true
 }
 ```
 
@@ -119,8 +120,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

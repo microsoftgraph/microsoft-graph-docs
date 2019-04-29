@@ -68,9 +68,7 @@ PATCH https://graph.microsoft.com/beta/security/secureScoreControlProfiles/Admin
 Content-type: application/json
 
 {
-  "assignedTo": "assignedTo-value",
-  "controlStateUpdates": "controlStateUpdates-value",
-  "tenantNote": "tenantNote-value"
+  "controlStateUpdates": "controlStateUpdates-value"
 }
 ```
 
@@ -80,7 +78,7 @@ The following is an example of a successful response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
@@ -97,8 +95,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

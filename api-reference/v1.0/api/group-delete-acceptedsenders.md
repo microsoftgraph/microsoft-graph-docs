@@ -1,13 +1,13 @@
 ---
 title: "Remove acceptedSender"
-description: "Remove a user or group from the acceptedSenders list. "
+description: "Remove a user or group from the accepted-senders list. "
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
 ---
 
 # Remove acceptedSender
-Remove a user or group from the acceptedSenders list. 
+Remove a user or group from the accepted-senders list. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

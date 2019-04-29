@@ -27,10 +27,10 @@ The audio routing group stores a private audio route between participants in a m
 
 | Property      | Type              | Description                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Read-only. Server generated.                                         |
-| receivers     | String Collection | List of receiving participant ids.                                   |
-| routingMode   | String            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
-| sources       | String Collection | List of source participant ids.                                      |
+| id            | string            | Read-only. Server generated.                                         |
+| receivers     | collection(string) | List of receiving participant ids.                                   |
+| routingMode   | string            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
+| sources       | collection(string) | List of source participant ids.                                      |
 
 > **Note:** Routing mode determines the restrictions on the sources and receivers. Only the following routing groups are supported.
 > - `oneToOne` - sources and receivers have only one participant each.
@@ -54,10 +54,10 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "id": "string (identifier)",
+  "receivers": [ "string" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "string" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -69,8 +69,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

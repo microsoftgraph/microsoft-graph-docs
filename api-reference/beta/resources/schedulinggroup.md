@@ -31,7 +31,7 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 | userIds 		| `collection(string)`    |  The list of user IDs that are a member of the `schedulingGroup`. Required. |
 | createdDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `schedulingGroup`.|
+| lastModifiedBy		| [identitySet](identityset.md) |The identity that last updated this `schedulingGroup`.|
 
 ## JSON representation
 
@@ -40,29 +40,19 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "microsoft.graph.schedulingGroup",
+  "baseType": "microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
 {
-  "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
-  "createdDateTime": "2019-03-12T22:10:38.242Z",
-  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-  "displayName": "Cashiers",
+  "id": "string (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
   "isActive": true,
-  "userIds": [
-    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
-  ],
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+  "userIds": ["String (identifier)"],
+  "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
 }
 ```
 
@@ -76,8 +66,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedulinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

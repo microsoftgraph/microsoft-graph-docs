@@ -16,13 +16,13 @@ Represents the set of conditions and exceptions that are available for a rule.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| bodyContains | Collection (String) | Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply. |
-| bodyOrSubjectContains | Collection (String) | Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply. |
-| categories | Collection (String) | Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply. |
-| fromAddresses | Collection ([recipient](recipient.md)) | Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply. |
+| bodyContains | String collection | Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply. |
+| bodyOrSubjectContains | String collection | Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply. |
+| categories | String collection | Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply. |
+| fromAddresses | [recipient](recipient.md) collection | Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply. |
 | hasAttachments | Boolean | Indicates whether an incoming message must have attachments in order for the condition or exception to apply. |
-| headerContains | Collection (String) | Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply. |
-| importance | String | The importance that is stamped on an incoming message in order for the condition or exception to apply: `low`, `normal`, `high`. |
+| headerContains | String collection | Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply. |
+| importance | importance | The importance that is stamped on an incoming message in order for the condition or exception to apply: `low`, `normal`, `high`. |
 | isApprovalRequest | Boolean | Indicates whether an incoming message must be an approval request in order for the condition or exception to apply. |
 | isAutomaticForward | Boolean | Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply. |
 | isAutomaticReply | Boolean | Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply. |
@@ -34,20 +34,18 @@ Represents the set of conditions and exceptions that are available for a rule.
 | isReadReceipt | Boolean | Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply. |
 | isSigned | Boolean | Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply. |
 | isVoicemail | Boolean | Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply. |
-| messageActionFlag | String  | Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. Possible values are: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
+| messageActionFlag | messageActionFlag  | Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. The possible values are: `any`, `call`, `doNotForward`, `followUp`, `fyi`, `forward`, `noResponseNecessary`, `read`, `reply`, `replyToAll`, `review`. |
 | notSentToMe | Boolean | Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply. |
-| recipientContains | Collection (String) | Represents the strings that appear in either the **toRecipients** or **ccRecipients** properties of an incoming message in order for the condition or exception to apply. |
-| senderContains | Collection (String) | Represents the strings that appear in the **from** property of an incoming message in order for the condition or exception to apply. |
-| sensitivity | String | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: `normal`, `personal`, `private`, `confidential`. |
+| recipientContains | String collection | Represents the strings that appear in either the **toRecipients** or **ccRecipients** properties of an incoming message in order for the condition or exception to apply. |
+| senderContains | String collection | Represents the strings that appear in the **from** property of an incoming message in order for the condition or exception to apply. |
+| sensitivity | sensitivity | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. The possible values are: `normal`, `personal`, `private`, `confidential`. |
 | sentCcMe | Boolean | Indicates whether the owner of the mailbox must be in the **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | sentOnlyToMe | Boolean | Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply. |
-| sentToAddresses | Collection ([recipient](recipient.md)) | Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply. |
+| sentToAddresses | [recipient](recipient.md) collection | Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply. |
 | sentToMe | Boolean | Indicates whether the owner of the mailbox must be in the **toRecipients** property of an incoming message in order for the condition or exception to apply. |
 | sentToOrCcMe | Boolean | Indicates whether the owner of the mailbox must be in either a **toRecipients** or **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
-| subjectContains | Collection (String) | Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply. |
+| subjectContains | String collection | Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply. |
 | withinSizeRange | [sizeRange](sizerange.md) | Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the condition or exception to apply. |
-
-
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -104,8 +102,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/messagerulepredicates.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

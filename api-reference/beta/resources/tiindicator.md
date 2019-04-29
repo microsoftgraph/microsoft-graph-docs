@@ -112,16 +112,18 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 
 For information about this model, see [The Diamond Model](http://diamondmodel.org).
 
-| Values | Description |
-|:-------|:------------|
-|adversary|The indicator describes the adversary.|
-|capability|Indicator is a capability of the adversary.|
-|infrastructure|The indicator describes infrastructure of the adversary.|
-|victim|The indicator describes the victim of the adversary.|
+| Member | Value | Description |
+|:-------|:----- |:------------|
+| unknown |  0    | |
+| adversary |  1    |The indicator describes the adversary.|
+| capability |  2   |Indicator is a capability of the adversary.|
+| infrastructure | 3 |The indicator describes infrastructure of the adversary.|
+| victim | 4 |The indicator describes the victim of the adversary.|
+| unknownFutureValue | 127 | |
 
 ### killChain values
 
-| Values | Description |
+| Member | Description |
 |:-------|:------------|
 |Actions|Indcates that the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
 |C2|Represents the control channel by which a compromised system is manipulated.|
@@ -133,7 +135,7 @@ For information about this model, see [The Diamond Model](http://diamondmodel.or
 
 ### threatType values
 
-| Values | Description |
+| Member | Description |
 |:-------|:------------|
 |Botnet| Indicator is detailing a botnet node/member.|
 |C2|Indicator is detailing a Command & Control node of a botnet.|
@@ -151,7 +153,7 @@ For information about this model, see [The Diamond Model](http://diamondmodel.or
 
 Every indicator must also have a Traffic Light Protocol value when it is submitted. This value represents the sensitivity and sharing scope of a given indicator.
 
-| Values | Description |
+| Member | Description |
 |:-------|:------------|
 |White| Sharing scope: Unlimited. Indicators can be shared freely, without restriction.|
 |Green| Sharing scope: Community. Indicators may be shared with the security community.|

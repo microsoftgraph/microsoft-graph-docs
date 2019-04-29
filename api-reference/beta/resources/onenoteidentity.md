@@ -15,7 +15,7 @@ doc_type: resourcePageType
 
 The OneNoteIdentity type represents an identity of a _user_.
 
-In future, this type will be merged with [Identity](identity.md)
+In future, this type will be merged with [identity](identity.md)
 
 
 ## JSON representation
@@ -27,7 +27,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.onenoteidentity"
+  "@odata.type": "microsoft.graph.onenoteIdentity"
 }-->
 
 ```json
@@ -52,8 +52,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenoteidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

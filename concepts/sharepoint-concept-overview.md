@@ -53,7 +53,7 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-Get started with SharePoint in Microsoft Graph by learning more about [working with sites][SharePoint].
+Get started with SharePoint in Microsoft Graph by learning more about [working with sites](/graph/api/resources/sharepoint?view=graph-rest-1.0).
 
 [list]: /graph/api/resources/list?view=graph-rest-1.0
 [columns]: /graph/api/resources/columndefinition?view=graph-rest-1.0

@@ -63,7 +63,7 @@ This is an example of a successful validation request.
   "name": "directoryobject_validateproperties"
 }-->
 ``` http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 
@@ -88,7 +88,7 @@ This is an example of a request with validation errors.
 
 ### Request
 ```http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 

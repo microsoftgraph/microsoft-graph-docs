@@ -26,7 +26,8 @@ Here is a JSON representation of a **baseItem** resource.
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.baseItem"
+  "@odata.type": "microsoft.graph.baseItem",
+  "abstract": true
 }-->
 
 ```json
@@ -74,8 +75,6 @@ The `baseItem` type is not expected to be used directly.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/BaseItem",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/baseitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
