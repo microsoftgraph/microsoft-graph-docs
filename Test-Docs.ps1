@@ -101,7 +101,7 @@ $lastResultCode = 0
 $appVeyorUrl = $env:APPVEYOR_API_URL 
 
 $fullPath = Join-Path $repoPath -ChildPath $docSubPath
-$params = "check-all", "--path", $fullPath, "--ignore-warnings", "--log", "C:\Logs\api-doctor\Logs.txt"
+$params = "check-all", "--path", $fullPath, "--ignore-warnings"
 if ($appVeyorUrl -ne $null)
 {
     $params = $params += "--appveyor-url", $appVeyorUrl
