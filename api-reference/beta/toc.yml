@@ -8561,14 +8561,14 @@
         href: resources/securescores.md
         items:
         - name: List secure scores
-          href: api/securescores-list.md
+          href: api/security-list-securescores.md
       - name: Secure score control profiles
-        href: resources/securescorecontrolprofiles.md
+        href: resources/securescorecontrolprofile.md
         items:
         - name: List secure score control profiles
-          href: api/securescorecontrolprofiles-list.md
+          href: api/security-list-securescorecontrolprofiles.md
         - name: Update secure score control profiles
-          href: api/securescorecontrolprofiles-update.md
+          href: api/securescorecontrolprofile-update.md
       - name: Threat intelligence indicators
         href: resources/tiindicator.md
         items:
