@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object in the response body.
+If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.
 
 ## Example
 
