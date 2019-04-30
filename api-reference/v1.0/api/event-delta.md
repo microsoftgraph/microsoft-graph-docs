@@ -46,7 +46,7 @@ In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL 
 includes the encoded, desired parameters.
 
 
-| Query parameter    | Type |Description|
+| Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
