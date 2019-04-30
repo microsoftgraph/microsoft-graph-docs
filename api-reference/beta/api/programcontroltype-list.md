@@ -3,6 +3,8 @@ title: "List programControlTypes"
 description: "In the Azure AD access reviews feature, list all the programControlType objects."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # List programControlTypes

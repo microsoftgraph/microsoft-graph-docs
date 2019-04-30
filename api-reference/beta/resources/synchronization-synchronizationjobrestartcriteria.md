@@ -3,6 +3,8 @@ title: "synchronizationJobRestartCriteria resource type"
 description: "Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # synchronizationJobRestartCriteria resource type

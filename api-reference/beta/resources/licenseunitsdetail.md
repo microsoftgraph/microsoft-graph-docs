@@ -3,6 +3,8 @@ title: "licenseUnitsDetail resource type"
 description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # licenseUnitsDetail resource type

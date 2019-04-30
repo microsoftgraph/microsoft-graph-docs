@@ -1,10 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <description>
 ms.date: 09/14/2017
 title: CreateAction
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 
 # CreateAction resource type

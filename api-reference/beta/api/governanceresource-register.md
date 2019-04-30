@@ -3,6 +3,8 @@ title: "Register governanceResource"
 description: "Register an unmanaged governanceResource object in PIM."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # Register governanceResource

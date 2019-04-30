@@ -4,6 +4,7 @@ description: "Delete an existing category."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Delete educationCategory

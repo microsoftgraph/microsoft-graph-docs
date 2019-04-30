@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: Convert to other formats
 localization_priority: Normal

@@ -4,6 +4,7 @@ description: "You can use the activity feed API in Microsoft Graph to resume a u
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: conceptualPageType
+author: <author>
 ---
 
 # Use the activity feed REST API

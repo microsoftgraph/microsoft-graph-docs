@@ -4,6 +4,7 @@ description: "Delete the definition of a schema extension."
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 
 # Delete schemaExtension

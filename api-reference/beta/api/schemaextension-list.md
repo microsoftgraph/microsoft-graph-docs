@@ -4,6 +4,7 @@ description: "Get a list of schemaExtension objects created by any apps you own 
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 
 # List schemaExtensions

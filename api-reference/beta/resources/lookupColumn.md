@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # LookupColumn resource type
 

@@ -3,6 +3,8 @@ title: "Delete synchronizationJob"
 description: "Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Delete synchronizationJob

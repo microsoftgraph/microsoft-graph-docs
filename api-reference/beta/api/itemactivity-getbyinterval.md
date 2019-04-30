@@ -1,10 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <description>
 ms.date: 10/06/2017
 title: Get item activity stats by interval
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 # Get item activity stats by interval
 

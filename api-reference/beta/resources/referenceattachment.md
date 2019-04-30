@@ -3,6 +3,8 @@ title: "referenceAttachment resource type"
 description: "A link to a folder or file (such as a text file or Word document) on a OneDrive for Business cloud drive, or other supported storage locations, attached to "
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # referenceAttachment resource type

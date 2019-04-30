@@ -4,6 +4,7 @@ description: "A complex type for representing the **visualElements** property in
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
+author: <author>
 ---
 
 # visualInfo resource type

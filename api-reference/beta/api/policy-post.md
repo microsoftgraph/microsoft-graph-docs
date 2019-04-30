@@ -3,6 +3,8 @@ title: "Create Policy"
 description: "Create a new policy object by specifying display name, policy type, and policy description."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Create Policy

@@ -3,6 +3,8 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # Cancel governanceRoleAssignmentRequest

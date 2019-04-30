@@ -3,6 +3,8 @@ title: "locatedRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection that is based on location data. Located risk event types include:"
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # locatedRiskEvent resource type

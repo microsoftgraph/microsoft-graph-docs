@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a **schedule** object
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get schedule

@@ -3,6 +3,8 @@ title: "privilegedRoleAssignment: makeEligible"
 description: "Make the role assignment as eligible. If the role assignment is already eligible before the call, it does nothing. If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user. If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # privilegedRoleAssignment: makeEligible

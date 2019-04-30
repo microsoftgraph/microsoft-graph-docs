@@ -3,6 +3,8 @@ title: "List privilegedOperationEvents"
 description: "filter`` expression."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # List privilegedOperationEvents

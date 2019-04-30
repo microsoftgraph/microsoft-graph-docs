@@ -3,6 +3,8 @@ title: "servicePrincipals: List owners"
 description: "Retrieve a list of owners of the servicePrincipal."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # servicePrincipals: List owners

@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/11/2017
 title: Get a SharePoint list
 localization_priority: Normal

@@ -4,6 +4,7 @@ description: "Open extensions (formerly known as Office 365 data extensions) pro
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 
 # openTypeExtension resource type (open extensions)

@@ -1,10 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <description>
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
 ---
 # accessAction resource type
 

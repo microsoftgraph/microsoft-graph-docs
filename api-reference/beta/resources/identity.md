@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/14/2017
 title: Identity
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # identity resource type
 

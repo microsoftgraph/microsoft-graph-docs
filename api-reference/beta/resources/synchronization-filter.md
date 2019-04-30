@@ -3,6 +3,8 @@ title: "filter resource type"
 description: "Determines which objects should be provisioned to the application. For example, you might want to only provision users that are located in the US. When a scoping filter is present, objects that do not satisfy the filter will be skipped during synchronization."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # filter resource type

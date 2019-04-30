@@ -4,6 +4,7 @@ description: "Use of these APIs in production applications is not supported."
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
+author: <author>
 ---
 
 # Get websocket endpoint

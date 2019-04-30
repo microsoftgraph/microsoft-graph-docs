@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # PublicationFacet resource type
 

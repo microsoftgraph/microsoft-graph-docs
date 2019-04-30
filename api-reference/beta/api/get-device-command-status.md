@@ -3,6 +3,8 @@ title: "Get device command status"
 description: "Get the status of a command on a device. For the  full list of status codes, see List of actionStatus."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # Get device command status

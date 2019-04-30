@@ -4,6 +4,7 @@ description: "You can use the notifications API in Microsoft Graph to send push 
 localization_priority: Priority
 ms.prod: "project-rome"
 doc_type: conceptualPageType
+author: <author>
 ---
 
 # Use the notifications REST API in Microsoft Graph

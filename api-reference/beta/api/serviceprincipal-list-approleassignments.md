@@ -3,6 +3,8 @@ title: "servicePrincipal: List appRoleAssignments"
 description: "Retrieve a list of approleassignment objects."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # servicePrincipal: List appRoleAssignments

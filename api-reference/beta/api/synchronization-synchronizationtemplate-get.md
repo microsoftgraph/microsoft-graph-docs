@@ -3,6 +3,8 @@ title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Get synchronizationTemplate

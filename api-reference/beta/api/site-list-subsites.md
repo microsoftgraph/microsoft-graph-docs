@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
 localization_priority: Normal

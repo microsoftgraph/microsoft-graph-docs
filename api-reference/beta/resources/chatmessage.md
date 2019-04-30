@@ -2,12 +2,9 @@
 title: "chatMessage resource type"
 description: "Represents an individual chat message within a channel or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message."
 localization_priority: Priority
-<<<<<<< HEAD
 doc_type: resourcePageType
-=======
 author: "nkramer"
 ms.prod: "microsoft-teams"
->>>>>>> 9b8094fc3eb409cfaa12eef66a56e1c8a1eb3a80
 ---
 
 # chatMessage resource type

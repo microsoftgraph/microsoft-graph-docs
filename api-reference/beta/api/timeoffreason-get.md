@@ -4,6 +4,7 @@ description: "Get a timeOffReason by ID."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get timeOffReason

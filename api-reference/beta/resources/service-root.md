@@ -3,6 +3,8 @@ title: "Service root"
 description: "2015-10-25 14:57:30 UTC -->"
 localization_priority: Normal
 doc_type: conceptualPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Service root

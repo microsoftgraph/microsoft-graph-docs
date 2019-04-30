@@ -3,6 +3,8 @@ title: "modifiedProperty resource type"
 description: "Indicates all the modified properties with old value and new value for any resource in Azure AD that's changed"
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # modifiedProperty resource type

@@ -3,6 +3,8 @@ title: " controlScore resource type"
 description: "This resource contains a tenant score and description for an individual control."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 #  controlScore resource type

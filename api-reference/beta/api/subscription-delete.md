@@ -4,6 +4,7 @@ description: "Delete a subscription."
 localization_priority: Normal
 author: "piotrci"
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 
 # Delete subscription

@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: Restore a previous version
 localization_priority: Normal

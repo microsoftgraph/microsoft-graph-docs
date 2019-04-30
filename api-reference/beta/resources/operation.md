@@ -3,6 +3,8 @@ title: "operation resource type"
 description: "The status of a long-running operation."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # operation resource type

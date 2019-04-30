@@ -3,6 +3,8 @@ title: "onenotePage resource type"
 description: "A page in a OneNote notebook."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # onenotePage resource type

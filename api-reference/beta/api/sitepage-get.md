@@ -1,6 +1,6 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: <description>
 ms.date: 03/15/2018
 title: Get a page in a site
 localization_priority: Normal

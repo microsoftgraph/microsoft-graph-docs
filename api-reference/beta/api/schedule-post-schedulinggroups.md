@@ -4,6 +4,7 @@ description: "Create a new schedulingGroup."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create schedulingGroup

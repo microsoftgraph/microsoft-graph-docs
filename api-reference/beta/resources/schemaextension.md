@@ -4,6 +4,7 @@ description: "Schema extensions allow you to define a schema to extend and add s
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 
 # schemaExtension resource type (schema extensions)

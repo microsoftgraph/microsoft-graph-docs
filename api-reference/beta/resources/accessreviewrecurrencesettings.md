@@ -1,8 +1,10 @@
 ---
 title: "accessReviewRecurrenceSettings resource type"
-description: ""
+description: <description>
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: "microsofit-identity-platform"
+author: <author>
 ---
 
 # accessReviewRecurrenceSettings resource type

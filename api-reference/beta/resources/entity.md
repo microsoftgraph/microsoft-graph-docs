@@ -3,6 +3,8 @@ title: "entity resource type"
 description: "None"
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # entity resource type

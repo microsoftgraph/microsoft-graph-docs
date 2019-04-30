@@ -3,8 +3,8 @@ title: "List connectorGroups"
 description: "Retrieve a list of connectorgroup objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # List connectorGroups

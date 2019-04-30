@@ -3,10 +3,10 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
 title: File Activities
-description: ""
+description: <description>
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: <ms.prod>
 ---
 # Enumerate activities (preview)
 

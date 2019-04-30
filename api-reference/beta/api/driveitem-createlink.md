@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: Share a file with a link
 localization_priority: Normal

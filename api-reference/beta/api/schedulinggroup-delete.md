@@ -4,6 +4,7 @@ description: "Mark a schedulingGroup as inactive by setting its isActive propert
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete schedulingGroup

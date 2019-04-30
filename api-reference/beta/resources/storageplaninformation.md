@@ -1,10 +1,11 @@
 ---
 author: psampath
-ms.author: psampath
+description: <description>
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # storagePlanInformation resource type
 

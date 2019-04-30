@@ -4,6 +4,7 @@ description: "Represents a single activity within an app - for example, a TV sho
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
+author: <author>
 ---
 
 # activity resource type

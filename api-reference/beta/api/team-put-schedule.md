@@ -4,6 +4,7 @@ description: "Create or replace a **schedule** object."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create or replace schedule

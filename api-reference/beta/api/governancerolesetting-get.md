@@ -3,6 +3,8 @@ title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # Get governanceRoleSetting

@@ -3,8 +3,8 @@ title: "Delete appRoleAssignment"
 description: "Delete appRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Delete appRoleAssignment

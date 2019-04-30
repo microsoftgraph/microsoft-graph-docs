@@ -1,6 +1,6 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: <description>
 ms.date: 05/07/2018
 title: Delete a page from a SharePoint site
 localization_priority: Normal

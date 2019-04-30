@@ -3,8 +3,8 @@ title: "Update approleassignment"
 description: "Update the properties of approleassignment object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Update approleassignment

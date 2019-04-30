@@ -1,6 +1,6 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: <description>
 ms.date: 03/15/2018
 title: List the pages in a site
 localization_priority: Normal

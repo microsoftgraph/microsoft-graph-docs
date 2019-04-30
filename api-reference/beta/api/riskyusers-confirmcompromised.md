@@ -5,6 +5,7 @@ author: cloudhandler
 localization_priority: Normal 
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
+doc_type: apiPageType
 ---
 # Confirm riskyUsers compromised
 

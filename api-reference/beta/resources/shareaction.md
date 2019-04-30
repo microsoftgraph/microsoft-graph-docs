@@ -1,11 +1,13 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <description>
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
+
 # ShareAction resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

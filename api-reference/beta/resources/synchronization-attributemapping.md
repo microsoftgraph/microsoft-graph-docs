@@ -3,6 +3,8 @@ title: "attributeMapping resource type"
 description: "Defines how values for the given target attribute should flow during synchronization."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # attributeMapping resource type

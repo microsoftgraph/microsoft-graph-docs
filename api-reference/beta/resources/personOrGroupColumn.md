@@ -1,5 +1,6 @@
 ---
 author: "simonhult"
+description: <description>
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal

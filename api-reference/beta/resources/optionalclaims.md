@@ -1,8 +1,10 @@
 ---
 title: "optionalClaims type"
-description: ""
+description: <description>
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # optionalClaims resource type

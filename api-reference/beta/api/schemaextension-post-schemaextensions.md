@@ -4,6 +4,7 @@ description: "Create a new schemaExtension definition to extend a supporting res
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 
 # Create schemaExtension

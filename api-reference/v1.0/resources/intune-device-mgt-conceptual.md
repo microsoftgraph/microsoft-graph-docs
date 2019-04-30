@@ -1,6 +1,6 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""
+description: <description>
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"

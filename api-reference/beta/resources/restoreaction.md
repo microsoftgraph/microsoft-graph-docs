@@ -1,10 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <decription>
 ms.date: 09/14/2017
 title: RestoreAction
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # RestoreAction resource type
 

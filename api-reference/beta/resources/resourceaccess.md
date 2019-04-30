@@ -3,6 +3,8 @@ title: "resourceAccess resource type"
 description: "Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the requiredResourceAccess type is a collection of **ResourceAccess**."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # resourceAccess resource type

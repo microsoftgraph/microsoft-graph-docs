@@ -3,6 +3,8 @@ title: "synchronizationSecretKeyStringValuePair resource type"
 description: "Represents a single secret value. "
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # synchronizationSecretKeyStringValuePair resource type

@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
 localization_priority: Normal

@@ -3,6 +3,8 @@ title: "synchronizationStatus resource type"
 description: "Represents the current status of the synchronizationJob."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # synchronizationStatus resource type

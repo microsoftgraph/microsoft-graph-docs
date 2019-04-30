@@ -3,6 +3,8 @@ title: "metadataEntry resource type"
 description: "Metadata for the given object."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # metadataEntry resource type

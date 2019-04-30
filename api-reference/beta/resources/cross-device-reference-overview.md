@@ -4,6 +4,7 @@ description: "{This is the beta version. Content is similar to the existing proj
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: conceptualPageType
+author: <author>
 ---
 
 # Use the Microsoft Graph API to enable cross-device experiences

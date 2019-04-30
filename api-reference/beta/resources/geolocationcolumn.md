@@ -1,10 +1,11 @@
 ---
 author: kevklam
-ms.author: kevinlam
+description: <description>
 ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # geolocationColumn resource type
 

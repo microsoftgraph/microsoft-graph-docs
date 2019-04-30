@@ -3,6 +3,8 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders in the directory."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # List identityProviders

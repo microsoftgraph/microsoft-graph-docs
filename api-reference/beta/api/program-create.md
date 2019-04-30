@@ -3,6 +3,8 @@ title: "Create program"
 description: "In the Azure AD access reviews feature, create a new program object."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Create program

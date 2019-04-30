@@ -3,6 +3,8 @@ title: "Get leakedCredentialsRiskEvent"
 description: "Retrieve the properties and relationships of a leakedcredentialsriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # Get leakedCredentialsRiskEvent

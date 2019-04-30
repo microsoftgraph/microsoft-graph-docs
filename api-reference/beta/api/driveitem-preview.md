@@ -4,6 +4,7 @@ description: "This action allows you to obtain short-lived embeddable URLs for a
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
+author: <author>
 ---
 
 # driveItem: preview

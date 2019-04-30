@@ -4,6 +4,7 @@ description: "You can use Microsoft Graph to create an app that connects with fi
 localization_priority: Priority
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
+author: <author>
 ---
 
 # Working with files in Microsoft Graph

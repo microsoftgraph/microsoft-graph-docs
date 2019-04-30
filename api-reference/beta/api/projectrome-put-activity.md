@@ -4,6 +4,7 @@ description: "Create a new or replace an existing user activity for your app. If
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
+author: <author>
 ---
 
 # Create or replace an activity

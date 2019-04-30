@@ -1,10 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <description>
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # ContentTypeOrder resource type
 

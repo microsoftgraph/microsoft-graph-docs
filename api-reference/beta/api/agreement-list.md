@@ -3,8 +3,8 @@ title: "List agreements"
 description: "Retrieve a list of agreement objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # List agreements

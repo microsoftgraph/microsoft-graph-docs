@@ -4,6 +4,7 @@ description: "A complex type for representing the **attribution** property in th
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
+author: <author>
 ---
 
 # imageInfo resource type

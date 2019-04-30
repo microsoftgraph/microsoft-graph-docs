@@ -3,6 +3,8 @@ title: "Get privilegedRoleSettings"
 description: "Retrieve the role settings for the given role. A privilegedRoleSettings object will be returned."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Get privilegedRoleSettings

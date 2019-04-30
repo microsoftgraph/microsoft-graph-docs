@@ -3,6 +3,8 @@ title: "scheduleItem resource type"
 description: "An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource as well."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: "microsoft-teams"
+author: <author>
 ---
 
 # scheduleItem resource type

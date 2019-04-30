@@ -3,6 +3,8 @@ title: "synchronizationProgress resource type"
 description: "Represents the progress of a synchronizationJob toward completion."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # synchronizationProgress resource type

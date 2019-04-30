@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal

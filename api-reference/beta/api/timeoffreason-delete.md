@@ -4,6 +4,7 @@ description: "Mark a timeOffReason as inactive by setting the isActive property"
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete timeOffReason

@@ -4,6 +4,7 @@ description: "Subscribes a listener application to receive notifications when da
 localization_priority: Normal
 author: "piotrci"
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 
 # Create subscription

@@ -4,6 +4,7 @@ description: "List the available [sites][] in an organization that match provide
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
+author: <author>
 ---
 
 # Enumerate sites

@@ -1,9 +1,10 @@
 ---
 title: "riskyUserHistoryItem resource type"
-description: ""
-author: ""
+description: <description>
+author: <author>
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType_
 ---
 
 # riskyUserHistoryItem resource type

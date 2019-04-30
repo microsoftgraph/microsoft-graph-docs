@@ -3,6 +3,8 @@ title: "agreementFileData resource type"
 description: "Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # agreementFileData resource type

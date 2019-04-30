@@ -4,6 +4,7 @@ description: "A subscription allows a client app to receive notifications about 
 localization_priority: Normal
 author: "piotrci"
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 
 # subscription resource type

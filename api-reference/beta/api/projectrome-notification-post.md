@@ -4,6 +4,7 @@ description: "Create and send a notification targeting a user through Microsoft 
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
+author: <author>
 ---
 
 # Create and send a notification

@@ -4,6 +4,7 @@ description: "Create a new or replace an existing history item for an existing u
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
+author: <author>
 ---
 
 # Create or replace a historyItem

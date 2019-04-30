@@ -1,6 +1,6 @@
 ---
 author: chackman
-ms.author: chackman
+description: <description>
 title: List followed items
 localization_priority: Normal
 ms.prod: "sharepoint"

@@ -3,6 +3,8 @@ title: "Get Icon"
 description: "Retrieve the properties and relationships of icon object."
 localization_priority: Normal
 doc_type: apiPageType
+author: <author>
+ms.prod: <ms.prod>
 ---
 
 # Get Icon

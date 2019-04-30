@@ -1,11 +1,13 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
+
 # AsyncJobStatus resource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

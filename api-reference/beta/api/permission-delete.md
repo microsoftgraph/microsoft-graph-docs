@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <description>
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
 ---
 # Delete a sharing permission from a file or folder
 

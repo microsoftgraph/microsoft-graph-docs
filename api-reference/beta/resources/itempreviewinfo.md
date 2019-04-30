@@ -1,10 +1,11 @@
 ---
 author: kevinlam
-ms.author: kevinlam
+description: <description>
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
 ---
 # ItemPreviewInfo resource type
 

@@ -3,6 +3,8 @@ title: "filterOperand resource type"
 description: "Contains a collection of values for the operand."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # filterOperand resource type

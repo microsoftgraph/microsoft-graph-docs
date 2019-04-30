@@ -4,6 +4,7 @@ description: "Replace an existing schedulingGroup."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Replace schedulingGroup

@@ -3,6 +3,8 @@ title: "governanceRoleSetting resource type"
 description: " rule, and so on."
 localization_priority: Normal
 doc_type: resourcePageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # governanceRoleSetting resource type
