@@ -46,7 +46,7 @@ In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL 
 includes the encoded, desired parameters.
 
 
-| Query parameter	   | Type	|Description|
+| Query parameter    | Type |Description|
 |:---------------|:--------|:----------|
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
@@ -68,6 +68,9 @@ a `GET /calendarview` request. `$select` is not supported in this case.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) collection object in the response body.
+
+##### Series
+Recurring events are represented by a series master and its corresponding occurrences. Upon a change to any occurrence, the **delta** function returns the series master and *all* occurrences. If an occurrence is deleted, the series master and the remaining occurrences are returned; there is no explicit event indicating an occurrence was deleted, only the absence of the deleted occurrence. The series master and its corresponding occurrences will always be returned on the same page, regardless of the max page size.
 
 ## Example
 ##### Request
