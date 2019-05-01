@@ -64,6 +64,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "subscriptions": [ { "@odata.type": "microsoft.graph.subscription"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
@@ -104,6 +105,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | The collection of lists under this site.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
+| **subscriptions** | Collection([subscription][])     | The collection of subscriptions on the site.
 | **onenote**       | [onenote][]                      | Calls the OneNote service for notebook related operations.
 
 [columnDefinition]: columndefinition.md
@@ -113,6 +115,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 [identitySet]: identityset.md
 [list]: list.md
 [site]: site.md
+[subscription]: subscription.md
 [onenote]: onenote.md
 
 <!-- {

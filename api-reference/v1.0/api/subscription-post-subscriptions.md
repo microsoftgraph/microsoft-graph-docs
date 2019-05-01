@@ -25,6 +25,7 @@ Subscribes a listener application to receive notifications when the requested ty
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
+|[site](../resources/site.md) (OneDrive for Business) | Not supported | Not supported | Sites.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
@@ -96,6 +97,7 @@ The following are valid values for the resource property of the subscription:
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 |Security alert|security/alerts?$filter=status eq ‘New’|
+|Sites|sites/admin|
 
 ##### Response
 
@@ -145,7 +147,7 @@ The subscription notification endpoint (specified in the `notificationUrl` prope
   "description": "Create subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
+ "tocPath": "",
   "suppressions": [
     "Error: /api-reference/v1.0/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"

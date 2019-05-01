@@ -70,13 +70,51 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
+ When the site resource points to the tenant admin site collection, all sites within the tenancy are retrieved.
+
+## HTTP request
+
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+
+```http
+GET https://graph.microsoft.com/v1.0/sites/admin/sites
+```
+
+## Response
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
+      "name": "Site A",
+      "createdDateTime": "2016-10-18T03:05:59Z",
+      "lastModifiedDateTime": "2016-10-18T10:40:59Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/siteA"
+    },
+    {
+      "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
+      "name": "Site B",
+      "createdDateTime": "2016-10-18T03:05:59Z",
+      "lastModifiedDateTime": "2016-10-18T10:40:59Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/siteB"
+    }
+  ]
+}
+```
+
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/List subsites",
-  "suppressions": [
+    "suppressions": [
     "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
