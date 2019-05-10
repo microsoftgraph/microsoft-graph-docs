@@ -48,6 +48,8 @@ The following table shows the properties that are required when you create a use
 
 Since the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
+[!INCLUDE [note-post-federated-users](../../includes/note-post-federated-users.md)]
+
 ## Response
 
 If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.

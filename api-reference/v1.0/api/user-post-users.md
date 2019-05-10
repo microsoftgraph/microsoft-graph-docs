@@ -44,6 +44,8 @@ The following table shows the properties that are required when you create a use
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
 |userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
+[!INCLUDE [note-post-federated-users](../../includes/note-post-federated-users.md)]
+
 ## Response
 
 If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.
