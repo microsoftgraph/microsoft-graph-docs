@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Create User
 
-Use this API to create a new User.
+Create a new User.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create a use
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.
 
 ## Example
 ##### Request
@@ -74,7 +74,9 @@ Content-type: application/json
 ```
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readabilityy. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
