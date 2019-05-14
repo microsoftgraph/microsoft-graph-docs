@@ -15,4 +15,4 @@ Before you can use Microsoft Graph data connect, an Office 365 administrator mus
 
 ## Next steps
 
-Congratulations! You're now ready to start building intelligent applications with Azure tooling. For detailed step-by-step instructions, see the [Microsoft Graph data connect training module](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md). For more information about the capabilities that Microsoft Graph data connect provides, see [datasets, regions, and sinks](data-connect-datasets.md) or [user selection and filtering](data-connect-filtering.md) that data connect supports.
+Congratulations! You're now ready to start building intelligent applications with Azure tooling. For detailed step-by-step instructions, see the [Microsoft Graph data connect training module](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md). For more information about the capabilities that Microsoft Graph data connect provides, see [datasets, regions, and sinks](data-connect-datasets) or [user selection and filtering](data-connect-filtering) that data connect supports.
