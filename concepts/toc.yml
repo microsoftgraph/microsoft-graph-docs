@@ -90,7 +90,7 @@
     - name: Customer booking (preview)
       href: booking-concept-overview.md
       displayName: Bookings, Microsoft Bookings
-    - name: Data access
+    - name: Data connect
       displayName: Microsoft Graph data connect
       items:
       - name: Data connect overview
