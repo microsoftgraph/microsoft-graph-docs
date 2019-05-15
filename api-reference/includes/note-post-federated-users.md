@@ -3,3 +3,4 @@
 > [!NOTE]
 > Federated users created via the Microsoft Graph API are forced to sign in frequently because the **stsRefreshtokensValidFrom** value is missing.
 > For more information about how to fix the issue, see [Federated users in Azure AD are forced to sign in frequently](https://support.microsoft.com/en-us/help/4025960/federated-users-in-azure-ad-are-forced-to-sign-in-frequently).
+> You can also set **stsRefreshtokensValidFrom** value via Microsoft Graph API, see [user: revokeSignInSessions](../beta/api/user-revokesigninsessions.md)
