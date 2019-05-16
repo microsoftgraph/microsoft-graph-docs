@@ -22,6 +22,8 @@ Submissions are automatically created when an assignment is published. The submi
 |[Get educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Read properties and relationships of an **educationSubmission** object.|
 |[List resources](../api/educationsubmission-list-resources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
 |[List submittedResources](../api/educationsubmission-list-submittedresources.md) |[educationSubmissionResource](educationsubmissionresource.md) collection| Get an **educationSubmissionResource** object collection.|
+|[List outcomes](../api/educationsubmission-list-outcomes.md) |[educationOutcome](educationOutcome.md) collection| Get an **educationOutcome** object collection.|
+|[Update outcome](../api/educationsubmission-update-outcome.md) |[educationOutcome](educationOutcome.md)| Update an **educationOutcome** object.|
 |[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md)	|Update an **educationSubmission** object. |
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the assignment. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
@@ -48,6 +50,7 @@ Submissions are automatically created when an assignment is published. The submi
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|outcomes|[educationOutcome](educationoutcome.md) collection| Nullable.|
 |resources|[educationSubmissionResource](educationsubmissionresource.md) collection| Nullable.|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md) collection| Read-only. Nullable.|
 

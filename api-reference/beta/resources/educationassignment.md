@@ -27,6 +27,10 @@ The assignment APIs are exposed in the class namespace.
 |[List categories](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md) collection| Get an **educationCategory** object collection.|
 |[Add categories](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
 |[Remove category](../api/educationassignment-remove-category.md) |None| Remove an **educationCategory** belonging to the class from this assignment.|
+|[Add rubric](../api/educationassignment-add-rubric.md) |[educationRubric](educationrubric.md) | Attach an **educationRubric** to this assignment.|
+|[Get rubric](../api/educationassignment-get-rubric.md) |[educationRubric](educationrubric.md) | Get an **educationRubric** attached to this assignment.|
+|[Update rubric](../api/educationassignment-update-rubric.md) |[educationRubric](educationrubric.md) | Update an **educationRubric** attached to this assignment.|
+|[Remove rubric](../api/educationassignment-get-rubric.md) |None| Detach an **educationRubric** attached to this assignment.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
