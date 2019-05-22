@@ -8,6 +8,9 @@
   - name: Develop
     topHref: /azure/active-directory/
     topicHref: /graph/auth/index
+  - name: Develop
+    topHref: /azure/active-directory/
+    topicHref: /graph/auth/index
     items:
     - name: Get auth tokens
       topHref: /azure/active-directory/develop/
@@ -16,3 +19,15 @@
       - name: Register an app
         topHref: /azure/active-directory/develop/quickstart-register-app/
         topicHref: /graph/
+### Leave this element for testing from the contributor guide instructions. 
+- name: Microsoft Graph
+  tocHref: /graph/
+  topicHref: /graph/index
+  items: 
+  - name: Terms of Use
+    tocHref: /legal/
+    topicHref: /graph/index
+    items: 
+    - name: Terms of Use
+      tocHref: /legal/termsofuse
+      topicHref: /graph/index
