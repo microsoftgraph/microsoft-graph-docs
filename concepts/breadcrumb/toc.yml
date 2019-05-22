@@ -8,9 +8,6 @@
   - name: Develop
     topHref: /azure/active-directory/
     topicHref: /graph/auth/index
-  - name: Develop
-    topHref: /azure/active-directory/
-    topicHref: /graph/auth/index
     items:
     - name: Get auth tokens
       topHref: /azure/active-directory/develop/
