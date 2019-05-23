@@ -20,7 +20,3 @@
   - name: Terms of Use
     tocHref: /legal/
     topicHref: /graph/index
-    items: 
-    - name: Terms of Use
-      tocHref: /legal/termsofuse
-      topicHref: /graph/index
