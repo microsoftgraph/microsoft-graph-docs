@@ -17,10 +17,6 @@
         topHref: /azure/active-directory/develop/quickstart-register-app/
         topicHref: /graph/
 ### Leave this element for testing from the contributor guide instructions. 
-- name: Microsoft Graph
-  tocHref: /graph/
-  topicHref: /graph/index
-  items: 
   - name: Terms of Use
     tocHref: /legal/
     topicHref: /graph/index
