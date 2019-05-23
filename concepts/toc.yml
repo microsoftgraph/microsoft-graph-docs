@@ -51,7 +51,8 @@
     - name: Versioning and support
       href: versioning-and-support.md
     - name: Terms of use
-      href: https://docs.microsoft.com/en-us/legal?context=/graph/concepts/context/context
+      maintainContext: true
+      href: https://docs.microsoft.com/en-us/legal?toc=/graph/toc.json&bc=/graph/breadcrumb/toc.json
   - name: Learn
     expanded: true
     items:
