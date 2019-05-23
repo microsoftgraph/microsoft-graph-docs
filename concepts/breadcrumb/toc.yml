@@ -1,22 +1,10 @@
 - name: Microsoft Graph
   tocHref: /graph/
-  topicHref: /graph/overview
-- name: MS Graph
-  tocHref: /azure/
-  topicHref: /graph/overview
+  topicHref: /graph/index
   items:
-  - name: Develop
-    topHref: /azure/active-directory/
-    topicHref: /graph/auth/index
-    items:
-    - name: Get auth tokens
-      topHref: /azure/active-directory/develop/
-      topicHref: /graph/auth/index
-      items:
-      - name: Register an app
-        topHref: /azure/active-directory/develop/quickstart-register-app/
-        topicHref: /graph/
-### Leave this element for testing from the contributor guide instructions. 
-  - name: Terms of Use
+  - name: Explore
     tocHref: /legal/
-    topicHref: /graph/index
+    topicHref: /graph/overview
+  - name: Terms of Use
+    tocHref: /legal/termsofuse/
+    topicHref: /graph/overview
