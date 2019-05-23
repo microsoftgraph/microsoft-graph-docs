@@ -4,8 +4,4 @@
   items:
   - name: Explore
     tocHref: /legal/
-    topicHref: /graph/overview
-    items:
-    - name: Terms of Use
-      tocHref: /legal/termsofuse/
-      topicHref: /graph/overview
+    topicHref: /graph/index
