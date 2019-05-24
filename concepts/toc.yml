@@ -52,7 +52,7 @@
       href: versioning-and-support.md
     - name: Terms of use
       maintainContext: true
-      href: https://docs.microsoft.com/en-us/legal/?toc=/graph/toc.json&bc=/graph/breadcrumb/toc.json
+      href: /legal?toc=/graph/toc.json&bc=/graph/breadcrumb/toc.json
   - name: Learn
     expanded: true
     items:
