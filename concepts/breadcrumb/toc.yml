@@ -1,7 +1,21 @@
 - name: Microsoft Graph
   tocHref: /graph/
-  topicHref: /graph/index
+  topicHref: /graph/overview
+- name: MS Graph
+  tocHref: /azure/
+  topicHref: /graph/overview
   items:
+  - name: Develop
+    topHref: /azure/active-directory/
+    topicHref: /graph/auth/index
+    items:
+    - name: Get auth tokens
+      topHref: /azure/active-directory/develop/
+      topicHref: /graph/auth/index
+      items:
+      - name: Register an app
+        topHref: /azure/active-directory/develop/quickstart-register-app/
+        topicHref: /graph/
   - name: Explore
     tocHref: /legal/
     topicHref: /graph/index
