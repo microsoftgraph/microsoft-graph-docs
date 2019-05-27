@@ -86,6 +86,8 @@ Content-length: 225
 }
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerassignedtotaskboardtaskformat-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_plannerassignedtotaskboardtaskformat-Javascript-snippets.md)]
@@ -104,6 +106,7 @@ Content-length: 225
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

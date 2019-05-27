@@ -119,6 +119,8 @@ Content-length: 292
 }
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_educationschool_from_educationroot-Javascript-snippets.md)]
@@ -136,6 +138,7 @@ Content-length: 292
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/educationroot-post-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -77,6 +77,8 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_page-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_page-Javascript-snippets.md)]
@@ -95,6 +97,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/page-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/page-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

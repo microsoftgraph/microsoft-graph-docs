@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var Message = new Message
+var message = new Message
 {
 	Subject = "Project kickoff",
 	ToRecipients = new List<Recipient>()

@@ -30,7 +30,7 @@ var @event = new Event
 		{
 			Type = RecurrencePatternType.Weekly,
 			Interval = 1,
-			DaysOfWeek = new List<DayOfWeek>()
+			DaysOfWeek = new List<String>()
 			{
 				"Monday"
 			}

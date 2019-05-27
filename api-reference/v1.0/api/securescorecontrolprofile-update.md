@@ -95,6 +95,8 @@ The following is an example of a successful response.
 HTTP/1.1 204 No Content
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]

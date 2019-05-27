@@ -6,8 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("format", "{format}")
+};
+
 var items = await graphClient.Me.Drive.Items["{item-id}"]
-	.Request()
+	.Request( queryOptions )
 	.Select( e => new {
 			 e.Content 
 			 })

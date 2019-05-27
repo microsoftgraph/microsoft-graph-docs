@@ -351,6 +351,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 }
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_findmeetingtimes-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_findmeetingtimes-Javascript-snippets.md)]
@@ -369,6 +371,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/beta/api/user_findmeetingtimes.md:\r\n      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
     "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n    Expected type Float but actual was Int64. Property: confidence, actual value: '100'",

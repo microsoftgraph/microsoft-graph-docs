@@ -10,7 +10,7 @@ var addLicenses = new List<AssignedLicense>()
 {
 	new AssignedLicense
 	{
-		DisabledPlans = new List<Guid>()
+		DisabledPlans = new List<String>()
 		{
 			"11b0131d-43c8-4bbb-b2c8-e80f9a50834a"
 		},
@@ -18,7 +18,7 @@ var addLicenses = new List<AssignedLicense>()
 	},
 	new AssignedLicense
 	{
-		DisabledPlans = new List<Guid>()
+		DisabledPlans = new List<String>()
 		{
 			"a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"
 		},
@@ -26,7 +26,7 @@ var addLicenses = new List<AssignedLicense>()
 	}
 };
 
-var removeLicenses = new List<Guid>()
+var removeLicenses = new List<String>()
 {
 };
 

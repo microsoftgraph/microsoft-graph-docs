@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ToRecipients = new List<Recipient>()
+var toRecipients = new List<Recipient>()
 {
 	new Recipient
 	{
@@ -18,7 +18,7 @@ var ToRecipients = new List<Recipient>()
 	}
 };
 
-var Comment = "Dana, hope you can make this meeting.";
+var comment = "Dana, hope you can make this meeting.";
 
 await graphClient.Me.Events["{id}"]
 	.Forward(comment,toRecipients)

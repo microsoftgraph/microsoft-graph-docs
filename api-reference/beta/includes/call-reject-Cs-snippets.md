@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reason = "none";
+var reason = RejectReason.None;
 
 await graphClient.App.Calls["{id}"]
 	.Reject(reason)

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var list = new List
 {
-	Name = "Books",
+	DisplayName = "Books",
 	Columns = new List<ColumnDefinition>()
 	{
 		new ColumnDefinition

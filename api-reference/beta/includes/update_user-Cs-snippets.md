@@ -13,7 +13,7 @@ var user = new User
 	{
 		new AssignedLicense
 		{
-			DisabledPlans = new List<Guid>()
+			DisabledPlans = new List<String>()
 			{
 				"bea13e0c-3828-4daa-a392-28af7ff61a0f"
 			},

@@ -12,9 +12,9 @@ var inputIds = new List<String>()
 	"{rest-formatted-id-2}"
 };
 
-var sourceIdType = "restId";
+var sourceIdType = ExchangeIdFormat.RestId;
 
-var targetIdType = "restImmutableEntryId";
+var targetIdType = ExchangeIdFormat.RestImmutableEntryId;
 
 await graphClient.Me
 	.TranslateExchangeIds(inputIds,targetIdType,sourceIdType)

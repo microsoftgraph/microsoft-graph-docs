@@ -11,18 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const event = {
-  originalStartTimeZone: "originalStartTimeZone-value",
-  originalEndTimeZone: "originalEndTimeZone-value",
-  responseStatus: {
-    response: "",
-    time: "datetime-value"
-  },
-  iCalUId: "iCalUId-value",
-  reminderMinutesBeforeStart: 99,
-  isReminderOn: true
+  location:{
+      displayName:"Conf Room 2"
+  }
 };
 
-let res = await client.api('/groups/{id}/events/{id}')
+let res = await client.api('/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/calendar/events/AAMkADZlAAAAABERAAA=')
 	.update({event : event});
 
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/items/{item-id}/content')
+let res = await client.api('/drive/items/{item-id}/content?format=%7Bformat%7D')
 	.version('beta')
 	.get();
 

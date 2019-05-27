@@ -8,19 +8,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var @event = new Event
 {
-	OriginalStartTimeZone = "originalStartTimeZone-value",
-	OriginalEndTimeZone = "originalEndTimeZone-value",
-	ResponseStatus = new ResponseStatus
+	Location = new Location
 	{
-		Response = ResponseType.None,
-		Time = "datetime-value"
-	},
-	ICalUId = "iCalUId-value",
-	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true
+		DisplayName = "Conf Room 2"
+	}
 };
 
-await graphClient.Groups["{id}"].Events["{id}"]
+await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Calendar.Events["AAMkADZlAAAAABERAAA="]
 	.Request()
 	.UpdateAsync(@event);
 

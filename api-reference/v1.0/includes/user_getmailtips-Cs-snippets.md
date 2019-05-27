@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var EmailAddresses = new List<String>()
+var emailAddresses = new List<String>()
 {
 	"danas@contoso.onmicrosoft.com",
 	"fannyd@contoso.onmicrosoft.com"
 };
 
-var MailTipsOptions = "automaticReplies, mailboxFullStatus";
+var mailTipsOptions = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus;
 
 await graphClient.Me
 	.GetMailTips(emailAddresses,mailTipsOptions)

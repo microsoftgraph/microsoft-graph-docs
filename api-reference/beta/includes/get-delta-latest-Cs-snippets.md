@@ -6,8 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("token", "latest")
+};
+
 var delta = await graphClient.Me.Drive.Root.Delta()
-	.Request()
+	.Request( queryOptions )
 	.GetAsync();
 
 ```

@@ -13,7 +13,7 @@ var bookingStaffMember = new BookingStaffMember
 		new BookingWorkHours
 		{
 			Day = DayOfWeek.Monday,
-			TimeSlots = new List<BookingWorkTimeSlot>()
+			TimeSlots = new List<String>()
 			{
 			}
 		},
