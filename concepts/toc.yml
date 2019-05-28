@@ -52,6 +52,8 @@
       href: versioning-and-support.md
     - name: Terms of use
       href: /legal/marketplace/certification-policies?context=/graph/context/context
+    - name: Terms of use2 - test
+      href: /legal/?context=/graph/context/context
   - name: Learn
     expanded: true
     items:
