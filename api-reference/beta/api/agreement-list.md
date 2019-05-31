@@ -25,17 +25,7 @@ GET /agreements
 ```
 
 ## Optional query parameters
-This method supports the below list of query parameters to help customize the response.  
-
-
-| Name         | Value      | Description |
-|:-------------|:------------|:------------|
-|[$select](https://docs.microsoft.com/en-us/graph/query-parameters#select-parameter)|string|Comma-separated list of properties to include in the response.|
-|[$count](https://docs.microsoft.com/en-us/graph/query-parameters#count-parameter)|none|The count of related entities can be requested by specifying the $count query option.|
-|[$filter](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter)|string|Filter string that lets you filter the response based on a set of criteria.|
-|[$orderby](https://docs.microsoft.com/en-us/graph/query-parameters#orderby-parameter)|string|Comma-separated list of properties that are used to sort the order of items in the response collection.|
-
-For more information on the supported parameters, see [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+This method supports [$select](https://docs.microsoft.com/en-us/graph/query-parameters#select-parameter), [$count](https://docs.microsoft.com/en-us/graph/query-parameters#count-parameter), [$filter](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) and [$orderby](https://docs.microsoft.com/en-us/graph/query-parameters#orderby-parameter) parameters to help customize the response. For more information on the supported parameters, see [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 
 ## Request headers
