@@ -28,9 +28,9 @@ Provides the details of self-service password reset and multi-factor authenticat
 
 ## Enum values Details
 ### Auth Method Property
-| Enum Name | Value | Description
+| Enum Name | Value | Additional Details
 | :---------|:-------|:----------
-email|0|
+email|0| 
 mobileSMS|1|
 mobilePhone|2|
 officePhone|3|
