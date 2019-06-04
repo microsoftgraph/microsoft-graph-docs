@@ -30,7 +30,7 @@ Provides the details of self-service password reset usage for a given tenant. De
 
 ## Enum values Details
 ### Auth Method Property
-| Enum Name | Value | Description
+| Enum Name | Value | Additional Details
 | :---------|:-------|:----------
 email|0
 mobileSMS|1
