@@ -15,8 +15,8 @@ var appRoleAssignment = new AppRoleAssignment
 	ResourceDisplayName = "resourceDisplayName-value"
 };
 
-await graphClient.AppRoleAssignments["{id}"]
+await graphClient.AppRoleAssignments
 	.Request()
-	.UpdateAsync(appRoleAssignment);
+	.AddAsync(appRoleAssignment);
 
 ```
