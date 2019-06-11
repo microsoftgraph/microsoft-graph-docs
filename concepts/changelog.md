@@ -26,6 +26,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
 
+### Directory APIs
+| **Change type** | **Version** | **Description** |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added **brandings** property to the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) entity. This property represents the list of organizational branding elemnets as defined by tenant.|
+
+
 ## May 2019
 
 ### Education APIs
