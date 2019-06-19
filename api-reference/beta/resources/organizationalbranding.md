@@ -11,7 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Organizations can customize their Azure AD sign-in pages, which appear when users sign in to the organization's tenant-specific apps, such as https://outlook.com/contoso.com , or when passing a domain variable, such as https://passwordreset.microsoftonline.com/?whr=contoso.com . Also as an ISV developer, they can read the company's branding information, and customize their app experience and tailor it specifically for the signed-in user, using their company's [branding](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding).
+
+Companies can add different multiple branding based on locale. Locale serves as a key in all requests.
+
+NOTE: The custom branding won't immediately appear when users go to sites such as, www.office.com . Instead, users have to enter their username before their customized branding appears.
+
+[!Note] Adding custom branding requires you to use Azure Active Directory Premium 1, Premium 2, or Basic editions, or to have an Office 365 license. For more information about licensing and editions, see Sign up for Azure AD Premium.
 
 ## Methods
 
