@@ -1,6 +1,6 @@
 ---
-title: "List brandings"
-description: "Retrieve a list of organizationalbranding objects."
+title: "List Organizational branding"
+description: "Retrieve a list of organizationalBranding objects."
 localization_priority: Normal
 author: "anchanda"
 ms.prod: "branding"
@@ -11,7 +11,11 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of organizationalbranding objects.
+Retrieve a list of organizationalBranding objects.
+
+# Get branding
+
+ Gets organizational Brnading for given locale Id.
 
 ## Permissions
 
@@ -19,16 +23,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | orgContacts.Read.All |
-| Delegated (personal Microsoft account) | orgContacts.Read.All |
-| Application                            | orgContacts.Read.All |
+| Delegated (work or school account)     | Organization.Read.All |
+| Delegated (personal Microsoft account) | Not supported |
+| Application                            | Organization.Read.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
+List of all brandings
+
 ```http
 GET /organization/{id}/brandings
+```
+Get Branding from a locale
+
+```http
+GET /organization/{id}/brandings/{locale}
 ```
 
 ## Optional query parameters
@@ -39,7 +50,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer token |
 
 ## Request body
 
@@ -53,10 +64,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the branding request.
 <!-- {
   "blockType": "request",
-  "name": "get_brandings"
+  "name": "get_branding"
 }-->
 
 ```http
@@ -66,9 +77,6 @@ GET https://graph.microsoft.com/beta/organization/{id}/brandings
 ### Response
 
 The following is an example of the response.
-
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -92,6 +100,46 @@ Content-type: application/json
       "signInPageText": "signInPageText-value"
     }
   ]
+}
+```
+
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_brandings"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/organization/{id}/brandings/{locale}
+```
+
+### Response
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBranding",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "id-value",
+  "backgroundColor": "backgroundColor-value",
+  "backgroundImage": "backgroundImage-value",
+  "bannerLogo": "bannerLogo-value",
+  "locale": "locale-value",
+  "signInPageText": "signInPageText-value"
 }
 ```
 
