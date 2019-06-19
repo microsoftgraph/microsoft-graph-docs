@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Organization.ReadWrite.All |
-| Delegated (personal Microsoft account) | Organization.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported |
 | Application                            | Organization.ReadWrite.All |
 
 ## HTTP request
@@ -35,7 +35,7 @@ POST /organization/{id}/brandings
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer token |
 
 ## Request body
 
@@ -49,7 +49,7 @@ If successful, this method returns `201, Created` response code and a new [organ
 
 ### Request
 
-The following is an example of the request.
+The following is an example of create branding request.
 <!-- {
   "blockType": "request",
   "name": "create_organizationalbranding_from_organization"
@@ -68,7 +68,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following is an example of the create branding response.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -91,6 +91,72 @@ Content-type: application/json
   "locale": "locale-value",
   "signInPageText": "signInPageText-value"
 }
+```
+
+### Request
+
+The following is an example of the update branding request.
+<!-- {
+  "blockType": "request",
+  "name": "update_organizationalbranding_from_organization"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/organization/{id}/brandings/{locale}
+Content-type: application/json
+
+{
+  "backgroundColor": "new backgroundColor-value",
+  "signInPageText": "new signInPageText-value"
+}
+```
+
+### Response
+
+The following is an example of the update branding response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBranding"
+} -->
+
+```http
+HTTP/1.1 201 OK
+Content-type: application/json
+
+{
+  "id": "id-value",
+  "backgroundColor": "new backgroundColor-value",
+  "backgroundImage": "backgroundImage-value",
+  "bannerLogo": "bannerLogo-value",
+  "locale": "locale-value",
+  "signInPageText": "new signInPageText-value"
+}
+```
+### Request
+
+Adding/Updating BannerLogo for organizationalBranding
+
+```http
+PUT https://graph.microsoft.com/v1.0/organization/{id}/branding/{locale}/bannerLogo/
+Content-Type: image/jpeg
+
+Binary data for the image
+```
+
+### Response
+
+The following is an example of the update branding response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBranding"
+} -->
+
+```http
+HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
