@@ -17,7 +17,8 @@ Companies can add different multiple branding based on locale. Locale serves as 
 
 NOTE: The custom branding won't immediately appear when users go to sites such as, www.office.com . Instead, users have to enter their username before their customized branding appears.
 
-[!NOTE] Adding custom branding requires you to use Azure Active Directory Premium 1, Premium 2, or Basic editions, or to have an Office 365 license. For more information about licensing and editions, see Sign up for Azure AD Premium.
+> [!NOTE]
+> Adding custom branding requires you to use Azure Active Directory Premium 1, Premium 2, or Basic editions, or to have an Office 365 license. For more information about licensing and editions, see Sign up for Azure AD Premium.
 
 ## Methods
 
