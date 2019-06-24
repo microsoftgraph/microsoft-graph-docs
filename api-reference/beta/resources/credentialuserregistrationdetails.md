@@ -23,12 +23,12 @@ The **credentialUserRegistrationDetails** resource represents the registration u
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethods | string collection | Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobilePhone`, `fido` (only registered through combined security info registration), `appPassword` (only used for MFA), `unknownFutureValue`. |
+| authMethods | string collection | Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobilePhone` |
 | id | String | Unique ID for the activity. |
 | isCapable | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isEnabled | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
-| isMfaRegistered | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
-| isRegistered | Boolean | Indicates whether the user is registered or not. |
+| isMfaRegistered | Boolean | Indiciates whether the user is Mfa Registered. |
+| isRegistered | Boolean | Indicates whether the user has registered auths to perform self service password reset. |
 | userDisplayName | String | Provides the user name of the corresponding user. |
 | userPrincipalName | String | Provides the user principal name of the corresponding user. |
 
