@@ -48,7 +48,7 @@ The following is an example of the update branding request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/organization/{id}/brandings/{locale}
+POST https://graph.microsoft.com/beta/organization/{id}/brandings/en-US
 Content-type: application/json
 
 {
@@ -109,7 +109,7 @@ HTTP/1.1 204 NO CONTENT
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create organizationalBranding",
+  "description": "Update organizationalBranding",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
