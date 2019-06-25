@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/{id}/brandings/{locale}
+GET https://graph.microsoft.com/beta/organization/{id}/brandings/en-US
 ```
 
 ### Response
