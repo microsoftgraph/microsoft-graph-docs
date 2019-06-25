@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new organizationalBranding.
+Use this API to create a new [organizationalBranding](../resources/organizationalbranding.md).
 
 ## Permissions
 
@@ -91,72 +91,6 @@ Content-type: application/json
   "locale": "locale-value",
   "signInPageText": "signInPageText-value"
 }
-```
-
-### Request
-
-The following is an example of the update branding request.
-<!-- {
-  "blockType": "request",
-  "name": "update_organizationalbranding_from_organization"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/organization/{id}/brandings/{locale}
-Content-type: application/json
-
-{
-  "backgroundColor": "new backgroundColor-value",
-  "signInPageText": "new signInPageText-value"
-}
-```
-
-### Response
-
-The following is an example of the update branding response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBranding"
-} -->
-
-```http
-HTTP/1.1 201 OK
-Content-type: application/json
-
-{
-  "id": "id-value",
-  "backgroundColor": "new backgroundColor-value",
-  "backgroundImage": "backgroundImage-value",
-  "bannerLogo": "bannerLogo-value",
-  "locale": "locale-value",
-  "signInPageText": "new signInPageText-value"
-}
-```
-### Request
-
-Adding/Updating BannerLogo for organizationalBranding
-
-```http
-PUT https://graph.microsoft.com/v1.0/organization/{id}/branding/{locale}/bannerLogo/
-Content-Type: image/jpeg
-
-Binary data for the image
-```
-
-### Response
-
-The following is an example of the update branding response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBranding"
-} -->
-
-```http
-HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
