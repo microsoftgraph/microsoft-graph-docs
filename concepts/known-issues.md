@@ -169,6 +169,10 @@ Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/a
 
 - Navigation path `/applications/{id}` is not supported. Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
 
+## Incorrect values for createdDateTime and lastModifiedDateTime 
+
+When using the calendarView API, if the events are filtered by StartDateTime and EndDateTime, the createdDateTime and lastModifiedDateTime properties are returned with a value of "0001-01-01T00:00:00Z". If the events are not filtered, createdDateTime and lastModifiedDateTime are returned with a correct value. 
+
 ## Contacts
 
 ### Organization contacts available in only beta
