@@ -24,7 +24,7 @@ NOTE: The custom branding won't immediately appear when users go to sites such a
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get organizationalBranding](../api/organization-get-branding.md) | [organizationalBranding](organizationalbranding.md) | List all Brandings associated with organization. |
+| [Get organizationalBranding](../api/organization-get-brandings.md) | [organizationalBranding](organizationalbranding.md) | List all Brandings associated with organization. |
 | [List organizationalBranding](../api/organization-list-brandings.md) | [organizationalBranding](organizationalbranding.md) | Read properties and relationships of organizationalBranding object. |
 | [Create](../api/organization-create-brandings.md ) | [organizationalBranding](organizationalbranding.md) | Create organizationalBranding object. |
 | [Update](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update organizationalBranding object. |
