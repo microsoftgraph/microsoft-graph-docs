@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Organizations can customize their Azure AD sign-in pages, which appear when users sign in to the organization's tenant-specific apps, such as https://outlook.com/contoso.com , or when passing a domain variable, such as https://passwordreset.microsoftonline.com/?whr=contoso.com . Also as an ISV developer, they can read the company's branding information, and customize their app experience and tailor it specifically for the signed-in user, using their company's [branding](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding).
+You can use this API to read a company's [branding](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/customize-branding) information to customize your app's experience specifically for your signed-in users. You can customize your Azure AD sign-in pages, which appear when users sign in to the your organization's tenant-specific apps, such as https://outlook.com/contoso.com , or when passing a domain variable, such as https://passwordreset.microsoftonline.com/?whr=contoso.com .
 
-Companies can add different multiple branding based on locale. Locale serves as a key in all requests.
+You can also add multiple branding based on locale. Locale serves as a key in all requests. Locale is a [ISO-639](https://www.iso.org/standard/4767.html) language code that determines branding language.
 
 NOTE: The custom branding won't immediately appear when users go to sites such as, www.office.com . Instead, users have to enter their username before their customized branding appears.
 
@@ -24,7 +24,9 @@ NOTE: The custom branding won't immediately appear when users go to sites such a
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Read properties and relationships of organizationalBranding object. |
+| [Get organizationalBranding](../api/organization-get-branding.md) | [organizationalBranding](organizationalbranding.md) | List all Brandings associated with organization. |
+| [List organizationalBranding](../api/organization-list-brandings.md) | [organizationalBranding](organizationalbranding.md) | Read properties and relationships of organizationalBranding object. |
+| [Create](../api/organization-create-brandings.md ) | [organizationalBranding](organizationalbranding.md) | Create organizationalBranding object. |
 | [Update](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Update organizationalBranding object. |
 | [Delete](../api/organizationalbranding-delete.md) | None | Delete organizationalBranding object. |
 
