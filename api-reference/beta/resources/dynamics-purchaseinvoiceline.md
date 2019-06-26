@@ -4,30 +4,21 @@ description: A purchase invoice line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # purchaseInvoiceLines resource type
 Represents a line on a purchase invoice in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
-
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET purchaseInvoiceLines](../api/dynamics_purchaseinvoiceline_get.md)|purchaseInvoiceLines|Gets a purchase invoice line object.|
-|[POST purchaseInvoiceLines](../api/dynamics_create_purchaseinvoiceline.md)|purchaseInvoiceLines|Creates a purchase invoice line object.|
-|[PATCH purchaseInvoiceLines](../api/dynamics_purchaseinvoiceline_update.md)|purchaseInvoiceLines|Updates a purchase invoice line object.|
-|[DELETE purchaseInvoiceLines](../api/dynamics_purchaseinvoiceline_delete.md)|none   |Deletes a purchase invoice line object.|
+|[GET purchaseInvoiceLines](../api/dynamics-purchaseinvoiceline-get.md)|purchaseInvoiceLines|Gets a purchase invoice line object.|
+|[POST purchaseInvoiceLines](../api/dynamics-create-purchaseinvoiceline.md)|purchaseInvoiceLines|Creates a purchase invoice line object.|
+|[PATCH purchaseInvoiceLines](../api/dynamics-purchaseinvoiceline-update.md)|purchaseInvoiceLines|Updates a purchase invoice line object.|
+|[DELETE purchaseInvoiceLines](../api/dynamics-purchaseinvoiceline-delete.md)|none   |Deletes a purchase invoice line object.|
 
 ## Properties
 
@@ -101,10 +92,3 @@ Here is a JSON representation of the resource.
     }
   ]
 ```
-
-## See also
-
-[Get Purchase Invoice Line](../api/dynamics_purchaseinvoiceline_get.md)  
-[Create Purchase Invoice Line](../api/dynamics_create_purchaseinvoiceline.md)  
-[Update Purchase Invoice Line](../api/dynamics_purchaseinvoiceline_update.md)  
-[Delete Purchase Invoice Line](../api/dynamics_purchaseinvoiceline_delete.md)  

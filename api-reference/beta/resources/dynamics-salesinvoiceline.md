@@ -4,30 +4,22 @@ description: A sales invoice line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesInvoiceLines resource type
 Represents a line on a sales invoice in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
 | Method                                                                | Return Type      | Description                    |
 |:----------------------------------------------------------------------|:-----------------|:-------------------------------|
-|[GET salesInvoiceLines](../api/dynamics_salesinvoiceline_get.md)      |salesInvoiceLines|Gets a sales invoice line object   |
-|[POST salesInvoiceLines](../api/dynamics_create_salesinvoiceline.md)  |salesInvoiceLines|Creates a sales invoice line object.|
-|[PATCH salesInvoiceLines](../api/dynamics_salesinvoiceline_update.md) |salesInvoiceLines|Updated a sales invoice line object.|
-|[DELETE salesInvoiceLines](../api/dynamics_salesinvoiceline_delete.md)|none              |Deletes a sales invoice line object.|
+|[GET salesInvoiceLines](../api/dynamics-salesinvoiceline-get.md)      |salesInvoiceLines|Gets a sales invoice line object   |
+|[POST salesInvoiceLines](../api/dynamics-create-salesinvoiceline.md)  |salesInvoiceLines|Creates a sales invoice line object.|
+|[PATCH salesInvoiceLines](../api/dynamics-salesinvoiceline-update.md) |salesInvoiceLines|Updated a sales invoice line object.|
+|[DELETE salesInvoiceLines](../api/dynamics-salesinvoiceline-delete.md)|none              |Deletes a sales invoice line object.|
 
 ## Properties
 
@@ -102,10 +94,3 @@ Here is a JSON representation of the resource.
     }
   ]
 ```
-
-## See also
-
-[Get Sales Invoice Line](../api/dynamics_salesinvoiceline_get.md)  
-[Create Sales Invoice Line](../api/dynamics_create_salesinvoiceline.md)  
-[Update Sales Invoice Line](../api/dynamics_salesinvoiceline_update.md)  
-[Delete Sales Invoice Line](../api/dynamics_salesinvoiceline_delete.md)  

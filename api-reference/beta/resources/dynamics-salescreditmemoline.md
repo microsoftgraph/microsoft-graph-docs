@@ -4,30 +4,22 @@ description: A sales credit memo line.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesCreditMemoLines resource type
 Represents a line on a sales credit memo line in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET salesCreditMemoLines](../api/dynamics_salescreditmemoline_get.md)|salesCreditMemoLines|Gets a sales credit memo line object.|
-|[POST salesCreditMemoLines](../api/dynamics_create_salescreditmemoline.md)|salesCreditMemoLines|Creates a sales credit memo line object.|
-|[PATCH salesCreditMemoLines](../api/dynamics_salescreditmemoline_update.md)|salesCreditMemoLines|Updates a sales credit memo line object.|
-|[DELETE salesCreditMemoLines](../api/dynamics_salescreditmemoline_delete.md)|none   |Deletes a sales credit memo line object.|
+|[GET salesCreditMemoLines](../api/dynamics-salescreditmemoline-get.md)|salesCreditMemoLines|Gets a sales credit memo line object.|
+|[POST salesCreditMemoLines](../api/dynamics-create-salescreditmemoline.md)|salesCreditMemoLines|Creates a sales credit memo line object.|
+|[PATCH salesCreditMemoLines](../api/dynamics-salescreditmemoline-update.md)|salesCreditMemoLines|Updates a sales credit memo line object.|
+|[DELETE salesCreditMemoLines](../api/dynamics-salescreditmemoline-delete.md)|none   |Deletes a sales credit memo line object.|
 
 ## Properties
 
@@ -102,10 +94,3 @@ Here is a JSON representation of the resource.
     }
   ]
 ```
-
-## See also
-
-[Get Sales Credit Memo Line](../api/dynamics_salescreditmemoline_get.md)  
-[Create Sales Credit Memo Line](../api/dynamics_create_salescreditmemoline.md)  
-[Update Sales Credit Memo Line](../api/dynamics_salescreditmemoline_update.md)  
-[Delete Sales Credit Memo Line](../api/dynamics_salescreditmemoline_delete.md)  

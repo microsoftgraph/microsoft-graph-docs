@@ -4,30 +4,21 @@ description: A sales quote line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesQuoteLines resource type
 Represents a salesQuoteLines resource type in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
-
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET salesQuoteLines](../api/dynamics_salesquoteline_get.md)|salesQuoteLines|Get a sales quote line object.|
-|[POST salesQuoteLines](../api/dynamics_create_salesquoteline.md)|salesQuoteLines|Creates a sales quote line object.|
-|[PATCH salesQuoteLines](../api/dynamics_salesquoteline_update.md)|salesQuoteLines|Updates a sales quote line object.|
-|[DELETE salesQuoteLines](../api/dynamics_salesquoteline_delete.md)|none|Deletes a sales quote line object.|
+|[GET salesQuoteLines](../api/dynamics-salesquoteline-get.md)|salesQuoteLines|Get a sales quote line object.|
+|[POST salesQuoteLines](../api/dynamics-create-salesquoteline.md)|salesQuoteLines|Creates a sales quote line object.|
+|[PATCH salesQuoteLines](../api/dynamics-salesquoteline-update.md)|salesQuoteLines|Updates a sales quote line object.|
+|[DELETE salesQuoteLines](../api/dynamics-salesquoteline-delete.md)|none|Deletes a sales quote line object.|
 
 ## Properties
 
@@ -98,11 +89,3 @@ Here is a JSON representation of the resource.
     }
   ]
 ```
-
-## See also
-
-[Sales Quote Line](../resources/dynamics_salesquoteline.md)  
-[Get Sales Quote Line](../api/dynamics_salesquoteline_get.md)  
-[Create Sales Quote Line](../api/dynamics_create_salesquoteline.md)  
-[Update Sales Quote Line](../api/dynamics_salesquoteline_update.md)  
-[Delete Sales Quote Line](../api/dynamics_salesquoteline_delete.md)  

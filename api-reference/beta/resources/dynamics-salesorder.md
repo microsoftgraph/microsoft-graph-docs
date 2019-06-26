@@ -4,30 +4,21 @@ description: A sales order object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesOrders resource type
 Represents a sales order in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
-
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET salesOrders](../api/dynamics_salesorder_get.md)|salesOrders|Get a sales order object.|
-|[POST salesOrders](../api/dynamics_create_salesorder.md)|salesOrders|Create a sales order object.|
-|[PATCH salesOrders](../api/dynamics_salesorder_update.md)|salesOrders|Update a sales order object.|
-|[DELETE salesOrders](../api/dynamics_salesorder_delete.md)|none|Delete a sales order object.|
+|[GET salesOrders](../api/dynamics-salesorder-get.md)|salesOrders|Get a sales order object.|
+|[POST salesOrders](../api/dynamics-create-salesorder.md)|salesOrders|Create a sales order object.|
+|[PATCH salesOrders](../api/dynamics-salesorder-update.md)|salesOrders|Update a sales order object.|
+|[DELETE salesOrders](../api/dynamics-salesorder-delete.md)|none|Delete a sales order object.|
 
 ## Properties
 
@@ -108,9 +99,3 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
-
-[Get Sales Order](../api/dynamics_salesorder_get.md)  
-[Create Sales Order](../api/dynamics_create_salesorder.md)  
-[Update Sales Order](../api/dynamics_salesorder_update.md)  
-[Delete Sales Order](../api/dynamics_salesorder_delete.md)  

@@ -4,36 +4,27 @@ description: A sales quote object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesQuotes resource type
 Represents a salesQuote resource type in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
-
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET salesQuotes](../api/dynamics_salesquote_get.md)|salesQuotes|Gets a sales quote object.|
-|[POST salesQuotes](../api/dynamics_create_salesquote.md)|salesQuotes|Creates a sales quote object.|
-|[PATCH salesQuotes](../api/dynamics_salesquote_update.md)|salesQuotes|Updates a sales quote object.|
-|[DELETE salesQuotes](../api/dynamics_salesquote_delete.md)|none|Deletes a sales quote object.|
+|[GET salesQuotes](../api/dynamics-salesquote-get.md)|salesQuotes|Gets a sales quote object.|
+|[POST salesQuotes](../api/dynamics-create-salesquote.md)|salesQuotes|Creates a sales quote object.|
+|[PATCH salesQuotes](../api/dynamics-salesquote-update.md)|salesQuotes|Updates a sales quote object.|
+|[DELETE salesQuotes](../api/dynamics-salesquote-delete.md)|none|Deletes a sales quote object.|
 
 ## Bound actions
 
 |Action          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[GET pdfDocument](../api/dynamics_salesquote_pdfdocument.md)|pdfDocument|Gets a PDF document.|
+|[GET pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
 
 
 ## Properties
@@ -121,9 +112,3 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
-
-[Get Sales Quote](../api/dynamics_salesquote_get.md)  
-[Create Sales Quote](../api/dynamics_create_salesquote.md)  
-[Update Sales Quote](../api/dynamics_salesquote_update.md)  
-[Delete Sales Quote](../api/dynamics_salesquote_delete.md)  

@@ -4,30 +4,22 @@ description: A sales order line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesOrderLines resource type
 Represents a line on a sales order in Dynamics 365 Business Central.
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET salesOrderLines](../api/dynamics_salesorderline_get.md)|salesOrderLines|Gets a sales order line object.|
-|[POST salesOrderLines](../api/dynamics_create_salesorderline.md)|salesOrderLines|Creates a sales order line object.|
-|[PATCH salesOrderLines](../api/dynamics_salesorderline_update.md)|salesOrderLines|Updates a sales order line object.|
-|[DELETE salesOrderLines](../api/dynamics_salesorderline_delete.md)|none|Deletes a sales order line object.|
+|[GET salesOrderLines](../api/dynamics-salesorderline-get.md)|salesOrderLines|Gets a sales order line object.|
+|[POST salesOrderLines](../api/dynamics-create-salesorderline.md)|salesOrderLines|Creates a sales order line object.|
+|[PATCH salesOrderLines](../api/dynamics-salesorderline-update.md)|salesOrderLines|Updates a sales order line object.|
+|[DELETE salesOrderLines](../api/dynamics-salesorderline-delete.md)|none|Deletes a sales order line object.|
 
 ## Properties
 
@@ -110,10 +102,3 @@ Here is a JSON representation of the resource.
     }
   ]
 ```
-
-## See also
-
-[Get Sales Order Line](../api/dynamics_salesorderline_get.md)  
-[Create Sales Order Line](../api/dynamics_create_salesorderline.md)  
-[Update Sales Order Line](../api/dynamics_salesorderline_update.md)  
-[Delete Sales Order Line](../api/dynamics_salesorderline_delete.md)  

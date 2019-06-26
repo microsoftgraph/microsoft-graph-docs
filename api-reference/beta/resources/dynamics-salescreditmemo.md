@@ -4,36 +4,28 @@ description: A sales credit memo object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesCreditMemos resource type
 Represents a sales credit memo in Dynamics 365 Business Central. 
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET salesCreditMemos](../api/dynamics_salescreditmemo_get.md)|salesCreditMemos|Gets a sales credit memo object.|
-|[POST salesCreditMemos](../api/dynamics_create_salescreditmemo.md)|salesCreditMemos|Creates a sales credit memo object.|
-|[PATCH salesCreditMemos](../api/dynamics_salescreditmemo_update.md)|salesCreditMemos|Update a sales credit memo object.|
-|[DELETE salesCreditMemos](../api/dynamics_salescreditmemo_delete.md)|none|Delete a sales credit memo object.|
+|[GET salesCreditMemos](../api/dynamics-salescreditmemo-get.md)|salesCreditMemos|Gets a sales credit memo object.|
+|[POST salesCreditMemos](../api/dynamics-create-salescreditmemo.md)|salesCreditMemos|Creates a sales credit memo object.|
+|[PATCH salesCreditMemos](../api/dynamics-salescreditmemo-update.md)|salesCreditMemos|Update a sales credit memo object.|
+|[DELETE salesCreditMemos](../api/dynamics-salescreditmemo-delete.md)|none|Delete a sales credit memo object.|
 
 ## Bound actions
 
 |Action          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[GET pdfDocument](../api/dynamics_salesquote_pdfdocument.md)|pdfDocument|Gets a PDF document.|
+|[GET pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
 
 
 ## Properties
@@ -113,9 +105,3 @@ Here is a JSON representation of the resource.
       "invoiceNumber" : "string"
 }
 ```
-## See also
-
-[Get Sales Credit Memo](../api/dynamics_salescreditmemo_get.md)  
-[Create Sales Credit Memo](../api/dynamics_create_salescreditmemo.md)  
-[Update Sales Credit Memo](../api/dynamics_salescreditmemo_update.md)  
-[Delete Sales Credit Memo](../api/dynamics_salescreditmemo_delete.md)  

@@ -4,41 +4,33 @@ description: A sales invoice object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # salesInvoices resource type
 Represents a sales invoice in Dynamics 365 Business Central. 
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
 | Method                                                       | Return Type |Description                    |
 |:-------------------------------------------------------------|:------------|:------------------------------|
-|[GET salesInvoices](../api/dynamics_salesinvoice_get.md)      |salesInvoices|Gets a sales invoice object.   |
-|[POST salesInvoices](../api/dynamics_create_salesinvoice.md)  |salesInvoices|Creates a sales invoice object.|
-|[PATCH salesInvoices](../api/dynamics_salesinvoice_update.md) |salesInvoices|Updates a sales invoice object.|
-|[DELETE salesInvoices](../api/dynamics_salesinvoice_delete.md)|none         |Deletes a sales invoice object.|
+|[GET salesInvoices](../api/dynamics-salesinvoice-get.md)      |salesInvoices|Gets a sales invoice object.   |
+|[POST salesInvoices](../api/dynamics-create-salesinvoice.md)  |salesInvoices|Creates a sales invoice object.|
+|[PATCH salesInvoices](../api/dynamics-salesinvoice-update.md) |salesInvoices|Updates a sales invoice object.|
+|[DELETE salesInvoices](../api/dynamics-salesinvoice-delete.md)|none         |Deletes a sales invoice object.|
 
 ## Navigation 
 
 |Navigation          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[pdfDocument](../api/dynamics_salesquote_pdfdocument.md)|pdfDocument|Gets a PDF document.|
-|[currency](../resources/dynamics_currencies.md)|currency   |Gets the currency. |
-|[paymentTerm](../resources/dynamics_paymentTerms.md)|paymentTerm   |Gets the paymentTerm. |
-|[shipmentMethod](../resources/dynamics_shipmentMethods.md)|paymentMethod   |Gets the paymentMethod. |
-|[customer](../resources/dynamics_customer.md)|paymentMethod   |Gets the customer. |
-|[salesInvoiceLines](../resources/dynamics_salesinvoiceline.md)|paymentMethod   |Gets the paymentMethod. |
+|[pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
+|[currency](../resources/dynamics-currencies.md)|currency   |Gets the currency. |
+|[paymentTerm](../resources/dynamics-paymentTerms.md)|paymentTerm   |Gets the paymentTerm. |
+|[shipmentMethod](../resources/dynamics-shipmentMethods.md)|paymentMethod   |Gets the paymentMethod. |
+|[customer](../resources/dynamics-customer.md)|paymentMethod   |Gets the customer. |
+|[salesInvoiceLines](../resources/dynamics-salesinvoiceline.md)|paymentMethod   |Gets the paymentMethod. |
 
 
 
@@ -132,9 +124,3 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
-
-[Get Sales Invoice](../api/dynamics_salesinvoice_get.md)  
-[Create Sales Invoice](../api/dynamics_create_salesinvoice.md)  
-[Update Sales Invoice](../api/dynamics_salesinvoice_update.md)  
-[Delete Sales Invoice](../api/dynamics_salesinvoice_delete.md)  

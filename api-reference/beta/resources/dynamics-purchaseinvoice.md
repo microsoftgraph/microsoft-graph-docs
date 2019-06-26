@@ -4,36 +4,28 @@ description: A purchase invoice object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # purchaseInvoices resource type
 Represents a purchase invoice in Dynamics 365 Business Central. 
 
-> [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
 | Method                                                             | Return Type    |Description                     |
 |:-------------------------------------------------------------------|:---------------|:-------------------------------|
-|[GET purchaseInvoices](../api/dynamics_purchaseinvoice_get.md)      |purchaseInvoices|Gets a purchase invoice object.|
-|[POST purchaseInvoices](../api/dynamics_create_purchaseinvoice.md)  |purchaseInvoices|Creates a purchase invoice object.|
-|[PATCH purchaseInvoices](../api/dynamics_purchaseinvoice_update.md) |purchaseInvoices|Updates a purchase invoice object.|
-|[DELETE purchaseInvoices](../api/dynamics_purchaseinvoice_delete.md)|none            |Deletes a purchase invoice object.|
+|[GET purchaseInvoices](../api/dynamics-purchaseinvoice-get.md)      |purchaseInvoices|Gets a purchase invoice object.|
+|[POST purchaseInvoices](../api/dynamics-create-purchaseinvoice.md)  |purchaseInvoices|Creates a purchase invoice object.|
+|[PATCH purchaseInvoices](../api/dynamics-purchaseinvoice-update.md) |purchaseInvoices|Updates a purchase invoice object.|
+|[DELETE purchaseInvoices](../api/dynamics-purchaseinvoice-delete.md)|none            |Deletes a purchase invoice object.|
 
 ## Bound actions
 
 |Action          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[GET pdfDocument](../api/dynamics_salesquote_pdfdocument.md)|pdfDocument|Gets a PDF document.|
+|[GET pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
 
 
 ## Properties
@@ -110,10 +102,3 @@ Here is a JSON representation of the resource.
       "lastModifiedDateTime": "DateTime"
 }
 ```
-## See also
-
-[Purchase Invoice](../resources/dynamics_purchaseinvoice.md)  
-[Get Purchase Invoice](../api/dynamics_purchaseinvoice_get.md)  
-[Create Purchase Invoice](../api/dynamics_create_purchaseinvoice.md)  
-[Update Purchase Invoice](../api/dynamics_purchaseinvoice_update.md)  
-[Delete Purchase Invoice](../api/dynamics_purchaseinvoice_delete.md)  
