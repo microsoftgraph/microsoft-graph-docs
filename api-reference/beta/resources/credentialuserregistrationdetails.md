@@ -27,8 +27,8 @@ The **credentialUserRegistrationDetails** resource represents the registration u
 | id | String | Unique ID for the activity. |
 | isCapable | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isEnabled | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
-| isMfaRegistered | Boolean | Indiciates whether the user is Mfa Registered. |
-| isRegistered | Boolean | Indicates whether the user has registered auths to perform self service password reset. |
+| isMfaRegistered | Boolean | Indiciates whether the user is registered for multi-factor authentication. |
+| isRegistered | Boolean | Indicates whether the user has registered any authentication methods (such as email or mobilePhone) for self-service password reset. |
 | userDisplayName | String | Provides the user name of the corresponding user. |
 | userPrincipalName | String | Provides the user principal name of the corresponding user. |
 
