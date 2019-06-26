@@ -15,7 +15,7 @@ ms.author: solsen
 ---
 
 # salesOrderLines resource type
-Represents a line on a sales order in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Represents a line on a sales order in Dynamics 365 Business Central.
 
 > [!NOTE]  
 > For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).

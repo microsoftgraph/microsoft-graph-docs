@@ -4,18 +4,21 @@ description: Gets a sales order object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Get salesOrders
-Retrieve the properties and relationships of a sales order object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Retrieve the properties and relationships of a sales order object for Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
@@ -84,10 +87,3 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
-
-## See also
-
-[Sales Order](../resources/dynamics_salesorder.md)  
-[Create Sales Order](../api/dynamics_create_salesorder.md)  
-[Update Sales Order](../api/dynamics_salesorder_update.md)  
-[Delete Sales Order](../api/dynamics_salesorder_delete.md)  

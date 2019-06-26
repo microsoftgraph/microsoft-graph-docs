@@ -4,18 +4,21 @@ description: Creates a sales credit memo object in Dynamics 365 Business Central
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Create salesCreditMemos
-Create a sales credit memo object in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Create a sales credit memo object in Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
@@ -55,9 +58,3 @@ Content-type: application/json
   "paymentTermsId": "3bb5b4b6-ea4c-43ca-ba1c-3b69e29a6668"
 }
 ```
-## See also
-
-[Sales Credit Memo](../resources/dynamics_salescreditmemo.md)  
-[Get Sales Credit Memo](../api/dynamics_salescreditmemo_get.md)  
-[Update Sales Credit Memo](../api/dynamics_salescreditmemo_update.md)  
-[Delete Sales Credit Memo](../api/dynamics_salescreditmemo_delete.md)  

@@ -4,20 +4,21 @@ description: Gets a sales quote line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Get salesQuoteLines
-Retrieve the properties and relationships of a sales quote line object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Retrieve the properties and relationships of a sales quote line object for Dynamics 365 Business Central.
 
-## Prerequisites
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
@@ -88,10 +89,3 @@ Here is an example of the response.
   "netAmountIncludingTax": 6165
 }
 ```
-
-## See also
-
-[Sales Quote Line](../resources/dynamics_salesquoteline.md)  
-[Create Sales Quote Line](../api/dynamics_create_salesquoteline.md)  
-[Update Sales Quote Line](../api/dynamics_salesquoteline_update.md)  
-[Delete Sales Quote Line](../api/dynamics_salesquoteline_delete.md)  

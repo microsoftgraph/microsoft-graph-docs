@@ -15,7 +15,7 @@ ms.author: solsen
 ---
 
 # salesQuotes resource type
-Represents a salesQuote resource type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Represents a salesQuote resource type in Dynamics 365 Business Central.
 
 > [!NOTE]  
 > For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Microsoft Dynamics NAV](../enabling-apis-for-dynamics-nav.md).

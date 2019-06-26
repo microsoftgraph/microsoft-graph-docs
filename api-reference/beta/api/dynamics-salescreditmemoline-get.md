@@ -4,18 +4,22 @@ description: Gets a sales credit memo line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Get salesCreditMemoLines
-Retrieve the properties and relationships of a sales credit memo line object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Retrieve the properties and relationships of a sales credit memo line object for Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
+
 
 ## Prerequisites
 
@@ -90,10 +94,3 @@ Here is an example of the response.
   "shipmentDate": "2015-02-24"
 }
 ```
-
-## See also
-
-[Sales Credit Memo Line](../resources/dynamics_salescreditmemoline.md)  
-[Create Sales Credit Memo Line](../api/dynamics_create_salescreditmemoline.md)  
-[Update Sales Credit Memo Line](../api/dynamics_salescreditmemoline_update.md)  
-[Delete Sales Credit Memo Line](../api/dynamics_salescreditmemoline_delete.md)  

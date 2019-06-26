@@ -4,18 +4,21 @@ description: Gets a sales credit memo object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Get salesCreditMemos
-Retrieve the properties and relationships of a sales credit memo object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Retrieve the properties and relationships of a sales credit memo object for Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
@@ -84,10 +87,3 @@ Here is an example of the response.
   "invoiceNumber": "100009"
 }
 ```
-
-## See also
-
-[Sales Credit Memo](../resources/dynamics_salescreditmemo.md)  
-[Create Sales Credit Memo](../api/dynamics_create_salescreditmemo.md)  
-[Update Sales Credit Memo](../api/dynamics_salescreditmemo_update.md)  
-[Delete Sales Credit Memo](../api/dynamics_salescreditmemo_delete.md)  

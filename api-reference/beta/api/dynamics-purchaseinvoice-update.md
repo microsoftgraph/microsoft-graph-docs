@@ -4,18 +4,21 @@ description: Updates a purchase invoice object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Update purchaseInvoices
-Update the properties of a purchase invoices object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Update the properties of a purchase invoices object for Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
@@ -91,10 +94,3 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
-
-## See also
-
-[Purchase Invoice](../resources/dynamics_purchaseinvoice.md)  
-[Get Purchase Invoice](../api/dynamics_purchaseinvoice_get.md)  
-[Create Purchase Invoice](../api/dynamics_create_purchaseinvoice.md)  
-[Delete Purchase Invoice](../api/dynamics_purchaseinvoice_delete.md)  

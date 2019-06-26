@@ -4,18 +4,21 @@ description: Updates a sales invoice line object in Dynamics 365 Business Centra
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Update salesInvoiceLines
-Update the properties of a sales invoice line object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Update the properties of a sales invoice line object for Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
@@ -97,10 +100,3 @@ Content-type: application/json
   "shipmentDate": "2015-02-24"
 }
 ```
-
-## See also
-
-[Sales Invoice Line](../resources/dynamics_salesinvoiceline.md)  
-[Get Sales Invoice Line](../api/dynamics_salesinvoiceline_get.md)  
-[Create Sales Invoice Line](../api/dynamics_create_salesinvoiceline.md)  
-[Delete Sales Invoice Line](../api/dynamics_salesinvoiceline_delete.md)  

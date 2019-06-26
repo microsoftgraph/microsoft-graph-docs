@@ -4,18 +4,21 @@ description: Deletes a purchase invoice object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-financials
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/01/2019
-ms.author: solsen
+localization_priority: Normal
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Delete purchaseInvoices
-Delete a purchase invoice object from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Delete a purchase invoice object from Dynamics 365 Business Central.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 ```
@@ -53,9 +56,3 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
-
-[Purchase Invoice](../resources/dynamics_purchaseinvoice.md)  
-[Get Purchase Invoice](../api/dynamics_purchaseinvoice_get.md)  
-[Create Purchase Invoice](../api/dynamics_create_purchaseinvoice.md)  
-[Update Purchase Invoice](../api/dynamics_purchaseinvoice_update.md)  
