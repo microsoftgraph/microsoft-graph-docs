@@ -69,6 +69,14 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_historyItem-Objective-C-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
@@ -77,5 +85,8 @@ HTTP/1.1 204 No Content
   "description": "Delete historyitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/projectrome-delete-historyitem.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
+  ]
 }-->

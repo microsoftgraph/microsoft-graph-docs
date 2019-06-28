@@ -53,6 +53,8 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/lro-copy-item-example-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -152,6 +154,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/lro-copy-item-example-complete-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/lro-copy-item-example-complete-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -177,6 +181,7 @@ The same [permissions](./permissions-reference.md) that are required to perform 
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
   "suppressions": [
+    "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /concepts/long-running-actions-overview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

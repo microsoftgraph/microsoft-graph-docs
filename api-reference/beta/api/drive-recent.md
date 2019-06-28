@@ -88,6 +88,8 @@ Content-Type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/view-recent-files-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/view-recent-files-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -111,6 +113,7 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "section": "documentation",
   "tocPath": "Drives/Recent files",
   "suppressions": [
+    "Error: /api-reference/beta/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/drive-recent.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

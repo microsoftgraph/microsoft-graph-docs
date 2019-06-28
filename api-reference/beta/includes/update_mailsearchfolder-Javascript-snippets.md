@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const mailFolder = {
   @odata.type: "microsoft.graph.mailSearchFolder",
-  filterQuery: "contains(subject, 'Analytics')))"
+  filterQuery: "contains(subject, 'Analytics')"
 };
 
 let res = await client.api('/me/mailFolders/AAMkAGVmMDEzM')

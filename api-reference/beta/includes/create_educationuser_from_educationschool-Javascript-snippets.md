@@ -14,7 +14,7 @@ const educationUser = {
   @odata.id:"https://graph.microsoft.com/beta/education/users/14008"
 };
 
-let res = await client.api('/education/schools/'id'/users/$ref')
+let res = await client.api('/education/schools/{id}/users/$ref')
 	.version('beta')
 	.post({educationUser : educationUser});
 

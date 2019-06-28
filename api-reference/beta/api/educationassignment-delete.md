@@ -70,16 +70,15 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
 #### SDK sample code
-
 # [C#](#tab/cs)
-
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
+
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_educationassignment-Objective-C-snippets.md)]
 
 ---
 
@@ -95,6 +94,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

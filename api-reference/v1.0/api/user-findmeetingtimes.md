@@ -354,6 +354,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_findmeetingtimes-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_findmeetingtimes-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -366,6 +368,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:

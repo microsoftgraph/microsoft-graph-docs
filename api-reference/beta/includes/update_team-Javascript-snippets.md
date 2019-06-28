@@ -21,6 +21,9 @@ const team = {
   funSettings: {
     allowGiphy: true,
     giphyContentRating: "strict"
+  },
+  discoverySettings: {
+    showInTeamsSearchAndSuggestions: true
   }
 };
 

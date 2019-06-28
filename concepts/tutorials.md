@@ -17,6 +17,7 @@ The following tutorials build an app that authenticates a user and accesses date
 - [Angular](/graph/tutorials/angular)
 - [ASP.NET](/graph/tutorials/aspnet)
 - [Microsoft Flow](/graph/tutorials/flow)
+- [Java](/graph/tutorials/java)
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)

@@ -5,11 +5,32 @@ localization_priority: Normal
 author: MichaelMainer
 ---
 
-# Choose a Microsoft Graph authentication provider based on OAuth flow
+# Choose a Microsoft Graph authentication provider based on scenario
 
-Authentication providers simplify getting an access token by abstracting the parameters required by the authentication client libraries. The Microsoft Graph authentication providers simplify the use of the Microsoft Authentication Library (MSAL) by providing adapters for each platform. These adapters handle token acquisition for your application. The Microsoft Graph authentication providers map to an OAuth grant flow. You'll need to know which OAuth grant flow to use for your application in order to select the appropriate authentication provider for your application.
+Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL); handle a number of potential errors for cases like incremental consent, expired passwords, and conditional access; and then set the HTTP request authorization header. The following table lists the set of providers that match the scenarios for different [application types](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
 
-## Authorization code OAuth flow
+|Scenario | Flow/Grant | Audience | Provider|
+|--|--|--|--|
+| [Single Page App](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
+| | Implicit | Delegated Consumer/Org |[Implicit Provider](#ImplicitProvider) |
+| [Web App that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
+| | Authorization Code | Delegated Consumer/Org | [Authorization Code Provider](#AuthCodeProvider) |
+| | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
+| [Web API that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
+| | On Behalf Of | Delegated Consumer/Org | [On Behalf Of Provider](#OnBehalfOfProvider) |
+| | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
+| [Desktop app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
+| | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
+| | Integrated Windows | Delegated Org | [Integrated Windows Provider](#IntegratedWindowsProvider) |
+| | Resource Owner  | Delegated Org | [Username / Password Provider](#UsernamePasswordProvider) |
+| | Device Code  | Delegated Org | [Device Code Provider](#DeviceCodeProvider) |
+| [Daemon app](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
+| | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
+| [Mobile app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
+| | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
+
+
+## <a name="AuthCodeProvider"/>Authorization code provider
 
 The authorization code flow enables native and web apps to securely obtain tokens in the name of the user. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
@@ -53,7 +74,7 @@ Not available, yet. Please vote for or open a [Microsoft Graph feature request](
 
 ---
 
-## Client credential OAuth flow
+##  <a name="ClientCredentialsProvider"/>Client credentials provider
 
 The client credential flow enables service applications to run without user interaction. Access is based on the identity of the application. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
@@ -97,7 +118,7 @@ Not available, yet. Please support or open a [Microsoft Graph feature request](h
 
 ---
 
-## On-behalf-of OAuth flow
+##  <a name="OnBehalfOfProvider"/>On-behalf-of provider
 
 The on-behalf-of flow is applicable when your application calls a service/web API which in turns calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
@@ -134,7 +155,7 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ---
 
-## Implicit grant OAuth flow
+## <a name="ImplicitProvider"/>Implicit provider
 
 The implicit grant flow is used in browser-based applications. For more information, see [Microsoft identity platform and Implicit grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
@@ -186,7 +207,7 @@ Not applicable.
 
 ---
 
-## Device code OAuth flow
+##  <a name="DeviceCodeProvider"/>Device code provider
 
 The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code).
 
@@ -223,7 +244,7 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ---
 
-## Integrated Windows flow
+##  <a name="IntegratedWindowsProvider"/>Integrated Windows provider
 
 The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
@@ -260,7 +281,7 @@ Not applicable.
 
 ---
 
-## Interactive flow
+##  <a name="InteractiveProvider"/>Interactive provider
 
 The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
@@ -319,9 +340,9 @@ Not applicable.
 
 ---
 
-## Resource owner password credential grant OAuth flow
+##  <a name="UsernamePasswordProvider"/>Username/password provider
 
-The resource owner password credential flow allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
+The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
