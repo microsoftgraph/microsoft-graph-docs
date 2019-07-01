@@ -367,6 +367,26 @@
           href: sdks/create-client.md
         - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
+        - name: Tasks
+          displayname: Tasks
+          items:
+          - name: Download large files
+            href: sdks/tasks/download-largefile-task.md
+          - name: Working with errors
+            href: sdks/tasks/errors-overview.md
+          - name: Send arbitrary requests
+            href: sdks/tasks/send-httpclient-task
+          - name: Working with collections
+            href: sdks/tasks/using-collections-task.md
+          - name: Using headers
+            href: sdks/tasks/using-headers-task.md
+        - name: Dotnet
+          displayname: .Net
+          items:
+          - name: .Net client FAQ
+          - href: sdks/dotnet/dotnet-faq.md
+          - name: .Net overview
+          - href: sdks/dotnet/dotnet-overview.md
     - name: Resources
       expanded: true
       items:
