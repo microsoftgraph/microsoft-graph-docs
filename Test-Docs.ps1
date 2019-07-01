@@ -2,8 +2,8 @@ Param(
     [switch]$cleanUp,
     [string]$file
 )
-$apiDoctorVersion = $env:APIDOCTOR_VERSION
-$apiDoctorBranch = $env:APIDOCTOR_BRANCH
+$apiDoctorVersion = "https://github.com/andrueastman/apidoctor.git"
+$apiDoctorBranch = "support_markdown_tabs_syntax"
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
