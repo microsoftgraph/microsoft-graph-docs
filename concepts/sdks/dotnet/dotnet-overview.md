@@ -51,7 +51,7 @@ var graphServiceClient = new GraphServiceClient(new DelegateAuthenticationProvid
 
 ## Resource model
 
-Microsoft Graph service resource are represented by property bag model classes of the same name in the client library. For example, the [user resource](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) is represented by the [user class](../src/Microsoft.Graph/Models/Generated/User.cs) in the client library. Each of these model classes contain properties that represent the properties of the resources they represent.
+Microsoft Graph service resource are represented by property bag model classes of the same name in the client library. For example, the [user resource](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) is represented by the **User** class in the client library. Each of these model classes contain properties that represent the properties of the resources they represent.
 
 These classes are used for serializing and deserializing the resources in requests to the service. They do not contain any logic to issue requests.
 

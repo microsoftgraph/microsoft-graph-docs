@@ -384,9 +384,9 @@
           displayname: .Net
           items:
           - name: .Net client FAQ
-          - href: sdks/dotnet/dotnet-faq.md
+            href: sdks/dotnet/dotnet-faq.md
           - name: .Net overview
-          - href: sdks/dotnet/dotnet-overview.md
+            href: sdks/dotnet/dotnet-overview.md
     - name: Resources
       expanded: true
       items:
