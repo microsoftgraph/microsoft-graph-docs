@@ -1,5 +1,11 @@
-Microsoft Graph .NET Client Library Overview
-=====
+---
+title: "Microsoft Graph .NET Client Library Overview"
+description: "Provides an overview of the .Net client library."
+localization_priority: Normal
+author: MichaelMainer
+---
+
+# Microsoft Graph .NET Client Library Overview
 
 The Microsoft Graph .NET Client Library is made up of 6 major components:
 

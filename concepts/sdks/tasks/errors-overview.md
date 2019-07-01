@@ -1,3 +1,10 @@
+---
+title: "Errors in the Microsoft Graph client libraries"
+description: "Describes how to handle errors in the Microsoft Graph client libraries."
+localization_priority: Normal
+author: MichaelMainer
+---
+
 # Errors in the Microsoft Graph client libraries
 
 Microsoft Graph returns may different types of [errors](..\errors.md).

@@ -1,3 +1,10 @@
+---
+title: "Working with request headers"
+description: "Contains examples of how to work with headers used by Microsoft Graph."
+localization_priority: Normal
+author: MichaelMainer
+---
+
 # Working with headers
 
 
@@ -11,7 +18,6 @@
 List<Option> options = new List<Option>();
 options.Add(new HeaderOption("Etag", etag));
 options.Add(new HeaderOption("If-Match", etag));
-options.Add(new QueryOption("$filter", filterQuery));
 
 var newObject = graphServiceClient.Me
                                   .Request(options)
@@ -43,6 +49,8 @@ var newObject = graphServiceClient.Me
 # [Ruby](#tab/Ruby)
 
 <!-- TODO -->
+
+---
 
 ## Reading response headers
 
@@ -93,3 +101,5 @@ var requestId = responseHeaderCollection["request-id"][0];
 # [Ruby](#tab/Ruby)
 
 <!-- TODO -->
+
+---

@@ -375,7 +375,7 @@
           - name: Working with errors
             href: sdks/tasks/errors-overview.md
           - name: Send arbitrary requests
-            href: sdks/tasks/send-httpclient-task
+            href: sdks/tasks/send-httpclient-task.md
           - name: Working with collections
             href: sdks/tasks/using-collections-task.md
           - name: Using headers

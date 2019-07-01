@@ -1,3 +1,10 @@
+---
+title: "Use the HttpClient to send and retrieve Graph objects"
+description: "Contains an example of how to configure an HttpClient to work with Microsoft Graph."
+localization_priority: Normal
+author: MichaelMainer
+---
+
 # Send HTTP requests with the native HttpClient
 
 Sometimes, the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier. The client library can authenticate your requests and provide you the serializers. Here's an example of using the client library to create a OneNote page and deserialize the response object.

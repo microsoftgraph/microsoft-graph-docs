@@ -1,3 +1,10 @@
+---
+title: "Working with Microsoft Graph collections"
+description: "Contains an example of how to work with collection objects returned by Microsoft Graph."
+localization_priority: Normal
+author: MichaelMainer
+---
+
 # Working with Microsoft Graph collections
 
 ## Getting a collection
@@ -7,9 +14,9 @@
 To retrieve a collection, like the list of groups in the service, you call `GetAsync` on the collection request:
 
 ```csharp
-await graphServiceClient.Groups
-	                .Request()
-	                .GetAsync();
+IGraphServiceGroupsCollectionPage page = await graphServiceClient.Groups
+	                											 .Request()
+	                											 .GetAsync();
 ```
 
 `GetAsync` returns an `ICollectionPage<T>` implementation on success and throws a `ServiceException` on error. For the groups collection, the type returned is `IGraphServiceGroupsCollectionPage`, which inherits `ICollectionPage<Item>`.
@@ -41,6 +48,8 @@ await graphServiceClient.Groups
 # [Ruby](#tab/Ruby)
 
 <!-- TODO -->
+
+---
 
 ## Adding to a collection
 
@@ -84,6 +93,8 @@ var newGroup = await graphServiceClient
 
 <!-- TODO -->
 
+---
+
 ## Expanding a collection
 
 # [C#](#tab/CS)
@@ -118,3 +129,5 @@ var children = await graphServiceClient
 # [Ruby](#tab/Ruby)
 
 <!-- TODO -->
+
+---
