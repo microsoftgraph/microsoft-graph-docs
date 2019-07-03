@@ -380,12 +380,12 @@
             href: sdks/tasks/using-collections-task.md
           - name: Using headers
             href: sdks/tasks/using-headers-task.md
-        - name: Dotnet
-          displayname: .Net
+        - name: .NET
+          displayname: .NET
           items:
-          - name: .Net client FAQ
+          - name: .NET client FAQ
             href: sdks/dotnet/dotnet-faq.md
-          - name: .Net overview
+          - name: .NET overview
             href: sdks/dotnet/dotnet-overview.md
     - name: Resources
       expanded: true
