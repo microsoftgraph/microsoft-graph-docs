@@ -33,7 +33,7 @@ Represents a line on a sales credit memo line in Dynamics 365 Business Central.
 |lineDetails|complex|The details of the line.|
 |description|string|A description of the item in the credit memo line.|
 |unitOfMeasureId|GUID|The unit of measure for the credit memo line.|
-|unitOfMeasure|[NAV.UnitOfMeasure](../resources/dynamics_complextypes.md)|The unit of measure complex type.|
+|unitOfMeasure|[NAV.UnitOfMeasure](dynamics-complextypes.md)|The unit of measure complex type.|
 |quantity|numeric|The quantity of the item in the credit memo line.|
 |unitPrice|numeric|The unit price of each individual item in the credit memo line.|
 |discountAmount|numeric|The line discount amount.|

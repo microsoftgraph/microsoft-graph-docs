@@ -31,7 +31,7 @@ Represents a line on a purchase invoice in Dynamics 365 Business Central.
 |lineType|string|The type of the line. Can be Comment,Account,Item,Resource,Fixed Asset,Charge|
 |lineDetails|complex|The details of the line.|
 |description|string|A description of the item in the invoice line.|
-|unitOfMeasure|[NAV.UnitOfMeasure](../resources/dynamics_complextypes.md)|The unit of measure complex type.|
+|unitOfMeasure|[NAV.UnitOfMeasure](dynamics-complextypes.md)|The unit of measure complex type.|
 |unitCost|numeric|The unit cost of each individual item in the invoice line.|
 |quantity|numeric|The quantity of the item in the invoice line.|
 |discountAmount|numeric|The line discount amount.|

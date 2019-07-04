@@ -34,7 +34,7 @@ Represents a line on a sales order in Dynamics 365 Business Central.
 |lineDetails|complex|The details of the line.|
 |description|string|A description of the item in the order line.|
 |unitOfMeasureId|GUID|The Id of the unit of measure in the order line.|
-|unitOfMeasure|[NAV.UnitOfMeasure](../resources/dynamics_complextypes.md)|The unit of measure complex type.|
+|unitOfMeasure|[NAV.UnitOfMeasure](dynamics-complextypes.md)|The unit of measure complex type.|
 |quantity|numeric|The quantity of the item in the order line.|
 |unitPrice|numeric|The unit price of each individual item in the order line.|
 |discountAmount|numeric|The line discount amount.|
