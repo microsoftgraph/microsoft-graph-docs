@@ -21,18 +21,25 @@ Represents a sales invoice in Dynamics 365 Business Central.
 |[PATCH salesInvoices](../api/dynamics-salesinvoice-update.md) |salesInvoices|Updates a sales invoice object.|
 |[DELETE salesInvoices](../api/dynamics-salesinvoice-delete.md)|none         |Deletes a sales invoice object.|
 
+## Bound actions
+
+| Action                                                       | Return Type |Description                    |
+|:-------------------------------------------------------------|:------------|:------------------------------|
+|post     ||Posts the sales invoice to the ledger.   |
+|cancel     ||Cancels the sales invoice..   |
+|send     ||Emails the invoice to the customer  |
+|postAndSend     ||Performs both post and send, as above   |
+|cancelAndSend     ||Performs both cancel and send as above |
+
 ## Navigation 
 
 |Navigation          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
 |[currency](../resources/dynamics-currencies.md)|currency   |Gets the currency. |
 |[paymentTerm](../resources/dynamics-paymentTerms.md)|paymentTerm   |Gets the paymentTerm. |
 |[shipmentMethod](../resources/dynamics-shipmentMethods.md)|paymentMethod   |Gets the paymentMethod. |
 |[customer](../resources/dynamics-customer.md)|paymentMethod   |Gets the customer. |
 |[salesInvoiceLines](../resources/dynamics-salesinvoiceline.md)|paymentMethod   |Gets the paymentMethod. |
-
-
 
 ## Properties
 

@@ -24,7 +24,9 @@ Represents a salesQuote resource type in Dynamics 365 Business Central.
 
 |Action          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[GET pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
+|makeInvoice|[salesInvoice](./dynamics-salesInvoice.md) | Creates a **salesInvoice** from the quote|
+|send | |Sends the quote to the customer |  
+
 
 
 ## Properties

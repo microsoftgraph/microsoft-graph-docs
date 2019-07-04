@@ -39,9 +39,6 @@ Represents a customer in Dynamics 365 Business Central.
 |paymentMethodId|GUID    |Specifies which payment method the customer uses.|
 |shipmentMethodId|GUID   |Specifies which shipment method the customer uses.|
 |blocked      |string    |Specifies that transactions with the customer cannot be posted. Set to **All**, if the customer is blocked, set to blank if not blocked.|
-|balance      |numeric   |Specifies the payment amount that the customer owes for completed sales. This value is also known as the customer's balance. Read-Only.|
-|overdueAmount|numeric   |Specifies the customer's overdue amount.|
-|totalSalesExcludingTax|numeric|Specifies the total sales amount excluding tax of the customer.|
 |lastModifiedDateTime|datetime|The last datetime the customer was modified. Read-Only.|  
 
 
@@ -55,6 +52,7 @@ A Shipment Method(shipmentMethod) must exist in the Shipment Method table.
 A Payment Method(paymentMethod) must exist in the Payment Method table.
 
 A Tax Area(taxArea) must exist in the Tax Area table.
+
 
 ## JSON representation
 
@@ -80,9 +78,6 @@ Here is a JSON representation of the resource.
     "shipmentMethodId": "GUID",
     "paymentMethodId":  "GUID",
     "blocked": "string",
-    "balance": "decimal",
-    "overdueAmount": "numeric",
-    "totalSalesExcludingTax": "numeric",
     "lastModifiedDateTime": "datetime"
 }
 

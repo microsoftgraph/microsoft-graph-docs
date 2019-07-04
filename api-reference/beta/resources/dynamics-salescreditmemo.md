@@ -21,13 +21,6 @@ Represents a sales credit memo in Dynamics 365 Business Central.
 |[PATCH salesCreditMemos](../api/dynamics-salescreditmemo-update.md)|salesCreditMemos|Update a sales credit memo object.|
 |[DELETE salesCreditMemos](../api/dynamics-salescreditmemo-delete.md)|none|Delete a sales credit memo object.|
 
-## Bound actions
-
-|Action          |Return type   |Description         |
-|----------------|--------------|--------------------|
-|[GET pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
-
-
 ## Properties
 
 | Property     | Type   |Description|

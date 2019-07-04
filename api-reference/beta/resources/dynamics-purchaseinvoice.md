@@ -25,7 +25,7 @@ Represents a purchase invoice in Dynamics 365 Business Central.
 
 |Action          |Return type   |Description         |
 |----------------|--------------|--------------------|
-|[GET pdfDocument](../api/dynamics-salesquote-pdfdocument.md)|pdfDocument|Gets a PDF document.|
+|post| |Performs a posts of the **purchaseInvoice** |
 
 
 ## Properties

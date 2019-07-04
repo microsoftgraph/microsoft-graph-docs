@@ -8,13 +8,17 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 # Working with the Dynamics 365 Business Central API in Microsoft Graph
-You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central. With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.
+You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central. With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data and key processes such as creating quotes, invoices, orders and purchases.
 
 ## Authorization
 Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
 ## Common Dynamics 365 Business Central scenarios
-The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).
+The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics-customer.md), [vendor](../resources/dynamics-vendor.md), [items and inventory](../resources/dynamics-item.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md). 
+
+The document APIs gives access creating, sending and posting central business documents like: [sales quotes](../resources/dynamics-salesquote.md), [sales invoice](../resources/dynamics-salesinvoice.md), [sales order](../resources/dynamics-salesorder.md), [sales credit memo](../resources/dynamics-salescreditmemo.md) and  [purchase invoice](../resources/dynamics-purchaseinvoice.md). 
+
+Journals with journal lines can be created and journal batches can be posted using the [journal](../resources/dynamics-journal.md).
 
 ## Next steps
 The Dynamics 365 Business Central API can open up new ways for you to engage with users. To learn more, see the following:
