@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-POST /businesscentral/companies({id})/salesQuotes
+POST /financials/companies('{id}')/salesQuotes
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ If successful, this method returns ```201 Created``` response code and a **sales
 Here is an example of a request.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies({id})/salesQuotes
+POST https://graph.microsoft.com/beta/financials/companies('{id}')/salesQuotes
 Content-type: application/json
 
 {

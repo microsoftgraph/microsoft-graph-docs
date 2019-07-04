@@ -21,8 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
-```
+POST /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.

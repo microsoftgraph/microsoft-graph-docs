@@ -92,9 +92,6 @@ Content-type: application/json
   "shipmentMethodId": "shipmentMethodId-value",
   "paymentMethodId": "paymentMethod-value",
   "blocked": " ",
-  "balance": 0,
-  "overdueAmount": 0
-  "totalSalesExcludingTax": 0,
   "lastModifiedDateTime": "2017-03-07T00:35:28.983Z"
 }
 ```

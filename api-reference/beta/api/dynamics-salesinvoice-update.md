@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-PATCH /businesscentral/companies({id})/salesInvoices({id})
+PATCH /financials/companies('{id}')/salesInvoices('{id}')
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies({id})/salesInvoices({id})
+PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/salesInvoices('{id}')
 Content-type: application/json
 
 {

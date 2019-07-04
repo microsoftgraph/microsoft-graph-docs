@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-POST /financials/companies('{id}')/customerPaymentJournals('{id}')
+POST /financials/companies('{id}')/customerPaymentJournals
 ```
 
 ## Optional query parameters

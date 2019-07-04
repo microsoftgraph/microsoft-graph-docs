@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /businesscentral/companies({id})/salesInvoices({id})
+GET /financials/companies('{id}')/salesInvoices('{id}')
 ```
 
 ## Request headers
@@ -44,11 +44,11 @@ If successful, this method returns a ```200 OK``` response code and a **salesInv
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies({id})/salesInvoices({id})
+GET https://graph.microsoft.com/beta/financials/companies('{id}')/salesInvoices('{id}')
 ```
 To get more data for a salesInvoice, use expand:
 
-``` .../salesInvoices({id})?$expand=salesInvoiceLines,customer```
+``` .../salesInvoices('{id}')?$expand=salesInvoiceLines,customer```
 
 **Response**
 

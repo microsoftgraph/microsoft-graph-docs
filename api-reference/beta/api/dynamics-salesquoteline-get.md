@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /businesscentral/companies({id})/salesQuotes({id})/salesQuoteLines({salesQouteLineId})
+GET /financials/companies('{id}')/salesQuotes('{id}')/salesQuoteLines('{salesQouteLineId}')
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ If successful, this method returns a ```200 OK``` response code and a **salesQuo
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies({id})/salesQuotes({id})/salesQuoteLines({salesQouteLineId})
+GET https://graph.microsoft.com/beta/financials/companies('{id}')/salesQuotes('{id}')/salesQuoteLines('{salesQouteLineId}')
 ```
 
 **Response**

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /businesscentral/companies({id})/salesCreditMemos({id})/salesCreditMemoLines({salesCreditMemoLineId})
+GET /financials/companies('{id}')/salesCreditMemos('{id}')/salesCreditMemoLines('{salesCreditMemoLineId}')
 ```
 
 ## Request headers
@@ -47,7 +47,7 @@ If successful, this method returns a ```200 OK``` response code and a **salesCre
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies({id})/salesCreditMemos({id})/salesCreditMemoLines({salesCreditMemoLineId})
+GET https://graph.microsoft.com/beta/financials/companies('{id}')/salesCreditMemos('{id}')/salesCreditMemoLines('{salesCreditMemoLineId}')
 ```
 
 **Response**

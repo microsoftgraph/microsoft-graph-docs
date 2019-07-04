@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-DELETE /businesscentral/companies({id})/salesInvoices({id})/salesInvoiceLines({salesOrderLineId})
+DELETE /financials/companies('{id}')/salesInvoices('{id}')/salesInvoiceLines('{salesOrderLineId}')
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies({id})/salesInvoices({id})/salesInvoiceLines({salesOrderLineId})
+DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/salesInvoices('{salesInvoicesId}')/salesInvoiceLines('{salesOrderLineId}')
 ```
 
 **Response** 

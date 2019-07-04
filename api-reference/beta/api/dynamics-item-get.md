@@ -63,7 +63,7 @@ Here is an example of the response.
   "blocked": false,
   "baseUnitOfMeasureId": "id-value",
   "gtin": "",
-  "itemCategoryId": "id-value"
+  "itemCategoryId": "id-value",
   "inventory": 0,
   "unitPrice": 1000.8,
   "priceIncludesTax": false,
