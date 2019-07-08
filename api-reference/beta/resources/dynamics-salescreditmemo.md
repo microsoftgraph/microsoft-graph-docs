@@ -64,7 +64,7 @@ Represents a sales credit memo in Dynamics 365 Business Central.
 |currencyCode  |[currencies](dynamics-currencies.md) |Read-only. A Currency must exist in the Currencies table.|
 |paymentTerms  |[paymentTerms](dynamics-paymentterms.md) |Read-only. A Payment Term must exist in the Payment Terms table.|
 |customerId    |[customer](dynamics-customer.md) |Read-only. A Customer must exist in the Customer table.|
-|invoiceId     |[invoice](dynamics-invoice.md) |Read-only. An Invoice must exist in the Sales Invoice table.|
+|invoiceId     |[invoice](dynamics-salesinvoice.md) |Read-only. An Invoice must exist in the Sales Invoice table.|
 
 
 ## JSON representation

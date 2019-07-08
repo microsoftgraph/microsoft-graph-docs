@@ -50,7 +50,7 @@ Represents a salesQuoteLines resource type in Dynamics 365 Business Central.
 ## Relationships
 | Relationship | Type	                           |Description|
 |:-------------|:----------------------------------|:----------|
-|documentId    |[salesQuotes](dynamics-salesquotes.md) |Read-only. A Sales Quote must exist in the Sales Quotes table.|
+|documentId    |[salesQuotes](dynamics-salesquote.md) |Read-only. A Sales Quote must exist in the Sales Quotes table.|
 |itemId        |[item](dynamics-item.md) |Read-only. An itemId must exist in the Item table.|
 |accountId     |[account](dynamics-account.md) |Read-only. An Account must exist in the Accounts table.|
 |unitOfMeasure |[unitsOfMeasure](dynamics-unitsofmeasure.md) |Read-only. A Unit of Measure must exist in the Unit of Measure table.|
