@@ -42,7 +42,11 @@ Represents an item in Dynamics 365 Business Central.
 
 
 ## Relationships
-A Tax Group(taxGroupCode) must exist in the Tax Group table.
+
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|taxGroupCode  |[taxGroups](dynamics-taxgroups.md)|Read-only. A Tax Group must exist in the Tax Group table|
+
 
 ## JSON representation
 

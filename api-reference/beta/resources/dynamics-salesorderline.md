@@ -56,13 +56,13 @@ Represents a line on a sales order in Dynamics 365 Business Central.
 |shipQuantity|numeric|The quantity of items from the order to be shipped.|
 
 ## Relationships
-A Sales Order (documentId) must exist in the Sales Orders table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|documentId    |[salesOrders](dynamics-salesorders.md) |Read-only. A Sales Order must exist in the Sales Orders table.|
+|itemId        |[item](dynamics-item.md) |Read-only. An itemId must exist in the Item table.|
+|accountId     |[account](dynamics-account.md) |Read-only. An Account must exist in the Accounts table.|
+|unitOfMeasure |[unitsOfMeasure](dynamics-unitsofmeasure.md) |Read-only. A Unit of Measure must exist in the Unit of Measure table.|
 
-An Item (itemId) must exist in the Item table.
-
-An Account (accountId) must exist in the Accounts table.
-
-A Unit of Measure (unitOfMeasure) must exist in the Unit of Measure table.
 
 ## JSON representation
 

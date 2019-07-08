@@ -41,13 +41,13 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 
 
 ## Relationships
-A customer payment is a subpage of a customer payment journal. It cannot be accessed directly.
 
-A customer payment can be a "Parent Entity" of the dimension lines.
-
-A Customer (customerId) must exist in the Customers table.
-
-An Invoice (appliesToInvoiceId) must exist in the Sales Invoices Table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|customerPayment|subpage of a [customerPaymentsJournal](dynamics-customerpaymentsjournal.md)|Read-only. A Customer Payment cannot be accessed directly.|
+|customerPayment|parent entity|A customer payment can be a parent entity of Dimension Lines.|
+|customerId     |[customer](dynamics-customer.md) |Read-only. A Customer must exist in the Customers table.|
+|appliesToInvoiceId|[salesInvoice](dynamics-salesinvoice.md) |Read-only. A Shipment Method must exist in the Shipment Method table.|
 
 
 ## JSON representation

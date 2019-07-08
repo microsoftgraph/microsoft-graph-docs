@@ -86,15 +86,15 @@ Represents a sales invoice in Dynamics 365 Business Central.
 
 
 ## Relationships
-A Currency (currencyCode) must exist in the Currencies table.
 
-A Payment Term (paymentTerms) must exist in the Payment Terms table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|currencyCode  |[currencies](dynamics-currencies.md) |Read-only. A Currency must exist in the Currencies table.|
+|paymentTerms  |[paymentTerms](dynamics-paymentterms.md) |Read-only. A Payment Term must exist in the Payment Terms table.|
+|shipmentMethod|[shipmentMethods](dynamics-shipmentmethods.md)|Read-only. A Shipment Method must exist in the Shipment Method table.|
+|customerId    |[customer](dynamics-customer.md) |Read-only. A Customer must exist in the Customer table.|
+|orderId       |[order](dynamics-salesorder.md) |Read-only. An Order must exist in the Sales Orders table.|
 
-A Shipment Method (shipmentMethod) must exist in the Shipment Method table.
-
-A Customer (customerId) must exist in the Customer table.
-
-An Order (orderId) must exist in the Sales Orders table.
 
 ## JSON representation
 

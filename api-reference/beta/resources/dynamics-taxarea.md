@@ -28,7 +28,6 @@ Represents a tax area resource type in Dynamics 365 Business Central.
 |taxType|string|The tax type of the tax area.|
 |lastModifiedDateTime|datetime|The last datetime the tax area was modified. Read-Only.|
 
-## Relationships
 
 ## JSON representation
 

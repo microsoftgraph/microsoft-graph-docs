@@ -58,13 +58,14 @@ Represents a sales credit memo in Dynamics 365 Business Central.
 
 
 ## Relationships
-A Currency (currencyCode) must exist in the Currencies table.
 
-A Payment Term (paymentTerms) must exist in the Payment Terms table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|currencyCode  |[currencies](dynamics-currencies.md) |Read-only. A Currency must exist in the Currencies table.|
+|paymentTerms  |[paymentTerms](dynamics-paymentterms.md) |Read-only. A Payment Term must exist in the Payment Terms table.|
+|customerId    |[customer](dynamics-customer.md) |Read-only. A Customer must exist in the Customer table.|
+|invoiceId     |[invoice](dynamics-invoice.md) |Read-only. An Invoice must exist in the Sales Invoice table.|
 
-A Customer (customerId) must exist in the Customer table.
-
-An Invoice (invoiceId) must exist in the Sales Invoice table.
 
 ## JSON representation
 

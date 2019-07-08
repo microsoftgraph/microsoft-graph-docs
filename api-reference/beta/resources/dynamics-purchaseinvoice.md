@@ -63,15 +63,15 @@ Represents a purchase invoice in Dynamics 365 Business Central.
 |shipToAddress| |NAV.postalAddressType |Ship to address. |
 |lastModifiedDateTime   |datetime               |The last datetime the purchase invoice was modified. Read-Only.|
 
-
 ## Relationships
-A Currency (currencyCode) must exist in the Currencies table.
 
-A Payment Term (paymentTerms) must exist in the Payment Terms table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|currencyCode  |[currencies](dynamics-currencies.md) |Read-only. A Currency must exist in the Currencies table.|
+|paymentTerms  |[paymentTerms](dynamics-paymentterms.md) |Read-only. A Payment Term must exist in the Payment Terms table.|
+|shipmentMethod|[shipmentMethods](dynamics-shipmentmethods.md) |Read-only. A Shipment Method must exist in the Shipment Method table.|
+|vendorId      |[vendor](dynamics-vendor.md) |Read-only. A Vendor must exist in the Vendor table.|
 
-A Shipment Method (shipmentMethod) must exist in the Shipment Method table.
-
-A Vendor (vendorId) must exist in the Vendor table.
 
 ## JSON representation
 

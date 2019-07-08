@@ -49,13 +49,14 @@ Represents a line on a purchase invoice in Dynamics 365 Business Central.
 |expectedReceiptDate|date|The date the item in the line is expected to be received.|
 
 ## Relationships
-A Purchase Invoice (documentId) must exist in the Purchase Invoices table.
 
-An Item (itemId) must exist in the Item table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|documentId    |[purchaseInvoice](dynamics-purchaseinvoice.md) |Read-only. A Purchase Invoice must exist in the Purchase Invoices table.|
+|itemId        |[item](dynamics-item.md) |Read-only. An itemId must exist in the Item table.|
+|accountId     |[account](dynamics-account.md) |Read-only. An Account must exist in the Accounts table.|
+|unitOfMeasure |[unitsOfMeasure](dynamics-unitsofmeasure.md) |Read-only. A Unit of Measure must exist in the Unit of Measure table.|
 
-An Account (accountId) must exist in the Accounts table.
-
-A Unit of Measure (unitOfMeasure) must exist in the Unit of Measure table.
 
 ## JSON representation
 

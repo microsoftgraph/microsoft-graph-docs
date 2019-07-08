@@ -37,11 +37,12 @@ Represents a line in a journal in Dynamics 365 Business Central.
 |lastModifiedDateTime  |datetime                |The last datetime the journal line was modified. Read-Only.        |
 
 ## Relationships
-A journal line is a subpage of a journal. It cannot be accessed directly.
 
-A journal line can be a "Parent Entity" of the dimension lines.
-
-An Account (accountId) must exist in the Accounts table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|journalLine   |subpage of a journal               |Read-only. Cannot be accessed directly.|
+|journalLine   |parent entity                      |Read-only. A Journal Line can be a parent entity of Dimension Lines.|
+|accountId     |[account](dynamics-account.md)     |Read-only. An Account must exist in the Accounts table.|
 
 
 ## JSON representation

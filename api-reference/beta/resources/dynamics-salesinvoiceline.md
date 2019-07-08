@@ -51,13 +51,13 @@ Represents a line on a sales invoice in Dynamics 365 Business Central.
 |shipmentDate             |date   |The date the item in the line is expected to ship.         |
 
 ## Relationships
-A Sales Invoice (documentId) must exist in the Sales Invoices table.
+| Relationship | Type	                           |Description|
+|:-------------|:----------------------------------|:----------|
+|documentId    |[salesInvoices](dynamics-salesinvoices.md) |Read-only. A Sales Invoice must exist in the Sales Invoices table.|
+|itemId        |[item](dynamics-item.md) |Read-only. An itemId must exist in the Item table.|
+|accountId     |[account](dynamics-account.md) |Read-only. An Account must exist in the Accounts table.|
+|unitOfMeasure |[unitsOfMeasure](dynamics-unitsofmeasure.md) |Read-only. A Unit of Measure must exist in the Unit of Measure table.|
 
-An Item (itemId) must exist in the Item table.
-
-An Account (accountId) must exist in the Accounts table.
-
-A Unit of Measure (unitOfMeasure) must exist in the Unit of Measure table.
 
 ## JSON representation
 
