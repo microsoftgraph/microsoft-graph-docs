@@ -43,9 +43,6 @@ Represents an employee in Dynamics 365 Business Central.
 |lastModifiedDateTime|datetime|The last datetime the employee was modified. Read-Only.|  
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

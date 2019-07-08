@@ -23,8 +23,8 @@ Represents a purchase invoice in Dynamics 365 Business Central.
 
 ## Bound actions
 
-|Action          |Return type   |Description         |
-|----------------|--------------|--------------------|
+| Action    | Return Type |Description                    |
+|:----------|:------------|:------------------------------|
 |post| |Performs a posts of the **purchaseInvoice** |
 
 

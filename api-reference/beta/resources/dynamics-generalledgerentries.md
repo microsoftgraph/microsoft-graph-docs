@@ -32,9 +32,6 @@ Represents a generalLedgerEntry object in Dynamics 365 Business Central.
 |lastModifiedDateTime|datetime               |The last datetime the G/L Entry was modified.|
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

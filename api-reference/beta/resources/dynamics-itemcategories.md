@@ -29,9 +29,6 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 |lastModifiedDateTime|datetime|The last datetime the itemCategory was modified. Read-Only.|  
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the itemCategories.

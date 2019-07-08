@@ -27,9 +27,6 @@ Represents a companies resource type in Dynamics 365 Business Central.
 |businessProfileId|string|Specifies the Business Profile ID linked to the company.|
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the company.

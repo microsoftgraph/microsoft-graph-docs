@@ -29,9 +29,6 @@ Represents a method of shipment in Dynamics 365 Business Central, such as UPS, F
 |lastModifiedDateTime|datetime|The last datetime the shipment method was modified. Read-Only.|  
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the shipmentMethod.

@@ -28,7 +28,6 @@ Represents a customer payment journal in Dynamics 365 Business Central.
 |displayName         |string, maximum size 50| The display name of the customer payment journal.                     |
 |lastModifiedDateTime|datetime               |The last datetime the customer payment journal was modified. Read-Only.|
 
-## Relationships
 
 ## JSON representation
 

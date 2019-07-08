@@ -33,9 +33,6 @@ Represents an agedAccountsPayable object in Dynamics 365 Business Central, which
 |periodLengthFilter|string |Specifies the length of the periods. Acceptable values for the time units are: D, WD, W, M, Q, or Y. C, meaning current time unit based on date, can be specified as a prefix to the time unit.|
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the resource.

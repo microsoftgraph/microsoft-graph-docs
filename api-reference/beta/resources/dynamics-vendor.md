@@ -42,9 +42,6 @@ Represents a vendor in Dynamics 365 Business Central.
 |lastModifiedDateTime|datetime|The last datetime the vendor was modified. Read-Only.|  
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the vendor.

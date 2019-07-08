@@ -30,10 +30,6 @@ Represents a currency used in Dynamics 365 Business Central.
 |amountRoundingPrecision|decimal |Specifies the size of the interval to be used when rounding amounts for this currency.|
 |lastModifiedDateTime   |datetime|The last datetime the currency was modified. Read-Only.       |  
 
-
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the currencies.

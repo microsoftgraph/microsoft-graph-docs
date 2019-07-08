@@ -30,8 +30,6 @@ Represents a unit of measure, which is a standard of measurement of a quantity, 
 |lastModifiedDateTime|datetime|The last datetime the unit of measure was modified. Read-Only.|  
 
 
-## Relationships
-None
 
 ## JSON representation
 

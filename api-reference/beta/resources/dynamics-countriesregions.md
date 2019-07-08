@@ -30,9 +30,6 @@ Represents a countriesRegions object in Dynamics 365 Business Central, which is 
 |lastModifiedDateTime|datetime|The last datetime the country/region was modified. Read-Only.|  
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the countriesRegions.

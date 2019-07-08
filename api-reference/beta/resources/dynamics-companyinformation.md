@@ -37,10 +37,6 @@ Represents the information specified for the current company in Dynamics 365 Bus
 |businessProfileId|string|The business profile ID linked to the Financials company. Read-Only.|
 |lastModifiedDateTime|datetime|The last datetime the company was modified. Read-Only.|  
 
-
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the companyInformation

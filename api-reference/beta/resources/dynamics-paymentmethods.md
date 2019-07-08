@@ -28,10 +28,6 @@ Represents a method of payment in Dynamics 365 Business Central, such as PayPal,
 |displayName         |string  |Specifies the payment method display name.                   |
 |lastModifiedDateTime|datetime|The last datetime the payment method was modified. Read-Only.|  
 
-
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the paymentMethods.

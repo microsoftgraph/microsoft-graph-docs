@@ -31,9 +31,6 @@ Represents a trial balance in Dynamics 365 Business Central.
 |dateFilter|date|The date filter used to calculate the trialBalance items.|
 
 
-## Relationships
-None
-
 ## JSON representation
 
 Here is a JSON representation of the resource.
