@@ -11,7 +11,6 @@ ms.prod: "dynamics-365-business-central"
 # purchaseInvoices resource type
 Represents a purchase invoice in Dynamics 365 Business Central. 
 
-
 ## Methods
 
 | Method                                                             | Return Type    |Description                     |
@@ -25,7 +24,7 @@ Represents a purchase invoice in Dynamics 365 Business Central.
 
 | Action    | Return Type |Description                    |
 |:----------|:------------|:------------------------------|
-|post| |Performs a posts of the **purchaseInvoice** |
+|post| |Performs a posts of the **purchaseInvoice**       |
 
 
 ## Properties
@@ -40,8 +39,8 @@ Represents a purchase invoice in Dynamics 365 Business Central.
 |vendorId               |GUID                   |The id of the invoice vendor.                              |
 |vendorNumber           |string, maximum size 20|The vendor number for the invoice.                         |
 |vendorName             |string, maximum size 50|The full name of the vendor. Read-Only.                    |
-|buyFromAddress         |[NAV.PostalAddress](dynamics-complextypes.md)|The vendor's address.  |
-|currencyId           |GUID|The currency Id for the invoice.                         |
+|buyFromAddress         |[NAV.PostalAddress](dynamics-complextypes.md)|The vendor's address.                |
+|currencyId             |GUID|The currency Id for the invoice.                                              |
 |currencyCode           |string, maximum size 10|The currency code for the invoice.                         |
 |status                 |string, maximum size 20|The invoice status. Status can be: Draft, In Review, Open, Paid, Canceled, or Corrective. Read-Only.|
 |discountAmount         |numeric                |The invoice discount amount                                |
@@ -52,15 +51,15 @@ Represents a purchase invoice in Dynamics 365 Business Central.
 |pricesIncludeTax       |boolean                |Specifies whether the prices include Tax or not. Read-Only.|
 |paymentTerms           |string, maximum size 10|The payment terms of the invoice.                          |
 |shipmentMethod         |string, maximum size 10|The shipment method of the invoice.                        |
-|payToName|string, maximum size 100 |Pay to name of the invoice. |
-|payToContact|string, maximum size 100 |Pay to contact|
-|payToVendorId|GUID |Pay to vendor id. |
-|payToVendorNumber|string, maximum size 20 |Pay to vendor number |
-|shipToName|string, maximum size 100|Ship to name. |
-|shipToContact|string, maximum size 100|Ship to contact. |
-|buyFromAddress|NAV.postalAddressType |Buy from address. |
-|payToAddress| |NAV.postalAddressType |Pay to address. |
-|shipToAddress| |NAV.postalAddressType |Ship to address. |
+|payToName              |string, maximum size 100 |Pay to name of the invoice. |
+|payToContact           |string, maximum size 100 |Pay to contact|
+|payToVendorId          |GUID |Pay to vendor id. |
+|payToVendorNumber      |string, maximum size 20 |Pay to vendor number |
+|shipToName             |string, maximum size 100|Ship to name. |
+|shipToContact          |string, maximum size 100|Ship to contact. |
+|buyFromAddress         |NAV.postalAddressType |Buy from address. |
+|payToAddress           |NAV.postalAddressType |Pay to address. |
+|shipToAddress          |NAV.postalAddressType |Ship to address. |
 |lastModifiedDateTime   |datetime               |The last datetime the purchase invoice was modified. Read-Only.|
 
 ## Relationships
