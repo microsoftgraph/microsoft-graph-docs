@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected -->
 # Create paymentTerms
 Create a payment terms object in Dynamics 365 Business Central.
 

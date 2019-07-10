@@ -8,6 +8,8 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
+<!-- To be redirected -->
+
 # currencies resource type
 Represents a currency used in Dynamics 365 Business Central.
 

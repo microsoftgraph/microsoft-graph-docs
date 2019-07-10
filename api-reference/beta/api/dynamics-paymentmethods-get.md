@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected -->
 # Get paymentMethods
 Retrieve the properties and relationships of a payment method object for Dynamics 365 Business Central.
 

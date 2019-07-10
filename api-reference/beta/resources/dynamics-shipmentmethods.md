@@ -8,6 +8,8 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
+<!-- To be redirected -->
+
 # shipmentMethods resource type
 Represents a method of shipment in Dynamics 365 Business Central, such as UPS, Fedex, and DHL.
 

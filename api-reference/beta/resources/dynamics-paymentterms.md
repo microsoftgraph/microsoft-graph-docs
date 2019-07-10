@@ -8,6 +8,8 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
+<!-- To be redirected -->
+
 # paymentTerms resource type
 Represents a payment term in Dynamics 365 Business Central.
 

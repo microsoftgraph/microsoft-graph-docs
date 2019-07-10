@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected -->
 # Get trialBalance
 Retrieve the properties and relationships of a trial balance report object for Dynamics 365 Business Central.
 

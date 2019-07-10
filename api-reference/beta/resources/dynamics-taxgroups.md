@@ -8,6 +8,8 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
+<!-- To be redirected -->
+
 # taxGroups resource type
 Represents a taxGroups resource type in Dynamics 365 Business Central.
 

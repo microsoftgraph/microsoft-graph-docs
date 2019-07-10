@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected -->
 # Create paymentMethods
 Create a payment method object in DDynamics 365 Business Central.
 

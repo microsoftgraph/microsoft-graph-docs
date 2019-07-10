@@ -8,6 +8,8 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
+<!-- To be redirected -->
+
 # companies resource type
 Represents a companies resource type in Dynamics 365 Business Central. 
 

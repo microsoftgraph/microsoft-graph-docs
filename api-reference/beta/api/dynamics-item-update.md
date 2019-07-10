@@ -1,88 +1,123 @@
 ---
-title: Update items 
-description: Updates an item object in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "Update item"
+description: "Update the properties of item object."
 localization_priority: Normal
+author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
+doc_type: "apiPageType"
 ---
 
-# Update items
-Update the properties of an item object for Dynamics 365 Business Central.
+# Update item
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of item object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type |Permissions (from least to most privileged)|
-|:---------------|:------------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Financials.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
-```
-PATCH /financials/companies('{id}')/items('{id}')
-```
 
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /financials/companies/{id}/items/{id}
+```
 
 ## Request headers
-|Header       |Value                    |
-|-------------|-------------------------|
-|Authorization|Bearer {token}. Required.|
-|Content-Type |application/json.        |
-|If-Match     |Required. When this request header is included and the eTag provided does not match the current tag on the **items**, the **items** will not be updated. |
+
+| Name       | Description|
+|:-----------|:-----------|
+| Authorization | Bearer {token} |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|baseUnitOfMeasureId|Guid||
+|blocked|Boolean||
+|displayName|String||
+|gtin|String||
+|inventory|Decimal||
+|itemCategoryCode|String||
+|itemCategoryId|Guid||
+|lastModifiedDateTime|DateTimeOffset||
+|number|String||
+|priceIncludesTax|Boolean||
+|taxGroupCode|String||
+|taxGroupId|Guid||
+|type|String||
+|unitCost|Decimal||
+|unitPrice|Decimal||
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated **items** object in the response body.
 
-## Example
-**Request**
+If successful, this method returns a `200 OK` response code and an updated [item](../resources/dynamics-item.md) object in the response body.
 
-Here is an example of the request.
-```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
+## Examples
+
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "update_item"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 Content-type: application/json
 
 {
-  "displayName": "ATHENS Desk - blocked",
-  "blocked": true
+  "number": "number-value",
+  "displayName": "displayName-value",
+  "type": "type-value",
+  "itemCategoryId": "itemCategoryId-value",
+  "itemCategoryCode": "itemCategoryCode-value"
 }
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response.
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-```json
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.item"
+} -->
+
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
   "id": "id-value",
-  "number": "1896-S",
-  "displayName": "ATHENS Desk - blocked",
-  "type": "Inventory",
-  "blocked": true,
-  "baseUnitOfMeasureId": "id-value", 
-  "gtin": "",
-  "itemCategoryId": "id-value",
-  "inventory": 0,
-  "unitPrice": 1000.8,
-  "priceIncludesTax": false,
-  "unitCost": 780.7,
-  "taxGroupId": "id-value",
-  "taxGroupCode": "FURNITURE",
-  "lastModifiedDateTime": "2017-03-07T00:35:30.073Z"
+  "number": "number-value",
+  "displayName": "displayName-value",
+  "type": "type-value",
+  "itemCategoryId": "itemCategoryId-value",
+  "itemCategoryCode": "itemCategoryCode-value"
 }
-
 ```
 
-
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update item",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
