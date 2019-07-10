@@ -34,7 +34,7 @@ Represents an salesQuoteLine object in Dynamics 365 Business Central.
 |lineDetails|complex|The details of the line.|
 |description|string|A description of the item in the quote line.|
 |unitOfMeasureId|GUID|The Id of the unit of measure in the quote line.|
-|unitOfMeasure|[microsoft.graph.unitOfMeasure](../resources/dynamics-complextypes.md)|The unit of measure complex type.|
+|unitOfMeasure|[microsoft.graph.unitOfMeasure](dynamics-complextypes.md)|The unit of measure complex type.|
 |unitPrice|numeric|The unit price of each individual item in the quote line.|
 |quantity|numeric|The quantity of the item in the quote line.|
 |discountAmount|numeric|The line discount amount.|
