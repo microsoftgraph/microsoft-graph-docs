@@ -2,7 +2,7 @@
 title: "List companyInformation"
 description: "Retrieve a list of companyinformation objects."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

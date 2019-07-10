@@ -2,7 +2,7 @@
 title: "salesOrder resource type"
 description: "Represents an salesOrder object in Dynamics 365 Business Central."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---

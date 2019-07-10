@@ -2,7 +2,7 @@
 title: "Delete taxArea"
 description: "Delete taxArea."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

@@ -2,7 +2,7 @@
 title: "Update countryregion"
 description: "Update the properties of countryregion object."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

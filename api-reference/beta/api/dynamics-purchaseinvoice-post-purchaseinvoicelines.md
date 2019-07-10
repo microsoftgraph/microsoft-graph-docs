@@ -2,7 +2,7 @@
 title: "Create purchaseInvoiceLine"
 description: "Use this API to create a new purchaseInvoiceLine."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

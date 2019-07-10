@@ -2,7 +2,7 @@
 title: "Update purchaseinvoice"
 description: "Update the properties of purchaseinvoice object."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

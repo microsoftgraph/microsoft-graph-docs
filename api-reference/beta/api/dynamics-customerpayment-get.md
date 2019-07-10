@@ -2,7 +2,7 @@
 title: "Get customerPayment"
 description: "Retrieve the properties and relationships of customerpayment object."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

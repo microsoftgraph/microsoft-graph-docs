@@ -2,7 +2,7 @@
 title: "customerPayment resource type"
 description: "Represents an customerPayment object in Dynamics 365 Business Central."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---

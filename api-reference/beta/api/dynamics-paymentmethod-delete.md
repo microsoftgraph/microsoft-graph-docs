@@ -2,7 +2,7 @@
 title: "Delete paymentMethod"
 description: "Delete paymentMethod."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

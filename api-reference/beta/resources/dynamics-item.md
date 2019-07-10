@@ -2,7 +2,7 @@
 title: "item resource type"
 description: "Represents an item object in Dynamics 365 Business Central."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---

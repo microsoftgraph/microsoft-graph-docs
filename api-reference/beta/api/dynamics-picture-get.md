@@ -2,7 +2,7 @@
 title: "Get picture"
 description: "Retrieve the properties and relationships of picture object."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

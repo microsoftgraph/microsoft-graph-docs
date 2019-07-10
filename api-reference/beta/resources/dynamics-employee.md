@@ -2,7 +2,7 @@
 title: "employee resource type"
 description: "Represents an employee object in Dynamics 365 Business Central."
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
+author: SusanneWindfeldPedersen, henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---
