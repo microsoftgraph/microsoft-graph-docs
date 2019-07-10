@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # Create unitsOfMeasure
 Create a units of measure object in Dynamics 365 Business Central.
 

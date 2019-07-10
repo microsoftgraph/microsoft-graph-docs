@@ -40,8 +40,8 @@ Represents an journal object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|account|[account](dynamics-account.md)| Read-only. Nullable.|
-|journalLines|[journalLine](dynamics-journalline.md) collection| Read-only. Nullable.|
+|account|[account](dynamics-account.md)| Nullable.|
+|journalLines|[journalLine](dynamics-journalline.md) collection| Nullable.|
 
 ## JSON representation
 

@@ -25,18 +25,6 @@ Represents an generalLedgerEntry object in Dynamics 365 Business Central.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|accountId|Guid||
-|accountNumber|String||
-|creditAmount|Decimal||
-|debitAmount|Decimal||
-|description|String||
-|documentNumber|String||
-|documentType|String||
-|id|String| Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|postingDate|Date||
-
-|:-------------------|:----------------------|:--------------------------------------------|
 |id                  |numeric                |The unique ID of the G/L Entry.              |
 |postingDate         |date                   |Specifies the posting date of the G/L Entry. |
 |documentNumber      |string, maximum size 20|Specifies the document number of the G/L Entry.|
@@ -46,7 +34,7 @@ Represents an generalLedgerEntry object in Dynamics 365 Business Central.
 |description         |string, maximum size 50|Specifies the description of the G/L Entry.  |
 |debitAmount         |numeric                |Specifies the debitAmount of the G/L Entry.  |
 |creditAmount        |numeric                |Specifies the creditAmount of the G/L Entry. |
-|lastModifiedDateTime|datetime               |The last datetime the G/L Entry was modified.|
+|lastModifiedDateTime|datetime               |The last datetime the G/L Entry was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |postingDate|Date|Date of posting.|
 
 

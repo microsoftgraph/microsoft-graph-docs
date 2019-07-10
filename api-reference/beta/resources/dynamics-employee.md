@@ -52,7 +52,7 @@ Represents an employee object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|picture|[picture](dynamics-picture.md) collection| Read-only. Nullable.|
+|picture|[picture](dynamics-picture.md) collection| Nullable.|
 
 ## JSON representation
 

@@ -49,8 +49,8 @@ Represents an item object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|itemCategory|[itemCategory](dynamics-itemcategory.md)| Read-only. Nullable.|
-|picture|[picture](dynamics-picture.md) collection| Read-only. Nullable.|
+|itemCategory|[itemCategory](dynamics-itemcategory.md)| Nullable.|
+|picture|[picture](dynamics-picture.md) collection| Nullable.|
 
 ## JSON representation
 

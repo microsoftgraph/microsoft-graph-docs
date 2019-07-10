@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # Update shipmentMethods
 Update the properties of a shipment method object for Dynamics 365 Business Central.
 

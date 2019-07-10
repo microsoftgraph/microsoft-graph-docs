@@ -39,8 +39,8 @@ Represents an customerPaymentJournal object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|account|[account](dynamics-account.md)| Read-only. Nullable.|
-|customerPayments|[customerPayment](dynamics-customerpayment.md) collection| Read-only. Nullable.|
+|account|[account](dynamics-account.md)| Nullable.|
+|customerPayments|[customerPayment](dynamics-customerpayment.md) collection| Nullable.|
 
 ## JSON representation
 

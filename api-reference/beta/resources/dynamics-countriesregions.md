@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # countriesRegions resource type
 Represents a countriesRegions object in Dynamics 365 Business Central, which is part of an address.
 

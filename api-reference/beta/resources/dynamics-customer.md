@@ -52,11 +52,11 @@ Represents an customer object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|currency|[currency](dynamics-currency.md)| Read-only. Nullable.|
-|paymentMethod|[paymentMethod](dynamics-paymentmethod.md)| Read-only. Nullable.|
-|paymentTerm|[paymentTerm](dynamics-paymentterm.md)| Read-only. Nullable.|
-|picture|[picture](dynamics-picture.md) collection| Read-only. Nullable.|
-|shipmentMethod|[shipmentMethod](dynamics-shipmentmethod.md)| Read-only. Nullable.|
+|currency|[currency](dynamics-currency.md)| Nullable.|
+|paymentMethod|[paymentMethod](dynamics-paymentmethod.md)| Nullable.|
+|paymentTerm|[paymentTerm](dynamics-paymentterm.md)| Nullable.|
+|picture|[picture](dynamics-picture.md) collection| Nullable.|
+|shipmentMethod|[shipmentMethod](dynamics-shipmentmethod.md)| Nullable.|
 
 ## JSON representation
 

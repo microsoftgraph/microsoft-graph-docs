@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # generalLedgerEntries resource type
 Represents a generalLedgerEntry object in Dynamics 365 Business Central.
 

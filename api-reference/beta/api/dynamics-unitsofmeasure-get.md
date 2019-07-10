@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # Get unitsOfMeasure
 Retrieve the properties and relationships of a units of measure object for Dynamics 365 Business Central.
 

@@ -55,8 +55,8 @@ Represents an salesInvoiceLine object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|account|[account](dynamics-account.md)| Read-only. Nullable.|
-|item|[item](dynamics-item.md)| Read-only. Nullable.|
+|account|[account](dynamics-account.md)| Nullable.|
+|item|[item](dynamics-item.md)| Nullable.|
 
 ## JSON representation
 

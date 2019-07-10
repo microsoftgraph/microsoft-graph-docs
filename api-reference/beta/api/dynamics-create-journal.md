@@ -7,6 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
+<!-- To be redirected --> 
 
 # Create journals
 Creates a journal in Dynamics 365 Business Central. 

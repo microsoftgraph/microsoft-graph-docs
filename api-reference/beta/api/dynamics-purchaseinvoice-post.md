@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Post a purchase invoice.
 
 ## Permissions
 

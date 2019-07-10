@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # paymentMethods resource type
 Represents a method of payment in Dynamics 365 Business Central, such as PayPal, credit card, and bank account.
 

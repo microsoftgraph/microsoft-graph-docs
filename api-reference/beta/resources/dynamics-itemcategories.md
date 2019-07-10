@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # itemCategories resource type
 Represents a category for a number of items in Dynamics 365 Business Central.
 

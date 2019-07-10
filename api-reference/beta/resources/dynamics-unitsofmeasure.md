@@ -8,6 +8,7 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
+<!-- To be redirected --> 
 # unitsOfMeasure resource type
 Represents a unit of measure, which is a standard of measurement of a quantity, in Dynamics 365 Business Central.
 

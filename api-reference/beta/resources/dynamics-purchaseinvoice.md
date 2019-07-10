@@ -63,9 +63,9 @@ Represents an purchaseInvoice object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|currency|[currency](dynamics-currency.md)| Read-only. Nullable.|
-|purchaseInvoiceLines|[purchaseInvoiceLine](dynamics-purchaseinvoiceline.md) collection| Read-only. Nullable.|
-|vendor|[vendor](dynamics-vendor.md)| Read-only. Nullable.|
+|currency|[currency](dynamics-currency.md)| Nullable.|
+|purchaseInvoiceLines|[purchaseInvoiceLine](dynamics-purchaseinvoiceline.md) collection| Nullable.|
+|vendor|[vendor](dynamics-vendor.md)| Nullable.|
 
 ## JSON representation
 

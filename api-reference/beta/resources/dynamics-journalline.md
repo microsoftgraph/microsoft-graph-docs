@@ -25,20 +25,6 @@ Represents an journalLine object in Dynamics 365 Business Central.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|accountId|Guid||
-|accountNumber|String||
-|amount|Decimal||
-|comment|String||
-|description|String||
-|documentNumber|String||
-|externalDocumentNumber|String||
-|id|String| Read-only.|
-|journalDisplayName|String||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|lineNumber|Int32||
-|postingDate|Date||
-
-
 |id                    |string                    |The unique ID of the journal line. Non-editable.                   |
 |journalDisplayName    |string, maximum size 10 |The display name of the journal that this line belongs to. Read-Only.|
 |lineNumber            |integer                 |The number of the journal line.                                    |
@@ -50,14 +36,14 @@ Represents an journalLine object in Dynamics 365 Business Central.
 |amount                |decimal                 |Specifies the total amount (including VAT) that the journal line consists of.|
 |description           |string, maximum size 50 |The description of the journal line, provided by the user or autocreated.|
 |comment               |string, maximum size 250|A user specified comment on the journal line.                      |
-|lastModifiedDateTime  |datetime                |The last datetime the journal line was modified. Read-Only.        |
+|lastModifiedDateTime  |datetime                |The last datetime the journal line was modified. Read-Only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
 
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|account|[account](dynamics-account.md)| Read-only. Nullable.|
+|account|[account](dynamics-account.md)| Nullable.|
 
 ## JSON representation
 

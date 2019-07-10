@@ -70,11 +70,11 @@ Represents an salesQuote object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|currency|[currency](dynamics-currency.md)| Read-only. Nullable.|
-|customer|[customer](dynamics-customer.md)| Read-only. Nullable.|
-|paymentTerm|[paymentTerm](dynamics-paymentterm.md)| Read-only. Nullable.|
-|salesQuoteLines|[salesQuoteLine](dynamics-salesquoteline.md) collection| Read-only. Nullable.|
-|shipmentMethod|[shipmentMethod](dynamics-shipmentmethod.md)| Read-only. Nullable.|
+|currency|[currency](dynamics-currency.md)| Nullable.|
+|customer|[customer](dynamics-customer.md)| Nullable.|
+|paymentTerm|[paymentTerm](dynamics-paymentterm.md)| Nullable.|
+|salesQuoteLines|[salesQuoteLine](dynamics-salesquoteline.md) collection| Nullable.|
+|shipmentMethod|[shipmentMethod](dynamics-shipmentmethod.md)| Nullable.|
 
 ## JSON representation
 

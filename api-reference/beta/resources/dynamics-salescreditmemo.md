@@ -65,10 +65,10 @@ Represents an salesCreditMemo object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|currency|[currency](dynamics-currency.md)| Read-only. Nullable.|
-|customer|[customer](dynamics-customer.md)| Read-only. Nullable.|
-|paymentTerm|[paymentTerm](dynamics-paymentterm.md)| Read-only. Nullable.|
-|salesCreditMemoLines|[salesCreditMemoLine](dynamics-salescreditmemoline.md) collection| Read-only. Nullable.|
+|currency|[currency](dynamics-currency.md)| Nullable.|
+|customer|[customer](dynamics-customer.md)| Nullable.|
+|paymentTerm|[paymentTerm](dynamics-paymentterm.md)| Nullable.|
+|salesCreditMemoLines|[salesCreditMemoLine](dynamics-salescreditmemoline.md) collection| Nullable.|
 
 ## JSON representation
 

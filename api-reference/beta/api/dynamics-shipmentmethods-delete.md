@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # Delete shipmentMethods
 Delete a shipment method object from Dynamics 365 Business Central.
 

@@ -6,7 +6,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # Create customerPayments
 Creates a customer payment object in Dynamics 365 Business Central.
 

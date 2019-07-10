@@ -45,7 +45,7 @@ Represents an customerPayment object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|customer|[customer](dynamics-customer.md)| Read-only. Nullable.|
+|customer|[customer](dynamics-customer.md)| Nullable.|
 
 ## JSON representation
 

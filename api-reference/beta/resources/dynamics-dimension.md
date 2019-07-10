@@ -36,7 +36,7 @@ Represents an dimension object in Dynamics 365 Business Central.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|dimensionValues|[dimensionValue](dynamics-dimensionvalue.md) collection| Read-only. Nullable.|
+|dimensionValues|[dimensionValue](dynamics-dimensionvalue.md) collection| Nullable.|
 
 ## JSON representation
 

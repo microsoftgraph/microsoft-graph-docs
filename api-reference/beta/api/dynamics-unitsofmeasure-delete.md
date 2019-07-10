@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-
+<!-- To be redirected --> 
 # Delete unitsOfMeasure
 Deletes a units of measure object from Dynamics 365 Business Central.
 
