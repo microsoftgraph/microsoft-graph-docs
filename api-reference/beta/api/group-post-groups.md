@@ -54,7 +54,8 @@ The following table shows the properties of the [group](../resources/group.md) r
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 
-> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
+> [!NOTE]
+> Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 

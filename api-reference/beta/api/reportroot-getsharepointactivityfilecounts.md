@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
 ## Permissions
 
@@ -169,7 +170,8 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

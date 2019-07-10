@@ -27,7 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
 
-> **Note:**  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
+> [!NOTE]
+>  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

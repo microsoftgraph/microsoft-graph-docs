@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # settingStateDeviceSummary resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Device Compilance Policy and Configuration for a Setting State summary
 

@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Get the number of users by device type.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).
 
 ## Permissions
 
@@ -170,7 +171,8 @@ GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageDistributionUse
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

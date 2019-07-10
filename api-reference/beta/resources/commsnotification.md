@@ -18,7 +18,8 @@ Communications notification base type that is published by Communications server
 | changeType     | String  | Possible values are: `created`, `updated`, `deleted`.      |
 | resource       | String  | URI of the resource that was changed.                      |
 
-> **Note:** `resourceData` is available as additional data. It is an entity or Collection(entity) depending on the number of changes packaged in the notification.
+> [!NOTE]
+> `resourceData` is available as additional data. It is an entity or Collection(entity) depending on the number of changes packaged in the notification.
 
 ## JSON representation
 

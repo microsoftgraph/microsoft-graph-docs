@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get details about email activity users have performed.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## Permissions
 
@@ -42,7 +43,8 @@ In the request URL, provide one of the following parameters with a valid value.
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
 | date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
-> **Note:** You need to set either period or date in the URL.
+> [!NOTE]
+> You need to set either period or date in the URL.
 
 ## Request headers
 

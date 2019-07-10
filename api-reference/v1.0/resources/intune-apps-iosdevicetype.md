@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # iosDeviceType resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties of the possible iOS device types the mobile app can run on.
 

@@ -43,7 +43,8 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
-> **Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
+> [!NOTE]
+> Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.
 
 ## Constraints
 

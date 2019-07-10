@@ -55,7 +55,8 @@ In the request body, supply the values for relevant fields that should be update
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
 
 
-> **Note:**
+> [!NOTE]
+>
 >
 > - You can update **autoSubscribeNewMembers** by specifying it in its own PATCH request, without including the other properties in the table above.
 > - Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) for examples.

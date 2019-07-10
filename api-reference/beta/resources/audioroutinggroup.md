@@ -12,7 +12,8 @@ ms.prod: "microsoft-teams"
 
 The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
 
-> **Note:** [ConfigureMixer](../api/participant-configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
+> [!NOTE]
+> [ConfigureMixer](../api/participant-configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
 
 ## Methods
 
@@ -31,11 +32,13 @@ The audio routing group stores a private audio route between participants in a m
 | routingMode   | string            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
 | sources       | collection(string) | List of source participant ids.                                      |
 
-> **Note:** Routing mode determines the restrictions on the sources and receivers. Only the following routing groups are supported.
+> [!NOTE]
+> Routing mode determines the restrictions on the sources and receivers. Only the following routing groups are supported.
 > - `oneToOne` - sources and receivers have only one participant each.
 > - `multicast` - source has one participant but there are multiple receivers. Receivers list may be updated.
 
-> **Note:** If you create many audio routing groups (e.g. a bot per participant), only the audio of the top 4 dominant speakers is forwarded. It means even with customized audio routing group, if the speaker is not loud enough in the main mixer, he/she cannot be heard by the bot even if there is a private audio group just for this speaker and the bot.
+> [!NOTE]
+> If you create many audio routing groups (e.g. a bot per participant), only the audio of the top 4 dominant speakers is forwarded. It means even with customized audio routing group, if the speaker is not loud enough in the main mixer, he/she cannot be heard by the bot even if there is a private audio group just for this speaker and the bot.
 
 ## Relationships
 None

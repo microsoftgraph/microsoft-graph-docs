@@ -231,7 +231,8 @@ None.
 * _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/app/calls`).
 * _Calls.AccessMedia.All_: Create or Join a call and the app gets direct access to participant media streams in the call (`POST /beta/app/calls`).
 
-> **Note:** For request examples, see to [Create call](/graph/api/application-post-calls?view=graph-rest-beta).
+> [!NOTE]
+> For request examples, see to [Create call](/graph/api/application-post-calls?view=graph-rest-beta).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -250,7 +251,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
 
-> **Note:** For messages in a channel, see [Group.Read.All](#group-permissions).
+> [!NOTE]
+> For messages in a channel, see [Group.Read.All](#group-permissions).
 
 ## Contacts permissions
 
@@ -506,7 +508,8 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 * _Group.Read.All_: Read all Office 365 group content like conversations (`GET /groups/{id}/conversations`).
 * _Group.ReadWrite.All_: Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
 * _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`).
-> **Note:**: This also requires _User.ReadBasic.All_ to read the user to add as a member.
+> [!NOTE]
+>: This also requires _User.ReadBasic.All_ to read the user to add as a member.
 
 #### Application
 
@@ -637,7 +640,8 @@ None.
 
 ### Remarks
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> [!NOTE]
+> Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 These permissions are only valid for work or school accounts.
 

@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # windowsInformationProtectionAppLearningSummary resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Windows Information Protection AppLearning Summary entity.
 

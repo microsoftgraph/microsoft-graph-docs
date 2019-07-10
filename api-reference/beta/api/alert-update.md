@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-> **Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.
+> [!NOTE]
+> You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.
 <!-- { "blockType": "ignored" } -->
 
 ```http

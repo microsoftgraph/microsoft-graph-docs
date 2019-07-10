@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
 ## Permissions
 

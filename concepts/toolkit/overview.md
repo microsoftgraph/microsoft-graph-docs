@@ -39,7 +39,8 @@ You can then start using the components in your HTML page. The following is a fu
 </script> -->
 ```
 
-> **Note:** MSAL requires the page to be hosted in a web server for the authentication redirects. If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.
+> [!NOTE]
+> MSAL requires the page to be hosted in a web server for the authentication redirects. If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.
 
 ### Use via NPM (es6 modules)
 

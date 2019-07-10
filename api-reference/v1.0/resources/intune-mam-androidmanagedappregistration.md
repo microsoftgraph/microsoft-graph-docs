@@ -9,7 +9,8 @@ ms.prod: "Intune"
 
 # androidManagedAppRegistration resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the synchronization details of an android app, with management capabilities, for a specific user.
 The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization.

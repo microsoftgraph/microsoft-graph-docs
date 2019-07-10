@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Get the count of daily active users in the reporting period by product.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
 ## Permissions
 
@@ -182,7 +183,8 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get the number of Yammer messages posted, read, and liked in groups.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
 ## Permissions
 

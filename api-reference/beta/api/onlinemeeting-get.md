@@ -12,7 +12,8 @@ ms.prod: "microsoft-teams"
 
 Retrieve the properties and relationships of an **onlineMeeting** object.
 
-> **Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
+> [!NOTE]
+> The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
 > For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.
 
 ## Permissions
@@ -77,7 +78,8 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

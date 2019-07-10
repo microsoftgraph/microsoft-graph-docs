@@ -27,7 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /me/activities/{appActivityId}
 ```
 
-> **Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.
+> [!NOTE]
+> The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.
 
 ## Request headers
 

@@ -51,7 +51,8 @@ The following table shows the properties of the [group](../resources/group.md) r
 | owners | string collection | This property represents the owners for the group at creation time. Optional. |
 | members | string collection | This property represents the members for the group at creation time. Optional. |
 
-> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
+> [!NOTE]
+> Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 

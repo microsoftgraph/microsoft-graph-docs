@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get the count of unique users by Outlook desktop version.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).
 
 ## Permissions
 

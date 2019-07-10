@@ -50,7 +50,8 @@ In the request body, supply the values for relevant fields that should be update
 |securityEnabled|Boolean|Specifies whether the group is a security group. |
 |visibility|String|Specifies the visibility of an Office 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
-> **Note:**
+> [!NOTE]
+>
 >
 > - You can update **autoSubscribeNewMembers** by specifying it in its own PATCH request,without including the other properties in the table above.
 > - Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) for examples.

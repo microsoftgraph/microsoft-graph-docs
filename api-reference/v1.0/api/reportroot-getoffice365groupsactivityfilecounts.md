@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get the total number of files and how many of them were active across all group sites associated with an Office 365 Group.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## Permissions
 

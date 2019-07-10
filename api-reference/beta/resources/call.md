@@ -137,7 +137,8 @@ The following is a JSON representation of the resource.
 }
 ```
 
-> **Note:** You will find join URL from a meeting scheduled with Microsoft Teams. Here's how to extract the data from the URL and fill `chatInfo` and `meetingInfo`.
+> [!NOTE]
+> You will find join URL from a meeting scheduled with Microsoft Teams. Here's how to extract the data from the URL and fill `chatInfo` and `meetingInfo`.
 
 ```http
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%224b444206-207c-42f8-92a6-e332b41c88a2%22%7d

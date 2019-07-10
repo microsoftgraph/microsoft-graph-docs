@@ -12,7 +12,8 @@ ms.prod: "education"
 
 Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.
 
-> **Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.
+> [!NOTE]
+> Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.
 
 This resource is member of the following data providers:
 

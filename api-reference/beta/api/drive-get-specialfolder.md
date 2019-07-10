@@ -16,7 +16,8 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.
 
-> **Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
+> [!NOTE]
+>  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
 
 ## Permissions
 
@@ -140,7 +141,8 @@ Content-Type: application/json
 
 ## Remarks
 
-> **Note:** DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.
+> [!NOTE]
+> DriveItems with the `specialFolder` facet indicate the item is a special folder and can be accessed via the `special` collection.
 
 If your app has read-only permissions, the request to get a special folder or
 the children of a special folder may fail with a `404 Not Found` or a `403 Forbidden`

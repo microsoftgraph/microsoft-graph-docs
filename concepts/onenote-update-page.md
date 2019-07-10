@@ -119,7 +119,8 @@ Microsoft Graph generates **id** values for the elements on the page that can be
 
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
-> **Note:**
+> [!NOTE]
+>
 > The API discards all **id** values that are defined in the [input HTML](onenote-input-output-html.md) of create-page and update-page requests.
 
 The following example shows generated IDs for a paragraph and an image in the [output HTML](onenote-input-output-html.md) of a page.
@@ -460,7 +461,8 @@ The `version` segment in the URL represents the version of Microsoft Graph that 
 `me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).
 
 
-> **Note:**
+> [!NOTE]
+>
 > You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.
 
 

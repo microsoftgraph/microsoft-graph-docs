@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 
 ## Permissions
 
@@ -168,7 +169,8 @@ GET https://graph.microsoft.com/beta/reports/getYammerActivityUserCounts(period=
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

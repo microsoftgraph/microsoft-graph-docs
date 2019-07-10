@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # Delete managedEBookAssignment
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Deletes a [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
 

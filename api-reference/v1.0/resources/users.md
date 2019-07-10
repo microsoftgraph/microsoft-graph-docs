@@ -52,7 +52,8 @@ For details and a list of all the properties, see the [user](user.md) object.
 
 ## Common operations
 
-> **Note:** Some of these operations require additional permissions.
+> [!NOTE]
+> Some of these operations require additional permissions.
 
 | Path    | Description |
 |:---------|:-------------|

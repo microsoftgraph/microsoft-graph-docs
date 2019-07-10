@@ -27,7 +27,8 @@ Subscribes a listener application to receive notifications when the requested ty
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
+> [!NOTE]
+> There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
 
 - On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 

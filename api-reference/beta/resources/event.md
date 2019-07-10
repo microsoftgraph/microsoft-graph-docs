@@ -18,7 +18,8 @@ This resource supports:
 - Subscribing to [change notifications](/graph/webhooks).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/event-delta.md) function.
 
-> **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
+> [!NOTE]
+> There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
 
  - You can organize only user calendars in a [calendarGroup](calendargroup.md).
  - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.

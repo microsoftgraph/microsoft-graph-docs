@@ -8,7 +8,8 @@ ms.prod: "intune"
 
 # How to protect your company app data with Microsoft Intune
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> [!NOTE]
+> Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 

@@ -112,7 +112,8 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
-> **Note:** Multi-value properties are not supported.
+> [!NOTE]
+> Multi-value properties are not supported.
 
 ### Azure AD directory schema extensions
 

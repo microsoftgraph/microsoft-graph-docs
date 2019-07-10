@@ -12,7 +12,8 @@ ms.prod: "education"
 
 Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory.
 
-> **Note:** If you have directory sync turned on to sync between on-premises Active Directory and Azure Active Directory (Azure AD), use the [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) resource instead.
+> [!NOTE]
+> If you have directory sync turned on to sync between on-premises Active Directory and Azure Active Directory (Azure AD), use the [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) resource instead.
 
 Derived from [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md).
 

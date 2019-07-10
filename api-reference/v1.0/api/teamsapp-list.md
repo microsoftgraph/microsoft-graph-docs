@@ -15,7 +15,8 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
-> **Note:** Only global administrators can call this API.
+> [!NOTE]
+> Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
@@ -45,7 +46,8 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 
 None.
 
-> **Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
+> [!NOTE]
+> You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Response
 

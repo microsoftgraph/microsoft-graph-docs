@@ -21,7 +21,8 @@ Parameters for ducking of other sources (phasing in and out of other sources.)
 | rampInactive  | Int64    | The amount of time (in milliseconds) it takes for ducked sources to "fade in".  |
 | upperLevel    | Int64    | The volume of sources in percent when the sources are not being ducked.         |
 
-> **Note:** Ramp duration cannot be more than 5,000 milliseconds.
+> [!NOTE]
+> Ramp duration cannot be more than 5,000 milliseconds.
 
 ## JSON representation
 

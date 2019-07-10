@@ -12,7 +12,8 @@ author: "dkershaw10"
 Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
 in a new or existing instance of a supported resource.
 
-> **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
+> [!NOTE]
+> If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## Permissions
 

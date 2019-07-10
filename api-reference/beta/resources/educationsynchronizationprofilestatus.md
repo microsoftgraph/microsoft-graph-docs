@@ -12,7 +12,8 @@ ms.prod: "education"
 
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md). 
 
-> **Note:** Updates to the **educationSynchronizationProfileStatus** might be delayed due to the asynchronous nature of background sync processing.
+> [!NOTE]
+> Updates to the **educationSynchronizationProfileStatus** might be delayed due to the asynchronous nature of background sync processing.
 
 ## Methods
 

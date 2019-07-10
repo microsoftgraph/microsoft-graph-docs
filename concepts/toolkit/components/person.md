@@ -107,7 +107,8 @@ This control uses the following Microsoft Graph APIs and permissions.
 | [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | `Contacts.Read` |
 | [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `User.ReadBasic.All` |
 
-> **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
+> [!NOTE]
+> to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 
 ## Authentication
 

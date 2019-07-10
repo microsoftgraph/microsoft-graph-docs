@@ -89,7 +89,8 @@ You can use the [Microsoft Graph Calls SDK](https://microsoftgraph.github.io/mic
 
 The Media SDK allows the bot to send and receive audio, video, and video-based screen sharing content. Video-based screen sharing is modeled as a video channel. The bot can subscribe to the mixed audio channel and multiple video channels. For the video channel, the bot has a choice to send and receive video as an encoded H.264 stream or as decoded raw frames.
 
-> **Note:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+> [!NOTE]
+> You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
 
 ## See also
 

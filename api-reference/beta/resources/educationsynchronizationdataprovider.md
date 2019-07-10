@@ -12,7 +12,8 @@ ms.prod: "education"
 
 Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema.
 
-> **Note:** This complex type is abstract. Refer to the specific types of data providers listed.
+> [!NOTE]
+> This complex type is abstract. Refer to the specific types of data providers listed.
 
 ## Derived types
 | Type | Description |

@@ -21,7 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                                                                           |
 | Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.
+> [!NOTE]
+> For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,8 @@ POST /applications/{id}/calls
 ## Request body
 In the request body, supply a JSON representation of a [call](../resources/call.md) object.
 
-> **Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.
+> [!NOTE]
+> Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.
@@ -47,7 +49,8 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 ### Create peer to peer VOIP call with service hosted media
 
-> **Note:** This call needs the Calls.Initiate.All permission.
+> [!NOTE]
+> This call needs the Calls.Initiate.All permission.
 
 ##### Request
 The following example shows the request.
@@ -110,7 +113,8 @@ Content-Type: application/json
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -273,7 +277,8 @@ Content-Type: application/json
 
 ### Create group call with service hosted media
 
-> **Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.
+> [!NOTE]
+> This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.
 
 ##### Request
 
@@ -339,7 +344,8 @@ Content-Type: application/json
 
 ### Join private meeting with service hosted media
 
-> **Note:** This example needs the Calls.JoinGroupCalls.All permission.
+> [!NOTE]
+> This example needs the Calls.JoinGroupCalls.All permission.
 
 ##### Request
 
@@ -395,7 +401,8 @@ Content-Type: application/json
 
 ### Join channel meeting with service hosted media
 
-> **Note:** This example needs the Calls.JoinGroupCalls.All permission.
+> [!NOTE]
+> This example needs the Calls.JoinGroupCalls.All permission.
 
 ##### Request
 
@@ -452,7 +459,8 @@ Content-Type: application/json
 
 ### Join channel meeting as a guest with service hosted media
 
-> **Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.
+> [!NOTE]
+> This example needs the Calls.JoinGroupCallsAsGuest.All permission.
 
 ##### Request
 

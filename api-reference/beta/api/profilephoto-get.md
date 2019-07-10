@@ -23,7 +23,8 @@ If the specified size is not available in the user's mailbox or in Azure Active 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-> **Note:** The GET photo method in beta supports a user's work, school, or personal accounts. The GET photo metadata method, however, supports only the user's work or school accounts and not personal accounts.
+> [!NOTE]
+> The GET photo method in beta supports a user's work, school, or personal accounts. The GET photo metadata method, however, supports only the user's work or school accounts and not personal accounts.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)  <br /> **Note**: Metadata operation is not supported. | For **user** resource:<br/>User.Read, User.ReadWrite<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 |Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Note:**  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
+> [!NOTE]
+>  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request 
 

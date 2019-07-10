@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Get the count of user mailboxes in each quota category.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
 
 ## Permissions
 
@@ -170,7 +171,8 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageQuotaStatusMailboxCo
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

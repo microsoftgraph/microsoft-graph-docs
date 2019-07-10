@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # windowsUserAccountControlSettings enum type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Possible values for Windows user account control settings.
 

@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get the trend on the amount of storage you are using in OneDrive for Business.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business usage](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - OneDrive for Business usage](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
 ## Permissions
 

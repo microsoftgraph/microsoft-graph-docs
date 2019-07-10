@@ -10,7 +10,8 @@ author: "pranoychaudhuri"
 
 Get the total storage used across all group mailboxes and group sites.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## Permissions
 

@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # Delete deviceInstallState
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Deletes a [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 

@@ -11,7 +11,8 @@ The reference content in this section documents the Microsoft Graph beta endpoin
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - For feedback on the Preview APIs. Tag with `beta`.
 - [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - For questions or help with your code. Tag with `microsoftgraph`.
 
-> **Note:** The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps. 
+> [!NOTE]
+> The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps. 
 
 ## Call the beta endpoint
 

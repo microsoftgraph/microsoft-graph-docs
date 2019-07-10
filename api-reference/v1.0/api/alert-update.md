@@ -22,7 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-> **Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.
+> [!NOTE]
+> You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -161,7 +162,8 @@ Prefer: return=representation
 
 The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

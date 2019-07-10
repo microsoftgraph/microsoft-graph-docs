@@ -8,7 +8,8 @@ ms.prod: "intune"
 
 # getEffectivePermissions function
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Retrieves the effective permissions of the currently authenticated user
 

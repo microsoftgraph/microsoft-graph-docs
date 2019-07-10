@@ -38,7 +38,8 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 - `me` is for OneNote content that the current user can access (owned and shared).
 - `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [users](users.md) API.
-> **Note:**
+> [!NOTE]
+>
 > You can get user IDs by making a GET request on `https://graph.microsoft.com/v1.0/users`.
 
 ### Group notebooks

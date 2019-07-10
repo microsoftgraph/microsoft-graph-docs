@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # windows10EnterpriseModernAppManagementConfiguration resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Windows10 Enterprise Modern App Management Configuration.
 

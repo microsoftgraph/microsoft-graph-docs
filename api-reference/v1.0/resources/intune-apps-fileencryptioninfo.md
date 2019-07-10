@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # fileEncryptionInfo resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for file encryption information for the content version of a line of business app.
 

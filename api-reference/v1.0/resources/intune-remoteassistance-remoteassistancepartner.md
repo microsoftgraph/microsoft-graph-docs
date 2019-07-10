@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # remoteAssistancePartner resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
 

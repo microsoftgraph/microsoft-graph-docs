@@ -54,7 +54,8 @@ You can request that Microsoft Graph return immutable IDs in [delta query respon
 
 If you've already got a database filled with thousands of regular IDs, you can migrate those IDs to immutable format using the [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta) function. You can provide an array of up to 1000 IDs to be translated into a target format.
 
-> **Note:** You can also use `translateExchangeIds` to migrate Exchange Web Services applications to Microsoft Graph.
+> [!NOTE]
+> You can also use `translateExchangeIds` to migrate Exchange Web Services applications to Microsoft Graph.
 
 ### Example
 

@@ -8,7 +8,8 @@ ms.prod: "Intune"
 
 # ipRange resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 IP range base class for representing IPV4, IPV6 address ranges
 

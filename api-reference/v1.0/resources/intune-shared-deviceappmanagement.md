@@ -8,7 +8,8 @@ ms.prod: "intune"
 
 # deviceAppManagement resource type
 
-> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+> [!NOTE]
+> The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Singleton entity that acts as a container for all device app management functionality.
 ## Methods

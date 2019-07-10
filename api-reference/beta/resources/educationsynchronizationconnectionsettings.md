@@ -12,7 +12,8 @@ ms.prod: "education"
 
 Represents the provider connection settings. This allows the system to know how to connect to the provider APIs. 
 
-> **Note:** This complex type is abstract. Refer to the specific types of connection settings listed.
+> [!NOTE]
+> This complex type is abstract. Refer to the specific types of connection settings listed.
 
 ## Derived types
 | Type | Description | 

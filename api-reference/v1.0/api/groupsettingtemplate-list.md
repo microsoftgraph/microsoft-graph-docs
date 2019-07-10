@@ -29,7 +29,8 @@ GET /groupSettingTemplates
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
-> **Note:** $filter is not supported.
+> [!NOTE]
+> $filter is not supported.
 
 ## Request headers
 | Name | Description |

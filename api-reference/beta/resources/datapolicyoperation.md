@@ -18,7 +18,8 @@ Represents a submitted data policy operation. It contains necessary information 
 
 ## Properties
 
-> **Note:** All properties of this resource are read-only.
+> [!NOTE]
+> All properties of this resource are read-only.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -169,7 +169,8 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when the resource changes. Notification are sent only for the changes of the type specified in the subscription, for example, `created`.
 
-> **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple notifications with different subscription IDs. There is no guarantee that all notifications in the POST will belong to a single subscription.
+> [!NOTE]
+> When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple notifications with different subscription IDs. There is no guarantee that all notifications in the POST will belong to a single subscription.
 
 ### Notification properties
 
@@ -193,7 +194,8 @@ For example, for Outlook resources, `resourceData` contains the following fields
 | @odata.etag | string | The HTTP entity tag that represents the version of the object. |
 | id | string | The identifier of the object. |
 
-> **Note:** The `id` value provided in `resourceData` is valid at the time the notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the notification is processed.
+> [!NOTE]
+> The `id` value provided in `resourceData` is valid at the time the notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the notification is processed.
 
 ### Notification example
 

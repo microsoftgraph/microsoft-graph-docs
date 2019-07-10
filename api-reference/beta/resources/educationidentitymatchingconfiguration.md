@@ -12,7 +12,8 @@ ms.prod: "education"
 
 Defines the settings for matching school data profile identities. These identities include students and teachers. Based on these settings, the users will be updated in the directory.
 
-> **Note:** No users are created when this resource is selected.
+> [!NOTE]
+> No users are created when this resource is selected.
 
 ## Properties
 

@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## Permissions
 
@@ -168,7 +169,8 @@ GET https://graph.microsoft.com/beta/reports/getEmailActivityCounts(period='D7')
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

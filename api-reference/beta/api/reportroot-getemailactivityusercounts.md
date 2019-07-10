@@ -12,7 +12,8 @@ author: "pranoychaudhuri"
 
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
+> [!NOTE]
+> For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## Permissions
 
@@ -168,7 +169,8 @@ GET https://graph.microsoft.com/beta/reports/getEmailActivityUserCounts(period='
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
