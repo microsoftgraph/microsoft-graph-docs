@@ -1,52 +1,79 @@
 ---
-title: journal resource type 
-description: A journal in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "journal resource type"
+description: "Represents an journal object in Dynamics 365 Business Central."
 localization_priority: Normal
+author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
+doc_type: "resourcePageType"
 ---
 
 # journal resource type
-Represents a journal in Dynamics 365 Business Central.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents an journal object in Dynamics 365 Business Central.
 
 ## Methods
 
-| Method                                            |Return Type|Description    |
-|:--------------------------------------------------|:----------|:--------------|
-|[Get journal](../api/dynamics-journal-get.md)      |journal    |Gets a journal.   |
-|[Post journal](../api/dynamics-create-journal.md)  |journal    |Creates a journal.|
-|[Patch journal](../api/dynamics-journal-update.md) |journal    |Updates a journal.|
-|[Delete journal](../api/dynamics-journal-delete.md)|none       |Deletes a journal.|
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get journal](../api/dynamics-journal-get.md) | [journal](dynamics-journal.md) | Read properties and relationships of journal object. |
+| [Create journalLine](../api/dynamics-journal-post-journallines.md) | [journalLine](dynamics-journalline.md) | Create a new journalLine by posting to the journalLines collection. |
+| [List journalLines](../api/dynamics-journal-list-journallines.md) | [journalLine](dynamics-journalline.md) collection | Get a journalLine object collection. |
+| [Update](../api/dynamics-journal-update.md) | [journal](dynamics-journal.md) | Update journal object. |
+| [Delete](../api/dynamics-journal-delete.md) | None | Delete journal object. |
+|[Post](../api/dynamics-journal-post.md)|None||
 
 ## Properties
-| Property	         | Type	                 |Description                                           |
-|:-------------------|:----------------------|:-----------------------------------------------------|
-|id                  |GUID                   |The unique ID of the journal. Non-editable.           |
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id                  |string                 |The unique ID of the journal. Non-editable.           |
 |code                |string, maximum size 10| The code of the journal.                             |
 |displayName         |string, maximum size 50| The display name of the journal.                     |
+|balancingAccountId|Guid|Id of the balancing account.                                               |
+|balancingAccountNumber|String|Account number of the balancing account.                             |
 |lastModifiedDateTime|datetime               |The last datetime the journal was modified. Read-Only.|
 
-## Bound actions
-The journal resource type offers a bound action called `post` which posts the corresponding general journal batch.
 
-Posting the general journal batch is illustrated in the following example:  
-`POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
+## Relationships
 
-The response has no content; the response code is 204.
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|account|[account](dynamics-account.md)| Read-only. Nullable.|
+|journalLines|[journalLine](dynamics-journalline.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.journal",
+  "baseType": "",
+  "keyProperty": "id"
+}-->
 
 ```json
 {
-  "id": "GUID",
-  "code": "string",
-  "displayName": "string",
-  "lastModifiedDateTime": "datetime"
+  "balancingAccountId": "Guid",
+  "balancingAccountNumber": "String",
+  "code": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "journal resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

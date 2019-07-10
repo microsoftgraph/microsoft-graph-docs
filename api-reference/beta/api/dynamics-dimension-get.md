@@ -1,66 +1,98 @@
 ---
-title: Get dimensions 
-description: Gets a dimension object in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "Get dimension"
+description: "Retrieve the properties and relationships of dimension object."
 localization_priority: Normal
+author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
+doc_type: "apiPageType"
 ---
 
-# Get dimensions
-Retrieve the properties and relationships of a **dimensions** object for Dynamics 365 Business Central.
+# Get dimension
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve the properties and relationships of dimension object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type |Permissions (from least to most privileged)|
-|:---------------|:------------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Financials.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
 
-```
-GET /financials/companies('{id}')/dimensions('{id}')
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /financials/companies/{id}/dimensions/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-|Header|Value|
-|------|-----|
-|Authorization  |Bearer {token}. Required. |
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer {token} |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a **dimensions** object in the response body.
 
-## Example
+If successful, this method returns a `200 OK` response code and the requested [dimension](../resources/dynamics-dimension.md) object in the response body.
 
-**Request**
+## Examples
 
-Here is an example of the request.
-```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/dimensions('{id}')
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_dimension"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following is an example of the response.
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-```json
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.dimension"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "id-value",
-  "code": "AREA",
-  "displayName": "Area",
-  "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
+  "code": "code-value",
+  "displayName": "displayName-value",
+  "lastModifiedDateTime": "datetime-value"
 }
 ```
 
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get dimension",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
