@@ -2,7 +2,7 @@
 title: "generalLedgerEntry resource type"
 description: "Represents an generalLedgerEntry object in Dynamics 365 Business Central."
 localization_priority: Normal
-author: SusanneWindfeldPedersen, henrikwh
+author: henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---

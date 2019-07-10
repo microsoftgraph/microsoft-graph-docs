@@ -2,7 +2,7 @@
 title: "currency resource type"
 description: "Represents an currency object in Dynamics 365 Business Central."
 localization_priority: Normal
-author: SusanneWindfeldPedersen, henrikwh
+author: henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---

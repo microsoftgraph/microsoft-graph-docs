@@ -2,7 +2,7 @@
 title: "salesInvoice: cancel"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: SusanneWindfeldPedersen, henrikwh
+author: henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

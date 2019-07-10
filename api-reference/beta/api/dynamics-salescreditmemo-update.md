@@ -2,7 +2,7 @@
 title: "Update salescreditmemo"
 description: "Update the properties of salescreditmemo object."
 localization_priority: Normal
-author: SusanneWindfeldPedersen, henrikwh
+author: henrikwh
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---
