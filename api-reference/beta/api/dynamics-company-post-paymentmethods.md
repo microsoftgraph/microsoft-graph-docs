@@ -39,7 +39,7 @@ POST /financials/companies/{id}/paymentMethods
 
 ## Request body
 
-In the request body, supply a JSON representation of [paymentMethod](../resources/paymentmethod.md) object.
+In the request body, supply a JSON representation of [paymentMethod](../resources/dynamics-paymentmethod.md) object.
 
 ## Response
 

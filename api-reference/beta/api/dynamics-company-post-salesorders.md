@@ -39,7 +39,7 @@ POST /financials/companies/{id}/salesOrders
 
 ## Request body
 
-In the request body, supply a JSON representation of [salesOrder](../resources/salesorder.md) object.
+In the request body, supply a JSON representation of [salesOrder](../resources/dynamics-salesorder.md) object.
 
 ## Response
 

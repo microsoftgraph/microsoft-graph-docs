@@ -39,7 +39,7 @@ POST /financials/companies/{id}/employees
 
 ## Request body
 
-In the request body, supply a JSON representation of [employee](../resources/employee.md) object.
+In the request body, supply a JSON representation of [employee](../resources/dynamics-employee.md) object.
 
 ## Response
 

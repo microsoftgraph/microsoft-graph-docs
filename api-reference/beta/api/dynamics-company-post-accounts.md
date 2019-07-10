@@ -39,7 +39,7 @@ POST /financials/companies/{id}/accounts
 
 ## Request body
 
-In the request body, supply a JSON representation of [account](../resources/account.md) object.
+In the request body, supply a JSON representation of [account](../resources/dynamics-account.md) object.
 
 ## Response
 

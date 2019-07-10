@@ -39,7 +39,7 @@ POST /financials/companies/{id}/unitsOfMeasure
 
 ## Request body
 
-In the request body, supply a JSON representation of [unitOfMeasure](../resources/unitofmeasure.md) object.
+In the request body, supply a JSON representation of [unitOfMeasure](../resources/dynamics-unitofmeasure.md) object.
 
 ## Response
 

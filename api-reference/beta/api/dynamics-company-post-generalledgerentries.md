@@ -39,7 +39,7 @@ POST /financials/companies/{id}/generalLedgerEntries
 
 ## Request body
 
-In the request body, supply a JSON representation of [generalLedgerEntry](../resources/generalledgerentry.md) object.
+In the request body, supply a JSON representation of [generalLedgerEntry](../resources/dynamics-generalledgerentry.md) object.
 
 ## Response
 

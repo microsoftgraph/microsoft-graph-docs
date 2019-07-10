@@ -39,7 +39,7 @@ POST /financials/companies/{id}/salesCreditMemos
 
 ## Request body
 
-In the request body, supply a JSON representation of [salesCreditMemo](../resources/salescreditmemo.md) object.
+In the request body, supply a JSON representation of [salesCreditMemo](../resources/dynamics-salescreditmemo.md) object.
 
 ## Response
 

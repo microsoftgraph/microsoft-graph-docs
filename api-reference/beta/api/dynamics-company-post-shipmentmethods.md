@@ -39,7 +39,7 @@ POST /financials/companies/{id}/shipmentMethods
 
 ## Request body
 
-In the request body, supply a JSON representation of [shipmentMethod](../resources/shipmentmethod.md) object.
+In the request body, supply a JSON representation of [shipmentMethod](../resources/dynamics-shipmentmethod.md) object.
 
 ## Response
 

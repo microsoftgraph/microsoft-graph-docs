@@ -39,7 +39,7 @@ POST /financials/companies/{id}/countriesRegions
 
 ## Request body
 
-In the request body, supply a JSON representation of [countryRegion](../resources/countryregion.md) object.
+In the request body, supply a JSON representation of [countryRegion](../resources/dynamics-countryregion.md) object.
 
 ## Response
 

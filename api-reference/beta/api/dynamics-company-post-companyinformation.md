@@ -39,7 +39,7 @@ POST /financials/companies/{id}/companyInformation
 
 ## Request body
 
-In the request body, supply a JSON representation of [companyInformation](../resources/companyinformation.md) object.
+In the request body, supply a JSON representation of [companyInformation](../resources/dynamics-companyinformation.md) object.
 
 ## Response
 

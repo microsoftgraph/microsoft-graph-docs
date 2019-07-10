@@ -39,7 +39,7 @@ POST /financials/companies/{id}/vendors
 
 ## Request body
 
-In the request body, supply a JSON representation of [vendor](../resources/vendor.md) object.
+In the request body, supply a JSON representation of [vendor](../resources/dynamics-vendor.md) object.
 
 ## Response
 

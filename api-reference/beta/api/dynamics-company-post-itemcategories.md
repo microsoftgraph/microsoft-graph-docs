@@ -39,7 +39,7 @@ POST /financials/companies/{id}/itemCategories
 
 ## Request body
 
-In the request body, supply a JSON representation of [itemCategory](../resources/itemcategory.md) object.
+In the request body, supply a JSON representation of [itemCategory](../resources/dynamics-itemcategory.md) object.
 
 ## Response
 

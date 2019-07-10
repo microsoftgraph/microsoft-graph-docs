@@ -39,7 +39,7 @@ POST /financials/companies/{id}/taxGroups
 
 ## Request body
 
-In the request body, supply a JSON representation of [taxGroup](../resources/taxgroup.md) object.
+In the request body, supply a JSON representation of [taxGroup](../resources/dynamics-taxgroup.md) object.
 
 ## Response
 

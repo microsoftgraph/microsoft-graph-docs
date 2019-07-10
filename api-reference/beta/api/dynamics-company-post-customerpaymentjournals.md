@@ -39,7 +39,7 @@ POST /financials/companies/{id}/customerPaymentJournals
 
 ## Request body
 
-In the request body, supply a JSON representation of [customerPaymentJournal](../resources/customerpaymentjournal.md) object.
+In the request body, supply a JSON representation of [customerPaymentJournal](../resources/dynamics-customerpaymentjournal.md) object.
 
 ## Response
 

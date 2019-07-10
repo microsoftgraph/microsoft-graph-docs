@@ -39,7 +39,7 @@ POST /financials/companies/{id}/journals
 
 ## Request body
 
-In the request body, supply a JSON representation of [journal](../resources/journal.md) object.
+In the request body, supply a JSON representation of [journal](../resources/dynamics-journal.md) object.
 
 ## Response
 

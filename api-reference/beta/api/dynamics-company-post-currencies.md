@@ -39,7 +39,7 @@ POST /financials/companies/{id}/currencies
 
 ## Request body
 
-In the request body, supply a JSON representation of [currency](../resources/currency.md) object.
+In the request body, supply a JSON representation of [currency](../resources/dynamics-currency.md) object.
 
 ## Response
 

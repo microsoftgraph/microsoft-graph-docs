@@ -39,7 +39,7 @@ POST /financials/companies/{id}/agedAccountsReceivable
 
 ## Request body
 
-In the request body, supply a JSON representation of [agedAccountsReceivable](../resources/agedaccountsreceivable.md) object.
+In the request body, supply a JSON representation of [agedAccountsReceivable](../resources/dynamics-agedaccountsreceivable.md) object.
 
 ## Response
 

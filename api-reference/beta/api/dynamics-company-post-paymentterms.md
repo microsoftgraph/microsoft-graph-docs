@@ -39,7 +39,7 @@ POST /financials/companies/{id}/paymentTerms
 
 ## Request body
 
-In the request body, supply a JSON representation of [paymentTerm](../resources/paymentterm.md) object.
+In the request body, supply a JSON representation of [paymentTerm](../resources/dynamics-paymentterm.md) object.
 
 ## Response
 

@@ -39,7 +39,7 @@ POST /financials/companies/{id}/dimensions
 
 ## Request body
 
-In the request body, supply a JSON representation of [dimension](../resources/dimension.md) object.
+In the request body, supply a JSON representation of [dimension](../resources/dynamics-dimension.md) object.
 
 ## Response
 

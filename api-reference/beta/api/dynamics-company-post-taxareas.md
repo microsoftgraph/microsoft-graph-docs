@@ -39,7 +39,7 @@ POST /financials/companies/{id}/taxAreas
 
 ## Request body
 
-In the request body, supply a JSON representation of [taxArea](../resources/taxarea.md) object.
+In the request body, supply a JSON representation of [taxArea](../resources/dynamics-taxarea.md) object.
 
 ## Response
 
