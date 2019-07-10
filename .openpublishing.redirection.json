@@ -26774,6 +26774,16 @@
             "source_path": "concepts/training.md",
             "redirect_url": "/graph/tutorials",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/beta/index.md",
+            "redirect_url": "/graph/api/overview?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference/v1.0/index.md",
+            "redirect_url": "/graph/api/overview?view=graph-rest-1.0",
+            "redirect_document_id": true
         }
     ]
 }
