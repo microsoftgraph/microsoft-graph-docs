@@ -1,27 +1,21 @@
 ---
-title: "agedAccountsPayable resource type"
-description: "Represents an agedAccountsPayable object in Dynamics 365 Business Central."
+title: agedAccountsPayable resource type 
+description: An aged accounts payable object in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "resourcePageType"
 ---
 
 # agedAccountsPayable resource type
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents an agedAccountsPayable object in Dynamics 365 Business Central.
+Represents an agedAccountsPayable object in Dynamics 365 Business Central, which is showing the aging of a vendor account.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get agedAccountsPayable](../api/dynamics-agedaccountspayable-get.md) | [agedAccountsPayable](dynamics-agedaccountspayable.md) | Read properties and relationships of agedAccountsPayable object. |
-| [Update](../api/dynamics-agedaccountspayable-update.md) | [agedAccountsPayable](dynamics-agedaccountspayable.md) | Update agedAccountsPayable object. |
-| [Delete](../api/dynamics-agedaccountspayable-delete.md) | None | Delete agedAccountsPayable object. |
-
-## Properties
+| Method         | Return Type  |Description|
+|:---------------|:-------------|:----------|
+|[Get agedAccountsPayable](../api/dynamics-agedaccountspayable-get.md)|agedAccountsPayable|Get agedAccountsPayable object|
 
 ## Properties
 | Property	    | Type	   |Description                                 |
@@ -40,45 +34,26 @@ Represents an agedAccountsPayable object in Dynamics 365 Business Central.
 
 
 ## Relationships
-
 None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.agedAccountsPayable",
-  "baseType": "",
-  "keyProperty": "vendorId"
-}-->
 
 ```json
 {
-  "agedAsOfDate": "String (timestamp)",
-  "balanceDue": 1024,
-  "currencyCode": "String",
-  "currentAmount": 1024,
-  "name": "String",
-  "period1Amount": 1024,
-  "period2Amount": 1024,
-  "period3Amount": 1024,
-  "periodLengthFilter": "String",
-  "vendorId": "String (identifier)",
-  "vendorNumber": "String"
+    "vendorId": "GUID",
+    "vendorNumber": "string",
+    "name": "string",
+    "currencyCode": "string",
+    "balanceDue": "decimal",
+    "currentAmount": "decimal",
+    "period1Amount": "decimal",
+    "period2Amount": "decimal",
+    "period3Amount": "decimal",
+    "agedAsOfDate": "date",
+    "periodLengthFilter": "string"
 }
-```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "agedAccountsPayable resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+```

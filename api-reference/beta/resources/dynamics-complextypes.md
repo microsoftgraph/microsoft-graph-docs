@@ -8,8 +8,6 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
-<!-- To be redirected -->
-
 # complex types JSON
 These are the various complex types in Dynamics 365 Business Central. You can see usage of these complex types in the various individual methods that make use of them.
 

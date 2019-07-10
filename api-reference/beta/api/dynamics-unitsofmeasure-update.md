@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-<!-- To be redirected -->
+
 # Update unitsOfMeasure
 Update the properties of a units of measure object for Dynamics 365 Business Central.
 

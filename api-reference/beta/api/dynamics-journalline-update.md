@@ -1,119 +1,81 @@
 ---
-title: "Update journalline"
-description: "Update the properties of journalline object."
+title: Update journalLines 
+description: Updates a journal line in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "apiPageType"
 ---
 
-# Update journalline
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of journalline object.
+# Update journalLines
+Update the properties of a journal lines object for Dynamics 365 Business Central.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-PATCH /financials/companies/{id}/journals/{id}/journalLines/{id}
+```
+PATCH /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
 ```
 
-## Request headers
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token} |
+## Request headers
+| Header       | Value                    |
+|--------------|--------------------------|
+|Authorization |Bearer {token}. Required. |
+|Content-Type  |application/json          |
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **journalLines**, the **journalLines** will not be updated. |
 
 ## Request body
-
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|accountId|Guid||
-|accountNumber|String||
-|amount|Decimal||
-|comment|String||
-|description|String||
-|documentNumber|String||
-|externalDocumentNumber|String||
-|journalDisplayName|String||
-|lastModifiedDateTime|DateTimeOffset||
-|lineNumber|Int32||
-|postingDate|Date||
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
+If successful, this method returns a `200 OK` response code and an updated **journalLines** object in the response body.
 
-If successful, this method returns a `200 OK` response code and an updated [journalLine](../resources/dynamics-journalline.md) object in the response body.
+## Example
 
-## Examples
+**Request**
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "update_journalline"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
+Here is an example of the request.
+```json
+PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')/journalLines('{id}')
 Content-type: application/json
 
 {
-  "journalDisplayName": "journalDisplayName-value",
-  "lineNumber": 99,
-  "accountId": "accountId-value",
-  "accountNumber": "accountNumber-value",
-  "postingDate": "datetime-value"
+  "amount": 2000
 }
 ```
 
-### Response
+**Response**
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.journalLine"
-} -->
-
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
   "id": "id-value",
-  "journalDisplayName": "journalDisplayName-value",
-  "lineNumber": 99,
-  "accountId": "accountId-value",
-  "accountNumber": "accountNumber-value",
-  "postingDate": "datetime-value"
+  "journalDisplayName": "DEFAULT",
+  "lineNumber": 10000,
+  "accountId": "",
+  "accountNumber": "",
+  "postingDate": "2015-12-31",
+  "documentNumber": "D00001",
+  "externalDocumentNumber": "",
+  "amount": 2000,
+  "description": "",
+  "comment": "",
+  "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update journalline",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

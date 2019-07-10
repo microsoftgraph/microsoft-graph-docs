@@ -1,106 +1,86 @@
 ---
-title: "Get vendor"
-description: "Retrieve the properties and relationships of vendor object."
+title: Get vendors 
+description: Gets a vendor object in Dynamics 365 Business Central. 
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "apiPageType"
 ---
 
-# Get vendor
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of vendor object.
+# Get vendors
+Retrieve the properties and relationships of a vendor object for Dynamics 365 Business Central.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /financials/companies/{id}/vendors/{id}
+```
+GET /financials/companies('{id}')/vendors('{id}')
 ```
 
 ## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
+If successful, this method returns a `200 OK` response code and a **vendors** object in the response body.
 
-If successful, this method returns a `200 OK` response code and the requested [vendor](../resources/dynamics-vendor.md) object in the response body.
+## Example
 
-## Examples
+**Request**
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_vendor"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
+Here is an example of the request.
+```json
+GET https://graph.microsoft.com/beta/financials/companies('{id}')/vendors('{id}')
 ```
 
-### Response
+**Response**
 
-The following is an example of the response.
+Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.vendor"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
+```json
 {
   "id": "id-value",
-  "number": "number-value",
-  "displayName": "displayName-value",
+  "number": "40000",
+  "displayName": "Wide World Importers",
   "address": {
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryLetterCode": "countryLetterCode-value",
-    "postalCode": "postalCode-value"
+    "street": "51 Radcroft Road",
+    "city": "Atlanta",
+    "state": "GA",
+    "countryLetterCode": "US",
+    "postalCode": "31772"
   },
-  "phoneNumber": "phoneNumber-value",
-  "email": "email-value"
+  "phoneNumber": "",
+  "email": "toby.rhode@cronuscorp.net",
+  "website": "",
+  "taxRegistrationNumber": "",
+  "currencyId": "id-value",
+  "currencyCode": "USD",
+  "irs1099Code": "",
+  "paymentTermsId": "id-value",
+  "paymentMethodId": "id-value",
+  "taxLiable": true,
+  "blocked": " ",
+  "balance": 0,
+  "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get vendor",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

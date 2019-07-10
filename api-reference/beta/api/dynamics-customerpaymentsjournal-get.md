@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-<!-- To be redirected -->
+
 # Get customerPaymentJournals
 Retrieve the properties and relationships of a customer payment journal object for Dynamics 365 Business Central.
 

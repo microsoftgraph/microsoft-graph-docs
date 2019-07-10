@@ -1,45 +1,29 @@
 ---
-title: "journalLine resource type"
-description: "Represents an journalLine object in Dynamics 365 Business Central."
+title: journalLines resource type 
+description: A journal line in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "resourcePageType"
 ---
 
-# journalLine resource type
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents an journalLine object in Dynamics 365 Business Central.
+# journalLines resource type
+Represents a line in a journal in Dynamics 365 Business Central.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get journalLine](../api/dynamics-journalline-get.md) | [journalLine](dynamics-journalline.md) | Read properties and relationships of journalLine object. |
-| [Update](../api/dynamics-journalline-update.md) | [journalLine](dynamics-journalline.md) | Update journalLine object. |
-| [Delete](../api/dynamics-journalline-delete.md) | None | Delete journalLine object. |
+| Method                                                    | Return Type|Description         |
+|:----------------------------------------------------------|:-----------|:-------------------|
+|[Get journalLines](../api/dynamics-journalline-get.md)      |journalLines|Gets a journal line.   |
+|[Post journalLines](../api/dynamics-create-journalline.md)  |journalLines|Creates a journal line.|
+|[Patch journalLines](../api/dynamics-journalline-update.md) |journalLines|Updates a journal line.|
+|[Delete journalLines](../api/dynamics-journalline-delete.md)|none        |Deletes a journal line.|
 
 ## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|accountId|Guid||
-|accountNumber|String||
-|amount|Decimal||
-|comment|String||
-|description|String||
-|documentNumber|String||
-|externalDocumentNumber|String||
-|id|String| Read-only.|
-|journalDisplayName|String||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|lineNumber|Int32||
-|postingDate|Date||
-
-
-|id                    |string                    |The unique ID of the journal line. Non-editable.                   |
+| Property	           | Type	                |Description                                                        |
+|:---------------------|:-----------------------|:------------------------------------------------------------------|
+|id                    |GUID                    |The unique ID of the journal line. Non-editable.                   |
 |journalDisplayName    |string, maximum size 10 |The display name of the journal that this line belongs to. Read-Only.|
 |lineNumber            |integer                 |The number of the journal line.                                    |
 |accountId             |GUID                    |The unique ID of the account that the journal line is related to.  |
@@ -52,50 +36,32 @@ Represents an journalLine object in Dynamics 365 Business Central.
 |comment               |string, maximum size 250|A user specified comment on the journal line.                      |
 |lastModifiedDateTime  |datetime                |The last datetime the journal line was modified. Read-Only.        |
 
-
 ## Relationships
+A journal line is a subpage of a journal. It cannot be accessed directly.
 
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|account|[account](dynamics-account.md)| Read-only. Nullable.|
+A journal line can be a "Parent Entity" of the dimension lines.
+
+An Account (accountId) must exist in the Accounts table.
+
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.journalLine",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
 
 ```json
 {
-  "accountId": "Guid",
-  "accountNumber": "String",
-  "amount": 1024,
-  "comment": "String",
-  "description": "String",
-  "documentNumber": "String",
-  "externalDocumentNumber": "String",
-  "id": "String (identifier)",
-  "journalDisplayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "lineNumber": 1024,
-  "postingDate": "String (timestamp)"
+    "id": "GUID",
+    "journalDisplayName": "string",
+    "lineNumber": "integer",
+    "accountId": "GUID",
+    "accountNumber": "string",
+    "postingDate": "date",
+    "documentNumber": "string",
+    "externalDocumentNumber": "string",
+    "amount": "decimal",
+    "description": "string",
+    "comment": "string",
+    "lastModifiedDateTime": "datetime"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "journalLine resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -8,8 +8,6 @@ localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
-<!-- To be redirected -->
-
 # customerPaymentsJournals resource type
 Represents a customer payment journal in Dynamics 365 Business Central.
 

@@ -1,100 +1,85 @@
 ---
-title: "Get employee"
-description: "Retrieve the properties and relationships of employee object."
+title: Get employees 
+description: Gets an employee object in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "apiPageType"
 ---
 
-# Get employee
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of employee object.
+# Get employees
+Retrieve the properties and relationships of an employee object for Dynamics 365 Business Central.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /financials/companies/{id}/employees/{id}
+```
+GET /financials/companies('{id}')/employees('{id}')
 ```
 
 ## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
+|Header       |Value                     |
+|-------------|--------------------------|
+|Authorization|Bearer {token}. Required. |
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
+If successful, this method returns a `200 OK` response code and an **employees** object in the response body.
 
-If successful, this method returns a `200 OK` response code and the requested [employee](../resources/dynamics-employee.md) object in the response body.
+**Request**
 
-## Examples
+Here is an example of the request.
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_employee"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
+```json
+GET https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
 ```
 
-### Response
+**Response**
 
-The following is an example of the response.
+Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.employee"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
+```json
 {
   "id": "id-value",
-  "number": "number-value",
-  "displayName": "displayName-value",
-  "givenName": "givenName-value",
-  "middleName": "middleName-value",
-  "surname": "surname-value"
+  "number": "AH",
+  "displayName": "Annette Hill",
+  "givenName": "Annette",
+  "middleName": "",
+  "surname": "Hill",
+  "jobTitle": "Secretary",
+  "address": {
+    "street": "677 Fifth Avenue",
+    "city": "New York",
+    "state": "",
+    "countryLetterCode": "",
+    "postalCode": "10022"
+  },
+  "phoneNumber": "4465-4899-4643",
+  "mobilePhone": "4564-4564-7831",
+  "email": "",
+  "personalEmail": "ah@cronus-demosite.com",
+  "employmentDate": "2001-06-01",
+  "terminationDate": "0001-01-01",
+  "status": "Active",
+  "birthDate": "1973-12-12",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/employees('{id}')/picture",
+  "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"  
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get employee",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

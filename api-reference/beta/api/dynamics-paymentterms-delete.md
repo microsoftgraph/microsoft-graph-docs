@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-<!-- To be redirected -->
+
 # Delete paymentTerms
 Delete a payment terms object from Dynamics 365 Business Central.
 

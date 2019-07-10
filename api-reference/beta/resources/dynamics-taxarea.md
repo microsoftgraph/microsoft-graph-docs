@@ -1,31 +1,28 @@
 ---
-title: "taxArea resource type"
-description: "Represents an taxArea object in Dynamics 365 Business Central."
+title: taxAreas resource type 
+description: A tax area.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "resourcePageType"
 ---
 
-# taxArea resource type
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents an taxArea object in Dynamics 365 Business Central.
+# taxAreas resource type
+Represents a tax area resource type in Dynamics 365 Business Central.
 
 ## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get taxArea](../api/dynamics-taxarea-get.md) | [taxArea](dynamics-taxarea.md) | Read properties and relationships of taxArea object. |
-| [Update](../api/dynamics-taxarea-update.md) | [taxArea](dynamics-taxarea.md) | Update taxArea object. |
-| [Delete](../api/dynamics-taxarea-delete.md) | None | Delete taxArea object. |
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Get taxAreas](../api/dynamics-taxarea-get.md)|taxAreas|Gets a tax area object.|
+|[Post taxAreas](../api/dynamics-create-taxarea.md)|taxAreas|Creates a tax area object.|
+|[Patch taxAreas](../api/dynamics-taxarea-update.md)|taxAreas|Updates a tax area object.|
+|[Delete taxAreas](../api/dynamics-taxarea-delete.md)|none|Deletes a tax area object.|
 
 ## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|string|The unique ID of the tax area. Non-editable.|
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|id|GUID|The unique ID of the tax area. Non-editable.|
 |code|string, maximum size 20| The code of the tax area.|
 |displayName|string, maximum size 50| The display name of the tax area.|
 |taxType|string|The tax type of the tax area.|
@@ -33,38 +30,19 @@ Represents an taxArea object in Dynamics 365 Business Central.
 
 ## Relationships
 
-None
-
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.taxArea",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
 
 ```json
 {
+  "id": "GUID",
   "code": "String",
   "displayName": "String",
-  "id": "String (identifier)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "taxType": "String"
+  "taxType": "String",
+  "lastModifiedDateTime": "datetime"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "taxArea resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

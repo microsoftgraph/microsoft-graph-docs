@@ -1,135 +1,93 @@
 ---
-title: "Update vendor"
-description: "Update the properties of vendor object."
+title: Update vendors 
+description: Updates a vendor object in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "apiPageType"
 ---
 
-# Update vendor
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of vendor object.
+# Update vendors
+Update the properties of a vendor object for Dynamics 365 Business Central.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-PATCH /financials/companies/{id}/vendors/{id}
+```
+PATCH /financials/companies('{id}')/vendors('{id}')
 ```
 
-## Request headers
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token} |
+## Request headers
+|Header|Value|
+|------|-----|
+|Authorization |Bearer {token}. Required.|
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **vendors**, the **vendors** will not be updated. |
 
 ## Request body
-
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|address|postalAddressType||
-|balance|Decimal||
-|blocked|String||
-|currencyCode|String||
-|currencyId|Guid||
-|displayName|String||
-|email|String||
-|lastModifiedDateTime|DateTimeOffset||
-|number|String||
-|paymentMethodId|Guid||
-|paymentTermsId|Guid||
-|phoneNumber|String||
-|taxLiable|Boolean||
-|taxRegistrationNumber|String||
-|website|String||
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
+If successful, this method returns a `200 OK` response code and an updated **vendors** object in the response body.
 
-If successful, this method returns a `200 OK` response code and an updated [vendor](../resources/dynamics-vendor.md) object in the response body.
+## Example
 
-## Examples
+**Request**
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "update_vendor"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
+Here is an example of the request.
+```json
+PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/vendors('{id}')
 Content-type: application/json
 
 {
-  "number": "number-value",
-  "displayName": "displayName-value",
-  "address": {
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryLetterCode": "countryLetterCode-value",
-    "postalCode": "postalCode-value"
-  },
-  "phoneNumber": "phoneNumber-value",
-  "email": "email-value"
+  "displayName": "Wide World Importers Inc.",
+  "blocked": "Payment"
 }
 ```
 
-### Response
+**Response**
 
-The following is an example of the response.
+Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.vendor"
-} -->
-
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
   "id": "id-value",
-  "number": "number-value",
-  "displayName": "displayName-value",
+  "number": "40000",
+  "displayName": "Wide World Importers Inc.",
   "address": {
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryLetterCode": "countryLetterCode-value",
-    "postalCode": "postalCode-value"
+    "street": "51 Radcroft Road",
+    "city": "Atlanta",
+    "state": "GA",
+    "countryLetterCode": "US",
+    "postalCode": "31772"
   },
-  "phoneNumber": "phoneNumber-value",
-  "email": "email-value"
+  "phoneNumber": "",
+  "email": "toby.rhode@cronuscorp.net",
+  "website": "",
+  "taxRegistrationNumber": "",
+  "currencyCode": "USD",
+  "irs1099Code": "",
+  "taxLiable": true,
+  "blocked": "Payment",
+  "balance": 0,
+  "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update vendor",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

@@ -7,7 +7,6 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-<!-- To be redirected -->
 
 # Get companies
 Retrieve the properties and relationships of a companies object for Dynamics 365 Business Central.

@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-<!-- To be redirected -->
+
 # Update paymentTerms
 Update the properties of a payment terms object for Dynamics 365 Business Central.
 

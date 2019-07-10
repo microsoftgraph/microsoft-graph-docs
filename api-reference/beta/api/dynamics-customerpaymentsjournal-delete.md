@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-<!-- To be redirected -->
+
 # Delete customerPaymentJournals
 Delete a customer payment journal object from Dynamics 365 Business Central.
 

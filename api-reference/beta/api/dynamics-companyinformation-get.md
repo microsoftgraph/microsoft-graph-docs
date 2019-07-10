@@ -1,106 +1,79 @@
 ---
-title: "Get companyInformation"
-description: "Retrieve the properties and relationships of companyinformation object."
+title: Get companyInformation 
+description: Gets a company information object in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "apiPageType"
 ---
 
 # Get companyInformation
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of companyinformation object.
+Retrieve the properties and relationships of a company information object for Dynamics 365 Business Central.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /financials/companies/{id}/companyInformation/{id}
 ```
-
+GET /financials/companies('{id}')/companyInformation('{id}')
+```
 ## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
+If successful, this method returns a `200 OK` response code and a **companyInformation** object in the response body.
 
-If successful, this method returns a `200 OK` response code and the requested [companyInformation](../resources/dynamics-companyinformation.md) object in the response body.
+## Example
 
-## Examples
+**Request**
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_companyinformation"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
+Here is an example of the request.
+```json
+GET https://graph.microsoft.com/beta/financials/companies('{id}')/companyInformation('{id}')
 ```
 
-### Response
+**Response**
 
-The following is an example of the response.
+Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.companyInformation"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
+```json
 {
   "id": "id-value",
-  "displayName": "displayName-value",
+  "displayName": "CRONUS USA, Inc.",
   "address": {
-    "street": "street-value",
-    "city": "city-value",
-    "state": "state-value",
-    "countryLetterCode": "countryLetterCode-value",
-    "postalCode": "postalCode-value"
+    "street": "7122 South Ashford Street\r\nWestminster",
+    "city": "Atlanta",
+    "state": "GA",
+    "countryLetterCode": "US",
+    "postalCode": "31772"
   },
-  "phoneNumber": "phoneNumber-value",
-  "faxNumber": "faxNumber-value",
-  "email": "email-value"
+  "phoneNumber": "+1 425 555 0100",
+  "faxNumber": "+1 425 555 0101",
+  "email": "",
+  "website": "",
+  "taxRegistrationNumber": "",
+  "currencyCode": "USD",
+  "currentFiscalYearStartDate": "2018-01-01",
+  "industry": "",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/companyInformation('{id}')/picture",
+  "businessProfileId": "",
+  "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get companyInformation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

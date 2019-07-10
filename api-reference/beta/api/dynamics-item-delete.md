@@ -1,83 +1,59 @@
 ---
-title: "Delete item"
-description: "Delete item."
+title: Delete items 
+description: Deletes an item object in Dynamics 365 Business Central.
+services: project-madeira
+documentationcenter: ''
+author: SusanneWindfeldPedersen
 localization_priority: Normal
-author: "SusanneWindfeldPedersen,henrikwh"
 ms.prod: "dynamics-365-business-central"
-doc_type: "apiPageType"
 ---
 
-# Delete item
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Delete item.
+# Delete items
+Delete an item from Dynamics 365 Business Central.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /financials/companies/{id}/items/{id}
+```
+DELETE /financials/companies('{id}')/items('{id}')
 ```
 
-## Request headers
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+## Request headers
+|Header       |Value                    |
+|-------------|-------------------------|
+|Authorization|Bearer {token}. Required.|
+|If-Match     |Required. When this request header is included and the eTag provided does not match the current tag on the **items**, the **items** will not be updated. |
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
+If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+## Example
 
-## Examples
+**Request**
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "delete_item"
-}-->
-
-```http
-DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
+Here is an example of the request.
+```json
+DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
 ```
 
-### Response
+**Response**
 
-The following is an example of the response.
+Here is an example of the response. 
 
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
+```json
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete item",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
