@@ -39,7 +39,7 @@ POST /financials/companies/{id}/salesQuotes/{id}/salesQuoteLines
 
 ## Request body
 
-In the request body, supply a JSON representation of [salesQuoteLine](../resources/salesquoteline.md) object.
+In the request body, supply a JSON representation of [salesQuoteLine](../resources/dynamics-salesquoteline.md) object.
 
 ## Response
 

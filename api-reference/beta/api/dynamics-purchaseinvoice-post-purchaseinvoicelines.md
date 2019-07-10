@@ -39,7 +39,7 @@ POST /financials/companies/{id}/purchaseInvoices/{id}/purchaseInvoiceLines
 
 ## Request body
 
-In the request body, supply a JSON representation of [purchaseInvoiceLine](../resources/purchaseinvoiceline.md) object.
+In the request body, supply a JSON representation of [purchaseInvoiceLine](../resources/dynamics-purchaseinvoiceline.md) object.
 
 ## Response
 

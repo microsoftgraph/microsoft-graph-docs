@@ -39,7 +39,7 @@ POST /financials/companies/{id}/employees/{id}/picture
 
 ## Request body
 
-In the request body, supply a JSON representation of [picture](../resources/picture.md) object.
+In the request body, supply a JSON representation of [picture](../resources/dynamics-picture.md) object.
 
 ## Response
 
