@@ -54,8 +54,8 @@ Represents an purchaseInvoice object in Dynamics 365 Business Central.
 |shipToName|string, maximum size 100|Ship to name. |
 |shipToContact|string, maximum size 100|Ship to contact. |
 |buyFromAddress|microsoft.graph.postalAddressType |Buy from address. |
-|payToAddress| |microsoft.graph.postalAddressType |Pay to address. |
-|shipToAddress| |microsoft.graph.postalAddressType |Ship to address. |
+|payToAddress |microsoft.graph.postalAddressType |Pay to address. |
+|shipToAddress |microsoft.graph.postalAddressType |Ship to address. |
 |lastModifiedDateTime   |datetime               |The last datetime the purchase invoice was modified. Read-Only.|
 
 
