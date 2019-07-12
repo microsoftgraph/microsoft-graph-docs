@@ -28,11 +28,11 @@ Represents an agedAccountsReceivable object in Dynamics 365 Business Central.
 |customerNumber  |string   |Specifies customer's number.                 |
 |name            |string   |Specifies customer's name.                   |
 |currencyCode    |string   |Specifies the currency.                      |
-|balanceDue      |numeric  |Specifies the customer's total balance.      |
-|currentAmount   |numeric  |Specifies balance for the current aging period.|
-|period1Amount   |numeric  |Specifies balance in the first aging period. |
-|period2Amount   |numeric  |Specifies balance in the second aging period.|
-|period3Amount   |numeric  |Specifies balance in the third aging period. |
+|balanceDue      |decimal  |Specifies the customer's total balance.      |
+|currentAmount   |decimal  |Specifies balance for the current aging period.|
+|period1Amount   |decimal  |Specifies balance in the first aging period. |
+|period2Amount   |decimal  |Specifies balance in the second aging period.|
+|period3Amount   |decimal  |Specifies balance in the third aging period. |
 |agedAsOfDate    |date     |Specifies period start date used to calculate aging periods.|
 |periodLengthFilter|string |Specifies the length of the periods. Acceptable time units include: D, WD, W, M, Q, and Y. C, meaning current time unit based on date, can be specified as a prefix to the time unit.|
 

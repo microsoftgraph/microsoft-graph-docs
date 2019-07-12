@@ -22,7 +22,7 @@ Represents an purchaseInvoice object in Dynamics 365 Business Central.
 | [List purchaseInvoiceLines](../api/dynamics-purchaseinvoice-list-purchaseinvoicelines.md) | [purchaseInvoiceLine](dynamics-purchaseinvoiceline.md) collection | Get a purchaseInvoiceLine object collection. |
 | [Update](../api/dynamics-purchaseinvoice-update.md) | [purchaseInvoice](dynamics-purchaseinvoice.md) | Update purchaseInvoice object. |
 | [Delete](../api/dynamics-purchaseinvoice-delete.md) | None | Delete purchaseInvoice object. |
-|[Post](../api/dynamics-purchaseinvoice-post.md)|None||
+|[Post](../api/dynamics-purchaseinvoice-post.md)|None|Posts a purchase Invoice. |
 
 ## Properties
 | Property              | Type              |Description                                                |

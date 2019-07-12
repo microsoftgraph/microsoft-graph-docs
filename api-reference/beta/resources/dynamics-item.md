@@ -35,7 +35,7 @@ Represents an item object in Dynamics 365 Business Central.
 |blocked             |boolean |Specifies that transactions with the item cannot be posted, for example, because the item is in quarantine. Set to **true**, if item is blocked.|
 |baseUnitOfMeasureId |GUID    |Specifies the ID of the unit of measure.             |
 |baseUnitOfMeasure   |[microsoft.graph.unitOfMeasure](../resources/dynamics-complextypes.md)|Specifies the unit in which the item is held in inventory.|
-|gtin                |numeric |This is the Global Trade Item Number.                |
+|gtin                |string |This is the Global Trade Item Number.                |
 |itemCategoryId      |GUID |Specifies the category that the item belongs to. Item categories also contain any assigned item attributes.|
 |inventory           |decimal |Specifies how many units, such as pieces, boxes, or cans, of the item are in inventory. Read-Only.|
 |unitPrice           |decimal |Specifies the price for one unit of the item in the specified currency.|
