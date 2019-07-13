@@ -171,7 +171,7 @@ Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/a
 
 ## Incorrect values for createdDateTime and lastModifiedDateTime 
 
-When using the calendarView API, if the events are filtered by StartDateTime and EndDateTime, the createdDateTime and lastModifiedDateTime properties are returned with a value of "0001-01-01T00:00:00Z". If the events are not filtered, createdDateTime and lastModifiedDateTime are returned with a correct value. 
+When using the calendarView API, if the events are filtered by **startDateTime** and **endDateTime**, the **createdDateTime** and **lastModifiedDateTime** properties are returned with a value of 0001-01-01T00:00:00Z. If the events are not filtered, **createdDateTime** and **lastModifiedDateTime** are returned with a correct value. 
 
 ## Contacts
 
