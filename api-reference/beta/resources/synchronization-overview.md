@@ -18,8 +18,8 @@ Azure Active Directory (Azure AD) identity synchronization (also called "provisi
 
 For more information about synchronization in Azure AD, see:
 
-* [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Managing user account provisioning for enterprise apps in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-saas-app-provisioning)
+* [Managing user account provisioning for enterprise apps in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
 You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.
 

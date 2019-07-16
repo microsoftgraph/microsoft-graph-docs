@@ -12,7 +12,7 @@ ms.prod: "microsoft-identity-platform"
 
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
 
-For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
+For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 

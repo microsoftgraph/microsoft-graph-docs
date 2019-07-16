@@ -19,7 +19,7 @@ Alerts from the following security providers are available via SIEM integration:
 - [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) **(preview)**
 - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(preview)**
 
-Azure Monitor supports connectors to several SIEM products. For a list of supported SIEM products, see [send monitoring data to an event hub](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). Microsoft Graph Security API integration is currently available for [Splunk](https://splunkbase.splunk.com/) and [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem).
+Azure Monitor supports connectors to several SIEM products. For a list of supported SIEM products, see [send monitoring data to an event hub](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). Microsoft Graph Security API integration is currently available for [Splunk](https://splunkbase.splunk.com/) and [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem).
 
 For information about Microsoft Graph Security API integration for specific SIEM solutions, see:
 

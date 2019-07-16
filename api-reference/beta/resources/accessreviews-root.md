@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use [Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
+You can use [Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
 Typical customer scenarios for access reviews of group memberships and application access are:
    
@@ -73,9 +73,9 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 ## See also
 
-- [How an administrator can manage user access with Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [How an administrator can manage guest access with Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [How an administrator can manage programs and controls for Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
+- [How an administrator can manage user access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [How an administrator can manage guest access with Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [How an administrator can manage programs and controls for Azure AD access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!--

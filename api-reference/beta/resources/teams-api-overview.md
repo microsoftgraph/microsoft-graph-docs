@@ -49,7 +49,7 @@ The following are the differences at the API level between teams and groups:
 - [Calling and online meeting APIs](./calls-api-overview.md) apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
 
->**Note:** If you use the groups API in a [Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
+>**Note:** If you use the groups API in a [Microsoft Teams app](https://docs.microsoft.com/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://docs.microsoft.com/microsoftteams/platform/resources/microsoft-graph).
 
 ## Membership changes in Microsoft Teams
 

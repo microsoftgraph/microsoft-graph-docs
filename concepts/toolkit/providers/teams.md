@@ -13,7 +13,7 @@ To learn more, see [providers](../providers.md).
 
 ## Get started
 
-Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
+Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
 
 The following example uses the provider in HTML (via CDN).
 
@@ -59,13 +59,13 @@ For a complete example, see [Microsoft Teams tab sample](https://github.com/micr
 
 ## Configure your Teams app
 
-If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) to quickly develop your app manifest.
+If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) to quickly develop your app manifest.
 
 After you install your app with a tab, and you're ready to use the components, you need to make sure that your app has the right permissions to access Microsoft Graph. To configure your app with the necessary permissions:
 
-1. [Retrieve your domain name](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [Create a new app registration](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
-3. [Grant your application permission](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
+1. [Retrieve your domain name](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
+2. [Create a new app registration](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+3. [Grant your application permission](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 It's important to add the right permission on the **Add API access page**. You will need an administrator to add and approve the permissions, depending on which component you need.
 

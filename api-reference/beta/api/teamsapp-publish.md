@@ -42,7 +42,7 @@ POST /appCatalogs/teamsApps
 ## Request body
 
 Teams Zip Manifest Payload. 
-For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+For Teams application zip file [see Create an app package](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-package). 
 You can't create an app for an organization that has the same manifest ID as another app in that organization.
 
 ## Response
@@ -61,7 +61,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-For information about how to create a Microsoft Teams application zip file, see [Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+For information about how to create a Microsoft Teams application zip file, see [Create an app package](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-package). 
 
 ### Response
 

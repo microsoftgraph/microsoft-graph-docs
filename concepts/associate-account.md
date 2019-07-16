@@ -88,5 +88,5 @@ If you don't have an existing Office 365 for business account, you can:
 	You should now see all items in your Azure subscription. It lists a directory with the name of your Office 365 tenant.
 
 ## See also
-- [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Add, update, or remove an application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Add, update, or remove an application in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)

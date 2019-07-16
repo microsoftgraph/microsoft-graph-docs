@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an application in the [Azure AD application gallery](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list).
+Represents an application in the [Azure AD application gallery](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list).
 
 ## Methods
 

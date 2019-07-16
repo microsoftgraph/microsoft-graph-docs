@@ -22,7 +22,7 @@ Microsoft Graph notifications requires that your application service uses the On
 
 4.  The identity service returns an OBO-based token and a refresh token. Your app service can use this access token to post notifications to this user.
 
-To learn more about OAuth 2.0 OBO flow, see [Service-to-service calls that use delegated user identity in the On-Behalf-Of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). For details about how this flow works with Microsoft Graph notifications, see the [App Service sample](https://aka.ms/gnsample-appservice).
+To learn more about OAuth 2.0 OBO flow, see [Service-to-service calls that use delegated user identity in the On-Behalf-Of flow](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). For details about how this flow works with Microsoft Graph notifications, see the [App Service sample](https://aka.ms/gnsample-appservice).
 
 > [!NOTE]
 > Microsoft Graph notifications currently uses OBO authentication flow with future plans to simplify this authentication further and eliminate the need to maintain access tokens and refresh tokens.

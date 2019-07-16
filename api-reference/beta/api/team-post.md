@@ -133,7 +133,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams"
+                        "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
@@ -242,7 +242,7 @@ Content-Location: /teams/{teamId}
 
 The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.
 
-To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
@@ -297,7 +297,7 @@ Base template types are special templates that Microsoft created for specific in
 
 To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
-To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
@@ -326,7 +326,7 @@ Content-Location: /teams/{teamId}
 
 Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
 
-To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
@@ -378,7 +378,7 @@ Content-Location: /teams/{teamId}
 
 ## See also
 
-- [Available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates)
+- [Available templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates)
 - [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)

@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/). It is the base type for each specific risk event type:
+A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/). It is the base type for each specific risk event type:
 
 | Event type		 | Description|
 |:---------------|:-----------|
@@ -21,7 +21,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 |[suspiciousIpRiskEvent](suspiciousipriskevent.md) | Sign-ins from suspicious IP addresses. |
 |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | Sign-ins from unfamiliar locations. |
 
-Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events).
+Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-risk-events).
 
 ## Methods
 

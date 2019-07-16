@@ -81,7 +81,7 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 | Resource | Permission/scope |
 | - | - |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 
 ## Authentication
 

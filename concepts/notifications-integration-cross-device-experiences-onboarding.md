@@ -10,7 +10,7 @@ ms.prod: notifications"
 In addition to [app registration on Azure Portal](notifications-integration-app-registration.md), your application needs to register cross-device information such as cross-platform application id and cross-platform push credentials in order to authorizes Microsoft Graph to send notifications via native push notification services that correspond to each operating system: Windows, iOS, and Android. This is done through [Partner Center dashboard (formerly Windows Dev Center dashboard)](https://partner.microsoft.com/dashboard/). 
 
 > [!NOTE]
-> If you don’t already have a Windows developer account, you’ll need to create one. For details, see [Opening a developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account). You need to do this even if you don’t plan to build a Windows UWP application. If you’re building a school or work application as part of an enterprise, you can associate your developer account with the appropriate Azure AD account that is used for managing your enterprise submissions. For details, see [Associate Azure Active Directory with your Partner Center account](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-partner-center).
+> If you don’t already have a Windows developer account, you’ll need to create one. For details, see [Opening a developer account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account). You need to do this even if you don’t plan to build a Windows UWP application. If you’re building a school or work application as part of an enterprise, you can associate your developer account with the appropriate Azure AD account that is used for managing your enterprise submissions. For details, see [Associate Azure Active Directory with your Partner Center account](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-partner-center).
 
 To get started, sign in to the [Partner Center dashboard](https://partner.microsoft.com/en-us/dashboard) using your Windows developer account (you cannot use an Azure AD account):
 
@@ -38,7 +38,7 @@ To get started, sign in to the [Partner Center dashboard](https://partner.micros
  ![Provide cross-device push credentials](images/notifications-crossdevice-push-cred.png)
 
 > [!NOTE]
-> For Windows UWP apps, enabling WNS push notification is a prerequisite to using Microsoft Graph notifications. For details, see [WNS overview](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview). After you onboard, you can provide push credentials via Partner Center to the Connected Device Platform.
+> For Windows UWP apps, enabling WNS push notification is a prerequisite to using Microsoft Graph notifications. For details, see [WNS overview](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview). After you onboard, you can provide push credentials via Partner Center to the Connected Device Platform.
 
 6.  Verify your cross-device app domain, which serves as a verification process to prove that your application has ownership of this domain. This acts like a cross-device app identity for the application or applications you registered, as shown.
     

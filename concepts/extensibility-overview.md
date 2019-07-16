@@ -153,6 +153,6 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## See also
 
-- [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
 
 - [Adding and verifying a domain for an Office 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

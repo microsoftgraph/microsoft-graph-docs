@@ -194,7 +194,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Group
 | **Change type** | **Version** | **Description** |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added **assignedlabels** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
+| Addition | beta | Added **assignedlabels** property to the [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
 
 ### Identity and access | Identity protection
 
@@ -592,7 +592,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added new property `expirationDateTime` to [groups](https://docs.microsoft.com/en-us/graph/api/group-list-transitivemembers?view=graph-rest-beta) for [group expiration](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-lifecycle).|
+| Addition | beta | Added new property `expirationDateTime` to [groups](https://docs.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-beta) for [group expiration](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Addition | beta | Added new resource type [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Addition | beta | Added the `createdDateTime` property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource.|
 | Addition | v1.0 | Added method `memberOf` to get a [devices](/graph/api/resources/device?view=graph-rest-1.0) direct [membership](/graph/api/device-list-memberOf?view=graph-rest-1.0). This method has been added for getting the list of memberships including nested memberships.|

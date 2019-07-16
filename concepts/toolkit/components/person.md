@@ -101,11 +101,11 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource | Permission/scope |
 | - | - |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0) | `User.Read` |
-| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta) | `User.Read` |
-| [/me/people/?$search=](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | `Contacts.Read` |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `User.ReadBasic.All` |
+| [/me](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0) | `User.Read` |
+| [/me/photo/$value](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta) | `User.Read` |
+| [/me/people/?$search=](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/contacts/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | `Contacts.Read` |
+| [/users/{id}/photo/$value](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | `User.ReadBasic.All` |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 

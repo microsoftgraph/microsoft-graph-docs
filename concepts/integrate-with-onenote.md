@@ -73,14 +73,14 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 ## See also
 Find out about a few other OneNote features that are exposed only on the OneNote service-specific REST endpoint.
 
-- [OneNote development](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Work with class notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Work with asynchronous class notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Work with staff notebooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Copy notebooks, sections, and pages](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Manage permissions on OneNote entities](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Use the OneNote save dialog on your webpages](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Subscribe to webhooks](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [OneNote development](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Work with class notebooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Work with asynchronous class notebooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [Work with staff notebooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Copy notebooks, sections, and pages](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [Manage permissions on OneNote entities](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Use the OneNote save dialog on your webpages](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Subscribe to webhooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## API reference
 Looking for the API reference for this service?

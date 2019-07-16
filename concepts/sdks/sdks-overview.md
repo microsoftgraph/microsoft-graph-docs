@@ -33,7 +33,7 @@ SDKs are currently available for the following languages and platforms:
 
 ## Office 365 developer subscription
 
-When building applications using Microsoft Graph, we recommend that you get a free Office 365 developer subscription by signing up for the [Office 365 Developer Program](http://aka.ms/OfficeDevProgram).
+When building applications using Microsoft Graph, we recommend that you get a free Office 365 developer subscription by signing up for the [Office 365 Developer Program](https://aka.ms/OfficeDevProgram).
 
 ## See also
 
