@@ -1,6 +1,6 @@
 --- 
 title: "InviteParticipantsOperation resource type"
-description: "The inviteParticipants operation to obtain the result of thes invite action."
+description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
