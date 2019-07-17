@@ -12,6 +12,10 @@ ms.prod: "microsoft-teams"
 
 Invite participants to the active call.
 
+For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+
+> **Note:** This is only supported for multiparty calls.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/invite
-POST /applications/{id}/calls/{id}/participants/invite
 ```
 
 ## Request headers
@@ -42,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+Returns `202 Accepted` response code and a Location header with a uri to the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md)  created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created.
 
 ## Examples
 The following examples shows how to call this API.
@@ -101,16 +104,25 @@ Content-Length: 464
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+Content-Length: 259
 
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 <br/>
 
-### Invite Participants in Existing P2P meeting
+## Example - Invite participants to an existing multiparty call
 
 ##### Request
 
@@ -167,12 +179,14 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"51\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
@@ -197,8 +211,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
       "resourceData": [
@@ -256,11 +272,11 @@ Content-Type: application/json
 }
 ```
 
-### Invite Participants in Existing P2P meeting
+## Example - Invite participants to a new multiparty call, replacing an existing peer-to-peer call
 
-This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.
+This example shows a complete end-to-end flow for creating a meeting and inviting a participant to join.
 
-##### Answer Incoming VOIP call with service hosted media
+##### Step 1 - Answer incoming peer-to-peer call with service hosted media
 
 ##### Notification - Incoming
 
@@ -270,14 +286,16 @@ Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
-<!-- {
+<!--{
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "created",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -328,14 +346,14 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-      {
-        "url": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "url": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
     ]
   }
 }
@@ -371,8 +389,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -400,8 +420,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -417,7 +439,7 @@ Content-Type: application/json
 }
 ```
 
-### Join channel meeting without media
+##### Step 2 - Create and join multiparty call without media
 
 > **IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.  Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.
 
@@ -462,6 +484,39 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
+Content-Type: application/json
+```
+
+```json
+{
+  "id": "90ED37DCD8E34E119DE330A955DDA06F",
+  "subject": "Test Call",
+  "callback": "https://bot.contoso.com/api/calls",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "application": {
+        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+      }
+    }
+  },
+  "targetDisposition": "default",
+  "requestedModalities": [],
+  "chatInfo": {
+    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
+    "messageId": "1507228578052",
+    "replyChainMessageId": "1507228578052"
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "user": {
+        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
+        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
+      }
+    }
+  }
+}
 ```
 
 ##### Notification - Establishing
@@ -478,8 +533,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
       "resourceData": {
@@ -508,8 +565,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
       "resourceData": {
@@ -524,7 +583,9 @@ Content-Type: application/json
 }
 ```
 
-### Invite participant from initial incoming call
+##### Step 3 - Invite participant to multiparty call, replacing the existing peer-to-peer call
+
+For details on using `replacesCallId` to replace an existing peer-to-peer call, see [Invitation Participant](../resources/invitationparticipantinfo.md).
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -563,7 +624,7 @@ Content-Length: 306
 }
 ```
 
-##### Notification - Operation Completed
+##### Notification - Operation completed
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -577,8 +638,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
@@ -593,7 +656,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Roster Updated With Participant Added
+##### Notification - Roster updated with participant added
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -607,8 +670,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
       "resourceData": [
@@ -666,7 +731,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - terminated the original P2P call
+##### Notification - Terminated the original peer-to-peer call
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -680,8 +745,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -696,7 +763,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Deleted the original P2P call
+##### Notification - Deleted the original peer-to-peer call
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -710,8 +777,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
