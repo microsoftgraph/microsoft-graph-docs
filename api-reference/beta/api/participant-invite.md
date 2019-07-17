@@ -12,7 +12,7 @@ ms.prod: "microsoft-teams"
 
 Invite participants to the active call.
 
-For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md).
+For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
 >**Note:** This API is only supported for multiparty calls.
 
