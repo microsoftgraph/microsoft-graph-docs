@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md)  created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created.
+If successful, this API returns a `202 Accepted` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) object created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created.
 
 ## Examples
 The following examples shows how to call this API.
