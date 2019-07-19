@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete or hang up an active call.
+Delete or hang up an active call. For multiparty calls, this will only delete your call leg; the underlying multiparty call will still continue.
 
 ## Permissions
 
@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}
-DELETE /applications/{id}/calls/{id}
 ```
 
 ## Request headers
@@ -52,7 +51,7 @@ The following example shows the request.
   "name": "delete-call"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/{id}
+DELETE https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
@@ -95,19 +94,20 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminating"
       }
     }
   ]
 }
+  
 ```
 
 ##### Notification - terminated
@@ -124,16 +124,19 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
-        "terminationReason": "AppInitiated"
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": "0"
+        }
       }
     }
   ]
