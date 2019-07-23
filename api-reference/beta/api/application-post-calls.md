@@ -10,7 +10,8 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new call.
+Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting. You will need to [register the calling bot](../../../concepts/register-calling-bot.md) and go through the list of permissions needed as mentioned below.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
-POST /applications/{id}/calls
 ```
 
 ## Request headers
@@ -50,8 +50,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 ##### Request
-The following example shows the request.
-
+The following example shows the request which makes a peer to peer call between the bot and the specified user. In this example the media is hosted by the service. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -61,44 +60,30 @@ The following example shows the request.
 ```http
 POST https://graph.microsoft.com/beta/app/calls
 Content-Type: application/json
+Authorization: Bearer <Token>
 
 {
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
-  },
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "subject": "Test Call",
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
   "targets": [
     {
+      "@odata.type": "#microsoft.graph.participantInfo",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
       }
     }
   ],
-  "tenantId": "tenantId-value"
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+  }
 }
 ```
 # [Javascript](#tab/javascript)
@@ -119,54 +104,82 @@ Content-Type: application/json
 } -->
 ```http
 HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab
 Content-Type: application/json
 
 
 {
-  "id": "57DAB8B1894C409AB240BD8BEAE78896",
-  "callbackUri": "https://bot.contoso.com/api/calls",
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+        }
+      },
+      "region": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
   },
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "subject": "Test Call",
-  "targets": [
-    {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      }
-    }
-  ],
-  "tenantId": "tenantId-value"
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "meetingCapability": null,
+  "toneInfo": null
 }
 ```
 
 ##### Notification - establishing
 
 ```http
-POST https://bot.contoso.com/api/calls
+POST https://bot.contoso.com/callback
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
@@ -177,15 +190,17 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resource": "/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
+      "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "state": "establishing",
-        "direction": "outgoing"
+        "id": "2e1a0b00-2db4-4022-9570-243709c565ab"
       }
     }
   ]
@@ -194,7 +209,7 @@ Content-Type: application/json
 ##### Notification - established
 
 ```http
-POST https://bot.contoso.com/api/calls
+POST https://bot.contoso.com/callback
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
@@ -205,16 +220,20 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resource": "/app/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
+      "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established"
-		}
+        "state": "established",
+        "direction": "outgoing",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "id": "2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116"
+      }
     }
   ]
 }
@@ -225,11 +244,12 @@ Content-Type: application/json
 > Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
 
 ##### Request
-The following example shows the request.
+The following example shows the request which makes a peer to peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
 Content-Type: application/json
+Authorization: Bearer <Token>
 ```
 
 <!-- {
@@ -238,114 +258,52 @@ Content-Type: application/json
 }-->
 ```json
 {
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "mediaConfig": {
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+ "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
-  },
-  "requestedModalities": [ "audio" ],
-  "source": {
-    "identity": {
-      "application": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "IT Bot"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "subject": "Test Call",
-  "targets": [
-    {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      }
-    }
-  ],
-  "tenantId": "tenantId-value"
-}
-```
-
-### Create group call with service hosted media
-
-> **Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.
-
-##### Request
-
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
-{
-  "subject": "Test Call",
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "targets": [
-    {
-      "identity": {
-        "user": {
-          "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
-          "displayName": "Heidi Steen"
-        }
-      }
-    },
-    {
-      "identity": {
-        "phone": {
-          "displayName": "+12345678890",
-          "id": "+12345678890"
-        }
-      }
-    }
-  ],
-  "requestedModalities": [ "audio", "video" ],
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
-  },
-  "chatInfo": {
-    "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
-    "messageId": "0",
-    "replyChainMessageId": null
+    "blob": "<Media Session Configuration>",
   }
 }
 ```
+`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
 
-### Join private meeting with service hosted media
+Sample audio media session blob is shown below
+```json
+{\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
+```
 
-> **Note:** This example needs the Calls.JoinGroupCalls.All permission.
+>**Note:** For peer to peer calls, the expected notifications are for call state changes only.
+
+### Join scheduled meeting with service hosted media
+To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
+This information can be obtained from [Get Online Meetings API](../api/application-list-onlinemeetings.md).
+
+The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/application-list-onlinemeetings.md) with actual values to make the example work.
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
 ##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
 Content-Type: application/json
+Authorization: Bearer <Token>
 ```
 
 <!-- {
@@ -354,54 +312,384 @@ Content-Type: application/json
 }-->
 ```json
 {
-  "subject": "Test Call",
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "requestedModalities": [ "audio", "video" ],
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
   },
   "chatInfo": {
-    "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
     "messageId": "0"
   },
   "meetingInfo": {
     "@odata.type": "#microsoft.graph.organizerMeetingInfo",
     "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
       }
-    }
+    },
+    "allowConversationWithoutHost": true
   }
 }
 ```
+##### Response
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "user": {
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+##### Notification - establishing
+
+```http
+POST https://bot.contoso.com/callback
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+        "callbackUri": "https://bot.contoso.com/callback",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "establishing",
+        "chatInfo": {
+          "@odata.type": "#microsoft.graph.chatInfo",
+          "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+          "messageId": "0"
+        },
+        "meetingInfo": {
+          "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+          "organizer": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+              "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+              "displayName": "Bob"
+            }
+          },
+          "allowConversationWithoutHost": true
+        },
+        "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92"
+      }
+    }
+  ]
+}
+
+```
+##### Notification - established
+
+```http
+POST https://bot.contoso.com/callback
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "callbackUri": "https://bot.contoso.com/callback",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "chatInfo": {
+          "@odata.type": "#microsoft.graph.chatInfo",
+          "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+          "messageId": "0"
+        },
+        "meetingInfo": {
+          "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+          "organizer": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+              "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+              "displayName": "Bob"
+            }
+          },
+          "allowConversationWithoutHost": true
+        },
+        "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92"
+      }
+    }
+  ]
+}
+```
+##### Notification - Roster
+
+```http
+POST https://bot.contoso.com/callback
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
+      "callbackUri": "https://bot.contoso.com/callback",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "info": {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "user": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "John",
+                "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+              }
+            },
+            "languageId": "en-US"
+          },
+          "mediaStreams": [
+            {
+              "@odata.type": "#microsoft.graph.mediaStream",
+              "mediaType": "audio",
+              "sourceId": "1",
+              "direction": "sendReceive",
+              "serverMuted": false
+            },
+            {
+              "@odata.type": "#microsoft.graph.mediaStream",
+              "mediaType": "video",
+              "sourceId": "2",
+              "direction": "receiveOnly",
+              "serverMuted": false
+            },
+            {
+              "@odata.type": "#microsoft.graph.mediaStream",
+              "mediaType": "videoBasedScreenSharing",
+              "sourceId": "8",
+              "direction": "receiveOnly",
+              "serverMuted": false
+            }
+          ],
+          "isMuted": true,
+          "isInLobby": false,
+          "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c"
+        },
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "info": {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "Calling Bot",
+                "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+              }
+            }
+          },
+          "mediaStreams": [
+            {
+              "@odata.type": "#microsoft.graph.mediaStream",
+              "mediaType": "audio",
+              "sourceId": "10",
+              "direction": "sendReceive",
+              "serverMuted": false
+            }
+          ],
+          "isMuted": false,
+          "isInLobby": false,
+          "id": "05491616-385f-44a8-9974-18cc5f9933c1"
+        }
+      ]
+    }
+  ]
+}
+```
+
+>**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
+
+### Join scheduled meeting with app hosted media
+To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
+
+```http
+POST https://graph.microsoft.com/beta/app/calls
+Content-Type: application/json
+Authorization: Bearer <Token>
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "0"
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "user": {
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
+      }
+    },
+    "allowConversationWithoutHost": true
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
 
 ### Join channel meeting with service hosted media
+Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/application-list-onlinemeetings.md).
 
-> **Note:** This example needs the Calls.JoinGroupCalls.All permission.
+The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/application-list-onlinemeetings.md) with actual values to make the example work.
+
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
 ##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
 Content-Type: application/json
+Authorization: Bearer <Token>
 ```
 
 <!-- {
@@ -410,103 +698,171 @@ Content-Type: application/json
 }-->
 ```json
 {
-  "subject": "Test Call",
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "requestedModalities": [ "audio", "video" ],
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "requestedModalities": [
+    "audio"
+  ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
   },
   "chatInfo": {
-    "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
-    "messageId": "1507228578052",
-    "replyChainMessageId": null
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
+    "messageId": "1533758867081"
   },
   "meetingInfo": {
     "@odata.type": "#microsoft.graph.organizerMeetingInfo",
     "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
       }
-    }
+    },
+    "allowConversationWithoutHost": true
   }
 }
 ```
 
 ### Join channel meeting as a guest with service hosted media
+For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
+The display name is the name you want to be displayed in the meeting for your guest identity. The id may be a unique id identifying the guest identity.
 
-> **Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.
+> **Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.
 
 ##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
 Content-Type: application/json
+Authorization: Bearer <Token>
 ```
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```json
 {
-  "subject": "Test Call",
-  "callbackUri": "https://bot.contoso.com/api/calls",
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
   "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
-      "user": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698",
-        "displayName": "App_Guest_DisplayName",
-        "identityProvider": "None"
+      "@odata.type": "#microsoft.graph.identitySet",
+      "guest": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Guest User",
+        "id": "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
       }
     }
   },
-  "requestedModalities": [ "audio", "video" ],
+  "requestedModalities": [
+    "audio"
+  ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
   },
   "chatInfo": {
-    "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
-    "messageId": "1507228578052",
-    "replyChainMessageId": null
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
+    "messageId": "1533758867081"
   },
   "meetingInfo": {
     "@odata.type": "#microsoft.graph.organizerMeetingInfo",
     "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": "Bob"
       }
-    }
+    },
+    "allowConversationWithoutHost": true
   }
 }
 ```
+> **Note:** The guest join depends on the tenant settings for meeting. The application might be put in lobby waiting to be admitted by a user. This is defined by the `isInLobby` property
+
+##### Notification - Roster
+
+```http
+POST https://bot.contoso.com/callback
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
+      "callbackUri": "https://bot.contoso.com/callback",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "info": {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "guest": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "Guest User",
+                "id": "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
+              }
+            }
+          },
+          "mediaStreams": [
+            {
+              "@odata.type": "#microsoft.graph.mediaStream",
+              "mediaType": "audio",
+              "sourceId": "10",
+              "direction": "sendReceive",
+              "serverMuted": false
+            }
+          ],
+          "isMuted": false,
+          "isInLobby": true,
+          "id": "05491616-385f-44a8-9974-18cc5f9933c1"
+        }
+      ]
+    }
+  ]
+}
+```
+> **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

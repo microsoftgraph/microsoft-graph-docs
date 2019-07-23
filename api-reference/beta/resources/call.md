@@ -31,18 +31,19 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [List participants](../api/call-list-participants.md)             | [participant](participant.md) collection          | Get a participant object collection.         |
 | [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Invite participants to the active call.      |
 | [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Mute all participants in the call.           |
+| [Mute Participant](../api/participant-mute.md)                    | [commsOperation](commsoperation.md)               | Mute a participant in the group call.        |
 | [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure audio in multiparty conversation.  |
 | [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Create a new audioRoutingGroup by posting to the audioRoutingGroups collection. |
 | [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Get a audioRoutingGroup object collection.  |
 | **Interactive-Voice-Response**                                    |                                                   |                                              |
 | [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Play prompt in the call.                     |
-| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Record the call.                             |
+| [Recognize](../api/call-recognize.md)                             | [recognizeOperation](recognizeoperation.md)       | Play prompt and recognize DTMF tones.        |
+| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Record a short audio clip from the call.     |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancel media processing.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Subscribe to DTMF tones.                     |
 | **Self Participant Operations**                                   |                                                   |                                              |
 | [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Mute self in the call.                       |
 | [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Unmute self in the call.                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Update metadata for self in roster.          |
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Start and stop sharing screen in the call                                             |
 
 ## Properties
@@ -52,23 +53,23 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | activeModalities    | String Collection                                                                                      | The list of active modalities. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Read-only. Server generated.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | The participant that answered the call. Read-only. Server generated.                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) collection                                                                   | The routing information on how the call was retargeted. Read-only. Server generated.                                                                                                                |
-| callbackUri         | String                                                                                                 | The callback or subscription ID on which callbacks will be delivered.                                                                                                                               |
-| chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information.                                                                                                                                                                               |
+| callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
+| chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for meeting scenarios.                                                                                                                                                                             |
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only. Server generated.                                                                                            |
-| id                  | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) or [serviceHostedMediaConfig](servicehostedmediaconfig.md) | The media configuration.                                                                                                                                                                        |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting.                                                                                                                                                             |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) or [tokenMeetingInfo](tokenmeetinginfo.md)             | The meeting information.                                                                                                                                                                            |
+| id                  | String                                                                                                 | The call id. Read-only. Server generated.                                                                                                                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) or [serviceHostedMediaConfig](servicehostedmediaconfig.md) | The media configuration. Required information for creating peer to peer calls or joining meetings.                                                                                                                                                                      |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting. Read-only. Server generated.                                                                                                                                                            |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) or [tokenMeetingInfo](tokenmeetinginfo.md)             | The meeting information. Required information for meeting scenarios.                                                                                                                                                                            |
 | myParticipantId     | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | The list of requested modalities. | Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example can hold termination reason. Read-only. Server generated.                                                                                                       |
-| ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout for outgoing peer to peer calls                                                                                                                                                     |
-| routingPolicies     | String collection                                                                                      | Possible values are: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`.                                                                                                   |
+| ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout in seconds for outgoing peer to peer calls. The max value for this attribute is 115 seconds.                                                                                                                                                    |
+| routingPolicies     | String collection                                                                                      | This property is applicable for peer to peer calls only. Possible values are: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSfb`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | The originator of the call.                                                                                                                                                                         |
 | state               | String                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Read-only. Server generated.                         |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
-| targets             | [participantInfo](participantinfo.md) collection                                                       | The targets of the call.                                                                                                                                                                            |
-| tenantId            | String                                                                                                 | tenantId in Azure Active Directory.                                                                                                                                                                 |
+| targets             | [participantInfo](participantinfo.md) collection                                                       | The targets of the call. Required information for creating peer to peer call.                                                                                                                                                                            |
+| tenantId            | String                                                                                                 | Read-only. Server generated. `tenantId` in Azure Active Directory.                                                                                                                                                                 |
 | terminationReason   | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only. Server generated.                                                                                                                                                                        |
 
@@ -102,38 +103,39 @@ The following is a JSON representation of the resource.
     "ringingTimeoutInSeconds",
     "routingPolicies",
     "state",
+    "source",
+    "subject",
     "targets",
     "tenantId",
     "terminationReason",
     "toneInfo"
   ],
-  "keyProperty":"id",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```json
 {
   "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
+  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
+  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "ringingTimeoutInSeconds": 1024,
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "ringingTimeoutInSeconds": 99,
   "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "microsoft.graph.participantInfo"},
+  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
 }
 ```
 
