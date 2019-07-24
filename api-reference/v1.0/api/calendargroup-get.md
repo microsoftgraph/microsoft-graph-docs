@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendargroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-calendargroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

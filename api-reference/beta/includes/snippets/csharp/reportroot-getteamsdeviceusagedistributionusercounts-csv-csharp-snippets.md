@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getTeamsDeviceUsageDistributionUserCounts = await graphClient.Reports.GetTeamsDeviceUsageDistributionUserCounts('D7')
+var getTeamsDeviceUsageDistributionUserCounts = await graphClient.Reports
+	.GetTeamsDeviceUsageDistributionUserCounts('D7')
 	.Request()
 	.GetAsync();
 

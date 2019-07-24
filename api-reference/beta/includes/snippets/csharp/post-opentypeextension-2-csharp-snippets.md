@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extension = new Extension
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","microsoft.graph.openTypeExtension"}
+	},
 	ExtensionName = "Com.Contoso.Referral",
 	CompanyName = "Wingtip Toys",
 	DealValue = 500050,

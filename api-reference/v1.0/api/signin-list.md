@@ -58,8 +58,8 @@ This method supports the following OData query parameters to help customize the 
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetails/browser| eq, startswith|
-|deviceDetails/operatingSystem| eq, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |isRisky| eq|
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

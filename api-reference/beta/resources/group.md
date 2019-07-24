@@ -53,7 +53,6 @@ This resource supports:
 |[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
 |[List endpoints](../api/group-list-endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
-|[delta](../api/group-delta.md)|group collection| Get incremental changes for groups. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|

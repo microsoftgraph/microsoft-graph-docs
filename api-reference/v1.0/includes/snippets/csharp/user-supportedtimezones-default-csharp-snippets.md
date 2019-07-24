@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var supportedTimeZones = await graphClient.Me.Outlook.SupportedTimeZones()
+var supportedTimeZones = await graphClient.Me.Outlook
+	.SupportedTimeZones()
 	.Request()
 	.GetAsync();
 

@@ -12,7 +12,8 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("enddatetime", "2016-12-30T00:00:00Z")
 };
 
-var delta = await graphClient.Me.CalendarView.Delta()
+var delta = await graphClient.Me.CalendarView
+	.Delta()
 	.Request( queryOptions )
 	.Header("Prefer","odata.maxpagesize=2")
 	.GetAsync();

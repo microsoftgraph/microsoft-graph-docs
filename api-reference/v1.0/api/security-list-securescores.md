@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescores-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-securescores-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

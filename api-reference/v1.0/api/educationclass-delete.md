@@ -61,6 +61,10 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationclass-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

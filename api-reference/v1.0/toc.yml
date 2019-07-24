@@ -398,6 +398,8 @@
             href: api/grouplifecyclepolicy-addgroup.md
           - name: Remove group
             href: api/grouplifecyclepolicy-removegroup.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -3254,6 +3256,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:

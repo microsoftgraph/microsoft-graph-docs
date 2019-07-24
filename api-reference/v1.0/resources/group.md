@@ -50,6 +50,7 @@ This resource supports:
 |[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 |[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Validate that an Office 365 group's display name or mail nickname complies with naming policies. |
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|

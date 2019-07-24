@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailboxSettings = new MailboxSettings
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.context","https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"}
+	},
 	AutomaticRepliesSetting = new AutomaticRepliesSetting
 	{
 		Status = AutomaticRepliesStatus.Scheduled,

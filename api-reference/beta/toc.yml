@@ -424,6 +424,8 @@
           href: api/group-unsubscribebymail.md
         - name: Update group
           href: api/group-update.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -729,7 +731,7 @@
           href: api/event-delta.md
         - name: Reminder view
           href: api/user-reminderview.md
-      - name: Categories
+      - name: Category
         href: resources/outlookcategory.md
         items:
         - name: List categories
@@ -759,6 +761,18 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
+          - name: Place
+            href: resources/place.md
+          - name: Room resource
+            href: resources/room.md
+          - name: Room list resource
+            href: resources/roomlist.md
+          - name: List places
+            href: api/place-list.md
+          - name: Get place
+            href: api/place-get.md
     - name: Calls and online meetings
       displayName: Microsoft Teams
       items:
@@ -809,8 +823,10 @@
             href: api/participant-invite.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
-        - name: Unmute self
+        - name: Unmute application
           href: api/call-unmute.md
+        - name: Mute application
+          href: api/call-mute.md
         - name: Update metadata
           href: api/call-updatemetadata.md
         - name: Audio routing group
@@ -7884,6 +7900,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get directoryObjects by ids
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
@@ -8024,6 +8042,57 @@
           href: api/oauth2permissiongrant-update.md
         - name: Delete oauth2 permission grant
           href: api/oauth2permissiongrant-delete.md
+      - name: On-premises publishing
+        href: resources/onpremisespublishingprofile-root.md
+        items:
+          - name: On-premises agent
+            href: resources/onpremisesagent.md
+            items:
+              - name: List
+                href: api/onpremisesagent-list.md
+              - name: Get
+                href: api/onpremisesagent-get.md
+              - name: Assign to agent group
+                href: api/onpremisesagent-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/onpremisesagent-delete-agentgroups.md
+          - name: On-premises agent group
+            href: resources/onpremisesagentgroup.md
+            items:
+              - name: List
+                href: api/onpremisesagentgroup-list.md
+              - name: Get
+                href: api/onpremisesagentgroup-get.md
+              - name: Create
+                href: api/onpremisesagentgroup-post.md
+              - name: Update
+                href: api/onpremisesagentgroup-update.md
+              - name: Delete
+                href: api/onpremisesagentgroup-delete.md
+          - name: On-premises publishing profile
+            href: resources/onpremisespublishingprofile.md
+            items:
+              - name: Get
+                href: api/onpremisespublishingprofile-get.md
+              - name: Update
+                href: api/onpremisespublishingprofile-update.md
+          - name: Published resource
+            href: resources/publishedresource.md
+            items:
+              - name: List
+                href: api/publishedresource-list.md
+              - name: Get
+                href: api/publishedresource-get.md
+              - name: Create
+                href: api/publishedresource-post.md
+              - name: Update
+                href: api/publishedresource-update.md
+              - name: Delete
+                href: api/publishedresource-delete.md
+              - name: Assign to agent group
+                href: api/publishedresource-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/publishedresource-delete-agentgroups.md    
       - name: Organization
         href: resources/organization.md
         items:
@@ -8228,6 +8297,11 @@
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Directory definition
+          href: resources/synchronization-directorydefinition.md
+          items:
+          - name: Discover
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getOffice365ActivationsUserDetail = await graphClient.Reports.GetOffice365ActivationsUserDetail()
+var getOffice365ActivationsUserDetail = await graphClient.Reports
+	.GetOffice365ActivationsUserDetail()
 	.Request()
 	.GetAsync();
 

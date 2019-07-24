@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var delta = await graphClient.Me.MailFolders.Delta()
+var delta = await graphClient.Me.MailFolders
+	.Delta()
 	.Request()
 	.GetAsync();
 

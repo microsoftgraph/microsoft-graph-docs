@@ -12,7 +12,7 @@ ms.prod: "groups"
 
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
-* Office 365 Group (unified group)
+* Office 365 group (unified group)
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
@@ -58,13 +58,13 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 
->**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+>**Note:** Creating an Office 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ### groupTypes options
 
-Use the **groupTypes** property to control the type of group and its membership, as shown below:
+Use the **groupTypes** property to control the type of group and its membership, as shown.
 
 | Type of group | Assigned membership | Dynamic membership |
 |:--------------|:------------------------|:---------------|
@@ -73,13 +73,13 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
+If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
 ## Examples
 
 ### Example 1: Create an Office 365 group
 
-The following example creates an Office 365 Group.
+The following example creates an Office 365 group.
 
 #### Request
 
@@ -115,6 +115,10 @@ Content-length: 244
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -214,6 +218,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 [!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -8,6 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var type = "view";
 
+var password = "ThisIsMyPrivatePassword";
+
 var scope = "anonymous";
 
 await graphClient.Me.Drive.Items["{itemId}"]

@@ -77,21 +77,25 @@ The following example gets the **displayName** and **emailAddresses** properties
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_contacts"
+  "name": "user_get_contacts"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-contacts-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-contacts-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-contacts-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/user-get-contacts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-get-contacts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

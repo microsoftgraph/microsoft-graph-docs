@@ -70,6 +70,10 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

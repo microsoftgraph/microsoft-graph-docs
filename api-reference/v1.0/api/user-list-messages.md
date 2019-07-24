@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

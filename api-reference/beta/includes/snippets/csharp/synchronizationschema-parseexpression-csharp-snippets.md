@@ -213,6 +213,10 @@ var testInputObject = new ExpressionInputObject
 		new StringKeyObjectValuePair
 		{
 			Key = "appRoleAssignments",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value@odata.type","#Collection(String)"}
+			},
 			Value = new List<String>()
 			{
 				"Default Assignment"

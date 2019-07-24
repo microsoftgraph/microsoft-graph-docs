@@ -15,9 +15,9 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
 		NSError *jsonError = nil;
 		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *groupList = [[NSMutableArray alloc] init];
-		groupList = [jsonFinal valueForKey:@"value"];
-		MSGraphGroup *group = [[MSGraphGroup alloc] initWithDictionary:[groupList objectAtIndex: 0] error:&nserror];
+		NSMutableArray *teamList = [[NSMutableArray alloc] init];
+		teamList = [jsonFinal valueForKey:@"value"];
+		MSGraphTeam *team = [[MSGraphTeam alloc] initWithDictionary:[teamList objectAtIndex: 0] error:&nserror];
 
 }];
 

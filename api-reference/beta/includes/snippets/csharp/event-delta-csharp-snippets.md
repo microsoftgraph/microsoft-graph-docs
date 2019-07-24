@@ -12,7 +12,8 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("enddatetime", "{end_datetime}")
 };
 
-var delta = await graphClient.Me.CalendarView.Delta()
+var delta = await graphClient.Me.CalendarView
+	.Delta()
 	.Request( queryOptions )
 	.GetAsync();
 

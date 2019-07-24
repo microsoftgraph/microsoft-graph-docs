@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getSkypeForBusinessParticipantActivityMinuteCounts = await graphClient.Reports.GetSkypeForBusinessParticipantActivityMinuteCounts('D7')
+var getSkypeForBusinessParticipantActivityMinuteCounts = await graphClient.Reports
+	.GetSkypeForBusinessParticipantActivityMinuteCounts('D7')
 	.Request()
 	.GetAsync();
 

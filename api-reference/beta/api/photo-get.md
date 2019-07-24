@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-photo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
