@@ -1,6 +1,6 @@
 ---
 title: "call: reject"
-description: "Reject an incoming call."
+description: "Enable a bot to reject an incoming [call](../resources/call.md)."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,13 +10,14 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables the bot to reject an incoming [call](../resources/call.md). The incoming call request can be an invite to a meeting or a peer to peer call. For a meeting invite, the notification contains the `chatInfo` and `meetingInfo` parameters.
+Enable a bot to reject an incoming [call](../resources/call.md). The incoming call request can be an invite to a meeting or a peer to peer call. For a meeting invite, the notification contains the `chatInfo` and `meetingInfo` parameters.
 
-Once the bot is registered with a valid callback URL in the Azure portal, the incoming call is delivered as a [commsNotification](../resources/commsnotification.md) with `changeType` set to `created`. The bot is expected to `Answer` or `Reject` the call before it times out.
+When the bot is registered with a valid callback URL in the Azure portal, the incoming call is delivered as a [commsNotification](../resources/commsnotification.md) with `changeType` set to `created`. The bot is expected to `Answer` or `Reject` the call before it times out.
 
-> **Note:** Bots can only be reached by VOIP. PSTN calling to bots is not yet supported.
+> [!NOTE]
+> Bots can only be reached by VOIP. PSTN calling to bots is not yet supported.
 
-> **Note:** This API is only used to reject incoming calls. To terminate existing calls, [Delete Call](../api/call-delete.md) should be used instead.
+This API is only used to reject incoming calls. To end existing calls, use [Delete call](../api/call-delete.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,13 +44,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden` |
+|reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden`. |
 
 ## Response
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-The following examples shows how to call this API.
+The following examples show how to call this API.
 
 #### Request
 The following example shows the request.
