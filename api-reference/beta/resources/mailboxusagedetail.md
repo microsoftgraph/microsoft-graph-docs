@@ -21,6 +21,8 @@ ms.prod: "outlook"
 | lastActivityDate                | Date    |
 | itemCount                       | Int64   |
 | storageUsedInBytes              | Int64   |
+| deletedItemCount                | Int64   |
+| deletedItemSizeInBytes          | Int64   |
 | issueWarningQuotaInBytes        | Int64   |
 | prohibitSendQuotaInBytes        | Int64   |
 | prohibitSendReceiveQuotaInBytes | Int64   |
@@ -46,6 +48,8 @@ The following is a JSON representation of the resource.
   "lastActivityDate": "Date", 
   "itemCount": 1024, 
   "storageUsedInBytes": 1024, 
+  "deletedItemCount": 1024,
+  "deletedItemSizeInBytes": 1024, 
   "issueWarningQuotaInBytes": 1024, 
   "prohibitSendQuotaInBytes": 1024, 
   "prohibitSendReceiveQuotaInBytes": 1024, 

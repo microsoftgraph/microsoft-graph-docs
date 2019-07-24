@@ -26,9 +26,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "audiovideo": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "audiovideo": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

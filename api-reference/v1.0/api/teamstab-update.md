@@ -40,7 +40,7 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code.
 
 ## Example
 #### Request
@@ -56,13 +56,13 @@ Content-length: 211
 ```
 #### Response
 ```http
-HTTP/1.1 200 Success
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
   "id": "tabId",
   "displayName": "My Contoso Tab - updated",
-  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('06805b9e-77e3-4b93-ac81-525eb87513b8')",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",

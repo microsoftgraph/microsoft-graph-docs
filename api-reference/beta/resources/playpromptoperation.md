@@ -21,7 +21,7 @@ The playPrompt operation to obtain the result of the playPrompt action.
 | createdDateTime     | DateTimeOffset              | The start time of the operation.                                                   |
 | id                  | String                      | Read-only.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | The time of the last action of the operation.                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | The result information. Read-only. Server generated.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                               |
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
@@ -59,8 +59,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/playpromptoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

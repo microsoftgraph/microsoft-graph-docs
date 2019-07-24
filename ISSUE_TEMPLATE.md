@@ -7,6 +7,6 @@ So that we can better assist you, please note the following:
 - If you have an issue with the documentation, please provide the information here, or feel free to submit a pull request with your suggested changes. We will review your contributions and update our documentation accordingly.
 -->
 
-Issue: 
+Issue:
 
 Article:

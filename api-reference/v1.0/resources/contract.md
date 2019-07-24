@@ -2,7 +2,7 @@
 title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateForBusinessUpdateWeeks enum type"
 description: "Scheduled the update installation on the weeks of the month"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,6 +23,7 @@ Scheduled the update installation on the weeks of the month
 |thirdWeek|4|Scheduled the update installation on the third week of the month|
 |fourthWeek|8|Scheduled the update installation on the fourth week of the month|
 |everyWeek|15|Scheduled the update installation on every week of the month|
+
 
 
 

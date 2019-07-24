@@ -2,7 +2,7 @@
 title: "officeConfiguration resource type"
 description: "Singleton entity that acts as a container for all device management functionality."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

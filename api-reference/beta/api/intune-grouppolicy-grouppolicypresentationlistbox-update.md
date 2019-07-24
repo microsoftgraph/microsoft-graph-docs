@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationListBox"
 description: "Update the properties of a groupPolicyPresentationListBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Boolean|If this option is specified true the user must specify the registry subkey value and the registry subkey name. The list box shows two columns, one for the name and one for the data. The default value is false.|
+|valuePrefix|String|Not yet documented|
 
 
 
@@ -63,12 +64,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
 Content-type: application/json
-Content-length: 125
+Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationListBox",
   "label": "Label value",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "Value Prefix value"
 }
 ```
 
@@ -77,16 +79,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 238
+Content-Length: 278
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationListBox",
   "label": "Label value",
   "id": "2e074c87-4c87-2e07-874c-072e874c072e",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "Value Prefix value"
 }
 ```
+
 
 
 

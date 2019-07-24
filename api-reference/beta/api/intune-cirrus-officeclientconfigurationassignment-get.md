@@ -2,7 +2,7 @@
 title: "Get officeClientConfigurationAssignment"
 description: "Read properties and relationships of the officeClientConfigurationAssignment object."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

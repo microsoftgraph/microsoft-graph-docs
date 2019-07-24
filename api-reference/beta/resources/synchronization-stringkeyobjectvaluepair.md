@@ -2,6 +2,8 @@
 title: "stringKeyObjectValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is an arbitrary JSON object. This is an OData open type that expects to have a property named `value` that is a valid JSON object."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # stringKeyObjectValuePair resource type
@@ -14,7 +16,7 @@ Represents a key-value pair where the key is a string and the value is an arbitr
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |key|String|Key.|
-|value|Any|Arbitrary JSON object.|
+|value|Json|Arbitrary JSON object.|
 
 ## JSON representation
 
@@ -30,7 +32,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value": {
+    "@odata.type": "microsoft.graph.Json"
+  }
 }
 
 ```
@@ -44,8 +49,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-stringkeyobjectvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

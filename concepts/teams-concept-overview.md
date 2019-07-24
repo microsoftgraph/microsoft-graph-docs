@@ -12,6 +12,10 @@ ms.prod: "microsoft-teams"
 Built on the strength and scale of [Office 365](https://products.office.com/) with over 120 million users, 
 Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
+
+
 ## Why integrate with Microsoft Teams?
 
 ### Automate team lifecycles

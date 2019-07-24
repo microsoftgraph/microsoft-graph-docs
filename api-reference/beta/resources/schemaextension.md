@@ -13,15 +13,15 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 
 Schema extensions are supported by the following resource types:
 
- - [administrativeUnit](administrativeunit.md)
- - [contact](contact.md)
- - [device](device.md)
- - [event](event.md) on a user or Office 365 group calendar
- - [post](post.md) of an Office 365 group
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [administrativeUnit](administrativeunit.md)
+- [contact](contact.md)
+- [device](device.md)
+- [event](event.md) on a user or Office 365 group calendar
+- [post](post.md) of an Office 365 group
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 See the [schema extension example](/graph/extensibility-schema-groups) to learn how to add custom data to groups.
 
@@ -78,8 +78,6 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schemaextension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

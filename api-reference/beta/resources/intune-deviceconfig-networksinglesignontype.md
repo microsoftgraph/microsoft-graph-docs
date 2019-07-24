@@ -1,7 +1,7 @@
 ---
 title: "networkSingleSignOnType enum type"
 description: "Wi-Fi Network Single Sign On Type Settings."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -20,6 +20,7 @@ Wi-Fi Network Single Sign On Type Settings.
 |disabled|0|Disabled|
 |prelogon|1|Pre-Logon|
 |postlogon|2|Post-Logon|
+
 
 
 

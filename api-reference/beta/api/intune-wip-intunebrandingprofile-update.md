@@ -1,7 +1,7 @@
 ---
 title: "Update intuneBrandingProfile"
 description: "Update the properties of a intuneBrandingProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -48,23 +48,24 @@ The following table shows the properties that are required when you create the [
 |id|String|Profile Key|
 |profileName|String|Name of the profile|
 |profileDescription|String|Description of the profile|
-|isDefaultProfile|Boolean|Presents if the profile is used for default.|
-|createdDateTime|DateTimeOffset|When the BrandingProfile was created.|
-|lastModifiedDateTime|DateTimeOffset|When the BrandingProfile was last modified.|
-|displayName|String|Company/organization name that is displayed to end users.|
-|contactITName|String|Name of the person/organization responsible for IT support.|
-|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support.|
-|contactITEmailAddress|String|Email address of the person/organization responsible for IT support.|
-|contactITNotes|String|Text comments regarding the person/organization responsible for IT support.|
-|privacyUrl|String|URL to the company/organization’s privacy policy.|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
-|showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
-|showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps on theme color backgrounds.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps on light backgrounds.|
+|isDefaultProfile|Boolean|Boolean that represents whether the profile is used as default or not|
+|createdDateTime|DateTimeOffset|Time when the BrandingProfile was created|
+|lastModifiedDateTime|DateTimeOffset|Time when the BrandingProfile was last modified|
+|displayName|String|Company/organization name that is displayed to end users|
+|contactITName|String|Name of the person/organization responsible for IT support|
+|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support|
+|contactITEmailAddress|String|E-mail address of the person/organization responsible for IT support|
+|contactITNotes|String|Text comments regarding the person/organization responsible for IT support|
+|privacyUrl|String|URL to the company/organization’s privacy policy|
+|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
+|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal|
+|showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not|
+|showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a theme color background behind the logo|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
+|customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
 
 
 
@@ -78,7 +79,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1205
+Content-length: 1264
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -115,7 +116,8 @@ Content-length: 1205
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
 
@@ -124,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1377
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -164,9 +166,11 @@ Content-Length: 1377
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
+
 
 
 

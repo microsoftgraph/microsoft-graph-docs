@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementScriptRunSummary resource type"
 description: "Contains properties for the run summary of a device management script."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -50,6 +50,7 @@ Here is a JSON representation of the resource.
   "errorUserCount": 1024
 }
 ```
+
 
 
 

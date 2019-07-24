@@ -1,7 +1,7 @@
 ---
 title: "See also"
 description: "{This is the API-level overview for the device relay module.}"
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -20,11 +20,3 @@ ms.prod: "microsoft-identity-platform"
 
 - [Use the Microsoft Graph API to enable cross-device experiences](cross-device-reference-overview.md)
 - [Use the activity feed API to resume a user's activity across devices](activity-feed-api-overview.md)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/device-relay-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

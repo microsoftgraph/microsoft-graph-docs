@@ -19,7 +19,10 @@
       "build_source_folder": "api-reference",
       "build_output_subfolder": "microsoft-graph-ref",
       "locale": "en-us",
-      "moniker_ranges": [ "graph-rest-beta", ">= graph-rest-1.0" ], 
+      "moniker_ranges": [
+        "graph-rest-beta",
+        ">= graph-rest-1.0"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -33,10 +36,10 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
-  "git_repository_branch_open_to_public_contributors": "master",  
   "dependent_repositories": [
     {
       "path_to_root": "_themes",

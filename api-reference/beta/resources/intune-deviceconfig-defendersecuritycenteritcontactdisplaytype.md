@@ -1,7 +1,7 @@
 ---
 title: "defenderSecurityCenterITContactDisplayType enum type"
 description: "Possible values for defenderSecurityCenterITContactDisplay"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -21,6 +21,7 @@ Possible values for defenderSecurityCenterITContactDisplay
 |displayInAppAndInNotifications|1|Display in app and in notifications|
 |displayOnlyInApp|2|Display only in app|
 |displayOnlyInNotifications|3|Display only in notifications|
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "mobileAppContentFile resource type"
 description: "Contains properties for a single installer file that is associated with a given mobileAppContent version."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -69,6 +69,7 @@ Here is a JSON representation of the resource.
   "isDependency": true
 }
 ```
+
 
 
 

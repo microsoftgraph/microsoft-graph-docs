@@ -2,7 +2,7 @@
 title: "List windowsOfficeClientSecurityConfigurations"
 description: "List properties and relationships of the windowsOfficeClientSecurityConfiguration objects."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

@@ -49,19 +49,3 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 - [Send a command to a device](../api/send-device-command.md)
 - [Get command status](../api/get-device-command-status.md)
 
-## Notifications
-
-You can use the notifications APIs in Microsoft Graph to deliver notifications across multiple endpoints that the same user is signed in on. You can target a user directly when posting notifications instead of worrying about device addresses/channels. This way, you can focus on designing the right notification scenarios in a human-centric, rather than a device-centric way. 
-
-You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the [client SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
-
-For details, see [Create and send a notification](../api/projectrome-notification-post.md).
-
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

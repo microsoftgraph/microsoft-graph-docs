@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementExchangeConnector resource type"
 description: "Entity which represents a connection to an Exchange environment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -64,6 +64,7 @@ Here is a JSON representation of the resource.
   "exchangeOrganization": "String"
 }
 ```
+
 
 
 

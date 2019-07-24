@@ -1,12 +1,12 @@
 ---
-title: "Use the Microsoft Graph API to integrate social intelligence in an app"
+title: "Use the Microsoft Graph API to integrate social and workplace intelligence in an app"
 description: "Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data."
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
 ---
 
-# Use the Microsoft Graph API to integrate social intelligence in an app
+# Use the Microsoft Graph API to integrate social and workplace intelligence in an app
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,6 +20,14 @@ relevance based on multiple communication, collaboration, and business relations
 lets you browse, sort, select, filter, or search for persons based on your criteria.
 
 - [List people](../api/user-list-people.md)
+
+## Help users get the most relevant documents for their work
+
+Use the insights API to identify the most relevant documents for a user: 
+
+- List documents [trending around](../api/insights-list-trending.md) a user
+- List documents [used by](../api/insights-list-used.md) a user
+- List documents [shared with or shared by](../api/insights-list-shared.md) a user
 
 ## Manage @-Mentions
 
@@ -47,18 +55,3 @@ Include the next sentence when supporting events.
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message
 
-## Access social data around and about a user
-
-Office Graph encapsulates the relationships between different entities in Office 365. Use Office Graph to get social insights
-into individual users across Office 365.
-
-- List the items [trending around](../api/insights-list-trending.md) a user
-- List users who have been [working with](../api/user-list-people.md) a user
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/social-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

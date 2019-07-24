@@ -1,7 +1,7 @@
 ---
 title: "roleScopeTag resource type"
 description: "Role Scope Tag"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -22,6 +22,9 @@ Role Scope Tag
 |[Create roleScopeTag](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Create a new [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
 |[Delete roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|None|Deletes a [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[Update roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Update the properties of a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
+|[assign action](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection|Not yet documented|
+|[getRoleScopeTagsById action](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|Not yet documented|
+|[hasCustomRoleScopeTag function](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|Boolean|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -31,7 +34,9 @@ Role Scope Tag
 |description|String|Description of the Role Scope Tag.|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|assignments|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection|The list of assignments for this Role Scope Tag.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -49,6 +54,7 @@ Here is a JSON representation of the resource.
   "description": "String"
 }
 ```
+
 
 
 

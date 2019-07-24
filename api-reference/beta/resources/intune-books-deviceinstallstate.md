@@ -1,7 +1,7 @@
 ---
 title: "deviceInstallState resource type"
 description: "Contains properties for the installation state for a device."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -61,6 +61,7 @@ Here is a JSON representation of the resource.
   "userName": "String"
 }
 ```
+
 
 
 

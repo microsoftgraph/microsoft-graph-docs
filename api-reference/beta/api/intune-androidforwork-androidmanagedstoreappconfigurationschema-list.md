@@ -1,7 +1,7 @@
 ---
 title: "List androidManagedStoreAppConfigurationSchemas"
 description: "List properties and relationships of the androidManagedStoreAppConfigurationSchema objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 987
+Content-Length: 1871
 
 {
   "value": [
@@ -68,6 +68,32 @@ Content-Length: 987
       "schemaItems": [
         {
           "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
+          "schemaItemKey": "Schema Item Key value",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "defaultBoolValue": true,
+          "defaultIntValue": 15,
+          "defaultStringValue": "Default String Value value",
+          "defaultStringArrayValue": [
+            "Default String Array Value value"
+          ],
+          "dataType": "integer",
+          "selections": [
+            {
+              "@odata.type": "microsoft.graph.keyValuePair",
+              "name": "Name value",
+              "value": "Value value"
+            }
+          ]
+        }
+      ],
+      "nestedSchemaItems": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
           "schemaItemKey": "Schema Item Key value",
           "displayName": "Display Name value",
           "description": "Description value",
@@ -91,6 +117,7 @@ Content-Length: 987
   ]
 }
 ```
+
 
 
 

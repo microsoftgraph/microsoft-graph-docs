@@ -1,7 +1,7 @@
 ---
 title: "defenderAttackSurfaceType enum type"
 description: "Possible values of Defender Attack Surface Reduction Rules"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -20,6 +20,7 @@ Possible values of Defender Attack Surface Reduction Rules
 |userDefined|0|Device default value, no intent.|
 |block|1|Block functionality.|
 |auditMode|2|Does not change functionality but generate logs.|
+
 
 
 

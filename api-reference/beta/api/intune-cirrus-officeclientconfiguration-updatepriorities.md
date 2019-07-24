@@ -2,7 +2,7 @@
 title: "updatePriorities action"
 description: "Update policy priorities."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

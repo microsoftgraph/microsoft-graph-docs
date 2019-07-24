@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotSyncStatus enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -21,6 +21,7 @@ Not yet documented
 |inProgress|1|Sync is in progress|
 |completed|2|Sync completed.|
 |failed|3|Sync failed.|
+
 
 
 

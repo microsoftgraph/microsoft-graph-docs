@@ -8,9 +8,9 @@ ms.prod: "microsoft-identity-platform"
 
 # Users you can reach with Microsoft Graph
 
-Microsoft offers services and solutions that expand modern work and modern life. 
+Microsoft offers services and solutions that expand modern work and modern life.
 
-As a developer, you can use the Microsoft Graph API to build applications that connect to the millions of users that use Microsoft cloud products for work, school, and personal productivity. 
+As a developer, you can use the Microsoft Graph API to build applications that connect to the millions of users that use Microsoft cloud products for work, school, and personal productivity.
 
 ## Connect to personal services
 
@@ -21,8 +21,8 @@ Use Microsoft Graph to reach users with Microsoft personal accounts, such as @ou
 Use Microsoft Graph to reach users and organizations that have licenses to Microsoft 365 services for business, enterprise or education. These Microsoft 365 services include:
 
 -	Office 365
--	Enterprise Mobility + Security 
--	Windows 10 
+-	Enterprise Mobility + Security
+-	Windows 10
 
 With their consent, you can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. To learn more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
@@ -43,6 +43,6 @@ Use Microsoft Graph to reach students, teachers, and schools with licenses to Mi
 - Check out some [Featured scenarios](https://developer.microsoft.com/graph/examples).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
-- Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](auth-overview.md) in your app.
+- Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios.
+- Find out how to [get an auth token](/graph/auth) in your app.
 - Start [using the API](use-the-api.md).

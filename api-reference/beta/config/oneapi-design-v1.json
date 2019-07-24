@@ -23,7 +23,7 @@
       "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"]
     },
     "httpResponse": {
-      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg"],
+      "contentTypes": [ "application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream" ],
       "standardHeaders":
       [
         "Content-Range"
@@ -31,7 +31,7 @@
     },
     "jsonSerialization": {
       "collectionPropertyNames": ["value"],
-      "dateTimeFormats": ["yyyy-MM-ddThh:MM:SSz"]
+      "dateTimeFormats": ["yyyy-MM-ddThh:MM:SSz", "yyyy-MM-dd"]
     },
     "ignorableProperties": [
       "@odata.id",
@@ -41,6 +41,6 @@
       "@odata.nextLink",
       "@odata.deltaLink"
     ],
-    "caseSensativeHeaders": false
+    "caseSensitiveHeaders": false
   }
 }

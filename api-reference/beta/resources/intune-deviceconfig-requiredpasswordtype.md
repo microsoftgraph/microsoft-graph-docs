@@ -1,7 +1,7 @@
 ---
 title: "requiredPasswordType enum type"
 description: "Possible values of required passwords."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -20,6 +20,7 @@ Possible values of required passwords.
 |deviceDefault|0|Device default value, no intent.|
 |alphanumeric|1|Alphanumeric password required.|
 |numeric|2|Numeric password required.|
+
 
 
 

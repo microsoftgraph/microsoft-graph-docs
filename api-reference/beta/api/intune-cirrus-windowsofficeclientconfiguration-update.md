@@ -2,7 +2,7 @@
 title: "Update windowsOfficeClientConfiguration"
 description: "Patch a specific non-security policy payload."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

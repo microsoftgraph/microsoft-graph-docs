@@ -57,9 +57,9 @@ For example, assume that you have an application, two Azure AD tenants, **T1** a
 
 - To make the application work again in tenant **T1**, the admin of tenant **T1** must explicitly grant permissions **P1** and **P2** to the application.
 
-## Register an application in the Azure AD v2.0 endpoint
+## Register an application with the Microsoft identity platform endpoint
 
-To register an application to the Azure AD v2.0 endpoint, you'll need:
+To register an application to the Microsoft identity platform endpoint, you'll need:
 
 - **Application name** - A string used for the application name.
 - **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use the test client web app homepage.
@@ -67,11 +67,13 @@ To register an application to the Azure AD v2.0 endpoint, you'll need:
 
 To register your application:
 
-1. Go to https://apps.dev.microsoft.com/ and sign in.
+1. Go to the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) and sign in.
     >**Note**: You don't have to be a tenant admin. You will be redirected to the **My applications** list.
-2. Choose **Add an app**, and enter an **Application Name** to create a new application.
-3. On the registration page for the new application, choose **Add Platform** > **Web**. In the **Redirect URL** field, enter the redirect URL.
-4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
+2. Choose **New registration**.
+3. On the registration page for the new application, enter a value for **Name** and select the account types you wish to support. In the **Redirect URI** field, enter the redirect URL.
+4. Select **Register** to create the app and view its overview page.
+5. Go to the app's **API permissions** page.
+6. Select **Add a permission** and then choose **Microsoft Graph** in the flyout. Select **Delegated permissions**. Use the search box to find and select the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
 
     >**Note:** The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
 
@@ -79,19 +81,19 @@ To register your application:
     |:----------|:-------|:-------------------|
     |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET |
     |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET, POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (preview)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (preview) | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (preview)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (preview) | GET, POST, PATCH |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
     |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (preview) | GET, POST, PATCH, DELETE|
 
-5. Choose **Save**.
+7. Choose **Add permissions**.
 
 Save the following information:
 
-- Application ID
+- Application (client) ID
 - Redirect URL
 - List of required permissions
 
-For more information, see [Register your app with the Azure AD v2.0 endpoint](auth-register-app-v2.md).
+For more information, see [Register your app with the Microsoft identity platform](auth-register-app-v2.md).
 
 ## Grant permissions to an application
 
@@ -99,29 +101,28 @@ Application registration only defines which permission the application requires 
 
 To grant permissions to an application, you'll need:
 
-- **Application ID** - The application ID from application registration portal.
-- **Redirect URL** - The string you set in the application registration portal for authentication response.
+- **Application ID** - The application ID from the Azure application registration portal.
+- **Redirect URL** - The string you set in the Azure application registration portal for authentication response.
 
 To grant the permissions:
 
-- In a text editor, create following URL string:
+- In a text editor, create the following URL string:
 
     `https://login.microsoftonline.com/common/adminconsent?client_id=<Application Id>&state=12345&redirect_uri=<Redirect URL>`
 
-- In a web browser, go to this URL, and sign in as a tenant administrator. The dialog box shows the list of permission the application requires, as specified in the application registration portal. 
-Choose **OK** to grant the application these permissions.
+- In a web browser, go to this URL, and sign in as a tenant administrator. The dialog box shows the list of permission the application requires, as specified in the application registration portal. Choose **OK** to grant the application these permissions.
 
 > **Note:** This step grants permissions to the application - not to users. This means that all users belonging to the Azure AD tenant that use this application will be granted these permissions - even non-admin users.
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com) (https://portal.azure.com).
+- Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.

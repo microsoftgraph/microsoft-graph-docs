@@ -1,7 +1,7 @@
 ---
 title: "keySize enum type"
 description: "Key Size Options."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -19,6 +19,7 @@ Key Size Options.
 |:---|:---|:---|
 |size1024|0|1024 Bits.|
 |size2048|1|2048 Bits.|
+
 
 
 

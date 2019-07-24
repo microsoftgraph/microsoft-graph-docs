@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationListBox"
 description: "Read properties and relationships of the groupPolicyPresentationListBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [groupPolicyPresentationListBox](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 267
+Content-Length: 309
 
 {
   "value": {
@@ -69,10 +69,12 @@ Content-Length: 267
     "label": "Label value",
     "id": "2e074c87-4c87-2e07-874c-072e874c072e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "explicitValue": true
+    "explicitValue": true,
+    "valuePrefix": "Value Prefix value"
   }
 }
 ```
+
 
 
 

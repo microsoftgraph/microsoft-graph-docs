@@ -1,35 +1,42 @@
 ---
-title: "Using the notifications API in Microsoft Graph to enable human-centric notification experiences "
-description: "Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence. "
+title: "Enabling human-centric notification experiences using Microsoft Graph notifications "
+description: "Notifications are one of the most effective ways to re-engage with users of your application. A great notification experience can help open a near real-time communication channel between you and your application users, that in turn can increase app engagement at the right time, assist users with being more productive and alert them of important events or timely actions that may be required. "
 localization_priority: Priority
-ms.prod: "project-rome"
+ms.prod: "notifications"
 ---
 
-# Using the notifications API in Microsoft Graph to enable human-centric notification experiences 
+# Enabling human-centric notification experiences using Microsoft Graph notifications
 
-Notifications are the most effective way to re-engage your users. They can catch your users' attention and bring the user back to your app. In a multi-device world, your users can access your apps and services from anywhere, across different platforms and devices where your apps have a presence. 
+Notifications are one of the most effective ways to reengage with your application users. A great notification experience can help open a near real-time communication channel between you and your users, and that in turn can increase app engagement at the right time, make users more productive, and alert them to important events or required actions.
 
-Your notification scenarios should be designed in a "human-centric" way, in which the primary goal is to notify the user, wherever he or she is. Existing notification solutions provided by major platforms are excellent at targeting devices. Microsoft Graph notifications  improve on this by allowing you to target users. Microsoft Graph notifications will take care of the heavy lifting, including mapping between users and endpoints, syncing notification state across users' different endpoints, and more. 
+> [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
+
+Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices. 
+
+Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. Microsoft Graph notifications provide a human-centric approach that gives you the ability to target your  users across any and all device endpoints.
+
+![An image that shows an app service communicating with Microsoft Graph to send notifications to multiple endpoints](images/notifications-flow-overview.png)
 
 ## Why integrate with Microsoft Graph notifications?
-### Deliver notifications to a user across different endpoints
-As part of Microsoft Graph, the notifications API allows you to target a Microsoft account or a work or school (Azure AD) account to deliver a notification. The platform distributes this notification to all the users' endpoints, including Windows UWP, Android, and iOS. 
 
-### Manage notifications across endpoints
-The Microsoft Graph notifications API allows you to update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your users' notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere.
+Microsoft Graph notifications provide a user-centric notification platform that brings four key benefits to your applications.
 
-### Retrieve notification history
-You can use the notifications API to retrieve notification history based on an expiration time you define (up to 30 days). Notifications that are marked as read or dismissed are still retrievable from the history, enabling in-app views of notification history and other  scenarios. 
+### Effortlessly target your user for notification delivery across different endpoints
 
-## Integrating with the notifications API in Microsoft Graph
+You can use the notifications API to target a personal Microsoft account or a work or school Azure Active Directory (Azure AD) account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, Android, and iOS. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
 
-You can integrate your apps with Microsoft Graph notifications with a few simple steps - onboard your app via Windows Dev Center, use the [Create notification](/graph/api/projectrome-notification-post?view=graph-rest-beta) method to publish notifications, and use the Project Rome SDK to receive and manage notifications on your app clients.  
+### Easily manage notifications across endpoints
 
-To learn more about how to publish user notifications via Microsoft Graph, see the [notifications API reference](/graph/api/resources/notifications-api-overview?view=graph-rest-beta).
- 
-To learn more about receiving and managing notifications by integrating with the Project Rome SDK, see the [Project Rome SDK documentation](https://docs.microsoft.com/en-us/windows/project-rome/) 
+Using the [Microsoft Graph notifications client SDK](https://github.com/microsoft/project-rome) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user’s notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
 
-## See also
+### Retrieve notification state and history
 
-- [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
-- [Project Rome Dev Center](https://aka.ms/projectrome)
+You can use the notifications API to retrieve notification history based on an expiration time you define (up to 30 days). Notifications that are marked as read or dismissed are still retrievable from the history, enabling in-app views of notification history as well as enabling you to build on insights and intelligence.
+
+### Privacy and compliance
+
+Microsoft Graph notifications meet most enterprise compliance requirements, including ISO 27001, ISO 27018, EUMC, HIPAA, SOC 1, SOC 2, and of course GDPR.
+
+## How do I get started?
+
+To get started, see the [integration overview](notifications-integration-e2e-overview.md) section to learn how you can integrate user-centric notifications within your application.

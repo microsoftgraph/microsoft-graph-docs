@@ -56,9 +56,8 @@ The following are three key benefits you can derive by integrating with the Micr
 
 - Aggregate alerts from multiple providers to create incidents.
 - Access additional context to inform alert prioritization and response.
-
-Keep alert status synchronized across systems managing alerts. </br>
-Gain visibility into the security posture and recommendation on how to improve it with Secure Scores.
+- Keep alert status synchronized across systems managing alerts.
+- Gain visibility into the security posture and recommendation on how to improve it with Secure Scores.
 
 ### Share threat intelligence to enable custom detections
 

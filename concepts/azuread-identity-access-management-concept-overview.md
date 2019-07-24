@@ -7,19 +7,19 @@ localization_priority: Priority
 
 # Azure AD identity and access management API overview
 
-Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.  
+Azure Active Directory (Azure AD) helps centralize identity and access management (IAM) to enable secure and productive access between apps, devices, services, and infrastructure. Organizations can use Azure AD to manage identities and control access in on-premises, hybrid, and cloud environments.
 
 You can use the Azure AD REST APIs in Microsoft Graph to create unique workflows between Azure AD [resources](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0) and third-party services.
 
 ## Why use the Azure AD APIs?
 
-More than 15 million organizations use Azure AD while subscribing to Microsoft cloud services like Office 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.  
+More than 15 million organizations use Azure AD while subscribing to Microsoft cloud services like Office 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.
 
 Enterprise developers use Microsoft Graph to integrate Azure AD identity management and other services to automate administrative workflows, such as employee onboarding (and termination), profile maintenance, license deployment, and more.
 
 For many enterprise developers, Microsoft Graph and Azure AD help "lift and shift" existing applications to the cloud, speeding an organization's digital transformation. You can take advantage of Azure AD capabilities to add access control mechanisms to applications, including verifying a user's group membership, directory role, or administrative unit membership.
 
-You can use Microsoft Graph and Azure AD as a way to quickly and easily reach more than 15 million organizations, including 90% of the Fortune 500 companies that already use Azure AD services. Integrated applications feature seamless sign-in experiences and can use existing organizational data to create personalized experiences.  
+You can use Microsoft Graph and Azure AD as a way to quickly and easily reach more than 15 million organizations, including 90% of the Fortune 500 companies that already use Azure AD services. Integrated applications feature seamless sign-in experiences and can use existing organizational data to create personalized experiences.
 
 You can use the Azure AD APIs in Microsoft Graph to query the user's profile, find other users, manage organizational relationships, track assignments, or create original solutions that incorporate existing organizational data. These APIs provide a solid foundation to seamlessly integrate custom business applications into an organization's existing digital services.
 
@@ -79,7 +79,7 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Find out how to [Use the Azure AD REST APIs](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Use Azure AD to [authenticate](auth-overview.md) to Microsoft Graph.
+- Use Azure AD to [authenticate](/graph/auth) to Microsoft Graph.
 - Integrate [Azure AD sign-in](https://azure.microsoft.com/en-us/develop/identity/signin/) into your app or website.
 - See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
 - Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

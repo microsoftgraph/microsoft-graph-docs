@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementUserRightsLocalUserOrGroup resource type"
 description: "Represents information for a local user or group used for user rights setting."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -39,6 +39,7 @@ Here is a JSON representation of the resource.
   "securityIdentifier": "String"
 }
 ```
+
 
 
 

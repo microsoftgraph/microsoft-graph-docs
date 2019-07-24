@@ -1,7 +1,7 @@
 ---
 title: "managementState enum type"
 description: "Management state of device in Microsoft Intune."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -29,6 +29,7 @@ Management state of device in Microsoft Intune.
 |wipeCanceled|9|A wipe command for this device has been canceled|
 |retireCanceled|10|A retire command for this device has been canceled|
 |discovered|11|The device is discovered but not fully enrolled.|
+
 
 
 

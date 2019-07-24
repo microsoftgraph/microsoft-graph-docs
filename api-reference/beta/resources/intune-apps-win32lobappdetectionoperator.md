@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppDetectionOperator enum type"
 description: "Contains properties for detection operator."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -24,6 +24,7 @@ Contains properties for detection operator.
 |greaterThanOrEqual|5|Greater than or equal operator.|
 |lessThan|8|Less than operator.|
 |lessThanOrEqual|9|Less than or equal operator.|
+
 
 
 

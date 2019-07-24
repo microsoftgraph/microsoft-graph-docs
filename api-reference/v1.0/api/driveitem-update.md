@@ -55,6 +55,8 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 This example renames the DriveItem resource to "new-file-name.docx".
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
@@ -65,6 +67,24 @@ Content-type: application/json
   "name": "new-file-name.docx"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -95,5 +115,7 @@ See [Error Responses][error-response] for details about how errors are returned.
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update"
+  "tocPath": "Items/Update",
+  "suppressions": [
+  ]
 } -->

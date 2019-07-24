@@ -3,7 +3,6 @@ title: "Microsoft Graph quick start FAQ"
 description: "This FAQ answers questions related to the Microsoft Graph Quick Starts."
 author: jasonjoh
 ms.author: jasonjoh
-ms.date: 12/13/2018
 localization_priority: Normal
 ---
 
@@ -37,7 +36,8 @@ Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](t
 - Build the code yourself by following the step-by-step tutorial.
 - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
 
-> **Note:** We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
+> [!NOTE]
+> We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
 
 #### Tutorials and GitHub repositories
 
@@ -45,7 +45,7 @@ The following table lists the corresponding tutorial and GitHub repository for e
 
 | Quick start | Tutorial | GitHub repository |
 |-------------|----------|-------------------|
-| Android | None | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
+| Android | [Tutorial](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
 | Angular | [Tutorial](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
 | ASP.NET MVC | [Tutorial](/graph/tutorials/aspnet) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
 | iOS Swift | None | [GitHub](https://github.com/microsoftgraph/ios-swift-connect-sample) |
@@ -59,11 +59,25 @@ The following table lists the corresponding tutorial and GitHub repository for e
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other authentication flows in the [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios) documentation.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other authentication flows in the [Azure Active Directory](/azure/active-directory/develop/authentication-scenarios) documentation.
 
 ### What if I run into an unexpected error or problem with a quick start?
 
 If you have trouble getting the quick start to work properly, please open an issue on the corresponding GitHub repository.
+
+## Known issues
+
+### ASP.NET quick start displays an error when running it: Cannot find a part of the path '[...]\Graph Tutorial\graph-tutorial\bin\roslyn\csc.exe'.
+
+This is caused by an [issue with Visual Studio and the Roslyn compiler](https://github.com/dotnet/roslyn/issues/15556). One of the following options should resolve the error.
+
+- Unload/reload project in Solution Explorer
+- Clean/Rebuild solution
+- Upgrade NuGet packages
+
+### I'm getting "AADSTS50011: The reply url specified in the request does not match the reply urls configured for the application" when running a quick start.
+
+This indicates a problem with the application registration for the quick start. When you download a quick start from the [Microsoft Graph Quick Starts page](https://developer.microsoft.com/graph/quick-start), we create the application registration for you, and configure a reply URL (also known as a redirect URL) that matches the default URL used by the sample project. If you change the URL, the app registration will no longer match and could cause this error. To resolve this error, consult the README.md file included with the quick start project for instructions on how to create an app registration and configure it in the sample code.
 
 ## Didn't find what you need?
 

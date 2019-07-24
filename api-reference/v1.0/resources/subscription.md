@@ -70,6 +70,7 @@ Here is a JSON representation of the resource.
 
 | Resource            | Maximum Expiration Time  |
 |:--------------------|:-------------------------|
+| User, group, other directory resources   | 4230 minutes (under 3 days)    |
 | Mail                | 4230 minutes (under 3 days)    |
 | Calendar            | 4230 minutes (under 3 days)    |
 | Contacts            | 4230 minutes (under 3 days)    |

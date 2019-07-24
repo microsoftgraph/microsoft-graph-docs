@@ -1,7 +1,7 @@
 ---
 title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,6 +23,7 @@ Possible values for site security level.
 |medium|3|Medium.|
 |mediumHigh|4|Medium-high.|
 |high|5|High.|
+
 
 
 

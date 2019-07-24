@@ -1,7 +1,7 @@
 ---
 title: "appLogDecryptionAlgorithm enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -18,6 +18,7 @@ Not yet documented
 |Member|Value|Description|
 |:---|:---|:---|
 |aes256|0|Not yet documented|
+
 
 
 

@@ -16,7 +16,7 @@ Represents the license information to assign to user accounts. The resource will
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **appliesTo** | string | The user role type to assign to license. Possible values are: `student`, `teacher`.         |
+| **appliesTo** | string | The user role type to assign to license. Possible values are: `student`, `teacher`, `faculty`.         |
 | **skuIds** | collection of strings |  Represents the SKU identifiers of the licenses to assign.        |
 
 ## JSON representation
@@ -34,11 +34,3 @@ Represents the license information to assign to user accounts. The resource will
     "skuIds": ["String"]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsynchronizationlicenseassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

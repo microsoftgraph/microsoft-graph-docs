@@ -16,25 +16,21 @@ Outlook contacts lets you store personal contacts' data, and is part of the Outl
 
 Hundreds of millions of consumers and tens of millions of organization customers choose Outlook as their email client. Contacts provide a complementary function for messaging and calendaring by letting customers maintain a convenient, integrated store of contacts data within Outlook. For developers, tapping into the rich functionality of [mail](outlook-mail-concept-overview.md) or [calendar](outlook-calendar-concept-overview.md) means opening up richer scenarios with the user's contacts data.
 
-
 ### Automate contact organization
 
 The contacts API lets you keep your customers organized, in close parity as the customers do it themselves through Outlook:
 
 - Similarly to the customer experience, you can create [contact](/graph/api/resources/contact?view=graph-rest-1.0) instances and assign them to [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) objects.
-- The contacts API lets you assign categories contacts, as well as events, messages, tasks, and group posts in a consistent way to enhance organization and disovery. In addition, you can [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), which can open up additional creative scenarios.
+- The contacts API lets you assign categories contacts, as well as events, messages, tasks, and group posts in a consistent way to enhance organization and discovery. In addition, you can [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), which can open up additional creative scenarios.
 - You can set a flag on a [contact](/graph/api/resources/contact?view=graph-rest-1.0) for follow-up. (Flagging is currently [in preview](versioning-and-support.md#beta-version) in Microsoft Graph.)
-
 
 ### Share contact information
 
-The contacts API lets you get contact items of the signed-in user, or of the users who have shared or delegated their contacts to the signed-in user. For example, if Garth has shared a contact folder with John, or if Garth has delegated access to John, then [delegated permissions](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions) from John would give you read access to Garth's shared calendar and contents as well.
-
+The contacts API lets you get contact items of the signed-in user, or of the users who have shared or delegated their contacts to the signed-in user. For example, if Garth has shared a contact folder with John, or if Garth has delegated access to John, then [delegated permissions](auth/auth-concepts.md#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
 
 ### Leverage people API in Microsoft Graph to make better use of all people data
 
 You can use the typical CRUD operations for an Outlook [contact](/graph/api/resources/contact?view=graph-rest-1.0) to create and manage contacts. As part of Microsoft Graph, you can also use the [people API](people-example.md) that looks at a user's Outlook contacts, as well as social networks, organization directory, and people from recent communication, and return information about people from all these sources that are most relevant to the user. Take advantage of this additional intelligence in people picker scenarios.
-
 
 ### Take advantage of other shared features and conveniences in Microsoft Graph
 
@@ -43,6 +39,7 @@ You can use the typical CRUD operations for an Outlook [contact](/graph/api/reso
 - You can extend app storage in a contact instance as an [open extension](extensibility-overview.md#open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility-overview.md#schema-extensions).
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Outlook contacts API in Microsoft Graph v1.0](/graph/api/resources/contact?view=graph-rest-1.0)

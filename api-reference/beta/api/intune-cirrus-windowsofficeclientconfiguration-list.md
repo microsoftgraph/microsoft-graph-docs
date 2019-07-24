@@ -2,7 +2,7 @@
 title: "List windowsOfficeClientConfigurations"
 description: "List properties and relationships of the windowsOfficeClientConfiguration objects."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileVpnConnectionType enum type"
 description: "Android Work Profile VPN connection type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -24,6 +24,7 @@ Android Work Profile VPN connection type.
 |checkPointCapsuleVpn|4|Check Point Capsule VPN.|
 |citrix|5|Citrix|
 |paloAltoGlobalProtect|6|Palo Alto Networks GlobalProtect.|
+
 
 
 

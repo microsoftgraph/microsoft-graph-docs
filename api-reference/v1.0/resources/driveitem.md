@@ -1,8 +1,8 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: DriveItem
+title: driveItem resource type
+description: Item is the main data model in the OneDrive API. Everything is an item.
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
@@ -16,7 +16,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
-**DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
+**driveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
 
 * Folders have a [**folder facet**][folder]
@@ -26,71 +26,7 @@ For example:
 
 Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 
-## JSON representation
-
-Here is a JSON representation of a **driveItem** resource.
-
-The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
-       "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
-       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{
-  "audio": { "@odata.type": "microsoft.graph.audio" },
-  "content": { "@odata.type": "Edm.Stream" },
-  "cTag": "string (etag)",
-  "deleted": { "@odata.type": "microsoft.graph.deleted"},
-  "description": "string",
-  "file": { "@odata.type": "microsoft.graph.file" },
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
-  "folder": { "@odata.type": "microsoft.graph.folder" },
-  "image": { "@odata.type": "microsoft.graph.image" },
-  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
-  "package": { "@odata.type": "microsoft.graph.package" },
-  "photo": { "@odata.type": "microsoft.graph.photo" },
-  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
-  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
-  "root": { "@odata.type": "microsoft.graph.root" },
-  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
-  "shared": { "@odata.type": "microsoft.graph.shared" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
-  "video": { "@odata.type": "microsoft.graph.video" },
-  "webDavUrl": "string",
-
-  /* relationships */
-  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
-  "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string (identifier)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "eTag": "string",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "string",
-  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "string",
-
-  /* instance annotations */
-  "@microsoft.graph.conflictBehavior": "string",
-  "@microsoft.graph.downloadUrl": "url",
-  "@microsoft.graph.sourceUrl": "url"
-}
-```
+>**Note:** In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
 
 ## Properties
 
@@ -136,6 +72,8 @@ The eTag value is only modified when the folder's properties are changed, except
 
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
+| activities         | [itemActivity][] collection | The list of recent activities that took place on this item.
+| analytics          | [itemAnalytics][] resource  | Analytics about the view activities that took place on this item.
 | children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
@@ -161,36 +99,104 @@ These properties are temporary and either a) define behavior the service should 
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
+## JSON representation
+
+Here is a JSON representation of a **driveItem** resource.
+
+The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
+       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "sharepointIds"],
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+  "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
+  "cTag": "string (etag)",
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
+  "description": "string",
+  "file": { "@odata.type": "microsoft.graph.file" },
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image": { "@odata.type": "microsoft.graph.image" },
+  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "package": { "@odata.type": "microsoft.graph.package" },
+  "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
+  "root": { "@odata.type": "microsoft.graph.root" },
+  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
+  "shared": { "@odata.type": "microsoft.graph.shared" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "size": 1024,
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "video": { "@odata.type": "microsoft.graph.video" },
+  "webDavUrl": "string",
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": {"@odata.type": "microsoft.graph.itemAnalytics"},
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
+  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "eTag": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
+  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "string",
+
+  /* instance annotations */
+  "@microsoft.graph.conflictBehavior": "string",
+  "@microsoft.graph.downloadUrl": "url",
+  "@microsoft.graph.sourceUrl": "url"
+}
+```
+
 ## Methods
 
-| Method                                                   | REST Path
-|:---------------------------------------------------------|:------------------
-| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| Method                                                   | Return Type | Description
+|:---------------------------------------------------------|:------------|:------------
+| [Get item](../api/driveitem-get.md)                      | driveItem |Retrieve the metadata for a DriveItem in a Drive.
+| [Get analytics][]                                        | [itemAnalytics][] | Get analytics for this resource. 
+| [Get activities by interval][]                           | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval.
+| [List children](../api/driveitem-list-children.md)       | collection of driveItem | Return a collection of DriveItems in the children relationship of a DriveItem.
+| [List versions](../api/driveitem-list-versions.md)       | collection of [DriveItemVersion][] | Retrieves the versions of a file in the current user's drive.
+| [Create item](../api/driveitem-post-children.md)         | driveItem | Creates a driveItem in the specified drive.
+| [Update item](../api/driveitem-update.md)                | driveItem | Updates a driveItem in the drive.
+| [Upload content](../api/driveitem-put-content.md)        | driveItem | Uploads content to the driveItem.
+| [Download content](../api/driveitem-get-content.md)      | download Url | Downloads content of a driveItem.
+| [Download specific file format][download-format]         | download Url | Downloads content of a driveItem with a specific format.
+| [Delete item](../api/driveitem-delete.md)                | No Content | Deletes a driveItem.
+| [Move item](../api/driveitem-move.md)                    | driveItem | Move a DriveItem to a new parent item.
+| [Copy item](../api/driveitem-copy.md)                    | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Creates a copy of an driveItem (including any children).
+| [Search items](../api/driveitem-search.md)               | collection of driveItem | Search the hierarchy of items for items matching a query.
+| [List changes in a drive](../api/driveitem-delta.md)     | delta link | List any changes in the drive.
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | colletion of driveItem | List driveItems with their thumbnails. 
+| [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
+| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
+| [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
+| [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
+| [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
+| [Preview item][item-preview]                             | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 
 [item-preview]: ../api/driveitem-preview.md
-
-## Remarks
-
-In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 [audio]: audio.md
 [baseItem]: baseitem.md
@@ -205,6 +211,8 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
@@ -223,6 +231,11 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [workbook]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
+
+[DriveItemVersion]: driveitemversion.md
+[permission]: permission.md
+[subscription]: subscription.md
+[itemActivityStat]: itemactivitystat.md
 
 <!-- {
   "type": "#page.annotation",

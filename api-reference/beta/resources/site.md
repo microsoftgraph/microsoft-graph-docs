@@ -25,6 +25,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List pages][]                 | GET /sites/{site-id}/pages
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
+| [Follow Site][]                | POST /users/{user-id}/followedSites/add
+| [Unfollow Site][]              | POST /users/{user-id}/followedSites/remove
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -35,13 +37,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [List pages]: ../api/sitepage-list.md
 [List root sites]: ../api/site-list.md
 [Search for sites]: ../api/site-search.md
+[Follow site]: ../api/site-follow.md
+[Unfollow site]: ../api/site-unfollow.md
 
 
 ## Properties
 
 | Property name            | Type               | Description
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | The unique identifier of the item. Read-only.
+| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
 | **description**          | string             | The descriptive text for the site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
@@ -52,6 +56,17 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
+
+### id property
+A **site** is identified by a unique ID that is a composite of the following values:
+* Site collection hostname (contoso.sharepoint.com)
+* Site collection unique ID (GUID)
+* Site unique ID (GUID)
+  
+The `root` identifier always references the root site for a given target, as follows:
+
+* `/sites/root`: The tenant root site.
+* `/groups/{group-id}/sites/root`: The group's team site.
 
 ## Relationships
 
@@ -139,8 +154,6 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "tocBookmarks": {
     "Resources/Site": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

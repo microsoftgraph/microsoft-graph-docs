@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "controlName": "String",
-  "score": "String",
+  "score": "Double",
   "controlCategory": "String",
   "description": "String"
 }

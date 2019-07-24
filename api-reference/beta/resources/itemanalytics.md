@@ -35,7 +35,7 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 | Property      | Type                 | Description
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
 [itemActivityStat]: itemactivitystat.md
@@ -50,8 +50,6 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
   "tocPath": "Resources/ItemAnalytics",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemanalytics.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

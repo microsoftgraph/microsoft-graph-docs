@@ -61,22 +61,29 @@ If successful, this method returns `201 Created` response code and [calendar](..
 
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
   "name": "create_calendar_from_calendargroup"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
+POST https://graph.microsoft.com/beta/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
+
 Content-type: application/json
-Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Marketing calendar"
 }
 ```
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
@@ -91,16 +98,22 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/calendarGroups('AAMkADYAAAR9NR5AAA%3D')/calendars/$entity",
+    "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
+    "name": "Marketing calendar",
+    "color": "auto",
+    "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
+    "canShare": true,
+    "canViewPrivateItems": true,
+    "canEdit": true,
+    "owner": {
+        "name": "Adele Vance",
+        "address": "adelev@contoso.OnMicrosoft.com"
+    }
 }
 ```
 
@@ -115,7 +128,6 @@ Content-length: 98
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/calendargroup-post-calendars.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

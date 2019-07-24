@@ -55,9 +55,12 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "alert_updatealerts"
+  "name": "alert_updatealerts",
+   "isCollection": "true"
 }-->
 
 ```http
@@ -70,9 +73,9 @@ Content-type: application/json
       "assignedTo": "String",
       "closedDateTime": "String (timestamp)",
       "comments": ["String"],
-      "feedback": "@odata.type: microsoft.graph.alertFeedback",
+      "feedback": {"@odata.type": "microsoft.graph.alertFeedback"},
       "id": "String (identifier)",
-      "status": "@odata.type: microsoft.graph.alertStatus",
+      "status": {"@odata.type": "microsoft.graph.alertStatus"},
       "tags": ["String"],
       "vendorInformation":
         {
@@ -83,6 +86,24 @@ Content-type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/alert-updatealerts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/alert-updatealerts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -101,6 +122,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {
@@ -122,5 +144,7 @@ Content-type: application/json
   "description": "alert: updateAlerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

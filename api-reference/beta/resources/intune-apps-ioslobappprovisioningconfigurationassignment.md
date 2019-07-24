@@ -1,7 +1,7 @@
 ---
 title: "iosLobAppProvisioningConfigurationAssignment resource type"
 description: "A class containing the properties used for Group Assignment of an iOS LOB App Provisioning and Configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -49,6 +49,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

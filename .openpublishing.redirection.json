@@ -1917,12 +1917,12 @@
         },
         {
             "source_path": "api-reference\\beta\\api\\excelapplication_calculate.md",
-            "redirect_url": "/graph/api/excelapplication-calculate?view=graph-rest-beta",
+            "redirect_url": "/graph/api/workbookapplication-calculate?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\excelapplication_get.md",
-            "redirect_url": "/graph/api/excelapplication-get?view=graph-rest-beta",
+            "redirect_url": "/graph/api/workbookapplication-get?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -26593,6 +26593,11 @@
         {
             "source_path": "concepts\\auth_overview.md",
             "redirect_url": "/graph/auth-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts\\auth-overview.md",
+            "redirect_url": "/graph/auth/",
             "redirect_document_id": true
         },
         {

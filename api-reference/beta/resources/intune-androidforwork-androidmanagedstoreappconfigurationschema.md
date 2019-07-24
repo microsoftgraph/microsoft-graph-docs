@@ -1,7 +1,7 @@
 ---
 title: "androidManagedStoreAppConfigurationSchema resource type"
 description: "Schema describing an Android application's custom configurations."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -28,7 +28,8 @@ Schema describing an Android application's custom configurations.
 |:---|:---|:---|
 |id|String|Key of the entity the Android package name for the application the schema corresponds to|
 |exampleJson|Binary|UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app|
-|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
+|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.|
+|nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.|
 
 ## Relationships
 None
@@ -49,6 +50,32 @@ Here is a JSON representation of the resource.
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
+      "schemaItemKey": "String",
+      "displayName": "String",
+      "description": "String",
+      "defaultBoolValue": true,
+      "defaultIntValue": 1024,
+      "defaultStringValue": "String",
+      "defaultStringArrayValue": [
+        "String"
+      ],
+      "dataType": "String",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
       "schemaItemKey": "String",
       "displayName": "String",
       "description": "String",
@@ -70,6 +97,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

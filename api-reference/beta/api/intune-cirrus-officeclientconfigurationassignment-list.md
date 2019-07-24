@@ -2,7 +2,7 @@
 title: "List officeClientConfigurationAssignments"
 description: "List properties and relationships of the officeClientConfigurationAssignment objects."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

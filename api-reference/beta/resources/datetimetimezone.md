@@ -2,6 +2,8 @@
 title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # dateTimeTimeZone resource type
@@ -14,9 +16,13 @@ Describes the date, time, and time zone of a point in time.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |dateTime|String|A single point of time in a combined date and time representation (`{date}T{time}`). For example, "2019-04-16T09:00:00".|
-|timeZone|String|A time zone name as described below.|
+|timeZone|String|Represents a time zone, for example, "Pacific Standard Time". See below for possible values.|
 
-The **timeZone** property can be set to any of the time zones supported by Windows, as well as the following time zones names.
+In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), as well as the additional [time zones supported by the calendar API](#additional-time-zones). 
+
+When using **dateTimeTimeZone** in conjunction with a method (such as [creating](../api/user-post-events.md) or [updating](../api/event-update.md) an event), take note of the actual time zones supported, which can be a smaller subset.
+
+### Additional time zones
 
 Etc/GMT+12
 
@@ -245,8 +251,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/datetimetimezone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

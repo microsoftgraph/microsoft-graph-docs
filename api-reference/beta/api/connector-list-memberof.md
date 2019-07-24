@@ -42,7 +42,7 @@ If successful, this method returns a `200 OK` response code and collection of [c
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "connector_get_memberof"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectors/{id}/memberOf
@@ -81,8 +81,6 @@ Content-length: 164
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connector-list-memberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

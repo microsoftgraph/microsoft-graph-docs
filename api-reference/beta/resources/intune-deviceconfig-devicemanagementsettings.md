@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -24,6 +24,7 @@ Not yet documented
 |deviceInactivityBeforeRetirementInDay|Int32|When the device does not check in for specified number of days, the company data might be removed and the device will not be under management. Valid values 30 to 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|The Derived Credential Provider to use for this account. Possible values are: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|String|The Derived Credential Provider self-service URI.|
+|androidDeviceAdministratorEnrollmentEnabled|Boolean|The property to determine if Android device administrator enrollment is enabled for this account.|
 
 ## Relationships
 None
@@ -44,9 +45,11 @@ Here is a JSON representation of the resource.
   "enhancedJailBreak": true,
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
-  "derivedCredentialUrl": "String"
+  "derivedCredentialUrl": "String",
+  "androidDeviceAdministratorEnrollmentEnabled": true
 }
 ```
+
 
 
 

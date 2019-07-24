@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementScriptDeviceState resource type"
 description: "Contains properties for device run state of the device management script."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -57,6 +57,7 @@ Here is a JSON representation of the resource.
   "errorDescription": "String"
 }
 ```
+
 
 
 

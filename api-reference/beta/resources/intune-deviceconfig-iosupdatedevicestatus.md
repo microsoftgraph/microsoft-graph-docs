@@ -1,7 +1,7 @@
 ---
 title: "iosUpdateDeviceStatus resource type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -69,6 +69,7 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

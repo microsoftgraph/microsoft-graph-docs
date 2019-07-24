@@ -1,7 +1,7 @@
 ---
 title: "inkAccessSetting enum type"
 description: "Values for the InkWorkspaceAccess setting."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -20,6 +20,7 @@ Values for the InkWorkspaceAccess setting.
 |notConfigured|0|Not configured.|
 |enabled|1|Enabled.|
 |disabled|2|Disabled.|
+
 
 
 

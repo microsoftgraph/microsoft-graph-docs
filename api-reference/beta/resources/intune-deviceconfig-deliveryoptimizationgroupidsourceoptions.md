@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationGroupIdSourceOptions resource type"
 description: "Group id options type"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
   "groupIdSourceOption": "String"
 }
 ```
+
 
 
 

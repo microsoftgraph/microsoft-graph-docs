@@ -1,7 +1,7 @@
 ---
 title: "List windowsManagedDevices"
 description: "List properties and relationships of the windowsManagedDevice objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{usersId}/managedDevices
 GET /deviceManagement/managedDevices
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices
+GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ```
 
 ### Response
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7973
+Content-Length: 8039
 
 {
   "value": [
@@ -204,6 +204,7 @@ Content-Length: 7973
       "freeStorageSpaceInBytes": 7,
       "managedDeviceName": "Managed Device Name value",
       "partnerReportedThreatState": "activated",
+      "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
       "usersLoggedOn": [
         {
           "@odata.type": "microsoft.graph.loggedOnUser",
@@ -233,6 +234,7 @@ Content-Length: 7973
   ]
 }
 ```
+
 
 
 

@@ -1,69 +1,41 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: ListItem
+title: listItem resource
+description: This resource represents an item in a sharepoint list.
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
-# ListItem resource
+# listItem resource
 
 This resource represents an item in a SharePoint **[list][]**.
 Column values in the list are available through the `fieldValueSet` dictionary.
 
-## Tasks on a listItem
+## Methods
 
-The following tasks are available for **listItem** resources.
-All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
+The following methods are available for **listItem** resources.
+All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
-| Common task                    | HTTP method
-|:-------------------------------|:------------------------
-| [Get][]                        | GET /items/{item-id}
-| [Get column values][Get]       | GET /items/{item-id}?expand=fields
-| [Create][]                     | POST /items
-| [Delete][]                     | DELETE /items/{item-id}
-| [Update][]                     | PATCH /items/{item-id}
-| [Update column values][Update] | PATCH /items/{item-id}/fields
+| Method                    | Return Type | Description
+|:-------------------------------|:-------------------|:------
+| [Get][]                   | lisItem| Get an item in a list.
+| [Get column values][Get]       | listItem | Get column values from listItem.
+| [Get analytics][]              | [itemAnalytics][]| Get analytics for this resource. 
+| [Get activities by interval][] | [itemActivityStat][]| Get a collection of itemActivityStats within the specified time interval.
+| [Create][]                     | listItem | Create a new listItem in a list.
+| [Delete][]                     | No Content | Removes an item from a list.
+| [Update][]                     | [fieldValueSet][]| Update the properties on a listItem.
+| [Update column values][Update] | [fieldValueSet][]| Update column values on a listItem.
 
 [Get]: ../api/listitem-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 
-## JSON representation
-
-Here is a JSON representation of a **listItem** resource.
-
-<!--{
-  "blockType": "resource",
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
-}-->
-
-```json
-{
-  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of resource",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of resource",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
-}
-```
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
 
 ## Properties
 
@@ -95,6 +67,8 @@ The following properties are inherited from **[baseItem][]**.
 
 | Relationship name | Type                           | Description
 |:------------------|:-------------------------------|:-------------------------------
+| activities        | [itemActivity][] collection    | The list of recent activities that took place on this item.
+| analytics         | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
 | driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
 | fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
@@ -104,17 +78,56 @@ The following properties are inherited from **[baseItem][]**.
 [driveItem]: driveitem.md
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
+
+## JSON representation
+
+Here is a JSON representation of a **listItem** resource.
+
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
+
+```json
+{
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of resource",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of resource",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "url"
+}
+```
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ListItem",
+  "tocPath": "Resources/listItem",
   "tocBookmarks": {
     "ListItem": "#"
   }

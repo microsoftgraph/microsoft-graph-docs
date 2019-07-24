@@ -2,7 +2,7 @@
 title: "assign action"
 description: "Replace all targeted groups for a policy."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

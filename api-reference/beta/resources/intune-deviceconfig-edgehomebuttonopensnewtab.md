@@ -1,7 +1,7 @@
 ---
 title: "edgeHomeButtonOpensNewTab resource type"
 description: "Show the home button; clicking the home button loads the New tab page."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -36,6 +36,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
+
 
 
 

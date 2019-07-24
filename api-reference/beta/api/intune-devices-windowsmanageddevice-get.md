@@ -1,7 +1,7 @@
 ---
 title: "Get windowsManagedDevice"
 description: "Read properties and relationships of the windowsManagedDevice object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -29,9 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{usersId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [windowsManagedD
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
+GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 ```
 
 ### Response
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7629
+Content-Length: 7693
 
 {
   "value": {
@@ -207,6 +207,7 @@ Content-Length: 7629
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
+    "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
     "usersLoggedOn": [
       {
         "@odata.type": "microsoft.graph.loggedOnUser",
@@ -235,6 +236,7 @@ Content-Length: 7629
   }
 }
 ```
+
 
 
 

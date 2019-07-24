@@ -1,7 +1,7 @@
 ---
 title: "domainState resource type"
 description: "Represents the status of asynchronous operations scheduled on a domain."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

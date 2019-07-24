@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsInformationDisplayedOnLockScreenType enum type"
 description: "Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -21,6 +21,7 @@ Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen
 |administrators|1|User display name, domain and user names|
 |administratorsAndPowerUsers|2|User display name only|
 |administratorsAndInteractiveUsers|3|Do not display user information|
+
 
 
 

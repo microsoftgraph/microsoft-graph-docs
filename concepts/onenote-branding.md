@@ -165,7 +165,7 @@ See the following table for details about how to refer to OneNote in various con
 
 ![Good example of logo in packaging](images/onenoteusagepackaging1.png)
 
-![Anoother view of a good example of logo in packaging](images/onenoteusagepackaging2.png)
+![Another view of a good example of logo in packaging](images/onenoteusagepackaging2.png)
 
 
 If you have any questions about these guidelines or are creating new communications using the brand assets shown here, contact us at [@onenotedev](https://twitter.com/onenotedev).

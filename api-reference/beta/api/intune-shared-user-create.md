@@ -1,7 +1,7 @@
 ---
 title: "Create user"
 description: "Create a new user object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -16,7 +16,7 @@ Create a new [user](../resources/intune-shared-user.md) object.
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).  The specific permission required depends on the context.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  The specific permission required depends on the context.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

@@ -12,6 +12,17 @@
     ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"
+    ],
+    "foldersToSkip": [
+      "templates",
+      "includes"
+    ],
+    "filesToSkip": [
+      "changelog.md",
+      "contributing.md",
+      "issue_template.md",
+      "readme.md",
+      "license.md"
     ]
   },
   "schemaDiffConfig": {

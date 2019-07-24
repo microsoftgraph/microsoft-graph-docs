@@ -10,6 +10,8 @@ ms.prod: "excel"
 
 Excel is an indispensable productivity tool. Users across all industries and job functions embrace it as a tool for storing, tracking, and manipulating all kinds of data. It's used for everything from simple task tracking and data management, to complex calculations and professional reporting. You can use the Excel REST API in Microsoft Graph to extend the value of your data, calculations, reporting, and dashboards.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/I1rSkJww2Dk]
+
 ## Why integrate with Excel?
 
 You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms.
@@ -33,7 +35,7 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 
-`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/ `
+`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook.
 

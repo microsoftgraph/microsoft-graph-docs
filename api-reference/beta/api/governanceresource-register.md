@@ -1,61 +1,75 @@
 ---
-title: "Register governanceResource"
-description: "Register an unmanaged governanceResource object in PIM."
+title: "governanceResource: register"
+description: "Register a governanceResource object in PIM."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
-# Register governanceResource
+# governanceResource: register
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Register an unmanaged [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.
+Register a [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** This API also requires that the requester have at least one active role assignment on the resource.
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.ReadWrite.AzureResources |
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/resources/register
 ```
 
-### Optional query parameters
+## Optional query parameters
+
 This method **only** supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-### Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
-| Content-type  | application/json|
+## Request headers
 
-### Request body
+| Name | Description |
+|:---- |:----------- |
+| Authorization | Bearer {token} |
+| Content-type | application/json |
 
-|Parameters	     |Type	               |Required |Description|
-|:-------------|:----------------------|:--------|:----------|
-|externalId    |String                 |✓        |The externalId of the resource to be registered in PIM.|
+## Request body
 
-### Response
+| Properties | Type	| Description |
+|:---------- |:---- |:----------- |
+| externalId | String | The external identifier of the resource to be registered in PIM. If registering a subscription, the identifier is the subscription identifier prepended by `/subscriptions/`. For example, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+
+## Response
+
 If successful, this method returns a `200 OK` response.
 
-### Example
-This example shows how to register an Azure subscription Wingtip Toys - Prod.
+## Example
+
+The following example shows how to call this API.
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"
 }-->
-##### Request
+### Request
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/register
+Content-type: application/json
+
+{
+  "externalId": "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"
+}
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -74,8 +88,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceresource-register.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

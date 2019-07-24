@@ -2,7 +2,7 @@
 title: "List officeClientConfigurations"
 description: "Get all policies."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

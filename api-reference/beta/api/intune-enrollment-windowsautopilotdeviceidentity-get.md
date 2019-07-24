@@ -1,7 +1,7 @@
 ---
 title: "Get windowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the windowsAutopilotDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1109
+Content-Length: 1145
 
 {
   "value": {
@@ -71,6 +71,7 @@ Content-Length: 1109
     "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
     "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
     "orderIdentifier": "Order Identifier value",
+    "groupTag": "Group Tag value",
     "purchaseOrderIdentifier": "Purchase Order Identifier value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
@@ -88,6 +89,7 @@ Content-Length: 1109
   }
 }
 ```
+
 
 
 

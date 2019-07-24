@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationBandwidthBusinessHoursLimit resource type"
 description: "Bandwidth business hours and percentages type"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -41,6 +41,7 @@ Here is a JSON representation of the resource.
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
 
 
 

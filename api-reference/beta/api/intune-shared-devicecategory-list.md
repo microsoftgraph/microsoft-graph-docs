@@ -1,7 +1,7 @@
 ---
 title: "List deviceCategories"
 description: "List properties and relationships of the deviceCategory objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -14,7 +14,7 @@ ms.prod: "intune"
 
 List properties and relationships of the [deviceCategory](../resources/intune-shared-devicecategory.md) objects.
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|

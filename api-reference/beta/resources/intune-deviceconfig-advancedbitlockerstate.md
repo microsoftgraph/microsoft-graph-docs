@@ -1,7 +1,7 @@
 ---
 title: "advancedBitLockerState enum type"
 description: "Advanced BitLocker State"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -34,6 +34,7 @@ Advanced BitLocker State
 |tpmNotAvailable|8192|TPM is not available for BitLocker. This means TPM is not present, or TPM unavailable registry override is set or host OS is on portable/rome-able drive|
 |tpmNotReady|16384|TPM is not ready for BitLocker|
 |networkError|32768|Network not available. This is required for recovery key backup. This is reported for Drive Encryption capable devices|
+
 
 
 

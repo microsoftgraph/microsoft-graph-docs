@@ -1,12 +1,12 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Update a record in a SharePoint list
+title: Update listItem
+description: Update the properties on a **[listItem][]**.
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
-# Update an item in a list
+# Update listItem
 
 Update the properties on a **[listItem][]**.
 
@@ -24,6 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+Update the properties on a listItem.
+```http
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+
+Update column values on a listItem.
 ```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
@@ -34,16 +40,21 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
-
-## Request body
-
+## Request body 
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
+
+## Response 
+
+If successful, this method returns a `201 Created` response code and a [fieldValueSet][] in the response body for the updated list item.
 
 ## Example
 
-Here is an example that updates the Color and Quantity fields of the list item with new values.
-All other values on the listItem are left alone. 
+The following example updates the **Color** and **Quantity** fields of the list item with new values. All other values on the **listItem** are left alone. 
 
+### Request 
+
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -55,10 +66,26 @@ Content-Type: application/json
     "Quantity": 934
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-## Response
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-listitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
@@ -81,5 +108,7 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Update"
+  "tocPath": "ListItem/Update",
+  "suppressions": [
+  ]
 } -->

@@ -1,13 +1,13 @@
 ---
 title: "List acceptedSenders"
-description: "Get a list of users or groups that are in the acceptedSenders list for this group."
+description: "Get a list of users or groups that are in the accepted-senders list for this group."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
 ---
 
 # List acceptedSenders
-Get a list of users or groups that are in the acceptedSenders list for this group.
+Get a list of users or groups that are in the accepted-senders list for this group.
 
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
@@ -43,6 +43,8 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ## Example
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_acceptedsenders"
@@ -50,6 +52,24 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-acceptedsenders-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-acceptedsenders-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-acceptedsenders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-acceptedsenders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response.
@@ -81,5 +101,7 @@ Content-length: 55
   "description": "List acceptedSenders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

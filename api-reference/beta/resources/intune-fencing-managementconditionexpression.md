@@ -1,7 +1,7 @@
 ---
 title: "managementConditionExpression resource type"
 description: "A management condition expression is an expression that produces a boolean value when evaluated, i.e. one of true or false, indicating that a management condition statement is activated/deactivated. A management condition expression may be composed of a combination of the expression variables and boolean-valued expression operators."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -33,6 +33,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managementConditionExpression"
 }
 ```
+
 
 
 

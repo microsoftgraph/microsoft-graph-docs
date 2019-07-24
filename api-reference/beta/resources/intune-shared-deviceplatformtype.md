@@ -1,7 +1,7 @@
 ---
 title: "devicePlatformType enum type"
 description: "Supported platform types."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -25,6 +25,8 @@ Supported platform types.
 |windows81AndLater|5|Windows 8.1 and later|
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|Android Work Profile.|
+|unknown|8|Unknown.|
+
 
 
 

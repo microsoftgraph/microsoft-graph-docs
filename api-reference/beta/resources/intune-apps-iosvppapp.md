@@ -1,7 +1,7 @@
 ---
 title: "iosVppApp resource type"
 description: "Contains properties and inherited properties for iOS Volume-Purchased Program (VPP) Apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -49,6 +49,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |releaseDateTime|DateTimeOffset|The VPP application release date and time.|
@@ -70,6 +71,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|List of relationships for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignedLicenses|[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) collection|The licenses assigned to this app.|
 
 ## JSON Representation
@@ -106,6 +108,7 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
+  "dependentAppCount": 1024,
   "usedLicenseCount": 1024,
   "totalLicenseCount": 1024,
   "releaseDateTime": "String (timestamp)",
@@ -143,6 +146,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

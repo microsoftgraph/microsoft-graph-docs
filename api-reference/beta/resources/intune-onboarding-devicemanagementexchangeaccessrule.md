@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementExchangeAccessRule resource type"
 description: "Device Access Rules in Exchange."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -41,6 +41,7 @@ Here is a JSON representation of the resource.
   "accessLevel": "String"
 }
 ```
+
 
 
 

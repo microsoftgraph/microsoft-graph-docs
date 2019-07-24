@@ -1,14 +1,14 @@
 ---
-title: "invitation manager"
-description: "Use the invitation manager to create an invite, in order to add an external user to the organization. "
+title: "invitation resource type"
+description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Priority
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# invitation manager
+# invitation resource type
 
-Use the invitation manager to create an invite, in order to add an external user to the organization. 
+Represents an invitation that is used to add external users to an organization. 
 
 The invitation process uses the following flow:
 

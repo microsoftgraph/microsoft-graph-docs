@@ -1,7 +1,7 @@
 ---
 title: "Device management in Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 - [Admin consent](intune-devices-adminconsent.md)
 - [Admin consent state](intune-devices-adminconsentstate.md)
@@ -45,19 +45,54 @@ ms.prod: "intune"
 - [Device guard virtualization based security hardware requirement state](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [Device guard virtualization based security state](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [Device health attestation state](intune-devices-devicehealthattestationstate.md)
+- [Device management abstract complex setting definition](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
+- [Device management abstract complex setting instance](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
+- [Device management boolean setting instance](intune-deviceintent-devicemanagementbooleansettinginstance.md)
+- [Device management collection setting definition](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
+- [Device management collection setting instance](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [Device management comparison result](intune-deviceintent-devicemanagementcomparisonresult.md)
+- [Device management complex setting definition](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
+- [Device management complex setting instance](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
+- [Device management constraint](intune-deviceintent-devicemanagementconstraint.md)
+- [Device management enum constraint](intune-deviceintent-devicemanagementenumconstraint.md)
+- [Device management enum value](intune-deviceintent-devicemanagementenumvalue.md)
 - [Device management exchange access state](intune-devices-devicemanagementexchangeaccessstate.md)
 - [Device management exchange access state reason](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [Device management integer setting instance](intune-deviceintent-devicemanagementintegersettinginstance.md)
+- [Device management intent](intune-deviceintent-devicemanagementintent.md)
+- [Device management intent assignment](intune-deviceintent-devicemanagementintentassignment.md)
+- [Device management intent device setting state summary](intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)
+- [Device management intent device state](intune-deviceintent-devicemanagementintentdevicestate.md)
+- [Device management intent device state summary](intune-deviceintent-devicemanagementintentdevicestatesummary.md)
+- [Device management intent setting category](intune-deviceintent-devicemanagementintentsettingcategory.md)
+- [Device management intent user state](intune-deviceintent-devicemanagementintentuserstate.md)
+- [Device management intent user state summary](intune-deviceintent-devicemanagementintentuserstatesummary.md)
 - [Device management script](intune-devices-devicemanagementscript.md)
 - [Device management script assignment](intune-devices-devicemanagementscriptassignment.md)
 - [Device management script device state](intune-devices-devicemanagementscriptdevicestate.md)
 - [Device management script group assignment](intune-devices-devicemanagementscriptgroupassignment.md)
 - [Device management script run summary](intune-devices-devicemanagementscriptrunsummary.md)
 - [Device management script user state](intune-devices-devicemanagementscriptuserstate.md)
+- [Device management setting boolean constraint](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
+- [Device management setting category](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Device management setting comparison](intune-deviceintent-devicemanagementsettingcomparison.md)
+- [Device management setting definition](intune-deviceintent-devicemanagementsettingdefinition.md)
+- [Device management setting dependency](intune-deviceintent-devicemanagementsettingdependency.md)
+- [Device management setting instance](intune-deviceintent-devicemanagementsettinginstance.md)
+- [Device management setting integer constraint](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
+- [Device management setting regex constraint](intune-deviceintent-devicemanagementsettingregexconstraint.md)
+- [Device management setting string length constraint](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
+- [Device management setting xml constraint](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
+- [Device management string setting instance](intune-deviceintent-devicemanagementstringsettinginstance.md)
 - [Device management subscription state](intune-devices-devicemanagementsubscriptionstate.md)
 - [Device management subscriptions](intune-devices-devicemanagementsubscriptions.md)
+- [Device management template](intune-deviceintent-devicemanagementtemplate.md)
+- [Device management template setting category](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Device management template type](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Device management troubleshooting error details](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Device management troubleshooting error resource](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Device management troubleshooting event](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
+- [Device manangement intent value type](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [Device operating system summary](intune-devices-deviceoperatingsystemsummary.md)
 - [Device protection overview](intune-devices-deviceprotectionoverview.md)
 - [Device registration state](intune-devices-deviceregistrationstate.md)
@@ -115,6 +150,11 @@ ms.prod: "intune"
 - [Reset passcode action result](intune-devices-resetpasscodeactionresult.md)
 - [Revoke apple VPP licenses action result](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Run schedule](intune-devices-runschedule.md)
+- [Security baseline category state summary](intune-deviceintent-securitybaselinecategorystatesummary.md)
+- [Security baseline compliance state](intune-deviceintent-securitybaselinecompliancestate.md)
+- [Security baseline device state](intune-deviceintent-securitybaselinedevicestate.md)
+- [Security baseline state summary](intune-deviceintent-securitybaselinestatesummary.md)
+- [Security baseline template](intune-deviceintent-securitybaselinetemplate.md)
 - [Shared Apple device user](intune-devices-sharedappledeviceuser.md)
 - [Unary management condition expression](intune-fencing-unarymanagementconditionexpression.md)
 - [Unary management condition expression operator type](intune-fencing-unarymanagementconditionexpressionoperatortype.md)

@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyDefinitionFile"
 description: "Update the properties of a groupPolicyDefinitionFile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -52,6 +52,7 @@ The following table shows the properties that are required when you create the [
 |targetPrefix|String|Specifies the logical name that refers to the namespace within the ADMX file.|
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
+|revision|String|The revision version associated with the file.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -67,27 +68,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 Content-type: application/json
-Content-length: 325
-
-{
-  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "languageCodes": [
-    "Language Codes value"
-  ],
-  "targetPrefix": "Target Prefix value",
-  "targetNamespace": "Target Namespace value",
-  "policyType": "admxIngested"
-}
-```
-
-### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 438
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
@@ -99,10 +80,33 @@ Content-Length: 438
   "targetPrefix": "Target Prefix value",
   "targetNamespace": "Target Namespace value",
   "policyType": "admxIngested",
+  "revision": "Revision value"
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 471
+
+{
+  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "languageCodes": [
+    "Language Codes value"
+  ],
+  "targetPrefix": "Target Prefix value",
+  "targetNamespace": "Target Namespace value",
+  "policyType": "admxIngested",
+  "revision": "Revision value",
   "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

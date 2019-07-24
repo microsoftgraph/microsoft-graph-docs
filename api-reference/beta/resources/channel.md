@@ -10,10 +10,10 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A channel is a collection of [chatMessages](chatmessage.md) within a [team](../resources/team.md). 
-A channel represents a topic, and therefore a logical isolation of discussion, within a team. 
-Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
-
+[Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. 
+Each channel is dedicated to a specific topic, department, or project.
+Channels are where the work actually gets done - where text, audio, and video conversations open to the whole team happen,
+where files are shared, and where tabs are added.
 
 ## Methods
 
@@ -25,7 +25,13 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
-|[Send channel message](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Send a message to a channel](../api/channel-post-chatmessage.md) |
+|[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
+|[Create chatMessage reply in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
+|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
 ## Properties
@@ -35,7 +41,7 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
 |id|String|The channels's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
-|email|Boolean| The email address for sending messages to the channel. Read-only.|
+|email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 
 
@@ -64,8 +70,10 @@ Here is a JSON representation of the resource
   "description": "string",
   "displayName": "string",
   "id": "string (identifier)",
+  "isFavoriteByDefault": true,
+  "email": "string",
+  "webUrl": "string"
 }
-
 ```
 
 
@@ -78,8 +86,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/channel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,71 +1,167 @@
-  name: Reference
+- name: Reference
   items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview?toc=./toc.json
+    href: /graph/overview
   - name: Get auth tokens
-    href: /graph/auth-overview?toc=./ref/toc.json
     items:
+    - name: Overview
+      href: /graph/auth/index?context=graph/api/1.0
+    - name: Basics
+      href: /graph/auth/auth-concepts?context=graph/api/1.0
     - name: Register your app
-      href: /graph/auth-register-app-v2?toc=./ref/toc.json
+      href: /graph/auth-register-app-v2?context=graph/api/1.0
     - name: Get access on behalf of a user
-      href: /graph/auth-v2-user?toc=./ref/toc.json
+      href: /graph/auth-v2-user?context=graph/api/1.0
     - name: Get access without a user
-      href: /graph/auth-v2-service?toc=./ref/toc.json
+      href: /graph/auth-v2-service?context=graph/api/1.0
     - name: Permissions
-      href: /graph/permissions-reference?toc=./ref/toc.json
+      href: /graph/permissions-reference?context=graph/api/1.0
     - name: Manage app access (CSPs)
-      href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
+    - name: Limit mailbox access
+      href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
   - name: Use the API
-    href: /graph/use-the-api?toc=./ref/toc.json
     items:
+    - name: Overview
+      href: /graph/use-the-api?context=graph/api/1.0
     - name: Paging
-      href: /graph/paging?toc=./ref/toc.json
+      href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
-      href: /graph/query-parameters?toc=./ref/toc.json
+      href: /graph/query-parameters?context=graph/api/1.0
     - name: Batch requests
-      href: /graph/json-batching?toc=./ref/toc.json
+      href: /graph/json-batching?context=graph/api/1.0
     - name: Throttling
-      href: /graph/throttling?toc=./ref/toc.json
+      href: /graph/throttling?context=graph/api/1.0
     - name: Change notifications
-      href: /graph/webhooks?toc=./ref/toc.json
       displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      items:
+      - name: Overview
+        href: /graph/webhooks?context=graph/api/1.0
+      - name: Tutorial
+        href: /graph/tutorials/change-notifications
+      - name: Missing Outlook notifications (preview)
+        href: /graph/webhooks-outlook-authz?context=graph/api/1.0
     - name: Track changes
-      href: /graph/delta-query-overview?toc=./ref/toc.json
       displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
       items:
+      - name: Overview
+        href: /graph/delta-query-overview?context=graph/api/1.0
       - name: Get changes to events (example)
-        href: /graph/delta-query-events?toc=./ref/toc.json
+        href: /graph/delta-query-events?context=graph/api/1.0
       - name: Get changes to groups (example)
-        href: /graph/delta-query-groups?toc=./ref/toc.json
+        href: /graph/delta-query-groups?context=graph/api/1.0
       - name: Get changes to messages (example)
-        href: /graph/delta-query-messages?toc=./ref/toc.json
+        href: /graph/delta-query-messages?context=graph/api/1.0
       - name: Get changes to users (example)
-        href: /graph/delta-query-users?toc=./ref/toc.json
+        href: /graph/delta-query-users?context=graph/api/1.0
     - name: Add custom data
-      href: /graph/extensibility-overview?toc=./ref/toc.json
       displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
+      - name: Overview
+        href: /graph/extensibility-overview?context=graph/api/1.0
       - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?toc=./ref/toc.json
+        href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-    - name: Resources
+        href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Postman
+      href: /graph/use-postman?context=graph/api/1.0
+  - name: Migrate
+    expanded: false
+    items:
+    - name: Azure AD Graph
+      displayname: Migration, Azure AD Graph
       items:
-      - name: Best practices
-        href: /graph/best-practices-concept?toc=./ref/toc.json
-      - name: Known issues
-        href: /graph/known-issues?toc=./ref/toc.json
-      - name: Changelog
-        href: /graph/changelog?toc=./ref/toc.json
-      - name: Errors
-        href: /graph/errors?toc=./ref/toc.json
-  - name: Reference
-    href: overview.md
+      - name: Overview
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+      - name: Checklist to migrate apps
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
+      - name: "1: Review differences"
+        expanded: true
+        items:
+        - name: Requests
+          href: /graph/migrate-azure-ad-graph-request-differences?context=graph/api/1.0
+        - name: Service features
+          href: /graph/migrate-azure-ad-graph-feature-differences?context=graph/api/1.0
+        - name: Resource types
+          href: /graph/migrate-azure-ad-graph-resource-differences?context=graph/api/1.0
+        - name: Entity properties
+          href: /graph/migrate-azure-ad-graph-property-differences?context=graph/api/1.0
+        - name: Methods
+          href: /graph/migrate-azure-ad-graph-method-differences?context=graph/api/1.0
+      - name: "2: Examine API use"
+        href: /graph/migrate-azure-ad-graph-audit-api-use?context=graph/api/1.0
+      - name: "3: Review app details"
+        expanded: true
+        items:
+        - name: App registration
+          href: /graph/migrate-azure-ad-graph-app-registration?context=graph/api/1.0
+        - name: Auth libraries
+          href: /graph/migrate-azure-ad-graph-authentication-library?context=graph/api/1.0
+        - name: .NET client libraries
+          href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
+      - name: "4: Deploy, test, and extend"
+        href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
+  - name: Use SDKs
+    items:
+      - name: Overview
+        href: /graph/sdks/sdks-overview?context=graph/api/1.0
+      - name: Install the SDK
+        href: /graph/sdks/sdk-installation?context=graph/api/1.0
+      - name: Create a client
+        href: /graph/sdks/create-client?context=graph/api/1.0
+      - name: Choose an authentication provider
+        href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+  - name: Use the toolkit (preview)
+    items:
+      - name: Toolkit overview
+        href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Components
+        items:
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/1.0
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/1.0
+          - name: Tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/1.0
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers?context=graph/api/1.0
+          - name: Msal provider
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Microsoft Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
+      - name: Styling components
+        href: /graph/toolkit/style?context=graph/api/1.0
+      - name: Templating components
+        href: /graph/toolkit/templates?context=graph/api/1.0
+  - name: Resources
+    items:
+    - name: Best practices
+      href: /graph/best-practices-concept?context=graph/api/1.0
+    - name: Known issues
+      href: /graph/known-issues?context=graph/api/1.0
+    - name: Changelog
+      href: /graph/changelog?context=graph/api/1.0
+    - name: Errors
+      href: /graph/errors?context=graph/api/1.0
+  - name: v1.0 reference
     expanded: true
     items:
+    - name: Overview
+      href: overview.md
     - name: Users
-      href: resources/users.md
       items:
+      - name: Overview
+        href: resources/users.md
       - name: User
         href: resources/user.md
         items:
@@ -82,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
@@ -101,6 +197,8 @@
           href: api/user-list-calendarview.md
         - name: Reminder view
           href: api/user-reminderview.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Contacts
@@ -147,8 +245,10 @@
       - name: Groups
         href: resources/group.md
         items:
-        - name: List memberOf
+        - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Mail
         href: resources/message.md
         items:
@@ -223,8 +323,9 @@
         - name: Update settings
           href: api/user-update-settings.md
     - name: Groups
-      href: resources/groups-overview.md
       items:
+      - name: Overview
+        href: resources/groups-overview.md
       - name: Group
         href: resources/group.md
         items:
@@ -254,10 +355,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Update group
           href: api/group-update.md
         - name: Remove favorite
@@ -291,6 +398,8 @@
             href: api/grouplifecyclepolicy-addgroup.md
           - name: Remove group
             href: api/grouplifecyclepolicy-removegroup.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -430,9 +539,10 @@
         - name: Get open extension
           href: api/opentypeextension-get.md
     - name: Calendar
-      href: resources/calendar.md
       displayname: Outlook calendar
       items:
+      - name: Calendar
+        href: resources/calendar.md
       - name: Event
         href: resources/event.md
         items:
@@ -537,6 +647,8 @@
           href: api/calendar-post-events.md
         - name: Reminder view
           href: api/user-reminderview.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Calendar view
@@ -596,9 +708,10 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Cross-device experiences
-      href: resources/project-rome-overview.md
       displayName: Project Rome
       items:
+      - name: Overview
+        href: resources/project-rome-overview.md
       - name: Activity feed
         href: resources/activity-feed-api-overview.md
         items:
@@ -621,9 +734,10 @@
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
     - name: Devices and apps
-      href: resources/intune-graph-overview.md
       displayName: Intune
       items:
+      - name: Overview
+        href: resources/intune-graph-overview.md
       - name: App management
         href: resources/intune-app-conceptual.md
         items:
@@ -2915,8 +3029,9 @@
           - name: Update
             href: api/intune-tem-telecomexpensemanagementpartner-update.md
     - name: Education
-      href: resources/education-overview.md
       items:
+      - name: Overview
+        href: resources/education-overview.md
       - name: Schools
         href: resources/educationschool.md
         items:
@@ -2981,9 +3096,10 @@
         - name: Delete user
           href: api/educationuser-delete.md
     - name: Files
-      href: resources/onedrive.md
       displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       items:
+      - name: Overview
+        href: resources/onedrive.md
       - name: Drives
         href: resources/drive.md
         items:
@@ -3034,6 +3150,8 @@
           href: api/driveitem-list-versions.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -3052,9 +3170,27 @@
         - name: Delete permission
           href: api/permission-delete.md
     - name: Identity and access
-      href: resources/azure-ad-overview.md
       displayName: Azure AD, Microsoft identity platform
       items:
+      - name: Overview
+        href: resources/azure-ad-overview.md
+      - name: Audit logs
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -3066,7 +3202,7 @@
         href: resources/datapolicyoperation.md
         items:
         - name: Get data policy operation
-          href: api/datapolicyoperation-get.md  
+          href: api/datapolicyoperation-get.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3103,6 +3239,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3118,6 +3256,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
@@ -3184,7 +3324,7 @@
           href: api/identityprovider-post-identityproviders.md
         - name: Get identity provider
           href: api/identityprovider-get.md
-        - name: Upate identity provider
+        - name: Update identity provider
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
@@ -3208,9 +3348,10 @@
         - name: Get subscribedSku
           href: api/subscribedsku-get.md
     - name: Mail
-      href: resources/mail-api-overview.md
       displayName: Outlook, Outlook mail
       items:
+      - name: Overview
+        href: resources/mail-api-overview.md
       - name: Message
         href: resources/message.md
         items:
@@ -3267,6 +3408,19 @@
           href: api/attachment-get.md
         - name: Delete attachment
           href: api/attachment-delete.md
+      - name: Categories
+        href: resources/outlookcategory.md
+        items:
+        - name: List categories
+          href: api/outlookuser-list-mastercategories.md
+        - name: Create category
+          href: api/outlookuser-post-mastercategories.md
+        - name: Get category
+          href: api/outlookcategory-get.md
+        - name: Update category
+          href: api/outlookcategory-update.md
+        - name: Delete category
+          href: api/outlookcategory-delete.md
       - name: Focused Inbox
         href: resources/manage-focused-inbox.md
         items:
@@ -3307,19 +3461,23 @@
           href: api/mailfolder-list-childfolders.md
         - name: Create mail child folder
           href: api/mailfolder-post-childfolders.md
-      - name: Categories
-        href: resources/outlookcategory.md
+      - name: Mail search folder
+        href: resources/mailsearchfolder.md
         items:
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
-        - name: Get category
-          href: api/outlookcategory-get.md
-        - name: Update category
-          href: api/outlookcategory-update.md
-        - name: Delete category
-          href: api/outlookcategory-delete.md
+        - name: List mail search folders
+          href: api/user-list-mailfolders.md
+        - name: Create mail search folder
+          href: api/mailsearchfolder-post.md
+        - name: Get mail search folder
+          href: api/mailfolder-get.md
+        - name: Update mail search folder
+          href: api/mailsearchfolder-update.md
+        - name: Delete mail search folder
+          href: api/mailfolder-delete.md
+        - name: List messages in folder
+          href: api/mailfolder-list-messages.md
+        - name: List child folders
+          href: api/mailfolder-list-childfolders.md
       - name: Rules
         href: resources/messagerule.md
         items:
@@ -3351,9 +3509,10 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
-      href: resources/onenote-api-overview.md
       displayName: OneNote
       items:
+      - name: Overview
+        href: resources/onenote-api-overview.md
       - name: Notes
         href: resources/onenote.md
         items:
@@ -3519,8 +3678,9 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
-      href: resources/report.md
       items:
+      - name: Overview
+        href: resources/report.md
       - name: Microsoft Teams device usage
         href: resources/microsoft-teams-device-usage-reports.md
         items:
@@ -3718,9 +3878,10 @@
         - name: Get activity counts
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
-      href: resources/security-api-overview.md
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
+      - name: Overview
+        href: resources/security-api-overview.md
       - name: Alerts
         href: resources/alert.md
         items:
@@ -3730,12 +3891,29 @@
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+      - name: Secure scores
+        href: resources/securescore.md
+        items:
+        - name: List secure scores
+          href: api/security-list-securescores.md
+        - name: Get secure score
+          href: api/securescore-get.md
+      - name: Secure score control profiles
+        href: resources/securescorecontrolprofile.md
+        items:
+        - name: Get secure score control profile
+          href: api/securescorecontrolprofile-get.md
+        - name: List secure score control profiles
+          href: api/security-list-securescorecontrolprofiles.md
+        - name: Update secure score control profiles
+          href: api/securescorecontrolprofile-update.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
-      href: resources/sharepoint.md
       displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
       items:
+      - name: Overview
+        href: resources/sharepoint.md
       - name: Sites
         href: resources/site.md
         items:
@@ -3745,6 +3923,8 @@
           href: api/list-list.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
       - name: Lists
         href: resources/list.md
         items:
@@ -3767,18 +3947,22 @@
           href: api/listitem-delete.md
         - name: List versions
           href: api/listitem-list-versions.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
     - name: 'Social intelligence: People'
-      href: resources/social-overview.md
       items:
+      - name: Overview
+        href: resources/social-overview.md
       - name: Person
         href: resources/person.md
         items:
         - name: List people
           href: api/user-list-people.md
     - name: Tasks and plans
-      href: resources/planner-overview.md
       displayName: Planner
       items:
+      - name: Overview
+        href: resources/planner-overview.md
       - name: Plan
         href: resources/plannerplan.md
         items:
@@ -3856,9 +4040,10 @@
         - name: Update progress task board format
           href: api/plannerprogresstaskboardtaskformat-update.md
     - name: Teamwork
-      href: resources/teams-api-overview.md
       displayName: Microsoft Teams
       items:
+      - name: Overview
+        href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
         items:
@@ -3877,7 +4062,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /graph/teams-list-all-teams?toc=./ref/toc.json
+          href: /graph/teams-list-all-teams?context=graph/api/1.0
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4000,9 +4185,10 @@
         - name: Create notebook
           href: api/onenote-post-notebooks.md
     - name: Workbooks and charts
-      href: resources/excel.md
       displayName: Excel
       items:
+      - name: Overview
+        href: resources/excel.md
       - name: Workbook
         href: resources/workbook.md
         items:
@@ -4116,46 +4302,49 @@
         - name: List range
           href: api/nameditem-range.md
     - name: Tools
-    - name: Open extensions
-      href: resources/opentypeextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      expanded: true
       items:
-      - name: Create open extension
-        href: api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: api/opentypeextension-get.md
-      - name: Update open extension
-        href: api/opentypeextension-update.md
-      - name: Delete open extension
-        href: api/opentypeextension-delete.md
-    - name: Schema extensions
-      href: resources/schemaextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-      items:
-      - name: List schema extensions
-        href: api/schemaextension-list.md
-      - name: Create schema extension
-        href: api/schemaextension-post-schemaextensions.md
-      - name: Get schema extension
-        href: api/schemaextension-get.md
-      - name: Update schema extension
-        href: api/schemaextension-update.md
-      - name: Delete schema extension
-        href: api/schemaextension-delete.md
-    - name: Change notifications
-      href: resources/webhooks.md
-      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-      items:
-      - name: Subscription
-        href: resources/subscription.md
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List subscription
-          href: api/subscription-list.md
-        - name: Get subscription
-          href: api/subscription-get.md
-        - name: Create subscription
-          href: api/subscription-post-subscriptions.md
-        - name: Update subscription
-          href: api/subscription-update.md
-        - name: Delete subscription
-          href: api/subscription-delete.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md
+      - name: Change notifications
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        items:
+        - name: Overview
+          href: resources/webhooks.md
+        - name: Subscription
+          href: resources/subscription.md
+          items:
+          - name: List subscription
+            href: api/subscription-list.md
+          - name: Get subscription
+            href: api/subscription-get.md
+          - name: Create subscription
+            href: api/subscription-post-subscriptions.md
+          - name: Update subscription
+            href: api/subscription-update.md
+          - name: Delete subscription
+            href: api/subscription-delete.md

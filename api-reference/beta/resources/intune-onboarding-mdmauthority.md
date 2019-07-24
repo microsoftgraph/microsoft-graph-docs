@@ -1,7 +1,7 @@
 ---
 title: "mdmAuthority enum type"
 description: "Mobile device management authority."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -21,6 +21,7 @@ Mobile device management authority.
 |intune|1|Intune|
 |sccm|2|SCCM|
 |office365|3|Office365|
+
 
 
 

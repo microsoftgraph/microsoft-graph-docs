@@ -2,7 +2,7 @@
 title: "officeUserCheckinSummary resource type"
 description: "Entity that describes  tenant check-in stats."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "deviceGuardLocalSystemAuthorityCredentialGuardState enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -22,6 +22,7 @@ Not yet documented
 |notLicensed|2|Not licensed for Credential Guard|
 |notConfigured|3|Not configured|
 |virtualizationBasedSecurityNotRunning|4|Virtualization Based security is not running|
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskAppConfiguration resource type"
 description: "The app base class used to identify the application info for the kiosk configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -33,6 +33,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -21,6 +21,7 @@ Available settings for EAP-FAST Configuration.
 |useProtectedAccessCredential|1|Use Protected Access Credential (PAC).|
 |useProtectedAccessCredentialAndProvision|2|Use Protected Access Credential (PAC) and Provision PAC.|
 |useProtectedAccessCredentialAndProvisionAnonymously|3|Use Protected Access Credential (PAC), Provision PAC, and do so anonymously.|
+
 
 
 

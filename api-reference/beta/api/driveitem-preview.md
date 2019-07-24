@@ -90,7 +90,7 @@ The following values are allowed for the **viewer** parameter.
 |:-----------|:----------------------------------------------------------------
 | (null)     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type.
 | `onedrive` | Use the OneDrive previewer app to render the file.
-| `office`   | Use the WAC (Office online) to render the file. Only valid for Office documents.
+| `office`   | Use the web version of Office to render the file. Only valid for Office documents.
 
 ### Chrome vs chromeless
 
@@ -105,11 +105,3 @@ This capability may not be available for all preview apps or file types.
 ### Page/zoom
 
 The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

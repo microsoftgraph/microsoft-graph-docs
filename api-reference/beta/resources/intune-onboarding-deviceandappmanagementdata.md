@@ -1,7 +1,7 @@
 ---
 title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -35,6 +35,7 @@ Here is a JSON representation of the resource.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

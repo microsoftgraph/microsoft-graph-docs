@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskAzureADGroup resource type"
 description: "The class used to identify an AzureAD group for the kiosk configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -40,6 +40,7 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
+
 
 
 

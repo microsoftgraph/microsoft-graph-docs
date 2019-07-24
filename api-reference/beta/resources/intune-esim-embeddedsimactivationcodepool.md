@@ -1,7 +1,7 @@
 ---
 title: "embeddedSIMActivationCodePool resource type"
 description: "A pool represents a group of embedded SIM activation codes."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -66,6 +66,7 @@ Here is a JSON representation of the resource.
   "activationCodeCount": 1024
 }
 ```
+
 
 
 

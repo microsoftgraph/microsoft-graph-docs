@@ -1,7 +1,7 @@
 ---
 title: "exclusionGroupAssignmentTarget resource type"
 description: "Represents a group that should be excluded from an assignment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
   "groupId": "String"
 }
 ```
+
 
 
 

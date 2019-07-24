@@ -1,7 +1,7 @@
 ---
 title: "discoverySource enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -20,6 +20,7 @@ Not yet documented
 |unknown|0|DiscoverySource is Unknown.|
 |adminImport|2|Device is imported by admin.|
 |deviceEnrollmentProgram|4|Device is added by Apple device enrollment program (Dep).|
+
 
 
 

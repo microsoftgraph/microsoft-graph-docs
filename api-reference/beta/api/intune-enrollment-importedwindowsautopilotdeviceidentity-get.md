@@ -1,7 +1,7 @@
 ---
 title: "Get importedWindowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## Optional query parameters
@@ -61,15 +60,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 635
+Content-Length: 779
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
     "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
     "orderIdentifier": "Order Identifier value",
+    "groupTag": "Group Tag value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
+    "importId": "Import Id value",
     "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
     "state": {
       "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -77,10 +78,12 @@ Content-Length: 635
       "deviceRegistrationId": "Device Registration Id value",
       "deviceErrorCode": 15,
       "deviceErrorName": "Device Error Name value"
-    }
+    },
+    "assignedUserPrincipalName": "Assigned User Principal Name value"
   }
 }
 ```
+
 
 
 

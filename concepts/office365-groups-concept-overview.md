@@ -10,6 +10,9 @@ ms.prod: "reports"
 
 Office 365 groups provide the foundational membership service for users to share conversations, files, notes, calendars, plans, and many other assets. 
 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
+
 ## Why integrate with Office 365 groups?   
 
 Groups form the foundation that enables user collaboration and integration across services to support rich scenarios in task planning, teamwork, education, and more. When you integrate with Office 365 groups, your application can support millions of users as they transition across various experiences in the Office 365 suite and beyond.  

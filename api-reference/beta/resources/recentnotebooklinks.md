@@ -14,7 +14,7 @@ Links to open a OneNote notebook. This resource type exists as a property on a [
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Opens the notebook in the OneNote client, if it's installed.|
-|oneNoteWebUrl|[externalLink](externallink.md)|Opens the notebook in OneNote Online.|
+|oneNoteWebUrl|[externalLink](externallink.md)|Opens the notebook in OneNote on the web.|
 
 ## JSON representation
 
@@ -45,8 +45,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recentnotebooklinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

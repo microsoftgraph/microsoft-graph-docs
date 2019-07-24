@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationListBox resource type"
 description: "Represents an ADMX listBox element and an ADMX list element."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -33,6 +33,7 @@ Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppol
 |id|String|Key of the entity. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |explicitValue|Boolean|If this option is specified true the user must specify the registry subkey value and the registry subkey name. The list box shows two columns, one for the name and one for the data. The default value is false.|
+|valuePrefix|String|Not yet documented|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,9 +54,11 @@ Here is a JSON representation of the resource.
   "label": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "String"
 }
 ```
+
 
 
 

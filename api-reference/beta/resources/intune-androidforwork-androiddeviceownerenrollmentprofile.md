@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -40,6 +40,7 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
+|scopeTags|String collection|List of Scope Tags for this Entity instance.|
 
 ## Relationships
 None
@@ -70,9 +71,13 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "String",
     "value": "binary"
-  }
+  },
+  "scopeTags": [
+    "String"
+  ]
 }
 ```
+
 
 
 

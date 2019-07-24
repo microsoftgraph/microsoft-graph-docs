@@ -1,3 +1,11 @@
 - name: Microsoft Graph
-  tocHref: /graph/
-  topicHref: /graph/overview
+  tocHref: /graph
+  topicHref: /graph
+  items:
+  - name: Explore
+    tocHref: /graph/overview
+    topiccHref: /graph/overview
+    items:
+    - name: Terms of use
+      tocHref: /legal/microsoft-apis/terms-of-use
+      topicHref: /legal/microsoft-apis/terms-of-use

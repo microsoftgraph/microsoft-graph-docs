@@ -1,7 +1,7 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 
@@ -105,10 +105,15 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
+- [Mobile app dependecy type](intune-apps-mobileappdependecytype.md)
+- [Mobile app dependency](intune-apps-mobileappdependency.md)
+- [Mobile app dependency type](intune-apps-mobileappdependencytype.md)
 - [Mobile app install status](intune-apps-mobileappinstallstatus.md)
 - [Mobile app install summary](intune-apps-mobileappinstallsummary.md)
 - [Mobile app provisioning config group assignment](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
+- [Mobile app relationship](intune-apps-mobileapprelationship.md)
+- [Mobile app relationship state](intune-apps-mobileapprelationshipstate.md)
 - [Mobile contained app](intune-apps-mobilecontainedapp.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
 - [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
@@ -134,14 +139,19 @@ The following Graph resources are available to manage app protection polices in 
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB app file system detection type](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB app file system requirement](intune-apps-win32lobappfilesystemrequirement.md)
 - [Win32 LOB app install experience](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB app msi information](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB app msi package type](intune-apps-win32lobappmsipackagetype.md)
 - [Win32 LOB app notification](intune-apps-win32lobappnotification.md)
 - [Win32 LOB app power shell script detection](intune-apps-win32lobapppowershellscriptdetection.md)
+- [Win32 LOB app power shell script detection type](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Win32 LOB app power shell script requirement](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Win32 LOB app product code detection](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB app registry detection](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB app registry detection type](intune-apps-win32lobappregistrydetectiontype.md)
+- [Win32 LOB app registry requirement](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB app requirement](intune-apps-win32lobapprequirement.md)
 - [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)

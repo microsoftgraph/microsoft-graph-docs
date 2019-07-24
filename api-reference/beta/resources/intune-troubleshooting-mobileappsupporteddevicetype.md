@@ -1,7 +1,7 @@
 ---
 title: "mobileAppSupportedDeviceType resource type"
 description: "Device properties"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -39,6 +39,7 @@ Here is a JSON representation of the resource.
   "maximumOperatingSystemVersion": "String"
 }
 ```
+
 
 
 

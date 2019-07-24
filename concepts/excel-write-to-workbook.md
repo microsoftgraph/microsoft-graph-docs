@@ -10,7 +10,7 @@ ms.prod: "excel"
 
 The Excel REST API provides an easy, platform-agnostic way to upload information to an Excel workbook. This topic shows you how to write simple data sets to an Excel workbook on three web development frameworks: ASP.NET, Angular, and React. You can look at the code samples featured in this topic by visiting the [Microsoft Graph Excel starter samples on GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
 
-> **Note:** All three of the samples write data to an Excel workbook named **demo.xlxs**. They provide this workbook for you so that you can upload it to your own OneDrive, but you can also use Microsoft Graph to upload files to OneDrive. If you're interested in learning the REST calls you need to upload a file of any type to your root OneDrive folder, see the [Microsoft Graph Excel REST API ASP.NET to-do list sample](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
+> **Note:** All three of the samples write data to an Excel workbook named **demo.xlsx**. They provide this workbook for you so that you can upload it to your own OneDrive, but you can also use Microsoft Graph to upload files to OneDrive. If you're interested in learning the REST calls you need to upload a file of any type to your root OneDrive folder, see the [Microsoft Graph Excel REST API ASP.NET to-do list sample](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
 
 All three of the Excel starter samples do the same thing: retrieve the name and address of the signed-in user and add those two pieces of information to a new row in the **demo.xlsx** workbook. You can modify the samples to add additional rows simply by adding information to the two-dimensional array that represents the row or rows that you want to add.
 

@@ -1,7 +1,7 @@
 ---
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -45,6 +45,7 @@ Here is a JSON representation of the resource.
   "unknownCount": 1024
 }
 ```
+
 
 
 

@@ -2,7 +2,7 @@
 title: "Get officeClientConfiguration"
 description: "Get a specific policy."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "Intune"
 ---
 

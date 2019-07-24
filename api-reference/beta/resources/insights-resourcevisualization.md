@@ -10,12 +10,18 @@ ms.prod: "insights"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [Insights](insights.md).
+Complex type containing properties of [insights](officegraphinsights.md).
 
 ## JSON representation
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
   "title": "string",
@@ -35,7 +41,7 @@ Here is a JSON representation of the resource
 | ------------- 		|---------------| -------------|
 | title      			| String		| The item's title text.	   		   |
 | type    			| String		| The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types. |
-| mediaType    			| String		| The item's media type. Can be used for for filtering for a specific type of file based on supported IANA Media Mime Types. Note that not all Media Mime Types are supported. |
+| mediaType    			| String		| The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types. Note that not all Media Mime Types are supported. |
 | previewImageUrl   	| String		| A URL leading to the preview image for the item. |
 | previewText      		| String		| A preview text for the item. |
 | containerWebUrl      	| String		| A path leading to the folder in which the item is stored. |
@@ -73,7 +79,7 @@ Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## containerType property values
-The supported types can differ based on containers from which the [Insight](insights.md) returns files. For example, only the [Shared](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
+The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
 
 -	OneDriveBusiness
 -	Site
@@ -84,11 +90,3 @@ The supported types can differ based on containers from which the [Insight](insi
 
 Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

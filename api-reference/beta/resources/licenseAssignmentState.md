@@ -10,10 +10,10 @@ localization_priority: Normal
 
 The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:  
 
- - What plans are disabled for a user
- - Whether the license was assigned to the user directly or inherited from a group
- - Current state of the assignment
- - If the assignment state is Error, what is the error detail for the failure? 
+- What plans are disabled for a user
+- Whether the license was assigned to the user directly or inherited from a group
+- Current state of the assignment
+- If the assignment state is Error, what is the error detail for the failure? 
 
 
 ## Properties
@@ -29,21 +29,18 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.licenseAssignmentState"
+}-->
 ```json
 {
   "assignedByGroup": "String",
-  "disabledPlans": "Collection(String)",
+  "disabledPlans": ["string"],
   "error": " String ",  
   "skuId": "String ",
   "state": "String"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/licenseAssignmentState.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

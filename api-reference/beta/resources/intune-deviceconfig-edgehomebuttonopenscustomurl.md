@@ -1,7 +1,7 @@
 ---
 title: "edgeHomeButtonOpensCustomURL resource type"
 description: "Show the home button; clicking the home button loads a specific URL."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
   "homeButtonCustomURL": "String"
 }
 ```
+
 
 
 

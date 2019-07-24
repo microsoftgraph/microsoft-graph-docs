@@ -1,7 +1,7 @@
 ---
 title: "managementCondition resource type"
 description: "Management conditions are events that can be triggered dynamically such as geo-fences, time-fences, and network-fences."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -61,6 +61,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

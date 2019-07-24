@@ -32,6 +32,9 @@ The following example shows how you can determine whether an application is inst
 
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
+## Accessing the Microsoft Graph API for Intune
+
+Intune supports both [delegated permissions](https://docs.microsoft.com/graph/auth-v2-user) and [application permissions](https://docs.microsoft.com/graph/auth-v2-service). Delegated permissions are supported for both read and write operations. Application permissions are currently supported for read operations only. Delegated and application permissions support both single tenant applications, as well as multi-tenant applications. For more information about the permissions available through Microsoft Graph, see [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference).
 
 ## Using permissions
 

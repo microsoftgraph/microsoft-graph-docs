@@ -1,16 +1,16 @@
 ---
-title: "invitation manager"
-description: "Use the invitation manager to create an invite, in order to add an external user to the organization. "
+title: "invitation resource type"
+description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# invitation manager
+# invitation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the invitation manager to create an invite, in order to add an external user to the organization. 
+Represents an invitation that is used to add external users to an organization. 
 
 The invitation process uses the following flow:
 
@@ -42,14 +42,25 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
+|invitedUser|[user](user.md)|The user created as part of the invitation creation. Read-Only|
 
 ## JSON representation
 Here is a JSON representation of the resource
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- 
+{ 
+    "blockType": "resource",
+    "keyProperty":"id",
+    "@odata.type": "microsoft.graph.invitation", 
+    "optionalProperties": [
+        "invitedUser"
+     ],
+    "baseType": "microsoft.graph.entity"
+} 
+-->
 ```json
 {
+  "id": "string",
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
@@ -57,8 +68,8 @@ Here is a JSON representation of the resource
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 
@@ -72,8 +83,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/invitation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

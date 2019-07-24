@@ -1,7 +1,7 @@
 ---
 title: "deviceAndAppManagementAssignedRoleDetails resource type"
-description: "Not yet documented"
-author: "tfitzmac"
+description: "The set of Role Definitions and Role Assignments assigned to a user."
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -12,7 +12,7 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+The set of Role Definitions and Role Assignments assigned to a user.
 
 ## Properties
 |Property|Type|Description|
@@ -41,6 +41,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get deviceAppManagement"
 description: "Read properties and relationships of the deviceAppManagement object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -16,12 +16,12 @@ Read properties and relationships of the [deviceAppManagement](../resources/intu
 
 ## Prerequisites
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).  Note that the appropriate permission varies according to the workflow.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  Note that the appropriate permission varies according to the workflow.
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 | Delegated (work or school account) | |
-| &nbsp; &nbsp; **Apps**, **books**, or **onboarding** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, or **Partner Integration** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|

@@ -9,7 +9,7 @@ localization_priority: Priority
 
 OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they left off, and collaborate on notes with others in real time.
 
-![A OneNote notebook with its sections and pages](images/onenote-page.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/VXd4OeQU1ek]
 
 ## Why integrate with OneNote?
 

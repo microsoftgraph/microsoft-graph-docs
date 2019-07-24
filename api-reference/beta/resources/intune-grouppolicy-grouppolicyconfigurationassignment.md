@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyConfigurationAssignment resource type"
 description: "The group policy configuration assignment entity assigns one or more AAD groups to a specific group policy configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -51,6 +51,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

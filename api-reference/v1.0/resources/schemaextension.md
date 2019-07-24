@@ -11,14 +11,14 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 
 Schema extensions are supported by the following resource types:
 
- - [contact](contact.md)
- - [device](device.md)
- - [event](event.md) on a user or Office 365 group calendar
- - [post](post.md) of an Office 365 group
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [contact](contact.md)
+- [device](device.md)
+- [event](event.md) on a user or Office 365 group calendar
+- [post](post.md) of an Office 365 group
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 See the [schema extension example](/graph/extensibility-schema-groups) to learn how to add custom data to groups.
 

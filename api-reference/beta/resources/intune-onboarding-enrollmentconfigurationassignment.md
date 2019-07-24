@@ -1,7 +1,7 @@
 ---
 title: "enrollmentConfigurationAssignment resource type"
-description: "Not yet documented"
-author: "tfitzmac"
+description: "Enrollment Configuration Assignment"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -12,7 +12,7 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Enrollment Configuration Assignment
 
 ## Methods
 |Method|Return Type|Description|
@@ -26,8 +26,8 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Not yet documented|
+|id|String|Key of the enrollment configuration assignment|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Represents an assignment to managed devices in the tenant|
 
 ## Relationships
 None
@@ -49,6 +49,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

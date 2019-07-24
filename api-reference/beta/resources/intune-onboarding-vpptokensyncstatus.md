@@ -1,7 +1,7 @@
 ---
 title: "vppTokenSyncStatus enum type"
 description: "Possible sync statuses associated with an Apple Volume Purchase Program token."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -21,6 +21,7 @@ Possible sync statuses associated with an Apple Volume Purchase Program token.
 |inProgress|1|Last Sync in progress.|
 |completed|2|Last Sync completed successfully.|
 |failed|3|Last Sync failed.|
+
 
 
 

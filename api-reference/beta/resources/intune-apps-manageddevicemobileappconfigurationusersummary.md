@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceMobileAppConfigurationUserSummary resource type"
 description: "Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -58,6 +58,7 @@ Here is a JSON representation of the resource.
   "configurationVersion": 1024
 }
 ```
+
 
 
 

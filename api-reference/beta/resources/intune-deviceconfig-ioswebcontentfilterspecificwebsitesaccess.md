@@ -1,7 +1,7 @@
 ---
 title: "iosWebContentFilterSpecificWebsitesAccess resource type"
 description: "Represents an iOS Web Content Filter setting type, which installs URL bookmarks into iOS built-in browser. An example scenario is in the classroom where teachers would like the students to navigate websites through browser bookmarks configured on their iOS devices, and no access to other sites."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -54,6 +54,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

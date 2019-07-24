@@ -134,9 +134,6 @@ localization_priority: Normal
 |:---------------------
 | student
 | teacher
-| none
-| unknownFutureValue
-
 
 ### meetingMessageType values
 
@@ -597,3 +594,56 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
+
+### riskDetail values
+
+| Value
+|:-------------------------
+| adminGeneratedTemporaryPassword
+| userPerformedSecuredPasswordChange
+| userPerformedSecuredPasswordReset
+| adminConfirmedSigninSafe
+| aiConfirmedSigninSafe
+| userPassedMFADrivenByRiskBasedPolicy
+| adminDismissedAllRiskForUser
+| adminConfirmedSigninCompromised
+| unknownFutureValue
+
+### riskEventTypes values
+
+| Value
+|:-------------------------
+| unlikelyTravel
+| anonymizedIPAddress
+| maliciousIPAddress
+| unfamiliarFeatures
+| malwareInfectedIPAddress
+| suspiciousIPAddress
+| leakedCredentials
+| investigationsThreatIntelligence
+| generic
+| unknownFutureValue
+
+### riskLevel values
+
+| Value
+|:-------------------------
+| none
+| low
+| medium
+| high
+| hidden
+| unknownFutureValue
+
+### riskState values
+
+| Value
+|:-------------------------
+| none
+| confirmedSafe
+| remediated
+| dismissed
+| atRisk
+| confirmedCompromised
+| unknownFutureValue
+

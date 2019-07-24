@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81AppX"
 description: "Read properties and relationships of the windowsPhone81AppX object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1719
+Content-Length: 1798
 
 {
   "value": {
@@ -90,6 +90,7 @@ Content-Length: 1719
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -105,7 +106,9 @@ Content-Length: 1719
       "v10_1607": true,
       "v10_1703": true,
       "v10_1709": true,
-      "v10_1803": true
+      "v10_1803": true,
+      "v10_1809": true,
+      "v10_1903": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",
@@ -113,6 +116,7 @@ Content-Length: 1719
   }
 }
 ```
+
 
 
 
