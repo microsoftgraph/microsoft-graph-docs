@@ -41,7 +41,7 @@ Here is a JSON representation of the resource
 | ------------- 		|---------------| -------------|
 | title      			| String		| The item's title text.	   		   |
 | type    			| String		| The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types. |
-| mediaType    			| String		| The item's media type. Can be used for for filtering for a specific type of file based on supported IANA Media Mime Types. Note that not all Media Mime Types are supported. |
+| mediaType    			| String		| The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types. Note that not all Media Mime Types are supported. |
 | previewImageUrl   	| String		| A URL leading to the preview image for the item. |
 | previewText      		| String		| A preview text for the item. |
 | containerWebUrl      	| String		| A path leading to the folder in which the item is stored. |

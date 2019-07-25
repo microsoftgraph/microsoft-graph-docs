@@ -61,10 +61,7 @@ Security alerts are highly privileged data typically viewable only by security r
 
 3. Prepare a diagnostic setting request JSON file like the following:
 
-<!-- {
-  "blockType": "ignored"
-} -->
-
+    <!-- { "blockType": "ignored" } -->
     ``` json
     {
       "location": "",
@@ -85,13 +82,13 @@ Security alerts are highly privileged data typically viewable only by security r
     }
     ```
 
-Replace the values in the JSON file as follows:
+    Replace the values in the JSON file as follows:
 
-  * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-  * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-  * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-  * **“days”:** is the number of days you want to retain messages in your event hub.
-  
+    * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+    * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+    * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+    * **“days”:** is the number of days you want to retain messages in your event hub.
+
 
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 

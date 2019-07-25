@@ -30,6 +30,14 @@ Windows 10 Edition type.
 |windows10ProfessionalWorkstation|10|Windows 10 Professional for Workstations|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional for Workstations N|
 |notConfigured|12|NotConfigured|
+|windows10Home|13|Windows 10 Home|
+|windows10HomeChina|14|Windows 10 Home China|
+|windows10HomeN|15|Windows 10 Home N|
+|windows10HomeSingleLanguage|16|Windows 10 Home Single Language|
+|windows10Mobile|17|Windows 10 Mobile|
+|windows10IoTCore|18|Windows 10 IoT Core|
+|windows10IoTCoreCommercial|19|Windows 10 IoT Core Commercial|
+
 
 
 

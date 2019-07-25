@@ -1,6 +1,6 @@
 ---
 title: "user: delta"
-description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See Track changes for details."
+description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
@@ -61,7 +61,7 @@ This method supports optional OData Query Parameters to help customize the respo
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
@@ -73,7 +73,7 @@ If successful, this method returns `200 OK` response code and [user](../resource
   - This indicates there is no more data about the existing state of the resource to be returned. Save and use the `deltaLink` URL to learn about changes to the resource in the next round.
   - You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the `deltaLink` was issued.
 
-#### Default: return the same properties as initial delta request
+### Default: return the same properties as initial delta request
 
 By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:
 
@@ -82,22 +82,26 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has never been set before it will not be included in the response at all.
 
 
-> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
+> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in [Example 2](#example-2-selecting-three-properties).
 
-#### Alternative: return only the changed properties
+### Alternative: return only the changed properties
 
 Adding an optional request header - `prefer:return=minimal` - results in the following behavior:
 
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
+> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 3](#example-3-alternative-minimal-response-behavior).
 
-### Example
+## Examples
 
-#### Request 1
+### Example 1: Default properties
+
+#### Request
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -106,8 +110,26 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```http
 GET https://graph.microsoft.com/v1.0/users/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Response 1
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
@@ -146,19 +168,13 @@ Content-type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
+### Example 2: Selecting three properties
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+#### Request
 
----
+The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-#### Request 2
-
-The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta_select"
@@ -167,10 +183,28 @@ The next example shows the initial request selecting 3 properties for change tra
 ```http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-select-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Response 2
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-select-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-delta-select-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-delta-select-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all three properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -195,20 +229,14 @@ Content-type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta_select-Cs-snippets.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta_select-Javascript-snippets.md)]
+### Example 3: Alternative minimal response behavior
 
----
+#### Request
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
-#### Request 3
-
-The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta_minimal"
@@ -218,8 +246,26 @@ The next example shows the initial request selecting 3 properties for change tra
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 Prefer: return=minimal
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-minimal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### Response 3
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-minimal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-delta-minimal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-delta-minimal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
 
@@ -245,16 +291,7 @@ Content-type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta_minimal-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta_minimal-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+## See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).
@@ -268,11 +305,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

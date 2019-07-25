@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 267
+Content-Length: 309
 
 {
   "value": {
@@ -69,10 +69,12 @@ Content-Length: 267
     "label": "Label value",
     "id": "2e074c87-4c87-2e07-874c-072e874c072e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "explicitValue": true
+    "explicitValue": true,
+    "valuePrefix": "Value Prefix value"
   }
 }
 ```
+
 
 
 

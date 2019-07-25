@@ -33,6 +33,7 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.Read.All |

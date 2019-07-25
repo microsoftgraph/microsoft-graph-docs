@@ -47,7 +47,8 @@ The following table shows the properties that are required when you create the a
 |:---|:---|:---|
 |id|String|Key of the entity the Android package name for the application the schema corresponds to|
 |exampleJson|Binary|UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app|
-|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema|
+|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.|
+|nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection|Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.|
 
 
 
@@ -61,7 +62,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas
 Content-type: application/json
-Content-length: 805
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -69,6 +70,32 @@ Content-length: 805
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",
@@ -96,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 854
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchema",
@@ -105,6 +132,32 @@ Content-Length: 854
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
+      "schemaItemKey": "Schema Item Key value",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "defaultBoolValue": true,
+      "defaultIntValue": 15,
+      "defaultStringValue": "Default String Value value",
+      "defaultStringArrayValue": [
+        "Default String Array Value value"
+      ],
+      "dataType": "integer",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 5,
+      "parentIndex": 11,
       "schemaItemKey": "Schema Item Key value",
       "displayName": "Display Name value",
       "description": "Description value",
@@ -126,6 +179,7 @@ Content-Length: 854
   ]
 }
 ```
+
 
 
 

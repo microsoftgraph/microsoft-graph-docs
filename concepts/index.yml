@@ -62,20 +62,6 @@ sections:
           src: ./images/index/i_api.svg
         title: Microsoft Graph REST API Beta
 
-  - title: What's new in the docs?
-    items:
-    - type: list
-      style: cards
-      className: cardsH
-      items:
-      - title: Generally available
-        html: <p><a style="color:rgb(0, 120, 212);" href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/identityprovider?view=graph-rest-1.0">Identity providers</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/auth">Improved auth guides</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/migrate-azure-ad-graph-overview">Migrating apps from Azure AD Graph to Microsoft Graph</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/securescore?view=graph-rest-1.0">Tenant secure score</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK guides</a></p><p>API snippets (<a style="color:rgb(0, 120, 212);" href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)</p>
-      - title: Preview
-        html: <p><a style="color:rgb(0, 120, 212);" href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-follow?view=graph-rest-beta">Follow</a> and <a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-unfollow?view=graph-rest-beta">unfollow</a> documents</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">Sharing invitation</a> includes expiration and password</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">Access reviews</a> support application permissions</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">Application sign-in reports</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">Custom sign-in and sign-up in Azure AD B2C</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/riskyuser?view=graph-rest-beta">Risky user</a> and <a style="color:rgb(0, 120, 212);" href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">history</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/outlook-get-mime-message">Get MIME content of messages</a>, <a style="color:rgb(0, 120, 212);" href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">Get raw/MIME content of attachments</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/webhooks-outlook-authz">Reduce missing change notifications</a></p><p><a style="color:rgb(0, 120, 212);" href="graph/api/resources/tiindicator?view=graph-rest-beta">Threat indicators</a>, <a style="color:rgb(0, 120, 212);" href="/graph/api/resources/securityaction?view=graph-rest-beta">Security actions</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/shift?view=graph-rest-beta">Shifts management</a>, <a style="color:rgb(0, 120, 212);" href="/graph/api/resources/chat?view=graph-rest-beta">1:1 chats</a></p>
-    
-    - type: paragraph
-      text: See more in the <a href="/graph/changelog">changelog</a>!
-
   - title: Supported platforms
     items:
     - type: paragraph

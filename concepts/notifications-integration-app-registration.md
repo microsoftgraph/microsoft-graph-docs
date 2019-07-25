@@ -38,21 +38,21 @@ You'll need to add additional permissions in order to use Microsoft Graph notifi
     
 Add the following permissions:
 
-  - User.Read - allows your application to sign-in your user
+- User.Read - allows your application to sign-in your user
 
-  - Device.Read - allows identification of a user’s list of devices
+- Device.Read - allows identification of a user’s list of devices
 
-  - Device.Command - allows communication to a user’s device
+- Device.Command - allows communication to a user’s device
 
-  - UserActivity.ReadWrite.CreatedByApp - allows app subscription for
-    notification retrieval
+- UserActivity.ReadWrite.CreatedByApp - allows app subscription for
+  notification retrieval
 
-  - Notifications.ReadWrite.CreatedByApp - allows notification access
-    and delivery
+- Notifications.ReadWrite.CreatedByApp - allows notification access
+  and delivery
 
-  - wns.connect - allows connecting to windows notification service
+- wns.connect - allows connecting to windows notification service
 
-  ![Screenshot showing the delegated permissions for notifications in the Azure portal](images/notifications-api-permissions-list.png)
+![Screenshot showing the delegated permissions for notifications in the Azure portal](images/notifications-api-permissions-list.png)
 
 ## Next steps
 

@@ -4,7 +4,7 @@ description: "APIs for Azure AD Privileged Identity Management to manage Azure A
 localization_priority: Priority
 ---
 
-# Privileged Identity Management - Azure AD
+# Privileged Identity Management
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

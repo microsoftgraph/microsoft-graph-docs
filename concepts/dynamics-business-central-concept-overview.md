@@ -11,6 +11,8 @@ ms.prod: "dynamics-365-business-central"
 # Dynamics 365 Business Central API overview (preview)
 Dynamics 365 Business Central is an all-in-one business management solution that is easy to use and adapt, helping you connect your business and make smarter decisions. It provides an end-to-end view of your business, enabling you to manage your financials, automate and secure your supply chain, sell smarter and improve customer service, keep projects on time and under budget, and optimize your operations.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/na1kFk53cbk]
+
 ## Why integrate with Dynamics 365 Business Central?
 By integrating your apps with Dynamics 365 Business Central, you can create experiences that span your business needs. You can create solutions that empower your users to perform key business tasks and functions. You can use Microsoft Graph to access and manage your financials, work with business contacts, create and send sales and purchasing documents, and gain insights from financial reports.
 

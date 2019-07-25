@@ -12,7 +12,7 @@ Represents an Azure Active Directory (Azure AD) group, which can be an Office 36
 
 Inherits from [directoryObject](directoryobject.md).
 
-For performance reasons, the [create](../api/group-post-groups.md), [get](../api/group-get.md), and [list](../api/group-list.md) operations return only a subset of more commonly used properties by default. These _default_ properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option. See an [example](../api/group-get.md#request-2).
+For performance reasons, the [create](../api/group-post-groups.md), [get](../api/group-get.md), and [list](../api/group-list.md) operations return only a subset of more commonly used properties by default. These _default_ properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option.
 
 This resource supports:
 
@@ -50,6 +50,7 @@ This resource supports:
 |[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 |[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Validate that an Office 365 group's display name or mail nickname complies with naming policies. |
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -62,6 +63,7 @@ This resource supports:
 |[Get conversation](../api/group-get-conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group-list-conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group-delete-conversation.md) |None|Delete conversation object.|
+|[Create thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Create a new conversation thread.|
 |[Get thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
 |[List threads](../api/group-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
 |[Update thread](../api/group-update-thread.md) |None| Update properties of a thread object.|
@@ -71,12 +73,14 @@ This resource supports:
 |[Remove acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
 |[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejected-senders list for this group.|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
-|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
+|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new User or Group from the rejectedSenders collection.|
 |[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
 |[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 |[Update setting](../api/groupsetting-update.md) | None | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+|[Get setting template](../api/groupsettingtemplate-get.md) | None | Read properties of a setting template. |
+|[List setting template](../api/groupsettingtemplate-list.md) | None | List properties of all setting templates. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|

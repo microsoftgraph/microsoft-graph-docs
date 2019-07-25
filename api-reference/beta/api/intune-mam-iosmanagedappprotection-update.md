@@ -84,6 +84,7 @@ The following table shows the properties that are required when you create the [
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allow`, `blockOrganizationalData`, `block`.|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
@@ -111,7 +112,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 2566
+Content-length: 2623
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -155,6 +156,7 @@ Content-length: 2566
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -183,7 +185,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2738
+Content-Length: 2795
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -230,6 +232,7 @@ Content-Length: 2738
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -252,6 +255,7 @@ Content-Length: 2738
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
+
 
 
 

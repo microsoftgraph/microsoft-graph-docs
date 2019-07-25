@@ -59,9 +59,9 @@ The following table shows the properties that you need to configure and copy for
 
 - Learn more about [permissions and consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) or view the Microsoft Graph [permissions reference](permissions-reference.md).
 - To enable additional configuration features in your application registration, such as credentials and permissions, and enable sign-in for users from other tenants, see these quickstarts:
-    - [Configure a client application to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
-    - [Configure an application to expose web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
-    - [Modify the accounts supported by an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
+  - [Configure a client application to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+  - [Configure an application to expose web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
+  - [Modify the accounts supported by an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
 - Choose a [quickstart](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts) to quickly build an app and add functionality like getting tokens, refreshing tokens, signing in a user, displaying some user info, and more.
 - Learn more about the two Azure AD objects that represent a registered application and the relationship between them: [Application objects and service principal objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 - Learn more about the branding guidelines you should use when developing apps with [Branding guidelines for applications](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps).

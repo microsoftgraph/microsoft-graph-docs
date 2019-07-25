@@ -2,6 +2,8 @@
 title: "attributeMappingFunctionSchema resource type"
 description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # attributeMappingFunctionSchema resource type

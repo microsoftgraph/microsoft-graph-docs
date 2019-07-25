@@ -172,13 +172,13 @@ This is a list of the most common markdown syntax:
 - **Italics:** The HTML `<i>some text</i>` is written `*some text*`
 - **Bold:** The HTML `<strong>some text</strong>` element is written `**some text**`
 - **Headings:** HTML headings are designated by an number of `#` characters at the start of the line.  The number of `#` characters corresponds to the hierarchical level of the heading (for example, `#` = h1, `##` = h2, and `###` = h3).
-- **Numbered lists:** To create a numbered (ordered) list, start the line with `1. `. If you want multiple elements within a single list element, format your list as follows:
+- **Numbered lists:** To create a numbered (ordered) list, start the line with `1.`. If you want multiple elements within a single list element, format your list as follows:
 
     1. Notice that there is a space after the '.'
 
        Now notice that there is a line break between the two paragraphs in the list element, and that the indentation here matches the indentation of the line above.
 
-- **Bulleted lists:** Bulleted (unordered) lists are almost identical to ordered lists except that the `1. ` is replaced with either `- `, `* `, or `+ `.  Multiple element lists work the same way as they do with ordered lists.
+- **Bulleted lists:** Bulleted (unordered) lists are almost identical to ordered lists except that the `1.` is replaced with either `-`, `*`, or `+`.  Multiple element lists work the same way as they do with ordered lists.
 - **Links:** The base syntax for a link is `[visible link text](link url)`.
   Links can also have references, which is discussed in the **Link and Image References** section below.
 - **Images:** The base syntax for an image is `![alt text for the image](image url)`.

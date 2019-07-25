@@ -2,6 +2,8 @@
 title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get synchronizationTemplate

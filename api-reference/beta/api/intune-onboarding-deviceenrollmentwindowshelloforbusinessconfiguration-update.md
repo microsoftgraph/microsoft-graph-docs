@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the [
 |pinPreviousBlockCount|Int32|Controls the ability to prevent users from using past PINs. This must be set between 0 and 50, inclusive, and the current PIN of the user is included in that count. If set to 0, previous PINs are not stored. PIN history is not preserved through a PIN reset.|
 |pinExpirationInDays|Int32|Controls the period of time (in days) that a PIN can be used before the system requires the user to change it. This must be set between 0 and 730, inclusive. If set to 0, the user's PIN will never expire|
 |enhancedBiometricsState|[enablement](../resources/intune-shared-enablement.md)|Controls the ability to use the anti-spoofing features for facial recognition on devices which support it. If set to disabled, anti-spoofing features are not allowed. If set to Not Configured, the user can choose whether they want to use anti-spoofing. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|securityKeyForSignIn|[enablement](../resources/intune-shared-enablement.md)|Security key for Sign In provides the capacity for remotely turning ON/OFF Windows Hello Sercurity Keyl Not configured will honor configurations done on the clinet. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 629
+Content-length: 667
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -96,7 +97,8 @@ Content-length: 629
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
 
@@ -105,7 +107,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 801
+Content-Length: 839
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -127,9 +129,11 @@ Content-Length: 801
   "remotePassportEnabled": true,
   "pinPreviousBlockCount": 5,
   "pinExpirationInDays": 3,
-  "enhancedBiometricsState": "enabled"
+  "enhancedBiometricsState": "enabled",
+  "securityKeyForSignIn": "enabled"
 }
 ```
+
 
 
 

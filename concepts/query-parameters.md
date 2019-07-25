@@ -15,10 +15,14 @@ Microsoft Graph supports optional query parameters that you can use to specify a
 
 Query parameters can be OData system query options or other query parameters. 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
+
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
->**Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
+>**Note:** OData 4.0 supports system query options in only GET operations.
+
+Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|

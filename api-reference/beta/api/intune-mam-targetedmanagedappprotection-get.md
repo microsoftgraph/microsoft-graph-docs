@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2135
+Content-Length: 2194
 
 {
   "value": {
@@ -110,11 +110,13 @@ Content-Length: 2135
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
+    "notificationRestriction": "blockOrganizationalData",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged"
   }
 }
 ```
+
 
 
 

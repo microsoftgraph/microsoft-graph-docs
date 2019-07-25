@@ -88,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1367
+Content-length: 1413
 
 {
   "@odata.type": "#microsoft.graph.windowsAppX",
@@ -129,7 +129,9 @@ Content-length: 1367
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "Identity Version value"
 }
@@ -140,7 +142,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1539
+Content-Length: 1585
 
 {
   "@odata.type": "#microsoft.graph.windowsAppX",
@@ -184,11 +186,14 @@ Content-Length: 1539
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

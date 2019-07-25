@@ -12,8 +12,8 @@ ms.prod: "planner"
 
 The **plannerPlanContext** resource represents the relationship of a [plannerPlan](plannerplan.md) to a user experience outside of Planner. Plans in Planner can be surfaced in other experiences, such as Microsoft Teams, to track work in the context of that experience.
 The experience the **plannerPlanContext** entry reresents can be identified based on the **ownerAppId** property:
- - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346 : The context entry belongs to Microsoft Teams.
- - 00000003-0000-0ff1-ce00-000000000000 : The context entry belongs to SharePoint.
+- 5e3ce6c0-2b1f-4285-8d4b-75ee78787346 : The context entry belongs to Microsoft Teams.
+- 00000003-0000-0ff1-ce00-000000000000 : The context entry belongs to SharePoint.
 
 ## Properties
 | Property	   | Type	|Description|

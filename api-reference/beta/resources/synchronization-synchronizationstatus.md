@@ -2,6 +2,8 @@
 title: "synchronizationStatus resource type"
 description: "Represents the current status of the synchronizationJob."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationStatus resource type

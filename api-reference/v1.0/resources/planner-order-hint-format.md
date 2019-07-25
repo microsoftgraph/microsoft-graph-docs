@@ -53,7 +53,7 @@ Once these changes to order hint values are sent to the service in patch request
 4. Item 2 (Order Hint: `'adhg'`)
 5. Item 1 (Order Hint: `'de5%'`)
 
-Order Hints can be specified for creating the first item in the list as ` !`, since neither a previous or a next item exists in that case, however this is unnecessary, as the service will auto-generate values for all order hint values on items if they are not specified during creation of the item. Following example illustrates the order hints should be used when placing items in a previously empty list.
+Order Hints can be specified for creating the first item in the list as `!`, since neither a previous or a next item exists in that case, however this is unnecessary, as the service will auto-generate values for all order hint values on items if they are not specified during creation of the item. Following example illustrates the order hints should be used when placing items in a previously empty list.
 Add the first item:
 
 1. Item 1 (Order Hint: `' !'`)

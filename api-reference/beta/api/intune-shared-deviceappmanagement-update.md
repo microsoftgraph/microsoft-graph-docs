@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 | Delegated (work or school account) | |
-| &nbsp; &nbsp; **Apps**, **books**, or **onboarding** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, or **Partner Integration** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Not supported. |

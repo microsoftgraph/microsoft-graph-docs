@@ -27,32 +27,32 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|assignedPlans|[assignedPlan](assignedplan.md) collection|The collection of service plans associated with the tenant. Not nullable.            |
-| businessPhones                      | String collection                                         | Telephone number for the organization. **Note:** Although this is a string collection, only one number can be set for this property.                                                                                            |
-|city|String| City name of the address for the organization |
-|companyLastDirSyncTime|DateTimeOffset|The time and date at which the tenant was last synced with the on-premise directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|country|String| Country/region name of the address for the organization |
-|countryLetterCode|String| Country/region abbreviation for the organization |
-|createdDateTime|DateTimeOffset| Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
-| deletedDateTime                    | DateTimeOffset                                                    | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.                                                                                     |
-|dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
-|displayName|String|The display name for the tenant.|
-|id|String|The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|String collection| Not nullable.            |
-|objectType|String|A string that identifies the object type. For tenants the value is always “Company”. |
-|postalCode|String| Postal code of the address for the organization |
-|preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
-|privacyProfile|[privacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
-|provisionedPlans|[provisionedPlan](provisionedplan.md) collection| Not nullable.            |
-|securityComplianceNotificationMails|String collection||
-|securityComplianceNotificationPhones|String collection||
-|state|String| State name of the address for the organization |
-|street|String| Street name of the address for organization |
-|technicalNotificationMails|String collection| Not nullable. |
-|verifiedDomains|[verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
+| Property | Type	| Description |
+|:-------- |:---- |:----------- |
+| assignedPlans | [assignedPlan](assignedplan.md) collection | The collection of service plans associated with the tenant. Not nullable. |
+| businessPhones | String collection | Telephone number for the organization. **Note:** Although this is a string collection, only one number can be set for this property. |
+| city | String | City name of the address for the organization. |
+| country | String | Country/region name of the address for the organization. |
+| countryLetterCode | String | Country/region abbreviation for the organization. |
+| createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+| deletedDateTime | DateTimeOffset | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
+| displayName | String | The display name for the tenant. |
+| id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
+| isMultipleDataLocationsForServicesEnabled | Boolean | **true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| marketingNotificationEmails | String collection | Not nullable. |
+| objectType | String | A string that identifies the object type. For tenants the value is always “Company”. |
+| onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+| onPremisesSyncEnabled | Boolean | **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). |
+| postalCode | String | Postal code of the address for the organization. |
+| preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
+| privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
+| provisionedPlans | [provisionedPlan](provisionedplan.md) collection | Not nullable. |
+| securityComplianceNotificationMails | String collection ||
+| securityComplianceNotificationPhones | String collection ||
+| state | String | State name of the address for the organization. |
+| street | String | Street name of the address for organization. |
+| technicalNotificationMails |String collection | Not nullable. |
+| verifiedDomains | [verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable. |
 
 ## Relationships
 

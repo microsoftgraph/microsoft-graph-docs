@@ -10,10 +10,10 @@ localization_priority: Normal
 
 The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:  
 
- - What plans are disabled for a user
- - Whether the license was assigned to the user directly or inherited from a group
- - Current state of the assignment
- - If the assignment state is Error, what is the error detail for the failure? 
+- What plans are disabled for a user
+- Whether the license was assigned to the user directly or inherited from a group
+- Current state of the assignment
+- If the assignment state is Error, what is the error detail for the failure? 
 
 
 ## Properties

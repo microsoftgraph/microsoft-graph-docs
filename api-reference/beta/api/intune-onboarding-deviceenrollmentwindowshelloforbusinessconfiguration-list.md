@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 956
 
 {
   "value": [
@@ -81,11 +81,13 @@ Content-Length: 914
       "remotePassportEnabled": true,
       "pinPreviousBlockCount": 5,
       "pinExpirationInDays": 3,
-      "enhancedBiometricsState": "enabled"
+      "enhancedBiometricsState": "enabled",
+      "securityKeyForSignIn": "enabled"
     }
   ]
 }
 ```
+
 
 
 

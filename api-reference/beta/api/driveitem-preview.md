@@ -90,7 +90,7 @@ The following values are allowed for the **viewer** parameter.
 |:-----------|:----------------------------------------------------------------
 | (null)     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type.
 | `onedrive` | Use the OneDrive previewer app to render the file.
-| `office`   | Use the WAC (Office online) to render the file. Only valid for Office documents.
+| `office`   | Use the web version of Office to render the file. Only valid for Office documents.
 
 ### Chrome vs chromeless
 

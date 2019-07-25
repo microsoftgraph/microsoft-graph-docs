@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30466
+Content-Length: 31927
 
 {
   "value": [
@@ -70,6 +70,27 @@ Content-Length: 30466
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -100,6 +121,7 @@ Content-Length: 30466
           "action": "blocked",
           "trafficDirection": "out",
           "interfaceTypes": "remoteAccess",
+          "edgeTraversal": "blocked",
           "localUserAuthorizations": "Local User Authorizations value"
         }
       ],
@@ -152,6 +174,18 @@ Content-Length: 30466
         ]
       },
       "userRightsLocalLogOn": {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+        "state": "blocked",
+        "localUsersOrGroups": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+            "name": "Name value",
+            "description": "Description value",
+            "securityIdentifier": "Security Identifier value"
+          }
+        ]
+      },
+      "userRightsDenyLocalLogOn": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
         "localUsersOrGroups": [
@@ -523,6 +557,7 @@ Content-Length: 30466
       "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
       "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
       "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+      "windowsDefenderTamperProtection": "enable",
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
@@ -653,6 +688,7 @@ Content-Length: 30466
       "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
       "deviceGuardEnableVirtualizationBasedSecurity": true,
       "deviceGuardEnableSecureBootWithDMA": true,
+      "deviceGuardSecureBootWithDMA": "withoutDMA",
       "deviceGuardLaunchSystemGuard": "enabled",
       "smartScreenEnableInShell": true,
       "smartScreenBlockOverrideForFiles": true,
@@ -722,6 +758,7 @@ Content-Length: 30466
   ]
 }
 ```
+
 
 
 

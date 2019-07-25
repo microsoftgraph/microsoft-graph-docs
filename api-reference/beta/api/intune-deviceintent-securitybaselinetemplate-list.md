@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 342
+Content-Length: 452
 
 {
   "value": [
@@ -69,11 +69,14 @@ Content-Length: 342
       "description": "Description value",
       "versionInfo": "Version Info value",
       "isDeprecated": true,
-      "intentCount": 11
+      "intentCount": 11,
+      "templateType": "specializedDevices",
+      "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
     }
   ]
 }
 ```
+
 
 
 

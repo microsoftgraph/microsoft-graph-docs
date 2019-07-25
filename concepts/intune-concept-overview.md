@@ -12,6 +12,8 @@ Microsoft Intune helps enterprises manage devices and apps within an organizatio
 
 If you're an ISV, you can also use the Intune API to manage client tenants.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/yU1HeqNmN7A]
+
 ## Why integrate with Intune?
 
 You can use the Intune API in Microsoft Graph to access Intune device and application information, manage devices, manage apps, and automate Intune.

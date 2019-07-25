@@ -20,7 +20,7 @@ A page in a OneNote notebook.
 |id|String|The unique identifier of the page.  Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |level|Int32|The indentation level of the page. Read-only.|
-|links|[pageLinks](pagelinks.md)|Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote Online. Read-only.|
+|links|[pageLinks](pagelinks.md)|Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote on the web. Read-only.|
 |order|Int32|The order of the page within its parent section. Read-only.|
 |self|String|The endpoint where you can get details about the page. Read-only.|
 |title|String|The title of the page. |

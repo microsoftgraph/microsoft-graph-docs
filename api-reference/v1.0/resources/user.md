@@ -25,22 +25,22 @@ This resource supports:
 |[Get user](../api/user-get.md) | [user](user.md) |Read properties and relationships of user object.|
 |[Update user](../api/user-update.md) | [user](user.md) |Update user object. |
 |[Delete user](../api/user-delete.md) | None |Delete user object. |
-|[List messages](../api/user-list-messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox.|
-|[Create Message](../api/user-post-messages.md) |[Message](message.md)| Create a new Message by posting to the messages collection.|
-|[List mailFolders](../api/user-list-mailfolders.md) |[MailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
-|[Create mailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
+|[List messages](../api/user-list-messages.md) |[message](message.md) collection| Get all the messages in the signed-in user's mailbox.|
+|[Create message](../api/user-post-messages.md) |[message](message.md)| Create a new Message by posting to the messages collection.|
+|[List mailFolders](../api/user-list-mailfolders.md) |[mailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Create a new MailFolder by posting to the mailFolders collection.|
 |[sendMail](../api/user-sendmail.md)|None|Send the message specified in the request body.|
-|[List events](../api/user-list-events.md) |[Event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
-|[Create event](../api/user-post-events.md) |[Event](event.md)| Create a new Event by posting to the events collection.|
-|[List calendars](../api/user-list-calendars.md) |[Calendar](calendar.md) collection| Get a Calendar object collection.|
-|[Create calendar](../api/user-post-calendars.md) |[Calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
-|[List calendarGroups](../api/user-list-calendargroups.md) |[CalendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
-|[Create calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
-|[List calendarView](../api/user-list-calendarview.md) |[Event](event.md) collection| Get a Event object collection.|
-|[List contacts](../api/user-list-contacts.md) |[Contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user.|
-|[Create Contact](../api/user-post-contacts.md) |[Contact](contact.md)| Create a new Contact by posting to the contacts collection.|
-|[List contactFolders](../api/user-list-contactfolders.md) |[ContactFolder](contactfolder.md) collection| Get the contact folder collection in the default Contacts folder of the signed-in user.|
-|[Create ContactFolder](../api/user-post-contactfolders.md) |[ContactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
+|[List events](../api/user-list-events.md) |[event](event.md) collection| Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.|
+|[Create event](../api/user-post-events.md) |[event](event.md)| Create a new Event by posting to the events collection.|
+|[List calendars](../api/user-list-calendars.md) |[calendar](calendar.md) collection| Get a Calendar object collection.|
+|[Create calendar](../api/user-post-calendars.md) |[calendar](calendar.md)| Create a new Calendar by posting to the calendars collection.|
+|[List calendarGroups](../api/user-list-calendargroups.md) |[calendarGroup](calendargroup.md) collection| Get a CalendarGroup object collection.|
+|[Create calendarGroup](../api/user-post-calendargroups.md) |[calendarGroup](calendargroup.md)| Create a new CalendarGroup by posting to the calendarGroups collection.|
+|[List calendarView](../api/user-list-calendarview.md) |[event](event.md) collection| Get a Event object collection.|
+|[List contacts](../api/user-list-contacts.md) |[contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user.|
+|[Create contact](../api/user-post-contacts.md) |[contact](contact.md)| Create a new Contact by posting to the contacts collection.|
+|[List contactFolders](../api/user-list-contactfolders.md) |[contactFolder](contactfolder.md) collection| Get the contact folder collection in the default Contacts folder of the signed-in user.|
+|[Create contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
@@ -56,6 +56,7 @@ This resource supports:
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| None |Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -99,7 +100,7 @@ This resource supports:
 |officeLocation|String|The office location in the user's place of business.|
 |onPremisesDistinguishedName|String| Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
 |onPremisesDomainName|String| Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. Supports $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
@@ -109,18 +110,19 @@ This resource supports:
 |onPremisesUserPrincipalName|String| Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
 |otherMails|String| A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredDataLocation|String|The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
 |showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
 |skills|String collection|A list for the user to enumerate their skills.|
+|signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
@@ -174,26 +176,26 @@ The age group and minor consent properties are optional properties used by Azure
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
-|calendar|[Calendar](calendar.md)|The user's primary calendar. Read-only.|
-|calendarGroups|[CalendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
-|calendarView|[Event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
-|calendars|[Calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
-|contactFolders|[ContactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
-|contacts|[Contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
+|calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
+|calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
+|calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
+|calendars|[calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
+|contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
+|contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
-|events|[Event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
+|events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Read-only. Nullable.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
-|licenseDetails|[LicenseDetails](licensedetails.md) collection|A collection of this user's license details. Nullable.|
-|mailFolders|[MailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
+|licenseDetails|[licenseDetails](licensedetails.md) collection|A collection of this user's license details. Read-only.|
+|mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups and directory roles that the user is a member of. Read-only. Nullable.|
-|messages|[Message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
-|onenote|[Onenote](onenote.md)| Read-only.|
-|outlook|[OutlookUser](outlookuser.md)| Read-only.|
+|messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
+|onenote|[onenote](onenote.md)| Read-only.|
+|outlook|[outlookUser](outlookuser.md)| Read-only.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
 |people|[person](person.md) collection| People that are relevant to the user. Read-only. Nullable.
@@ -417,6 +419,7 @@ Here is a JSON representation of the resource
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

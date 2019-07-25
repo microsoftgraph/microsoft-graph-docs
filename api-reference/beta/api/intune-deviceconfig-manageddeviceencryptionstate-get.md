@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 762
+Content-Length: 810
 
 {
   "value": {
@@ -75,6 +75,7 @@ Content-Length: 762
     "encryptionState": "encrypted",
     "encryptionPolicySettingState": "notApplicable",
     "advancedBitLockerStates": "noUserConsent",
+    "fileVaultStates": "driveEncryptedByUser",
     "policyDetails": [
       {
         "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -85,6 +86,7 @@ Content-Length: 762
   }
 }
 ```
+
 
 
 

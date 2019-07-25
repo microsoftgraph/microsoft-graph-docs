@@ -14,9 +14,14 @@ The following code examples show how to create an instance of a Microsoft Graph 
 # [C#](#tab/CS)
 
 ```csharp
-var app = DeviceCodeProvider.CreateClientApplication("INSERT-CLIENT-APP-ID");
-var authProvider = new DeviceCodeProvider(app);
-var client = new GraphServiceClient(authProvider);
+// Build a client application.
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create("INSERT-CLIENT-APP-ID")
+            .Build();
+// Create an authentication provider by passing in a client application and graph scopes.
+DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
+// Create a new instance of GraphServiceClient with the authentication provider.
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -32,7 +37,7 @@ const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
 // Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
 const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, scopes);
+const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
 # [Java](#tab/Java)

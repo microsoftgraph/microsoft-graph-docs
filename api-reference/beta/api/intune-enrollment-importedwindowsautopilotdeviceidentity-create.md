@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
-POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## Request headers
@@ -47,7 +46,8 @@ The following table shows the properties that are required when you create the i
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object|
-|orderIdentifier|String|Order Id of the Windows autopilot device.|
+|orderIdentifier|String|Order Id of the Windows autopilot device. - Deprecate|
+|groupTag|String|Group Tag of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
 |importId|String|The Import Id of the Windows autopilot device.|
@@ -67,11 +67,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 645
+Content-length: 679
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "importId": "Import Id value",
@@ -92,12 +93,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 694
+Content-Length: 728
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "importId": "Import Id value",
@@ -112,6 +114,7 @@ Content-Length: 694
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
 
 
 

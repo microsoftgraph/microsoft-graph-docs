@@ -1,12 +1,12 @@
 ---
-title: "Overview of social intelligence and analytics in Microsoft Graph"
+title: "Overview of social and workplace intelligence in Microsoft Graph"
 description: "The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting."
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
 ---
 
-# Overview of social intelligence and analytics in Microsoft Graph
+# Overview of social and workplace intelligence in Microsoft Graph
 
 The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
@@ -88,7 +88,7 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 Looking for the API reference for these services?
 
 - [People API in Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [API for social intelligence and analytics in Microsoft Graph beta](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Use the Microsoft Graph API to integrate social and workplace intelligence in an app](/graph/api/resources/social-overview?view=graph-rest-beta)
 
 ## Next steps
 

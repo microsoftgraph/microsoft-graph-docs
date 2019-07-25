@@ -10,6 +10,8 @@ ms.prod: "data-connect"
 
 Microsoft Graph data connect brings Office 365 data and Microsoft Azure resources to you through a toolset. You can use Microsoft Graph data connect to build intelligent applications that access valuable data using the best development tools offered by Microsoft, all within the Microsoft secure cloud. All businesses are interested in improving productivity, which means that building products that make knowledge workers more productive presents tremendous opportunities.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/J1WGFRGnc7g]
+
 You can take advantage of Microsoft Graph data connect if you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=123161) and are:
 
 - An ISV building intelligent applications for any Office 365 customer.

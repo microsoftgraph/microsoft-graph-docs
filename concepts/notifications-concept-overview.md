@@ -9,6 +9,8 @@ ms.prod: "notifications"
 
 Notifications are one of the most effective ways to reengage with your application users. A great notification experience can help open a near real-time communication channel between you and your users, and that in turn can increase app engagement at the right time, make users more productive, and alert them to important events or required actions.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
+
 Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices. 
 
 Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. Microsoft Graph notifications provide a human-centric approach that gives you the ability to target your  users across any and all device endpoints.

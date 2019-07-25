@@ -52,6 +52,9 @@ Default is any address.|
 |action|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|The action the rule enforces. If not specified, the default is Allowed. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |trafficDirection|[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)|The traffic direction that the rule is enabled for. If not specified, the default is Out. Possible values are: `notConfigured`, `out`, `in`.|
 |interfaceTypes|[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)|The interface types of the rule. Possible values are: `notConfigured`, `remoteAccess`, `wireless`, `lan`.|
+|edgeTraversal|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Indicates whether edge traversal is enabled or disabled for this rule.
+The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address.
+New rules have the EdgeTraversal property disabled by default. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |localUserAuthorizations|String|Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format.|
 
 ## Relationships
@@ -89,9 +92,11 @@ Here is a JSON representation of the resource.
   "action": "String",
   "trafficDirection": "String",
   "interfaceTypes": "String",
+  "edgeTraversal": "String",
   "localUserAuthorizations": "String"
 }
 ```
+
 
 
 

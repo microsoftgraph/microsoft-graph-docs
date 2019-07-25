@@ -5,15 +5,11 @@ metadata:
   title: Microsoft Graph Auth Overview
   description: Learn the basics of OAuth2.0 and how to get tokens to call the Microsoft Graph API. 
   services: active-directory
-  author: danieldobalian
+  author: CelesteDG
   manager: CelesteDG
-  ms.service: active-directory
-  ms.subservice: develop
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
   ms.date: 04/26/2019
-  ms.author: dadobali
+  ms.reviewer: jawoods
 abstract:
   description: Learn how to authenticate and work with permissions to securely access data through Microsoft Graph. Explore the documentation below to learn about app registration, authentication libraries, authorization, and other parts of the Microsoft identity platform that support Microsoft Graph development. 
   aside:

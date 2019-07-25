@@ -2,6 +2,8 @@
 title: "synchronizationQuarantine resource type"
 description: "Provides information about the quarantine state of a synchronizationJob."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationQuarantine resource type

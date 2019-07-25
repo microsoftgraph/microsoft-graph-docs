@@ -10,9 +10,7 @@ ms.prod: "education"
 
 The education API in Microsoft Graph enhances Office 365 resources with information that is relevant for education scenarios, including information about schools, classes, users (students and teachers), assignments, and submissions. This makes it easy for you to build solutions that integrate with educational resources for various school and classroom scenarios.
 
-The education API in Microsoft Graph provides access to classes, schools, users, assignments, submissions and more.
-
-![EDU Graph Overview](images/edugraph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
 ## Why integrate with education scenarios?
 
@@ -68,16 +66,16 @@ Looking for the API reference for this service?
 ## Next Steps
 
 - To start using the education APIs, see:
-    - [Use the roster APIs](/graph/api/resources/education-overview?view=graph-rest-1.0)
-    - [Use the assignment APIs](/graph/api/resources/educationassignment?view=graph-rest-beta)
-    - [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
+  - [Use the roster APIs](/graph/api/resources/education-overview?view=graph-rest-1.0)
+  - [Use the assignment APIs](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - Try the education APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore the following education-related samples:
-    - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [Python sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [PHP sample for for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+  - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
+  - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
+  - [Python sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-Python-Samples)
+  - [PHP sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+  - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
 

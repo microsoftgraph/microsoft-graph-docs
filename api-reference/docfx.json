@@ -1,5 +1,5 @@
 {
-  "build": {    
+  "build": {
     "content": [
       {
         "files": [
@@ -33,7 +33,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      },  
+      },
       {
         "files": [
             "api/**/*.md",
@@ -66,7 +66,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      },  
+      },
       {
         "files": [
             "toc.yml"
@@ -162,6 +162,22 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "1.0.yml"
+        ],
+        "src": "v1.0/",
+        "dest": "api/",
+        "group": "v1.0"
+      },
+      {
+        "files": [
+          "beta.yml"
+        ],
+        "src": "beta/",
+        "dest": "api/",
+        "group": "beta"
       }
     ],
     "resource": [
@@ -200,11 +216,11 @@
       "beta": {
         "dest": "betatemp",
         "moniker_range": "graph-rest-beta"
-      }     
-    },    
+      }
+    },
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": { 
+    "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
@@ -212,7 +228,7 @@
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
-      "ms.prod": "non-product-specific",	
+      "ms.prod": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"],
       "toc_preview": true
@@ -228,24 +244,24 @@
       },
       "feedback_system": {},
       "ms.technology": {
-        "v1.0/api/*.md": "microsoft-graph",  
+        "v1.0/api/*.md": "microsoft-graph",
         "beta/api/*.md": "microsoft-graph",
-        "v1.0/resources/*.md": "microsoft-graph",  
-        "beta/resources/*.md": "microsoft-graph"    
+        "v1.0/resources/*.md": "microsoft-graph",
+        "beta/resources/*.md": "microsoft-graph"
       },
-      "ms.topic": {  
-        "v1.0/api/*.md": "reference",  
+      "ms.topic": {
+        "v1.0/api/*.md": "reference",
         "beta/api/*.md": "reference",
-        "v1.0/resources/*.md": "reference",  
-        "beta/resources/*.md": "reference" 
+        "v1.0/resources/*.md": "reference",
+        "beta/resources/*.md": "reference"
       },
       "titleSuffix": {
-        "v1.0/*.md": "Microsoft Graph v1.0", 
+        "v1.0/*.md": "Microsoft Graph v1.0",
         "beta/*.md": "Microsoft Graph beta",
-        "v1.0/api/*.md": "Microsoft Graph v1.0", 
+        "v1.0/api/*.md": "Microsoft Graph v1.0",
         "beta/api/*.md": "Microsoft Graph beta",
-        "v1.0/resources/*.md": "Microsoft Graph v1.0", 
-        "beta/resources/*.md": "Microsoft Graph beta" 
+        "v1.0/resources/*.md": "Microsoft Graph v1.0",
+        "beta/resources/*.md": "Microsoft Graph beta"
       }
     },
     "template": [],

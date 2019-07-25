@@ -19,7 +19,9 @@ VPN Authentication Method.
 |:---|:---|:---|
 |certificate|0|Authenticate with a certificate.|
 |usernameAndPassword|1|Use username and password for authentication.|
+|sharedSecret|2|Use Shared Secret for Authentication.  Only valid for iOS IKEv2.|
 |derivedCredential|3|Use Derived Credential for Authentication.  Only valid for iOS.|
+
 
 
 

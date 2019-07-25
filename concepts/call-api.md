@@ -29,7 +29,7 @@ For this URL:
 - `{resource}` is resource segment or path, such as:
   - `users`, `groups`, `devices`, `organization`
   - The alias `me`, which resolves to the signed-in user
-   - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
+  - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
   - The alias `myOrganization`, which resolves to the tenant of the organization signed-in user
 - `[query_parameters]` represents additional query parameters such as `$filter` and `$select`.
 

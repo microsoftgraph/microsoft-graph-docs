@@ -1,68 +1,70 @@
-  name: Reference
+- name: Reference
   items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview?toc=./toc.json
+    href: /graph/overview
   - name: Get auth tokens
     items:
     - name: Overview
-      href: /graph/auth/index?toc=./ref/toc.json
+      href: /graph/auth/index?context=graph/api/1.0
     - name: Basics
-      href: /graph/auth/auth-concepts?toc=./ref/toc.json
+      href: /graph/auth/auth-concepts?context=graph/api/1.0
     - name: Register your app
-      href: /graph/auth-register-app-v2?toc=./ref/toc.json
+      href: /graph/auth-register-app-v2?context=graph/api/1.0
     - name: Get access on behalf of a user
-      href: /graph/auth-v2-user?toc=./ref/toc.json
+      href: /graph/auth-v2-user?context=graph/api/1.0
     - name: Get access without a user
-      href: /graph/auth-v2-service?toc=./ref/toc.json
+      href: /graph/auth-v2-service?context=graph/api/1.0
     - name: Permissions
-      href: /graph/permissions-reference?toc=./ref/toc.json
+      href: /graph/permissions-reference?context=graph/api/1.0
     - name: Manage app access (CSPs)
-      href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
     - name: Limit mailbox access
-      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
+      href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
   - name: Use the API
     items:
     - name: Overview
-      href: /graph/use-the-api?toc=./ref/toc.json
+      href: /graph/use-the-api?context=graph/api/1.0
     - name: Paging
-      href: /graph/paging?toc=./ref/toc.json
+      href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
-      href: /graph/query-parameters?toc=./ref/toc.json
+      href: /graph/query-parameters?context=graph/api/1.0
     - name: Batch requests
-      href: /graph/json-batching?toc=./ref/toc.json
+      href: /graph/json-batching?context=graph/api/1.0
     - name: Throttling
-      href: /graph/throttling?toc=./ref/toc.json
+      href: /graph/throttling?context=graph/api/1.0
     - name: Change notifications
       displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
-        href: /graph/webhooks?toc=./ref/toc.json
+        href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
         href: /graph/tutorials/change-notifications
       - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
+        href: /graph/webhooks-outlook-authz?context=graph/api/1.0
     - name: Track changes
       displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
       items:
       - name: Overview
-        href: /graph/delta-query-overview?toc=./ref/toc.json
+        href: /graph/delta-query-overview?context=graph/api/1.0
       - name: Get changes to events (example)
-        href: /graph/delta-query-events?toc=./ref/toc.json
+        href: /graph/delta-query-events?context=graph/api/1.0
       - name: Get changes to groups (example)
-        href: /graph/delta-query-groups?toc=./ref/toc.json
+        href: /graph/delta-query-groups?context=graph/api/1.0
       - name: Get changes to messages (example)
-        href: /graph/delta-query-messages?toc=./ref/toc.json
+        href: /graph/delta-query-messages?context=graph/api/1.0
       - name: Get changes to users (example)
-        href: /graph/delta-query-users?toc=./ref/toc.json
+        href: /graph/delta-query-users?context=graph/api/1.0
     - name: Add custom data
       displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: Overview
-        href: /graph/extensibility-overview?toc=./ref/toc.json
+        href: /graph/extensibility-overview?context=graph/api/1.0
       - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?toc=./ref/toc.json
+        href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?toc=./ref/toc.json
+        href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Postman
+      href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
     expanded: false
     items:
@@ -70,56 +72,88 @@
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
       - name: Checklist to migrate apps
-        href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
         expanded: true
         items:
         - name: Requests
-          href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-request-differences?context=graph/api/1.0
         - name: Service features
-          href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-feature-differences?context=graph/api/1.0
         - name: Resource types
-          href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-resource-differences?context=graph/api/1.0
         - name: Entity properties
-          href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-property-differences?context=graph/api/1.0
         - name: Methods
-          href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-method-differences?context=graph/api/1.0
       - name: "2: Examine API use"
-        href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-audit-api-use?context=graph/api/1.0
       - name: "3: Review app details"
         expanded: true
         items:
         - name: App registration
-          href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-app-registration?context=graph/api/1.0
         - name: Auth libraries
-          href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-authentication-library?context=graph/api/1.0
         - name: .NET client libraries
-          href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
       - name: "4: Deploy, test, and extend"
-        href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
-        href: /graph/sdks/sdks-overview?toc=./ref/toc.json
+        href: /graph/sdks/sdks-overview?context=graph/api/1.0
       - name: Install the SDK
-        href: /graph/sdks/sdk-installation?toc=./ref/toc.json
+        href: /graph/sdks/sdk-installation?context=graph/api/1.0
       - name: Create a client
-        href: /graph/sdks/create-client?toc=./ref/toc.json
+        href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Choose an authentication provider
-        href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
+        href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+  - name: Use the toolkit (preview)
+    items:
+      - name: Toolkit overview
+        href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Components
+        items:
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/1.0
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/1.0
+          - name: Tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/1.0
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers?context=graph/api/1.0
+          - name: Msal provider
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Microsoft Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
+      - name: Styling components
+        href: /graph/toolkit/style?context=graph/api/1.0
+      - name: Templating components
+        href: /graph/toolkit/templates?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
-      href: /graph/best-practices-concept?toc=./ref/toc.json
+      href: /graph/best-practices-concept?context=graph/api/1.0
     - name: Known issues
-      href: /graph/known-issues?toc=./ref/toc.json
+      href: /graph/known-issues?context=graph/api/1.0
     - name: Changelog
-      href: /graph/changelog?toc=./ref/toc.json
+      href: /graph/changelog?context=graph/api/1.0
     - name: Errors
-      href: /graph/errors?toc=./ref/toc.json
-  - name: Reference
+      href: /graph/errors?context=graph/api/1.0
+  - name: v1.0 reference
     expanded: true
     items:
     - name: Overview
@@ -144,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
@@ -211,8 +245,10 @@
       - name: Groups
         href: resources/group.md
         items:
-        - name: List memberOf
+        - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Mail
         href: resources/message.md
         items:
@@ -319,10 +355,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Update group
           href: api/group-update.md
         - name: Remove favorite
@@ -356,6 +398,8 @@
             href: api/grouplifecyclepolicy-addgroup.md
           - name: Remove group
             href: api/grouplifecyclepolicy-removegroup.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -3195,6 +3239,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3210,6 +3256,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
@@ -4014,7 +4062,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /graph/teams-list-all-teams?toc=./ref/toc.json
+          href: /graph/teams-list-all-teams?context=graph/api/1.0
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4067,15 +4115,9 @@
           href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
-      - name: Apps
+      - name: App Catalog
         href: resources/teamsapp.md
         items:
-        - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Add app to team
-          href: api/teamsappinstallation-add.md
-        - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -4084,6 +4126,21 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
+      - name: App
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps in team
+          href: api/teamsappinstallation-list.md
+        - name: Add app to team
+          href: api/teamsappinstallation-add.md
+        - name: Remove app from team
+          href: api/teamsappinstallation-delete.md
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+      - name: Tab
+        href: resources/teamstab.md
+        items:
         - name: List tabs
           href: api/teamstab-list.md
         - name: Get tab

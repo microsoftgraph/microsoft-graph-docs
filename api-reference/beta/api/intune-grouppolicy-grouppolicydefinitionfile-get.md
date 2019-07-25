@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 479
+Content-Length: 514
 
 {
   "value": {
@@ -74,11 +74,13 @@ Content-Length: 479
     "targetPrefix": "Target Prefix value",
     "targetNamespace": "Target Namespace value",
     "policyType": "admxIngested",
+    "revision": "Revision value",
     "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
+
 
 
 

@@ -2,14 +2,20 @@
 title: "onPremisesPublishing resource type"
 description: "Here is a JSON representation of the resource."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: "resourcePageType"
 ---
 
 # onPremisesPublishing resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+An **onPremisesPublishing** object represents the set of properties for publishing of on-premises [application](application.md).
+
 ## Properties
-| Property	   | Type	|Description|
+
+| Property|Type|Description|
 |:---------------|:--------|:----------|
 |customDomainCertificate|String|Details of the certificate associated with the applicaiton when a custom domain is in use. Null when using the default domain.|
 |externalAuthenticationType|String|Details the pre-authentication setting for the application Possible values are: `passthru`, `aadPreAuthentication`.|
@@ -45,7 +51,7 @@ Here is a JSON representation of the resource.
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2019-02-04 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",

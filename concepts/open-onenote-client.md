@@ -9,7 +9,7 @@ localization_priority: Normal
 
 You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. 
 
-The **links** property is a JSON object that contains two URLs. The URLs will open the page or notebook in the OneNote client application or in OneNote Online.
+The **links** property is a JSON object that contains two URLs. The URLs will open the page or notebook in the OneNote client application or in OneNote on the web.
 
 ```json
 { 
@@ -26,13 +26,13 @@ The **links** property is a JSON object that contains two URLs. The URLs will op
 
 - **oneNoteClientUrl** 
 
-    - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
-    - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
+  - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
+  - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
 
 - **oneNoteWebUrl** 
 
-    - Opens OneNote Online if the default browser on the device supports it. 
-    - Uses the browser language setting.
+  - Opens OneNote on the web if the default browser on the device supports it. 
+  - Uses the browser language setting.
 
 
 The OneNote API returns the **links** property in the HTTP response for the following operations:
@@ -91,7 +91,7 @@ The following example gets the OneNote client URLs from the JSON response. It us
 
 <br/>
 
-After you parse the URLs from the response, you can open OneNote by using the following code. Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.
+After you parse the URLs from the response, you can open OneNote by using the following code. Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote on the web.
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
@@ -159,7 +159,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-Using the response properties, your app can open OneNote Online, as shown in the following example.
+Using the response properties, your app can open OneNote on the web, as shown in the following example.
 
 ```java 
 if (response.getResponseCode() == 201) {

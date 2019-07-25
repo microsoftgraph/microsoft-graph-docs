@@ -1,18 +1,18 @@
 ---
-title: "Delete app from team"
+title: "Remove app from team"
 description: "Uninstalls an app from the specified team."
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete app from team
-
-
+# Remove app from team
 
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -28,11 +28,13 @@ DELETE /teams/{id}/installedApps/{id}
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -40,22 +42,28 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
+
+### Request
+
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "uninstall_teamsapp"
 }-->
+
 ```http
 DELETE /teams/{id}/installedApps/{id}
 ```
-#### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+### Response
+
+The following is an example of the response. 
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "uninstall_teamsapp",
+  "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

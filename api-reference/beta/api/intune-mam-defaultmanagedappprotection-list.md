@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4254
+Content-Length: 4315
 
 {
   "value": [
@@ -106,6 +106,7 @@ Content-Length: 4254
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -156,6 +157,7 @@ Content-Length: 4254
   ]
 }
 ```
+
 
 
 

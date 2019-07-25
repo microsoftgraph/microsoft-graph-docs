@@ -1,7 +1,8 @@
 ---
 title: "chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
-author: "nkramer"
+author: "clearab"
+doc_type: "resourcePageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -10,23 +11,22 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. 
-Participants can be users or apps.
+A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.
 
 ## Methods
 
-|  Method       |  Return Type  | Description| 
+|  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List chats](../api/chat-list.md) | [chat](channel.md) collection | Get the list of chats a user is part of.|
 |[Get chat](../api/chat-get.md) | [chat](channel.md) | Read properties and relationships of the chat.|
 |[List chat members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Get chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
-|[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. |
-|[Get message in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
+|[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. |
+|[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 | id| String| The chat's unique identifier. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
@@ -34,8 +34,10 @@ Participants can be users or apps.
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was updated. Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
+
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
 | members | [conversationMember](conversationmember.md) collection | A collection of all people in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 

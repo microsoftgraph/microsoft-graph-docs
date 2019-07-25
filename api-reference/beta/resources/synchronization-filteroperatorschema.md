@@ -2,6 +2,8 @@
 title: "filterOperatorSchema resource type"
 description: "Describes an operator that can be used in a filter."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # filterOperatorSchema resource type

@@ -9,7 +9,7 @@ localization_priority: Normal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **SharingInvitation** resource groups invitation-related data items into a single strucutre.
+The **SharingInvitation** resource groups invitation-related data items into a single structure.
 
 ## JSON representation
 

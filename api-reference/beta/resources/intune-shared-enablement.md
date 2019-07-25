@@ -1,7 +1,7 @@
 ---
 title: "enablement enum type"
 description: "Describes the enablement enumeration of the Microsoft Graph API for Intune, which supports multiple workflows."
-author: "rolyon"
+author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

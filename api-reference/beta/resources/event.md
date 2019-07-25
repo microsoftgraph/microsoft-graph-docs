@@ -20,9 +20,9 @@ This resource supports:
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
 
- - You can organize only user calendars in a [calendarGroup](calendargroup.md).
- - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
-  - Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
+- You can organize only user calendars in a [calendarGroup](calendargroup.md).
+- Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
+- Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
 
 ## JSON representation
 
@@ -97,7 +97,7 @@ Here is a JSON representation of the resource
 |categories|String collection|The categories associated with the event. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.|
+|end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
@@ -120,7 +120,7 @@ Here is a JSON representation of the resource
 |sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
 |showAs|String|The status to show. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|start|[DateTimeTimeZone](datetimetimezone.md)|The start time of the event.|
+|start|[DateTimeTimeZone](datetimetimezone.md)|The start date, time, and time zone of the event. By default, the start time is in UTC.|
 |subject|String|The text of the event's subject line.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
 |uid|String|A unique identifier that is shared by all instances of an event across different calendars. **Note:** this property serves the same purpose as the `iCalUid` property on the [event resource](/graph/api/resources/event?view=graph-rest-1.0) on the v1.0 endpoint, but is not guaranteed to have the same value.|

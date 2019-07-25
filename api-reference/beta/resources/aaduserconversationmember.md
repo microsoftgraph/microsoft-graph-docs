@@ -1,4 +1,4 @@
-  ---
+---
 title: "aadUserConversationMember resource type"
 description: "Represents a user in a conversation."
 localization_priority: Priority

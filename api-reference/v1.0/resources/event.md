@@ -19,9 +19,9 @@ by providing a [delta](../api/event-delta.md) function.
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
 
- - You can organize only user calendars in a [calendarGroup](calendargroup.md).
- - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
-  - Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
+- You can organize only user calendars in a [calendarGroup](calendargroup.md).
+- Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
+- Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
 
 ## Methods
 
@@ -60,7 +60,7 @@ by providing a [delta](../api/event-delta.md) function.
 |categories|String collection|The categories associated with the event.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |iCalUId|String|A unique identifier that is shared by all instances of an event across different calendars. Read-only.|
 |id|String| Read-only.|
@@ -84,7 +84,7 @@ by providing a [delta](../api/event-delta.md) function.
 |sensitivity|sensitivity| The possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
 |showAs|freeBusyStatus|The status to show. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts. By default, the start time is in UTC.|
 |subject|String|The text of the event's subject line.|
 |type|eventType|The event type. The possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only.|
 |webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|

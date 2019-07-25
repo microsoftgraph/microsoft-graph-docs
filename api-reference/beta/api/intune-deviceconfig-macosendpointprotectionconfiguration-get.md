@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 884
+Content-Length: 2349
 
 {
   "value": {
@@ -73,6 +73,27 @@ Content-Length: 884
       "Role Scope Tag Ids value"
     ],
     "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -88,10 +109,20 @@ Content-Length: 884
         "bundleId": "Bundle Id value",
         "allowsIncomingConnections": true
       }
-    ]
+    ],
+    "fileVaultEnabled": true,
+    "fileVaultSelectedRecoveryKeyTypes": "institutionalRecoveryKey",
+    "fileVaultInstitutionalRecoveryKeyCertificate": "ZmlsZVZhdWx0SW5zdGl0dXRpb25hbFJlY292ZXJ5S2V5Q2VydGlmaWNhdGU=",
+    "fileVaultInstitutionalRecoveryKeyCertificateFileName": "File Vault Institutional Recovery Key Certificate File Name value",
+    "fileVaultPersonalRecoveryKeyHelpMessage": "File Vault Personal Recovery Key Help Message value",
+    "fileVaultAllowDeferralUntilSignOut": true,
+    "fileVaultNumberOfTimesUserCanIgnore": 3,
+    "fileVaultDisablePromptAtSignOut": true,
+    "fileVaultPersonalRecoveryKeyRotationInMonths": 12
   }
 }
 ```
+
 
 
 

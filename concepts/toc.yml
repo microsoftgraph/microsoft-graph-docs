@@ -12,6 +12,12 @@
       href: overview.md
     - name: Services in Microsoft Graph
       href: overview-major-services.md
+    - name: What's new
+      items:
+      - name: What's new highlights
+        href: whats-new-overview.md
+      - name: API changelog
+        href: changelog.md
     - name: Users you can reach
       items:
       - name: Overview
@@ -34,6 +40,8 @@
         href: /graph/tutorials/aspnet
       - name: Microsoft Flow
         href: /graph/tutorials/flow
+      - name: Java
+        href: /graph/tutorials/java
       - name: Node.js
         href: /graph/tutorials/node
       - name: PHP
@@ -222,7 +230,7 @@
     - name: Sites and lists
       href: sharepoint-concept-overview.md
       displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
-    - name: Social intelligence
+    - name: Social and workplace intelligence
       items:
       - name: Overview
         href: social-intel-concept-overview.md
@@ -242,6 +250,8 @@
         href: teams-list-all-teams.md
       - name: Configuring built-in tabs
         href: teams-configuring-builtin-tabs.md
+      - name: Protected APIs
+        href: teams-protected-apis.md
     - name: Workbooks and charts
       displayName: Excel
       items:
@@ -282,6 +292,8 @@
       items:
       - name: Overview
         href: use-the-api.md
+      - name: Access data and methods
+        href: traverse-the-graph.md
       - name: Paging
         href: paging.md
       - name: Use query parameters
@@ -321,6 +333,8 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+      - name: Use Postman
+        href: use-postman.md
     - name: Migrate
       expanded: false
       items:
@@ -367,6 +381,38 @@
           href: sdks/create-client.md
         - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
+    - name: Use the toolkit (preview)
+      items:
+        - name: Toolkit overview
+          href: toolkit/overview.md
+        - name: Components
+          items:
+            - name: Login
+              href: toolkit/components/login.md
+            - name: Person
+              href: toolkit/components/person.md
+            - name: People
+              href: toolkit/components/people.md
+            - name: Agenda
+              href: toolkit/components/agenda.md
+            - name: Tasks
+              href: toolkit/components/tasks.md
+        - name: Providers
+          items:
+            - name: Using the providers
+              href: toolkit/providers.md
+            - name: Msal provider
+              href: toolkit/providers/msal.md
+            - name: SharePoint provider
+              href: toolkit/providers/sharepoint.md
+            - name: Microsoft Teams provider
+              href: toolkit/providers/teams.md
+            - name: Custom provider
+              href: toolkit/providers/custom.md
+        - name: Styling components
+          href: toolkit/style.md
+        - name: Templating components
+          href: toolkit/templates.md
     - name: Resources
       expanded: true
       items:
@@ -374,7 +420,7 @@
         href: best-practices-concept.md
       - name: Known issues
         href: known-issues.md
-      - name: Changelog
+      - name: API changelog
         href: changelog.md
       - name: Errors
         href: errors.md

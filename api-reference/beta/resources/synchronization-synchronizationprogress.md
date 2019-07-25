@@ -2,6 +2,8 @@
 title: "synchronizationProgress resource type"
 description: "Represents the progress of a synchronizationJob toward completion."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationProgress resource type

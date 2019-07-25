@@ -17,6 +17,8 @@ Single configuration item inside an Android application's custom configuration s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|index|Int32|Unique index the application uses to maintain nested schema items|
+|parentIndex|Int32|Index of parent schema item to track nested schema items|
 |schemaItemKey|String|Unique key the application uses to identify the item|
 |displayName|String|Human readable name|
 |description|String|Description of what the item controls within the application|
@@ -40,6 +42,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+  "index": 1024,
+  "parentIndex": 1024,
   "schemaItemKey": "String",
   "displayName": "String",
   "description": "String",
@@ -59,6 +63,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

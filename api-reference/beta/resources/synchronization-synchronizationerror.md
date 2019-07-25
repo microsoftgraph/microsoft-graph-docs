@@ -2,6 +2,8 @@
 title: "synchronizationError resource type"
 description: "Represents an error that occurred during the synchronization process."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationError resource type

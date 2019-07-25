@@ -24,21 +24,21 @@ Microsoft Graph has a log of changes across versions. These changes are listed i
 
 The following are examples of non-backward compatible changes:
 
- - Changes to the URL or fundamental request/response associated with a resource
- - Removal, rename, or change to the type of a declared property
- - Removal or rename of APIs or API parameters
- - Addition of a required request header
+- Changes to the URL or fundamental request/response associated with a resource
+- Removal, rename, or change to the type of a declared property
+- Removal or rename of APIs or API parameters
+- Addition of a required request header
 
 The following are examples of backward compatible changes:
 
- - Addition of properties that are nullable or have a default value
- - Addition of a member to an enumeration
- - Removal, rename, or change to the type of an open extension
- - Removal, rename, or change to the type of an annotation
- - Introduction of paging to existing collections
- - Changes to error codes
- - Changes to the order of properties
- - Changes to the length or format of opaque strings, such as resource IDs
+- Addition of properties that are nullable or have a default value
+- Addition of a member to an enumeration
+- Removal, rename, or change to the type of an open extension
+- Removal, rename, or change to the type of an annotation
+- Introduction of paging to existing collections
+- Changes to error codes
+- Changes to the order of properties
+- Changes to the length or format of opaque strings, such as resource IDs
 
 >**Note:** Over time, we will update the list of backward compatible changes. If you generate your own client proxies (like WCF clients), our guidance is that your client applications should be prepared to receive properties and derived types not previously defined by the Microsoft Graph API service. Microsoft Graph API follows the guidance described in the [Model Versioning](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) section in the [Microsoft REST API guidelines](https://github.com/microsoft/api-guidelines/).
 

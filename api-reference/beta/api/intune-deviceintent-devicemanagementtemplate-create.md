@@ -52,6 +52,8 @@ The following table shows the properties that are required when you create the d
 |versionInfo|String|The template's version information|
 |isDeprecated|Boolean|The template is deprecated or not. Intents cannot be created from a deprecated template.|
 |intentCount|Int32|Number of Intents created from this template.|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|The template's type. Possible values are: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|publishedDateTime|DateTimeOffset|When the template was published|
 
 
 
@@ -65,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 232
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -73,7 +75,9 @@ Content-length: 232
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
 
@@ -82,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -91,9 +95,12 @@ Content-Length: 281
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

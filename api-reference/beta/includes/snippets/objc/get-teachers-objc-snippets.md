@@ -1,0 +1,26 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/education/classes/11023/teachers"]]];
+[urlRequest setHTTPMethod:@"GET"];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+		NSError *jsonError = nil;
+		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+		NSMutableArray *educationUserList = [[NSMutableArray alloc] init];
+		educationUserList = [jsonFinal valueForKey:@"value"];
+		MSGraphEducationUser *educationUser = [[MSGraphEducationUser alloc] initWithDictionary:[educationUserList objectAtIndex: 0] error:&nserror];
+
+}];
+
+[meDataTask execute];
+
+```

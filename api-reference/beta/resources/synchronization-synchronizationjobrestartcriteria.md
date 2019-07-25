@@ -2,6 +2,8 @@
 title: "synchronizationJobRestartCriteria resource type"
 description: "Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationJobRestartCriteria resource type

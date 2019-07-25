@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All |
+|Application | AuditLog.Read.All and Directory.Read.All  |
 
 ## HTTP request
 
@@ -58,8 +58,8 @@ This method supports the following OData query parameters to help customize the 
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetails/browser| eq, startswith|
-|deviceDetails/operatingSystem| eq, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |isRisky| eq|
 
@@ -73,6 +73,8 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_signins"
@@ -80,6 +82,24 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -97,16 +117,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/list_signins-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/list_signins-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -168,7 +178,5 @@ Content-length: 264
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -1,24 +1,22 @@
 ---
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
 # teamsAppInstallation resource type
 
-
-
-A [teamsApp](teamsapp.md) installed in a [team](team.md). 
-Any bots that are part of the app will become part of any team the app is added to.
+A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part of the app will become part of any team the app is added to.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
-|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
+|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
+|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Remove app](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
 
@@ -33,7 +31,7 @@ Any bots that are part of the app will become part of any team the app is added 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| The app that is installed. |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| The details of this version of the app. |
+|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| The details of this version of the app. |
 
 ## JSON representation
 
@@ -45,7 +43,7 @@ Any bots that are part of the app will become part of any team the app is added 
 
 ```json
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
@@ -54,7 +52,6 @@ Any bots that are part of the app will become part of any team the app is added 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -65,4 +62,3 @@ Any bots that are part of the app will become part of any team the app is added 
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -99,7 +99,7 @@ Note that the Bluetooth-related permissions are only necessary for using Bluetoo
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
-Next, go to the activity classes where you would like the Connected Devices functionality to be located. Import the the following namespaces.
+Next, go to the activity classes where you would like the Connected Devices functionality to be located. Import the following namespaces.
 
 ```java
 import com.microsoft.connecteddevices;

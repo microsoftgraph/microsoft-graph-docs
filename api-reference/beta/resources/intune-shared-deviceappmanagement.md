@@ -61,6 +61,8 @@ Singleton entity that acts as a container for all device app management function
 |**Onboarding**|
 |sideLoadingKeys|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) collection|Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.|
 |vppTokens|[vppToken](../resources/intune-onboarding-vpptoken.md) collection|List of Vpp tokens for this organization.|
+|**Partner Integration**|
+|deviceAppManagementTasks|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) collection|Device app management tasks.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.  
