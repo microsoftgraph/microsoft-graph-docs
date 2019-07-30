@@ -37,7 +37,7 @@ This method supports the following OData query parameter to help customize the r
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryProvisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/Provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 
 For general information, see [OData query parameters](/graph/query_parameters).
 
