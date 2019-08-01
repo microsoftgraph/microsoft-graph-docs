@@ -4,6 +4,7 @@ description: "Partner state of this tenant."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileThreatPartnerTenantState enum type

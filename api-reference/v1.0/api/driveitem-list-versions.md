@@ -3,6 +3,8 @@ title: "Listing versions of a DriveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
 localization_priority: Normal
 ms.prod: "sharepoint"
+author: ""
+doc_type: apiPageType
 ---
 
 # Listing versions of a DriveItem
@@ -63,6 +65,10 @@ GET /me/drive/items/{item-id}/versions
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

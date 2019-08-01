@@ -4,6 +4,7 @@ description: "The Role Definition resource. The role definition is the foundatio
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # roleDefinition resource type

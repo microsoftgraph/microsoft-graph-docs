@@ -4,6 +4,7 @@ description: "Represents an iOS Web Content Filter setting type, which enables i
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosWebContentFilterAutoFilter resource type

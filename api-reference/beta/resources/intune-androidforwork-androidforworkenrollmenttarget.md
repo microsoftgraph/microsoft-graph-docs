@@ -4,6 +4,7 @@ description: "Android for Work device management targeting type for the account"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidForWorkEnrollmentTarget enum type

@@ -4,6 +4,7 @@ description: "Device Configuration Setting State for a given device."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceConfigurationSettingState resource type

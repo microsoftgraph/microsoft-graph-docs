@@ -4,6 +4,7 @@ description: "Possible values for site security level."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # siteSecurityLevel enum type

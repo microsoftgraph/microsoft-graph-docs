@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for the Office365 Sui
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # officeSuiteApp resource type

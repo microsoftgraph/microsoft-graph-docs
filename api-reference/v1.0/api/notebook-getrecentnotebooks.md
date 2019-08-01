@@ -4,6 +4,7 @@ description: "Get a list of recentNotebook instances that have been accessed by 
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # notebook: getRecentNotebooks
@@ -67,6 +68,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(inc
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/recent-notebooks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/recent-notebooks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

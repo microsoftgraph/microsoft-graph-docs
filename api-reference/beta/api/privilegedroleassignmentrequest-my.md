@@ -2,6 +2,9 @@
 title: "privilegedRoleAssignmentRequest: my"
 description: "Get the requester's privileged role assignment requests."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedRoleAssignmentRequest: my
@@ -60,6 +63,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignmentrequest-my-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

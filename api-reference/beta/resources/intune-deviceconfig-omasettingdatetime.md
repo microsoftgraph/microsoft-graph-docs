@@ -4,6 +4,7 @@ description: "OMA Settings DateTime definition."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingDateTime resource type

@@ -4,6 +4,7 @@ description: "You can get information about users with a mailbox and their level
 localization_priority: Normal
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Mailbox usage reports

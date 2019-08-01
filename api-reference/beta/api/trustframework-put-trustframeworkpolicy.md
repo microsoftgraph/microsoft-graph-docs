@@ -4,6 +4,7 @@ description: "This operation updates an existing trustFrameworkPolicy object, or
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # Update or create trustFrameworkPolicy
 

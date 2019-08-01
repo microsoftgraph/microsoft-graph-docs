@@ -4,6 +4,7 @@ description: "Contains information about a service SKU that a company is subscri
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # subscribedSku resource type

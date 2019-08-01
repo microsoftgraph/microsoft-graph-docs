@@ -4,6 +4,7 @@ description: "Available health states for the Device Health API"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedDevicePartnerReportedHealthState enum type

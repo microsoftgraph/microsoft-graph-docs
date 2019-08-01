@@ -3,6 +3,8 @@ title: "List subscriptions"
 description: "Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant."
 localization_priority: Priority
 author: "piotrci"
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # List subscriptions
@@ -90,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

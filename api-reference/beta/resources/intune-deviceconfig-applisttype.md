@@ -4,6 +4,7 @@ description: "Possible values of the compliance app list."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # appListType enum type

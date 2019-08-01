@@ -41,7 +41,7 @@ To configure an application access policy and limit the scope of application per
 Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
-Adminstrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions: 
+Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions: 
 - Mail.Read
 - Mail.ReadWrite
 - Mail.Send

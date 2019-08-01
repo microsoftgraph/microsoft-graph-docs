@@ -3,6 +3,7 @@ title: "iPv6Range resource type"
 description: "IPv6 Range definition."
 author: "rolyon"
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: "Intune"
 ---
 

@@ -2,6 +2,9 @@
 title: "List servicePrincipal memberOf"
 description: "Get the groups and directory roles that this service principal is a direct member of. This operation is not transitive."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List servicePrincipal memberOf
@@ -67,6 +70,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-memberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

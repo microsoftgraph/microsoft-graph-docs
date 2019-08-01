@@ -4,6 +4,7 @@ description: " Intune hybrid deployments are not supported. "
 author: "tfitzmac"
 localization_priority: Priority
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Working with Intune in Microsoft Graph  

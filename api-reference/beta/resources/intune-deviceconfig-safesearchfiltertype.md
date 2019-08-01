@@ -4,6 +4,7 @@ description: "Specifies what level of safe search (filtering adult content) is r
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # safeSearchFilterType enum type

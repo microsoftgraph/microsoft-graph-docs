@@ -4,6 +4,7 @@ description: "A message in a mailFolder."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # message resource type

@@ -4,6 +4,7 @@ description: "List all the hosted images in a chatMessage."
 localization_priority: Priority
 author: "clearab"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List chatMessageHostedImages in a chatMessage

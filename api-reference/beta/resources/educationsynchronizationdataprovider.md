@@ -4,6 +4,7 @@ description: "Represents the source SIS schema. This allows the system to know h
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationDataProvider resource type

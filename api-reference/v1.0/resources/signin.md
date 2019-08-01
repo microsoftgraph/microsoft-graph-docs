@@ -4,6 +4,7 @@ description: "Details user and application sign-in activity for a tenant (direct
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # signIn resource type

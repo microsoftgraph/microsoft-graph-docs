@@ -4,6 +4,7 @@ description: "MacOS endpoint protection configuration profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSEndpointProtectionConfiguration resource type

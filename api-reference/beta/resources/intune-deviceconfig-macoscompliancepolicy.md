@@ -4,6 +4,7 @@ description: "This class contains compliance settings for Mac OS."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSCompliancePolicy resource type

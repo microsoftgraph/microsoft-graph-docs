@@ -4,6 +4,7 @@ description: "An abstract class for Mobile app configuration for enrolled device
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfiguration resource type

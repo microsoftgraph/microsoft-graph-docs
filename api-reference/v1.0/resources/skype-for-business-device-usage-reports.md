@@ -4,6 +4,7 @@ description: "You can use the Skype for Business device usage reports to get det
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business device usage reports

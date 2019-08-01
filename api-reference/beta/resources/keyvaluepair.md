@@ -4,6 +4,7 @@ description: "Key value pair for action parameters."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # keyValuePair resource type

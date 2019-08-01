@@ -4,6 +4,7 @@ description: "Microsoft Graph lets your app get authorized access to a user's Ou
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: conceptualPageType
 ---
 
 # Use the Outlook mail REST API

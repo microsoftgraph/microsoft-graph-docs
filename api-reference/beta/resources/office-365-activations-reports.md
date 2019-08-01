@@ -4,6 +4,7 @@ description: "The Office 365 activation report gives you a view of which users h
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Office 365 activations reports

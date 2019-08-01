@@ -4,6 +4,7 @@ description: "Wi-Fi Proxy Settings."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # wiFiProxySetting enum type

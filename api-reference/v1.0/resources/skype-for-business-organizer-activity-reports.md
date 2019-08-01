@@ -4,6 +4,7 @@ description: "You can use the Skype for Business organizer activity reports to g
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business organizer activity reports

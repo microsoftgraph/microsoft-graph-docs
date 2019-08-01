@@ -1,21 +1,21 @@
 ---
 title: "chat resource type"
 description: "A chat is a collection of chatMessages between one or more participants."
-author: "nkramer"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # chat resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. 
-Participants can be users or apps.
+A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.
 
 ## Methods
 
-|  Method       |  Return Type  | Description| 
+|  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List chats](../api/chat-list.md) | [chat](channel.md) collection | Get the list of chats a user is part of.|
 |[Get chat](../api/chat-get.md) | [chat](channel.md) | Read properties and relationships of the chat.|
@@ -26,7 +26,7 @@ Participants can be users or apps.
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 | id| String| The chat's unique identifier. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
@@ -34,8 +34,10 @@ Participants can be users or apps.
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was updated. Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
+
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
 | members | [conversationMember](conversationmember.md) collection | A collection of all people in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 

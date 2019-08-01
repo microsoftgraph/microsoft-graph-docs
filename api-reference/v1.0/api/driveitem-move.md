@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Move a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
+doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
 
@@ -84,6 +86,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/move-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

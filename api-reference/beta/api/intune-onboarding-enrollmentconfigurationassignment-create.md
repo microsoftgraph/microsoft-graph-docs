@@ -4,6 +4,7 @@ description: "Create a new enrollmentConfigurationAssignment object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create enrollmentConfigurationAssignment

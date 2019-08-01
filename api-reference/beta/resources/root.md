@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The Root facet indicates that an object is the top-most one in its hierarchy."
 ms.date: 09/10/2017
 title: Root
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Root resource type
 

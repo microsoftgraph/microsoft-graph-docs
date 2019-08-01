@@ -2,6 +2,9 @@
 title: " certificationControl resource type"
 description: "This resource contains compliance certification data associated with secure score control."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 #  certificationControl resource type

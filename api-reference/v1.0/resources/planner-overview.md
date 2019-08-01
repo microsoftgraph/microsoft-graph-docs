@@ -4,6 +4,7 @@ description: "You can use the Planner API in Microsoft Graph to create tasks and
 author: "TarkanSevilmis"
 localization_priority: Priority
 ms.prod: "planner"
+doc_type: conceptualPageType
 ---
 
 # Use the Planner REST API

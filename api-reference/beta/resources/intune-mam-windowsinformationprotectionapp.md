@@ -4,6 +4,7 @@ description: "App for Windows information protection"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionApp resource type

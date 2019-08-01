@@ -4,6 +4,7 @@ description: "The **licenseAssignmentStates** property of the user entity is a c
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # licenseAssignmentState resource type

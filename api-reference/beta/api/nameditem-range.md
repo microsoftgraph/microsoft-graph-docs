@@ -2,6 +2,9 @@
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # NamedItem: Range
@@ -59,6 +62,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditem-range-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/nameditem-range-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

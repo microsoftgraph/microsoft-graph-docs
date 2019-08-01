@@ -4,6 +4,7 @@ description: "The deviceManagement resource represents a container whose content
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagement resource type

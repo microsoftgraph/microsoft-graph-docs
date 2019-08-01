@@ -4,6 +4,7 @@ description: "List properties and relationships of the importedAppleDeviceIdenti
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List importedAppleDeviceIdentities

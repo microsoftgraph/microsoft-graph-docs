@@ -4,6 +4,7 @@ description: "Android For Work PKCS certificate profile"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkPkcsCertificateProfile resource type

@@ -4,6 +4,7 @@ description: "Configuration of mixer levels for given audio participant"
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # participantMixerLevel resource type

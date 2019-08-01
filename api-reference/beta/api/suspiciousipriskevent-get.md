@@ -2,6 +2,9 @@
 title: "Get suspiciousIpRiskEvent"
 description: "Retrieve the properties and relationships of a suspiciousipriskevent object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get suspiciousIpRiskEvent

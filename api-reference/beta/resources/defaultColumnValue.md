@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The defaultColumnValue on a columnDefinition resource specifies the default value for this column."
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # DefaultColumnValue resource type
 

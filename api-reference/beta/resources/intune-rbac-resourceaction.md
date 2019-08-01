@@ -4,6 +4,7 @@ description: "Set of allowed and not allowed actions for a resource."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # resourceAction resource type

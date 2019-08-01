@@ -4,6 +4,7 @@ description: "Removes a group from a lifecycle policy."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # groupLifecyclePolicy: removeGroup

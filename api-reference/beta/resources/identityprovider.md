@@ -2,6 +2,9 @@
 title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, or LinkedIn."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # identityProvider resource type

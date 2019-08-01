@@ -4,6 +4,7 @@ description: "Adds a domain to the tenant."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create domain

@@ -4,6 +4,7 @@ description: "A resource representing a school and used to manage the classes, t
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSchool resource type

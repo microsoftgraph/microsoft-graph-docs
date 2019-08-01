@@ -4,6 +4,7 @@ description: "Windows10 Enterprise Modern App Management Configuration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10EnterpriseModernAppManagementConfiguration resource type

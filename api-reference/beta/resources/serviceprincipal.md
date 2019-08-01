@@ -2,6 +2,9 @@
 title: "servicePrincipal resource type"
 description: "Represents an instance of an application in a directory. Inherits from directoryObject."
 localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # servicePrincipal resource type

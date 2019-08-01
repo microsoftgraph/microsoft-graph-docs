@@ -4,6 +4,7 @@ description: "Enrollment Profile used to enroll COSU devices using Google's Clou
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkEnrollmentProfile resource type

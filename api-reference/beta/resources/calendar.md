@@ -4,6 +4,7 @@ description: "A calendar which is a container for events. It can be a calendar f
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # calendar resource type

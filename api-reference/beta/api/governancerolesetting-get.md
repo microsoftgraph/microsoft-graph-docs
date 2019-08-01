@@ -2,6 +2,9 @@
 title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Get governanceRoleSetting
@@ -59,6 +62,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,6 +4,7 @@ description: "Possible types of Application"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # applicationType enum type

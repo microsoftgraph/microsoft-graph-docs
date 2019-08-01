@@ -4,6 +4,7 @@ description: "You can use the Groups activity reports to gain insights into the 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Office 365 Groups activity reports

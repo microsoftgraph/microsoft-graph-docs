@@ -4,6 +4,7 @@ description: "You can get details on conferencing activity across your organizat
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business participant activity reports

@@ -4115,15 +4115,9 @@
           href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
-      - name: Apps
+      - name: App Catalog
         href: resources/teamsapp.md
         items:
-        - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Add app to team
-          href: api/teamsappinstallation-add.md
-        - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -4132,6 +4126,21 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
+      - name: App
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps in team
+          href: api/teamsappinstallation-list.md
+        - name: Add app to team
+          href: api/teamsappinstallation-add.md
+        - name: Remove app from team
+          href: api/teamsappinstallation-delete.md
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+      - name: Tab
+        href: resources/teamstab.md
+        items:
         - name: List tabs
           href: api/teamstab-list.md
         - name: Get tab

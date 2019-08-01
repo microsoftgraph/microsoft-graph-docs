@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Delete a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Delete a DriveItem by using its ID or path."
+doc_type: apiPageType
 ---
 # Delete a DriveItem
 
@@ -45,21 +47,25 @@ Here is an example of how to call this API.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-item-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-drive-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-item-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-drive-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-item-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-drive-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-drive-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,6 +2,9 @@
 title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List memberOf
@@ -42,7 +45,7 @@ If successful, this method returns a `200 OK` response code and collection of [c
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "connector_get_memberof"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectors/{id}/memberOf

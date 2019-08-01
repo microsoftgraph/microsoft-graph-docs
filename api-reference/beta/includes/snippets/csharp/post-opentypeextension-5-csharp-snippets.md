@@ -26,6 +26,10 @@ var conversation = new Conversation
 					{
 						new Extension
 						{
+							AdditionalData = new Dictionary<string, object>()
+							{
+								{"@odata.type","microsoft.graph.openTypeExtension"}
+							},
 							ExtensionName = "Com.Contoso.Benefits",
 							CompanyName = "Contoso",
 							ExpirationDate = "2016-08-03T11:00:00Z",

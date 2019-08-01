@@ -4,6 +4,7 @@ description: "The current TeamViewer connector status"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # remoteAssistanceOnboardingStatus enum type

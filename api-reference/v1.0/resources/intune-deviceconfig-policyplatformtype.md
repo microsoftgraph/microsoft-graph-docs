@@ -4,6 +4,7 @@ description: "Suppoorted platform types for policies."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # policyPlatformType enum type

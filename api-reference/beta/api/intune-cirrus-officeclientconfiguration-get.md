@@ -4,6 +4,7 @@ description: "Get a specific policy."
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get officeClientConfiguration

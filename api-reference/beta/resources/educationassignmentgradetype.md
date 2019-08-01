@@ -4,6 +4,7 @@ description: "Represents how an assignment will be graded. This is used within t
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentGradeType resource type

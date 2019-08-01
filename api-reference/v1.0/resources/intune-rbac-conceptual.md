@@ -4,6 +4,7 @@ description: "Intune's role-based access control determines who can perform acti
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Role-based access control in Microsoft Intune

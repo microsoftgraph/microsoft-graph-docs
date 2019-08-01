@@ -4,6 +4,7 @@ description: "Possible values for pre-release features."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # prereleaseFeatures enum type

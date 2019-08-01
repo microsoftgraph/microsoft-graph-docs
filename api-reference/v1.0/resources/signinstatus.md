@@ -4,6 +4,7 @@ description: "Provides the sign-in status (Success or Failure) of the sign-in"
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # signInStatus resource type

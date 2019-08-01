@@ -1,5 +1,6 @@
 ---
 title: "Get signIn"
+doc_type: apiPageType
 description: "Retrieve a specific Azure AD user sign-in event for your tenant."
 localization_priority: Normal
 author: "davidmu1"
@@ -78,6 +79,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

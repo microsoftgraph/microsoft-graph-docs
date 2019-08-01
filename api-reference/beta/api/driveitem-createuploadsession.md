@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Create an upload session to allow your app to upload files up to the maximum file size."
 ms.date: 09/10/2017
 title: Resumable file upload
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Upload large files with an upload session
 

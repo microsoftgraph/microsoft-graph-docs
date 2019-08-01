@@ -4,6 +4,7 @@ description: "Recover passcode"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # recoverPasscode action

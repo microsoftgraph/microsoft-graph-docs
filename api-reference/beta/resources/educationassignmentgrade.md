@@ -4,6 +4,7 @@ description: " however, all types of grading (points, pass/fail, and so on) are 
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentGrade resource type

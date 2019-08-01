@@ -4,6 +4,7 @@ description: "Contains properties for the minimum operating system required for 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidMinimumOperatingSystem resource type

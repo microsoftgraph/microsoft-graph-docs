@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The quota resource provides details about space constrains on a drive resource."
 ms.date: 09/10/2017
 title: Quota
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # quota resource type
 

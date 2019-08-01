@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
+description: "The Permission resource provides information about a sharing permission granted for a DriveItem resource."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Permission resource type
 
 The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.

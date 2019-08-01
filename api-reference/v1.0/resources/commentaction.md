@@ -5,6 +5,7 @@ title: commentAction resource type
 description: The commentAction object provides information about a comment that was made on an item.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # commentAction resource type
 

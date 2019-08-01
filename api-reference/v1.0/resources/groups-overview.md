@@ -4,6 +4,7 @@ description: "Groups are collections of users and other principals who share acc
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
+doc_type: conceptualPageType
 ---
 
 # Working with groups in Microsoft Graph

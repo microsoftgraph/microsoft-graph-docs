@@ -4,6 +4,7 @@ description: "Use the email app usage reports to see how many email apps are use
 localization_priority: Normal
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Email app usage reports

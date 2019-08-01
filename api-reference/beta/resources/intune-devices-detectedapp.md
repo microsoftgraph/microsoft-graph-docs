@@ -4,6 +4,7 @@ description: "A managed or unmanaged app that is installed on a managed device. 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # detectedApp resource type

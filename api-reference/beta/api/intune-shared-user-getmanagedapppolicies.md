@@ -4,6 +4,7 @@ description: "Gets app restrictions for a given user."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getManagedAppPolicies function

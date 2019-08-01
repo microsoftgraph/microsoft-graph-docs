@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getSharePointSiteUsageStorage = await graphClient.Reports.GetSharePointSiteUsageStorage('D7')
+var getSharePointSiteUsageStorage = await graphClient.Reports
+	.GetSharePointSiteUsageStorage('D7')
 	.Request()
 	.GetAsync();
 

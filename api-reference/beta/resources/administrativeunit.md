@@ -4,6 +4,7 @@ description: "An administrative unit provides a conceptual container for User an
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # administrativeUnit resource type
@@ -33,7 +34,7 @@ This topic provides descriptions of the declared properties and navigation prope
 |[Get a member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
 |[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
 |[Add scoped-role member](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Add a scoped-role member.|
-|[List scoped-role members](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the list of scoped-role adminstrators.|
+|[List scoped-role members](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the list of scoped-role administrators.|
 |[Get a scoped-role member](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a specific scoped-role member.|
 |[Remove a scoped-role member](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role member.|
 |**Open extensions**| | |

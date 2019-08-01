@@ -4,6 +4,7 @@ description: "A subclass of educationResource. This resource is a link and does 
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationLinkResource resource type

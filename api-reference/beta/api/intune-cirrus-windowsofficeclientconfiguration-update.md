@@ -4,6 +4,7 @@ description: "Patch a specific non-security policy payload."
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsOfficeClientConfiguration

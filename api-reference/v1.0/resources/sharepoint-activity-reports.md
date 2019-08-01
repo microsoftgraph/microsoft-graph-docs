@@ -4,6 +4,7 @@ description: "You can use the SharePoint activity reports to get the activity of
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # SharePoint activity reports

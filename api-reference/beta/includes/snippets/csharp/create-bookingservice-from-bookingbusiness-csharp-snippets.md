@@ -8,11 +8,29 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingService = new BookingService
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"staffMemberIds@odata.type","#Collection(String)"},
+		{"defaultReminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
+		{"defaultPriceType@odata.type","#microsoft.graph.bookingPriceType"},
+		{"@odata.type","#microsoft.graph.bookingService"}
+	},
 	DefaultDuration = "PT1H30M",
 	DefaultLocation = new Location
 	{
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+			{"locationType@odata.type","#microsoft.graph.locationType"},
+			{"@odata.type","#microsoft.graph.location"}
+		},
 		Address = new PhysicalAddress
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"type@odata.type","#microsoft.graph.physicalAddressType"},
+				{"@odata.type","#microsoft.graph.physicalAddress"}
+			},
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
@@ -35,6 +53,11 @@ var bookingService = new BookingService
 	{
 		new BookingReminder
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"},
+				{"@odata.type","#microsoft.graph.bookingReminder"}
+			},
 			Message = "Please be reminded that this service is tomorrow.",
 			Offset = "P1D",
 			Recipients = BookingReminderRecipients.AllAttendees
@@ -48,6 +71,10 @@ var bookingService = new BookingService
 	PreBuffer = "PT5M",
 	SchedulingPolicy = new BookingSchedulingPolicy
 	{
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"@odata.type","#microsoft.graph.bookingSchedulingPolicy"}
+		},
 		AllowStaffSelection = true,
 		MaximumAdvance = "P10D",
 		MinimumLeadTime = "PT10H",

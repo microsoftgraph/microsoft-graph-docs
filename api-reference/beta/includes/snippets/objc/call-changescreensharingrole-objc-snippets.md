@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-MSGraphScreenSharingRole *role = [MSGraphScreenSharingRole Viewer];
+MSGraphScreenSharingRole *role = [MSGraphScreenSharingRole viewer];
 payloadDictionary[@"role"] = role;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

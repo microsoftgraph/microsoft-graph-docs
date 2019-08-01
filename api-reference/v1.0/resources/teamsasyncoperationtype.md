@@ -4,6 +4,7 @@ description: "Types of teamsAsyncOperation. Members will be added here as more a
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: enumPageType
 ---
 
 # teamsAsyncOperationType enum type

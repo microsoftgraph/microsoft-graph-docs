@@ -4,6 +4,7 @@ description: "Custom Extended Key Usage definition"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # extendedKeyUsage resource type

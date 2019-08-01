@@ -2,6 +2,9 @@
 title: "standardTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from daylight saving time to standard time."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # standardTimeZoneOffset resource type

@@ -4,6 +4,7 @@ description: "Windows management app health state entity."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsManagementAppHealthState resource type

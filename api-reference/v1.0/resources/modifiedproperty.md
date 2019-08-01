@@ -4,6 +4,7 @@ description: "Indicates all the properties on an Azure AD resource that have bee
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "azure-ad"
+doc_type: resourcePageType
 ---
 
 # modifiedProperty resource type

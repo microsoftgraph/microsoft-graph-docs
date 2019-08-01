@@ -4,6 +4,7 @@ description: "The device usage reports for Yammer give you information about whi
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Yammer device usage reports

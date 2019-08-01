@@ -4,6 +4,7 @@ description: "Windows 10 Enrollment Status Page Configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10EnrollmentCompletionPageConfiguration resource type

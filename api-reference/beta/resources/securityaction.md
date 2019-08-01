@@ -4,6 +4,7 @@ description: "Take immediate action to defend against threats using the Microsof
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # securityAction resource type

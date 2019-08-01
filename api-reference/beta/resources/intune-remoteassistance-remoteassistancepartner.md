@@ -4,6 +4,7 @@ description: "RemoteAssistPartner resources represent the metadata and status of
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # remoteAssistancePartner resource type

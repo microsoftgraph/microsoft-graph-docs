@@ -4,6 +4,7 @@ description: "Complete an Outlook task which sets the **completedDateTime** prop
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # outlookTask: complete

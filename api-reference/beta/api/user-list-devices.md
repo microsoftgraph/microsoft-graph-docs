@@ -4,6 +4,7 @@ description: "Get a list of user devices that support Project Rome capabilities.
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List user devices

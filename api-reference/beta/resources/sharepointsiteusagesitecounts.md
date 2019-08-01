@@ -3,6 +3,8 @@ title: "sharePointSiteUsageSiteCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
+author: ""
 ---
 
 # sharePointSiteUsageSiteCounts resource type

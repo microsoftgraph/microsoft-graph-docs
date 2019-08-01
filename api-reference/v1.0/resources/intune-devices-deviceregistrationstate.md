@@ -4,6 +4,7 @@ description: "Device registration status."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceRegistrationState enum type

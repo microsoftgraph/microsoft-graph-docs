@@ -4,6 +4,7 @@ description: "Create a new windows10EnterpriseModernAppManagementConfiguration o
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windows10EnterpriseModernAppManagementConfiguration

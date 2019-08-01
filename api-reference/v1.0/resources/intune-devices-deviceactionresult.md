@@ -4,6 +4,7 @@ description: "Device action result"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceActionResult resource type

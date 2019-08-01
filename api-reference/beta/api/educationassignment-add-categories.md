@@ -4,6 +4,7 @@ description: "Add an existing educationCategory to this educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: "apiPageType"
 ---
 
 # Add educationCategories

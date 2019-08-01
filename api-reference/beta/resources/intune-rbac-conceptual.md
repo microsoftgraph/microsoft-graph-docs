@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that def
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Role-based access control in Microsoft Intune

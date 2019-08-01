@@ -4,6 +4,7 @@ description: "Possible values of Cloud Block Level"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderCloudBlockLevelType enum type

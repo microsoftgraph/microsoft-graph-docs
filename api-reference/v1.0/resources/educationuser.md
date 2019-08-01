@@ -4,6 +4,7 @@ description: "A user in the system. This is an education-specific variant of the
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationUser resource type
@@ -50,7 +51,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
-|teacher|[educationTeacher](educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|
+|teacher|[educationTeacher](educationteacher.md)| If the primary role is teacher, this block will contain teacher specific data.|
 |usageLocation|String|A two-letter country code (ISO standard 3166). Required for users who will be assigned licenses due to a legal requirement to check for availability of services in countries or regions. Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |

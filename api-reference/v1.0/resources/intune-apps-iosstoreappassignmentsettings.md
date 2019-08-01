@@ -4,6 +4,7 @@ description: "Contains properties used to assign an iOS Store mobile app to a gr
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosStoreAppAssignmentSettings resource type

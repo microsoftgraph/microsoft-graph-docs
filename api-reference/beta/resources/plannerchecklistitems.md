@@ -4,6 +4,7 @@ description: "The **plannerChecklistItemCollection** resource represents the col
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerChecklistItems resource type

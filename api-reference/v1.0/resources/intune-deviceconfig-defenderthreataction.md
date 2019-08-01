@@ -4,6 +4,7 @@ description: "Defender’s default action to take on detected Malware threats."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderThreatAction enum type

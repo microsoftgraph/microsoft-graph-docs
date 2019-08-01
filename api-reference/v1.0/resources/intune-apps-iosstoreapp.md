@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for iOS store apps."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosStoreApp resource type

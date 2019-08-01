@@ -4,6 +4,7 @@ description: "You can use the Yammer activity reports to understand the level of
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Yammer activity reports

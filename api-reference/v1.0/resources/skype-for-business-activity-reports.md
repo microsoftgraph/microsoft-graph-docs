@@ -4,6 +4,7 @@ description: "You can use the Skype for Business activity reports to get details
 localization_priority: Priority
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business activity reports

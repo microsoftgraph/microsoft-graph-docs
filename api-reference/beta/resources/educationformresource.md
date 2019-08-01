@@ -4,6 +4,7 @@ description: "A subclass of educationResource. This resource is a Form."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationFormResource resource type

@@ -4,6 +4,7 @@ description: "An assignment of a Windows Autopilot deployment profile to an AAD 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAutopilotDeploymentProfileAssignment resource type

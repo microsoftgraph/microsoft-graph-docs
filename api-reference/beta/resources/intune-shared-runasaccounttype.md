@@ -3,6 +3,7 @@ title: "runAsAccountType enum type"
 description: "Describes the runAsAccountType enum of the Microsoft Graph API for Intune, which supports multiple workflows."
 author: "tfitzmac"
 localization_priority: Normal
+doc_type: enumPageType
 ms.prod: "Intune"
 ---
 

@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = new Attachment
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","#microsoft.graph.fileAttachment"}
+	},
 	Name = "menu.txt",
 	ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 };

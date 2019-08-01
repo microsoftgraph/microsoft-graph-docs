@@ -4,6 +4,7 @@ description: "This operation creates a new trustFrameworkPolicy object in an Azu
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # Create trustFrameworkPolicy
 

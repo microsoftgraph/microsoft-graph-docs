@@ -4,6 +4,7 @@ description: "Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDevic
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # setAndroidDeviceOwnerFullyManagedEnrollmentState action

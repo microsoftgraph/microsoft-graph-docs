@@ -4,7 +4,7 @@ description: "Create a new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Create chatMessage in a channel
@@ -82,6 +82,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

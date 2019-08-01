@@ -4,6 +4,7 @@ description: "Create a new identityProvider"
 localization_priority: Priority
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create identityProvider

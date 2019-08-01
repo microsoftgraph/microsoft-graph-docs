@@ -4,6 +4,7 @@ description: "Event representing an general failure."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingEvent resource type

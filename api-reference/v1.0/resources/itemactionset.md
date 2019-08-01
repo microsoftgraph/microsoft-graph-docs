@@ -5,6 +5,7 @@ title: ItemActionSet resource type
 description: The itemActionSet object provides information about the actions that took place as part of an activity on an item.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # itemActionSet resource type
 

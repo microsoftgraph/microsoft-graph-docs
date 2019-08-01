@@ -4,6 +4,7 @@ description: "In the Azure AD B2C trust framework policy is referred to as custo
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 # trustFrameworkPolicy resource type
 

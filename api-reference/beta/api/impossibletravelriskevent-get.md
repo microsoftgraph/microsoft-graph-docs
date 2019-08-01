@@ -2,6 +2,9 @@
 title: "Get impossibleTravelRiskEvent"
 description: "Retrieve the properties and relationships of an impossibletravelriskevent object."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Get impossibleTravelRiskEvent

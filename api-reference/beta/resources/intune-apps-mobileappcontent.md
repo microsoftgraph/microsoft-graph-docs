@@ -4,6 +4,7 @@ description: "Contains content properties for a specific app version. Each mobil
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppContent resource type

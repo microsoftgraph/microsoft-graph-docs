@@ -4,6 +4,7 @@ description: "Management conditions are events that can be triggered dynamically
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementCondition resource type

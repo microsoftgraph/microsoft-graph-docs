@@ -4,6 +4,7 @@ description: "AppLogUploadStatus"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # appLogUploadState enum type

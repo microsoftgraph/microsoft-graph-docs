@@ -4,6 +4,7 @@ description: "Exported Data"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceAndAppManagementData resource type

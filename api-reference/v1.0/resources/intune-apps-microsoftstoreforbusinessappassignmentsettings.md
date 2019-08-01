@@ -4,6 +4,7 @@ description: "Contains properties used to assign an Microsoft Store for Business
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # microsoftStoreForBusinessAppAssignmentSettings resource type

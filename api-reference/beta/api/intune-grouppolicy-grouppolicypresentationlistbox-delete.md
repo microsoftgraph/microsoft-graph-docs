@@ -4,6 +4,7 @@ description: "Deletes a groupPolicyPresentationListBox."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete groupPolicyPresentationListBox

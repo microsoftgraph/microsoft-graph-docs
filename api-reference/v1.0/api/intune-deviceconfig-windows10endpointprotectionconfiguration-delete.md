@@ -4,6 +4,7 @@ description: "Deletes a windows10EndpointProtectionConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete windows10EndpointProtectionConfiguration

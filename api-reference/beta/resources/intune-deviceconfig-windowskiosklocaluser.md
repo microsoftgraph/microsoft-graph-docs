@@ -4,6 +4,7 @@ description: "The class used to identify a local account for the kiosk configura
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskLocalUser resource type

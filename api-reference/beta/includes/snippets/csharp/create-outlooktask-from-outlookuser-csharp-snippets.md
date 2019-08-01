@@ -8,7 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var outlookTask = new OutlookTask
 {
-	AssignedTo = "Dana Swope",
 	Subject = "Shop for children's weekend",
 	StartDateTime = new DateTimeTimeZone
 	{

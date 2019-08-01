@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const OnlineMeeting = {
+const onlineMeeting = {
   meetingType: "meetNow",
   participants: {
     organizer: {
@@ -26,6 +26,6 @@ const OnlineMeeting = {
 
 let res = await client.api('/app/onlineMeetings')
 	.version('beta')
-	.post({OnlineMeeting : OnlineMeeting});
+	.post({onlineMeeting : onlineMeeting});
 
 ```

@@ -4,6 +4,7 @@ description: "The current status of the Exchange Connector."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeConnectorStatus enum type

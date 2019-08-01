@@ -4,6 +4,7 @@ description: "Allow(Not Configured) or prevent(Block) the syncing of Microsoft E
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # browserSyncSetting enum type

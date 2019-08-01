@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Android Line Of B
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidLobApp resource type

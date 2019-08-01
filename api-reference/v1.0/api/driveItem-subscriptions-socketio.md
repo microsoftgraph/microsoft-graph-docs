@@ -4,6 +4,8 @@ ms.author: dspektor
 title: "Get websocket endpoint"
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Allows you to receive near-real-time change notifications for a drive using socket.io."
+doc_type: apiPageType
 ---
 
 # Get websocket endpoint
@@ -56,6 +58,10 @@ GET /me/drive/root/subscriptions/socketIo
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

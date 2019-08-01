@@ -4,6 +4,7 @@ description: "A contact is an item in Outlook where you can organize and save in
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # contact resource type

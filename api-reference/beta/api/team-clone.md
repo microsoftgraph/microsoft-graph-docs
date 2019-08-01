@@ -4,6 +4,7 @@ description: "Create a copy of a team. This operation also creates a copy of the
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Clone a team

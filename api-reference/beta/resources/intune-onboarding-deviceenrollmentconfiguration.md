@@ -4,6 +4,7 @@ description: "The Base Class of Device Enrollment Configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceEnrollmentConfiguration resource type

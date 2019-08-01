@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		MSGraphCall *Call = [[MSGraphCall alloc] initWithData:data error:&nserror];
+		MSGraphCall *call = [[MSGraphCall alloc] initWithData:data error:&nserror];
 
 }];
 

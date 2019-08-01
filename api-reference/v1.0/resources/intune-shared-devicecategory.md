@@ -4,6 +4,7 @@ description: "These categories can then be applied to a device in the Intune Azu
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceCategory resource type

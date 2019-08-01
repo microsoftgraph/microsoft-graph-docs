@@ -2,6 +2,9 @@
 title: "privacyProfile resource type"
 description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # privacyProfile resource type

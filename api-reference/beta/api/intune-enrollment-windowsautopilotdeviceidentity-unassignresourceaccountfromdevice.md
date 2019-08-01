@@ -4,6 +4,7 @@ description: "Unassigns the resource account from an Autopilot device."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # unassignResourceAccountFromDevice action

@@ -4,6 +4,7 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # userSecurityState resource type

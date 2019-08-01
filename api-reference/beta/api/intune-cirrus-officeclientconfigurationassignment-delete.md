@@ -4,6 +4,7 @@ description: "Deletes a officeClientConfigurationAssignment."
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete officeClientConfigurationAssignment

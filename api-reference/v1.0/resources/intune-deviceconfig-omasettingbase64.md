@@ -4,6 +4,7 @@ description: "OMA Settings Base64 definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingBase64 resource type

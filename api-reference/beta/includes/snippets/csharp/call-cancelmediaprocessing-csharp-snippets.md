@@ -11,7 +11,7 @@ var all = true;
 var clientContext = "clientContext-value";
 
 await graphClient.App.Calls["{id}"]
-	.CancelMediaProcessing(all,clientContext)
+	.CancelMediaProcessing(clientContext)
 	.Request()
 	.PostAsync();
 

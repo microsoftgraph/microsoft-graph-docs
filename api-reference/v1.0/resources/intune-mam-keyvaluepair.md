@@ -4,6 +4,7 @@ description: "Key value pair for storing custom settings"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # keyValuePair resource type

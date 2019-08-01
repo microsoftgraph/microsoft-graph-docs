@@ -2,6 +2,9 @@
 title: "Add Connector to connectorGroup"
 description: "Use this API to add a connector to a new connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Add Connector to connectorGroup

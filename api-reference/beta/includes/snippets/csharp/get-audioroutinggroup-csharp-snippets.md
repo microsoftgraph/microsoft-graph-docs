@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var AudioRoutingGroup = await graphClient.App.Calls["{id}"].AudioRoutingGroups["{id}"]
+var audioRoutingGroup = await graphClient.App.Calls["{id}"].AudioRoutingGroups["{id}"]
 	.Request()
 	.GetAsync();
 

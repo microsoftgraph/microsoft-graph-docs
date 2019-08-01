@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the MoveAction resource on an itemActivity indicates that the activity moved an item."
 ms.date: 09/14/2017
 title: MoveAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # MoveAction resource type
 

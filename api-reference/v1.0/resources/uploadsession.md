@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
+description: "The UploadSession resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # UploadSession resource
 
 The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.

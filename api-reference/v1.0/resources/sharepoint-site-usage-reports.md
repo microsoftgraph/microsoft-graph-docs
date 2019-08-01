@@ -4,6 +4,7 @@ description: "You can use the SharePoint site usage reports to gain a high level
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # SharePoint site usage reports

@@ -11,7 +11,8 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("token", "latest")
 };
 
-var delta = await graphClient.Me.Drive.Root.Delta()
+var delta = await graphClient.Me.Drive.Root
+	.Delta()
 	.Request( queryOptions )
 	.GetAsync();
 

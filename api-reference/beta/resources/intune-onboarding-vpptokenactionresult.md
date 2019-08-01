@@ -4,6 +4,7 @@ description: "The status of the action performed with an Apple Volume Purchase P
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppTokenActionResult resource type

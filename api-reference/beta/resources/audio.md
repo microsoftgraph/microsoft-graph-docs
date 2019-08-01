@@ -1,9 +1,11 @@
 ---
 author: "VinodRavichandran"
+description: "The Audio resource groups audio-related properties on an item into a single structure."
 ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 # Audio facet
 

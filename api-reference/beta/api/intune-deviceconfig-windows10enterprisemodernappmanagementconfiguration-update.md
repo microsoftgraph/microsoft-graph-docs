@@ -4,6 +4,7 @@ description: "Update the properties of a windows10EnterpriseModernAppManagementC
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windows10EnterpriseModernAppManagementConfiguration

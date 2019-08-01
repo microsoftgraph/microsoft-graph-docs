@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Permission
+title: permission resource type
+description: permission resource representing a sharing permission granted for a driveItem
 localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # permission resource type
 
@@ -135,6 +137,25 @@ This edit link provides read and write access to anyone in the organization with
 }
 ```
 
+### Existing access link
+
+This link does not grant any additional privileges to the user.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
 ### Specific people link
 
 This link provides read and write access to the specific people in the `grantedToIdentities` collection.
@@ -170,8 +191,7 @@ This link provides read and write access to the specific people in the `grantedT
 
 ## Sharing invitations
 
-Permissions sent by the [invite][] API may have additional information in the [invitation][SharingInvitation] facet.
-If an invitation was sent to an email address that doesn't match a known account, the **grantedTo** property may not be set until the invitation is redeemed, which occurs the first time the user clicks the link and signs in.
+Permissions sent by the [invite][] or [grant][] API can have additional information in the [invitation][SharingInvitation] facet for email addresses that don't match a known account. In such cases, the **grantedTo** property might not be set until the invitation link is redeemed, which occurs the first time the user clicks the link and signs in.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -225,6 +245,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 
 [createLink]: ../api/driveitem-createlink.md
+[grant]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

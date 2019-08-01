@@ -4,6 +4,7 @@ description: "Represents the level to which app data is encrypted for managed ap
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedAppDataEncryptionType enum type

@@ -4,6 +4,7 @@ description: "A group of folders (outlookTaskFolder) that contain Outlook tasks 
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookTaskGroup resource type

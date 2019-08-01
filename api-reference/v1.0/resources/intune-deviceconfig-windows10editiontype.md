@@ -4,6 +4,7 @@ description: "Windows 10 Edition type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windows10EditionType enum type

@@ -4,6 +4,7 @@ description: "Generic visibility state."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # visibilitySetting enum type

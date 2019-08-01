@@ -4,6 +4,7 @@ description: "A risk event detected by Azure Active Directory Identity Protectio
 author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # identityRiskEvent resource type

@@ -4,6 +4,7 @@ description: "Possible values for email sync duration."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # emailSyncDuration enum type

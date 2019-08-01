@@ -4,6 +4,7 @@ description: "A wrapper object that stores the resources associated with an assi
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentResource resource type

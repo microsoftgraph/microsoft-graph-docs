@@ -2,6 +2,9 @@
 title: "List Policies assigned to Application or Service Principal"
 description: "Retrieve the policy objects assigned to an application or service principal."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List Policies assigned to Application or Service Principal

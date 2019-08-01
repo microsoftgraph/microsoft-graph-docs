@@ -4,6 +4,7 @@ description: ") for tasks in a plan in Office 365. It is contained in a plannerP
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerBucket resource type

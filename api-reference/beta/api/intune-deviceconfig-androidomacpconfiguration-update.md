@@ -4,6 +4,7 @@ description: "Update the properties of a androidOmaCpConfiguration object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update androidOmaCpConfiguration

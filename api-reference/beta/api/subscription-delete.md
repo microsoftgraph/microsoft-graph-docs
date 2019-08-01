@@ -3,6 +3,8 @@ title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Delete subscription
@@ -84,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-subscription-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

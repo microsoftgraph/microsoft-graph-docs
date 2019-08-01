@@ -4,6 +4,7 @@ description: "The current status of the Ndes Connector."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ndesConnectorState enum type

@@ -4,6 +4,7 @@ description: "Group Policy Configuration Type"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # groupPolicyConfigurationType enum type

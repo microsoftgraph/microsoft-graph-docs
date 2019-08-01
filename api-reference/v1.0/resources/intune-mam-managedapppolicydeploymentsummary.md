@@ -4,6 +4,7 @@ description: "The ManagedAppEntity is the base entity type for all other entity 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppPolicyDeploymentSummary resource type

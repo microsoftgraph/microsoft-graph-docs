@@ -4,6 +4,7 @@ description: "Group setting templates represent system-defined settings availabl
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # groupSettingTemplate resource type

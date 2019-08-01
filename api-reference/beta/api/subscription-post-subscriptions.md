@@ -3,6 +3,8 @@ title: "Create subscription"
 description: "Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Create subscription
@@ -94,6 +96,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

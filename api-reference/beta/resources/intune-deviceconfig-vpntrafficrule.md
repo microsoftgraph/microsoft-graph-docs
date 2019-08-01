@@ -4,6 +4,7 @@ description: "VPN Traffic Rule definition."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vpnTrafficRule resource type

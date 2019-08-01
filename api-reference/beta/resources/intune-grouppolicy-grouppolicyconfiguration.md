@@ -4,6 +4,7 @@ description: "The group policy configuration entity contains the configured valu
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyConfiguration resource type

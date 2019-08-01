@@ -2,6 +2,9 @@
 title: "List governanceRoleAssignments"
 description: "Retrieve a collection of governanceRoleAssignments."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # List governanceRoleAssignments

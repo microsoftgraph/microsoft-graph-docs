@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{id}/threads')
+let res = await client.api('/groups/{id}/conversations/{id}/threads')
 	.get();
 
 ```

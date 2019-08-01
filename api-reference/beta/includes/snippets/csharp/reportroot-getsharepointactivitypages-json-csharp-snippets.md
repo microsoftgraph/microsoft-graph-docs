@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getSharePointActivityPages = await graphClient.Reports.GetSharePointActivityPages('D7')
+var getSharePointActivityPages = await graphClient.Reports
+	.GetSharePointActivityPages('D7')
 	.Request()
 	.GetAsync();
 

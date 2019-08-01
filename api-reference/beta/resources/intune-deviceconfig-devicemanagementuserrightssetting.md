@@ -4,6 +4,7 @@ description: "Represents a user rights setting."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementUserRightsSetting resource type

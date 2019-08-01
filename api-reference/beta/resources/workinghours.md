@@ -2,6 +2,9 @@
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # workingHours resource type

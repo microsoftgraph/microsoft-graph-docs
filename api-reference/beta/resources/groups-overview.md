@@ -4,6 +4,7 @@ description: "Groups are collections of users and other principals who share acc
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
+doc_type: conceptualPageType
 ---
 
 # Working with groups in Microsoft Graph
@@ -12,7 +13,7 @@ Groups are collections of [users](user.md) and other principals who share access
 
 > **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created via API? |
+| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created and managed via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |

@@ -4,6 +4,7 @@ description: " and indicates that grading is done. This action can only be done 
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationSubmission: release

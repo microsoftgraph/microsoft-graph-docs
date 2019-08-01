@@ -4,6 +4,7 @@ description: "Update the properties of the specified channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Patch channel

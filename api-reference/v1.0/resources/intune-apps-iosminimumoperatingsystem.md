@@ -4,6 +4,7 @@ description: "Contains properties of the minimum operating system required for a
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosMinimumOperatingSystem resource type

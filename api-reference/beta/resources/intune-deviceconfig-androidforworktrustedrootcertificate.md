@@ -4,6 +4,7 @@ description: "Android For Work Trusted Root Certificate configuration profile"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkTrustedRootCertificate resource type

@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The SharingInvitation resource groups invitation-related data items into a single structure."
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # SharingInvitation resource type
 

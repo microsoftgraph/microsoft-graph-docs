@@ -2,6 +2,7 @@
 title: "stringKeyLongValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is an Int64."
 localization_priority: Normal
+doc_type: resourcePageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---

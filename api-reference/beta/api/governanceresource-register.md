@@ -2,9 +2,9 @@
 title: "governanceResource: register"
 description: "Register a governanceResource object in PIM."
 localization_priority: Normal
+doc_type: apiPageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
 ---
 
 # governanceResource: register

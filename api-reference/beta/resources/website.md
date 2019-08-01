@@ -2,6 +2,9 @@
 title: "website resource type"
 description: "Represents a web site."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # website resource type

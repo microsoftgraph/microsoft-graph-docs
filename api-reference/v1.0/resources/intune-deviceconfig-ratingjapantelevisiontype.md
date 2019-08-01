@@ -4,6 +4,7 @@ description: "TV content rating labels in Japan"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingJapanTelevisionType enum type

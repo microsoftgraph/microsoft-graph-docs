@@ -4,6 +4,7 @@ description: "Metered Connection Limit Settings."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # meteredConnectionLimitType enum type

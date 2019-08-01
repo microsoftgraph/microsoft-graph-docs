@@ -4,6 +4,7 @@ description: "You can use Microsoft Graph to query the identityRiskEvent resourc
 author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: conceptualPageType
 ---
 
 # Use the Azure AD identity protection API (preview)

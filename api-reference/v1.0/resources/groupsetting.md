@@ -4,6 +4,7 @@ description: "Group settings control behaviors such as blocked word lists for gr
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # groupSetting resource type

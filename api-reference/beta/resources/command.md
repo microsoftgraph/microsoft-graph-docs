@@ -2,6 +2,9 @@
 title: "command resource type"
 description: ""
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: "finsharp"
 ---
 
 # command resource type

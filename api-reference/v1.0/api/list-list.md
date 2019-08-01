@@ -5,6 +5,8 @@ ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Get the collection of lists for a site."
+doc_type: apiPageType
 ---
 # Enumerate lists in a site
 
@@ -50,6 +52,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

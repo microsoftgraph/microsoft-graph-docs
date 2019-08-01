@@ -4,6 +4,7 @@ description: "The **planner** resource is the entry point for the Planner object
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # planner resource type

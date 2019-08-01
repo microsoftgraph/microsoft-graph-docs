@@ -2,6 +2,9 @@
 title: "publicError resource type"
 description: ""
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # publicError resource type

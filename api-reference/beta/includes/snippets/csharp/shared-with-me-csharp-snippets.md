@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sharedWithMe = await graphClient.Me.Drive.SharedWithMe()
+var sharedWithMe = await graphClient.Me.Drive
+	.SharedWithMe()
 	.Request()
 	.GetAsync();
 

@@ -4,6 +4,7 @@ description: "Update the properties of a officeClientConfigurationAssignment obj
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update officeClientConfigurationAssignment

@@ -4,6 +4,7 @@ description: "The following Graph resources are available to manage mobile apps 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Manage apps using Microsoft Intune

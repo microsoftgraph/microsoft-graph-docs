@@ -4,6 +4,7 @@ description: "A teamsTab is a tab that's pinned (attached) to a channel within a
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamsTab resource type

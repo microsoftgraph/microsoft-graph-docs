@@ -4,6 +4,7 @@ description: "Windows Delivery Optimization configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsDeliveryOptimizationConfiguration resource type

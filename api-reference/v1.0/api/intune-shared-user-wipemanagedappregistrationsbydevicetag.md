@@ -4,6 +4,7 @@ description: "Issues a wipe operation on an app registration with specified devi
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # wipeManagedAppRegistrationsByDeviceTag action

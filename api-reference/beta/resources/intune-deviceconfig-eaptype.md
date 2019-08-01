@@ -4,6 +4,7 @@ description: "Extensible Authentication Protocol (EAP) configuration types."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # eapType enum type

@@ -4,6 +4,7 @@ description: "Use this API to create a new calendar in a calendar group for a us
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create Calendar

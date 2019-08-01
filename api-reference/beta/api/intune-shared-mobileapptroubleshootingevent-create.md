@@ -4,6 +4,7 @@ description: "Describes the Create mobileAppTroubleshootingEvent method of the M
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create mobileAppTroubleshootingEvent

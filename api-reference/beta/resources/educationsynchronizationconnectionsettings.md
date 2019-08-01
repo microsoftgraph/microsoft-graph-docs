@@ -4,6 +4,7 @@ description: "Represents the provider connection settings. This allows the syste
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationConnectionSettings resource type

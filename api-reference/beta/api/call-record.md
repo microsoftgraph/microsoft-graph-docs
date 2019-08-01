@@ -4,13 +4,18 @@ description: "Record the call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: record
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Record the call.
+Record a short audio clip from the call. This is useful if the bot wants to capture a voice response from the caller following a prompt.
+
+> [!Note]
+> This record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the bot platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,18 +43,17 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[mediaPrompt](../resources/mediaprompt.md) collection | Collection of prompts to play (if any) before recording starts. Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt |
-|bargeInAllowed|Boolean| Allow users to enter choice before prompt finishes.                                                                 |
-|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. |
-|maxSilenceTimeoutInSeconds|Int32| The maximum silence timeout in seconds.|
-|maxRecordDurationInSeconds|Int32| The maximum record duration in seconds.|
-|playBeep|Boolean| Plays a beep after playing the prompt.|
-|streamWhileRecording|Boolean|If set to true, a resource location will be provided as soon as the recording starts. |
+|prompts|[mediaPrompt](../resources/mediaprompt.md) collection | Collection of prompts to play (if any) before recording starts. Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt. Current support is only for a single prompt as part of the collection. |
+|bargeInAllowed|Boolean| If true, this record request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 300 seconds |
+|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
+|maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
+|playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|The client context.|
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+This method returns a `200 OK` response code and a Location header with a URI to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
@@ -77,16 +81,13 @@ Content-Length: 394
       "mediaInfo": {
         "uri": "https://cdn.contoso.com/beep.wav",
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      "loop": 5
+      }
     }
   ],
-  "maxRecordDurationInSeconds": 1800,
-  "initialSilenceTimeoutInSeconds": 10,
+  "maxRecordDurationInSeconds": 10,
+  "initialSilenceTimeoutInSeconds": 5,
   "maxSilenceTimeoutInSeconds": 2,
-  "recordingFormat": "wav",
   "playBeep": true,
-  "streamWhileRecording": true,
   "stopTones": [ "#", "11", "*" ]
 }
 ```
@@ -107,8 +108,16 @@ Content-Length: 394
   "@odata.type": "microsoft.graph.recordOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
+
 ```
 
 ##### Notification - operation completed
@@ -142,6 +151,35 @@ Content-Type: application/json
     }
   ]
 }
+```
+
+##### Get recording file - Request
+The following example shows the request to get the content of the recording.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "download_recorded_file",
+}-->
+```http
+GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Authorization: Bearer <recordingAccessToken>
+```
+
+##### Get recording file - Response
+Here is an example of the response. 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "download_recorded_file",
+  "truncated": true
+}-->
+```http
+GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Transfer-Encoding: chunked
+Date: Thu, 17 Jan 2019 01:46:37 GMT
+Content-Type: application/octet-stream
+
+(application/octet-stream of size 160696 bytes)
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

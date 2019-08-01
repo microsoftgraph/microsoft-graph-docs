@@ -4,6 +4,7 @@ description: "You purchase multiple licenses for iOS apps through the Apple Volu
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppToken resource type

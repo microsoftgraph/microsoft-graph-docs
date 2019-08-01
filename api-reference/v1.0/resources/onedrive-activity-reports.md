@@ -4,6 +4,7 @@ description: "Use the OneDrive activity reports to get the activity of every use
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # OneDrive activity reports

@@ -4,6 +4,7 @@ description: "Available settings for EAP-FAST Configuration."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # eapFastConfiguration enum type

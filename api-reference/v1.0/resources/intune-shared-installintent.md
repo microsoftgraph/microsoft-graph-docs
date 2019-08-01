@@ -4,6 +4,7 @@ description: "Possible values for the install intent chosen by the admin."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # installIntent enum type

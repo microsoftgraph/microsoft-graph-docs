@@ -4,6 +4,7 @@ description: "Represents a sensitivity label assigned to an Office 365 group. Se
 localization_priority: Normal
 author: "krbain"
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # assignedLabel resource type

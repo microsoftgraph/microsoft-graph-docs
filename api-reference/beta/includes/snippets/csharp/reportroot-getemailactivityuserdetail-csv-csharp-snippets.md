@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getEmailActivityUserDetail = await graphClient.Reports.GetEmailActivityUserDetail('D7')
+var getEmailActivityUserDetail = await graphClient.Reports
+	.GetEmailActivityUserDetail('D7')
 	.Request()
 	.GetAsync();
 

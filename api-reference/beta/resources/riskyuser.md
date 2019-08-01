@@ -3,6 +3,7 @@ title: "riskyUser resource type"
 description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
 author: "cloudhandler"
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
 

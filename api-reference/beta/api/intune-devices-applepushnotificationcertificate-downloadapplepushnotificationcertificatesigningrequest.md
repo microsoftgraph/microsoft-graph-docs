@@ -4,6 +4,7 @@ description: "Download Apple push notification certificate signing request"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # downloadApplePushNotificationCertificateSigningRequest function

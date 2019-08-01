@@ -4,6 +4,7 @@ description: "Represents the street address of a resource such as a contact or e
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # physicalAddress resource type

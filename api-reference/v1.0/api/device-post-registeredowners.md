@@ -4,6 +4,7 @@ description: "Add a user as a registered owner of the device."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create registeredOwner

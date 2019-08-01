@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The baseItemVersion resource represents a previous version of an item or entity."
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # BaseItemVersion resource type
 

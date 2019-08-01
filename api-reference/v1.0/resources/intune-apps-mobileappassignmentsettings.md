@@ -4,6 +4,7 @@ description: "Abstract class to contain properties used to assign a mobile app t
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppAssignmentSettings resource type

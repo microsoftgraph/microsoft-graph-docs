@@ -4,6 +4,7 @@ description: "Update the properties of a windowsOfficeClientSecurityConfiguratio
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsOfficeClientSecurityConfiguration

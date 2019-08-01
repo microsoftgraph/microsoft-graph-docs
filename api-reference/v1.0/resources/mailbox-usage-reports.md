@@ -4,6 +4,7 @@ description: "Use the mailbox usage reports to get information about users with 
 localization_priority: Priority
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Mailbox usage reports

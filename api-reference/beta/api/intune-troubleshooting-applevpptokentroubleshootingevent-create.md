@@ -4,6 +4,7 @@ description: "Create a new appleVppTokenTroubleshootingEvent object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create appleVppTokenTroubleshootingEvent

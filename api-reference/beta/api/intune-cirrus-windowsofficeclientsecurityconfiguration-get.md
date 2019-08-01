@@ -4,6 +4,7 @@ description: "Get a specific security policy windowsOfficeClientSecurityConfigur
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsOfficeClientSecurityConfiguration

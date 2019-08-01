@@ -4,6 +4,7 @@ description: "Color in RGB."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # rgbColor resource type

@@ -4,6 +4,7 @@ description: "IPv6 Range definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iPv6Range resource type

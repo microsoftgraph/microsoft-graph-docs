@@ -2,6 +2,9 @@
 title: "Get appRoleAssignment"
 description: "Retrieve the properties and relationships of approleassignment object."
 localization_priority: Priority
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get appRoleAssignment
@@ -61,6 +64,10 @@ GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

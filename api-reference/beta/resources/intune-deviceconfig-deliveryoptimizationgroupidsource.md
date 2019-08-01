@@ -4,6 +4,7 @@ description: "GroupId Support Types"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationGroupIdSource resource type

@@ -4,6 +4,7 @@ description: "These endpoints are used in multiple Microsoft Graph API for Intun
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Shared resources in Microsoft Intune

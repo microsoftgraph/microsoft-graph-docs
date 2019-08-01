@@ -4,6 +4,7 @@ description: "Media stack hosted by the application."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # appHostedMediaConfig resource type

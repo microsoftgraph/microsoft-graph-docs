@@ -4,6 +4,7 @@ description: ". Deleted items will remain available to restore for up to 30 days
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directory resource type (deleted items)

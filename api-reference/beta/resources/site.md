@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The site resource provides metadata and relationships for a SharePoint site."
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # site resource type
 

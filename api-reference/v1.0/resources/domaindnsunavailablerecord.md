@@ -4,6 +4,7 @@ description: "When you query for the navigation property **serviceConfigurationR
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainDnsUnavailableRecord resource type

@@ -4,6 +4,7 @@ description: "Device Compilance Policy and Configuration for a Setting State sum
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # settingStateDeviceSummary resource type

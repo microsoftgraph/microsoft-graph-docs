@@ -4,6 +4,7 @@ description: "This function returns the OneDrive URL where all file-based resour
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationAssignment: getResourcesFolderUrl
@@ -61,6 +62,10 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationassignment-publish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,6 +4,7 @@ description: "Portal to which admin syncs available Microsoft Store for Business
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # microsoftStoreForBusinessPortalSelectionOptions enum type

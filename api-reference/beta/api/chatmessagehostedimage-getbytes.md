@@ -4,6 +4,7 @@ description: "Get the binary representation of a hosted image inside a channel o
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # chatMessageHostedImage: getBytes

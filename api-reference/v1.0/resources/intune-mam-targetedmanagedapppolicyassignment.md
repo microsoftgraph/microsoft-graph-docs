@@ -4,6 +4,7 @@ description: "The type for deployment of groups or apps."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # targetedManagedAppPolicyAssignment resource type

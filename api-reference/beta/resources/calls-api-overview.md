@@ -4,6 +4,7 @@ description: "The Microsoft Graph calls and online meetings API adds a new dimen
 author: "VinodRavichandran"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: conceptualPageType
 ---
 
 # Working with the calls and online meetings API in Microsoft Graph

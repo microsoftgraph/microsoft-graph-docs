@@ -4,6 +4,7 @@ description: "Branding Options for the Message Template. Branding is defined in 
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # notificationTemplateBrandingOptions enum type

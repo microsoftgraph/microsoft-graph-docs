@@ -15,7 +15,7 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *targetsList = [[NSMutableArray alloc] init];
 MSGraphInvitationParticipantInfo *targets = [[MSGraphInvitationParticipantInfo alloc] init];
-[targets setEndpointType: [MSGraphEndpointType Default]];
+[targets setEndpointType: [MSGraphEndpointType default]];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];
@@ -28,7 +28,7 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [targetsList addObject: targets];
 payloadDictionary[@"targets"] = targetsList;
 
-MSGraphCallDisposition *targetDisposition = [MSGraphCallDisposition Default];
+MSGraphCallDisposition *targetDisposition = [MSGraphCallDisposition default];
 payloadDictionary[@"targetDisposition"] = targetDisposition;
 
 int32_t timeout = 99;

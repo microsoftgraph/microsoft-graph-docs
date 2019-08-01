@@ -2,6 +2,9 @@
 title: "List impossibleTravelRiskEvents"
 description: "Retrieve a list of impossibletravelriskevent objects."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # List impossibleTravelRiskEvents

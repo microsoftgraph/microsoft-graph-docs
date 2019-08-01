@@ -5,6 +5,7 @@ title: Update listItem
 description: Update the properties on a **[listItem][]**.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Update listItem
 
@@ -76,6 +77,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,6 +4,7 @@ description: "A managed (MAM) application's availability."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedAppAvailability enum type

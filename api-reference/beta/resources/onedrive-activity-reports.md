@@ -4,6 +4,7 @@ description: "You can get the activity of every user licensed to use OneDrive by
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # OneDrive activity reports

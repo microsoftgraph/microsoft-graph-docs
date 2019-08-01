@@ -4,6 +4,7 @@ description: "This is the base class for Compliance policy. Compliance policies 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceCompliancePolicy resource type

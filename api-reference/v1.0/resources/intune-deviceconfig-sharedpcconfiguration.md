@@ -4,6 +4,7 @@ description: "This topic provides descriptions of the declared methods, properti
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # sharedPCConfiguration resource type

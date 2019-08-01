@@ -4,6 +4,7 @@ description: "Count of devices with malware for each OS version"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # osVersionCount resource type

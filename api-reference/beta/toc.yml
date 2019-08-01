@@ -350,6 +350,18 @@
           href: api/planneruser-list-recentplans.md
         - name: List user's assigned tasks
           href: api/planneruser-list-tasks.md
+      - name: Teamwork
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps for user
+          href: api/user-list-teamsappinstallation.md
+        - name: Add app for user
+          href: api/user-add-teamsappinstallation.md
+        - name: Remove app for user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Upgrade installed app for user
+          href: api/user-upgrade-teamsappinstallation.md
       - name: User settings
         href: resources/user-settings.md
         items:
@@ -731,7 +743,7 @@
           href: api/event-delta.md
         - name: Reminder view
           href: api/user-reminderview.md
-      - name: Categories
+      - name: Category
         href: resources/outlookcategory.md
         items:
         - name: List categories
@@ -761,6 +773,18 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
+          - name: Place
+            href: resources/place.md
+          - name: Room resource
+            href: resources/room.md
+          - name: Room list resource
+            href: resources/roomlist.md
+          - name: List places
+            href: api/place-list.md
+          - name: Get place
+            href: api/place-get.md
     - name: Calls and online meetings
       displayName: Microsoft Teams
       items:
@@ -811,8 +835,10 @@
             href: api/participant-invite.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
-        - name: Unmute self
+        - name: Unmute application
           href: api/call-unmute.md
+        - name: Mute application
+          href: api/call-mute.md
         - name: Update metadata
           href: api/call-updatemetadata.md
         - name: Audio routing group
@@ -7416,6 +7442,8 @@
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Bundles
+          href: resources/bundle.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -7423,6 +7451,8 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
+        - name: Add users to sharing link
+          href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -8028,6 +8058,57 @@
           href: api/oauth2permissiongrant-update.md
         - name: Delete oauth2 permission grant
           href: api/oauth2permissiongrant-delete.md
+      - name: On-premises publishing
+        href: resources/onpremisespublishingprofile-root.md
+        items:
+          - name: On-premises agent
+            href: resources/onpremisesagent.md
+            items:
+              - name: List
+                href: api/onpremisesagent-list.md
+              - name: Get
+                href: api/onpremisesagent-get.md
+              - name: Assign to agent group
+                href: api/onpremisesagent-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/onpremisesagent-delete-agentgroups.md
+          - name: On-premises agent group
+            href: resources/onpremisesagentgroup.md
+            items:
+              - name: List
+                href: api/onpremisesagentgroup-list.md
+              - name: Get
+                href: api/onpremisesagentgroup-get.md
+              - name: Create
+                href: api/onpremisesagentgroup-post.md
+              - name: Update
+                href: api/onpremisesagentgroup-update.md
+              - name: Delete
+                href: api/onpremisesagentgroup-delete.md
+          - name: On-premises publishing profile
+            href: resources/onpremisespublishingprofile.md
+            items:
+              - name: Get
+                href: api/onpremisespublishingprofile-get.md
+              - name: Update
+                href: api/onpremisespublishingprofile-update.md
+          - name: Published resource
+            href: resources/publishedresource.md
+            items:
+              - name: List
+                href: api/publishedresource-list.md
+              - name: Get
+                href: api/publishedresource-get.md
+              - name: Create
+                href: api/publishedresource-post.md
+              - name: Update
+                href: api/publishedresource-update.md
+              - name: Delete
+                href: api/publishedresource-delete.md
+              - name: Assign to agent group
+                href: api/publishedresource-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/publishedresource-delete-agentgroups.md    
       - name: Organization
         href: resources/organization.md
         items:
@@ -8232,6 +8313,11 @@
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Directory definition
+          href: resources/synchronization-directorydefinition.md
+          items:
+          - name: Discover
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -9238,15 +9324,18 @@
           href: api/conversationmember-list.md
         - name: Get one member in chat
           href: api/conversationmember-get.md
-      - name: Apps
+      - name: Chat message
+        href: resources/chatmessage.md
+        items:
+        - name: List hosted images
+          href: api/chatmessagehostedimage-list-hostedimages.md
+        - name: Get hosted image
+          href: api/chatmessagehostedimage-get.md
+        - name: Get hosted image bytes
+          href: api/chatmessagehostedimage-getbytes.md
+      - name: App Catalog
         href: resources/teamsapp.md
         items:
-        - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Add app to team
-          href: api/teamsappinstallation-add.md
-        - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -9255,6 +9344,29 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
+      - name: App
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps in team
+          href: api/teamsappinstallation-list.md
+        - name: Add app to team
+          href: api/teamsappinstallation-add.md
+        - name: Remove app from team
+          href: api/teamsappinstallation-delete.md
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+        - name: List apps for user
+          href: api/user-list-teamsappinstallation.md
+        - name: Add app for user
+          href: api/user-add-teamsappinstallation.md
+        - name: Remove app for user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Upgrade installed app for user
+          href: api/user-upgrade-teamsappinstallation.md
+      - name: Tab
+        href: resources/teamstab.md
+        items:
         - name: List tabs
           href: api/teamstab-list.md
         - name: Get tab
@@ -9265,15 +9377,6 @@
           href: api/teamstab-update.md
         - name: Delete tab
           href: api/teamstab-delete.md
-      - name: Chat message
-        href: resources/chatmessage.md
-        items:
-        - name: List hosted images
-          href: api/chatmessagehostedimage-list-hostedimages.md
-        - name: Get hosted image
-          href: api/chatmessagehostedimage-get.md
-        - name: Get hosted image bytes
-          href: api/chatmessagehostedimage-getbytes.md
       - name: Calendar
         href: resources/event.md
         items:

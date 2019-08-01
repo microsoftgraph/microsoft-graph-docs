@@ -15,7 +15,7 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *participantsList = [[NSMutableArray alloc] init];
 MSGraphInvitationParticipantInfo *participants = [[MSGraphInvitationParticipantInfo alloc] init];
-[participants setEndpointType: [MSGraphEndpointType Default]];
+[participants setEndpointType: [MSGraphEndpointType default]];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];

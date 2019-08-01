@@ -4,6 +4,7 @@ description: "Enable lost mode"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # enableLostMode action

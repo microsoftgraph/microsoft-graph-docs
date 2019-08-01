@@ -4,6 +4,7 @@ description: "SharedPC Account Manager Policy. Only applies when the account man
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # sharedPCAccountManagerPolicy resource type

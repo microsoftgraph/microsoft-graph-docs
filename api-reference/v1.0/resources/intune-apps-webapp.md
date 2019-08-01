@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for web apps."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # webApp resource type

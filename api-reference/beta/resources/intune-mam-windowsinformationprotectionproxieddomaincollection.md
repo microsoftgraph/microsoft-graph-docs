@@ -4,6 +4,7 @@ description: "Windows Information Protection Proxied Domain Collection"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionProxiedDomainCollection resource type

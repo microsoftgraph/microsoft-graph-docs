@@ -2,6 +2,9 @@
 title: "Create inferenceClassificationOverride"
 description: "Create a Focused Inbox override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Create inferenceClassificationOverride
@@ -13,7 +16,7 @@ as specified in the override.
 
 **Note**
 
-- If an override already exists with the same STMP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.
+- If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.
 - The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.
 - The POST operation supports creating only one override at a time.
 
@@ -76,6 +79,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-inferenceclassificationoverride-from-inferenceclassification-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-inferenceclassificationoverride-from-inferenceclassification-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

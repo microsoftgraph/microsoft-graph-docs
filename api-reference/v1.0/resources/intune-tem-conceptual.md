@@ -4,6 +4,7 @@ description: "You can limit data usage and roaming on corporate-owned devices wh
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Telecom expense management in Microsoft Intune

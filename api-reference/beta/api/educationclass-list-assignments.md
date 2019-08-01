@@ -4,6 +4,7 @@ description: "Retrieve a list of assignment objects. A teacher is allowed to see
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List assignments

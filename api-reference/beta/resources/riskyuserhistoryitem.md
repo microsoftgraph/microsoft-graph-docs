@@ -4,6 +4,7 @@ description: "Represents the risk history of Azure AD users"
 author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # riskyUserHistoryItem resource type

@@ -4,6 +4,7 @@ description: "Advanced BitLocker State"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # advancedBitLockerState enum type

@@ -2,6 +2,9 @@
 title: "privilegedRoleSettings resource type"
 description: "Represents the settings for a privileged role."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedRoleSettings resource type

@@ -4,6 +4,7 @@ description: "Windows defender advanced threat protection onboarding state summa
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # advancedThreatProtectionOnboardingStateSummary resource type

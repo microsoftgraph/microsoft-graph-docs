@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Identity
 localization_priority: Normal
+description: "The Identity resource represents an identity of an actor."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Identity resource type
 
 The **Identity** resource represents an identity of an _actor_.

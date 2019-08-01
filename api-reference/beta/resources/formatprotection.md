@@ -2,6 +2,9 @@
 title: "FormatProtection resource type"
 description: "Represents the format protection of a range object."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # FormatProtection resource type

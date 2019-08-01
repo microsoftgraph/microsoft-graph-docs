@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
+description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # RemoteItem resource type
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.

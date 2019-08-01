@@ -4,6 +4,7 @@ description: "Represents an Azure Active Directory object. The **directoryObject
 localization_priority: Priority
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directoryObject resource type

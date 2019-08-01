@@ -2,6 +2,9 @@
 title: "fileHashType enum"
 description: "Enum for file hash types."
 localization_priority: Normal
+doc_type: enumPageType
+ms.prod: ""
+author: ""
 ---
 
 # fileHashType enum

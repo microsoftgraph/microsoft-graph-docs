@@ -4,6 +4,7 @@ description: "The identifier for a mobile app."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppIdentifier resource type

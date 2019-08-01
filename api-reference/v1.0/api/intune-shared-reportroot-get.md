@@ -4,6 +4,7 @@ description: "Read properties and relationships of the reportRoot object."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Get reportRoot

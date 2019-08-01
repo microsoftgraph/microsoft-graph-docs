@@ -4,6 +4,7 @@ description: "Represents the mapping between an education user type and the doma
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationIdentityDomain resource type

@@ -4,6 +4,7 @@ description: "Represents an ADMX text element."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationText resource type

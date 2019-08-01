@@ -4,6 +4,7 @@ description: "Apple push notification certificate."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # applePushNotificationCertificate resource type

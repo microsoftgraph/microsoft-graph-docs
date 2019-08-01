@@ -4,6 +4,7 @@ description: "An abstract class containing the base properties for Managed eBook
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedEBook resource type

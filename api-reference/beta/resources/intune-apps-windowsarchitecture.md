@@ -4,6 +4,7 @@ description: "Contains properties for Windows architecture."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsArchitecture enum type

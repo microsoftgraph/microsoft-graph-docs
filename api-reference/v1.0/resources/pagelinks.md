@@ -2,6 +2,9 @@
 title: "pageLinks resource type"
 description: "Links for opening a OneNote page."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # pageLinks resource type

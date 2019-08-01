@@ -4,6 +4,7 @@ description: "VPN Authentication Method."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnAuthenticationMethod enum type

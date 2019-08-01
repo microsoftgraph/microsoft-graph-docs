@@ -4,6 +4,7 @@ description: "Contains properties used to assign an iOS VPP EBook to a group."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppEBookAssignment resource type

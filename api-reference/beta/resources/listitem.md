@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "This resource represents an item in a SharePoint list."
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # ListItem resource
 

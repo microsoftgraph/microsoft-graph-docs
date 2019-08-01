@@ -4,6 +4,7 @@ description: "Indicates the identity of the application that performed the actio
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # appIdentity resource type

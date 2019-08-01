@@ -4,6 +4,7 @@ description: "Android Work Profile required password type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidWorkProfileRequiredPasswordType enum type

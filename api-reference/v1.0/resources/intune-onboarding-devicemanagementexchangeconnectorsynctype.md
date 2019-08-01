@@ -4,6 +4,7 @@ description: "The type of Exchange Connector sync requested."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeConnectorSyncType enum type

@@ -5,6 +5,7 @@ title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get listItem
 
@@ -75,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

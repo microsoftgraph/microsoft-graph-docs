@@ -4,6 +4,7 @@ description: "Contains properties for the installation state of a mobile app for
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppInstallStatus resource type

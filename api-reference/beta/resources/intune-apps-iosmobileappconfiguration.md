@@ -4,6 +4,7 @@ description: "Contains properties, inherited properties and actions for iOS mobi
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosMobileAppConfiguration resource type

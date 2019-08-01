@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var findRoomLists = await graphClient.Me.FindRoomLists()
+var findRoomLists = await graphClient.Me
+	.FindRoomLists()
 	.Request()
 	.GetAsync();
 

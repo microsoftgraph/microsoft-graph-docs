@@ -14,7 +14,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphInvitationParticipantInfo *transferTarget = [[MSGraphInvitationParticipantInfo alloc] init];
-[transferTarget setEndpointType: [MSGraphEndpointType Default]];
+[transferTarget setEndpointType: [MSGraphEndpointType default]];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];

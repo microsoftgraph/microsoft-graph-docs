@@ -4,6 +4,7 @@ description: "State Management Setting."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # stateManagementSetting enum type

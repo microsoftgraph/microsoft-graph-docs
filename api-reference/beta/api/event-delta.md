@@ -4,6 +4,7 @@ description: "Get a set of events that have been added, deleted, or updated in a
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: delta
@@ -97,6 +98,10 @@ Prefer: odata.maxpagesize=2
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

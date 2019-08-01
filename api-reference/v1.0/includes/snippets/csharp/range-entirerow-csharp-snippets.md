@@ -6,7 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookRange = await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"].Range().EntireRow()
+var workbookRange = await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+	.Range()
+	.EntireRow()
 	.Request()
 	.GetAsync();
 

@@ -4,6 +4,7 @@ description: "Represents an un-typed status report about organizations app prote
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppStatusRaw resource type

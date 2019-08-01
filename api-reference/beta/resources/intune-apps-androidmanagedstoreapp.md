@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Android Managed S
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidManagedStoreApp resource type

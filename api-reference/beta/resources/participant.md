@@ -4,6 +4,7 @@ description: "The participant type."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # participant resource type

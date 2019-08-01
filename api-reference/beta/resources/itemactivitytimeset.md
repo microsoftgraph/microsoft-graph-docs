@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The ItemActivityTimeSet resource provides information about when an activity on an item took place."
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ItemActivityTimeSet resource type
 

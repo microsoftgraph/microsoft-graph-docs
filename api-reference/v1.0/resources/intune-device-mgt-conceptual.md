@@ -1,9 +1,10 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""
+description: "Device management resources in Microsoft Intune"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Device management in Microsoft Intune

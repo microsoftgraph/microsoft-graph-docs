@@ -4,6 +4,7 @@ description: "Represents a lifecycle policy for an Office 365 group. A group lif
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # groupLifecyclePolicy resource type

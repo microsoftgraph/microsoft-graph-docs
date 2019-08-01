@@ -4,6 +4,7 @@ description: "Summary data for managed devices"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceOverview resource type

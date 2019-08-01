@@ -2,6 +2,9 @@
 title: "List applications"
 description: "Retrieve a list of application objects associated with the connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List applications

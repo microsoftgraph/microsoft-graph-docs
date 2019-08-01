@@ -4,6 +4,7 @@ description: "A class containing the properties for Audit Property."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # auditProperty resource type

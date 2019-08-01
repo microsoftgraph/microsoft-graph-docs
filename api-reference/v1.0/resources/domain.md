@@ -4,6 +4,7 @@ description: "Represents a domain associated with the tenant."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domain resource type

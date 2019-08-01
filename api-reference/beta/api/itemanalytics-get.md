@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "Get itemAnalytics about the views that took place under this resource."
 ms.date: 10/06/2017
 title: Get analytics
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Get analytics
 
@@ -59,6 +61,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

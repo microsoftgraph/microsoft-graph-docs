@@ -4,6 +4,7 @@ description: "For each domain in the tenant, you may be required to add DNS reco
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainDnsRecord resource type

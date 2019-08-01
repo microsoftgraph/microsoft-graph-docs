@@ -4,6 +4,7 @@ description: "Represents the sources the user data comes from, such as Directory
 localization_priority: Normal
 author: "simonhult"
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # personDataSource resource type

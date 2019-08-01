@@ -4,6 +4,7 @@ description: "Character set which is to be used for a user's app PIN"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedAppPinCharacterSet enum type

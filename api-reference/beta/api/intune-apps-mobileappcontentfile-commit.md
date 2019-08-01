@@ -4,6 +4,7 @@ description: "Commits a file of a given app."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # commit action

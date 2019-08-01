@@ -4,6 +4,7 @@ description: "Android required password type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidRequiredPasswordType enum type

@@ -4,6 +4,7 @@ description: "Possible ways of adding a mobile device to management."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceEnrollmentType enum type

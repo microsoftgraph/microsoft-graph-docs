@@ -4,6 +4,7 @@ description: "You can use Microsoft Graph to build compelling app experiences ba
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: conceptualPageType
 ---
 
 # Working with users in Microsoft Graph

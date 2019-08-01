@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the DeleteAction resource on an itemActivity indicates that the activity deleted an item."
 ms.date: 09/14/2017
 title: DeleteAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # DeleteAction resource type
 

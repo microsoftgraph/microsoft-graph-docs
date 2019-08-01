@@ -4,6 +4,7 @@ description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # locationConstraintItem resource type

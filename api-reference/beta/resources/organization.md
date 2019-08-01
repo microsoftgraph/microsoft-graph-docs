@@ -4,6 +4,7 @@ description: "Represents an Azure Active Directory tenant. "
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # organization resource type

@@ -26,7 +26,7 @@ var transferTarget = new InvitationParticipantInfo
 var clientContext = "clientContext-value";
 
 await graphClient.App.Calls["{id}"]
-	.Transfer(transferTarget,target,replacesCallId)
+	.Transfer(transferTarget)
 	.Request()
 	.PostAsync();
 

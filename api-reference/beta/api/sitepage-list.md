@@ -1,10 +1,11 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
 title: List the pages in a site
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # List the pages in the site pages list of a site
 

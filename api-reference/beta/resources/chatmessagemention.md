@@ -4,6 +4,7 @@ description: "Represents a mention in a chatMessage entity. The mention can be t
 localization_priority: Normal
 author: nkramer
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # chatMessageMention resource type

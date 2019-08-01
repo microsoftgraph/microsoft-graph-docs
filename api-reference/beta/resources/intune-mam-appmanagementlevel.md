@@ -4,6 +4,7 @@ description: "Management levels for apps"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # appManagementLevel enum type

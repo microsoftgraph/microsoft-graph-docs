@@ -4,6 +4,7 @@ description: "The authentication methods usage report helps an organization unde
 author: davidmu1
 localization_priority: Normal
 ms.prod: reports
+doc_type: conceptualPageType
 ---
 
 # Working with the authentication methods usage report API

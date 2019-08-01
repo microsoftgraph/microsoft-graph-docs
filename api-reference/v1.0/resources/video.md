@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Video
 localization_priority: Normal
+description: "The Video resource groups video-related data items into a single structure."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Video resource type
 
 The **Video** resource groups video-related data items into a single structure.

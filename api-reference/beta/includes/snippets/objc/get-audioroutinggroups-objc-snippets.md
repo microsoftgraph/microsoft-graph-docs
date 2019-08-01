@@ -15,9 +15,9 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
 		NSError *jsonError = nil;
 		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *AudioRoutingGroupList = [[NSMutableArray alloc] init];
-		AudioRoutingGroupList = [jsonFinal valueForKey:@"value"];
-		MSGraphAudioRoutingGroup *AudioRoutingGroup = [[MSGraphAudioRoutingGroup alloc] initWithDictionary:[AudioRoutingGroupList objectAtIndex: 0] error:&nserror];
+		NSMutableArray *audioRoutingGroupList = [[NSMutableArray alloc] init];
+		audioRoutingGroupList = [jsonFinal valueForKey:@"value"];
+		MSGraphAudioRoutingGroup *audioRoutingGroup = [[MSGraphAudioRoutingGroup alloc] initWithDictionary:[audioRoutingGroupList objectAtIndex: 0] error:&nserror];
 
 }];
 

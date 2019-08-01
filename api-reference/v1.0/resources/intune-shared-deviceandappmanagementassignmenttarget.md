@@ -4,6 +4,7 @@ description: "Base type for assignment targets."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceAndAppManagementAssignmentTarget resource type

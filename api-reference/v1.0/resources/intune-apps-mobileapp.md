@@ -4,6 +4,7 @@ description: "An abstract class containing the base properties for Intune mobile
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileApp resource type

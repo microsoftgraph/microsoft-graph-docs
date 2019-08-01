@@ -4,6 +4,7 @@ description: "Create a new macOSVpnConfiguration object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create macOSVpnConfiguration

@@ -4,6 +4,7 @@ description: " Retrieve the properties and relationships of an alert object."
 author: "preetikr"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get alert
@@ -67,6 +68,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

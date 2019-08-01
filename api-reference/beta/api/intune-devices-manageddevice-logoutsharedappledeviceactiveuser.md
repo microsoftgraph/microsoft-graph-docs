@@ -4,6 +4,7 @@ description: "Logout shared Apple device active user"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # logoutSharedAppleDeviceActiveUser action

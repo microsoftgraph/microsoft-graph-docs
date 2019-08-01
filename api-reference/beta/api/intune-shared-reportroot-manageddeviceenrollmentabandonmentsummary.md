@@ -4,6 +4,7 @@ description: "Metadata for Enrollment abandonment summary report"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # managedDeviceEnrollmentAbandonmentSummary function

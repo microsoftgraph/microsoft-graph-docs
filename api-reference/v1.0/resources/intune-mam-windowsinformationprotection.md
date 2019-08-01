@@ -4,6 +4,7 @@ description: "Policy for Windows information protection to configure detailed ma
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtection resource type

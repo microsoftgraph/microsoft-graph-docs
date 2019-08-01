@@ -3,6 +3,8 @@ title: "Enumerate sites"
 description: "List the available [sites][] in an organization that match provided filter criteria and query options."
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
+author: ""
 ---
 
 # Enumerate sites
@@ -61,6 +63,10 @@ GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=s
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-sites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,18 +1,18 @@
 ---
 title: "Add app to team"
-description: "Installs an app to the specified team."
-author: "nkramer"
+description: "Install an app to the specified team."
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Add app to team
 
-
-
-Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -28,48 +28,71 @@ POST /teams/{id}/installedApps
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |teamsApp| [teamsApp](../resources/teamsapp.md) |The app to add.|
 
-
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Example
-#### Request
+
+### Request
+
 The following is an example of the request.
+
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team"
 }-->
+
 ```http
 POST /teams/{id}/installedApps
+Content-type: application/json
+
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-#### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
+
+The following is an example of the response.
+
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: xxx
-
-{
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -81,6 +104,3 @@ Content-length: xxx
   "section": "documentation",
   "tocPath": ""
 }-->
-
-## See also
-

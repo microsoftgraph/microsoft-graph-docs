@@ -4,6 +4,7 @@ description: "An abstract base class containing properties for all managed mobil
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedMobileLobApp resource type

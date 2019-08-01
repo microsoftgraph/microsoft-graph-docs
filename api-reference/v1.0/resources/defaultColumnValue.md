@@ -4,7 +4,11 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
+description: "The defaultColumnValue on a columnDefinition resource specifies the default value for this column."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # DefaultColumnValue resource type
 
 The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.

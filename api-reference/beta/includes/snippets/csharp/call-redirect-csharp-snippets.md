@@ -34,7 +34,7 @@ var maskCallee = false;
 var maskCaller = false;
 
 await graphClient.App.Calls["{id}"]
-	.Redirect(targets,targetDisposition,timeout,maskCallee,maskCaller)
+	.Redirect(targets,targetDisposition,timeout,maskCallee,maskCaller,callbackUri)
 	.Request()
 	.PostAsync();
 

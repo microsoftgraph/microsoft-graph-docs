@@ -4,6 +4,7 @@ description: "Lists the Microsoft Graph API for Intune (REST) endpoints that sup
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Company terms and conditions in Microsoft Intune

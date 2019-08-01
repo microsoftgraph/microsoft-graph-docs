@@ -10,6 +10,10 @@ var callbackUri = "callbackUri-value";
 
 var mediaConfig = new MediaConfig
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","#microsoft.graph.appHostedMediaConfig"}
+	},
 	Blob = "<media config blob>"
 };
 

@@ -2,6 +2,9 @@
 title: "networkLocationDetail resource type"
 description: "Indicates details associated with the network location. ."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # networkLocationDetail resource type

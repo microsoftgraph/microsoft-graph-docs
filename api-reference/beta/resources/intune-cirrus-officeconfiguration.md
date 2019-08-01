@@ -4,6 +4,7 @@ description: "Singleton entity that acts as a container for all device managemen
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # officeConfiguration resource type

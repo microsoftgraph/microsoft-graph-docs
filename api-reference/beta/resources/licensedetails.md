@@ -2,6 +2,9 @@
 title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # licenseDetails resource type

@@ -4,6 +4,7 @@ description: "Update the properties of a windows81SCEPCertificateProfile object.
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windows81SCEPCertificateProfile

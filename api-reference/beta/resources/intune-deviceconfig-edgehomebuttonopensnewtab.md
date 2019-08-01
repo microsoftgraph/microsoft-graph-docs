@@ -4,6 +4,7 @@ description: "Show the home button; clicking the home button loads the New tab p
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # edgeHomeButtonOpensNewTab resource type

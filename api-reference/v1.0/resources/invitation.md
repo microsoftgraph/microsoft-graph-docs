@@ -4,6 +4,7 @@ description: "Represents an invitation that is used to add external users to an 
 localization_priority: Priority
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # invitation resource type

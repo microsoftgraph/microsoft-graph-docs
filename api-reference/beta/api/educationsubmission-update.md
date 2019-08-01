@@ -4,6 +4,7 @@ description: "Add a grade and feedback to a submission. Only teachers can perfor
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationsubmission

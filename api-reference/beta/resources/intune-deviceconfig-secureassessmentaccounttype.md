@@ -4,6 +4,7 @@ description: "Type of accounts that are allowed for Windows10SecureAssessment Co
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # secureAssessmentAccountType enum type

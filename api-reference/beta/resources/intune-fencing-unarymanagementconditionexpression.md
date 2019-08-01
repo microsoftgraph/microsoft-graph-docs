@@ -4,6 +4,7 @@ description: "A management condition expression that is evaluated using a unary 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # unaryManagementConditionExpression resource type

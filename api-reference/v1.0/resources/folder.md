@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
+description: "The Folder resource groups folder-related data on an item into a single structure. "
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Folder resource type
 
 The **Folder** resource groups folder-related data on an item into a single structure. 

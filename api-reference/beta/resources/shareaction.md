@@ -1,10 +1,13 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The ShareAction resource provides information about an activity that shared an item."
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # ShareAction resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

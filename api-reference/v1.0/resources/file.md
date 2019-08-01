@@ -4,7 +4,11 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal
+description: "The File resource groups file-related data items into a single structure."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # File resource type
 
 The **File** resource groups file-related data items into a single structure.

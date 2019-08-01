@@ -4,6 +4,9 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
+description: "The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times."
+ms.prod: ""
+doc_type: resourcePageType
 ---
 # DateTimeColumn resource type
 

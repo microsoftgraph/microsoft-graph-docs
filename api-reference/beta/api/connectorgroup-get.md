@@ -2,6 +2,9 @@
 title: "Get connectorGroup"
 description: "Retrieve the properties of a connectorGroup object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get connectorGroup

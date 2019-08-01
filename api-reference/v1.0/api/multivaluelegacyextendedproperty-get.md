@@ -2,6 +2,9 @@
 title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Get multiValueLegacyExtendedProperty

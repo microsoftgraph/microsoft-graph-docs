@@ -4,6 +4,7 @@ description: "Feedback from a teacher to a student. This property represents bot
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationFeedback resource type

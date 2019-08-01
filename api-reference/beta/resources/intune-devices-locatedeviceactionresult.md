@@ -4,6 +4,7 @@ description: "Locate device action result"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # locateDeviceActionResult resource type

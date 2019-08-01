@@ -4,6 +4,7 @@ description: "The following is a JSON representation of the resource."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamsUserActivityCounts resource type

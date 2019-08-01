@@ -4,6 +4,7 @@ description: "The home button configuration base class used to identify the avai
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # edgeHomeButtonConfiguration resource type

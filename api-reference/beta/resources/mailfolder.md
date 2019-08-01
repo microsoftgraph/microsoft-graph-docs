@@ -4,6 +4,7 @@ description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail 
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # mailFolder resource type

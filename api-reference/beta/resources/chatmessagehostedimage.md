@@ -3,6 +3,8 @@ title: "chatMessageHostedImage resource type"
 description: "Represents a hosted image inside a chatMessage."
 localization_priority: Normal
 author: "clearab"
+doc_type: resourcePageType
+ms.prod: ""
 ---
 
 # chatMessageHostedImage resource type

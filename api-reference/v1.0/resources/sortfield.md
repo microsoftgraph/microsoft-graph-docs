@@ -2,6 +2,9 @@
 title: "SortField resource type"
 description: "Represents a condition in a sorting operation."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # SortField resource type

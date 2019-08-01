@@ -4,6 +4,7 @@ description: "Represents an Azure AD directory role. Azure AD directory roles ar
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directoryRole resource type

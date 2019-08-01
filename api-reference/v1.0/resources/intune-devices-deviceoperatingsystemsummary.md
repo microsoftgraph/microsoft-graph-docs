@@ -4,6 +4,7 @@ description: "Device operating system summary."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceOperatingSystemSummary resource type

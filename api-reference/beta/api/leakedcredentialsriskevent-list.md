@@ -2,6 +2,9 @@
 title: "List leakedCredentialsRiskEvents"
 description: "Retrieve a list of leakedcredentialsriskevent objects."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # List leakedCredentialsRiskEvents

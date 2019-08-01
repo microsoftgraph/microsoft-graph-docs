@@ -4,6 +4,7 @@ description: "Represents an individual Post item within a conversationThread ent
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # post resource type

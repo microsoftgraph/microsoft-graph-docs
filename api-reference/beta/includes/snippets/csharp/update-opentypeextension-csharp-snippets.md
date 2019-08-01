@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var extension = new Extension
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","#microsoft.outlookServices.openTypeExtension"}
+	},
 	ExtensionName = "Com.Contoso.Estimate",
 	CompanyName = "Contoso",
 	ExpirationDate = "2016-07-30T11:00:00Z",

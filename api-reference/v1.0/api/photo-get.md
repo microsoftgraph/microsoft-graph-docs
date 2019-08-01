@@ -2,6 +2,9 @@
 title: "Get photo"
 description: "Retrieve the properties and relationships of photo object."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Get photo
@@ -61,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-photo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -102,6 +109,10 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-value-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-photo-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

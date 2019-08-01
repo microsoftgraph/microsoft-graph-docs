@@ -4,6 +4,7 @@ description: "Windows Update Notification Display Options"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsUpdateNotificationDisplayOption enum type

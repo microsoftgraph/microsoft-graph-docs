@@ -4,6 +4,7 @@ description: "Defines the Action Types for an Intune Application."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileAppActionType enum type

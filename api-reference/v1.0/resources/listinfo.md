@@ -5,7 +5,10 @@ ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "The listInfo complex type provides additional information about a list."
+doc_type: resourcePageType
 ---
+
 # ListInfo resource
 
 The **listInfo** complex type provides additional information about a [list][].

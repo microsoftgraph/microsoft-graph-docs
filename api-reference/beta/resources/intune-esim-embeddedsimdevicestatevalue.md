@@ -4,6 +4,7 @@ description: "Describes the various states for an embedded SIM activation code."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # embeddedSIMDeviceStateValue enum type

@@ -4,6 +4,7 @@ description: "Exchange Active Sync authentication method."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # easAuthenticationMethod enum type

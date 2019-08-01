@@ -4,6 +4,7 @@ description: "Use the email activity reports to get a high level view of email t
 localization_priority: Priority
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Email activity reports

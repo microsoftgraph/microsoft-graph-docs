@@ -4,6 +4,7 @@ description: "Supported binary operators for management condition expressions."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # binaryManagementConditionExpressionOperatorType enum type

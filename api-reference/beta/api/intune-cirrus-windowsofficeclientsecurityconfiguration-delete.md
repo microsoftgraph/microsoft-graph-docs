@@ -4,6 +4,7 @@ description: "Deletes a security policy windowsOfficeClientSecurityConfiguration
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete windowsOfficeClientSecurityConfiguration

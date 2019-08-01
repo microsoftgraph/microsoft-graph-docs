@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The CommentAction resource provides information about a comment activity made on an item."
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # CommentAction resource type
 

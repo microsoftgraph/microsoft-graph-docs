@@ -4,6 +4,7 @@ description: "Indicates the attributes related to applied conditional access pol
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # appliedConditionalAccessPolicy resource type

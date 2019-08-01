@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var reason = RejectReason.None;
 
 await graphClient.App.Calls["{id}"]
-	.Reject(reason)
+	.Reject(reason,callbackUri)
 	.Request()
 	.PostAsync();
 

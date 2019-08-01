@@ -4,6 +4,7 @@ description: "Identifies the resource object that initiates the activity. The in
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # auditActivityInitiator resource type

@@ -4,6 +4,7 @@ description: "The security resource is the entry point for the Security object m
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # security resource type

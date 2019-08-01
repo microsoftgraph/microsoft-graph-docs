@@ -4,6 +4,7 @@ description: "Extensible Authentication Protocol (EAP) Configuration Types."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidEapType enum type

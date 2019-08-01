@@ -4,6 +4,7 @@ description: "An event in a calendar."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # event resource type

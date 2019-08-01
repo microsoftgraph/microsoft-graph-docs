@@ -4,6 +4,7 @@ description: "Delivery optimization mode for peer distribution"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsDeliveryOptimizationMode enum type

@@ -4,6 +4,7 @@ description: "iOS Trusted Root Certificate configuration profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosTrustedRootCertificate resource type

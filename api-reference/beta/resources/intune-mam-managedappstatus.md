@@ -4,6 +4,7 @@ description: "Represents app protection and configuration status for the organiz
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppStatus resource type

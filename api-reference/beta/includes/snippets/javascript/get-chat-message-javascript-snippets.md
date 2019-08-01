@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/chats/{id}')
+let res = await client.api('/me/chats/{id}/messages/{id}')
 	.version('beta')
 	.get();
 

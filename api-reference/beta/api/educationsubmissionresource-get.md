@@ -4,6 +4,7 @@ description: "Retrieves the properties of a specific resource associated with th
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationSubmissionResource

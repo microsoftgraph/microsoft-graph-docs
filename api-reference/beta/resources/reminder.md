@@ -2,6 +2,9 @@
 title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # reminder resource type

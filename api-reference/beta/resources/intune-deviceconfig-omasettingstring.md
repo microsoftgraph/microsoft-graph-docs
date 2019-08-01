@@ -4,6 +4,7 @@ description: "OMA Settings String definition."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingString resource type

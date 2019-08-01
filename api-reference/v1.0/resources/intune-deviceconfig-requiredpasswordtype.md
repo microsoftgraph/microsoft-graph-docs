@@ -4,6 +4,7 @@ description: "Possible values of required passwords."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # requiredPasswordType enum type

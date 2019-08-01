@@ -4,6 +4,7 @@ description: "You can use the OneDrive usage reports to gain a high-level view o
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # OneDrive usage reports

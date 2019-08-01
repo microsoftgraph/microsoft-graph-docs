@@ -4,6 +4,7 @@ description: "Mobile device management authority."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mdmAuthority enum type

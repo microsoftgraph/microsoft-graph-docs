@@ -4,6 +4,7 @@ description: "The Office 365 activation reports can give you a view of which use
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Office 365 activations reports

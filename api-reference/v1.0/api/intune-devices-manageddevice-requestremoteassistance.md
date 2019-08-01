@@ -4,6 +4,7 @@ description: "Request remote assistance"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # requestRemoteAssistance action

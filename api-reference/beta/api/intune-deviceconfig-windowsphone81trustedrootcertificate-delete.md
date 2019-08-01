@@ -4,6 +4,7 @@ description: "Deletes a windowsPhone81TrustedRootCertificate."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete windowsPhone81TrustedRootCertificate

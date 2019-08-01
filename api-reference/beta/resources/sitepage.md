@@ -1,11 +1,13 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "This resource represents a page in the SitePages list."
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
+
 # sitePage resource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

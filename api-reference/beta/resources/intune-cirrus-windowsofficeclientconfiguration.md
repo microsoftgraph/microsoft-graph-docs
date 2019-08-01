@@ -4,6 +4,7 @@ description: "Entity that describes office policy settings for Windows."
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsOfficeClientConfiguration resource type

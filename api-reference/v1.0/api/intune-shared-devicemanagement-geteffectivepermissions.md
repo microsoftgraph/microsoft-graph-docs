@@ -4,6 +4,7 @@ description: "Retrieves the effective permissions of the currently authenticated
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getEffectivePermissions function

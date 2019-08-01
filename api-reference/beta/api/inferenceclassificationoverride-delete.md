@@ -2,6 +2,9 @@
 title: "Delete inferenceClassificationOverride"
 description: "Delete a Focused Inbox override specified by its ID."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Delete inferenceClassificationOverride
@@ -58,6 +61,10 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-inferenceclassificationoverride-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-inferenceclassificationoverride-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

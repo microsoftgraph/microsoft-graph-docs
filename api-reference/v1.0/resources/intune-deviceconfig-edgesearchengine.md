@@ -4,6 +4,7 @@ description: "Allows IT admins to set a predefined default search engine for MDM
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # edgeSearchEngine resource type

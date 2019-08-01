@@ -4,6 +4,7 @@ description: "Tenant mobile device management subscription state."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementSubscriptionState enum type

@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The DriveRecipient resource represents a person, group, or other recipient to share with using the invite action."
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # DriveRecipient resource
 

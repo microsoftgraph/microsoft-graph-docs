@@ -4,6 +4,7 @@ description: "Scheduled Action Type Enum"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceComplianceActionType enum type

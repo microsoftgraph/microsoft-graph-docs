@@ -4,6 +4,7 @@ description: "Identifiers for objects in Planner are service-generated string va
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: conceptualPageType
 ---
 
 # Identifiers in Planner

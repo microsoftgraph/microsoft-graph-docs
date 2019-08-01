@@ -4,6 +4,7 @@ description: "Removes (unpins) a tab from the specified channel within a team. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete tab from channel

@@ -4,6 +4,7 @@ description: "Access Level in Exchange."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeAccessLevel enum type

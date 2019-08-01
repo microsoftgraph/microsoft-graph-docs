@@ -4,6 +4,7 @@ description: "The Role Assignment resource. Role assignments tie together a role
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # roleAssignment resource type

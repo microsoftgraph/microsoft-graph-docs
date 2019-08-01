@@ -4,6 +4,7 @@ description: "Represents an existing partnership that the partner tenant has wit
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # Contract resource type

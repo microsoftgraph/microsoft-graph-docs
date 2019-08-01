@@ -4,6 +4,7 @@ description: "Represents a device registered in the organization. Devices are cr
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # device resource type

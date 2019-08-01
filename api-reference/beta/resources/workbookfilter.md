@@ -2,6 +2,9 @@
 title: "workbookFilter resource type"
 description: "Manages the filtering of a table's column."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "excel"
+author: ""
 ---
 
 # workbookFilter resource type

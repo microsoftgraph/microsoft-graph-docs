@@ -4,6 +4,7 @@ description: " (BYOD) enrollment lets users enroll their personal phones, tablet
 localization_priority: Normal
 author: "tfitzmac"
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Enroll devices for management in Intune

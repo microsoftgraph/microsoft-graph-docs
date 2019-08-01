@@ -4,6 +4,7 @@ description: "Represents an app in the list of managed applications"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # appListItem resource type

@@ -4,6 +4,7 @@ description: "Returns a submitted resource. This will be available to a teacher 
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationSubmittedSubmissionResource

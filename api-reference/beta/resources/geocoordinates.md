@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The GeoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # GeoCoordinates resource type
 

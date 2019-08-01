@@ -4,6 +4,7 @@ description: "Calculated insight that returns the list of items trending around 
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: apiPageType
 ---
 
 # List trending

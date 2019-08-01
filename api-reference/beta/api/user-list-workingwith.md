@@ -4,6 +4,7 @@ description: "Calculated insight for the list of users that a user has been work
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List workingWith

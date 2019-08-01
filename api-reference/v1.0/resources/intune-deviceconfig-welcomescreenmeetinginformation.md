@@ -4,6 +4,7 @@ description: "Possible values for welcome screen meeting information."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # welcomeScreenMeetingInformation enum type

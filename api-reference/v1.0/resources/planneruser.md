@@ -4,6 +4,7 @@ description: "The **plannerUser** resource provide access to Planner resources f
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerUser resource type

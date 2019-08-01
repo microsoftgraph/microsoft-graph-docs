@@ -4,6 +4,7 @@ description: "Scheduled Action Configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceComplianceActionItem resource type

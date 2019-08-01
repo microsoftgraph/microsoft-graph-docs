@@ -2,6 +2,9 @@
 title: "Get connector"
 description: "Retrieve the properties of a connector object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get connector

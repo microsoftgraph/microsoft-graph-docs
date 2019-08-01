@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The booleanColumn on a columnDefinition resource indicates that the column holds a boolean value."
 ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # BooleanColumn resource type
 

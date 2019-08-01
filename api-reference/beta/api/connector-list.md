@@ -2,6 +2,9 @@
 title: "List connectors"
 description: "Retrieve a list of connector objects."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List connectors

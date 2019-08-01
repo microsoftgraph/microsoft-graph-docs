@@ -4,6 +4,7 @@ description: "A subclass of educationResource. This resource type represents an 
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationExcelResource resource type

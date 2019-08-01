@@ -2,6 +2,9 @@
 title: "Get privilegedRoleSettings"
 description: "Retrieve the role settings for the given role. A privilegedRoleSettings object will be returned."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get privilegedRoleSettings
@@ -64,6 +67,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/settings
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedrolesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,6 +4,7 @@ description: "Proxied Domain"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # proxiedDomain resource type

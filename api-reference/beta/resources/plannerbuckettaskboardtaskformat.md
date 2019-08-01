@@ -4,6 +4,7 @@ description: "The **plannerBucketTaskBoardTaskFormat** resource represents the i
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerBucketTaskBoardTaskFormat resource type

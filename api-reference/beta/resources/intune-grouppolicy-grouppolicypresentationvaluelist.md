@@ -4,6 +4,7 @@ description: "The entity represents a collection of name/value pairs of a list b
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueList resource type

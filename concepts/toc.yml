@@ -292,6 +292,8 @@
       items:
       - name: Overview
         href: use-the-api.md
+      - name: Access data and methods
+        href: traverse-the-graph.md
       - name: Paging
         href: paging.md
       - name: Use query parameters

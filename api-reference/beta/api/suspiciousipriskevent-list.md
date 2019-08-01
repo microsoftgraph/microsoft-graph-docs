@@ -2,6 +2,9 @@
 title: "List suspiciousIpRiskEvents"
 description: "Retrieve a list of suspiciousipriskevent objects."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List suspiciousIpRiskEvents

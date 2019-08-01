@@ -4,6 +4,7 @@ description: "Key Size Options."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # keySize enum type

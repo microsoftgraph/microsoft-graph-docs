@@ -4,6 +4,7 @@ description: "Gets diagnostics validation status for a given user."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getManagedAppDiagnosticStatuses function

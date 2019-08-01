@@ -4,6 +4,7 @@ description: "Contains properties for upload request states."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileAppContentFileUploadState enum type

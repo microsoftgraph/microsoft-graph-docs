@@ -4,6 +4,7 @@ description: "A subclass of educationResource. This is a PowerPoint resource. Th
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationPowerPointResource resource type

@@ -4,6 +4,7 @@ description: "A message that represents a meeting request."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # eventMessageRequest resource type

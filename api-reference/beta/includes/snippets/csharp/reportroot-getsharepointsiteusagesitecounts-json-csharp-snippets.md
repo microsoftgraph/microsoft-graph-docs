@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var getSharePointSiteUsageSiteCounts = await graphClient.Reports.GetSharePointSiteUsageSiteCounts('D7')
+var getSharePointSiteUsageSiteCounts = await graphClient.Reports
+	.GetSharePointSiteUsageSiteCounts('D7')
 	.Request()
 	.GetAsync();
 

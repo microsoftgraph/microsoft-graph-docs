@@ -4,6 +4,7 @@ description: "Contains properties for Windows device type."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsDeviceType enum type

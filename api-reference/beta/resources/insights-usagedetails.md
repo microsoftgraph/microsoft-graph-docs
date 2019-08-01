@@ -4,6 +4,7 @@ description: "Complex type containing properties of Used items. Information on w
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # usageDetails resource type

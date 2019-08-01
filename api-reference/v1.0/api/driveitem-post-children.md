@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Create a new folder
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
+doc_type: apiPageType
 ---
 # Create a new folder in a drive
 
@@ -71,6 +73,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-folder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-folder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

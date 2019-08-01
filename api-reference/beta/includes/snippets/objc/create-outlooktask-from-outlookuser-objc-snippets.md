@@ -13,7 +13,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOutlookTask *outlookTask = [[MSGraphOutlookTask alloc] init];
-[outlookTask setAssignedTo:@"Dana Swope"];
 [outlookTask setSubject:@"Shop for children's weekend"];
 MSGraphDateTimeTimeZone *startDateTime = [[MSGraphDateTimeTimeZone alloc] init];
 [startDateTime setDateTime: "2016-05-03T09:00:00"];

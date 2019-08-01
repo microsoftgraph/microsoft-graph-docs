@@ -2,6 +2,7 @@
 title: "metadataEntry resource type"
 description: "Metadata for the given object."
 localization_priority: Normal
+doc_type: resourcePageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---

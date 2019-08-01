@@ -4,6 +4,7 @@ description: "Represents an application sign-in summary."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType_
 ---
 
 # applicationSignInSummary resource type

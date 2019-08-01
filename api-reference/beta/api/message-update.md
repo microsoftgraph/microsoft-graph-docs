@@ -4,6 +4,7 @@ description: "Update the properties of message object."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update message
@@ -92,6 +93,10 @@ Content-length: 248
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,6 +4,7 @@ description: "Storage locations where managed apps can potentially store their d
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedAppDataStorageLocation enum type

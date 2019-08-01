@@ -3,6 +3,8 @@ title: "Delete schemaExtension"
 description: "Delete the definition of a schema extension."
 localization_priority: Normal
 author: "dkershaw10"
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Delete schemaExtension
@@ -64,6 +66,10 @@ DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

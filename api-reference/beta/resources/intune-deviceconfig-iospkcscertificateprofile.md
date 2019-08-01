@@ -4,6 +4,7 @@ description: "iOS PKCS certificate profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosPkcsCertificateProfile resource type

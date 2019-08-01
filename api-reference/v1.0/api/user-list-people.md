@@ -4,6 +4,7 @@ description: "Retrieve a collection of person objects ordered by their relevance
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "insights"
+doc_type: apiPageType
 ---
 
 # List people
@@ -85,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/me/people
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

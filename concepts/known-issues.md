@@ -1,7 +1,7 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
-author: "jthake-msft"
+author: ""
 localization_priority: Priority
 ---
 

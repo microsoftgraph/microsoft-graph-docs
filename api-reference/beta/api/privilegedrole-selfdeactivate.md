@@ -2,6 +2,9 @@
 title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedRole: selfDeactivate
@@ -63,6 +66,10 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfdeactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfdeactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

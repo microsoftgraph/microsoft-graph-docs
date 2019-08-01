@@ -4,6 +4,7 @@ description: "Possible values for WIP Protection enforcement levels"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionEnforcementLevel enum type

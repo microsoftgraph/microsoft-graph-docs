@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","microsoft.graph.mailSearchFolder"}
+	},
 	DisplayName = "Weekly digests",
 	IncludeNestedFolders = true,
 	SourceFolderIds = new List<String>()

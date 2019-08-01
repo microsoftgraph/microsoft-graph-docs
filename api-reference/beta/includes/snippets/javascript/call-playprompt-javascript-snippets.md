@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const playPromptOperation = {
   clientContext: "d45324c1-fcb5-430a-902c-f20af696537c",
   prompts: [
     {
@@ -26,6 +26,6 @@ const CommsOperation = {
 
 let res = await client.api('/app/calls/{id}/playPrompt')
 	.version('beta')
-	.post(CommsOperation);
+	.post(playPromptOperation);
 
 ```

@@ -4,6 +4,7 @@ description: "Possible values of Defender Protection"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderProtectionType enum type

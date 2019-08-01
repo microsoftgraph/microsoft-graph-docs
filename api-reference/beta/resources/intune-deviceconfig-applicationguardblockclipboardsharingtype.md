@@ -4,6 +4,7 @@ description: "Possible values for applicationGuardBlockClipboardSharingType"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # applicationGuardBlockClipboardSharingType enum type

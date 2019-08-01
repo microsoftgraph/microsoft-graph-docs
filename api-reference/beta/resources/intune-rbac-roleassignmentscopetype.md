@@ -4,6 +4,7 @@ description: "Specifies the type of scope for a Role Assignment."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # roleAssignmentScopeType enum type

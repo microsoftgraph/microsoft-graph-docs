@@ -1,10 +1,13 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the RenameAction resource on an itemActivity indicates that the activity renamed an item."
 ms.date: 09/14/2017
 title: RenameAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # RenameAction resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

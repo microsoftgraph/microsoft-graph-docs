@@ -3,6 +3,7 @@ title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
 author: "angelgolfer-ms"
 localization_priority: Priority
+doc_type: apiPageType
 ms.prod: "outlook"
 ---
 
@@ -61,6 +62,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

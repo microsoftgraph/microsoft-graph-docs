@@ -4,6 +4,7 @@ description: "Mac OS certificate profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSCertificateProfileBase resource type

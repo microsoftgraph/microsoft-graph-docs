@@ -11,8 +11,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphOnlineMeeting *OnlineMeeting = [[MSGraphOnlineMeeting alloc] init];
-[OnlineMeeting setMeetingType: [MSGraphMeetingType MeetNow]];
+MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] init];
+[onlineMeeting setMeetingType: [MSGraphMeetingType meetNow]];
 MSGraphMeetingParticipants *participants = [[MSGraphMeetingParticipants alloc] init];
 MSGraphMeetingParticipantInfo *organizer = [[MSGraphMeetingParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
@@ -21,12 +21,12 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [identity setUser:user];
 [organizer setIdentity:identity];
 [participants setOrganizer:organizer];
-[OnlineMeeting setParticipants:participants];
-[OnlineMeeting setSubject:@"subject-value"];
+[onlineMeeting setParticipants:participants];
+[onlineMeeting setSubject:@"subject-value"];
 
 NSError *error;
-NSData *OnlineMeetingData = [OnlineMeeting getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:OnlineMeetingData];
+NSData *onlineMeetingData = [onlineMeeting getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:onlineMeetingData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

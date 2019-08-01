@@ -4,6 +4,7 @@ description: "Update the properties of an **educationuser** object."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationUser properties
@@ -47,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Address where user lives.|
 |primaryRole|string| Default Role for a user.  The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| If the primary role is student, this block will contain student specific data.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|
+|teacher|[educationTeacher](../resources/educationteacher.md)| If the primary role is teacher, this block will contain teacher specific data.|
 
 
 ## Response
@@ -83,6 +84,10 @@ Content-length: 508
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

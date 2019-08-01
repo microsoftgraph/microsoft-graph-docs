@@ -4,6 +4,7 @@ description: "A report that varies according to the workflow, either device conf
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # report resource type

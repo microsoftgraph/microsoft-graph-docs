@@ -1,9 +1,10 @@
 ---
 title: "Create Application"
 description: "Use this API to create a new application."
-author: "VinodRavichandran"
+author: "davidmu1"
 localization_priority: Priority
-ms.prod: "microsoft-teams"
+doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create Application
@@ -69,6 +70,10 @@ Content-length: 67
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-applications-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-application-from-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

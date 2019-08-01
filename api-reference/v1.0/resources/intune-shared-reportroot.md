@@ -4,6 +4,7 @@ description: "The resource that represents an instance of History Reports."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # reportRoot resource type

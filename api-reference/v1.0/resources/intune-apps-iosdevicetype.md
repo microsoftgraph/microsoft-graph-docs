@@ -4,6 +4,7 @@ description: "Contains properties of the possible iOS device types the mobile ap
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosDeviceType resource type

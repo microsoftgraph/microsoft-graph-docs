@@ -4,6 +4,7 @@ description: "List properties and relationships of the deviceCategory objects."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # List deviceCategories

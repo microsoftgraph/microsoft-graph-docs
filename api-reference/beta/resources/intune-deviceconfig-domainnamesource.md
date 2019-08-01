@@ -4,6 +4,7 @@ description: "Domainname source."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # domainNameSource enum type

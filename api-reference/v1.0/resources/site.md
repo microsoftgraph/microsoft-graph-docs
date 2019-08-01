@@ -5,7 +5,9 @@ title: site resource
 description: The site resource provides metadata and relationships for a Sharepoint site. 
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
+
 # site resource
 
 The **site** resource provides metadata and relationships for a SharePoint site.

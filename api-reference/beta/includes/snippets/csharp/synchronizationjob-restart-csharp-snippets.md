@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var criteria = new SynchronizationJobRestartCriteria
 {
-	ResetScope = SynchronizationJobRestartScope.QuarantineState | SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.ConnectorDataStore
+	ResetScope = SynchronizationJobRestartScope.QuarantineState | SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.Escrows
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"]

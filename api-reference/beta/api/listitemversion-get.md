@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Retrieve the metadata for a specific version of a ListItem."
 ms.date: 09/10/2017
 title: Get a previous version of a list item - SharePoint API
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get a ListItemVersion resource (preview)
 

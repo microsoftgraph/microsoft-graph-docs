@@ -17,6 +17,10 @@ var post = new Post
 	{
 		new Extension
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"@odata.type","microsoft.graph.openTypeExtension"}
+			},
 			ExtensionName = "Com.Contoso.HR",
 			CompanyName = "Contoso",
 			ExpirationDate = "2015-07-03T13:04:00Z",

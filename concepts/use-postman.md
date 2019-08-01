@@ -1,7 +1,7 @@
 ---
 title: "Use Postman with the Microsoft Graph API"
 description: "Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs in minutes."
-author: "jthake-msft"
+author: ""
 localization_priority: Priority
 ---
 

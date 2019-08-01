@@ -4,6 +4,7 @@ description: "Prompt action base type."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # prompt resource type

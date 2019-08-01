@@ -4,6 +4,7 @@ description: "You can get details on activity across your organization. These de
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business activity reports

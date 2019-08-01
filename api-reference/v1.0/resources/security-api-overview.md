@@ -4,6 +4,7 @@ description: "The Microsoft Graph Security API provides a unified interface and 
 localization_priority: Priority
 author: "preetikr"
 ms.prod: "security"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph Security API

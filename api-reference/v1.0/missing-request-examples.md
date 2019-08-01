@@ -2,6 +2,9 @@
 title: "Define the /me as singleton"
 description: "These are things I had to add in the docs to make sure the Markdown-Scanner"
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: conceptualPageType
 ---
 
 # Helpers (examples that aren't included in the docs)
@@ -28,6 +31,10 @@ GET https://graph.microsoft.com/v1.0/me
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-current-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-current-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -62,6 +69,10 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-from-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-drive-from-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -93,6 +104,10 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

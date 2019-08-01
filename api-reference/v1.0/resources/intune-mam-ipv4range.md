@@ -4,6 +4,7 @@ description: "IPv4 Range definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iPv4Range resource type

@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		MSGraphOnlineMeeting *OnlineMeeting = [[MSGraphOnlineMeeting alloc] initWithData:data error:&nserror];
+		MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] initWithData:data error:&nserror];
 
 }];
 

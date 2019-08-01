@@ -4,6 +4,7 @@ description: "The **plannerPlanContextDetails** resource contains additional inf
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerPlanContextDetails resource type

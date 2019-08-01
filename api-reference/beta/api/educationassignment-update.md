@@ -4,6 +4,7 @@ description: "Update the assignment object. Only teachers in the class can do th
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationassignment
@@ -81,6 +82,10 @@ Content-length: 279
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

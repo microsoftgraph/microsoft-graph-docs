@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Get a SharePoint Site
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Retrieve properties and relationships for a site resource."
+doc_type: apiPageType
 ---
 # Get a site resource
 
@@ -13,7 +15,7 @@ A **site** resource represents a team site in SharePoint.
 
 [site]: ../resources/site.md
 
-A **site** is addressed be a unique identifier which is a composite ID of the following values:
+A **site** is addressed by a unique identifier which is a composite ID of the following values:
 
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
@@ -82,6 +84,10 @@ GET /sites/{site-id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,6 +4,9 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal
+description: "Remove access to a DriveItem."
+ms.prod: ""
+doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
 
@@ -65,6 +68,10 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

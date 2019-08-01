@@ -4,6 +4,7 @@ description: "Which branch devices will receive their updates from"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsUpdateType enum type

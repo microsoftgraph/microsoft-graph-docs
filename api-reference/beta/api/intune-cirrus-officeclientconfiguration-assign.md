@@ -4,6 +4,7 @@ description: "Replace all targeted groups for a policy."
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # assign action

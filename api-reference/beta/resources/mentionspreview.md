@@ -4,6 +4,7 @@ description: "Represents information about mention objects in a resource instanc
 localization_priority: Normal
 author: "simonhult"
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # mentionsPreview resource type

@@ -4,6 +4,7 @@ description: "Settings to configure whether members can perform certain actions,
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamMemberSettings resource type

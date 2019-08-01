@@ -4,6 +4,7 @@ description: "VPN connection types."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windows10VpnConnectionType enum type

@@ -4,6 +4,7 @@ description: "The **plannerAssignedToTaskBoardTaskFormat** resource represents t
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerAssignedToTaskBoardTaskFormat resource type

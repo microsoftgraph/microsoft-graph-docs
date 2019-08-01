@@ -4,6 +4,7 @@ description: "Microsoft Intune app protection policies help protect your company
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # How to protect your company app data with Microsoft Intune

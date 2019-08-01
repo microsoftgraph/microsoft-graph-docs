@@ -15,7 +15,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphSynchronizationJobRestartCriteria *criteria = [[MSGraphSynchronizationJobRestartCriteria alloc] init];
-[criteria setResetScope: [MSGraphSynchronizationJobRestartScope ConnectorDataStore]];
+[criteria setResetScope: [MSGraphSynchronizationJobRestartScope Watermark]];
 payloadDictionary[@"criteria"] = criteria;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

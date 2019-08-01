@@ -4,6 +4,7 @@ description: "Represents target resource types associated with audit activity."
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "azure-ad"
+doc_type: resourcePageType
 ---
 
 # targetResource resource type

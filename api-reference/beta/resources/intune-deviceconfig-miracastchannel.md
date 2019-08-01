@@ -4,6 +4,7 @@ description: "Possible values for Miracast channel."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # miracastChannel enum type

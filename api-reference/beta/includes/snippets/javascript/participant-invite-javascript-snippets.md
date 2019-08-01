@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const inviteParticipantsOperation = {
   participants: [
     {
       endpointType: "default",
@@ -31,6 +31,6 @@ const CommsOperation = {
 
 let res = await client.api('/app/calls/{id}/participants/invite')
 	.version('beta')
-	.post(CommsOperation);
+	.post(inviteParticipantsOperation);
 
 ```

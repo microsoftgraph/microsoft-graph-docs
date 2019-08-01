@@ -4,6 +4,7 @@ description: "Enapsulates the formatting options for line elements."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # workbookChartLineFormat resource type

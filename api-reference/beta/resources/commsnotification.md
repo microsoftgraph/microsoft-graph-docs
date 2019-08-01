@@ -4,6 +4,7 @@ description: "Communications notification base type that is published by Communi
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # commsNotification resource type

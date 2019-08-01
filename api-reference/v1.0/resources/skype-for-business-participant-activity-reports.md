@@ -4,6 +4,7 @@ description: "You can use the Skype for Business participant activity reports to
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business participant activity reports

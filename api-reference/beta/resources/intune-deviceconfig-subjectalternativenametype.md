@@ -4,6 +4,7 @@ description: "Subject Alternative Name Options."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # subjectAlternativeNameType enum type

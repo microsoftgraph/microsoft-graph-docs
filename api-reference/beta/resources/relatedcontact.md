@@ -4,6 +4,7 @@ description: "Contact record related to an educationUser that provides informati
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # relatedContact resource type

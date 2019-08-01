@@ -4,6 +4,7 @@ description: "Represents data returned in JSON format"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # Json resource type

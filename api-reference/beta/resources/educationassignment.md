@@ -4,6 +4,7 @@ description: "The **educationAssignment** resource represents a task or unit of 
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignment resource type

@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = new Attachment
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","#microsoft.graph.referenceAttachment"}
+	},
 	Name = "Personal pictures",
 	SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
 	ProviderType = "oneDriveConsumer",

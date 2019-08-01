@@ -2,6 +2,9 @@
 title: "accessReviewSettings resource type"
 description: ""
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: ""
 ---
 
 # accessReviewSettings resource type

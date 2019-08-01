@@ -4,6 +4,7 @@ description: "OMA Settings Integer definition."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingInteger resource type

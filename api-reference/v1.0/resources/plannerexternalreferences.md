@@ -4,6 +4,7 @@ description: "The **plannerExternalReferences** resource represents the collecti
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerExternalReferences resource type

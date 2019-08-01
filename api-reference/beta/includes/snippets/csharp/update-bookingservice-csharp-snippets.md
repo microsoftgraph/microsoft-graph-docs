@@ -8,6 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingService = new BookingService
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","#microsoft.graph.bookingService"}
+	},
 	DefaultDuration = "PT30M"
 };
 

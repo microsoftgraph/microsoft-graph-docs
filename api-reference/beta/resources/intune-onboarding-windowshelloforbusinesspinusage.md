@@ -4,6 +4,7 @@ description: "Windows Hello for Business pin usage options"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsHelloForBusinessPinUsage enum type

@@ -4,6 +4,7 @@ description: "configuration Manager client enabled features"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # configurationManagerClientEnabledFeatures resource type

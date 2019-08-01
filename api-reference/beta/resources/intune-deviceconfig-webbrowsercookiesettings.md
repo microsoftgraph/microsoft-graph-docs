@@ -4,6 +4,7 @@ description: "Web Browser Cookie Settings."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # webBrowserCookieSettings enum type

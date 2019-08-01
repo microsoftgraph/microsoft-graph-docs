@@ -4,6 +4,7 @@ description: "Describes the mobileAppTroubleshootingEvent resource of the Micros
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppTroubleshootingEvent resource type

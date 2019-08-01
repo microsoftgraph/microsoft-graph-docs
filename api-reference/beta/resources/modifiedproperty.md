@@ -4,7 +4,7 @@ description: "Describes the changes performed in the target system."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # modifiedProperty resource type

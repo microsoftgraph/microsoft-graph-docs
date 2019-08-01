@@ -4,6 +4,7 @@ description: "Update an event object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Update event
@@ -72,6 +73,10 @@ Content-length: 211
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const outlookTask = {
-  assignedTo: "Dana Swope",
   subject: "Shop for children's weekend",
   startDateTime: {
       dateTime: "2016-05-03T09:00:00",

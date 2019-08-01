@@ -4,6 +4,7 @@ description: "Get user's manager. Returns the user or contact assigned as the us
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List manager

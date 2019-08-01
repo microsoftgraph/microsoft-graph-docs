@@ -4,6 +4,7 @@ description: "A term. This represents a designated portion of the academic year.
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationTerm resource type

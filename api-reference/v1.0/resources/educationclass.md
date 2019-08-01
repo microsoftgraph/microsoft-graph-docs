@@ -4,6 +4,7 @@ description: "Represents a class within a school. The **educationClass** resourc
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationClass resource type

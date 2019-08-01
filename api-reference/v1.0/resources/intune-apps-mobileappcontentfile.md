@@ -4,6 +4,7 @@ description: "Contains properties for a single installer file that is associated
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppContentFile resource type

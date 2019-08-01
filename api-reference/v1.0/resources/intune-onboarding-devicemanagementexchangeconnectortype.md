@@ -4,6 +4,7 @@ description: "The type of Exchange Connector."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeConnectorType enum type

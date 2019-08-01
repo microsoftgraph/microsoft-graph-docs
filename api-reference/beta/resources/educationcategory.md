@@ -4,6 +4,7 @@ description: "A category that can be applied to assignments."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationCategory resource type

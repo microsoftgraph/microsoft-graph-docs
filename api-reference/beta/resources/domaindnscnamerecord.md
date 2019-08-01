@@ -4,6 +4,7 @@ description: "Represents a CNAME record added to the DNS zone file of a particul
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainDnsCnameRecord resource type

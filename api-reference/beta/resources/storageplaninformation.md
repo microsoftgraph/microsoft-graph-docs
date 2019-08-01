@@ -1,9 +1,11 @@
 ---
 author: psampath
-ms.author: psampath
+description: "The storagePlanInformation resource provides information about the drive's storage quota plans."
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # storagePlanInformation resource type
 

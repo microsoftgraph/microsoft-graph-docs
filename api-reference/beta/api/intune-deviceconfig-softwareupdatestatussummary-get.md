@@ -4,6 +4,7 @@ description: "Read properties and relationships of the softwareUpdateStatusSumma
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get softwareUpdateStatusSummary

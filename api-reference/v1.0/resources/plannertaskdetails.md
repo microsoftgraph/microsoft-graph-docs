@@ -4,6 +4,7 @@ description: "The **plannerTaskDetails** resource represents the additional info
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerTaskDetails resource type

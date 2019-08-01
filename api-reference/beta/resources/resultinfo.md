@@ -3,6 +3,8 @@ title: "resultInfo resource type"
 description: "The resultInfo type."
 author: "VinodRavichandran"
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 
 # resultInfo resource type

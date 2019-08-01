@@ -4,6 +4,7 @@ description: "BitLockerEncryptionMethod types"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # bitLockerEncryptionMethod enum type

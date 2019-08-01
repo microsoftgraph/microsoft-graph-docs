@@ -4,6 +4,7 @@ description: "A termsAndConditions entity represents the metadata and contents o
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditions resource type

@@ -4,6 +4,7 @@ description: "Possible values of Defender Attack Surface Reduction Rules"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderAttackSurfaceType enum type

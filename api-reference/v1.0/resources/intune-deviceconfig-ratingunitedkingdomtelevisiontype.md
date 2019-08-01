@@ -4,6 +4,7 @@ description: "TV content rating labels in United Kingdom"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingUnitedKingdomTelevisionType enum type

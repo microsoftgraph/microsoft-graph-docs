@@ -4,6 +4,7 @@ description: "A school. The **educationSchool** resource currently corresponds t
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSchool resource type

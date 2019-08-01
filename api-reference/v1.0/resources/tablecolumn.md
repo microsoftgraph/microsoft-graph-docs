@@ -4,6 +4,7 @@ description: "Represents a column in a table."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # TableColumn resource type

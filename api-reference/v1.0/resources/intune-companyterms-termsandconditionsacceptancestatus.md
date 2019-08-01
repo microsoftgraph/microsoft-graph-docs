@@ -4,6 +4,7 @@ description: "A termsAndConditionsAcceptanceStatus entity represents the accepta
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditionsAcceptanceStatus resource type

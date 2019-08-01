@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of workbookPivotTable ob
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Get workbookPivotTable
@@ -60,6 +61,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivo
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookpivottable-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-workbookpivottable-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Upload small files
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
+doc_type: apiPageType
 ---
 # Upload or replace the contents of a DriveItem
 

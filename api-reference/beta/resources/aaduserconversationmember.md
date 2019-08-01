@@ -4,6 +4,7 @@ description: "Represents a user in a conversation."
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # aadUserConversationMember resource type

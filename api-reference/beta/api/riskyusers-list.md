@@ -3,6 +3,7 @@ title: "List riskyUsers"
 description: "Retrieve the properties and relationships of a collection of **riskyUser** objects."
 localization_priority: Normal
 author: "cloudhandler"
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 # List riskyUsers
@@ -67,6 +68,10 @@ GET https://graph.microsoft.com/beta/riskyUsers
 [!INCLUDE [sample-code](../includes/snippets/objc/list-riskyusers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-riskyusers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -122,6 +127,10 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-filter-riskyusers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskyusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

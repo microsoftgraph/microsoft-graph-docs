@@ -5,7 +5,9 @@ title: listItem resource
 description: This resource represents an item in a sharepoint list.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
+
 # listItem resource
 
 This resource represents an item in a SharePoint **[list][]**.

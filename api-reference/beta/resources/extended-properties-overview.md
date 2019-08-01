@@ -4,6 +4,7 @@ description: "Extended properties allow storing custom data and specifically ser
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: conceptualPageType
 ---
 
 # Outlook extended properties overview

@@ -4,6 +4,7 @@ description: "The tokenMeetingInfo type."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # tokenMeetingInfo resource type

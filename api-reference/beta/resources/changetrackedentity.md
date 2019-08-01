@@ -2,6 +2,9 @@
 title: "changeTrackedEntity resource type"
 description: ""
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # changeTrackedEntity resource type

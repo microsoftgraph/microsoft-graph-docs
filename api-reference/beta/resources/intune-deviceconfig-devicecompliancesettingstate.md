@@ -4,6 +4,7 @@ description: "Device compliance setting State for a given device."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceComplianceSettingState resource type

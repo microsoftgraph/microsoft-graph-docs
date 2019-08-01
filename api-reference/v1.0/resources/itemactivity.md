@@ -5,6 +5,7 @@ title: itemActivity resource type
 description: The itemActivity object provides information about an activity that took place on an item.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # itemActivity resource type
 

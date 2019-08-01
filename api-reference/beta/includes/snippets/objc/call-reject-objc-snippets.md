@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-MSGraphRejectReason *reason = [MSGraphRejectReason None];
+MSGraphRejectReason *reason = [MSGraphRejectReason none];
 payloadDictionary[@"reason"] = reason;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

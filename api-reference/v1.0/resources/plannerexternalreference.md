@@ -4,6 +4,7 @@ description: "The **plannerExternalReference** resource represents the metadata 
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerExternalReference resource type

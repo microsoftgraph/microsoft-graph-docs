@@ -4,6 +4,7 @@ description: "You can use Azure AD access reviews to configure one-time or recur
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: conceptualPageType
 ---
 
 # Azure AD access reviews

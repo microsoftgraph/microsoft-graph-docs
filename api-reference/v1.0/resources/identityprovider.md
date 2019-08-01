@@ -4,6 +4,7 @@ description: "Represents an Azure Active Directory (Azure AD) identity provider.
 localization_priority: Priority
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 # identityProvider resource type
 
