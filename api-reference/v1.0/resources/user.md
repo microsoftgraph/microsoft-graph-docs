@@ -64,72 +64,88 @@ This resource supports:
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
+## Query options
+
+| Query option    |Description| Supported |
+|:---------------|:--------|:----------|
+| Top    | Select top X number of items from the response | N |
+| Skip   | Skip top X number of items from the response   | N |
+| Filter | Filter payload response                        | Y |
+| Count  | Count total number of items that could be returned  | N |
+| Select | Select specific properties from the payload   | N |
+| Expand | Expand specific properties of the given type    | N |
+| OrderBy| Order the results in ascending or descending order   | N |
+| Batch  | Send batch request to perform operations on a resource   | N |
+| Change tracking  | Track changes on a resource   | N |
+
 ## Properties
 
-| Property       | Type    |Description|
+| Property info       | Filter operations    | Filter Queries<br/> (String)|  Filter Queries<br/> (Date)| Filter Queries<br/> (Cast)| Countable | Navigable | Selectable | Sortable |
 |:---------------|:--------|:----------|
-|aboutMe|String|A freeform text entry field for the user to describe themselves.|
-|accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |
-|ageGroup|String|Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. |
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Not nullable.            |
-|assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
-|birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|
-|city|String|The city in which the user is located. Supports $filter.|
-|companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. |
-|consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
-|country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
-|createdDateTime | DateTimeOffset |The created date of the user object. |
-|department|String|The name for the department in which the user works. Supports $filter.|
-|displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
-|faxNumber|String|The fax number of the user.|
-|givenName|String|The given name (first name) of the user. Supports $filter.|
-|hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
-|imAddresses|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
-|interests|String collection|A list for the user to describe their interests.|
-|isResourceAccount|Boolean| **true** if the user is a resource account; otherwise, **false**. Null value should be considered **false**.|
-|jobTitle|String|The user’s job title. Supports $filter.|
-|legalAgeGroupClassification|String| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|
-|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
-|mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
-|mailboxSettings|[mailboxSettings](mailboxsettings.md)|Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|
-|mailNickname|String|The mail alias for the user. This property must be specified when a user is created. Supports $filter.|
-|mobilePhone|String|The primary cellular telephone number for the user.|
-|mySite|String|The URL for the user's personal site.|
-|officeLocation|String|The office location in the user's place of business.|
-|onPremisesDistinguishedName|String| Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|onPremisesDomainName|String| Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |
-|onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. Supports $filter.                            |
-|onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
-|onPremisesSamAccountName|String| Contains the on-premises `samAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
-|onPremisesSyncEnabled|Boolean| **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |
-|onPremisesUserPrincipalName|String| Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|otherMails|String| A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|
-|passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
-|pastProjects|String collection|A list for the user to enumerate their past projects.|
-|postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
-|preferredDataLocation|String|The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
-|preferredName|String|The preferred name for the user.|
-|provisionedPlans|[provisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
-|proxyAddresses|String collection|For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |
-|responsibilities|String collection|A list for the user to enumerate their responsibilities.|
-|schools|String collection|A list for the user to enumerate the schools they have attended.|
-|showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
-|skills|String collection|A list for the user to enumerate their skills.|
-|signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
-|state|String|The state or province in the user's address. Supports $filter.|
-|streetAddress|String|The street address of the user's place of business.|
-|surname|String|The user's surname (family name or last name). Supports $filter.|
-|usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
-|userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
+`aboutMe`<br/>**type: ** String <br/>**description: **A freeform text entry field for the user to describe themselves.|Y|Y|Y|Y|Y|Y|Y|
+`accountEnabled`<br/>**type: ** Boolean <br/>**description: ** **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |Y|Y|Y|Y|Y|Y|Y|
+`ageGroup`<br/>**type: ** String <br/>**description: **Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. |Y|Y|Y|Y|Y|Y|Y|
+`assignedLicenses`<br/>**type: ** [assignedLicense](assignedlicense.md) collection <br/>**description: **The licenses that are assigned to the user. Not nullable.            |Y|Y|Y|Y|Y|Y|Y|
+`assignedPlans`<br/>**type: ** [assignedPlan](assignedplan.md) collection <br/>**description: **The plans that are assigned to the user. Read-only. Not nullable. |Y|Y|Y|Y|Y|Y|Y|
+`birthday`<br/>**type: ** DateTimeOffset <br/>**description: **The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|Y|Y|Y|Y|Y|Y|Y|
+`businessPhones`<br/>**type: ** String collection <br/>**description: **The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|Y|Y|Y|Y|Y|Y|Y|
+`city`<br/>**type: ** String <br/>**description: **The city in which the user is located. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`companyName <br/>**type: **  String  <br/>|Y|Y|Y|Y|Y|Y|Y|
+**description: ** The company name which the user is associated. This property can be useful for describing the company that an external user comes from. Y|Y|Y|Y|Y|Y|Y|
+`consentProvidedForMinor`<br/>**type: ** String <br/>**description: **Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|Y|Y|Y|Y|Y|Y|Y|
+`country`<br/>**type: ** String <br/>**description: **The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`createdDateTime <br/>**type: **  DateTimeOffset  <br/>|Y|Y|Y|Y|Y|Y|Y|
+**description: **The created date of the user object. Y|Y|Y|Y|Y|Y|Y|
+`department`<br/>**type: ** String <br/>**description: **The name for the department in which the user works. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`displayName`<br/>**type: ** String <br/>**description: **The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|Y|Y|Y|Y|Y|Y|Y|
+`employeeId`<br/>**type: ** String <br/>**description: **The employee identifier assigned to the user by the organization. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`faxNumber`<br/>**type: ** String <br/>**description: **The fax number of the user.|Y|Y|Y|Y|Y|Y|Y|
+`givenName`<br/>**type: ** String <br/>**description: **The given name (first name) of the user. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`hireDate`<br/>**type: ** DateTimeOffset <br/>**description: **The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|Y|Y|Y|Y|Y|Y|Y|
+`id`<br/>**type: ** String <br/>**description: **The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|Y|Y|Y|Y|Y|Y|Y|
+`imAddresses`<br/>**type: ** String collection <br/>**description: **The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|Y|Y|Y|Y|Y|Y|Y|
+`interests`<br/>**type: ** String collection <br/>**description: **A list for the user to describe their interests.|Y|Y|Y|Y|Y|Y|Y|
+`isResourceAccount`<br/>**type: ** Boolean <br/>**description: ** **true** if the user is a resource account; otherwise, **false**. Null value should be considered **false**.|Y|Y|Y|Y|Y|Y|Y|
+`jobTitle`<br/>**type: ** String <br/>**description: **The user’s job title. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`legalAgeGroupClassification`<br/>**type: ** String <br/>**description: ** Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|Y|Y|Y|Y|Y|Y|Y|
+`licenseAssignmentStates`<br/>**type: ** [licenseAssignmentState](licenseassignmentstate.md) collection <br/>**description: **State of license assignments for this user. Read-only.|Y|Y|Y|Y|Y|Y|Y|
+`mail`<br/>**type: ** String <br/>**description: **The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`mailboxSettings`<br/>**type: ** [mailboxSettings](mailboxsettings.md) <br/>**description: **Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale and time zone.|Y|Y|Y|Y|Y|Y|Y|
+`mailNickname`<br/>**type: ** String <br/>**description: **The mail alias for the user. This property must be specified when a user is created. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`mobilePhone`<br/>**type: ** String <br/>**description: **The primary cellular telephone number for the user.|Y|Y|Y|Y|Y|Y|Y|
+`mySite`<br/>**type: ** String <br/>**description: **The URL for the user's personal site.|Y|Y|Y|Y|Y|Y|Y|
+`officeLocation`<br/>**type: ** String <br/>**description: **The office location in the user's place of business.|Y|Y|Y|Y|Y|Y|Y|
+`onPremisesDistinguishedName`<br/>**type: ** String <br/>**description: ** Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesDomainName`<br/>**type: ** String <br/>**description: ** Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesExtensionAttributes`<br/>**type: ** [onPremisesExtensionAttributes](onpremisesextensionattributes.md) <br/>**description: **Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesImmutableId`<br/>**type: ** String <br/>**description: **This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. Supports $filter.                            |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesLastSyncDateTime`<br/>**type: ** DateTimeOffset <br/>**description: **Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|Y|Y|Y|Y|Y|Y|Y|
+`onPremisesProvisioningErrors`<br/>**type: ** [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection <br/>**description: ** Errors when using Microsoft synchronization product during provisioning. |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesSamAccountName`<br/>**type: ** String <br/>**description: ** Contains the on-premises `samAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesSecurityIdentifier`<br/>**type: ** String <br/>**description: **Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|Y|Y|Y|Y|Y|Y|Y|
+`onPremisesSyncEnabled`<br/>**type: ** Boolean <br/>**description: ** **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only |Y|Y|Y|Y|Y|Y|Y|
+`onPremisesUserPrincipalName`<br/>**type: ** String <br/>**description: ** Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |Y|Y|Y|Y|Y|Y|Y|
+`otherMails`<br/>**type: ** String <br/>**description: ** A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`passwordPolicies`<br/>**type: ** String <br/>**description: **Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|Y|Y|Y|Y|Y|Y|Y|
+`passwordProfile`<br/>**type: ** [passwordProfile](passwordprofile.md) <br/>**description: **Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|Y|Y|Y|Y|Y|Y|Y|
+`pastProjects`<br/>**type: ** String collection <br/>**description: **A list for the user to enumerate their past projects.|Y|Y|Y|Y|Y|Y|Y|
+`postalCode`<br/>**type: ** String <br/>**description: **The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|Y|Y|Y|Y|Y|Y|Y|
+`preferredDataLocation`<br/>**type: ** String <br/>**description: **The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|Y|Y|Y|Y|Y|Y|Y|
+`preferredLanguage`<br/>**type: ** String <br/>**description: **The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|Y|Y|Y|Y|Y|Y|Y|
+`preferredName`<br/>**type: ** String <br/>**description: **The preferred name for the user.|Y|Y|Y|Y|Y|Y|Y|
+`provisionedPlans`<br/>**type: ** [provisionedPlan](provisionedplan.md) collection <br/>**description: **The plans that are provisioned for the user. Read-only. Not nullable. |Y|Y|Y|Y|Y|Y|Y|
+`proxyAddresses`<br/>**type: ** String collection <br/>**description: **For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.          |Y|Y|Y|Y|Y|Y|Y|
+`responsibilities`<br/>**type: ** String collection <br/>**description: **A list for the user to enumerate their responsibilities.|Y|Y|Y|Y|Y|Y|Y|
+`schools`<br/>**type: ** String collection <br/>**description: **A list for the user to enumerate the schools they have attended.|Y|Y|Y|Y|Y|Y|Y|
+`showInAddressList`<br/>**type: ** Boolean <br/>**description: ****true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|Y|Y|Y|Y|Y|Y|Y|
+`skills`<br/>**type: ** String collection <br/>**description: **A list for the user to enumerate their skills.|Y|Y|Y|Y|Y|Y|Y|
+`signInSessionsValidFromDateTime`<br/>**type: ** DateTimeOffset <br/>**description: ** Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|Y|Y|Y|Y|Y|Y|Y|
+`state`<br/>**type: ** String <br/>**description: **The state or province in the user's address. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`streetAddress`<br/>**type: ** String <br/>**description: **The street address of the user's place of business.|Y|Y|Y|Y|Y|Y|Y|
+`surname`<br/>**type: ** String <br/>**description: **The user's surname (family name or last name). Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`usageLocation`<br/>**type: ** String <br/>**description: **A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|
+`userPrincipalName`<br/>**type: ** String <br/>**description: **The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby|Y|Y|Y|Y|Y|Y|Y|
+`userType`<br/>**type: ** String <br/>**description: **A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.       |Y|Y|Y|Y|Y|Y|Y|
 
 ### Legal age group property definitions
 
