@@ -22,6 +22,6 @@ const user = {
 };
 
 let res = await client.api('/users')
-	.post({user : user});
+	.post(user);
 
 ```
