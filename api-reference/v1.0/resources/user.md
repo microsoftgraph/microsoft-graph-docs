@@ -82,7 +82,7 @@ This resource supports:
 
 | Property info       | Filter operations    | Filter Queries (String)|  Filter Queries (Date)| Filter Queries (Cast)| Countable | Navigable | Selectable | Sortable |
 |:---------------|:--------|:----------|--|--|--|--|--|--|
-`aboutMe`<br/>**type:** String <br/>**description: A freeform text entry field for the user to describe themselves.|Y|Y|Y|Y|Y|Y|Y|Y|
+`aboutMe`<br/>**type:** String <br/>**description:** A freeform text entry field for the user to describe themselves.|Y|Y|Y|Y|Y|Y|Y|Y|
 `accountEnabled`<br/>**type:** Boolean <br/>**description:**  **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |Y|Y|Y|Y|Y|Y|Y|Y|
 `ageGroup`<br/>**type:** String <br/>**description:** Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. |Y|Y|Y|Y|Y|Y|Y|Y|
 `assignedLicenses`<br/>**type:** [assignedLicense](assignedlicense.md) collection <br/>**description:** The licenses that are assigned to the user. Not nullable.            |Y|Y|Y|Y|Y|Y|Y|Y|
@@ -90,12 +90,10 @@ This resource supports:
 `birthday`<br/>**type:** DateTimeOffset <br/>**description:** The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|Y|Y|Y|Y|Y|Y|Y|Y|
 `businessPhones`<br/>**type:** String collection <br/>**description:** The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.|Y|Y|Y|Y|Y|Y|Y|Y|
 `city`<br/>**type:** String <br/>**description:** The city in which the user is located. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|Y|
-`companyName <br/>**type:**  String  <br/>|Y|Y|Y|Y|Y|Y|Y|Y|
-**description:**  The company name which the user is associated. This property can be useful for describing the company that an external user comes from. Y|Y|Y|Y|Y|Y|Y|Y|
+`companyName`<br/>**type:** String<br/>**description:**  The company name which the user is associated. This property can be useful for describing the company that an external user comes from. Y|Y|Y|Y|Y|Y|Y|Y|
 `consentProvidedForMinor`<br/>**type:** String <br/>**description:** Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|Y|Y|Y|Y|Y|Y|Y|Y|
 `country`<br/>**type:** String <br/>**description:** The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|Y|
-`createdDateTime <br/>**type:**  DateTimeOffset  <br/>|Y|Y|Y|Y|Y|Y|Y|Y|
-**description:** The created date of the user object. Y|Y|Y|Y|Y|Y|Y|Y|
+`createdDateTime`<br/>**type:**  DateTimeOffset <br/>**description:** The created date of the user object. Y|Y|Y|Y|Y|Y|Y|Y|
 `department`<br/>**type:** String <br/>**description:** The name for the department in which the user works. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|Y|
 `displayName`<br/>**type:** String <br/>**description:** The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|Y|Y|Y|Y|Y|Y|Y|Y|
 `employeeId`<br/>**type:** String <br/>**description:** The employee identifier assigned to the user by the organization. Supports $filter.|Y|Y|Y|Y|Y|Y|Y|Y|
