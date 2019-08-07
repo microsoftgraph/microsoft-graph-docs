@@ -81,7 +81,7 @@ This resource supports:
 ## Properties
 
 | Property info       | Filter operations    | Filter Queries (String)|  Filter Queries (Date)| Filter Queries (Cast)| Countable | Navigable | Selectable | Sortable |
-|:---------------|:--------|:----------|:--:|:--:|:--:|:--:|:--:|:--:|
+|:---------------|:--------:|:----------:|:--:|:--:|:--:|:--:|:--:|:--:|
 |<svg width="350" height="5"><rect width="350" height="2" style="fill:rgb(0,0,0);stroke-width:1;stroke:rgb(250,250,250)" /> </svg>| | | | | | | | |
 |`aboutMe`<br/>**type:** String <br/>**description:** A freeform text entry field for the user to describe themselves.|Y|Y|Y|Y|Y|Y|Y|Y|
 |`accountEnabled`<br/>**type:** Boolean <br/>**description:**  **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports $filter.    |Y|Y|Y|Y|Y|Y|Y|Y|
