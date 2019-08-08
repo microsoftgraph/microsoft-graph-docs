@@ -111,7 +111,8 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
   "displayName": "Tailspin Toys Homepage",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
   "configuration": {
-    "websiteUrl": "https://www.tailspintoys.com",
+    "contentUrl": "https://www.tailspintoys.com",
+    "websiteUrl": "https://www.tailspintoys.com"
   }
 }
 ```
