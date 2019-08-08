@@ -132,14 +132,14 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('a32e3c12-fc94-4731-9761-b005e2a4b494')/channels('19%3Af5b35d323ddb41cfb9258028a24dca25%40thread.skype')/tabs/$entity",
-    "id": "8565642c-c989-4e1b-a449-d124de7167f3",
-    "displayName": "Microsoft",
-    "webUrl": "https://teams.microsoft.com/l/channel/19%3af5b35d323ddb41cfb9258028a24dca25%40thread.skype/tab%3a%3a649cae18-7294-401e-bf97-984e42357943?label=Microsoft&groupId=a32e3c12-fc94-4731-9761-b005e2a4b494&tenantId=29594fb0-53f2-490c-a1be-8b2cca824805",
+    "id": "8638831a-3b2f-45b5-9264-02a5b63557f5",
+    "displayName": "Tailspin Toys Homepage",
+    "webUrl": "https://teams.microsoft.com/l/channel/19%3af5b35d323ddb41cfb9258028a24dca25%40thread.skype/tab%3a%3af53eb510-5cc9-48bb-88a2-3ea45a02b59b?webUrl=https%3a%2f%2fwww.tailspintoys.com&label=Tailspin+Toys+Homepage&groupId=a32e3c12-fc94-4731-9761-b005e2a4b494&tenantId=29594fb0-53f2-490c-a1be-8b2cca824805",
     "configuration": {
         "entityId": null,
-        "contentUrl": "https://www.microsoft.com",
+        "contentUrl": "https://www.tailspintoys.com",
         "removeUrl": null,
-        "websiteUrl": null
+        "websiteUrl": "https://www.tailspintoys.com"
     }
 }
 ```
