@@ -1,0 +1,1 @@
+![no](https://docs.microsoft.com/en-us/sql/includes/media/no.png)

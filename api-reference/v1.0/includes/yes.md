@@ -1,0 +1,1 @@
+![yes](https://docs.microsoft.com/en-us/sql/includes/media/yes.png)
