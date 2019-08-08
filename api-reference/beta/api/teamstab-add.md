@@ -111,7 +111,8 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
   "displayName": "Tailspin Toys Homepage",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
   "configuration": {
-    "websiteUrl": "https://www.tailspintoys.com",
+    "contentUrl": "https://www.tailspintoys.com",
+    "websiteUrl": "https://www.tailspintoys.com"
   }
 }
 ```
@@ -131,14 +132,18 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('a32e3c12-fc94-4731-9761-b005e2a4b494')/channels('19%3Af5b35d323ddb41cfb9258028a24dca25%40thread.skype')/tabs/$entity",
-    "id": "8565642c-c989-4e1b-a449-d124de7167f3",
-    "displayName": "Microsoft",
-    "webUrl": "https://teams.microsoft.com/l/channel/19%3af5b35d323ddb41cfb9258028a24dca25%40thread.skype/tab%3a%3a649cae18-7294-401e-bf97-984e42357943?label=Microsoft&groupId=a32e3c12-fc94-4731-9761-b005e2a4b494&tenantId=29594fb0-53f2-490c-a1be-8b2cca824805",
+    "id": "64137648-b09d-44a5-a242-466521c6009d",
+    "name": "Tailspin Toys Homepage",
+    "displayName": "Tailspin Toys Homepage",
+    "teamsAppId": "com.microsoft.teamspace.tab.web",
+    "sortOrderIndex": "10100",
+    "messageId": null,
+    "webUrl": "https://teams.microsoft.com/l/channel/19%3af5b35d323ddb41cfb9258028a24dca25%40thread.skype/tab%3a%3ae9d67bbf-c609-40d1-93dc-98cdfb8c3f89?webUrl=https%3a%2f%2fwww.tailspintoys.com&label=Tailspin+Toys+Homepage&groupId=a32e3c12-fc94-4731-9761-b005e2a4b494&tenantId=29594fb0-53f2-490c-a1be-8b2cca824805",
     "configuration": {
         "entityId": null,
-        "contentUrl": "https://www.microsoft.com",
+        "contentUrl": "https://www.tailspintoys.com",
         "removeUrl": null,
-        "websiteUrl": null
+        "websiteUrl": "https://www.tailspintoys.com"
     }
 }
 ```
