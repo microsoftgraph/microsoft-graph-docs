@@ -1,1 +1,1 @@
-[!INCLUDE [yes](../includes/yes.md)]**FOP**,[!INCLUDE [yes](../includes/no.md)]**FQS**,[!INCLUDE [yes](../includes/no.md)]**FQD**,[!INCLUDE [yes](../includes/no.md)]**FQC**
+[!INCLUDE [yes](../includes/yes.md)]**FOP**,[!INCLUDE [yes](../includes/no.md)]**FQS**, [!INCLUDE [yes](../includes/no.md)]**FQD**, [!INCLUDE [yes](../includes/no.md)]**FQC**
