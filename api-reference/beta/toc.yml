@@ -441,11 +441,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -9165,6 +9165,7 @@
           - name: List shared
             href: api/insights-list-shared.md
       - name: Analytics
+        href: resources/useranalytics.md
         items:
         - name: Settings
           items:
@@ -9176,15 +9177,15 @@
           items:
           - name: Activity statistics
             href: resources/activitystatistics.md
-          - name: Call statistics
+          - name: Call statistics type
             href: resources/callactivitystatistics.md
-          - name: Chat statistics
+          - name: Chat statistics type
             href: resources/chatactivitystatistics.md
-          - name: Email statistics
+          - name: Email statistics type
             href: resources/emailactivitystatistics.md
-          - name: Focus statistics
+          - name: Focus statistics type
             href: resources/focusactivitystatistics.md          
-          - name: Meeting statistics
+          - name: Meeting statistics type
             href: resources/meetingactivitystatistics.md
           - name: List activity statistics
             href: api/activitystatistics-list.md 
