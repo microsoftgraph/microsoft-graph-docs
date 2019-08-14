@@ -11,23 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the current settings for a user as applicable for the analytics API. For the analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+The current settings for a user to use the analytics API. 
 
-## Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the following property settings for a user.|
+For the analytics API to return results for users, they must have a cloud-hosted mailbox that’s enabled for Microsoft Graph, have a valid MyAnalytics license, and be opted in to using MyAnalytics.
 
 ## Properties
 

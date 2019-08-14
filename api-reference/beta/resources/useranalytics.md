@@ -13,11 +13,17 @@ doc_type: "resourcePageType"
 
 The user's activity statistics and related settings.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the user's settings for using the analytics API.|
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|settings|[settings](settings.md)|Get activity statistics and related settings for a user.|
+|settings|[settings](settings.md)|The current settings for a user to use the analytics API.|
 
 ## Relationships
 
