@@ -61,12 +61,6 @@ Debut of places API to provide rich details for locations in apps.
 |:---|:---|:---|
 |Addition|beta|Added the **expirationDatetime** and **password** properties to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action. |
 
-### Microsoft Teams APIs
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
-
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version** | **Description**                  |
