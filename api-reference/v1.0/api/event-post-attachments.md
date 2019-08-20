@@ -145,6 +145,8 @@ Content-type: application/json
 
 Here is an example which attaches an event with another event as an item attachment.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_item_attachment_from_event"
@@ -176,6 +178,12 @@ Content-length: 600
     }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-item-attachment-from-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ##### Response
