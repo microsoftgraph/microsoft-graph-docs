@@ -62,6 +62,33 @@ Content-Type: application/json
   ]
 }
 ```
+# [PowerShell](#tab/powershell)
+    $token = "eyJ0...trimmed-for-brevity..."
+    $graphAPI = "https://graph.microsoft.com/beta"
+    $apiMethod ="/riskyUsers/dismiss"
+
+    $headerParams = @{
+        "Authorization"="Bearer $token"; 
+        "Content-Type" = "application/json" 
+    }
+    
+    $userIds_Json = (@{
+        userIds = @( 
+            "04487ee0-f4f6-4e7f-8999-facc5a30e232",
+            "13387ee0-f4f6-4e7f-8999-facc5120e345"
+        )
+    }) | ConvertTo-Json
+    
+    $response = try {
+        Invoke-WebRequest -UseBasicParsing `
+            -Headers $headerParams `
+            -Body $userIds_Json `
+            -Method Post -Uri ($graphAPI + $apiMethod) `
+            -ErrorAction Stop
+    } catch { 
+        $_.Exception.Response
+    }
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
