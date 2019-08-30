@@ -54,6 +54,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
 Content-Type: application/json
+Authorization: Bearer eyJ0eXA...trimmed-for-brevity...
 
 {
   "userIds": [
