@@ -1,15 +1,24 @@
 ---
 title: "Create user"
-description: "Use this API to create a new user."
+description: "Create a new user."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create user
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new user.
+Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+
+>[!NOTE]
+>To create external users, use the [invitation API](invitation-post.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -30,28 +39,40 @@ POST /users
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table shows the properties that are required when you create a user.
+The following table shows the properties that are required when you create a user.  However, if creating a user with any **identities**, these requirements are relaxed. For a [B2C local account identity](../resources/objectidentity.md), only a password profile is required; for a social identity, none of these properties is required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
-|accountEnabled |boolean |true if the account is enabled; otherwise, false.|
+|accountEnabled |Boolean |true if the account is enabled; otherwise, false.|
 |displayName |string |The name to display in the address book for the user.|
 |onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.|
 |mailNickname |string |The mail alias for the user.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
 |userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
-Since the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
+Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
+
+>[!NOTE]
+>Federated users created using this API will be forced to sign in every 12 hours by default. For more information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+
+>[!NOTE]
+>Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+
+### Example 1: Create a user
+
+#### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {	
   "blockType": "request",	
   "name": "create_user_from_users_2"	
@@ -65,23 +86,42 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+#### Response
+Here is an example of the response. 
+
+[!NOTE]
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -100,6 +140,74 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Create a user with social and local account identities
+
+Create a new user, with a local account identity with a sign-in name, and with a social identity. This API is typically used for migration scenarios.
+
+#### Request
+
+<!-- {	
+  "blockType": "request",	
+  "name": "create_user_from_users_identities"	
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": "password-value"
+  }
+  "identities": [
+    {
+      "signInType":"signInName",
+      "issuer":"contosp.onmicrosoft.com",
+      "issuerAssignedId":"johnsmith"
+    },
+    {
+      "signInType":"federated",
+      "issuer":"facebook.com",
+      "issuerAssignedId":"5eecb0cd"
+    }
+  ]
+}
+```
+
+#### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType":"signInName",
+      "issuer":"contosp.onmicrosoft.com",
+      "issuerAssignedId":"johnsmith"
+    },
+    {
+      "signInType":"federated",
+      "issuer":"facebook.com",
+      "issuerAssignedId":"5eecb0cd"
+    }
+  ]
+}
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
@@ -108,10 +216,14 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create User",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
