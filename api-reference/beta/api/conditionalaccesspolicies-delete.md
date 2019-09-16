@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [conditionalAccessPolicies](../resources/ConditionalAccessPolicies.md) object.
+Delete a [conditionalAccessPolicy](../resources/ConditionalAccessPolicy.md) object.
 
 ## Permissions
 
