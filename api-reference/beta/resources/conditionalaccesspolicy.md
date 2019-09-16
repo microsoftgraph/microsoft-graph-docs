@@ -1,55 +1,80 @@
 ---
-title: "conditionalAccessPolicy resource type"
-description: "Indicates the attributes related a conditional access policy or policies that's triggered by the corresponding sign-in activity"
+title: "conditionalAccessPolicies resource type"
+description: "Represents Azure Active Directory conditional access policies. Conditional access policies are custom rules that define an access scenario."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
 ---
 
-# conditionalAccessPolicy resource type
-Indicates the attributes related a conditional access policy or policies that's triggered by the corresponding sign-in activity
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+# conditionalAccessPolicies resource type
 
+Represents Azure Active Directory conditional access policies. Conditional access policies are custom rules that define an access scenario.
+
+## Methods
+
+| Method | Return Type | Description |
+|:------ |:----------- |:----------- |
+| [List conditionalAccessPolicies](../api/conditionalaccesspolicies-list.md) | conditionalAccessPolicies collection | Get all of the conditionalAccessPolicies objects in the organization. |
+| [Get conditionalAccessPolicies](../api/conditionalaccesspolicies-get.md) | conditionalAccessPolicies | Read the properties and relationships of a conditionalAccessPolicies object. |
+| [Create conditionalAccessPolicies](../api/conditionalaccesspolicies-post-conditionalaccesspolicies.md) | conditionalAccessPolicies | Create a new conditionalAccessPolicies object. |
+| [Update conditionalAccessPolicies](../api/conditionalaccesspolicies-update.md)| None | Update a conditionalAccessPolicies object. |
+| [Delete conditionalAccessPolicies](../api/conditionalaccesspolicies-delete.md)| None | Delete a conditionalAccessPolicies object. |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|String|Refers to the Name of the conditional access policy (example: “Require MFA for Salesforce”).|
-|enforcedGrantControls|String collection|Refers to the grant controls enforced by the conditional access policy (example: “Require multi-factor authentication”).|
-|enforcedSessionControls|String collection|Refers to the session controls enforced by the conditional access policy (example: “Require app enforced controls”).|
-|id|String|Unique GUID of the conditional access policy|
-|result|String| Indicates the result of the CA policy that was triggered.Possible values are:<br/> `success` <br/> `failure` <br/> `notApplied` - Policy isn't applied because policy conditions were not met. <br/> `notEnabled` - This is due to the policy in disabled state.|
+
+| Property | Type | Description |
+|:-------- |:---- |:----------- |
+| `id` | String | Specifies the identifier of a conditionalAccessPolicies object. Read-only. |
+| `displayName` | String | Specifies a display name for the conditionalAccessPolicies object. |
+| `createdDateTime` | DateTimeOffset | Specifies the time that the conditionalAccessPolicies object was created. Read-only. |
+| `modifiedDateTime` | DateTimeOffset | Specifies the last modification date and time of the conditionalAccessPolicies object. Read-only. |
+| `state` | conditionalAccessPolicyState | Specifies the state of the conditionalAccessPolicies object. Possible values: `Enabled`, `Disabled`, and `EnabledForReportingButNotEnforced`. |
+| `sessionControls` | [conditionalAccessSessionControls](conditionalaccesssessioncontrols.md) | Specifies the session controls that are enforced after sign-in. |
+| `conditions` | [conditionalAccessConditions](conditionalaccessconditions.md) | Specifies the conditions that govern when the policy applies. |
+| `grantControls` | [conditionalAccessGrantControls](conditionalaccessgrantcontrols.md) | Specifies the grant controls that must be fulfilled to pass the policy. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
-
+    "displayName",
+    "state",
+    "sessionControls",
+    "conditions",
+    "grantControls"
   ],
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+  "@odata.type": "microsoft.graph.conditionalaccesspolicies"
 }-->
 
 ```json
 {
-  "displayName": "String",
-  "enforcedGrantControls": ["String"],
-  "enforcedSessionControls": ["String"],
-  "id": "String",
-  "result": "String"
+    "id": "String",
+    "displayName": "String",
+    "createdDateTime": "String (timestamp)",
+    "modifiedDateTime": "String (timestamp)",
+    "state": "String",
+    "sessionControls": { "@odata.type": "microsoft.graph.conditionalaccesssessioncontrols" },
+    "conditions": { "@odata.type": "microsoft.graph.conditionalaccessconditions" },
+    "grantControls": { "@odata.type": "conditionalaccessgrantcontrols" }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "conditionalAccessPolicy resource",
+  "description": "conditionalaccesspolicies resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
