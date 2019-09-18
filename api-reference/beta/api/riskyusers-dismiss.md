@@ -14,7 +14,7 @@ doc_type: apiPageType
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
-Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. This action sets the targeted user's risk level to none.
+Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. This action sets the targeted user's risk level to none. You can dismiss up to a maximum of 60 riskyUser objects per request.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
