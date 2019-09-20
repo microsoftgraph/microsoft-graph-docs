@@ -7980,14 +7980,14 @@
         - name: Delete
           href: api/certificatebasedauthconfiguration-delete.md 
       - name: Conditional Access Policies
-        href: resources/conditionalaccesspolicies.md
+        href: resources/conditionalaccesspolicy.md
         items:
         - name: List conditionalAccessPolicies
           href: api/conditionalaccesspolicies-list.md
         - name: Get conditionalAccessPolicies
           href: api/conditionalaccesspolicies-get.md
         - name: Create conditionalAccessPolicies
-          href: api/conditionalaccesspolicies-post-conditionalaccesspolicies.md
+          href: api/conditionalaccesspolicies-create.md
         - name: Delete conditionalAccessPolicies
           href: api/conditionalaccesspolicies-delete.md
         - name: Update conditionalAccessPolicies

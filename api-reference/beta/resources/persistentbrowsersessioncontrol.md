@@ -33,7 +33,8 @@ The following is the JSON representation of the resource.
 
 ```json
 {
-  "mode": "String"
+  "isEnabled": bool,
+  "mode": { "@odata.type": "microsoft.graph.persistentBrowserSessionMode" }
 }
 ```
 

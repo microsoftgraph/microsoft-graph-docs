@@ -1,17 +1,17 @@
 ---
-title: "Update conditionalAccessPolicies"
-description: "Update properties in a conditionalAccessPolicies object."
+title: "Update a conditionalAccessPolicy"
+description: "Update properties in a conditionalAccessPolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update conditionalAccessPolicies
+# Update a conditionalAccessPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties in a [conditionalAccessPolicies](../resources/ConditionalAccessPolicies.md) object.
+Update properties in a [conditionalAccessPolicy](../resources/ConditionalAccessPolicy.md) object.
 
 ## Permissions
 
@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:-------------- |:-------------------------------------- |
 | Delegated (work or school account) | Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /conditionalaccesspolicies/{id}
+PATCH /conditionalaccess/policies/{id}
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the parameters that need to be u
 |:-------- |:---- |:----------- |
 | `includeApplications` | String collection | Application IDs in scope of policy unless explicitly excluded. |
 | `excludeApplications` | String collection | Application IDs excluded from scope of policy. |
-| `includeAuthenticationContext` | String collection | ACRS URIs in scope of policy unless explicitly exclude, or ALL. |
+| `includeUserActions` | String collection | User actions in scope of the policy, e.g. 'urn:user:registersecurityinfo'. |
 | `includeUsers` | String collection | User IDs in scope of policy unless explicitly excluded, or `ALL` or `GUEST`. |
 | `excludeUsers` | String collection | User IDs excluded from scope of policy and/or `GUEST`. |
 | `includeGroups` | String collection | Group IDs in scope of policy unless explicitly excluded, or `ALL`. |
@@ -59,14 +59,14 @@ If successful, this method returns a `204 No Content` response code. The policy 
 
 ## Example
 
-The following example updates the definition of a conditionalAccessPolicies object.
+The following example updates the definition of a conditionalAccessPolicy object.
 
 ### Request
 
 The following is an example of the request.
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalaccesspolicies/{id}
+PATCH https://graph.microsoft.com/beta/conditionalaccess/policies/{id}
 Content-Type: application/json
 
 {
@@ -116,7 +116,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Update conditionalAccessPolicies",
+  "description": "Update a conditionalAccessPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

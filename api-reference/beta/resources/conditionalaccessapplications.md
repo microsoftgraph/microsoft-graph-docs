@@ -17,9 +17,9 @@ Represents applications and ACRS tags included in and excluded from the policy s
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| `includeApplications` | String collection | Application IDs in scope of policy unless explicitly excluded. |
+| `includeApplications` | String collection | Application IDs (could be 'All') in scope of policy unless explicitly excluded. |
 | `excludeApplications` | String collection | Application IDs excluded from scope of policy. |
-| `includeAuthenticationContext` | String collection | ACRS URIs in scope of policy unless explicitly exclude, or ALL. |
+| `includeUserActions` | String collection | User actions to include (e.g. 'urn:user:registersecurityinfo') |
 
 ## JSON Representation
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "includeApplications",
     "excludeApplications",
-    "includeAuthenticationContext"
+    "includeUserActions"
   ],
   "@odata.type": "microsoft.graph.conditionalaccessapplications"
 }-->
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 {
   "includeApplications": [ "String" ],
   "excludeApplications": [ "String" ],
-  "includeAuthenticationContext": [ "String" ]
+  "includeUserActions": [ "String" ]
 }
 ```
 

@@ -1,17 +1,17 @@
 ---
 title: "Delete conditionalAccessPolicies"
-description: "Delete a conditionalAccessPolicies object."
+description: "Delete a conditionalAccessPolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete conditionalAccessPolicies
+# Delete conditionalAccessPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [conditionalAccessPolicy](../resources/ConditionalAccessPolicy.md) object.
+Delete a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
 
@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------- |:------------------------------------------- |
 | Delegated (work or school account) | Directory.AccessAsUser.All	|
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /conditionalAccessPolicies/{id}
+DELETE /conditionalAccess/policies/{id}
 ```
 
 ## Request headers
@@ -47,14 +47,14 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-The following example deletes a conditionalAccessPolicies object.
+The following example deletes a conditionalAccessPolicy object.
 
 ### Request
 
 The following is an example of the request.
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalaccesspolicies/{id}
+DELETE https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
 ```
 
 ##### Response
@@ -72,7 +72,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete conditionalAccessPolicies",
+  "description": "Delete conditionalAccessPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

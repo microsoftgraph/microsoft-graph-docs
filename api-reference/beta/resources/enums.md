@@ -17,8 +17,6 @@ author: "davidmu1"
 | DomainJoinedDevice |
 | ApprovedApplication |
 | CompliantApplication |
-| FederatedMfa |
-| FederatedCertAuth |
 
 ### conditionalAccessPolicyState values
 
@@ -26,7 +24,6 @@ author: "davidmu1"
 |:-------|
 | Enabled |
 | Disabled |
-| EnabledForReportingButNotEnforced |
 
 ### cloudAppSecuritySessionControlType values
 
@@ -70,24 +67,10 @@ author: "davidmu1"
 | EasUnsupported |
 | Other |
 
-### dayOfWeek values
-
-| Member |
-|:-------|
-| Sunday |
-| Monday |
-| Tuesday |
-| Wednesday |
-| Thursday |
-| Friday |
-| Saturday |
-
-
 ### conditionalAccessPlatforms values
 
 | Member |
 |:-------|
-| All |
 | Android |
 | Ios |
 | Windows |

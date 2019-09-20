@@ -23,7 +23,6 @@ Represents the type of conditions that govern when the policy applies.
 | `users` | [conditionalAccessUsers](conditionalaccessusers.md) | Users, groups, and roles included in and excluded from the policy scope. Required. |
 | `platforms` | conditionalAccessPlatforms | Platforms included in and excluded from the policy scope. Possible values: `All`, `Android`, `Ios`, `Windows`, `WindowsPhone`, `MacOs`. |
 | `locations` | [conditionalAccessLocations](conditionalaccesslocations.md) | Locations included in and excluded from the policy scope. |
-| `times` | [conditionalAccessTimes](conditionalaccesstimes.md) | Times in scope of the policy. |
 | `deviceStates` | [conditionalAccessDeviceStates](conditionalaccessdevicestates.md) | Device states in the policy scope. |
 
 ## JSON representation
@@ -39,7 +38,6 @@ The following is a JSON representation of the resource.
     "users",
     "platforms",
     "locations",
-    "times",
     "deviceStates"
   ],
   "@odata.type": "microsoft.graph.conditionalaccessconditions"
@@ -47,13 +45,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "signInRiskLevels": [ "String" ],
-  "clientAppTypes": [ "String" ],
   "applications": { "@odata.type": "microsoft.graph.conditionalaccessapplications" },
   "users": { "@odata.type": "microsoft.graph.conditionalaccessusers" },
-  "platforms": "String",
+  "signInRiskLevels": [ "@odata.type": "microsoft.graph.risklevels" ],
+  "platforms": { "@odata.type": "microsoft.graph.conditionalAccessPlatforms" },
   "locations": { "@odata.type": "microsoft.graph.conditionalaccesslocations" },
-  "times": { "@odata.type": "microsoft.graph.conditionalaccesstimes" },
+  "clientAppTypes": [ "@odata.type": "microsoft.graph.conditionalAccessClientApp" ],
   "deviceStates": { "@odata.type": "microsoft.graph.conditionalaccessdevicestates" }
 }
 ```

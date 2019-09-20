@@ -1,17 +1,17 @@
 ---
 title: "Get conditionalAccessPolicies"
-description: "Retrieve the properties of a conditionalAccessPolicies object."
+description: "Retrieve the properties of a conditionalAccessPolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get conditionalAccessPolicies
+# Get conditionalAccessPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object.
+Retrieve the properties of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
 
@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------- |:------------------------------------------- |
 | Delegated (work or school account) | Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account) | Policy.Read.All or Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /conditionalaccesspolicies/{id}
+GET /conditionalAccess/policies/{id}
 ```
 
 ## Request headers
@@ -43,18 +43,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [conditionalAccessPolicies](../resources/ConditionalAccessPolicies.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [conditionalAccessPolicy](../resources/ConditionalAccessPolicy.md) object in the response body.
 
 ## Example
 
-The following example retrieves a conditionalAccessPolicies object.
+The following example retrieves a conditionalAccessPolicy object.
 
 ### Request
 
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccesspolicies/{id}
+GET https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
 ```
 
 ### Response
@@ -96,7 +96,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get conditionalAccessPolicies",
+  "description": "Get conditionalAccessPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

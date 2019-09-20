@@ -28,7 +28,9 @@ The following is the JSON representation of the resource.
 
 ```json
 {
-    "unknown": null
+  "applicationEnforcedRestrictions": {
+    "isEnabled": bool
+  }
 }
 ```
 

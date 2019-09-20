@@ -31,7 +31,10 @@ The following is the JSON representation of the resource.
 
 ```json
 {
-  "type": "String"
+  "cloudAppSecurity": {
+    "cloudAppSecurityType": { "@odata.type": "microsoft.graph.cloudAppSecuritySessionControlType" },
+    "isEnabled": bool
+  }
 }
 ```
 

@@ -1,17 +1,17 @@
 ---
 title: "Create conditionalAccessPolicies"
-description: "Create a new conditionalAccessPolicies object."
+description: "Create a new conditionalAccessPolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create conditionalAccessPolicies
+# Create a conditionalAccessPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object by specifying display name, policy type, and policy description.
+Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object by specifying display name, policy type, and policy description.
 
 ## Permissions
 
@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------- |:------------------------------------------- |
 | Delegated (work or school account) | Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /conditionalaccesspolicies
+POST /conditionalAccess/policies
 ```
 
 ## Request headers
@@ -39,30 +39,29 @@ POST /conditionalaccesspolicies
 
 ## Request body
 
-In the request body, provide a JSON representation of [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object.
+In the request body, provide a JSON representation of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 The following table shows the properties that are required when you create a policy.
 
 | Parameter	| Type | Description |
 |:--------- |:---- |:----------- |
-| definition | String | The string version of the [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object. |
+| definition | String | The string version of the [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) object. |
 | displayName | String | A custom name for the conditionalAccessPolicies object. |
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object in the response body. The policy details are validated before being stored. If it does not pass validation, a `400 Bad Request` response code is returned. 
+If successful, this method returns `201 Created` response code and [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) object in the response body. The policy details are validated before being stored. If it does not pass validation, a `400 Bad Request` response code is returned. 
 
 ## Example
 
-The following example creates a new token lifetime policy. Notice the string definition parameter
-has escaped double quotes.
+The following example creates a new conditional access policy.
 
 ### Request
 
 The following is an example of the request.
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalaccesspolicies
+POST https://graph.microsoft.com/beta/conditionalaccess/policies
 Content-type: application/json
 
 {

@@ -35,8 +35,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "value": 14,
-  "type": "String"
+  "isEnabled": bool,
+  "value": Integer,
+  "type": { "@odata.type": "microsoft.graph.signinFrequencyType" }
 }
 ```
 

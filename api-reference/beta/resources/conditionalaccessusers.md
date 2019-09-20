@@ -17,8 +17,8 @@ Represents users, groups, and roles included in and excluded from the policy sco
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| `includeUsers` | String collection | User IDs in scope of policy unless explicitly excluded, or `ALL` or `GUEST`. |
-| `excludeUsers` | String collection | User IDs excluded from scope of policy and/or `GUEST`. |
+| `includeUsers` | String collection | User IDs in scope of policy unless explicitly excluded, or `None` or `ALL` or `GuestsOrExternalUsers`. |
+| `excludeUsers` | String collection | User IDs excluded from scope of policy and/or `GuestsOrExternalUsers`. |
 | `includeGroups` | String collection | Group IDs in scope of policy unless explicitly excluded, or `ALL`. |
 | `excludeGroups` | String collection | Group IDs excluded from scope of policy. |
 | `includeRoles` | String collection | Role IDs in scope of policy unless explicitly excluded, or `ALL`. |

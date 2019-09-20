@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) objects in the directory.
+Retrieve all [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) objects in the directory.
 
 ## Permissions
 
@@ -21,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:-------------- |:------------------------------------------- |
 | Delegated (work or school account) | Directory.AccessAsUser.All	|
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account) | Policy.Read.All or Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /conditionalaccesspolicies/
+GET /conditionalAccess/policies/
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) objects in the response body.
 
 ## Example
 
@@ -54,7 +54,7 @@ The following example retrieves all conditionalAccessPolicies objects.
 The following is an example of the request.
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccesspolicies/
+GET https://graph.microsoft.com/beta/conditionalAccess/policies/
 ```
 
 ### Response
@@ -77,7 +77,8 @@ Content-type: application/json
       "createdDateTime": null,
       "modifiedDateTime": null,
       "state": "enabled"
-    }
+    },
+    ...
   ]
 }
 ```
