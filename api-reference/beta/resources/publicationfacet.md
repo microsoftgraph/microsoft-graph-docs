@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The publicationFacet resource provides details on the published status of a driveItemVersion or driveItem resource."
 ms.date: 09/10/2017
 title: PublicationFacet
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # PublicationFacet resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.
 
@@ -33,10 +36,13 @@ The **publicationFacet** resource provides details on the published status of a 
 | **versionId** | String | The unique identifier for the version that is visible to the current caller. Read-only.  |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",
   "keywords": "camera make,camera model, exposure, f-stop, iso",
   "section": "documentation",
-  "tocPath": "Facets/Photo"
-} -->
+  "tocPath": "Facets/Photo",
+  "suppressions": []
+}
+-->

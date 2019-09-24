@@ -1,14 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The SharingInvitation resource groups invitation-related data items into a single structure."
 ms.date: 09/10/2017
 title: SharingInvitation
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # SharingInvitation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **SharingInvitation** resource groups invitation-related data items into a single strucutre.
+The **SharingInvitation** resource groups invitation-related data items into a single structure.
 
 ## JSON representation
 
@@ -46,10 +49,13 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

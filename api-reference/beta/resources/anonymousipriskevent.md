@@ -1,6 +1,15 @@
+---
+title: "anonymousIpRiskEvent resource type"
+description: "A risk event detected by Azure Active Directory Identity Protection where an account sign-in is attempted from an IP address that appears to be anonymous. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # anonymousIpRiskEvent resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) where an account sign-in is attempted from an IP address that appears to be anonymous. Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
@@ -9,7 +18,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get anonymousIpRiskEvent](../api/anonymousipriskevent_get.md) | [anonymousIpRiskEvent](anonymousipriskevent.md) |Read properties and relationships of anonymousIpRiskEvent object.|
+|[Get anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) | [anonymousIpRiskEvent](anonymousipriskevent.md) |Read properties and relationships of anonymousIpRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -41,6 +50,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.anonymousIpRiskEvent"
 }-->
 
@@ -57,17 +67,21 @@ Here is a JSON representation of the resource.
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "anonymousIpRiskEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

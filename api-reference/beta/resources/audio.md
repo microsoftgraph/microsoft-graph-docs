@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: "VinodRavichandran"
+description: "The Audio resource groups audio-related properties on an item into a single structure."
 ms.date: 09/10/2017
 title: Audio
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 # Audio facet
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Audio** resource groups audio-related properties on an item into a single structure.
 
@@ -64,10 +67,13 @@ The properties of the **Audio** resource are populated by extracting metadata fr
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The audio facet provides information about music or audio metadata.",
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Audio"
-} -->
+  "tocPath": "Facets/Audio",
+  "suppressions": []
+}
+-->

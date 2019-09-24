@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
 ms.date: 09/10/2017
 title: Photo
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Photo resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).
 
@@ -47,10 +50,13 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 OneDrive for Business and SharePoint only return the **takenDateTime** property.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",
   "keywords": "camera make,camera model, exposure, f-stop, iso",
   "section": "documentation",
-  "tocPath": "Facets/Photo"
-} -->
+  "tocPath": "Facets/Photo",
+  "suppressions": []
+}
+-->

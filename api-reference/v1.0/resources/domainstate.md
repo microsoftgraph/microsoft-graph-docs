@@ -1,3 +1,12 @@
+---
+title: "domainState resource type"
+description: "Represents the status of asynchronous operations scheduled on a domain."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # domainState resource type
 
 Represents the status of asynchronous operations scheduled on a domain.

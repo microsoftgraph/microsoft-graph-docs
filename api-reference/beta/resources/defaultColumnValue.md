@@ -1,14 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The defaultColumnValue on a columnDefinition resource specifies the default value for this column."
 ms.date: 09/12/2017
 title: DefaultColumnValue
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # DefaultColumnValue resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **defaultColumnValue** on a [columnDefinition](columnDefinition.md) resource specifies the default value for this column.
+The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
 
 ## JSON representation
@@ -38,10 +41,13 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/DefaultColumnValue"
-} -->
+  "tocPath": "Resources/DefaultColumnValue",
+  "suppressions": []
+}
+-->

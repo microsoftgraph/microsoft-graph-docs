@@ -1,6 +1,15 @@
+---
+title: "fileSecurityState resource type"
+description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # fileSecurityState resource type
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about the file (not process) related to the alert.
 
@@ -8,11 +17,10 @@ Contains information about the file (not process) related to the alert.
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|authenticodeHash256|String|Authenticode 256 hash of image file (used by AppLocker and others).|
+|fileHash|[fileHash](filehash.md)|Complex type containing file hashes (cryptographic and location-sensitive).|
 |name|String|File name (without path).|
 |path|String|Full file path of the file/imageFile.|
-|riskScore|String|Provider generated/calculated risk score of the alert file.|
-|sha256|String|Sha256 cryptographic hash of the alert file.|
+|riskScore|String|Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.|
 
 ## JSON representation
 
@@ -28,21 +36,23 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "authenticodeHash256": "String",
+  "fileHash": {"@odata.type": "microsoft.graph.fileHash"},
   "name": "String",
   "path": "String",
-  "riskScore": "String",
-  "sha256": "String"
+  "riskScore": "String"
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "fileSecurityState resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

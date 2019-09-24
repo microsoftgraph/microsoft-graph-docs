@@ -1,6 +1,15 @@
+---
+title: "teamsAsyncOperationStatus enum type"
+description: "Describes the current status of a teamsAsyncOperation."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: resourcePageType
+---
+
 # teamsAsyncOperationStatus enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).
 

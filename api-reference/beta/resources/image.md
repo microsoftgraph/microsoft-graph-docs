@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Image resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Image** resource groups image-related properties into a single structure.
 If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.
@@ -37,10 +40,13 @@ In OneDrive for Business, this resource is returned on items that are expected t
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Image"
-} -->
+  "tocPath": "Facets/Image",
+  "suppressions": []
+}
+-->

@@ -1,14 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "Represents the column values in a listItem resource."
 ms.date: 09/11/2017
 title: FieldValueSet
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # FieldValueSet resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the column values in a [listItem](listItem.md) resource.
+Represents the column values in a [listItem](listitem.md) resource.
 
 ## JSON representation
 
@@ -45,10 +48,13 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet"
-} -->
+  "tocPath": "Resources/FieldValueSet",
+  "suppressions": []
+}
+-->

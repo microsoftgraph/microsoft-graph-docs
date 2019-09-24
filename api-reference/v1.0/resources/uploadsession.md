@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
+localization_priority: Normal
+description: "The UploadSession resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # UploadSession resource
 
 The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.
@@ -37,7 +42,7 @@ Here is a JSON representation of the resource
 
 ## See also
 
-- [Upload large files with an upload session](../api/driveitem_createuploadsession.md)
+- [Upload large files with an upload session](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

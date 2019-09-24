@@ -1,3 +1,12 @@
+---
+title: "signInLocation resource type"
+description: "Provides the city, state and country/region from where the sign-in happened."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # signInLocation resource type
 Provides the city, state and country/region from where the sign-in happened.
 

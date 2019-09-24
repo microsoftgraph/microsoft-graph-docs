@@ -1,6 +1,15 @@
+---
+title: "Configuring the invitation message"
+description: "The invitedUserMessageInfo object allows you to configure the invitation message."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # Configuring the invitation message
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.
 
@@ -8,7 +17,7 @@ The invitedUserMessageInfo object allows you to configure the [invitation](invit
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipients](recipient.md)|Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.|
+|ccRecipients|[recipient](recipient.md) collection|Additional recipients the invitation message should be sent to. Currently only 1 additional recipient is supported.|
 |customizedMessageBody|String|Customized message body you want to send if you don't want the default message.|
 |messageLanguage|String|The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.|
 
@@ -26,10 +35,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2016-22-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "invitedUserMessageInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

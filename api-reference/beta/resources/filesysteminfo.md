@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The FileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
 ms.date: 09/10/2017
 title: FileSystemInfo
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # FileSystemInfo facet
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
 This facet can be used to specify the last modified date or created date of the item as it was on the local device.
@@ -36,7 +39,7 @@ It is available on the fileSystemInfo property of [driveItem][item-resource] res
 | Property                 | Type           | Description                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | The UTC date and time the file was created on a client.                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive_recent.md) only. |
+| **lastAccessedDateTime** | DateTimeOffset | The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only. |
 | **lastModifiedDateTime** | DateTimeOffset | The UTC date and time the file was last modified on a client.                                                        |
 
 ## Notes
@@ -61,10 +64,13 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo"
-} -->
+  "tocPath": "Facets/FileSystemInfo",
+  "suppressions": []
+}
+-->

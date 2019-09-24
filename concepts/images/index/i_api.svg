@@ -1,0 +1,20 @@
+<svg id="ICONS-64x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #2bc7f4;
+      }
+    </style>
+  </defs>
+  <title>i_api</title>
+  <path class="cls-1" d="M16.21,52.59a18,18,0,1,0-.27-20.81"/>
+  <polyline class="cls-1" points="23 43 4 43 4 4 60 4 60 43 49 43"/>
+  <circle class="cls-2" cx="30.83" cy="42" r="9"/>
+</svg>

@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The listItemVersion resource represents a previous version of a ListItem resource."
 ms.date: 09/17/2017
 title: ListItemVersion
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # ListItemVersion resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
 
@@ -20,14 +23,14 @@ The following tasks are available for listItemVersion resources.
 | [Get version][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
 | [Restore version][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 
-[version-list]: ../api/listitem_list_versions.md
-[version-get]: ../api/listitemversion_get.md
-[version-restore]: ../api/listitemversion_restore.md
+[version-list]: ../api/listitem-list-versions.md
+[version-get]: ../api/listitemversion-get.md
+[version-restore]: ../api/listitemversion-restore.md
 
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
 ```json
 {
@@ -45,7 +48,7 @@ The following tasks are available for listItemVersion resources.
 |      Property name       |                         Type                         |                               Description                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only.        |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 
@@ -59,10 +62,13 @@ The following table defines the relationships that the **driveItemVersion** reso
 | **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
-  "tocPath": "Facets/Version"
-} -->
+  "tocPath": "Facets/Version",
+  "suppressions": []
+}
+-->

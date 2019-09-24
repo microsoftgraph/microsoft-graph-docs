@@ -1,23 +1,26 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The contentType resource represents a content type in SharePoint."
 ms.date: 09/12/2017
 title: ContentType
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ContentType resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **contentType** resource represents a _content type_ in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
 [list]: list.md
-[listItem]: listItem.md
+[listItem]: listitem.md
 
 ## JSON representation
 
 Here is a JSON representation of a **contentType** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
 ```json
 {
@@ -59,15 +62,18 @@ Here is a JSON representation of a **contentType** resource.
 
 See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
 
-[columnLink]: columnLink.md
+[columnLink]: columnlink.md
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
-[itemReference]: itemReference.md
-[contentTypeOrder]: contentTypeOrder.md
+[itemReference]: itemreference.md
+[contentTypeOrder]: contenttypeorder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": []
+}
+-->

@@ -1,6 +1,15 @@
+---
+title: "educationSynchronizationCustomizations resource type"
+description: "Contains the list of entities to sync and their customizations, if any."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 # educationSynchronizationCustomizations resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.
 
@@ -28,7 +37,7 @@ This resource is member of the following data providers:
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomizations"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
 }-->
 
 ```json

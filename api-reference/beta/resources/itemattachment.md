@@ -1,8 +1,17 @@
+---
+title: "itemAttachment resource type"
+description: "A contact, event, or message that's attached to another event,"
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "outlook"
+author: "angelgolfer-ms"
+---
+
 # itemAttachment resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A contact, event, or message that's attached to another [event](../resources/event.md),
+A contact, event, or message that's attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
 
 Derived from [attachment](attachment.md).
@@ -11,8 +20,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete itemAttachment object. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -35,6 +44,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "optionalProperties": [
     "item"
   ],
@@ -54,10 +65,13 @@ Here is a JSON representation of the resource
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "itemAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

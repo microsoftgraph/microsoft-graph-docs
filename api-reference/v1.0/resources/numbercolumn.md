@@ -1,12 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
+localization_priority: Normal
+description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # NumberColumn resource type
 
-The **numberColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are numbers.
+The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
 ## JSON representation
 
@@ -31,7 +36,7 @@ Here is a JSON representation of a **numberColumn** resource.
 | **maximum**        | double | The maximum permitted value.
 | **minimum**        | double | The minimum permitted value.
 
-## DecimalPlaces values
+## DecimalPlaces
 
 | Value          | Description
 |:---------------|:--------------------------------------------------------------
@@ -51,5 +56,11 @@ These properties may be updated.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(automatic,none,one,two,three,four,five) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(number,percentage) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/NumberColumn"
 } -->

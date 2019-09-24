@@ -1,3 +1,12 @@
+---
+title: "assignedLicense resource type"
+description: "Represents a license assigned to a user. The **assignedLicenses** property of the user entity is a collection of **assignedLicense**."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # assignedLicense resource type
 
 Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.

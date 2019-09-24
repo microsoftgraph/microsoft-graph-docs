@@ -1,6 +1,15 @@
+---
+title: "sectionGroup resource type"
+description: "A section group in a OneNote notebook. Section groups can contain sections and section groups."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
+doc_type: resourcePageType
+---
+
 # sectionGroup resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A section group in a OneNote notebook. Section groups can contain sections and section groups.
 
@@ -16,7 +25,8 @@ Here is a JSON representation of the resource.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -49,27 +59,30 @@ Here is a JSON representation of the resource.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|The notebook that contains the section group. Read-only.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|The section group that contains the section group. Read-only.|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in the section group. Read-only. Nullable.|
+|parentNotebook|[notebook](notebook.md)|The notebook that contains the section group. Read-only.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|The section group that contains the section group. Read-only.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
+|sections|[onenoteSection](onenotesection.md) collection|The sections in the section group. Read-only. Nullable.|
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get section group](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |Read the properties and relationships of the section group.|
-|[Create section group](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified section group.|
-|[List section groups](../api/sectiongroup_list_sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get collection of section groups in the specified section group.|
-|[Create section](../api/sectiongroup_post_sections.md) |[Section](section.md)| Create a section by posting to the sections collection in the specified section group.|
-|[List sections](../api/sectiongroup_list_sections.md) |[Section](section.md) collection| Get a collection of sections in the specified section group.|
+|[Get section group](../api/sectiongroup-get.md) | [sectionGroup](sectiongroup.md) |Read the properties and relationships of the section group.|
+|[Create section group](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Create a section group by posting to the sectionGroups collection in the specified section group.|
+|[List section groups](../api/sectiongroup-list-sectiongroups.md) |[sectionGroup](sectiongroup.md) collection| Get collection of section groups in the specified section group.|
+|[Create section](../api/sectiongroup-post-sections.md) |[onenoteSection](onenotesection.md)| Create a section by posting to the sections collection in the specified section group.|
+|[List sections](../api/sectiongroup-list-sections.md) |[onenoteSection](onenotesection.md) collection| Get a collection of sections in the specified section group.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "sectionGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

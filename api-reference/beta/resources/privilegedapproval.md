@@ -1,6 +1,15 @@
+---
+title: "privilegedApproval resource type"
+description: "Represents an approval that is requested in Privileged Identity Management for getting into a role."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # privilegedApproval resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an approval that is requested in Privileged Identity Management for getting into a role.
 
@@ -9,11 +18,11 @@ Represents an approval that is requested in Privileged Identity Management for g
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get privilegedApproval](../api/privilegedapproval_get.md) | [privilegedApproval](privilegedapproval.md) |Read properties and relationships of privilegedApproval object.|
-|[List privilegedApproval objects](../api/privilegedApproval_list.md) | [privilegedApproval](privilegedApproval.md) collection|Get the collection of privilegedApproval.|
-|[Create privilegedApproval](../api/privilegedapproval_post_privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)	|Create privilegedApproval object. |
-|[Update privilegedApproval](../api/privilegedapproval_update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
-|[Myrequests](../api/privilegedapproval_myrequests.md)|[privilegedApproval](privilegedapproval.md)|Get the requestor's approval requests.|
+|[Get privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Read properties and relationships of privilegedApproval object.|
+|[List privilegedApproval objects](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Get the collection of privilegedApproval.|
+|[Create privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)	|Create privilegedApproval object. |
+|[Update privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md)	|Update privilegedApproval object. |
+|[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Get the requestor's approval requests.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,6 +42,7 @@ Represents an approval that is requested in Privileged Identity Management for g
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Read-only. Nullable.|
+|request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Read-only. The role assignment request for this approval object|
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -42,6 +52,8 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedApproval"
 }-->
 
@@ -63,10 +75,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedApproval resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

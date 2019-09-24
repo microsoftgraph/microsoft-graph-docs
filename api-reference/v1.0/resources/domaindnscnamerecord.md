@@ -1,3 +1,12 @@
+---
+title: "domainDnsCnameRecord resource type"
+description: "Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # domainDnsCnameRecord resource type
 
 Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
@@ -26,6 +35,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],

@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The File resource groups file-related data items into a single structure."
 ms.date: 09/10/2017
 title: File
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # File resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **File** resource groups file-related data items into a single structure.
 
@@ -41,10 +44,13 @@ Here is a JSON representation of the resource.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The file facet describes properties of a file",
   "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/File"
-} -->
+  "tocPath": "Facets/File",
+  "suppressions": []
+}
+-->

@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
+localization_priority: Normal
+ms.prod: "sharepoint"
+description: "The listInfo complex type provides additional information about a list."
+doc_type: resourcePageType
 ---
+
 # ListInfo resource
 
 The **listInfo** complex type provides additional information about a [list][].
@@ -50,5 +55,9 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
   "tocPath": ""
 }-->

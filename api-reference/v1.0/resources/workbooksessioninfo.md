@@ -1,3 +1,12 @@
+---
+title: "workbookSessionInfo resource type"
+description: "Provides information about workbook session."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
+---
+
 # workbookSessionInfo resource type
 
 Provides information about workbook session.
@@ -25,5 +34,5 @@ Here is a JSON representation of the resource
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
 | id  | string | Id of the workbook session. |
-| persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
+| persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
 

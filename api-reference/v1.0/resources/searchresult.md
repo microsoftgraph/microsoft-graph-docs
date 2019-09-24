@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SearchResult
+localization_priority: Normal
+description: "The SearchResult resource indicates than an item is the response to a search query."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # SearchResult resource type
 
 The **SearchResult** resource indicates than an item is the response to a search query.

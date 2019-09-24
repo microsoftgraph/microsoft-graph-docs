@@ -1,6 +1,15 @@
+---
+title: "plannerExternalReferences resource type"
+description: "The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the task details object. The value in the property-value pair is the externalReference object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+doc_type: resourcePageType
+---
+
 # plannerExternalReferences resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.
 
@@ -57,10 +66,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerExternalReferences resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

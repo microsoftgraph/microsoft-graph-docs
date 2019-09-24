@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2bc7f4;
+      }
+
+      .cls-2 {
+        fill: #55d2f6;
+      }
+    </style>
+  </defs>
+  <title>i_backlog</title>
+  <g id="ICONS-64x">
+    <rect class="cls-1" x="2" y="14" width="18" height="10"/>
+    <rect class="cls-1" x="23" y="14" width="18" height="10"/>
+    <polygon class="cls-2" points="20 14 20 22.5 11.5 14 20 14"/>
+    <polygon class="cls-2" points="41 14 41 22.5 32.5 14 41 14"/>
+    <rect class="cls-1" x="2" y="27" width="18" height="10"/>
+    <rect class="cls-1" x="23" y="27" width="18" height="10"/>
+    <polygon class="cls-2" points="20 27 20 35.5 11.5 27 20 27"/>
+    <rect class="cls-1" x="2" y="40" width="18" height="10"/>
+    <polygon class="cls-2" points="20 40 20 48.5 11.5 40 20 40"/>
+    <polygon class="cls-2" points="41 27 41 35.5 32.5 27 41 27"/>
+    <rect class="cls-1" x="44" y="14" width="18" height="10"/>
+    <polygon class="cls-2" points="62 14 62 22.5 53.5 14 62 14"/>
+  </g>
+</svg>

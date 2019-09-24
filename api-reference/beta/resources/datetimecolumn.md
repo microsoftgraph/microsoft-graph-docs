@@ -1,14 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times."
 ms.date: 09/11/2017
 title: DateTimeColumn
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # DateTimeColumn resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **dateTimeColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are dates or times.
+The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.
 
 ## JSON representation
 
@@ -38,10 +41,13 @@ Here is a JSON representation of a **dateTimeColumn** resource.
 | **standard** | Uses the standard absolute representation (eg. "5/10/2017 3:20 PM")
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/DateTimeColumn"
-} -->
+  "tocPath": "Resources/DateTimeColumn",
+  "suppressions": []
+}
+-->

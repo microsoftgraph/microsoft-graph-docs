@@ -1,23 +1,38 @@
+---
+title: "Set up notifications for changes in user data"
+description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
+author: "piotrci"
+localization_priority: Priority
+ms.custom: graphiamtop20
+---
+
 # Set up notifications for changes in user data
 
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
-After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
+After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
+ 
+> [!div class="nextstepaction"]
+> [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
 
 ## Supported resources
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content shared on OneDrive including drives associated with SharePoint sites
-- User's personal OneDrive folders
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- [user][]
+- [group][]
+- Office 365 group [conversation][]
+- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
+- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- Security [alert][]
 
-For instance, you can create a subscription to a specific mail folder:
+You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
@@ -26,30 +41,48 @@ Or to a top-level resource:
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
-Or to a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a user's personal OneDrive:
+Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
+Or to the root folder of a SharePoint/OneDrive for Business drive:
+`/drive/root`
+
+Or to a new [Security API](security-concept-overview.md) alert:
+`/security/alerts?$filter=status eq ‘New’`,
+`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+
 ### Azure AD resource limitations
 
-Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
+Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
+
+> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
 
 - Maximum subscription quotas:
 
   - Per app: 50,000 total subscriptions
-  - Per tenant: 35 total subscriptions across all apps
-  - Per app and tenant combination: 7 total subscriptions
+  - Per tenant: 1000 total subscriptions across all apps
+  - Per app and tenant combination: 100 total subscriptions
+
+When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
 
 - Azure AD B2C tenants are not supported.
 
 - Notification for user entities are not supported for personal Microsoft accounts.
 
+### Outlook resource limitations
+
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
+
+`/users/sh.o'neal@contoso.com/messages`
+
+Use: 
+
+`/users/{guid-user-id}/messages`
+
 ## Subscription lifetime
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type).
+Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting notifications.
 
@@ -88,11 +121,13 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](../api-reference/v1.0/resources/subscription.md) for property definitions and values.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.
+
+The `resource` property specifies the resource that will be monitored for changes. For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Although `clientState` is not required, you must include it to comply with our recommended notification handling process. Setting this property will allow you to confirm that notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
 
 #### Notification endpoint validation
 
@@ -100,9 +135,11 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 1. Microsoft Graph sends a POST request to the notification URL:
 
-  ``` http
-  POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
-  ```
+    ``` http
+    POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
+    ```
+
+    > **Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices. If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail. Also, the client should treat the token value as opaque since the token format may change in the future, without notice.
 
 1. The client must provide a response with the following characteristics within 10 seconds:
 
@@ -127,7 +164,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](../api-reference/v1.0/resources/subscription.md) object in the body. The subscription object includes the new `expirationDateTime` value.
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 ### Deleting a subscription
 
@@ -152,7 +189,7 @@ The notification object has the following properties:
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | subscriptionId | string | The ID of the subscription that generated the notification. |
-| subscriptionExpirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
 | clientState | string | The `clientState` property specified in the subscription request (if any). |
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
@@ -200,15 +237,15 @@ Note the `value` field is an array of objects. When there are many queued notifi
 
 Each notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a notification:
 
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that, the notification will be dropped and won't be delivered.
+
+    > **Note:** Send a `202 - Accepted` status code as soon as you receive the notification, even before validating its authenticity. You are simply acknowledging the receipt of the notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
+
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
     > **Note:** If this isn't true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
-
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry the notification a number of times.
-
-    > **Note:** You should send a `202 - Accepted` status code even if the `clientState` property doesn't match the one submitted with the subscription request. This is a good practice as it prevents a potential rogue actor from discovering the fact that you may not trust their notifications, and perhaps using that information to guess the value of the `clientState` property.
 
 Repeat for other notifications in the request.
 
@@ -216,18 +253,23 @@ Repeat for other notifications in the request.
 
 The following code samples are available on GitHub.
 
+- [Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
 
 ## See also
 
-- [Subscription resource type](../api-reference/v1.0/resources/subscription.md)
-- [Get subscription](../api-reference/v1.0/api/subscription_get.md)
-- [Create subscription](../api-reference/v1.0/api/subscription_post_subscriptions.md)
+- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
+- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
+- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Change notifications tutorial](/graph/tutorials/change-notifications)
 
-[contact]: ../api-reference/v1.0/resources/contact.md
-[conversation]: ../api-reference/v1.0/resources/conversation.md
-[drive]: ../api-reference/v1.0/resources/drive.md
-[event]: ../api-reference/v1.0/resources/event.md
-[message]: ../api-reference/v1.0/resources/message.md
+[contact]: /graph/api/resources/contact?view=graph-rest-1.0
+[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
+[event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
+[message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0

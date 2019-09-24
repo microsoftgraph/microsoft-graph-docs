@@ -1,3 +1,12 @@
+---
+title: "skypeForBusinessActivityUserCounts resource type"
+description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # skypeForBusinessActivityUserCounts resource type
 
 ## Properties

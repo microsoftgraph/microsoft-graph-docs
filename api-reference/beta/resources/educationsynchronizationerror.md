@@ -1,6 +1,15 @@
+---
+title: "educationSynchronizationError resource type"
+description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD)."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 # educationSynchronizationError resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD).
 
@@ -8,7 +17,7 @@ Represents an error during school data profile validation and/or sync. A unique 
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [Get synchronization errors](../api/educationsynchronizationerrors_get.md) | **educationSynchronizationError** collection| Returns the list of synchronization errors associated with a profile. |
+| [Get synchronization errors](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** collection| Returns the list of synchronization errors associated with a profile. |
 
 ## Properties
 
@@ -27,7 +36,7 @@ Represents an error during school data profile validation and/or sync. A unique 
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationError"
+  "@odata.type": "microsoft.graph.educationSynchronizationError"
 }-->
 
 ```json

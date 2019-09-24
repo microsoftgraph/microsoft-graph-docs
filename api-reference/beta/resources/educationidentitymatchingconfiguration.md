@@ -1,6 +1,15 @@
+---
+title: "educationIdentityMatchingConfiguration resource type"
+description: "Defines the settings for matching school data profile identities. These identities include students and teachers. Based on these settings, the users will be updated in the directory."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 ## educationIdentityMatchingConfiguration resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines the settings for matching school data profile identities. These identities include students and teachers. Based on these settings, the users will be updated in the directory.
 
@@ -10,7 +19,7 @@ Defines the settings for matching school data profile identities. These identiti
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **matchingOptions** | [educationIdentityMatchingOptions](educationidentitymatchingoptions.md) collection | Mapping between the user account and the options to use to uniquely identify the user to update. |
+| **matchingOptions** | [microsoft.graph.educationIdentityMatchingOptions](educationidentitymatchingoptions.md) collection | Mapping between the user account and the options to use to uniquely identify the user to update. |
 
 ## JSON representation
 <!-- {
@@ -18,15 +27,15 @@ Defines the settings for matching school data profile identities. These identiti
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration"
+  "@odata.type": "microsoft.graph.educationIdentityMatchingConfiguration"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityMatchingConfiguration",
     "matchingOptions": [
         {
-            "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+            "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
             "sourcePropertyName": "String",
             "targetPropertyName": "String",
             "targetDomain": "String"

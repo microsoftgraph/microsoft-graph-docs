@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The GeoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
 title: GeoCoordinates
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # GeoCoordinates resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file.
 If a [**DriveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.
@@ -43,10 +46,13 @@ Here is a JSON representation of the resource
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The location facet provides geographic location related properties for an item",
   "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Location"
-} -->
+  "tocPath": "Facets/Location",
+  "suppressions": []
+}
+-->

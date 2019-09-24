@@ -1,6 +1,15 @@
+---
+title: "educationTerm resource type"
+description: "A term. This represents a designated portion of the academic year. It is used within educationClass."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 # educationTerm resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A term. This represents a designated portion of the academic year. It is used within [educationClass](educationclass.md).
 
@@ -35,10 +44,13 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 4e9d671f-3068-4e09-aba2-b39e81a0e452
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationTerm resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

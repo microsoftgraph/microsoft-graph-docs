@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
+localization_priority: Normal
+description: "The ItemReference resource provides information necessary to address a DriveItem via the API."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # ItemReference resource type
 
 The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.
@@ -44,7 +49,7 @@ Here is a JSON representation of the resource
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares_get.md
+[Shares]: ../api/shares-get.md
 
 ## Remarks
 
@@ -64,5 +69,9 @@ To retrieve the human-readable path for a breadcrumb, you can safely ignore ever
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

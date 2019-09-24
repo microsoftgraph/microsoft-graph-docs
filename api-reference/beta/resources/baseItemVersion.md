@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The baseItemVersion resource represents a previous version of an item or entity."
 ms.date: 09/17/2017
 title: BaseItemVersion
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # BaseItemVersion resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **baseItemVersion** resource represents a previous version of an item or entity.
 
@@ -30,15 +33,18 @@ The **baseItemVersion** resource represents a previous version of an item or ent
 |      Property name       |                         Type                         |                               Description                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
-| **lastModifiedBy**       | [IdentitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only.        |
+| **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
-  "tocPath": "Facets/Version"
-} -->
+  "tocPath": "Facets/Version",
+  "suppressions": []
+}
+-->

@@ -1,6 +1,15 @@
+---
+title: "educationIdentityDomain resource type"
+description: "Represents the mapping between an education user type and the domain the user's account belongs to. The domain resource is part of the identity creation configuration. "
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 # educationIdentityDomain resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the mapping between an education user type and the domain the user's account belongs to. The domain resource is part of the [identity creation configuration](educationidentitycreationconfiguration.md). 
 
@@ -8,7 +17,7 @@ Represents the mapping between an education user type and the domain the user's 
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **appliesTo** | string |  The user role type to assign to license. Possible values are: `student`, `teacher`.      |
+| **appliesTo** | string |  The user role type to assign to the license. Possible values are: `student`, `teacher`, `faculty`.      |
 | **name** | string |  Represents the domain for the user account.         |
 
 ## JSON representation
@@ -17,12 +26,12 @@ Represents the mapping between an education user type and the domain the user's 
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityDomain"
+  "@odata.type": "microsoft.graph.educationIdentityDomain"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "name": "String"
 }
 ```

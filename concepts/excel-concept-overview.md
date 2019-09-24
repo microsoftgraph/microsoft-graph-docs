@@ -1,6 +1,17 @@
+---
+title: "Excel workbooks and charts API overview"
+description: "Excel is an indispensable productivity tool. Users across all industries and job functions embrace it as a tool for storing, tracking, and manipulating all kinds of data. It's used for everything from simple task tracking and data management, to complex calculations and professional reporting. You can use the Excel REST API in Microsoft Graph to extend the value of your data, calculations, reporting, and dashboards."
+localization_priority: Priority
+author: "lumine2008"
+ms.prod: "excel"
+scenarios: "getting-started"
+---
+
 # Excel workbooks and charts API overview
 
 Excel is an indispensable productivity tool. Users across all industries and job functions embrace it as a tool for storing, tracking, and manipulating all kinds of data. It's used for everything from simple task tracking and data management, to complex calculations and professional reporting. You can use the Excel REST API in Microsoft Graph to extend the value of your data, calculations, reporting, and dashboards.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/I1rSkJww2Dk]
 
 ## Why integrate with Excel?
 
@@ -25,9 +36,15 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 
-`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/ `
+`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook.
+
+## API reference
+Looking for the API reference for this service?
+
+- [Excel API in Microsoft Graph v1.0](/graph/api/resources/excel?view=graph-rest-1.0)
+- [Excel API in Microsoft Graph beta](/graph/api/resources/excel?view=graph-rest-beta)
 
 ## Next steps
 
@@ -36,4 +53,4 @@ You can access a set of Excel objects (such as Table, Range, or Chart) by using 
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
-* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)
+* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

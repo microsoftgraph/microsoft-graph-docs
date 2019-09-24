@@ -1,6 +1,15 @@
+---
+title: "plannerAppliedCategories resource type"
+description: "The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the plannerTask object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+doc_type: resourcePageType
+---
+
 # plannerAppliedCategories resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the [plannerTask](plannertask.md) object.
 There can be up to 6 categories applied to a task. Category descriptions, e.g. `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.
@@ -38,10 +47,13 @@ Example:
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerAppliedCategories resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

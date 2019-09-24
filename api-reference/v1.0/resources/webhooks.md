@@ -1,38 +1,53 @@
+---
+title: "Use the Microsoft Graph API to get change notifications"
+description: "The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
+localization_priority: Priority
+author: "piotrci"
+ms.prod: ""
+doc_type: conceptualPageType
+---
+
 # Use the Microsoft Graph API to get change notifications
 
-The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](../../../concepts/webhooks.md).
+The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content shared on OneDrive, including drives associated with SharePoint sites
-- Users' personal OneDrive folders
+- Outlook [message][]
+- Outlook [event][]
+- Outlook personal [contact][]
+- [user][]
+- [group][]
+- Office 365 group [conversation][]
+- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
+- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- Security [alert][]
 
 ## Permissions
 
-In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription_post_subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
+In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
-| Permission type                        | Supported resource types in v1.0                                 |
-| :------------------------------------- | :--------------------------------------------------------------- |
-| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][] |
-| Delegated - personal Microsoft account | None                                                             |
-| Application                            | [contact][], [conversation][], [event][], [message][]            |
+| Permission type                        | Supported resource types                                                      |
+| :------------------------------------- | :------------------------------------------------------------------------------------ |
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
+| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
+
 
 ## See also
 
 - [Subscription resource type](./subscription.md)
-- [Get subscription](../api/subscription_get.md)
-- [Create subscription](../api/subscription_post_subscriptions.md)
-- [Update subscription](../api/subscription_update.md)
-- [Delete subscription](../api/subscription_delete.md)
+- [List subscriptions](../api/subscription-list.md)
+- [Get subscription](../api/subscription-get.md)
+- [Create subscription](../api/subscription-post-subscriptions.md)
+- [Update subscription](../api/subscription-update.md)
+- [Delete subscription](../api/subscription-delete.md)
 
 [contact]: ./contact.md
 [conversation]: ./conversation.md
-[drive]: ./drive.md
+[driveItem]: ./driveitem.md
 [event]: ./event.md
+[group]: ./group.md
 [message]: ./message.md
+[user]: ./user.md
+[alert]: ./alert.md

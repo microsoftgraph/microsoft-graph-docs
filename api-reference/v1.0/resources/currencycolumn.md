@@ -1,12 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
+localization_priority: Normal
+description: "The currencyColumn on a columnDefinition resource indicates that the column's values represent currency."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # CurrencyColumn resource type
 
-The **currencyColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values represent currency.
+The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
 ## JSON representation
 

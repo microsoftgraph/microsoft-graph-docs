@@ -1,18 +1,24 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
+localization_priority: Normal
+description: "Represents the column values in a listItem resource."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # FieldValueSet resource
 
-Represents the column values in a [listItem](listItem.md) resource.
+Represents the column values in a [listItem](listitem.md) resource.
 
 ## JSON representation
 
 Here is a JSON representation of a **fieldValueSet** resource.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {

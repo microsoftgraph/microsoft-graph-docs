@@ -3,7 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
+localization_priority: Normal
+description: "The contentTypeInfo resource indicates the SharePoint content type of an item."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # ContentTypeInfo resource type
 
 The **contentTypeInfo** resource indicates the SharePoint content type of an item.

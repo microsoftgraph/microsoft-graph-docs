@@ -1,8 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
+localization_priority: Normal
+title: "Hashes resource type"
+description: "The Hashes resource groups available hashes into a single structure for an item."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Hashes resource type
 
 The **Hashes** resource groups available hashes into a single structure for an item.
@@ -32,7 +38,7 @@ Here is a JSON representation of the resource.
 | Property         | Type   | Description                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
+| **crc32Hash**    | String | The CRC32 value of the file in little endian (if available). Read-only.            |
 | **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 **Note:** In some cases hash values may not be available. 

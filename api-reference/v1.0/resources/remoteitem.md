@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
+localization_priority: Normal
+description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # RemoteItem resource type
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
@@ -34,6 +39,7 @@ This resource provides the unique IDs of the source drive and target item.
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "size": 1024,
   "webDavUrl": "url",
   "webUrl": "url"
@@ -58,8 +64,11 @@ This resource provides the unique IDs of the source drive and target item.
 | shared               | [shared](shared.md)                 | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Provides interop between items in OneDrive for Business and SharePoint with the full set of item identifiers. Read-only.                                          |
 | size                 | Int64                               | Size of the remote item. Read-only.                                                                                                                               |
+| specialFolder        | [specialFolder][]                   | If the current item is also available as a special folder, this facet is returned. Read-only.                                                                     |
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
+
+[specialFolder]: specialfolder.md
 
 ## Remarks
 

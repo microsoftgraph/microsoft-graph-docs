@@ -1,6 +1,15 @@
+---
+title: "locatedRiskEvent resource type"
+description: "A risk event detected by Azure Active Directory Identity Protection that is based on location data. Located risk event types include:"
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # locatedRiskEvent resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) that is based on location data. Located risk event types include:
 * [sign-ins from anonymous IP addresses](anonymousipriskevent.md)
@@ -15,7 +24,7 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get locatedRiskEvent](../api/locatedriskevent_get.md) | [locatedRiskEvent](locatedriskevent.md) |Read properties and relationships of locatedRiskEvent object.|
+|[Get locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Read properties and relationships of locatedRiskEvent object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -47,6 +56,9 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+   "abstract": true,
+   "keyProperty": "id",
+   "baseType":"microsoft.graph.identityRiskEvent",
   "@odata.type": "microsoft.graph.locatedRiskEvent"
 }-->
 
@@ -63,17 +75,21 @@ Here is a JSON representation of the resource.
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "locatedRiskEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

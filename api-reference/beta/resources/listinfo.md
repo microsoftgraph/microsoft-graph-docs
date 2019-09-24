@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The listInfo complex type provides additional information about a list."
 ms.date: 09/11/2017
 title: ListInfo
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # ListInfo resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **listInfo** complex type provides additional information about a [list][].
 
@@ -47,10 +50,13 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,12 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # System facet
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **System** facet indicates that the object is managed by the system for its own operation.
 Most apps should ignore items that have a System facet.
@@ -26,8 +29,11 @@ Most apps should ignore items that have a System facet.
 
 None. This facet is a null or not-null value and contains no properties.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/System"
-} -->
+  "tocPath": "Facets/System",
+  "suppressions": []
+}
+-->

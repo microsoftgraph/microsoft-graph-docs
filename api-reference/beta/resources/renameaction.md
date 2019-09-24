@@ -1,16 +1,20 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the RenameAction resource on an itemActivity indicates that the activity renamed an item."
 ms.date: 09/14/2017
 title: RenameAction
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # RenameAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## JSON representation
 
@@ -38,10 +42,13 @@ The presence of the **RenameAction** resource on an [**itemActivity**][activity]
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The RenameAction object provides information about an activity that renamed an item.",
   "keywords": "activities,activity,action,rename,renamed",
   "section": "documentation",
-  "tocPath": "Resources/RenameAction"
-} -->
+  "tocPath": "Resources/RenameAction",
+  "suppressions": []
+}
+-->

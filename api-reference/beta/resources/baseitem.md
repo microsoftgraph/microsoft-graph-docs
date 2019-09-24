@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The baseItem resource is an abstract resource that contains a common set of properties shared among several other resources types."
 ms.date: 09/10/2017
 title: BaseItem
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # BaseItem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types.
 Resources that derive from **baseItem** include:
@@ -24,7 +27,8 @@ Here is a JSON representation of a **baseItem** resource.
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.baseItem"
+  "@odata.type": "microsoft.graph.baseItem",
+  "abstract": true
 }-->
 
 ```json
@@ -65,10 +69,13 @@ The `baseItem` type is not expected to be used directly.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BaseItem"
-} -->
+  "tocPath": "Resources/BaseItem",
+  "suppressions": []
+}
+-->

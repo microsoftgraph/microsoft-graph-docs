@@ -1,6 +1,15 @@
+---
+title: "directorySettingTemplate resource type"
+description: "Directory setting templates represent system-defined settings available to the tenant. Directory settings can be created based on the available directorySettingTemplates, and values changed from their preset defaults. Directory setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings.  Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group."
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # directorySettingTemplate resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Directory setting templates represent system-defined settings available to the tenant. [Directory settings](directorysetting.md) can be created based on the available directorySettingTemplates, and values changed from their preset defaults. Directory setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific entity settings.  Currently, the only templates available apply to Office groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
 
@@ -10,8 +19,8 @@ Directory setting templates represent system-defined settings available to the t
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get directorySettingTemplate](../api/directorysettingtemplate_get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
-|[List directorySettingTemplate](../api/directorysettingtemplate_list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
+|[Get directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Read the specific properties of one of the system defined directorySettingTemplate objects.|
+|[List directorySettingTemplate](../api/directorysettingtemplate-list.md) | [Collection of directorySettingTemplate](directorysettingtemplate.md) |List all of the system defined directorySettingTemplate objects.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -49,10 +58,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directorySettingTemplate resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

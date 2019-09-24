@@ -1,6 +1,15 @@
+---
+title: "educationSynchronizationProfileStatus resource type"
+description: "Represents the synchronization status of a school data synchronization profile. "
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 # educationSynchronizationProfileStatus resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md). 
 
@@ -10,13 +19,13 @@ Represents the synchronization status of a school data [synchronization profile]
 
 | Method | Return Type | Description |
 |:-|:-|:-|
-| [Get status of a sync](../api/educationsynchronizationprofilestatus_get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
+| [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | Return the status of a specific synchronization profile. |
 
 ## Properties
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **status** | string | The status of a sync. Possible values are: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
+| **status** | educationSynchronizationStatus | The status of a sync. Possible values are: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
 | **lastSynchronizationDateTime** | DateTimeOffset | Represents the time when most recent changes have been observed in the directory.  |
 
 ## JSON representation
@@ -25,12 +34,12 @@ Represents the synchronization status of a school data [synchronization profile]
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
 }-->
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": {"@odata.type":"microsoft.graph.educationSynchronizationStatus"},
     "lastSynchronizationDateTime": "DateTimeOffset"
 }

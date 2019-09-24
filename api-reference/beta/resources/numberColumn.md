@@ -1,14 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
 ms.date: 09/11/2017
 title: NumberColumn
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # NumberColumn resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **numberColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are numbers.
+The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
 ## JSON representation
 
@@ -48,10 +51,13 @@ Here is a JSON representation of a **numberColumn** resource.
 Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.
 These properties may be updated.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/NumberColumn"
-} -->
+  "tocPath": "Resources/NumberColumn",
+  "suppressions": []
+}
+-->

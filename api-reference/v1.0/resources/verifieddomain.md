@@ -1,3 +1,12 @@
+---
+title: "verifiedDomain resource type"
+description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # verifiedDomain resource type
 
 Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.
@@ -21,7 +30,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

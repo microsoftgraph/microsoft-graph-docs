@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The SearchResult resource indicates than an item is the response to a search query."
 ms.date: 09/10/2017
 title: SearchResult
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # SearchResult resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **SearchResult** resource indicates than an item is the response to a search query.
 
@@ -34,10 +37,13 @@ The **SearchResult** resource indicates than an item is the response to a search
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The search result facet indicates an item is from a search.",
   "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": "Facets/SearchResult"
-} -->
+  "tocPath": "Facets/SearchResult",
+  "suppressions": []
+}
+-->

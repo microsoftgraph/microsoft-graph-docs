@@ -1,3 +1,12 @@
+---
+title: "patternedRecurrence resource type"
+description: "The recurrence pattern and range."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # patternedRecurrence resource type
 
 The recurrence pattern and range.

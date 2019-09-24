@@ -1,35 +1,43 @@
-# Authorization and the security API in Microsoft Graph
+---
+title: "Authorization and the Microsoft Graph Security API"
+description: "Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles."
+author: "preetikr"
+localization_priority: Priority
+ms.prod: "security"
+---
 
-Security data accessible via the security API in Microsoft Graph is sensitive and is protected by both permissions and Azure Active Directory (Azure AD) roles.
+# Authorization and the Microsoft Graph Security API
 
-The security API supports two types of authorization:
+Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles.
+
+The Microsoft Graph Security API supports two types of authorization:
 
 - **Application-level authorization** - There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization. 
     >**Note:** This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
 - **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Securty Administrator - in addition to the application having been granted the required permissions.
 
-If you're calling the security API from Graph Explorer:
+If you're calling the Microsoft Graph Security API from Graph Explorer:
 
 - The Azure AD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
 - The user must be a member of the Security Reader Limited Admin role in Azure AD (either Security Reader or Security Administrator).
 
 >**Note**: Graph Explorer does not support application-level authorization.
 
-If you're calling the security API from a custom or your own application:
+If you're calling the Microsoft Graph Security API from a custom or your own application:
 
 - The Azure AD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
 - If you're using user delegated authorization, the user must be a member of the Security Reader or Security Administrator Limited Admin role in Azure AD.
 
 ## Manage authorization in security API client applications
 
-Security data provided via the security API in Microsoft Graph is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the security API.
+Security data provided via the Microsoft Graph Security API is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the Microsoft Graph Security API.
 
 | **Who** | **Action** |
 |:---------------------|:------------------|
 |Application developer or owner|Register the application as an enterprise application.|
 |Tenant admin|Grant permissions to the application.|
 |Tenant admin|Assign roles to users.|
-|Application developer|Sign in as the user and use the application to access the security API.|
+|Application developer|Sign in as the user and use the application to access the Microsoft Graph Security API.|
 
 Application registration only defines which permissions the application needs in order to run. It does NOT grant these permissions to the application.
 
@@ -49,9 +57,9 @@ For example, assume that you have an application, two Azure AD tenants, **T1** a
 
 - To make the application work again in tenant **T1**, the admin of tenant **T1** must explicitly grant permissions **P1** and **P2** to the application.
 
-## Register an application in the Azure AD v2.0 endpoint
+## Register an application with the Microsoft identity platform endpoint
 
-To register an application to the Azure AD v2.0 endpoint, you'll need:
+To register an application to the Microsoft identity platform endpoint, you'll need:
 
 - **Application name** - A string used for the application name.
 - **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use the test client web app homepage.
@@ -59,23 +67,35 @@ To register an application to the Azure AD v2.0 endpoint, you'll need:
 
 To register your application:
 
-1. Go to https://apps.dev.microsoft.com/ and sign in.
+1. Go to the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) and sign in.
     >**Note**: You don't have to be a tenant admin. You will be redirected to the **My applications** list.
-2. Choose **Add an app**, and enter an **Application Name** to create a new application.
-3. On the registration page for the new application, choose **Add Platform** > **Web**. In the **Redirect URL** field, enter the redirect URL.
-4. In the **Microsoft Graph Permissions** section, under **Delegated Permissions**, choose **Add**. In the dialog box, choose the required permissions. For a list of permissions, see [Security permissions](../concepts/permissions_reference.md#security-permissions).
+2. Choose **New registration**.
+3. On the registration page for the new application, enter a value for **Name** and select the account types you wish to support. In the **Redirect URI** field, enter the redirect URL.
+4. Select **Register** to create the app and view its overview page. *
+5. Go to the app's **API permissions** page.
+6. Select **Add a permission** and then choose **Microsoft Graph** in the flyout. Select **Delegated permissions**. Use the search box to find and select the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
 
-    >The security API requires the SecurityEvents.Read.All scope for GET queries, and the SecurityEvents.ReadWrite.All scope for PATCH/POST queries.
+    >**Note:** The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
 
-5. Choose **Save**.
+    |Permission | Entity | Supported requests |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (preview) | GET, POST, PATCH, DELETE|
+
+7. Choose **Add permissions**.
 
 Save the following information:
 
-- Application ID
+- Application (client) ID
 - Redirect URL
 - List of required permissions
 
-For more information, see [Register your app with the Azure AD v2.0 endpoint](../concepts/auth_register_app_v2.md).
+\* Windows Defender Advanced Threat Protection (WDATP) requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) than what is required by the Microsoft Graph Security API; therefore, only the users in both WDATP and Microsoft Graph Security API roles can have access to the WDATP data.  Application-only authentication is not limited by this; therefore, we recommend that you use an app-only authentication token.
+
+For more information, see [Register your app with the Microsoft identity platform](auth-register-app-v2.md).
 
 ## Grant permissions to an application
 
@@ -83,29 +103,28 @@ Application registration only defines which permission the application requires 
 
 To grant permissions to an application, you'll need:
 
-- **Application ID** - The application ID from application registration portal.
-- **Redirect URL** - The string you set in the application registration portal for authentication response.
+- **Application ID** - The application ID from the Azure application registration portal.
+- **Redirect URL** - The string you set in the Azure application registration portal for authentication response.
 
 To grant the permissions:
 
-- In a text editor, create following URL string:
+- In a text editor, create the following URL string:
 
     `https://login.microsoftonline.com/common/adminconsent?client_id=<Application Id>&state=12345&redirect_uri=<Redirect URL>`
 
-- In a web browser, go to this URL, and sign in as a tenant administrator. The dialog box shows the list of permission the application requires, as specified in the application registration portal. 
-Choose **OK** to grant the application these permissions.
+- In a web browser, go to this URL, and sign in as a tenant administrator. The dialog box shows the list of permission the application requires, as specified in the application registration portal. Choose **OK** to grant the application these permissions.
 
 > **Note:** This step grants permissions to the application - not to users. This means that all users belonging to the Azure AD tenant that use this application will be granted these permissions - even non-admin users.
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to adminstrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to administrator roles](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
 To assign roles to users:
 
-- Sign in to the [azure portal](https://portal.azure.com) (http://portal.azure.com).
+- Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
 - In the menu, select **Azure Active Directory** > **Users**.
 - Select the name of the user.
 - Select **Manage** > **Directory role**.
@@ -117,7 +136,7 @@ To assign roles to users:
 To create an authentication code, you'll need:
 
 - **Application ID** - The application ID from application registration portal.
-- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use http://localhost or the test client web app homepage.
+- **Redirect URL** - The URL where the authentication response from Azure AD is sent. To start, you can use https://localhost or the test client web app homepage.
 - **Application Key** (optional) - The key of the application. This applies when you're developing an application that will use application-only authentication code (that is, will not support user delegated authentication).
 
 The following table lists resources that you can use to create an authentication code.
@@ -125,13 +144,13 @@ The following table lists resources that you can use to create an authentication
 |**Type of application**|**Authentication library**|
 |------------------------|----------------------------|
 |[Desktop apps - iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](http://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Desktop apps - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
 |[Desktop apps - .Net](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
 |[Web apps - JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
 |[Web apps - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
 |[Web apps - NodeJS Web App](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
-For applications that don't use any of the existing libraries, see [Get access on behalf of a user](../concepts/auth_v2_user.md).
+For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth-v2-user.md).
 
 1. Get a code from Azure AD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.

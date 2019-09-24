@@ -1,13 +1,24 @@
-# directoryAudit resource type
-This resource represents the directory Audit items and its collection
+---
+title: "directoryAudit resource type"
+description: "Describes the directoryAudit resource (entity) of Microsoft Graph API (REST), which helps audit directory (tenant) activities (beta version)."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
 
+# directoryAudit resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the directory audit items and its collection.
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List directoryAudits](../api/directoryaudit_list.md) | [directoryAudit](directoryaudit.md) |List the directory audit items in the collection and their properties.|
-|[Get directoryAudit](../api/directoryaudit_get.md) | [directoryAudit](directoryaudit.md) |Get a specific directory audit item and its properties.|
+|[List directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |List the directory audit items in the collection and their properties.|
+|[Get directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Get a specific directory audit item and its properties.|
 
 
 ## Properties

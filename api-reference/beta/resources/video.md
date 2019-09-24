@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The Video resource groups video-related data items into a single structure."
 ms.date: 09/10/2017
 title: Video
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Video resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Video** resource groups video-related data items into a single structure.
 
@@ -32,9 +35,9 @@ Here is a JSON representation of the resource
   "bitrate": 39101896,
   "duration": 8053,
   "fourCC": "H264",
-  "frameRate": 239.877,
   "height": 1280,
-  "width": 720
+  "width": 720,
+  "framerate": 2.75
 }
 ```
 
@@ -65,10 +68,13 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The video facet provides information about the properties of a video file.",
   "keywords": "bitrate,duration,size,video",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

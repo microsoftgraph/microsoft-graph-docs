@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
+localization_priority: Normal
+description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # ThumbnailSet resource type
 
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
@@ -13,13 +18,19 @@ It is used to represent a set of thumbnails associated with a DriveItem.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": ["source", "small", "medium", "large"],
-  "openType": true,
+  "optionalProperties": [
+    "source",
+    "small",
+    "medium",
+    "large"
+  ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.thumbnailSet"
-} -->
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.thumbnailSet",
+  "openType": true
+}-->
 
 ```json
 {

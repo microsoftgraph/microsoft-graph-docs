@@ -1,14 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: "simonhult"
+description: "The personOrGroupColumn on a columnDefinition resource indicates that the column's values represent a person or group chosen from the directory."
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
+localization_priority: Normal
+ms.prod: "insights"
+doc_type: resourcePageType
 ---
 # PersonOrGroupColumn resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **personOrGroupColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
+The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
 
 ## JSON representation
 
@@ -56,10 +59,13 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 
 Note: Additional DisplayAs types may be returned.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/PersonOrGroupColumn"
-} -->
+  "tocPath": "Resources/PersonOrGroupColumn",
+  "suppressions": []
+}
+-->

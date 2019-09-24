@@ -1,3 +1,12 @@
+---
+title: "Working with SharePoint sites in Microsoft Graph"
+description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
+localization_priority: Priority
+ms.prod: "sharepoint"
+doc_type: conceptualPageType
+author: ""
+---
+
 # Working with SharePoint sites in Microsoft Graph
 
 The SharePoint API in Microsoft Graph supports the following core scenarios:
@@ -106,7 +115,7 @@ GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 [site]: site.md
 [list]: list.md
 [drive]: drive.md
-[siteCollection]: siteCollection.md
+[siteCollection]: sitecollection.md
 
 <!-- {
   "type": "#page.annotation",

@@ -1,10 +1,19 @@
+---
+title: "educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource"
+description: "When OAuth2 Client Credentials Grant is to be used to connect to the data provider, this connection settings type should be used to set up the profile."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 # educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.
 
-Derived from [educationSynchronizationConnectionSettings](educationSynchronizationConnectionSettings.md).
+Derived from [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
 
 ## Properties
 
@@ -16,11 +25,11 @@ Derived from [educationSynchronizationConnectionSettings](educationSynchronizati
 ## JSON representation
 <!-- {
   "blockType": "resource",
-  "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
+  "@odata.type": "microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings"
 }-->
 
 ```json
-"connectionSettings": {
+{
     "@odata.type": "#microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings",
     "clientId": "String",
     "clientSecret": "String",

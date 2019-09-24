@@ -1,6 +1,15 @@
+---
+title: "oneNoteIdentitySet resource type"
+description: "**Support coming soon**"
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
+doc_type: resourcePageType
+---
+
 # oneNoteIdentitySet resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **Support coming soon**
 
@@ -21,12 +30,12 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.onenoteidentityset"
+  "@odata.type": "microsoft.graph.onenoteIdentityset"
 }-->
 
 ```json
 {
-  "user": {"@odata.type": "microsoft.graph.oneNoteIdentity"}
+  "user": {"@odata.type": "microsoft.graph.onenoteIdentity"}
 }
 
 ```
@@ -37,10 +46,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "oneNoteIdentitySet resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

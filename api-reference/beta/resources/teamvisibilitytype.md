@@ -1,6 +1,15 @@
-#teamVisibilityType enum type
+---
+title: "Members"
+description: "Describes the visibility of a team. "
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: enumPageType
+---
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# teamVisibilityType enum type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the visibility of a [team](../resources/team.md). 
 
@@ -8,5 +17,5 @@ Describes the visibility of a [team](../resources/team.md).
 
 | Member | Value| Description |
 |:---------------|:--------|:----------|
-|private|0|Anyone can see the team but only the owner can at a user to the team.|
+|private|0|Anyone can see the team but only the owner can add a user to the team.|
 |public|1|Anyone can join the team.|

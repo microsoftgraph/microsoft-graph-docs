@@ -1,12 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
 ms.date: 09/10/2017
 title: RemoteItem
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # RemoteItem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
@@ -67,10 +71,13 @@ This resource provides the unique IDs of the source drive and target item.
 
 For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/RemoteItem"
-} -->
+  "tocPath": "Facets/RemoteItem",
+  "suppressions": []
+}
+-->

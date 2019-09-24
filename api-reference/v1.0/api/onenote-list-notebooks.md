@@ -1,0 +1,124 @@
+---
+title: "List notebooks"
+description: "Retrieve a list of notebook objects."
+author: "jewan-microsoft"
+localization_priority: Priority
+ms.prod: "onenote"
+doc_type: apiPageType
+---
+
+# List notebooks
+
+Retrieve a list of [notebook](../resources/notebook.md) objects.
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite    |
+|Application | Notes.Read.All, Notes.ReadWrite.All |
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onenote/notebooks
+GET /users/{id | userPrincipalName}/onenote/notebooks
+GET /groups/{id}/onenote/notebooks
+GET /sites/{id}/onenote/notebooks
+```
+## Optional query parameters
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+The default sort order is `name asc`. 
+
+Valid `expand` values for notebooks are `sections` and `sectionGroups`.
+
+## Request headers
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
+| Accept | string | `application/json` |
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and collection of [notebook](../resources/notebook.md) objects in the response body.
+## Example
+##### Request
+Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_notebooks"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-notebooks-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-notebooks-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-notebooks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-notebooks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.notebook",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 369
+
+{
+  "value": [
+    {
+      "isDefault": true,
+      "userRole": {
+      },
+      "isShared": true,
+      "sectionsUrl": "sectionsUrl-value",
+      "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "links": {
+        "oneNoteClientUrl": {
+          "href": "href-value"
+        },
+        "oneNoteWebUrl": {
+          "href": "href-value"
+        }
+      }
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List notebooks",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->

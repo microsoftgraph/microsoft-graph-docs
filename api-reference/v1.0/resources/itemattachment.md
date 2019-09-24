@@ -1,6 +1,16 @@
+---
+title: "itemAttachment resource type"
+description: "A contact, event, or message that's attached to another event, message, or post.  "
+localization_priority: Priority
+ms.prod: "outlook"
+author: "angelgolfer-ms"
+doc_type: resourcePageType
+---
+
 # itemAttachment resource type
 
-A contact, event, or message that's attached to another event, message, or post.  
+A contact, event, or message that's attached to a user [event](../resources/event.md),
+[message](../resources/message.md), or [post](../resources/post.md).  
 
 Derived from [attachment](attachment.md).
 
@@ -8,8 +18,8 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
-|[Delete](../api/attachment_delete.md) | None |Delete itemAttachment object. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
+|[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -30,12 +40,26 @@ Derived from [attachment](attachment.md).
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "item"
   ],
-  "@odata.type": "microsoft.graph.itemAttachment"
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
+  "@odata.type": "microsoft.graph.itemAttachment",
+  "@odata.annotations": [
+    {
+      "property": "item",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -45,7 +69,8 @@ Here is a JSON representation of the resource
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": 1024,
+  "item": { "@odata.type": "microsoft.graph.outlookItem" }
 }
 
 ```

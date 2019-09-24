@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The Root facet indicates that an object is the top-most one in its hierarchy."
 ms.date: 09/10/2017
 title: Root
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Root resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Root** facet indicates that an object is the top-most one in its hierarchy.
 The presence (non-null) of the facet value indicates that the object is the root.
@@ -28,8 +31,11 @@ A null (or missing) value indicates the object is not the root.
 The **Root** resource has no properties.
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/Root"
-} -->
+  "tocPath": "Facets/Root",
+  "suppressions": []
+}
+-->

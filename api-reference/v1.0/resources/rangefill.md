@@ -1,3 +1,12 @@
+---
+title: "RangeFill resource type"
+description: "Represents the background of a range object."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
+---
+
 # RangeFill resource type
 
 Represents the background of a range object.
@@ -7,9 +16,9 @@ Represents the background of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)	|Update RangeFill object. |
-|[Clear](../api/rangefill_clear.md)|None|Resets the range background.|
+|[Get RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Read properties and relationships of rangeFill object.|
+|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)	|Update RangeFill object. |
+|[Clear](../api/rangefill-clear.md)|None|Resets the range background.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -24,12 +33,11 @@ None
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json

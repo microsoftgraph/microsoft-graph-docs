@@ -1,6 +1,15 @@
+---
+title: "FormatProtection resource type"
+description: "Represents the format protection of a range object."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # FormatProtection resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the format protection of a range object.
 
@@ -9,8 +18,8 @@ Represents the format protection of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get FormatProtection](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)	|Update FormatProtection object. |
+|[Get FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Read properties and relationships of formatProtection object.|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)	|Update FormatProtection object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,10 +53,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "FormatProtection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,16 +1,29 @@
+---
+title: "dateTimeTimeZone resource type"
+description: "Describes the date, time, and time zone of a point in time."
+localization_priority: Normal
+doc_type: resourcePageType
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+---
+
 # dateTimeTimeZone resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the date, time, and time zone of a point in time.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
-|TimeZone|String|One of the following time zone names.|
+|dateTime|String|A single point of time in a combined date and time representation (`{date}T{time}`). For example, "2019-04-16T09:00:00".|
+|timeZone|String|Represents a time zone, for example, "Pacific Standard Time". See below for possible values.|
 
-The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.
+In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), as well as the additional [time zones supported by the calendar API](#additional-time-zones). 
+
+When using **dateTimeTimeZone** in conjunction with a method (such as [creating](../api/user-post-events.md) or [updating](../api/event-update.md) an event), take note of the actual time zones supported, which can be a smaller subset.
+
+### Additional time zones
 
 Etc/GMT+12
 
@@ -232,10 +245,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "dateTimeTimeZone resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

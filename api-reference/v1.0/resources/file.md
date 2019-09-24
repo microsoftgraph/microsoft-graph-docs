@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
+localization_priority: Normal
+description: "The File resource groups file-related data items into a single structure."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # File resource type
 
 The **File** resource groups file-related data items into a single structure.
@@ -32,7 +37,7 @@ Here is a JSON representation of the resource.
 
 | Property | Type                    | Description                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
+| hashes   | [Hashes](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
 | mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
 ## Remarks 

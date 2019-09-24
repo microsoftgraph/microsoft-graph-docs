@@ -1,12 +1,21 @@
+---
+title: "educationIdentityCreationConfiguration resource type"
+description: "Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
 ## educationIdentityCreationConfiguration resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory.
 
 > **Note:** If you have directory sync turned on to sync between on-premises Active Directory and Azure Active Directory (Azure AD), use the [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) resource instead.
 
-Derived from [educationIdentitySynchronizationConfiguration](educationIdentitySynchronizationConfiguration.md).
+Derived from [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md).
 
 ## Properties
 
@@ -26,10 +35,10 @@ Derived from [educationIdentitySynchronizationConfiguration](educationIdentitySy
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
     "userDomains": [
         {
-            "@odata.type": "#microsoft.graph.educationIdentityDomain",
+            "@odata.type": "microsoft.graph.educationIdentityDomain",
         }
     ]
 }

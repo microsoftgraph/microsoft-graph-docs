@@ -1,9 +1,19 @@
+---
+title: "office365GroupsActivityDetail resource type"
+description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
+doc_type: resourcePageType
+---
+
 # office365GroupsActivityDetail resource type
 
 ## Properties
 
 | Property                          | Type    | Description                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
+| groupId                           | String  | The group id.          |
 | reportRefreshDate                 | Date    | The latest date of the content.          |
 | groupDisplayName                  | String  | The display name of the group.           |
 | isDeleted                         | Boolean | Whether this user has been deleted or soft deleted. |
@@ -34,6 +44,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "groupId": "0003cf63-7ff3-4471-b24b-50ffbfb8b5d2",
   "reportRefreshDate": "Date", 
   "groupDisplayName": "String", 
   "isDeleted": true, 

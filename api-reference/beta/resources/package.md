@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: " or a collection of items that should be treated as a collection instead of individual items."
 ms.date: 09/10/2017
 title: Package
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Package resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Package** resource indicates that a DriveItem is the top level item in a "package" or a collection of items that should be treated as a collection instead of individual items.
 
@@ -33,9 +36,12 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The Package facet indicates that an item is the root of a special collection of items that should be treated as a single unit.",
   "keywords": "package, facet, onenote",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": []
+}
+-->

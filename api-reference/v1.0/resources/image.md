@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Image
+localization_priority: Normal
+description: "The Image resource groups image-related properties into a single structure."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Image resource type
 
 The **Image** resource groups image-related properties into a single structure.

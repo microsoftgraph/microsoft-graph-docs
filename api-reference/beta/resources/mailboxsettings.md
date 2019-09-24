@@ -1,8 +1,19 @@
+---
+title: "mailboxSettings resource type"
+description: "Settings for the primary mailbox of the signed-in user."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: resourcePageType
+---
+
 # mailboxSettings resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings for the primary mailbox of the signed-in user.
+Settings for the primary mailbox of a [user](user.md).
+
+You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) a user's mailbox settings by querying the user's **mailboxSettings** property.
 
 
 ## Properties
@@ -10,7 +21,9 @@ Settings for the primary mailbox of the signed-in user.
 |:---------------|:--------|:----------|
 |archiveFolder|string|Folder ID of an archive folder for the user.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
+|dateFormat|string|The date format for the user's mailbox.|
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
+|timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
 
@@ -30,19 +43,23 @@ Here is a JSON representation of the resource.
 {
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+  "dateFormat": "string",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
+  "timeFormat": "string",
   "timeZone": "string",
   "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailboxSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

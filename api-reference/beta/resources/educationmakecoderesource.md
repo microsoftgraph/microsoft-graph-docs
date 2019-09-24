@@ -1,14 +1,24 @@
+---
+title: "educationMakeCodeResource resource type"
+description: "A MakeCode resource"
+localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
+doc_type: "resourcePageType"
+---
+
 # educationMakeCodeResource resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A subclass of [educationResource](educationresource.md). This resource type represents a MakeCode resource.  
+A resource representing a [MakeCode](https://www.microsoft.com/en-us/makecode) project.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|hostWebUrl|String|Base URL of the hosting MakeCode resource.|
-|projectId|String|Unique ID of the makecode project. |
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|projectId|String|ID of the MakeCode project|
+|hostWebUrl|String|Host for the type of MakeCode resource (for example, arcade, microbit)|
 
 ## JSON representation
 
@@ -19,19 +29,19 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.educationMaekCodeResource"
+  "@odata.type": "microsoft.graph.educationMakeCodeResource",
+  "baseType": "microsoft.graph.educationResource"
 }-->
 
 ```json
 {
-  "hostWebUrl": "String",
-  "projectId": "String"
+  "projectId": "String",
+  "hostWebUrl": "String"
 }
-
 ```
 
-<!-- uuid: 23593ab5-ff80-4caa-af80-84352dae1f77
-2019-09-24 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "educationMakeCodeResource resource",

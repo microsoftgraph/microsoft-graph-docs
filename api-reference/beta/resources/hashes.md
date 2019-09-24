@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The Hashes resource groups available hashes into a single structure for an item."
 ms.date: 09/10/2017
 title: Hashes
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Hashes resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Hashes** resource groups available hashes into a single structure for an item.
 
@@ -52,10 +55,13 @@ To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](ht
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The hashes facet provides hash identifiers for a file in OneDrive",
   "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Hashes"
-} -->
+  "tocPath": "Facets/Hashes",
+  "suppressions": []
+}
+-->
