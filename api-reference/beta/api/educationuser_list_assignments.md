@@ -73,6 +73,7 @@ Content-length: 344
             "id": "14012"
           }
       },
+      "closeDateTime": "2014-01-11T00:00:00Z",
       "createdDateTime": "2014-01-01T00:00:00Z",
       "displayName": "Assignment 1",
       "dueDateTime": "2014-01-01T00:00:00Z",

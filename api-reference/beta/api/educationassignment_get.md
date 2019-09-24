@@ -72,6 +72,7 @@ Content-length: 279
     }
   },
   "createdDateTime": "2014-01-01T00:00:00Z",
+  "closeDateTime": "2014-01-11T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
   "grading": {

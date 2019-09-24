@@ -75,6 +75,7 @@ Content-length: 344
           }
       },
       "createdDateTime": "2014-02-01T00:00:00Z",
+      "closeDateTime": "2014-02-01T00:00:00Z",
       "displayName": "published",
       "dueDateTime": "2014-02-01T00:00:00Z",
       "grading": {
