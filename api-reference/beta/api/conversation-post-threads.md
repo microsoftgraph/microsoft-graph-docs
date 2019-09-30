@@ -54,17 +54,16 @@ Here is an example of the request.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/chatThreads
 Content-type: application/json
 
 {
-  "topic": "topic-value",
-  "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      }
-  }]
+  "rootMessage": {
+    "body": {
+      "contentType": 2,
+      "content": "Hello world"
+    }
+  }
 }
 ```
 # [C#](#tab/csharp)
