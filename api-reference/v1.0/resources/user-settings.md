@@ -12,7 +12,8 @@ doc_type: resourcePageType
 The current user settings. 
 To learn how to get or update user settings, see [Get settings](../api/user-get-settings.md) and [Update settings](../api/user-update-settings.md).
 
-NOTE : This endpoint works only with Mail Users. You can't use this endpoint with Contacts.
+> [!NOTE]
+> This endpoint works only with mail users. You can't use this endpoint with contacts.
 
 This resource supports:
 
