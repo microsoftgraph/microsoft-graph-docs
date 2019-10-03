@@ -12,6 +12,8 @@ doc_type: resourcePageType
 The current user settings. 
 To learn how to get or update user settings, see [Get settings](../api/user-get-settings.md) and [Update settings](../api/user-update-settings.md).
 
+NOTE : This endpoint works only with Mail Users. You can't use this endpoint with Contacts.
+
 This resource supports:
 
 - Checking whether a user and the user's organization contribute to content discovery.
