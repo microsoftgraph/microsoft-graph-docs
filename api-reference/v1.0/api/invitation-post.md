@@ -67,7 +67,7 @@ Content-length: 551
 
 {
   "invitedUserEmailAddress": "yyy@test.com",
-  "inviteRedirectUrl": "https://myapp.com"
+  "inviteRedirectUrl": "https://myapps.microsoft.com/"
 }
 ```
 # [C#](#tab/csharp)
