@@ -36,6 +36,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 
