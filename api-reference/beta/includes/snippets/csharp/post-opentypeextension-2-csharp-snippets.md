@@ -6,12 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var extension = new Extension
+var extension = new OpenTypeExtension
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","microsoft.graph.openTypeExtension"}
-	},
 	ExtensionName = "Com.Contoso.Referral",
 	CompanyName = "Wingtip Toys",
 	DealValue = 500050,

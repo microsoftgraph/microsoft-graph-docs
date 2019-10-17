@@ -29,7 +29,6 @@ const educationSchool = {
     street: "12345 Main St."
   },
   externalId: "10002",
-  fax: "+1 (253) 555-0101",
   phone: "+1 (253) 555-0102",
 };
 

@@ -18,7 +18,7 @@ Initialize the provider inside the `onInit()` method of your web part.
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {

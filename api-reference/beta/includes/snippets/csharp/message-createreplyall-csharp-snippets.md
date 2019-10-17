@@ -10,12 +10,8 @@ var message = new Message
 {
 	Attachments = new List<Attachment>()
 	{
-		new Attachment
+		new FileAttachment
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","#microsoft.graph.fileAttachment"}
-			},
 			Name = "guidelines.txt",
 			ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 		}

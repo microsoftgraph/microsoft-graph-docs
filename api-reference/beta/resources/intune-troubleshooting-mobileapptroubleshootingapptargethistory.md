@@ -23,7 +23,7 @@ Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubles
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |securityGroupId|String|AAD security group id to which it was targeted.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|String|Error code for the failure, empty if no failure.|
 
 ## Relationships

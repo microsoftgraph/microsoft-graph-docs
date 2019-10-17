@@ -70,6 +70,9 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allow`, `blockOrganizationalData`, `block`.|
+|previousPinBlockCount|Int32|Requires a pin to be unique from the number specified in this property. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
+|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -98,6 +101,9 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |customBrowserProtocol|String|A custom browser protocol to open weblink on iOS. (iOS only)|
 |customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android. (Android only)|
 |customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android. (Android only)|
+|minimumRequiredCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or app access will be blocked|
+|minimumWarningCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the user will receive a warning|
+|minimumWipeCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -160,6 +166,9 @@ Here is a JSON representation of the resource.
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
   "allowedOutboundClipboardSharingExceptionLength": 1024,
   "notificationRestriction": "String",
+  "previousPinBlockCount": 1024,
+  "maximumAllowedDeviceThreatLevel": "String",
+  "mobileThreatDefenseRemediationAction": "String",
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -205,7 +214,10 @@ Here is a JSON representation of the resource.
   "appActionIfAndroidSafetyNetAppsVerificationFailed": "String",
   "customBrowserProtocol": "String",
   "customBrowserPackageId": "String",
-  "customBrowserDisplayName": "String"
+  "customBrowserDisplayName": "String",
+  "minimumRequiredCompanyPortalVersion": "String",
+  "minimumWarningCompanyPortalVersion": "String",
+  "minimumWipeCompanyPortalVersion": "String"
 }
 ```
 

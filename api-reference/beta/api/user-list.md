@@ -129,7 +129,7 @@ Find a user account in a B2C tenant, using a sign-in name (also known as a local
   "blockType": "request",
   "name": "get_signinname_users"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # [C#](#tab/csharp)

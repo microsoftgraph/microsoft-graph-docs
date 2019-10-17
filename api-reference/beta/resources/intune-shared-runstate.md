@@ -21,8 +21,9 @@ Indicates the type of execution status of the device management script.
 |unknown|0|Unknown result.|
 |success|1|Script is run successfully.|
 |fail|2|Script failed to run.|
-|error|3|Discovery script hits error.|
+|scriptError|3|Discovery script hits error.|
 |pending|4|Script is pending to execute.|
+|notApplicable|5|Script is not applicable for this device.|
 
 
 

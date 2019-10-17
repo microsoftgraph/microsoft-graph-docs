@@ -159,7 +159,7 @@ Content-type: application/json
   "displayName": "John Smith",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },

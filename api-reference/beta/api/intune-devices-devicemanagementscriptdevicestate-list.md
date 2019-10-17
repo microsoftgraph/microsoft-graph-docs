@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 714
+Content-Length: 391
 
 {
   "value": [
@@ -70,15 +70,13 @@ Content-Length: 714
       "resultMessage": "Result Message value",
       "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
       "errorCode": 9,
-      "errorDescription": "Error Description value",
-      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-      "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-      "remediationScriptError": "Remediation Script Error value",
-      "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+      "errorDescription": "Error Description value"
     }
   ]
 }
 ```
+
+
 
 
 

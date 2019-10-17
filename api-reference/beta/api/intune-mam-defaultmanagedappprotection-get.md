@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4119
+Content-Length: 4525
 
 {
   "value": {
@@ -110,6 +110,9 @@ Content-Length: 4119
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
     "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -155,10 +158,15 @@ Content-Length: 4119
     "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
     "customBrowserProtocol": "Custom Browser Protocol value",
     "customBrowserPackageId": "Custom Browser Package Id value",
-    "customBrowserDisplayName": "Custom Browser Display Name value"
+    "customBrowserDisplayName": "Custom Browser Display Name value",
+    "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
+    "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
+    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
   }
 }
 ```
+
+
 
 
 

@@ -117,7 +117,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_chatmessagehostedcontent"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
 ```
 # [C#](#tab/csharp)

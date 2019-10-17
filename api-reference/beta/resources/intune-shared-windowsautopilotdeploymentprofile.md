@@ -45,7 +45,7 @@ Windows Autopilot Deployment Profile
 |:---|:---|:---|
 |**Enrollment**|
 |assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) collection|The list of assigned devices for the profile.|
-|assignments|windowsAutopilotDeploymentProfileAssignment collection|The list of group assignments for the profile.|
+|assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) collection|The list of group assignments for the profile.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

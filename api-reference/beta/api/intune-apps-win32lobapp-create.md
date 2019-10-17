@@ -94,7 +94,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2778
+Content-length: 2817
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -165,7 +165,8 @@ Content-length: 2778
   ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-    "runAsAccount": "user"
+    "runAsAccount": "user",
+    "deviceRestartBehavior": "allow"
   },
   "returnCodes": [
     {
@@ -193,7 +194,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2950
+Content-Length: 2989
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -267,7 +268,8 @@ Content-Length: 2950
   ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-    "runAsAccount": "user"
+    "runAsAccount": "user",
+    "deviceRestartBehavior": "allow"
   },
   "returnCodes": [
     {
@@ -289,6 +291,8 @@ Content-Length: 2950
   "setupFilePath": "Setup File Path value"
 }
 ```
+
+
 
 
 

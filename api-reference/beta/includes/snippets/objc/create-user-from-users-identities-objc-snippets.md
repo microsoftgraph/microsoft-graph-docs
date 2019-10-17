@@ -15,7 +15,7 @@ MSGraphUser *user = [[MSGraphUser alloc] init];
 [user setDisplayName:@"John Smith"];
 NSMutableArray *identitiesList = [[NSMutableArray alloc] init];
 MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
-[identities setSignInType:@"signInName"];
+[identities setSignInType:@"userName"];
 [identities setIssuer:@"contoso.onmicrosoft.com"];
 [identities setIssuerAssignedId:@"johnsmith"];
 [identitiesList addObject: identities];

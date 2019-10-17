@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31591
+Content-Length: 31513
 
 {
   "value": [
@@ -635,7 +635,6 @@ Content-Length: 31591
         "policyRulesFromGroupPolicyMerged": true,
         "policyRulesFromGroupPolicyNotMerged": true
       },
-      "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
       "defenderAdobeReaderLaunchChildProcess": "enable",
       "defenderAttackSurfaceReductionExcludedPaths": [
         "Defender Attack Surface Reduction Excluded Paths value"
@@ -749,6 +748,8 @@ Content-Length: 31591
   ]
 }
 ```
+
+
 
 
 

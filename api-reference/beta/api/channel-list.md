@@ -122,7 +122,7 @@ The following example shows a request to list all private channels.
   "blockType": "request",
   "name": "list_private_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
 ```
 # [C#](#tab/csharp)

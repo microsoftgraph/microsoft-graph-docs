@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11209
+Content-Length: 11286
 
 {
   "value": {
@@ -337,6 +337,9 @@ Content-Length: 11209
     "airPrintBlockCredentialsStorage": true,
     "airPrintForceTrustedTLS": true,
     "airPrintBlockiBeaconDiscovery": true,
+    "filesNetworkDriveAccessBlocked": true,
+    "filesUsbDriveAccessBlocked": true,
+    "wifiPowerOnForced": true,
     "blockSystemAppRemoval": true,
     "vpnBlockCreation": true,
     "appRemovalBlocked": true,
@@ -352,11 +355,12 @@ Content-Length: 11209
     "continuousPathKeyboardBlocked": true,
     "findMyDeviceInFindMyAppBlocked": true,
     "findMyFriendsInFindMyAppBlocked": true,
-    "wiFiBlockPowerModification": true,
     "iTunesBlocked": true
   }
 }
 ```
+
+
 
 
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2194
+Content-Length: 2331
 
 {
   "value": {
@@ -112,11 +112,16 @@ Content-Length: 2194
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
     "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged"
   }
 }
 ```
+
+
 
 
 

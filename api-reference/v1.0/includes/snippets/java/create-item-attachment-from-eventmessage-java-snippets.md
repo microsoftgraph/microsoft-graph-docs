@@ -6,8 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Attachment attachment = new Attachment();
-attachment.additionalDataManager().put("@odata.type", new JsonPrimitive("#Microsoft.OutlookServices.ItemAttachment"));
+ItemAttachment attachment = new ItemAttachment();
 attachment.name = "name-value";
 attachment.item = "message or event entity";
 

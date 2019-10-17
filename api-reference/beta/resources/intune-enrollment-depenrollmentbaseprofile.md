@@ -54,6 +54,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled|
 |screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled|
 |deviceNameTemplate|String|Sets a literal or name pattern.|
+|configurationWebUrl|Boolean|URL for setup assistant login|
 
 ## Relationships
 None
@@ -95,7 +96,8 @@ Here is a JSON representation of the resource.
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
   "screenTimeScreenDisabled": true,
-  "deviceNameTemplate": "String"
+  "deviceNameTemplate": "String",
+  "configurationWebUrl": true
 }
 ```
 

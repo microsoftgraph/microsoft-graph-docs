@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4536
+Content-Length: 4706
 
 {
   "value": {
@@ -114,6 +114,10 @@ Content-Length: 4536
       "Factory Reset Device Administrator Emails value"
     ],
     "factoryResetBlocked": true,
+    "globalProxy": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+      "proxyAutoConfigURL": "Proxy Auto Config URL value"
+    },
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -181,6 +185,8 @@ Content-Length: 4536
   }
 }
 ```
+
+
 
 
 

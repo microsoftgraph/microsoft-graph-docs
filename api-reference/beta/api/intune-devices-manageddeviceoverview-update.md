@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 943
+Content-length: 1082
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -81,7 +81,11 @@ Content-length: 943
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -108,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1056
+Content-Length: 1195
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -123,7 +127,11 @@ Content-Length: 1056
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -145,6 +153,8 @@ Content-Length: 1056
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

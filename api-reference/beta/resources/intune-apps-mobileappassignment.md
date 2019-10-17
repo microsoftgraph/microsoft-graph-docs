@@ -31,6 +31,8 @@ A class containing the properties used for Group Assignment of a Mobile App.
 |intent|[installIntent](../resources/intune-shared-installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The resource type which is the source for the assignment. Possible values are: `direct`, `policySets`.|
+|sourceId|String|The identifier of the source of the assignment.|
 
 ## Relationships
 None
@@ -53,7 +55,9 @@ Here is a JSON representation of the resource.
   },
   "settings": {
     "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
 

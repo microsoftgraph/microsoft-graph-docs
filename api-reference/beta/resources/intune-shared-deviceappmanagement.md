@@ -66,13 +66,14 @@ Singleton entity that acts as a container for all device app management function
 |policySets|[policySet](../resources/intune-policyset-policyset.md) collection|The PolicySet of Policies and Applications|
 |mobileApps|[mobileApp](../resources/intune-shared-mobileapp.md) collection|The mobile apps.|
 |targetedManagedAppConfigurations|[targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) collection|Targeted managed app configurations.|
-|macManagedAppProtections|[macManagedAppProtection](../resources/intune-policyset-macmanagedappprotection.md) collection|Mac managed app policies.|
 |androidManagedAppProtections|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) collection|Android managed app policies.|
 |iosManagedAppProtections|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) collection|iOS managed app policies.|
 |mdmWindowsInformationProtectionPolicies|[mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md) collection|Windows information protection for apps running on devices which are MDM enrolled.|
 |iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) collection|The IOS Lob App Provisioning Configurations.|
 |**Partner Integration**|
 |deviceAppManagementTasks|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) collection|Device app management tasks.|
+|**Unlock**|
+|wdacSupplementalPolicies|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) collection|The collection of Windows Defender Application Control Supplemental Policies.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.  

@@ -62,7 +62,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/importAppleDeviceIdentityList
 
 Content-type: application/json
-Content-length: 756
+Content-length: 782
 
 {
   "importedAppleDeviceIdentities": [
@@ -74,6 +74,7 @@ Content-length: 756
       "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
       "isSupervised": true,
       "discoverySource": "adminImport",
+      "isDeleted": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "description": "Description value",
@@ -90,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 715
+Content-Length: 741
 
 {
   "value": [
@@ -102,6 +103,7 @@ Content-Length: 715
       "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
       "isSupervised": true,
       "discoverySource": "adminImport",
+      "isDeleted": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "description": "Description value",
@@ -112,6 +114,8 @@ Content-Length: 715
   ]
 }
 ```
+
+
 
 
 

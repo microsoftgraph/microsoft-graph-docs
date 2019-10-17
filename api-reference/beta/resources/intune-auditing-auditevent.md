@@ -70,7 +70,14 @@ Here is a JSON representation of the resource.
     "userPrincipalName": "String",
     "servicePrincipalName": "String",
     "ipAddress": "String",
-    "userId": "String"
+    "userId": "String",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "String",
+        "scopeTagId": "String"
+      }
+    ]
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",

@@ -6,8 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Attachment attachment = new Attachment();
-attachment.additionalDataManager().put("@odata.type", new JsonPrimitive("microsoft.graph.fileAttachment"));
+FileAttachment attachment = new FileAttachment();
 attachment.name = "name-value";
 attachment.contentType = "contentType-value";
 attachment.isInline = false;

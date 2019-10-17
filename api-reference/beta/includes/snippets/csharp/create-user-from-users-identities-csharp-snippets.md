@@ -13,7 +13,7 @@ var user = new User
 	{
 		new ObjectIdentity
 		{
-			SignInType = "signInName",
+			SignInType = "userName",
 			Issuer = "contoso.onmicrosoft.com",
 			IssuerAssignedId = "johnsmith"
 		},

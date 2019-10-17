@@ -78,6 +78,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -168,7 +169,8 @@ Here is a JSON representation of the resource.
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "String",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
 

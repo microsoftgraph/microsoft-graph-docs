@@ -30,7 +30,6 @@ MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
 [address setStreet:@"12345 Main St."];
 [educationSchool setAddress:address];
 [educationSchool setExternalId:@"10002"];
-[educationSchool setFax:@"+1 (253) 555-0101"];
 [educationSchool setPhone:@"+1 (253) 555-0102"];
 
 NSError *error;

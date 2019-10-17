@@ -158,7 +158,8 @@ Here is a JSON representation of the resource.
   ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-    "runAsAccount": "String"
+    "runAsAccount": "String",
+    "deviceRestartBehavior": "String"
   },
   "returnCodes": [
     {

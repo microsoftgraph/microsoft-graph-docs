@@ -79,7 +79,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |identityCertificate|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|Identity certificate.|
 |smimeSigningCertificate|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|S/MIME signing certificate.|
 |smimeEncryptionCertificate|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|S/MIME encryption certificate.|
-|derivedCredentialSettings|deviceManagementDerivedCredentialSettings|Tenant level settings for the Derived Credentials to be used for authentication.|
+|derivedCredentialSettings|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Tenant level settings for the Derived Credentials to be used for authentication.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

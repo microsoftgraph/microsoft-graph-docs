@@ -3198,6 +3198,17 @@
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+      - name: Certificate-based auth configuration
+        href: resources/certificatebasedauthconfiguration.md
+        items:
+        - name: List
+          href: api/certificatebasedauthconfiguration-list.md
+        - name: Create
+          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Get
+          href: api/certificatebasedauthconfiguration-get.md
+        - name: Delete
+          href: api/certificatebasedauthconfiguration-delete.md
       - name: Contracts
         href: resources/contract.md
         items:

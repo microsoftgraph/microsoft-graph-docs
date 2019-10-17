@@ -15,12 +15,8 @@ var post = new Post
 	},
 	Attachments = new List<Attachment>()
 	{
-		new Attachment
+		new FileAttachment
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","#microsoft.graph.fileAttachment"}
-			},
 			Name = "Another file as attachment",
 			ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
 		}

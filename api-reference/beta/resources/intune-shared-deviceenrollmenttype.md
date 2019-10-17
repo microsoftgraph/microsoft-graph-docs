@@ -30,7 +30,6 @@ Possible ways of adding a mobile device to management.
 |windowsCoManagement|9|Windows 10 Co-Management triggered by AutoPilot or Group Policy.|
 |appleUserEnrollment|11|Device managed by Apple user enrollment|
 |appleUserEnrollmentWithServiceAccount|12|Device managed by Apple user enrollment with service account|
-|appleUserEnrollmentWithAzureAD|13|Device managed by Apple user enrollment with Azure active directory|
 
 
 

@@ -21,10 +21,10 @@ Device Configuration.
 |[List deviceConfigurations](../api/intune-shared-deviceconfiguration-list.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) objects.|
 |[Get deviceConfiguration](../api/intune-shared-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) object.|
 |**Device configuration**|
-|[assign action](../api/intune-shared-deviceconfiguration-assign.md)|deviceConfigurationAssignment collection|Not yet documented|
+|[assign action](../api/intune-shared-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|Not yet documented|
 |[windowsPrivacyAccessControls action](../api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md)|None|Not yet documented|
 |[assignedAccessMultiModeProfiles action](../api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md)|None|Not yet documented|
-|[getTargetedUsersAndDevices action](../api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md)|deviceConfigurationTargetedUserAndDevice collection|Not yet documented|
+|[getTargetedUsersAndDevices action](../api/intune-shared-deviceconfiguration-gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune-deviceconfig-deviceconfigurationtargeteduseranddevice.md) collection|Not yet documented|
 |**Policy Set**|
 |[hasPayloadLinks action](../api/intune-shared-deviceconfiguration-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Not yet documented|
 
@@ -47,12 +47,12 @@ Device Configuration.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |**Device configuration**|
-|groupAssignments|deviceConfigurationGroupAssignment collection|The list of group assignments for the device configuration profile.|
-|assignments|deviceConfigurationAssignment collection|The list of assignments for the device configuration profile.|
-|deviceStatuses|deviceConfigurationDeviceStatus collection|Device configuration installation status by device.|
-|userStatuses|deviceConfigurationUserStatus collection|Device configuration installation status by user.|
-|deviceStatusOverview|deviceConfigurationDeviceOverview|Device Configuration devices status overview|
-|userStatusOverview|deviceConfigurationUserOverview|Device Configuration users status overview|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile.|
+|assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile.|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device.|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) collection|Device configuration installation status by user.|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary|
 
 ## JSON Representation

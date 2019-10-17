@@ -48,15 +48,11 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script device state entity. This property is read-only.|
-|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
 |errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
-|lastSyncDateTime|DateTimeOffset|The latest time that Intune Managment Extension syncs to Intune.|
-|preRemediationDetectionScriptOutput|String|Output of the detection script before remediation.|
-|remediationScriptError|String|Error output of the remediation script.|
-|postRemediationDetectionScriptOutput|String|Detection script output after remediation.|
 
 
 
@@ -70,7 +66,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 Content-type: application/json
-Content-length: 588
+Content-length: 281
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -78,11 +74,7 @@ Content-length: 588
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
 
@@ -91,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 330
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -100,13 +92,11 @@ Content-Length: 637
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
+
+
 
 
 

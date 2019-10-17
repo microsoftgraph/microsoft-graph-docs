@@ -58,7 +58,11 @@ Here is a JSON representation of the resource.
     "macOSCount": 1024,
     "windowsMobileCount": 1024,
     "windowsCount": 1024,
-    "unknownCount": 1024
+    "unknownCount": 1024,
+    "androidDedicatedCount": 1024,
+    "androidDeviceAdminCount": 1024,
+    "androidFullyManagedCount": 1024,
+    "androidWorkProfileCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

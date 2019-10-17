@@ -114,7 +114,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "get_other_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}
 ```
 # [C#](#tab/csharp)

@@ -6,12 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = new MailFolder
+var mailFolder = new MailSearchFolder
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","microsoft.graph.mailSearchFolder"}
-	},
 	FilterQuery = "contains(subject, 'Analytics')"
 };
 

@@ -35,6 +35,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app data encryption type](intune-mam-managedappdataencryptiontype.md)
 - [Managed app data storage location](intune-mam-managedappdatastoragelocation.md)
 - [Managed app data transfer level](intune-mam-managedappdatatransferlevel.md)
+- [Managed app device threat level](intune-mam-managedappdevicethreatlevel.md)
 - [Managed app diagnostic status](intune-mam-managedappdiagnosticstatus.md)
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
 - [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)

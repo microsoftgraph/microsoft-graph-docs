@@ -240,7 +240,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```

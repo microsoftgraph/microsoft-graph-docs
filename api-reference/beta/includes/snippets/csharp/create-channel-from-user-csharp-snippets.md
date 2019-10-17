@@ -8,21 +8,16 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var channel = new Channel
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","#Microsoft.Teams.Core.channel"}
-	},
 	MembershipType = ChannelMembershipType.Private,
 	DisplayName = "My First Private Channel",
 	Description = "This is my first private channels",
 	Members = new List<ConversationMember>()
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"user@odata.bind","https://graph.microsoft.com/beta/users('{user_id}')"},
-				{"@odata.type","#microsoft.graph.aadUserConversationMember"}
+				{"user@odata.bind","https://graph.microsoft.com/beta/users('{user_id}')"}
 			},
 			Roles = new List<String>()
 			{

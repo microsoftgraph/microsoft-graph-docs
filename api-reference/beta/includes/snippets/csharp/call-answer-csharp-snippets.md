@@ -8,12 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var callbackUri = "callbackUri-value";
 
-var mediaConfig = new MediaConfig
+var mediaConfig = new AppHostedMediaConfig
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","#microsoft.graph.appHostedMediaConfig"}
-	},
 	Blob = "<media config blob>"
 };
 

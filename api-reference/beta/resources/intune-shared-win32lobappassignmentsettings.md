@@ -22,6 +22,8 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 |Property|Type|Description|
 |:---|:---|:---|
 |notifications|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|The notification status for this app assignment. Possible values are: `showAll`, `showReboot`, `hideAll`.|
+|restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|The reboot settings to apply for this app assignment.|
+|installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
 
 ## Relationships
 None
@@ -36,7 +38,19 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
-  "notifications": "String"
+  "notifications": "String",
+  "restartSettings": {
+    "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+    "gracePeriodInMinutes": 1024,
+    "countdownDisplayBeforeRestartInMinutes": 1024,
+    "restartNotificationSnoozeDurationInMinutes": 1024
+  },
+  "installTimeSettings": {
+    "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+    "useLocalTime": true,
+    "startDateTime": "String (timestamp)",
+    "deadlineDateTime": "String (timestamp)"
+  }
 }
 ```
 

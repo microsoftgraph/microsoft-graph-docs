@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1390
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -88,7 +88,14 @@ Content-length: 1390
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -121,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -139,7 +146,14 @@ Content-Length: 1439
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -166,6 +180,8 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
 
 
 

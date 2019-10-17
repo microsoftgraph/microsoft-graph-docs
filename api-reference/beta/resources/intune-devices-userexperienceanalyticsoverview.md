@@ -29,7 +29,9 @@ The user experience analytics overview entity contains the overall score and the
 |deviceBootPerformanceOverallScore|Int32|The user experience analytics device boot performance overall score.|
 |bestPracticesOverallScore|Int32|The user experience analytics best practices overall score.|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The user experience analytics insights.|
-|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics overview. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BootPerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## Relationships
 None
@@ -63,7 +65,9 @@ Here is a JSON representation of the resource.
       "severity": "String"
     }
   ],
-  "state": "String"
+  "state": "String",
+  "deviceBootPerformanceHealthState": "String",
+  "bestPracticesHealthState": "String"
 }
 ```
 

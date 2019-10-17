@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3151
+Content-Length: 3192
 
 {
   "value": {
@@ -138,7 +138,8 @@ Content-Length: 3151
     ],
     "installExperience": {
       "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-      "runAsAccount": "user"
+      "runAsAccount": "user",
+      "deviceRestartBehavior": "allow"
     },
     "returnCodes": [
       {
@@ -161,6 +162,8 @@ Content-Length: 3151
   }
 }
 ```
+
+
 
 
 

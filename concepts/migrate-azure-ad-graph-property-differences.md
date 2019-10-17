@@ -195,7 +195,7 @@ The Azure AD Graph TenantDetails resource is renamed to organization in Microsof
 
 ## TrustedCasForPasswordlessAuth property differences
 
-The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta), and is only available in the Microsoft Graph beta endpoing. There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
+The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta), and is only available in the Microsoft Graph beta endpoint. There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
 
 ### CertificateAuthorityInformation
 
@@ -203,12 +203,12 @@ The Azure AD Graph CertificateAuthorityInformation is renamed to **certificateAu
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **authorityType** | beta&nbsp;-&nbsp;**isRootAuthority**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | This property's type has also changed into a Boolean. Previously this property had to be set to either "RootAuthority" or "IntermediateAuthority". Setting the new property to **true** is equivalent to "RootAuthority". |
-| **crlDistributionPoint** | beta&nbsp;-&nbsp;**certificateRevocationListUrl** <br> v1.0&nbsp;-&nbsp;_Not yet available_ | |
-| **deltaCrlDistributionPoint** | beta&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** <br> v1.0&nbsp;-&nbsp;_Not yet available_ | |
-| **trustedCertificate** | beta&nbsp;-&nbsp;**certificate** <br> v1.0&nbsp;-&nbsp;_Not yet available_ | |
-| **trustedIssuer** | beta&nbsp;-&nbsp;**issuer**<br> v1.0&nbsp;-&nbsp;_Not yet available_ | |
-| **trustedIssuerSki** | beta&nbsp;-&nbsp;**issuerSki**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **authorityType** | beta&nbsp;-&nbsp;**isRootAuthority**<br> v1.0 &nbsp;-&nbsp;**isRootAuthority** | This property's type has also changed into a Boolean. Previously this property had to be set to either "RootAuthority" or "IntermediateAuthority". Setting the new property to **true** is equivalent to "RootAuthority". |
+| **crlDistributionPoint** | beta&nbsp;-&nbsp;**certificateRevocationListUrl** <br> v1.0&nbsp;-&nbsp;**certificateRevocationListUrl** | |
+| **deltaCrlDistributionPoint** | beta&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** <br> v1.0&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** | |
+| **trustedCertificate** | beta&nbsp;-&nbsp;**certificate** <br> v1.0&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** | |
+| **trustedIssuer** | beta&nbsp;-&nbsp;**issuer**<br> v1.0&nbsp;-&nbsp;**issuer** | |
+| **trustedIssuerSki** | beta&nbsp;-&nbsp;**issuerSki**<br> v1.0 &nbsp;-&nbsp;**issuerSki** | |
 
 ## Next Steps
 
