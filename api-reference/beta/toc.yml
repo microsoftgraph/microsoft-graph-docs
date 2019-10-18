@@ -388,6 +388,8 @@
           href: api/group-post-groups.md
         - name: Delete group
           href: api/group-delete.md
+        - name: Evaluate dynamic membership
+          href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Get delta

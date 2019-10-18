@@ -17,6 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
+|Addition|beta|Added the [evaluateDynamicMembership](/graph/api/group-evaluateDynamicMembership?view=graph-rest-beta) action on [group](/graph/api/resources/group?view=graph-rest-beta) |
 | Addition | Beta | Added new property **isAssignableToRole** to [group](/graph/api/resources/group?view=graph-rest-beta).|
 | Addition | v1.0 | Added new property **isAssignableToRole** to [group](/graph/api/resources/group?view=graph-rest-1.0).|
 
