@@ -41,6 +41,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
 |invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator. |
 |status|String|The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error|
+|resetRedemption|Boolean|Indicates whether the invite redemption on an existing external user should be removed so the user can re-redeem the account. By default, this is false and should only be set to true when passing in a valid external user to the InvitedUser property.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -72,7 +73,8 @@ Here is a JSON representation of the resource
   "inviteRedeemUrl": "string",
   "status": "string",
   "invitedUser": {"@odata.type": "microsoft.graph.user"},
-  "invitedUserType": "string"
+  "invitedUserType": "string",
+  "resetRedemption": false
 }
 ```
 
