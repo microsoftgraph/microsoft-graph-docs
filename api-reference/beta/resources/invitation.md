@@ -40,8 +40,8 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed. Required.|
 |inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
 |invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you're are company administrator. |
-|status|String|The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error|
-|resetRedemption|Boolean|Indicates whether the invite redemption on an existing external user should be removed so the user can re-redeem the account. By default, this is false and should only be set to true when passing in a valid external user to the InvitedUser property.|
+|status|String|The status of the invitation. Possible values: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`.|
+|resetRedemption|Boolean|Indicates whether the invite redemption on an existing external user should be removed so the user can re-redeem the account. By default, this is `false` and should only be set to `true` when passing in a valid external user to the **invitedUser** property.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -49,7 +49,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |invitedUser|[user](user.md)|The user created as part of the invitation creation. Read-Only|
 
 ## JSON representation
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource
 
 <!-- 
 { 
