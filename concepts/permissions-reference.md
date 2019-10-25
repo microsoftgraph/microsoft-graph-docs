@@ -40,6 +40,72 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
 
+## Returning shell objects
+
+Groups are members of Roles. Queries for Roles.members return Groups and queries for groups.memberOf return Role objects.  If an application does not have access to read all source/target object types to a given link, the application gets a 200 response and a collection of objects.  Complete objects are returned for the object types that the application has permissions to read.  A shell/container object is returned for any object that the application does not have access to read.  The shell/container object contains the object type and ID in the case of access denial (similar to what is returned if you don't $expand the object). 
+
+This is applied to all relationships that are of directoryObject type (not just member links). Examples include /groups/id/members, roles/id/members or me/ownedObjects. 
+
+For example, let's say an application has User.Read.All and Group.Read.All permissions for Microsoft Graph.  An Active Directory group has been created and that group contains a user and a service principal.  The application calls list group members.  The application has access to the user object in the group, but not the service principal object.  In the response, the full user object and all it's properties are returned. For the service principal object, however, a shell/container object is returned for the service principal.  The data type and object ID are returned for the service principal, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
+
+```http
+GET https://graph.microsoft.com/beta/groups/{id}/members HTTP/1.1
+```
+
+The following is the JSON response:
+
+```json
+{
+    "@odata.context":"https://graph.microsoft-ppe.com/beta/$metadata#directoryObjects",
+    "value":[
+        {
+            "@odata.type":"#microsoft.graph.user",
+            "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
+            "deletedDateTime":null,
+            "accountEnabled":true,
+            "ageGroup":null,
+            "businessPhones":["425-123-1234"],
+            "city":"Redmond",
+            "createdDateTime":"2019-09-18T09:06:51Z",
+            ...
+        },
+        {
+            "@odata.type":"#microsoft.graph.servicePrincipal",
+            "id":"29949c8d-a999-41b6-86f3-1a269a7479cd",
+            "deletedDateTime":null,
+            "accountEnabled":null,
+            "api":null,
+            "appDisplayName":null,"appId":null,
+            "applicationTemplateId":null,
+            "appOwnerOrganizationId":null,
+            "appRoleAssignmentRequired":false,
+            "displayName":null,
+            "errorUrl":null,
+            "homepage":null,
+            "info":null,
+            "loginUrl":null,
+            "logoutUrl":null,
+            "notificationEmailAddresses":[],
+            "preferredSingleSignOnMode":null,
+            "preferredTokenSigningKeyEndDateTime":null,
+            "preferredTokenSigningKeyThumbprint":null,
+            "publisherName":null,
+            "replyUrls":[],
+            "samlMetadataUrl":null,
+            "samlSingleSignOnSettings":null,
+            "servicePrincipalNames":[],
+            "signInAudience":null,
+            "tags":[],
+            "addIns":[],
+            "appRoles":[],
+            "keyCredentials":[],
+            "publishedPermissionScopes":[],
+            "passwordCredentials":[]
+        }
+    ]
+}
+```
+
 ---
 
 ## Access reviews permissions
