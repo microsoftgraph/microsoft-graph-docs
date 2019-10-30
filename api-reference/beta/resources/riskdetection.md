@@ -17,7 +17,7 @@ Azure AD continually evaluates [user risks](riskyuser.md) and app or user [sign-
 For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
 >[!NOTE]
->You must have an Azure AD Premium P2 license to use the risk detection API.
+>You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Methods
 
@@ -35,8 +35,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`correlationId`|`string`|Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in. |
 |`riskType`|`riskEventType`|The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP, and unknownFutureValue. |
 |`riskState`|`riskState`|The state of a detected risky user or sign-in. The possible values are none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, and unknownFutureValue. |
-|`riskLevel`|`riskLevel`|Level of the detected risk. The possible values are low, medium, high, hidden, none, unknownFutureValue. |
-|`riskDetail`|`riskDetail`|Details of the detected risk. The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. |
+|`riskLevel`|`riskLevel`|Level of the detected risk. The possible values are low, medium, high, hidden, none, unknownFutureValue. **Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
+|`riskDetail`|`riskDetail`|Details of the detected risk. The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. **Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
 |`source`|`string`|Source of the risk detection. For example, "activeDirectory". |
 |`detectionTimingType`|`riskDetectionTimingType`|Timing of the detected risk (real-time/offline). The possible values are notDefined, realtime, nearRealtime, offline, unknownFutureValue. |
 |`activity`|`activityType`|Indicates the activity type the detected risk is linked to. The possible values are signin, user, unknownFutureValue. |

@@ -8882,6 +8882,42 @@
           href: api/trustframework-put-trustframeworkpolicy.md
         - name: Delete
           href: api/trustframeworkpolicy-delete.md
+      - name: Trust Framework Keyset
+        href: resources/trustframeworkkeyset.md
+        items:
+        - name: Trust framework key
+          href: resources/trustframeworkkey.md
+        - name: List
+          href: api/trustframework-list-keysets.md
+        - name: Create
+          href: api/trustframework-post-keysets.md
+        - name: Get
+          href: api/trustframeworkkeyset-get.md
+        - name: Update
+          href: api/trustframeworkkeyset-update.md
+        - name: Delete
+          href: api/trustframeworkkeyset-delete.md
+        - name: Generate key
+          href: api/trustframeworkkeyset-generatekey.md
+        - name: Get active key
+          href: api/trustframeworkkeyset-getactivekey.md
+        - name: Upload certificate
+          href: api/trustframeworkkeyset-uploadcertificate.md
+        - name: Upload PKCS12 certificate
+          href: api/trustframeworkkeyset-uploadpkcs12.md
+        - name: Upload secret
+          href: api/trustframeworkkeyset-uploadsecret.md
+      - name: User flows
+        href: resources/identityuserflow.md 
+        items:
+        - name: List
+          href: api/identityuserflow-list.md
+        - name: Create
+          href: api/identityuserflow-post-userflows.md
+        - name: Get
+          href: api/identityuserflow-get.md
+        - name: Delete
+          href: api/identityuserflow-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
