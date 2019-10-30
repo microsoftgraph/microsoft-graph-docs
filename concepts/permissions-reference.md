@@ -40,23 +40,22 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
 
-## Return shell objects for inaccessible objects
-
-[Groups](/graph/api/resources/group) are members of [Roles](/graph/api/resources/directoryrole). Queries for Roles.members return Groups and queries for groups.memberOf return Role objects.  If an application has access to read some but not all all source/target object types to a given link, the application gets a 200 response and a collection of objects.  Complete objects are returned for the object types that the application has permissions to read.  A shell object is returned for any object that the application does not have access to read.  The shell object contains the object type and ID in the case of access denial (similar to what is returned if you don't $expand the object).
+## Limited information returned for inaccessible member objects
+Container objects such as groups and roles support members of various types, for example users and service principals. When an application queries the membership of a container object and does not have permission to read a certain type, members of that type are returned but with limited information.  The application receives a 200 response and a collection of objects.  Complete information is returned for the object types that the application has permissions to read.  For the object types which the application does not have permission to read, only the the object type and ID are returned (similar to what is returned if you don't $expand the object).
 
 This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `roles/{id}/members` or `me/ownedObjects`.
 
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  An Active Directory group has been created and that group contains a user and a service principal.  The application calls list group members.  The application has access to the user object in the group, but not the service principal object.  In the response, the full user object and all it's properties are returned. For the service principal object, however, a shell object is returned for the service principal.  The data type and object ID are returned for the service principal, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
+For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  An Active Directory group has been created and that group contains a user and a service principal.  The application calls list group members.  The application has access to the user object in the group, but not the service principal object.  In the response, the user object and all of it's properties are returned. For the service principal object, however, only limited information is returned.  The data type and object ID are returned for the service principal, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/members HTTP/1.1
+GET https://graph.microsoft.com/1.0/groups/{id}/members HTTP/1.1
 ```
 
 The following is the JSON response:
 
 ```json
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@odata.context":"https://graph.microsoft.com/1.0/$metadata#directoryObjects",
     "value":[
         {
             "@odata.type":"#microsoft.graph.user",
