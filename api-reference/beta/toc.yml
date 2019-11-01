@@ -8507,6 +8507,13 @@
             href: api/accesspackagecatalog-delete.md
           - name: List resources
             href: api/accesspackagecatalog-list-accesspackageresources.md
+        - name: Access package resource request
+          href: resources/accesspackageresourcerequest.md
+          items:
+          - name: List
+            href: api/accesspackagecesourcerequest-list.md
+          - name: Create
+            href: api/accesspackageresourcerequest-post.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:

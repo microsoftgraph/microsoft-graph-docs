@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource is a reference to a resource associated with a catalog the roles for which can be used in one or more access packages.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource is a reference to a resource associated with an access package catalog, the roles for which can be used in one or more access packages.  To request to associate a resource with an access package catalog, create an [accessPackageResourceRequest](accesspackageresourcerequest).
 
 ## Methods
 
@@ -30,8 +30,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isPendingOnboarding|Boolean|True if the resource is not yet available for assignment.|
 |originId|String|The unique identifier of the resource in the origin system. |
-|originSystem|String|The type of the resource in the origin system.|
-|resourceType|String|The type of the resource, such as `Application` if it is an Azure AD connected application.|
+|originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`.|
+|resourceType|String|The type of the resource, such as `Application` if it is an Azure AD connected application, or `SharePoint Online Site` for a SharePoint Online site.|
 |url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
 
 ## Relationships
