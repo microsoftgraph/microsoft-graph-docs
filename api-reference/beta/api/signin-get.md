@@ -1,7 +1,7 @@
 ---
 title: "Get signIn"
 doc_type: apiPageType
-description: "Retrieve a specific Azure AD user sign-in event for your tenant."
+description: "Get a signIn object that contains all sign-ins for an Azure Active Directory tenant."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,8 +11,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a specific Azure AD user sign-in event for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.
-
+Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant. This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## Permissions
 
@@ -20,12 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All |
-|Delegated (work or school account) | Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All | 
-|Application | Directory.Read.All | 
-
+| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuditLog.Read.All, Directory.Read.All | 
 
 In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
@@ -44,7 +40,7 @@ This method supports OData query parameters to help customize the response. For 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -52,19 +48,21 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: User signs in using MFA, which is triggered by a conditional access policy. Primary authentication is through FIDO.
 
-Here is an example of the request.
+#### Request
+
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_signin"
+  "name": "get_signin_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
@@ -83,87 +81,219 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 
 ---
 
+#### Response
 
-### Response
-
-Here is an example of the response. 
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.signIn"
 } -->
+
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
-```
 
-```json
 {
-	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-	"value": [{
-		"id": "id",
-		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-		"userDisplayName": "Jamie Doe",
-		"userPrincipalName": "jdoe@contoso.com",
-		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
-		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
-		"appDisplayName": "Azure",
-		"ipAddress": "127.0.0.1",
-		"status": {
-			"errorCode": 0,
-			"failureReason": null,
-			"additionalDetails": "SignIn Success & CA Success"
-		},
-		"clientAppUsed": null,
-		"deviceDetail": {
-			"deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
-			"displayName": "DeviceName",
-			"operatingSystem": "Windows 10",
-			"browser": "Rich Client v3.14.1592.7",
-			"isCompliant": true,
-			"isManaged": true,
-			"trustType": ""
-		},
-		"location": {
-			"city": "Redmond",
-			"state": "WA",
-			"countryOrRegion": "USA",
-			"geoCoordinates": {
-				"altitude": 41.589,
-				"latitude": 41.589,
-				"longitude": -93.6151
-			}
-		},
-		"mfaDetail": {
-			"mfaAuthMethod": "Phone Auth",
-			"mfaAuthDetail": null
-		},
-		"correlationId": "17c47d3c-593d-4d08-ac20-813892b87e42",
-		"conditionalAccessApplied": true,
-		"conditionalAccessPolicies": [{
-			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
-			"displayName": "capPolicy",
-			"enforcedAccessControls": ["MFA", "TOU"],
-			"enforcedSessionControls": ["CloudAppSecurity"],
-			"result": "success"
-		}],
-		"isRisky": false,
-		"riskLevel": "low"
-	}]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id":"b01b1726-0147-425e-a7f7-21f252050400",
+      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+      "userDisplayName":"Jon Doe",
+      "userPrincipalName":"jdoe@www.contoso.com",
+      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+      "appDisplayName":"Azure Portal",
+      "ipAddress":"207.254.19.10",
+      "clientAppUsed":"Browser",
+      "authenticationDetails": [ 
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+          "authenticationMethod":"FIDO2",
+          "authenticationMethodDetail":"1G54395783",
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"Primary authentication"
+        },
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
+          "authenticationMethod":"Claim in access token",
+          "authenticationMethodDetail":null,
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"MFA"
+        }
+      ],
+      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+      "conditionalAccessStatus":"applied",
+      "isInteractive":true,
+      "tokenIssuerName":null,
+      "tokenIssuerType":"AzureAD",
+      "processingTimeInMilliseconds":100,
+      "riskDetail":"none",
+      "riskLevelAggregated":"none",
+      "riskLevelDuringsignIn":"none",
+      "riskState":"none",
+      "riskEventTypes":[],
+      "resourceDisplayName":"windows azure service management api",
+      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "status":{},
+      "deviceDetail": {
+        "deviceId":null,
+        "displayName":null,
+        "operatingSystem":"Windows 7",
+        "browser":"Chrome 63.0.3239",
+        "isCompliant":null,
+        "isManaged":null,
+        "trustType":null
+      },
+      "location": {
+        "city":"Lithia Springs",
+        "state":"Georgia",
+        "countryOrRegion":"US",
+        "geoCoordinates": {
+          "altitude":null,
+          "latitude":33.7930908203125,
+          "longitude":-84.445358276367188
+        }
+      },
+      "appliedConditionalAccessPolicies": [
+        {
+          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+          "displayName":"MFA policy",
+          "enforcedGrantControls": [
+            "Mfa",
+            "RequireCompliantDevice"
+          ],
+          "enforcedSessionControls":[],
+          "result":"applied"
+        },
+        {
+          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+          "displayName":"PipelineTest4",
+          "enforcedGrantControls":[],
+          "enforcedSessionControls":[],
+          "result":"notEnabled"
+        }
+      ],
+      "authenticationProcessingDetails":[],
+      "networkLocationDetails":[]
+    }
+  ]
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### Example 2: User signs in with only primary authentication. Primary authentication is through cloud password.
+
+#### Request
+
+The following is an example of the request.
+
 <!-- {
-  "type": "#page.annotation",
-  "description": "Get signIn",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "blockType": "request",
+  "name": "get_signin_2"
 }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.signIn"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 211
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id":"b01b1726-0147-425e-a7f7-21f252050400",
+      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+      "userDisplayName":"Jon Doe",
+      "userPrincipalName":"jdoe@www.contoso.com",
+      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+      "appDisplayName":"Azure Portal",
+      "ipAddress":"207.254.19.10",
+      "clientAppUsed":"Browser",
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+          "authenticationMethod":"Password",
+          "authenticationMethodDetail":"Cloud password",
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"Primary authentication"
+        }
+      ],
+      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+      "conditionalAccessStatus":"applied",
+      "isInteractive":true,
+      "tokenIssuerName":null,
+      "tokenIssuerType":"AzureAD",
+      "processingTimeInMilliseconds":100,
+      "riskDetail":"none",
+      "riskLevelAggregated":"none",
+      "riskLevelDuringsignIn":"none",
+      "riskState":"none",
+      "riskEventTypes":[],
+      "resourceDisplayName":"windows azure service management api",
+      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "status":{},
+      "deviceDetail": {
+        "deviceId":null,
+        "displayName":null,
+        "operatingSystem":"Windows 7",
+        "browser":"Chrome 63.0.3239",
+        "isCompliant":null,
+        "isManaged":null,
+        "trustType":null
+      },
+      "location": {
+        "city":"Lithia Springs",
+        "state":"Georgia",
+        "countryOrRegion":"US",
+        "geoCoordinates": {
+          "altitude":null,
+          "latitude":33.7930908203125,
+          "longitude":-84.445358276367188
+        }
+      },
+      "appliedConditionalAccessPolicies": [
+        {
+          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+          "displayName":"MFA policy",
+          "enforcedGrantControls": [
+            "Mfa",
+            "RequireCompliantDevice"
+          ],
+          "enforcedSessionControls":[],
+          "result":"notApplied"
+        },
+        {
+          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+          "displayName":"PipelineTest4",
+          "enforcedGrantControls":[],
+          "enforcedSessionControls":[],
+          "result":"notEnabled"
+        }
+      ],
+      "authenticationProcessingDetails":[],
+      "networkLocationDetails":[]
+    }
+  ]
+}
+```

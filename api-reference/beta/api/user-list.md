@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of user objects.
+Retrieve a list of [user](../resources/user.md) objects.
 
 ## Permissions
 
@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code and collection of [u
 
 #### Request
 
+The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -78,8 +80,7 @@ GET https://graph.microsoft.com/beta/users
 
 ##### Response
 
-Here is an example of the response. 
-
+The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -123,6 +124,7 @@ Find a user account in a B2C tenant, using a sign-in name (also known as a local
 
 #### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -149,8 +151,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### Response
 
-Here is an example of the response. 
-
+The following is an example of the response. 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -169,6 +170,58 @@ Content-length: 108
     {
       "displayName": "John Smith",
       "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+    }
+  ]
+}
+```
+
+### Example 3:  List users including their last sign-in time
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName, signInActivity
+```
+
+#### Response
+
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName,signInActivity)",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-07-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
     }
   ]
 }
