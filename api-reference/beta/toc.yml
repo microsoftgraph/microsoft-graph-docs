@@ -8511,7 +8511,7 @@
           href: resources/accesspackageresourcerequest.md
           items:
           - name: List
-            href: api/accesspackagecesourcerequest-list.md
+            href: api/accesspackageresourcerequest-list.md
           - name: Create
             href: api/accesspackageresourcerequest-post.md
       - name: Feature rollout policy
