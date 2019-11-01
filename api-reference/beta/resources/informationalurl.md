@@ -3,8 +3,8 @@ title: "informationalUrl resource type"
 description: "Basic profile information of the application."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # informationalUrl resource type
@@ -17,10 +17,11 @@ Basic profile information of the application.
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|marketing|String| Link to the application's marketing page. For example, https://www.contoso.com/app/marketing |
-|privacy|String| Link to the application's privacy statement. For example, https://www.contoso.com/app/privacy |
-|support|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
-|termsOfService|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
+|logoUrl|String|CDN URL to the application's logo, Read-only.|
+|marketingUrl|String| Link to the application's marketing page. For example, https://www.contoso.com/app/marketing |
+|privacyStatementUrl|String| Link to the application's privacy statement. For example, https://www.contoso.com/app/privacy |
+|supportUrl|String| Link to the application's support page. For example, https://www.contoso.com/app/support |
+|termsOfServiceUrl|String| Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice |
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -35,10 +36,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "marketing": "String",
-  "privacy": "String",
-  "support": "String",
-  "termsOfService": "String"
+  "logoUrl": "String",
+  "marketingUrl": "String",
+  "privacyStatementUrl": "String",
+  "supportUrl": "String",
+  "termsOfServiceUrl": "String"
 }
 
 ```

@@ -8080,7 +8080,7 @@
           href: api/dynamics-vendor-update.md
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
-    - name: Identity and access
+    - name: Identity and access    
       displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
@@ -8200,10 +8200,30 @@
           href: api/application-update.md
         - name: Delete application
           href: api/application-delete.md
+        - name: List deleted applications
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted application
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete application
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted application
+          href: api/directory-deleteditems-restore.md
+        - name: Add password
+          href: api/application-addpassword.md
+        - name: Remove password
+          href: api/application-removepassword.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
+        - name: List extensions
+          href: api/application-list-extensionproperty.md
+        - name: Delete extension
+          href: api/application-delete-extensionproperty.md
         - name: List owners
           href: api/application-list-owners.md
-        - name: Assign owner
+        - name: Add owner
           href: api/application-post-owners.md
+        - name: Remove owner
+          href: api/application-delete-owners.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -8430,6 +8450,63 @@
           href: api/domain-update.md
         - name: Verify domain
           href: api/domain-verify.md
+      - name: Entitlement management
+        href: resources/entitlementmanagement-root.md
+        items:
+        - name: Access package
+          href: resources/accesspackage.md
+          items:
+          - name: List
+            href: api/accesspackage-list.md
+          - name: Create
+            href: api/accesspackage-post.md
+          - name: Get
+            href: api/accesspackage-get.md
+          - name: Delete
+            href: api/accesspackage-delete.md
+        - name: Access package assignment
+          href: resources/accesspackageassignment.md
+          items:
+          - name: List 
+            href: api/accesspackageassignment-list.md
+        - name: Access package assignment policy
+          href: resources/accesspackageassignmentpolicy.md
+          items:
+          - name: List
+            href: api/accesspackageassignmentpolicy-list.md
+          - name: Create
+            href: api/accesspackageassignmentpolicy-post.md
+          - name: Get 
+            href: api/accesspackageassignmentpolicy-get.md
+          - name: Delete
+            href: api/accesspackageassignmentpolicy-delete.md
+        - name: Access package assignment request
+          href: resources/accesspackageassignmentrequest.md
+          items:
+          - name: List
+            href: api/accesspackageassignmentrequest-list.md
+          - name: Create
+            href: api/accesspackageassignmentrequest-post.md
+          - name: Get
+            href: api/accesspackageassignmentrequest-get.md
+        - name: Access package assignment resource role
+          href: resources/accesspackageassignmentresourcerole.md
+          items:
+          - name: List
+            href: api/accesspackageassignmentresourcerole-list.md
+        - name: Access package catalog
+          href: resources/accesspackagecatalog.md
+          items:
+          - name: List
+            href: api/accesspackagecatalog-list.md
+          - name: Create
+            href: api/accesspackagecatalog-post.md
+          - name: Get
+            href: api/accesspackagecatalog-get.md
+          - name: Delete
+            href: api/accesspackagecatalog-delete.md
+          - name: List resources
+            href: api/accesspackagecatalog-list-accesspackageresources.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
@@ -8514,6 +8591,23 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection          
+        items:       
+        - name: Labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List labels
+            href: api/informationprotectionpolicy-list-labels.md
+          - name: Get label
+            href: api/informationprotectionlabel-get.md
+          - name: Evaluate application
+            href: api/informationprotectionlabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/informationprotectionlabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/informationprotectionlabel-evaluateremoval.md
+          - name: Extract label
+            href: api/informationprotectionlabel-extractlabel.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -8796,6 +8890,10 @@
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: Add password
+          href: api/serviceprincipal-addpassword.md
+        - name: Remove password
+          href: api/serviceprincipal-removepassword.md
         - name: Check member objects
           href: api/serviceprincipal-checkmemberobjects.md
       - name: Subscribed sku
@@ -9181,13 +9279,14 @@
         - name: Get resource
           href: api/resource-get.md
     - name: Notifications
-      href: resources/notifications-api-overview.md
       items:
+      - name: Overview
+        href: resources/notifications-api-overview.md
       - name: Notification
         href: resources/projectrome-notification.md
         items:
         - name: Create and send a notification
-          href: api/notifications-post.md
+          href: api/user-post-notifications.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
