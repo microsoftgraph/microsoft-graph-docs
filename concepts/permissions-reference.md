@@ -45,7 +45,7 @@ Container objects such as groups support members of various types, for example u
 
 This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user and a service principal.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user object in the group, but not the service principal object.  In the response, the user object and all of it's properties are returned. For the service principal object, however, only limited information is returned.  The data type and object ID are returned for the service principal, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
+For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a service principal.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the service principal object.  In the response, all the selected properties of the user and group objects are returned. For the service principal object, however, only limited information is returned.  The data type and object ID are returned for the service principal, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members HTTP/1.1
@@ -55,51 +55,30 @@ The following is the JSON response:
 
 ```json
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl)",
     "value":[
         {
             "@odata.type":"#microsoft.graph.user",
             "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
-            "deletedDateTime":null,
-            "accountEnabled":true,
-            "ageGroup":null,
-            "businessPhones":["425-123-1234"],
-            "city":"Redmond",
+            "displayName":"Jane Dane",
             "createdDateTime":"2019-09-18T09:06:51Z",
-            ...
+            "deletedDateTime":null
+        },
+        {
+            "@odata.type":"#microsoft.graph.group",
+            "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
+            "displayName":"Group 1",
+            "description":null,
+            "createdDateTime":"2019-10-24T01:34:35Z",
+            "deletedDateTime":null
         },
         {
             "@odata.type":"#microsoft.graph.servicePrincipal",
-            "id":"29949c8d-a999-41b6-86f3-1a269a7479cd",
-            "deletedDateTime":null,
-            "accountEnabled":null,
-            "api":null,
-            "appDisplayName":null,"appId":null,
-            "applicationTemplateId":null,
-            "appOwnerOrganizationId":null,
-            "appRoleAssignmentRequired":false,
+            "id":"d282309e-f91d-43b6-badb-9e68aa4b4fc8",
             "displayName":null,
-            "errorUrl":null,
+            "deletedDateTime":null,
             "homepage":null,
-            "info":null,
-            "loginUrl":null,
-            "logoutUrl":null,
-            "notificationEmailAddresses":[],
-            "preferredSingleSignOnMode":null,
-            "preferredTokenSigningKeyEndDateTime":null,
-            "preferredTokenSigningKeyThumbprint":null,
-            "publisherName":null,
-            "replyUrls":[],
-            "samlMetadataUrl":null,
-            "samlSingleSignOnSettings":null,
-            "servicePrincipalNames":[],
-            "signInAudience":null,
-            "tags":[],
-            "addIns":[],
-            "appRoles":[],
-            "keyCredentials":[],
-            "publishedPermissionScopes":[],
-            "passwordCredentials":[]
+            "loginUrl":null
         }
     ]
 }
