@@ -1,17 +1,17 @@
 ---
-title: "List accessPackageAssignmentResourceRoles"
-description: "Retrieve a list of accessPackageAssignmentResourceRole objects."
+title: "Get accessPackageAssignmentResourceRole"
+description: "Retrieve the properties and relationships of accessPackageAssignmentResourceRole object."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# List accessPackageAssignmentResourceRoles
+# Get accessPackageAssignmentResourceRole
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects.  The resulting list includes all the resource roles of all assignments that the caller has access to read, across all catalogs and access packages.
+Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |  EntitlementManagement.ReadWrite.All |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles
+GET /accessPackageAssignmentResourceRoles/{id}
 ```
 
 ## Optional query parameters
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and the requested [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) object in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_accesspackageassignmentresourceroles"
+  "name": "get_accesspackageassignmentresourcerole"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles
+GET https://graph.microsoft.com/beta/accessPackageAssignmentResourceRoles/{id}
 ```
 
 ### Response
@@ -72,8 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentResourceRole",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.accessPackageAssignmentResourceRole"
 } -->
 
 ```http
@@ -81,14 +80,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "1bf101d2-4d9c-437f-bbf5-3d13d98f5479",
-      "originId": "originId-value",
-      "originSystem": "SharePointOnline",
-      "status": "Fulfilled"
-    }
-  ]
+  "id": "1bf101d2-4d9c-437f-bbf5-3d13d98f5479",
+  "originId": "originId-value",
+  "originSystem": "SharePointOnline",
+  "status": "Fulfilled"
 }
 ```
 
@@ -96,7 +91,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List accessPackageAssignmentResourceRoles",
+  "description": "Get accessPackageAssignmentResourceRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

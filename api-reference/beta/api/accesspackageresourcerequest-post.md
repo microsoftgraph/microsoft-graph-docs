@@ -42,6 +42,9 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 In the request body, supply a JSON representation of [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object. Include the `accessPackageResource` relationship with a [accessPackageResource](../resources/accesspackageresource.md) object as part of the request.
 
+To add an Azure AD group as a resource to a catalog, the value of the **originSystem** property within the `accessPackageResource` should be **AadGroup** and the value of the **originId** is the identifier of the group.
+
+
 ## Response
 
 If successful, this method returns a 200-series response code and a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object in the response body.

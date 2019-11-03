@@ -8513,6 +8513,8 @@
           items:
           - name: List
             href: api/accesspackageassignmentresourcerole-list.md
+          - name: Get
+            href: api/accesspackageassignmentresourcerole-get.md
         - name: Access package catalog
           href: resources/accesspackagecatalog.md
           items:
