@@ -17,7 +17,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accesspackageresource objects. |
+| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accesspackageresource objects in a catalog. |
 
 ## Properties
 

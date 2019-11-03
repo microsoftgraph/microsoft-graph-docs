@@ -8528,6 +8528,8 @@
             href: api/accesspackagecatalog-delete.md
           - name: List resources
             href: api/accesspackagecatalog-list-accesspackageresources.md
+          - name: List resource roles
+            href: api/accesspackagecatalog-list-accesspackageresourceroles.md
         - name: Access package resource request
           href: resources/accesspackageresourcerequest.md
           items:

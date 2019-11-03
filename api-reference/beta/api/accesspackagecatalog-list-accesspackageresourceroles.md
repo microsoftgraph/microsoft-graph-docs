@@ -1,17 +1,17 @@
 ---
-title: "Get accessPackageAssignmentResourceRole"
-description: "Retrieve the properties and relationships of accessPackageAssignmentResourceRole object."
+title: "List accessPackageResourceRoles"
+description: "Retrieve a list of accesspackageresourcerole objects."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Get accessPackageAssignmentResourceRole
+# List accessPackageResourceRoles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
+Retrieve a list of [accessPackageResourceRole](../resources/accesspackageresourcerole.md) objects of an [accessPackageResource](../resources/accesspackageresource.md) in an [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
 ## Permissions
 
@@ -28,12 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles/{id}
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageResourceRoles?$filter=(originSystem+eq+%27{originSystemType}%27+and+accessPackageResource/id+eq+%27{resourceId}%27)
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method uses OData query parameters to construct the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [accessPackageResourceRole](../resources/accesspackageresourcerole.md) objects in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and the requested [a
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_accesspackageassignmentresourcerole"
+  "name": "get_accesspackageresourceroles"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentResourceRoles/{id}
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/15d889df-3eb8-4e9b-bfb4-b1908849aec4/accessPackageResourceRoles?$filter=(originSystem+eq+%27AadGroup%27+and+accessPackageResource/id+eq+%27a35bef72-a8aa-4ca3-af30-f6b2ece7208f%27)
 ```
 
 ### Response
@@ -72,7 +72,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.accessPackageAssignmentResourceRole"
+  "@odata.type": "microsoft.graph.accessPackageResourceRole",
+  "isCollection": true
 } -->
 
 ```http
@@ -80,10 +81,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "1bf101d2-4d9c-437f-bbf5-3d13d98f5479",
-  "originId": "originId-value",
-  "originSystem": "SharePointOnline",
-  "status": "Fulfilled"
+  "value": [
+    {
+      "id": "id-value",
+      "displayName": "Member",
+      "description": "description-value",
+      "originId": "originId-value",
+      "originSystem": "originSystem-value"
+    }
+  ]
 }
 ```
 
@@ -91,7 +97,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get accessPackageAssignmentResourceRole",
+  "description": "List accessPackageResourceRoles",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
