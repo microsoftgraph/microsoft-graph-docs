@@ -234,7 +234,7 @@
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Reprocess license assignment
-          href: api/user-reprocesslicenseassignment.md          
+          href: api/user-reprocesslicenseassignment.md
         - name: Get member objects
           href: api/user-getmemberobjects.md
         - name: Get member groups
@@ -309,20 +309,28 @@
           href: api/user-post-manager.md
       - name: Outlook settings
         items:
-        - name: Outlook user
-          href: resources/outlookuser.md
-        - name: Get language choices
-          href: api/outlookuser-supportedlanguages.md
-        - name: Get time zone choices
-          href: api/outlookuser-supportedtimezones.md
-        - name: Get mailbox settings
-          href: api/user-get-mailboxsettings.md
-        - name: Update mailbox settings
-          href: api/user-update-mailboxsettings.md
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
+        - name: Mailbox settings
+          expanded: true
+          items:
+          - name: Mailbox settings
+            href: resources/mailboxsettings.md
+          - name: Get mailbox settings
+            href: api/user-get-mailboxsettings.md
+          - name: Update mailbox settings
+            href: api/user-update-mailboxsettings.md
+        - name: Outlook user services
+          expanded: true
+          items:
+          - name: Outlook user
+            href: resources/outlookuser.md
+          - name: Get language choices
+            href: api/outlookuser-supportedlanguages.md
+          - name: Get time zone choices
+            href: api/outlookuser-supportedtimezones.md
+          - name: List categories
+            href: api/outlookuser-list-mastercategories.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
       - name: Outlook tasks
@@ -747,6 +755,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+      - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get
+          href: api/calendarpermission-get.md
+        - name: Update
+          href: api/calendarpermission-update.md
+        - name: Delete
+          href: api/calendarpermission-delete.md
       - name: Calendar view
         href: api/calendar-list-calendarview.md
         items:
@@ -798,6 +815,8 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
+          - name: Update place
+            href: api/place-update.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -8328,7 +8347,7 @@
         - name: Get contract
           href: api/contract-get.md
         - name: List contracts
-          href: api/contract-list.md        
+          href: api/contract-list.md
       - name: Data policy operation
         href: resources/datapolicyoperation.md
         items:
@@ -9013,7 +9032,7 @@
         - name: Upload secret
           href: api/trustframeworkkeyset-uploadsecret.md
       - name: User flows
-        href: resources/identityuserflow.md 
+        href: resources/identityuserflow.md
         items:
         - name: List
           href: api/identityuserflow-list.md
@@ -9612,6 +9631,67 @@
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search (preview)
+      displayname: Microsoft Search API
+      items:
+      - name: Query
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Query data
+          href: api/search-query.md
+      - name: Index
+        items:
+        - name: Overview
+          href: resources/indexing-api-overview.md
+        - name: External connection
+          items:
+          - name: External connection
+            href: resources/externalconnection.md
+          - name: List external connections
+            href: api/externalconnection-list.md
+          - name: Get external connection
+            href: api/externalconnection-get.md
+          - name: Create external connection
+            href: api/external-post-connections.md
+          - name: Update external connection
+            href: api/externalconnection-update.md
+          - name: Delete external connection
+            href: api/externalconnection-delete.md
+          - name: Create schema
+            href: api/externalconnection-post-schema.md
+          - name: Get operation
+            href: api/connectionoperation-get.md
+          - name: Create external item
+            href: api/externalconnection-put-items.md
+        - name: Schema
+          items:
+          - name: Schema
+            href: resources/schema.md
+          - name: Get schema
+            href: api/schema-get.md
+          - name: Create schema
+            href: api/externalconnection-post-schema.md
+        - name: External item
+          items:
+          - name: External item
+            href: resources/externalitem.md
+          - name: Create external item
+            href: api/externalconnection-put-items.md
+          - name: Update external item
+            href: api/externalitem-update.md
+          - name: Delete external item
+            href: api/externalitem-delete.md
+        - name: External file
+          items:
+          - name: External file
+            href: resources/externalfile.md
+          - name: Create external file
+            href: api/externalconnection-put-items.md
+          - name: Update external file
+            href: api/externalitem-update.md
+          - name: Delete external file
+            href: api/externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
@@ -9735,7 +9815,7 @@
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Social and workplace intelligence
+    - name: People and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
@@ -9791,6 +9871,65 @@
             href: api/activitystatistics-get.md
       - name: Mention
         href: resources/mention.md
+      - name: Profile
+        href: resources/profile.md
+        items:
+        - name: Get profile
+          href: api/profile-get.md
+        - name: Delete profile
+          href: api/profile-delete.md
+        - name: List account
+          href: api/profile-list-account.md
+        - name: List anniversariles
+          href: api/profile-list-anniversaries.md
+        - name: Create anniversary
+          href: api/profile-post-anniversaries.md
+        - name: List educational activities
+          href: api/profile-list-educationalactivities.md
+        - name: Create educational activity
+          href: api/profile-post-educationalactivities.md
+        - name: Create email address
+          href: api/profile-post-emails.md
+        - name: List email addresses
+          href: api/profile-list-emails.md
+        - name: Create interest
+          href: api/profile-post-interests.md
+        - name: List interests
+          href: api/profile-list-interests.md
+        - name: Create language
+          href: api/profile-post-languages.md
+        - name: List languages
+          href: api/profile-list-languages.md
+        - name: Create name
+          href: api/profile-post-names.md
+        - name: List names
+          href: api/profile-list-names.md
+        - name: List websites
+          href: api/profile-list-websites.md
+        - name: Create phone number
+          href: api/profile-post-phones.md
+        - name: List phone numbers
+          href: api/profile-list-phones.md
+        - name: Create position
+          href: api/profile-post-positions.md
+        - name: List positions
+          href: api/profile-list-positions.md
+        - name: Create project
+          href: api/profile-post-projects.md
+        - name: List projects
+          href: api/profile-list-projects.md
+        - name: Create skill
+          href: api/profile-post-skills.md
+        - name: List skills
+          href: api/profile-list-skills.md
+        - name: Create web account
+          href: api/profile-post-webaccounts.md
+        - name: List web accounts
+          href: api/profile-list-webaccounts.md
+        - name: Create website
+          href: api/profile-post-websites.md
+        - name: List websites
+          href: api/profile-list-websites.md
     - name: Tasks and plans
       displayName: Planner
       items:

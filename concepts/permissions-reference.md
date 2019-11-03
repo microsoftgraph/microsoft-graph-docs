@@ -1240,6 +1240,35 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Search permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalItem.ReadWrite.All_ | Read and Write external data | Allows an app to write external data into the indexing API. | Yes | No |
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _ExternalItem.Read.All_ | Read external data | Allows an app to read external data ingested via the Microsoft Search indexing API| Yes | No |
+
+### Remarks
+Search permissions are only valid for work or school accounts.
+
+This search permission is only applicable to ingested data from the indexing API.
+
+Access to data via search requires the corresponding permission. Ex : _Files.Read.All_ to access files via search.
+
+### Example usage
+
+#### Application
+
+* _ExternalItem.Read.All__:  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+
+---
+
 ## Security permissions
 
 #### Delegated permissions

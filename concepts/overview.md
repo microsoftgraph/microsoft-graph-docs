@@ -17,13 +17,13 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights exposed as resources of Microsoft 365 services. You can use REST APIs or SDKs to access the endpoint and build apps that support scenarios spanning across productivity, collaboration, education, security, identity, access, device management, and much more.
+- [Microsoft Graph connectors (preview)](/microsoftsearch/connectors-overview) work in the incoming direction, delivering data external to the Microsoft cloud into Microsoft Graph services and applications, to enhance Microsoft 365 experiences such as Microsoft Search.
 - [Microsoft Graph data connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. This cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
-- Microsoft Graph connectors (private preview) works in the incoming direction, delivering external data into Microsoft Graph services and applications and enhancing custom experiences.
 
-Together, the Microsoft Graph API, data connect, and connectors (private preview) power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets to derive insights and analytics, you can extend Microsoft 365 experiences, or build unique, intelligent applications.
+Together, the Microsoft Graph API, connectors (preview), and data connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets to derive insights and analytics, you can extend Microsoft 365 experiences, or build unique, intelligent applications.
 
 > [!NOTE]
-> Microsoft Graph connectors is in private preview. Participation in the preview program is by invitation only. For more information about the connectors, see [Build 2019: Microsoft Graph powers the Microsoft 365 platform](https://aka.ms/microsoftgraphbuild2019).
+> Microsoft Graph connectors is in preview. To learn more about the preview, see [connectors preview](https://docs.microsoft.com/MicrosoftSearch/connectors-preview). To participate in the preview, you must first submit the [Microsoft Graph connectors preview signup form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## What's in Microsoft Graph?
 
@@ -92,9 +92,15 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 |   GET items trending around me | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
 |   GET my notes | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
+## Bring data from an external content source to Microsoft Graph (preview)
+
+Use Microsoft Graph _connectors_ to bring data that is external to the Microsoft cloud into Microsoft Graph. Examples of such data can be an organization's human resources database or product catalog, hosted on-premises or in the public or private clouds. 
+
+Microsoft Graph connectors create connections to external data sources, index the data, and store it as external custom items and files. Once indexed, those items can show up in Microsoft Search, and for apps that use the [Microsoft Search API](search-concept-overview.md).
+
 ## Access Microsoft Graph data at scale using Microsoft Graph data connect
 
-Microsoft Graph data connect provides a set of tools to access data on Microsoft Graph at scale, while allowing administrators granular consent and full control over their Microsoft Graph data. Data connect streamlines the delivery of this data to Microsoft Azure.
+Use Microsoft Graph _data connect_ to access data on Microsoft Graph at scale, while allowing administrators granular consent and full control over their Microsoft Graph data. Data connect streamlines the delivery of this data to Microsoft Azure.
 
 Using Azure tools, you can then build intelligent apps that:
 

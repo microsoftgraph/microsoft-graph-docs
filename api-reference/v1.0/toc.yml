@@ -290,22 +290,30 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook settings       
+      - name: Outlook settings
         items:
-        - name: Outlook user
-          href: resources/outlookuser.md
-        - name: Get language choices
-          href: api/outlookuser-supportedlanguages.md
-        - name: Get time zone choices
-          href: api/outlookuser-supportedtimezones.md
-        - name: Get mailbox settings
-          href: api/user-get-mailboxsettings.md
-        - name: Update mailbox settings
-          href: api/user-update-mailboxsettings.md
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
+        - name: Mailbox settings
+          expanded: true
+          items:
+          - name: Mailbox settings
+            href: resources/mailboxsettings.md
+          - name: Get mailbox settings
+            href: api/user-get-mailboxsettings.md
+          - name: Update mailbox settings
+            href: api/user-update-mailboxsettings.md
+        - name: Outlook user services
+          expanded: true
+          items:
+          - name: Outlook user
+            href: resources/outlookuser.md
+          - name: Get language choices
+            href: api/outlookuser-supportedlanguages.md
+          - name: Get time zone choices
+            href: api/outlookuser-supportedtimezones.md
+          - name: List categories
+            href: api/outlookuser-list-mastercategories.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
       - name: Photo
@@ -4019,7 +4027,7 @@
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-    - name: 'Social intelligence: People'
+    - name: 'People and workplace intelligence'
       items:
       - name: Overview
         href: resources/social-overview.md

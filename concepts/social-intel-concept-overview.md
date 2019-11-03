@@ -1,5 +1,5 @@
 ---
-title: "Overview of social and workplace intelligence in Microsoft Graph"
+title: "Overview of people and workplace intelligence in Microsoft Graph"
 description: "The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting."
 author: "simonhult"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "insights"
 scenarios: "getting-started"
 ---
 
-# Overview of social and workplace intelligence in Microsoft Graph
+# Overview of people and workplace intelligence in Microsoft Graph
 
 The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
@@ -87,9 +87,13 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 
 ## Why integrate with MyAnalytics (preview)?
 
-[MyAnalytics](https://docs.microsoft.com/en-us/workplace-analytics/myanalytics/index) provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
+[MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
 
 The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
+
+## Why integrate with the profile API (preview)?
+
+[Profile](/graph/api/resources/profile?view=graph-rest-beta) represents the next generation of how people in Microsoft services are represented and modeled. The data within a user's profile can be used to build customized experiences on top of Microsoft Graph with the information also available within Microsoft people experiences. 
 
 ## API reference
 
@@ -104,3 +108,4 @@ Looking for the API reference for these services?
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
 * To get started with insights API, see [Use the insights API](/graph/api/resources/insights?view=graph-rest-beta).
 * Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
+* Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta).

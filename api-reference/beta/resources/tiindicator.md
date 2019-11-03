@@ -24,6 +24,7 @@ Current **targetProduct** support includes the following:
      - [List tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
+     
      Support for the bulk methods is coming soon.
      
   > [!NOTE]

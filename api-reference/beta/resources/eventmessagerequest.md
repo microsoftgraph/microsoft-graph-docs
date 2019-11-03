@@ -114,9 +114,9 @@ Here is a JSON representation of the resource
 |meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|Information about mentions in the message. When processing a `GET` /messages request, the server sets this property and includes it in the response by default. The server returns null if there are no mentions in the message. Optional. |
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
-|previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|The previous end time of the requested meeting.|
-|previousLocation|[Location](location.md)|The previous location of the requested meeting.|
-|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|The previous start time of the requested meeting.|
+|previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| If the meeting update changes the meeting end time, this property specifies the previous meeting end time.|
+|previousLocation|[Location](location.md)| If the meeting update changes the meeting location, this property specifies the previous meeting location.|
+|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)| If the meeting update changes the meeting start time, this property specifies the previous meeting start time.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|

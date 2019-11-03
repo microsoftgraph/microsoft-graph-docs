@@ -7,6 +7,8 @@ ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
+# Enum values
+
 ### attachmentType values
 
 | Member
@@ -36,6 +38,16 @@ author: "MSGraphDocsvTeam"
 |appNotification|
 |appCode|
 |alternateMobilePhone|
+
+### entityTypes values
+
+|Member|
+|:---|
+|microsoft.graph.event|
+|microsoft.graph.message|
+|microsoft.graph.driveItem|
+|microsoft.graph.externalFile|
+|microsoft.graph.externalItem|
 
 ### contactRelationship values
 
@@ -121,9 +133,9 @@ author: "MSGraphDocsvTeam"
 
 | Member
 |:-------------------------
-| unknown 
+| unknown
 | home
-| business 
+| business
 | other
 
 
@@ -885,7 +897,6 @@ Possible values for user account types (group membership), per Windows definitio
 |offline|
 |unknownFutureValue|
 
-
 ### activityType values
 
 |Member|
@@ -893,6 +904,46 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+
+### entityType values
+
+| Member       |
+|:--------------|
+|event|
+|message|
+|driveItem|
+|externalFile|
+|externalItem|
+
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### calendarRoleType values
+
+|Member|
+|:---|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
 
 ### contentFormat values
 
@@ -942,7 +993,6 @@ Possible values for user account types (group membership), per Windows definitio
 | horizontal | 0     | Use a horizontal watermark. |
 | diagonal   | 1     | Use a diagonal watermark.   |
 
-=======
 ### conditionalAccessPolicyState
 
 |Member|
