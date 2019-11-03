@@ -11,8 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource role scope is a reference to both a scope within a resource, and a role in that resource for that scope.  An access package will have access package resource role scopes for the resources in its catalog which are relevant to an access package.  When a subject receives an access package assignment, the subject will be provisioned with the role in that scope of each access package resource role scope.
-
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource role scope is a reference to both a scope within a resource, and a role in that resource for that scope.  An access package will have access package resource role scopes for the resources in its catalog which are relevant to that access package.  When a subject receives an access package assignment, the subject will be provisioned with the role in that scope of each access package resource role scope.
 
 ## Methods
 
@@ -20,7 +19,6 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 | [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
 | [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Create a new **accessPackageResourceRoleScope** object for an access package. |
-
 
 ## Properties
 
@@ -59,7 +57,21 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)"
+  "modifiedDateTime": "String (timestamp)",
+  "accessPackageResourceRole": {
+    "id": "String (identifier)",
+     "displayName": "String",
+     "originSystem": "String",
+     "originId": "String"
+  },
+  "accessPackageResourceScope": {
+     "id": "String (identifier)",
+     "displayName": "String",
+     "description": "String",
+     "originId": "String (identifier)",
+     "originSystem": "String"
+  }
+
 }
 ```
 
