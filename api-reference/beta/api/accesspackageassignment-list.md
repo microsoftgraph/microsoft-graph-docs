@@ -33,7 +33,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve only Delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve only Delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`, and to retrieve only assignments for a particular subject user, you can include a query with assignments targeting the object id for of that user `$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers

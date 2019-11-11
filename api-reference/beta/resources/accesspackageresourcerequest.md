@@ -29,9 +29,9 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isValidationOnly|Boolean|If set, does not add the resource.|
 |justification|String|The requestor's justification for adding the resource.|
-|requestState|String| Read-Only.|
+|requestState|String| The outcome of whether the service was able to add the resource to the catalog.  The value is `Delivered` if the resource was added. Read-Only.|
 |requestStatus|String|Read-only.|
-|requestType|String|Use "AdminAdd" to add a resource.|
+|requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner. |
 
 ## Relationships
 

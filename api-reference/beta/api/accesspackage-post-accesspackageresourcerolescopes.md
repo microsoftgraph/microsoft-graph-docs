@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta//identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
 Content-type: application/json
 
 {
