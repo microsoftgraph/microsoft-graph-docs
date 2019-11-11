@@ -3,7 +3,7 @@ title: "Cross-device experiences in Microsoft Graph"
 description: "In today's multi-device world, the way consumers use devices spans different platforms and form factors: they might read the morning news on their tablets, check email during the morning commute on their phones, and use their desktop PCs when at work. At night, they might watch movies on their home media consoles and use smart speakers to catch up on news from the day. The average customer engages with multiple devices and platforms throughout the day. "
 localization_priority: Priority
 ms.prod: "project-rome"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Cross-device experiences in Microsoft Graph

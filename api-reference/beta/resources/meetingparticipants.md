@@ -3,7 +3,7 @@ title: "meetingParticipants resource type"
 description: "Participants in a meeting."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 

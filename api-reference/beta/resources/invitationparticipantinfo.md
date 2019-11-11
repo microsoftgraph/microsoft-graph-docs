@@ -3,7 +3,7 @@ title: "invitationParticipantInfo resource type"
 description: "The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.
+This resource is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.
 
 ## Properties
 
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | Possible values are: `default`, `voicemail`. |
+| endpointType                       | String                        | The type of endpoint. Possible values are: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
 | languageId                         | String                        | The language culture string.                                                                                     |
 | region                             | String                        | Region of the participant.                                                           |

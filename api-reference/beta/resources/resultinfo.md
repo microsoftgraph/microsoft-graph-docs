@@ -3,8 +3,8 @@ title: "resultInfo resource type"
 description: "The resultInfo type."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
-ms.prod: ""
 ---
 
 # resultInfo resource type
@@ -17,9 +17,9 @@ The resultInfo type.
 
 | Property | Type   | Description          |
 | :------- | :----- | :------------------  |
-| code     | String | The result code.     |
+| code     | Int32 | The result code.     |
 | message  | String | The message.         |
-| subCode  | String | The result sub-code. |
+| subcode  | Int32 | The result sub-code. |
 
 ## JSON representation
 
@@ -34,51 +34,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "code": "String",
+  "code": 0,
   "message": "String",
-  "subCode": "String"
-}
-```
-
-## Example Error result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "100",
-  "message": "Internal Server Error.",
-  "subCode": "20"
-}
-```
-
-## Example Generic success result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "0"
-}
-```
-
-## Example Record Success result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "completedSilenceDetected"
+  "subcode": 0
 }
 ```
 

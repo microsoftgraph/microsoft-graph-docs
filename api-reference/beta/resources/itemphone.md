@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information about phone numbers the user has associated in various services.
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## Methods
 

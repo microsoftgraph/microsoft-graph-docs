@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1504
+Content-Length: 1559
 
 {
   "value": [
@@ -95,7 +95,8 @@ Content-Length: 1504
       "enableWhiteGlove": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "hybridAzureADJoinSkipConnectivityCheck": true
     }
   ]
 }

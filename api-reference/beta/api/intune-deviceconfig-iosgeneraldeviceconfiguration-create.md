@@ -229,7 +229,6 @@ The following table shows the properties that are required when you create the i
 |contactsAllowManagedToUnmanagedWrite|Boolean|Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).|
 |contactsAllowUnmanagedToManagedRead|Boolean|Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).|
 |cellularBlockPersonalHotspotModification|Boolean|Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).|
-|siriDisableServerLogging|Boolean|Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).|
 |continuousPathKeyboardBlocked|Boolean|Indicates whether or not to block the continuous path keyboard when the device is supervised (iOS 13 or later).|
 |findMyDeviceInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Device when the device is supervised (iOS 13 or later).|
 |findMyFriendsInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is supervised (iOS 13 or later).|
@@ -247,7 +246,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10517
+Content-length: 10480
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -531,7 +530,6 @@ Content-length: 10517
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true,
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
@@ -544,7 +542,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10689
+Content-Length: 10652
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -831,7 +829,6 @@ Content-Length: 10689
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true,
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,

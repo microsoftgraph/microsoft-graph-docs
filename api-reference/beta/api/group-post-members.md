@@ -16,7 +16,7 @@ Add a member to an Office 365 group or security group through the **members** na
 You can add users or other groups. 
 
 > [!Important]
-> You can add only users to Office 365 groups.
+> You can only add users to security and Office 365 groups managed through the cloud.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,9 +1,9 @@
 ---
 title: "call: record"
-description: "Record the call."
+description: "Record a short audio clip from the call. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -11,11 +11,16 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Record a short audio clip from the call. This is useful if the bot wants to capture a voice response from the caller following a prompt.
+Record a short audio clip from a call.
+A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 
-> [!Note]
-> The record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
+For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
 
+>**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+
+This action is not intended to record the entire call. The maximum length of recording is 5 minutes. The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+
+>**Note:** Any media collected may **not** be persisted. Make sure you are compliant with the laws and regulations of your area when it comes to call recording. Please consult with a legal counsel for more information.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +35,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
+POST /communications/calls/{id}/record
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -49,13 +56,15 @@ In the request body, provide a JSON object with the following parameters.
 |maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
-|clientContext|String|Unique Client Context string. Can have a maximum of 256 characters.|
+|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
 This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
+
+### Example 1: Record a short audio clip from a call
 
 ##### Request
 The following example shows the request.
@@ -67,7 +76,7 @@ The following example shows the request.
   "name": "call-record"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/record
+POST https://graph.microsoft.com/beta/communications/calls/{id}/record
 Content-Type: application/json
 Content-Length: 394
 
@@ -109,13 +118,11 @@ The following example shows the response.
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
   "@odata.type": "#microsoft.graph.recordOperation",
   "status": "running",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "completionReason": null,
   "resultInfo": null,
   "recordingLocation": null,
@@ -128,7 +135,6 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -138,13 +144,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.recordOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
@@ -157,28 +165,28 @@ Content-Type: application/json
 }
 ```
 
-##### Get recording file - Request
-The following example shows the request to get the content of the recording.
+### Example 2: Retrieving the recording file
+
+> **Note:** While you're able to fetch the recording and process it, you **must** delete it afterwards. Media cannot be persisted.
+
+##### Request
 
 <!-- {
-  "blockType": "ignored",
-  "name": "download_recorded_file",
+  "blockType": "ignored"
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Authorization: Bearer <recordingAccessToken>
 ```
 
-##### Get recording file - Response
-Here is an example of the response. 
+##### Response
 
 <!-- {
-  "blockType": "ignored",
-  "name": "download_recorded_file",
-  "truncated": true
+  "blockType": "ignored"
 }-->
+
 ```http
-GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Date: Thu, 17 Jan 2019 01:46:37 GMT
 Content-Type: application/octet-stream

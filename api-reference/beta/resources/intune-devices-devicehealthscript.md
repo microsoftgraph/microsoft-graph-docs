@@ -45,7 +45,7 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) collection|The list of group assignments for the device health script|
+|assignments|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) collection|The list of group assignments for the device health script|
 |runSummary|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|High level run summary for device health script.|
 |deviceRunStates|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) collection|List of run states for the device health script across all devices|
 

@@ -4,7 +4,7 @@ description: "Outlook calendar is part of the Outlook messaging hub in Office 36
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook calendar API overview

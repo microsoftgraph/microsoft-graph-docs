@@ -3,7 +3,7 @@ title: "participant resource type"
 description: "The participant type."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -58,44 +58,6 @@ The following is a JSON representation of the resource.
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
   "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant"
-}-->
-```json
-{
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "en-US",
-    "region": "westus"
-  },
-  "isInLobby": false,
-  "isMuted": false,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "status": "recordingCapable"
-  }
 }
 ```
 

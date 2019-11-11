@@ -18,8 +18,8 @@ This article shows you how to associate your Office 365 account with Azure AD to
 
 If you don't have an existing Office 365 for business account, you can:
 
-- Sign up for an [Office 365 for business plans](https://products.office.com/en-us/business/compare-office-365-for-business-plans) listed above, or
-- [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
+- Sign up for an [Office 365 for business plan](https://products.office.com/business/compare-office-365-for-business-plans) 
+- [Join the Office 365 Developer Program](https://aka.ms/devprogramsignup) and get a free one-year subscription to Office 365.
 
 **Microsoft Azure subscription**
 
@@ -88,5 +88,5 @@ If you don't have an existing Office 365 for business account, you can:
 	You should now see all items in your Azure subscription. It lists a directory with the name of your Office 365 tenant.
 
 ## See also
-- [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Add, update, or remove an application in Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Add, update, or remove an application in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)

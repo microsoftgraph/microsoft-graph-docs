@@ -4,7 +4,7 @@ description: "Office 365 groups provide the foundational membership service for 
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Overview of Office 365 groups in Microsoft Graph

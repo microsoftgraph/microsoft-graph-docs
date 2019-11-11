@@ -43,6 +43,7 @@ Inherits from [windowsAutopilotDeploymentProfile](../resources/intune-shared-win
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|The AutoPilot device type that this profile is applicable to. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md). Possible values are: `windowsPc`, `surfaceHub2`.|
 |enableWhiteGlove|Boolean|Enable Autopilot White Glove for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |roleScopeTagIds|String collection|Scope tags for the profile. Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|hybridAzureADJoinSkipConnectivityCheck|Boolean|The Autopilot Hybrid Azure AD join flow will continue even if it does not establish domain controller connectivity during OOBE.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,7 +94,8 @@ Here is a JSON representation of the resource.
   "enableWhiteGlove": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "hybridAzureADJoinSkipConnectivityCheck": true
 }
 ```
 

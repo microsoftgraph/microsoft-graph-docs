@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information about projects the user has associated with them.
+Represents detailed information about projects associated with a user.
 
 Inherits from [itemFacet](itemfacet.md).
 
@@ -19,24 +19,24 @@ Inherits from [itemFacet](itemfacet.md).
 
 | Method                                                         | Return Type                                     | Description                                                       |
 |:---------------------------------------------------------------|:------------------------------------------------|:------------------------------------------------------------------|
-| [Get projectParticipation](../api/projectparticipation-get.md) | [projectParticipation](projectparticipation.md) | Read properties and relationships of projectParticipation object. |
-| [Update](../api/projectparticipation-update.md)                | [projectParticipation](projectparticipation.md) | Update projectParticipation object.                               |
-| [Delete](../api/projectparticipation-delete.md)                | None                                            | Delete projectParticipation object.                               |
+| [Get projectParticipation](../api/projectparticipation-get.md) | [projectParticipation](projectparticipation.md) | Read the properties and relationships of a **projectParticipation** object. |
+| [Update projectParticipation](../api/projectparticipation-update.md)                | [projectParticipation](projectparticipation.md) | Update a **projectParticipation** object.                               |
+| [Delete projectParticipation](../api/projectparticipation-delete.md)                | None.                                            | Delete a **projectParticipation** object.                               |
 
 ## Properties
 
 | Property     | Type                                        | Description                                                                                      |
 |:-------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------------|
-|categories    | String collection                           | Contains categories a user has associated with the project (eg: digital transformation, oil rig) |
+|categories    | String collection                           | Contains categories a user has associated with the project (for example, digital transformation, oil rig). |
 |client        |[companyDetail](companydetail.md)            | Contains detailed information about the client the project was for.                              |
-|colleagues    |[relatedPerson](relatedperson.md) collection | People that also worked on the project.                                                          |
-|detail        |[positionDetail](positiondetail.md)          | Contains detail about the users role on the project.                                             |
+|colleagues    |[relatedPerson](relatedperson.md) collection | Lists people that also worked on the project.                                                          |
+|detail        |[positionDetail](positiondetail.md)          | Contains detail about the user's role on the project.                                             |
 |displayName   |String                                       |Contains a friendly name for the project.                                                         |
-|sponsors      |[relatedPerson](relatedperson.md) collection |Person(People) who sponsored the project.                                                         |
+|sponsors      |[relatedPerson](relatedperson.md) collection | The Person or people who sponsored the project.                                                         |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

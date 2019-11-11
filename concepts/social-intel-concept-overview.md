@@ -4,7 +4,7 @@ description: "The hundreds of millions of users of Microsoft 365 cloud services 
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Overview of people and workplace intelligence in Microsoft Graph
@@ -93,14 +93,15 @@ The analytics API enables you to synchronize or integrate user analytics data wi
 
 ## Why integrate with the profile API (preview)?
 
-[Profile](/graph/api/resources/profile?view=graph-rest-beta) represents the next generation of how people in Microsoft services are represented and modeled. The data within a user's profile can be used to build customized experiences on top of Microsoft Graph with the information also available within Microsoft people experiences. 
+The [profile](/graph/api/resources/profile?view=graph-rest-beta) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph. 
 
 ## API reference
 
 Looking for the API reference for these services?
 
-- [People API in Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Use the Microsoft Graph API to integrate social and workplace intelligence in an app](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
+- [People and workplace intelligence(preview)](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Profile API (preview)](/graph/api/resources/profile?view=graph-rest-beta).
 
 ## Next steps
 

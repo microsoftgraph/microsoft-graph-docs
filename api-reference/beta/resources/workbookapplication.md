@@ -24,15 +24,14 @@ Represents the Excel application that manages the workbook.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|calculationMode|string|Returns the calculation mode used in the workbook. Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`. Read-only.|
+|calculationMode|string|Returns the calculation mode used in the workbook. Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

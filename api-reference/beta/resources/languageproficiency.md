@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information about a languages a user has added to their [profile](profile.md).
+Represents detailed information about languages that a user has added to their [profile](profile.md).
 
 Inherits from [itemFacet](itemFacet.md).
 
@@ -33,7 +33,7 @@ Inherits from [itemFacet](itemFacet.md).
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

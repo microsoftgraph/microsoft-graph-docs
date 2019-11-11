@@ -4295,6 +4295,13 @@
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+      - name: Workbook application
+        href: resources/workbookapplication.md
+        items:
+          - name: Get
+            href: api/workbookapplication-get.md
+          - name: Calculate
+            href: api/workbookapplication-calculate.md
       - name: Workbook comments
         href: resources/workbookcomment.md
         items:

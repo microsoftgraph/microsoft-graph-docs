@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information about websites the user has associated with themselves in various services.
+Represents detailed information about websites associated with a user in various services.
 
 Inherits from [itemFacet](itemfacet.md).
 
@@ -19,22 +19,22 @@ Inherits from [itemFacet](itemfacet.md).
 
 | Method                                           | Return Type                       | Description                                                |
 |:-------------------------------------------------|:----------------------------------|:-----------------------------------------------------------|
-| [Get personWebsite](../api/personwebsite-get.md) | [personWebsite](personwebsite.md) | Read properties and relationships of personWebsite object. |
-| [Update](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Update personWebsite object.                               |
-| [Delete](../api/personwebsite-delete.md)         | None                              | Delete personWebsite object.                               |
+| [Get personWebsite](../api/personwebsite-get.md) | [personWebsite](personwebsite.md) | Read the properties and relationships of a **personWebsite** object. |
+| [Update personWebsite](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Update a **personWebsite** object.                               |
+| [Delete personWebsite](../api/personwebsite-delete.md)         | None                              | Delete a **personWebsite** object.                               |
 
 ## Properties
 
 | Property     | Type              | Description                                                                         |
 |:-------------|:------------------|:------------------------------------------------------------------------------------|
-|categories    |String collection  | Contains categories a user has associated with the website (eg: personal, recipes)  |
+|categories    |String collection  | Contains categories a user has associated with the website (for example, personal, recipes).  |
 |description   |String             | Contains a description of the website.                                              |
 |displayName   |String             | Contains a friendly name for the website.                                           |
 |webUrl        |String             | Contains a link to the website itself.                                              |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

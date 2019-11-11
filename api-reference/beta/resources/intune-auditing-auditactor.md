@@ -26,7 +26,7 @@ A class containing the properties for Audit Actor.
 |servicePrincipalName|String|Service Principal Name (SPN).|
 |ipAddress|String|IPAddress.|
 |userId|String|User Id.|
-|scopeTags|[scopeTagInfo](../resources/intune-auditing-scopetaginfo.md) collection|List of user scope tags when the audit was performed.|
+|userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md) collection|List of user scope tags when the audit was performed.|
 
 ## Relationships
 None
@@ -51,11 +51,11 @@ Here is a JSON representation of the resource.
   "servicePrincipalName": "String",
   "ipAddress": "String",
   "userId": "String",
-  "scopeTags": [
+  "userRoleScopeTags": [
     {
-      "@odata.type": "microsoft.graph.scopeTagInfo",
-      "scopeTagName": "String",
-      "scopeTagId": "String"
+      "@odata.type": "microsoft.graph.roleScopeTagInfo",
+      "displayName": "String",
+      "roleScopeTagId": "String"
     }
   ]
 }

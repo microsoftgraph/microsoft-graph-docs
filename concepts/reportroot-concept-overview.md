@@ -4,7 +4,7 @@ description: "Usage reports in the Microsoft 365 admin center enable admins to u
 localization_priority: Priority
 ms.prod: "reports"
 author: "pranoychaudhuri"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Graph reports API overview

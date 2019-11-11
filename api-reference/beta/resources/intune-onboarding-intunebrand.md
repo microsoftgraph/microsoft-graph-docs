@@ -19,23 +19,26 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Company/organization name that is displayed to end users.|
-|contactITName|String|Name of the person/organization responsible for IT support.|
-|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support.|
-|contactITEmailAddress|String|Email address of the person/organization responsible for IT support.|
-|contactITNotes|String|Text comments regarding the person/organization responsible for IT support.|
-|privacyUrl|String|URL to the company/organization’s privacy policy.|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal.|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not shown.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo.|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a dark background behind the logo.|
 |showNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal app landing page|
+|showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
+|contactITName|String|Name of the person/organization responsible for IT support.|
+|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support.|
+|contactITEmailAddress|String|Email address of the person/organization responsible for IT support.|
+|contactITNotes|String|Text comments regarding the person/organization responsible for IT support.|
+|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
+|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
+|privacyUrl|String|URL to the company/organization’s privacy policy.|
 |customPrivacyMessage|String|Custom privacy message.|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
-|showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
+|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
+|showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 
 ## Relationships
 None
@@ -51,13 +54,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.intuneBrand",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -81,10 +77,27 @@ Here is a JSON representation of the resource.
     "type": "String",
     "value": "binary"
   },
+  "showDisplayNameNextToLogo": true,
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String",
   "customPrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
-  "showDisplayNameNextToLogo": true
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "String",
+      "ownerType": "String",
+      "action": "String"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
 

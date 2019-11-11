@@ -4,7 +4,7 @@ description: "Users are the representation of an Azure Active Directory (Azure A
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "users"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Overview of users in Microsoft Graph

@@ -31,7 +31,6 @@ Entity representing a job to export a report
 |reportName|String|Name of the report|
 |filter|String|Filters applied on the report|
 |select|String collection|Columns selected from the report|
-|orderBy|String collection|Ordering of columns in the report|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`.|
 |snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
@@ -57,9 +56,6 @@ Here is a JSON representation of the resource.
   "reportName": "String",
   "filter": "String",
   "select": [
-    "String"
-  ],
-  "orderBy": [
     "String"
   ],
   "format": "String",

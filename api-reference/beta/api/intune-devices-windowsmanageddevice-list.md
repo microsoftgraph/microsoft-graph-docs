@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8286
+Content-Length: 8345
 
 {
   "value": [
@@ -235,7 +235,8 @@ Content-Length: 8286
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
         "clientIdentifier": "Client Identifier value"
-      }
+      },
+      "ethernetMacAddress": "Ethernet Mac Address value"
     }
   ]
 }

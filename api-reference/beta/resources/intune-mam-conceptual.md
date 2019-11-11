@@ -49,6 +49,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app remediation action](intune-mam-managedappremediationaction.md)
 - [Managed app status](intune-mam-managedappstatus.md)
 - [Managed app status raw](intune-mam-managedappstatusraw.md)
+- [Managed browser type](intune-mam-managedbrowsertype.md)
 - [Managed mobile app](intune-mam-managedmobileapp.md)
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)

@@ -57,6 +57,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalitem"
@@ -65,6 +67,12 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 ```
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### Response

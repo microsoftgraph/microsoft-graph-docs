@@ -87,6 +87,7 @@ The following table shows the properties that are required when you create the [
 |allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allow`, `blockOrganizationalData`, `block`.|
 |previousPinBlockCount|Int32|Requires a pin to be unique from the number specified in this property. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indicates in which managed browser(s) that internet links should be opened. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
@@ -107,6 +108,7 @@ The following table shows the properties that are required when you create the [
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. (iOS Only). Possible values are: `block`, `wipe`, `warn`.|
 |allowedAndroidDeviceManufacturers|String|Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work. (Android only)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. (Android only). Possible values are: `block`, `wipe`, `warn`.|
+|thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app. (iOS Only)|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False. (iOS Only)|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps. (iOS Only)|
 |protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps. (iOS Only)|
@@ -133,7 +135,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 4140
+Content-length: 4217
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -179,6 +181,7 @@ Content-length: 4140
   "allowedOutboundClipboardSharingExceptionLength": 14,
   "notificationRestriction": "blockOrganizationalData",
   "previousPinBlockCount": 5,
+  "managedBrowser": "microsoftEdge",
   "maximumAllowedDeviceThreatLevel": "secured",
   "mobileThreatDefenseRemediationAction": "wipe",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -217,6 +220,7 @@ Content-length: 4140
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
   "protectInboundDataFromUnknownSources": true,
@@ -238,7 +242,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4312
+Content-Length: 4389
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -287,6 +291,7 @@ Content-Length: 4312
   "allowedOutboundClipboardSharingExceptionLength": 14,
   "notificationRestriction": "blockOrganizationalData",
   "previousPinBlockCount": 5,
+  "managedBrowser": "microsoftEdge",
   "maximumAllowedDeviceThreatLevel": "secured",
   "mobileThreatDefenseRemediationAction": "wipe",
   "appDataEncryptionType": "afterDeviceRestart",
@@ -325,6 +330,7 @@ Content-Length: 4312
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
   "protectInboundDataFromUnknownSources": true,

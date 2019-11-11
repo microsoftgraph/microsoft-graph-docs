@@ -49,7 +49,7 @@ If successful, this method returns a `204, No Content` response code. It does no
 
 ## See also
 
-- [How to complete an access review](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [How to complete an access review](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
 ## Example
 ##### Request

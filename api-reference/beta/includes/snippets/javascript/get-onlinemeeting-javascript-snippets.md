@@ -10,8 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/app/onlineMeetings/{id}')
+let res = await client.api('/communications/onlineMeetings/')
 	.version('beta')
+	.filter('VideoTeleconferenceId eq '123456789'')
 	.get();
 
 ```

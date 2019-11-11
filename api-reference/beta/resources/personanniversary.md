@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detail of meaningful dates associated with a person in a user's [profile](profile.md).
+Represents the details of meaningful dates associated with a person in a user's [profile](profile.md).
 
 Inherits from [itemFacet](itemFacet.md).
 
@@ -19,20 +19,20 @@ Inherits from [itemFacet](itemFacet.md).
 
 | Method                                                   | Return Type                               | Description                                                    |
 |:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
-| [Get personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | Read properties and relationships of personAnniversary object. |
-| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update personAnniversary object.                               |
-| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete personAnniversary object.                               |
+| [Get personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | Read the properties and relationships of a **personAnniversary** object. |
+| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update a **personAnniversary** object.                               |
+| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete a **personAnniversary** object.                               |
 
 ## Properties
 
 | Property     | Type        | Description                                                      |
 |:-------------|:------------|:-----------------------------------------------------------------|
-|date          |Date         | Containes the date associated with the anniversary type.         |
+|date          |Date         | Contains the date associated with the anniversary type.         |
 |type          |string       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

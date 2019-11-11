@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [personInterest](personinterest.md) resource type provides detailed information about interests the user has associated with themselves in various services.
+Provides detailed information about interests the user has associated with themselves in various services.
 
 Inherits from [itemFacet](itemfacet.md).
 
@@ -19,22 +19,22 @@ Inherits from [itemFacet](itemfacet.md).
 
 | Method       | Return Type | Description |
 |:---------------------------------------------------|:------------------------------------|:------------------------------------------------------------|
-| [Get personInterest](../api/personinterest-get.md) | [personInterest](personinterest.md) | Read properties and relationships of personInterest object. |
-| [Update](../api/personinterest-update.md)          | [personInterest](personinterest.md) | Update personInterest object.                               |
-| [Delete](../api/personinterest-delete.md)          | None                                | Delete personInterest object.                               |
+| [Get personInterest](../api/personinterest-get.md) | [personInterest](personinterest.md) | Read the properties and relationships of a **personInterest** object. |
+| [Update personInterest](../api/personinterest-update.md)          | [personInterest](personinterest.md) | Update a **personInterest** object.                               |
+| [Delete personInterest](../api/personinterest-delete.md)          | None                                | Delete a **personInterest** object.                               |
 
 ## Properties
 
 | Property     | Type             | Description                                                                          |
 |:-------------|:-----------------|:-------------------------------------------------------------------------------------|
-|categories    |String collection | Contains categories a user has associated with the interest (eg: personal, recipies) |
+|categories    |String collection | Contains categories a user has associated with the interest (for example, personal, recipies). |
 |description   |String            | Contains a description of the interest.                                              |
 |displayName   |String            | Contains a friendly name for the interest.                                           |
-|webUrl        |String            | Contains a link to a webpage or resource about the interest.                         |
+|webUrl        |String            | Contains a link to a web page or resource about the interest.                         |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

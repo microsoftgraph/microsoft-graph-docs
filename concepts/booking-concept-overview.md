@@ -4,7 +4,7 @@ description: "Microsoft Bookings provides online and mobile apps that make appoi
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "bookings"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Bookings API overview (preview)
@@ -37,6 +37,6 @@ See [Microsoft Bookings API in Microsoft Graph beta](/graph/api/resources/bookin
 
 Learn more about:
 
-- [Microsoft Bookings](https://support.office.com/en-us/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) and other [Office 365 business apps](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) and other [Office 365 business apps](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Using the Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-beta) in Microsoft Graph.
 

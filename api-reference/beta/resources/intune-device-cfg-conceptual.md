@@ -193,6 +193,7 @@ The following Graph resources are available to manage settings and features on d
 - [EAP type](intune-deviceconfig-eaptype.md)
 - [EAS authentication method](intune-deviceconfig-easauthenticationmethod.md)
 - [EAS email profile configuration base](intune-deviceconfig-easemailprofileconfigurationbase.md)
+- [EAS services](intune-deviceconfig-easservices.md)
 - [Edge cookie policy](intune-deviceconfig-edgecookiepolicy.md)
 - [Edge home button configuration](intune-deviceconfig-edgehomebuttonconfiguration.md)
 - [Edge home button hidden](intune-deviceconfig-edgehomebuttonhidden.md)
@@ -309,6 +310,7 @@ The following Graph resources are available to manage settings and features on d
 - [Local security options standard user elevation prompt behavior type](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS certificate profile base](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS compliance policy](intune-deviceconfig-macoscompliancepolicy.md)
+- [macOS custom app configuration](intune-deviceconfig-macoscustomappconfiguration.md)
 - [macOS custom configuration](intune-deviceconfig-macoscustomconfiguration.md)
 - [macOS device features configuration](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [macOS endpoint protection configuration](intune-deviceconfig-macosendpointprotectionconfiguration.md)
@@ -327,6 +329,7 @@ The following Graph resources are available to manage settings and features on d
 - [macOS trusted root certificate](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN configuration](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi configuration](intune-deviceconfig-macoswificonfiguration.md)
+- [macOS wired network configuration](intune-deviceconfig-macoswirednetworkconfiguration.md)
 - [Managed all device certificate state](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Managed device certificate state](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Managed device encryption state](intune-deviceconfig-manageddeviceencryptionstate.md)
@@ -528,5 +531,4 @@ The following Graph resources are available to manage settings and features on d
 - [Windows VPN connection type](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi configuration](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi enterprise e a p configuration](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-
-
+- [Wired network interface](intune-deviceconfig-wirednetworkinterface.md)

@@ -10,7 +10,7 @@ This article describes the support and breaking change policies for Microsoft Gr
 
 ## Support policy and deprecation information
 
-Microsoft Graph follows the [Microsoft Lifecycle Policy](https://support.microsoft.com/en-us/lifecycle).
+Microsoft Graph follows the [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle).
 
 As new versions of the Microsoft Graph REST APIs and Microsoft Graph SDKs are released, earlier versions will be retired. Microsoft will declare a version as deprecated at least 24 months in advance of retiring an API or an SDK.
 

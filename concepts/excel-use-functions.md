@@ -10,7 +10,7 @@ ms.prod: "excel"
 
 You can invoke any workbook function by using the following syntax: `POST /workbook/functions/{function-name}`. You provide the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function.
 
-The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
+The complete list of supported functions are listed [here](https://support.office.com/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
 
 _Important notes:_
 * The range input parameter is supplied using a range object instead of the range address string.  
@@ -29,7 +29,7 @@ Inside a cell, the `vlookup` function looks like this:
 
 =VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)
 
-(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
+(See the documentation for the [VLOOKUP Excel function](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
 
 
 ##### Request:
@@ -72,7 +72,7 @@ Inside a cell, the `median` function looks like this example:
 
 =MEDIAN(A2:A6)
 
-(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
+(See the documentation for the [MEDIAN Excel function](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
 
 ##### Request
 The following example shows how to call the `median` function and one or more input ranges with the Excel REST API.

@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2486
+Content-Length: 2568
 
 {
   "value": [
@@ -107,6 +107,8 @@ Content-Length: 2486
       "blockSyncingRecentlyUsedEmailAddresses": true,
       "durationOfEmailToSync": "oneDay",
       "emailAddressSource": "primarySmtpAddress",
+      "easServices": "calendars",
+      "easServicesUserOverrideEnabled": true,
       "hostName": "Host Name value",
       "requireSmime": true,
       "smimeEnablePerMessageSwitch": true,

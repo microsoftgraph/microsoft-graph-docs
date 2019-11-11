@@ -34,7 +34,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1747
+Content-Length: 1765
 
 {
   "value": {
@@ -81,11 +81,11 @@ Content-Length: 1747
       "servicePrincipalName": "Service Principal Name value",
       "ipAddress": "Ip Address value",
       "userId": "User Id value",
-      "scopeTags": [
+      "userRoleScopeTags": [
         {
-          "@odata.type": "microsoft.graph.scopeTagInfo",
-          "scopeTagName": "Scope Tag Name value",
-          "scopeTagId": "Scope Tag Id value"
+          "@odata.type": "microsoft.graph.roleScopeTagInfo",
+          "displayName": "Display Name value",
+          "roleScopeTagId": "Role Scope Tag Id value"
         }
       ]
     },
