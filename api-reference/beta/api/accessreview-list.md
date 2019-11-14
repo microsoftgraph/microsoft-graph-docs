@@ -45,7 +45,7 @@ If successful, this method returns a `200, OK` response code and an array of [ac
 
 ## Examples
 ##### Request
-The following example shows a request to retrieve all the one-time and recurring access reviews for a business flow template '6E4F3D20-C5C3-407F-9695-8460952BCC68'.
+The following example shows a request to retrieve all the one-time and recurring access reviews for a business flow template '6e4f3d20-c5c3-407f-9695-8460952bcc68'.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -53,7 +53,7 @@ The following example shows a request to retrieve all the one-time and recurring
   "name": "get_accessReviews"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'
+GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviews-csharp-snippets.md)]
