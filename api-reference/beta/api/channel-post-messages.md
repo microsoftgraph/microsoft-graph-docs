@@ -67,8 +67,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
 
 {
-  "body": {
-    "content": "Hello World"
+  "rootMessage": {
+    "body": {
+      "content": "Ahoj"
+    }
   }
 }
 ```
