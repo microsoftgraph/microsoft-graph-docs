@@ -54,6 +54,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | The participant that answered the call. Read-only.                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) collection                                                                   | The routing information on how the call was retargeted. Read-only.                                                                                                                |
 | callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
+| callOptions         | [callOptions](callOptions.md)                                                                          | The options for joining a meeting or group call.                                                                                                                                  |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for meeting scenarios.                                                                                                                                |
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only.                                                                                            |
 | id                  | String                                                                                                 | The call id. Read-only.                                                                                                                                                                        |
@@ -92,6 +93,7 @@ The following is a JSON representation of the resource.
     "activeModalities",
     "answeredBy",
     "callRoutes",
+    "callOptions",
     "chatInfo",
     "direction",
     "id",
@@ -120,6 +122,7 @@ The following is a JSON representation of the resource.
   "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
+  "callOptions": {"@odata.type": "#microsoft.graph.callOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
