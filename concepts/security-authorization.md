@@ -118,18 +118,17 @@ To grant the permissions:
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Assigning administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign a user to administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) receives the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
-To assign roles to users:
+To assign a role to a user:
 
-- Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
-- In the menu, select **Azure Active Directory** > **Users**.
-- Select the name of the user.
-- Select **Manage** > **Directory role**.
-- Select **Limited administrator**, and choose the **Security reader** check box.
-- Choose **Save**.
+1. Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
+2. Click the icon in the top left to expand the Azure portal menu. Select **Azure Active Directory** > **Users**.
+3. Click the name of the user.
+4. Choose **Assigned roles**, and then **Add assignment**.
+5. Select **Security reader**, and click **Add**.
 
 ## Create an authentication code
 

@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var participants = await graphClient.App.Calls["57DAB8B1894C409AB240BD8BEAE78896"].Participants
+var participants = await graphClient.Communications.Calls["7531d31f-d10d-44de-802f-c569dbca451c"].Participants
 	.Request()
-	.Header("Authorization","Bearer <TOKEN>")
 	.GetAsync();
 
 ```

@@ -9001,6 +9001,14 @@
           href: api/serviceprincipal-removepassword.md
         - name: Check member objects
           href: api/serviceprincipal-checkmemberobjects.md
+        - name: Create password single sign on credentials
+          href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+        - name: Get password single sign on credentials
+          href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+        - name: Update password single sign on credentials
+          href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+        - name: Delete password single sign on credentials
+          href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:

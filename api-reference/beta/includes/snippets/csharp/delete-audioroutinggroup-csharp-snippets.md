@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.App.Calls["{id}"].AudioRoutingGroups["{id}"]
+await graphClient.Communications.Calls["{id}"].AudioRoutingGroups["{id}"]
 	.Request()
 	.DeleteAsync();
 

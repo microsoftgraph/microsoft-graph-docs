@@ -3,8 +3,8 @@ title: "itemBody resource type"
 description: "Represents properties of the body of an item, such as a message, event or group post."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "excel"
+author: "grangeryy"
 ---
 
 # itemBody resource type
@@ -17,7 +17,7 @@ Represents properties of the body of an item, such as a message, event or group 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|String|The type of the content. Possible values are `text` and `HTML`.|
+|contentType|String|The type of the content. Possible values are `text` and `html`.|
 
 ## JSON representation
 

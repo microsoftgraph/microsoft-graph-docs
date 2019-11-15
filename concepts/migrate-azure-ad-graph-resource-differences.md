@@ -14,14 +14,12 @@ When migrating apps from Azure AD Graph to Microsoft Graph, be aware that some r
 
 The following table highlights differences between Azure AD Graph and Microsoft Graph resources.  It shows resources that have different names or are not available; it also highlights resources available in the beta version of Microsoft Graph but not in the v1.0 version.
 
-If a resource is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview?view=graph-rest-1.0) of Microsoft Graph, with the same name as in Azure AD Graph.
+If a resource is **not** shown in this list, it is already available in the [v1.0 version](/graph/api/overview?view=graph-rest-1.0) of Microsoft Graph, with the same name as in Azure AD Graph.
 
 > **NOTE**: Resource type names in Azure AD Graph are Pascal-cased, whereas in Microsoft Graph they are camel-cased.
 
 |Azure AD Graph <br>(v1.6) resource |Microsoft Graph<br>resource|Comments|
 |---|---|---|
-| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - [application](/graph/api/resources/application?view=graph-rest-beta)<br>v1.0 - [application](/graph/api/resources/application?view=graph-rest-1.0) ||
-| [AppRole](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - [appRole](/graph/api/resources/approle?view=graph-rest-beta)<br>v1.0 - [appRole](/graph/api/resources/appRole?view=graph-rest-1.0) | |
 | [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v1.0 - _Not yet available_ | |
 | [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>v1.0&nbsp;-&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) | |
 | [Contact](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v1.0 - [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
@@ -36,7 +34,7 @@ If a resource is not shown in this list, it is already available in the [v1.0 ve
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - _Not yet available_ <br> v1.0 - _Not yet available_ | New modeling for the identifiers used to sign into a user account, called **identityObject**, but not yet available. Supports Azure AD B2C scenarios. |
 | [TenantDetail](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - [organization](/graph/api/resources/organization?view=graph-rest-beta) <br> v1.0 - [organization](/graph/api/resources/organization?view=graph-rest-v1.0) | |
 | [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> v1.0&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-v1.0) | |
-| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - _Not yet available_ <br> v1.0 - _Not yet available_ |  New modeling for the identifiers used to sign into a user account, called **identityObject**, but not yet available. Supports Azure AD B2C scenarios. |
+| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta - [objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta) <br> v1.0 - _Not yet available_ |  New modeling for the identifiers used to sign into a user account, called **objectIdentity**. Supports Azure AD B2C scenarios. |
 
 ## Next Steps
 
