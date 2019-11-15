@@ -2,6 +2,9 @@
 title: "callOptions resource type"
 description: "The options for joining a group call."
 author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "cloud-communications"
+doc_type: resourcePageType
 ---
 
 # callOptions resource type

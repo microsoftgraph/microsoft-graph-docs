@@ -2,6 +2,9 @@
 title: "outgoingCallOptions resource type"
 description: "The outgoing call options for joining a group call."
 author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "cloud-communications"
+doc_type: resourcePageType
 ---
 
 # outgoingCallOptions resource type
