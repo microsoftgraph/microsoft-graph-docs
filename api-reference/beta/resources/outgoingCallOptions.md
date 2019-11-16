@@ -17,7 +17,7 @@ This contains the outgoing call options.
 
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowGuestToBypassLobby      | boolean | This indicates whether a bot that's joining a group call with a guest identity should bypass lobby or not."  |
+| allowGuestToBypassLobby      | boolean | This indicates whether the [Cloud Video Interop (CVI)](https://aka.ms/MicrosoftTeams/CloudVideoInterop) application allows a guest to bypass lobby or not.  |
 
 ## JSON representation
 
