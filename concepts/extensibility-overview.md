@@ -117,7 +117,7 @@ The following data types are supported when defining a property in a schema exte
 
 ### Azure AD directory schema extensions
 
-Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) resources. Although you have to use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) to create and manage the definitions of directory schema extensions, you can use the Microsoft Graph API to add, get, update and delete _data_ in the properties of these extensions.
+Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) resources. You can use the Microsoft Graph API to manage the [extension property definitions](/graph/api/resources/extensionproperty?view=graph-rest-1.0) and add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
 

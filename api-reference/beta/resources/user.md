@@ -105,7 +105,7 @@ This resource supports:
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
-|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same **signInType** value. <br>Supports $filter.|
+|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same **signInType** value. <br>Supports $filter.|
 |interests|String collection|A list for the user to describe their interests.|
 |isResourceAccount|Boolean| `true` if the user is a resource account; otherwise, `false`. Null value should be considered `false`.|
 |jobTitle|String|The user’s job title. Supports $filter.|
@@ -128,7 +128,7 @@ This resource supports:
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.|
 |onPremisesSyncEnabled|Boolean| `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). Read-only |
 |onPremisesUserPrincipalName|String| Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. |
-|otherMails|String| A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|
+|otherMails| String collection | A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`. Supports $filter.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
@@ -318,7 +318,7 @@ Here is a JSON representation of the resource
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
+  "otherMails": ["string"],
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
