@@ -1,6 +1,6 @@
 ---
 title: "user: checkMemberObjects"
-description: "Check for membership in a list of group, directory role, or administrative unit objects for the specified user object."
+description: "Check for membership in a list of group or directory roles for the specified user object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # user: checkMemberObjects
 
-Check for membership in a list of group, directory roles, or roleTemplate IDs of directory roles, for the specified user object. This method is transitive.
+Check for membership in a list of group or directory roles for the specified user object. This method is transitive.
 
 ## Permissions
 

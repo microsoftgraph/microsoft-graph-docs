@@ -1,6 +1,6 @@
 ---
 title: "device: checkMemberObjects"
-description: "Check for membership in a list of groups, directory roles, or administrative units for the specified device object."
+description: "Check for membership in a list of groups or directory roles for the specified device object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # device: checkMemberObjects
 
-Check for membership in a list of groups, directory roles, or roleTemplate IDs of directory roles, for the specified device object. This method is transitive.
+Check for membership in a list of groups or directory roles for the specified device object. This method is transitive.
 
 ## Permissions
 

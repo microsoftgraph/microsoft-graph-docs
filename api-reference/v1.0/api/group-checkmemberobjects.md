@@ -1,6 +1,6 @@
 ---
 title: "group: checkMemberObjects"
-description: "Check for membership in a list of groups, directory roles, or administrative units for the specified group object."
+description: "Check for membership in a list of groups or directory roles for the specified group object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # group: checkMemberObjects
 
-Check for membership in a list of groups, directory roles, or roleTemplate IDs of directory roles, for the specified group. This method is transitive.
+Check for membership in a list of groups or directory roles for the specified group. This method is transitive.
 
 ## Permissions
 
