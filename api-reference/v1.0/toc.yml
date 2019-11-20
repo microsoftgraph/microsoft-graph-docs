@@ -217,6 +217,8 @@
       - name: Directory objects
         href: resources/directoryobject.md
         items:
+        - name: Check member objects
+          href: api/user-checkmemberobjects.md
         - name: List owned devices
           href: api/user-list-owneddevices.md
         - name: List registered devices
@@ -350,6 +352,8 @@
           href: api/group-post-owners.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
+        - name: Check member objects
+          href: api/group-checkmemberobjects.md
         - name: Create group
           href: api/group-post-groups.md
         - name: Delete group
@@ -3294,10 +3298,8 @@
           href: api/device-update.md
         - name: Delete device
           href: api/device-delete.md
-        - name: List registered owners
-          href: api/device-list-registeredowners.md
-        - name: List registered users
-          href: api/device-list-registeredusers.md
+        - name: Check member objects
+          href: api/device-checkmemberobjects.md
         - name: Create registered owner
           href: api/device-post-registeredowners.md
         - name: Create registered user
@@ -3306,6 +3308,10 @@
           href: api/device-list-memberof.md
         - name: List device transitive groups
           href: api/device-list-transitivememberof.md
+        - name: List registered owners
+          href: api/device-list-registeredowners.md
+        - name: List registered users
+          href: api/device-list-registeredusers.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
