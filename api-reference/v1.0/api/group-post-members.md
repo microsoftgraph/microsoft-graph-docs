@@ -13,16 +13,16 @@ Add a member to an Office 365 group or a security group through the **members** 
 You can add users, organizational contacts, or other groups. 
 
 > [!IMPORTANT]
-> You can only add users to Office 365 groups.
+> You can only add users to security and Office 365 groups managed through the cloud.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All and Directory.ReadWrite.All |
+|Application | GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ POST /groups/{id}/members/$ref
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Content-type   | appication/json. Required. |
+| Content-type   | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.

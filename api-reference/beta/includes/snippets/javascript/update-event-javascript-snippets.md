@@ -20,6 +20,8 @@ const event = {
   recurrence: null,
   uid: "iCalUId-value",
   reminderMinutesBeforeStart: 99,
+  isOnlineMeeting: true,
+  onlineMeetingProvider: "teamsForBusiness",
   isReminderOn: true
 };
 

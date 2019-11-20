@@ -3,8 +3,7 @@ title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
 author: "piotrci"
 localization_priority: Priority
-scenarios: "getting-started"
-ms.custom: graphiamtop20
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Use query parameters to customize responses
@@ -255,11 +254,11 @@ Alternatively, you can search messages by specifying message property names in t
 
 For more information about searchable email properties, KQL syntax, supported operators, and tips on searching, see the following articles:
 
-- [Searchable properties in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
+- [Searchable properties in Exchange](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](https://technet.microsoft.com/library/dn774955(v=exchg.160).aspx)
 
 ### Using $search on person collections
 

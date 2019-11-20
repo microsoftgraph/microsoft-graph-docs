@@ -3,7 +3,7 @@ title: "audioRoutingGroup resource type"
 description: "The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -27,7 +27,7 @@ The audio routing group stores a private audio route between participants in a m
 
 | Property      | Type              | Description                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | string            | Read-only. Server generated.                                         |
+| id            | string            | Read-only.                                                           |
 | receivers     | collection(string) | List of receiving participant ids.                                   |
 | routingMode   | string            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
 | sources       | collection(string) | List of source participant ids.                                      |

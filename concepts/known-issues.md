@@ -1,7 +1,7 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
-author: ""
+author: "MSGraphDocsVTeam"
 localization_priority: Priority
 ---
 
@@ -165,11 +165,12 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
-## Calls and online meetings
+The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
 
-> **Note** Calling and online meetings are currently in preview and are available only in the Microsoft Graph beta endpoint.
+## Cloud communications (preview)
 
-- Navigation path `/applications/{id}` is not supported. Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
+> **Note** Cloud communications are currently in preview and are available only in the Microsoft Graph beta endpoint.
+The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
 ## Contacts
 

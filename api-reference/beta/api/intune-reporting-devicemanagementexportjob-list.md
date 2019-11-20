@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 538
 
 {
   "value": [
@@ -69,9 +69,6 @@ Content-Length: 594
       "filter": "Filter value",
       "select": [
         "Select value"
-      ],
-      "orderBy": [
-        "Order By value"
       ],
       "format": "pdf",
       "snapshotId": "Snapshot Id value",

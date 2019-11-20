@@ -32,10 +32,10 @@ For example, a user is watching a video on the bus ride home from work. When she
 When you associate push notification credentials for each of the platforms where your app is available with your cross-device app, the user's app can send commands across devices, so you can build experiences that cross multiple screens or transition a workflow from one device to another in real time. 
 
 ## Select the right hosting method for your cross-device app configuration
-You can host your cross-device app configuration either as a JSON file on your domain or as a profile configurable via the [Windows Dev Center](https://developer.microsoft.com/en-us/windows). Choose a hosting option based on the Project Rome capabilities you want to enable in your apps. 
+You can host your cross-device app configuration either as a JSON file on your domain or as a profile configurable via the [Windows Dev Center](https://developer.microsoft.com/windows). Choose a hosting option based on the Project Rome capabilities you want to enable in your apps. 
 
 ### Windows Dev Center profile (recommended) 
-You can access all Project Rome capabilities using a cross-device app managed in the [Windows Dev Center](https://developer.microsoft.com/en-us/windows). The Windows Dev Center also offers the *best* way to manage any cross-device app configuration changes. You can save updates to an existing profile more securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center, the new profile will be effective after approximately **one hour**.  
+You can access all Project Rome capabilities using a cross-device app managed in the [Windows Dev Center](https://developer.microsoft.com/windows). The Windows Dev Center also offers the *best* way to manage any cross-device app configuration changes. You can save updates to an existing profile more securely until you're ready to publish changes to production. When you publish changes to an existing cross-device app in the Dev Center, the new profile will be effective after approximately **one hour**.  
 
 ### Externally hosted JSON file (limited) 
 You can use the following Project Rome capabilities on all supported platforms using a cross-device app managed as an externally hosted JSON file:  
@@ -65,14 +65,14 @@ You'll need to collect each of the platform-specific application IDs in order to
 
 To find the IDs:
 
-* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** - For details, see [Change the package name](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
 ### Step 3: Configure support for Microsoft account or Azure AD
-To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
+To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
 You can find your existing app ID/client IDs or provision new ones by signing in to the [Application registration portal](https://apps.dev.microsoft.com) with your developer account. When you sign in to the portal, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported.   
 
@@ -90,7 +90,7 @@ If you've opted to configure your cross-device app in the Windows Dev Center, yo
 
 To find the IDs:
 
-* **Windows Notification Service** - See [Registering your app and receiving the credentials for your cloud service](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) and the [Application registration portal](https://apps.dev.microsoft.com).
+* **Windows Notification Service** - See [Registering your app and receiving the credentials for your cloud service](https://docs.microsoft.com/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) and the [Application registration portal](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** -See [APNs Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** - See [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -137,8 +137,8 @@ The following example includes all the valid platform identifiers currently acce
 
 To find the IDs:
 
-* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** - For details, see [Change the package name](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
@@ -183,7 +183,7 @@ If you have an app using the activity feed API in Microsoft Graph, your host val
 
 ### Universal Windows apps
 If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see 
-[uap5:UserActivity](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
+[uap5:UserActivity](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps

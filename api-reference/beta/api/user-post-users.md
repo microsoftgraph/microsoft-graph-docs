@@ -42,7 +42,7 @@ POST /users
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required. For a social identity, none of the properties are required.
+The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicy** must be set to `DisablePasswordExpiration`. For a social identity, none of the properties are required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
@@ -140,7 +140,10 @@ Content-type: application/json
 
 ### Example 2: Create a user with social and local account identities
 
-Create a new user, with a local account identity with a sign-in name, and with a social identity. This example is typically used for migration scenarios.
+Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.  
+
+[!NOTE] 
+For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
 
 #### Request
 
@@ -164,15 +167,20 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
   "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
     "password": "password-value"
-  }
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 # [C#](#tab/csharp)
@@ -211,9 +219,14 @@ Content-type: application/json
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
       "signInType": "federated",
@@ -221,10 +234,7 @@ Content-type: application/json
       "issuerAssignedId": "5eecb0cd"
     }
   ],
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": null
-  }
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 

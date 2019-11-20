@@ -3,7 +3,7 @@ title: "mediaStream resource type"
 description: "The mediaStream type."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "serverMuted"
+    "serverMuted",
+    "label"
   ],
   "@odata.type": "microsoft.graph.mediaStream"
 }-->

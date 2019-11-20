@@ -3,7 +3,7 @@ title: "Get audio routing group"
 description: "Retrieve the properties and relationships of an audioRoutingGroup object."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups/{id}
+GET /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -54,7 +56,7 @@ The following example shows the request.
   "name": "get-audioRoutingGroup"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroup-csharp-snippets.md)]

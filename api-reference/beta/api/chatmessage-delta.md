@@ -63,7 +63,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 The following [OData query parameters](/graph/query-parameters) are supported by this API:
 - `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
 - `$skip`, represents how many messages to skip at the beginning of the list.
-- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** and **ge** operators are supported. For example, `../messages/delta?$filter=lastModifiedDateTime ge 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.
+- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.
 
 ## Request headers
 | Header        | Value                     |
@@ -77,7 +77,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) objects in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 ## Examples
 

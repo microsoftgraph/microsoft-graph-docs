@@ -110,7 +110,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "code": "code-value",
+      "code": 0,
       "message": "message-value",
       "subCode": "subCode-value"
     }

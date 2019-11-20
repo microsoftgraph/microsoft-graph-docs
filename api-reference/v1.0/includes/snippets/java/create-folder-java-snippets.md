@@ -10,7 +10,7 @@ DriveItem driveItem = new DriveItem();
 driveItem.name = "New Folder";
 Folder folder = new Folder();
 driveItem.folder = folder;
-driveItem.@microsoft.graph.conflictBehavior = "rename";
+driveItem.additionalDataManager().put("@microsoft.graph.conflictBehavior", new JsonPrimitive("rename"));
 
 graphClient.me().drive().root().children()
 	.buildRequest()

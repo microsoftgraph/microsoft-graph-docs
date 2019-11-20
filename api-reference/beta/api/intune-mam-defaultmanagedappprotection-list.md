@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4733
+Content-Length: 4818
 
 {
   "value": [
@@ -109,6 +109,7 @@ Content-Length: 4733
       "allowedOutboundClipboardSharingExceptionLength": 14,
       "notificationRestriction": "blockOrganizationalData",
       "previousPinBlockCount": 5,
+      "managedBrowser": "microsoftEdge",
       "maximumAllowedDeviceThreatLevel": "secured",
       "mobileThreatDefenseRemediationAction": "wipe",
       "appDataEncryptionType": "afterDeviceRestart",
@@ -147,6 +148,7 @@ Content-Length: 4733
       "appActionIfIosDeviceModelNotAllowed": "wipe",
       "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
       "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+      "thirdPartyKeyboardsBlocked": true,
       "filterOpenInToOnlyManagedApps": true,
       "disableProtectionOfManagedOutboundOpenInData": true,
       "protectInboundDataFromUnknownSources": true,

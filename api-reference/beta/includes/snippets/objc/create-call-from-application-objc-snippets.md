@@ -15,7 +15,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphCall *call = [[MSGraphCall alloc] init];
 [call setCallbackUri:@"https://bot.contoso.com/callback"];
 NSMutableArray *targetsList = [[NSMutableArray alloc] init];
-MSGraphParticipantInfo *targets = [[MSGraphParticipantInfo alloc] init];
+MSGraphInvitationParticipantInfo *targets = [[MSGraphInvitationParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setDisplayName:@"John"];

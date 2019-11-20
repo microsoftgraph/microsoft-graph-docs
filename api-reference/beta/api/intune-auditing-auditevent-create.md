@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1585
+Content-length: 1603
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -89,11 +89,11 @@ Content-length: 1585
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },
@@ -128,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1634
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -147,11 +147,11 @@ Content-Length: 1634
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },

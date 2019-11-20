@@ -292,22 +292,30 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook settings       
+      - name: Outlook settings
         items:
-        - name: Outlook user
-          href: resources/outlookuser.md
-        - name: Get language choices
-          href: api/outlookuser-supportedlanguages.md
-        - name: Get time zone choices
-          href: api/outlookuser-supportedtimezones.md
-        - name: Get mailbox settings
-          href: api/user-get-mailboxsettings.md
-        - name: Update mailbox settings
-          href: api/user-update-mailboxsettings.md
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
+        - name: Mailbox settings
+          expanded: true
+          items:
+          - name: Mailbox settings
+            href: resources/mailboxsettings.md
+          - name: Get mailbox settings
+            href: api/user-get-mailboxsettings.md
+          - name: Update mailbox settings
+            href: api/user-update-mailboxsettings.md
+        - name: Outlook user services
+          expanded: true
+          items:
+          - name: Outlook user
+            href: resources/outlookuser.md
+          - name: Get language choices
+            href: api/outlookuser-supportedlanguages.md
+          - name: Get time zone choices
+            href: api/outlookuser-supportedtimezones.md
+          - name: List categories
+            href: api/outlookuser-list-mastercategories.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
       - name: Photo
@@ -3187,6 +3195,43 @@
       items:
       - name: Overview
         href: resources/azure-ad-overview.md
+      - name: Application
+        href: resources/application.md
+        items:
+        - name: List applications
+          href: api/application-list.md
+        - name: Create application
+          href: api/application-post-applications.md
+        - name: Get application
+          href: api/application-get.md
+        - name: Update application
+          href: api/application-update.md
+        - name: Delete application
+          href: api/application-delete.md
+        - name: List deleted applications
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted application
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete application
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted application
+          href: api/directory-deleteditems-restore.md
+        - name: Add password
+          href: api/application-addpassword.md
+        - name: Remove password
+          href: api/application-removepassword.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
+        - name: List extensions
+          href: api/application-list-extensionproperty.md
+        - name: Delete extension
+          href: api/application-delete-extensionproperty.md
+        - name: List owners
+          href: api/application-list-owners.md
+        - name: Add owner
+          href: api/application-post-owners.md
+        - name: Remove owner
+          href: api/application-delete-owners.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -3988,7 +4033,7 @@
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-    - name: 'Social intelligence: People'
+    - name: 'People and workplace intelligence'
       items:
       - name: Overview
         href: resources/social-overview.md
@@ -4256,6 +4301,13 @@
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+      - name: Workbook application
+        href: resources/workbookapplication.md
+        items:
+          - name: Get
+            href: api/workbookapplication-get.md
+          - name: Calculate
+            href: api/workbookapplication-calculate.md
       - name: Workbook comments
         href: resources/workbookcomment.md
         items:

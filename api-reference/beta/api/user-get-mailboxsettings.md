@@ -18,12 +18,13 @@ Users can set the following settings for their mailboxes through an Outlook clie
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon 
 receipt of their email)
 - date format
+- delegateMeetingMessageDeliveryOptions
 - [locale](../resources/localeinfo.md) (language and country/region)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
 
-Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
+Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
 Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server. The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default. 
 
@@ -55,6 +56,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 GET /me/mailboxSettings/dateFormat
 GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
 
+GET /me/mailboxSettings/delegateMeetingMessageDeliveryOptions
+GET /users/{id|userPrincipalName}/mailboxSettings/delegateMeetingMessageDeliveryOptions
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
 
@@ -84,6 +88,7 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - [mailboxSettings](../resources/mailboxsettings.md) object
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) object
 - string (for **dateFormat**)
+- string (for **delegateMeetingMessageDeliveryOptions**)
 - [localeInfo](../resources/localeinfo.md) object
 - string (for **timeFormat**)
 - string (for **timeZone**)
@@ -167,7 +172,8 @@ Content-type: application/json
         }
     },
     "dateFormat": "MM/dd/yyyy",
-    "timeFormat": "hh:mm tt"
+    "timeFormat": "hh:mm tt",
+    "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 

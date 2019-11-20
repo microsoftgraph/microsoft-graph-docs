@@ -3,7 +3,7 @@ title: "participant: muteAll"
 description: "Mute all participants in the call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -12,6 +12,9 @@ doc_type: apiPageType
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mute all participants in the call.
+
+> **Note:** This API is deprecated and will be removed by March 15th, 2020. To mute a single participant, see [participant: mute](participant-mute.md).
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,12 +29,15 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
+POST /communications/calls/{id}/participants/muteAll
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -42,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -56,7 +62,7 @@ The following example shows the request.
   "name": "participant-muteAll"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/muteAll
 Content-Type: application/json
 Content-Length: 81
 
@@ -93,14 +99,13 @@ Content-Length: 81
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
 
 {
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```

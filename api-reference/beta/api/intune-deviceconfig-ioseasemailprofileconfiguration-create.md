@@ -69,6 +69,8 @@ The following table shows the properties that are required when you create the i
 |blockSyncingRecentlyUsedEmailAddresses|Boolean|Indicates whether or not to block syncing recently used email addresses, for instance - when composing new email.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duration of time email should be synced back to. . Possible values are: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
+|easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Exchange data to sync. Possible values are: `none`, `calendars`, `contacts`, `email`, `notes`, `reminders`.|
+|easServicesUserOverrideEnabled|Boolean|Allow users to change sync settings.|
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
@@ -95,7 +97,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2057
+Content-length: 2131
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -138,6 +140,8 @@ Content-length: 2057
   "blockSyncingRecentlyUsedEmailAddresses": true,
   "durationOfEmailToSync": "oneDay",
   "emailAddressSource": "primarySmtpAddress",
+  "easServices": "calendars",
+  "easServicesUserOverrideEnabled": true,
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
@@ -159,7 +163,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2229
+Content-Length: 2303
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -205,6 +209,8 @@ Content-Length: 2229
   "blockSyncingRecentlyUsedEmailAddresses": true,
   "durationOfEmailToSync": "oneDay",
   "emailAddressSource": "primarySmtpAddress",
+  "easServices": "calendars",
+  "easServicesUserOverrideEnabled": true,
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,

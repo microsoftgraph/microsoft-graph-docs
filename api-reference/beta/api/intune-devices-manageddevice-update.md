@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |userId|String|Unique Identifier for the user associated with the device. This property is read-only.|
 |deviceName|String|Name of the device. This property is read-only.|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc. This property is read-only.|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
+|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection|List of ComplexType deviceActionResult objects. This property is read-only.|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|Management state of the device. This property is read-only. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
@@ -119,6 +119,7 @@ The following table shows the properties that are required when you create the [
 |notes|String|Notes on the device created by IT Admin|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent|
+|ethernetMacAddress|String|Ethernet MAC. This property is read-only.|
 
 
 
@@ -132,7 +133,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7513
+Content-length: 7568
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -304,7 +305,8 @@ Content-length: 7513
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value"
-  }
+  },
+  "ethernetMacAddress": "Ethernet Mac Address value"
 }
 ```
 
@@ -313,7 +315,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7562
+Content-Length: 7617
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -486,7 +488,8 @@ Content-Length: 7562
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
     "clientIdentifier": "Client Identifier value"
-  }
+  },
+  "ethernetMacAddress": "Ethernet Mac Address value"
 }
 ```
 

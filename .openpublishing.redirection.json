@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "concepts/associate-account.md",
+            "redirect_url": "/graph/auth/",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "concepts\\v1-overview.md",
             "redirect_url": "api/overview?view=graph-rest-1.0",
             "redirect_document_id": true

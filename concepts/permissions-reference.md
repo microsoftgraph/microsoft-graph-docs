@@ -3,8 +3,7 @@ title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
 author: "jackson-woods"
 localization_priority: Priority
-scenarios: "getting-started"
-ms.custom: graphiamtop20
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Microsoft Graph permissions reference
@@ -168,12 +167,16 @@ None.
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Read applications | Allows the app to read applications and service principals on behalf of the signed-in user. | Yes |
+| _Application.ReadWrite.All_ | Read and write all apps |  Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. | Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Read applications | Allows the app to read applications and service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
 
@@ -186,11 +189,12 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 #### Delegated
 
-None.
+* _Application.Read.All_: List all applications (`GET /beta/applications`)
+* _Application.ReadWrite.All_: Update a service principal (`PATCH /beta/servicePrincipals/{id}`)
 
 #### Application
 
-* _Application.ReadWrite.All_: List all applications (`GET /beta/applications`)
+* _Application.Read.All_: List all applications (`GET /beta/applications`)
 * _Application.ReadWrite.All_: Delete a service principal (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
@@ -279,11 +283,11 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Calls.Initiate.All_|Initiate outgoing 1:1 calls from the app (preview)|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
 |_Calls.InitiateGroupCall.All_|Initiate outgoing group calls from the app (preview)|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
-|_Calls.JoinGroupCall.All_|Join Group Calls and Meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
-|_Calls.JoinGroupCallasGuest.All_|Join Group Calls and Meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined as a guest to meetings in your tenant.|Yes|
+|_Calls.JoinGroupCall.All_|Join group calls and meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
+|_Calls.JoinGroupCallasGuest.All_|Join group calls and meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined as a guest to meetings in your tenant.|Yes|
 |_Calls.AccessMedia.All_\*|Access media streams in a call as an app (preview)|Allows the app to get direct access to media streams in a call, without a signed-in user.|Yes|
 
-> \***Important:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+> \***Important:** You cannot use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
 
 <br/>
 
@@ -291,13 +295,13 @@ None.
 
 #### Application
 
-* _Calls.Initiate.All_: Make a peer-to-peer call from the application to a user in the organization (`POST /beta/app/calls`).
-* _Calls.InitiateGroupCall.All_: Make a group call from the application to a group of users in the organization (`POST /beta/app/calls`).
-* _Calls.JoinGroupCall.All_: Join a group call or online meeting from the application (`POST /beta/app/calls`).
-* _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/app/calls`).
-* _Calls.AccessMedia.All_: Create or Join a call and the app gets direct access to participant media streams in the call (`POST /beta/app/calls`).
+* _Calls.Initiate.All_: Make a peer-to-peer call from the application to a user in the organization (`POST /beta/communications/calls`).
+* _Calls.InitiateGroupCall.All_: Make a group call from the application to a group of users in the organization (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCall.All_: Join a group call or online meeting from the application (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/communications/calls`).
+* _Calls.AccessMedia.All_: Create or join a call and the app gets direct access to participant media streams in the call (`POST /beta/communications/calls`).
 
-> **Note:** For request examples, see to [Create call](/graph/api/application-post-calls?view=graph-rest-beta).
+> **Note:** For request examples, see [Create call](/graph/api/application-post-calls?view=graph-rest-beta).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -510,6 +514,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Entitlement management permissions
+
+#### Delegated permissions
+
+|Permission|Display String|Description|Admin Consent Required|
+|:----------|:--------------|:-----------|:-------|
+|_EntitlementManagement.ReadWrite.All_|Read and write entitlement management resources|Allows the app to request access to and manage access packages and related entitlement management resources on behalf of the signed-in user.|Yes|
+
 ## Files permissions
 
 #### Delegated permissions
@@ -569,14 +581,19 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Read all groups | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Yes | No |
 | _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
+| _GroupMember.Read.All_ |    Read group memberships | Allows the app to list groups, read basic group properties and read membership of all groups the signed-in user has access to. | Yes | No |
+| _GroupMember.ReadWrite.All_ |    Read and write group memberships | Allows the app to list groups, read basic properties, read and update the membership of the groups the signed-in user has access to. Group properties and owners cannot be updated and groups cannot be deleted. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups. <br><br> **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user. <br><br> **Note:** Not all group APIs support access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups.<br/><br/>**Note:** Not all group APIs support access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user.<br/><br/>**Note:** Not all group APIs support access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
 | _Group.Selected_ |    Access selected groups | **Note: This permission is exposed in the Azure portal for a feature that is not  available for general use. Do not use this permission as it is subject to change.** | Yes |
+| _GroupMember.Read.All_ |    Read group memberships | Allows the app to read memberships and basic group properties for all groups without a signed-in user. | Yes |
+| _GroupMember.ReadWrite.All_ |    Read and write group memberships | Allows the app to list groups, read basic properties, read and update the membership of the groups this app has access to without a signed-in user. Group properties and owners cannot be updated and groups cannot be deleted. | Yes |
+| _Group.Create_ |    Create groups | Allows the calling app to create groups without a signed-in user. Does not allow read, update, or deletion of any groups. | Yes |
 
 ### Remarks
 
@@ -599,13 +616,14 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 * _Group.Read.All_: Read all Office 365 groups that the signed-in user is a member of (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
 * _Group.Read.All_: Read all Office 365 group content like conversations (`GET /groups/{id}/conversations`).
 * _Group.ReadWrite.All_: Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
-* _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`).
+* _GroupMember.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`).
 > **Note:**: This also requires _User.ReadBasic.All_ to read the user to add as a member.
 
 #### Application
 
 * _Group.Read.All_: Find all groups with name that starts with 'Sales' (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_: Daemon service creates new events on an Office 365 group's calendar (`POST /groups/{id}/events`).
+* _Group.Create_: Creates a new group (`POST /groups`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -788,7 +806,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
-| _Mail.ReadBasic_ |    Read user basic mail (preview) | (Preview) Allows the app to read the signed-in user's mailbox except body, previewBody, attachments and any extended properties. Does not include permissions to search messages. | No | Yes
+| _Mail.ReadBasic_ |    Read user basic mail | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | No | Yes
 | _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
 | _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. | No | No
 | _Mail.ReadWrite.Shared_ |    Read and write user and shared mail | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | No | No
@@ -802,7 +820,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    Read mail in all mailboxes | Allows the app to read mail in all mailboxes without a signed-in user.| Yes |
-| _Mail.ReadBasic.All_ |    Read all users basic mail (preview) | (Preview) Allows the app to read all users mailboxes except body, previewBody, attachments and any extended properties. Does not include permissions to search messages. | Yes | No
+| _Mail.ReadBasic.All_ |    Read all users basic mail | Allows the app to read all users mailboxes except Body, BodyPreview, UniqueBody, Attachments, ExtendedProperties, and Extensions. Does not include permissions to search messages. | Yes | No
 | _Mail.ReadWrite_ |    Read and write mail in all mailboxes | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Yes |
 | _Mail.Send_ |    Send mail as any user | Allows the app to send mail as any user without a signed-in user. | Yes |
 | _MailboxSettings.Read_ |  Read all user mailbox settings | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail. | No |
@@ -938,7 +956,10 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_OnlineMeetings.Read_|Read Online Meeting.|Allows an app to read online meeting details on behalf of the signed-in user.|No|No|
+|_OnlineMeetings.ReadWrite_|Read and Create Online Meetings.|Allows an app to create, read online meetings on behalf of the signed-in user. |No|No|
 
 <br/>
 
@@ -946,19 +967,23 @@ None.
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read Online Meeting details in your organization, without a signed-in user.|Yes|
-|_OnlineMeetings.ReadWrite.All_|Read and Create Online Meetings from the app (preview) on behalf of a user|Allows the app to create Online Meetings in your organization on behalf of a user, without a signed-in user.|Yes|
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read VTC associated online meeting details in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read and Create Online Meetings from the app (deprecated) on behalf of a user|Allows the app to create Online Meetings in your organization on behalf of a user, without a signed-in user.|Yes|
 
 <br/>
 
 ### Example usage
 
+#### Delegated
+
+* _OnlineMeetings.Read_: Retrieve the properties and relationships of an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
+* _OnlineMeetings.ReadWrite_: Create an [online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
+
 #### Application
 
-* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [Online Meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/app/onlinemeetings/{id}`).
-* _OnlineMeetings.ReadWrite.All_: Create an [Online Meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/app/onlinemeetings`).
+* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [online meeting](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
 
-> **Note**: Creating an [Online Meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) creates a meeting on behalf of a user specified in the request body, but does not show it on the user's Calendar.
+> **Note**: Creating an [online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) creates a meeting on behalf of a user, but does not show it on the user's Calendar.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1229,6 +1254,35 @@ Role management permissions are only valid for work or school accounts.
 - _RoleManagement.ReadWrite.Directory_: Add an administrative unit-scoped member to a directory role (`POST /directoryRoles/<id>/scopedMembers`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Search permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalItem.ReadWrite.All_ | Read and Write external data | Allows an app to write external data into the indexing API. | Yes | No |
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _ExternalItem.Read.All_ | Read external data | Allows an app to read external data ingested via the Microsoft Search indexing API| Yes | No |
+
+### Remarks
+Search permissions are only valid for work or school accounts.
+
+This search permission is only applicable to ingested data from the indexing API.
+
+Access to data via search requires the corresponding permission. Ex : _Files.Read.All_ to access files via search.
+
+### Example usage
+
+#### Application
+
+* _ExternalItem.Read.All__:  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 

@@ -3,7 +3,7 @@ title: "Microsoft Graph SDKs overview"
 description: "Describes the SDKs that are available, the platforms they support, and the value they provide to developers."
 localization_priority: Normal
 author: MichaelMainer
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Graph SDKs overview
@@ -34,7 +34,7 @@ SDKs are currently available for the following languages and platforms:
 
 ## Office 365 developer subscription
 
-When building applications using Microsoft Graph, we recommend that you get a free Office 365 developer subscription by signing up for the [Office 365 Developer Program](http://aka.ms/OfficeDevProgram).
+When building applications using Microsoft Graph, we recommend that you get a free Office 365 developer subscription by signing up for the [Office 365 Developer Program](https://aka.ms/OfficeDevProgram).
 
 ## See also
 

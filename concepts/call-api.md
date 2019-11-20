@@ -3,7 +3,7 @@ title: "Calling the Microsoft Graph API"
 description: "To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   "
 localization_priority: Normal
 author: "VinodRavichandran"
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 ---
 
 # Calling the Microsoft Graph API

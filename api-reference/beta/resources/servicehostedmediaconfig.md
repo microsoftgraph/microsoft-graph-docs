@@ -3,7 +3,7 @@ title: "serviceHostedMediaConfig resource type"
 description: "The serviceHostedMediaConfig type."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -36,28 +36,6 @@ The following is a JSON representation of the resource.
 {
   "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
-}-->
-```json
-{
-  "preFetchMedia": [
-    {
-      "uri": "https://cdn.contoso.com/beep.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-    },
-    {
-      "uri": "https://cdn.contoso.com/cool.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-    }
-  ],
-  "removeFromDefaultAudioGroup": false
 }
 ```
 

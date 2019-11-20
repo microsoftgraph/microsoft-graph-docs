@@ -1,9 +1,9 @@
 ---
 title: "organizerMeetingInfo resource type"
-description: "Meeting information containing the organizer of the meeting."
+description: "Contains details about the meeting organizer. "
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,15 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Meeting information containing the organizer of the meeting.
+Contains details about the meeting organizer. 
+
+To join an existing meeting, you must either provide a combination of the organizerMeetingInfo 
+and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.
 
 ## Properties
 
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       | Indicates if a conversation can continue once the host of the conversation leaves. |
 | organizer                    | [identitySet](identityset.md) | The organizer Azure Active Directory identity.  |
 
 ## JSON representation
@@ -29,32 +31,11 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.meetingInfo",
-   "openType": true,
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.organizerMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "organizer": {
-    "user": {
-      "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-      "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-    }
-  }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 

@@ -1,5 +1,8 @@
 {
     "pathsToIgnore": [
-        "/graph"
+        "/graph",
+        "/microsoft-365",
+        "/microsoftsearch",
+        "/sharepoint"
     ]
 }

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var accessReviews = await graphClient.AccessReviews
 	.Request()
-	.Filter("businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'")
+	.Filter("businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'")
 	.GetAsync();
 
 ```

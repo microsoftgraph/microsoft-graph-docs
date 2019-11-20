@@ -3,7 +3,7 @@ title: "call: cancelMediaProcessing"
 description: "Cancels media processing for all in-progress any PlayPrompt or Record operations."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/cancelMediaProcessing
+POST /communications/calls/{id}/cancelMediaProcessing
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -57,7 +59,7 @@ The following example shows the request.
   "name": "call-cancelMediaProcessing"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing
+POST https://graph.microsoft.com/beta/communications/calls/{id}/cancelMediaProcessing
 Content-Type: application/json
 Content-Length: 62
 
@@ -88,18 +90,25 @@ Content-Length: 62
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.cancelMediaProcessingOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+Content-Length: 259
+
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 
 ##### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -109,13 +118,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed"

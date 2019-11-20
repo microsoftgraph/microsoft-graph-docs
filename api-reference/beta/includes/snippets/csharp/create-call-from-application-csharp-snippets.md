@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var call = new Call
 {
 	CallbackUri = "https://bot.contoso.com/callback",
-	Targets = new List<ParticipantInfo>()
+	Targets = new List<InvitationParticipantInfo>()
 	{
 		new ParticipantInfo
 		{

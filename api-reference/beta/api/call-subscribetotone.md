@@ -3,7 +3,7 @@ title: "call: subscribeToTone"
 description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'Dialpad'."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
+POST /communications/calls/{id}/subscribeToTone
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -59,7 +61,7 @@ The following example shows the request.
   "name": "call-subscribeToTone"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone
+POST https://graph.microsoft.com/beta/communications/calls/{id}/subscribeToTone
 Content-Type: application/json
 Content-Length: 46
 
@@ -93,24 +95,24 @@ Content-Length: 46
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
+Content-Type: application/json
+Content-Length: 259
 
 {
   "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
   "status": "completed",
-  "createdDateTime": "2019-07-18T19:52:30Z",
-  "lastActionDateTime": "2019-07-18T19:52:31Z",
   "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
 }
 ```
 
 
-##### Notification - Tone notification
+##### Notification - tone notification
 
 The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -120,10 +122,12 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/421f1100-411f-4a29-8514-dbbb9caff45",
+      "resourceUrl": "/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "established",

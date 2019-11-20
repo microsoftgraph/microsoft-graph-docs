@@ -23,9 +23,9 @@ var transferTarget = new InvitationParticipantInfo
 	ReplacesCallId = "replacesCallId-value"
 };
 
-var clientContext = "clientContext-value";
+var clientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08";
 
-await graphClient.App.Calls["{id}"]
+await graphClient.Communications.Calls["{id}"]
 	.Transfer(transferTarget)
 	.Request()
 	.PostAsync();

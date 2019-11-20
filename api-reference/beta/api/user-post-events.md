@@ -79,8 +79,11 @@ Since the **event** resource supports [extensions](/graph/extensibility-overview
 
 If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
 
-## Example
-##### Request 1
+## Examples
+
+### Example 1: Create an event
+
+#### Request
 Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 
@@ -138,7 +141,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response 1
+#### Response
 Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -181,6 +184,9 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider":"unknown",
+    "onlineMeeting":null,
     "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
@@ -235,7 +241,9 @@ Content-length: 2197
 ```
 
 
-##### Request 2
+### Example 2: Create an event that occurs in multiple locations
+
+#### Request
 The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
@@ -325,7 +333,7 @@ Content-length: 1390
 ---
 
 
-##### Response 2
+#### Response
 The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -369,6 +377,9 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "isOnlineMeeting":true,
+  "onlineMeetingProvider":"unknown",
+  "onlineMeeting":null,
   "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
@@ -457,7 +468,9 @@ Content-length: 2985
 ```
 
 
-##### Request 3
+### Example 3: Create a recurring event
+
+#### Request
 The third example shows how to create a recurring event. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
 
 # [HTTP](#tab/http)
@@ -524,7 +537,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response 3
+#### Response
 Here is an example of the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -566,6 +579,9 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "isOnlineMeeting":true,
+    "onlineMeetingProvider":"unknown",
+    "onlineMeeting":null,
     "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
@@ -639,6 +655,170 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Create and enable an event as an online meeting
+
+#### Request
+Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
+times in the response.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_user_with_online_meeting"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does noon work for you?"
+  },
+  "start": {
+      "dateTime": "2017-04-15T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-04-15T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"samanthab@contoso.onmicrosoft.com",
+        "name": "Samantha Booth"
+      },
+      "type": "required"
+    }
+  ],
+  "allowNewTimeProposals": true,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness"
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-with-online-meeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-with-online-meeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-with-online-meeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
+#### Response
+Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_from_user_with_online_meeting",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 2197
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
+    "id":"AAMkAGI1AAAt8AHjAAA=",
+    "createdDateTime":"2017-04-15T03:00:50.7579581Z",
+    "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
+    "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
+    "categories":[
+
+    ],
+    "originalStartTimeZone":"Pacific Standard Time",
+    "originalEndTimeZone":"Pacific Standard Time",
+    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "reminderMinutesBeforeStart":15,
+    "isReminderOn":true,
+    "hasAttachments":false,
+    "subject":"Let's go brunch",
+    "bodyPreview":"Does noon work for you?",
+    "importance":"normal",
+    "sensitivity":"normal",
+    "isAllDay":false,
+    "isCancelled":false,
+    "isOrganizer":true,
+    "responseRequested":true,
+    "seriesMasterId":null,
+    "showAs":"busy",
+    "type":"singleInstance",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl":null,
+    "isOnlineMeeting": true,
+    "onlineMeetingProvider": "teamsForBusiness",
+    "allowNewTimeProposals": true,
+    "responseStatus":{
+        "response":"organizer",
+        "time":"0001-01-01T00:00:00Z"
+    },
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body>Does late morning work for you?</body></html>"
+    },
+    "start":{
+        "dateTime":"2017-04-15T11:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-04-15T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
+    "recurrence":null,
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Samantha Booth",
+                "address":"samanthab@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Dana Swope",
+            "address":"danas@contoso.onmicrosoft.com"
+        }
+    },
+    "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+1 425 555 0123"
+    }
+}
+```
 
 
 

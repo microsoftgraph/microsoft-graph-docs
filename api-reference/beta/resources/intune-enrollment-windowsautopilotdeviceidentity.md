@@ -25,6 +25,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Update windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.|
 |[assignUserToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 |[unassignUserFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|None|Unassigns the user from an Autopilot device.|
+|[updateDeviceProperties action](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|None|Updates properties on Autopilot devices.|
 |[assignResourceAccountToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|None|Assigns resource account to Autopilot devices.|
 |[unassignResourceAccountFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|None|Unassigns the resource account from an Autopilot device.|
 
@@ -51,6 +52,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |systemFamily|String|System Family|
 |azureActiveDirectoryDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
+|displayName|String|Display Name|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -88,7 +90,8 @@ Here is a JSON representation of the resource.
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
-  "managedDeviceId": "String"
+  "managedDeviceId": "String",
+  "displayName": "String"
 }
 ```
 

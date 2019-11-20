@@ -37,18 +37,18 @@ To begin tracking changes in the group resource, you make a request including th
 Note the following:
 
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
-- The optional `$expand` query parameter is included to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
+- The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
 - The initial request does not include a state token. State tokens will be used in subsequent requests.
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 ## Initial response
 
 If successful, this method returns `200 OK` response code and [group](/graph/api/resources/group?view=graph-rest-1.0) collection object in the response body. If the entire set of groups is too large to fit in one response, a `nextLink` containing a state token will also be included.
 
-In this example, a `nextLink` was included; the original `$select` and `$expand` query parameters are encoded in the state token.
+In this example, a `nextLink` was included; the original `$select` query parameter is encoded in the state token.
 
 ```http
 HTTP/1.1 200 OK
@@ -86,7 +86,7 @@ Content-type: application/json
 
 ## nextLink request
 
-The second request uses the `nextLink` from the previous response, which contains the `skipToken`. Notice the `$select` and `$expand` parameters are not explicitly present as they are encoded in the token.
+The second request uses the `nextLink` from the previous response, which contains the `skipToken`. Notice the `$select` parameter is not explicitly present as it is encoded in the token.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
@@ -229,7 +229,7 @@ Content-type: application/json
 
 Some things to note about the example response above:
 
-- The objects are returned with the same set of properties originally specified via the `$select` and `$expand` query parameters.
+- The objects are returned with the same set of properties originally specified via the `$select` query parameter.
 
 - Both changed and unchanged properties are included. In the example above, the `description` property has a new value, while the `displayName` property has not changed.
 
@@ -241,14 +241,14 @@ Some things to note about the example response above:
 
 ## Paging through members in a large group
 
-The `members@delta` property is included in group objects by default, when the `$select` query parameter has not been specified, or when the `$expand=members` parameter is explicitly specified. For groups with many members it is possible that all members cannot fit into a single response; in this section we describe the pattern you should implement to handle such cases.
+The `members@delta` property is included in group objects by default, when the `$select` query parameter has not been specified, or when the `$select=members` parameter is explicitly specified. For groups with many members it is possible that all members cannot fit into a single response; in this section we describe the pattern you should implement to handle such cases.
 
 >**Note:** This pattern applies to both the initial retrieval of group state as well as to subsequent calls to get delta changes.
 
 Let's assume you are executing the following delta query - either to capture the initial full state of groups, or later on to get delta changes:
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 1. Microsoft Graph may return a response that contains just one group object, with a large list of members in the `members@delta` property:
@@ -287,7 +287,7 @@ Content-type: application/json
 }
 ```
 
-2. When you follow the `nextLink` you may receive a response again containing the same group object. The same property values will be returned but the expanded `members@delta` property now contains a different list of users.
+2. When you follow the `nextLink` you may receive a response again containing the same group object. The same property values will be returned but the `members@delta` property now contains a different list of users.
 
 **Second page**
 

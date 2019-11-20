@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var onlineMeeting = await graphClient.App.OnlineMeetings["{id}"]
+var onlineMeetings = await graphClient.Communications.OnlineMeetings
 	.Request()
+	.Filter("VideoTeleconferenceId eq '123456789'")
 	.GetAsync();
 
 ```

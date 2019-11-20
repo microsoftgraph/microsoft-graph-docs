@@ -14,14 +14,14 @@ const answer = {
   callbackUri: "callbackUri-value",
   mediaConfig: {
     @odata.type: "#microsoft.graph.appHostedMediaConfig",
-    blob: "<media config blob>"
+    blob: "<Media Session Configuration Blob>"
   },
   acceptedModalities: [
     "audio"
   ]
 };
 
-let res = await client.api('/app/calls/{id}/answer')
+let res = await client.api('/communications/calls/{id}/answer')
 	.version('beta')
 	.post(answer);
 
