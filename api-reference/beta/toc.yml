@@ -8704,6 +8704,26 @@
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Threat Assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: Url assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List threat assessment requests
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create threat assessment request
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get threat assessment request
+            href: api/threatassessmentrequest-get.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
