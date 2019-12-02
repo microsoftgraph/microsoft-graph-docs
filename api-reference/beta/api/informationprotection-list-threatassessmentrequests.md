@@ -102,7 +102,7 @@ Content-type: application/json
       "requestSource": "administrator",
       "recipientEmail": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com",
       "destinationRoutingReason": "notJunk",
-      "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+      "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
       "createdBy": {
         "user": {
           "id": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
