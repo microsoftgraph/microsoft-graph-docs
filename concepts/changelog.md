@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## December 2019
+
+### Identity and access (Azure AD) | Information protection
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources. |
+
 ## November 2019
 
 ### Calendar | Place
