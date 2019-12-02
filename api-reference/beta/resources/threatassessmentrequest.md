@@ -30,14 +30,14 @@ An abstract resouce type used to represent a threat assessment request item.
 
 | Property     | Type        | Description |
 | :-------------|:------------|:------------|
-|category|[threatCategory](enums.md#threatCategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
-|contentType|[threatAssessmentContentType](enums.md#threatAssessmentContentType-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
+|category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|expectedAssessment|[threatExpectedAssessment](enums.md#threatExpectedAssessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
+|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatAssessmentRequestSource-values)|The source of threat assessment request. Possible values are: `user`, `administrator`.|
-|status|[threatAssessmentStatus](enums.md#threatAssessmentStatus-values)|The assessment process status. Possible values are: `pending`, `completed`.|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `user`, `administrator`.|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|The assessment process status. Possible values are: `pending`, `completed`.|
 
 ## Relationships
 

@@ -20,7 +20,7 @@ A resouce type used to represent a threat assessment result item.
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |id|String|The threat assessment result ID is a globally unique identifier (GUID).|
 |message|String|The result message for each threat assessment.|
-|resultType|[threatAssessmentResultType](enums.md#threatAssessmentResultType-values)|The threat assessment result type. Possible values are: `checkPolicy`, `rescan`.|
+|resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|The threat assessment result type. Possible values are: `checkPolicy`, `rescan`.|
 
 ## JSON representation
 
