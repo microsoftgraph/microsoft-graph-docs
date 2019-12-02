@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and the requested [t
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_threatassessmentrequest"
+  "name": "get_mailassessmentrequest"
 }-->
 
 ```http
@@ -117,7 +117,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_threatassessmentrequest"
+  "name": "get_emailfileassessmentrequest"
 }-->
 
 ```http
@@ -169,7 +169,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_threatassessmentrequest"
+  "name": "get_fileassessmentrequest"
 }-->
 
 ```http
@@ -220,7 +220,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_threatassessmentrequest"
+  "name": "get_urlassessmentrequest"
 }-->
 
 ```http
@@ -270,7 +270,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_threatassessmentrequest"
+  "name": "get_threatassessmentrequest_expand_results"
 }-->
 
 ```http

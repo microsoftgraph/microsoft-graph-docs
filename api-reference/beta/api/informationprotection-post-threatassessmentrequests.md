@@ -61,7 +61,7 @@ If successful, this method returns `201, Created` response code and a new [threa
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_threatassessmentrequest_from_informationprotection"
+  "name": "create_mailassessmentrequest_from_informationprotection"
 }-->
 
 ```http
@@ -122,7 +122,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_threatassessmentrequest_from_informationprotection"
+  "name": "create_emailfileassessmentrequest_from_informationprotection"
 }-->
 
 ```http
@@ -183,7 +183,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_threatassessmentrequest_from_informationprotection"
+  "name": "create_fileassessmentrequest_from_informationprotection"
 }-->
 
 ```http
@@ -243,7 +243,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_threatassessmentrequest_from_informationprotection"
+  "name": "create_urlassessmentrequest_from_informationprotection"
 }-->
 
 ```http

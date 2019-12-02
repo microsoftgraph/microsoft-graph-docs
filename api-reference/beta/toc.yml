@@ -8720,10 +8720,10 @@
             href: resources/urlassessmentrequest.md
           - name: List threat assessment requests
             href: api/informationprotection-list-threatassessmentrequests.md
-          - name: Create threat assessment request
-            href: api/informationprotection-post-threatassessmentrequests.md
           - name: Get threat assessment request
             href: api/threatassessmentrequest-get.md
+          - name: Create threat assessment request
+            href: api/informationprotection-post-threatassessmentrequests.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
