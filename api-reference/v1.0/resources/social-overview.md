@@ -21,14 +21,3 @@ For scenarios and examples, see [Get information about relevant people](/graph/p
 To use the API, see the following:
 
 - [List people](../api/user-list-people.md)
-
-
-## Help users get the most relevant documents for their work
-
-Feature: Document insights
-
-Use the insights API to identify the most relevant documents for a user:
-
-- List documents [trending around](../api/insights-list-trending.md) a user
-- List documents [used by](../api/insights-list-used.md) a user
-- List documents [shared with or shared by](../api/insights-list-shared.md) a user

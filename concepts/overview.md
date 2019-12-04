@@ -60,7 +60,7 @@ Pick the first scenario about researching meeting attendees as an example. With 
 You can then navigate to other resources using relationships:
 
 - Connect to their manager through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0).
-- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-1.0) the user.
+- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) the user.
 - [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around the user.
 - Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship
 - [Reach other members in each group](/graph/api/group-list-members?view=graph-rest-1.0).
@@ -89,7 +89,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 |   GET users in my organization  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   GET groups in my organization | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   GET people related to me | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
-|   GET items trending around me | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=v1.0) |
+|   GET items trending around me | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
 |   GET my notes | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
 ## Bring data from an external content source to Microsoft Graph (preview)
