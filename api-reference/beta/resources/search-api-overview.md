@@ -15,12 +15,13 @@ Using the Microsoft Search API, apps can query Office 365 data.
 
 Search requests are executed in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Common use cases
 
 The search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
 
 Search requests are executed on behalf of user. Search results are trimmed down to enforce any access control applied to the items.  For example, in the context of files, permissions on the files will be evaluated part of the search request. Users cannot access more items in search than they would be able to from the enumeration API.
-
 
 | Use cases | Properties to define in the query request body |
 |:------------------|:---------|
@@ -37,11 +38,11 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
 The following are the supported entity types:
 
- - [event](event.md)
- - [message](message.md)
- - [driveItem](driveitem.md)
- - [externalFile](externalfile.md)
- - [externalItem](externalitem.md)
+- [event](event.md)
+- [message](message.md)
+- [driveItem](driveitem.md)
+- [externalFile](externalfile.md)
+- [externalItem](externalitem.md)
 
 ### Page search results
 
@@ -69,7 +70,6 @@ Best practices:
     | 2    | 25 | 50 |
     | 3    | 75 | 75 |
     | 4    | 150 | 100 |
-
 
 ### Get the most relevant emails
 

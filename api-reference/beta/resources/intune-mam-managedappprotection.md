@@ -72,6 +72,8 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indicates in which managed browser(s) that internet links should be opened. Possible values are: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app. Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property. Possible values are: `block`, `wipe`, `warn`.|
+|blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents.|
+|allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data.|
 
 ## Relationships
 None
@@ -134,7 +136,11 @@ Here is a JSON representation of the resource.
   "previousPinBlockCount": 1024,
   "managedBrowser": "String",
   "maximumAllowedDeviceThreatLevel": "String",
-  "mobileThreatDefenseRemediationAction": "String"
+  "mobileThreatDefenseRemediationAction": "String",
+  "blockDataIngestionIntoOrganizationDocuments": true,
+  "allowedDataIngestionLocations": [
+    "String"
+  ]
 }
 ```
 

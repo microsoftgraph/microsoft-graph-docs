@@ -37,6 +37,7 @@ where files are shared, and where tabs are added.
 |[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
 |[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[Get files folder](../api/driveitem-get.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
 
 ## Properties
 
@@ -57,6 +58,7 @@ where files are shared, and where tabs are added.
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
+|filesFolder|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 
 ## JSON representation
 

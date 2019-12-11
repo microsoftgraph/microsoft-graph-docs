@@ -41,6 +41,7 @@ Inherits from [singleSignOnExtension](../resources/intune-deviceconfig-singlesig
 |activeDirectorySiteCode|String|Gets or sets the Active Directory site.|
 |passwordEnableLocalSync|Boolean|Enables or disables password syncing. This won't affect users logged in with a mobile account on macOS.|
 |blockActiveDirectorySiteAutoDiscovery|Boolean|Enables or disables whether the Kerberos extension can automatically determine its site name.|
+|passwordChangeUrl|String|Gets or sets the URL that the user will be sent to when they initiate a password change.|
 
 ## Relationships
 None
@@ -80,7 +81,8 @@ Here is a JSON representation of the resource.
   "requireUserPresence": true,
   "activeDirectorySiteCode": "String",
   "passwordEnableLocalSync": true,
-  "blockActiveDirectorySiteAutoDiscovery": true
+  "blockActiveDirectorySiteAutoDiscovery": true,
+  "passwordChangeUrl": "String"
 }
 ```
 

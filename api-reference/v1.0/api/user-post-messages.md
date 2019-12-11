@@ -124,6 +124,7 @@ Content-type: application/json
     "importance":"low",
     "parentFolderId":"AAMkADNlNWAAAAAAEPAAA=",
     "conversationId":"AAQkADNlNFdXGBnqtY=",
+    "conversationIndex":"AQHTe7/VAniOJVgCxEmtF1z6ZY1rFQ==",
     "isDeliveryReceiptRequested":false,
     "isReadReceiptRequested":false,
     "isRead":true,

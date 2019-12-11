@@ -296,7 +296,7 @@ Content-Type: application/json
 ##### Request
 
 <!-- {
-  "blockType": "request", 
+  "blockType": "ignored", 
   "name": "call-redirect-simuring"
 } -->
 

@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 Represents a search query that contains search terms and optional filters.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property     | Type        | Description |

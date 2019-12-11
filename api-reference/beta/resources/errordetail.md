@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 Describes an error for a failed request to create a Microsoft Search connection [schema](schema.md) asynchronously.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property  | Type                                               | Description |

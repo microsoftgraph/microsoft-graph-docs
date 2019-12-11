@@ -21,11 +21,11 @@ For more information about the `mgt-person` component, see [mgt-person docs](./p
 
 The component uses Microsoft Graph to provide additional details about the user. To define a user, you must use the **person-query** property of `mgt-person`.
 
-| Attribute         | type                     | Description                                                                           |
+| Attribute         | Type                     | Description                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user. |
 | person-image   | png/jpg/svg                    | Image related to the person displayed in the card.                                   |
-
+| inherit-details   | None.                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
 
 
 ## Templates
@@ -34,16 +34,15 @@ The Person-Card component uses [templates](../templates.md) that allow you to ad
 
 | Data type | Data context | Description |
 | --- | --- | --- |
-| default | person: The person details object <br> personImage: The URL of the image | The default template replaces the entire component with your own. |
-| additional-details | person: The person details object <br> personImage: the URL of the image | The template used to add additional content to the card. |
+| default | `person`: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
+| additional-details | `person`: The person details object <br> `personImage`: the URL of the image | The template used to add additional content to the card. |
 
 For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card. 
 
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
       <template data-type="person-card">
-        <mgt-person-card person-details="{{person}}" 
-            person-image="{{personImage}}">
+        <mgt-person-card inherit-details>
           <template data-type="additional-details">
             <h3>Stuffed Animal Friends:</h3>
             <ul>

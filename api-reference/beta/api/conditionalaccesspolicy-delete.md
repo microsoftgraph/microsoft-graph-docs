@@ -19,12 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All |
+|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
-
->[!NOTE]
->This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 

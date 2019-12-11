@@ -31,10 +31,10 @@ Update a tenant-wide or group specific setting.
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## Optional request headers
+## Request headers
 | Name | Description |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | {token}. Required. |
 | Content-Type	| application/json	|
 
 ## Request body

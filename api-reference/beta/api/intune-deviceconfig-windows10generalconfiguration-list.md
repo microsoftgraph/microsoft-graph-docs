@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 16468
+Content-Length: 16505
 
 {
   "value": [
@@ -415,12 +415,12 @@ Content-Length: 16468
       "dataProtectionBlockDirectMemoryAccess": true,
       "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
         "App Management Package Family Names To Launch After Log On value"
-      ]
+      ],
+      "uninstallBuiltInApps": true
     }
   ]
 }
 ```
-
 
 
 

@@ -235,7 +235,39 @@ The following table shows the properties that are required when you create the w
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker System Drive Policy.|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker Fixed Drive Policy.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
-|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE). Possible values are: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
+|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-shared-bitlockerrecoverypasswordrotationtype.md)|This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE). Possible values are: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
+|defenderDisableScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
+|defenderDisableBehaviorMonitoring|Boolean|Allows or disallows Windows Defender Behavior Monitoring functionality.|
+|defenderDisableCloudProtection|Boolean|To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.|
+|defenderEnableScanIncomingMail|Boolean|Allows or disallows scanning of email.|
+|defenderEnableScanMappedNetworkDrivesDuringFullScan|Boolean|Allows or disallows a full scan of mapped network drives.|
+|defenderDisableScanRemovableDrivesDuringFullScan|Boolean|Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.|
+|defenderDisableScanDownloads|Boolean|Allows or disallows Windows Defender IOAVP Protection functionality.|
+|defenderDisableIntrusionPreventionSystem|Boolean|Allows or disallows Windows Defender Intrusion Prevention functionality.|
+|defenderDisableOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
+|defenderDisableRealTimeMonitoring|Boolean|Allows or disallows Windows Defender Realtime Monitoring functionality.|
+|defenderDisableScanNetworkFiles|Boolean|Allows or disallows a scanning of network files.|
+|defenderDisableScanScriptsLoadedInInternetExplorer|Boolean|Allows or disallows Windows Defender Script Scanning functionality.|
+|defenderBlockEndUserAccess|Boolean|Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.|
+|defenderScanMaxCpuPercentage|Int32|Represents the average CPU load factor for the Windows Defender scan (in percent). The default value is 50. Valid values 0 to 100|
+|defenderCheckForSignaturesBeforeRunningScan|Boolean|This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan.|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Added in Windows 10, version 1709. This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. This feature requires the "Join Microsoft MAPS" setting enabled in order to function. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Added in Windows 10, version 1709. This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required". Valid values 0 to 50|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Time period (in days) that quarantine items will be stored on the system. Valid values 0 to 90|
+|defenderDisableCatchupFullScan|Boolean|This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.|
+|defenderDisableCatchupQuickScan|Boolean|This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.|
+|defenderEnableLowCpuPriority|Boolean|This policy setting allows you to enable or disable low CPU priority for scheduled scans.|
+|defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
+|defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
+|defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
+|defenderPotentiallyUnwantedAppAction|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer. Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderScanDirection|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Controls which sets of files should be monitored. Possible values are: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Selects whether to perform a quick scan or full scan. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderScheduledQuickScanTime|TimeOfDay|Selects the time of day that the Windows Defender quick scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120|
+|defenderScheduledScanDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Selects the day that the Windows Defender scan should run. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
+|defenderScheduledScanTime|TimeOfDay|Selects the time of day that the Windows Defender scan should run.|
+|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.|
 
 
 
@@ -249,7 +281,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 28588
+Content-length: 30451
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -928,7 +960,51 @@ Content-length: 28588
     "requireEncryptionForWriteAccess": true,
     "blockCrossOrganizationWriteAccess": true
   },
-  "bitLockerRecoveryPasswordRotation": "disabled"
+  "bitLockerRecoveryPasswordRotation": "disabled",
+  "defenderDisableScanArchiveFiles": true,
+  "defenderDisableBehaviorMonitoring": true,
+  "defenderDisableCloudProtection": true,
+  "defenderEnableScanIncomingMail": true,
+  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderDisableScanDownloads": true,
+  "defenderDisableIntrusionPreventionSystem": true,
+  "defenderDisableOnAccessProtection": true,
+  "defenderDisableRealTimeMonitoring": true,
+  "defenderDisableScanNetworkFiles": true,
+  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderBlockEndUserAccess": true,
+  "defenderScanMaxCpuPercentage": 12,
+  "defenderCheckForSignaturesBeforeRunningScan": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderDisableCatchupFullScan": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderEnableLowCpuPriority": true,
+  "defenderFileExtensionsToExclude": [
+    "Defender File Extensions To Exclude value"
+  ],
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
+  "defenderProcessesToExclude": [
+    "Defender Processes To Exclude value"
+  ],
+  "defenderPotentiallyUnwantedAppAction": "enable",
+  "defenderScanDirection": "monitorIncomingFilesOnly",
+  "defenderScanType": "disabled",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScheduledScanDay": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "clean",
+    "moderateSeverity": "clean",
+    "highSeverity": "clean",
+    "severeSeverity": "clean"
+  }
 }
 ```
 
@@ -937,7 +1013,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 28760
+Content-Length: 30623
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1619,10 +1695,53 @@ Content-Length: 28760
     "requireEncryptionForWriteAccess": true,
     "blockCrossOrganizationWriteAccess": true
   },
-  "bitLockerRecoveryPasswordRotation": "disabled"
+  "bitLockerRecoveryPasswordRotation": "disabled",
+  "defenderDisableScanArchiveFiles": true,
+  "defenderDisableBehaviorMonitoring": true,
+  "defenderDisableCloudProtection": true,
+  "defenderEnableScanIncomingMail": true,
+  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderDisableScanDownloads": true,
+  "defenderDisableIntrusionPreventionSystem": true,
+  "defenderDisableOnAccessProtection": true,
+  "defenderDisableRealTimeMonitoring": true,
+  "defenderDisableScanNetworkFiles": true,
+  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderBlockEndUserAccess": true,
+  "defenderScanMaxCpuPercentage": 12,
+  "defenderCheckForSignaturesBeforeRunningScan": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderDisableCatchupFullScan": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderEnableLowCpuPriority": true,
+  "defenderFileExtensionsToExclude": [
+    "Defender File Extensions To Exclude value"
+  ],
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
+  "defenderProcessesToExclude": [
+    "Defender Processes To Exclude value"
+  ],
+  "defenderPotentiallyUnwantedAppAction": "enable",
+  "defenderScanDirection": "monitorIncomingFilesOnly",
+  "defenderScanType": "disabled",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScheduledScanDay": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "clean",
+    "moderateSeverity": "clean",
+    "highSeverity": "clean",
+    "severeSeverity": "clean"
+  }
 }
 ```
-
 
 
 

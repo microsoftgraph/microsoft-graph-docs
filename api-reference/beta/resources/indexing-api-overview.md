@@ -15,6 +15,8 @@ Microsoft Graph lets your app add custom items or external files into search res
 
 Requests to index data are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Common use cases
 
 The use cases for the APIs in this section center around building [Microsoft Graph connectors](/microsoftsearch/connectors-overview), which involves the main steps of:

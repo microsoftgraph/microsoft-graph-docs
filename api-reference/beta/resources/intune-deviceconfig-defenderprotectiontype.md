@@ -1,6 +1,6 @@
 ---
 title: "defenderProtectionType enum type"
-description: "Possible values of Defender Protection"
+description: "Possible values of Defender PUA Protection"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -13,7 +13,7 @@ doc_type: enumPageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Possible values of Defender Protection
+Possible values of Defender PUA Protection
 
 ## Members
 |Member|Value|Description|

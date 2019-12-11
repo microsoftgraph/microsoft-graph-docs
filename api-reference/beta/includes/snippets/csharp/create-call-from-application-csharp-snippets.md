@@ -11,7 +11,7 @@ var call = new Call
 	CallbackUri = "https://bot.contoso.com/callback",
 	Targets = new List<InvitationParticipantInfo>()
 	{
-		new ParticipantInfo
+		new InvitationParticipantInfo
 		{
 			Identity = new IdentitySet
 			{

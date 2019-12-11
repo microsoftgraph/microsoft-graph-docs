@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 A connection to Microsoft Search from an external source.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Methods
 
 | Method                                                           | Return Type                                   | Description |

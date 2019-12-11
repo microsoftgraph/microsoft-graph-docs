@@ -11,6 +11,8 @@ doc_type: conceptualPageType
 
 Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.
 
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
 A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to [add, update, or delete items from the index](search-index-manage-items.md). Creating a connection is the first step for an application to add items to the search index.
 
 ## Create a connection

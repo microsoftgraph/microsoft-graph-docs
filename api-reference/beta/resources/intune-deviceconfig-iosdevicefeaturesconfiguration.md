@@ -247,7 +247,8 @@ Here is a JSON representation of the resource.
     "requireUserPresence": true,
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "String"
   }
 }
 ```

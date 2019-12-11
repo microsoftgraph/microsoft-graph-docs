@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6400
+Content-Length: 6472
 
 {
   "value": [
@@ -235,13 +235,13 @@ Content-Length: 6400
         "requireUserPresence": true,
         "activeDirectorySiteCode": "Active Directory Site Code value",
         "passwordEnableLocalSync": true,
-        "blockActiveDirectorySiteAutoDiscovery": true
+        "blockActiveDirectorySiteAutoDiscovery": true,
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
       }
     }
   ]
 }
 ```
-
 
 
 

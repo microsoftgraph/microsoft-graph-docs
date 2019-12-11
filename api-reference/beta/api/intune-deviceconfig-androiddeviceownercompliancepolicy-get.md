@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1411
+Content-Length: 1476
 
 {
   "value": {
@@ -77,6 +77,7 @@ Content-Length: 1411
     "version": 7,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "securityRequireSafetyNetAttestationBasicIntegrity": true,
     "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "osMinimumVersion": "Os Minimum Version value",
@@ -98,7 +99,6 @@ Content-Length: 1411
   }
 }
 ```
-
 
 
 

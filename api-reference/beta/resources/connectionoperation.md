@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 Describes status of an asynchronous request to create a Microsoft Search connection [schema](schema.md).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Methods
 
 | Method       | Return Type | Description |

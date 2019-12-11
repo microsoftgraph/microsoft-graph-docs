@@ -16,6 +16,7 @@ Settings to configure whether members can perform certain actions, for example, 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|allowCreatePrivateChannels|Boolean|If set to true, members can add and update private channels.|
 |allowCreateUpdateChannels|Boolean|If set to true, members can add and update channels.|
 |allowDeleteChannels|Boolean|If set to true, members can delete channels.|
 |allowAddRemoveApps|Boolean|If set to true, members can add and remove apps.|
@@ -33,6 +34,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "allowCreatePrivateChannels": true,
   "allowCreateUpdateChannels": true,
   "allowDeleteChannels": true,
   "allowAddRemoveApps": true,

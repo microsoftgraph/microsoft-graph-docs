@@ -11,6 +11,8 @@ doc_type: conceptualPageType
 
 Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) and [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resources in Microsoft Graph.
 
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
 The **externalItem** resource represents a custom type. It should be used when the items you add to the index use a custom schema not represented by the **externalFile** resource. For example, helpdesk tickets or product listings.
 
 The **externalFile** resource represents a file in an external system.

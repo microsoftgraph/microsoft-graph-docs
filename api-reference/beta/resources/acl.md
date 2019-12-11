@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 An access control entry for an item indexed by a Microsoft Search [externalConnection](externalconnection.md).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property       | Type   | Description                                        |

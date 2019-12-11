@@ -97,7 +97,7 @@ The following example creates a configured Word tab.
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 {
   "displayName": "word",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
   "configuration": {
      "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
      "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",

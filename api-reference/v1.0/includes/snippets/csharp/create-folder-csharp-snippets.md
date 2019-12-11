@@ -12,7 +12,10 @@ var driveItem = new DriveItem
 	Folder = new Folder
 	{
 	},
-	@microsoft.graph.conflictBehavior = "rename"
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@microsoft.graph.conflictBehavior","rename"}
+	}
 };
 
 await graphClient.Me.Drive.Root.Children

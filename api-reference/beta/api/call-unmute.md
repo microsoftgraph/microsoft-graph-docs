@@ -15,9 +15,9 @@ Allow the application to unmute itself.
 
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 
-For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md).
+For more information about how to handle unmute operations, see [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
 
-> **Note:** This is only supported for group calls.
+> **Note:** This method is only supported for group calls.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) object in the response body.
 
 >**Note:** When this API returns a successful response, all participants will receive a roster update.
 
@@ -93,7 +93,7 @@ Content-Length: 46
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,13 +104,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.unmuteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#unmuteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"

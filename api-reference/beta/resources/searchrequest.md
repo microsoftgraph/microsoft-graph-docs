@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property     | Type        | Description |

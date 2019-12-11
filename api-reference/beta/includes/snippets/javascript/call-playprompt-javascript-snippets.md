@@ -25,7 +25,7 @@ const playPromptOperation = {
   loop: false
 };
 
-let res = await client.api('/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt')
+let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/playPrompt')
 	.version('beta')
 	.post(playPromptOperation);
 

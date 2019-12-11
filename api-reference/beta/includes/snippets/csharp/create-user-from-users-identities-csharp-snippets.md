@@ -19,6 +19,12 @@ var user = new User
 		},
 		new ObjectIdentity
 		{
+			SignInType = "emailAddress",
+			Issuer = "contoso.onmicrosoft.com",
+			IssuerAssignedId = "jsmith@yahoo.com"
+		},
+		new ObjectIdentity
+		{
 			SignInType = "federated",
 			Issuer = "facebook.com",
 			IssuerAssignedId = "5eecb0cd"
@@ -26,9 +32,9 @@ var user = new User
 	},
 	PasswordProfile = new PasswordProfile
 	{
-		ForceChangePasswordNextSignIn = true,
 		Password = "password-value"
-	}
+	},
+	PasswordPolicies = "DisablePasswordExpiration"
 };
 
 await graphClient.Users

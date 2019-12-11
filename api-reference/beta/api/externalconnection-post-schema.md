@@ -15,6 +15,8 @@ Create the schema for a Microsoft Search [connection](../resources/externalconne
 
 There are two schema types supported: custom items, and files.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

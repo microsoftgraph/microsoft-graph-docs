@@ -49,11 +49,6 @@
       "toc_preview": true
     },
     "fileMetadata": {
-      "featureFlags": {
-        "**/*.yml": [
-          "enable_tutorial_feedback"
-        ]
-      },
       "ms.technology": {
         "**/*.md": "microsoft-graph"
       },

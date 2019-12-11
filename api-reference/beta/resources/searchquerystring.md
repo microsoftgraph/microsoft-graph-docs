@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The search terms for the query.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property     | Type        | Description |

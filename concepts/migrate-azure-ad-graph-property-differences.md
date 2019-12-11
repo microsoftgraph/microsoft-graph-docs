@@ -77,7 +77,6 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **recordConsentConditions**| beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_ | This property is deprecated.|
 | **replyUrls**| beta&nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris** | As well as being renamed, redirectUris is now part of the new web and publicClient resources. This allows developers to use specific URIs for their web and public clients (such as an installed application on a desktop device). | |
 | **samlMetadataUrl**| beta  &nbsp;-&nbsp; _Not yet available_  <br> v1.0 &nbsp;-&nbsp; _Not yet available_  | |
-| **extensionProperties**| beta &nbsp;-&nbsp;**extensionProperties** <br> v1.0 &nbsp;-&nbsp;**extensionProperties** | |
 | **serviceEndpoints**|  beta  &nbsp;-&nbsp; _Not available_  <br> v1.0 &nbsp;-&nbsp; _Not available_  | This property is deprecated, but is planned for servicePrincipal.|
 
 ## AppRoleAssignment differences

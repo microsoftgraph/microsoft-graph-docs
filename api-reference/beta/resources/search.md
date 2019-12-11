@@ -15,6 +15,8 @@ The search resource is the top level object representing the search endpoint. It
 
 This resource is not expected to be called as such. Any request on the resource will incur a Bad Request.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## JSON representation
 
 None

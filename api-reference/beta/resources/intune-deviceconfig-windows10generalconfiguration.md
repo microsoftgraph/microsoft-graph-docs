@@ -319,6 +319,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
 |appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​|
+|uninstallBuiltInApps|Boolean|Indicates whether or not to uninstall a fixed list of built-in Windows apps.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -693,7 +694,8 @@ Here is a JSON representation of the resource.
   "dataProtectionBlockDirectMemoryAccess": true,
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "String"
-  ]
+  ],
+  "uninstallBuiltInApps": true
 }
 ```
 

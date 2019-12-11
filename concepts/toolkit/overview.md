@@ -84,7 +84,7 @@ Or, add it in your code:
 
 The components work best when used with a [provider](./providers.md). The provider exposes authentication and APIs that the components use to call Microsoft Graph.
 
-The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md), and Office Add-ins (coming soon). You can also create your own providers by extending the [IProvider] abstract class.
+The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), and [Teams](./providers/teams.md). You can also use your own authentication logic by creating a [custom provider](./providers/custom.md), or using the [ProxyProvider](./providers/proxy.md) with your own backend authentication. 
 
 ## Polyfills
 
@@ -196,3 +196,9 @@ Finally, use the component as you normally would in your template.
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+## Browser Support
+
+
+| ![ Edge](images/edgeIcon.png)<br>Edge | ![Internet Explorer 11](images/internetExplorerIcon.png)<br>IE 11 | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Chrome](images/safariIcon.png)<br>Safari | ![Opera](images/operaIcon.png)<br>Opera | ![Samsung Internet](images/samsungInternetIcon.png)<br> Samsung |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| Latest Version | Latest Version| Latest Version| Latest Version| Latest Version | Latest Version | Lastest Version |

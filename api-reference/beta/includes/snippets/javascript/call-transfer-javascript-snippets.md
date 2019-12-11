@@ -24,10 +24,10 @@ const transfer = {
     region: "region-value",
     replacesCallId: "replacesCallId-value"
   },
-  clientContext: "clientContext-value"
+  clientContext: "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 };
 
-let res = await client.api('/app/calls/{id}/transfer')
+let res = await client.api('/communications/calls/{id}/transfer')
 	.version('beta')
 	.post(transfer);
 

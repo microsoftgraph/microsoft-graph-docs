@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 964
+Content-Length: 1003
 
 {
   "value": {
@@ -84,6 +84,7 @@ Content-Length: 964
     "mdmMinimumOSVersion": 3,
     "settingType": "policy",
     "isMdmSupported": true,
+    "mdmSupportedState": "supported",
     "settingScope": "device",
     "intuneSettingUriList": [
       "Intune Setting Uri List value"
@@ -91,7 +92,6 @@ Content-Length: 964
   }
 }
 ```
-
 
 
 

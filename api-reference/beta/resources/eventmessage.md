@@ -101,7 +101,7 @@ Here is a JSON representation of the resource
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
-|conversationIndex|Edm.Binary|The index of the conversation the email belongs to.|
+|conversationIndex|Edm.Binary|Indicates the position of the message within the conversation.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|

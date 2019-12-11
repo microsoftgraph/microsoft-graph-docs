@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31513
+Content-Length: 33552
 
 {
   "value": [
@@ -743,12 +743,55 @@ Content-Length: 31513
         "requireEncryptionForWriteAccess": true,
         "blockCrossOrganizationWriteAccess": true
       },
-      "bitLockerRecoveryPasswordRotation": "disabled"
+      "bitLockerRecoveryPasswordRotation": "disabled",
+      "defenderDisableScanArchiveFiles": true,
+      "defenderDisableBehaviorMonitoring": true,
+      "defenderDisableCloudProtection": true,
+      "defenderEnableScanIncomingMail": true,
+      "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderDisableScanRemovableDrivesDuringFullScan": true,
+      "defenderDisableScanDownloads": true,
+      "defenderDisableIntrusionPreventionSystem": true,
+      "defenderDisableOnAccessProtection": true,
+      "defenderDisableRealTimeMonitoring": true,
+      "defenderDisableScanNetworkFiles": true,
+      "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+      "defenderBlockEndUserAccess": true,
+      "defenderScanMaxCpuPercentage": 12,
+      "defenderCheckForSignaturesBeforeRunningScan": true,
+      "defenderCloudBlockLevel": "high",
+      "defenderCloudExtendedTimeoutInSeconds": 5,
+      "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+      "defenderDisableCatchupFullScan": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderEnableLowCpuPriority": true,
+      "defenderFileExtensionsToExclude": [
+        "Defender File Extensions To Exclude value"
+      ],
+      "defenderFilesAndFoldersToExclude": [
+        "Defender Files And Folders To Exclude value"
+      ],
+      "defenderProcessesToExclude": [
+        "Defender Processes To Exclude value"
+      ],
+      "defenderPotentiallyUnwantedAppAction": "enable",
+      "defenderScanDirection": "monitorIncomingFilesOnly",
+      "defenderScanType": "disabled",
+      "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderScheduledScanDay": "everyday",
+      "defenderScheduledScanTime": "11:59:10.9990000",
+      "defenderSubmitSamplesConsentType": "alwaysPrompt",
+      "defenderDetectedMalwareActions": {
+        "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+        "lowSeverity": "clean",
+        "moderateSeverity": "clean",
+        "highSeverity": "clean",
+        "severeSeverity": "clean"
+      }
     }
   ]
 }
 ```
-
 
 
 

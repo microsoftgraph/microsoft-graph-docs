@@ -342,6 +342,7 @@ Content-type: application/json
     "subject":"Reminder - please bring laptop",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
     "isDeliveryReceiptRequested":false,
     "isReadReceiptRequested":false,
     "isRead":false,

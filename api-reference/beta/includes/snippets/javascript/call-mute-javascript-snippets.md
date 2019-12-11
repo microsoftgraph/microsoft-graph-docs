@@ -14,7 +14,7 @@ const muteParticipantOperation = {
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/mute')
+let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/mute')
 	.version('beta')
 	.post(muteParticipantOperation);
 

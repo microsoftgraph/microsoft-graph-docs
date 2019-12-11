@@ -17,7 +17,7 @@ Describes the response format of a call participant mute operation.
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | The client context.                                                                                                                               |
+| clientContext                  | String                      | Unique client context string. Can have a maximum of 256 characters.                                                                               |
 | id                             | String                      | The server operation ID. Read-only.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                            |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |

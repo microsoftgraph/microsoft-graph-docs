@@ -38,6 +38,8 @@ The user experience analytics device startup history entity contains device boot
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |totalLoginTimeInMs|Int32|The user experience analytics device total login time in milliseconds.|
 |isFirstLogin|Boolean|The user experience analytics device first login.|
+|isFeatureUpdate|Boolean|The user experience analytics device boot record is a feature update.|
+|operatingSystemVersion|String|The user experience analytics device boot record's operating system version.|
 
 ## Relationships
 None
@@ -63,7 +65,9 @@ Here is a JSON representation of the resource.
   "groupPolicyLoginTimeInMs": 1024,
   "coreLoginTimeInMs": 1024,
   "totalLoginTimeInMs": 1024,
-  "isFirstLogin": true
+  "isFirstLogin": true,
+  "isFeatureUpdate": true,
+  "operatingSystemVersion": "String"
 }
 ```
 

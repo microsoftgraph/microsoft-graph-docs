@@ -15,7 +15,7 @@ const updateMetadata = {
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/updateMetadata')
+let res = await client.api('/communications/calls/{id}/updateMetadata')
 	.version('beta')
 	.post(updateMetadata);
 

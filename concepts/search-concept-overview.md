@@ -9,7 +9,9 @@ scenarios: "getting-started"
 
 # Overview for extending the Microsoft Search experience for apps on Microsoft Graph (preview)
 
-Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing.
+Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing. The Microsoft Search API allows apps to extend the similar search experience for their app customers. 
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## Why use the Microsoft Search API?
@@ -62,4 +64,4 @@ Looking for the API reference for this service?
 
 Engage with the community:
 
-- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-search)
+- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search)

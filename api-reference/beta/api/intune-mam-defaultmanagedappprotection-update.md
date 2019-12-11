@@ -90,6 +90,8 @@ The following table shows the properties that are required when you create the [
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indicates in which managed browser(s) that internet links should be opened. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
+|blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `oneDriveForBusiness`, `sharePoint`, `camera`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -122,6 +124,8 @@ The following table shows the properties that are required when you create the [
 |minimumRequiredCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or app access will be blocked|
 |minimumWarningCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the user will receive a warning|
 |minimumWipeCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped|
+|allowedAndroidDeviceModels|String collection|List of device models allowed, as a string, for the managed app to work. (Android Only)|
+|appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. (Android Only). Possible values are: `block`, `wipe`, `warn`.|
 
 
 
@@ -135,7 +139,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 4217
+Content-length: 4473
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -184,6 +188,10 @@ Content-length: 4217
   "managedBrowser": "microsoftEdge",
   "maximumAllowedDeviceThreatLevel": "secured",
   "mobileThreatDefenseRemediationAction": "wipe",
+  "blockDataIngestionIntoOrganizationDocuments": true,
+  "allowedDataIngestionLocations": [
+    "sharePoint"
+  ],
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -233,7 +241,11 @@ Content-length: 4217
   "customBrowserDisplayName": "Custom Browser Display Name value",
   "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
   "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
-  "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
+  "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+  "allowedAndroidDeviceModels": [
+    "Allowed Android Device Models value"
+  ],
+  "appActionIfAndroidDeviceModelNotAllowed": "wipe"
 }
 ```
 
@@ -242,7 +254,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4389
+Content-Length: 4645
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -294,6 +306,10 @@ Content-Length: 4389
   "managedBrowser": "microsoftEdge",
   "maximumAllowedDeviceThreatLevel": "secured",
   "mobileThreatDefenseRemediationAction": "wipe",
+  "blockDataIngestionIntoOrganizationDocuments": true,
+  "allowedDataIngestionLocations": [
+    "sharePoint"
+  ],
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -343,10 +359,13 @@ Content-Length: 4389
   "customBrowserDisplayName": "Custom Browser Display Name value",
   "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
   "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
-  "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
+  "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+  "allowedAndroidDeviceModels": [
+    "Allowed Android Device Models value"
+  ],
+  "appActionIfAndroidDeviceModelNotAllowed": "wipe"
 }
 ```
-
 
 
 

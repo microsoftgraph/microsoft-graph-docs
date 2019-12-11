@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, the `businesFlowTemplate` 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "markwahl-msft"
 ---
 
 # businessFlowTemplate resource type
@@ -13,7 +13,7 @@ author: ""
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, the `businesFlowTemplate` represents an Azure AD business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review.
 
-The business flow template objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  No additional business flow templates can be created.
+The business flow template objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  The business flow templates include access reviews of assignments to an application, memberships of a group, memberships of an Azure AD role, guest user memberships of a group, and guest user assignments to an application. No additional business flow templates can be created.
 
 
 ## Methods
@@ -25,7 +25,7 @@ The business flow template objects are automatically generated when the global a
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | The feature-assigned identifier of the business flow template                                      |
+| `id`                     |`String`                | The feature-assigned identifier of the business flow template. These values are case sensitive.                                      |
 | `displayName`            |`String`                | The name of the business flow template                                                             |
 
 

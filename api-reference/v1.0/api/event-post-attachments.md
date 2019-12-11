@@ -9,7 +9,10 @@ doc_type: apiPageType
 
 # Add attachment
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. This operation limits the size of the attachment you can add to under 4 MB.
+Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md). This operation limits the size of the attachment you can add to under 4 MB.
+
+If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

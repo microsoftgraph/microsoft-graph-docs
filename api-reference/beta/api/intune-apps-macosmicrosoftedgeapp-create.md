@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the m
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
 
 
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 720
+Content-length: 742
 
 {
   "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
@@ -101,7 +102,8 @@ Content-length: 720
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "channel": "beta"
 }
 ```
 
@@ -110,7 +112,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 892
+Content-Length: 914
 
 {
   "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
@@ -137,10 +139,10 @@ Content-Length: 892
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "channel": "beta"
 }
 ```
-
 
 
 

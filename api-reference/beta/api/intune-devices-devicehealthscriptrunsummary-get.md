@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 538
+Content-Length: 586
 
 {
   "value": {
@@ -75,11 +75,11 @@ Content-Length: 538
     "remediationSkippedDeviceCount": 13,
     "issueReoccurredDeviceCount": 10,
     "remediationScriptErrorDeviceCount": 1,
-    "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+    "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+    "issueRemediatedCumulativeDeviceCount": 4
   }
 }
 ```
-
 
 
 

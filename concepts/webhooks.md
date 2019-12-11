@@ -2,6 +2,7 @@
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
 author: "piotrci"
+ms.prod: "non-product-specific"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -17,6 +18,10 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
  
 > [!div class="nextstepaction"]
 > [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+
+By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with notifications.
+
+An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
 ## Supported resources
 

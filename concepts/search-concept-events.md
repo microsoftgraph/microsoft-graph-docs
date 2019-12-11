@@ -10,6 +10,8 @@ ms.prod: "search"
 
 You app can in a user’s own primary calendar. The user identity used to search is based on the Authorization Token.
 
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
 ## Example
 
 ### Request
@@ -18,23 +20,25 @@ This example searches in the user's calendar for the keyword "contoso", and will
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
-Content-Type: application/json
+Content-Type: application/json
 ```
 
 ```json
 {
-  "requests": [
-    {
-       "entityTypes": ["microsoft.graph.event"],
-       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.event"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 

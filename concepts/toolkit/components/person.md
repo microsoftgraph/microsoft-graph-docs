@@ -46,10 +46,10 @@ You can use three properties to set the person details. Use only one of the foll
 
 You can use several properties to customize the component.
 
-| Property    | Attribute    | Description                                                   |
-| ----------- | ------------ | ------------------------------------------------------------- |
-| showName  | show-name  | Set flag to display person display name - default is `false`. |
-| showEmail | show-email | Set flag to display person email - default is `false`.        |
+| Attribute    | Property   | Description                                                   |
+| -----------  | ---------- | ------------------------------------------------------------- |
+| show-name    | showName   | Set flag to display person display name - default is `false`. |
+| show-email   | showEmail  | Set flag to display person email - default is `false`.        |
 
 ## CSS custom properties
 
@@ -107,9 +107,9 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
 
-| Property     | Attribute     | Description                                                                     |
+| Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| personCard | person-card | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
@@ -120,11 +120,11 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/?$search=](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me/photo/$value](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/people/?$search=](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/answer"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/answer"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -17,7 +17,7 @@ NSString *callbackUri = @"callbackUri-value";
 payloadDictionary[@"callbackUri"] = callbackUri;
 
 MSGraphMediaConfig *mediaConfig = [[MSGraphMediaConfig alloc] init];
-[mediaConfig setBlob:@"<media config blob>"];
+[mediaConfig setBlob:@"<Media Session Configuration Blob>"];
 payloadDictionary[@"mediaConfig"] = mediaConfig;
 
 NSMutableArray *acceptedModalitiesList = [[NSMutableArray alloc] init];

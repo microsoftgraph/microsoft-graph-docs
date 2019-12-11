@@ -41,6 +41,7 @@ Inherits from [kerberosSingleSignOnExtension](../resources/intune-deviceconfig-k
 |activeDirectorySiteCode|String|Gets or sets the Active Directory site. Inherited from [kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
 |passwordEnableLocalSync|Boolean|Enables or disables password syncing. This won't affect users logged in with a mobile account on macOS. Inherited from [kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
 |blockActiveDirectorySiteAutoDiscovery|Boolean|Enables or disables whether the Kerberos extension can automatically determine its site name. Inherited from [kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
+|passwordChangeUrl|String|Gets or sets the URL that the user will be sent to when they initiate a password change. Inherited from [kerberosSingleSignOnExtension](../resources/intune-deviceconfig-kerberossinglesignonextension.md)|
 
 ## Relationships
 None
@@ -80,7 +81,8 @@ Here is a JSON representation of the resource.
   "requireUserPresence": true,
   "activeDirectorySiteCode": "String",
   "passwordEnableLocalSync": true,
-  "blockActiveDirectorySiteAutoDiscovery": true
+  "blockActiveDirectorySiteAutoDiscovery": true,
+  "passwordChangeUrl": "String"
 }
 ```
 

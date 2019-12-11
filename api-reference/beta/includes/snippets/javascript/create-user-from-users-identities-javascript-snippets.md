@@ -19,15 +19,20 @@ const user = {
       issuerAssignedId: "johnsmith"
     },
     {
+      signInType: "emailAddress",
+      issuer: "contoso.onmicrosoft.com",
+      issuerAssignedId: "jsmith@yahoo.com"
+    },
+    {
       signInType: "federated",
       issuer: "facebook.com",
       issuerAssignedId: "5eecb0cd"
     }
   ],
   "passwordProfile" : {
-    forceChangePasswordNextSignIn: true,
     password: "password-value"
-  }
+  },
+  passwordPolicies: "DisablePasswordExpiration"
 };
 
 let res = await client.api('/users')

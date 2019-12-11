@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
 
-The bot is expected to answer or [reject](./call-reject.md) the call before the call times out. The current timeout value is 15 seconds.
+The bot is expected to answer, [reject](./call-reject.md) or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds.
 
 > **Note:** The bot can only be reached by VoIP. PSTN calling isn't supported.
 
@@ -24,9 +24,9 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 | :-------------- | :-----------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported                        |
 | Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All                                                         |
+| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
 
-> **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission.                                                   |
+> **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 
 ## HTTP request
 <!-- {"blockType": "ignored" } -->
@@ -47,12 +47,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
+|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
 |acceptedModalities|String collection                         |The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
 
 ## Response
-This method returns `202 Accepted` response code.
+This method returns a `202 Accepted` response code.
 
 ## Examples
 The following example shows how to call this API.
@@ -185,7 +185,7 @@ Content-Type: application/json
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "call-answer-service-hosted-media"
 }-->
 ```http
@@ -321,7 +321,7 @@ Content-Type: application/json
         },
         "targets": [
           {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "application": {
                 "displayName": "Test BOT",
@@ -341,6 +341,8 @@ Content-Type: application/json
 
 ##### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer-app-hosted-media"
@@ -358,6 +360,20 @@ Content-Type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 

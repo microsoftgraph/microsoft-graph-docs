@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 An inner error contained in an [errorDetail](errordetail.md) object.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property | Type   | Description                                  |

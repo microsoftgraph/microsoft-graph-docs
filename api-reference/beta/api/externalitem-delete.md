@@ -3,7 +3,7 @@ title: "Delete externalItem"
 description: "Delete an externalItem or externalFile."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Permissions
 

@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2381
 
 {
   "value": {
@@ -115,11 +115,19 @@ Content-Length: 2073
         "name": "Name value",
         "objectIdentifier": "Object Identifier value"
       }
+    ],
+    "subjectNameFormatString": "Subject Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
     ]
   }
 }
 ```
-
 
 
 

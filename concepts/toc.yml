@@ -13,6 +13,7 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
+        expanded: true
         items:
           - name: What's new highlights
             href: whats-new-overview.md
@@ -86,6 +87,8 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times (preview)
             href: outlook-calendar-meeting-proposals.md
+          - name: Organize or attend online meetings (preview)
+            href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
@@ -346,6 +349,8 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
+              - name: Notifications with resource data (preview)
+                href: webhooks-with-resource-data.md
           - name: Track changes
             displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -434,10 +439,12 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: People-Picker
+              - name: People Picker
                 href: toolkit/components/people-picker.md
-              - name: Person-Card
+              - name: Person Card
                 href: toolkit/components/person-card.md
+              - name: Get
+                href: toolkit/components/get.md
           - name: Providers
             items:
               - name: Using the providers
@@ -448,6 +455,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
               - name: Custom provider
                 href: toolkit/providers/custom.md
           - name: Styling components

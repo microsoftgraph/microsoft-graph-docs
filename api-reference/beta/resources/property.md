@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 A [schema](schema.md) property definition for a Microsoft Search [connection](externalconnection.md).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Properties
 
 | Property      | Type    | Description                                        |

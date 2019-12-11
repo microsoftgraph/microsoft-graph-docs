@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 ```
 
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 ```
 
 ### Response
@@ -74,7 +75,6 @@ Content-Length: 259
   }
 }
 ```
-
 
 
 

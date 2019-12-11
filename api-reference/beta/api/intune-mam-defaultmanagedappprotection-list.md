@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4818
+Content-Length: 5106
 
 {
   "value": [
@@ -112,6 +112,10 @@ Content-Length: 4818
       "managedBrowser": "microsoftEdge",
       "maximumAllowedDeviceThreatLevel": "secured",
       "mobileThreatDefenseRemediationAction": "wipe",
+      "blockDataIngestionIntoOrganizationDocuments": true,
+      "allowedDataIngestionLocations": [
+        "sharePoint"
+      ],
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -161,12 +165,15 @@ Content-Length: 4818
       "customBrowserDisplayName": "Custom Browser Display Name value",
       "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
       "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
-      "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
+      "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+      "allowedAndroidDeviceModels": [
+        "Allowed Android Device Models value"
+      ],
+      "appActionIfAndroidDeviceModelNotAllowed": "wipe"
     }
   ]
 }
 ```
-
 
 
 

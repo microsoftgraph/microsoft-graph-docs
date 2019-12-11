@@ -127,7 +127,6 @@ ms.prod: "intune"
 - [Managed device overview](intune-devices-manageddeviceoverview.md)
 - [Managed device partner reported health state](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Managed device remote action](intune-devices-manageddeviceremoteaction.md)
-- [Management agent type](intune-devices-managementagenttype.md)
 - [Management condition](intune-fencing-managementcondition.md)
 - [Management condition expression](intune-fencing-managementconditionexpression.md)
 - [Management condition expression model](intune-fencing-managementconditionexpressionmodel.md)

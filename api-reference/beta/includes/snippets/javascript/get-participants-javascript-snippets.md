@@ -10,9 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants')
+let res = await client.api('/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants')
 	.version('beta')
-	.header('Authorization','Bearer <TOKEN>')
 	.get();
 
 ```

@@ -337,6 +337,7 @@ The following table shows the properties that are required when you create the [
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
 |appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​|
+|uninstallBuiltInApps|Boolean|Indicates whether or not to uninstall a fixed list of built-in Windows apps.|
 
 
 
@@ -350,7 +351,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 14855
+Content-length: 14888
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -701,7 +702,8 @@ Content-length: 14855
   "dataProtectionBlockDirectMemoryAccess": true,
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
-  ]
+  ],
+  "uninstallBuiltInApps": true
 }
 ```
 
@@ -710,7 +712,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15027
+Content-Length: 15060
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -1064,10 +1066,10 @@ Content-Length: 15027
   "dataProtectionBlockDirectMemoryAccess": true,
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
-  ]
+  ],
+  "uninstallBuiltInApps": true
 }
 ```
-
 
 
 

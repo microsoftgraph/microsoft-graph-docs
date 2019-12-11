@@ -48,6 +48,7 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -93,7 +94,8 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
-  "dependentAppCount": 1024
+  "dependentAppCount": 1024,
+  "channel": "String"
 }
 ```
 

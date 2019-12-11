@@ -57,6 +57,8 @@ The following table shows the properties that are required when you create the u
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |totalLoginTimeInMs|Int32|The user experience analytics device total login time in milliseconds.|
 |isFirstLogin|Boolean|The user experience analytics device first login.|
+|isFeatureUpdate|Boolean|The user experience analytics device boot record is a feature update.|
+|operatingSystemVersion|String|The user experience analytics device boot record's operating system version.|
 
 
 
@@ -70,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 407
+Content-length: 498
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -83,7 +85,9 @@ Content-length: 407
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
   "totalLoginTimeInMs": 2,
-  "isFirstLogin": true
+  "isFirstLogin": true,
+  "isFeatureUpdate": true,
+  "operatingSystemVersion": "Operating System Version value"
 }
 ```
 
@@ -92,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 456
+Content-Length: 547
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -106,10 +110,11 @@ Content-Length: 456
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
   "totalLoginTimeInMs": 2,
-  "isFirstLogin": true
+  "isFirstLogin": true,
+  "isFeatureUpdate": true,
+  "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 

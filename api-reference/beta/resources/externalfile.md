@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 An item indexed via a Microsoft Search [connection](externalconnection.md). This type derives from the [externalItem](externalitem.md) type.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## Methods
 
 | Method                                                        | Return Type  | Description |
