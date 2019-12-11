@@ -205,7 +205,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version** | **Description**                              |
 |:----------------|:------------|:---------------------------------------------|
-| Addition        | beta        | Added the [search API](search-concept-overview.md) that constitutes [querying](/graph/api/resource/search-api-overview?view=graph-rest-beta) and [indexing](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities. |
+| Addition        | beta        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-beta) and [indexing](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities. |
 | Addition        | beta        | Added the [query](/graph/api/search-query?view=graph-rest-beta) action. |
 | Addition        | beta        | Added the [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta), and [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta) complex types. |
 | Addition        | beta        | Added the [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta), and [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities. |
@@ -241,7 +241,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|beta|Added new entities:<br/>[deviceHealthScriptAssignment](/graph/api/resources/intune-devices-devicehealthscriptassignment.md?view=graph-rest-beta)<br/>[deviceHealthScriptDeviceState](/graph/api/resources/intune-devices-devicehealthscriptdevicestate?view=graph-rest-beta)<br/>[deviceHealthScriptRunSummary](/graph/api/resources/intune-devices-devicehealthscriptrunsummary?view=graph-rest-beta)<br/>[deviceManagementCachedReportConfiguration](/graph/api/resources/intune-reporting-devicemanagementcachedreportconfiguration?view=graph-rest-beta)<br/>[deviceManagementExportJob](/graph/api/resources/intune-reporting-devicemanagementexportjob?view=graph-rest-beta)<br/>[deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta)<br/>[deviceManagementReportSchedule](/graph/api/resources/intune-reporting-devicemanagementreportschedule?view=graph-rest-beta)<br/>[groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta)<br/>[groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping?view=graph-rest-beta)<br/>[macOSMicrosoftEdgeApp](/graph/api/resources/intune-apps-macosmicrosoftedgeapp?view=graph-rest-beta)<br/>[macOSPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-macospkcscertificateprofile?view=graph-rest-beta)<br/>[userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance?view=graph-rest-beta)<br/>[userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory?view=graph-rest-beta)<br/>[userExperienceAnalyticsRegressionSummary](/graph/api/resources/intune-devices-userexperienceanalyticsregressionsummary?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicy](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyAssignment](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary?view=graph-rest-beta)<br/>[windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new entities:<br/>[deviceHealthScriptAssignment](/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta)<br/>[deviceHealthScriptDeviceState](/graph/api/resources/intune-devices-devicehealthscriptdevicestate?view=graph-rest-beta)<br/>[deviceHealthScriptRunSummary](/graph/api/resources/intune-devices-devicehealthscriptrunsummary?view=graph-rest-beta)<br/>[deviceManagementCachedReportConfiguration](/graph/api/resources/intune-reporting-devicemanagementcachedreportconfiguration?view=graph-rest-beta)<br/>[deviceManagementExportJob](/graph/api/resources/intune-reporting-devicemanagementexportjob?view=graph-rest-beta)<br/>[deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta)<br/>[deviceManagementReportSchedule](/graph/api/resources/intune-reporting-devicemanagementreportschedule?view=graph-rest-beta)<br/>[groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta)<br/>[groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping?view=graph-rest-beta)<br/>[macOSMicrosoftEdgeApp](/graph/api/resources/intune-apps-macosmicrosoftedgeapp?view=graph-rest-beta)<br/>[macOSPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-macospkcscertificateprofile?view=graph-rest-beta)<br/>[userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance?view=graph-rest-beta)<br/>[userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory?view=graph-rest-beta)<br/>[userExperienceAnalyticsRegressionSummary](/graph/api/resources/intune-devices-userexperienceanalyticsregressionsummary?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicy](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyAssignment](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary?view=graph-rest-beta)<br/>[windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[androidDeviceOwnerGlobalProxy](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxy?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyAutoConfig](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyDirect](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxydirect?view=graph-rest-beta)<br/>[groupPolicyObjectFile](/graph/api/resources/intune-gpanalyticsservice-grouppolicyobjectfile?view=graph-rest-beta)<br/>[mobileAppInstallTimeSettings](/graph/api/resources/intune-shared-mobileappinstalltimesettings?view=graph-rest-beta)<br/>[scopeTagInfo](/graph/api/resources/intune-auditing-scopetaginfo?view=graph-rest-beta)<br/>[win32LobAppRestartSettings](/graph/api/resources/intune-shared-win32lobapprestartsettings?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[deviceManagementReportFileFormat](/graph/api/resources/intune-reporting-devicemanagementreportfileformat?view=graph-rest-beta)<br/>[deviceManagementReportStatus](/graph/api/resources/intune-reporting-devicemanagementreportstatus?view=graph-rest-beta)<br/>[deviceManagementScheduledReportRecurrence](/graph/api/resources/intune-reporting-devicemanagementscheduledreportrecurrence?view=graph-rest-beta)<br/>[diskType](/graph/api/resources/intune-devices-disktype?view=graph-rest-beta)<br/>[groupPolicyMigrationReadiness](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreadiness?view=graph-rest-beta)<br/>[groupPolicySettingScope](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingscope?view=graph-rest-beta)<br/>[groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)<br/>[managedAppDeviceThreatLevel](/graph/api/resources/intune-mam-managedappdevicethreatlevel?view=graph-rest-beta)<br/>[microsoftEdgeChannel](/graph/api/resources/intune-apps-microsoftedgechannel?view=graph-rest-beta)<br/>[remediationState](/graph/api/resources/intune-devices-remediationstate?view=graph-rest-beta)<br/>[userExperienceAnalyticsSummarizedBy](/graph/api/resources/intune-devices-userexperienceanalyticssummarizedby?view=graph-rest-beta)<br/>[win32LobAppRestartBehavior](/graph/api/resources/intune-apps-win32lobapprestartbehavior?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyStatuses](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses?view=graph-rest-beta)<br/>|
 |Addition|beta|Added the [approveApps](/graph/api/api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps?view=graph-rest-beta) action on [androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings?view=graph-rest-beta) |
@@ -307,7 +307,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Deletion | beta | Removed [previously announced](https://developer.microsoft.com/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) deprecated properties **grade** and **feedback** from [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). Access to grades and feedback is now available through [educationOutcome](/graph/api/educationsubmission-list-outcome?view=graph-rest-beta)|
+| Deletion | beta | Removed [previously announced](https://developer.microsoft.com/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) deprecated properties **grade** and **feedback** from [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). Access grades and feedback only through [educationOutcome](/graph/api/educationsubmission-list-outcomes?view=graph-rest-beta).|
 
 ### Groups
 
@@ -320,9 +320,9 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added new entities: <br/>[authenticationDetail](/graph/api/authenticationDetail.md?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue.md?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail.md?view=graph-rest-beta)|
+| Addition | Beta | Added new entities: <br/>[authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail?view=graph-rest-beta)|
 | Addition | Beta | Added the **alternateSignInName**, **ServicePrincipalId**, **ServicePrincipalName**, and **authenticationProcessingDetails** properties to the [signIn](/graph/api/resources/signin?view=graph-rest-beta) resource. |
-| Deletion | Beta | Moved the reference to [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) from [signIn](/graph/api/resources/signin?view=graph-rest-beta) to [authenticationDetail](/graph/api/authenticationDetail.md?view=graph-rest-beta). |
+| Deletion | Beta | Moved the reference to [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) from [signIn](/graph/api/resources/signin?view=graph-rest-beta) to [authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta). |
 | Addition | Beta | Added the **signInActivity** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource. |
 | Addition | Beta | Added a new entity type: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
 | Addition | Beta | Added new entity type: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
@@ -352,29 +352,29 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change          | beta          | Changed **detectedSensitiveContent** entity name to [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).  | 
-| Deletion        | beta          | Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).  | 
-| Change          | beta          | Changed **id** to **sensitiveTypeId** properties of [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).   | 
-| Change          | beta          | Changed **confidence** to **confidenceLevel** property of [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).   | 
-| Addition        | beta          | Added **count** property to [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta)/.  | 
-| Deletion        | beta          | Removed **actionSource** property from [labelingOptions](/graph/api/resources/labelingoptions.md?view=graph-rest-beta). | 
+| Change          | beta          | Changed **detectedSensitiveContent** entity name to [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
+| Deletion        | beta          | Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
+| Change          | beta          | Changed **id** to **sensitiveTypeId** properties of [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   | 
+| Change          | beta          | Changed **confidence** to **confidenceLevel** property of [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   | 
+| Addition        | beta          | Added **count** property to [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/.  | 
+| Deletion        | beta          | Removed **actionSource** property from [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). | 
 | Deletion        | beta          | Removed **auditInfo** entity. | 
-| Change          | beta          | Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction.md?view=graph-rest-beta). | 
-| Addition        | beta          | Added **alignment** property to [addContentHeaderAction](/graph/api/resources/addcontentheaderaction.md?view=graph-rest-beta). | 
-| Change          | beta          | Changed **labelId** property to **label** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta). |
-| Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta). |
-| Addition        | beta          | Added **actionSource** property to [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta). |
-| Change          | beta          | Changed **labelId** property to **label** in [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta). |
-| Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta). |
-| Addition        | beta          | Added **actionSource** property to [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta). |
-| Change          | beta          | Change [contentFormat](/graph/api/resources/enums.md?view=graph-rest-beta)) enum value **file** to **default**. | 
-| Deletion        | beta          | Removed **mandatory** value from [actionSource](/graph/api/resources/enums.md?view=graph-rest-beta)) enum. |
-| Change          | beta          | Removed [actionSource](/graph/api/resources/enums.md?view=graph-rest-beta)) enum value **policyDefault** to **default**. |
+| Change          | beta          | Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). | 
+| Addition        | beta          | Added **alignment** property to [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). | 
+| Change          | beta          | Changed **labelId** property to **label** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
+| Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
+| Addition        | beta          | Added **actionSource** property to [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
+| Change          | beta          | Changed **labelId** property to **label** in [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
+| Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
+| Addition        | beta          | Added **actionSource** property to [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
+| Change          | beta          | Change [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) enum value **file** to **default**. | 
+| Deletion        | beta          | Removed **mandatory** value from [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) enum. |
+| Change          | beta          | Removed [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) enum value **policyDefault** to **default**. |
 | Deletion        | beta          | Removed **auditMetadataKey**. |
-| Change          | beta          | Change **applyLabel** API to [evaluateApplication](/graph/api/informationprotectionlabel-evaluateapplication.md?view=graph-rest-beta). |
-| Change          | beta          | Change **applyLabelFromClassification** API to [evaluateClassificationResults](/graph/api/informationprotectionlabel-evaluateclassificationresults.md?view=graph-rest-beta). |
-| Change          | beta          | Change **removeLabel** API to [evaluateRemoval](/graph/api/informationprotectionlabel-evaluateremoval.md?view=graph-rest-beta). |
-| Deletion        | beta          | Removed **auditInfo** from [extractLabel](/graph/api/informationprotectionlabel-extractlabel.md?view=graph-rest-beta). |
+| Change          | beta          | Change **applyLabel** API to [evaluateApplication](/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta). |
+| Change          | beta          | Change **applyLabelFromClassification** API to [evaluateClassificationResults](/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta). |
+| Change          | beta          | Change **removeLabel** API to [evaluateRemoval](/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta). |
+| Deletion        | beta          | Removed **auditInfo** from [extractLabel](/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta). |
 
 ### Mail (Outlook)
 
@@ -413,12 +413,11 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 ## September 2019
 
-### Education
+### Calendar, mail, groups
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added new property **closeDateTime** to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
-| Change | beta | Changed property names **mkcd** to **projectId** and **url** to **hostWebUrl** in [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.|
+| Addition        | v1.0          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post. |
 
 ### Devices and apps (Microsoft Intune)
 
@@ -481,11 +480,25 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added application permissions support for write operations: DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All |
 | Addition | v1.0 | Added the **v13_0** property to the [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem) complex type. |
 
-### Calendar, mail, groups
+### Education
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post. |
+| Addition | beta | Added new property **closeDateTime** to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Change | beta | Changed property names **mkcd** to **projectId** and **url** to **hostWebUrl** in [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.|
+
+### Cloud communications (Calls and online meetings)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta        | Added /communications/* APIs for all calls and online meetings. The `/app` path is deprecated. Going forward, use the `/communications` path.|
+| Removal         | Beta        | Deprecated the `/app` path.|
+| Deletion        | Beta        | Removed the properties **createdDateTime** and **lastActionDateTime** from the [commsOperation](/graph/.api/resource/commsOperation?view=graph-rest-beta) resource.|
+| Deletion        | Beta        | Removed the property **meetingType** from the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
+| Addition        | Beta        | Added the property **isBroadcast** to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
+| Change        | Beta        | Renamed the **resource** property to **resourceUrl** on the [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) resource. |
+| Change          | Beta        | Changed the type of the **code** and **subCode** properties from string to Int32 on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. |
+| Change        | Beta        | Renamed the **subcode** property to **subCode** on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. | 
 
 ### Files (OneDrive for Business and OneDrive Personal)
 
@@ -511,6 +524,13 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | Added the capability to [get the MIME content of a message](outlook-get-mime-message.md). |
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Added the **primaryChannel** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+|Addition |beta| Added the **allowCreatePrivateChannels** property to the [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta) resource.|
+
 ### Users
 
 | **Change type** | **Version**   | **Description**                          |
@@ -523,13 +543,6 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) resource. The properties represent the user's preferred date and time formats.|
-
-### Teamwork (Microsoft Teams)
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition |beta| Added the **primaryChannel** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
-|Addition |beta| Added the **allowCreatePrivateChannels** property to the [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta) resource.|
 
 ## August 2019
 
