@@ -1,5 +1,5 @@
 ---
-title:: "Authentication and authorization basics for Microsoft Graph"
+title: "Authentication and authorization basics for Microsoft Graph"
 description: "To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform."
 author: "matt-steele"
 localization_priority: Priority
@@ -15,7 +15,7 @@ This topic provides an overview of access tokens, the Microsoft identity platfor
 
 ## Access tokens
 
-Access tokens issued by the Microsoft identity platform are base 64 encoded JSON Web Tokens (JWT). They contain information (claims) that web APIs secured by the Microsoft identity platform, like Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as transport layer security (HTTPS).
+Access tokens issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. When calling Microsoft Graph, you should treat access tokens as opaque. You must always transmit access tokens over a secure channel, such as transport layer security (HTTPS).
 
 The following is an example of a Microsoft identity platform access token:
 
@@ -63,13 +63,13 @@ Microsoft Graph exposes granular permissions that control the access that apps h
 
 Microsoft Graph has two types of permissions: 
 
-- **Delegated permissions** are used by apps that have a signed-in user present. For these apps either the user or an administrator consents to the permissions that the app requests and the app can act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented by non-administrative users, but some higher-privileged permissions require [administrator consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
+- **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests and the app can act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented by non-administrative users, but some higher-privileged permissions require [administrator consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
 
-- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 _Effective permissions_ are the permissions that your app will have when making requests to Microsoft Graph. It is important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to Microsoft Graph.
 
-- For delegated permissions, the effective permissions of your app will be the intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>For example, assume your app has been granted the User.ReadWrite.All delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
+- For delegated permissions, the effective permissions of your app will be the intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user can be determined by policy or by membership in one or more administrator roles. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>For example, assume your app has been granted the User.ReadWrite.All delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
   
 - For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the User.ReadWrite.All application permission can update the profile of every user in the organization.
 
@@ -96,7 +96,7 @@ For the Microsoft identity platform endpoint:
 
 For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Microsoft identity platform authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
-You do not need to use an authentication library to get an access token. To learn about directly using the Microsoft identity platform endpoints without the help of an authentication library, see [Microsoft identity platform authentication](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-scenarios)
+You do not need to use an authentication library to get an access token. To learn about directly using the Microsoft identity platform endpoints without the help of an authentication library, see [Microsoft identity platform authentication](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
 
 ## Next steps
 
@@ -115,8 +115,8 @@ If you're ready to jump into code, you can use the following resources to help y
 
 To help you get started quickly, we've created a series of training modules and other resources that show you how to authenticate and use the API on a variety of platforms.
 
-- Use the [Get started](https://developer.microsoft.com/en-us/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform.
-- To get running quickly with a pre-configured sample for your platform, see the [Microsoft Graph Quick Start](https://developer.microsoft.com/en-us/graph/quick-start).
+- Use the [Get started](https://developer.microsoft.com/graph/get-started) page to find the libraries, samples, training content, and other resources for your favorite platform.
+- To get running quickly with a pre-configured sample for your platform, see the [Microsoft Graph Quick Start](https://developer.microsoft.com/graph/quick-start).
 - See our [Microsoft Graph samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) on GitHub.
 
 ### Microsoft identity platform samples and documentation 
