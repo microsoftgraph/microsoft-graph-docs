@@ -147,6 +147,9 @@ Although the access token is opaque to your app, the response contains a list of
 | access_token |The requested access token. Your app can use this token to call Microsoft Graph. |
 | refresh_token |An OAuth 2.0 refresh token. Your app can use this token to acquire additional access tokens after the current access token expires.  Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time.  For more detail, refer to the [v2.0 token reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
+
+> **Note**: In order to get a refresh_token `offline_access` need to be defined as a scope.
+
 ## 4. Use the access token to call Microsoft Graph
 
 After you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets the profile of the signed-in user.
