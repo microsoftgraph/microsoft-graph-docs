@@ -32,7 +32,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | joinWebUrl                | String                                                 | The join URL of the online meeting. Read-only.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
+| videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
 
 
 ## JSON representation
