@@ -29,6 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Tasks.ReadWrite    |
 |Application | Not supported. |
 
+Please note that, for the moment, attempting to create a task for another user with a delegated account necessitates *Tasks.ReadWrite.Shared* instead of *Tasks.ReadWrite*, otherwise you may encounter a 403 error.<br>
+Besides, to successfully create the account from a different delegated account, you will also need a folder id.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,6 +50,10 @@ In the request body, supply a JSON representation of [outlookTask](../resources/
 ## Response
 
 If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
+
+In case of failure, you may be introduced with an error `403 Unauthorized` or `400 Bad Request`:
+* `403 Unauthorized`: May be produced by an incorrect or missing permission. Please refer to section *Permissions*.
+* `400 Bad Request`: May be produced if you lack a delegate permission to create task for other users. Please refer to section *Permissions*.
 
 ## Example
 ##### Request
