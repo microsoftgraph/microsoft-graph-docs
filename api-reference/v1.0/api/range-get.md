@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "get_range"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range?$select=address,addressLocal,cellCount,valueTypes
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-range-csharp-snippets.md)]
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: If there is no optional query parameters, all of the properties will be returned from an actual call. The recommandation is to specific which properties are needed instead of get all properties for performance perspective. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,8 +86,6 @@ Content-length: 169
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
-  "columnCount": 99,
-  "columnIndex": 99,
   "valueTypes": "valueTypes-value"
 }
 ```
