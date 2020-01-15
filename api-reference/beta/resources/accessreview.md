@@ -133,7 +133,7 @@ The `accessReviewRecurrenceSettings` is embedded within the access review settin
 | Property                     | Type                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | The recurrence interval, which must be one of `onetime`, `weekly`, `monthly`, `quarterly`, or `annual`.                                                                   |
-| `recurrenceEndType`|`String` | How the recurrence ends. If it is `Never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrentCount` instances of the review have completed. |
+| `recurrenceEndType`|`String` | How the recurrence ends. If it is `never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
 | `durationInDays`|`Int32`     | The duration in days for recurrence.                                                                              |
 | `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`, or 0 otherwise.                                                        |
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/buckets/{task-id}/tasks')
+let res = await client.api('/planner/buckets/{bucket-id}/tasks')
 	.get();
 
 ```
