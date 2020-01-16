@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [Range](../resources/range.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+Here is an example of the request. Note: the example uses optional query parameters to customize the response. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,7 +71,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ---
 
 ##### Response
-Here is an example of the response. Note: If there is no optional query parameters, all of the properties will be returned from an actual call. The recommandation is to specific which properties are needed instead of get all properties for performance perspective. 
+Here is an example of the response. Note: If the request does not include any optional query parameters, all the properties will be returned. For best performance, we recommend that you specify only the properties that you need.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
