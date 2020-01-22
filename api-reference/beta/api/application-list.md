@@ -35,6 +35,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
+| Content-type   | application/json. Required. |
 
 ## Request body
 Do not supply a request body for this method.

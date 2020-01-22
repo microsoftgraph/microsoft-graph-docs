@@ -149,7 +149,7 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## Policy property differences
 
-In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview?view=graph-rest-beta). Policies are not yet available in v1.0.
+Currently the policy resource in Microsoft Graph (only available in preview) looks very similar to Azure AD Graph.  However it will change so that there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type.
 
 ## ServiceEndpoint property differences
 

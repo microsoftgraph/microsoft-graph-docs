@@ -36,9 +36,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
-|[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
-|[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
-|[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
+|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
 |[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
@@ -86,7 +84,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) collection|Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Read-only. Nullable.|
-|tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) collection|The tokenLifetimePolicies assigned to this application.|
+|policy|[policy](policy.md) collection|The policies assigned to this application.|
 
 ## JSON representation
 

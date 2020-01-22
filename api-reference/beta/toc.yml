@@ -8912,67 +8912,25 @@
           items:
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
-      - name: Policy
-        href: resources/policy-overview.md
+      - name: Policies
+        href: resources/policy.md
         items:
-        - name: Activity-based timeout policy
-          href: resources/activitybasedtimeoutpolicy.md
-          items:
-          - name: Create
-            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-          - name: List
-            href: api/activitybasedtimeoutpolicy-list.md
-          - name: Get
-            href: api/activitybasedtimeoutpolicy-get.md
-          - name: Update
-            href: api/activitybasedtimeoutpolicy-update.md
-          - name: Delete
-            href: api/activitybasedtimeoutpolicy-delete.md
-        - name: Claims mapping policy
-          href: resources/claimsmappingpolicy.md
-          items:
-          - name: Create
-            href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-          - name: List
-            href: api/claimsmappingpolicy-list.md
-          - name: Get
-            href: api/claimsmappingpolicy-get.md
-          - name: Update
-            href: api/claimsmappingpolicy-update.md
-          - name: Delete
-            href: api/claimsmappingpolicy-delete.md
-          - name: List applied to applications
-            href: api/claimsmappingpolicy-list-appliesto.md
-        - name: Home realm discovery policy
-          href: resources/homerealmdiscoverypolicy.md
-          items:
-          - name: Create
-            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-          - name: List
-            href: api/homerealmdiscoverypolicy-list.md
-          - name: Get
-            href: api/homerealmdiscoverypolicy-get.md
-          - name: Update
-            href: api/homerealmdiscoverypolicy-update.md
-          - name: Delete
-            href: api/homerealmdiscoverypolicy-delete.md
-          - name: List applied to applications
-            href: api/homerealmdiscoverypolicy-list-appliesto.md
-        - name: Token lifetime policy
-          href: resources/tokenlifetimepolicy.md
-          items:
-          - name: Create
-            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-          - name: List
-            href: api/tokenlifetimepolicy-list.md
-          - name: Get
-            href: api/tokenlifetimepolicy-get.md
-          - name: Update
-            href: api/tokenlifetimepolicy-update.md
-          - name: Delete
-            href: api/tokenlifetimepolicy-delete.md
-          - name: List applied to applications
-            href: api/tokenlifetimepolicy-list-appliesto.md
+        - name: List policies
+          href: api/policy-list.md
+        - name: Create policy
+          href: api/policy-post.md
+        - name: Get policy
+          href: api/policy-get.md
+        - name: Update policy
+          href: api/policy-update.md
+        - name: Delete policy
+          href: api/policy-delete.md
+        - name: Assign policy
+          href: api/policy-assign.md
+        - name: List assigned policies
+          href: api/policy-list-assigned.md
+        - name: List applied to applications
+          href: api/policy-list-appliesto.md
       - name: Privileged Identity Management
         items:
         - name: Privileged Identity Management
