@@ -32,7 +32,7 @@ A unifiedRoleDefinition is a collection of permissions listing the operations th
 |id|String| The unique identifier for the unifiedRoleDefinition. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only. |
 |isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true. |
-|resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. |
+|resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. **DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment** | 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when isBuiltIn is true. Required. |
 |templateId|String| Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true. |
 |version|String| Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.|
@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "isBuiltIn": true,
   "isEnabled": true,
-  "resourceScopes": ["String"],
+  "resourceScopes": ["String"], (DO NOT USE. This is going to be deprecated soon.)
   "rolePermissions": [{"@odata.type": "microsoft.graph.unifiedRolePermission"}],
   "templateId": "String",
   "version": "String"
