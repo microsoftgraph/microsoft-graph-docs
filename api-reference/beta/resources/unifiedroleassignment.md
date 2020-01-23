@@ -57,15 +57,15 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "roleDefinitionId": "String"
-  "roleDefinition": "unifiedRoleDefinition"
+  "roleDefinitionId": "String",
+  "roleDefinition": "unifiedRoleDefinition",
   "principalId": "String",
   "principal": "DirectoryObject (ServicePrincipal, User, Group)",
-  "directoryScopeId": "String"
-  "directoryScope": "DirectoryObject"
-  "appScopeId": "String"
-  "appScope": "appScope"
-  "resourceScope": "String", (DO NOT USE. This property will be deprecated soon.)
+  "directoryScopeId": "String",
+  "directoryScope": "DirectoryObject",
+  "appScopeId": "String",
+  "appScope": "appScope",
+  "resourceScope": "String" (DO NOT USE. This property will be deprecated soon.)
 }
 ```
 
