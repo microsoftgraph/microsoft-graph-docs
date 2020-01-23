@@ -122,9 +122,6 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "resourceScopes": [
-        "/"
-    ],
     "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
     "version": null,
     "rolePermissions": [
