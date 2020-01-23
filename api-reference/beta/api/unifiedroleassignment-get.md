@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
-## Example
+## Example 1
 
 ### Request
 
@@ -98,12 +98,82 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
     "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
     "principalId": "4ab0b690-479b-47ff-af8f-2576cf521872",
-    "resourceScope": "/",
-    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0"
 }
 ```
+## Example 2
 
+### Request
+
+The following is an example of the request with $expand.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignment"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+```
+---
+
+
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
+    "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+    "roleDefinition": {
+      "id": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+      "displayName": "Billing Administrator",
+      "description": "Can perform common billing related tasks like updating payment information.",
+      "rolePermissions": {
+        "allowedResourceActions": [
+          "microsoft.commerce.billing/allEntities/allTasks",
+          "microsoft.directory/organization/basic/update",
+          "//omitted for brevity"],
+        "excludedResourceActions": [
+          "//omitted for brevity"
+          ]
+      },
+      "isEnabled": true,
+    },
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "principal": {
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
+      "userPrincipalName": "alice@contoso.com",
+      "displayName": "Alice Smith",
+      "//omitted for brevity": "..."
+    },
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScope": {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization/$entity",
+      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+      "displayName": "Contoso_Seattle_Admins",
+      "//omitted for brevity": "..."
+    }
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
