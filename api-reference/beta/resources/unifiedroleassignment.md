@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 A unifiedRoleAssignment is used to grant access to resources. It represents a role definition assigned to a principal (typically a user) at a particular scope.
 
+Providing either a directoryScopeId or an appScopeId is required.
+
 ## Methods
 
 | Method       | Return Type | Description |
