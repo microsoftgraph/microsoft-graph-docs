@@ -32,6 +32,8 @@ The following tutorials build an app that authenticates a user and accesses date
 
 Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
 
+For any issues with the sample code please refer to their own GitHub project.
+
 ## Scenario-based tutorials
 
 The following tutorials focus on specific scenarios for using the Microsoft Graph.
