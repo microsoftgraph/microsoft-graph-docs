@@ -18,15 +18,14 @@ List properties and relationships of the [windowsUpdateState](../resources/intun
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **Software Update** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **Software Update** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+Request|Permission type|Permissions (from most to least privileged)|
+|:--|:---|:---|
+|Device configuration|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Device configuration|Delegated (personal Microsoft account)|Not supported.
+|Device configuration|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All
+|Software Update|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Software Update|Delegated (personal Microsoft account)|Not supported.
+|Software Update|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All
 
 ## HTTP Request
 <!-- {
