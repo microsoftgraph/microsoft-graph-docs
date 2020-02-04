@@ -2,7 +2,7 @@
 title: "Create oAuth2PermissionGrant"
 description: "Use this API to create a new oAuth2PermissionGrant."
 localization_priority: Normal
-author: ""
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new oAuth2PermissionGrant.
+Use this API to create a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /oauth2PermissionGrants/{id}
+POST /oauth2PermissionGrants
 ```
 
 ## Request headers
@@ -36,6 +36,7 @@ POST /oauth2PermissionGrants/{id}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type  | application/json  |
 
 ## Request body
 
@@ -43,7 +44,7 @@ In the request body, supply a JSON representation of [oAuth2PermissionGrant](../
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body.
 
 ## Examples
 
