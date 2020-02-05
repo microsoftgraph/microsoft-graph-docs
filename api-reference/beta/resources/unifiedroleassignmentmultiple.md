@@ -28,7 +28,7 @@ Providing either directoryScopeIds or appScopeIds is required.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| The unique identifier for the unifiedRoleAssignment. Key, not nullable, Read-only. |
+|id|String| The unique identifier for the unifiedRoleAssignmentMultiple. Key, not nullable, Read-only. |
 |displayName|String|Name of the role assignment. |
 |description|String|Description of the role assignment. |
 |roleDefinitionId|String| ID of the unifiedRoleDefinition the assignment is for. Read only. |
@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple",
   "baseType": "",
   "keyProperty": "id"
 }-->
@@ -78,7 +78,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "unifiedRoleAssignment resource",
+  "description": "unifiedRoleAssignmentMultiple resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
