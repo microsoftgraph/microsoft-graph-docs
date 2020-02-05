@@ -39,11 +39,11 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure AD i.e. directoryScopeId or an application-specific scope i.e. appScopeId. Examples of Azure AD scope are tenant ("/"), administrative units or applications. 
+In the request body, supply a JSON representation of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. The request must have either a scope defined in Azure AD i.e. directoryScopeIds or an application-specific scope i.e. appScopeId. Examples of Azure AD scope are tenant ("/"), administrative units or applications. 
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object in the response body.
 
 ## Example
 
@@ -54,32 +54,20 @@ The following is an example of the request. Note the use of the roleTemplateId f
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_unifiedroleassignment_from_rbacapplication"
+  "name": "create_unifiedroleassignmentmultiple_from_rbacapplication"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+POST https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments
 Content-type: application/json
 
 { 
-    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
-    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "/"
+    "principalIds": ["f8ca5a85-489a-49a0-b555-0a6d81e56f0d", "c1518aa9-4da5-4c84-a902-a31404023890"],
+    "directoryScopeIds": ["28ca5a85-489a-49a0-b555-0a6d81e56f0d", "8152656a-cf9a-4928-a457-1512d4cae295"],
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-from-rbacapplication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-from-rbacapplication-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -92,7 +80,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
 } -->
 
 ```http
@@ -100,11 +88,12 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
-    "id": "YUb1sHQtUEyvox7IA_Eu_mm3jqnUe4lEhvatluHVi2I-1",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/deviceManagement/roleAssignments/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
-    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "/"
+    "principalIds": ["f8ca5a85-489a-49a0-b555-0a6d81e56f0d", "c1518aa9-4da5-4c84-a902-a31404023890"],
+    "directoryScopeIds": ["28ca5a85-489a-49a0-b555-0a6d81e56f0d", "8152656a-cf9a-4928-a457-1512d4cae295"]
 }
 ```
 
@@ -112,7 +101,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create unifiedRoleAssignment",
+  "description": "Create unifiedRoleAssignmentMultiple",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
