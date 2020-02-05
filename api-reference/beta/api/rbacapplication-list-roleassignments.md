@@ -110,7 +110,7 @@ Content-type: application/json
         {
             "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
             "id": "lAPpYvVpN0KRkAEhdxReEGnbHktRMANMpnGtLZ3MXeY-1",
-            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
             "principalId": "4b1edb69-3051-4c03-a671-ad2d9dcc5de6",
             "directoryScopeId": "/"
         },
