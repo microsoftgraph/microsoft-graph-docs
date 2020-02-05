@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers that support multiple principals and multiple scopes in a single role assignment. Microsoft Intune is an example of such a RBAC provider. A role assignment in Intune can have an array of principals and an array of scope groups.
+Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers that support multiple principals and multiple scopes in a single role assignment. This is different from [rbacApplication](../rbacapplication.md) resource type. Microsoft Intune is an example of such a RBAC provider. A role assignment in Intune can have an array of principals and an array of scope groups.
 
 ## Methods
 
