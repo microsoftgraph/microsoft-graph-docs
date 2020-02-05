@@ -11,23 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const calendarPermission = {
-  emailAddress: {
-    name: "My Organization",
-  },
-  isRemovable: true,
-  isInsideOrganization: true,
-  role: "write",
-  allowedRoles: [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  id: "RGVmYXVsdA=="
+  role: "write"
 };
 
-let res = await client.api('/users/{id}/calendar/calendarPermissions/{id}')
+let res = await client.api('/users/{id}/calendar/calendarPermissions/RGVmYXVsdA==')
 	.version('beta')
 	.update(calendarPermission);
 

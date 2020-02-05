@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [subscrip
 ### Request
 
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
-The `clientState` field is optional.
+The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
 This request creates a subscription for notifications about new mail received by the currently signed in user.
 
@@ -87,7 +87,8 @@ Content-type: application/json
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "secretClientValue"
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
 }
 ```
 # [C#](#tab/csharp)
@@ -143,7 +144,8 @@ Content-length: 252
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

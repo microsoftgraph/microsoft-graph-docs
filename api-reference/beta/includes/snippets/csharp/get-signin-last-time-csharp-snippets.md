@@ -10,7 +10,8 @@ var users = await graphClient.Users
 	.Request()
 	.Select( e => new {
 			 e.DisplayName,
-			 e.UserPrincipalName 
+			 e.UserPrincipalName,
+			 e.SignInActivity 
 			 })
 	.GetAsync();
 

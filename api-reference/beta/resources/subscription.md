@@ -46,6 +46,7 @@ A subscription allows a client app to receive notifications about changes to dat
 | includeResourceData | Boolean | When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). Optional. | 
 | encryptionCertificate | string | A base64-encoded representation of a certificate with a public key used to encrypt resource data in notifications. Optional. Required when **includeResourceData** is true. | 
 | encryptionCertificateId | string | A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when **includeResourceData** is true. |
+| latestSupportedTlsVersion | String | Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. Possible values: **v1_0**, **v1_1**, **v1_2**, **v1_3**. Optional, defaults to v1_2. If the client endpoint supports TLS 1.2 or above this property is not needed. If the client endpoint supports only TLS 1.0 or 1.1, this property should be set to the corresponding version or the operation will fail. |
 
 ### Maximum length of subscription per resource type
 
@@ -90,7 +91,8 @@ Here is a JSON representation of the resource.
   "creatorId": "string",
   "includeResourceData": "boolean",
   "encryptionCertificate": "string",
-  "encryptionCertificateId": "string"
+  "encryptionCertificateId": "string",
+  "latestSupportedTlsVersion": "string"
 }
 ```
 

@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/users')
 	.version('beta')
-	.select('displayName,userPrincipalName')
+	.select('displayName,userPrincipalName,signInActivity')
 	.get();
 
 ```
