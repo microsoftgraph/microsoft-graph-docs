@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
-## Example 1
+## Example 1 : Get details of particular role assignment
 
 ### Request
 
@@ -103,7 +103,7 @@ Content-type: application/json
     "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0"
 }
 ```
-## Example 2
+## Example 2: Get details of particular role assignment with `$expand`
 
 ### Request
 
