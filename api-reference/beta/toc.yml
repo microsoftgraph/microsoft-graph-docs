@@ -9120,6 +9120,19 @@
             href: api/unifiedroleassignment-get.md
           - name: Delete role assignment
             href: api/unifiedroleassignment-delete.md
+        - name: Role assignment multiple
+          href: resources/unifiedroleassignmentmultiple.md
+          items:
+          - name: List roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-list.md
+          - name: Create roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-post.md
+          - name: Get roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-get.md
+          - name: Update roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Delete roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-delete.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
