@@ -18,16 +18,17 @@ Returns the metadata for a [list][].
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## HTTP request
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-title}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
@@ -86,6 +87,39 @@ Content-type: application/json
 ```
 
 With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
+
+```msgraph-interactive
+GET /sites/{site-id}/lists/{list-title}
+```
+
+The `{list-title}` represents the list's Title from a SPO site.
+
+
+#### Response
+
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "1234-112-112-4",
+  "name": "MicroFeed",
+  "createdDateTime": "2016-08-30T08:32:00Z",
+  "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "list": {
+    "hidden": false,
+    "template": "genericList"
+    }
+}
+```
 
 #### Request
 
@@ -169,6 +203,8 @@ Content-type: application/json
   ]
 }
 ```
+
+
 
 <!-- {
   "type": "#page.annotation",
