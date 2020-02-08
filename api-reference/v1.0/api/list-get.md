@@ -98,7 +98,7 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 GET /sites/{site-id}/lists/{list-title}
 ```
 
-The `{list-title}` represents the list's Title from a SPO site.
+The `{list-title}` represents the list's title from a SharePoint Online site.
 
 
 #### Response
