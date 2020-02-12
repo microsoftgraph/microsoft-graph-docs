@@ -7,6 +7,4 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# List user memberOf
-
 [!INCLUDE [shared-list-memberof](shared-list-memberof.md)]
