@@ -1,3 +1,12 @@
+---
+title: "List memberOf"
+description: "Get groups, directory roles and administrative units that the resource is a direct member of. This operation is not transitive."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
+---
+
 # List memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
