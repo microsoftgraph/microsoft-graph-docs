@@ -158,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, the differet `deltatoken` is returned including a collection of changed users.
+If changes have occurred, a different `deltatoken` is returned including a collection of changed users.
 
 ```http
 HTTP/1.1 200 OK
