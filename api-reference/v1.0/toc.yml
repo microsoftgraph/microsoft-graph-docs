@@ -241,6 +241,8 @@
           href: api/user-list-ownedobjects.md
         - name: List registered devices
           href: api/user-list-registereddevices.md
+        - name: Reprocess license assignment
+          href: api/user-reprocesslicenseassignment.md 
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md  
       - name: Drive
@@ -368,6 +370,8 @@
           href: api/group-post-members.md
         - name: Add owner
           href: api/group-post-owners.md
+        - name: Assign license
+          href: api/group-assignlicense.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects

@@ -31,10 +31,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
-|requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered`. Read-only.|
+|requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered` or `Submitted`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
-|requestType|String|One of `UserAdd` or `UserRemove`. Read-only.|
-
+|requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd` or `AdminRemove`. Read-only.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| An access package assignment requested to be created.|
 
 ## Relationships
 
@@ -59,7 +59,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
- 
+  "createdDateTime": "2020-02-12T22:06:58.303Z",
+  "completedDate": "2020-02-12T22:14:28.19Z",
+  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
+  "requestType": "UserAdd",
+  "requestState": "Delivered",
+  "requestStatus": "FulfilledNotificationTriggered",
+  "isValidationOnly": false,
+  "justification": ""
 }
 ```
 

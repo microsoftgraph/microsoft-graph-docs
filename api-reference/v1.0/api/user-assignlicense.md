@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# assignLicense
+# user: assignLicense
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
 ## Permissions

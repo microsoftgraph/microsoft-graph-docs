@@ -108,7 +108,7 @@ The following properties are inherited from **[baseItem][]**.
 | eTag                 | string            | ETag for the item. Read-only.
 | lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
 | lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| parentReference      | [itemReference][] | The date and time the item was last modified. Read-only.
+| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-only.
 | webUrl               | string (url)      | URL that displays the item in the browser. Read-only.
 
 ## Relationships

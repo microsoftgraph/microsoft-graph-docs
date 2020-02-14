@@ -17,6 +17,7 @@ MSGraphSubscription *subscription = [[MSGraphSubscription alloc] init];
 [subscription setResource:@"me/mailFolders('Inbox')/messages"];
 [subscription setExpirationDateTime: "2016-11-20T18:23:45.9356913Z"];
 [subscription setClientState:@"secretClientValue"];
+[subscription setLatestSupportedTlsVersion:@"v1_2"];
 
 NSError *error;
 NSData *subscriptionData = [subscription getSerializedDataWithError:&error];

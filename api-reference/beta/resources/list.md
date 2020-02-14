@@ -25,6 +25,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | Common task               | HTTP method
 |:--------------------------|:------------------------------
 | [Get list][]              | GET /lists/{list-id}
+| [Create list][]           | POST /lists
 | [Enumerate list items][]  | GET /lists/{list-id}/items
 | [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
@@ -32,6 +33,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | [Get recent activities][] | GET /lists/{list-id}/activities
 
 [Get list]: ../api/list-get.md
+[Create list]: ../api/list-create.md
 [Enumerate list items]: ../api/listitem-list.md
 [Update list item]: ../api/listitem-update.md
 [Delete list item]: ../api/listitem-delete.md

@@ -172,7 +172,7 @@ agenda.addEventListener('templateRendered', (e) => {
   let dataContext = e.detail.context;
   let element = e.detail.element;
 
-  if (type === 'event') {
+  if (templateType === 'event') {
     element.querySelector('.some-button').addEventListener('click', () => {});
   }
 });

@@ -11,15 +11,15 @@ ms.prod: "outlook"
 Depending on the size of the file, you can choose one of two ways to attach a file to a [message](/graph/api/resources/message?view=graph-rest-beta):
 
 - If the file size is under 4 MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
-- If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID. 
+- If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
 
 This article uses an example to illustrate the second approach. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
 
 ## Step 1: Create an upload session
 
-[Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message. Specify the file in the input parameter **AttachmentItem**. 
+[Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message. Specify the file in the input parameter **AttachmentItem**.
 
-A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file. 
+A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file.
 
 Make sure to request `Mail.ReadWrite` permission to create the **uploadSession**. The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
@@ -40,7 +40,7 @@ Content-type: application/json
 {
   "AttachmentItem": {
     "attachmentType": "file",
-    "name": "flower", 
+    "name": "flower",
     "size": 3483322
   }
 }
@@ -84,7 +84,7 @@ Content-type: application/json
 
 ## Step 2: Use the upload session to upload a range of bytes of the file
 
-To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4 MB. 
+To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4 MB.
 
 Specify request headers and request body as described below.
 
@@ -105,11 +105,11 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 ### Response
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
-- The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1. 
+- The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1.
 - The **NextExpectedRanges** specifies the next byte location to start uploading from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
 <!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. 
+  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
   - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
 -->
 - The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
@@ -184,10 +184,10 @@ Content-Length: 0
 
 ## Step 4 (optional): Get the file attachment from the message
 
-As always, [getting an attachment](/graph/api/attachment-get?view=graph-rest-beta) from a message is not technically limited by attachment size. 
+As always, [getting an attachment](/graph/api/attachment-get?view=graph-rest-beta) from a message is not technically limited by attachment size.
 
 However, getting a large file attachment in base64-encoded format affects API performance. If you expect a large attachment:
- 
+
 - As an alternative to getting the attachment content in base64 format, you can [get the raw data of the file attachment](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message?view=graph-rest-1.0).
 - To [get the metadata of the file attachment](/graph/api/attachment-get?view=graph-rest-beta#example-1-get-the-properties-of-a-file-attachment), append a `$select` parameter to include only those metadata properties you want, excluding the **contentBytes** property which returns the file attachment in base64 format.
 
@@ -197,11 +197,11 @@ The following example shows the sender using a `$select` parameter to get all th
 
 <!-- {
   "blockType": "request",
-  "name": "walkthrough_get_attachment", 
+  "name": "walkthrough_get_attachment",
   "sampleKeys": ["a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47", "AAMkADI5MAAIT3drCAAA=", "AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0="]
 }-->
 ```http
-GET https://graph.microsoft.com/api/v1.0/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')?$select=lastModifiedDateTime,name,contentType,size,isInline,contentId,contentLocation
+GET https://graph.microsoft.com/api/v1.0/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')?$select=lastModifiedDateTime,name,contentType,size,isInline
 ```
 
 ### Example response
@@ -225,9 +225,7 @@ Content-type: application/json
     "name": "flower",
     "contentType": "image/jpeg",
     "size": 3640066,
-    "isInline": false,
-    "contentId": null,
-    "contentLocation": null
+    "isInline": false
 }
 ```
 
