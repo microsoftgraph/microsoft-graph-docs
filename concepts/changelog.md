@@ -58,7 +58,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
-| Chagne | beta | Changed the **provisioningTaskIdentifier** property to id on the [synchronizationSchema](/graph/api-reference/beta/resources/synchronization-synchronizationschema.md) resource. |
+| Chagne | beta | Changed the **provisioningTaskIdentifier** property to id on the [synchronizationSchema](/api-reference/beta/resources/synchronization-synchronizationschema.md) resource. |
 
 ### Teamwork (Microsoft Teams)
 
