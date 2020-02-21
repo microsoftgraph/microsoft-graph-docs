@@ -9,6 +9,7 @@ localization_priority: Priority
 
 This changelog covers what's changed in the Microsoft Graph API, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
+
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## September 2019
