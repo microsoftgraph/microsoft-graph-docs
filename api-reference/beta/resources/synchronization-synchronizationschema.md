@@ -53,7 +53,7 @@ The following sections describe the high-level components of the synchronization
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|directories|[directoryDefinition](synchronization-directorydefinition.md)|Default synchronization schema for the jobs based on this template.  |Read-only. Nullable.|
+|directories|[directoryDefinition](synchronization-directorydefinition.md)|The connected directories that are part of the job. Structured representation of source and target objects that make up the job. Read-only.|
 
 
 
