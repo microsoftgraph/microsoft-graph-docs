@@ -49,6 +49,15 @@ The following sections describe the high-level components of the synchronization
 |version                |String                             |The version of the schema, updated automatically with every schema change.|
 
 
+## Relationships
+
+| Relationship | Type | Description |
+|:---------------|:--------|:----------|
+|directories|[directoryDefinition](synchronization-directorydefinition.md)|Default synchronization schema for the jobs based on this template.  |Read-only. Nullable.|
+
+
+
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
