@@ -48,11 +48,15 @@ The following sections describe the high-level components of the synchronization
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
 |version                |String                             |The version of the schema, updated automatically with every schema change.|
 
+
 ## Relationships
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |directories|[directoryDefinition](synchronization-directorydefinition.md)|The connected directories that are part of the job. Structured representation of source and target objects that make up the job. Read-only.|
+
+
+
 
 ## JSON representation
 
