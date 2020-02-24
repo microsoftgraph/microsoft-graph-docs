@@ -44,7 +44,6 @@ The following sections describe the high-level components of the synchronization
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
 |id|String|Uniquely identifies the provisioning job.|
-|directories            |[directoryDefinition](synchronization-directorydefinition.md) collection   |Describes directories and objects that are part of the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
 |version                |String                             |The version of the schema, updated automatically with every schema change.|
 
