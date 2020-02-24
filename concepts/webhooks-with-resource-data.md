@@ -319,6 +319,37 @@ Here is an example of the properties included in the JWT token that are needed f
 }
 ```
 
+### Example: Verifying validation tokens
+
+```csharp
+// add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
+public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
+{
+    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
+    var openIdConfig = await configurationManager.GetConfigurationAsync();
+    var handler = new JwtSecurityTokenHandler();
+    try
+    {
+	handler.ValidateToken(token, new TokenValidationParameters
+	{
+	    ValidateIssuer = true,
+	    ValidateAudience = true,
+	    ValidateIssuerSigningKey = true,
+	    ValidateLifetime = true,
+	    ValidIssuer = $"https://sts.windows.net/{tenantId}/",
+	    ValidAudiences = appIds,
+	    IssuerSigningKeys = openIdConfig.SigningKeys
+	}, out _);
+	return true;
+    }
+    catch (Exception ex)
+    {
+	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
+	return false;
+    }
+}
+```
+
 ## Decrypting resource data from change notifications
 
 The **resourceData** property of a notification includes only the basic ID and type information of a resource instance. The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription. The property also contains values required for verification and decryption. This is done to increase the security of customer data accessed via notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a third party, even if they manage to intercept the original notifications.

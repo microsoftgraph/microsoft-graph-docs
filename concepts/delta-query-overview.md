@@ -58,6 +58,8 @@ For the [message](/graph/api/resources/message?view=graph-rest-1.0) resource, se
 
 For the [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources, there are restrictions on using some query parameters:
 
+- `$top` is not supported.
+- `$orderby` is not supported.
 - If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
 - `$select` also supports `manager` and `members` navigational property for users and groups respectively. Selecting those properties allows tracking of changes to user's manager and group memberships.
 
