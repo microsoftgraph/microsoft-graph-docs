@@ -71,7 +71,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "directories": [{"@odata.type": "microsoft.graph.directoryDefinition"}],
   "id": "String (identifier)",
   "synchronizationRules": [{"@odata.type": "microsoft.graph.synchronizationRule"}],
   "version": "String"
