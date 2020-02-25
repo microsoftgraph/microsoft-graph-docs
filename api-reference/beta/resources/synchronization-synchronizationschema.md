@@ -44,10 +44,12 @@ The following sections describe the high-level components of the synchronization
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
 |id|String|Uniquely identifies the provisioning job.|
-|directories            |[directoryDefinition](synchronization-directorydefinition.md) collection   |Describes directories and objects that are part of the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
 |version                |String                             |The version of the schema, updated automatically with every schema change.|
 
+| Relationship | Type | Description |
+|:---------------|:--------|:----------|
+|directories|[directoryDefinition](synchronization-directorydefinition.md)|The connected directories that are part of the job. Structured representation of source and target objects that make up the job. Read-only.|
 
 ## JSON representation
 
@@ -63,7 +65,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "directories": [{"@odata.type": "microsoft.graph.directoryDefinition"}],
   "id": "String (identifier)",
   "synchronizationRules": [{"@odata.type": "microsoft.graph.synchronizationRule"}],
   "version": "String"
