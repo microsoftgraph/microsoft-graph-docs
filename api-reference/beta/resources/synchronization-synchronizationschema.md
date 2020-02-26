@@ -51,7 +51,7 @@ The following sections describe the high-level components of the synchronization
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|directories|[directoryDefinition](synchronization-directorydefinition.md)|The connected directories that are part of the job. Structured representation of source and target objects that make up the job. Read-only.|
+|directories|[directoryDefinition](synchronization-directorydefinition.md) collection|The connected directories that are part of the job. Structured representation of source and target objects that make up the job. Read-only.|
 
 ## JSON representation
 
