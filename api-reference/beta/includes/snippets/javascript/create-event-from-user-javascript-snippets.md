@@ -36,7 +36,8 @@ const event = {
       type: "required"
     }
   ],
-  allowNewTimeProposals: true
+  allowNewTimeProposals: true,
+  transactionId:"7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
 let res = await client.api('/me/events')

@@ -104,7 +104,18 @@ Content-length: 2577
         "lastSuccessfulExecutionWithExports": null,
         "steadyStateFirstAchievedTime": "0001-01-01T00:00:00Z",
         "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",
-        "quarantine": null,
+        "quarantine": {
+            "currentBegan": "",
+            "nextAttempt": "",
+            "reason": "",
+            "seriesBegan": "",
+            "seriesCount": 2,
+            "error": {
+                "code": "SalesforceInvalidCredentials",
+                "message": "Your Salesforce.com credentials are invalid.  Please obtain a current Salesforce.com administrative user name, password and security token, and enter those in the screen for configuring user provisioning",
+                "tenantActionable": true
+            }
+        },
         "troubleshootingUrl": null
     },
     "synchronizationJobSettings": [

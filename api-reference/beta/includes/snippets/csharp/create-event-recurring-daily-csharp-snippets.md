@@ -16,12 +16,12 @@ var @event = new Event
 	},
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2017-04-15T12:00:00",
+		DateTime = "2020-02-25T12:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2017-04-15T14:00:00",
+		DateTime = "2020-02-25T14:00:00",
 		TimeZone = "Pacific Standard Time"
 	},
 	Location = new Location
@@ -34,14 +34,26 @@ var @event = new Event
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "samanthab@contoso.onmicrosoft.com",
-				Name = "Samantha Booth"
+				Address = "AlexW@contoso.OnMicrosoft.com",
+				Name = "Alex Wilbur"
 			},
 			Type = AttendeeType.Required
 		}
 	},
-	AllowNewTimeProposals = true,
-	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
+	Recurrence = new PatternedRecurrence
+	{
+		Pattern = new RecurrencePattern
+		{
+			Type = RecurrencePatternType.Daily,
+			Interval = 1
+		},
+		Range = new RecurrenceRange
+		{
+			Type = RecurrenceRangeType.Numbered,
+			StartDate = new Date(2020,2,25),
+			NumberOfOccurrences = 2
+		}
+	}
 };
 
 await graphClient.Me.Events
