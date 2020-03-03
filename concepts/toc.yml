@@ -455,6 +455,8 @@ items:
             href: toolkit/overview.md
           - name: Components
             items:
+              - name: Components overview
+                href: toolkit/components/overview.md
               - name: Login
                 href: toolkit/components/login.md
               - name: Person
