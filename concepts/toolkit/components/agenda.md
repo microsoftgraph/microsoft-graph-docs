@@ -140,3 +140,19 @@ The component allows you to specify a different Microsoft Graph query to call (s
 
 The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md).
 
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected` render* methods for override in component extensions:
+
+| Method | Description |
+| - | - |
+| `renderLoading` | Renders a loading state while the component loads. |
+| `renderNoData` | Renders an empty data state. |
+| `renderGroups` | Sorts event data into groups and renders them with group headers. |
+| `renderHeader` | Renders a group header. |
+| `renderEvents` | Renders a list of Event objects. |
+| `renderEvent` | Renders a singular Event and all of its parts.
+| `renderTitle` | Renders the Event title part. |
+| `renderLocation` | Render the Event location part. |
+| `renderAttendees` | Render the Event attendees part. |
+| `renderOther` | Render additional Event content. |
