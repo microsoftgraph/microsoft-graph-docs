@@ -1,0 +1,50 @@
+---
+title: "kerberosSignOnSettings resource type"
+description: "Represents the kerberos settings for an on-premises application published via Application Proxy."
+localization_priority: Normal
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "resourcePageType"
+---
+
+# kerberosSignOnSettings resource type
+
+Represents the Keberos Constrained Delegation (KCD) settings for an on-premises application published via Application Proxy. When configuring Application Proxy by setting the values for the application's [onPremisesPublishing](onpremisespublishing.md) object, you may also configure its single sign-on settings using [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md). For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|KerberosServicePrincipalName|String| The Internal Application SPN of the application server. This SPN needs to be in the list of services to which the connector can present delegated credentials. |
+|KerberosSignOnMappingAttributeType|String| The Delegated Login Identity for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Possible values are: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.kerberosSignOnSettings",
+  "baseType": null
+}-->
+
+```json
+{
+  "KerberosServicePrincipalName": "String",
+  "KerberosSignOnMappingAttributeType": "String"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "kerberosSignOnSettings resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

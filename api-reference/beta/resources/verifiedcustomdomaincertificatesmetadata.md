@@ -1,6 +1,6 @@
 ---
 title: "verifiedCustomDomainCertificatesMetadata resource type"
-description: "Represents the custom cerificate metadata for an on-premises application via Application Proxy"
+description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
 localization_priority: Normal
 author: "japere"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # verifiedCustomDomainCertificatesMetadata resource type
 
-Represents the metadata for the custom domain used for an on-premises application published via Application Proxy. When configuring Application Proxy settings for an on-premises applications you may set as part of the [onPremisesPublishing](onpremisespublishing.md) properties the verifiedCustomDomainCertificatesMetadata. To learn more see, [Custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+Represents the metadata for the custom domain used for an on-premises application published via Application Proxy. When configuring Application Proxy by setting the values for the application's [onPremisesPublishing](onpremisespublishing.md) object, you may also set the property for the verifiedCustomDomainCertificatesMetadata. To learn more see, [Custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 ## Properties
 
