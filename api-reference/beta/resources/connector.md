@@ -18,8 +18,8 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get connector](../api/connector-get.md) | [connector](connector.md) | Read properties and relationships of connector object. |
-| [Create connectorGroup](../api/connector-post-memberof.md) | [connectorGroup](connectorgroup.md) | Create a new connectorGroup by posting to the connectorGroup collection. |
-| [List memberOf](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | Get a connectorGroup object collection. |
+| [Create connectorGroup](../api/connector-post-memberof.md) | [connectorGroup](connectorgroup.md) | Create a new connector group by posting to the connector group collection. |
+| [List memberOf](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | Get a connector group object collection. |
 | [Update](../api/connector-update.md) | [connector](connector.md) | Update connector object. |
 | [Delete](../api/connector-delete.md) | None | Delete connector object.
 

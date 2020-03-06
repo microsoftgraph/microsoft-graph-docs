@@ -1,37 +1,36 @@
 ---
 title: "connectorGroup resource type"
-description: "Here is a JSON representation of the resource."
+description: "Represents an Application Proxy connectorGroup."
 localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+author: "japere"
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
 ---
 
 # connectorGroup resource type
-
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Each Application Proxy connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, then all your connectors will be part of the default group. 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Read properties and relationships of connectorGroup object.|
-|[Create application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connector group by posting to the applications collection.|
-|[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the associated application object collection.|
-|[Create connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connector Group by posting to the members collection.|
-|[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection.|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)	|Update connectorGroup object. |
-|[Delete](../api/connectorgroup-delete.md) | None |Delete connectorGroup object. All connectors must be remove before a connector group can be deleted. |
+|[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of connector group object. |
+|[Create application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connector group by posting to the applications collection. |
+|[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the associated application object collection. |
+|[Create connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connector group by posting to the members collection. |
+|[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection. |
+|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)	| Update connector group object. |
+|[Delete](../api/connectorgroup-delete.md) | None | Delete connector group object. All connectors must be removed from the connector group before a connector group can be deleted. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| The type of connectors that will be used with the group. Possible values are: `applicationProxy`.|
-|id|String| The object id of the connectorGroup|
-|isDefault|Boolean| Indicates if the connectorGroup is the default connector group. Only a single connector Group can be the default connectorGroup and is set by the system.|
-|name|String| The name associated with the connectorGroup.|
+|connectorGroupType|string| The type of connectors that will be used for the connector group. Possible values: `applicationProxy`. |
+|id|String| Unique identifier for this connector group. Read-only. |
+|isDefault|Boolean| Indicates if the connector group is the default connector group. Only a single connector group can be the default connector group and is pre-set by the system. |
+|name|String| The name associated with the connector group. |
 
 ## Relationships
 | Relationship | Type	|Description|
