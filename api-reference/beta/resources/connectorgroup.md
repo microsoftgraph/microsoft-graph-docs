@@ -8,6 +8,9 @@ doc_type: resourcePageType
 ---
 
 # connectorGroup resource type
+
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Each Application Proxy connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, then all your connectors will be part of the default group. 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # connector resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the Application Proxy service. Each connector is part of a [connector group](connectorgroup.md).

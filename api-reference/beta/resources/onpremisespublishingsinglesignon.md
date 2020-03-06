@@ -9,6 +9,10 @@ doc_type: "resourcePageType"
 
 # onPremisesPublishingSingleSignOn resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the single-sign on settings for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Application Proxy. Application Proxy supports the following single-sign on modes: KCD, header-based, and SAML. For more information on the different single-sign on options see [Single sign-on to applications in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 When setting the single-sign on mode for on-premises applications you must use this property. Do not use set this property on the [serviceprincipal](serviceprincipal.md) except for SAML. <!-- need to clarify this should go to: https://github.com/sureshja/microsoft-graph-docs/blob/spcore/api-reference/beta/resources/samlsinglesignonsettings.md-->
 
