@@ -19,7 +19,7 @@ An on-premises application published via Application Proxy is represented by an 
 |:---------------|:--------|:----------|
 |applicationServerTimeout|String| The duration the connector will wait for a response from the backend application before closing the connection. At default, the backend application timeout has a length of 85 seconds. When set to long, the backend timeout is increased to 180 seconds. Possible values are `default`, `long`. Use `long` if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is "Backend Timeout".|
 |applicationType|String| <!--need description!--> |
-|externalAuthenticationType|String| Details the pre-authentication setting for the application Possible values are: `passthru`, `aadPreAuthentication`. |
+|externalAuthenticationType|String| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Passthru does not require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
 |externalUrl|String| The published external url for the application. For example, https://intranet-contoso.msappproxy.net/.  |
 |internalUrl|String| The internal url of the application. For example, https://intranet/. |
 |isHttpOnlyCookieEnabled|Boolean| Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers. Set this value to Yes to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers. If using Remote Desktop Services, set this value to No. Default value is No. |

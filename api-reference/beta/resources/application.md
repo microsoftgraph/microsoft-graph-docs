@@ -35,9 +35,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+|[Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+|[List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+|[Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
 |[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
 |[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
 |[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
@@ -67,6 +67,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed. |
+| onPremisesPublishing |[onPremisesPublishing](onpremisespublishing.md)| Represents the set of properties required for configuring Application Proxy for this application. Configuring these properties allow you to publish your on-premises application for secure remote access. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
