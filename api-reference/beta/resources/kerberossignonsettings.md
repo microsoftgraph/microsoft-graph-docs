@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # kerberosSignOnSettings resource type
 
-Represents the Keberos Constrained Delegation (KCD) settings for an on-premises application published via Application Proxy. When configuring Application Proxy by setting the values for the application's [onPremisesPublishing](onpremisespublishing.md) object, you may also configure its single sign-on settings using [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md). For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Represents the Keberos Constrained Delegation (KCD) settings for the [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) resource when publishing an on-premises application via Application Proxy. For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
 
 
 ## Properties

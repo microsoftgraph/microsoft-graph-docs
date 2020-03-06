@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # verifiedCustomDomainCertificatesMetadata resource type
 
-Represents the metadata for the custom domain used for an on-premises application published via Application Proxy. When configuring Application Proxy by setting the values for the application's [onPremisesPublishing](onpremisespublishing.md) object, you may also set the property for the verifiedCustomDomainCertificatesMetadata. To learn more see, [Custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+Represents the custom domain certificate metadata for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Application Proxy. To learn more see, [Custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 ## Properties
 
