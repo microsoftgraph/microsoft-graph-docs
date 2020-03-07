@@ -2,9 +2,9 @@
 title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # List memberOf
