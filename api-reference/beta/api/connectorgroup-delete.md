@@ -29,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /connectorGroups/{id}
+DELETE /connectors/{id}/memberOf/{id}
+DELETE /applications/{id}/connectorGroup
 ```
 ## Request headers
 | Name       | Description|
@@ -44,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_connectorgroup"
@@ -53,7 +55,8 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/{ver}/connectorGroups/{id}
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
