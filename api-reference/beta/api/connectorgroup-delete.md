@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /connectorGroups/{id}
-DELETE /connectors/{id}/memberOf/{id}
-DELETE /applications/{id}/connectorGroup
 ```
 ## Request headers
 | Name       | Description|
