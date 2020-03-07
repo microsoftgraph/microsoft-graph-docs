@@ -2,9 +2,9 @@
 title: "List connectorGroups"
 description: "Retrieve a list of connectorgroup objects."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # List connectorGroups
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of connectorgroup objects.
+Retrieve a list of [connectorGroup](../resources/connectorgroup.md) objects.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,9 +43,12 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [connectorGroup](../resources/connectorgroup.md) objects in the response body.
+
 ## Example
+
 ##### Request
-Here is an example of the request.
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_connectorgroups"
@@ -53,7 +57,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/{ver}/connectorGroups
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -71,7 +75,8 @@ Content-length: 164
       "id": "id-value",
       "name": "name-value",
       "connectorGroupType": "connectorGroupType-value",
-      "isDefault": true
+      "isDefault": true,
+      "region": "region-value"
     }
   ]
 }
