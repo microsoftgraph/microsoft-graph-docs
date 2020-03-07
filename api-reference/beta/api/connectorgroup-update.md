@@ -2,9 +2,9 @@
 title: "Update connectorGroups"
 description: "Update the properties of connectorgroup object."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Update connectorGroups
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of connectorgroup object.
+Update the properties of a [connectorGroup](../resources/connectorgroup.md) object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -46,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [connectorGroup](../resources/connectorgroup.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_connectorgroup"
@@ -59,10 +60,12 @@ Content-length: 99
 {
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
+  "isDefault": true,
+  "region": "region-value"
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,7 +80,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": true
+  "isDefault": true,
+  "region": "region-value"
 }
 ```
 
