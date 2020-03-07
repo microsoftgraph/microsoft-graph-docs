@@ -43,7 +43,9 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.
+
 ## Example
+
 ##### Request
 The following is an example of the request.
 <!-- {
