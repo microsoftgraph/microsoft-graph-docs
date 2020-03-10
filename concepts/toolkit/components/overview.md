@@ -18,7 +18,7 @@ Components emit events during lifecycle transitions:
 | updated | Fires whenever the element has finished updating. |
 | templateRendered | Fires when a template slot has finished rendering. |
 | loadingInitiated | Fires when a component is beginning to load state. |
-| loadingCancelled | Fires when a component is force updated while a state update is already in progress. |
 | loadingCompleted | Fires when a component has finished loading state. |
+| loadingFailed | Fires when a component fails to load state due to an internal error. |
 
 These events can be useful for understanding the current state of a component during the various rendering phases.
