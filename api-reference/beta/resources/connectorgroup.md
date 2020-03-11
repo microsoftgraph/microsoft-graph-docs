@@ -34,7 +34,7 @@ Each Application Proxy connector is always part of a connector group. All the co
 |id|string| Unique identifier for this connector group. Read-only. |
 |isDefault|boolean| Indicates if the connector group is the default connector group. Only a single connector group can be the default connector group and is pre-set by the system. |
 |name|string| The name associated with the connector group. |
-|region|string| The region the connector group is assigned to and will optimize traffic for. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`, `unknownFutureValue`.|
+|region|string| The region the connector group is assigned to and will optimize traffic for. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Relationships
 | Relationship | Type	|Description|
