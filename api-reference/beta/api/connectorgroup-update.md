@@ -39,8 +39,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Possible values are: `applicationProxy`.|
-|name|String|The name of the connectorGroup.|
+|name|string| The name associated with the connector group. |
+|region|string| The region the connector group is assigned to and will optimize traffic for. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Response
 
@@ -59,8 +59,6 @@ Content-length: 99
 
 {
   "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
-  "isDefault": true,
   "region": "region-value"
 }
 ```
