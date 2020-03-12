@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
-
+ 
 # Send mail
 
 Namespace: microsoft.graph
@@ -188,6 +188,9 @@ HTTP/1.1 202 Accepted
 ##### Request 3
 
 The next example creates a message with a file attachment and sends the message.
+
+> [!NOTE]
+> Using the javascript sdk, the attachment's "contentByte" property should contain Base64 encoded data gotten from your file. For example, if you read a file into an ArrayBuffer, you will have to encode it to Base64 before sending the message.
 
 
 # [HTTP](#tab/http)
