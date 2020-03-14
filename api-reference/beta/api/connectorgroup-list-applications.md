@@ -79,6 +79,7 @@ Content-length: 420
         "isTranslateLinksInBodyEnabled": true,
         "isOnPremPublishingEnabled": true,
         "applicationServerTimeout": "applicationServerTimeout-value",
+        "applicationType": "applicationType-value",
         "verifiedCustomDomainKeyCredential": {
           "customKeyIdentifier": "customKeyIdentifier-value",
           "endDate": "datetime-value",
