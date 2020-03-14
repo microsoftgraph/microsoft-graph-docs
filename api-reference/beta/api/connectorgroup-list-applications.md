@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of application objects associated with the [connectorGroup](../resources/connectorgroup.md). This list contains all applications assigned to the specific connector group.
+Retrieve a list of [application](../resources/application.md) objects associated with the [connectorGroup](../resources/connectorgroup.md). This list contains all applications assigned to the specific connector group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -109,7 +109,6 @@ Content-length: 420
             "KerberosSignOnMappingAttributeType": "KerberosSignOnMappingAttributeType-value"
           }
         },
-        "applicationType": "applicationType-value",
         "isHttpOnlyCookieEnabled": true,
         "isSecureCookieEnabled": true,
         "isPersistentCookieEnabled": true
