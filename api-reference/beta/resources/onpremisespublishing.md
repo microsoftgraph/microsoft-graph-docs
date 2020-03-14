@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An on-premises application published via Application Proxy is represented by an [application](application.md) object and its associated **onPremisesPublishing** object. An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](application.md). After creating an application, the Application Proxy settings for the applicaiton can be configured by [patching the application's](../api/application-update.md) onPremisesPublishing object's properties.
+An on-premises application published via Application Proxy is represented by an [application](application.md) object and its associated **onPremisesPublishing** object. An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](application.md). After creating an application, the Application Proxy settings for the application can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing object's properties.
 
 ## Properties
 
