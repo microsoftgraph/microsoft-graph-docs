@@ -70,7 +70,6 @@ Content-length: 119
 {
   "id": "id-value",
   "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
   "isDefault": true
 }
 ```
