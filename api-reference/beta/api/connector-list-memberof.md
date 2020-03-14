@@ -71,7 +71,8 @@ Content-length: 164
     {
       "id": "id-value",
       "name": "name-value",
-      "isDefault": true,
+      "connectorGroupType": "connectorGroupType-value",
+      "isDefault": false,
       "region": "region-value"
     }
   ]
