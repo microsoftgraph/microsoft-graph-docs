@@ -1,19 +1,19 @@
 ---
 title: "Create application"
-description: "Use this API to create a new application."
+description: "Use this API to assign an app to a connector group"
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
-
-# Create application
+# Assign an application to a connector group
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new application.
+Assign an [application](../resources/application.md) to a [connectorGroup](../resources/connectorgroup.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
