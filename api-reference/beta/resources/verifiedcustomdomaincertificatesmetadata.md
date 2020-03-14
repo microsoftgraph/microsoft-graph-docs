@@ -21,7 +21,7 @@ Represents the custom domain certificate metadata for the [onPremisesPublishing]
 |:-------------|:------------|:------------|
 |expiryDate|DateTimeOffset| The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
 |issueDate|DateTimeOffset| The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
-|issuerName|String| The issue name of the custom domain certificate. |
+|issuerName|String| The issuer name of the custom domain certificate. |
 |subjectName|String| The subject name of the custom domain certificate. |
 |thumbprint|String| The thumbprint associated with the custom domain certificate. |
 
