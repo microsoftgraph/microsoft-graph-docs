@@ -175,7 +175,7 @@ Content-type: application/json
     "emails@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/emails",
     "emails": [
         {
-            "address": "MeganB@M365x214355.onmicrosoft.com",
+            "address": "IrenaK@M365x214355.onmicrosoft.com",
             "displayName": null,
             "type": "main",
             "allowedAudiences": "everyone",
@@ -315,10 +315,10 @@ Content-type: application/json
     "names@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/names",
     "names": [
         {
-            "displayName": "Megan Bowen",
-            "first": "Megan",
+            "displayName": "Irena Koren",
+            "first": "Irena",
             "initials": "",
-            "last": "Bowen",
+            "last": "Koren",
             "languageTag": null,
             "maiden": null,
             "middle": null,

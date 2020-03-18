@@ -106,15 +106,29 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "tag": "tag-value",
-      "proficiency": "proficiency-value"
-    }
-  ]
-}
+    "languages@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/languages",
+    "languages": [
+        {
+            "displayName": "English (United States)",
+            "tag": "en-US",
+            "spoken": "advancedProfessional",
+            "written": "advancedProfessional",
+            "reading": "advancedProfessional",
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ],
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

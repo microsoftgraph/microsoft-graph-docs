@@ -99,18 +99,35 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "first": "first-value",
-      "initials": "initials-value",
-      "last": "last-value",
-      "languageTag": "languageTag-value",
-      "maiden": "maiden-value"
-    }
-  ]
-}
+ "names@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/names",
+    "names": [
+        {
+            "displayName": "Irena Koren",
+            "first": "Irena",
+            "initials": "",
+            "last": "Koren",
+            "languageTag": null,
+            "maiden": null,
+            "middle": null,
+            "nickname": null,
+            "suffix": null,
+            "title": null,
+            "pronunciation": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ],
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

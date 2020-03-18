@@ -109,14 +109,14 @@ Content-type: application/json
 {
   "value": [
     {
-      "description": "description-value",
-      "userId": "userId-value",
+      "description": "Skype for Life",
+      "userId": "irena.koren",
       "service": {
-        "name": "name-value",
-        "webUrl": "webUrl-value"
+        "name": "Skype",
+        "webUrl": "http://www.skype.com"
       },
-      "statusMessage": "statusMessage-value",
-      "webUrl": "webUrl-value"
+      "statusMessage": "Hello World!",
+      "webUrl": "https://www.skype.com/irena.koren"
     }
   ]
 }

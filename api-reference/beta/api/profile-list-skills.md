@@ -107,18 +107,104 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "categories": [
-        "categories-value"
-      ],
-      "displayName": "displayName-value",
-      "proficiency": "proficiency-value",
-      "webUrl": "webUrl-value"
-    }
-  ]
-}
+"skills@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/skills",
+    "skills": [
+        {
+            "categories": [],
+            "displayName": "Marketing Communications",
+            "proficiency": "advancedWorking",
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "6ee6e598-3406-433b-9fe3-ce2e7f6cbf04",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Sales Cycle Control and Reporting Systems",
+            "proficiency": "limitedWorking",
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "9394ac8f-c715-4a7c-9c19-f7714fdb4de8",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Audit Training",
+            "proficiency": null,
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "be12f963-79bc-42a3-a76f-9bb84b065e49",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Total Quality Management",
+            "proficiency": null,
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "57ef6feb-1151-43a2-a752-c5663662717a",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Quantitative Marketing Analysis",
+            "proficiency": "limitedWorking",
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "id": "9c16f8e8-a96e-412d-a51f-d7fd8cf0f514",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        }
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
