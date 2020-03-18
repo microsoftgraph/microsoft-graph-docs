@@ -110,13 +110,13 @@ Content-type: application/json
 {
   "value": [
     {
-      "ageGroup": "ageGroup-value",
-      "countryCode": "countryCode-value",
+      "ageGroup": "3",
+      "countryCode": "NO",
       "preferredLanguageTag": {
-        "locale": "locale-value",
-        "displayName": "displayName-value"
+        "locale": "en-AU",
+        "displayName": "English (Australian)"
       },
-      "userPrincipalName": "userPrincipalName-value"
+      "userPrincipalName": "MeganB@M365x214355.onmicrosoft.com"
     }
   ]
 }
