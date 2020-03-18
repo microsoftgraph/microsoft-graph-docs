@@ -109,8 +109,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "type": "type-value",
-      "date": "datetime-value"
+      "type": "Wedding",
+      "date": "19-07-2015"
     }
   ]
 }

@@ -107,15 +107,27 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "address": "address-value",
-      "displayName": "displayName-value",
-      "type": "type-value"
-    }
-  ]
-}
+    "emails@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/emails",
+    "emails": [
+        {
+            "address": "MeganB@M365x214355.onmicrosoft.com",
+            "displayName": Business Email Address,
+            "type": "main",
+            "allowedAudiences": "organization",
+            "createdDateTime": "2012-01-01T00:00:00Z",
+            "inference": null,
+            "lastModifiedDateTime": "2012-01-01T00:00:00Z",
+            "id": "cd404929-f35f-4a24-8a02-b625755dcdb2",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ],
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
