@@ -61,18 +61,29 @@ Content-length: 211
 
 {  
   "memberSettings": {
-    "allowCreateUpdateChannels": true
+    "allowCreateUpdateChannels": false,
+    "allowCreatePrivateChannels": false,
+    "allowDeleteChannels": false,
+    "allowAddRemoveApps": false,
+    "allowCreateUpdateRemoveTabs": false,
+    "allowCreateUpdateRemoveConnectors": false
+  },
+  "guestSettings": {
+    "allowCreateUpdateChannels": false,
+    "allowDeleteChannels": false
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true
+    "allowUserDeleteMessages": true,
+    "allowOwnerDeleteMessages": true,
+    "allowTeamMentions": true,
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,
-    "giphyContentRating": "strict"
-  },
-  "discoverySettings": {
-    "showInTeamsSearchAndSuggestions": true
+    "giphyContentRating": "strict",
+    "allowStickersAndMemes": true,
+    "allowCustomMemes": true
   }
 }
 ```
