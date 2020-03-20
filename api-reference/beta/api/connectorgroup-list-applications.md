@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# List applications
+# List applications from a connectorGroup
 
 Namespace: microsoft.graph
 

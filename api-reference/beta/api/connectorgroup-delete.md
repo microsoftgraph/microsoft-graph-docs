@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [connectorGroup](../resources/connectorgroup.md). All [connectors](../resources/connector.md) must be removed from the connector group before a connector group can be deleted.
+Delete a [connectorGroup](../resources/connectorgroup.md). All [connectors](../resources/connector.md) and applications must be removed from the connector group before a connector group can be deleted.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

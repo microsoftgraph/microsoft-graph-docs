@@ -30,7 +30,7 @@ Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is alway
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indicates the type of hybrid agent. This pre-set by the system. |
+|connectorGroupType|string| Indicates the type of hybrid agent. This pre-set by the system. Read-only. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
 |isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. |
 |name|string| The name associated with the connectorGroup. |

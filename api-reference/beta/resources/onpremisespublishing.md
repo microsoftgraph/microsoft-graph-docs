@@ -22,7 +22,7 @@ An **onPremisesPublishing** object represents the set of properties for configur
 | Property|Type|Description|
 |:---------------|:--------|:----------|
 |applicationServerTimeout|String| The duration the connector will wait for a response from the backend application before closing the connection. At default, the backend application timeout has a length of 85 seconds. When set to long, the backend timeout is increased to 180 seconds. Possible values are `default`, `long`. Use `long` if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is "Backend Timeout".|
-|applicationType|String| Indicates if this application is an Application Proxy configured application. This is pre-set by the system. |
+|applicationType|String| Indicates if this application is an Application Proxy configured application. This is pre-set by the system. Read-only. |
 |externalAuthenticationType|String| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Passthru does not require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
 |externalUrl|String| The published external url for the application. For example, https://intranet-contoso.msappproxy.net/.  |
 |internalUrl|String| The internal url of the application. For example, https://intranet/. |
@@ -33,7 +33,7 @@ An **onPremisesPublishing** object represents the set of properties for configur
 |isTranslateHostHeaderEnabled|Boolean| Indicates if the application should translate urls in the reponse headers. Keep this value as Yes unless your application required the original host header in the authentication request. |
 |isTranslateLinksInBodyEnabled|Boolean| Indicates if the application should translate urls in the application body. Keep this value as No unless you have hardcoded HTML links to other on-premises applications and don't use custom domains. For more information, see [Link translation with Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation).|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Represents the single sign-on configuration for the on-premises application. |
-|verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. Null when using the default domain. |
+|verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. Null when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
 |verifiedCustomDomainPasswordCredential|[passwordCredential](passwordcredential.md)| The associated password credential for the custom domain used. |
 
