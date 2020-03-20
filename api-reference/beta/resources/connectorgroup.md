@@ -32,7 +32,7 @@ Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is alway
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Indicates the type of hybrid agent. This pre-set by the system. Read-only. |
 |id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. |
+|isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
 |name|string| The name associated with the connectorGroup. |
 |region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 

@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# List memberOf
+# List connectorGroup the connector is a member of
 
 Namespace: microsoft.graph
 

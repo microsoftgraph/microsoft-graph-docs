@@ -26,7 +26,7 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|externalIp|String| External IP address of the connector server. |
+|externalIp|String| External IP address of the connector server. Read-only. |
 |id|String| Unique identifier for this connector. Read-only. |
 |machineName|String| The machine name the connector is installed and running on. |
 |status|string| Indicates the status of the connector. Possible values are: `active`, `inactive`. Read-only. |
