@@ -2,9 +2,9 @@
 title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Add connector to connectorGroup
