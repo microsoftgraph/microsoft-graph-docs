@@ -5,8 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-MemoryStream fileStream = new MemoryStream();
-file.CopyTo(fileStream);
 
 var message = new Message
 {
@@ -32,10 +30,7 @@ var message = new Message
 		{
 			Name = "attachment.txt",
 			ContentType = "text/plain",
-			ContentBytes = fileStream.ToArray(),
-            Size = (int) file.Length,
-            Id = Guid.NewGuid().ToString(),
-            ODataType = "#microsoft.graph.fileAttachment"
+			ContentBytes = "SGVsbG8gV29ybGQh"
 		}
 	}
 };
