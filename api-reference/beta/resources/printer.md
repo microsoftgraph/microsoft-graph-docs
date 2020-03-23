@@ -41,7 +41,6 @@ Represents a physical printer device that has been registered with the Universal
 |name|String|The name of the printer.|
 |manufacturer|String|The manufacturer reported by the printer. Read-only.|
 |model|String|The model name reported by the printer. Read-only.|
-|registeredBy|[userIdentity](useridentity.md)|The user who registered the printer.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Read-only.|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
@@ -81,7 +80,6 @@ The following is a JSON representation of the resource.
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
   "acceptingJobs": true,
-  "registeredBy": {"@odata.type": "microsoft.graph.userIdentity"},
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
