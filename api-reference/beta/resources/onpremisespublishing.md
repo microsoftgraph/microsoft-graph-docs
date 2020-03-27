@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An on-premises application published via [Azure AD Application Proxy](https://aka.ms/whyappproxy) is represented by an [application](application.md) object and its associated **onPremisesPublishing** property.
+An on-premises application published via [Azure AD Application Proxy](https://aka.ms/whyappproxy) is represented by an [application](application.md) object and its associated **onPremisesPublishing** property. Application Proxy provides secure remote access to on-premises applications.
 
-An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](application.md). After [creating an application](../api/application-post-applications.md), the Application Proxy settings for the application can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
+An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](application.md). 
+
+After [creating an application](../api/application-post-applications.md), the Application Proxy settings for the application can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
 
 ## Properties
 
