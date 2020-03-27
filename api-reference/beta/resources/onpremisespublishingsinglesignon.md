@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 
 Represents the single-sign on settings for the [onPremisesPublishing](onpremisespublishing.md) resource when publishing an on-premises application with Azure AD Application Proxy. This resource is used for setting Integrated Windows Authentication and header-based authentication as the single-sign on mode. For more information, see [Kerberos Constrained Delegation for single-sign on to your apps with Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
 
-Note: Do not use this property for configuring SAML or password-based single-sign on. If you are configuring SAML single-sign-on this must be set using [samlSingleSignOnSettings](samlsinglesignonsettings.md).
+>[!NOTE]
+>Do not use this property for configuring SAML or password-based single-sign on. If you are configuring SAML single-sign-on this must be set using [samlSingleSignOnSettings](samlsinglesignonsettings.md).
 If you are configuring password-based single-sign this must be set using [createPasswordSingleSignOnCredentials](serviceprincipal-createpasswordsinglesignoncredentials.md).
 
 ## Properties

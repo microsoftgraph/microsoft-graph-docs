@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "create_connectorgroup_from_connectorgroups"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups
+POST https://graph.microsoft.com/beta/connectorGroups
 Content-type: application/json
 Content-length: 99
 

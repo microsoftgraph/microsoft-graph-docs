@@ -49,12 +49,12 @@ Here is an example of the request.
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
+POST https://graph.microsoft.com/beta/connectorGroups/{id}/applications
 Content-type: application/json
 Content-length: 329
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
