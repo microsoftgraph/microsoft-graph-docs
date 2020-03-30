@@ -10,6 +10,7 @@ doc_type: apiPageType
 # Create group
 
 Namespace: microsoft.graph
+
 Create a new group as specified in the request body. You can create the following types of groups:
 
 * Office 365 group (unified group)

@@ -21,9 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+|Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
+
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
 
 ## HTTP request
 

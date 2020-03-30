@@ -111,6 +111,7 @@ Delta query is currently supported for the following resources.
 | Groups                                                         | [delta](/graph/api/group-delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource                                                   |
 | Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource                                    |
 | Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                                             |
+| Organizational contacts | [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) function of the [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource |
 | Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource                           |
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource    
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview)|                                         |
@@ -177,7 +178,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For identity objects (**directoryObject**, **directoryRole**, **group**, **user**), the limit is 30 days.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For identity objects (**directoryObject**, **directoryRole**, **group**, **orgContact**, **user**), the limit is 30 days.
 
 ## Prerequisites
 

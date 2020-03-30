@@ -240,7 +240,7 @@
         - name: List created objects
           href: api/user-list-createdobjects.md
         - name: List license details
-          href: api/user-list-licensedetails.md 
+          href: api/user-list-licensedetails.md
         - name: List owned devices
           href: api/user-list-owneddevices.md
         - name: List owned objects
@@ -317,7 +317,7 @@
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
-          href: api/onenote-list-notebooks.md   
+          href: api/onenote-list-notebooks.md
       - name: Org hierarchy
         href: resources/organization.md
         items:
@@ -399,7 +399,7 @@
         - name: Install app
           href: api/user-add-teamsappinstallation.md
         - name: List installed apps
-          href: api/user-list-teamsappinstallation.md  
+          href: api/user-list-teamsappinstallation.md
         - name: Upgrade app
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
@@ -919,6 +919,8 @@
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -8482,7 +8484,7 @@
           href: api/dynamics-vendor-update.md
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
-    - name: Identity and access    
+    - name: Identity and access
       displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
@@ -8869,7 +8871,7 @@
         - name: Access package assignment
           href: resources/accesspackageassignment.md
           items:
-          - name: List 
+          - name: List
             href: api/accesspackageassignment-list.md
         - name: Access package assignment policy
           href: resources/accesspackageassignmentpolicy.md
@@ -8878,7 +8880,7 @@
             href: api/accesspackageassignmentpolicy-list.md
           - name: Create
             href: api/accesspackageassignmentpolicy-post.md
-          - name: Get 
+          - name: Get
             href: api/accesspackageassignmentpolicy-get.md
           - name: Delete
             href: api/accesspackageassignmentpolicy-delete.md
@@ -9011,8 +9013,8 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
-      - name: Information protection          
-        items:       
+      - name: Information protection
+        items:
         - name: Labels
           href: resources/informationprotectionlabel.md
           items:
@@ -9123,17 +9125,16 @@
       - name: Organizational contacts
         href: resources/orgcontact.md
         items:
-        - name: Contact
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: Update org contact
+          href: api/orgcontact-update.md
+        - name: Delete org contact
+          href: api/orgcontact-delete.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
         - name: Groups
           href: resources/group.md
           items:
@@ -9148,9 +9149,10 @@
           items:
           - name: List direct reports
             href: api/orgcontact-list-directreports.md
-        - name: Directory object
-          href: resources/directoryobject.md
-          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get manager
+            href: api/orgcontact-get-manager.md
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
       - name: Policy
@@ -9229,6 +9231,13 @@
             href: api/tokenlifetimepolicy-delete.md
           - name: List applied to applications
             href: api/tokenlifetimepolicy-list-appliesto.md
+        - name: Security defaults policy
+          href: resources/identitysecuritydefaultsenforcementpolicy.md
+          items:
+          - name: Get
+            href: api/identitysecuritydefaultsenforcementpolicy-get.md
+          - name: Update
+            href: api/identitysecuritydefaultsenforcementpolicy-update.md
       - name: Privileged Identity Management
         items:
         - name: Privileged Identity Management
@@ -10092,6 +10101,121 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+    - name: Universal Print
+      items:
+      - name: Print
+        href: resources/print.md
+      - name: Connectors
+        href: resources/printconnector.md
+        items:
+        - name: List
+          href: api/print-list-connectors.md
+        - name: Get
+          href: api/printconnector-get.md
+        - name: Update
+          href: api/printconnector-update.md
+        - name: Delete
+          href: api/printconnector-delete.md
+      - name: Print jobs
+        href: resources/printjob.md
+        items:
+        - name: Create
+          href: api/printer-post-jobs.md
+        - name: Get
+          href: api/printjob-get.md
+        - name: Start
+          href: api/printjob-startprintjob.md
+        - name: Cancel
+          href: api/printjob-cancelprintjob.md
+      - name: Printers
+        href: resources/printer.md
+        items:
+        - name: List
+          href: api/print-list-printers.md
+        - name: Get
+          href: api/printer-get.md
+        - name: Delete
+          href: api/printer-delete.md
+        - name: Get capabilities
+          href: api/printer-getcapabilities.md
+        - name: List connectors
+          href: api/printer-list-connectors.md
+        - name: List print jobs
+          href: api/printer-list-jobs.md
+        - name: Create print job
+          href: api/printer-post-jobs.md
+        - name: List allowed users
+          href: api/printer-list-allowedusers.md
+        - name: List allowedGroups
+          href: api/printer-list-allowedgroups.md
+        - name: Add allowed group
+          href: api/printer-post-allowedgroups.md
+        - name: Add allowed user
+          href: api/printer-post-allowedusers.md
+        - name: Delete allowed group
+          href: api/printer-delete-allowedgroup.md
+        - name: Delete allowed user
+          href: api/printer-delete-alloweduser.md
+        - name: Reset defaults
+          href: api/printer-resetdefaults.md
+      - name: Printer shares
+        href: resources/printershare.md
+        items:
+        - name: List
+          href: api/print-list-printershares.md
+        - name: Create
+          href: api/print-post-printershares.md
+        - name: Get
+          href: api/printershare-get.md
+        - name: Update
+          href: api/printershare-update.md
+        - name: Delete
+          href: api/printershare-delete.md
+      - name: Reports
+        items:
+        - name: Organized by printer
+          items:
+          - name: Get
+            href: api/printusagesummarybyprinter-get.md
+          - name: List a printer's archived print jobs
+            href: api/reports-getprinterarchivedprintjobs.md
+          - name: List daily reports by printer
+            href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+          - name: List monthly reports by printer
+            href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+        - name: Organized by user or group
+          items:
+          - name: Get
+            href: api/printusagesummarybyuser-get.md
+          - name: List a user's archived print jobs
+            href: api/reports-getuserarchivedprintjobs.md
+          - name: List a group's archived print jobs
+            href: api/reports-getgrouparchivedprintjobs.md
+          - name: List daily reports by user
+            href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+          - name: List monthly reports by user
+            href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+      - name: Services
+        href: resources/printservice.md
+        items:
+          - name: List
+            href: api/print-list-services.md
+          - name: Get
+            href: api/printservice-get.md
+          - name: Endpoint
+            href: resources/printserviceendpoint.md
+            items:
+            - name: Get endpoint
+              href: api/printserviceendpoint-get.md
+            - name: List a service's endpoints
+              href: api/printservice-list-endpoints.md
+      - name: Settings
+        href: resources/printsettings.md
+        items:
+        - name: Get
+          href: api/print-get-settings.md
+        - name: Update
+          href: api/print-update-settings.md
     - name: Reports
       items:
       - name: Identity and access reports
@@ -10382,16 +10506,6 @@
           - name: Update external item
             href: api/externalitem-update.md
           - name: Delete external item
-            href: api/externalitem-delete.md
-        - name: External file
-          items:
-          - name: External file
-            href: resources/externalfile.md
-          - name: Create external file
-            href: api/externalconnection-put-items.md
-          - name: Update external file
-            href: api/externalitem-update.md
-          - name: Delete external file
             href: api/externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API

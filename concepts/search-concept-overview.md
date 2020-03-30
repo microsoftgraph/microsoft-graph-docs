@@ -22,7 +22,7 @@ The Microsoft Search API provides one unified search endpoint that you can use t
 
 ### Include custom external data in search experience
 
-Customers who want to include data outside of the Microsoft cloud in their search experience can use [connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, and use the Microsoft Search API to seamlessly [query](/graph/api/search-query?view=graph-rest-beta) the external data source. The [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) lists a number of ready-to-use connectors. Alternatively, customers can [build connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items and files, and query specific external data sources as well.
+Customers who want to include data outside of the Microsoft cloud in their search experience can use [connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, and use the Microsoft Search API to seamlessly [query](/graph/api/search-query?view=graph-rest-beta) the external data source. The [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) lists a number of ready-to-use connectors. Alternatively, customers can [build connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items, and query specific external data sources as well.
 
 ### Consistent, up-to-date search experience
 
@@ -35,10 +35,7 @@ The Microsoft Search API supports searching the following content in the Microso
 - Outlook [message](/graph/api/resources/message?view=graph-rest-beta) and [event](/graph/api/resources/event?view=graph-rest-beta) objects
 - SharePoint and OneDrive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) file objects
 
-In addition, you can index and search external content via the following:
-
-- [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) objects, which are of custom types
-- [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) objects, which are of well-known types
+In addition, you can index and search external content via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) object.
 
 ## API reference
 
