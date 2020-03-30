@@ -398,7 +398,7 @@
         - name: List users
           href: api/user-list-SCIM.md
         - name: Create user 
-          href: api/user-post-users.md
+          href: api/user-post-users-scim.md
         - name: Get user 
           href: api/user-get-SCIM.md
         - name: Update user 
