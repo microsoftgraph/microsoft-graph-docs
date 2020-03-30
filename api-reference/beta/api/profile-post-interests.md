@@ -65,11 +65,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Sports Teams"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Established in 1905, Chelsea FC has their home at Stamford Bridge Stadium and are known as the Pride of London.",
+  "displayName": "Chelsea Football Club",
+  "webUrl": "www.chelseafc.com"
 }
 ```
 # [C#](#tab/csharp)
@@ -105,11 +105,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Sports Teams"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Established in 1905, Chelsea FC has their home at Stamford Bridge Stadium and are known as the Pride of London.",
+  "displayName": "Chelsea Football Club",
+  "webUrl": "www.chelseafc.com"
 }
 ```
 

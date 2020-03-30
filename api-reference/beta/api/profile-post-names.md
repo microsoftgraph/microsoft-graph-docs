@@ -65,12 +65,10 @@ POST https://graph.microsoft.com/beta/me/profile/names
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "displayName": "Irena Koren",
+  "first": "Irena",
+  "last": "Koren",
+  "allowedAudiences": "everyone",
 }
 ```
 # [C#](#tab/csharp)
@@ -105,12 +103,30 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+    "displayName": "Irena Koren",
+    "first": "Irena",
+    "initials": "",
+    "last": "Koren",
+    "languageTag": null,
+    "maiden": null,
+    "middle": null,
+    "nickname": null,
+    "suffix": null,
+    "title": null,
+    "pronunciation": null,
+    "allowedAudiences": "everyone",
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    }
 }
 ```
 

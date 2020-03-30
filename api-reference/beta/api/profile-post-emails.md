@@ -62,11 +62,12 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/user/profile/emails
 Content-type: application/json
 
-{
-  "address": "address-value",
-  "displayName": "displayName-value",
-  "type": "type-value"
-}
+        {
+            "address": "IrenaK@M365x214355.onmicrosoft.com",
+            "displayName": Business Email Address,
+            "type": "main",
+            "allowedAudiences": "organization",
+        }
 ```
 
 ### Response
@@ -85,11 +86,24 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 
-{
-  "address": "address-value",
-  "displayName": "displayName-value",
-  "type": "type-value"
-}
+        {
+            "address": "IrenaK@M365x214355.onmicrosoft.com",
+            "displayName": Business Email Address,
+            "type": "main",
+            "allowedAudiences": "organization",
+            "createdDateTime": "2020-02-13T08:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "cd404929-f35f-4a24-8a02-b625755dcdb2",
+            "createdBy": {
+                "device": null,
+                "user": {
+                    "displayName": null,
+                    "id": "12345-235435-554332-234433-223444"
+                },
+                "application": null,
+            }
+        }
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

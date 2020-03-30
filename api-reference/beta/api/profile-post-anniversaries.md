@@ -65,8 +65,8 @@ POST https://graph.microsoft.com/beta/me/profile/anniversaries
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "Wedding",
+  "date": "19-07-2015"
 }
 ```
 # [C#](#tab/csharp)
@@ -101,8 +101,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "Wedding",
+  "date": "19-07-2015"
 }
 ```
 

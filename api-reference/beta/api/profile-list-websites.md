@@ -110,11 +110,11 @@ Content-type: application/json
   "value": [
     {
       "categories": [
-        "categories-value"
+        {"sports", "personal"}
       ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "webUrl": "webUrl-value"
+      "description": "Football club in the English Premier League",
+      "displayName": "Chelsea FC",
+      "webUrl": "https://www.chelseafc.com"
     }
   ]
 }
