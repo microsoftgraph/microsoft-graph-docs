@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/webAccounts/{id}
+GET /me/profile/webAccounts/{id} 
 ```
 
 ## Optional query parameters
@@ -99,6 +99,8 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.webAccount"
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 } -->
 
 ```http

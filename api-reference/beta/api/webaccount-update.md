@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/webAccounts/{id}
+PATCH /me/profile/webAccounts/{id} 
 ```
 
 ## Request headers
@@ -74,14 +74,14 @@ PATCH https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "Skype for Life",
+  "userId": "irena.koren",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "name": "Skype",
+    "webUrl": "http://www.skype.com"
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "statusMessage": "Hello World!",
+  "webUrl": "https://www.skype.com/irena.koren"
 }
 ```
 # [C#](#tab/csharp)
@@ -108,23 +108,27 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.webAccount"
+  "@odata.type": "microsoft.graph.webAccount",
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "Skype for Life",
+  "userId": "irena.koren",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "name": "Skype",
+    "webUrl": "http://www.skype.com"
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "statusMessage": "Hello World!",
+  "webUrl": "https://www.skype.com/irena.koren"
 }
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
