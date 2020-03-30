@@ -89,7 +89,7 @@ Content-type: application/json
 With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
 
 #### Request
-The following example shows how to get a list from a SPO list title
+The following example shows how to get a list from a SharePoint Online list title.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
