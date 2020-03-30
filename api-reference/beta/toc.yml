@@ -392,6 +392,21 @@
           href: api/profile-get.md
         - name: Delete user's profile
           href: api/profile-delete.md
+      - name: SCIM
+        href: resources/user.md
+        items:
+        - name: List users
+          href: api/user-list-SCIM.md
+        - name: Create user 
+          href: api/user-post-users.md
+        - name: Get user 
+          href: api/user-get-SCIM.md
+        - name: Update user 
+          href: api/user-update-SCIM.md
+        - name: Delete user 
+          href: api/user-delete-SCIM.md
+        - name: Get delta 
+          href: api/user-delta-SCIM.md
       - name: Teamwork
         items:
         - name: Installed app
