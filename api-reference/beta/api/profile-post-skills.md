@@ -66,11 +66,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "displayName": "Artificial Intelligence",
+  "proficiency": "advancedProfessional",
+  "webUrl": "https://www.microsoft.com/aischool"
 }
 ```
 # [C#](#tab/csharp)
@@ -106,11 +106,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "displayName": "Artificial Intelligence",
+  "proficiency": "advancedProfessional",
+  "webUrl": "https://www.microsoft.com/aischool"
 }
 ```
 

@@ -110,10 +110,10 @@ Content-type: application/json
     "positions": [
         {
             "categories": [],
-            "allowedAudiences": "everyone",
-            "createdDateTime": "0001-01-01T00:00:00Z",
+            "allowedAudiences": "organization",
+            "createdDateTime": "2020-02-18T16:07:14Z",
             "inference": null,
-            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
             "id": "1b9e024d-0df8-4b57-af2b-dae70db4f356",
             "detail": {
                 "description": null,

@@ -114,10 +114,10 @@ Content-type: application/json
             "spoken": "advancedProfessional",
             "written": "advancedProfessional",
             "reading": "advancedProfessional",
-            "allowedAudiences": "everyone",
-            "createdDateTime": "0001-01-01T00:00:00Z",
+            "allowedAudiences": "contacts",
+            "createdDateTime": "2020-02-18T16:07:14Z",
             "inference": null,
-            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
             "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
             "createdBy": {
                 "device": null,

@@ -114,9 +114,9 @@ Content-type: application/json
             "title": null,
             "pronunciation": null,
             "allowedAudiences": "everyone",
-            "createdDateTime": "0001-01-01T00:00:00Z",
+            "createdDateTime": "2020-02-18T16:07:14Z",
             "inference": null,
-            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
             "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
             "createdBy": {
                 "device": null,

@@ -66,11 +66,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "sports, personal"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Online home of Chelsea FC a football club in the English Premier League.",
+  "displayName": "Chelsea FC",
+  "webUrl": "https://www.chelseafc.com"
 }
 ```
 # [C#](#tab/csharp)
@@ -106,11 +106,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "sports, personal"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Online home of Chelsea FC a football club in the English Premier League.",
+  "displayName": "Chelsea FC",
+  "webUrl": "https://www.chelseafc.com"
 }
 ```
 

@@ -112,10 +112,10 @@ Content-type: application/json
             "displayName": null,
             "type": "business",
             "number": "+1 412 555 0109",
-            "allowedAudiences": "everyone",
-            "createdDateTime": "0001-01-01T00:00:00Z",
+            "allowedAudiences": "organization",
+            "createdDateTime": "2020-02-18T16:07:14Z",
             "inference": null,
-            "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
             "id": "a545e073-999d-4813-9cc5-b6f45a6560f8",
             "createdBy": {
                 "device": null,
