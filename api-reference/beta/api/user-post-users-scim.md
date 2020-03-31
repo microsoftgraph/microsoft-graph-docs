@@ -30,12 +30,14 @@ POST /users/scim
 The request body should include the SCIM specific user attribute. Use the table below to map SCIM attributes to the Azure AD schema.
 
 SCIM User (I've included 2 but there are a lot more)
+
 | SCIM Attribute| Azure AD attribute|
 |:---------------|:--------|
 | userName  | userPrincipalName  |
 | name.givenName  | givenName  |
 
 SCIM Enterprise User (I've included 2 but there are a lot more)
+
 | SCIM Attribute| Azure AD attribute |
 |:---------------|:--------|
 | manager  | manager  |
