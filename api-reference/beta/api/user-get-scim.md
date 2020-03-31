@@ -1,7 +1,7 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "dkershaw10"
+author: "ArvindHarinder1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/scim/{id}
+GET /scim/users/{id}
 ```
 
 ## Optional query parameters
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [user](../resour
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id}
+GET https://graph.microsoft.com/v1.0/scim/users/{id}
 ```
 
 ##### Response
@@ -90,7 +90,7 @@ Get a user by userName
   "name": "get_user"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/user/scim/Users?filter=userName eq "Test_User_dfeef4c5-5681-4387-b016-bdf221e82081"
+GET https://graph.microsoft.com/v1.0/scim/Users?filter=userName eq "Test_User_dfeef4c5-5681-4387-b016-bdf221e82081"
 ```
 ##### Response
 
