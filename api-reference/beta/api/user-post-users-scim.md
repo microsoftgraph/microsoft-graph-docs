@@ -13,13 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [user](../resources/user.md).
-The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
-
-This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
-
->[!NOTE]
->To create external users, use the [invitation API](invitation-post.md).
+Create users in Azure AD using a SCIM compliant endpoint. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,29 +24,24 @@ POST /users/scim
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/scim+json  |
 
 ## Request body
+The request body should include the SCIM specific user attribute. Use the table below to map SCIM attributes to the Azure AD schema.
 
-In the request body, supply a JSON representation of [user](../resources/user.md) object.
+SCIM User (I've included 2 but there are a lot more)
+| SCIM Attribute       | Azure AD attribute|
+|:---------------|:--------|
+| userName  | userPrincipalName  |
+| name.givenName  | givenName  |
 
-The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicy** must be set to `DisablePasswordExpiration`. For a social identity, none of the properties are required.
+SCIM Enterprise User (I've included 2 but there are a lot more)
+| SCIM Attribute      | Azure AD attribute |
+|:---------------|:--------|
+| manager  | manager  |
+| department  | department  |
 
-| Parameter | Type | Description|
-|:---------------|:--------|:----------|
-|accountEnabled |Boolean |True if the account is enabled; otherwise, false.|
-|displayName |string |The name to display in the address book for the user.|
-|onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.|
-|mailNickname |string |The mail alias for the user.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
-|userPrincipalName |string |The user principal name (someuser@contoso.com).|
-
-Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
-
-Federated users created via this API will be forced to sign in every 12 hours by default. For information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
-
->[!NOTE]
->Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+All attributes not in the user or enterprise user will be part of a custom user schema. 
 
 ## Response
 
