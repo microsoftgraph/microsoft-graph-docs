@@ -64,6 +64,10 @@ HTTP/1.1 200 OK
 Content-type: application/scim+json
 Content-length: 608
 
+  {
+     "schemas":["urn:ietf:params:scim:api:messages:2.0:ListResponse"],
+     "totalResults":2,
+     "Resources":[
        {
          "id":"2819c223-7f76-453a-919d-413861904646",
          "userName":"bjensen"
