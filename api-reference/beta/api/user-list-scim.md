@@ -45,7 +45,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/scim/users
+GET https://graph.microsoft.com/beta/scim/users
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-2-csharp-snippets.md)]
