@@ -30,13 +30,13 @@ POST /users/scim
 The request body should include the SCIM specific user attribute. Use the table below to map SCIM attributes to the Azure AD schema.
 
 SCIM User (I've included 2 but there are a lot more)
-| SCIM Attribute       | Azure AD attribute|
+| SCIM Attribute| Azure AD attribute|
 |:---------------|:--------|
 | userName  | userPrincipalName  |
 | name.givenName  | givenName  |
 
 SCIM Enterprise User (I've included 2 but there are a lot more)
-| SCIM Attribute      | Azure AD attribute |
+| SCIM Attribute| Azure AD attribute |
 |:---------------|:--------|
 | manager  | manager  |
 | department  | department  |
@@ -140,12 +140,6 @@ Content-type: application/json
 	}]
 }
 ```
-
-## See also
-
-- [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
