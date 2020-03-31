@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete bookingBusiness
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [bookingBusiness](../resources/bookingbusiness.md) object.

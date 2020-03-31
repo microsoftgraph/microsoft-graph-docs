@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # bookingWorkTimeSlot resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 The start and end times for work.

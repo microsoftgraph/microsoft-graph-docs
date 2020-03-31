@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartAxisTitleFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the chart axis title formatting.

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete featureRolloutPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.

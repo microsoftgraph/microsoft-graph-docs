@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Delete inferenceClassificationOverride
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [Focused Inbox](../resources/manage-focused-inbox.md) override specified by its ID.

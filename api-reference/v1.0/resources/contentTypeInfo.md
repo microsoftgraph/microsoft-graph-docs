@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # ContentTypeInfo resource type
 
+Namespace: microsoft.graph
+
 The **contentTypeInfo** resource indicates the SharePoint content type of an item.
 
 ## JSON representation

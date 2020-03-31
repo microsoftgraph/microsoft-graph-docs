@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mailTipsError resource type
 
+Namespace: microsoft.graph
+
 An error that occurs during an action.
 
 ## Properties

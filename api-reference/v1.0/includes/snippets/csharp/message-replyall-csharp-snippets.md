@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var comment = "comment-value";
 
 await graphClient.Me.Messages["{id}"]
-	.ReplyAll(comment)
+	.ReplyAll(null,comment)
 	.Request()
 	.PostAsync();
 

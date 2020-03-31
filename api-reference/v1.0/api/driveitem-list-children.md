@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List children of a driveItem
 
+Namespace: microsoft.graph
+
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
 
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.

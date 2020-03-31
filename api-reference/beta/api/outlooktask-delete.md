@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete outlookTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the specified Outlook task in the user's mailbox.

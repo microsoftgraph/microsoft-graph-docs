@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # provisionedIdentity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the identity associated with the provisioning object summary event. 

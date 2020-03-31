@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: copy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copy a message to a folder.

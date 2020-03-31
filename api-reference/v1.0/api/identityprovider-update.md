@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update identityProvider
 
+Namespace: microsoft.graph
+
 Update properties in an existing [identityProvider](../resources/identityprovider.md).
 
 ## Permissions

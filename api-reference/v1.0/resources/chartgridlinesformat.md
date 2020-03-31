@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartGridlinesFormat resource type
 
+Namespace: microsoft.graph
+
 Encapsulates the format properties for chart gridlines.
 
 

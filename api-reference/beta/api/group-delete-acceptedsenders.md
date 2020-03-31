@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove acceptedSender
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove a user or group from the accepted-senders list of the specified group. 

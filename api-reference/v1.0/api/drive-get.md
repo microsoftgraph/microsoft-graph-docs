@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Get Drive
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
 
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.

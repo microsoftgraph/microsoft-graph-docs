@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Patch channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [channel](../resources/channel.md).
@@ -39,6 +41,8 @@ PATCH /teams/{id}/channels/{id}
 ## Request body
 
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
+
+> Note: You cannot update the `membershipType` value for an existing channel.
 
 ## Response
 

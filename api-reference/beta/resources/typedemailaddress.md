@@ -9,6 +9,8 @@ author: ""
 
 # typedEmailAddress resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the name, email addresses, and their corresponding email address type of a [contact](contact.md).

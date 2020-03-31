@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)

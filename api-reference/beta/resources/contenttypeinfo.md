@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ContentTypeInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **contentTypeInfo** resource indicates the SharePoint content type of an item.

@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationDecimalTextBox"
 description: "Create a new groupPolicyPresentationDecimalTextBox object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -102,8 +102,6 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
-
-
 
 
 

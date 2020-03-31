@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # outlookUser: supportedTimeZones
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.

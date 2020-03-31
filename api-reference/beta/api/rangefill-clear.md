@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeFill: clear
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Resets the range background.

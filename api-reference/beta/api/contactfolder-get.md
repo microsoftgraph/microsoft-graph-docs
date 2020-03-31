@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get contactFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a contact folder by using the contact folder ID.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete a historyItem
 
+Namespace: microsoft.graph
+
 Delete an existing history item for an existing user activity.
 
 ## Permissions

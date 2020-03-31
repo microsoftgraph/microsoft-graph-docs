@@ -9,6 +9,8 @@ author: ""
 
 # chatMessageAttachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an attachment to a chat message entity.

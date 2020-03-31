@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update mailSearchFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the writable properties of a [mailSearchFolder](../resources/mailsearchfolder.md) object.

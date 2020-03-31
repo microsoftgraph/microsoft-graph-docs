@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartAxisTitle resource type
 
+Namespace: microsoft.graph
+
 Represents the title of a chart axis.
 
 

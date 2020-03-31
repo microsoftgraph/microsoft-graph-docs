@@ -1,7 +1,7 @@
 ---
 title: "user resource type"
 description: "Represents an Azure Active Directory user object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -33,7 +33,7 @@ Represents an Azure Active Directory user object.
 |[wipeManagedAppRegistrationsByDeviceTag action](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|None|Issues a wipe operation on an app registration with specified device tag.|
 |**Onboarding**|
 |[exportDeviceAndAppManagementData function](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Not yet documented|
-|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|Not yet documented|
+|[getEffectiveDeviceEnrollmentConfigurations function](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|Not yet documented|
 |**Troubleshooting**|
 |[getManagedDevicesWithAppFailures function](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|Retrieves the list of devices with failed apps.|
 
@@ -53,7 +53,7 @@ Represents an Azure Active Directory user object.
 |**Mobile application management (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
 |**Onboarding**|
-|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
+|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|Get enrollment configurations targeted to the user|
 |**Troubleshooting**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
 |mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) collection|The list of troubleshooting events for this user.|

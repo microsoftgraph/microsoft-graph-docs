@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: rowsBelow
 
+Namespace: microsoft.graph
+
 Gets certain number of rows below a given range.
 
 ## Permissions

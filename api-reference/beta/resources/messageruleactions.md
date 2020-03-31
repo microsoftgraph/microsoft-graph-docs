@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # messageRuleActions resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the set of actions that are available to a rule.

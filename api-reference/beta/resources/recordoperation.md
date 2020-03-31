@@ -1,34 +1,34 @@
 ---
 title: "recordOperation resource type"
-description: "The recordOperation type"
-author: "VinodRavichandran"
+description: "Contains information related to audio recording."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # recordOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The recordOperation type
+Contains information related to audio recording.
 
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | The client context.                                                                                                                               |
+| clientContext                  | String                      | Unique Client Context string. Max limit is 256 chars.                                                                                                                               |
 | completionReason               | String                      | Possible values are: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
-| createdDateTime                | DateTimeOffset              | The time when the recording was created.                                                                                                          |
-| id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | The time of the last action of the operation.                                                                                                     |
+| id                             | String                      | The server operation ID. Read-only.                                                                                              |
 | recordingAccessToken           | String                      | The access token required to retrieve the recording.                                                                                              |
 | recordingLocation              | String                      | The location where the recording is located.                                                                                                      |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                              |
+| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
@@ -45,30 +45,11 @@ The following is a JSON representation of the resource.
 {
   "clientContext": "String",
   "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "recordingAccessToken": "String",
   "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.recordOperation",
-  "truncated": true
-}-->
-```json
-{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordingAccessToken": "<access-token>",
-  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "status": "completed"
 }
 ```
 

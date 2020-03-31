@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var onlineMeeting = new OnlineMeeting
 {
-	MeetingType = MeetingType.MeetNow,
+	MeetingType = "meetNow",
 	Participants = new MeetingParticipants
 	{
 		Organizer = new MeetingParticipantInfo

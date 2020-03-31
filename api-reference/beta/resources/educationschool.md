@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSchool resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A school. The **educationSchool** resource currently corresponds to an [administrativeUnit](administrativeunit.md) resource and shares the same ID.
@@ -43,7 +45,6 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 | externalId          | String                                | ID of school in syncing system.                    |
 | externalPrincipalId | String                                | ID of principal in syncing system.                 |
 | externalSource      | string                                | Read-Only. Possible values are: `sis` or `manual`. |
-| fax                 | String                                | Fax number of school.                              |
 | highestGrade        | String                                | Highest grade taught.                              |
 | lowestGrade         | String                                | Lowest grade taught.                               |
 | phone               | String                                | Phone number of school.                            |
@@ -81,7 +82,6 @@ The following is a JSON representation of the resource.
   "externalId": "String",
   "externalPrincipalId": "String",
   "externalSource": "string",
-  "fax": "String",
   "highestGrade": "String",
   "id": "String (identifier)",
   "lowestGrade": "String",

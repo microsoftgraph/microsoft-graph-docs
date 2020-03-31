@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # website resource type
 
+Namespace: microsoft.graph
+
 Represents a website.
 
 

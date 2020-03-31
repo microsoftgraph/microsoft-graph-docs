@@ -1,7 +1,7 @@
 ---
 title: "androidManagedStoreAppConfigurationSchemaItemDataType enum type"
 description: "Data type for a configuration item inside an Android application's custom configuration schema"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

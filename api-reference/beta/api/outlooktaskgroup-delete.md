@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete outlookTaskGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).

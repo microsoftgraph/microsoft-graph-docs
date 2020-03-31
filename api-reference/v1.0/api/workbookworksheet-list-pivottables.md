@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List pivotTables
 
+Namespace: microsoft.graph
+
 Retrieve a list of workbookpivottable objects.
 
 ## Permissions

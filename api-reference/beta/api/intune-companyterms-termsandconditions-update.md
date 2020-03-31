@@ -1,7 +1,7 @@
 ---
 title: "Update termsAndConditions"
 description: "Update the properties of a termsAndConditions object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the [
 |bodyText|String|Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.|
 |acceptanceStatement|String|Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.|
 |version|Int32|Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
 
@@ -71,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 273
+Content-length: 335
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -80,7 +81,10 @@ Content-length: 273
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -89,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 505
+Content-Length: 567
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -102,11 +106,12 @@ Content-Length: 505
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
 
 
 

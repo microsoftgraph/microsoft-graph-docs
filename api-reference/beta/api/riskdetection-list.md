@@ -8,12 +8,14 @@ doc_type: apiPageType
 ---
 # List riskDetection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a collection of **riskDetection** objects.
 
 >[!NOTE]
->You must have an Azure AD Premium P2 license to use the risk detection API.
+>You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
 

@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Hashes resource type
 
+Namespace: microsoft.graph
+
 The **Hashes** resource groups available hashes into a single structure for an item.
 
 **Note:** Not all services provide a value for all hash properties listed.

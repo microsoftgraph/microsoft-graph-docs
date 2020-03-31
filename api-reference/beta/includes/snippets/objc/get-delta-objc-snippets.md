@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *plannerDeltaList = [[NSMutableArray alloc] init];
-		plannerDeltaList = [jsonFinal valueForKey:@"value"];
-		MSGraphPlannerDelta *plannerDelta = [[MSGraphPlannerDelta alloc] initWithDictionary:[plannerDeltaList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphPlannerDelta *plannerDelta = [[MSGraphPlannerDelta alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

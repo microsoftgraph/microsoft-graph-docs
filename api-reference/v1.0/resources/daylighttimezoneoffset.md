@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # daylightTimeZoneOffset resource type
 
+Namespace: microsoft.graph
+
 Specifies when a time zone switches from standard time to daylight saving time.
 
 For example, if a time zone is specified with the following properties:

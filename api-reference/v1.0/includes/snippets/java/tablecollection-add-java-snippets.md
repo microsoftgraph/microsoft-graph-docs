@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 String address = "Sheet1!A1:D5";
 
-boolean hasHeaders = True;
+boolean hasHeaders = true;
 
 graphClient.me().drive().items("{id}").workbook().tables()
 	.add(address,hasHeaders)

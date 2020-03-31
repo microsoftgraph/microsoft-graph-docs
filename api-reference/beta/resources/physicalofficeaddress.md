@@ -9,6 +9,8 @@ author: ""
 
 # physicalOfficeAddress resource type
 
+Namespace: microsoft.graph
+
 Represents the business address of a resource such as an organizational contact.
 
 ## Properties

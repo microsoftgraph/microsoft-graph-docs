@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Create open extension
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties

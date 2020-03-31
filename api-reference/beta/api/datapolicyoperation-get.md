@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get dataPolicyOperation
 
+Namespace: microsoft.graph
+
 Retrieve the properties of the dataPolicyOperation object.
 
 ## Permissions

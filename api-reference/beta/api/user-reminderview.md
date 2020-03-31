@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: reminderView
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return a list of event reminders in a user calendar within the specified start and end times. 

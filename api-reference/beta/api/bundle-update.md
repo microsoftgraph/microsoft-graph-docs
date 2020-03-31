@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Update bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the metadata for a [bundle][] of [driveItems][driveItem] by ID.

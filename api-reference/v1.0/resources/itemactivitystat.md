@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # itemActivityStat resource type
 
+Namespace: microsoft.graph
+
 The **itemActivityStat** resource provides information about activities that took place within an interval of time.
 
 ## Properties

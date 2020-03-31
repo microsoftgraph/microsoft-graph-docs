@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Get schemaExtension
+
+Namespace: microsoft.graph
 Get the properties of the specified [schemaExtension](../resources/schemaextension.md) definition.
 
 ## Permissions

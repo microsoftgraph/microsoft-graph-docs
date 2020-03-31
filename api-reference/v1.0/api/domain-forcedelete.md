@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Force domain deletion
 
+Namespace: microsoft.graph
+
 Deletes a domain using an asynchronous long-running operation.
 
 The following actions are performed as part of this operation:

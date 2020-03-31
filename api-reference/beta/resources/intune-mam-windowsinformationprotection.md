@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

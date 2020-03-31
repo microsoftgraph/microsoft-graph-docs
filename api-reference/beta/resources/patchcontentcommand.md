@@ -9,6 +9,8 @@ author: ""
 
 # patchContentCommand resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The changes to make to a OneNote page in a PATCH request.

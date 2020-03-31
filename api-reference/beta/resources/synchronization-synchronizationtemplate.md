@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # synchronizationTemplate resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides pre-configured synchronization settings for a particular application. These settings will be used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template. The application developer specifies the template; anyone can retrieve the template to see the default settings, including the [synchronization schema](synchronization-synchronizationschema.md).

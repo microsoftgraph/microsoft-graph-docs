@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # directoryObjectPartnerReference resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](directoryobject.md).

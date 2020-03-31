@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a ListItemVersion resource
 
+Namespace: microsoft.graph
+
 Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).
 
 ## Permissions

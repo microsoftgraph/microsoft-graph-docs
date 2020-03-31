@@ -9,6 +9,8 @@ author: ""
 
 # Update agreement
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [agreement](../resources/agreement.md) object.

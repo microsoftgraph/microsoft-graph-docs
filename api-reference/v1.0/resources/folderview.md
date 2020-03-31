@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # FolderView resource type
 
+Namespace: microsoft.graph
+
 The **FolderView** resource provides or sets recommendations on the user-experience of a folder.
 
 It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.

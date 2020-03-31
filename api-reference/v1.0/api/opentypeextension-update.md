@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update open extension
 
+Namespace: microsoft.graph
+
 Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
 
 - If a property in the request body matches the name of an existing property in the extension, the data in the 

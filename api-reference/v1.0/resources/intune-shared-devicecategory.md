@@ -1,13 +1,15 @@
 ---
 title: "deviceCategory resource type"
 description: "These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceCategory resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -49,6 +51,7 @@ Here is a JSON representation of the resource.
   "description": "String"
 }
 ```
+
 
 
 

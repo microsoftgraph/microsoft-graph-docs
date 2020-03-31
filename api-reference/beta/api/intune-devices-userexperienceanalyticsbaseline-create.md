@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsBaseline"
 description: "Create a new userExperienceAnalyticsBaseline object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -49,7 +49,8 @@ The following table shows the properties that are required when you create the u
 |id|String|The unique identifier of the user experience analytics baseline.|
 |displayName|String|The name of the user experience analytics baseline.|
 |overallScore|Int32|The overall score of the user experience analytics baseline.|
-|overallRegressionThreshold|Int32|The overall regression threshold of the user experience analytics baseline.|
+|isBuiltIn|Boolean|Signifies if the current baseline is the commercial median baseline or a custom baseline.|
+|createdDateTime|DateTimeOffset|The date the custom baseline was created.|
 
 
 
@@ -63,13 +64,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines
 Content-type: application/json
-Content-length: 173
+Content-length: 158
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true
 }
 ```
 
@@ -78,18 +79,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
-
 
 
 

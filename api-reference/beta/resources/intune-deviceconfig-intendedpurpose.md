@@ -1,7 +1,7 @@
 ---
 title: "intendedPurpose enum type"
 description: "PFX Import Options."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

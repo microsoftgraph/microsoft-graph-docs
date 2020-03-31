@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # educationRubricOutcome resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An [educationOutcome](educationoutcome.md) that provides a graded rubric.

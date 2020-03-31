@@ -9,6 +9,8 @@ author: ""
 
 # Get agreement
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [agreement](../resources/agreement.md) object.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List groups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the groups in an organization, including but not limited to Office 365 Groups. 

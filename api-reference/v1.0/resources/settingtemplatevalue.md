@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # settingTemplateValue resource type
 
+Namespace: microsoft.graph
+
 Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.
 
 ### Properties

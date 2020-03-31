@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # recentNotebook resource type
 
+Namespace: microsoft.graph
+
 A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](notebook.md) but has fewer properties.
 
 ## Properties

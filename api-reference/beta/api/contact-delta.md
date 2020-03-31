@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # contact: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.

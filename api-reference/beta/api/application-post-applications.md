@@ -1,17 +1,19 @@
 ---
-title: "Create Application"
-description: "Use this API to create a new application."
+title: "Create application"
+description: "Create a new application."
 author: "davidmu1"
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Create Application
+# Create application
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new application.
+Create a new [application](../resources/application.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,14 +37,14 @@ POST /applications
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -56,7 +58,6 @@ Content-type: application/json
 Content-length: 67
 
 {
-  "allowPublicClient": true,
   "displayName": "Display name"
 }
 ```
@@ -74,9 +75,10 @@ Content-length: 67
 
 ---
 
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,20 +91,33 @@ Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
-    "id": "b5b2920e-a47c-43b7-91ef-25ae96fddddd",
+    "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
-    "api": {
-        "acceptedAccessTokenVersion": 2,
-        "publishedPermissionScopes": []
-    },
-    "allowPublicClient": true,
-    "applicationAliases": [],
-    "appRoles": [],
-    "createdDateTime": "2017-05-25T16:33:04.3646617Z",
-    "installedClients": {
-        "redirectUrls": []
-    },
+    "isFallbackPublicClient": null,
+    "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+    "applicationTemplateId": null,
+    "identifierUris": [],
+    "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
+    "isDeviceOnlyAuthSupported": null,
+    "groupMembershipClaims": null,
+    "optionalClaims": null,
+    "addIns": [],
+    "publisherDomain": "contoso.onmicrosoft.com",
+    "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "publicClient": {
+        "redirectUris": []
+    },
     "info": {
         "termsOfServiceUrl": null,
         "supportUrl": null,
@@ -111,15 +126,20 @@ Content-length: 1145
         "logoUrl": null
     },
     "keyCredentials": [],
-    "orgRestrictions": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
     "passwordCredentials": [],
-    "preAuthorizedApplications": [],
     "requiredResourceAccess": [],
-    "tags": [],
     "web": {
-        "redirectUrls": [],
+        "redirectUris": [],
+        "homePageUrl": null,
         "logoutUrl": null,
-        "oauth2AllowImplicitFlow": null
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
     }
 }
 ```

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete calendarGroup
 
+Namespace: microsoft.graph
+
 Delete a calendar group other than the default calendar group.
 
 ## Permissions

@@ -1,7 +1,7 @@
 ---
 title: "allDevicesAssignmentTarget resource type"
 description: "Represents an assignment to all managed devices in the tenant."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

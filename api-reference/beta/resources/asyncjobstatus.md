@@ -10,6 +10,8 @@ ms.prod: ""
 
 # AsyncJobStatus resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource provides information on the status of a asynchronous job progress.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # outlookUser: supportedTimeZones
 
+Namespace: microsoft.graph
+
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.
 
 You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.

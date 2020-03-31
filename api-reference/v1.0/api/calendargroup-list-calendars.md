@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List calendars
 
+Namespace: microsoft.graph
+
 Retrieve a list of calendars belonging to a calendar group.
 
 ## Permissions

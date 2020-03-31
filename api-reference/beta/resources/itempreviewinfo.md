@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ItemPreviewInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).

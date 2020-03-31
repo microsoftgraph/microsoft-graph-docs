@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartPointFormat resource type
 
+Namespace: microsoft.graph
+
 Represents formatting object for chart points.
 
 

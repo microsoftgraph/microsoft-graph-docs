@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update outlooktaskfolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the writable properties of an Outlook task folder.

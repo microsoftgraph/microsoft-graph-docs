@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete domain
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a domain from a tenant.

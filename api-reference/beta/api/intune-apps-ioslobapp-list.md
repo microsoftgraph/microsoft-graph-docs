@@ -1,7 +1,7 @@
 ---
 title: "List iosLobApps"
 description: "List properties and relationships of the iosLobApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1780
+Content-Length: 1804
 
 {
   "value": [
@@ -103,7 +103,8 @@ Content-Length: 1780
         "v9_0": true,
         "v10_0": true,
         "v11_0": true,
-        "v12_0": true
+        "v12_0": true,
+        "v13_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -113,8 +114,6 @@ Content-Length: 1780
   ]
 }
 ```
-
-
 
 
 

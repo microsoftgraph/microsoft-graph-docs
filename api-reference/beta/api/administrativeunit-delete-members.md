@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove a member
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to remove a member (user or group) from an administrative unit.

@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Office 365 Groups activity reports
 
+Namespace: microsoft.graph
+
 You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).

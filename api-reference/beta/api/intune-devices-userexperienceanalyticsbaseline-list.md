@@ -1,7 +1,7 @@
 ---
 title: "List userExperienceAnalyticsBaselines"
 description: "List properties and relationships of the userExperienceAnalyticsBaseline objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 275
+Content-Length: 323
 
 {
   "value": [
@@ -67,13 +67,12 @@ Content-Length: 275
       "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
       "displayName": "Display Name value",
       "overallScore": 12,
-      "overallRegressionThreshold": 10
+      "isBuiltIn": true,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
     }
   ]
 }
 ```
-
-
 
 
 

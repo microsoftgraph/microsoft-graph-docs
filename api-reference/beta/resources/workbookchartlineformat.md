@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartLineFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Enapsulates the formatting options for line elements.

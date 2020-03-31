@@ -1,13 +1,15 @@
 ---
 title: "complianceState enum type"
 description: "Compliance state."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # complianceState enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,6 +25,7 @@ Compliance state.
 |error|4|Error.|
 |inGracePeriod|254|Device is non-compliant but still has access to corporate resources|
 |configManager|255|Managed by Config Manager|
+
 
 
 

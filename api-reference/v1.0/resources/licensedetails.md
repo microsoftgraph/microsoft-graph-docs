@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # licenseDetails resource type
 
+Namespace: microsoft.graph
+
 Contains information about a license assigned to a user.
 
 ## Methods

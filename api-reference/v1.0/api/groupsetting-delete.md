@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete a group setting
 
+Namespace: microsoft.graph
+
 Delete a group setting.
 
 ## Permissions

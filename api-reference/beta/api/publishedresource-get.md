@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get publishedResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of [publishedResource](../resources/publishedresource.md) object.

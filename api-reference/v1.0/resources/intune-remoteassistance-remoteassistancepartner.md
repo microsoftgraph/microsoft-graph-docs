@@ -1,13 +1,15 @@
 ---
 title: "remoteAssistancePartner resource type"
 description: "remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # remoteAssistancePartner resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -54,6 +56,7 @@ Here is a JSON representation of the resource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

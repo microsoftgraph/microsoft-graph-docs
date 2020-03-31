@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # directoryObject resource type
 
+Namespace: microsoft.graph
+
 Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types.
 
 ## Methods

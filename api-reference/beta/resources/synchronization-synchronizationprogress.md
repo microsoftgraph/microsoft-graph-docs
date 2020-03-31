@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # synchronizationProgress resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.

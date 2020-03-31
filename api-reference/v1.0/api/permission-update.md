@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Update sharing permission
 
+Namespace: microsoft.graph
+
 Update the properties of a sharing permission by patching the permission resource.
 
 Only the **roles** property can be modified this way.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationWordResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subclass of [educationResource](educationresource.md). This is a Word document resource. The Word file must be uploaded in the **fileResource** directory associated with the 

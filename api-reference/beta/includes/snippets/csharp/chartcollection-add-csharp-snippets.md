@@ -13,7 +13,7 @@ var sourceData = "A1:B1";
 var seriesBy = "Auto";
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts
-	.Add(type,sourceData,seriesBy)
+	.Add(type,seriesBy,sourceData)
 	.Request()
 	.PostAsync();
 

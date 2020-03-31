@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # dateTimeTimeZone resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the date, time, and time zone of a point in time.
@@ -19,7 +21,7 @@ Describes the date, time, and time zone of a point in time.
 |dateTime|String|A single point of time in a combined date and time representation (`{date}T{time}`). For example, "2019-04-16T09:00:00".|
 |timeZone|String|Represents a time zone, for example, "Pacific Standard Time". See below for possible values.|
 
-In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), as well as the additional [time zones supported by the calendar API](#additional-time-zones). 
+In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones), as well as the additional [time zones supported by the calendar API](#additional-time-zones).
 
 When using **dateTimeTimeZone** in conjunction with a method (such as [creating](../api/user-post-events.md) or [updating](../api/event-update.md) an event), take note of the actual time zones supported, which can be a smaller subset.
 

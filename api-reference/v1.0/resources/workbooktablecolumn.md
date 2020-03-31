@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookTableColumn resource type
 
+Namespace: microsoft.graph
+
 Represents a column in a table.
 
 

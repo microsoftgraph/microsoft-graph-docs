@@ -9,6 +9,8 @@ author: ""
 
 # connector resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <!-- Not supported items

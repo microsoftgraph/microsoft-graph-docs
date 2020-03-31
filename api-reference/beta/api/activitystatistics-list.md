@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List activityStatistics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of [activityStatistics](../resources/activitystatistics.md) for a user, for the last complete week.
@@ -28,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics 
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
+GET /me/analytics/activitystatistics
+GET /users/{id|userPrincipalName}/analytics/activitystatistics
 ```
 
 ## Optional query parameters

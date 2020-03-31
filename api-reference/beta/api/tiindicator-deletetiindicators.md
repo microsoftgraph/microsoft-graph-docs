@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # tiIndicator: deleteTiIndicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
@@ -110,7 +112,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "code": "code-value",
+      "code": 0,
       "message": "message-value",
       "subCode": "subCode-value"
     }

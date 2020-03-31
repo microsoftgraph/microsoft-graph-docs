@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # auditLogRoot resource type
 
+Namespace: microsoft.graph
+
 Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods

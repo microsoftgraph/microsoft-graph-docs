@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # sectionGroup resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A section group in a OneNote notebook. Section groups can contain sections and section groups.

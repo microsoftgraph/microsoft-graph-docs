@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List chats
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
@@ -21,7 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.Read, Chat.ReadWrite    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.   | Chat.Read.All, Chat.ReadWrite.All   |
+|Application | Not supported.   | 
+
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 

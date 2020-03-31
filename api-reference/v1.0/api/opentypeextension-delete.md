@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete open extension
 
+Namespace: microsoft.graph
+
 Delete an open extension ([openTypeExtension](../resources/opentypeextension.md) object) from the specified instance of a resource. 
 
 ## Permissions

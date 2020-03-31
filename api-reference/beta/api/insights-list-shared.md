@@ -9,9 +9,11 @@ doc_type: apiPageType
 
 # List shared
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculated insight that returns the list of files shared with a user.
+Calculated insight that includes the list of documents shared with a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,22 +25,28 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
+Get a list of documents shared with the signed-in user.
+
+>**Note**: Only the user can make requests using the user's id or principal name.
+
 ```http
 GET /me/insights/shared
-```
-Request with a 'user id' or 'userPrincipalName' is only accessible by the user, not by anyone else:
-```http
 GET /users/{id | userPrincipalName}/insights/shared
+```
+
+Expand the resource referenced by a **shared** insight:
+```http
+GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
-You can use the `$filter` query parameter to filter shared items. For example, based on Type:
+You can use the `$filter` query parameter to filter shared items. For example, based on **type**:
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
+See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 You can also retrieve files shared by a specific user. For example, by specifying the `lastshared/sharedby/address` property:
 
@@ -107,8 +115,3 @@ Here is an example of the response. Note: The response object shown here may be 
 }
 ```
 
-### Expanding resource
-The resource referenced by a shared insight can be expanded.
-```http
-GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
-```

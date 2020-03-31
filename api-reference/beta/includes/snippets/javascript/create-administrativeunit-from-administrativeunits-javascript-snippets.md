@@ -13,7 +13,7 @@ const client = Client.init(options);
 const administrativeUnit = {
     displayName: "Seattle District Technical Schools",
     description: "Seattle district technical schools administration",
-    visibility: "true"
+    visibility: "HiddenMembership"
 };
 
 let res = await client.api('/administrativeUnits')

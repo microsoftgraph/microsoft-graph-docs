@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List tabs in channel
 
+Namespace: microsoft.graph
+
 
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 

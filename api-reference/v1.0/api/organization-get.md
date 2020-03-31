@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get organization
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of the currently authenticated organization.
 
 Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.

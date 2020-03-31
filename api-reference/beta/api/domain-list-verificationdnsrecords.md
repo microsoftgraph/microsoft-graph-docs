@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List verificationDnsRecords
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects.

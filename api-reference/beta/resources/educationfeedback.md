@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationFeedback resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Feedback from a teacher to a student. This property represents both the text part of the feedback along with the who.

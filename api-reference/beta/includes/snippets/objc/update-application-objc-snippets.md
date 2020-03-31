@@ -12,7 +12,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphApplication *application = [[MSGraphApplication alloc] init];
-[application setAllowPublicClient: false];
 [application setDisplayName:@"New display name"];
 
 NSError *error;

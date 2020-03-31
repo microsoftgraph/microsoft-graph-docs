@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add Named Item
 
+Namespace: microsoft.graph
+
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions

@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Folder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Folder** resource groups folder-related data on an item into a single structure. 

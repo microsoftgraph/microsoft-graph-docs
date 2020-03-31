@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartLineFormat resource type
 
+Namespace: microsoft.graph
+
 Enapsulates the formatting options for line elements.
 
 

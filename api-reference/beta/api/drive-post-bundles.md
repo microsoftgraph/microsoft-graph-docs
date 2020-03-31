@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Create bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a new [bundle][] to the user's drive.

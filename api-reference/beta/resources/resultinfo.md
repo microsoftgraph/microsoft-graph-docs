@@ -1,25 +1,32 @@
 ---
 title: "resultInfo resource type"
-description: "The resultInfo type."
-author: "VinodRavichandran"
+description: "Contains success and failure-specific result information."
+author: "ananmishr"
 localization_priority: Normal
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
-ms.prod: ""
 ---
 
 # resultInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The resultInfo type.
+Contains success and failure-specific result information. 
+
+The code specifies whether the result is a generic success or failure. 
+
+The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful).
+
 
 ## Properties
 
 | Property | Type   | Description          |
 | :------- | :----- | :------------------  |
-| code     | String | The result code.     |
+| code     | Int32 | The result code.     |
 | message  | String | The message.         |
-| subCode  | String | The result sub-code. |
+| subcode  | Int32 | The result sub-code. |
 
 ## JSON representation
 
@@ -34,51 +41,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "code": "String",
+  "code": 0,
   "message": "String",
-  "subCode": "String"
-}
-```
-
-## Example Error result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "100",
-  "message": "Internal Server Error.",
-  "subCode": "20"
-}
-```
-
-## Example Generic success result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "0"
-}
-```
-
-## Example Record Success result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "completedSilenceDetected"
+  "subcode": 0
 }
 ```
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List educationUsers
 
+Namespace: microsoft.graph
+
 Retrieve a list of users at a school.
 
 ## Permissions

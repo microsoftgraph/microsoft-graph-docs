@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create unifiedRoleAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.

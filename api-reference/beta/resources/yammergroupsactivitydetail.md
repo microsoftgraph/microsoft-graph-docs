@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # yammerGroupsActivityDetail resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property           | Type    |

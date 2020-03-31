@@ -1,7 +1,7 @@
 ---
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -21,6 +21,7 @@ Apple push notification certificate.
 |[Get applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-get.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Read properties and relationships of the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.|
 |[Update applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-update.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.|
 |[downloadApplePushNotificationCertificateSigningRequest function](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|String|Download Apple push notification certificate signing request|
+|[generateApplePushNotificationCertificateSigningRequest action](../api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest.md)|String|Download Apple push notification certificate signing request|
 
 ## Properties
 |Property|Type|Description|
@@ -32,6 +33,7 @@ Apple push notification certificate.
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
+|certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
 ## Relationships
@@ -55,6 +57,7 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)",
   "certificateUploadStatus": "String",
   "certificateUploadFailureReason": "String",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get contactFolder
 
+Namespace: microsoft.graph
+
 Get a contact folder by using the contact folder ID.
 
 There are two scenarios where an app can get another user's contact folder:

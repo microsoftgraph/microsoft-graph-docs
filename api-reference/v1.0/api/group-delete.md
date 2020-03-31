@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete group
 
+Namespace: microsoft.graph
+
 Delete group.  
 
 When deleted, Office 365 groups are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).  This applies only to Office 365 groups.

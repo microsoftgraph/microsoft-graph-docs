@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update conversationthread
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Lock or unlock a thread, to allow or avoid further posting to the thread.

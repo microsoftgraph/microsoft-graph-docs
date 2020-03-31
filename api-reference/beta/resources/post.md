@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # post resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual post item within a [converstaionThread](conversationthread.md) entity.

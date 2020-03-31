@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Reply to a message in a channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).

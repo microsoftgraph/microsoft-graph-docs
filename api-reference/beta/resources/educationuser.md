@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationUser resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
@@ -58,6 +60,7 @@ This object provides a targeted subset of properties from the core [user] object
 | usageLocation     | String                                                | A two-letter country code (ISO standard 3166). Required for users who will be assigned licenses due to a legal requirement to check for availability of services in countries or regions. Examples include: "US", "JP", and "GB". Not nullable. Supports \$filter.                                                                                                                                                                                                                                                               |
 | userPrincipalName | String                                                | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby. |
 | userType          | String                                                | A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports \$filter.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| relatedContacts   | [relatedContact] collection                           | Related records related to the user. Possible relationships are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!IMPORTANT]
 >When using Delegated permission scopes, Graph will only return a limited set of properties: `id`, `primaryRole`, `accountEnabled`, `displayName`, `givenName`, `surname`, `userPrincipalName`, `userType`, `onPremisesInfo`. If your application requires additional properties, you must use Application permission scopes.

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const ResultInfo = {
+const resultInfo = {
   value: [
     "id-value1",
     "id-value2"
@@ -19,6 +19,6 @@ const ResultInfo = {
 
 let res = await client.api('/security/tiIndicators/deleteTiIndicators')
 	.version('beta')
-	.post(ResultInfo);
+	.post(resultInfo);
 
 ```

@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # user: reminderView
+
+Namespace: microsoft.graph
 Return a list of event reminders in a user calendar within the specified start and end times. 
 
 ## Permissions

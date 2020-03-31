@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # userCredentialUsageDetails resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.

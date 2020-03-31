@@ -27,6 +27,7 @@ One of the following [permissions](https://developer.microsoft.com/graph/docs/au
 - User.ReadWrite
 - User.Read.All
 - User.ReadWrite.All
+- User.ManageIdentities.All
 - Directory.Read.All
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All

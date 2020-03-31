@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableColumn: TotalRowRange
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the range object associated with the totals row of the column.

@@ -1,7 +1,7 @@
 ---
 title: "intuneBrandingProfile resource type"
 description: "This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -35,22 +35,28 @@ This entity contains data which is used in customizing the tenant level appearan
 |createdDateTime|DateTimeOffset|Time when the BrandingProfile was created|
 |lastModifiedDateTime|DateTimeOffset|Time when the BrandingProfile was last modified|
 |displayName|String|Company/organization name that is displayed to end users|
-|contactITName|String|Name of the person/organization responsible for IT support|
-|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support|
-|contactITEmailAddress|String|E-mail address of the person/organization responsible for IT support|
-|contactITNotes|String|Text comments regarding the person/organization responsible for IT support|
-|privacyUrl|String|URL to the company/organization’s privacy policy|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a theme color background behind the logo|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
+|contactITName|String|Name of the person/organization responsible for IT support|
+|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support|
+|contactITEmailAddress|String|E-mail address of the person/organization responsible for IT support|
+|contactITNotes|String|Text comments regarding the person/organization responsible for IT support|
+|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
+|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
+|privacyUrl|String|URL to the company/organization’s privacy policy|
 |customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
+|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
+|showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
+|sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|roleScopeTagIds|String collection|List of scope tags assigned to the branding profile|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -75,13 +81,6 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -105,9 +104,31 @@ Here is a JSON representation of the resource.
     "type": "String",
     "value": "binary"
   },
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String",
   "customPrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "String",
+      "ownerType": "String",
+      "action": "String"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

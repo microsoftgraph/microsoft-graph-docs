@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # driveItem resource type
 
+Namespace: microsoft.graph
+
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
 
@@ -99,6 +101,8 @@ These properties are temporary and either a) define behavior the service should 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
+
+>**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
 
 ## JSON representation
 

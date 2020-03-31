@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get multiValueLegacyExtendedProperty
 
+Namespace: microsoft.graph
+
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
 Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 

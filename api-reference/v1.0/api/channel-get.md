@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get channel
 
+Namespace: microsoft.graph
+
 
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).

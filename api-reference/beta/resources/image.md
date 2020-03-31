@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Image resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Image** resource groups image-related properties into a single structure.

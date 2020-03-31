@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create outlookTaskFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).

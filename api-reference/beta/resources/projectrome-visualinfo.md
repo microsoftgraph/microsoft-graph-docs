@@ -9,6 +9,8 @@ author: ""
 
 # visualInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A complex type for representing the **visualElements** property in the [activity](../resources/projectrome-activity.md) object.

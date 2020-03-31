@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # stringKeyObjectValuePair resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a key-value pair where the key is a string and the value is an arbitrary JSON object. This is an OData open type that expects to have a property named `value` that is a valid JSON object.

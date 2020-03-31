@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 
 # rangeView resource type
+
+Namespace: microsoft.graph
 RangeView represents a set of visible cells of the parent range.
 
 ## Methods

@@ -65,8 +65,8 @@ const event = {
     {
       displayName: "Home Office"
     }
-  ]
-
+  ],
+  allowNewTimeProposals: true
 };
 
 let res = await client.api('/me/events')

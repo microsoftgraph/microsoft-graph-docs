@@ -1,24 +1,27 @@
 ---
 title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # tokenMeetingInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The tokenMeetingInfo type.
+This is the token information that allows you to join an existing meeting. This is obtained as part of the incoming call notification. 
+
+In the event that a call is disconnected, this information can help you rejoin that call.
 
 ## Properties
 
 | Property                     | Type    | Description                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | Indicates if a conversation can continue once the host of the conversation leaves. |
-| token                        | String  | The token to join/activate the meeting.                                        |
+| token                        | String  | The token used to join the call.                                                 |
 
 ## JSON representation
 
@@ -29,26 +32,11 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-   "baseType": "microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "token": "String"
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.tokenMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "token": "ABCD123"
+    "token": "String"
 }
 ```
 

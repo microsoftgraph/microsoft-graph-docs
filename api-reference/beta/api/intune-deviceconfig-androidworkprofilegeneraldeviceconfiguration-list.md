@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidWorkProfileGeneralDeviceConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3292
+Content-Length: 3402
 
 {
   "value": [
@@ -131,13 +131,13 @@ Content-Length: 3292
       "workProfileRequirePassword": true,
       "securityRequireVerifyApps": true,
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-      "vpnEnableAlwaysOnLockdownMode": true
+      "vpnEnableAlwaysOnLockdownMode": true,
+      "workProfileAllowWidgets": true,
+      "workProfileBlockPersonalAppInstallsFromUnknownSources": true
     }
   ]
 }
 ```
-
-
 
 
 

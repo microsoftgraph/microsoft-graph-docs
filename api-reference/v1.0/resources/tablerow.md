@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # TableRow resource type
 
+Namespace: microsoft.graph
+
 Represents a row in a table.
 
 

@@ -9,11 +9,16 @@ doc_type: apiPageType
 
 # Create page
 
+Namespace: microsoft.graph
+
 Create a new OneNote page in the default section of the default notebook.
 
 To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`
 
-The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).           
+The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).  
+
+> **Note:** There is a limit to the number of pages that can be added to a section using this API. For details, see [Create OneNote pages](/graph/onenote-create-page) for all limitations with this API.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

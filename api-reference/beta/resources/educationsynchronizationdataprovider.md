@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationDataProvider resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema.

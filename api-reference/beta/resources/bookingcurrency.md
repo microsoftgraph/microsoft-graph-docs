@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # bookingCurrency resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.md).

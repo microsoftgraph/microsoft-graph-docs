@@ -4,6 +4,7 @@ description: "Your app must be registered with Azure AD. Registering your app es
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Register an application with the Microsoft identity platform

@@ -16,7 +16,7 @@ MSGraphEvent *event = [[MSGraphEvent alloc] init];
 [event setSubject:@"Let's go for lunch"];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"Does late morning work for you?"];
+[body setContent:@"Does noon work for you?"];
 [event setBody:body];
 MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
 [start setDateTime: "2017-04-15T12:00:00"];
@@ -38,6 +38,8 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setAllowNewTimeProposals: true];
+[event setTransactionId:@"7E163156-7762-4BEB-A1C6-729EA81755A7"];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

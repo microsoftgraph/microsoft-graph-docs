@@ -9,9 +9,12 @@ doc_type: apiPageType
 
 # Add attachment
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
-you can add to under 4MB.
+Namespace: microsoft.graph
+
+Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md). This operation limits the size of the attachment you can add to under 3 MB.
+
+If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -146,7 +149,7 @@ Content-type: application/json
 Here is an example which attaches an event with another event as an item attachment.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_item_attachment_from_event"
 }-->
 

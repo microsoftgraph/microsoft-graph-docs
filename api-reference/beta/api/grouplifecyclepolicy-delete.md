@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete groupLifecyclePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).

@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Delete synchronizationJob
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.

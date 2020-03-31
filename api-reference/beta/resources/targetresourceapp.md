@@ -8,6 +8,8 @@ author: ""
 ---
 
 # targetResourceApp resource type
+
+Namespace: microsoft.graph
 Indicates the app object that was added, updated or deleted by admins as part of audit activity. Derived from the [targetResource](targetresource.md) resource.
 
 

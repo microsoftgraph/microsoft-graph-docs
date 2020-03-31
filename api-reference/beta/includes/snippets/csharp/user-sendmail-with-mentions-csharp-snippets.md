@@ -34,7 +34,7 @@ var message = new Message
 };
 
 await graphClient.Me
-	.SendMail(message,saveToSentItems)
+	.SendMail(message,null)
 	.Request()
 	.PostAsync();
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # alertTrigger resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about the properties that triggered a detection (properties exist in the alert entity).

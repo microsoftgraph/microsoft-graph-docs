@@ -26,12 +26,8 @@ var message = new Message
 	},
 	Extensions = new List<Extension>()
 	{
-		new Extension
+		new OpenTypeExtension
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","microsoft.graph.openTypeExtension"}
-			},
 			ExtensionName = "Com.Contoso.Referral",
 			CompanyName = "Wingtip Toys",
 			ExpirationDate = "2015-12-30T11:00:00Z",

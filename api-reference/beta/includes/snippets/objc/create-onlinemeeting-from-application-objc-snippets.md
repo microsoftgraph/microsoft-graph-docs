@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] init];
-[onlineMeeting setMeetingType: [MSGraphMeetingType meetNow]];
+[onlineMeeting setMeetingType:@"meetNow"];
 MSGraphMeetingParticipants *participants = [[MSGraphMeetingParticipants alloc] init];
 MSGraphMeetingParticipantInfo *organizer = [[MSGraphMeetingParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];

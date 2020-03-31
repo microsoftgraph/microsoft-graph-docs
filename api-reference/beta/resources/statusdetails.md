@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # statusDetails resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) and only used when status is set to 'failure'.  

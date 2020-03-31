@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # mentionAction resource type
 
+Namespace: microsoft.graph
+
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # outlookUser resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the Outlook services available to a user.

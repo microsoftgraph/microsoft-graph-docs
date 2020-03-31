@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var Stream = "The contents of the file goes here."
+var stream = "The contents of the file goes here."
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{item-id}"].Content
 	.Request()
-	.PutAsync(Stream);
+	.PutAsync(stream);
 
 ```

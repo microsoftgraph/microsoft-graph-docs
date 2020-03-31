@@ -8,10 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var directoryObject = new DirectoryObject
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id","https://graph.microsoft.com/beta/users/{id}"}
-	}
+	Id = "{id}"
 };
 
 await graphClient.Groups["{id}"].Owners.References

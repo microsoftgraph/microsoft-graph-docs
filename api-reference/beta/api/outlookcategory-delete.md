@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete Outlook category
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the specified [outlookCategory](../resources/outlookcategory.md) object.

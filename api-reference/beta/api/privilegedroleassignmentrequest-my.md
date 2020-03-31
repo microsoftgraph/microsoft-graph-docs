@@ -9,6 +9,8 @@ author: ""
 
 # privilegedRoleAssignmentRequest: my
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the requester's privileged role assignment requests.

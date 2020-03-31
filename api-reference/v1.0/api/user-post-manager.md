@@ -1,16 +1,19 @@
 ---
-title: "Assign a manager"
-description: "Use this API to assign a user's manager."
+title: "Assign manager"
+description: "Assign a user's manager."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Assign a manager
+# Assign manager
 
-Use this API to assign a user's manager.
-> Note: You cannot assign direct reports - instead use this API.
+Namespace: microsoft.graph
+
+Assign a user's manager.
+> [!NOTE]
+> You cannot assign direct reports; instead, use this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,12 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /users/{id}/manager/$ref
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| Content-type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
 
@@ -40,7 +44,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,9 +78,9 @@ Content-length: xxx
 
 ---
 
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,

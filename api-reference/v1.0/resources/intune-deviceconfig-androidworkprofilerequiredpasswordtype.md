@@ -1,13 +1,15 @@
 ---
 title: "androidWorkProfileRequiredPasswordType enum type"
 description: "Android Work Profile required password type."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # androidWorkProfileRequiredPasswordType enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -24,6 +26,7 @@ Android Work Profile required password type.
 |atLeastAlphabetic|5|At least alphabetic password required.|
 |atLeastAlphanumeric|6|At least alphanumeric password required.|
 |alphanumericWithSymbols|7|At least alphanumeric with symbols password required.|
+
 
 
 

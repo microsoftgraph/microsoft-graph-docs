@@ -1,7 +1,7 @@
 ---
 title: "List windows10CertificateProfileBases"
 description: "List properties and relationships of the windows10CertificateProfileBase objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,8 +106,6 @@ Content-Length: 1668
   ]
 }
 ```
-
-
 
 
 

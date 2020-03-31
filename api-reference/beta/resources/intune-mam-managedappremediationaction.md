@@ -1,7 +1,7 @@
 ---
 title: "managedAppRemediationAction enum type"
 description: "An admin initiated action to be applied on a managed app."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

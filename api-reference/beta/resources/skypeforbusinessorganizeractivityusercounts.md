@@ -9,6 +9,8 @@ author: ""
 
 # skypeForBusinessOrganizerActivityUserCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property           | Type   |

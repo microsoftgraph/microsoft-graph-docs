@@ -9,6 +9,8 @@ author: ""
 
 # Get websocket endpoint
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Use of these APIs in production applications is not supported.
 

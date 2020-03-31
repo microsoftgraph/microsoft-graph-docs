@@ -9,6 +9,8 @@ author: ""
 
 # inferenceClassification resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Classification of a user's messages to enable focus on those that are more relevant or important to the user. 

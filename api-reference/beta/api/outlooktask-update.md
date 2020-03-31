@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update outlooktask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Change writable properties of an Outlook task.

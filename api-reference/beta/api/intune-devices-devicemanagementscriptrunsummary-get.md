@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementScriptRunSummary"
 description: "Read properties and relationships of the deviceManagementScriptRunSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -30,11 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 ```
 
 ### Response
@@ -61,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 356
+Content-Length: 259
 
 {
   "value": {
@@ -69,16 +70,11 @@ Content-Length: 356
     "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
     "successDeviceCount": 2,
     "errorDeviceCount": 0,
-    "compliantDeviceCount": 4,
-    "notCompliantDeviceCount": 7,
-    "pendingDeviceCount": 2,
     "successUserCount": 0,
     "errorUserCount": 14
   }
 }
 ```
-
-
 
 
 

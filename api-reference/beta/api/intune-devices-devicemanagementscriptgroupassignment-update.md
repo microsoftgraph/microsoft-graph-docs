@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScriptGroupAssignment"
 description: "Update the properties of a deviceManagementScriptGroupAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 ```
 
@@ -46,7 +47,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script group assignment entity.|
+|id|String|Key of the device management script group assignment entity. This property is read-only.|
 |targetGroupId|String|The Id of the Azure Active Directory group we are targeting the script to.|
 
 
@@ -59,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 Content-type: application/json
 Content-length: 124
 
@@ -82,8 +83,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
-
 
 
 

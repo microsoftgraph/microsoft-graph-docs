@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Unarchive team
 
+Namespace: microsoft.graph
+
 
 
 Restore an archived [team](../resources/team.md). This restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the [archive](team-archive.md) API.

@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Microsoft Teams user activity reports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use the Microsoft Teams user activity reports to get insights into the Microsoft Teams user activity in your organization.

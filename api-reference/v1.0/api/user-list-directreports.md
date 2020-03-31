@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directReports
 
+Namespace: microsoft.graph
+
 Get a user's direct reports.
 
 ## Permissions
@@ -19,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

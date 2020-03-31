@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # parseExpressionResponse resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the response from the [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.

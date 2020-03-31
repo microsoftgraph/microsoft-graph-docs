@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyConfiguration"
 description: "Create a new groupPolicyConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -49,6 +49,7 @@ The following table shows the properties that are required when you create the g
 |createdDateTime|DateTimeOffset|The date and time the object was created.|
 |displayName|String|User provided name for the resource object.|
 |description|String|User provided description for the resource object.|
+|roleScopeTagIds|String collection|The list of scope tags for the configuration.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -64,12 +65,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations
 Content-type: application/json
-Content-length: 145
+Content-length: 207
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -78,19 +82,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "displayName": "Display Name value",
   "description": "Description value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
@@ -22,11 +24,12 @@ An attachment can be one of the following types:
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource. 
 
-You can add an attachment to an existing message by posting to its attachments collection, or to a new 
+You can add an attachment to an existing [message](../resources/message.md) by posting to its attachments collection, or to a new 
 message that is being [drafted](../api/user-post-messages.md), or [created and sent on the fly](../api/user-sendmail.md).
 
-Since there is currently a limit of 4MB on the total size of each REST request, this limits the 
-size of the attachment you can add to under 4MB.
+>**Note**: This operation limits the size of the attachment you can add to under 3 MB.
+>
+> However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

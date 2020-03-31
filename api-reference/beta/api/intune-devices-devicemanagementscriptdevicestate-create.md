@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
@@ -47,16 +48,12 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.|
+|id|String|Key of the device management script device state entity. This property is read-only.|
+|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
 |errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
-|lastSyncDateTime|DateTimeOffset|The latest time that Intune Managment Extension syncs to Intune.|
-|preRemediationDetectionScriptOutput|String|Output of the detection script before remediation.|
-|remediationScriptError|String|Error output of the remediation script.|
-|postRemediationDetectionScriptOutput|String|Detection script output after remediation.|
 
 
 
@@ -68,9 +65,9 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
+POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 588
+Content-length: 281
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -78,11 +75,7 @@ Content-length: 588
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
 
@@ -91,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 330
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -100,15 +93,9 @@ Content-Length: 637
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
-
-
 
 
 

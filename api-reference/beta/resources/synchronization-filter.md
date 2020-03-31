@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # filter resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Determines which objects should be provisioned to the application. For example, you might want to only provision users that are located in the US. When a scoping filter is present, objects that do not satisfy the filter will be skipped during synchronization.
@@ -17,7 +19,7 @@ Filter is part of [object mapping](synchronization-objectmapping.md). It consist
 
 An object is considered in scope for the group set (group set is evaluated to `true`) if any of the groups in the set is evaluated to `true`.
 
-For more information, see [Attribute-based application provisioning with scoping filters](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-scoping-filters)
+For more information, see [Attribute-based application provisioning with scoping filters](/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## Properties
 | Property	   | Type	|Description|

@@ -9,6 +9,8 @@ author: ""
 
 # workbookFilter resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Manages the filtering of a table's column.

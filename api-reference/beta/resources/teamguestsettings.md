@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamGuestSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings to configure whether guests can create, update, or delete channels in the [team](team.md).

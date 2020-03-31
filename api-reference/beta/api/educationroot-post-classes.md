@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create educationClass
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new class. This will also create a universal group. When you use this API to create a class, it will add special properties to the group, which will

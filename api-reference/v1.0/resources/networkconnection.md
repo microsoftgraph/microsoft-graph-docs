@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # networkConnection resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about the network connection related to the alert.
 
 ## Properties

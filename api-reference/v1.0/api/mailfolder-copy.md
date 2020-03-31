@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # mailFolder: copy
 
+Namespace: microsoft.graph
+
 Copy a mailfolder and its contents to another mailfolder.
 
 ## Permissions

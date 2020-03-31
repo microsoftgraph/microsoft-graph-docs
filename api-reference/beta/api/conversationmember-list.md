@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List conversationMembers
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md) or [channel](../resources/channel.md).
@@ -22,6 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported|
 |Application| Chat.Read.All, Chat.ReadWrite.All |
+
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

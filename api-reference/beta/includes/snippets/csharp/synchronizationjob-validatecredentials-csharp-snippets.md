@@ -21,7 +21,7 @@ var credentials = new List<SynchronizationSecretKeyStringValuePair>()
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]
-	.ValidateCredentials(applicationIdentifier,templateId,useSavedCredentials,credentials)
+	.ValidateCredentials(null,null,null,credentials)
 	.Request()
 	.PostAsync();
 

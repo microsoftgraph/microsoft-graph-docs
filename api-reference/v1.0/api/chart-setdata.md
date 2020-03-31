@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Chart: setData
 
+Namespace: microsoft.graph
+
 Resets the source data for the chart.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

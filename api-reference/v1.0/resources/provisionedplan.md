@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # provisionedPlan resource type
 
+Namespace: microsoft.graph
+
 The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
 
 

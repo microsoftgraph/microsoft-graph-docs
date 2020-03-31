@@ -9,6 +9,8 @@ author: ""
 
 # networkInterface resource type
 
+Namespace: microsoft.graph
+
 Represents a Network Interface Card (NIC) associated with this host.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # calendar resource type
 
+Namespace: microsoft.graph
+
 A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars and group calendars:
@@ -44,7 +46,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |canViewPrivateItems |Boolean |True if the user can read calendar items that have been marked private, false otherwise. |
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|calendarColor|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|id|String|The group's unique identifier. Read-only.|
+|id|String|The calendar's unique identifier. Read-only.|
 |name|String|The calendar name.|
 |owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. |
 

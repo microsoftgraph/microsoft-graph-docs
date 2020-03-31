@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Get metadata for a list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return the metadata for a [list][].
@@ -165,7 +167,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 The following example shows how to get metadata for a list that contains three columns: Name, Quantity, and Category.
-[Managed Metadata](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.
+[Managed Metadata](/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```

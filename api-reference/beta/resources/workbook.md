@@ -1,6 +1,6 @@
 ---
 title: "workbook resource type"
-description: "Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc."
+description: "Contains related workbook objects such as worksheets, tables, ranges, and so on."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
@@ -9,19 +9,20 @@ doc_type: resourcePageType
 
 # workbook resource type
 
-Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+Namespace: microsoft.graph
 
-## Properties
-None
+Contains related workbook objects such as worksheets, tables, ranges, and so on.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
-|[Close Session](../api/workbook-closesession.md) | None |Close an existing session.|
-|[Refresh Session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
+|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Close session](../api/workbook-closesession.md) | None |Close an existing session.|
+|[Refresh session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
 
+## Properties
+None.
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -29,6 +30,7 @@ None
 |names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
 |tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Represents the Excel workbookApplication that manages the workbook.|
 
 ## Functions
 
@@ -129,8 +131,8 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
-## JSON Representation
-Here is a JSON representation of the resource.
+## JSON representation
+
 <!--{
   "blockType": "resource",
   "keyProperty": "id",

@@ -13,7 +13,7 @@ var groupId = "groupId-value";
 var renameAs = "renameAs-value";
 
 await graphClient.Me.Onenote.Sections["{id}"]
-	.CopyToSectionGroup(id,groupId,renameAs,siteCollectionId,siteId)
+	.CopyToSectionGroup(id,groupId,renameAs,null,null)
 	.Request()
 	.PostAsync();
 

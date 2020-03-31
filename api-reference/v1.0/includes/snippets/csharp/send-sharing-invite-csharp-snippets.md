@@ -26,7 +26,7 @@ var roles = new List<String>()
 };
 
 await graphClient.Me.Drive.Items["{item-id}"]
-	.Invite(requireSignIn,roles,sendInvitation,message,recipients)
+	.Invite(recipients,requireSignIn,roles,sendInvitation,message)
 	.Request()
 	.PostAsync();
 

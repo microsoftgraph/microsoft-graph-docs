@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # domain: forceDelete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a domain using an asynchronous operation.

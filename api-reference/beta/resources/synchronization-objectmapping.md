@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # objectMapping resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines how a given object should be synchronized from source directory to target directory. In particular, it defines how object in source directory should be matched with an object in target directory, what (if any) scoping filters should be used to decide if we want to provision a given object, and how object attributes should be transformed going from source to target directory.

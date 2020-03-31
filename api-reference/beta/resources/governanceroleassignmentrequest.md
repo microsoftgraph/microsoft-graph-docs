@@ -9,6 +9,8 @@ author: ""
 
 # governanceRoleAssignmentRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the request for role assignment operations in Privilegd Identity Management.

@@ -1,7 +1,7 @@
 ---
 title: "List androidLobApps"
 description: "List properties and relationships of the androidLobApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -117,8 +117,6 @@ Content-Length: 1818
   ]
 }
 ```
-
-
 
 
 

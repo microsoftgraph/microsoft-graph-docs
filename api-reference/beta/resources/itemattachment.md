@@ -9,6 +9,8 @@ author: "angelgolfer-ms"
 
 # itemAttachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),

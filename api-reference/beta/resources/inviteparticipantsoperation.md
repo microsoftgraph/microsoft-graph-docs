@@ -1,13 +1,15 @@
 --- 
 title: "inviteParticipantsOperation resource type"
 description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # inviteParticipantsOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,15 +20,10 @@ Represents the status of a long-running participant invitation operation, trigge
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| createdDateTime                | DateTimeOffset              | The time when the recording was created.                                                                                                          |
-| id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | The time of the last action of the operation.                                                                                                     |
+| id                             | String                      | The server operation id. Read-only.                                                                                              |
 | participants | [invitationParticipantInfo](invitationParticipantInfo.md) collection | The participants to invite. |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
-
-## Relationships
-None
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
+| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
 
 ## JSON representation
 
@@ -42,9 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "participants": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"

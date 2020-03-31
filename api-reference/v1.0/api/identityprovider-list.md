@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List identityProviders
 
+Namespace: microsoft.graph
+
 Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.
 
 ## Permissions

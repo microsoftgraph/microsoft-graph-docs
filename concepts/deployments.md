@@ -17,7 +17,7 @@ Each national cloud environment is unique and different than the Microsoft globa
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
->**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
+>**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -68,7 +68,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
 | Change notifications (webhooks)  | ➖|✔* |✔* |
-| Delta query | ➖ | ➖| ➖ |
+| Delta query | ➖ | ✔ | ➖ |
 | Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
   

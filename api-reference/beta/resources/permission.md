@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # permission resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.

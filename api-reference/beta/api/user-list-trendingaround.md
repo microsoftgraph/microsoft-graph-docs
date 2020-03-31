@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List trendingAround
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight that returns the list of items trending around a user.

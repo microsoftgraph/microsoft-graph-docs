@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Contact
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.

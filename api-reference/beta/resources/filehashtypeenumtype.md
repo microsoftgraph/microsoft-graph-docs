@@ -9,6 +9,8 @@ author: ""
 
 # fileHashType enum
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Enum for file hash types.

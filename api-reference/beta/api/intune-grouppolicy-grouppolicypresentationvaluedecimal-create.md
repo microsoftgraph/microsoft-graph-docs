@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationValueDecimal"
 description: "Create a new groupPolicyPresentationValueDecimal object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -86,8 +86,6 @@ Content-Length: 264
   "value": 5
 }
 ```
-
-
 
 
 

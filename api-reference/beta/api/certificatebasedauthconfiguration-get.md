@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get certificateBasedAuthConfiguration
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # contactFolder: delta
 
+Namespace: microsoft.graph
+
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately 

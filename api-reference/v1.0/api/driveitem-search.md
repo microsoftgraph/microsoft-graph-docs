@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Search for a DriveItems within a drive
 
+Namespace: microsoft.graph
+
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
@@ -82,7 +84,7 @@ GET /me/drive/root/search(q='{search-query}')
 This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
 If no items were found, an empty collection is returned.
 
-If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
+If there are too many matches the response will be paged and an **\@odata.nextLink** property will contain a URL to the next page of results.
 You can use the `$top` query parameter to specify the number of items in the page.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->

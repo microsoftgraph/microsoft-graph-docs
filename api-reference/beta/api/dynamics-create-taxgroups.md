@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create taxGroups
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a tax groups object in Dynamics 365 Business Central.
 
 ## Permissions

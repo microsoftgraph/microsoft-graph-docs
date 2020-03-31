@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # itemActionStat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **itemActionStat** resource provides aggregate details about an action over a period of time.

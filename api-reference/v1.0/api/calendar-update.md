@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update calendar
 
+Namespace: microsoft.graph
+
 Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
 or the default calendar of an Office 365 [group](../resources/group.md).
 ## Permissions

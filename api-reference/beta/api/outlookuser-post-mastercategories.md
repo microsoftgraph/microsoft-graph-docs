@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Outlook category
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.

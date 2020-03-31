@@ -9,6 +9,8 @@ author: ""
 
 # Get privilegedRoleSettings
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the role settings for the given role. A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.

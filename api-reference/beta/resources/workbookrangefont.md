@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookRangeFont resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This object represents the font attributes (font name, font size, color, etc.) for an object.

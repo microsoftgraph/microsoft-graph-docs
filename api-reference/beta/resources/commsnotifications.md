@@ -1,13 +1,15 @@
 ---
 title: "commsNotifications resource type"
 description: "List of notifications used by the Communications servers for sending multiple notifications in a single batch."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # commsNotifications resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

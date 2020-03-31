@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # alternativeSecurityId resource type
 
+Namespace: microsoft.graph
+
 For internal use only. This complex type will be deprecated in the future.
 
 ## JSON representation

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add directory role member
 
+Namespace: microsoft.graph
+
 Use this API to create a new directory role member.
 
 ## Permissions

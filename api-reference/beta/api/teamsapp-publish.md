@@ -9,17 +9,19 @@ doc_type: apiPageType
 
 # Publish apps to your organization's app catalog
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog. 
-Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); 
+Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
+Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
 the created resource will have `distributionMethod` = `organization`.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
->**Note:** Only global administrators can call this API. 
+>**Note:** Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
@@ -42,8 +44,8 @@ POST /appCatalogs/teamsApps
 
 ## Request body
 
-Teams Zip Manifest Payload. 
-For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+Teams Zip Manifest Payload.
+For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 You can't create an app for an organization that has the same manifest ID as another app in that organization.
 
 ## Response
@@ -62,7 +64,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-For information about how to create a Microsoft Teams application zip file, see [Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
 ### Response
 

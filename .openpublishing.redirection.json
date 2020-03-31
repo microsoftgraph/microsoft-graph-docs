@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "concepts/associate-account.md",
+            "redirect_url": "/graph/auth/",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "concepts\\v1-overview.md",
             "redirect_url": "api/overview?view=graph-rest-1.0",
             "redirect_document_id": true
@@ -1708,11 +1713,6 @@
         {
             "source_path": "api-reference\\beta\\api\\educationsubmission_unsubmit.md",
             "redirect_url": "/graph/api/educationsubmission-unsubmit?view=graph-rest-beta",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "api-reference\\beta\\api\\educationsubmission_update.md",
-            "redirect_url": "/graph/api/educationsubmission-update?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -12727,7 +12727,7 @@
         },
         {
             "source_path": "api-reference\\beta\\api\\user_get_settings.md",
-            "redirect_url": "/graph/api/user-get-settings?view=graph-rest-beta",
+            "redirect_url": "/graph/api/usersettings-get?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -12932,7 +12932,7 @@
         },
         {
             "source_path": "api-reference\\beta\\api\\user_update_settings.md",
-            "redirect_url": "/graph/api/user-update-settings?view=graph-rest-beta",
+            "redirect_url": "/graph/api/usersettings-update?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -17677,7 +17677,7 @@
         },
         {
             "source_path": "api-reference\\beta\\resources\\user_settings.md",
-            "redirect_url": "/graph/api/resources/user-settings?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/usersettings?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -24162,7 +24162,7 @@
         },
         {
             "source_path": "api-reference\\v1.0\\api\\user_get_settings.md",
-            "redirect_url": "/graph/api/user-get-settings?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/usersettings-get?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {
@@ -24327,7 +24327,7 @@
         },
         {
             "source_path": "api-reference\\v1.0\\api\\user_update_settings.md",
-            "redirect_url": "/graph/api/user-update-settings?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/usersettings-update?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {
@@ -26562,7 +26562,7 @@
         },
         {
             "source_path": "api-reference\\v1.0\\resources\\user_settings.md",
-            "redirect_url": "/graph/api/resources/user-settings?view=graph-rest-1.0",
+            "redirect_url": "/graph/api/resources/usersettings?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {

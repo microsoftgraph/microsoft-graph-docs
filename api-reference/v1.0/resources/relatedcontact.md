@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # realtedContact resource type
 
+Namespace: microsoft.graph
+
 Contact record related to an [educationUser](../resources/educationuser.md) that provides information for guardians, aides, doctors, and so on.
 
 ## Properties

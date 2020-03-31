@@ -1,15 +1,17 @@
 ---
 title: "onPremisesProvisioningError resource type"
-description: "Represents directory synchronization errors for the user and group entities when synchronizing on-premises directories to Azure Active Directory."
+description: "Represents directory synchronization errors for the user group and contact resources when synchronizing on-premises directories to Azure Active Directory."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # onPremisesProvisioningError resource type
 
-Represents directory synchronization errors for the [user](user.md) and [group](group.md) entities when synchronizing on-premises directories to Azure Active Directory.
+Namespace: microsoft.graph
+
+Represents directory synchronization errors for the [user](user.md), [group](group.md) and [orgContact](orgcontact.md) resources when synchronizing on-premises directories to Azure Active Directory.
 
 ## Properties
 

@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an [attachment](../resources/attachment.md) when creating a group post. 
 
-Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.
+This operation limits the size of the attachment you can add to under 4 MB.
 
 An attachment can be one of the following types:
 

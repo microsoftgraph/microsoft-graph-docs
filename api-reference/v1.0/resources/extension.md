@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # extension resource type
 
+Namespace: microsoft.graph
+
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).
 
 ## JSON representation

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a group setting
 
+Namespace: microsoft.graph
+
 Retrieve the properties of a specific of group setting object.
 
 ## Permissions

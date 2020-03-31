@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-const Stream = Binary data for the image;
+const stream = Binary data for the image;
 
 let res = await client.api('/me/photo/$value')
-	.put(Stream);
+	.put(stream);
 
 ```

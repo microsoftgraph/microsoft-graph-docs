@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List names
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of named item associated with the worksheet. 

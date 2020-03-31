@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # BooleanColumn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.

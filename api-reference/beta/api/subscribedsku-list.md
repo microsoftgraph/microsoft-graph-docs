@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List subscribedSkus
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of commercial subscriptions that an organization has acquired.
@@ -29,7 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /subscribedSkus
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+This method does not support the [OData query parameters](/graph//query-parameters) to help customize the response (`$filter` is not supported).
+
 ## Request headers
 
 | Name       | Description|

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var Stream = await graphClient.Users["{id|userPrincipalName}"].Photo.Content
+var stream = await graphClient.Users["{id|userPrincipalName}"].Photo.Content
 	.Request()
 	.GetAsync();
 

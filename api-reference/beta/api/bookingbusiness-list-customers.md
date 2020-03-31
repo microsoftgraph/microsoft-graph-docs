@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List customers
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [bookingCustomer](../resources/bookingcustomer.md) objects.

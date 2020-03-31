@@ -1,7 +1,7 @@
 ---
 title: "ratingGermanyMoviesType enum type"
 description: "Movies rating labels in Germany"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

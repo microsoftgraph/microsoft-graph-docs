@@ -9,6 +9,8 @@ author: ""
 
 # Delete photo
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a photo.

@@ -9,6 +9,8 @@ author: ""
 
 # servicePrincipal: getMemberObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of groups and directory roles that this service principal is a member of.  This check is transitive.

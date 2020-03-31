@@ -1,46 +1,49 @@
 ---
 title: "networkLocationDetail resource type"
-description: "Indicates details associated with the network location. ."
+description: "Provides the name and type of network from which the user signed in."
 localization_priority: Normal
-doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: "resourcePageType"
 ---
 
 # networkLocationDetail resource type
-Indicates details associated with the network location.
 
+Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Provides the name and type of network from which the user signed in.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|networkType|networkType|Provides the type of the network. The possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
-|networkNames|String collection|Names of the network.|
 
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|networkNames|String collection|Provides the name of the network used when signing in.|
+|networkType|networkType| Provides the type of network used when signing in. Possible values are: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.networkLocationDetail"
+  "@odata.type": "microsoft.graph.networkLocationDetail",
+  "baseType": null
 }-->
 
 ```json
 {
-  "networkType": "string",
-  "networkNames": ["String"]
+  "networkNames": ["String"],
+  "networkType": "String"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "networkLocationDetail resource",

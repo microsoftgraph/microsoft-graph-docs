@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create team
 
+Namespace: microsoft.graph
+
 
 
 Create a new [team](../resources/team.md) under a [group](../resources/group.md).

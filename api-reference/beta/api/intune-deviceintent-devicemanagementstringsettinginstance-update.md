@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementStringSettingInstance"
 description: "Update the properties of a deviceManagementStringSettingInstance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,8 +91,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
-
 
 
 

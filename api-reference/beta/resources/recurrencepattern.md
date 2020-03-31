@@ -9,6 +9,8 @@ author: ""
 
 # recurrencePattern resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the frequency by which a recurring [event](event.md) repeats.

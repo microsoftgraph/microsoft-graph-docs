@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppContentFile"
 description: "Update the properties of a mobileAppContentFile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -111,8 +111,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
-
 
 
 

@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Thumbnail resource type
 
+Namespace: microsoft.graph
+
 The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.
 
 ## JSON representation

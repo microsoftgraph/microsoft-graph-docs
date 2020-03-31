@@ -12,7 +12,7 @@ var workbookCommentReply = new WorkbookCommentReply
 	ContentType = "plain"
 };
 
-await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies
+await graphClient.Drive.Items["{id}"].Workbook.Comments["{id}"].Replies
 	.Request()
 	.AddAsync(workbookCommentReply);
 

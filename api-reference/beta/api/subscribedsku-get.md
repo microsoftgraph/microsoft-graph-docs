@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get subscribedSku
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a specific commercial subscription that an organization has acquired.

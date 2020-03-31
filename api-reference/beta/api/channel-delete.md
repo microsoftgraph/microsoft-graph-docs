@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the [channel](../resources/channel.md).

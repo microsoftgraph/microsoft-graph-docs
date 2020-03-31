@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Update inferenceClassificationOverride
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified. 

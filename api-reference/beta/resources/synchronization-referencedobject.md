@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # referencedObject resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes a reference to another object defined in the same [directory definition](synchronization-directorydefinition.md).

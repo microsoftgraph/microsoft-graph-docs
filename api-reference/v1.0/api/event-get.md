@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get event
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
 Currently, this operation returns event bodies in only HTML format.

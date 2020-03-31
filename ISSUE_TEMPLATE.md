@@ -1,12 +1,12 @@
-<!---
-Thank you for helping us to improve the Microsoft Graph documentation.
+# Important!
+Thank you for helping us to improve the Microsoft Graph documentation. This issue will be closed if you create it here, because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.
 
-So that we can better assist you, please note the following:
-- If you have a question, need help, or are experiencing an issue with your code, we encourage you to post your question or issue on **Stack Overflow**. Tag your question with [microsoftgraph](https://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](https://stackoverflow.com/questions/tagged/microsoftgraph).
-- If you have a feature suggestion, please post your idea on our [**User Voice**](https://officespdev.uservoice.com/) page, and vote for your suggestions there.
-- If you have an issue with the documentation, please provide the information here, or feel free to submit a pull request with your suggested changes. We will review your contributions and update our documentation accordingly.
--->
+To provide feedback on [Microsoft Graph documentation](https://docs.microsoft.com/en-us/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.
 
-Issue:
+If you have service issues and want to raise a support request, and if one of the following applies:
+- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.
+- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.
 
-Article:
+If you would like to ask a question about Microsoft Graph, please visit [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) and ask your questions there using the `[microsoft-graph]` tag. 
+
+If you have suggestions or feedback on Microsoft Graph, please submit this at [Microsoft Graph Uservoice](https://microsoftgraph.uservoice.com/).

@@ -24,13 +24,14 @@ The toolkit implements the following providers:
 - [MsalProvider](./providers/msal.md)
 - [SharePointProvider](./providers/sharepoint.md)
 - [TeamsProvider](./providers/teams.md)
-- Office Add-ins provider (coming soon)
-
-## Get started
+- [ProxyProvider](./providers/proxy.md)
+- [SimpleProvider](./providers/custom.md)
 
 You can create a provider at any time. We recommend that you create the provider before you use any of the components. This section describes how to initialize a provider.
 
-The `Providers` global variable exposes the following properties and functions
+## Providers namespace
+
+The `Providers` namespace exposes the following properties and functions:
 
 - `globalProvider : IProvider`
 
@@ -44,14 +45,40 @@ The `callbackFunction` function will be called when a provider is changed or whe
 
 The toolkit provides two ways to create new providers:
 
-- Create a new `SimpleProvider` by passing in a function for getting an access token
-- Extend the `IProvider` abstract class
+- Create a new `SimpleProvider` by passing in a function for getting an access token.
+- Extend the `IProvider` abstract class.
 
-Read more about each one in the [custom providers](./providers/custom.md) documentation.
+For more details about each one, see [custom providers](./providers/custom.md).
+
+## Using multiple providers
+
+In some scenarios, your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+
+```html
+<mgt-teams-provider
+  client-id="[CLIENT-ID]"
+  auth-popup-url="auth.html" ></mgt-teams-provider>
+
+<mgt-msal-provider
+  client-id="[CLIENT-ID]"
+  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+```
+
+In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
+
+To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
+
+```ts
+if (TeamsProvider.isAvailable) {
+    Providers.globalProvider = new TeamsProvider(teamsConfig);
+} else {
+    Providers.globalProvider = new MsalProvider(msalConfig)
+}
+```
 
 ## Making your own calls to Microsoft Graph
 
-All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown.
+All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown:
 
 ```js
 import { Providers } from '@microsoft/mgt';

@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Service root
 
+Namespace: microsoft.graph
+
 
 ## Methods
 

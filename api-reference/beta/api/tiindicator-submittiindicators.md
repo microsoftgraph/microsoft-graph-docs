@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # tiIndicator: submitTiIndicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
@@ -44,6 +46,8 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |value|tiIndicator collection| JSON collection of **tiIndicators** to be created. |
+
+For each tiIndicator, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable, and the following required fields: `action`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`.
 
 ## Response
 

@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementSettingCategory"
 description: "Read properties and relationships of the deviceManagementSettingCategory object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /deviceManagement/categories/{deviceManagementSettingCategoryId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,18 +61,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 187
+Content-Length: 220
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
     "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-    "displayName": "Display Name value"
+    "displayName": "Display Name value",
+    "hasRequiredSetting": true
   }
 }
 ```
-
-
 
 
 

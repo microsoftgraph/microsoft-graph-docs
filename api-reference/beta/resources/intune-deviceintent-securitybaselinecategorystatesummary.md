@@ -1,7 +1,7 @@
 ---
 title: "securityBaselineCategoryStateSummary resource type"
 description: "The security baseline per category compliance state summary for the security baseline of the account."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

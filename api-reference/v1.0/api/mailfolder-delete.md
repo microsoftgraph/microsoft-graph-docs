@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Delete mailFolder
 
+Namespace: microsoft.graph
+
 Delete the specified [mailFolder](../resources/mailfolder.md). The folder can be a [mailSearchFolder](../resources/mailsearchfolder.md).
 
-You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists. 
+You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists.
 
->**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`). See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.
+>**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`). See [Deleted item retention](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -73,7 +75,7 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

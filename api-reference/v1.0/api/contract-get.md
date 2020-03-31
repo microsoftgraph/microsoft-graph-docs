@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get Contract
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of [contract](../resources/contract.md) object.
 
 ## Permissions

@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationCheckBox"
 description: "Create a new groupPolicyPresentationCheckBox object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -87,8 +87,6 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
-
-
 
 
 

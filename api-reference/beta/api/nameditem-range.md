@@ -9,6 +9,8 @@ author: ""
 
 # NamedItem: Range
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.

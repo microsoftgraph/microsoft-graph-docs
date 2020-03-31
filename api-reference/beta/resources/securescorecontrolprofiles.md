@@ -9,6 +9,8 @@ author: ""
 
 # secureScoreControlProfile resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls.

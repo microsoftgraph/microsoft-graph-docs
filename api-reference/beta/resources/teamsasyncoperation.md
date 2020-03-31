@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsAsyncOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. 

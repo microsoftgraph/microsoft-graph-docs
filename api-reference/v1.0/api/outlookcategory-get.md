@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get Outlook category
 
+Namespace: microsoft.graph
+
 
 Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # itemAttachment resource type
 
+Namespace: microsoft.graph
+
 A contact, event, or message that's attached to a user [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md).  
 

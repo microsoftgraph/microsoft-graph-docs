@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingTimeSuggestionsResult resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A collection of meeting suggestions if there is any, and the reason if there isn't.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # operationError resource type
 
+Namespace: microsoft.graph
+
 
 
 Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).

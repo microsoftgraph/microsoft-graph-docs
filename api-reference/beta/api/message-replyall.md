@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: replyAll
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reply to all recipients of a message by specifying a comment and modifying any updateable properties 

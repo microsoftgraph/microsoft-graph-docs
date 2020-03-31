@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Create a page in the site pages list of a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
@@ -39,10 +41,12 @@ In the request body, supply a JSON representation of the [sitePage][] resource t
 
 The following example shows how to create a new page.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST /sites/{site-id}/page
+POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
@@ -93,6 +97,12 @@ Content-Type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # userSecurityState resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about the user account.
 
 ## Properties

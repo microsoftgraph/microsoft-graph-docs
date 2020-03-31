@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsMetric resource type"
 description: "The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -28,7 +28,6 @@ The user experience analytics metric contains the score and units of a metric of
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric.|
-|displayName|String|The name of the user experience analytics metric.|
 |value|Double|The value of the user experience analytics metric.|
 |unit|String|The unit of the user experience analytics metric.|
 
@@ -47,7 +46,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "displayName": "String",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "String"
 }

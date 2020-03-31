@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List groupLifecyclePolicies
 
+Namespace: microsoft.graph
+
 List all the [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).
 
 ## Permissions

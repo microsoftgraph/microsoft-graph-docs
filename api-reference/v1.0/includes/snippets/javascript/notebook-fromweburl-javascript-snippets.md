@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-const CopyNotebookModel = {webUrl:"webUrl value"};
+const copyNotebookModel = {webUrl:"webUrl value"};
 
 let res = await client.api('/me/onenote/notebooks/GetNotebookFromWebUrl')
-	.post(CopyNotebookModel);
+	.post(copyNotebookModel);
 
 ```

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List workbookComments
 
+Namespace: microsoft.graph
+
 Retrieve a list of  [workbookComment](../resources/workbookcomment.md) objects.
 
 ## Permissions

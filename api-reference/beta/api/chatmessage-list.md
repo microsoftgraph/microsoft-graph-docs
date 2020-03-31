@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List chat messages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md). 

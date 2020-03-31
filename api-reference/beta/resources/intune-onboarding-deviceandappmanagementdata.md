@@ -1,7 +1,7 @@
 ---
 title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

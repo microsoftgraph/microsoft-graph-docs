@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # List followed items
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the [items](../resources/driveitem.md) that have been followed by the signed in user.

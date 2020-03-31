@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create conversation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [conversation](../resources/conversation.md) by including a thread and a post. 

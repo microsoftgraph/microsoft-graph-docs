@@ -9,6 +9,8 @@ author: ""
 
 # clonableTeamParts enum type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes which part of a [team](../resources/team.md) should be cloned. 

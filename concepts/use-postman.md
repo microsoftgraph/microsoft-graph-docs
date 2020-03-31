@@ -1,7 +1,7 @@
 ---
 title: "Use Postman with the Microsoft Graph API"
 description: "Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs in minutes."
-author: ""
+author: "jthake-msft"
 localization_priority: Priority
 ---
 
@@ -11,7 +11,7 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 
 ![Image of Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 ## Accessing the collection
 You can access the collection in Postman in two ways: by consuming it or by contributing to it. You will need to have [Postman](https://www.getpostman.com/) running on your computer first.
@@ -28,7 +28,7 @@ After you have the collection, you'll need to set up the environment variables:
 3. Copy and paste the following URL and choose **Import**.
  
     ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
     ```
 
 You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
@@ -48,18 +48,18 @@ To import the Postman collections:
 4. Paste the following two URLs and choose **Import** after each.
 
     ```
-      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json
       
     ```
     ```
-      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
 
     ```
 
-You should now see the **Microsoft Graph v1.0** collection on the **Collections** pane.
+You should now see the **Microsoft Graph** collection on the **Collections** pane.
 
 ## Using the collection
-After you have the **Microsoft Graph v1.0** collection and the **Microsoftr Graph environment** in Postman, follow these steps.
+After you have the **Microsoft Graph** collection and the **Microsoftr Graph environment** in Postman, follow these steps.
 
 ### Set up application API calls
 
@@ -69,10 +69,10 @@ After you have the **Microsoft Graph v1.0** collection and the **Microsoftr Grap
 4. Enter your Microsoft Identity Application in the **current** (not **initial**) variables: **ClientID**, **ClientSecret** and **TenantID**. 
  For more information about how to create an application and to admin consent the app-only flow, see the [Use Postman to make Microsoft Graph calls](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/) blog post.
 
-5. Select **Update**. Close the **Manage Environments** dialog box. In the **MicrosoftGraph v1.0 | Application** collection on left side, choose **Get App-only Access Token**. Then choose **Send** on the right.
+5. Select **Update**. Close the **Manage Environments** dialog box. In the **MicrosoftGraph | Application** collection on left side, choose **Get App-only Access Token**. Then choose **Send** on the right.
 6. Expand the **Application | Users** folder and choose **Get Users**. Then choose **Send**.
 
-You are now up and running with the Microsoft Graph v1.0 collections.
+You are now up and running with the Microsoft Graph collections.
 
 >**Note:** If you want to run other APIs in the collection, you will need to consent the required permissions for your application.
 

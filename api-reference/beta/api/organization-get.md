@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get organization
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of the currently authenticated organization.
@@ -51,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of one [organization](../resources/organization.md) object in the response body.
 
 ## Example
 

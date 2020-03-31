@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List orgContacts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of organizational contacts for this organization.

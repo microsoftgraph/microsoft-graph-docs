@@ -9,6 +9,8 @@ author: "finsharp"
 
 # command resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

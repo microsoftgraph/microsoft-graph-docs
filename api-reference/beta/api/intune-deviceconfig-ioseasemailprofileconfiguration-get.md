@@ -1,7 +1,7 @@
 ---
 title: "Get iosEasEmailProfileConfiguration"
 description: "Read properties and relationships of the iosEasEmailProfileConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -36,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2360
+Content-Length: 2438
 
 {
   "value": {
@@ -110,6 +110,8 @@ Content-Length: 2360
     "blockSyncingRecentlyUsedEmailAddresses": true,
     "durationOfEmailToSync": "oneDay",
     "emailAddressSource": "primarySmtpAddress",
+    "easServices": "calendars",
+    "easServicesUserOverrideEnabled": true,
     "hostName": "Host Name value",
     "requireSmime": true,
     "smimeEnablePerMessageSwitch": true,
@@ -126,8 +128,6 @@ Content-Length: 2360
   }
 }
 ```
-
-
 
 
 

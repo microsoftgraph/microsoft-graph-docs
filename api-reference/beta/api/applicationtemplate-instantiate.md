@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # applicationTemplate: instantiate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an instance of an application from the Azure AD application gallery into your directory.

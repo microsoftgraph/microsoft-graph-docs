@@ -1,7 +1,7 @@
 ---
 title: "List windowsStoreApps"
 description: "List properties and relationships of the windowsStoreApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,8 +93,6 @@ Content-Length: 1077
   ]
 }
 ```
-
-
 
 
 

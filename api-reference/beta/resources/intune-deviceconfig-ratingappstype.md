@@ -1,7 +1,7 @@
 ---
 title: "ratingAppsType enum type"
 description: "Apps rating as in media content"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -1,7 +1,7 @@
 ---
 title: "vpnProviderType enum type"
 description: "Provider type for per-app VPN."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

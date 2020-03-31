@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableRow: delete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the row from the table.

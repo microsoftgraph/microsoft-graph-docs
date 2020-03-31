@@ -1,7 +1,7 @@
 ---
 title: "List depOnboardingSettings"
 description: "List properties and relationships of the depOnboardingSetting objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -83,8 +83,6 @@ Content-Length: 786
   ]
 }
 ```
-
-
 
 
 

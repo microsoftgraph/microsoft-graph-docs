@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # List owners
+
+Namespace: microsoft.graph
+
 Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
 
 ## Permissions
@@ -18,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

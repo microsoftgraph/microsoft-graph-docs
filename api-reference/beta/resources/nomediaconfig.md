@@ -1,13 +1,15 @@
 ---
 title: "noMediaConfig resource type"
 description: "Media configuration for indicating no media."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
 # noMediaConfig resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

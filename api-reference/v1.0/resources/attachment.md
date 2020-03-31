@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # attachment resource type
 
+Namespace: microsoft.graph
+
 You can add related content to a user [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md) in the form of an attachment.
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update mailFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [mailFolder](../resources/mailfolder.md) object.

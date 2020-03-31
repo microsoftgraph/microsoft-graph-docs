@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a scopedRoleMember
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) resource.

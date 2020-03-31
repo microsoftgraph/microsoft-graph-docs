@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get post
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of a post in a specified thread. You can specify both the parent 

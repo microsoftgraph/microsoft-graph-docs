@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: getMailTips
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).

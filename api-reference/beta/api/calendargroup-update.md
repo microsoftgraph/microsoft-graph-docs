@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update calendargroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of calendargroup object.

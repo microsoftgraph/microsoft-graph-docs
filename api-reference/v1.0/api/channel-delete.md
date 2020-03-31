@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete channel
 
+Namespace: microsoft.graph
+
 Delete the [channel](../resources/channel.md).
 
 > **Note**: The data in deleted channels will continue to be stored for several weeks to allow team owner to recovery deleted channel. During that time, a new channel with the same displayName may not be created.

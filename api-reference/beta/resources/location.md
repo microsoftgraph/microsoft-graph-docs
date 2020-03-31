@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # Location resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents location information of an [event](event.md).

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create bookingCustomer
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [bookingCustomer](../resources/bookingcustomer.md) object.

@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # Create event
+
+Namespace: microsoft.graph
+
 Use this API to create a new [event](../resources/event.md).
 
 ## Permissions

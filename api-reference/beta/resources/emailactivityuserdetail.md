@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # emailActivityUserDetail resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property          | Type              |

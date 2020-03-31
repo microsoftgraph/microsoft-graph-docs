@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a member
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to get a specific member (user or group) in an administrative unit.

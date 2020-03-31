@@ -1,7 +1,7 @@
 ---
 title: "Create windowsInformationProtectionAppLearningSummary"
 description: "Create a new windowsInformationProtectionAppLearningSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
 
 
 

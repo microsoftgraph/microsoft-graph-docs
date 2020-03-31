@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete calendarGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a calendar group other than the default calendar group.

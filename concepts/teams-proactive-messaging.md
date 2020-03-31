@@ -69,7 +69,7 @@ When the app is installed for the user, the bot will get receive a `conversation
 If you lose the `chatThreadId`, you can find it again by calling:
 
 ```http
-GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}'
+GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}')
 ```
 
 The **id** property of the result is the chatThread ID.

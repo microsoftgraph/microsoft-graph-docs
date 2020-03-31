@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # geolocationColumn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a geolocation.

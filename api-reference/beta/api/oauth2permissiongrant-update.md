@@ -9,6 +9,8 @@ author: ""
 
 # Update oAuth2PermissionGrant
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of oAuth2PermissionGrant object.

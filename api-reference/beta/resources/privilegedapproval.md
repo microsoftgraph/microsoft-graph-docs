@@ -9,6 +9,8 @@ author: ""
 
 # privilegedApproval resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an approval that is requested in Privileged Identity Management for getting into a role.

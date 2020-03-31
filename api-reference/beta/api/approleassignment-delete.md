@@ -3,11 +3,13 @@ title: "Delete appRoleAssignment"
 description: "Delete appRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # Delete appRoleAssignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}/appRoleAssignments/{id}
-DELETE /servicePrincipals/{id}/appRoleAssignedTo
 DELETE /groups/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
 ```
 ## Request headers
@@ -51,7 +54,7 @@ Here is an example of the request.
   "name": "delete_approleassignment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/appRoleAssignments/{id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-approleassignment-csharp-snippets.md)]

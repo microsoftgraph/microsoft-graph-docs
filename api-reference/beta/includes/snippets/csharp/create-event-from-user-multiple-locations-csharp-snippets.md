@@ -77,7 +77,8 @@ var @event = new Event
 		{
 			DisplayName = "Home Office"
 		}
-	}
+	},
+	AllowNewTimeProposals = true
 };
 
 await graphClient.Me.Events

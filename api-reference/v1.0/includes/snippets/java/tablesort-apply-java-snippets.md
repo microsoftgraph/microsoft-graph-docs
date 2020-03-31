@@ -20,7 +20,7 @@ fields.icon = icon;
 
 fieldsList.add(fields);
 
-boolean matchCase = True;
+boolean matchCase = true;
 
 String method = "method-value";
 

@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Root resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Root** facet indicates that an object is the top-most one in its hierarchy.

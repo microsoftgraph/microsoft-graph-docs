@@ -1,20 +1,21 @@
 ---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Get participant
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a **participant** object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
@@ -26,7 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants/{id}
+GET /communications/calls/{id}/participants/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -53,7 +56,7 @@ The following example shows the request.
   "name": "get-participant"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
+GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
@@ -82,47 +85,41 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 977
 
 {
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "isInLobby": true,
-  "isMuted": true,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "initiatedBy": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
+   "@odata.type":"#microsoft.graph.participant",
+   "info":{
+      "@odata.type":"#microsoft.graph.participantInfo",
+      "identity":{
+         "@odata.type":"#microsoft.graph.identitySet",
+         "application":{
+            "@odata.type":"#microsoft.graph.identity",
+            "displayName":"Display Name",
+            "id":"278405a3-f568-4b3e-b684-009193463064",
+            "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+            },
+         "user":null,
+         "device":null,
+         "phone":null
       },
-      "languageId": "languageId-value",
-      "region": "region-value"
-    },
-    "status": "recordingCapable"
-  }
+      "id":null
+   },
+   "mediaStreams":[
+      {
+         "@odata.type":"#microsoft.graph.mediaStream",
+         "mediaType":"audio",
+         "sourceId":"1",
+         "direction":"sendReceive",
+         "serverMuted":false,
+         "label":null
+      }
+   ],
+   "isMuted":false,
+   "isInLobby":false,
+   "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants/$entity",
+   "metadata":null,
+   "recordingInfo":null
 }
 ```
 

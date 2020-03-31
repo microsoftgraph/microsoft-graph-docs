@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Video resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Video** resource groups video-related data items into a single structure.

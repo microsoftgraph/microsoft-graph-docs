@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationAssignmentResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties of a specific resource on an assignment.  

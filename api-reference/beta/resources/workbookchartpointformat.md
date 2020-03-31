@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartPointFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents formatting object for chart points.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Upload large files with an upload session
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session to allow your app to upload files up to the maximum file size.
@@ -57,8 +59,9 @@ For example, the `item` property allows setting the following parameters:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
@@ -85,15 +88,8 @@ The following example controls the behavior if the filename is already taken, an
 
 | Parameter            | Type                          | Description
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | driveItemUploadableProperties | Data about the file being uploaded
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
 | deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
-
-## Item properties
-
-| Property             | Type               | Description
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
-| name                 | String             | The name of the item (filename and extension). Read-write.
 
 ### Request
 
@@ -119,6 +115,8 @@ Content-Type: application/json
 The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.
 
 This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
+
+If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response will be returned and the upload session will not be created.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -186,7 +184,7 @@ You may see multiple ranges specified, indicating parts of the file that the ser
 This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
 You should always determine the size of your byte ranges according to the best practices below. 
-Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.
+Do not assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
 The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
@@ -215,7 +213,11 @@ Content-Type: application/json
 ## Completing a file
 
 If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
-If `deferCommit` is true, then after the final byte range of the file is PUT to the upload URL, the upload should be explicitly completed by a final POST request to the upload url with zero-length content.
+
+If `deferCommit` is true, you can explicitly complete the upload in two ways:
+- After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
+- After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
+
 
 When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
@@ -360,7 +362,7 @@ To indicate that your app is committing an existing upload session, the PUT requ
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_parent}
+PUT /me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 

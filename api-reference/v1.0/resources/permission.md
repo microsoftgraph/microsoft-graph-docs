@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Permission resource type
 
+Namespace: microsoft.graph
+
 The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
 
 Sharing permissions have a number of different forms.

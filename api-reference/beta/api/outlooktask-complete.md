@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # outlookTask: complete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.

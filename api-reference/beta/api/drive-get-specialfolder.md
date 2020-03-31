@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get a special folder by name
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use the special collection to access a special folder by name.

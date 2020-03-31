@@ -2,12 +2,14 @@
 title: "List subscriptions"
 description: "Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant."
 localization_priority: Priority
-author: "piotrci"
+author: "baywet"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # List subscriptions
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
 
@@ -128,7 +130,8 @@ Content-length: 586
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
-      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+      "latestSupportedTlsVersion": "v1_2"
     }
   ]
 }
@@ -145,5 +148,7 @@ Content-length: 586
   "suppressions": [
   ]
 }-->
+
+> **Note:** the `clientState` property value is not returned for security purposes.  
 
 When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).

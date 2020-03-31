@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List pages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [page](../resources/onenotepage.md) objects.

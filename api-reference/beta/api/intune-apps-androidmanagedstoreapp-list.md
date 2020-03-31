@@ -1,7 +1,7 @@
 ---
 title: "List androidManagedStoreApps"
 description: "List properties and relationships of the androidManagedStoreApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1267
+Content-Length: 1321
 
 {
   "value": [
@@ -93,13 +93,13 @@ Content-Length: 1267
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "appStoreUrl": "https://example.com/appStoreUrl/",
+      "isPrivate": true,
+      "isSystemApp": true,
       "supportsOemConfig": true
     }
   ]
 }
 ```
-
-
 
 
 

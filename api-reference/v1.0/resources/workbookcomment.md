@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # workbookComment resource type
 
+Namespace: microsoft.graph
+
 Represents a comment in workbook.
 
 ## Methods

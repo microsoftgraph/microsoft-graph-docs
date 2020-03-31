@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rules
 
+Namespace: microsoft.graph
+
 Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.
 
 ## Permissions

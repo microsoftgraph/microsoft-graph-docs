@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create rule
 
+Namespace: microsoft.graph
+
 
 Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 
 

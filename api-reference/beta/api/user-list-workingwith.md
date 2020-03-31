@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List workingWith
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight for the list of users that a user has been working with.

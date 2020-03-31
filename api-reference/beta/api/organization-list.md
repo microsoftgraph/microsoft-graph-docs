@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List organization
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of organization objects.

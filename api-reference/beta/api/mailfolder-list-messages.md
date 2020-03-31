@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List messages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the messages in the specified user's mailbox, or those messages in a specified folder in the mailbox.

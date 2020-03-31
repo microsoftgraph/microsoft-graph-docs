@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # bookingBusiness: publish
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Make the scheduling page of this business available to external customers.

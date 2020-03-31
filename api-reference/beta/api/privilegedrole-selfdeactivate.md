@@ -9,6 +9,8 @@ author: ""
 
 # privilegedRole: selfDeactivate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deactivate the role that is assigned to the requestor.

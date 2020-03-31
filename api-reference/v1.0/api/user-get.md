@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a user
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of user object.
 
 > Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.

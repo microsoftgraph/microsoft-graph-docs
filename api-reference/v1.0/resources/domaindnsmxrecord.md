@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # domainDnsMxRecord resource type
 
+Namespace: microsoft.graph
+
 Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 
 ## Methods

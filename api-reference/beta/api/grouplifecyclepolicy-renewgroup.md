@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # groupLifecyclePolicy: renewGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.

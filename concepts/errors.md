@@ -25,7 +25,7 @@ The following table lists and describes the HTTP status codes that can be return
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Bad Request                     | Cannot process the request because it is malformed or incorrect.                                                                       |
 | 401         | Unauthorized                    | Required authentication information is either missing or not valid for the resource.                                                   |
-| 403         | Forbidden                       | Access is denied to the requested resource. The user might not have enough permission. <br /><br /> **Important:** If conditional access policies are applied to a resource, a HTTP 403; Forbidden error=insufficent_claims may be returned. For more details on Microsoft Graph and conditional access see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Forbidden                       | Access is denied to the requested resource. The user might not have enough permission. <br /><br /> **Important:** If conditional access policies are applied to a resource, a HTTP 403; Forbidden error=insufficent_claims may be returned. For more details on Microsoft Graph and conditional access see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Not Found                       | The requested resource doesn’t exist.                                                                                                  |
 | 405         | Method Not Allowed              | The HTTP method in the request is not allowed on the resource.                                                                         |
 | 406         | Not Acceptable                  | This service doesn’t support the format requested in the Accept header.                                                                |
@@ -214,10 +214,6 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **virusSuspicious**                | This document is suspicious and may have a virus.
 | **zeroOrFewerResultsRequested**    | Zero or fewer results requested.
 
-<!-- ##Additional Resources##
-
-- [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
 
 <!-- {
   "type": "#page.annotation",

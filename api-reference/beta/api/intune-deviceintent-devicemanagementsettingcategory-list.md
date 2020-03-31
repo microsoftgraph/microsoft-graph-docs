@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementSettingCategories"
 description: "List properties and relationships of the deviceManagementSettingCategory objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,20 +58,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 207
+Content-Length: 242
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
       "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "hasRequiredSetting": true
     }
   ]
 }
 ```
-
-
 
 
 

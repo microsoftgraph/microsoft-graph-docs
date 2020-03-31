@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: Range
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the range object associated with the entire table.

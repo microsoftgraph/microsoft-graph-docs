@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Patch channel
 
+Namespace: microsoft.graph
+
 Update the properties of the specified [channel](../resources/channel.md).
 
 ## Permissions

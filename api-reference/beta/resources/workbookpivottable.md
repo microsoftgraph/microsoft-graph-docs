@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookPivotTable resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Excel PivotTable.

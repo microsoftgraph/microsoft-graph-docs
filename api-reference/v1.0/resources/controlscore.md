@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 #  controlScore resource type
 
+Namespace: microsoft.graph
+
 Contains a tenant score and description for an individual control.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: getMemberObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.

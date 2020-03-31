@@ -9,9 +9,13 @@ ms.prod: "microsoft-teams"
 
 # chatMessages: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). By using delta query, you can get new or updated messages in a channel.
+
+> **Note:** Delta will only return messages within the last eight months. You can use [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md) to retrieve older messages.
 
 Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that calendar view periodically.
 
@@ -32,9 +36,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type                        |Permissions (from least to most privileged)  |
 |---------------------------------------|---------------------------------------------|
-|Delegated (work or school account)     |Group.Read.All, Group.ReadWrite.All          |
+|Delegated (work or school account)     |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
 |Delegated (personal Microsoft account) |Not Supported                                |
-|Application                            |Group.Read.All, Group.ReadWrite.All          |
+|Application                            |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +67,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 The following [OData query parameters](/graph/query-parameters) are supported by this API:
 - `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
 - `$skip`, represents how many messages to skip at the beginning of the list.
-- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** and **ge** operators are supported. For example, `../messages/delta?$filter=lastModifiedDateTime ge 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.
+- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.
 
 ## Request headers
 | Header        | Value                     |
@@ -74,7 +81,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) objects in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 ## Examples
 

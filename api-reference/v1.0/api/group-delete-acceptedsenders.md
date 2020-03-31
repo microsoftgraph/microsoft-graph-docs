@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Remove acceptedSender
+
+Namespace: microsoft.graph
 Remove a user or group from the accepted-senders list. 
 
 ## Permissions

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsBaseline resource type"
 description: "The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -30,7 +30,8 @@ The user experience analytics baseline entity contains baseline values against w
 |id|String|The unique identifier of the user experience analytics baseline.|
 |displayName|String|The name of the user experience analytics baseline.|
 |overallScore|Int32|The overall score of the user experience analytics baseline.|
-|overallRegressionThreshold|Int32|The overall regression threshold of the user experience analytics baseline.|
+|isBuiltIn|Boolean|Signifies if the current baseline is the commercial median baseline or a custom baseline.|
+|createdDateTime|DateTimeOffset|The date the custom baseline was created.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -52,7 +53,8 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "overallScore": 1024,
-  "overallRegressionThreshold": 1024
+  "isBuiltIn": true,
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

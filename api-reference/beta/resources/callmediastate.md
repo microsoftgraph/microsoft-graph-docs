@@ -1,17 +1,19 @@
 ---
 title: "callMediaState resource type"
 description: "Represents the media state for a call."
-author: "VinodRavichandran"
-ms.prod: microsoft-teams
+author: "ananmishr"
+ms.prod: "cloud-communications"
 localization_priority: Normal
 doc_type: resourcePageType
 ---
 
-# audioConferencing resource type
+# callMediaState resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+Namespace: microsoft.graph
 
-Represents the media state for a call [call](call.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the media state for a [call](call.md).
 
 ## Properties
 

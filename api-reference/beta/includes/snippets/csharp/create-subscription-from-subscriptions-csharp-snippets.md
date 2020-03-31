@@ -8,11 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var subscription = new Subscription
 {
-	ChangeType = "created,updated",
+	ChangeType = "updated",
 	NotificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
 	Resource = "me/mailFolders('Inbox')/messages",
 	ExpirationDateTime = DateTimeOffset.Parse("2016-11-20T18:23:45.9356913Z"),
-	ClientState = "secretClientValue"
+	ClientState = "secretClientValue",
+	LatestSupportedTlsVersion = "v1_2"
 };
 
 await graphClient.Subscriptions

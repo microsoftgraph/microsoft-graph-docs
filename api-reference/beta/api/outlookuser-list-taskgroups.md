@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List taskGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the Outlook task groups in the user's mailbox.

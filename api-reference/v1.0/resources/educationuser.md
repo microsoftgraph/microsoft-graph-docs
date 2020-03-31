@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationUser resource type
 
+Namespace: microsoft.graph
+
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
 This object provides a targeted subset of properties from the core [user](user.md) object and adds a set of education-specific properties such as `primaryRole`, student, and teacher data.
 
@@ -64,10 +66,10 @@ This object provides a targeted subset of properties from the core [user](user.m
 |assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| List of assignments for the user. Nullable.|
 |user|[user](user.md)| The directory user corresponding to this user.|
 
->**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](/graph/changelog) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
+>**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](/graph/changelog) periodically. When Microsoft Graph API resources are released to the /v1.0 endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
 ```JavaScript
-var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
+var v1BaseUrl = "https://graph.microsoft.com/v1.0/education";
+var betaBaseUrl = "https://graph.microsoft.com/beta/education";  // for administrativeUnit and educationOrganization
 ```
 
 

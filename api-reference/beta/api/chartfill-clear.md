@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartFill: clear
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Clear the fill color of a chart element.

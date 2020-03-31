@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerTaskDetails resource type
 
+Namespace: microsoft.graph
+
 The **plannerTaskDetails** resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create bookingBusiness
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new Microsoft Bookings business in a tenant.

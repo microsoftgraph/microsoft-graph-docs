@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List domains
 
+Namespace: microsoft.graph
+
 Retrieve a list of domain objects.
 
 ## Permissions

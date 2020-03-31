@@ -9,6 +9,8 @@ author: ""
 
 # programControl resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.

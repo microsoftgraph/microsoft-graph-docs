@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var Stream = new List<Stream>()
+var stream = new List<Stream>()
 {
 	new Stream
 	{
@@ -26,7 +26,7 @@ var Stream = new List<Stream>()
 var pages = new OnenotePage();
 pages.Content = content;
 
-await graphClient.Me.Onenote.Pages["{id}"]
+await graphClient.Me.Onenote.Pages["{id}"].Content
 	.Request()
 	.UpdateAsync(pages);
 

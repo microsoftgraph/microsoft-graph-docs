@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Microsoft Teams user activity reports
 
+Namespace: microsoft.graph
+
 Use the Microsoft Teams activity reports to get insights into the Microsoft Teams user activity in your organization.
 
 ## Methods

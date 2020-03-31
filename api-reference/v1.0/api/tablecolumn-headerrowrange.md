@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableColumn: HeaderRowRange
 
+Namespace: microsoft.graph
+
 Gets the range object associated with the header row of the column.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

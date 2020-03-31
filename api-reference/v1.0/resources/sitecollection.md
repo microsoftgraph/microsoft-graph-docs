@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # SiteCollection resource
 
+Namespace: microsoft.graph
+
 The **siteCollection** resource provides more information about a site collection.
 
 If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.

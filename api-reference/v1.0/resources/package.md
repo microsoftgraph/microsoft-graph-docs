@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Package resource type
 
+Namespace: microsoft.graph
+
 The **Package** resource indicates that a DriveItem is the top level item in a "package" or a collection of items that should be treated as a collection instead of individual items.
 
 An example of a package is a OneNote notebook. 

@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # objectDefinition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes an object and its attributes. Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).

@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskAppBase resource type"
 description: "The base class for a type of apps"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *itemActivityOLDList = [[NSMutableArray alloc] init];
-		itemActivityOLDList = [jsonFinal valueForKey:@"value"];
-		MSGraphItemActivityOLD *itemActivityOLD = [[MSGraphItemActivityOLD alloc] initWithDictionary:[itemActivityOLDList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphItemActivityOLD *itemActivityOLD = [[MSGraphItemActivityOLD alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

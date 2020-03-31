@@ -9,6 +9,8 @@ author: ""
 
 # Delete privilegedRoleAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete [privilegedRoleAssignment](../resources/privilegedroleassignment.md).

@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerPlayStoreMode enum type"
 description: "Android Device Owner Play Store mode type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update event
 
+Namespace: microsoft.graph
+
 Update the properties of the [event](../resources/event.md) object.
 
 When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 

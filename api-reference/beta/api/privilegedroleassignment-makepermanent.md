@@ -9,6 +9,8 @@ author: ""
 
 # privilegedRoleAssignment: makePermanent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Make the role assignment as permanent.

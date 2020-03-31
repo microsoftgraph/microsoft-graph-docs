@@ -18,7 +18,7 @@ var values = new List<Json>()
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
-	.Add(index,values,name)
+	.Add(index,values,null)
 	.Request()
 	.PostAsync();
 

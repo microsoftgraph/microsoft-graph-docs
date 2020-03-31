@@ -1,13 +1,15 @@
 ---
 title: "audioConferencing resource type"
-description: "Represents phone access information for an onlineMeeting."
-author: "VinodRavichandran"
+description: "Represents phone access information for an online meeting."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # audioConferencing resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,10 +20,9 @@ Represents phone access information for an [onlineMeeting](onlinemeeting.md).
 | Property            | Type    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | String  | A URL to the externally-accessible web page that contains dial-in information. |
-| leaderPasscode      | String  | The leader password required to connect to the Audio Conference Provider.      |
-| participantPasscode | String  | The participant password required to connect to the Audio Conference Provider. |
-| tollFreeNumber      | String  | The toll-free number to connect to the Audio Conference Provider.              |
-| tollNumber          | String  | The toll number to connect to the Audio Conference Provider.                   |
+| ConferenceId        | String  | The conference id of the online meeting.      |
+| tollFreeNumber      | String  | The toll-free number that connects to the Audio Conference Provider.              |
+| tollNumber          | String  | The toll number that connects to the Audio Conference Provider.                   |
 
 ## JSON representation
 
@@ -37,8 +38,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "dialinUrl": "String",
-  "leaderPasscode": "String",
-  "participantPasscode": "String",
+  "ConferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }

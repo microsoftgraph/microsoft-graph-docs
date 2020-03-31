@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # attributeMappingFunctionSchema resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.

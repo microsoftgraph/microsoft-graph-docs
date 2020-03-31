@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Send a sharing invitation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sends a sharing invitation for a **DriveItem**.

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingDefinition resource type"
 description: "Entity representing the defintion for a given setting"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -32,6 +32,7 @@ Entity representing the defintion for a given setting
 |displayName|String|The setting's display name|
 |isTopLevel|Boolean|If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting|
 |description|String|The setting's description|
+|placeholderText|String|Placeholder text as an example of valid input|
 |documentationUrl|String|Url to setting documentation|
 |keywords|String collection|Keywords associated with the setting|
 |constraints|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection|Collection of constraints for the setting value|
@@ -56,13 +57,17 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "isTopLevel": true,
   "description": "String",
+  "placeholderText": "String",
   "documentationUrl": "String",
   "keywords": [
     "String"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "String"
+      ]
     }
   ],
   "dependencies": [
@@ -71,7 +76,10 @@ Here is a JSON representation of the resource.
       "definitionId": "String",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "String"
+          ]
         }
       ]
     }

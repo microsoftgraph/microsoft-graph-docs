@@ -1,13 +1,15 @@
 ---
 title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # siteSecurityLevel enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -22,6 +24,7 @@ Possible values for site security level.
 |medium|3|Medium.|
 |mediumHigh|4|Medium-high.|
 |high|5|High.|
+
 
 
 

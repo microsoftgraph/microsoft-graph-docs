@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete attachment
 
+Namespace: microsoft.graph
+
 Delete an attachment from a user calendar event, mail message, or group post.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

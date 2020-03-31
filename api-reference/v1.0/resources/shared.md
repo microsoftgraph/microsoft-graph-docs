@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Shared resource type
 
+Namespace: microsoft.graph
+
 The **Shared** resource indicates a DriveItem has been shared with others.
 The resource includes information about how the item is shared.
 

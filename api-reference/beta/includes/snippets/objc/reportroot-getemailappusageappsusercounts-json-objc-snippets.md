@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *emailAppUsageAppsUserCountsList = [[NSMutableArray alloc] init];
-		emailAppUsageAppsUserCountsList = [jsonFinal valueForKey:@"value"];
-		MSGraphEmailAppUsageAppsUserCounts *emailAppUsageAppsUserCounts = [[MSGraphEmailAppUsageAppsUserCounts alloc] initWithDictionary:[emailAppUsageAppsUserCountsList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphEmailAppUsageAppsUserCounts *emailAppUsageAppsUserCounts = [[MSGraphEmailAppUsageAppsUserCounts alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

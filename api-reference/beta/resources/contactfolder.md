@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # contactFolder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A folder that contains contacts.

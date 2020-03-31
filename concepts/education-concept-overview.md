@@ -4,7 +4,7 @@ description: "The education API in Microsoft Graph enhances Office 365 resources
 author: "mmast-msft"
 localization_priority: Priority
 ms.prod: "education"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Education API overview
@@ -31,7 +31,7 @@ The following are some of the scenarios that the roster APIs enable:
 
 You can use the assignments API to create a web app that manages class assignments and then integrate your app into Microsoft Teams on a new custom tab.  
 
-Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensibility points](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, and Bots. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. Build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
+Microsoft Teams in Office 365 is a digital hub that brings conversations, content, and apps together in one place for classrooms. Microsoft Teams provides a [rich set of extensibility points](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-overview), including creating Tabs, Connectors, and Bots. These extensibility points can call education APIs in Microsoft Graph to work with assignments and submissions. Build a more comprehensive experience by enabling your extension point with any other Microsoft Graph API along with assignment and submission APIs.
 
 For education, Microsoft Teams custom tab apps are opened in an education class (a team) context, where it makes sense to manage the end-to-end assignment flow, from creation and distribution to grading and feedback. This is just one example of how Microsoft Teams saves time and simplifies everyday logistics, leaving educators free to dedicate themselves to their students.
 
@@ -44,7 +44,7 @@ With the assignment API, your app can interact with the assignment service outsi
 The following are examples of a few scenarios enabled by the assignments API:
 
 - [Add an assignment that links to your application](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [Assign grades to individual students for assignments linked to your application](/graph/api/educationsubmission-update?view=graph-rest-beta)
+- [Assign outcomes like grades to individual students for assignments linked to your application](/graph/api/educationoutcome-update?view=graph-rest-beta)
 - [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
 
 

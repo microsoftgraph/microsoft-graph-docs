@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *driveItemVersionList = [[NSMutableArray alloc] init];
-		driveItemVersionList = [jsonFinal valueForKey:@"value"];
-		MSGraphDriveItemVersion *driveItemVersion = [[MSGraphDriveItemVersion alloc] initWithDictionary:[driveItemVersionList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphDriveItemVersion *driveItemVersion = [[MSGraphDriveItemVersion alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

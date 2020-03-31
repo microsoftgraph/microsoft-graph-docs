@@ -19,7 +19,7 @@ const governanceRoleSetting = {
    ]
 };
 
-let res = await client.api('/privilegedAccess/pimforazurerbac/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5')
+let res = await client.api('/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5')
 	.version('beta')
 	.update(governanceRoleSetting);
 

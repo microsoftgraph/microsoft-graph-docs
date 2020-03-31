@@ -353,4 +353,8 @@ To create a recurrence rule, you must specify both a pattern and a range. Any pa
 
 ## Next steps
     
-Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).
+- Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).
+- See other recurring event examples in the calendar API reference:
+  - [Create a recurring event that occurs once a week](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
+  - [Create a daily recurring event](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+

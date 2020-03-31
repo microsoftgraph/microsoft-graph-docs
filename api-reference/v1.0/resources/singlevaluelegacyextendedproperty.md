@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # singleValueLegacyExtendedProperty resource type
 
+Namespace: microsoft.graph
+
 An extended property that contains a single value. 
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 

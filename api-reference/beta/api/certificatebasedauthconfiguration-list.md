@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List certificateBasedAuthConfigurations
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) objects.

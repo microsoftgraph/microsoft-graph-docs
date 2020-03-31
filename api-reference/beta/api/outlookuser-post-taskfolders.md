@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create outlookTaskFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a task folder in the default task group (`My Tasks`) of the user's mailbox.

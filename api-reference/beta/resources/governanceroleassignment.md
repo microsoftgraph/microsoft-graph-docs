@@ -8,6 +8,8 @@ author: ""
 ---
 
 # governanceRoleAssignment resource type
+
+Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the assignment of a user or group to a role.

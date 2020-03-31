@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *workbookChartList = [[NSMutableArray alloc] init];
-		workbookChartList = [jsonFinal valueForKey:@"value"];
-		MSGraphWorkbookChart *workbookChart = [[MSGraphWorkbookChart alloc] initWithDictionary:[workbookChartList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphWorkbookChart *workbookChart = [[MSGraphWorkbookChart alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

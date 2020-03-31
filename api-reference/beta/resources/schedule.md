@@ -9,6 +9,8 @@ doc_type: resourcePageType_
 
 # schedule resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md). 
@@ -17,32 +19,42 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a `schedule`.|
-|[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Get a `schedule`.|
-|[share](../api/schedule-share.md) | None | Share a `schedule` time range with schedule members.|
+|[Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.|
+|[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Get a schedule.|
+|[Share](../api/schedule-share.md) | None | Share a schedule time range with schedule members.|
 
 ## Properties
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			        |`string`  |ID of the `schedule`.|
-| enabled 			    |`bool`    | Indicates whether the schedule is enabled for the team. Required.|
-| timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. Required.|
-| provisionStatus       |`operationStatus`    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
-| provisionStatusCode   |`string`  | Additional information about why schedule provisioning failed. |
+| id			        |string  |ID of the schedule.|
+| enabled 			    |Boolean    | Indicates whether the schedule is enabled for the team. Required.|
+| timeZone 		        |string  | Indicates the time zone of the schedule team using tz database format. Required.|
+| provisionStatus       |operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
+| provisionStatusCode   |string  | Additional information about why schedule provisioning failed. |
+| timeClockEnabled			        |Boolean  | Indicates whether time clock is enabled for the schedule.             |
+| openShiftsEnabled			        |Boolean  | Indicates whether open shifts are enabled for the schedule.             | 
+| swapShiftsRequestsEnabled			        |Boolean| Indicates whether swap shifts requests are enabled for the schedule.             |
+| offerShiftRequestsEnabled			        |Boolean  | Indicates whether offer shift requests are enabled for the schedule.             | 
+| timeOffRequestsEnabled			        |Boolean | Indicates whether time off requests are enabled for the schedule.             | 
+
 
 
 ## Relationships
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| shifts   |`collection(shift)`  | The shifts in the schedule. |
-| timesOff   |`collection(timeOff)`  | The instances of times off in the schedule. |
-| timeOffReasons   |`collection(timeOffReason)`  | The set of reasons for a time off in the schedule. |
-| schedulingGroups   |`collection(schedulingGroup)`  | The logical grouping of users in the schedule (usually by role). |
-
+| shifts   | [shift](shift.md) collection  | The shifts in the schedule. |
+| timesOff   |[timeOff](timeoff.md) collection  | The instances of times off in the schedule. |
+| timeOffReasons   |[timeOffReason](timeoffreason.md) collection  | The set of reasons for a time off in the schedule. |
+| schedulingGroups   |[schedulingGroup](schedulinggroup.md) collection  | The logical grouping of users in the schedule (usually by role). |
+| openshifts   |[openShift](openshift.md) collection | The set of open shifts in a scheduling group in the schedule. |
+| workforceintegrations   |[workforceIntegration](workforceintegration.md) collection  | An instance of a workforce integration per team with outbound data flow on synchronous change notifications (for supported entities). |
+| swapshiftchangerequests   |[swapShiftsChangeRequest](swapshiftschangerequest.md) collection  | The swap requests for shifts in the schedule. |
+| openshiftchangerequests   |[openShiftChangeRequest](openshiftchangerequest.md) collection  | The open shift requests in the schedule. |
+| timeoffrequest   |[timeOffRequest](timeoffrequest.md) collection  | The time off requests in the schedule. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

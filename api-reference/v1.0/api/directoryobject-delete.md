@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete directoryObject
 
+Namespace: microsoft.graph
+
 Deletes a directoryObject.
 
 ## Permissions

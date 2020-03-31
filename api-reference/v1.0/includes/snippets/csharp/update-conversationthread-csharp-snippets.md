@@ -8,10 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var conversationThread = new ConversationThread
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","#Microsoft.OutlookServices.ConversationThread"}
-	},
 	IsLocked = true
 };
 

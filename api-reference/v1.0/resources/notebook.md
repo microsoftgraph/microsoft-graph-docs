@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # notebook resource type
 
+Namespace: microsoft.graph
+
 A OneNote notebook.
 
 ## JSON representation

@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Drive resource type
 
+Namespace: microsoft.graph
+
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.

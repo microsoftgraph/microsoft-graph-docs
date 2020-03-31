@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # createAction resource type
 
+Namespace: microsoft.graph
+
 The presence of the **createAction** resource on an [**itemActivity**][activity] indicates that the activity created an item.
 
 **Note:** This resource is currently empty. In the future, it might be populated with additional properties.

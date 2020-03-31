@@ -9,6 +9,8 @@ author: ""
 
 # FormatProtection resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the format protection of a range object.

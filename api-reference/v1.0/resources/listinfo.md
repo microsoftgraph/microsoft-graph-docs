@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # ListInfo resource
 
+Namespace: microsoft.graph
+
 The **listInfo** complex type provides additional information about a [list][].
 
 [list]: list.md

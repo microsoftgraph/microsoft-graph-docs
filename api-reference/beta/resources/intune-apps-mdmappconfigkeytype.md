@@ -1,7 +1,7 @@
 ---
 title: "mdmAppConfigKeyType enum type"
 description: "App configuration key types."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

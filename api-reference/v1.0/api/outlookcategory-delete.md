@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete Outlook category
 
+Namespace: microsoft.graph
+
 
 Delete the specified [outlookCategory](../resources/outlookcategory.md) object.
 

@@ -9,9 +9,13 @@ doc_type: apiPageType
 
 # event: tentativelyAccept
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
+
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter. For more information on how to propose a time, and how to receive and accept a new time proposal, see [Propose new meeting times](/graph/outlook-calendar-meeting-proposals).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,15 +57,21 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |comment|String|Text included in the response. Optional.|
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|An alternate date/time proposed by an invitee for a meeting request to start and end. Valid only for events that allow new time proposals. Setting this parameter requires setting **sendResponse** to `true`. Optional.|
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
+This action returns HTTP 400 if one or both of the following occur:
+
+- The **proposedNewTime** parameter is included but the **allowNewTimeProposals** property of the **event** is `false`. 
+- The **proposedNewTime** parameter is included but the **sendResponse** parameter is set to `false`.
+
 ## Example
 Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+### Request
+In the following example, the signed-in user responds tentative to the specified event, sets the **sendResponse** paremeter to true, and includes an alternative time in the **proposedNewTime** parameter.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,11 +81,20 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I may not be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -92,16 +111,15 @@ Content-length: 56
 
 ---
 
-
-##### Response
-##### Response
+### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "event_tentativelyaccept",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

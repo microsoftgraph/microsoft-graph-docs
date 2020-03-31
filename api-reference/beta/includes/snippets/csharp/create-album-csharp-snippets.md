@@ -9,7 +9,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var driveItem = new DriveItem
 {
 	Name = "My Day at the Beach",
-	@name.conflictBehavior = "rename",
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@name.conflictBehavior","rename"}
+	},
 	Bundle = new Bundle
 	{
 		Album = new Album

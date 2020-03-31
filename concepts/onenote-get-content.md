@@ -542,7 +542,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 ```
 
 > **Note:**
-> GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **@odata.nextLink** link in the response that you can use to get the next 20 entries.
+> GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **\@odata.nextLink** link in the response that you can use to get the next 20 entries.
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -556,7 +556,7 @@ When sending GET requests to Microsoft Graph, you can use OData query string opt
  
 | Query option | Example and description |  
 |------|------|  
-| count | <p>`count=true`</p><p>The count of entities in the collection. The value is returned in the **@odata.count** property in the response.</p> |  
+| count | <p>`count=true`</p><p>The count of entities in the collection. The value is returned in the **\@odata.count** property in the response.</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>The navigation properties to return inline in the response. The following properties are supported for **expand** expressions:<br /> - Pages: **parentNotebook**, **parentSection**<br /> - Sections: **parentNotebook**, **parentSectionGroup**<br /> - Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> - Notebooks: **sections**, **sectionGroups**</p><p>By default, GET requests for pages expands **parentSection** and select the section's **id**, **name**, and **self** properties. Default GET requests for sections and section groups expand both **parentNotebook** and **parentSectionGroup**, and select the parents' **id**, **name**, and **self** properties. </p><p>Can be used for a single entity or a collection.<br />Separate multiple properties with commas.<br />Property names are case-sensitive.</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>A Boolean expression for whether to include an entry in the result set. Supports the following OData operators and functions:<br /> - Comparison operators: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> - Logical operators: **and**, **or**, **not**<br /> - String functions: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>[Property](#onenote-entity-properties) names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br /><br />**Example**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>The [properties](#onenote-entity-properties) to sort by, with an optional **asc** (default) or **desc** sort order. You can sort by any property of the entity in the requested collection.</p><p>The default sort order for notebooks, section groups, and sections is `name asc`, and for pages is `lastModifiedTime desc` (last modified page first).</p><p>Separate multiple properties with commas, and list them in the order that you want them applied. Property names are case-sensitive.</p> |  
@@ -659,7 +659,7 @@ The **expand** query string option can be used with the following navigation pro
 |------|------|  
 | Success code | A 200 HTTP status code. |  
 | Response body | An OData representation of the entity or entity set in JSON format, the page HTML, or file resource binary data.  |  
-| Errors | If the request fails, the API returns [errors](onenote-error-codes.md) in the **@api.diagnostics** object in the response body. |  
+| Errors | If the request fails, the API returns [errors](onenote-error-codes.md) in the **\@api.diagnostics** object in the response body. |  
 | X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
 
 

@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
 
+Namespace: microsoft.graph
+
 Remove access to a [DriveItem](../resources/driveitem.md).
 
 Only sharing permissions that are **not** inherited can be deleted.

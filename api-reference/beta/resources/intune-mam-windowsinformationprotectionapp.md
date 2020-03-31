@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionApp resource type"
 description: "App for Windows information protection"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

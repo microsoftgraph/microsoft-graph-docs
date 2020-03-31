@@ -9,9 +9,11 @@ doc_type: apiPageType
 
 # educationSubmission: release
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action makes the grade and feedback associated with this submission available to the student. This will change the status of the submission from "submitted" to "released" and indicates that grading is done. This action can only be done by the teacher.
+This action makes the [educationOutcome](../resources/educationoutcome.md) including any grades or feedback associated with this submission available to the student. This will change the status of the submission from "submitted" to "released" and indicates that grading is done. This action can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

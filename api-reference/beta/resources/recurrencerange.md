@@ -9,6 +9,8 @@ author: ""
 
 # recurrenceRange resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes a date range over which a recurring [event](event.md) repeats. 

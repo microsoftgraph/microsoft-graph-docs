@@ -13,22 +13,24 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/az6pqy2r/)
+The following example shows a group of people displayed using the `mgt-people` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-people></mgt-people>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-![mgt-people](./images/mgt-people.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## Properties
 
 By default, the `mgt-people` component fetches events from the `/me/people` endpoint with the `personType/class eq 'Person'` filter to display frequently contacted users. You can use several properties to change this behavior.
 
-| Property | Attribute | Description |
+| Attribute | Property | Description |
 | --- | --- | --- |
-| `showMax` | `show-max` | Indicate the maximum number of people to show. Default value is 3. |
-| `people` | `people` | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
+| show-max | showMax | Indicates the maximum number of people to show. Default value is 3. |
+| people | people | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
+| group-id | groupId | Retrieves people from a specific Microsoft Graph from the respective ID. |
+| user-ids | userIds | Given an array of Microsoft Graph user `ids`, the component will render these users.  |
+| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
+
 
 The following example sets the maximum number of people to show.
 
@@ -58,7 +60,7 @@ The `mgt-people` supports several [templates](../templates.md) that you can use 
 | `default` | `people`: list of person objects | The default template replaces the entire component with your own. |
 | `person` | `person`: person object | The template used to render each person. |
 | `overflow` | `people`: list of person objects <br> `max`: number of shown people <br> `extra`: number of extra people | The template used to render the number beyond the max to the right of the list of people. |
-| `no-data` | No data context is passed | The template used when no people are available. |
+| `no-data` | No data context is passed | The template used when no data is available. |
 
 The following examples shows how to use the `person` template.
 
@@ -79,9 +81,9 @@ The following examples shows how to use the `person` template.
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| Resource | Permission/scope |
+| Resource | Permission |
 | - | - |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 
 ## Authentication
 

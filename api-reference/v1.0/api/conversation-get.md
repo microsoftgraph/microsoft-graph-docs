@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get conversation
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of conversation object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

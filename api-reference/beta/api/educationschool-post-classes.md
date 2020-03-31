@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add educationClass to educationSchool
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a class to a school.

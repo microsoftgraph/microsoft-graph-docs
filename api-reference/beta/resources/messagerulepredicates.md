@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # messageRulePredicates resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the set of conditions and exceptions that are available for a rule.

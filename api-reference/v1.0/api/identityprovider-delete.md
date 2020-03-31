@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete identityProvider
 
+Namespace: microsoft.graph
+
 Delete an existing [identityProvider](../resources/identityprovider.md).
 
 ## Permissions

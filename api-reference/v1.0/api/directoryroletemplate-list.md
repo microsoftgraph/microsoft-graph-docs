@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directoryRoleTemplates
 
+Namespace: microsoft.graph
+
 Retrieve a list of directoryRoleTemplate objects.
 
 ## Permissions

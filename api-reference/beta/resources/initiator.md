@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # initiator resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes who or what initiated the provisioning event. 

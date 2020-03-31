@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Privileged Identity Management - Azure AD
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]

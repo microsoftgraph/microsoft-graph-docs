@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add educationUser to an educationSchool
 
+Namespace: microsoft.graph
+
 Add a user to a school.
 
 ## Permissions

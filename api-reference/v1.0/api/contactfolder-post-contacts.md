@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create contact
 
+Namespace: microsoft.graph
+
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ## Permissions

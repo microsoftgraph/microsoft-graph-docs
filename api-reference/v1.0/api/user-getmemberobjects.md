@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # user: getMemberObjects
+
+Namespace: microsoft.graph
 Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.
 
 ## Permissions

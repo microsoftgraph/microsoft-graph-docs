@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookWorksheetProtection: protect
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Protect a worksheet. It throws if the worksheet has been protected.

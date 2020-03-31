@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # directoryDefinition: discover
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Discover the latest schema definition for provisioning to an application. 

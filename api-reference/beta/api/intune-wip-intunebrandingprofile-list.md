@@ -1,7 +1,7 @@
 ---
 title: "List intuneBrandingProfiles"
 description: "List properties and relationships of the intuneBrandingProfile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1703
+Content-Length: 2221
 
 {
   "value": [
@@ -71,13 +71,6 @@ Content-Length: 1703
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
-      "contactITName": "Contact ITName value",
-      "contactITPhoneNumber": "Contact ITPhone Number value",
-      "contactITEmailAddress": "Contact ITEmail Address value",
-      "contactITNotes": "Contact ITNotes value",
-      "privacyUrl": "https://example.com/privacyUrl/",
-      "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-      "onlineSupportSiteName": "Online Support Site Name value",
       "themeColor": {
         "@odata.type": "microsoft.graph.rgbColor",
         "r": 1,
@@ -101,15 +94,35 @@ Content-Length: 1703
         "type": "Type value",
         "value": "dmFsdWU="
       },
+      "contactITName": "Contact ITName value",
+      "contactITPhoneNumber": "Contact ITPhone Number value",
+      "contactITEmailAddress": "Contact ITEmail Address value",
+      "contactITNotes": "Contact ITNotes value",
+      "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+      "onlineSupportSiteName": "Online Support Site Name value",
+      "privacyUrl": "https://example.com/privacyUrl/",
       "customPrivacyMessage": "Custom Privacy Message value",
       "isRemoveDeviceDisabled": true,
-      "isFactoryResetDisabled": true
+      "isFactoryResetDisabled": true,
+      "companyPortalBlockedActions": [
+        {
+          "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+          "platform": "androidForWork",
+          "ownerType": "company",
+          "action": "remove"
+        }
+      ],
+      "showAzureADEnterpriseApps": true,
+      "showOfficeWebApps": true,
+      "sendDeviceOwnershipChangePushNotification": true,
+      "enrollmentAvailability": "availableWithoutPrompts",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
-
 
 
 

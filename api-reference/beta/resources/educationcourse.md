@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationCourse resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the course information for a class. It is used within [educationClass](educationclass.md).

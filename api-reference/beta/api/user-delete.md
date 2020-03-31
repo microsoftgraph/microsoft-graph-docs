@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete a user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete user.  

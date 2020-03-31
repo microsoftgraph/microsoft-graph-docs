@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: columnsAfter
 
+Namespace: microsoft.graph
+
 Gets a certain number of columns to the right of the given range.
 
 ## Permissions

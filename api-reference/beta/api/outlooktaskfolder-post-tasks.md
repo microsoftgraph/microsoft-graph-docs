@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create outlookTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an Outlook task in the specified task folder.

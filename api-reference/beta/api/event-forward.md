@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: forward
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 

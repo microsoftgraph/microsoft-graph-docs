@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # fileHash resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about file hashes (cryptographic and location-sensitive).
 
 ## Properties

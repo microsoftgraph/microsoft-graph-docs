@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationExcelResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subclass of [educationResource](educationresource.md). This resource type represents an Excel document.  

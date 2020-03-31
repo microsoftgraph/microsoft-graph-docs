@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # FieldValueSet resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the column values in a [listItem](listitem.md) resource.

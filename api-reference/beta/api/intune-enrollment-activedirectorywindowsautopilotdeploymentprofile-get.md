@@ -1,7 +1,7 @@
 ---
 title: "Get activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -36,7 +36,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1424
+Content-Length: 1477
 
 {
   "value": {
@@ -99,12 +99,11 @@ Content-Length: 1424
     "enableWhiteGlove": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ]
+    ],
+    "hybridAzureADJoinSkipConnectivityCheck": true
   }
 }
 ```
-
-
 
 
 

@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 # identityProvider resource type
 
+Namespace: microsoft.graph
+
 Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon,  LinkedIn, or Twitter. The following Identity Providers are in Preview: Weibo, QQ, WeChat, GitHub and any OpenID Connect supported providers. 
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to:

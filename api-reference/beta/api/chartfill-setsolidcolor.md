@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartFill: setSolidColor
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sets the fill formatting of a chart element to a uniform color.

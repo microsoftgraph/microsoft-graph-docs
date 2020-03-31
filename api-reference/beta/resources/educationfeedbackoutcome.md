@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # educationFeedbackOutcome resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of text. 

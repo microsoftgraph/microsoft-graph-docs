@@ -1,7 +1,7 @@
 ---
 title: "Create depOnboardingSetting"
 description: "Create a new depOnboardingSetting object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -118,8 +118,6 @@ Content-Length: 689
   ]
 }
 ```
-
-
 
 
 

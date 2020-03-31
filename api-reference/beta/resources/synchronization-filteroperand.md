@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # filterOperand resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains a collection of values for the operand.

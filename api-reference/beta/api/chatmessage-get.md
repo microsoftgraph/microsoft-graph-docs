@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get chatMessage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).

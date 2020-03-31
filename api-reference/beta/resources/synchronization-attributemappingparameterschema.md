@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # attributeMappingParameterSchema resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes a single parameter used in an [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).

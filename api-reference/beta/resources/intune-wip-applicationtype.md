@@ -1,7 +1,7 @@
 ---
 title: "applicationType enum type"
 description: "Possible types of Application"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

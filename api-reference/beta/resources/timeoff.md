@@ -9,19 +9,21 @@ doc_type: resourcePageType_
 
 # timeOff resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unit of non-work in the schedule.
+A unit of non-work in a schedule.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Create a new `timeOff` object.|
-|[List timeOffs](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md) collection | Get the list of `timeOff` objects in this schedule.|
-|[Get timeOff](../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a `timeOff` by ID.|
-|[Replace timeOff](../api/timeoff-put.md) | [timeOff](timeoff.md) | Replace a `timeOff`.|
-|[Delete timeOff](../api/timeoff-delete.md) | None | Delete a `timeOff` from the schedule.|
+|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Create a new **timeOff** object.|
+|[List](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md) collection | Get the list of **timeOff** objects in this schedule.|
+|[Get (../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a **timeOff** object by ID.|
+|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Replace a **timeOff** object.|
+|[Delete](../api/timeoff-delete.md) | None | Delete a **timeOff** object from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |

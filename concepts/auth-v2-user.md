@@ -4,6 +4,7 @@ description: "To use Microsoft Graph to read and write resources on behalf of a 
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Get access on behalf of a user

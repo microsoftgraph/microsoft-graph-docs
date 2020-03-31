@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List contacts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get contacts in the user's mailbox.

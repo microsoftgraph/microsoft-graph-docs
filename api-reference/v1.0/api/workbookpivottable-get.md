@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookPivotTable
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of workbookPivotTable object.
 
 ## Permissions

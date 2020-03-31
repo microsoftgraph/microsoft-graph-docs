@@ -1,7 +1,7 @@
 ---
 title: "windowsDeviceType enum type"
 description: "Contains properties for Windows device type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

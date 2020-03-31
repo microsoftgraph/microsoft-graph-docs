@@ -55,7 +55,7 @@ The following is an example that requests a message in the signed-in user's mail
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/4aade2547798441eab5188a7a2436bc1/$value
+GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 
 The following is the response. The MIME content begins with the `MIME-Version` header. 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # automaticRepliesMailTips resource type
 
+Namespace: microsoft.graph
+
 
 [MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.
 

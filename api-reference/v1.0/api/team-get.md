@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get team
 
+Namespace: microsoft.graph
+
 
 
 Retrieve the properties and relationships of the specified [team](../resources/team.md).

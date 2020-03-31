@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update an educationSynchronizationProfile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.

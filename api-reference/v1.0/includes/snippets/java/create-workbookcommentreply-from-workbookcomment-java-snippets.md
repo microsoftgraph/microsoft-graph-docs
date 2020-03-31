@@ -10,7 +10,7 @@ WorkbookCommentReply workbookCommentReply = new WorkbookCommentReply();
 workbookCommentReply.content = "This is my reply to the comment.";
 workbookCommentReply.contentType = "plain";
 
-graphClient.drive().root().workbook().comments("{id}").replies()
+graphClient.drive().items("{id}").workbook().comments("{id}").replies()
 	.buildRequest()
 	.post(workbookCommentReply);
 

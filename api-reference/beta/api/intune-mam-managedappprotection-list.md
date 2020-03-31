@@ -1,7 +1,7 @@
 ---
 title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2216
+Content-Length: 2589
 
 {
   "value": [
@@ -109,13 +109,20 @@ Content-Length: 2216
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
-      "notificationRestriction": "blockOrganizationalData"
+      "notificationRestriction": "blockOrganizationalData",
+      "previousPinBlockCount": 5,
+      "managedBrowser": "microsoftEdge",
+      "maximumAllowedDeviceThreatLevel": "secured",
+      "mobileThreatDefenseRemediationAction": "wipe",
+      "blockDataIngestionIntoOrganizationDocuments": true,
+      "allowedDataIngestionLocations": [
+        "sharePoint"
+      ],
+      "appActionIfUnableToAuthenticateUser": "wipe"
     }
   ]
 }
 ```
-
-
 
 
 

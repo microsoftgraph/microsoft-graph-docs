@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/participants/invite"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/participants/invite"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -15,21 +15,17 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSMutableArray *participantsList = [[NSMutableArray alloc] init];
 MSGraphInvitationParticipantInfo *participants = [[MSGraphInvitationParticipantInfo alloc] init];
-[participants setEndpointType: [MSGraphEndpointType default]];
+[participants setReplacesCallId:@"a7ebfb2d-871e-419c-87af-27290b22e8db"];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
-[user setId:@"550fae72-d251-43ec-868c-373732c2704f"];
-[user setTenantId:@"72f988bf-86f1-41af-91ab-2d7cd011db47"];
-[user setDisplayName:@"Heidi Steen"];
+[user setId:@"278405a3-f568-4b3e-b684-009193463064"];
+[user setIdentityProvider:@"AAD"];
 [identity setUser:user];
 [participants setIdentity:identity];
-[participants setLanguageId:@"languageId-value"];
-[participants setRegion:@"region-value"];
-[participants setReplacesCallId:@"replacesCallId-value"];
 [participantsList addObject: participants];
 payloadDictionary[@"participants"] = participantsList;
 
-NSString *clientContext = @"clientContext-value";
+NSString *clientContext = @"f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 payloadDictionary[@"clientContext"] = clientContext;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

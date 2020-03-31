@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # physicalAddress resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the street address of a resource such as a contact or event.

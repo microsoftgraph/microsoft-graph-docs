@@ -1,7 +1,7 @@
 ---
 title: "embeddedSIMDeviceState resource type"
 description: "Describes the embedded SIM activation code deployment state in relation to a device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

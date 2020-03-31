@@ -9,6 +9,8 @@ author: ""
 
 # Configuring the invitation message
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.

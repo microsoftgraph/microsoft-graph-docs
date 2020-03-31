@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List buckets
 
+Namespace: microsoft.graph
+
 Retrieve a list of [plannerBucket](../resources/plannerbucket.md) objects contained by a [plannerPlan](../resources/plannerplan.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

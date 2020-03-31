@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Get a directory setting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
+> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

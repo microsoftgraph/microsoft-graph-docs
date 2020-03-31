@@ -1,7 +1,7 @@
 ---
 title: "Using the Intune Graph API"
 description: " Intune hybrid deployments are not supported. "
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Priority
 ms.prod: "intune"
 doc_type: conceptualPageType
@@ -35,7 +35,7 @@ The following example shows how you can determine whether an application is inst
 
 ## Accessing the Microsoft Graph API for Intune
 
-Intune supports both [delegated permissions](https://docs.microsoft.com/graph/auth-v2-user) and [application permissions](https://docs.microsoft.com/graph/auth-v2-service). Delegated permissions are supported for both read and write operations. Application permissions are currently supported for read operations only. Delegated and application permissions support both single tenant applications, as well as multi-tenant applications. For more information about the permissions available through Microsoft Graph, see [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference).
+Intune supports both [delegated permissions](https://docs.microsoft.com/graph/auth-v2-user) and [application permissions](https://docs.microsoft.com/graph/auth-v2-service). Delegated and application permissions support both read and write operations. Delegated and application permissions support both single tenant applications, as well as multi-tenant applications. For more information about the permissions available through Microsoft Graph, see [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference).
 
 ## Using permissions
 
@@ -45,3 +45,4 @@ The Microsoft Graph API controls access to resources via permissions. As a devel
 
 - Learn [how to use Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
 - Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
+

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Worksheet: delete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the worksheet from the workbook.

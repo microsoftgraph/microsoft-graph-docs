@@ -12,11 +12,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphSubscription *subscription = [[MSGraphSubscription alloc] init];
-[subscription setChangeType:@"created,updated"];
+[subscription setChangeType:@"updated"];
 [subscription setNotificationUrl:@"https://webhook.azurewebsites.net/api/send/myNotifyClient"];
 [subscription setResource:@"me/mailFolders('Inbox')/messages"];
 [subscription setExpirationDateTime: "2016-11-20T18:23:45.9356913Z"];
 [subscription setClientState:@"secretClientValue"];
+[subscription setLatestSupportedTlsVersion:@"v1_2"];
 
 NSError *error;
 NSData *subscriptionData = [subscription getSerializedDataWithError:&error];

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # itemActivityTimeSet resource type
 
+Namespace: microsoft.graph
+
 The **itemActivityTimeSet** resource provides information about when an [activity][activity] on an item took place.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

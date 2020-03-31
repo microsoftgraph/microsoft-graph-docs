@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 title: listItem resource
-description: This resource represents an item in a sharepoint list.
+description: Represents an item in a sharepoint list.
 localization_priority: Priority
 ms.prod: "sharepoint"
 doc_type: resourcePageType
@@ -10,7 +10,9 @@ doc_type: resourcePageType
 
 # listItem resource
 
-This resource represents an item in a SharePoint **[list][]**.
+Namespace: microsoft.graph
+
+Represents an item in a SharePoint **[list][]**.
 Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Methods
@@ -20,7 +22,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 
 | Method                    | Return Type | Description
 |:-------------------------------|:-------------------|:------
-| [Get][]                   | lisItem| Get an item in a list.
+| [Get][]                   | listItem| Get an item in a list.
 | [Get column values][Get]       | listItem | Get column values from listItem.
 | [Get analytics][]              | [itemAnalytics][]| Get analytics for this resource. 
 | [Get activities by interval][] | [itemActivityStat][]| Get a collection of itemActivityStats within the specified time interval.

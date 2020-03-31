@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # List resource
 
+Namespace: microsoft.graph
+
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
 
@@ -25,12 +27,14 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/v1.0
 | Common task               | HTTP method
 |:--------------------------|:------------------------------
 | [Get list][]              | GET /lists/{list-id}
+| [Create list][]           | POST /lists
 | [Enumerate list items][]  | GET /lists/{list-id}/items
 | [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]      | POST /lists/{list-id}
 
 [Get list]: ../api/list-get.md
+[Create list]: ../api/list-create.md
 [Enumerate list items]: ../api/listitem-list.md
 [Update list item]: ../api/listitem-update.md
 [Delete list item]: ../api/listitem-delete.md

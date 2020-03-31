@@ -2,10 +2,14 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
+
+# Enum values
+
+Namespace: microsoft.graph
 
 ### contactRelationship values
 
@@ -500,7 +504,7 @@ Possible integrity level values of the process.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -525,7 +529,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types).
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -627,6 +631,26 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
+### riskEventType values
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
 ### riskLevel values
 
 | Member
@@ -659,3 +683,71 @@ Possible values for user account types (group membership), per Windows definitio
 |immutableEntryId|
 |restId|
 |restImmutableEntryId|
+
+### threatAssessmentContentType values
+
+| Member | Value | Description             |
+|:-------|:------|:------------------------|
+| mail   | 1     | Mail threat.            |
+| url    | 2     | URL threat.             |
+| file   | 3     | Attachment file threat. |
+
+### threatExpectedAssessment values
+
+| Member  | Value | Description                       |
+|:--------|:------|:----------------------------------|
+| block   | 1     | The threat should be blocked.     |
+| unblock | 2     | The threat should not be blocked. |
+
+### threatCategory values
+
+| Member             | Value | Description        |
+|:-------------------|:------|:-------------------|
+| spam               | 1     | Spam threat.       |
+| phishing           | 2     | Phishing threat.   |
+| malware            | 3     | Malware threat.    |
+| unknownFutureValue | 4     | A sentinel member. |
+
+### threatAssessmentStatus values
+
+| Member    | Value | Description                              |
+|:----------|:------|:-----------------------------------------|
+| pending   | 1     | The threat assessment still in progress. |
+| completed | 2     | The threat assessment completed.         |
+
+### threatAssessmentRequestSource values
+
+| Member        | Value | Description              |
+|:--------------|:------|:-------------------------|
+| undefined     | 0     | Not yet know.            |
+| user          | 1     | User submission.         |
+| administrator | 2     | Tenant admin submission. |
+
+### threatAssessmentResultType values
+
+| Member             | Value | Description                                          |
+|:-------------------|:------|:-----------------------------------------------------|
+| checkPolicy        | 1     | The policy check result, only for `mail` assessment. |
+| rescan             | 2     | The rescan result.                                   |
+| unknownFutureValue | 3     | A sentinel member.                                   |
+
+### mailDestinationRoutingReason values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| none                  | 0     | Not yet know.                       |
+| mailFlowRule          | 1     | Exchange transport rule.            |
+| safeSender            | 2     | Safe sender list.                   |
+| blockedSender         | 3     | Blocked sender list.                |
+| advancedSpamFiltering | 4     | Advanced spam flitering option.     |
+| domainAllowList       | 5     | Sender domain allow list.           |
+| domainBlockList       | 6     | Sender domain block list.           |
+| notInAddressBook      | 7     | Exclude sender not in address book. |
+| firstTimeSender       | 8     | Blocked due to first time sender.   |
+| autoPurgeToInbox      | 9     | TimeTravel move message to inbox.   |
+| autoPurgeToJunk       | 10    | TimeTravel move message to junk.    |
+| autoPurgeToDeleted    | 11    | TimeTravel move message to deleted. |
+| outbound              | 12    | Outbound mail.                      |
+| notJunk               | 13    | Allow due to not junk.              |
+| junk                  | 14    | Blocked due to junk.                |
+| unknownFutureValue    | 15    | A sentinel member.                  |

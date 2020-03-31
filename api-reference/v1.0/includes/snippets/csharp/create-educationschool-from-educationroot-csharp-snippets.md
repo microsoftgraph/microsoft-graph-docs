@@ -27,7 +27,6 @@ var educationSchool = new EducationSchool
 		Street = "12345 Main St."
 	},
 	ExternalId = "10002",
-	Fax = "+1 (253) 555-0101",
 	Phone = "+1 (253) 555-0102"
 };
 

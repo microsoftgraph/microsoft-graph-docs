@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # recentNotebookLinks resource type
 
+Namespace: microsoft.graph
+
 Links for opening a OneNote notebook. This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.
 
 ## Properties

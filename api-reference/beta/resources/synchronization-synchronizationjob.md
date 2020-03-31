@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # synchronizationJob resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. The synchronization job is always specific to a particular instance of an application in your tenant. As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.
@@ -35,6 +37,7 @@ Performs synchronization by periodically running in the background, polling for 
 |id             |String                     |Unique synchronization job identifier. Read-only.|
 |schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Schedule used to run the job. Read-only.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status of the job, which includes when the job was last run, current job state, and errors.|
+|synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |Settings associated with the job. Some settings are inherited from the template.|
 |templateId     |String    |Identifier of the [synchronization template](synchronization-synchronizationtemplate.md) this job is based on.|
 
 ## Relationships
@@ -60,6 +63,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "schedule": {"@odata.type": "microsoft.graph.synchronizationSchedule"},
   "status": {"@odata.type": "microsoft.graph.synchronizationStatus"},
+  "synchronizationJobSettings": {"@odata.type": "microsoft.graph.keyValuePair"},
   "templateId": "String"
 }
 

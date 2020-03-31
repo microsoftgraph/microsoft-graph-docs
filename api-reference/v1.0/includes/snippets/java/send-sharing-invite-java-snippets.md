@@ -14,9 +14,9 @@ recipientsList.add(recipients);
 
 String message = "Here's the file that we're collaborating on.";
 
-boolean requireSignIn = True;
+boolean requireSignIn = true;
 
-boolean sendInvitation = True;
+boolean sendInvitation = true;
 
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("write");

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 # site resource
 
+Namespace: microsoft.graph
+
 The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create workbookCommentReply
 
+Namespace: microsoft.graph
+
 Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object.
 
 ## Permissions
@@ -56,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/replies
+POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
 Content-type: application/json
 
 {

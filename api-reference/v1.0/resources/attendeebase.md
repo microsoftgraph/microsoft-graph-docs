@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # attendeeBase resource type
 
+Namespace: microsoft.graph
+
 The type of attendee.
 
 Derived from [recipient](recipient.md).

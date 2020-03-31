@@ -9,6 +9,8 @@ author: ""
 
 # Update approleassignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of approleassignment object.

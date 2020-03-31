@@ -9,9 +9,11 @@ doc_type: apiPageType
 
 # directoryObject: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [change tracking](/graph/delta-query-overview) for details.
 
 ## Permissions
 

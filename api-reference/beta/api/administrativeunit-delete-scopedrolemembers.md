@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove a scopedRoleMember
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove a scoped-role member from an adminstrative unit.

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create chatMessage reply in a channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new [chatMessage](../resources/chatmessage.md) object in reply to an existing [chatMessage](../resources/chatmessage.md) object.
@@ -29,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /chats/{id}/messages/{id}/replies
-POST /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## Request headers

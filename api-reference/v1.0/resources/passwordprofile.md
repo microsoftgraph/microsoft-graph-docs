@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # passwordProfile resource type
 
+Namespace: microsoft.graph
+
 Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.
 
 

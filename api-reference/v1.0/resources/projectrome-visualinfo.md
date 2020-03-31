@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # visualInfo resource type
 
+Namespace: microsoft.graph
+
 A complex type for representing the **visualElements** property in the [activity](../resources/projectrome-activity.md) object.
 
 Each user activity will be shown in Timeline as an Adaptive Card. App developers are encouraged to provide a custom Card which captures the essence of the activity which took place in your app. This is possible by providing a custom JSON card in the content property.

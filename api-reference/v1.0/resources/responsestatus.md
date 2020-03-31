@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # responseStatus resource type
 
+Namespace: microsoft.graph
+
 The response status of a meeting request.
 
 ## Properties

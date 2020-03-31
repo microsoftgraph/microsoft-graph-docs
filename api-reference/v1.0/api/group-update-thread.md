@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Update conversation thread
+
+Namespace: microsoft.graph
 Update a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update plannerUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [plannerUser](../resources/planneruser.md) object. You can use this operation to add or remove plans from a user's favorite plans list, and to indicate which plans the user has recently viewed.

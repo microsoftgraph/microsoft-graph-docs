@@ -1,7 +1,7 @@
 ---
 title: "deviceHealthScript resource type"
-description: "Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically."
-author: "rolyon"
+description: "Intune will provide customer the ability to run their Powershell Health scripts (remediation + detection) on the enrolled windows 10 Azure Active Directory joined devices."
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -13,10 +13,7 @@ doc_type: resourcePageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
-
-
-Inherits from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)
+Intune will provide customer the ability to run their Powershell Health scripts (remediation + detection) on the enrolled windows 10 Azure Active Directory joined devices.
 
 ## Methods
 |Method|Return Type|Description|
@@ -26,34 +23,38 @@ Inherits from [deviceManagementScript](../resources/intune-devices-devicemanagem
 |[Create deviceHealthScript](../api/intune-devices-devicehealthscript-create.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Create a new [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.|
 |[Delete deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|None|Deletes a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).|
 |[Update deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Update the properties of a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.|
+|[assign action](../api/intune-devices-devicehealthscript-assign.md)|None|Not yet documented|
+|[updateGlobalScript action](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Update the Proprietary Device Health Script|
+|[getGlobalScriptHighestAvailableVersion action](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Update the Proprietary Device Health Script|
+|[enableGlobalScripts action](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|None|Not yet documented|
+|[areGlobalScriptsAvailable function](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Not yet documented|
+|[getRemediationSummary function](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|displayName|String|Name of the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|description|String|Optional description for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|The date and time the device management script was created. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Possible values are: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|complianceRule|[deviceHealthScriptComplianceRule](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Not yet documented|
-|remediationScriptContent|Binary|Not yet documented|
-|runRemediationScript|Boolean|Not yet documented|
+|id|String|Unique Identifier for the device health script|
+|publisher|String|Name of the device health script publisher|
+|version|String|Version of the device health script|
+|displayName|String|Name of the device health script|
+|description|String|Description of the device health script|
+|detectionScriptContent|Binary|The entire content of the detection powershell script|
+|remediationScriptContent|Binary|The entire content of the remediation powershell script|
+|createdDateTime|DateTimeOffset|The timestamp of when the device health script was created. This property is read-only.|
+|lastModifiedDateTime|DateTimeOffset|The timestamp of when the device health script was modified. This property is read-only.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
+|runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
+|isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
+|highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) collection|The list of group assignments for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) collection|The list of group assignments for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Run summary for device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) collection|List of run states for this script across all users. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|assignments|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) collection|The list of group assignments for the device health script|
+|runSummary|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|High level run summary for device health script.|
+|deviceRunStates|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) collection|List of run states for the device health script across all devices|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -67,29 +68,22 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "id": "String (identifier)",
+  "publisher": "String",
+  "version": "String",
   "displayName": "String",
   "description": "String",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "binary",
+  "detectionScriptContent": "binary",
+  "remediationScriptContent": "binary",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",
   "enforceSignatureCheck": true,
-  "fileName": "String",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "String"
   ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "String",
-    "operator": "String",
-    "detectionValue": "String"
-  },
-  "remediationScriptContent": "binary",
-  "runRemediationScript": true
+  "isGlobalScript": true,
+  "highestAvailableVersion": "String"
 }
 ```
 

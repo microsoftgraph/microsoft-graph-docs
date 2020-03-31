@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get open extension
 
+Namespace: microsoft.graph
+
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.
 
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
@@ -115,11 +117,11 @@ instances or collections supports getting open extensions from them in a similar
 
 Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.
 
-|Name|Value|Description|
+|Parameter|Description|Example|
 |:---------------|:--------|:-------|
-|$filter|string|Returns an extension with its **id** matching the `extensionId` parameter value.|
-|$filter with **any** operator|string|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|
-|$expand|string|Expands a resource instance to include an extension. |
+|$filter|Returns an extension with its **id** matching the `extensionId` parameter value.|[Request 3](#request-3)|
+|$filter with **any** operator|Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.|[Request 5](#request-5)|
+|$expand|Expands a resource instance to include an extension. |[Request 3](#request-3) and [request 5](#request-5)|
 
 ## Request headers
 | Name       | Value |

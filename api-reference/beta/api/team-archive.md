@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Archive team
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Archive the specified [team](../resources/team.md). 

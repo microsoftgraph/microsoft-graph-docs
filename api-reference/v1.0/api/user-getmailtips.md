@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: getMailTips
 
+Namespace: microsoft.graph
+
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 

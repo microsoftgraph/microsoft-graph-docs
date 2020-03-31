@@ -11,7 +11,7 @@ var comment = "comment-value";
 var sendResponse = true;
 
 await graphClient.Me.Events["{id}"]
-	.Decline(comment,sendResponse)
+	.Decline(sendResponse,comment)
 	.Request()
 	.PostAsync();
 

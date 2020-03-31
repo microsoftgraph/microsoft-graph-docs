@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerAppliedCategories resource type
 
+Namespace: microsoft.graph
+
 
 The **AppliedCategoriesCollection** resource represents the collection of categories (or labels) that have been applied to a task. It is part of the [plannerTask](plannertask.md) object.
 There can be up to 6 categories applied to a task. Category descriptions, e.g. `category1`, `category2` etc., are part of the [plan details](plannerplandetails.md) object. This is an open type.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List channel messages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). 
@@ -21,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application| Group.Read.All,Group.ReadWrite.All|
+|Application| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -39,6 +41,8 @@ GET /teams/{id}/channels/{id}/messages
 
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
+
+> **Note:** [GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to GET /teams/{id}/channels/{id}/messages.
 
 ## Request headers
 

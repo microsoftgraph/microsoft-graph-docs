@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Get a site resource
 
+Namespace: microsoft.graph
+
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 

@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Get educationSubmission
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher has full access to all submissions. 
+Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher has full access to all submissions.
 
-The grade and feedback from a teacher are also part of this object. Only teachers can add or change grades and feedback. Students will not see the grade or feedback until the assignment has been released. The Basic permissions do not include grade and feedback but do include everything else.
+The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers can add or change grades and feedback. Students will not see the grade or feedback until the assignment has been released.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,29 +69,6 @@ Content-type: application/json
 Content-length: 712
 
 {
-    "feedback": {
-      text: {
-        "content": "Good work!",
-        "contentType": "Text"
-      },
-      feedbackDateTime: "2014-01-01T00:00:00Z",
-      feedbackBy: {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012"
-        }
-      },
-      "@odata.type": "microsoft.graph.educationFeedback"
-      },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015"

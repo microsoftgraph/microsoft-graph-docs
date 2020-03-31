@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsAppDefinition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The details of one version of a [teamsApp](teamsapp.md).

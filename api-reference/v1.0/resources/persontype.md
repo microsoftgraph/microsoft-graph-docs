@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # personType resource type
 
+Namespace: microsoft.graph
+
 Represents the type of person.
 
 

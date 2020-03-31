@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerClientState enum type"
 description: "Configuration manager client state"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

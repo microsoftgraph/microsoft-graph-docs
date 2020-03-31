@@ -9,6 +9,8 @@ author: ""
 
 # followupFlag resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allows setting a flag for the user to follow up on an item later. Supported items include [message](message.md) and [contact](contact.md).
@@ -17,7 +19,7 @@ Allows setting a flag for the user to follow up on an item later. Supported item
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that the follow-up was finished.|
-|dueDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to be finished.|
+|dueDateTime|**dateTimeTimeZone**|The date and time that the follow up is to be finished. **Note**: To set the due date, you must also specify the `startDateTime`; otherwise, you will get a `400 Bad Request` response.|
 |flagStatus|String|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
 |startDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to begin.|
 

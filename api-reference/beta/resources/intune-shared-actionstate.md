@@ -1,7 +1,7 @@
 ---
 title: "actionState enum type"
 description: "State of the action on the device"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -1,7 +1,7 @@
 ---
 title: "Create deviceHealthScript"
 description: "Create a new deviceHealthScript object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/deviceManagementScripts
+POST /deviceManagement/deviceHealthScripts
 ```
 
 ## Request headers
@@ -46,21 +46,21 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|displayName|String|Name of the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|description|String|Optional description for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|The date and time the device management script was created. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Possible values are: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|complianceRule|[deviceHealthScriptComplianceRule](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Not yet documented|
-|remediationScriptContent|Binary|Not yet documented|
-|runRemediationScript|Boolean|Not yet documented|
+|id|String|Unique Identifier for the device health script|
+|publisher|String|Name of the device health script publisher|
+|version|String|Version of the device health script|
+|displayName|String|Name of the device health script|
+|description|String|Description of the device health script|
+|detectionScriptContent|Binary|The entire content of the detection powershell script|
+|remediationScriptContent|Binary|The entire content of the remediation powershell script|
+|createdDateTime|DateTimeOffset|The timestamp of when the device health script was created. This property is read-only.|
+|lastModifiedDateTime|DateTimeOffset|The timestamp of when the device health script was modified. This property is read-only.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
+|runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
+|isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
+|highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
 
 
 
@@ -72,33 +72,26 @@ If successful, this method returns a `201 Created` response code and a [deviceHe
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
+POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 Content-type: application/json
-Content-length: 745
+Content-length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
+  "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "c2NyaXB0Q29udGVudA==",
+  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "string",
-    "operator": "equal",
-    "detectionValue": "Detection Value value"
-  },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runRemediationScript": true
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 
@@ -107,38 +100,29 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 917
+Content-Length: 747
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "id": "bcb60502-0502-bcb6-0205-b6bc0205b6bc",
+  "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "c2NyaXB0Q29udGVudA==",
+  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "string",
-    "operator": "equal",
-    "detectionValue": "Detection Value value"
-  },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runRemediationScript": true
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
-
 
 
 

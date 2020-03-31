@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List organization
 
+Namespace: microsoft.graph
+
 
 
 Retrieve a list of organization objects.

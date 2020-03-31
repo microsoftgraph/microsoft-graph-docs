@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 graphClient.me().messages("{id}")
-	.createReply()
+	.createReply(null,null)
 	.buildRequest()
 	.post();
 

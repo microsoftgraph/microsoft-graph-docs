@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *sharePointActivityUserCountsList = [[NSMutableArray alloc] init];
-		sharePointActivityUserCountsList = [jsonFinal valueForKey:@"value"];
-		MSGraphSharePointActivityUserCounts *sharePointActivityUserCounts = [[MSGraphSharePointActivityUserCounts alloc] initWithDictionary:[sharePointActivityUserCountsList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphSharePointActivityUserCounts *sharePointActivityUserCounts = [[MSGraphSharePointActivityUserCounts alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

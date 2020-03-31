@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # TableSort resource type
 
+Namespace: microsoft.graph
+
 Manages sorting operations on Table objects.
 
 

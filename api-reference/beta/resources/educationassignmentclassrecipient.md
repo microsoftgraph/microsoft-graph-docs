@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationAssignmentClassRecipient resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used inside the [assignment.assignTo](educationassignment.md) property. When set to class recipient, every student in the class will 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # WorksheetProtection resource type
 
+Namespace: microsoft.graph
+
 Represents the protection of a sheet object.
 
 

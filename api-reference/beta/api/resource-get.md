@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the binary data of a file or image [resource](../resources/onenoteresource.md) object.

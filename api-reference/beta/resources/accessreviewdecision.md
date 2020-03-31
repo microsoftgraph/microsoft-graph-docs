@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # accessReviewDecision resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessReviewDecision` represents an Azure AD access review decision of a particular entity's access.  Within an access review, or an instance of a recurring access review, there is one `accessReviewDecision` per reviewed user.  For example, if a group has two guests and one non-guest as members, and an access review of guests is performed for that group, then there will be two access review decision objects.  If a reviewer changes their decision, or another reviewer overrides them, then the `accessReviewDecision` is updated.
@@ -26,11 +28,11 @@ This table illustrates the base properties of objects of this type.
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | The id of the decision within the access review.                                                                                     |
 | `accessReviewId`                |`String`                      | The feature-generated id of the access review.                                                                                       |
-| `reviewedBy`                    |[userIdentity](useridentity.md)| The identity of the reviewer.                                                                                       |
+| `reviewedBy`                    |[userIdentity](useridentity.md)| The identity of the reviewer. If the recommendation was used as the review, the userPrincipalName is empty.                                                                                      |
 | `reviewedDate`                  |`DateTimeOffset`              | The date and time the most recent review for this access right was supplied.                                                                         |
-| `reviewResult`                  |`String`                      | The result of the review.                                                                                    |
+| `reviewResult`                  |`String`                      | The result of the review, one of `NotReviewed`, `Deny`, `DontKnow` or `Approve`.                                                                                    |
 | `justification`                 |`String`                      | The reviewer's business justification, if supplied.                                                                         |
-| `appliedBy`                     |[userIdentity](useridentity.md)| When the review completes, if the results were manually applied, the user identity of the user who applied the decision.                                                           |
+| `appliedBy`                     |[userIdentity](useridentity.md)| When the review completes, if the results were manually applied, the user identity of the user who applied the decision. If the review was auto-applied, the userPrincipalName is empty.                                                          |
 | `appliedDateTime`               |`DateTimeOffset`              | The date and time when the review decision was applied.                                                          |
 | `applyResult`                   |`String`                      | The outcome of applying the decision, one of `NotApplied`, `Success`, `Failed`, `NotFound` or `NotSupported`.                      |
 | `accessRecommendation`          |`String`                      | The feature- generated recommendation shown to the reviewer, one of `Approve`, `Deny` or `NotAvailable`. |

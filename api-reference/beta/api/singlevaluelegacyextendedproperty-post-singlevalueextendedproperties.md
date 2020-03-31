@@ -9,6 +9,8 @@ author: ""
 
 # Create single-value extended property
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create one or more single-value extended properties in a new or existing instance of a resource. 

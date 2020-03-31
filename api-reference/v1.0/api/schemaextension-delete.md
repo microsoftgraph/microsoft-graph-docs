@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete schemaExtension
 
+Namespace: microsoft.graph
+
 Delete the definition of a [schema extension](../resources/schemaextension.md).
 
 Only the app that created the schema extension (owner app) can delete the schema extension definition, 

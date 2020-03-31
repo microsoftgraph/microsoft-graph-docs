@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 Use this API to create a new Attachment.
 
 An attachment can be one of the following types:

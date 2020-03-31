@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementTemplate"
 description: "Read properties and relationships of the deviceManagementTemplate object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -35,7 +35,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 459
 
 {
   "value": {
@@ -74,12 +74,11 @@ Content-Length: 420
     "isDeprecated": true,
     "intentCount": 11,
     "templateType": "specializedDevices",
+    "platformType": "androidForWork",
     "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
   }
 }
 ```
-
-
 
 
 

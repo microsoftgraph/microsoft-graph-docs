@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create rule
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 

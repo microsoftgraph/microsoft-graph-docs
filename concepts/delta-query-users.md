@@ -1,8 +1,9 @@
 ---
 title: "Get incremental changes for users"
 description: "Delta query lets you query for additions, deletions, or updates to users, by way of a series of delta function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes."
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Get incremental changes for users
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## nextLink response
 
-The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.
+The response contains another `nextLink` with a new `skipToken` value, which indicates that more groups are available. You should continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response, even if the value is an empty array (this can happen under certain circumstances).
 
 ```http
 HTTP/1.1 200 OK
@@ -111,7 +112,7 @@ Content-type: application/json
 The third request continues to use the latest `skipToken` returned from the last sync request. 
 
 ``` http
-GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
+GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
 ## Final nextLink response
@@ -152,7 +153,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## deltaLink response
 
-If no changes have occurred, the same `deltaToken` is returned with no results.
+If no changes have occurred, a different `deltatoken` is returned with no results.
 
 ```http
 HTTP/1.1 200 OK
@@ -160,12 +161,12 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=MF1LuFYbK6Lw4DtZ4o9PDrcGekRP65WEJfDmM0H26l4v9zILCPFiPwSAAeRBghxgiwsXEfywcVQ9R8VEWuYAB50Yw3KvJ-8Z1zamVotGX2b_AHVS_Z-3b0NAtmGpod",
   "value": []
 }
 ```
 
-If changes have occurred, the same `deltaToken` is returned including a collection of changed users.
+If changes have occurred, a different `deltatoken` is returned including a collection of changed users.
 
 ```http
 HTTP/1.1 200 OK
@@ -173,7 +174,7 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
-  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/users/delta?$deltatoken=MF1LuFYbK6Lw4DtZ4o9PDrcGekRP65WEJfDmM0H26l4v9zILCPFiPwSAAeRBghxgiwsXEfywcVQ9R8VEWuYAB50Yw3KvJ-8Z1zamVotGX2b_AHVS_Z-3b0NAtmGpod",
   "value": [
     {
       "displayName":"Testuser7",

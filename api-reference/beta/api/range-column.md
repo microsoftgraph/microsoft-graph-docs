@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: Column
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a column contained in the range.

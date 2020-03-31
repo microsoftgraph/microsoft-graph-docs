@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Folder resource type
 
+Namespace: microsoft.graph
+
 The **Folder** resource groups folder-related data on an item into a single structure. 
 [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.
 

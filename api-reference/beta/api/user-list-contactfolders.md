@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List contactFolders
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the contact folders in the signed-in user's mailbox.

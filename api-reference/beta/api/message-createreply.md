@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: createReply
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a draft of a reply message to include a comment or update any message properties 

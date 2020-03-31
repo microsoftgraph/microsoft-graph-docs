@@ -3,8 +3,8 @@ title: "Microsoft Graph beta endpoint reference"
 description: "The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:"
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ""
-author: ""
+ms.prod: "non-product-specific"
+author: "angelgolfer-ms"
 ---
 
 # Microsoft Graph beta endpoint reference
@@ -21,7 +21,7 @@ The reference content in this section documents the Microsoft Graph beta endpoin
 Microsoft Graph API requests to the beta endpoint use the following pattern:
 
 ```
-	https://graph.microsoft.com/beta/{resource}?[query_parameters]
+https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).

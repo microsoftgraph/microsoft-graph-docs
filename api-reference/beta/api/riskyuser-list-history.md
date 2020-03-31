@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # List history of riskyUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.

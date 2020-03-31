@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # teamsAppInstallation: upgrade
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md)

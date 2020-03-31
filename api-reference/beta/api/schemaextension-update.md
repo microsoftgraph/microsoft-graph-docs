@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Update schemaExtension
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).

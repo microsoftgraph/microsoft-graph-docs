@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # domain resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a domain associated with the tenant.

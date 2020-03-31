@@ -1,19 +1,24 @@
 ---
 title: "call: redirect"
 description: "Redirect an incoming call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # call: redirect
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redirect an incoming call.
+Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
+
+The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)         |
@@ -23,69 +28,122 @@ One of the following permissions is required to call this API. To learn more, in
 | Application     | Calls.Initiate.All                                  |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/redirect
-POST /applications/{id}/calls/{id}/redirect
+POST /communications/calls/{id}/redirect
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
+
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation.|
-|targetDisposition|String|The possible value is: `default`|
-|timeout|Int32|The timeout in seconds for the redirect operation.|
-|maskCallee|Boolean|Indicates whether to mask the callee.|
-|maskCaller|Boolean|Indicates whether to mask the caller.|
-|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Redirect action will be posted. This allows sending the result to the same specific bot instance that triggered the Redirect action. If none is provided, the bot's global callback URI will be used.|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simulring call. This means that all of the targets will be rang at the same time and only the first target that picks up will be connected. We support up to 25 targets for simulring.
+|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.|
+|timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change). |
+|maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
+|maskCaller|Boolean|Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
+|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
 
 ## Response
-Returns `202 Accepted` response code
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
+These examples will cover a workflow of an incoming call notification and how that call will be redirected.
 
-### Redirect a call
+> **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+### Example 1: Forward a Call to a Target
+
+##### Notification - incoming
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
+```
 
 ##### Request
-The following example shows the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "request", 
   "name": "call-redirect"
-}-->
-```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
+} -->
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
 Content-Type: application/json
-Content-Length: 515
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+        "@odata.type": "#microsoft.graph.identitySet",
+        "application": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test bot 2",
+          "id": "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 99,
-  "maskCallee": false,
-  "maskCaller": false
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
 # [C#](#tab/csharp)
@@ -102,69 +160,135 @@ Content-Length: 515
 
 ---
 
-
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
+##### Notification - terminated
 
-### Forward a call
-
-##### Notification - incoming
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
+} -->
+``` json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
+        "state": "terminated",
         "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
         "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
             }
           },
-          "region": "westus",
-          "languageId": "en-US"
+          "region": "amer",
         },
         "targets": [
           {
+            "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
               "application": {
-                "displayName": "Test BOT",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
               }
-            },
-            "region": "westus",
-            "languageId": "en-US"
+            }
           }
         ],
-        "requestedModalities": [ "audio", "video" ]
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: Forward a call to multiple targets with simultaneous ring
+
+##### Notification - incoming
+
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
     }
   ]
@@ -173,98 +297,109 @@ Content-Type: application/json
 
 ##### Request
 
-```http
-POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
-Authorization: Bearer <TOKEN>
+<!-- {
+  "blockType": "ignored", 
+  "name": "call-redirect-simuring"
+} -->
+
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82/redirect
 Content-Type: application/json
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b1253"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user 2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c9c3f3"
+        }
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 60,
-  "maskCallee": false,
-  "maskCaller": false
+  "routingPolicies": [
+    "disableForwarding"
+  ],
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
 
 ##### Response
 
-```http
-HTTP/1.1 202 Accepted
-```
-
-##### Notification - redirecting
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "redirecting"
-      }
-    }
-  ]
-}
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.None"
+} -->
+
+``` http
+HTTP/1.1 202 Accepted
 ```
 
 ##### Notification - terminated
 
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
+} -->
+
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
+Content-Type: application/json
+
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
-        "answeredBy": {
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User 2",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
             }
           }
-        },
-        "terminationReason": "AppRedirected"
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
     }
   ]

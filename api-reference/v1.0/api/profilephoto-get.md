@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Get photo
 
+Namespace: microsoft.graph
+
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
 
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
 
-The supported sizes of HD photos on Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 
+The supported sizes of HD photos on Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
 
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
@@ -30,9 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported |
 |Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Note:**  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
-## HTTP request 
+## HTTP request
 
 ### Get the photo
 <!-- { "blockType": "ignored" } -->
@@ -99,7 +101,7 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### Response 
+##### Response
 Contains the binary data of the requested photo. The HTTP response code is 200.
 
 ### Example 2: Get the 48x48 photo for the signed-in use
@@ -126,7 +128,7 @@ GET https://graph.microsoft.com/v1.0/me/photo
 
 ##### Response
 
-The following response data shows the photo metadata. 
+The following response data shows the photo metadata.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -21,7 +21,7 @@ var toRecipients = new List<Recipient>()
 };
 
 await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"]
-	.Forward(comment,toRecipients)
+	.Forward(toRecipients,comment)
 	.Request()
 	.PostAsync();
 

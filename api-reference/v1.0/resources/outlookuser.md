@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # outlookUser resource type
 
+Namespace: microsoft.graph
+
 
 Represents the Outlook services available to a user.
 

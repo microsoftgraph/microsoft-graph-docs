@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # process resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about the process related to the alert.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # openTypeExtension resource type (open extensions)
 
+Namespace: microsoft.graph
+
 Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
 
 Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](extension.md) abstract type. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data.

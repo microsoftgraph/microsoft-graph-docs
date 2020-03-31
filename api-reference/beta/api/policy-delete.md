@@ -9,6 +9,8 @@ author: ""
 
 # Delete Policy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [policy](../resources/policy.md).

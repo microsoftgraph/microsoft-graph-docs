@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List events
 
+Namespace: microsoft.graph
+
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
 instance meetings and series masters.
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # bookingSchedulingPolicy resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar.

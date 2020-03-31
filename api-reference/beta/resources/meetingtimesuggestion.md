@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingTimeSuggestion resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A meeting suggestion that includes information like meeting time, attendance likelihood, individual 

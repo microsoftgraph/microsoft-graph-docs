@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List buckets
 
+Namespace: microsoft.graph
+
 Retrieve a list of **plannerbucket** objects.
 
 ## Permissions

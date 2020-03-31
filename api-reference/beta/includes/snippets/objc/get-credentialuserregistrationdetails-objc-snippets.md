@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *credentialUserRegistrationDetailsList = [[NSMutableArray alloc] init];
-		credentialUserRegistrationDetailsList = [jsonFinal valueForKey:@"value"];
-		MSGraphCredentialUserRegistrationDetails *credentialUserRegistrationDetails = [[MSGraphCredentialUserRegistrationDetails alloc] initWithDictionary:[credentialUserRegistrationDetailsList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphCredentialUserRegistrationDetails *credentialUserRegistrationDetails = [[MSGraphCredentialUserRegistrationDetails alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

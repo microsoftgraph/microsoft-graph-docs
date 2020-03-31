@@ -1,5 +1,5 @@
 ---
-title: "Get deleted item"
+title: "Retrieve the properties of a recently deleted item"
 description: "Retrieve the properties of a recently deleted item in deleted items."
 author: "davidmu1"
 localization_priority: Normal
@@ -9,12 +9,22 @@ doc_type: apiPageType
 
 # Get deleted item
 
+Namespace: microsoft.graph
+
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### For applications:
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ### For users:
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Stream Stream = graphClient.users("{id|userPrincipalName}").photo().content()
+Stream stream = graphClient.users("{id|userPrincipalName}").photo().content()
 	.buildRequest()
 	.get();
 

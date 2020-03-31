@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # List existing synchronization templates
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the synchronization templates associated with a given application or service principal.

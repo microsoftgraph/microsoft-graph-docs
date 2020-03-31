@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update charttitle
 
+Namespace: microsoft.graph
+
 Update the properties of charttitle object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

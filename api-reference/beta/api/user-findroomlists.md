@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: findRoomLists
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the room lists defined in a tenant, as represented by their [emailAddress](../resources/emailaddress.md) objects.

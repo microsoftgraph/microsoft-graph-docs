@@ -29,7 +29,7 @@ const recordOperation = {
   stopTones: [ "#", "1", "*" ]
 };
 
-let res = await client.api('/app/calls/{id}/record')
+let res = await client.api('/communications/calls/{id}/record')
 	.version('beta')
 	.post(recordOperation);
 

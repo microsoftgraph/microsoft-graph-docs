@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # Get event
+
+Namespace: microsoft.graph
+
 Get an [event](../resources/event.md) object.
 
 ## Permissions

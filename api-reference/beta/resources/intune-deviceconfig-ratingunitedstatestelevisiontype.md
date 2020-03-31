@@ -1,7 +1,7 @@
 ---
 title: "ratingUnitedStatesTelevisionType enum type"
 description: "TV content rating labels in United States"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

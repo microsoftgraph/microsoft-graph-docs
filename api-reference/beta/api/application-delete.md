@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete application
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes an application.

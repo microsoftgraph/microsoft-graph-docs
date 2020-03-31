@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # unifiedRoleDefinition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A unifiedRoleDefinition is a collection of permissions listing the operations that can be performed, such as read, write, and delete.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List taskFolders
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get Outlook task folders in a specific [outlookTaskGroup](../resources/outlooktaskgroup.md).

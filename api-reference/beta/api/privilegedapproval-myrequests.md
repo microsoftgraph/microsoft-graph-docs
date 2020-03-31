@@ -9,6 +9,8 @@ author: ""
 
 # privilegedApproval: myRequests
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the requestor's approval requests.

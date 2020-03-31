@@ -11,22 +11,22 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-NSMutableArray *StreamList = [[NSMutableArray alloc] init];
-MSGraphStream *Stream = [[MSGraphStream alloc] init];
-[Stream setTarget:@"#para-id"];
-[Stream setAction:@"insert"];
-[Stream setPosition:@"before"];
-[Stream setContent:@"<img src=\"image-url-or-part-name\" alt=\"image-alt-text\" />"];
-[StreamList addObject: Stream];
-MSGraphStream *Stream = [[MSGraphStream alloc] init];
-[Stream setTarget:@"#list-id"];
-[Stream setAction:@"append"];
-[Stream setContent:@"<li>new-page-content</li>"];
-[StreamList addObject: Stream];
+NSMutableArray *streamList = [[NSMutableArray alloc] init];
+MSGraphStream *stream = [[MSGraphStream alloc] init];
+[stream setTarget:@"#para-id"];
+[stream setAction:@"insert"];
+[stream setPosition:@"before"];
+[stream setContent:@"<img src=\"image-url-or-part-name\" alt=\"image-alt-text\" />"];
+[streamList addObject: stream];
+MSGraphStream *stream = [[MSGraphStream alloc] init];
+[stream setTarget:@"#list-id"];
+[stream setAction:@"append"];
+[stream setContent:@"<li>new-page-content</li>"];
+[streamList addObject: stream];
 
 NSError *error;
-NSData *StreamData = [Stream getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:StreamData];
+NSData *streamData = [stream getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:streamData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

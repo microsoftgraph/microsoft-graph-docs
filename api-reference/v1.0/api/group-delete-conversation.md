@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Delete conversation
+
+Namespace: microsoft.graph
 Delete a [conversation](../resources/conversation.md) object.
 
 ## Permissions

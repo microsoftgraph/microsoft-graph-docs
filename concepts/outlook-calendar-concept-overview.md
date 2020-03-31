@@ -4,7 +4,7 @@ description: "Outlook calendar is part of the Outlook messaging hub in Office 36
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook calendar API overview
@@ -69,6 +69,7 @@ With globalization, today's business meetings often involve attendees participat
 - As an example in Outlook, customers can organize a meeting and include attendees joining from a conference room in Seattle, a coffee shop in Paris, and a home office in China. Programmatically, the event **locations** property, which is a collection of [location](/graph/api/resources/location?view=graph-rest-1.0) objects, can reflect this level of details in **displayName** and **locationType** for each **location**. See an [example](/graph/api/event-get?view=graph-rest-1.0#request-2).
 - Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created.
 - Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event-get?view=graph-rest-1.0#request-1) of the `Prefer` header in use.
+- Available in preview in the beta version only: organizations that support online meeting providers can set up Outlook calendars to use these providers. You can conveniently [organize or attend events in these calendars as online meetings](outlook-calendar-online-meetings.md).
 
 ## Build apps with location awareness and provide intelligent context (preview)
 
@@ -87,6 +88,10 @@ Use the [people API](people-example.md) in Microsoft Graph to connect to [people
 
 Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility-overview.md#open-extensions) in individual resource instances. If you require the data to be typed, or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility-overview.md#schema-extensions).
 
+## Where is the data?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
+
 ## API reference
 
 Looking for the API reference for this service?
@@ -100,6 +105,8 @@ Looking for the API reference for this service?
 - Learn about:
   - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
   - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
+  - [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)
+  - [Use Outlook to organize or attend meetings online (preview)](outlook-calendar-online-meetings.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)

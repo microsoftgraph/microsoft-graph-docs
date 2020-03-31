@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # Photo resource type
 
+Namespace: microsoft.graph
+
 The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).
 
 ## JSON representation

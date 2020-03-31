@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update domain
 
+Namespace: microsoft.graph
+
 Update the properties of domain object.
 
 > **Important:**

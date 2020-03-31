@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get rule
 
+Namespace: microsoft.graph
+
 
 Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.
 

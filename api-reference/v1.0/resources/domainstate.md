@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # domainState resource type
 
+Namespace: microsoft.graph
+
 Represents the status of asynchronous operations scheduled on a domain.
 
 ## Properties

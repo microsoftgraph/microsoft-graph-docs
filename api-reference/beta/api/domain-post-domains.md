@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create domain
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a domain to the tenant.

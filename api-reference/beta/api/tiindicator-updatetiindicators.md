@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # tiIndicator: updateTiIndicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
@@ -39,7 +41,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters. For details about properties that can be updated, see [update tiIndicator](tiindicator-update.md).
+In the request body, provide a JSON object with the following parameters. For details about properties that can be updated, see [update tiIndicator](tiindicator-update.md). Required fields for each tiIndicator are: `id`, `expirationDateTime`, `targetProduct`.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|

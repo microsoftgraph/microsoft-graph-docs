@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # domain: verify
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Validates the ownership of the domain.

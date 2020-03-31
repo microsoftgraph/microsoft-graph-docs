@@ -1,7 +1,7 @@
 ---
 title: "windows10VpnAuthenticationMethod enum type"
 description: "Windows 10 VPN connection types."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

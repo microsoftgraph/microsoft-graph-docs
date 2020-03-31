@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Assign publishedResource to onPremisesAgentGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign a [publishedResource](../resources/publishedresource.md) object to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.

@@ -1,30 +1,33 @@
 ---
 title: "commsOperation resource type"
 description: "The status of certain long-running operations."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # commsOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The status of certain long-running operations.
+Represents the status of certain long-running operations.
 
-## Methods
-None
+This resource can be returned as the response to an action, or as the content of a [commsNotification](commsNotification.md).  
+
+When it is returned as a response to an action, the status indicates whether there will be subsequent notifications. If, for example, an operation with status of `completed` or `failed` is returned,  there will not be any subsequent operation via the notification channel. 
+
+If a `null` operation, or an operation with a status of `notStarted` or `running` is returned, subsequent updates will come via the notification channel.
 
 ## Properties
 
 | Property           | Type                        | Description                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | The client context.                                                             |
-| createdDateTime    | DateTimeOffset              | The start time of the operation.                                                |
-| id                 | String                      | The operation id. Read-only. Server generated.                                  |
-| lastActionDateTime | DateTimeOffset              | The time of the last action of the operation.                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                            |
+| clientContext      | String                      | Unique Client Context string. Max limit is 256 chars.                           |
+| id                 | String                      | The operation ID. Read-only.                                                    |
+| resultInfo         | [resultInfo](resultinfo.md) | The result information. Read-only.                                              |
 | status             | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
@@ -44,31 +47,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation"
-}-->
-```json
-{
-  "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo",
-    "code": "200"
-  },
-  "status": "completed"
 }
 ```
 

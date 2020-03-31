@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Configuring the invitation message
 
+Namespace: microsoft.graph
+
 The invitedUserMessageInfo object allows you to configure the [invitation](invitation.md) message.
 
 

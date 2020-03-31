@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: replyAll
 
+Namespace: microsoft.graph
+
 Reply to all recipients of a message. The message is then saved in the Sent Items folder.
 
 ## Permissions

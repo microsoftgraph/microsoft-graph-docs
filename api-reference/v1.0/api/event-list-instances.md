@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List instances
 
+Namespace: microsoft.graph
+
 Get the instances (occurrences) of an event for a specified time range. 
 
 If the event is a `seriesMaster` type, this returns the 

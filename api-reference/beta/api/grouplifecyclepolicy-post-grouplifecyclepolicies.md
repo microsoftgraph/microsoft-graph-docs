@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create groupLifecyclePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).

@@ -10,9 +10,10 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null')
+let res = await client.api('/sites')
 	.version('beta')
 	.filter('siteCollection/root ne null')
+	.select('siteCollection,webUrl')
 	.get();
 
 ```

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create MailFolder
 
+Namespace: microsoft.graph
+
 Use this API to create a new child mailfolder.
 
 ## Permissions

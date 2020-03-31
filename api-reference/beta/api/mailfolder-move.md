@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # mailFolder: move
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Move a mailfolder and its contents to another mailfolder.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Assign a manager
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to assign a user's manager.

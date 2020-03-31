@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var type = "embed";
 
 await graphClient.Me.Drive.Items["{item-id}"]
-	.CreateLink(type,scope)
+	.CreateLink(type,null)
 	.Request()
 	.PostAsync();
 

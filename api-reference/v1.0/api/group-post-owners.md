@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # Add group owner
+
+Namespace: microsoft.graph
+
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
 
 >**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams. Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member. 
@@ -27,15 +30,16 @@ One of the following permissions is required to call this API. To learn more, in
 POST /groups/{id}/owners/$ref
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation of the [user](../resources/user.md) object to be added.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 #### Request

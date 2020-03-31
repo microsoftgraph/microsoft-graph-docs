@@ -9,6 +9,8 @@ author: ""
 
 # Create application
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new application.

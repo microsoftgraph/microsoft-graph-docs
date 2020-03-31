@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # groupLifecyclePolicy: addGroup
 
+Namespace: microsoft.graph
+
 Adds a group to a lifecycle policy.
 
 ## Permissions

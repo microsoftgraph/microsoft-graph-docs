@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 When [OAuth2 Client Credentials Grant](https://tools.ietf.org/html/rfc6749#section-4.4) is to be used to connect to the data provider, this connection settings type should be used to set up the profile.

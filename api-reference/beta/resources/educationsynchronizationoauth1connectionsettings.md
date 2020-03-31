@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationOAuth1ConnectionSettings resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile.

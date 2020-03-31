@@ -1,17 +1,19 @@
 ---
-title: "Create owner"
-description: "Use this API to create a new owner."
+title: "Add owner"
+description: "Use this API to add an owner to an application."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Create owner
+# Add owner
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new owner.
+Use this API to add an owner to an application by posting to the owners collection.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

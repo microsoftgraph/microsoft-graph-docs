@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # ColumnLink resource type
 
+Namespace: microsoft.graph
+
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
 [contentType]: contenttype.md

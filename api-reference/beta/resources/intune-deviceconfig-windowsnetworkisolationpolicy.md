@@ -1,7 +1,7 @@
 ---
 title: "windowsNetworkIsolationPolicy resource type"
 description: "Windows Network Isolation Policy"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

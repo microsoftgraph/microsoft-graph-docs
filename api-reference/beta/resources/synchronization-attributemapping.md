@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # attributeMapping resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines how values for the given target attribute should flow during synchronization.

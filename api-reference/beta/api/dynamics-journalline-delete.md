@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Delete journalLines
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a journal line object from Dynamics 365 Business Central.
 
 ## Permissions

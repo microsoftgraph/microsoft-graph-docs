@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove directory role member
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove a member from a directoryRole.

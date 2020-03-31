@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # certificateAuthority resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a certificate authority.

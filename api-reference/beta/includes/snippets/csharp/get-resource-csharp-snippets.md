@@ -6,13 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var resources = await graphClient.Me.Onenote.Resources["{id}"]
+var stream = await graphClient.Me.Onenote.Resources["{id}"].Content
 	.Request()
-	.Select( e => new {
-			 e.Content 
-			 })
 	.GetAsync();
-
-var content = resources.Content;
 
 ```

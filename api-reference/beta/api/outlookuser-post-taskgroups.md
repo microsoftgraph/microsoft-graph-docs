@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create outlookTaskGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an Outlook task group in the user's mailbox.

@@ -9,6 +9,8 @@ author: ""
 
 # Delete oAuth2PermissionGrant
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an oAuth2PermissionGrant.

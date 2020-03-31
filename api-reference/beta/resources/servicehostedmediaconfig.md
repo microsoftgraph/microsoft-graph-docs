@@ -1,17 +1,19 @@
 ---
 title: "serviceHostedMediaConfig resource type"
-description: "The serviceHostedMediaConfig type."
-author: "VinodRavichandran"
+description: "The media that's hosted remotely."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # serviceHostedMediaConfig resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The serviceHostedMediaConfig type.
+The media that's hosted remotely. This is inherited from [mediaConfig](mediaconfig.md).
 
 ## Properties
 
@@ -36,28 +38,6 @@ The following is a JSON representation of the resource.
 {
   "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
-}-->
-```json
-{
-  "preFetchMedia": [
-    {
-      "uri": "https://cdn.contoso.com/beep.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-    },
-    {
-      "uri": "https://cdn.contoso.com/cool.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-    }
-  ],
-  "removeFromDefaultAudioGroup": false
 }
 ```
 

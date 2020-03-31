@@ -9,6 +9,8 @@ author: ""
 
 # hostSecurityState resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains stateful information about the host (including devices, computers, and so on).

@@ -63,7 +63,7 @@ var returnSuggestionReasons = true;
 var minimumAttendeePercentage = "100";
 
 await graphClient.Me
-	.FindMeetingTimes(attendees,locationConstraint,timeConstraint,meetingDuration,maxCandidates,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
+	.FindMeetingTimes(attendees,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
 	.Request()
 	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
 	.PostAsync();

@@ -1,7 +1,7 @@
 ---
 title: "List windowsInformationProtectionAppLockerFiles"
 description: "List properties and relationships of the windowsInformationProtectionAppLockerFile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -76,8 +76,6 @@ Content-Length: 317
   ]
 }
 ```
-
-
 
 
 

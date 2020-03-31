@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List Outlook categories
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the categories that have been defined for the user.

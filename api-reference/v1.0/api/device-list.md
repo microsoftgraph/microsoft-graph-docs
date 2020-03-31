@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List devices
 
+Namespace: microsoft.graph
+
 Retrieve a list of device objects registered in the organization.
 
 ## Permissions

@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # governanceResource: register
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Register a [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.

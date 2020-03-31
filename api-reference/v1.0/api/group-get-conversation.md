@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Get conversation
+
+Namespace: microsoft.graph
 Get a [conversation](../resources/conversation.md) object.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add a student
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a member to a class.

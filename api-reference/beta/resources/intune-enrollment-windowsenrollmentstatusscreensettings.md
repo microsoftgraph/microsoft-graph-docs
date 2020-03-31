@@ -1,7 +1,7 @@
 ---
 title: "windowsEnrollmentStatusScreenSettings resource type"
 description: "Enrollment status screen setting"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

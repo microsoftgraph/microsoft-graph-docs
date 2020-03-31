@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conversationThread resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A conversationThread is a collection of [posts](post.md).

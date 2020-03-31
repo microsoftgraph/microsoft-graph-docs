@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   securityEnabledOnly: true
 };
 
 let res = await client.api('/contacts/{id}/getMemberGroups')
 	.version('beta')
-	.post(String);
+	.post(string);
 
 ```

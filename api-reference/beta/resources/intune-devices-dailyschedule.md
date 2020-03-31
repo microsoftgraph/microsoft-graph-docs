@@ -1,7 +1,7 @@
 ---
 title: "dailySchedule resource type"
 description: "Daily run schedule of a recurring device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

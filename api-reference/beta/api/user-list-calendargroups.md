@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List calendarGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the user's calendar groups.

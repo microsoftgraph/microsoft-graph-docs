@@ -1,13 +1,15 @@
 ---
 title: "managementAgentType enum type"
 description: "Management agent type."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # managementAgentType enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -27,6 +29,7 @@ Management agent type.
 |unknown|16|Unknown management agent type.|
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
+
 
 
 

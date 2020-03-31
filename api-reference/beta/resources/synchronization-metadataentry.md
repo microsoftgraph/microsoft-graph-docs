@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # metadataEntry resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Metadata for the given object.

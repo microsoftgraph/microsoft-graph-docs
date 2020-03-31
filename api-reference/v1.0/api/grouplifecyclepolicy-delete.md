@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete groupLifecyclePolicy
 
+Namespace: microsoft.graph
+
 Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## Permissions

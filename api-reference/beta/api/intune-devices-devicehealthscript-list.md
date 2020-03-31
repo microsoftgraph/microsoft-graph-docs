@@ -1,7 +1,7 @@
 ---
 title: "List deviceHealthScripts"
 description: "List properties and relationships of the deviceHealthScript objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/deviceManagementScripts
+GET /deviceManagement/deviceHealthScripts
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
+GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 ```
 
 ### Response
@@ -58,42 +58,33 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 852
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceHealthScript",
       "id": "bcb60502-0502-bcb6-0205-b6bc0205b6bc",
+      "publisher": "Publisher value",
+      "version": "Version value",
       "displayName": "Display Name value",
       "description": "Description value",
-      "runSchedule": {
-        "@odata.type": "microsoft.graph.runSchedule"
-      },
-      "scriptContent": "c2NyaXB0Q29udGVudA==",
+      "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+      "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "runAsAccount": "user",
       "enforceSignatureCheck": true,
-      "fileName": "File Name value",
+      "runAs32Bit": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "runAs32Bit": true,
-      "complianceRule": {
-        "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-        "detectionType": "string",
-        "operator": "equal",
-        "detectionValue": "Detection Value value"
-      },
-      "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-      "runRemediationScript": true
+      "isGlobalScript": true,
+      "highestAvailableVersion": "Highest Available Version value"
     }
   ]
 }
 ```
-
-
 
 
 

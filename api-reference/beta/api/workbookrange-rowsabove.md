@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: rowsAbove
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a certain number of rows above a given range.

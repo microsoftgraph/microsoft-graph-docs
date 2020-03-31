@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update rule
 
+Namespace: microsoft.graph
+
 
 Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.
 

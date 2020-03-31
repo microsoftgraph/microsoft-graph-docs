@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create notebook
 
+Namespace: microsoft.graph
+
 Create a new OneNote [notebook](../resources/notebook.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

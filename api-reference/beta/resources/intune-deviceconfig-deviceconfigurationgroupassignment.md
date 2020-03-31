@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationGroupAssignment resource type"
 description: "Device configuration group assignment."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -34,7 +34,7 @@ Device configuration group assignment.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|The navigation link to the Device Configuration being targeted.|
+|deviceConfiguration|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|The navigation link to the Device Configuration being targeted.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

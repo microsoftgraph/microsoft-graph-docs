@@ -9,9 +9,11 @@ doc_type: resourcePageType
 
 # usageDetails resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [Used](insights-used.md) items. Information on when the resource was last accessed (viewed) and modified (edited) by the user.
+Complex type containing properties of [used](insights-used.md) items. Information on when the resource was last accessed (viewed) and modified (edited) by the user.
 
 ## JSON representation
 

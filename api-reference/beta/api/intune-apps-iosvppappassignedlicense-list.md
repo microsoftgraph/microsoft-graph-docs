@@ -1,7 +1,7 @@
 ---
 title: "List iosVppAppAssignedLicenses"
 description: "List properties and relationships of the iosVppAppAssignedLicense objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -73,8 +73,6 @@ Content-Length: 340
   ]
 }
 ```
-
-
 
 
 

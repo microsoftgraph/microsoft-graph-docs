@@ -9,6 +9,8 @@ author: ""
 
 # settingValue resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A setting represented by a name/value pair.

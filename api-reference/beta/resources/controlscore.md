@@ -9,6 +9,8 @@ author: ""
 
 #  controlScore resource type
 
+Namespace: microsoft.graph
+
 This resource contains a tenant score and description for an individual control.
 
 |Name |Type |Description |

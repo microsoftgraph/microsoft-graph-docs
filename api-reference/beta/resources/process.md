@@ -9,6 +9,8 @@ author: ""
 
 # process resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains stateful information about the process related to the alert.

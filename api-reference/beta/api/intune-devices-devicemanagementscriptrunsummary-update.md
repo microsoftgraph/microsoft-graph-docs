@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScriptRunSummary"
 description: "Update the properties of a deviceManagementScriptRunSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 ```
 
@@ -46,12 +47,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script run summary entity.|
+|id|String|Key of the device management script run summary entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count.|
 |errorDeviceCount|Int32|Error device count.|
-|compliantDeviceCount|Int32|Compliant device count.|
-|notCompliantDeviceCount|Int32|Not Compliant device count.|
-|pendingDeviceCount|Int32|Pending device count.|
 |successUserCount|Int32|Success user count.|
 |errorUserCount|Int32|Error user count.|
 
@@ -65,17 +63,14 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 179
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
-  "compliantDeviceCount": 4,
-  "notCompliantDeviceCount": 7,
-  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
@@ -86,22 +81,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 319
+Content-Length: 228
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
-  "compliantDeviceCount": 4,
-  "notCompliantDeviceCount": 7,
-  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
 ```
-
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create event
 
+Namespace: microsoft.graph
+
 Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). 
 
 ## Permissions

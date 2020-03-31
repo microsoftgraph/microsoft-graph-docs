@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementSettingCategory"
 description: "Update the properties of a deviceManagementSettingCategory object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -48,6 +48,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The category ID|
 |displayName|String|The category name|
+|hasRequiredSetting|Boolean|The category contains top level required setting|
 
 
 
@@ -61,11 +62,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/categories/{deviceManagementSettingCategoryId}
 Content-type: application/json
-Content-length: 113
+Content-length: 144
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -74,16 +76,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 162
+Content-Length: 193
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
   "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
-
-
 
 
 

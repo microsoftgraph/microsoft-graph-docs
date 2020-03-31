@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationCustomizations resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.

@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # Delete conversationMember
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).

@@ -1,13 +1,15 @@
 ---
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windows10EditionType enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -28,6 +30,7 @@ Windows 10 Edition type.
 |windows10ProfessionalEducationN|9|Windows 10 Professional EducationN|
 |windows10ProfessionalWorkstation|10|Windows 10 Professional for Workstations|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional for Workstations N|
+
 
 
 

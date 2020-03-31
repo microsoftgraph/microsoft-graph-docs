@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("format", "{format}"));
 
-Stream Stream = graphClient.customRequest("/me/drive/items/{item-id}/content", Stream.class)
+Stream stream = graphClient.customRequest("/me/drive/items/{item-id}/content", Stream.class)
 	.buildRequest( requestOptions )
 	.get();
 

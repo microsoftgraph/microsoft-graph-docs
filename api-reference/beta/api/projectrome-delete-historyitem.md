@@ -9,6 +9,8 @@ author: ""
 
 # Delete a historyItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an existing history item for an existing user activity.

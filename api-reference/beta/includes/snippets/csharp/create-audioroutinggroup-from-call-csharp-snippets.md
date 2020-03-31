@@ -20,7 +20,7 @@ var audioRoutingGroup = new AudioRoutingGroup
 	}
 };
 
-await graphClient.App.Calls["{id}"].AudioRoutingGroups
+await graphClient.Communications.Calls["{id}"].AudioRoutingGroups
 	.Request()
 	.AddAsync(audioRoutingGroup);
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: decline
 
+Namespace: microsoft.graph
+
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions
@@ -120,7 +122,7 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <br/>

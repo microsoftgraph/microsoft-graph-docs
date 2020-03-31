@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # ColumnDefinition resource
 
+Namespace: microsoft.graph
+
 ## JSON representation
 
 Here is a JSON representation of a ColumnDefinition resource.

@@ -9,9 +9,11 @@ doc_type: apiPageType
 
 # List trending
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculated insight that returns the list of items trending around the user.
+Calculated insight that includes a list of documents trending around the user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,23 +26,32 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
+Get a list of documents trending around the signed-in user or specified user:
+
 ```http
 GET /me/insights/trending
 GET /users/{id | userPrincipalName}/insights/trending
 ```
 
+Expand the resource referenced by a **trending** insight:
+
+```http
+GET /me/insights/trending/{id}/resource
+GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
+```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
-You can use the `$filter` query parameter to filter trending items. For example, based on Type:
+You can use the `$filter` query parameter to filter trending items. For example, based on **type**:
 
-`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
-Or based on Container Type:
+Or based on **containerType**:
 
-`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-See the available Container Types and Types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
+See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 
 ## Request headers
@@ -94,8 +105,4 @@ Content-length: 801
 }
 ```
 
-### Expanding resource
-The resource referenced by a trending insight can be expanded.
-```http
-GET https://graph.microsoft.com/beta/me/insights/trending/{id}/resource
-```
+

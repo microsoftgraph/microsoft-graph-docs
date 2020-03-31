@@ -1,7 +1,7 @@
 ---
 title: "Create iosVppAppAssignedUserLicense"
 description: "Create a new iosVppAppAssignedUserLicense object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,8 +91,6 @@ Content-Length: 287
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

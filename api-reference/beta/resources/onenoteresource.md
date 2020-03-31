@@ -9,6 +9,8 @@ author: ""
 
 # onenoteResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An image or other file resource on a OneNote page. 

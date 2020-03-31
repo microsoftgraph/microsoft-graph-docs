@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Contract resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an existing partnership that the partner tenant has with a customer tenant.

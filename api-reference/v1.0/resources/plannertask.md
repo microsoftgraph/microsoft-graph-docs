@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerTask resource type
 
+Namespace: microsoft.graph
+
 The **plannerTask** resource represents a Planner task in Office 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](planner-overview.md) for more information regarding relationships between group, plan and task.
 
 

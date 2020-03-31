@@ -1,7 +1,7 @@
 ---
 title: "Get termsAndConditionsAcceptanceStatus"
 description: "Read properties and relationships of the termsAndConditionsAcceptanceStatus object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 289
+Content-Length: 344
 
 {
   "value": {
@@ -69,12 +69,11 @@ Content-Length: 289
     "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
     "userDisplayName": "User Display Name value",
     "acceptedVersion": 15,
-    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```
-
-
 
 
 

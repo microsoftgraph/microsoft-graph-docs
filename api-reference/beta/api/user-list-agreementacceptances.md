@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List agreementAcceptances
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of a user's [agreementAcceptance](../resources/agreementacceptance.md) objects.

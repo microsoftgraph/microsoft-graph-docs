@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # incompleteData resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **incompleteData** facet indicates that a resource was generated with incomplete data.

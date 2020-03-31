@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # synchronizationJobRestartCriteria resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines the scope of the [synchronizationJob: restart](../api/synchronization-synchronizationjob-restart.md) action.

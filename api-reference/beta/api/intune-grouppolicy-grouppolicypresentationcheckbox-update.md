@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationCheckBox"
 description: "Update the properties of a groupPolicyPresentationCheckBox object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
-
-
 
 
 

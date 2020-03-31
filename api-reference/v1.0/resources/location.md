@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Location resource type
 
+Namespace: microsoft.graph
+
 Represents location information of an [event](event.md).
 
 There are multiple ways to create events in a calendar, for example, through an app using the 

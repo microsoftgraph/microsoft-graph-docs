@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptUserState"
 description: "Create a new deviceManagementScriptUserState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates
 ```
 
@@ -46,7 +47,7 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script user state entity.|
+|id|String|Key of the device management script user state entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count for specific user.|
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|
@@ -61,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates
+POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates
 Content-type: application/json
 Content-length: 180
 
@@ -88,8 +89,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

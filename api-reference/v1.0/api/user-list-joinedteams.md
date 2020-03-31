@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List joinedTeams
 
+Namespace: microsoft.graph
+
 
 
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.

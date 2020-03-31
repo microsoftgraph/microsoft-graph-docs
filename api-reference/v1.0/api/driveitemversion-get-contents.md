@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Download contents of a DriveItemVersion resource
 
+Namespace: microsoft.graph
+
 Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
 
 ## Permissions

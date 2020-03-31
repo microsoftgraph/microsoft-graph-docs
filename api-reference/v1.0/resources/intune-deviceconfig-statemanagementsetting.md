@@ -1,13 +1,15 @@
 ---
 title: "stateManagementSetting enum type"
 description: "State Management Setting."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # stateManagementSetting enum type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -19,6 +21,7 @@ State Management Setting.
 |notConfigured|0|Not configured.|
 |blocked|1|Blocked.|
 |allowed|2|Allowed.|
+
 
 
 

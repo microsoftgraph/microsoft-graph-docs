@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List scopedRoleMembers
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) resources.

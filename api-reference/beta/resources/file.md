@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # File resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **File** resource groups file-related data items into a single structure.

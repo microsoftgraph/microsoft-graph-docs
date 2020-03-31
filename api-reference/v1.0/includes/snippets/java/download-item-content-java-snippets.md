@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Stream Stream = graphClient.customRequest("/me/drive/items/{item-id}/content", Stream.class)
+Stream stream = graphClient.customRequest("/me/drive/items/{item-id}/content", Stream.class)
 	.buildRequest()
 	.get();
 

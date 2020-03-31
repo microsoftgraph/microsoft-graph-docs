@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.

@@ -18,18 +18,10 @@ var value = new List<Alert>()
 		},
 		Feedback = new AlertFeedback
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","microsoft.graph.alertFeedback"}
-			}
 		},
 		Id = "String (identifier)",
 		Status = new AlertStatus
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","microsoft.graph.alertStatus"}
-			}
 		},
 		Tags = new List<String>()
 		{

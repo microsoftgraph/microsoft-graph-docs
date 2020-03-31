@@ -1,7 +1,7 @@
 ---
 title: "List auditEvents"
 description: "List properties and relationships of the auditEvent objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1632
+Content-Length: 1873
 
 {
   "value": [
@@ -78,7 +78,14 @@ Content-Length: 1632
         "userPrincipalName": "User Principal Name value",
         "servicePrincipalName": "Service Principal Name value",
         "ipAddress": "Ip Address value",
-        "userId": "User Id value"
+        "userId": "User Id value",
+        "userRoleScopeTags": [
+          {
+            "@odata.type": "microsoft.graph.roleScopeTagInfo",
+            "displayName": "Display Name value",
+            "roleScopeTagId": "Role Scope Tag Id value"
+          }
+        ]
       },
       "activity": "Activity value",
       "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -107,8 +114,6 @@ Content-Length: 1632
   ]
 }
 ```
-
-
 
 
 

@@ -9,6 +9,8 @@ author: ""
 
 # recentNotebookLinks resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Links to open a OneNote notebook. This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.

@@ -9,6 +9,8 @@ author: ""
 
 # timeZoneBase resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The basic representation of a time zone.

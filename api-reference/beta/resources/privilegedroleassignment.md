@@ -9,6 +9,8 @@ author: ""
 
 # privilegedRoleAssignment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a privileged role assignment for a particular user. 

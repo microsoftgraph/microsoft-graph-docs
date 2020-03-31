@@ -1,7 +1,7 @@
 ---
 title: "List depEnrollmentProfiles"
 description: "List properties and relationships of the depEnrollmentProfile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -105,8 +105,6 @@ Content-Length: 1588
   ]
 }
 ```
-
-
 
 
 

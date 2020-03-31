@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # UploadSession resource
 
+Namespace: microsoft.graph
+
 The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.
 
 ## JSON representation

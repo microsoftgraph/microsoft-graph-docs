@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # mailFolder: copy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copy a mailfolder and its contents to another mailfolder.

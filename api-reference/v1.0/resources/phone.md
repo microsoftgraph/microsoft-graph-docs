@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # phone resource type
 
+Namespace: microsoft.graph
+
 Represents a phone number.
 
 

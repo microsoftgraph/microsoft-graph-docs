@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Filter: clear
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Clear the filter on the given column.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # office365GroupsActivityStorage resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property                  | Type   | Description                              |

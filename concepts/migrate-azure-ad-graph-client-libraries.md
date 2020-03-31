@@ -75,8 +75,8 @@ The following steps assume your app is already using ADAL to acquire access toke
     signedInUser = (User)await client.Me.Request().GetAsync();
     ```
 
-    [!NOTE]
-    The Azure AD Graph client library supported LINQ-based query
+    >[!NOTE]
+    >The Azure AD Graph client library supported LINQ-based query
     syntax. However, the Microsoft Graph client library does not.  Consequently, you'll need to convert the relevant queries to a more RESTful expression.  
 
     To do so, change:

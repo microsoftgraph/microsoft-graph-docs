@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get conversation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a [conversation](../resources/conversation.md) object.

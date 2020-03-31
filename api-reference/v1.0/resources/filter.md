@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Filter resource type
 
+Namespace: microsoft.graph
+
 Manages the filtering of a table's column.
 
 

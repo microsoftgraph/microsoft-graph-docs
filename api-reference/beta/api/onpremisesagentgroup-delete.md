@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete onPremisesAgentGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.

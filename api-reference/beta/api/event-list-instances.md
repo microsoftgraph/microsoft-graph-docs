@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List instances
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the instances (occurrences) of an event for a specified time range. 

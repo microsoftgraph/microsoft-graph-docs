@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete calendar
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a calendar other than the default calendar.

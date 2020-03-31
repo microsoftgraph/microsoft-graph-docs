@@ -10,7 +10,7 @@ var administrativeUnit = new AdministrativeUnit
 {
 	DisplayName = "Seattle District Technical Schools",
 	Description = "Seattle district technical schools administration",
-	Visibility = true
+	Visibility = "HiddenMembership"
 };
 
 await graphClient.AdministrativeUnits

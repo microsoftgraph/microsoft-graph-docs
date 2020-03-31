@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: copy
 
+Namespace: microsoft.graph
+
 Copy a message to a folder.
 
 ## Permissions

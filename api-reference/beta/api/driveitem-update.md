@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Update DriveItem properties
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.

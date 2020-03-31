@@ -1,7 +1,7 @@
 ---
 title: "Get auditEvent"
 description: "Read properties and relationships of the auditEvent object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1538
+Content-Length: 1765
 
 {
   "value": {
@@ -80,7 +80,14 @@ Content-Length: 1538
       "userPrincipalName": "User Principal Name value",
       "servicePrincipalName": "Service Principal Name value",
       "ipAddress": "Ip Address value",
-      "userId": "User Id value"
+      "userId": "User Id value",
+      "userRoleScopeTags": [
+        {
+          "@odata.type": "microsoft.graph.roleScopeTagInfo",
+          "displayName": "Display Name value",
+          "roleScopeTagId": "Role Scope Tag Id value"
+        }
+      ]
     },
     "activity": "Activity value",
     "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -108,8 +115,6 @@ Content-Length: 1538
   }
 }
 ```
-
-
 
 
 

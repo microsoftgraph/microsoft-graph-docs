@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # DateTimeColumn resource type
 
+Namespace: microsoft.graph
+
 The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.
 
 ## JSON representation

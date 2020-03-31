@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get secureScoreControlProfile
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of an [securescorecontrolprofile](../resources/securescorecontrolprofile.md) object.
 
 ## Permissions

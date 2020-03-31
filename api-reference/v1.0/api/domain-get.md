@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get domain
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of domain object.
 
 ## Permissions

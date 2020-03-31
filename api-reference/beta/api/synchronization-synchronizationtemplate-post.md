@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create synchronizationTemplate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new synchronization template for a given application.

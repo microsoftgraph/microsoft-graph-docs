@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List group members
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive.
@@ -19,11 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, User.Read.All |
+|Application | Group.Read.All, Directory.Read.All |
 
 > Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

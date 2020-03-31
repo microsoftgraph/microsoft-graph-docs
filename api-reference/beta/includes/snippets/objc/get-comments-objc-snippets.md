@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *workbookCommentList = [[NSMutableArray alloc] init];
-		workbookCommentList = [jsonFinal valueForKey:@"value"];
-		MSGraphWorkbookComment *workbookComment = [[MSGraphWorkbookComment alloc] initWithDictionary:[workbookCommentList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphWorkbookComment *workbookComment = [[MSGraphWorkbookComment alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

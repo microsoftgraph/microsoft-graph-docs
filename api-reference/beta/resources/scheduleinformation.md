@@ -9,6 +9,8 @@ author: ""
 
 # scheduleInformation resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents the availability of a user, distribution list, or resource (room or equipment) for a specified time period.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: findMeetingTimes
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # messageRule resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A rule that applies to messages in the Inbox of a user.

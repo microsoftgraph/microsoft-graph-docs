@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List groupLifecyclePolicies
 
+Namespace: microsoft.graph
+
 Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.
 
 ## Permissions

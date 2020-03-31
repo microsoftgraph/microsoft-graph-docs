@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update plannerPlan
 
+Namespace: microsoft.graph
+
 Update the properties of a **plannerPlan** object.
 
 ## Permissions

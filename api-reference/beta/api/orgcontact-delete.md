@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete orgContact
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete orgContact.

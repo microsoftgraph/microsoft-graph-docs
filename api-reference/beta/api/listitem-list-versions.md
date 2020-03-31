@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Listing versions of a ListItem (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 SharePoint can be configured to retain the history for list items.

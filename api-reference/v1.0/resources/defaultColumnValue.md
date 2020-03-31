@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # DefaultColumnValue resource type
 
+Namespace: microsoft.graph
+
 The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
 

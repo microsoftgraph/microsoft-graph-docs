@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # attendeeAvailability resource type
 
+Namespace: microsoft.graph
+
 The availability of an attendee.
 
 ## JSON representation

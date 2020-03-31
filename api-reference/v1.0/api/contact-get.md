@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get contact
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a contact object.
 
 There are two scenarios where an app can get a contact in another user's contact folder:

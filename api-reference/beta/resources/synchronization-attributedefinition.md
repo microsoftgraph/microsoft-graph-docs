@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # attributeDefinition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes an attribute of an object.

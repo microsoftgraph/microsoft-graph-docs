@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete unifiedRoleAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.

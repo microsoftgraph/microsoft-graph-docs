@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # directoryAudit resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the directory audit items and its collection.
@@ -25,7 +27,7 @@ Represents the directory audit items and its collection.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|activityDisplayName|String|Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged,refer to [Azure Ad activity list](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|activityDisplayName|String|Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged,refer to [Azure Ad activity list](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|[keyValue](keyvalue.md) collection|Indicates additional details on the activity.|
 |category|String|Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)|
 |correlationId|GUID|Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.|

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create ContactFolder
 
+Namespace: microsoft.graph
+
 Create a new contactFolder under the user's default contacts folder.
 
 You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).

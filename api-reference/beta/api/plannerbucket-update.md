@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update plannerbucket
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of **plannerbucket** object.

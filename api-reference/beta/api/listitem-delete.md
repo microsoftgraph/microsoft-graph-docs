@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Delete an item from a list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes an item from a [list][].
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## Optional request headers

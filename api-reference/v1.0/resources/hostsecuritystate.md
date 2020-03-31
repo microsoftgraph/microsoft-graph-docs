@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # hostSecurityState resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about the host (including devices, computers, and so on).
 
 ## Properties

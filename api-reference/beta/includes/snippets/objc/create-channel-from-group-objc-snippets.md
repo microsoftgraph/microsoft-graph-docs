@@ -14,6 +14,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphChannel *channel = [[MSGraphChannel alloc] init];
 [channel setDisplayName:@"Architecture Discussion"];
 [channel setDescription:@"This channel is where we debate all future architecture plans"];
+[channel setMembershipType: [MSGraphChannelMembershipType standard]];
 
 NSError *error;
 NSData *channelData = [channel getSerializedDataWithError:&error];

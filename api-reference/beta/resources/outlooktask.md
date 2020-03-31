@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # outlookTask resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An Outlook item that can track a work item.

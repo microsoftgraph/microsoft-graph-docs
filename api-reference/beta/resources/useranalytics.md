@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # userAnalytics resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The user's settings and activity statistics.

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update journalLines
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a journal lines object for Dynamics 365 Business Central.
 
 ## Permissions

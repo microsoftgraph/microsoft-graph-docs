@@ -1,13 +1,15 @@
 ---
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Get call
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
+GET /communications/calls/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -42,11 +46,11 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.
 
-## Example
+## Examples
+
+### Example 1: Getting a Peer-to-Peer call
 
 ##### Request
-The following call example shows the request for getting the peer to peer call.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -55,7 +59,7 @@ The following call example shows the request for getting the peer to peer call.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}
+GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
@@ -106,7 +110,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -152,29 +156,44 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
+### Example 2: Getting a group call
 
+##### Request
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "get-call"
 }-->
-```http
-GET https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Authorization: Bearer <Token>
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "established",

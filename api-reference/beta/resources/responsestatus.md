@@ -9,6 +9,8 @@ author: ""
 
 # responseStatus resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The response status of a meeting request.

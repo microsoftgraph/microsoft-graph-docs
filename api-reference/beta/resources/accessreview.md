@@ -9,9 +9,11 @@ doc_type: resourcePageType
 
 # accessReview resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessReview` represents an access review.  
+Represents an Azure AD [access review](accessreviews-root.md).  
 
 
 ## Methods
@@ -42,7 +44,7 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessRevi
 | `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.  Required on create. |
 | `status`                  |`String`                                                        | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
 | `description`             |`String`                                                        | The description provided by the access review creator, to show to the reviewers. |
-| `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier. Required on create. |
+| `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier. Required on create.  This value is case sensitive. |
 | `reviewerType`            |`String`                                                        | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
 | `reviewedEntity`          |[identity](identity.md)                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
@@ -101,9 +103,9 @@ Here is a JSON representation of the resource.
 
 ```
 
-## The accessReviewSettings type
+## accessReviewSettings resource type
 
-The `accessReviewSettings` provides additional settings when creating an access review, to control the feature behavior when starting an access review.  This type has the following properties: 
+The **accessReviewSettings** resource type provides additional settings when creating an access review, to control the feature behavior when starting an access review. This type has the following properties. 
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
@@ -117,23 +119,23 @@ The `accessReviewSettings` provides additional settings when creating an access 
 | `autoApplyReviewResultsEnabled`|`Boolean` | Flag to indicate whether auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | `accessRecommendationsEnabled`|`Boolean` | Flag to indicate whether showing recommendations to reviewers is enabled. |
 
-## The autoReviewSettings type
+## autoReviewSettings resource type
 
-The `autoReviewSettings` is embedded within the access review settings, and specifies the behavior for the feature when an access review completes.  The type has one property, `notReviewedResult`.
+The **autoReviewSettings** resource type is embedded within the access review settings, and along with **autoReviewEnabled**, specifies the behavior for the feature when an access review completes. The resource has one property, **notReviewedResult**. If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set **autoReviewEnabled** to false. If you want to have the system provide a decision even if the reviewer does not make a choice, set **autoReviewEnabled** to `true` and include **autoReviewSettings** with the **notReviewedResult** property. Then, when a review completes, based on the **notReviewedResult** property, the decision will be recorded to either `Approve` or `Deny`.   
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`. |
+| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then `accessRecommendationsEnabled` in the settings should also be set to true. |
 
 
-## The accessReviewRecurrenceSettings type
+## accessReviewRecurrenceSettings resource type
 
-The `accessReviewRecurrenceSettings` is embedded within the access review settings, and specifies that the access review recurs at regular intervals.  This type has the following properties:
+The **accessReviewRecurrenceSettings** resource type is embedded within the access review settings, and specifies that the access review recurs at regular intervals.  This type has the following properties.
 
 | Property                     | Type                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | The recurrence interval, which must be one of `onetime`, `weekly`, `monthly`, `quarterly`, or `annual`.                                                                   |
-| `recurrenceEndType`|`String` | How the recurrence ends. If it is `Never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrentCount` instances of the review have completed. |
+| `recurrenceEndType`|`String` | How the recurrence ends. If it is `never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
 | `durationInDays`|`Int32`     | The duration in days for recurrence.                                                                              |
 | `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`, or 0 otherwise.                                                        |
 

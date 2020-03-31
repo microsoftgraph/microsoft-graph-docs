@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create multi-value extended property
 
+Namespace: microsoft.graph
+
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 
 The following user resources are supported:

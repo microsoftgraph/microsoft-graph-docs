@@ -2,6 +2,7 @@
 title: "Best practices for working with Microsoft Graph"
 description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Best practices for working with Microsoft Graph
@@ -21,7 +22,7 @@ To access the data in Microsoft Graph, your application will need to acquire an 
 - The HTTP *Authorization* request header, as a *Bearer* token
 - The graph client constructor, when using a Microsoft Graph client library
 
-Use the Microsoft Authentication Library API, [MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries) to acquire the access token to Microsoft Graph.
+Use the Microsoft Authentication Library API, [MSAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries) to acquire the access token to Microsoft Graph.
 
 ## Consent and authorization
 
@@ -36,8 +37,8 @@ Apply the following best practices for consent and authorization in your app:
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
   - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
-  - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes).
-  - Ensure that you understand the difference between [static, dynamic and incremental consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes).
+  - Ensure that you understand the difference between [static, dynamic and incremental consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
 - **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 

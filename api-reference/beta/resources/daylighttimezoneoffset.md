@@ -9,6 +9,8 @@ author: ""
 
 # daylightTimeZoneOffset resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Specifies when a time zone switches from standard time to daylight saving time.

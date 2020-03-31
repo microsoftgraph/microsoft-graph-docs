@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # List memberOf
+
+Namespace: microsoft.graph
+
 Get groups that the group is a direct member of. 
 
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 groups.
@@ -17,9 +20,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All    |
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All |
+|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

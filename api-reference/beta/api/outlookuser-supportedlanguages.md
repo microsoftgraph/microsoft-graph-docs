@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # outlookUser: supportedLanguages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create groupLifecyclePolicy
 
+Namespace: microsoft.graph
+
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## Permissions

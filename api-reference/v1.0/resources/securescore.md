@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # secureScore resource type
 
+Namespace: microsoft.graph
+
 Represents a tenant's secure score per day of scoring data, at the tenant and control level. By default, 90 days of data is held. This data is sorted by **createdDateTime**, from latest to earliest. This will allow you to page responses by using $top=n, where n = the number of days of data that you want to retrieve. 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create iosLobAppProvisioningConfigurationAssignment"
 description: "Create a new iosLobAppProvisioningConfigurationAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -86,8 +86,6 @@ Content-Length: 233
   }
 }
 ```
-
-
 
 
 

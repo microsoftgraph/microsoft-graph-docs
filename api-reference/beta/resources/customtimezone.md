@@ -9,6 +9,8 @@ author: ""
 
 # customTimeZone resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.

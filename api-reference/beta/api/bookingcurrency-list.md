@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List bookingCurrencies
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [bookingCurrency](../resources/bookingcurrency.md) objects available to a Microsoft Bookings business.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create registeredOwner
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a user as a registered owner of the device.

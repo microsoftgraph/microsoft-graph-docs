@@ -14,7 +14,7 @@ const changeScreenSharingRole = {
   role: "viewer"
 };
 
-let res = await client.api('/app/calls/{id}/changeScreenSharingRole')
+let res = await client.api('/communications/calls/{id}/changeScreenSharingRole')
 	.version('beta')
 	.post(changeScreenSharingRole);
 

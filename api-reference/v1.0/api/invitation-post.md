@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create invitation
 
+Namespace: microsoft.graph
+
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
 When creating a new invitation you have several options available:

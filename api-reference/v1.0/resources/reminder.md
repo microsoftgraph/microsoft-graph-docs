@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # reminder resource type
 
+Namespace: microsoft.graph
+
 A reminder for an [event](event.md) in a user [calendar](calendar.md).
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartFill resource type
 
+Namespace: microsoft.graph
+
 Represents the fill formatting for a chart element.
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: reapplyFilters
 
+Namespace: microsoft.graph
+
 Reapplies all the filters currently on the table.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const Stream = [
+const stream = [
    {
     'target':'#para-id',
     'action':'insert',
@@ -26,6 +26,6 @@ const Stream = [
 
 let res = await client.api('/me/onenote/pages/{id}/content')
 	.version('beta')
-	.update(Stream);
+	.update(stream);
 
 ```

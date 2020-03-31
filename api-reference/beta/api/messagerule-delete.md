@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete messageRule
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the specified [messageRule](../resources/messagerule.md) object.

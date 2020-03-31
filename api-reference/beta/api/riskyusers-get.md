@@ -8,6 +8,8 @@ ms.prod: "microsoft-identity-platform"
 ---
 # Get riskyUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a **riskyUser** object.

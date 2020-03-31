@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create onPremisesAgentGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.

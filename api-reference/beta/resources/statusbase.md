@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # statusBase resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the status of the provisioning summary event. 

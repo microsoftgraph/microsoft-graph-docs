@@ -53,7 +53,7 @@ boolean returnSuggestionReasons = true;
 String minimumAttendeePercentage = "100";
 
 graphClient.me()
-	.findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,maxCandidates,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
+	.findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
 	.buildRequest( requestOptions )
 	.post();
 

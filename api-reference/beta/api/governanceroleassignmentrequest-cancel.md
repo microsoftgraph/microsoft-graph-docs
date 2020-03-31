@@ -3,11 +3,13 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identitiy-platform"
 ---
 
 # Cancel governanceRoleAssignmentRequest
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | Bearer {token}. Required.|
 | Content-type  | application/json|
 
 ## Request body
@@ -45,14 +47,14 @@ If successful, this method returns `204 NoContent` response code. It does not re
 
 ## Error codes
 This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
-|Error code     | Error message              | Details |
-|:--------------------| :---------------------|:--------------------|
-| 400 BadRequest | RoleAssignmentRequestNotFound | The governanceRoleAssignmentRequest does not exist in system.
-| 400 BadRequest | RequestCannotBeCancelled    | Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled.
+| Error code | Error message | Details |
+|:---------- |:------------- |:------- |
+| 400 BadRequest | RoleAssignmentRequestNotFound | The governanceRoleAssignmentRequest does not exist in system. |
+| 400 BadRequest | RequestCannotBeCancelled | Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled. |
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,7 +79,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ---
 
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,

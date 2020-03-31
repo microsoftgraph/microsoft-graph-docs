@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Restart synchronizationJob
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors.

@@ -1,13 +1,15 @@
 ---
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Update audio routing group
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
+PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -57,9 +61,8 @@ The following example shows the request.
   "name": "update-audioRoutingGroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
@@ -99,7 +102,6 @@ Content-Length: 233
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",

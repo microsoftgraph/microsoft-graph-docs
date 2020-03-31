@@ -1,13 +1,15 @@
 ---
 title: "Enroll corporate-owned devices by using Intune"
 description: " (BYOD) scenario."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
 
 # Enroll corporate-owned devices by using Intune
+
+Namespace: microsoft.graph
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
@@ -20,3 +22,4 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Imported windows autopilot device identity state](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [Imported windows autopilot device identity upload](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [Imported windows autopilot device identity upload status](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+

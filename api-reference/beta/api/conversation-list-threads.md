@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List threads
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the threads in a group conversation.

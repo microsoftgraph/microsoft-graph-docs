@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # emailAddress resource type
 
+Namespace: microsoft.graph
+
 The name and email address of a contact or message recipient.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationCategory
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve an [educationCategory](../resources/educationcategory.md) object.

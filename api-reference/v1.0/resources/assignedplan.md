@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # assignedPlan resource type
 
+Namespace: microsoft.graph
+
 The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.
 
 

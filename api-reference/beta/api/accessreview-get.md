@@ -1,6 +1,6 @@
 ---
 title: "Get accessReview"
-description: "In the Azure AD access reviews feature, retrieve an accessReview object.  "
+description: "In the Azure AD access reviews feature, retrieve an accessReview object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -9,13 +9,15 @@ doc_type: apiPageType
 
 # Get accessReview
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.  
 
 To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.
 
-If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.
+If this is a recurring access review, no decisions will be associated with the recurring access review series. Instead, use the `instances` relationship of that series to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review. Each past and current instance will have decisions.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,10 +41,10 @@ GET /accessReviews/{reviewId}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-No request body should be supplied.
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200, OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.
 
 ## Example
 ##### Request

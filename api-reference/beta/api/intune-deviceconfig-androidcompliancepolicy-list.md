@@ -1,7 +1,7 @@
 ---
 title: "List androidCompliancePolicies"
 description: "List properties and relationships of the androidCompliancePolicy objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1961
+Content-Length: 2091
 
 {
   "value": [
@@ -85,7 +85,9 @@ Content-Length: 1961
       "securityRequireVerifyApps": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "advancedThreatProtectionRequiredSecurityLevel": "secured",
       "securityBlockJailbrokenDevices": true,
+      "securityBlockDeviceAdministratorManagedDevices": true,
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
       "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -109,8 +111,6 @@ Content-Length: 1961
   ]
 }
 ```
-
-
 
 
 

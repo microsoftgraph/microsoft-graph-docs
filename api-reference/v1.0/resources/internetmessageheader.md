@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # internetMessageHeader resource type
 
+Namespace: microsoft.graph
+
 
 A key-value pair that represents an Internet message header, as defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provides 
 details of the network path taken by a message from the sender to the recipient. 

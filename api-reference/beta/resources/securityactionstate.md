@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # securityActionState resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the history of securityAction state changes.

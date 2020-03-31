@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete calendar
 
+Namespace: microsoft.graph
+
 Delete a calendar other than the default calendar.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

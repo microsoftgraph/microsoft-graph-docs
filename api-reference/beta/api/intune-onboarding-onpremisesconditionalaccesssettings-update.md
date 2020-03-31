@@ -1,7 +1,7 @@
 ---
 title: "Update onPremisesConditionalAccessSettings"
 description: "Update the properties of a onPremisesConditionalAccessSettings object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -100,8 +100,6 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
-
-
 
 
 

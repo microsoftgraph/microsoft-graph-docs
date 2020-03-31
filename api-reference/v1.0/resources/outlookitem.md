@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # outlookItem resource type
 
+Namespace: microsoft.graph
+
 
 
 ## JSON representation

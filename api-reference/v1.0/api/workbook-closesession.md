@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Close Session
 
+Namespace: microsoft.graph
+
 Use this API to close an existing workbook session. 
 
 ## Permissions

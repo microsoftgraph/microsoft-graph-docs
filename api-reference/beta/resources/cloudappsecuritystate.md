@@ -9,6 +9,8 @@ author: ""
 
 # cloudAppSecurityState resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).
 
 ## Properties

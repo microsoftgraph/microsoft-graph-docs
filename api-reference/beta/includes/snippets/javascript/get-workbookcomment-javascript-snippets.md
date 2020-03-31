@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/root/workbook/comments/{id}')
+let res = await client.api('/drive/items/{id}/workbook/comments/{id}')
 	.version('beta')
 	.get();
 

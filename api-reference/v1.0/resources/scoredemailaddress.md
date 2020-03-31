@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # scoredEmailAddress resource type
 
+Namespace: microsoft.graph
+
 Represents a scored email address.
 
 

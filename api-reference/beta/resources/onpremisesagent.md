@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # onPremisesAgent resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents on-premises agent. On-premises agents installed by a tenant administrator can be configured to access/handle requests to a particular [published resource](publishedresource.md).

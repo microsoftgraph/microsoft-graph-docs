@@ -9,6 +9,8 @@ doc_type: resourcePageType_
 
 # timeOffReason resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.md).
@@ -17,11 +19,11 @@ A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Create a new `timeOffReason`.|
-|[List timeOffReason](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReasons` in a schedule.|
-|[Get timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Get a `timeOffReason` by ID.|
-|[Replace timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Replace a `timeOffReason`.|
-|[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Mark `timeOffReason` as inactive.|
+|[Create](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Create a new **timeOffReason**.|
+|[List](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) collection | Get the list of **timeOffReason** in a schedule.|
+|[Get](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Get a **timeOffReason** by ID.|
+|[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Replace a **timeOffReason**.|
+|[Delete](../api/timeoffreason-delete.md) | None | Mark a **timeOffReason** as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |

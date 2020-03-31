@@ -9,6 +9,8 @@ author: ""
 
 # agreementFileData resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the blob of an Azure Active Directory (Azure AD) terms of use agreement file.

@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # shipmentMethods resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a method of shipment in Dynamics 365 Business Central, such as UPS, Fedex, and DHL.
 
 ## Methods

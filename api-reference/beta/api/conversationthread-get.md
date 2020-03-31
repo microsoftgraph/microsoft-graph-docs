@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get conversationThread
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 

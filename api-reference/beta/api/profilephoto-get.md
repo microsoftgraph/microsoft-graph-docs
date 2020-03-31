@@ -9,13 +9,15 @@ author: ""
 
 # Get photo
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
 A GET photo method first attempts to retrieve the specified photo from Office 365. If the photo is not available in Office 365, the API attempts to retrieve the photo from Azure Active Directory.
 
-The supported sizes of HD photos in Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 
+The supported sizes of HD photos in Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
 
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
@@ -34,9 +36,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)  <br /> **Note**: Metadata operation is not supported. | For **user** resource:<br/>User.Read, User.ReadWrite<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 |Application                        | For **user** resource:<br/>User.Read.All, User.ReadWrite.All<br /><br />For **group** resource:<br />Group.Read.All, Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Note:**  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
-## HTTP request 
+## HTTP request
 
 ### Get the photo
 <!-- { "blockType": "ignored" } -->
@@ -135,7 +137,7 @@ GET https://graph.microsoft.com/beta/me/photo
 ```
 
 ##### Response
-The following response data shows the photo metadata. 
+The following response data shows the photo metadata.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -157,7 +159,7 @@ Content-type: application/json
 }
 ```
 
-The following response data shows the contents of a response when a photo hasn't already been uploaded for the user. 
+The following response data shows the contents of a response when a photo hasn't already been uploaded for the user.
 
 >**Note:** The response object shown here might be shortened for readability.
 

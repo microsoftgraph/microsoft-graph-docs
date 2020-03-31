@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # chat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. Participants can be users or apps.

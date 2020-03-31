@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Delete taxAreas
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a tax area object from Dynamics 365 Business Central.
 
 ## Permissions

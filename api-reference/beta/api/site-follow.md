@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Follow site 
 
+Namespace: microsoft.graph
+
 Follow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions

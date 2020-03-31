@@ -9,6 +9,8 @@ author: ""
 
 # Delete an activity
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an existing user activity for your app.

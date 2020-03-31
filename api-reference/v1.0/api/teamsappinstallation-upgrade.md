@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Upgrade an app in a team
 
+Namespace: microsoft.graph
+
 Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
 to the latest version of the app.
 

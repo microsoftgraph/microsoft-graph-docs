@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # notebookLinks resource type
 
+Namespace: microsoft.graph
+
 Links for opening a OneNote notebook.
 
 ## JSON representation

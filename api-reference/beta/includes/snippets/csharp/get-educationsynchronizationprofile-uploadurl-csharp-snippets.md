@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var String = await graphClient.Education.SynchronizationProfiles["{id}"]
+var @string = await graphClient.Education.SynchronizationProfiles["{id}"]
 	.UploadUrl()
 	.Request()
 	.GetAsync();

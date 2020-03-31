@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get calendarGroup
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a calendar group object.
 
 ## Permissions

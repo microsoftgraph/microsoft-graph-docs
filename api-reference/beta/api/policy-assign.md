@@ -9,6 +9,8 @@ author: ""
 
 # Assign Policy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assigns a [policy](../resources/policy.md) to an application or service principal.

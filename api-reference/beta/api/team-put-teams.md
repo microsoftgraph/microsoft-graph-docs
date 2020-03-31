@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create team from group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]

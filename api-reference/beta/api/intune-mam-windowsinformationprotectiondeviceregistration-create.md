@@ -1,7 +1,7 @@
 ---
 title: "Create windowsInformationProtectionDeviceRegistration"
 description: "Create a new windowsInformationProtectionDeviceRegistration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -97,8 +97,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
-
 
 
 

@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Archive team
 
-
+Namespace: microsoft.graph
 
 Archive the specified [team](../resources/team.md). 
 When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.
@@ -50,6 +50,9 @@ In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMem
 }
 ```
 This optional parameter defines whether to set permissions for team members to read-only on the Sharepoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
+
+>[!IMPORTANT]
+>The `shouldSetSpoSiteReadOnlyForMembers` parameter is not supported in the application context.
 
 ## Response
 

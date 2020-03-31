@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # BaseItemVersion resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **baseItemVersion** resource represents a previous version of an item or entity.

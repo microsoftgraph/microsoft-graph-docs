@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableRowCollection: ItemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a row based on its position in the collection.

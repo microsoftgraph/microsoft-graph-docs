@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # outlookGeoCoordinates resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The geographic coordinates, elevation, and their degree of accuracy for a physical location.

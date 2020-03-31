@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # workbookRangeView: range
+
+Namespace: microsoft.graph
 Return the range associated with the rangeView resource.
 
 ## Permissions

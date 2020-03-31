@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List thumbnails for a DriveItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
@@ -54,6 +56,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ## Optional query parameters
 
 This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.
+
+Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
+This is currently only supported on OneDrive Personal.
 
 ## Response
 

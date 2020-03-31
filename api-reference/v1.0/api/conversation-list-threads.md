@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List threads
 
+Namespace: microsoft.graph
+
 Get all the threads in a group conversation.
 
 Note: You can also [get all the threads of a group](group-list-threads.md).

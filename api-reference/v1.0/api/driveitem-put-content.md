@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Upload or replace the contents of a DriveItem
 
+Namespace: microsoft.graph
+
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
 

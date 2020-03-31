@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # roomList resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a group of [room](room.md) objects defined in the tenant.

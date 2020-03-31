@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Worksheet resource type
 
+Namespace: microsoft.graph
+
 An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
 

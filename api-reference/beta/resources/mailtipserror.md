@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mailTipsError resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An error that occurs during an action.

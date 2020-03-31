@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookRange resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.

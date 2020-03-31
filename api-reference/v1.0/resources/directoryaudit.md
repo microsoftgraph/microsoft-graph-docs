@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # directoryAudit resource type
 
+Namespace: microsoft.graph
+
 Represents the directory audit items and its collection.
 
 ## Methods

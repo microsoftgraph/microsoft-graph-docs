@@ -4,6 +4,7 @@ description: "Some apps call Microsoft Graph with their own identity and not on 
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Get access without a user

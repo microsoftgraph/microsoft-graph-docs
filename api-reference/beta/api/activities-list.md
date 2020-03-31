@@ -10,6 +10,8 @@ ms.prod: ""
 ---
 # Enumerate activities (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # yammerDeviceUsageUserDetail resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property          | Type    |

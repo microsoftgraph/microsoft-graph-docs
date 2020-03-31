@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Get item activity stats by interval
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.

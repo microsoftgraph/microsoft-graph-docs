@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookRangeFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.

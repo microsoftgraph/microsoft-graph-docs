@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Unfollow drive item
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unfollow a [driveItem](../resources/driveitem.md).

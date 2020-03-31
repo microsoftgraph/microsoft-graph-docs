@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get member objects
 
+Namespace: microsoft.graph
+
  Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. 
  > Note: Only users can be members of directory roles.
 

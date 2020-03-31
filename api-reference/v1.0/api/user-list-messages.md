@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List messages
 
+Namespace: microsoft.graph
+
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
 
 Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests. The default page size is 10 messages. To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request. 
@@ -22,14 +24,16 @@ There are two scenarios where an app can get messages in another user's mail fol
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
 
+> **Note** Be aware of the [known issue](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) that this operation includes Microsoft Teams chat messages in its response.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 
@@ -51,6 +55,19 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+### Using filter and orderby in the same query
+When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:
+
+1. Properties that appear in `$orderby` must also appear in `$filter`. 
+2. Properties that appear in `$orderby` are in the same order as in `$filter`.
+3. Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.
+
+Failing to do this results in the following error:
+
+- Error code: `InefficientFilter`
+- Error message: `The restriction or sort order is too complex for this operation.`
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|

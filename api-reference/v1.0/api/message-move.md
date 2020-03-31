@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: move
 
+Namespace: microsoft.graph
+
 Move a message to another folder within the specified user's mailbox. This creates a new copy of the message in the destination folder and removes the original message.
 
 ## Permissions

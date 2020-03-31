@@ -14,7 +14,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphAdministrativeUnit *administrativeUnit = [[MSGraphAdministrativeUnit alloc] init];
 [administrativeUnit setDisplayName:@"Seattle District Technical Schools"];
 [administrativeUnit setDescription:@"Seattle district technical schools administration"];
-[administrativeUnit setVisibility:@"true"];
+[administrativeUnit setVisibility:@"HiddenMembership"];
 
 NSError *error;
 NSData *administrativeUnitData = [administrativeUnit getSerializedDataWithError:&error];

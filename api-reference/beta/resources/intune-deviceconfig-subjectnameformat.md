@@ -1,7 +1,7 @@
 ---
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

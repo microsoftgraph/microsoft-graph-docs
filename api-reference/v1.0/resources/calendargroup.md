@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # calendarGroup resource type
 
+Namespace: microsoft.graph
+
 A group of user calendars.
 
 ## Methods

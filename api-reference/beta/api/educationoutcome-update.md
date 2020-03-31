@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update educationoutcome
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.

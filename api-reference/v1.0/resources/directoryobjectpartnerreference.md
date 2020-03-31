@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # directoryObjectPartnerReference resource type
 
+Namespace: microsoft.graph
+
 Represents a reference to a directory object in a partner organization. Inherits from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
 
 ## Properties

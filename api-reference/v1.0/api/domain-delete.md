@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete domain
 
+Namespace: microsoft.graph
+
 Deletes a domain from a tenant.
 
 > **Important:**

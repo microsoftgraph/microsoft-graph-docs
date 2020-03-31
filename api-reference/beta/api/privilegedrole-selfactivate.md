@@ -9,6 +9,8 @@ author: ""
 
 # privilegedRole: selfActivate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Activate the role that is assigned to the requester.

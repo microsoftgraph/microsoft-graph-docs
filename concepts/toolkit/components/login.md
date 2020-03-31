@@ -13,19 +13,19 @@ A Login component is a button and flyout control to facilitate Microsoft identit
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/scb9muh4)
+The following example shows the `mgt-login` component with a signed-in user. 
 
-```html
-<mgt-login></mgt-login>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
 ## Using the control without an authentication provider
 
 The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details. 
 
-| Property | Attribute | Description |
+| Attribute | Property | Description |
 | --- | --- | -- |
-| `userDetails` | `user-details` | Set the user object that will be displayed on the control. |
+| user-details | userDetails | Set the user object that will be displayed on the control. |
 
 The following example sets the person details.
 
@@ -54,10 +54,12 @@ mgt-login {
   --margin: 0;
   --padding: 12px 20px;
   --color: #201f1e;
+  --color-hover: var(--theme-primary-color);
   --background-color: transparent;
   --background-color--hover: #edebe9;
   --popup-content-background-color: white;
-  --popup-command-font-size: 12px; }
+  --popup-command-font-size: 12px;
+  --popup-color: #201f1e;
 }
 ```
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update profilephoto
 
+Namespace: microsoft.graph
+
 Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there
 is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
 you can add to under 4MB.
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
 
-> **Note:**  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # outlookTaskFolder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A folder that contains Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 

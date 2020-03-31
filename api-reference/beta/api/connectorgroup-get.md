@@ -9,6 +9,8 @@ author: ""
 
 # Get connectorGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a connectorGroup object.

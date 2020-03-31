@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get settings for user analytics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a [settings](../resources/settings.md) object as applicable for the analytics API.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/settings
+GET /me/analytics/settings
 ```
 
 ## Optional query parameters

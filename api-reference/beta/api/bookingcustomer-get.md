@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get bookingCustomer
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of a [bookingCustomer](../resources/bookingcustomer.md) object.

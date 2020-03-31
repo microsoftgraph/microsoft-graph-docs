@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update Outlook category
 
+Namespace: microsoft.graph
+
 
 Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property 
 once you have created the category.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # domain: verify
 
+Namespace: microsoft.graph
+
 Validates the ownership of the domain.
 
 > **Important:**

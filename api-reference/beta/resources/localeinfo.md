@@ -9,6 +9,8 @@ author: ""
 
 # localeInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Information about the locale, including the preferred language and country/region, of the signed-in user.

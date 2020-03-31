@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementScriptDeviceStates"
 description: "List properties and relationships of the deviceManagementScriptDeviceState objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
@@ -51,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 ```
 
 ### Response
@@ -59,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 714
+Content-Length: 391
 
 {
   "value": [
@@ -70,17 +71,11 @@ Content-Length: 714
       "resultMessage": "Result Message value",
       "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
       "errorCode": 9,
-      "errorDescription": "Error Description value",
-      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-      "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-      "remediationScriptError": "Remediation Script Error value",
-      "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+      "errorDescription": "Error Description value"
     }
   ]
 }
 ```
-
-
 
 
 

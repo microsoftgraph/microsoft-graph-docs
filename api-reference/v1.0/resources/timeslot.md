@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # timeSlot resource type
 
+Namespace: microsoft.graph
+
 Represents a time slot for a meeting.
 
 ## JSON representation

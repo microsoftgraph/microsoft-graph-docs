@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # filterOperatorSchema resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes an operator that can be used in a [filter](synchronization-filter.md).

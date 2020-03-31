@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   groupIds: [
     "groupIds-value"
   ]
@@ -18,6 +18,6 @@ const String = {
 
 let res = await client.api('/me/checkMemberGroups')
 	.version('beta')
-	.post(String);
+	.post(string);
 
 ```

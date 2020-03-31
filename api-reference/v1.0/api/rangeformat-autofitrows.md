@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeFormat: autofitRows
 
+Namespace: microsoft.graph
+
 Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

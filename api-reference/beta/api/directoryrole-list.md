@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directoryRoles
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the directory roles that are activated in the tenant.

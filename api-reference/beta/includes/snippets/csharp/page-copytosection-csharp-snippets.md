@@ -11,7 +11,7 @@ var id = "id-value";
 var groupId = "groupId-value";
 
 await graphClient.Me.Onenote.Pages["{id}"]
-	.CopyToSection(id,groupId,siteCollectionId,siteId)
+	.CopyToSection(id,groupId,null,null)
 	.Request()
 	.PostAsync();
 

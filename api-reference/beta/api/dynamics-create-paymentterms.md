@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create paymentTerms
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a payment terms object in Dynamics 365 Business Central.
 
 ## Permissions

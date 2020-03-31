@@ -10,25 +10,21 @@ var participants = new List<InvitationParticipantInfo>()
 {
 	new InvitationParticipantInfo
 	{
-		EndpointType = EndpointType.Default,
+		ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
 		Identity = new IdentitySet
 		{
 			User = new Identity
 			{
-				Id = "550fae72-d251-43ec-868c-373732c2704f",
-				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47",
-				DisplayName = "Heidi Steen"
+				Id = "278405a3-f568-4b3e-b684-009193463064",
+				IdentityProvider = "AAD"
 			}
-		},
-		LanguageId = "languageId-value",
-		Region = "region-value",
-		ReplacesCallId = "replacesCallId-value"
+		}
 	}
 };
 
-var clientContext = "clientContext-value";
+var clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 
-await graphClient.App.Calls["{id}"].Participants
+await graphClient.Communications.Calls["{id}"].Participants
 	.Invite(participants,clientContext)
 	.Request()
 	.PostAsync();

@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Enumerate lists in a site
 
+Namespace: microsoft.graph
+
 Get the collection of [lists][] for a [site][].
 
 [lists]: ../resources/list.md

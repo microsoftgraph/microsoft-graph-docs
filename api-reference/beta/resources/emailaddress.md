@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # emailAddress resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner.

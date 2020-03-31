@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 #  complianceInformation resource type
 
+Namespace: microsoft.graph
+
 Contains compliance data associated with secure score control.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create publishedResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [publishedResource](../resources/publishedresource.md) object.

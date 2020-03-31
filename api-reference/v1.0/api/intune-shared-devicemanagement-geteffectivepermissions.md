@@ -1,13 +1,15 @@
 ---
 title: "getEffectivePermissions function"
 description: "Retrieves the effective permissions of the currently authenticated user"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # getEffectivePermissions function
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -86,6 +88,7 @@ Content-Length: 471
   ]
 }
 ```
+
 
 
 

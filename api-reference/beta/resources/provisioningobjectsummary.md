@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # provisioningObjectSummary resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an action performed by the Azure AD Provisioning service and its associated properties. 
@@ -34,6 +36,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 |jobId|String|The unique ID for the whole provisioning job.|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Details of each property that was modified in this provisioning action on this object.|
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Details of each step in provisioning.|
+|servicePrincipal|[servicePrincipal](serviceprincipal.md) collection|Represents the service principal used for provisioning.|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Details of source object being provisioned.|
 |sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Details of source system of the object being provisioned.|
 |statusInfo|[statusBase](statusbase.md)|Details of provisioning status.|
@@ -71,6 +74,7 @@ The following is a JSON representation of the resource.
   "jobId": "String",
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}],
   "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
+  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
   "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
   "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
   "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},

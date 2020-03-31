@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get outlookTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of an Outlook task in the user's mailbox.

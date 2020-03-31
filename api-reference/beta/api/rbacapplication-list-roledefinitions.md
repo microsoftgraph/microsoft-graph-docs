@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List unifiedRoleDefinitions
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.

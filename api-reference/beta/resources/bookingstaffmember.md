@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # bookingStaffMember resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents a staff member who provides services in a [bookingBusiness](bookingbusiness.md).

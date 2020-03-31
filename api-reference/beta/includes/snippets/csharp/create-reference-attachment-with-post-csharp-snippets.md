@@ -15,12 +15,8 @@ var post = new Post
 	},
 	Attachments = new List<Attachment>()
 	{
-		new Attachment
+		new ReferenceAttachment
 		{
-			AdditionalData = new Dictionary<string, object>()
-			{
-				{"@odata.type","#microsoft.graph.referenceAttachment"}
-			},
 			Name = "Personal pictures",
 			SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
 			ProviderType = "oneDriveConsumer",

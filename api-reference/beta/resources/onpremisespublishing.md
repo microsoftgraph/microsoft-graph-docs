@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onPremisesPublishing resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An **onPremisesPublishing** object represents the set of properties for publishing of on-premises [application](application.md).

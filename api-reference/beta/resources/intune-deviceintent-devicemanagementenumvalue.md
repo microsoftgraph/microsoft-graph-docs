@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementEnumValue resource type"
 description: "Definition information for an enum value"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -12,7 +12,7 @@ var @event = new Event
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does late morning work for you?"
+		Content = "Does noon work for you?"
 	},
 	Start = new DateTimeTimeZone
 	{
@@ -39,7 +39,9 @@ var @event = new Event
 			},
 			Type = AttendeeType.Required
 		}
-	}
+	},
+	AllowNewTimeProposals = true,
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
 await graphClient.Me.Events

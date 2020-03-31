@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # versionAction resource type
 
+Namespace: microsoft.graph
+
 The presence of the **versionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

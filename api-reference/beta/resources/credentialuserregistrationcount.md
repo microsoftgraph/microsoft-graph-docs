@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # credentialUserRegistrationCount resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.

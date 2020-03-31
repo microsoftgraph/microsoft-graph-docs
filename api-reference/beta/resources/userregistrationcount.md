@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # userRegistrationCount resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the registration count and status for users in your tenant.

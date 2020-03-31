@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [event](../resources/event.md) object.

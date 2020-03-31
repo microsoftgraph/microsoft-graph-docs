@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create educationAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  
@@ -95,6 +97,7 @@ Content-length: 279
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "2014-02-01T00:00:00Z",
   "classId": "11018",
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "createdBy": {
       "application": null,
       "device": null,

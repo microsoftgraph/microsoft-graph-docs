@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete administrativeUnit
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [administrativeUnit](../resources/administrativeunit.md).

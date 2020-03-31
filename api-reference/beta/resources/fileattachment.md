@@ -9,11 +9,12 @@ author: "angelgolfer-ms"
 
 # fileAttachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
-[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). The  **contentBytes** 
-property contains the base64-encoded contents of the file.  
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). 
 
 When creating a file attachment, include the following in the request body:
 
@@ -21,6 +22,9 @@ When creating a file attachment, include the following in the request body:
 * The required properties **name** and **contentBytes**.
 
 Derived from [attachment](attachment.md).
+
+> [!NOTE]
+> Make sure to encode the file content in base64 before assigning it to **contentBytes**.
 
 ## Methods
 

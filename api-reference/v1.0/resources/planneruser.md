@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerUser resource type
 
+Namespace: microsoft.graph
+
 The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.
 
 

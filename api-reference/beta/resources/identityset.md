@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # identitySet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **identitySet** resource is a keyed collection of [identity](identity.md) resources.

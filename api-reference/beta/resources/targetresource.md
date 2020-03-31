@@ -9,6 +9,8 @@ ms.prod: "azure-ad"
 
 # targetResource resource type
 
+Namespace: microsoft.graph
+
 Represents target resource types associated with audit activity. 
 
 

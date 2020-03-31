@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List Outlook categories
 
+Namespace: microsoft.graph
+
 
 Get all the categories that have been defined for the user.
 

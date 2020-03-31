@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartAxes resource type
 
+Namespace: microsoft.graph
+
 Represents the chart axes.
 
 

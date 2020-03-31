@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationRoot resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The `/education` namespace exposes functionality that is specific to the education sector. 

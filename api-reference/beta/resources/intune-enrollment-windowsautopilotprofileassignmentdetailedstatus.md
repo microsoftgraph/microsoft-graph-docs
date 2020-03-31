@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotProfileAssignmentDetailedStatus enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -20,6 +20,9 @@ Not yet documented
 |:---|:---|:---|
 |none|0|No assignment detailed status|
 |hardwareRequirementsNotMet|1|Hardware requirements are not met. This can happen if a self-deploying AutoPilot Profile is assigned to a device without TPM 2.0.|
+|surfaceHubProfileNotSupported|2|This can happen if a SurfaceHub AutoPilot Profile is assigned to a device that is not SurfaceHub.|
+|holoLensProfileNotSupported|3|This can happen if a HoloLens AutoPilot Profile is assigned to a device that is not HoloLens.|
+|windowsPcProfileNotSupported|4|This can happen if a WindowsPc AutoPilot Profile is assigned to a device that is not WindowsPc.|
 
 
 

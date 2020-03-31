@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationDropdownList"
 description: "Create a new groupPolicyPresentationDropdownList object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -113,8 +113,6 @@ Content-Length: 602
   "required": true
 }
 ```
-
-
 
 
 

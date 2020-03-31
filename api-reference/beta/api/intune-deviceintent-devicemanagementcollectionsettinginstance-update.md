@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementCollectionSettingInstance"
 description: "Update the properties of a deviceManagementCollectionSettingInstance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

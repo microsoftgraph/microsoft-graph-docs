@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *attributeMappingFunctionSchemaList = [[NSMutableArray alloc] init];
-		attributeMappingFunctionSchemaList = [jsonFinal valueForKey:@"value"];
-		MSGraphAttributeMappingFunctionSchema *attributeMappingFunctionSchema = [[MSGraphAttributeMappingFunctionSchema alloc] initWithDictionary:[attributeMappingFunctionSchemaList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphAttributeMappingFunctionSchema *attributeMappingFunctionSchema = [[MSGraphAttributeMappingFunctionSchema alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

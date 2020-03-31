@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update contactfolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of contactfolder object.

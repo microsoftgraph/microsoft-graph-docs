@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *educationRubricList = [[NSMutableArray alloc] init];
-		educationRubricList = [jsonFinal valueForKey:@"value"];
-		MSGraphEducationRubric *educationRubric = [[MSGraphEducationRubric alloc] initWithDictionary:[educationRubricList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphEducationRubric *educationRubric = [[MSGraphEducationRubric alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

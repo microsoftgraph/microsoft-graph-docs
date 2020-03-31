@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete contactFolder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete contactFolder other than the default contactFolder.

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create featureRolloutPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # inferenceClassification resource type
 
+Namespace: microsoft.graph
+
 Classification of a user's messages to enable focus on those that are more relevant or important to the user. 
 
 For more information, see [Manage Focused Inbox](manage-focused-inbox.md).

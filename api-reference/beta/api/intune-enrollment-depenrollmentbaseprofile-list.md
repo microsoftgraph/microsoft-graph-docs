@@ -1,7 +1,7 @@
 ---
 title: "List depEnrollmentBaseProfiles"
 description: "List properties and relationships of the depEnrollmentBaseProfile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1204
+Content-Length: 1281
 
 {
   "value": [
@@ -89,13 +89,13 @@ Content-Length: 1204
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
       "privacyPaneDisabled": true,
-      "deviceNameTemplate": "Device Name Template value"
+      "screenTimeScreenDisabled": true,
+      "deviceNameTemplate": "Device Name Template value",
+      "configurationWebUrl": true
     }
   ]
 }
 ```
-
-
 
 
 

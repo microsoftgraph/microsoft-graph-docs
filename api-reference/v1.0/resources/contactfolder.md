@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # contactFolder resource type
 
+Namespace: microsoft.graph
+
 A folder that contains contacts.
 
 This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 

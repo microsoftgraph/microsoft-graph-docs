@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # MentionAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **MentionAction** resource provides information about an [activity][] that mentioned people.

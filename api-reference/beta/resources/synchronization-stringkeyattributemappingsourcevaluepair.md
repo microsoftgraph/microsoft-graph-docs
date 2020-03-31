@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # stringKeyAttributeMappingSourceValuePair resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).

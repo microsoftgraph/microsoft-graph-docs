@@ -1,13 +1,15 @@
 ---
 title: "windowsInformationProtectionApp resource type"
 description: "App for Windows information protection"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionApp resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -42,6 +44,7 @@ Here is a JSON representation of the resource.
   "denied": true
 }
 ```
+
 
 
 

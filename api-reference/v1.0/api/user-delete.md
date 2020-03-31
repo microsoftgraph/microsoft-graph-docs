@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete a user
 
+Namespace: microsoft.graph
+
 Delete user.  
 
 When deleted, user resources are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).

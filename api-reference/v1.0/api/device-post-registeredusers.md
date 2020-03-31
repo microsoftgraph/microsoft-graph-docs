@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create registeredUser
 
+Namespace: microsoft.graph
+
 Add a registered user for the device.
 
 ## Permissions

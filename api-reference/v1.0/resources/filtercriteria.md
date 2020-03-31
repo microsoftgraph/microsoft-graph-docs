@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # FilterCriteria resource type
 
+Namespace: microsoft.graph
+
 Represents the filtering criteria applied to a column.
 
 ## JSON representation

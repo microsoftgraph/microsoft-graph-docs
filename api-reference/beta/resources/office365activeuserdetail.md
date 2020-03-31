@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # office365ActiveUserDetail resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property                          | Type              | Description                              |

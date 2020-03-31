@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List bookingBusinesses
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.

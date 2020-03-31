@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # sectionLinks resource type
 
+Namespace: microsoft.graph
+
 Links for opening a OneNote section.
 
 ## JSON representation

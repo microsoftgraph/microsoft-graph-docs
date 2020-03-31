@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Send a sharing invitation
 
+Namespace: microsoft.graph
+
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsInsight resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -20,7 +20,8 @@ The user experience analytics insight is the recomendation to improve the user e
 |:---|:---|:---|
 |userExperienceAnalyticsMetricId|String|The unique identifier of the user experience analytics insight.|
 |insightId|String|The unique identifier of the user experience analytics insight.|
-|value|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md) collection|The value of the user experience analytics insight.|
+|values|[userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md) collection|The value of the user experience analytics insight.|
+|severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|The value of the user experience analytics insight. Possible values are: `none`, `informational`, `warning`, `error`.|
 
 ## Relationships
 None
@@ -37,11 +38,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsight",
   "userExperienceAnalyticsMetricId": "String",
   "insightId": "String",
-  "value": [
+  "values": [
     {
-      "@odata.type": "microsoft.graph.insightValueDouble"
+      "@odata.type": "microsoft.graph.insightValueDouble",
+      "value": "<Unknown Primitive Type Edm.Double>"
     }
-  ]
+  ],
+  "severity": "String"
 }
 ```
 

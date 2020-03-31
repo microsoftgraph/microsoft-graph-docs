@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Enumerate subsites
 
+Namespace: microsoft.graph
+
 Get a collection of subsites defined for a [site][].
 
 [site]: ../resources/site.md

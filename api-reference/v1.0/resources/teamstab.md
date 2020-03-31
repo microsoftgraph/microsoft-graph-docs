@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsTab resource type
 
+Namespace: microsoft.graph
+
 
 
 A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 

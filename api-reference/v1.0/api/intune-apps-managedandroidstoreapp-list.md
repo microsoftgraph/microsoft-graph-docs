@@ -1,13 +1,15 @@
 ---
 title: "List managedAndroidStoreApps"
 description: "List properties and relationships of the managedAndroidStoreApp objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List managedAndroidStoreApps
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -99,6 +101,7 @@ Content-Length: 1357
   ]
 }
 ```
+
 
 
 

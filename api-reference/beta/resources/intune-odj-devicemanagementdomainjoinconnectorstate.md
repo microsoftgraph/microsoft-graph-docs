@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementDomainJoinConnectorState enum type"
 description: "The ODJ request states."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

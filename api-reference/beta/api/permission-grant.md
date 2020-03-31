@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Grant permission
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Grant users access to a link represented by a [permission][].

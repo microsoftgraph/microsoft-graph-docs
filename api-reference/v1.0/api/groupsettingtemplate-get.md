@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a group setting template
 
+Namespace: microsoft.graph
+
 A group setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the [groupSettingTemplate](../resources/groupsettingtemplate.md) object, including the available settings and their defaults.
 
 ## Permissions

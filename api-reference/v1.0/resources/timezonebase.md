@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # timeZoneBase resource type
 
+Namespace: microsoft.graph
+
 The basic representation of a time zone.
 
 

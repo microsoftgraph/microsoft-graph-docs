@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IGroupCollectionPage joinedTeams = graphClient.me().joinedTeams()
+ITeamCollectionPage joinedTeams = graphClient.me().joinedTeams()
 	.buildRequest()
 	.get();
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # mailFolder: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.

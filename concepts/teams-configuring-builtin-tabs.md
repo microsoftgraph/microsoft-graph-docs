@@ -15,12 +15,12 @@ This article explains how to get those values for the built-in tab types.
 
 ## Custom tabs
 
-To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
+To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
 identify the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl`
-that the app's [configuration UI provides to Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
+that the app's [configuration UI provides to Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
 and pass the same `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` values to Microsoft Graph.
 
-The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema).
+The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## Website tabs
 
@@ -97,7 +97,7 @@ The following example creates a configured Word tab.
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 {
   "displayName": "word",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
   "configuration": {
      "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
      "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",

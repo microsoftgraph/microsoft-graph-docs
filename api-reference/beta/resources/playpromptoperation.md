@@ -1,13 +1,15 @@
 ---
 title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # playPromptOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,12 +19,10 @@ The playPrompt operation to obtain the result of the playPrompt action.
 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | The client context.                                                                |
+| clientContext       | String                      | Unique Client Context string. Max limit is 256 chars.                              |
 | completionReason    | String                      | Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
-| createdDateTime     | DateTimeOffset              | The start time of the operation.                                                   |
 | id                  | String                      | Read-only.                                                                         |
-| lastActionDateTime  | DateTimeOffset              | The time of the last action of the operation.                                      |
-| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                |
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
@@ -43,9 +43,7 @@ The following is a JSON representation of the resource.
 {
   "clientContext": "String",
   "completionReason": "unknown | completedSuccessfully | mediaOperationCanceled",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }

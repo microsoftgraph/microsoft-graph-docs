@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const application = {
-  allowPublicClient: true,
   displayName: "Display name"
 };
 

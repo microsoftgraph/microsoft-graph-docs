@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List calendarGroups
 
+Namespace: microsoft.graph
+
 Get the user's calendar groups.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

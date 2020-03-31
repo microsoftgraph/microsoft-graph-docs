@@ -9,6 +9,8 @@ author: ""
 
 # servicePrincipal: List oAuth2Permissiongrants
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of oAuth2Permissiongrant objects.

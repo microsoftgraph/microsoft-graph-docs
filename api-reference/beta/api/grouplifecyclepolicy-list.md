@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List groupLifecyclePolicies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).

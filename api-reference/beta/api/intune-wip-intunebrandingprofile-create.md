@@ -1,7 +1,7 @@
 ---
 title: "Create intuneBrandingProfile"
 description: "Create a new intuneBrandingProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -53,22 +53,28 @@ The following table shows the properties that are required when you create the i
 |createdDateTime|DateTimeOffset|Time when the BrandingProfile was created|
 |lastModifiedDateTime|DateTimeOffset|Time when the BrandingProfile was last modified|
 |displayName|String|Company/organization name that is displayed to end users|
-|contactITName|String|Name of the person/organization responsible for IT support|
-|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support|
-|contactITEmailAddress|String|E-mail address of the person/organization responsible for IT support|
-|contactITNotes|String|Text comments regarding the person/organization responsible for IT support|
-|privacyUrl|String|URL to the company/organization’s privacy policy|
-|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
-|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Primary theme color used in the Company Portal applications and web portal|
 |showLogo|Boolean|Boolean that represents whether the administrator-supplied logo images are shown or not|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a theme color background behind the logo|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
+|contactITName|String|Name of the person/organization responsible for IT support|
+|contactITPhoneNumber|String|Phone number of the person/organization responsible for IT support|
+|contactITEmailAddress|String|E-mail address of the person/organization responsible for IT support|
+|contactITNotes|String|Text comments regarding the person/organization responsible for IT support|
+|onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site|
+|onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site|
+|privacyUrl|String|URL to the company/organization’s privacy policy|
 |customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
+|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
+|showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
+|showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
+|sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|roleScopeTagIds|String collection|List of scope tags assigned to the branding profile|
 
 
 
@@ -82,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1334
+Content-length: 1792
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -90,13 +96,6 @@ Content-length: 1334
   "profileDescription": "Profile Description value",
   "isDefaultProfile": true,
   "displayName": "Display Name value",
-  "contactITName": "Contact ITName value",
-  "contactITPhoneNumber": "Contact ITPhone Number value",
-  "contactITEmailAddress": "Contact ITEmail Address value",
-  "contactITNotes": "Contact ITNotes value",
-  "privacyUrl": "https://example.com/privacyUrl/",
-  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-  "onlineSupportSiteName": "Online Support Site Name value",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1,
@@ -120,9 +119,31 @@ Content-length: 1334
     "type": "Type value",
     "value": "dmFsdWU="
   },
+  "contactITName": "Contact ITName value",
+  "contactITPhoneNumber": "Contact ITPhone Number value",
+  "contactITEmailAddress": "Contact ITEmail Address value",
+  "contactITNotes": "Contact ITNotes value",
+  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+  "onlineSupportSiteName": "Online Support Site Name value",
+  "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "androidForWork",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -131,7 +152,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1506
+Content-Length: 1964
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -142,13 +163,6 @@ Content-Length: 1506
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "contactITName": "Contact ITName value",
-  "contactITPhoneNumber": "Contact ITPhone Number value",
-  "contactITEmailAddress": "Contact ITEmail Address value",
-  "contactITNotes": "Contact ITNotes value",
-  "privacyUrl": "https://example.com/privacyUrl/",
-  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-  "onlineSupportSiteName": "Online Support Site Name value",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1,
@@ -172,13 +186,33 @@ Content-Length: 1506
     "type": "Type value",
     "value": "dmFsdWU="
   },
+  "contactITName": "Contact ITName value",
+  "contactITPhoneNumber": "Contact ITPhone Number value",
+  "contactITEmailAddress": "Contact ITEmail Address value",
+  "contactITNotes": "Contact ITNotes value",
+  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+  "onlineSupportSiteName": "Online Support Site Name value",
+  "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "androidForWork",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
 
 
 

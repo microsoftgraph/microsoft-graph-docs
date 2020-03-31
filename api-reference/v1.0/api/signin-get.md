@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get signIn
 
+Namespace: microsoft.graph
+
 Retrieve a specific Azure AD user sign-in event for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 ## Permissions
@@ -100,51 +102,72 @@ Content-length: 211
 
 ```json
 {
-	"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/signIns",
-	"id": "id",
-	"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
-	"appDisplayName": "Azure",
-	"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-	"clientAppUsed": null,
-	"conditionalAccessApplied": true,
-	"conditionalAccessPolicies": [{
-		"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
-		"displayName": "capPolicy",
-		"enforcedAccessControls": ["MFA", "TOU"],
-		"enforcedSessionControls": ["CloudAppSecurity"],
-		"result": "success"
-	}],
-	"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
-	"deviceDetail": {
-		"deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
-		"displayName": "DeviceName",
-		"operatingSystem": "Windows 10",
-		"browser": "Rich Client v3.14.1592.7",
-		"isCompliant": true,
-		"isManaged": true,
-		"trustType": ""
-	},
-	"ipAddress": "127.0.0.1",
-	"location": {
-		"city": "Redmond",
-		"state": "WA",
-		"countryOrRegion": "USA",
-		"geoCoordinates": {
-			"altitude": 41.589,
-			"latitude": 41.589,
-			"longitude": -93.6151
-		}
-	},
-	"status": {
-		"errorCode": 0,
-		"failureReason": null,
-		"additionalDetails": "SignIn Success & CA Success"
-	},
-	"userDisplayName": "Jamie Doe",
-	"userPrincipalName": "jdoe@wingtiptoys.com",
-	"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/signIns",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/auditLogs/signIns?$top=1&$skiptoken=9177f2e3532fcd4c4d225f68f7b9bdf7_1",
+    "value": [
+        {
+            "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
+            "createdDateTime": "2020-03-13T19:15:41.6195833Z",
+            "userDisplayName": "Test Contoso",
+            "userPrincipalName": "testaccount1@contoso.com",
+            "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
+            "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "appDisplayName": "Graph explorer",
+            "ipAddress": "131.107.159.37",
+            "clientAppUsed": "Browser",
+            "correlationId": "d79f5bee-5860-4832-928f-3133e22ae912",
+            "conditionalAccessStatus": "notApplied",
+            "isInteractive": true,
+            "riskDetail": "none",
+            "riskLevelAggregated": "none",
+            "riskLevelDuringSignIn": "none",
+            "riskState": "none",
+            "riskEventTypes": [],
+            "resourceDisplayName": "Microsoft Graph",
+            "resourceId": "00000003-0000-0000-c000-000000000000",
+            "status": {
+                "errorCode": 0,
+                "failureReason": null,
+                "additionalDetails": null
+            },
+            "deviceDetail": {
+                "deviceId": "",
+                "displayName": null,
+                "operatingSystem": "Windows 10",
+                "browser": "Edge 80.0.361",
+                "isCompliant": null,
+                "isManaged": null,
+                "trustType": null
+            },
+            "location": {
+                "city": "Redmond",
+                "state": "Washington",
+                "countryOrRegion": "US",
+                "geoCoordinates": {
+                    "altitude": null,
+                    "latitude": 47.68050003051758,
+                    "longitude": -122.12094116210938
+                }
+            },
+            "appliedConditionalAccessPolicies": [
+                {
+                    "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
+                    "displayName": "SharePoint limited access for guest workers",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled"
+                },
+                {
+                    "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
+                    "displayName": "Medium signin risk block",
+                    "enforcedGrantControls": [],
+                    "enforcedSessionControls": [],
+                    "result": "notEnabled"
+                },
+              ]
+        }
+    ]
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

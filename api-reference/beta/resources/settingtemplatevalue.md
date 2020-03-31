@@ -9,6 +9,8 @@ author: ""
 
 # settingTemplateValue resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.

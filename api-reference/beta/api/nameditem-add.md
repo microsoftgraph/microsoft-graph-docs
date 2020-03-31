@@ -9,6 +9,8 @@ author: ""
 
 # Add Named Item
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a new name to the collection of the given scope using the user's locale for the formula.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get device
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of a device object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

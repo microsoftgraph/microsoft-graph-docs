@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List taskFolders
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the Outlook task folders in the user's mailbox.

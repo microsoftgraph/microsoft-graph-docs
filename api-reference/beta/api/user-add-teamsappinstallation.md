@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # Install app for user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).

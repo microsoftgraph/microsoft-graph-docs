@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the [event](../resources/event.md) object.
@@ -59,10 +61,12 @@ In the request body, supply the values for relevant fields that should be update
 | categories|String|The categories associated with the event.|
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends. |
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
-| isAllDay|Boolean|Set to true if the event lasts all day.|
+| isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
+|isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 | location|Location|The location of the event.|
 |locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|
 | reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
@@ -108,6 +112,8 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
@@ -144,7 +150,14 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
+  "isReminderOn": true,
+  "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+91 22 6241 6885"
+    }
 }
 ```
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # groupLifecyclePolicy: addGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a group to a lifecycle policy.

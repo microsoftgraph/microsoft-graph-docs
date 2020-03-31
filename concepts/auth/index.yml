@@ -9,7 +9,8 @@ metadata:
   manager: CelesteDG
   ms.topic: landing-page
   ms.date: 04/26/2019
-  ms.reviewer: jawoods
+  ms.reviewer: jawoods  
+  ms.custom: graphiamtop20
 abstract:
   description: Learn how to authenticate and work with permissions to securely access data through Microsoft Graph. Explore the documentation below to learn about app registration, authentication libraries, authorization, and other parts of the Microsoft identity platform that support Microsoft Graph development. 
   aside:

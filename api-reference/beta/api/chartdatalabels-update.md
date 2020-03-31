@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update workbookChartDataLabels
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of chartdatalabels object.

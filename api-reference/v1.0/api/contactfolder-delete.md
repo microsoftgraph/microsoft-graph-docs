@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete contactFolder
 
+Namespace: microsoft.graph
+
 Delete contactFolder other than the default contactFolder.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

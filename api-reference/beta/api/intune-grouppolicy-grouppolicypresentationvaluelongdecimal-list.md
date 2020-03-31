@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationValueLongDecimals"
 description: "List properties and relationships of the groupPolicyPresentationValueLongDecimal objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,8 +72,6 @@ Content-Length: 321
   ]
 }
 ```
-
-
 
 
 
