@@ -44,9 +44,14 @@ This resource supports:
 Here is a JSON representation of the resource
 
 ```json
+
 {
-  "userName": "string",
-  "department": "string",
+     "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User",
+     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"],
+     "userName":"bjensen",
+     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
+     "department": "123456"
+   }
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
