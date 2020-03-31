@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting. You will need to [register the calling bot](../../../concepts/register-calling-bot.md) and go through the list of permissions needed as mentioned below.
+Enable your bot to create a new outgoing [call](../resources/call.md) or join an existing meeting. You will need to [register the calling bot](../../../concepts/register-calling-bot.md) and go through the list of permissions needed.
 
 
 ## Permissions
