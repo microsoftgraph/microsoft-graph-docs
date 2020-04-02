@@ -4,9 +4,12 @@ description: "Get a collection of bookingbusiness objects that has been created 
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # List bookingBusinesses
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,13 +52,29 @@ If successful, this method returns a `200 OK` response code and collection of [b
 ## Example
 ##### Request 1
 The following example gets the Bookings businesses in a tenant.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusinesses"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusinesses-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingbusinesses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bookingbusinesses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 1
 The following is an example of the response.
 <!-- {
@@ -82,27 +101,33 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_bookingbusinesses-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_bookingbusinesses-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### Request 2
 The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query_bookingbusinesses"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/query-bookingbusinesses-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/query-bookingbusinesses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/query-bookingbusinesses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response 2
 The following is an example of the response.
 <!-- {
@@ -125,16 +150,6 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/query_bookingbusinesses-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/query_bookingbusinesses-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -146,10 +161,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

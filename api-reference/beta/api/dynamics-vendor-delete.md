@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # Delete vendor
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

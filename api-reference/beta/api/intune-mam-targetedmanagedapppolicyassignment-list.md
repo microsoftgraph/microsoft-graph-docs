@@ -1,9 +1,10 @@
 ---
 title: "List targetedManagedAppPolicyAssignments"
 description: "List properties and relationships of the targetedManagedAppPolicyAssignment objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List targetedManagedAppPolicyAssignments
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 276
+Content-Length: 345
 
 {
   "value": [
@@ -70,12 +71,13 @@ Content-Length: 276
       "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
 ```
-
 
 
 

@@ -2,9 +2,14 @@
 title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 localization_priority: Normal
+doc_type: apiPageType
+author: "davidmu1"
+ms.prod: "microsoft-identitiy-platform"
 ---
 
 # Get governanceRoleSetting
+
+Namespace: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -18,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | PrivilegedAccess.Read.AzureResources |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.
 ## HTTP request
@@ -40,13 +45,29 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.
 ## Example
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesetting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/80dc5d6f-8d89-47b3-953f-01dc909ed3f9
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-governancerolesetting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 <!-- {
   "blockType": "response",
@@ -107,16 +128,6 @@ Content-length: 370
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_governancerolesetting-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_governancerolesetting-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,8 +139,6 @@ Content-length: 370
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/governancerolesetting-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/governancerolesetting-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

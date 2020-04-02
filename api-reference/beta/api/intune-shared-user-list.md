@@ -1,9 +1,10 @@
 ---
 title: "List users"
 description: "List properties and relationships of the user objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # List users
@@ -26,7 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## HTTP Request
 
@@ -81,6 +86,13 @@ Content-Length: 136
   ]
 }
 ```
+
+
+
+
+
+
+
 
 
 

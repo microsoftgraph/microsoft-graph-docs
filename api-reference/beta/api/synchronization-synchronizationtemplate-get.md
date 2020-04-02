@@ -2,9 +2,14 @@
 title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
 localization_priority: Normal
+doc_type: apiPageType
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get synchronizationTemplate
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,9 +1,10 @@
 ---
 title: "List groupPolicyPresentationListBoxes"
 description: "List properties and relationships of the groupPolicyPresentationListBox objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List groupPolicyPresentationListBoxes
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 291
+Content-Length: 335
 
 {
   "value": [
@@ -66,12 +67,12 @@ Content-Length: 291
       "label": "Label value",
       "id": "2e074c87-4c87-2e07-874c-072e874c072e",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "explicitValue": true
+      "explicitValue": true,
+      "valuePrefix": "Value Prefix value"
     }
   ]
 }
 ```
-
 
 
 

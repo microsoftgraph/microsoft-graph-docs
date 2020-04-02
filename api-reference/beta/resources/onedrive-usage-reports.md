@@ -4,9 +4,12 @@ description: "You can get a high-level view of the value you are getting from On
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # OneDrive usage reports
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

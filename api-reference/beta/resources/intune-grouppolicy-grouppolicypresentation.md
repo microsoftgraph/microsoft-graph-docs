@@ -1,9 +1,10 @@
 ---
 title: "groupPolicyPresentation resource type"
 description: "The base entity for the display presentation of any of the additional options in a group policy definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentation resource type
@@ -48,8 +49,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

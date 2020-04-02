@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # Update employee
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

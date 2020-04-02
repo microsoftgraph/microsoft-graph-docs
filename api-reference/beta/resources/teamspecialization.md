@@ -4,9 +4,12 @@ description: "Describes the special use case for a team."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: enumPageType
 ---
 
 # teamSpecialization enum type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

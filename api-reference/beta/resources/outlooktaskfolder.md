@@ -4,9 +4,12 @@ description: "A folder that contains Outlook tasks (collection of outlookTask ob
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookTaskFolder resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

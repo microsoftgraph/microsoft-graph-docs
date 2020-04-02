@@ -6,9 +6,15 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: resourcePageType
 ---
 <!-- To be redirected --> 
 # countriesRegions resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a countriesRegions object in Dynamics 365 Business Central, which is part of an address.
 
 ## Methods

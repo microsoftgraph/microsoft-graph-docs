@@ -4,9 +4,12 @@ description: "You can get details on the types of clients and devices that are u
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business device usage reports
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

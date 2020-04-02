@@ -1,9 +1,10 @@
 ---
 title: "Update securityBaselineStateSummary"
 description: "Update the properties of a securityBaselineStateSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update securityBaselineStateSummary
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -96,7 +97,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
 
 
 

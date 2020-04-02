@@ -4,9 +4,12 @@ description: "You can use the Skype for Business participant activity reports to
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Skype for Business participant activity reports
+
+Namespace: microsoft.graph
 
 You can use the Skype for Business participant activity reports to get details on conferencing activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.
 

@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # CalculatedColumn resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

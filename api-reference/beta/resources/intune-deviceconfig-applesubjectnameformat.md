@@ -1,9 +1,10 @@
 ---
 title: "appleSubjectNameFormat enum type"
 description: "Subject Name Format Options for Apple devices."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # appleSubjectNameFormat enum type
@@ -23,8 +24,6 @@ Subject Name Format Options for Apple devices.
 |commonNameIncludingEmail|3|Common Name Including Email.|
 |commonNameAsIMEI|5|Common Name As IMEI.|
 |commonNameAsSerialNumber|6|Common Name As Serial Number.|
-
-
 
 
 

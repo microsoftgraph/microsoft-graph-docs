@@ -4,9 +4,12 @@ description: "Update the properties of a class."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationclass properties
+
+Namespace: microsoft.graph
 
 Update the properties of a class.
 
@@ -38,7 +41,6 @@ In the request body, supply the values for relevant fields that should be update
 |description|String| Description of the class.|
 |displayName|String| Name of the class.|
 |mailNickname|String| Email alias for sending email to all users if that feature is enabled. |
-<!-- Please verify the revised description here. -->
 |classCode|String| Class code used by the school.|
 |externalId|String| ID of the class from the syncing system. |
 |externalName|String|Name of the class in the syncing system.|
@@ -49,6 +51,8 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationclass"
@@ -63,6 +67,24 @@ Content-length: 224
   "displayName": "World History Level 1",
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationclass-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationclass-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationclass-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 The following is an example of the response. 
 
@@ -83,11 +105,11 @@ Content-length: 224
   "description": "World History Level 1",
   "classCode": "301",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
+    }
+  },
   "displayName": "History - World History 1",
   "externalId": "301",
   "externalName": "World History Level 1",
@@ -95,16 +117,6 @@ Content-length: 224
   "mailNickname": "Fabrikam"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_educationclass-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_educationclass-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -115,7 +127,5 @@ Content-length: 224
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

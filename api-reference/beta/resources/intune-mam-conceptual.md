@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # How to protect your company app data with Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -18,7 +20,6 @@ You can use Intune app protection policies to help protect your company’s data
 
 The following Graph resources are available to manage app protection polices in Intune:
 
-- [Android managed app protection](intune-mam-androidmanagedappprotection.md)
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
 - [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
@@ -28,15 +29,16 @@ The following Graph resources are available to manage app protection polices in 
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
 - [Intune branding profile](intune-wip-intunebrandingprofile.md)
 - [Intune branding profile assignment](intune-wip-intunebrandingprofileassignment.md)
-- [iOS managed app protection](intune-mam-iosmanagedappprotection.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
 - [Managed app clipboard sharing level](intune-mam-managedappclipboardsharinglevel.md)
 - [Managed app configuration](intune-mam-managedappconfiguration.md)
 - [Managed app data encryption type](intune-mam-managedappdataencryptiontype.md)
+- [Managed app data ingestion location](intune-mam-managedappdataingestionlocation.md)
 - [Managed app data storage location](intune-mam-managedappdatastoragelocation.md)
 - [Managed app data transfer level](intune-mam-managedappdatatransferlevel.md)
+- [Managed app device threat level](intune-mam-managedappdevicethreatlevel.md)
 - [Managed app diagnostic status](intune-mam-managedappdiagnosticstatus.md)
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
 - [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)
@@ -50,10 +52,9 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app remediation action](intune-mam-managedappremediationaction.md)
 - [Managed app status](intune-mam-managedappstatus.md)
 - [Managed app status raw](intune-mam-managedappstatusraw.md)
+- [Managed browser type](intune-mam-managedbrowsertype.md)
 - [Managed mobile app](intune-mam-managedmobileapp.md)
-- [MDM windows information protection policy](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
-- [Targeted managed app configuration](intune-mam-targetedmanagedappconfiguration.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
 - [Windows information protection](intune-mam-windowsinformationprotection.md)

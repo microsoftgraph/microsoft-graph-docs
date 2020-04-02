@@ -4,9 +4,12 @@ description: "Use the Microsoft Teams device usage reports to get insights into 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Microsoft Teams device usage reports
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

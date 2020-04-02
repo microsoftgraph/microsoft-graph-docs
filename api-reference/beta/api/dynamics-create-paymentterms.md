@@ -6,9 +6,15 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 <!-- To be redirected --> 
 # Create paymentTerms
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a payment terms object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -22,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies('{id}')/paymentTerms
+POST /financials/companies/{id}/paymentTerms
 ```
 
 ## Optional query parameters
@@ -47,7 +53,7 @@ If successful, this method returns ```201 Created``` response code and a **payme
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms
+POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms
 Content-type: application/json
 
 {

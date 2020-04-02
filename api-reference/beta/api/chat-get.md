@@ -4,9 +4,12 @@ description: "Retrieve a single chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get chat
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.Read   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.   |
+|Application | Chat.Read.All, Chat.ReadWrite.All   |
+
+> [!NOTE]
+> With application permissions, getting a single chat is supported, but [getting a list of chats](chat-list.md) is not.
+
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 
@@ -54,13 +63,29 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. 
@@ -84,16 +109,6 @@ Content-length: 201
     "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_chat_message-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_chat_message-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,8 +120,6 @@ Content-length: 201
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/chat-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/chat-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

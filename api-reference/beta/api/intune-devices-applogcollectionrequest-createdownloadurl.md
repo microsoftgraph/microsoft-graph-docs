@@ -1,9 +1,10 @@
 ---
 title: "createDownloadUrl action"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # createDownloadUrl action
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -68,7 +69,6 @@ Content-Length: 239
   }
 }
 ```
-
 
 
 

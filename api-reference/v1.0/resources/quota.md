@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Quota
 localization_priority: Normal
+description: "The quota resource provides details about space constrains on a Drive resource."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Quota resource type
+
+Namespace: microsoft.graph
 
 The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
 

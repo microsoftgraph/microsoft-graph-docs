@@ -4,9 +4,12 @@ description: "A wrapper around a resource for use on a submission. The wrapper a
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSubmissionResource resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

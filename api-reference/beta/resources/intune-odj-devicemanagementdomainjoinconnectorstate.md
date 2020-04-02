@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementDomainJoinConnectorState enum type"
 description: "The ODJ request states."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementDomainJoinConnectorState enum type
@@ -20,8 +21,6 @@ The ODJ request states.
 |active|0|Connector is actively pinging Intune.|
 |error|1|There is no heart-beat from connector from last one hour.|
 |inactive|2|There is no heart-beat from connector from last 5 days.|
-
-
 
 
 

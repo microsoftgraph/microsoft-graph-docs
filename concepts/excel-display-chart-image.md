@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Display a chart image in Excel with Microsoft Graph
 
-When you perform a [GET operation to retrieve a chart image](/api-reference/v1.0/api/chart-image.md), the Excel API returns the image as a base-64 string.
+When you perform a [GET operation to retrieve a chart image](/graph/api/chart-image?view=graph-rest-1.0), the Excel API returns the image as a base-64 string.
 
 You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 

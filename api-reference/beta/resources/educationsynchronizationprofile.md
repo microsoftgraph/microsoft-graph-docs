@@ -4,9 +4,12 @@ description: "Represents a set of configurations used to synchronize education e
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationProfile resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

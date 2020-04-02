@@ -4,13 +4,17 @@ description: "Use this API to add an attachment to an event. Since there"
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Add attachment
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
-you can add to under 4MB.
+Namespace: microsoft.graph
+
+Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md). This operation limits the size of the attachment you can add to under 3 MB.
+
+If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -72,10 +76,12 @@ If successful, this method returns `201 Created` response code and [attachment](
 
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -88,6 +94,24 @@ Content-length: 151
     "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-v1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-v1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-v1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-event-v1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
@@ -95,6 +119,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
@@ -113,17 +138,9 @@ Content-type: application/json
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (item attachment)
 
@@ -132,10 +149,10 @@ Content-type: application/json
 Here is an example which attaches an event with another event as an item attachment.
 
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
+  "blockType": "ignored",
   "name": "create_item_attachment_from_event"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
@@ -163,10 +180,12 @@ Content-length: 600
 }
 ```
 
+
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
@@ -187,14 +206,6 @@ Content-length: 162
     "isInline":false
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -205,7 +216,5 @@ Content-length: 162
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

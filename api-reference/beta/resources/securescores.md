@@ -2,9 +2,14 @@
 title: "secureScore resource type"
 description: "top=n, where n = the number of days of data that you want to retrieve. "
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # secureScore resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

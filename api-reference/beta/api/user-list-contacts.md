@@ -2,11 +2,14 @@
 title: "List contacts"
 description: "Get contacts in the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
-ms.prod: "microsoft-identity-platform"
+author: "kevinbellinger"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List contacts
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,13 +76,29 @@ If successful, this method returns a `200 OK` response code and collection of [c
 ## Example
 ##### Request
 The following example gets the **displayName** and **emailAddresses** properties of the signed-in user's contacts.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_contacts"
+  "name": "user_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-get-contacts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-get-contacts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-get-contacts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ##### Response
@@ -136,16 +155,6 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_contacts-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_contacts-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -157,8 +166,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-contacts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

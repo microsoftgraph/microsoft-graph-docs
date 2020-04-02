@@ -1,12 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Retrieve the contents of a specific version of a driveItem. "
 ms.date: 09/10/2017
 title: Download a previous version
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Download contents of a DriveItemVersion resource (preview)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,11 +55,27 @@ This example retrieves a version of a file in the current user's drive.
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-version-contents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -68,16 +87,6 @@ This returns a redirect to where the contents of the version can be downloaded.
 HTTP/1.1 302 Redirect
 Location: https://onedrive.com/34FF49D6...
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-version-contents-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-version-contents-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## Remarks
@@ -94,8 +103,6 @@ When your app retrieves the list of available versions for a file, a [driveItemV
   "section": "documentation",
   "tocPath": "Items/Version history",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

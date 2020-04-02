@@ -3,9 +3,13 @@ title: "Restore a previous version of a DriveItem"
 description: "Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file."
 localization_priority: Normal
 ms.prod: "sharepoint"
+author: ""
+doc_type: apiPageType
 ---
 
 # Restore a previous version of a DriveItem
+
+Namespace: microsoft.graph
 
 Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
@@ -39,11 +43,31 @@ No request body is required.
 
 This example restores a version of a file identified by `{item-id}` and `{version-id}`.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-version-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-version-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/restore-item-version-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -54,16 +78,6 @@ If successful, the API call returns a `204 No Content`.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/restore-item-version-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/restore-item-version-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [item-resource]: ../resources/driveitem.md
 
@@ -74,7 +88,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "Items/Copy",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

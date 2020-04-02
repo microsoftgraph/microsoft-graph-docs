@@ -36,9 +36,9 @@ Use the [Graph Explorer](https://aka.ms/ge) to experiment with new calls and to 
 
 ## Step 3: Review app details
 
-  - [App registration](migrate-azure-ad-graph-app-registration.md) and consent changes (which should be none).
-  - Token acquisition and [authentication libraries](migrate-azure-ad-graph-authentication-library.md).
-  - For .NET applications, use of [client libraries](migrate-azure-ad-graph-client-libraries.md).
+- [App registration](migrate-azure-ad-graph-app-registration.md) and consent changes (which should be none).
+- Token acquisition and [authentication libraries](migrate-azure-ad-graph-authentication-library.md).
+- For .NET applications, use of [client libraries](migrate-azure-ad-graph-client-libraries.md).
 
 ## Step 4: Deploy, test, and extend your app
 
@@ -53,4 +53,4 @@ If you're currently using the [AD authentication library](https://docs.microsoft
 - Learn about [resquest call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) in the Office Dev Center.
+- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/).

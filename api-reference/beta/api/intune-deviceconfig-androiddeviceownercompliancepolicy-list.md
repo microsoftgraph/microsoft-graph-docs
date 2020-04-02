@@ -1,9 +1,10 @@
 ---
 title: "List androidDeviceOwnerCompliancePolicies"
 description: "List properties and relationships of the androidDeviceOwnerCompliancePolicy objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List androidDeviceOwnerCompliancePolicies
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1241
+Content-Length: 1552
 
 {
   "value": [
@@ -72,6 +73,11 @@ Content-Length: 1241
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
       "version": 7,
+      "deviceThreatProtectionEnabled": true,
+      "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "advancedThreatProtectionRequiredSecurityLevel": "secured",
+      "securityRequireSafetyNetAttestationBasicIntegrity": true,
+      "securityRequireSafetyNetAttestationCertifiedDevice": true,
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
       "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -92,7 +98,6 @@ Content-Length: 1241
   ]
 }
 ```
-
 
 
 

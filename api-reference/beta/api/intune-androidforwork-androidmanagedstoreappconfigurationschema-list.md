@@ -1,9 +1,10 @@
 ---
 title: "List androidManagedStoreAppConfigurationSchemas"
 description: "List properties and relationships of the androidManagedStoreAppConfigurationSchema objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List androidManagedStoreAppConfigurationSchemas
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 987
+Content-Length: 1871
 
 {
   "value": [
@@ -68,6 +69,32 @@ Content-Length: 987
       "schemaItems": [
         {
           "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
+          "schemaItemKey": "Schema Item Key value",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "defaultBoolValue": true,
+          "defaultIntValue": 15,
+          "defaultStringValue": "Default String Value value",
+          "defaultStringArrayValue": [
+            "Default String Array Value value"
+          ],
+          "dataType": "integer",
+          "selections": [
+            {
+              "@odata.type": "microsoft.graph.keyValuePair",
+              "name": "Name value",
+              "value": "Value value"
+            }
+          ]
+        }
+      ],
+      "nestedSchemaItems": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
           "schemaItemKey": "Schema Item Key value",
           "displayName": "Display Name value",
           "description": "Description value",
@@ -91,7 +118,6 @@ Content-Length: 987
   ]
 }
 ```
-
 
 
 

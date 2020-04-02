@@ -4,9 +4,12 @@ description: "Create or replace a **schedule** object."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create or replace schedule
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -45,7 +50,7 @@ PUT /teams/{teamId}/schedule
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -60,6 +65,8 @@ If successful, this method returns a `200 OK` response code and a [schedule](../
 #### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule"
@@ -73,6 +80,20 @@ Content-type: application/json
   "timeZone": "America/Chicago"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-put-schedule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -95,19 +116,14 @@ Content-length: 401
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/team-put-schedule-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/team-put-schedule-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -119,8 +135,6 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/team-put-schedule.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/team-put-schedule.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

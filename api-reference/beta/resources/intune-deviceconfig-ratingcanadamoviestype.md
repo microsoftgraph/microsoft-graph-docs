@@ -1,9 +1,10 @@
 ---
 title: "ratingCanadaMoviesType enum type"
 description: "Movies rating labels in Canada"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingCanadaMoviesType enum type
@@ -24,8 +25,6 @@ Movies rating labels in Canada
 |agesAbove14|4|The 14A classification is suitable for viewers above 14 or older|
 |agesAbove18|5|The 18A classification is suitable for viewers above 18 or older|
 |restricted|6|The R classification is restricted to 18 years and older|
-
-
 
 
 

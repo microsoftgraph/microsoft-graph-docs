@@ -23,7 +23,7 @@ In addition, Microsoft Graph supports many new Azure AD datasets and features th
 - Security features such as:
   - [Identity risk events](/graph/api/resources/identityriskevent?view=graph-rest-beta)
   - [Risky users](/graph/api/resources/riskyuser?view=graph-rest-beta)
-- [Client libraries and samples](/graph/) available on many more platforms and languages
+- [Client libraries and samples](/graph/) available on many more platforms and languages. The Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
 
 Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](/graph/).
 
@@ -38,4 +38,4 @@ The rest of the articles in this section help you move your app from Azure AD Gr
 - Walk through the [app migration checklist](migrate-azure-ad-graph-planning-checklist.md) to help you plan the move.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) in the Office Dev Center.
+- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).

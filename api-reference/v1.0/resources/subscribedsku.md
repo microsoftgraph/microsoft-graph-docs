@@ -4,9 +4,12 @@ description: "Contains information about a service SKU that a company is subscri
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # subscribedSku resource type
+
+Namespace: microsoft.graph
 
 Contains information about a service SKU that a company is subscribed to.
 
@@ -15,20 +18,20 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 ## Methods
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Read properties and relationships of subscribedSku object.|
-|[List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection |Retrieve the list of commercial subscriptions that an organization has acquired.|
+|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Get a specific commercial subscription that an organization has acquired.|
+|[List subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) collection |Get the list of commercial subscriptions that an organization has acquired.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appliesTo|String| For example, "User" or "Company". |
-|capabilityStatus|String| For example, "Enabled". |
+|capabilityStatus|String|  Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| The number of licenses that have been assigned. |
 |id|String| The unique identifier for the subscribed sku object. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Information about the number and status of prepaid licenses. |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| Information about the service plans that are available with the SKU. Not nullable |
 |skuId|Guid| The unique identifier (GUID) for the service SKU. |
-|skuPartNumber|String| The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". |
+|skuPartNumber|String| The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md).|
 
 ## Relationships
 None

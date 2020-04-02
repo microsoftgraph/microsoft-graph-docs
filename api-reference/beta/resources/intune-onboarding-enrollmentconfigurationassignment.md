@@ -1,9 +1,10 @@
 ---
 title: "enrollmentConfigurationAssignment resource type"
 description: "Enrollment Configuration Assignment"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # enrollmentConfigurationAssignment resource type
@@ -28,6 +29,8 @@ Enrollment Configuration Assignment
 |:---|:---|:---|
 |id|String|Key of the enrollment configuration assignment|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Represents an assignment to managed devices in the tenant|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or policySet. Possible values are: `direct`, `policySets`.|
+|sourceId|String|Identifier for resource used for deployment to a group|
 
 ## Relationships
 None
@@ -46,11 +49,11 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
-
-
 
 
 

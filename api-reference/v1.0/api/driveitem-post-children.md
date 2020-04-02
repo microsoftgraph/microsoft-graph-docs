@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Create a new folder
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
+doc_type: apiPageType
 ---
 # Create a new folder in a drive
+
+Namespace: microsoft.graph
 
 Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.
 
@@ -47,6 +51,8 @@ If successful, this method returns `201 Created` response code and a [Driveitem]
 Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.
 The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
@@ -59,6 +65,24 @@ Content-Type: application/json
   "@microsoft.graph.conflictBehavior": "rename"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-folder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-folder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-folder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-folder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -99,16 +123,6 @@ Content-Type: application/json
   }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-folder-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error response
 
@@ -126,7 +140,5 @@ how errors are returned.
   "section": "documentation",
   "tocPath": "Items/Create folder",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

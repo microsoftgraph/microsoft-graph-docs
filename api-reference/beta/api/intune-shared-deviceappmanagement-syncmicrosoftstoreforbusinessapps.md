@@ -1,9 +1,10 @@
 ---
 title: "syncMicrosoftStoreForBusinessApps action"
 description: "Syncs Intune account with Microsoft Store For Business"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # syncMicrosoftStoreForBusinessApps action
@@ -21,7 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)||
 | &nbsp; &nbsp; **Onboarding** | |DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Onboarding** | |DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -56,6 +58,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
+
+
 
 
 

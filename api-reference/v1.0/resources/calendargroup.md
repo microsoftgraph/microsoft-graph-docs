@@ -4,9 +4,12 @@ description: "A group of user calendars."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # calendarGroup resource type
+
+Namespace: microsoft.graph
 
 A group of user calendars.
 

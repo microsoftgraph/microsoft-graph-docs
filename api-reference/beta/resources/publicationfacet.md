@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The publicationFacet resource provides details on the published status of a driveItemVersion or driveItem resource."
 ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # PublicationFacet resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

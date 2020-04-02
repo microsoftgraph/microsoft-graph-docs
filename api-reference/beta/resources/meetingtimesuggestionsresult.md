@@ -4,9 +4,12 @@ description: "A collection of meeting suggestions if there is any, and the reaso
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # meetingTimeSuggestionsResult resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

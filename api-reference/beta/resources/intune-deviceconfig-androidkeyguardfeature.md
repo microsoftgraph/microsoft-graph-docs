@@ -1,9 +1,10 @@
 ---
 title: "androidKeyguardFeature enum type"
 description: "Android keyguard feature."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidKeyguardFeature enum type
@@ -25,8 +26,6 @@ Android keyguard feature.
 |fingerprint|5|Fingerprint sensor usage when on secure keyguard screens.|
 |remoteInput|6|Notification text entry when on secure keyguard screens.|
 |allFeatures|7|All keyguard features when on secure keyguard screens.|
-
-
 
 
 

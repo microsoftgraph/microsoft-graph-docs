@@ -4,9 +4,12 @@ description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # workbookChartLegendFormat resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

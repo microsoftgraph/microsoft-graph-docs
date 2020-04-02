@@ -1,9 +1,10 @@
 ---
 title: "Update deviceCompliancePolicySettingStateSummary"
 description: "Update the properties of a deviceCompliancePolicySettingStateSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceCompliancePolicySettingStateSummary
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -48,7 +49,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity.|
 |setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Setting platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Setting platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
 |compliantDeviceCount|Int32|Number of compliant devices|
@@ -108,7 +109,6 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

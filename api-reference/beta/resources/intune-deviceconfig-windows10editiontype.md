@@ -1,9 +1,10 @@
 ---
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windows10EditionType enum type
@@ -37,8 +38,6 @@ Windows 10 Edition type.
 |windows10Mobile|17|Windows 10 Mobile|
 |windows10IoTCore|18|Windows 10 IoT Core|
 |windows10IoTCoreCommercial|19|Windows 10 IoT Core Commercial|
-
-
 
 
 

@@ -2,14 +2,19 @@
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # workingHours resource type
 
+Namespace: microsoft.graph
+
 Represents the days of the week and hours in a specific time zone that the user works.
 
 Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 
-You can [get](../api/user-get-mailboxsettings.md#request-3) and [set](../api/user-update-mailboxsettings.md#request-2) the 
+You can [get](../api/user-get-mailboxsettings.md#example-3) and [set](../api/user-update-mailboxsettings.md#example-2) the 
 working hours of a user as part of the user's [mailbox settings](mailboxsettings.md). 
 
 You can choose to set a time zone for your working hours differently from the time zone you have set on your Outlook client. 

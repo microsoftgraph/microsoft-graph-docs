@@ -1,9 +1,10 @@
 ---
 title: "mobileAppContentFileUploadState enum type"
 description: "Contains properties for upload request states."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileAppContentFileUploadState enum type
@@ -33,8 +34,6 @@ Contains properties for upload request states.
 |commitFilePending|301|Not yet documented|
 |commitFileFailed|302|Not yet documented|
 |commitFileTimedOut|303|Not yet documented|
-
-
 
 
 

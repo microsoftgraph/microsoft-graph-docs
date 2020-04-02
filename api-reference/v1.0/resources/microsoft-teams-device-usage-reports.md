@@ -4,9 +4,12 @@ description: "Use the Microsoft Teams device usage reports to get information ab
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Microsoft Teams device usage reports
+
+Namespace: microsoft.graph
 
 Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization.
 

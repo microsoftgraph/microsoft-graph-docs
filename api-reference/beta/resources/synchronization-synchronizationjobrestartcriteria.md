@@ -2,9 +2,14 @@
 title: "synchronizationJobRestartCriteria resource type"
 description: "Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action."
 localization_priority: Normal
+doc_type: resourcePageType
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationJobRestartCriteria resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

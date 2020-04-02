@@ -1,12 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Retrieve a collection of DriveItem resources that have been shared with the owner of the Drive."
 ms.date: 09/10/2017
 title: List Files Shared With Me
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # List items shared with the signed-in user
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,11 +30,27 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 
 ## HTTP request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -75,16 +94,6 @@ Content-Type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/shared-with-me-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/shared-with-me-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -105,8 +114,6 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "section": "documentation",
   "tocPath": "Sharing/Shared with me",
   "suppressions": [
-    "Error: /api-reference/beta/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

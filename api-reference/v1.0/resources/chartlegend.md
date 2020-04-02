@@ -4,9 +4,12 @@ description: "Represents the legend in a chart."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartLegend resource type
+
+Namespace: microsoft.graph
 
 Represents the legend in a chart.
 

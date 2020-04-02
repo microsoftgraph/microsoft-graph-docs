@@ -5,8 +5,11 @@ title: mentionAction resource type
 description: The MentionAction object provides information about who was mentioned during an activity.
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 # mentionAction resource type
+
+Namespace: microsoft.graph
 
 The **MentionAction** resource provides information about an [activity][] that mentioned people.
 

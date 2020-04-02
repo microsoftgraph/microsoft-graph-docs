@@ -1,9 +1,10 @@
 ---
 title: "Update deviceManagementScriptDeviceState"
 description: "Update the properties of a deviceManagementScriptDeviceState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagementScriptDeviceState
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -29,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 ```
@@ -46,8 +48,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|id|String|Key of the device management script device state entity. This property is read-only.|
+|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
@@ -63,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 Content-type: application/json
 Content-length: 281
 
@@ -94,7 +96,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 

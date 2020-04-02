@@ -1,9 +1,10 @@
 ---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceOverview resource type
@@ -57,7 +58,12 @@ Here is a JSON representation of the resource.
     "macOSCount": 1024,
     "windowsMobileCount": 1024,
     "windowsCount": 1024,
-    "unknownCount": 1024
+    "unknownCount": 1024,
+    "androidDedicatedCount": 1024,
+    "androidDeviceAdminCount": 1024,
+    "androidFullyManagedCount": 1024,
+    "androidWorkProfileCount": 1024,
+    "configMgrDeviceCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -79,8 +85,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

@@ -2,13 +2,16 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
+doc_type: apiPageType
 ---
 
 # List manager
 
-Get user's manager. Returns the user or contact assigned as the user's manager.
+Namespace: microsoft.graph
+
+Get user's manager. Returns the user or organizational contact assigned as the user's manager.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -18,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,12 +30,11 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -40,16 +44,37 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
-Here is an example of the response.
+The following is an example of the response.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -79,16 +104,6 @@ Content-type: application/json
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_manager-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_manager-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,7 +114,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-list-manager.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-list-manager.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

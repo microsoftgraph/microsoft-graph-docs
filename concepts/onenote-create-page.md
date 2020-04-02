@@ -195,7 +195,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote-images-files.md), our [tutorials](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
+For more examples that show how to create pages that contain images and other files, see [Add images and files](onenote-images-files.md), our [tutorials](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-tutorial), and our [samples](https://github.com/onenotedev). Also, learn how to [create absolute positioned elements](onenote-abs-pos.md), [use note tags](onenote-note-tags.md), and [extract data](onenote-extract-data.md) for business card captures and online recipe and product listings.
 
 Microsoft Graph is strict about some formats, such as CRLF newlines in a multipart message body. To reduce the risk of creating malformed payloads, you should use a library to construct multipart messages. 
 
@@ -221,7 +221,7 @@ See [requirements and limitations for input HTML](#requirements-and-limitations-
 |------|------|  
 | Success code | A 201 HTTP status code. |  
 | Response body | A OData representation of the new page in JSON format. |  
-| Errors | If the request fails, the API returns errors in the **@api.diagnostics** object in the response body. |  
+| Errors | If the request fails, the API returns errors in the **\@api.diagnostics** object in the response body. |  
 | Location header | The resource URL for the new page. |  
 | X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
 
@@ -238,6 +238,14 @@ The `version` segment in the URL represents the version of Microsoft Graph that 
 
 Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
 
+<a name="limitations"></a>
+
+## OneNote section size limitations
+There is a limit to the number of pages that you can add to a section using the OneNote API. When this limit is reached for a section and an attempt is made to create a new page in that section, you will see a response with HTTP status code `507` and message "Exceeded the maximum number of pages allowed per section". For more information about this error code, see [OneNote error codes](onenote-error-codes.md).
+
+You can use one of the following workarounds:
+- Create a new section and add new pages there.
+- Delete unused pages of an existing section that has reached the page limit.
 
 <a name="permissions"></a>
 

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # account resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an account object in Dynamics 365 Business Central.
@@ -23,7 +25,7 @@ Represents an account object in Dynamics 365 Business Central.
 
 ## Properties'
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |id|string|The unique ID of the account.|
 |number|string, maximum size 20|Specifies the number of the G/L account.|

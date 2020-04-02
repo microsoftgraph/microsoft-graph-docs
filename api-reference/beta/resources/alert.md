@@ -4,9 +4,12 @@ description: "Represents potential security issues within a customer's tenant th
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # alert resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

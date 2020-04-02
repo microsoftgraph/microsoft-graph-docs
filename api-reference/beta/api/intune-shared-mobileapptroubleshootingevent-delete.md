@@ -2,8 +2,9 @@
 title: "Delete mobileAppTroubleshootingEvent"
 description: "Describes the Delete mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete mobileAppTroubleshootingEvent
@@ -23,7 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+|&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,6 +63,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
+
+
 
 
 

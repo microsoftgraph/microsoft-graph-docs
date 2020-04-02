@@ -1,11 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ColumnLink resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,12 +1,15 @@
 ---
 title: "riskUserActivity resource type"
-description: ""
+description: author
 author: ""
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # riskUserActivity resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

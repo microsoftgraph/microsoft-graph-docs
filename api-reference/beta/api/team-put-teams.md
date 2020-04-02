@@ -4,14 +4,17 @@ description: "Create a new team from a group."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create team from group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
+> This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
 
 Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
@@ -60,8 +63,10 @@ If successful, this method should return a `201 Created` response code and a [te
 #### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_team"
 }-->
 ```http
@@ -85,6 +90,20 @@ Content-type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -92,7 +111,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->

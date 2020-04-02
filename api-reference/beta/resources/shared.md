@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The Shared resource indicates a DriveItem has been shared with others."
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Shared resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

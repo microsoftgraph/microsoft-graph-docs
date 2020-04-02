@@ -10,6 +10,14 @@
     "notLowerCamel": [
       "Json"
     ],
+    "requiredYamlHeaders": [
+      "title",
+      "description",
+      "author",
+      "ms.prod",
+      "localization_priority",
+      "doc_type"
+    ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"
     ],
@@ -22,7 +30,8 @@
       "contributing.md",
       "issue_template.md",
       "readme.md",
-      "license.md"
+      "license.md",
+      "index.md"
     ]
   },
   "schemaDiffConfig": {

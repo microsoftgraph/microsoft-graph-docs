@@ -4,14 +4,16 @@ description: "Microsoft Graph lets your app get authorized access to a user's Ou
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: conceptualPageType
 ---
 
 # Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
 With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
-the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
-Exchange on-premises in a [hybrid deployment](/graph/hybrid-rest-support).
+the signed-in user or any user in a tenant. 
+
+[!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
 ## Using the mail REST API
 
@@ -21,8 +23,9 @@ or the `me` shortcut alias for the signed-in user.
 Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
 Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
 
->**Note:** In general, do not assume that **message** and **mailfolder** IDs are unique and immutable within a mailbox. They might change after certain
-actions such as copy, move, or send.
+>[!IMPORTANT] 
+> In general, do not assume that **message** and **mailfolder** IDs are unique and always remain the same within a mailbox. They might change after certain
+actions such as copy or move. You can choose to use [immutable IDs](/graph/outlook-immutable-id) to retain the same ID as long as the message remains in the same mailbox, _with the exception of sending a draft message, and a few other scenarios_. See [lifetime of immutable IDs](/graph/outlook-immutable-id#lifetime-of-immutable-ids) for details.
 
 Message bodies can be in HTML or text format.
 
@@ -48,11 +51,16 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Setting the **from** and **sender** properties in a [message](../resources/message.md) |
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
 | Query for messages and get them in a search folder  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Methods of mailSearchFolder](../resources/mailsearchfolder.md#methods) |
+| Get the MIME content of a message or message attachment | [message](../resources/message.md) | [Get MIME content](/graph/outlook-get-mime-message) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
+| Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user-get-mailboxsettings.md), <br> [Update user's mailbox settings](../api/user-update-mailboxsettings.md) |
 | Get MailTips of other recipients' special status, such as out-of-office | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user-getmailtips.md) |
 | **Mail and folder management** | | |
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
+| Categorize messages | [outlookCategory](../resources/outlookcategory.md) | [Methods of outlookCategory](../resources/outlookcategory.md#methods) |
+| Use Inbox rules to automate actions such as forwarding specific incoming messages | [messageRule](../resources/messagerule.md) | [Methods of messageRule](../resources/messagerule.md#methods) |
+| Get Internet message headers of a message | [message](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message-get.md#example-2). |
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |

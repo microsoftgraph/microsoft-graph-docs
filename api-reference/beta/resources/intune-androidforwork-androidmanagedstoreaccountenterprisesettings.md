@@ -1,9 +1,10 @@
 ---
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidManagedStoreAccountEnterpriseSettings resource type
@@ -19,6 +20,7 @@ Enterprise settings for an Android managed store account.
 |:---|:---|:---|
 |[Get androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Read properties and relationships of the [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.|
 |[Update androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-update.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Update the properties of a [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.|
+|[approveApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps.md)|None|Not yet documented|
 |[requestSignupUrl action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestsignupurl.md)|String|Not yet documented|
 |[completeSignup action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|None|Not yet documented|
 |[syncApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|None|Not yet documented|
@@ -83,8 +85,6 @@ Here is a JSON representation of the resource.
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
-
 
 
 

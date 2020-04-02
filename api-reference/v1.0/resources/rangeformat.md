@@ -4,9 +4,12 @@ description: "A format object encapsulating the range's font, fill, borders, ali
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # RangeFormat resource type
+
+Namespace: microsoft.graph
 
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 

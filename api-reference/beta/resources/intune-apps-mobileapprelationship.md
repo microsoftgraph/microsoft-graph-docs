@@ -1,9 +1,10 @@
 ---
 title: "mobileAppRelationship resource type"
 description: "Describes the relationship for a child mobile app to its parent mobile app."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppRelationship resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "targetDisplayName": "String"
 }
 ```
-
-
 
 
 

@@ -4,9 +4,12 @@ description: "Represents the chart axis title formatting."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartAxisTitleFormat resource type
+
+Namespace: microsoft.graph
 
 Represents the chart axis title formatting.
 

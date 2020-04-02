@@ -1,9 +1,10 @@
 ---
 title: "List windowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the windowsAutopilotDeviceIdentity objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsAutopilotDeviceIdentities
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1201
+Content-Length: 1245
 
 {
   "value": [
@@ -83,12 +84,12 @@ Content-Length: 1201
       "skuNumber": "Sku Number value",
       "systemFamily": "System Family value",
       "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-      "managedDeviceId": "Managed Device Id value"
+      "managedDeviceId": "Managed Device Id value",
+      "displayName": "Display Name value"
     }
   ]
 }
 ```
-
 
 
 

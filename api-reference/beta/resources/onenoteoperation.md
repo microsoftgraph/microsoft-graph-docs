@@ -4,9 +4,12 @@ description: "The status of certain long-running OneNote operations."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # onenoteOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

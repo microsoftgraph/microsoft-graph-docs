@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # Enroll devices for management in Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -17,8 +19,9 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 The following Graph resources are available to manage enrollment in Intune:
 
 - [Certificate connector setting](intune-onboarding-certificateconnectorsetting.md)
+- [Compliance management partner](intune-onboarding-compliancemanagementpartner.md)
+- [Compliance management partner assignment](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Device and app management data](intune-onboarding-deviceandappmanagementdata.md)
-- [Device enrollment configuration](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restrictions configuration](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
@@ -34,6 +37,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Device management exchange on-premises policy](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [Device management partner](intune-onboarding-devicemanagementpartner.md)
 - [Device management partner app type](intune-onboarding-devicemanagementpartnerapptype.md)
+- [Device management partner assignment](intune-onboarding-devicemanagementpartnerassignment.md)
 - [Device management partner tenant state](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [Enrollment configuration assignment](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Intune brand](intune-onboarding-intunebrand.md)

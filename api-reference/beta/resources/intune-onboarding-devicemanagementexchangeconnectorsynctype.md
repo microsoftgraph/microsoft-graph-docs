@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementExchangeConnectorSyncType enum type"
 description: "The type of Exchange Connector sync requested."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeConnectorSyncType enum type
@@ -19,8 +20,6 @@ The type of Exchange Connector sync requested.
 |:---|:---|:---|
 |fullSync|0|Discover all the device in Exchange.|
 |deltaSync|1|Discover only the device in Exchange which have updated during the delta sync window.|
-
-
 
 
 

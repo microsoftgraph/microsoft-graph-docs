@@ -1,12 +1,15 @@
 ---
 title: "call: updateMetadata"
 description: "Update the appliation's metadata associated with a call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: apiPageType
 ---
 
 # call: updateMetadata
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateMetadata
-POST /applications/{id}/calls/{id}/updateMetadata
+POST /communications/calls/{id}/updateMetadata
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -50,12 +54,14 @@ The following example shows how to call this API.
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-updateMetadata"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata
+POST https://graph.microsoft.com/beta/communications/calls/{id}/updateMetadata
 Content-Type: application/json
 Content-Length: 79
 
@@ -64,6 +70,20 @@ Content-Length: 79
   "clientContext": "clientContext-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-updatemetadata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-updatemetadata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-updatemetadata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -71,23 +91,22 @@ Content-Length: 79
 
 <!-- {
   "blockType": "response",
+  "name": "call-updateMetadata",
   "truncated": true,
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "@odata.type": "#microsoft.graph.commsOperation",
+  "clientContext": "clientContext-value",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "completed"
+}
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/call-updateMetadata-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/call-updateMetadata-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,8 +118,6 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-updatemetadata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-updatemetadata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

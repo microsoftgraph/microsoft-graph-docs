@@ -4,9 +4,12 @@ description: "Represents the history of securityAction state changes."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # securityActionState resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

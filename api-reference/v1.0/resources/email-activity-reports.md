@@ -4,9 +4,12 @@ description: "Use the email activity reports to get a high level view of email t
 localization_priority: Priority
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Email activity reports
+
+Namespace: microsoft.graph
 
 Use the email activity reports to get a high level view of email traffic within your organization. You can also drill into the Email Activity widget to understand the trends and details of the email activity per user in your organization.
 

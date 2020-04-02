@@ -3,9 +3,13 @@ title: "imageInfo resource type"
 description: "A complex type for representing the **attribution** property in the visualInfo part of the activity object."
 localization_priority: Normal
 ms.prod: "project-rome"
+doc_type: resourcePageType
+author: ""
 ---
 
 # imageInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

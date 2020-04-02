@@ -2,9 +2,14 @@
 title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Delete connectorGroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

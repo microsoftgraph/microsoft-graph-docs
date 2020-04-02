@@ -6,9 +6,15 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 <!-- To be redirected --> 
 # Delete customerPaymentJournals
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a customer payment journal object from Dynamics 365 Business Central.
 
 ## Permissions
@@ -22,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')
+DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 ## Optional query parameters
@@ -49,7 +55,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 **Response** 

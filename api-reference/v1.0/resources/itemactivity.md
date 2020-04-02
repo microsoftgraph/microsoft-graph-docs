@@ -5,8 +5,11 @@ title: itemActivity resource type
 description: The itemActivity object provides information about an activity that took place on an item.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # itemActivity resource type
+
+Namespace: microsoft.graph
 
 The **itemActivity** resource provides information about activities that took place on an item or within a container.
 Currently only available on SharePoint and OneDrive for Business.

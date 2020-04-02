@@ -17,7 +17,7 @@ Each national cloud environment is unique and different than the Microsoft globa
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
->**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
+>**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -33,8 +33,6 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 |Azure AD (global service)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
-
-> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
 
 
 ## Microsoft Graph and Graph Explorer service root endpoints
@@ -70,7 +68,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
 | Change notifications (webhooks)  | ➖|✔* |✔* |
-| Delta query | ➖ | ➖| ➖ |
+| Delta query | ➖ | ✔ | ➖ |
 | Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
   

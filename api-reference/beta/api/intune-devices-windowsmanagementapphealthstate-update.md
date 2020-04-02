@@ -1,9 +1,10 @@
 ---
 title: "Update windowsManagementAppHealthState"
 description: "Update the properties of a windowsManagementAppHealthState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsManagementAppHealthState
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -45,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the Windows management app health state|
+|id|String|Unique Identifier for the Windows management app health state. This property is read-only.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows management app installed version.|
 |lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|
@@ -93,7 +94,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
 
 
 

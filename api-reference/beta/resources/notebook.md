@@ -4,9 +4,12 @@ description: "A OneNote notebook."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # notebook resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

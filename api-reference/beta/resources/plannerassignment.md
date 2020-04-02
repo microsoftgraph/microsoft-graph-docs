@@ -4,9 +4,12 @@ description: "The **plannerAssignment** resource represents the assignment of a 
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerAssignment resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

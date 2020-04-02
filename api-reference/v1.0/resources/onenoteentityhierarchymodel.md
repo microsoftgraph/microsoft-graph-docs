@@ -4,9 +4,12 @@ description: "This is a base type for OneNote entities."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # onenoteEntityHierarchyModel resource
+
+Namespace: microsoft.graph
 
 This is a base type for OneNote entities.
 

@@ -4,6 +4,7 @@ description: "You can use Microsoft Graph to build compelling app experiences ba
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: conceptualPageType
 ---
 
 # Working with users in Microsoft Graph
@@ -12,7 +13,7 @@ You can use Microsoft Graph to build compelling app experiences based on users, 
 
 You can access [users](user.md) through Microsoft Graph in two ways:
 
-- By their ID, `/users/{id | userPrincipalName}` 
+- By their ID, `/users/{id | userPrincipalName}`
 - By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
 ## Authorization
@@ -30,7 +31,7 @@ One of the following [permissions](https://developer.microsoft.com/graph/docs/au
 
 ## Common properties
 
-The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. 
+The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter.
 
 |Property |Description |
 |:----------|:-------------|
@@ -45,8 +46,6 @@ The following represent the default set of properties that are returned when get
 |preferredLanguage | The user's language of preference.|
 |surname| The last name of the user. |
 |userPrincipalName| The user's principal name. |
-
-<br/>
 
 For details and a list of all the properties, see the [user](user.md) object.
 

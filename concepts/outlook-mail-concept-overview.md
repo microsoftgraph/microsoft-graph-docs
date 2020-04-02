@@ -4,6 +4,7 @@ description: "Outlook is a messaging communication hub in Office 365. It also le
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook mail API overview
@@ -55,6 +56,10 @@ Often times apps have to store their data in an external data store and entail o
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
 
+## Where is the data?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
+
 ## API reference
 Looking for the API reference for this service?
 
@@ -70,9 +75,10 @@ Looking for the API reference for this service?
   - [Creating and sending messages](outlook-create-send-messages.md)
   - Ways to [organize messages](outlook-organize-messages.md)
   - [Getting the MIME content of a message](outlook-get-mime-message.md)
+  - [Attaching large files to Outlook messages or events](outlook-large-attachments.md)
   - [Getting shared messages](outlook-share-messages-folders.md)
-  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
+  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 
 - Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 

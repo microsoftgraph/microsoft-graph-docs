@@ -1,9 +1,10 @@
 ---
 title: "List enrollmentTroubleshootingEvents"
 description: "List properties and relationships of the enrollmentTroubleshootingEvent objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List enrollmentTroubleshootingEvents
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -100,7 +101,6 @@ Content-Length: 1400
   ]
 }
 ```
-
 
 
 

@@ -2,9 +2,14 @@
 title: "operation resource type"
 description: "The status of a long-running operation."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # operation resource type
+
+Namespace: microsoft.graph
 
 The status of a long-running operation.
 

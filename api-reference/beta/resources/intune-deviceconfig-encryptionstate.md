@@ -1,9 +1,10 @@
 ---
 title: "encryptionState enum type"
 description: "Encryption state"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # encryptionState enum type
@@ -19,8 +20,6 @@ Encryption state
 |:---|:---|:---|
 |notEncrypted|0|Not encrypted|
 |encrypted|1|Encrypted|
-
-
 
 
 

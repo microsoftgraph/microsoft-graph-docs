@@ -2,15 +2,18 @@
 title: "assignLicense"
 description: "Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this Technet article."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
+doc_type: apiPageType
 ---
 
-# assignLicense
+# user: assignLicense
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this [Technet article](https://technet.microsoft.com/en-us/library/mt765146.aspx).
+Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings. For example, an organization can have an Office 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user. You can also enable and disable specific plans associated with a subscription. To learn more about subscriptions and licenses, see this [Technet article](https://technet.microsoft.com/library/mt765146.aspx).
 
 To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku-list.md). 
 
@@ -49,6 +52,8 @@ If successful, this method returns `200 OK` response code and an updated [user](
 ## Example
 Add licenses to the user.
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"
@@ -72,6 +77,20 @@ Content-length: 185
   "removeLicenses": []
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-assignlicense-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-assignlicense-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-assignlicense-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Example
 Remove licenses from the user.
@@ -87,16 +106,6 @@ Content-length: 185
   "removeLicenses": ["skuId-value-1", "skuId-value-2"]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_assignlicense-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_assignlicense-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### Response
 In both examples, the response is the updated user object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -144,8 +153,6 @@ Content-length: 491
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

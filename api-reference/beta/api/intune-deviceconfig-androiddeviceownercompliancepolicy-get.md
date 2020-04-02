@@ -1,9 +1,10 @@
 ---
 title: "Get androidDeviceOwnerCompliancePolicy"
 description: "Read properties and relationships of the androidDeviceOwnerCompliancePolicy object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerCompliancePolicy
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -33,7 +34,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1175
+Content-Length: 1476
 
 {
   "value": {
@@ -74,6 +75,11 @@ Content-Length: 1175
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
     "version": 7,
+    "deviceThreatProtectionEnabled": true,
+    "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
+    "securityRequireSafetyNetAttestationBasicIntegrity": true,
+    "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -93,7 +99,6 @@ Content-Length: 1175
   }
 }
 ```
-
 
 
 

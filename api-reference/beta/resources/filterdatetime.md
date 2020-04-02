@@ -2,9 +2,14 @@
 title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # FilterDatetime resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,9 +1,10 @@
 ---
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAutopilotDeviceIdentity resource type
@@ -24,6 +25,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Update windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.|
 |[assignUserToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 |[unassignUserFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|None|Unassigns the user from an Autopilot device.|
+|[updateDeviceProperties action](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|None|Updates properties on Autopilot devices.|
 |[assignResourceAccountToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|None|Assigns resource account to Autopilot devices.|
 |[unassignResourceAccountFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|None|Unassigns the resource account from an Autopilot device.|
 
@@ -32,7 +34,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |:---|:---|:---|
 |id|String|The GUID for the object|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
 |orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
 |groupTag|String|Group Tag of the Windows autopilot device.|
@@ -41,7 +43,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
 |model|String|Model name of the Windows autopilot device.|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
 |addressableUserName|String|Addressable user name.|
 |userPrincipalName|String|User Principal Name.|
@@ -50,12 +52,13 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |systemFamily|String|System Family|
 |azureActiveDirectoryDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
+|displayName|String|Display Name|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Deployment profile currently assigned to the Windows autopilot device.|
-|intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Deployment profile intended to be assigned to the Windows autopilot device.|
+|deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Deployment profile currently assigned to the Windows autopilot device.|
+|intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Deployment profile intended to be assigned to the Windows autopilot device.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -87,11 +90,10 @@ Here is a JSON representation of the resource.
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
-  "managedDeviceId": "String"
+  "managedDeviceId": "String",
+  "displayName": "String"
 }
 ```
-
-
 
 
 

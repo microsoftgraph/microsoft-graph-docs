@@ -4,9 +4,12 @@ description: "A channel is a collection of messages within a team. "
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # channel resource type
+
+Namespace: microsoft.graph
 
 [Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. 
 Each channel is dedicated to a specific topic, department, or project.

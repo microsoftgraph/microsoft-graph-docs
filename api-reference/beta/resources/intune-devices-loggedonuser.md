@@ -1,9 +1,10 @@
 ---
 title: "loggedOnUser resource type"
 description: "Logged On User"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # loggedOnUser resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

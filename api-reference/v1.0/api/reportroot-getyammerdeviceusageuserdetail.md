@@ -4,9 +4,12 @@ description: "Get details about Yammer device usage by user."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerDeviceUsageUserDetail function
+
+Namespace: microsoft.graph
 
 Get details about Yammer device usage by user.
 
@@ -22,7 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).
+
 ## HTTP request
+
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -77,15 +83,17 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
 <!--{
-  "blockType": "request",
+  "blockType": "ignored",
   "isComposable": true,
   "name": "reportroot_getyammerdeviceusageuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(period='D7')
 ```
+
 
 #### Response
 
@@ -98,16 +106,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageuserdetail-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageuserdetail-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### Request
 
@@ -158,7 +156,5 @@ Report Refresh Date,User Principal Name,Display Name,User State,State Change Dat
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getyammerdeviceusageuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getyammerdeviceusageuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

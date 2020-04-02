@@ -4,9 +4,12 @@ description: "Gets a row contained in the range."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: Row
+
+Namespace: microsoft.graph
 
 Gets a row contained in the range.
 ## Permissions

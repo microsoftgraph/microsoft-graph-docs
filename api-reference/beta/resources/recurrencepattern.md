@@ -2,9 +2,14 @@
 title: "recurrencePattern resource type"
 description: "Describes the frequency by which a recurring event repeats."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # recurrencePattern resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

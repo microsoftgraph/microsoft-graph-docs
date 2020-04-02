@@ -1,9 +1,10 @@
 ---
 title: "edgeOpenOptions enum type"
 description: "Possible values for the EdgeOpensWith setting."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # edgeOpenOptions enum type
@@ -22,8 +23,6 @@ Possible values for the EdgeOpensWith setting.
 |newTabPage|2|NewTabPage.|
 |previousPages|3|PreviousPages.|
 |specificPages|4|SpecificPages.|
-
-
 
 
 

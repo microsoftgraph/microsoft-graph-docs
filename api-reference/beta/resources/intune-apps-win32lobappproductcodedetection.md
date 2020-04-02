@@ -1,9 +1,10 @@
 ---
 title: "win32LobAppProductCodeDetection resource type"
 description: "Contains product code and version properties to detect a Win32 App"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobAppProductCodeDetection resource type
@@ -42,8 +43,6 @@ Here is a JSON representation of the resource.
   "productVersion": "String"
 }
 ```
-
-
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "targetedManagedAppPolicyAssignment resource type"
 description: "The type for deployment of groups or apps."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # targetedManagedAppPolicyAssignment resource type
@@ -26,7 +27,9 @@ The type for deployment of groups or apps.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identifier for deployment of a group or app|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identifier for deployment to a group or app|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|sourceId|String|Identifier for resource used for deployment to a group|
 
 ## Relationships
 None
@@ -45,11 +48,11 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
-
-
 
 
 

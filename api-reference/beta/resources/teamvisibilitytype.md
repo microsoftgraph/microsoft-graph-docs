@@ -4,9 +4,12 @@ description: "Describes the visibility of a team. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: enumPageType
 ---
 
 # teamVisibilityType enum type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

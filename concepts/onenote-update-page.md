@@ -53,13 +53,16 @@ Your changes are sent in the message body as an array of JSON change objects. Ea
 
 The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.
 
+> [!NOTE]
+> When updating an image on a OneNote page, you can't use www links. The service won't try to download random resources. Instead, the image must be part of the request, either by an image-data-url or a part-name of a multipart request.
+
 ```json
 [
    {
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url-or-part-name" alt="Image above the target paragraph" />'
+    'content':'<img src="image-data-url-or-part-name" alt="Image above the target paragraph" />'
   }, 
   {
     'target':'#list-id',
@@ -135,8 +138,8 @@ You can specify target elements by using the **data-id** or **id** value, as fol
 
 - For **append** and **insert** actions, you can use either ID as the target value.
 - For **replace** actions, you must use the generated ID for all elements except for the page title and images and objects that are within a div. 
-    - To replace a title, use the **title** keyword. 
-    - To replace images and objects that are within a div, use either **data-id** or **id**.
+  - To replace a title, use the **title** keyword. 
+  - To replace images and objects that are within a div, use either **data-id** or **id**.
 
 The following example uses the **id** value for the target. Don't use the # prefix with a generated ID.
 
@@ -276,7 +279,7 @@ The following example adds two sibling nodes to the page. It adds an image above
      'target':'#para1',
      'action':'insert',
      'position':'before',
-     'content':'<img src="image-url-or-part-name" alt="Image inserted above the target" />'
+     'content':'<img src="image-data-url-or-part-name" alt="Image inserted above the target" />'
   },
   {
     'target':'#para2',
@@ -380,7 +383,7 @@ Authorization: Bearer {token}
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url" alt="New image from a URL" />'
+    'content':'<img src="image-data-url" alt="New image from a URL" />'
   }, 
   {
     'target':'#list-id',

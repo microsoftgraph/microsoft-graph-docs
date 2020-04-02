@@ -4,9 +4,12 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: resourcePageType
 ---
 
 # bookingStaffMember resource type
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

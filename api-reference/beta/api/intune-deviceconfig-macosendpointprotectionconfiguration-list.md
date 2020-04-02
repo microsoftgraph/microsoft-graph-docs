@@ -1,9 +1,10 @@
 ---
 title: "List macOSEndpointProtectionConfigurations"
 description: "List properties and relationships of the macOSEndpointProtectionConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List macOSEndpointProtectionConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2469
+Content-Length: 3271
 
 {
   "value": [
@@ -115,12 +116,28 @@ Content-Length: 2469
       "fileVaultAllowDeferralUntilSignOut": true,
       "fileVaultNumberOfTimesUserCanIgnore": 3,
       "fileVaultDisablePromptAtSignOut": true,
-      "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+      "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+      "fileVaultHidePersonalRecoveryKey": true,
+      "advancedThreatProtectionRealTime": "enabled",
+      "advancedThreatProtectionCloudDelivered": "enabled",
+      "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+      "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+      "advancedThreatProtectionExcludedFolders": [
+        "Advanced Threat Protection Excluded Folders value"
+      ],
+      "advancedThreatProtectionExcludedFiles": [
+        "Advanced Threat Protection Excluded Files value"
+      ],
+      "advancedThreatProtectionExcludedExtensions": [
+        "Advanced Threat Protection Excluded Extensions value"
+      ],
+      "advancedThreatProtectionExcludedProcesses": [
+        "Advanced Threat Protection Excluded Processes value"
+      ]
     }
   ]
 }
 ```
-
 
 
 

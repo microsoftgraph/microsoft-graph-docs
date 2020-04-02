@@ -4,9 +4,12 @@ description: "Represents the background of a range object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # workbookRangeFill resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

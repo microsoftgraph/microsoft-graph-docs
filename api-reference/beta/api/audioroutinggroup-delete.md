@@ -1,12 +1,15 @@
 ---
 title: "Delete audio routing group"
 description: "Delete the specified audio routing group."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: apiPageType
 ---
 
 # Delete audio routing group
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
-DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
+DELETE /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -44,13 +48,29 @@ If successful, this method returns `204 No Content` response code. It does not r
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-audioRoutingGroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-audioroutinggroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-audioroutinggroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-audioroutinggroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -63,16 +83,6 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete-audioRoutingGroup-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete-audioRoutingGroup-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,8 +94,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/audioroutinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/audioroutinggroup-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -2,8 +2,9 @@
 title: "Update officeClientConfigurationAssignment"
 description: "Update the properties of a officeClientConfigurationAssignment object."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update officeClientConfigurationAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|**TODO: Determine scopes **|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|**TODO: Determine scopes **|
 
 ## HTTP Request
 <!-- {
@@ -84,6 +85,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

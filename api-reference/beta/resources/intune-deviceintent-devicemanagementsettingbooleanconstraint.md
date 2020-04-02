@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementSettingBooleanConstraint resource type"
 description: "Constraint the enforces a particular boolean value"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementSettingBooleanConstraint resource type
@@ -38,8 +39,6 @@ Here is a JSON representation of the resource.
   "value": true
 }
 ```
-
-
 
 
 

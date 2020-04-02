@@ -2,7 +2,7 @@
 title: "Use the People API in Microsoft Graph to get information about the people most relevant to you"
 description: "Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. "
 ms.date: 4/9/2019
-author: "simonhult"
+author: "anthona"
 localization_priority: Priority
 ms.prod: "insights"
 ---
@@ -17,7 +17,7 @@ The People API is particularly useful for people picking scenarios, such as comp
 To call the People API in Microsoft Graph, your app will need the appropriate permissions:
 
 * People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.
-* People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls. People.Read.All requires admin consent.
+* People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls. People.Read.All requires admin consent.
 
 ## Browse people
 
@@ -471,7 +471,12 @@ Content-type: application/json
   ]
 }
 ```
+### Types of results included
+By default, Microsoft Graph serves mailbox-only results, which do not include directory/organization results. To retrieve directory results, specify an HTTP header, as shown.
 
+```
+"X-PeopleQuery-QuerySources: Mailbox,Directory”
+```
 ### Select the fields to return
 
 You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.

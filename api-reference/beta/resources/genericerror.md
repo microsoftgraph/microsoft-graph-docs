@@ -2,9 +2,14 @@
 title: "genericError resource type"
 description: "A general-purpose error."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # genericError resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

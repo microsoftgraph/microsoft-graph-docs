@@ -4,9 +4,12 @@ description: "An Outlook item that can track a work item. "
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookTask resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +54,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignedTo|String|The name of the person who has been assigned the task.|
+|assignedTo|String|The name of the person who has been assigned the task in Outlook. Read-only.|
 |body|[itemBody](itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
 |categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) that the user has defined.|
 |changeKey|String|The version of the task.|

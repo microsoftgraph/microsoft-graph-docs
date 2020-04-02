@@ -2,9 +2,14 @@
 title: "connectorGroup resource type"
 description: "Here is a JSON representation of the resource."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # connectorGroup resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +23,7 @@ localization_priority: Normal
 |[Create connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connector Group by posting to the members collection.|
 |[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection.|
 |[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)	|Update connectorGroup object. |
-|[Delete](../api/connectorgroup-delete.md) | None |Delete connectorGroup object. All connectors must be remove before a conector group can be deleted. |
+|[Delete](../api/connectorgroup-delete.md) | None |Delete connectorGroup object. All connectors must be remove before a connector group can be deleted. |
 
 ## Properties
 | Property	   | Type	|Description|

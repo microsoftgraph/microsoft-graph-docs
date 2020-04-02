@@ -4,10 +4,12 @@ description: "Create a new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Create chatMessage in a channel
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,6 @@ POST /teams/{id}/channels/{id}/messages
 
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
-> Note: Sending messages with attachments and images is not supported.
 
 ## Response
 
@@ -55,6 +56,8 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -70,6 +73,20 @@ Content-type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -122,16 +139,6 @@ Content-length: 160
     "reactions": []
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_chatmessage_from_channel-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_chatmessage_from_channel-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Example 2: @mentions
 
@@ -232,6 +239,9 @@ Content-length: 160
 
 #### Request
 The following is an example of the request.
+
+> Note: The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -317,7 +327,7 @@ Content-length: 160
 
 ## See also
 
-- [Cards Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
+- [Cards Reference](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -329,11 +339,6 @@ Content-length: 160
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/channel-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/channel-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/channel-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/channel-post-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/channel-post-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

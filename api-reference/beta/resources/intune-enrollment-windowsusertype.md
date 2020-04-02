@@ -1,9 +1,10 @@
 ---
 title: "windowsUserType enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsUserType enum type
@@ -19,8 +20,6 @@ Not yet documented
 |:---|:---|:---|
 |administrator|0|Not yet documented|
 |standard|1|Not yet documented|
-
-
 
 
 

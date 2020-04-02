@@ -2,11 +2,16 @@
 title: "attachment resource type"
 description: "You can add related content to an event,"
 localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # attachment resource type
 
-You can add related content to an [event](../resources/event.md),
+Namespace: microsoft.graph
+
+You can add related content to a user [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md) in the form of an attachment.
 
 **attachment** is the base resource for the following derived types of attachments:
@@ -15,6 +20,7 @@ You can add related content to an [event](../resources/event.md),
 * An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
+Events in group calendars do not support attachments.
 
 ## Methods
 
@@ -23,11 +29,11 @@ The following methods apply to any of the derived types of attachments (**fileAt
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to an event, message, or post.|
-|[Add attachment to an event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event.|
+|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, or post.|
+|[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar.|
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
 |[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
-|[List attachments of an event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event. |
+|[List attachments of a user event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event in a user calendar. |
 |[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
 |[List attachments of a post](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
 |[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, or post. |

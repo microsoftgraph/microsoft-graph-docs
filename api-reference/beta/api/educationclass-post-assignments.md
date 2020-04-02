@@ -4,9 +4,12 @@ description: "Creates a new assignment. Only teachers in a class can create an a
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create educationAssignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -94,6 +97,7 @@ Content-length: 279
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "2014-02-01T00:00:00Z",
   "classId": "11018",
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "createdBy": {
       "application": null,
       "device": null,

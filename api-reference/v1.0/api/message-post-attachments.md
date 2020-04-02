@@ -4,9 +4,12 @@ description: "Use this API to add an attachment to a message. "
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Add attachment
+
+Namespace: microsoft.graph
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 
@@ -22,8 +25,7 @@ resource.
 You can add an attachment to an existing message by posting to its attachments collection, or you can 
 add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).
 
-Since there is currently a limit of 4MB on the total size of each REST request, this limits the 
-size of the attachment you can add to under 4MB.
+This operation limits the size of the attachment you can add to under 3 MB.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -68,10 +70,12 @@ If successful, this method returns `201 Created` response code and [Attachment](
 
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
-  "name": "create_file_attachment_from_message"
+  "name": "create_file_attachment_from_message_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
@@ -81,15 +85,34 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "base64R0lGODdhEAYEAA7"
+  "contentBytes": "R0lGODdhEAYEAA7"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-v1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-v1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-v1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-message-v1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_message_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -107,27 +130,19 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "base64R0lGODdhEAYEAA7"
+    "contentBytes": "R0lGODdhEAYEAA7"
 }
 
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (item attachment)
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkpsDRVK"],
-  "name": "create_item_attachment_from_message"
+  "blockType": "ignored",
+  "name": "create_item_attachment_from_message_v1"
 }-->
 
 ```
@@ -157,10 +172,12 @@ Content-length: 200
 }
 ```
 
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_message_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -178,15 +195,6 @@ Content-length: 162
   "isInline":false
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_message-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -197,7 +205,5 @@ Content-length: 162
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -4,9 +4,12 @@ description: "Links for opening a OneNote notebook."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # notebookLinks resource type
+
+Namespace: microsoft.graph
 
 Links for opening a OneNote notebook.
 

@@ -1,12 +1,15 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: apiPageType
 ---
 
 # List audio routing groups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups
-GET /applications/{id}/calls/{id}/audioRoutingGroups
+GET /communications/calls/{id}/audioRoutingGroups
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -47,13 +51,29 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-audioRoutingGroups"
 }-->
-```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-audioroutinggroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-audioroutinggroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -86,16 +106,6 @@ Content-Length: 302
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-audioRoutingGroups-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-audioRoutingGroups-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -107,8 +117,6 @@ Content-Length: 302
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-list-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-list-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

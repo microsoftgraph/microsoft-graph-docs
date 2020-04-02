@@ -4,8 +4,14 @@ ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
+description: "The contentTypeOrder resource specifies in which order the Content Type will appear in the selection UI."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # ContentTypeOrder resource type
+
+Namespace: microsoft.graph
 
 The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.
 

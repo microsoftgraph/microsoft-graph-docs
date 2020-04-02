@@ -2,9 +2,14 @@
 title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # provisionedPlan resource type
+
+Namespace: microsoft.graph
 
 The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.
 

@@ -1,9 +1,10 @@
 ---
 title: "Get groupPolicyDefinitionFile"
 description: "Read properties and relationships of the groupPolicyDefinitionFile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get groupPolicyDefinitionFile
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -31,10 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitionFile
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 479
+Content-Length: 514
 
 {
   "value": {
@@ -74,12 +76,12 @@ Content-Length: 479
     "targetPrefix": "Target Prefix value",
     "targetNamespace": "Target Namespace value",
     "policyType": "admxIngested",
+    "revision": "Revision value",
     "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
-
 
 
 

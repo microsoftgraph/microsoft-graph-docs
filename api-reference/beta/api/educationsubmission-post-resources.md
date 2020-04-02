@@ -4,9 +4,12 @@ description: "Adds a resource to the resources list. This action can only be don
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create educationSubmissionResource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

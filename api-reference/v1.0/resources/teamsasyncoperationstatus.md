@@ -4,9 +4,12 @@ description: "Describes the current status of a teamsAsyncOperation."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: enumPageType
 ---
 
 # teamsAsyncOperationStatus enum type
+
+Namespace: microsoft.graph
 
 
 

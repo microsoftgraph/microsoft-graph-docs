@@ -2,9 +2,14 @@
 title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Create single-value extended property
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,9 +1,10 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # Json resource type
@@ -33,8 +34,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
-
-
 
 
 

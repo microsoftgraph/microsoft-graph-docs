@@ -20,7 +20,7 @@ Similarly, when responding to an email, you can create and send the response in 
 
 To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
-By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder?view=graph-rest-1.0). 
+By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder?view=graph-rest-1.0).
 
 ### Setting the from and sender properties
 
@@ -107,5 +107,5 @@ Find out more about:
 - [Get MIME content (preview)](outlook-get-mime-message.md)
 - [Get shared messages](outlook-share-messages-folders.md)
 - [Send Outlook messages from another user](outlook-send-mail-from-other-user.md)
-- [Get immutable identifiers for Outlook resources (preview)](outlook-immutable-id.md)
+- [Get immutable identifiers for Outlook resources](outlook-immutable-id.md)
 - [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.

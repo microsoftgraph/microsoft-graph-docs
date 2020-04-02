@@ -1,9 +1,10 @@
 ---
 title: "Update deviceManagementIntegerSettingInstance"
 description: "Update the properties of a deviceManagementIntegerSettingInstance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagementIntegerSettingInstance
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -90,7 +91,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
 
 
 

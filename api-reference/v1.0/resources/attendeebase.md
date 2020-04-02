@@ -2,9 +2,14 @@
 title: "attendeeBase resource type"
 description: "The type of attendee."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # attendeeBase resource type
+
+Namespace: microsoft.graph
 
 The type of attendee.
 

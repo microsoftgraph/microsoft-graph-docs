@@ -1,9 +1,10 @@
 ---
 title: "List windows10SecureAssessmentConfigurations"
 description: "List properties and relationships of the windows10SecureAssessmentConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windows10SecureAssessmentConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1629
+Content-Length: 1768
 
 {
   "value": [
@@ -100,12 +101,13 @@ Content-Length: 1629
       "configurationAccountType": "domainAccount",
       "allowPrinting": true,
       "allowScreenCapture": true,
-      "allowTextSuggestion": true
+      "allowTextSuggestion": true,
+      "localGuestAccountName": "Local Guest Account Name value",
+      "assessmentAppUserModelId": "Assessment App User Model Id value"
     }
   ]
 }
 ```
-
 
 
 

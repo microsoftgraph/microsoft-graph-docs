@@ -4,9 +4,12 @@ description: "odata.type to indicate which type of resource is being created. No
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Create educationAssignmentResource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

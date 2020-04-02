@@ -1,9 +1,10 @@
 ---
 title: "encryptionReportPolicyDetails resource type"
 description: "Policy Details for Encryption Report"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # encryptionReportPolicyDetails resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "policyName": "String"
 }
 ```
-
-
 
 
 

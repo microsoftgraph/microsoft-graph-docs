@@ -4,9 +4,12 @@ description: "The geographic coordinates, elevation, and their degree of accurac
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookGeoCoordinates resource type
+
+Namespace: microsoft.graph
 
 The geographic coordinates, elevation, and their degree of accuracy for a physical location.
 

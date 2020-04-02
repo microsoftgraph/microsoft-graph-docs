@@ -1,9 +1,10 @@
 ---
 title: "windowsInformationProtectionPinCharacterRequirements enum type"
 description: "Pin Character Requirements"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsInformationProtectionPinCharacterRequirements enum type
@@ -20,8 +21,6 @@ Pin Character Requirements
 |notAllow|0|Not allow|
 |requireAtLeastOne|1|Require atleast one|
 |allow|2|Allow any number|
-
-
 
 
 

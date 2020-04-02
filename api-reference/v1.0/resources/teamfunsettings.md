@@ -4,9 +4,12 @@ description: "Settings to configure use of Giphy, memes, and stickers in the tea
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamFunSettings resource type
+
+Namespace: microsoft.graph
 
 
 

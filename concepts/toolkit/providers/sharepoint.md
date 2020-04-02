@@ -9,7 +9,7 @@ author: nmetulev
 
 Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access.
 
-To learn more, see [providers](../providers.md).
+To learn more, see [Providers](../providers.md).
 
 ## Get started
 
@@ -18,7 +18,7 @@ Initialize the provider inside the `onInit()` method of your web part.
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
@@ -39,11 +39,15 @@ public render(): void {
 
 >**Note:** The Microsoft Graph Toolkit requires Typescript 3.x. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
+## Sample
+
+For an example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint webpart sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
+
 ## Test in the workbench
 
 If you're just getting started with SharePoint web parts, you can follow the [Build your first web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) guidance.
 
-After you've created a web part, and you're ready to use the components, you will need to make sure that your web part has the right permissions to access Microsoft Graph. For details, see [Consume Microsoft Graph in the SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/use-aad-tutorial).
+After you've created a web part, and you're ready to use the components, you will need to make sure that your web part has the right permissions to access Microsoft Graph. For details, see [Consume Microsoft Graph in the SharePoint Framework](/sharepoint/dev/spfx/use-aad-tutorial).
 
 In short, it's important to add the right permission to your `package-solution.json`. You will need to upload a package of your web part to SharePoint and have an administrator approve the requested permissions.
 

@@ -1,9 +1,10 @@
 ---
 title: "localSecurityOptionsSmartCardRemovalBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # localSecurityOptionsSmartCardRemovalBehaviorType enum type
@@ -21,8 +22,6 @@ Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType
 |noAction|1|Lock Workstation|
 |forceLogoff|2|Force Logoff|
 |disconnectRemoteDesktopSession|3|Disconnect if a remote Remote Desktop Services session|
-
-
 
 
 

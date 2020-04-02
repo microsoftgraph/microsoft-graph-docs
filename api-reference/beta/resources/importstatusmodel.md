@@ -2,9 +2,14 @@
 title: "importStatusModel resource type"
 description: "Here is a JSON representation of the resource."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # importStatusModel resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

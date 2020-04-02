@@ -1,12 +1,15 @@
 ---
 title: "Device management in Microsoft Intune"
-description: ""
-author: "tfitzmac"
+description: "Device management resources in Microsoft Intune"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: conceptualPageType
 ---
 
 # Device management in Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
@@ -50,3 +53,4 @@ ms.prod: "intune"
 - [Windows device account](intune-devices-windowsdeviceaccount.md)
 - [Windows device AD account](intune-devices-windowsdeviceadaccount.md)
 - [Windows device Azure AD account](intune-devices-windowsdeviceazureadaccount.md)
+

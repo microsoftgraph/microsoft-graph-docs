@@ -4,9 +4,12 @@ description: "A shiftItem represents a version of the shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # shiftItem resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

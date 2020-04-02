@@ -4,9 +4,12 @@ description: "One of the following permissions is required to call this API. To 
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRangeView: itemAt
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 
 ```
 ## Request headers
@@ -51,7 +54,7 @@ Here is an example of the request.
   "name": "workbookrangeview_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/itemAt(index=0)
+GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/itemAt(index=0)
 
 ```
 

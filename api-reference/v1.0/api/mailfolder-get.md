@@ -4,9 +4,12 @@ description: "Retrieve the properties and relationships of a message folder obje
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get mailFolder
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a message folder object.
 
@@ -21,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,15 +54,35 @@ If successful, this method returns a `200 OK` response code and [mailFolder](../
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -83,20 +106,9 @@ Content-type: application/json
   "parentFolderId": "AAMkAGVmMDEzI",
   "childFolderCount": 2,
   "unreadItemCount": 59,
-  "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "totalItemCount": 60
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_mailfolder-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_mailfolder-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Example 2: Get a mail search folder
 
@@ -104,15 +116,35 @@ Content-type: application/json
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailSearchfolder"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailsearchfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailsearchfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailsearchfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -138,7 +170,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
@@ -158,7 +189,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Get a collection of subsites defined for a site."
+doc_type: apiPageType
 ---
 # Enumerate subsites
+
+Namespace: microsoft.graph
 
 Get a collection of subsites defined for a [site][].
 
@@ -24,11 +28,31 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-subsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-subsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -59,16 +83,6 @@ Content-type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
@@ -77,7 +91,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/List subsites",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

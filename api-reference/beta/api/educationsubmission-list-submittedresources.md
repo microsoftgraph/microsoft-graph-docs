@@ -4,9 +4,12 @@ description: "List the resources that have officially been submitted for grading
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List submittedResources
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

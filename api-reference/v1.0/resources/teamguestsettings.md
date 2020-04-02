@@ -4,9 +4,12 @@ description: "Settings to configure whether guests can create, update, or delete
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamGuestSettings resource type
+
+Namespace: microsoft.graph
 
 
 

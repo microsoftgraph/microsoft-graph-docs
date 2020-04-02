@@ -1,9 +1,10 @@
 ---
 title: "keyValuePair resource type"
 description: "Key value pair for storing custom settings"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # keyValuePair resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
-
-
 
 
 

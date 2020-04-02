@@ -2,9 +2,14 @@
 title: "assignedLicense resource type"
 description: "Represents a license assigned to a user. The **assignedLicenses** property of the user entity is a collection of **assignedLicense**."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # assignedLicense resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,9 +4,12 @@ description: "Group settings control behaviors such as blocked word lists for gr
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # groupSetting resource type
+
+Namespace: microsoft.graph
 
 Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners.
 

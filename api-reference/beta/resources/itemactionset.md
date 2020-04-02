@@ -1,11 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item."
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ItemActionSet resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

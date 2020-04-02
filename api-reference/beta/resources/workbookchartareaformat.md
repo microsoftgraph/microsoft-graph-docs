@@ -4,9 +4,12 @@ description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # workbookChartAreaFormat resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

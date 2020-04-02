@@ -1,9 +1,10 @@
 ---
 title: "List deviceManagementPartners"
 description: "List properties and relationships of the deviceManagementPartner objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceManagementPartners
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 794
+Content-Length: 1059
 
 {
   "value": [
@@ -73,12 +74,19 @@ Content-Length: 794
       "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
       "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
       "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-      "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+      "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+      "groupsRequiringPartnerEnrollment": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+          "target": {
+            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          }
+        }
+      ]
     }
   ]
 }
 ```
-
 
 
 

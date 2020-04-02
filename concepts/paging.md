@@ -1,8 +1,9 @@
 ---
 title: "Paging Microsoft Graph data in your app "
 description: "odata.nextLink` property in the response that contains a URL to the next page of results. "
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Paging Microsoft Graph data in your app 
@@ -15,21 +16,21 @@ For example, the following URL requests all the users in an organization with a 
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-If the result contains more than five users, Microsoft Graph will return an `@odata:nextLink` property similar to the following along with the first page of users.
+If the result contains more than five users, Microsoft Graph will return an `@odata.nextLink` property similar to the following along with the first page of users.
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
 ```
 
-You can retrieve the next page of results by sending the URL value of the `@odata:nextLink` property to Microsoft Graph. 
+You can retrieve the next page of results by sending the URL value of the `@odata.nextLink` property to Microsoft Graph. 
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
-Microsoft Graph will continue to return a reference to the next page of data in the `@odata:nextLink` property with each response until all pages of the result have been read.
+Microsoft Graph will continue to return a reference to the next page of data in the `@odata.nextLink` property with each response until all pages of the result have been read.
 
->**Important:** You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results. Depending on the API that the query is being performed against, the `@odata:nextLink` URL value will contain either a `$skiptoken` or a `$skip` query parameter. The URL also contains all the other query parameters present in the original request. Do not try to extract the `$skiptoken` or `$skip` value and use it in a different request. 
+>**Important:** You should include the entire URL in the `@odata.nextLink` property in your request for the next page of results. Depending on the API that the query is being performed against, the `@odata.nextLink` URL value will contain either a `$skiptoken` or a `$skip` query parameter. The URL also contains all the other query parameters present in the original request. Do not try to extract the `$skiptoken` or `$skip` value and use it in a different request. 
 
 Paging behavior varies across different Microsoft Graph APIs. Consider the following when working with paged data:
 

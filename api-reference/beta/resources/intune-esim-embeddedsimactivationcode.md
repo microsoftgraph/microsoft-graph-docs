@@ -1,9 +1,10 @@
 ---
 title: "embeddedSIMActivationCode resource type"
 description: "The embedded SIM activation code as provided by the mobile operator."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # embeddedSIMActivationCode resource type
@@ -42,8 +43,6 @@ Here is a JSON representation of the resource.
   "smdpPlusServerAddress": "String"
 }
 ```
-
-
 
 
 

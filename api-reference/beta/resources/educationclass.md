@@ -4,9 +4,12 @@ description: "Represents a class within a school. The **educationClass** resourc
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationClass resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,6 +49,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 | externalId     | String                                | ID of the class from the syncing system.                                                |
 | externalName   | String                                | Name of the class in the syncing system.                                                |
 | externalSource | string                                | How this class was created. Possible values are: `sis`, `manual`, `unknownFutureValue`. |
+| grade          | string                                | Grade level of the class.                                                               |
 | mailNickname   | String                                | Mail name for sending email to all members, if this is enabled.                         |
 | term           | [educationTerm]                       | Term for the class.                                                                     |
 
@@ -81,6 +85,7 @@ The following is a JSON representation of the resource.
   "externalId": "String",
   "externalName": "String",
   "externalSource": "string",
+  "grade": "string",
   "id": "String (identifier)",
   "mailNickname": "String",
   "term": { "@odata.type": "microsoft.graph.educationTerm" }

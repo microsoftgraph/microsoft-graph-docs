@@ -2,9 +2,14 @@
 title: "Update Policy"
 description: "Update properties in a preexisting policy."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Update Policy
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

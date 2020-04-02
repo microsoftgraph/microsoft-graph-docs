@@ -1,9 +1,10 @@
 ---
 title: "Update remoteActionAudit"
 description: "Update the properties of a remoteActionAudit object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update remoteActionAudit
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,11 +50,12 @@ The following table shows the properties that are required when you create the [
 |deviceDisplayName|String|Intune device name.|
 |userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
 |initiatedByUserPrincipalName|String|User who initiated the device action, format is UPN.|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`.|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
 |deviceOwnerUserPrincipalName|String|Upn of the device owner.|
 |deviceIMEI|String|IMEI of the device.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|managedDeviceId|String|Action target.|
 
 
 
@@ -67,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
-Content-length: 455
+Content-length: 504
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -78,7 +80,8 @@ Content-length: 455
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -87,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 553
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -99,10 +102,10 @@ Content-Length: 504
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
-
 
 
 

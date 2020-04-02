@@ -26,13 +26,13 @@ The **links** property is a JSON object that contains two URLs. The URLs will op
 
 - **oneNoteClientUrl** 
 
-    - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
-    - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
+  - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
+  - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
 
 - **oneNoteWebUrl** 
 
-    - Opens OneNote on the web if the default browser on the device supports it. 
-    - Uses the browser language setting.
+  - Opens OneNote on the web if the default browser on the device supports it. 
+  - Uses the browser language setting.
 
 
 The OneNote API returns the **links** property in the HTTP response for the following operations:

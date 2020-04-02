@@ -1,9 +1,10 @@
 ---
 title: "ratingFranceMoviesType enum type"
 description: "Movies rating labels in France"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingFranceMoviesType enum type
@@ -23,8 +24,6 @@ Movies rating labels in France
 |agesAbove12|3|The 12 classification prohibits the screening of the film to minors under 12|
 |agesAbove16|4|The 16 classification prohibits the screening of the film to minors under 16|
 |agesAbove18|5|The 18 classification prohibits the screening to minors under 18|
-
-
 
 
 

@@ -4,9 +4,12 @@ description: "Represents the synchronization status of a school data synchroniza
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationProfileStatus resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +41,7 @@ Represents the synchronization status of a school data [synchronization profile]
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": {"@odata.type":"microsoft.graph.educationSynchronizationStatus"},
     "lastSynchronizationDateTime": "DateTimeOffset"
 }

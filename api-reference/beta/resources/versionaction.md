@@ -1,11 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the VersionAction resource on an itemActivity indicates that the activity caused a new version to be created."
 ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # VersionAction resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

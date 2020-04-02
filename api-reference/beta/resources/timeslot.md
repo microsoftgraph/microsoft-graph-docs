@@ -2,11 +2,14 @@
 title: "timeSlot resource type"
 description: "A time period."
 localization_priority: Normal
+doc_type: resourcePageType
 author: "angelgolfer-ms"
 ms.prod: "outlook"
 ---
 
 # timeSlot resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

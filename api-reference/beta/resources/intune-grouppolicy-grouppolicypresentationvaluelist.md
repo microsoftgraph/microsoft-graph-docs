@@ -1,9 +1,10 @@
 ---
 title: "groupPolicyPresentationValueList resource type"
 description: "The entity represents a collection of name/value pairs of a list box presentation on a policy definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueList resource type
@@ -63,8 +64,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

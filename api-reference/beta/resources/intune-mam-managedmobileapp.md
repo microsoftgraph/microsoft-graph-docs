@@ -1,9 +1,10 @@
 ---
 title: "managedMobileApp resource type"
 description: "The identifier for the deployment an app."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedMobileApp resource type
@@ -51,8 +52,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
 
 
 

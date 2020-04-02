@@ -2,9 +2,14 @@
 title: "recentNotebook resource type"
 description: "A recently accessed OneNote notebook. A **recentNotebook** is similar to a notebook but has fewer properties."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # recentNotebook resource type
+
+Namespace: microsoft.graph
 
 A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](notebook.md) but has fewer properties.
 

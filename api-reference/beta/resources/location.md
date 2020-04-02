@@ -2,11 +2,14 @@
 title: "Location resource type"
 description: "Represents location information of an event."
 localization_priority: Normal
+doc_type: resourcePageType
 author: "angelgolfer-ms"
 ms.prod: "outlook"
 ---
 
 # Location resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

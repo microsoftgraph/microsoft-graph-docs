@@ -2,15 +2,20 @@
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
 localization_priority: Normal
+doc_type: apiPageType
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSchema: parseExpression
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object. 
+Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
 
-For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -19,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+|Application                            |Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,6 +54,8 @@ If successful, this method returns a `200 OK` response code and a [parseExpressi
 
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
@@ -107,9 +114,23 @@ Content-type: application/json
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-parseexpression-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -165,16 +186,6 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -186,8 +197,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

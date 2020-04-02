@@ -1,9 +1,10 @@
 ---
 title: "importedDeviceIdentity resource type"
 description: "The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # importedDeviceIdentity resource type
@@ -35,7 +36,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## Relationships
@@ -63,8 +64,6 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
-
-
 
 
 

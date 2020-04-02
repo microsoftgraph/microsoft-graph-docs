@@ -2,35 +2,38 @@
 title: "conversationMember resource type"
 description: "Represents a user in a conversation."
 localization_priority: Normal
-author: "nkramer"
+author: "clearab"
 ms.prod: "microsoft-teams"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # conversationMember resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user in a [chat](chat.md).
+Represents a user in a [chat](chat.md) or a [channel](channel.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Chat members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
-|[Get Chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
+|[List Chat members](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
+|[Get Chat member](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
+|[List members](../api/conversationmember-list.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat or channel.|
+|[Get member](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Get a single user in the chat or channel.|
+|[Add member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
+|[Update member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
+|[Delete member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member from the channel.|
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
 |roles| string collection | The roles for that user. |
-
-## Relationships
-
-None
 
 ## JSON representation
 

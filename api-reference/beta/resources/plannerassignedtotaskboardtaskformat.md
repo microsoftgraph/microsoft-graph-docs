@@ -4,9 +4,12 @@ description: "The **plannerAssignedToTaskBoardTaskFormat** resource represents t
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerAssignedToTaskBoardTaskFormat resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

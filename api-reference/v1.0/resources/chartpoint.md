@@ -4,9 +4,12 @@ description: "Represents a point of a series in a chart."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartPoint resource type
+
+Namespace: microsoft.graph
 
 Represents a point of a series in a chart.
 

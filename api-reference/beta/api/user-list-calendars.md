@@ -2,11 +2,14 @@
 title: "List calendars"
 description: "Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. "
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List calendars
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,13 +61,29 @@ If successful, this method returns a `200 OK` response code and collection of [C
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_calendars"
+  "name": "user_get_calendars"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendars
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendars-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-get-calendars-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-get-calendars-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -86,6 +105,7 @@ Content-type: application/json
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "calendarGroupId":null,
             "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
@@ -93,6 +113,12 @@ Content-type: application/json
             "isShared":false,
             "isSharedWithMe":false,
             "canEdit":true,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
                 "address":"samanthab@adatum.onmicrosoft.com"
@@ -102,16 +128,6 @@ Content-type: application/json
 }
 
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_calendars-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_calendars-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -123,8 +139,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-list-calendars.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-list-calendars.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

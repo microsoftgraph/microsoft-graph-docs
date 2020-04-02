@@ -2,11 +2,16 @@
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, mail message, or group post."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete attachment
 
-Delete an attachment from a calendar event, mail message, or group post.
+Namespace: microsoft.graph
+
+Delete an attachment from a user calendar event, mail message, or group post.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -19,17 +24,24 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ## HTTP request
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+Attachments for an [event](../resources/event.md) in the specified [calendar](../resources/calendar.md) belonging to the user.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Assume group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
@@ -89,6 +101,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 ##### Request
 Here is an example of the request to delete an attachment on an event.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -96,6 +110,24 @@ Here is an example of the request to delete an attachment on an event.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -105,16 +137,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/delete_attachment-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete_attachment-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -124,7 +146,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

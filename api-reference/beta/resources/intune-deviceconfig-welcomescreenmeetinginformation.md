@@ -1,9 +1,10 @@
 ---
 title: "welcomeScreenMeetingInformation enum type"
 description: "Possible values for welcome screen meeting information."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # welcomeScreenMeetingInformation enum type
@@ -20,8 +21,6 @@ Possible values for welcome screen meeting information.
 |userDefined|0|User Defined, default value, no intent.|
 |showOrganizerAndTimeOnly|1|Show organizer and time only.|
 |showOrganizerAndTimeAndSubject|2|Show organizer, time and subject (subject is hidden for private meetings).|
-
-
 
 
 

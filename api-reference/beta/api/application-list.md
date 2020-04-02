@@ -1,16 +1,19 @@
 ---
 title: "List applications"
-description: "Retrieve the list of applications in this organization."
-author: "davidmu1"
+description: "Get the list of applications in this organization."
+author: "sureshja"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List applications
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of applications in this organization.
+Get the list of [applications](../resources/application.md) in this organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
@@ -41,18 +44,36 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_application"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,47 +86,67 @@ Content-type: application/json
 Content-length: 1229
 
 {
-  "value": [
-    {
-      "api": {
-        "acceptedAccessTokenVersion": 1,
-        "publishedPermissionScopes": [
-          {
-            "adminConsentDescription": "adminConsentDescription-value",
-            "adminConsentDisplayName": "adminConsentDisplayName-value",
-            "id": "id-value",
-            "isEnabled": true,
-            "type": "type-value",
-            "userConsentDescription": "userConsentDescription-value",
-            "userConsentDisplayName": "userConsentDisplayName-value",
-            "value": "value-value"
-          }
-        ]
-      },
-      "allowPublicClient": true,
-      "applicationAliases": [
-        "applicationAliases-value"
-      ],
-      "createdDateTime": "datetime-value",
-      "installedClients": {
-        "redirectUrls": [
-          "redirectUrls-value"
-        ]
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications",
+    "value": [
+        {
+            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
+            "deletedDateTime": null,
+            "isFallbackPublicClient": false,
+            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+            "applicationTemplateId": null,
+            "identifierUris": [
+                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
+            ],
+            "createdDateTime": "2019-09-15T05:23:08Z",
+            "displayName": "My app",
+            "isDeviceOnlyAuthSupported": null,
+            "groupMembershipClaims": null,
+            "optionalClaims": null,
+            "orgRestrictions": [],
+            "publisherDomain": "contoso.onmicrosoft.com",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "api": {
+                "requestedAccessTokenVersion": null,
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "info": {
+                "termsOfServiceUrl": null,
+                "supportUrl": null,
+                "privacyStatementUrl": null,
+                "marketingUrl": null,
+                "logoUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [],
+            "requiredResourceAccess": [],
+            "web": {
+                "redirectUris": [
+                    "https://127.0.0.1:444/applications/default.aspx"
+                ],
+                "homePageUrl": "http://www.contoso.com/landingPage",
+                "logoutUrl": null,
+                "implicitGrantSettings": {
+                    "enableIdTokenIssuance": true,
+                    "enableAccessTokenIssuance": false
+                }
+            }
+        }
+    ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/list_application-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/list_application-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -117,8 +158,6 @@ Content-length: 1229
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/application-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/application-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: List Files Shared With Me
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Retrieve a collection of DriveItem resources that have been shared with the owner of the Drive."
+doc_type: apiPageType
 ---
 # List items shared with the signed-in user
+
+Namespace: microsoft.graph
 
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
 
@@ -25,11 +29,31 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 
 ## HTTP request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -73,16 +97,6 @@ Content-Type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/shared-with-me-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/shared-with-me-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -102,7 +116,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "section": "documentation",
   "tocPath": "Sharing/Shared with me",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/drive-sharedwithme.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

@@ -1,9 +1,10 @@
 ---
 title: "depIOSEnrollmentProfile resource type"
 description: "The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depIOSEnrollmentProfile resource type
@@ -54,7 +55,9 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
@@ -66,10 +69,14 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |homeButtonScreenDisabled|Boolean|Indicates if home button sensitivity screen is disabled|
 |iMessageAndFaceTimeScreenDisabled|Boolean|Indicates if iMessage and FaceTime screen is disabled|
 |onBoardingScreenDisabled|Boolean|Indicates if onboarding setup screen is disabled|
-|screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled|
 |simSetupScreenDisabled|Boolean|Indicates if the SIMSetup screen is disabled|
 |softwareUpdateScreenDisabled|Boolean|Indicates if the mandatory sofware update screen is disabled|
 |watchMigrationScreenDisabled|Boolean|Indicates if the watch migration screen is disabled|
+|appearanceScreenDisabled|Boolean|Indicates if Apperance screen is disabled|
+|expressLanguageScreenDisabled|Boolean|Indicates if Express Language screen is disabled|
+|preferredLanguageScreenDisabled|Boolean|Indicates if Preferred language screen is disabled|
+|deviceToDeviceMigrationDisabled|Boolean|Indicates if Device To Device Migration is disabled|
+|welcomeScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
 
 ## Relationships
 None
@@ -110,7 +117,9 @@ Here is a JSON representation of the resource.
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "screenTimeScreenDisabled": true,
   "deviceNameTemplate": "String",
+  "configurationWebUrl": true,
   "iTunesPairingMode": "String",
   "managementCertificates": [
     {
@@ -128,14 +137,16 @@ Here is a JSON representation of the resource.
   "homeButtonScreenDisabled": true,
   "iMessageAndFaceTimeScreenDisabled": true,
   "onBoardingScreenDisabled": true,
-  "screenTimeScreenDisabled": true,
   "simSetupScreenDisabled": true,
   "softwareUpdateScreenDisabled": true,
-  "watchMigrationScreenDisabled": true
+  "watchMigrationScreenDisabled": true,
+  "appearanceScreenDisabled": true,
+  "expressLanguageScreenDisabled": true,
+  "preferredLanguageScreenDisabled": true,
+  "deviceToDeviceMigrationDisabled": true,
+  "welcomeScreenDisabled": true
 }
 ```
-
-
 
 
 

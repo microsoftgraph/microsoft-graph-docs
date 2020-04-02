@@ -4,8 +4,11 @@ description: "This operation lists all trustFrameworkPolicy objects in an Azure 
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # List trustFrameworkPolicies
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -17,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.Read.TrustFramework, Policy.Read.All|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 The work or school account must be a global administrator of the tenant.
 
@@ -53,13 +56,29 @@ The following example retrieves all **trustFrameworkPolicies**.
 
 ##### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_trustFrameworks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-trustframeworks-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworks-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -87,16 +106,6 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_trustFrameworks-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_trustFrameworks-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -107,7 +116,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/trustframework-list-trustframeworkpolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/trustframework-list-trustframeworkpolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

@@ -5,8 +5,11 @@ title: renameAction resource type
 description: The renameAction object provides information about an activity that renamed an item.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # renameAction resource type
+
+Namespace: microsoft.graph
 
 The presence of the **renameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.
 

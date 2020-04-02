@@ -4,14 +4,17 @@ description: "Represents an dimensionValue object in Dynamics 365 Business Centr
 localization_priority: Normal
 author: henrikwh
 ms.prod: "dynamics-365-business-central"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
-# dimensionValue resource type
+# dimensionValues resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an dimensionValue object in Dynamics 365 Business Central.
+Represents a dimension value object in Dynamics 365 Business Central.
+
 
 ## Methods
 

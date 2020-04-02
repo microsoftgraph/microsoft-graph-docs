@@ -1,9 +1,10 @@
 ---
 title: "emailSyncSchedule enum type"
 description: "Possible values for email sync schedule."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # emailSyncSchedule enum type
@@ -24,8 +25,6 @@ Possible values for email sync schedule.
 |thirtyMinutes|4|Sync every thirty minutes.|
 |sixtyMinutes|5|Sync every sixty minutes.|
 |basedOnMyUsage|6|Sync based on my usage.|
-
-
 
 
 

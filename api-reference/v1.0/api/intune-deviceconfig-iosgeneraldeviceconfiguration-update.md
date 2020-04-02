@@ -1,12 +1,15 @@
 ---
 title: "Update iosGeneralDeviceConfiguration"
 description: "Update the properties of a iosGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update iosGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -97,7 +100,7 @@ The following table shows the properties that are required when you create the [
 |hostPairingBlocked|Boolean|indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.|
 |iBooksStoreBlocked|Boolean|Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.|
 |iBooksStoreBlockErotica|Boolean|Indicates whether or not to block the user from downloading media from the iBookstore that has been tagged as erotica.|
-|iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block  the the user from continuing work they started on iOS device to another iOS or macOS device.|
+|iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block the user from continuing work they started on iOS device to another iOS or macOS device.|
 |iCloudBlockBackup|Boolean|Indicates whether or not to block iCloud backup.|
 |iCloudBlockDocumentSync|Boolean|Indicates whether or not to block iCloud document sync.|
 |iCloudBlockManagedAppsSync|Boolean|Indicates whether or not to block Managed Apps Cloud Sync.|
@@ -644,6 +647,7 @@ Content-Length: 8013
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
 
 
 

@@ -1,5 +1,17 @@
 {
     "pathsToIgnore": [
-        "/graph"
+        "/azure",
+        "/dotnet",
+        "/exchange",
+        "/graph",
+        "/microsoft-365",
+        "/microsoftsearch",
+        "/microsoftteams",
+        "/office",
+        "/office365",
+        "/onedrive",
+        "/sharepoint",
+        "/windows",
+        "/windows-hardware"
     ]
 }

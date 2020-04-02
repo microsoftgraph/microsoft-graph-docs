@@ -4,6 +4,7 @@ description: "Microsoft Graph lets your app get authorized access to a user's On
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: conceptualPageType
 ---
 
 # Use the OneNote REST API

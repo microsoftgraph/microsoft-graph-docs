@@ -5,8 +5,11 @@ title: itemActionStat resource type
 description: The itemActionStat object provides aggregate details about an action over a period of time.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # itemActionStat resource type
+
+Namespace: microsoft.graph
 
 The **itemActionStat** resource provides aggregate details about an action over a period of time.
 

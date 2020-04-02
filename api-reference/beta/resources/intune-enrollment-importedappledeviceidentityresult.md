@@ -1,9 +1,10 @@
 ---
 title: "importedAppleDeviceIdentityResult resource type"
 description: "The importedAppleDeviceIdentityResult resource represents the result of attempting to import Apple devices identities."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # importedAppleDeviceIdentityResult resource type
@@ -35,10 +36,11 @@ Inherits from [importedAppleDeviceIdentity](../resources/intune-enrollment-impor
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837 Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|isDeleted|Boolean|Indicates if the device is deleted from Apple Business Manager Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |createdDateTime|DateTimeOffset|Created Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
 |description|String|The description of the device Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|The state of the device in Intune Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Inherited from [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md). Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 |status|Boolean|Status of imported device identity|
 
@@ -62,6 +64,7 @@ Here is a JSON representation of the resource.
   "requestedEnrollmentProfileAssignmentDateTime": "String (timestamp)",
   "isSupervised": true,
   "discoverySource": "String",
+  "isDeleted": true,
   "createdDateTime": "String (timestamp)",
   "lastContactedDateTime": "String (timestamp)",
   "description": "String",
@@ -70,8 +73,6 @@ Here is a JSON representation of the resource.
   "status": true
 }
 ```
-
-
 
 
 

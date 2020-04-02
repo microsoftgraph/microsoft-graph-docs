@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Root
 localization_priority: Normal
+description: "The Root facet indicates that an object is the top-most one in its hierarchy."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Root resource type
+
+Namespace: microsoft.graph
 
 The **Root** facet indicates that an object is the top-most one in its hierarchy.
 The presence (non-null) of the facet value indicates that the object is the root.

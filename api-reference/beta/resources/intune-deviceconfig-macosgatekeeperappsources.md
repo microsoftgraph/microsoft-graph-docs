@@ -1,9 +1,10 @@
 ---
 title: "macOSGatekeeperAppSources enum type"
 description: "App source options for macOS Gatekeeper."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # macOSGatekeeperAppSources enum type
@@ -21,8 +22,6 @@ App source options for macOS Gatekeeper.
 |macAppStore|1|Only apps from the Mac AppStore can be run.|
 |macAppStoreAndIdentifiedDevelopers|2|Only apps from the Mac AppStore and identified developers can be run.|
 |anywhere|3|Apps from anywhere can be run.|
-
-
 
 
 

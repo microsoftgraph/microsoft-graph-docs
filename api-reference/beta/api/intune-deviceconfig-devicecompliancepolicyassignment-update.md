@@ -1,9 +1,10 @@
 ---
 title: "Update deviceCompliancePolicyAssignment"
 description: "Update the properties of a deviceCompliancePolicyAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceCompliancePolicyAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -47,6 +48,8 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Target for the compliance policy assignment.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device compliance policy, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|sourceId|String|The identifier of the source of the assignment.|
 
 
 
@@ -60,13 +63,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments/{deviceCompliancePolicyAssignmentId}
 Content-type: application/json
-Content-length: 172
+Content-length: 233
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -75,17 +80,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 282
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
-
 
 
 

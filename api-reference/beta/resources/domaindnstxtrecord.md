@@ -4,9 +4,12 @@ description: "Represents a TXT record added to the DNS zone file of a particular
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainDnsTxtRecord resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

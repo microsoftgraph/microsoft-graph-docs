@@ -4,9 +4,12 @@ description: "Settings to configure team discoverability by others."
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamDiscoverySettings resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

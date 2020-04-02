@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementIntentDeviceSettingStateSummary resource type"
 description: "Entity that represents device setting state summary for an intent"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementIntentDeviceSettingStateSummary resource type
@@ -59,8 +60,6 @@ Here is a JSON representation of the resource.
   "remediatedCount": 1024
 }
 ```
-
-
 
 
 

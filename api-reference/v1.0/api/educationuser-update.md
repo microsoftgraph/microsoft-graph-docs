@@ -4,9 +4,12 @@ description: "Update the properties of an **educationuser** object."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Update educationUser properties
+
+Namespace: microsoft.graph
 
 Update the properties of an **educationuser** object.
 ## Permissions
@@ -47,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Address where user lives.|
 |primaryRole|string| Default Role for a user.  The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| If the primary role is student, this block will contain student specific data.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|
+|teacher|[educationTeacher](../resources/educationteacher.md)| If the primary role is teacher, this block will contain teacher specific data.|
 
 
 ## Response
@@ -55,6 +58,8 @@ If successful, this method returns a `200 OK` response code and updated [educati
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
@@ -71,6 +76,24 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -119,16 +142,6 @@ Content-length: 508
     }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_educationuser-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_educationuser-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,7 +152,5 @@ Content-length: 508
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

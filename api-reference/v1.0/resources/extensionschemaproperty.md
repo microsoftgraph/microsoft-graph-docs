@@ -2,9 +2,14 @@
 title: "extensionSchemaProperty resource type"
 description: "Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a schemaExtension definition."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # extensionSchemaProperty resource type
+
+Namespace: microsoft.graph
 
 Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a [schemaExtension](schemaextension.md) definition.
 

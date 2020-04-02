@@ -4,9 +4,12 @@ description: "List apps from the Microsoft Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List the published apps from the Microsoft Teams app catalog
+
+Namespace: microsoft.graph
 
 List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.
 This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.

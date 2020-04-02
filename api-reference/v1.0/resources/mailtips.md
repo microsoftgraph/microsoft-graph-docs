@@ -4,9 +4,12 @@ description: "Informative messages about a recipient, that are displayed to user
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # mailTips resource type
+
+Namespace: microsoft.graph
 
 Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 
 as an automatic reply for a message recipient.

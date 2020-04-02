@@ -4,9 +4,12 @@ description: "Represents a collection of all the data labels on a chart point."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartDataLabels resource type
+
+Namespace: microsoft.graph
 
 Represents a collection of all the data labels on a chart point.
 

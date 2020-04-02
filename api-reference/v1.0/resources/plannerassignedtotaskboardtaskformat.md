@@ -4,9 +4,12 @@ description: "The **plannerAssignedToTaskBoardTaskFormat** resource represents t
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerAssignedToTaskBoardTaskFormat resource type
+
+Namespace: microsoft.graph
 
 The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to). Each [task](plannertask.md) will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it.
 

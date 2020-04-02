@@ -2,9 +2,14 @@
 title: "sectionLinks resource type"
 description: "Links for opening a OneNote section."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # sectionLinks resource type
+
+Namespace: microsoft.graph
 
 Links for opening a OneNote section.
 

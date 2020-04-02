@@ -4,9 +4,12 @@ description: "Retrieve the properties and relationships of a plannerUser object.
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerUser
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner
-GET /users/<id>/planner
+GET /users/{id}/planner
 ```
 
 ## Request headers

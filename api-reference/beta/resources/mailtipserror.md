@@ -4,9 +4,12 @@ description: "An error that occurs during an action."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # mailTipsError resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

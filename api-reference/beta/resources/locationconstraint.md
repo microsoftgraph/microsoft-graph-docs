@@ -4,9 +4,12 @@ description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # locationConstraint resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

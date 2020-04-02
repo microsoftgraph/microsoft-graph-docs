@@ -4,9 +4,12 @@ description: "The **plannerUser** resource provide access to Planner resources f
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerUser resource type
+
+Namespace: microsoft.graph
 
 The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.
 

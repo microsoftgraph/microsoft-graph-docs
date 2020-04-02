@@ -4,9 +4,12 @@ description: "Represents the set of actions that are available to a rule."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # messageRuleActions resource type
+
+Namespace: microsoft.graph
 
 
 Represents the set of actions that are available to a rule.

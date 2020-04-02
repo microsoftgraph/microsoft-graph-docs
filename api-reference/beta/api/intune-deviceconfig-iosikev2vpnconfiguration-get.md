@@ -1,9 +1,10 @@
 ---
 title: "Get iosikEv2VpnConfiguration"
 description: "Read properties and relationships of the iosikEv2VpnConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosikEv2VpnConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4684
+Content-Length: 5469
 
 {
   "value": {
@@ -177,7 +178,7 @@ Content-Length: 4684
     "enableEAP": true,
     "enablePerfectForwardSecrecy": true,
     "enableUseInternalSubnetAttributes": true,
-    "localIdentifier": "deviceFQDN",
+    "localIdentifier": "empty",
     "remoteIdentifier": "Remote Identifier value",
     "securityAssociationParameters": {
       "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
@@ -193,11 +194,29 @@ Content-Length: 4684
     "tlsMaximumVersion": "Tls Maximum Version value",
     "tlsMinimumVersion": "Tls Minimum Version value",
     "allowDefaultSecurityAssociationParameters": true,
-    "allowDefaultChildSecurityAssociationParameters": true
+    "allowDefaultChildSecurityAssociationParameters": true,
+    "alwaysOnConfiguration": {
+      "@odata.type": "microsoft.graph.appleVpnAlwaysOnConfiguration",
+      "tunnelConfiguration": "cellular",
+      "userToggleEnabled": true,
+      "voicemailExceptionAction": "allowTrafficOutside",
+      "airPrintExceptionAction": "allowTrafficOutside",
+      "cellularExceptionAction": "allowTrafficOutside",
+      "allowAllCaptiveNetworkPlugins": true,
+      "allowedCaptiveNetworkPlugins": {
+        "@odata.type": "microsoft.graph.specifiedCaptiveNetworkPlugins",
+        "allowedBundleIdentifiers": [
+          "Allowed Bundle Identifiers value"
+        ]
+      },
+      "allowCaptiveWebSheet": true,
+      "natKeepAliveIntervalInSeconds": 13,
+      "natKeepAliveOffloadEnable": true
+    },
+    "enableAlwaysOnConfiguration": true
   }
 }
 ```
-
 
 
 

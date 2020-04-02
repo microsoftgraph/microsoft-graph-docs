@@ -4,9 +4,12 @@ description: "You can get a high level view of email traffic within your organiz
 localization_priority: Normal
 author: "pranoychaudhuri"
 ms.prod: "reports"
+doc_type: conceptualPageType
 ---
 
 # Email activity reports
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

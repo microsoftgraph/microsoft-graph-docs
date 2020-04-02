@@ -1,9 +1,10 @@
 ---
 title: "wiFiAuthenticationMethod enum type"
 description: "Wi-Fi authentication method."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # wiFiAuthenticationMethod enum type
@@ -19,9 +20,7 @@ Wi-Fi authentication method.
 |:---|:---|:---|
 |certificate|0|Use an identity certificate for authentication.|
 |usernameAndPassword|1|Use username and password for authentication.|
-|derivedCredential|2|Use username and password for authentication.|
-
-
+|derivedCredential|2|Use Derived Credential for authentication.|
 
 
 

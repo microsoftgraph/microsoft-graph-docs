@@ -2,9 +2,14 @@
 title: "timeStamp resource type"
 description: "Date and time information for a point in time."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # timeStamp resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

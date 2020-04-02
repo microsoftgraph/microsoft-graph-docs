@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementIntentUserStateSummary resource type"
 description: "Entity that represents user state summary for an intent"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementIntentUserStateSummary resource type
@@ -52,8 +53,6 @@ Here is a JSON representation of the resource.
   "successCount": 1024
 }
 ```
-
-
 
 
 

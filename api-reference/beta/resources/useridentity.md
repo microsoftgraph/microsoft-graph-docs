@@ -4,9 +4,12 @@ description: "For the Azure AD access reviews, this type represents an Azure AD 
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # userIdentity type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

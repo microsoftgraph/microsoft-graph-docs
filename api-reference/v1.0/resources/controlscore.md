@@ -3,9 +3,13 @@ title: "controlScore resource type"
 description: "This resource contains a tenant score and description for an individual control."
 localization_priority: Normal
 author: preetikr
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 #  controlScore resource type
+
+Namespace: microsoft.graph
 
 Contains a tenant score and description for an individual control.
 

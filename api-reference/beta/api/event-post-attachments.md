@@ -4,13 +4,18 @@ description: "Use this API to add an attachment to an event. Since there"
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.
+Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md). This operation limits the size of the attachment you can add to under 3 MB.
+
+If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.
 
 ## Permissions
 
@@ -55,9 +60,11 @@ If successful, this method returns `201 Created` response code and [attachment](
 ### Request
 
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_beta"
 }-->
 
 ```http
@@ -71,6 +78,20 @@ Content-length: 151
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-beta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-beta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-beta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
@@ -79,8 +100,9 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_beta",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 
 ```http
@@ -101,14 +123,6 @@ Content-Length: 735
     "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (item attachment)
 
@@ -148,13 +162,15 @@ Content-length: 600
 }
 ```
 
+
 ### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.itemAttachment"
 } -->
 
 ```http
@@ -174,14 +190,6 @@ Content-length: 162
     "isInline":false
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (reference attachment)
 
@@ -189,10 +197,11 @@ Content-length: 162
 
 Here is an example of a request that adds a reference attachment to an existing event.
 The attachment points to a folder on OneDrive.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_event",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_from_event"
 }-->
 
 ```http
@@ -209,12 +218,27 @@ Content-length: 319
     "isFolder": "True"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-event-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
+  "name": "create_reference_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
@@ -239,14 +263,6 @@ HTTP 201 Created
   "isFolder": true
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_reference_attachment_from_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -256,12 +272,6 @@ HTTP 201 Created
   "description": "Create Attachment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: create_file_attachment_from_event/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='"
-  ]
+  "tocPath": ""
 }
 -->

@@ -2,9 +2,14 @@
 title: "privilegedAccess resource type"
 description: " for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedAccess resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

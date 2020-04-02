@@ -2,8 +2,9 @@
 title: "deviceManagement resource type"
 description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagement resource type
@@ -23,11 +24,15 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Device management
 - Electronic SIM (ESIM)
 - Fencing
+- Group Policy Analytics
 - Notifications
 - Onboarding policies, settings, and details
+- Policy Set
+- Resource Access Policy
 - Remote access
 - Remote assistance partners
 - Role-based access control (RBAC) policies
+- Reporting
 - Telecom expanse management partners
 - Troubleshooting events
 - Windows Information Protection summaries
@@ -92,13 +97,13 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Device configuration**|
 |advancedThreatProtectionOnboardingStateSummary|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|The summary state of ATP onboarding state for this account.|
 |cartToClassAssociations|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) collection|The Cart To Class Associations.|
-|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) collection|The device compliance policies.|
+|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) collection|The device compliance policies.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
 |deviceConfigurationConflictSummary|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) collection|Summary of policies in conflict state for this account.|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|The device configuration device state summary for this account.|
 |deviceConfigurationRestrictedAppsViolations|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) collection|Restricted apps violations for this account.|
-|deviceConfigurations|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) collection|The device configurations.|
+|deviceConfigurations|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) collection|The device configurations.|
 |deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|The device configuration user state summary for this account.|
 |iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) collection|The IOS software update installation statuses for this account.|
 |ndesConnectors|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) collection|The collection of Ndes connectors for this account.|
@@ -112,17 +117,28 @@ The deviceManagement resource represents a container whose contents vary accordi
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple push notification certificate.|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) collection|Data sharing consents.|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|The list of detected apps associated with a device.|
-|deviceManagementScripts|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
+|deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
+|deviceShellScripts|[deviceShellScript](../resources/intune-devices-deviceshellscript.md) collection|The list of device shell scripts associated with the tenant.|
+|deviceHealthScripts|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md) collection|The list of device health scripts associated with the tenant.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Device overview|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The list of managed devices.|
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|User experience analytics overview|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) collection|User experience analytics baselines|
+|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) collection|User experience analytics categories|
+|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) collection|User experience analytics device performance|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|User experience analytics regression summary|
+|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) collection|User experience analytics device Startup History|
+|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) collection|User experience analytics device Startup Processes|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) collection|User experience analytics device Startup Process Performance|
+|userExperienceAnalyticsStartupScoreHistory|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) collection|User experience analytics device Startup Score History|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
-|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) collection|Collection of Windows autopilot devices upload.|
-|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) collection|Windows auto pilot deployment profiles|
+|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) collection|Windows auto pilot deployment profiles|
 |windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) collection|The Windows autopilot device identities contained collection.|
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|The Windows autopilot account settings.|
 |**Embedded SIM**|
@@ -130,17 +146,27 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Fencing**|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) collection|The management conditions associated with device management of the company.|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
+|**Group Policy Analytics**|
+|groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) collection|The Notification Message Templates.|
 |**Onboarding**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access|
 |deviceCategories|[deviceCategory](../resources/intune-shared-devicecategory.md) collection|The list of device categories with the tenant.|
-|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|
+|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) collection|The list of Device Management Partners configured by the tenant.|
 |exchangeConnectors|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) collection|The list of Exchange Connectors configured by the tenant.|
 |exchangeOnPremisesPolicies|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) collection|The list of Exchange On Premisis policies configured by the tenant.|
 |exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|The policy which controls mobile device access to Exchange On Premises|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
+|**Policy Set**|
+|deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
+|deviceConfigurations|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) collection|The list of device configurations associated with the tenant.|
+|deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) collection|The list of device compliance policies associated with the tenant.|
+|windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md) collection|Windows auto pilot deployment profiles|
+|deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|
+|**Resource Access Polcy**|
+|derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
 |**Remote access**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
 |**Remote assistance**|
@@ -150,6 +176,10 @@ The deviceManagement resource represents a container whose contents vary accordi
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) collection|The Role Assignments.|
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) collection|The Role Definitions.|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|The Role Scope Tags.|
+|**Reporting**|
+|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
+|**Software Update**|
+|windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
 |**Telecom expense management (TEM)**|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) collection|The telecom expense management partners.|
 |**Troubleshooting**|

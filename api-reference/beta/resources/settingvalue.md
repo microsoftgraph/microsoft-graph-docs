@@ -2,9 +2,14 @@
 title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # settingValue resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

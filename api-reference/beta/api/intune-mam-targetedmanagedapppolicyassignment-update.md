@@ -1,9 +1,10 @@
 ---
 title: "Update targetedManagedAppPolicyAssignment"
 description: "Update the properties of a targetedManagedAppPolicyAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update targetedManagedAppPolicyAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -50,7 +51,9 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identifier for deployment of a group or app|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identifier for deployment to a group or app|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|sourceId|String|Identifier for resource used for deployment to a group|
 
 
 
@@ -64,13 +67,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 Content-type: application/json
-Content-length: 174
+Content-length: 235
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -79,17 +84,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 284
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
-
 
 
 

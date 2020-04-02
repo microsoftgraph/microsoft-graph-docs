@@ -4,9 +4,12 @@ description: "Represents a chart object in a workbook."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Chart resource type
+
+Namespace: microsoft.graph
 
 Represents a chart object in a workbook.
 

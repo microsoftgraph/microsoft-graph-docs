@@ -2,9 +2,14 @@
 title: "recurrenceRange resource type"
 description: "Describes a date range over which a recurring event repeats. "
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # recurrenceRange resource type
+
+Namespace: microsoft.graph
 
 Describes a date range over which a recurring [event](event.md) repeats. 
 

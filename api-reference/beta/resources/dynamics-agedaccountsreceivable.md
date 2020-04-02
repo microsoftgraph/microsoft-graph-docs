@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # agedAccountsReceivable resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an agedAccountsReceivable object in Dynamics 365 Business Central.
@@ -22,7 +24,7 @@ Represents an agedAccountsReceivable object in Dynamics 365 Business Central.
 | [Delete](../api/dynamics-agedaccountsreceivable-delete.md) | None | Delete agedAccountsReceivable object. |
 
 ## Properties
-| Property	     | Type    |Description                                  |
+| Property         | Type    |Description                                  |
 |:---------------|:--------|:--------------------------------------------|
 |customerId      |GUID     |The unique ID of customer.                   |
 |customerNumber  |string   |Specifies customer's number.                 |

@@ -4,9 +4,12 @@ description: "Remove an existing educationCategory from this educationAssignment
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Remove educationCategory
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

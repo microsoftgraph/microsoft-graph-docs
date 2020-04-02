@@ -1,9 +1,10 @@
 ---
 title: "ratingAustraliaMoviesType enum type"
 description: "Movies rating labels in Australia"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingAustraliaMoviesType enum type
@@ -24,8 +25,6 @@ Movies rating labels in Australia
 |mature|4|The M classification is not recommended for viewers under 15|
 |agesAbove15|5|The MA15+ classification is not suitable for viewers under 15|
 |agesAbove18|6|The R18+ classification is not suitable for viewers under 18|
-
-
 
 
 

@@ -4,9 +4,12 @@ description: "Represents the directory audit items and its collection."
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directoryAudit resource type
+
+Namespace: microsoft.graph
 
 Represents the directory audit items and its collection.
 

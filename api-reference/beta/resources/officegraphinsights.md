@@ -4,9 +4,12 @@ description: "Insights are relationships calculated using advanced analytics and
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # officeGraphInsights resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

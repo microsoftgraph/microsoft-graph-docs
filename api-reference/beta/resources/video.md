@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The Video resource groups video-related data items into a single structure."
 ms.date: 09/10/2017
 title: Video
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Video resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

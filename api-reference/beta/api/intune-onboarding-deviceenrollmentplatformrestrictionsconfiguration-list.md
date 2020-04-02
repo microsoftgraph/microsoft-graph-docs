@@ -1,9 +1,10 @@
 ---
 title: "List deviceEnrollmentPlatformRestrictionsConfigurations"
 description: "List properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceEnrollmentPlatformRestrictionsConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2664
+Content-Length: 3280
 
 {
   "value": [
@@ -75,55 +76,75 @@ Content-Length: 2664
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       },
       "windowsRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       },
       "windowsMobileRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       },
       "androidRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       },
       "androidForWorkRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       },
       "macRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       },
       "macOSRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
         "osMinimumVersion": "Os Minimum Version value",
-        "osMaximumVersion": "Os Maximum Version value"
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
       }
     }
   ]
 }
 ```
-
 
 
 

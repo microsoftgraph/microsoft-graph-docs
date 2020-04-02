@@ -4,9 +4,12 @@ description: "A user in the system. This is an education-specific variant of the
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationUser resource type
+
+Namespace: microsoft.graph
 
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
 This object provides a targeted subset of properties from the core [user](user.md) object and adds a set of education-specific properties such as `primaryRole`, student, and teacher data.
@@ -50,7 +53,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
-|teacher|[educationTeacher](educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|
+|teacher|[educationTeacher](educationteacher.md)| If the primary role is teacher, this block will contain teacher specific data.|
 |usageLocation|String|A two-letter country code (ISO standard 3166). Required for users who will be assigned licenses due to a legal requirement to check for availability of services in countries or regions. Examples include: "US", "JP", and "GB". Not nullable. Supports $filter.|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.          |
@@ -63,10 +66,10 @@ This object provides a targeted subset of properties from the core [user](user.m
 |assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| List of assignments for the user. Nullable.|
 |user|[user](user.md)| The directory user corresponding to this user.|
 
->**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](/graph/changelog) periodically. When Microsoft Graph API resources are released to the /v1.0  endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
+>**Note:**  The **educationassignment** resource is a /beta version resource. If using this resource, be sure to review the [change log](/graph/changelog) periodically. When Microsoft Graph API resources are released to the /v1.0 endpoint, the release is noted in the change log. If your app consumes the **educationassignment** resource, you will need to declare base request URLs as shown in the following code block:  
 ```JavaScript
-var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
+var v1BaseUrl = "https://graph.microsoft.com/v1.0/education";
+var betaBaseUrl = "https://graph.microsoft.com/beta/education";  // for administrativeUnit and educationOrganization
 ```
 
 

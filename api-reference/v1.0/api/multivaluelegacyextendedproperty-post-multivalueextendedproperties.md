@@ -2,9 +2,14 @@
 title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Create multi-value extended property
+
+Namespace: microsoft.graph
 
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 

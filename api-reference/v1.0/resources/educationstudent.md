@@ -4,9 +4,12 @@ description: "Additional information added to an educationUser that is present w
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationStudent resource type
+
+Namespace: microsoft.graph
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.
 

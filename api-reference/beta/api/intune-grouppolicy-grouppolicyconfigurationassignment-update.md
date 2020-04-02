@@ -1,9 +1,10 @@
 ---
 title: "Update groupPolicyConfigurationAssignment"
 description: "Update the properties of a groupPolicyConfigurationAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update groupPolicyConfigurationAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -87,7 +88,6 @@ Content-Length: 287
   }
 }
 ```
-
 
 
 

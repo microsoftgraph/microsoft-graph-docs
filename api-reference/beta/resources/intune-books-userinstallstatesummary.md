@@ -1,9 +1,10 @@
 ---
 title: "userInstallStateSummary resource type"
 description: "Contains properties for the installation state summary for a user."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # userInstallStateSummary resource type
@@ -55,8 +56,6 @@ Here is a JSON representation of the resource.
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
 
 
 

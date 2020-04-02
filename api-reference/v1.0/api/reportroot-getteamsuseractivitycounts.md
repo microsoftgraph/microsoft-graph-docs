@@ -4,9 +4,12 @@ description: "Get the number of Microsoft Teams activities by activity type. The
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getTeamsUserActivityCounts
+
+Namespace: microsoft.graph
 
 Get the number of Microsoft Teams activities by activity type. The activity types are team chat messages, private chat messages, calls, and meetings.
 
@@ -19,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Reports.Read.All                         |
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
+
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -64,14 +69,16 @@ The CSV file has the following headers for columns:
 
 The following is an example of the request.
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "reportroot_getteamsuseractivitycounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityCounts(period='D7')
 ```
+
 
 #### Response
 
@@ -88,16 +95,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getteamsuseractivitycounts-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getteamsuseractivitycounts-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 <!-- { "blockType": "ignored" } --> 
@@ -117,7 +114,5 @@ Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,M
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getteamsuseractivitycounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getteamsuseractivitycounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

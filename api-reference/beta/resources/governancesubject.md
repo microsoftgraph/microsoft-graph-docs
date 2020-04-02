@@ -2,9 +2,14 @@
 title: "governanceSubject resource type"
 description: "Represents users, groups, and service principals being managed in Privileged Identity Management (PIM)."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # governanceSubject resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

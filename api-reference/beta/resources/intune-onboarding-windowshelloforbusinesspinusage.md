@@ -1,9 +1,10 @@
 ---
 title: "windowsHelloForBusinessPinUsage enum type"
 description: "Windows Hello for Business pin usage options"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsHelloForBusinessPinUsage enum type
@@ -20,8 +21,6 @@ Windows Hello for Business pin usage options
 |allowed|0|Allowed the usage of certain pin rule|
 |required|1|Enforce the usage of certain pin rule|
 |disallowed|2|Forbit the usage of certain pin rule|
-
-
 
 
 

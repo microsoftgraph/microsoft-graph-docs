@@ -1,9 +1,10 @@
 ---
 title: "deviceComplianceActionItem resource type"
 description: "Scheduled Action Configuration"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceComplianceActionItem resource type
@@ -55,8 +56,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

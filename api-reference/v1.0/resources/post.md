@@ -4,9 +4,12 @@ description: "Represents an individual Post item within a conversationThread ent
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # post resource type
+
+Namespace: microsoft.graph
 Represents an individual Post item within a [conversationThread](conversationthread.md) entity.
 
 Even though you cannot explicitly create a post, doing any of the following would create a post:

@@ -5,8 +5,11 @@ title: editAction resource type
 description: The EditAction object provides information about an activity that edited an item.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # editAction resource type
+
+Namespace: microsoft.graph
 
 The presence of the **editAction** resource on an [**itemActivity**][activity] indicates that the activity edited an item.
 

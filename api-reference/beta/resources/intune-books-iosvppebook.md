@@ -1,9 +1,10 @@
 ---
 title: "iosVppEBook resource type"
 description: "A class containing the properties for iOS Vpp eBook."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppEBook resource type
@@ -98,8 +99,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

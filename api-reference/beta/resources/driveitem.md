@@ -1,12 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The driveItem resource represents a file, folder, or other item stored in a drive."
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
+
 # driveItem resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,6 +59,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -118,6 +123,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
+| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that may affect the state of the driveItem are pending completion. Read-only.
 | photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
 | publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only. |
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
@@ -166,6 +172,8 @@ These properties are temporary and either a) define behavior the service should 
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
+>**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
+
 ## Methods
 
 | Method                                                   | REST Path
@@ -182,10 +190,13 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
+| [Restore item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [Follow item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Unfollow item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -212,7 +223,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem-list-versions.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md
@@ -223,6 +234,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md

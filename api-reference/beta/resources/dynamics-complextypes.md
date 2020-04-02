@@ -6,9 +6,15 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: resourcePageType
 ---
 
 # complex types JSON
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 These are the various complex types in Dynamics 365 Business Central. You can see usage of these complex types in the various individual methods that make use of them.
 
 ## Postal address

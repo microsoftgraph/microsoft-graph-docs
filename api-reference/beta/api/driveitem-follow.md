@@ -1,11 +1,14 @@
 ---
 author: chackman
-ms.author: chackman
+description: "Follow a driveItem."
 title: Follow drive item
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Follow drive item
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,11 +50,27 @@ This method returns a [DriveItem](../resources/driveitem.md) for the item being 
 
 This example follows an item identified by `{item-id}`.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/follow
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/follow-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/follow-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/follow-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!--
 {
@@ -61,8 +80,6 @@ POST /me/drive/items/{item-id}/follow
   "section": "documentation",
   "tocPath": "Items/Follow",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
@@ -80,13 +97,3 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/follow-item-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/follow-item-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]

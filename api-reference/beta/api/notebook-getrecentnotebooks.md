@@ -4,9 +4,12 @@ description: "Get a list of recentNotebook instances that have been accessed by 
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # notebook: getRecentNotebooks
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

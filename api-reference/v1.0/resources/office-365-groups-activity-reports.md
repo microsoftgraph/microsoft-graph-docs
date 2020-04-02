@@ -4,9 +4,12 @@ description: "You can use the Groups activity reports to gain insights into the 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Office 365 Groups activity reports
+
+Namespace: microsoft.graph
 
 You can use the Groups activity reports to gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 Groups are being created and used.
 

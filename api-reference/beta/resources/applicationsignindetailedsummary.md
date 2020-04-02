@@ -4,9 +4,12 @@ description: "Represents a detailed summary of an application sign-in."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # applicationSignInDetailedSummary resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

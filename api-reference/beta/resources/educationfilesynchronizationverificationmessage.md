@@ -4,9 +4,12 @@ description: "Represents an error returned to the client in response to a reques
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationFileSynchronizationVerificationMessage resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

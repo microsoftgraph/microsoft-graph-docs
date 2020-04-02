@@ -4,9 +4,12 @@ description: "Represents an Azure Active Directory (Azure AD) group, which can b
 localization_priority: Priority
 author: "dkershaw10" 
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # group resource type
+
+Namespace: microsoft.graph
 
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group.  
 
@@ -43,6 +46,7 @@ This resource supports:
 |[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[Remove member](../api/group-delete-members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check this group for membership in a list of groups. The function is transitive.|
+|[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
 |[getMemberObjects](../api/group-getmemberobjects.md)|String collection|Return all of the groups that the group is a member of. The function is transitive. |
 |[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
@@ -50,6 +54,8 @@ This resource supports:
 |[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 |[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Validate that an Office 365 group's display name or mail nickname complies with naming policies. |
+|[assignLicense](../api/group-assignlicense.md)|[group](group.md)| Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -62,6 +68,7 @@ This resource supports:
 |[Get conversation](../api/group-get-conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group-list-conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group-delete-conversation.md) |None|Delete conversation object.|
+|[Create thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Create a new conversation thread.|
 |[Get thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
 |[List threads](../api/group-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
 |[Update thread](../api/group-update-thread.md) |None| Update properties of a thread object.|
@@ -71,12 +78,14 @@ This resource supports:
 |[Remove acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
 |[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejected-senders list for this group.|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
-|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
+|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new User or Group from the rejectedSenders collection.|
 |[Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
 |[Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
 |[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 |[Update setting](../api/groupsetting-update.md) | None | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+|[Get setting template](../api/groupsettingtemplate-get.md) | None | Read properties of a setting template. |
+|[List setting template](../api/groupsettingtemplate-list.md) | None | List properties of all setting templates. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -101,10 +110,13 @@ This resource supports:
 |autoSubscribeNewMembers|Boolean|Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is **false**. <br><br>Returned only on $select.|
 |classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Returned by default.|
 |createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only. |
+|deletedDateTime|DateTimeOffset| For some Azure Active Directory objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is null. If the object is restored, this property is updated to null. |
 |description|String|An optional description for the group. <br><br>Returned by default.|
 |displayName|String|The display name for the group. This property is required when a group is created and cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby. |
 |groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified` then the group is an Office 365 group; otherwise it's a security group.  <br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports $filter.|
 |hasMembersWithLicenseErrors|Boolean|Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true). See an [example](../api/group-list.md).|
+|hideFromAddressLists |Boolean |True if the group is not displayed in certain parts of the Outlook UI: the **Address Book**, address lists for selecting message recipients, and the **Browse Groups** dialog for searching groups; otherwise, false. Default value is **false**. <br><br>Returned only on $select.|
+|hideFromOutlookClients |Boolean |True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is **false**. <br><br>Returned only on $select.|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is **false**. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on $select. Read-only.|
@@ -119,8 +131,9 @@ This resource supports:
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required to filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
 |securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
+|securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on $select. |
-|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `private`, `public`, or `hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
+|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, or `Hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
 
 
 ### Group visibility options
@@ -129,9 +142,9 @@ Here's what each **visibility** property value means:
  
 |Value|Description|
 |:----|-----------|
-| `public` | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
-| `private` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
-| `hiddenmembership` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
+| Public | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
+| Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
+| Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
 
 ## Relationships
@@ -308,6 +321,8 @@ The following is a JSON representation of the resource.
   "displayName": "string",
   "groupTypes": ["string"],
   "hasMembersWithLicenseErrors": "Boolean",
+  "hideFromAddressLists": false,
+  "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
@@ -322,6 +337,7 @@ The following is a JSON representation of the resource.
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
+  "securityIdentifier": "String",
   "unseenCount": 1024,
   "visibility": "string",
   "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],

@@ -1,9 +1,10 @@
 ---
 title: "Update restrictedAppsViolation"
 description: "Update the properties of a restrictedAppsViolation object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update restrictedAppsViolation
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -52,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |deviceName|String|Device name|
 |deviceConfigurationId|String|Device configuration profile unique identifier, must be Guid|
 |deviceConfigurationName|String|Device configuration profile name|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Platform type. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Platform type. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Restricted apps state. Possible values are: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md) collection|List of violated restricted apps|
 
@@ -115,7 +116,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

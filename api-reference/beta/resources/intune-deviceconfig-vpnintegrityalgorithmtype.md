@@ -1,9 +1,10 @@
 ---
 title: "vpnIntegrityAlgorithmType enum type"
 description: "The type of VPN security association integrity algorithm"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnIntegrityAlgorithmType enum type
@@ -22,8 +23,6 @@ The type of VPN security association integrity algorithm
 |sha1_160|2|SHA1-160|
 |sha2_384|3|SHA2-384|
 |sha2_512|4|SHA2-512|
-
-
 
 
 

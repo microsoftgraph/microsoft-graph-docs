@@ -2,9 +2,14 @@
 title: "Get locatedRiskEvent"
 description: "Retrieve the properties and relationships of a locatedriskevent object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get locatedRiskEvent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

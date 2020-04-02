@@ -1,9 +1,10 @@
 ---
 title: "defenderPromptForSampleSubmission enum type"
 description: "Possible values for prompting user for samples submission."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderPromptForSampleSubmission enum type
@@ -22,8 +23,6 @@ Possible values for prompting user for samples submission.
 |promptBeforeSendingPersonalData|2|Prompt before sending personal data.|
 |neverSendData|3|Never send data.|
 |sendAllDataWithoutPrompting|4|Send all data without prompting.|
-
-
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Create windows10EnrollmentCompletionPageConfiguration"
 description: "Create a new windows10EnrollmentCompletionPageConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windows10EnrollmentCompletionPageConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -45,13 +46,13 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|displayName|String|The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value. Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|id|String|Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|priority|Int32|Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Boolean|Show or hide installation progress to user|
 |blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
 |allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
@@ -60,6 +61,8 @@ The following table shows the properties that are required when you create the w
 |installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
 |allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
 |selectedMobileAppIds|String collection|Selected applications to track the installation status|
+|trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
+|disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
 
 
 
@@ -73,7 +76,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 583
+Content-length: 684
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -90,7 +93,9 @@ Content-length: 583
   "allowDeviceUseOnInstallFailure": true,
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
-  ]
+  ],
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
 
@@ -99,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 755
+Content-Length: 856
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -119,10 +124,11 @@ Content-Length: 755
   "allowDeviceUseOnInstallFailure": true,
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
-  ]
+  ],
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 

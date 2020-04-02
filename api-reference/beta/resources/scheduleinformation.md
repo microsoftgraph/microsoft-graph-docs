@@ -2,9 +2,14 @@
 title: "scheduleInformation resource type"
 description: "Represents the availability of a user, distribution list, or resource for a specified time period. "
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "microsoft-teams"
+author: ""
 ---
 
 # scheduleInformation resource type
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

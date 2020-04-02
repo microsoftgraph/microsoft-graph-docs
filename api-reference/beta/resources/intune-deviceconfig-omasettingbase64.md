@@ -1,9 +1,10 @@
 ---
 title: "omaSettingBase64 resource type"
 description: "OMA Settings Base64 definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingBase64 resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
-
-
 
 
 

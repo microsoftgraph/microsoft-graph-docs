@@ -4,9 +4,12 @@ description: "Gets a range object similar to the current range object, but with 
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRange: resizedRange
+
+Namespace: microsoft.graph
 Gets a range object similar to the current range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
 
 ## Permissions

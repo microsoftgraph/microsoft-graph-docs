@@ -4,9 +4,12 @@ description: "Update an editable alert property within any integrated solution t
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Update alert
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,17 +39,17 @@ PATCH /security/alerts/{alert_id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}. Required.|
-|Prefer | return=representation |
+|Prefer | return=representation. Optional. |
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
+In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the **vendorInformation** property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the alert is assigned to for triage, investigation, or remediation.|
 |closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|comments|String collection|Analyst comments on the alert (for customer alert management).|
+|comments|String collection|Analyst comments on the alert (for customer alert management). This method can update the comments field with the following values only: `Closed in IPC`, `Closed in MCAS`.|
 |feedback|alertFeedback enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|alertStatus enum|Alert life cycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
@@ -65,6 +68,8 @@ If the optional request header is used, the method returns a `200 OK` response c
 #### Request
 
 The following is an example of the request without the `Prefer` header.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -88,6 +93,20 @@ Content-type: application/json
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 
@@ -103,16 +122,6 @@ The following is an example of a successful response.
 ```http
 HTTP/1.1 204 No Content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Example 2: Request with Prefer header
 
@@ -180,10 +189,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

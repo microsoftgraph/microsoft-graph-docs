@@ -4,13 +4,16 @@ description: "Complex type containing properties of Insights."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # resourceReference resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [insights](officegraphinsights.md).
+Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation
 

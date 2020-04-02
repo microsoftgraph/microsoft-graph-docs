@@ -1,9 +1,10 @@
 ---
 title: "dmaGuardDeviceEnumerationPolicyType enum type"
 description: "Possible values of the DmaGuardDeviceEnumerationPolicy."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # dmaGuardDeviceEnumerationPolicyType enum type
@@ -20,8 +21,6 @@ Possible values of the DmaGuardDeviceEnumerationPolicy.
 |deviceDefault|0|Default value. Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen.|
 |blockAll|1|Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.|
 |allowAll|2|All external DMA capable PCIe devices will be enumerated at any time.|
-
-
 
 
 

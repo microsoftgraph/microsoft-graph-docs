@@ -1,9 +1,10 @@
 ---
 title: "termsAndConditions resource type"
 description: "A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditions resource type
@@ -36,6 +37,7 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 |bodyText|String|Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.|
 |acceptanceStatement|String|Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.|
 |version|Int32|Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -64,11 +66,12 @@ Here is a JSON representation of the resource.
   "title": "String",
   "bodyText": "String",
   "acceptanceStatement": "String",
-  "version": 1024
+  "version": 1024,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
-
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "deviceType enum type"
 description: "Device type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceType enum type
@@ -36,11 +37,10 @@ Device type.
 |surfaceHub|16|Surface HUB device.|
 |androidForWork|17|Android for work device.|
 |androidEnterprise|18|Android enterprise device.|
+|windows10x|19|Windows 10x device.|
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|
-
-
 
 
 

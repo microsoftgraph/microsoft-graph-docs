@@ -4,9 +4,12 @@ description: "Represents the Outlook services available to a user."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # outlookUser resource type
+
+Namespace: microsoft.graph
 
 
 Represents the Outlook services available to a user.

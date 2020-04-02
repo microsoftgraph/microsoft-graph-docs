@@ -1,9 +1,10 @@
 ---
 title: "managementConditionExpressionModel resource type"
 description: "A management condition expression model is an model representation of a management condition expression."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementConditionExpressionModel resource type
@@ -36,8 +37,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
-
-
 
 
 

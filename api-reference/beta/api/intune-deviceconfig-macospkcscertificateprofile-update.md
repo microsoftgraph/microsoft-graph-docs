@@ -1,0 +1,206 @@
+---
+title: "Update macOSPkcsCertificateProfile"
+description: "Update the properties of a macOSPkcsCertificateProfile object."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
+---
+
+# Update macOSPkcsCertificateProfile
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Update the properties of a [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md) object.
+
+## Prerequisites
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
+
+## HTTP Request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+```
+
+## Request headers
+|Header|Value|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt; Required.|
+|Accept|application/json|
+
+## Request body
+In the request body, supply a JSON representation for the [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md) object.
+
+The following table shows the properties that are required when you create the [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|renewalThresholdPercentage|Int32|Certificate renewal threshold percentage. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
+|subjectNameFormat|[appleSubjectNameFormat](../resources/intune-deviceconfig-applesubjectnameformat.md)|Certificate Subject Name Format. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Possible values are: `commonName`, `commonNameAsEmail`, `custom`, `commonNameIncludingEmail`, `commonNameAsIMEI`, `commonNameAsSerialNumber`.|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|
+|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Inherited from [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md). Possible values are: `days`, `months`, `years`.|
+|certificationAuthority|String|PKCS certification authority FQDN.|
+|certificationAuthorityName|String|PKCS certification authority Name.|
+|certificateTemplateName|String|PKCS certificate template name.|
+|subjectAlternativeNameFormatString|String|Format string that defines the subject alternative name.|
+|subjectNameFormatString|String|Format string that defines the subject name. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
+|certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
+|allowAllAppsAccess|Boolean|AllowAllAppsAccess setting|
+
+
+
+## Response
+If successful, this method returns a `200 OK` response code and an updated [macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md) object in the response body.
+
+## Example
+
+### Request
+Here is an example of the request.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+Content-type: application/json
+Content-length: 1857
+
+{
+  "@odata.type": "#microsoft.graph.macOSPkcsCertificateProfile",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "renewalThresholdPercentage": 10,
+  "subjectNameFormat": "commonNameAsEmail",
+  "subjectAlternativeNameType": "emailAddress",
+  "certificateValidityPeriodValue": 14,
+  "certificateValidityPeriodScale": "months",
+  "certificationAuthority": "Certification Authority value",
+  "certificationAuthorityName": "Certification Authority Name value",
+  "certificateTemplateName": "Certificate Template Name value",
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "subjectNameFormatString": "Subject Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ],
+  "allowAllAppsAccess": true
+}
+```
+
+### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 2029
+
+{
+  "@odata.type": "#microsoft.graph.macOSPkcsCertificateProfile",
+  "id": "4b489237-9237-4b48-3792-484b3792484b",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "renewalThresholdPercentage": 10,
+  "subjectNameFormat": "commonNameAsEmail",
+  "subjectAlternativeNameType": "emailAddress",
+  "certificateValidityPeriodValue": 14,
+  "certificateValidityPeriodScale": "months",
+  "certificationAuthority": "Certification Authority value",
+  "certificationAuthorityName": "Certification Authority Name value",
+  "certificateTemplateName": "Certificate Template Name value",
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+  "subjectNameFormatString": "Subject Name Format String value",
+  "certificateStore": "machine",
+  "customSubjectAlternativeNames": [
+    {
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "emailAddress",
+      "name": "Name value"
+    }
+  ],
+  "allowAllAppsAccess": true
+}
+```
+
+
+
+

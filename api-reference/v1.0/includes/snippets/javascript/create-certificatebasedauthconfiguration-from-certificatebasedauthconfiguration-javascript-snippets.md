@@ -1,0 +1,25 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const certificateBasedAuthConfiguration = {
+  certificateAuthorities: [
+    {
+      isRootAuthority: true,
+      certificate: "Binary"
+    }
+  ]
+};
+
+let res = await client.api('/organization/{id}/certificateBasedAuthConfiguration')
+	.post(certificateBasedAuthConfiguration);
+
+```

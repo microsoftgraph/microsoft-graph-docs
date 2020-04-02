@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Download a file
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the file property can be downloaded."
+doc_type: apiPageType
 ---
 # Download the contents of a DriveItem
+
+Namespace: microsoft.graph
 
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
@@ -44,11 +48,31 @@ GET /users/{userId}/drive/items/{item-id}/content
 Here is an example to download a complete file.
 
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/download-item-content-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/download-item-content-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/download-item-content-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -66,16 +90,6 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/download-item-content-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/download-item-content-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Partial range downloads
 
@@ -116,7 +130,5 @@ how errors are returned.
   "section": "documentation",
   "tocPath": "Items/Download",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-get-content.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-get-content.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

@@ -1,9 +1,10 @@
 ---
 title: "deviceEnrollmentPlatformRestriction resource type"
 description: "Platform specific enrollment restrictions"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceEnrollmentPlatformRestriction resource type
@@ -21,6 +22,7 @@ Platform specific enrollment restrictions
 |personalDeviceEnrollmentBlocked|Boolean|Block personally owned devices from enrolling|
 |osMinimumVersion|String|Min OS version supported|
 |osMaximumVersion|String|Max OS version supported|
+|blockedManufacturers|String collection|Collection of blocked Manufacturers.|
 
 ## Relationships
 None
@@ -38,11 +40,12 @@ Here is a JSON representation of the resource.
   "platformBlocked": true,
   "personalDeviceEnrollmentBlocked": true,
   "osMinimumVersion": "String",
-  "osMaximumVersion": "String"
+  "osMaximumVersion": "String",
+  "blockedManufacturers": [
+    "String"
+  ]
 }
 ```
-
-
 
 
 

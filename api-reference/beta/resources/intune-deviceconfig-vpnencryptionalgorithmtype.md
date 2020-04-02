@@ -1,9 +1,10 @@
 ---
 title: "vpnEncryptionAlgorithmType enum type"
 description: "The type of VPN security association encryption algorithm"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnEncryptionAlgorithmType enum type
@@ -23,8 +24,6 @@ The type of VPN security association encryption algorithm
 |aes128|3|AES-128|
 |aes128Gcm|4|AES-128-GCM (16-octet ICV)|
 |aes256Gcm|5|AES-256-GCM (16-octet ICV)|
-
-
 
 
 

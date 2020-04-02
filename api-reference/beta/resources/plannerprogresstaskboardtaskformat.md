@@ -4,9 +4,12 @@ description: "The **plannerProgressTaskBoardTaskFormat** resource represents the
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerProgressTaskBoardTaskFormat resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

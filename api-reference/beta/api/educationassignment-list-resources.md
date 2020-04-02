@@ -4,9 +4,12 @@ description: "Get all the resources associated with this assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List educationAssignmentResources
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

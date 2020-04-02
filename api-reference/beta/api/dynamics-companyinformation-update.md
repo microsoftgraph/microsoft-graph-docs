@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # Update companyinformation
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
+```
+PATCH /financials/companies/{id}/companyInformation/{id}
+```
 
 <!-- { "blockType": "ignored" } -->
 

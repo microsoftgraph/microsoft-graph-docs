@@ -1,9 +1,10 @@
 ---
 title: "remoteAction enum type"
 description: "Remote actions Intune supports."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # remoteAction enum type
@@ -36,10 +37,10 @@ Remote actions Intune supports.
 |updateDeviceAccount|16|User initiates an action to update account on device.|
 |automaticRedeployment|17|User initiates an action to automatice redeploy the device|
 |shutDown|18|User initiates an action to shut down the device.|
+|rotateBitLockerKeys|19|User initiates an action to Rotate BitLockerKeys on the device.|
 |rotateFileVaultKey|20|User initiates an action to Rotate FileVaultKey on mac.|
 |getFileVaultKey|21|User initiates an action to Get FileVaultKey on mac.|
-
-
+|setDeviceName|22|User initiates an action to Set Device Name on the device.|
 
 
 

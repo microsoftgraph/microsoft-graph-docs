@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The sharingLink resource groups link-related data items into a single structure."
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # sharingLink resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

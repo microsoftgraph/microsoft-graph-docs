@@ -4,9 +4,12 @@ description: " teachers can see all assignments in a class."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationAssignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -79,6 +82,7 @@ Content-length: 279
       "id": "14012",
     }
   },
+  "closeDateTime": "2014-01-11T00:00:00Z",
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",

@@ -2,11 +2,14 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
+doc_type: apiPageType
 ---
 
 # List manager
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

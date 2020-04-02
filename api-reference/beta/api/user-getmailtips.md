@@ -1,12 +1,15 @@
 ---
 title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
-author: "dkershaw10"
+author: "svpsiva"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # user: getMailTips
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,6 +56,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
@@ -69,6 +74,20 @@ Content-Type: application/json
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -121,16 +140,6 @@ Content-type: application/json
 }
 
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_getmailtips-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_getmailtips-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -142,8 +151,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

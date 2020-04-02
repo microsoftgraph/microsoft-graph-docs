@@ -1,9 +1,10 @@
 ---
 title: "mobileAppTroubleshootingHistoryItem resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppTroubleshootingHistoryItem resource type
@@ -18,6 +19,7 @@ History Item contained in the Mobile App Troubleshooting Event.
 |Property|Type|Description|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Time when the history item occurred.|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation.|
 
 ## Relationships
 None
@@ -32,11 +34,23 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppTroubleshootingHistoryItem",
-  "occurrenceDateTime": "String (timestamp)"
+  "occurrenceDateTime": "String (timestamp)",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "String",
+    "failure": "String",
+    "failureDetails": "String",
+    "remediation": "String",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "String",
+        "link": "String"
+      }
+    ]
+  }
 }
 ```
-
-
 
 
 

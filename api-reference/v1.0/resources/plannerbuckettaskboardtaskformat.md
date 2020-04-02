@@ -4,9 +4,12 @@ description: "The **plannerBucketTaskBoardTaskFormat** resource represents the i
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerBucketTaskBoardTaskFormat resource type
+
+Namespace: microsoft.graph
 
 The **plannerBucketTaskBoardTaskFormat** resource represents the information used to render a task correctly in the Buckets view of the Task Board (a view organized by tasks within the buckets they are assigned to). Each [task](plannertask.md) will have one **plannerBucketTaskBoardTaskFormat** object associated with it.
 

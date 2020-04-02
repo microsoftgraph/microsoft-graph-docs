@@ -1,9 +1,10 @@
 ---
 title: "Get groupPolicyConfiguration"
 description: "Read properties and relationships of the groupPolicyConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get groupPolicyConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -33,7 +34,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 416
 
 {
   "value": {
@@ -68,12 +69,14 @@ Content-Length: 348
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "displayName": "Display Name value",
     "description": "Description value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
-
 
 
 

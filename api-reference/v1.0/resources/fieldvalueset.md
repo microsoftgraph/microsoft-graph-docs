@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
+description: "Represents the column values in a listItem resource."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # FieldValueSet resource
+
+Namespace: microsoft.graph
 
 Represents the column values in a [listItem](listitem.md) resource.
 

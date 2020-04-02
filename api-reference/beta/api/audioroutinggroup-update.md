@@ -1,12 +1,15 @@
 ---
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: apiPageType
 ---
 
 # Update audio routing group
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
-PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
+PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -50,14 +54,15 @@ If successful, this method returns a `200 OK` response code and an updated [audi
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update-audioRoutingGroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
@@ -71,6 +76,20 @@ Content-Length: 233
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-audioroutinggroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-audioroutinggroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -83,7 +102,6 @@ Content-Length: 233
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
@@ -97,16 +115,6 @@ Content-Length: 233
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -118,8 +126,6 @@ Content-Length: 233
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

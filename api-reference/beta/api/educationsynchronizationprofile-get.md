@@ -4,9 +4,12 @@ description: "Retrieve a school data synchronization profile in the tenant based
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get an educationSynchronizationProfile
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

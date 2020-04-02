@@ -1,9 +1,10 @@
 ---
 title: "mobileContainedApp resource type"
 description: "An abstract class that represents a contained app in a mobileApp acting as a package."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileContainedApp resource type
@@ -42,8 +43,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
 
 
 

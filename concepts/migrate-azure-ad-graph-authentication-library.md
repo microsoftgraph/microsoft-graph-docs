@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Most apps use an authentication library to aquire and manage access tokens to call Microsoft Graph.  Microsoft offers two authentication libraries:
+Most apps use an authentication library to acquire and manage access tokens to call Microsoft Graph.  Microsoft offers two authentication libraries:
 
 - [Azure Active Directory authentication library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
 - [Microsoft authentication library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL)

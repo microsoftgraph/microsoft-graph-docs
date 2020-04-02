@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Here is a JSON representation of a columnDefinition resource."
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # columnDefinition resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

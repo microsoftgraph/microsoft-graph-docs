@@ -1,9 +1,10 @@
 ---
 title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # bitLockerEncryptionMethod enum type
@@ -21,8 +22,6 @@ BitLockerEncryptionMethod types
 |aesCbc256|4|AES-CBC 256-bit.|
 |xtsAes128|6|XTS-AES 128-bit.|
 |xtsAes256|7|XTS-AES 256-bit.|
-
-
 
 
 

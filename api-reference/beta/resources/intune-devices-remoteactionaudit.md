@@ -1,9 +1,10 @@
 ---
 title: "remoteActionAudit resource type"
 description: "Report of remote actions initiated on the devices belonging to a certain tenant."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # remoteActionAudit resource type
@@ -30,11 +31,12 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 |deviceDisplayName|String|Intune device name.|
 |userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
 |initiatedByUserPrincipalName|String|User who initiated the device action, format is UPN.|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`.|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
 |deviceOwnerUserPrincipalName|String|Upn of the device owner.|
 |deviceIMEI|String|IMEI of the device.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|managedDeviceId|String|Action target.|
 
 ## Relationships
 None
@@ -58,11 +60,10 @@ Here is a JSON representation of the resource.
   "requestDateTime": "String (timestamp)",
   "deviceOwnerUserPrincipalName": "String",
   "deviceIMEI": "String",
-  "actionState": "String"
+  "actionState": "String",
+  "managedDeviceId": "String"
 }
 ```
-
-
 
 
 

@@ -22,14 +22,13 @@ This article explores how Microsoft Graph handles:
 
 If your app uses Azure AD Graph directory schema extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
 
+- Manage extension property definitions using the **extensionProperties** property on the [application][/graph/api/resources/application?view=graph-rest-v1.0) resource.
 - Read extension values using GET and `$select`
 - Search on extension values using GET and `$filter`
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)
 
-However, Microsoft Graph doesn't provide a way to manage Azure AD Graph directory schema extension definitions or to view all schema extension definitions available in a tenant.
-
-Instead, Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory schema extentions. To learn more, see [schema extensions in add custom data](/graph/extensibility-overview#schema-extensions).
+Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory schema extentions. To learn more, see [schema extensions in add custom data](/graph/extensibility-overview#schema-extensions).
 
 ### Recommended migration approach
 
@@ -42,7 +41,7 @@ Then, you can switch to using Microsoft Graph schema extensions. In some cases, 
 - Your app uses directory schema extensions created through AD Connect, or
 - Your app relies on directory schema extension values in token claims.
 
->**NOTE**: Using Microsoft Graph schema extension properties as claims in a token using optional claims is also not yet supported.
+>**NOTE**: Using Microsoft Graph schema extension properties as claims in a token using optional claims or in a dynamic membership rule is also not yet supported.
 
 To switch to the newer Microsoft Graph schema extension model, you'll need to:
 

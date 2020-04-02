@@ -4,9 +4,12 @@ description: "Deletes the column from the table."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # TableColumn: delete
+
+Namespace: microsoft.graph
 
 Deletes the column from the table.
 ## Permissions

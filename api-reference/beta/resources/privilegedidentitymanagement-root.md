@@ -2,9 +2,14 @@
 title: "Privileged Identity Management"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure Active Directory roles and Azure resource roles."
 localization_priority: Priority
+doc_type: conceptualPageType
+ms.prod: ""
+author: ""
 ---
 
 # Privileged Identity Management
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

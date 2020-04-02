@@ -1,9 +1,10 @@
 ---
 title: "mdmAppConfigKeyType enum type"
 description: "App configuration key types."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mdmAppConfigKeyType enum type
@@ -22,8 +23,6 @@ App configuration key types.
 |realType|2|Not yet documented|
 |booleanType|3|Not yet documented|
 |tokenType|4|Not yet documented|
-
-
 
 
 

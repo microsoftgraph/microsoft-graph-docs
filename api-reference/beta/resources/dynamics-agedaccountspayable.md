@@ -8,6 +8,7 @@ doc_type: "resourcePageType"
 ---
 
 # agedAccountsPayable resource type
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +25,7 @@ Represents an agedAccountsPayable object in Dynamics 365 Business Central.
 ## Properties
 
 ## Properties
-| Property	    | Type	   |Description                                 |
+| Property        | Type       |Description                                 |
 |:--------------|:---------|:-------------------------------------------|
 |vendorId       |GUID      |The unique ID of vendor.                    |
 |vendorNumber   |string    |Specifies vendor's number.                  |

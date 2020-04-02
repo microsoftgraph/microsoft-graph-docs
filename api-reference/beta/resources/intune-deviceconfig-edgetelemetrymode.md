@@ -1,9 +1,10 @@
 ---
 title: "edgeTelemetryMode enum type"
 description: "Type of browsing data sent to Microsoft 365 analytics"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # edgeTelemetryMode enum type
@@ -21,8 +22,6 @@ Type of browsing data sent to Microsoft 365 analytics
 |intranet|1|Allow sending intranet history only: Only send browsing history data for intranet sites|
 |internet|2|Allow sending internet history only: Only send browsing history data for internet sites|
 |intranetAndInternet|3|Allow sending both intranet and internet history: Send browsing history data for intranet and internet sites|
-
-
 
 
 

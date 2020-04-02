@@ -1,12 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
 ms.date: 09/10/2017
 title: Get a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get a DriveItem resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,9 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Application | Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
+
+> Note:
+> The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.
 
 ## HTTP request
 
@@ -31,6 +37,7 @@ GET /drives/{drive-id}/items/{item-id}
 GET /drives/{drive-id}/root:/{item-path}
 GET /groups/{group-id}/drive/items/{item-id}
 GET /groups/{group-id}/drive/root:/{item-path}
+GET /teams/{teamId}/channels/{channelId}/filesFolder
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
 GET /sites/{siteId}/drive/items/{itemId}
@@ -44,6 +51,10 @@ GET /users/{userId}/drive/root:/{item-path}
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
 You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
+
+You can also use the `includeDeletedItems=true` query parameter to return deleted items.
+This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
+This is currently only supported on OneDrive Personal.
 
 ## Optional request headers
 
@@ -61,11 +72,25 @@ If successful, this method returns a `200 OK` response code and the [DriveItem](
 
 Here is an example of the request to the root folder of the user's OneDrive.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-item-metadata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Response
 
@@ -102,16 +127,6 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-item-metadata-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-item-metadata-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -131,8 +146,6 @@ how errors are returned.
   "section": "documentation",
   "tocPath": "Items/Get item",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

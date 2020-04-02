@@ -1,9 +1,10 @@
 ---
 title: "List windowsAutopilotDeploymentProfileAssignments"
 description: "List properties and relationships of the windowsAutopilotDeploymentProfileAssignment objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsAutopilotDeploymentProfileAssignments
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 285
+Content-Length: 354
 
 {
   "value": [
@@ -66,12 +67,13 @@ Content-Length: 285
       "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
 ```
-
 
 
 

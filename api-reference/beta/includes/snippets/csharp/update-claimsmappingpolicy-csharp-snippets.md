@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var claimsMappingPolicy = new ClaimsMappingPolicy
+{
+	Definition = new List<String>()
+	{
+		"definition-value"
+	},
+	DisplayName = "displayName-value",
+	IsOrganizationDefault = true,
+	Type = "type-value"
+};
+
+await graphClient.Policies.ClaimsMappingPolicies["{id}"]
+	.Request()
+	.UpdateAsync(claimsMappingPolicy);
+
+```

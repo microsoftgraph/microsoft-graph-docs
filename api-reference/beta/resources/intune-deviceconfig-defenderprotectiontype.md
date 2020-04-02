@@ -1,9 +1,10 @@
 ---
 title: "defenderProtectionType enum type"
-description: "Possible values of Defender Protection"
-author: "rolyon"
+description: "Possible values of Defender PUA Protection"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderProtectionType enum type
@@ -12,7 +13,7 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Possible values of Defender Protection
+Possible values of Defender PUA Protection
 
 ## Members
 |Member|Value|Description|
@@ -20,8 +21,6 @@ Possible values of Defender Protection
 |userDefined|0|Device default value, no intent.|
 |enable|1|Block functionality.|
 |auditMode|2|Allow functionality but generate logs.|
-
-
 
 
 

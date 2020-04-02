@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ThumbnailSet resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

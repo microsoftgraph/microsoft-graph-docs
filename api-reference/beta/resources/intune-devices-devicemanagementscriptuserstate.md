@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementScriptUserState resource type"
 description: "Contains properties for user run state of the device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptUserState resource type
@@ -26,7 +27,7 @@ Contains properties for user run state of the device management script.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script user state entity.|
+|id|String|Key of the device management script user state entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count for specific user.|
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|
@@ -53,8 +54,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

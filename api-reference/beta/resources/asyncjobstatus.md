@@ -1,11 +1,16 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # AsyncJobStatus resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

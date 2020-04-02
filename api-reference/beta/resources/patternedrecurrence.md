@@ -2,9 +2,14 @@
 title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # patternedRecurrence resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

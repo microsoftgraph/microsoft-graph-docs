@@ -4,9 +4,12 @@ description: "Get details about Skype for Business activity by user."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessActivityUserDetail
+
+Namespace: microsoft.graph
 
 Get details about Skype for Business activity by user.
 
@@ -22,7 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).
+
 ## HTTP request
+
 
 <!-- { "blockType": "samples" } --> 
 
@@ -99,15 +105,17 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
 <!--{
-  "blockType": "request",
+  "blockType": "ignored",
   "isComposable": true,
   "name": "reportroot_getskypeforbusinessactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessActivityUserDetail(period='D7')
 ```
+
 
 #### Response
 
@@ -124,16 +132,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessactivityuserdetail-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinessactivityuserdetail-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -154,7 +152,5 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinessactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

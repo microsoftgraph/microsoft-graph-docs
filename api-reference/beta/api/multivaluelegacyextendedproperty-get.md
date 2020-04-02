@@ -2,9 +2,14 @@
 title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get multiValueLegacyExtendedProperty
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

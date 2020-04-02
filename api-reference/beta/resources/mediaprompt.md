@@ -1,23 +1,25 @@
 ---
 title: "mediaPrompt resource type"
-description: "The mediaPrompt type."
-author: "VinodRavichandran"
+description: "Contains information about the audio file to be played and other additional settings."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: resourcePageType
 ---
 
 # mediaPrompt resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mediaPrompt type.
+Contains information about the audio file to be played and other additional settings.
 
 ## Properties
 
 | Property    | Type                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| loop        | Int32                     | The loop count. 0 value indicates to loop infinitely. The default value is `1`. |
-| mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
+| mediaInfo   | [mediaInfo](mediainfo.md) | The media information.                                                          |
 
 ## JSON representation
 
@@ -33,7 +35,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
@@ -46,11 +47,12 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
     "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-  },
-  "loop": 5
+  }
 }
 ```
 

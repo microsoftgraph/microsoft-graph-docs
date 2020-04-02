@@ -1,9 +1,10 @@
 ---
 title: "windowsUpdateType enum type"
 description: "Which branch devices will receive their updates from"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsUpdateType enum type
@@ -23,8 +24,6 @@ Which branch devices will receive their updates from
 |windowsInsiderBuildFast|3|Windows Insider build - Fast|
 |windowsInsiderBuildSlow|4|Windows Insider build - Slow|
 |windowsInsiderBuildRelease|5|Release Windows Insider build|
-
-
 
 
 

@@ -2,9 +2,14 @@
 title: "daylightTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from standard time to daylight saving time."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # daylightTimeZoneOffset resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

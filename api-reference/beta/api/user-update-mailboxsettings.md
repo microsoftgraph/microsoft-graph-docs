@@ -2,21 +2,33 @@
 title: "Update user mailbox settings"
 description: "Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update user mailbox settings
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, and [working hours](../resources/workinghours.md).
+Enable, configure, or disable one or more of the following settings as part of a user's [mailboxSettings](../resources/mailboxsettings.md):
 
-You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).
+- [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
+- dateFormat
+- delegateMeetingMessageDeliveryOptions
+- [locale](../resources/localeinfo.md) (language and country/region)
+- timeFormat
+- time zone
+- [working hours](../resources/workinghours.md)
 
-**Note** You cannot create or delete any mailbox settings.
+When updating the preferred date or time format for a user, specify it in respectively, the [short date](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) format. 
 
-When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#request-2) below.
+When updating the preferred time zone for a user, specify it in the Windows or [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#example-2) below.
+
+> [!TIP] 
+> You cannot create or delete any mailbox settings.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,13 +60,16 @@ shouldn't include existing values that haven't changed. The following are the wr
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. You can set such notifications for only a future date range.|
+|dateFormat|string|The date format for the user's mailbox.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
+|timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](../resources/workinghours.md)|The hours, days of a week, and time zone that the user works.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxsettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the updated properties of a [mailboxSettings](../resources/mailboxsettings.md) object in the response body.
 
 ## Errors
 
@@ -68,11 +83,14 @@ Setting working hours with inappropriate values may return the following errors.
 | Invalid **timeZone** | 400 | InvalidTimeZone | Time Zone settings provided are invalid.|
 
 
-## Example
-##### Request 1
+## Examples
+### Example 1
+#### Request 
 The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:
 **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailboxsettings_1"
@@ -96,7 +114,21 @@ Content-Type: application/json
     }
 }
 ```
-##### Response 1
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxsettings-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 The response includes the updated settings for automatic replies. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -126,19 +158,9 @@ Content-type: application/json
     }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_mailboxsettings_1-Cs-snippets.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_mailboxsettings_1-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-
-##### Request 2
+### Example 2
+#### Request
 The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
 to a [custom time zone](../resources/customtimezone.md).
 
@@ -184,7 +206,7 @@ Content-Type: application/json
   }
 } 
 ```
-##### Response 2
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",
@@ -233,7 +255,6 @@ Content-type: application/json
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -244,8 +265,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #errors (score: 5)",
-    "Error: /api-reference/beta/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

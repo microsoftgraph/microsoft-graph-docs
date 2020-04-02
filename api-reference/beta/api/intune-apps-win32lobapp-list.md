@@ -1,9 +1,10 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List win32LobApps
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3347
+Content-Length: 3442
 
 {
   "value": [
@@ -133,7 +134,8 @@ Content-Length: 3347
       ],
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-        "runAsAccount": "user"
+        "runAsAccount": "user",
+        "deviceRestartBehavior": "allow"
       },
       "returnCodes": [
         {
@@ -152,12 +154,12 @@ Content-Length: 3347
         "productName": "Product Name value",
         "publisher": "Publisher value"
       },
-      "setupFilePath": "Setup File Path value"
+      "setupFilePath": "Setup File Path value",
+      "installLanguage": "Install Language value"
     }
   ]
 }
 ```
-
 
 
 

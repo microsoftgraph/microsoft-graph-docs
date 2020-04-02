@@ -4,9 +4,12 @@ description: "When OAuth2 Client Credentials Grant is to be used to connect to t
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

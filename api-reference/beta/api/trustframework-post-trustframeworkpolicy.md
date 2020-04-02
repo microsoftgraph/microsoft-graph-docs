@@ -4,8 +4,11 @@ description: "This operation creates a new trustFrameworkPolicy object in an Azu
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # Create trustFrameworkPolicy
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -19,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|Policy.ReadWrite.TrustFramework|
 
 The work or school account must be a global administrator of the tenant.
 

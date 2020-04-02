@@ -1,12 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
 ms.date: 09/10/2017
 title: Check In Files
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Check-in changes to a DriveItem resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,6 +51,8 @@ In the request body, provide a JSON object with the following parameters.
 
 This example checks in a file identified by `{item-id}`.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -58,6 +63,20 @@ Content-Type: application/json
   "comment": "Updating the latest guidelines"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -68,16 +87,6 @@ If successful, the API call returns a `204 No content`.
 ```http
 HTTP/1.1 204 No content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/checkin-item-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/checkin-item-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Remarks
 
@@ -92,8 +101,6 @@ HTTP/1.1 204 No content
   "section": "documentation",
   "tocPath": "Items/Copy",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

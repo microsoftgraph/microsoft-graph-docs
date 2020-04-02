@@ -4,9 +4,12 @@ description: "A contact is an item in Outlook where you can organize and save in
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # contact resource type
+
+Namespace: microsoft.graph
 
 A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
 

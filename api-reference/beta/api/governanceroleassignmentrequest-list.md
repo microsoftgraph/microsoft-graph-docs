@@ -2,9 +2,14 @@
 title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
 localization_priority: Normal
+doc_type: apiPageType
+author: "davidmu1"
+ms.prod: "microsoft-identitiy-platform"
 ---
 
 # List governanceRoleAssignmentRequests
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | PrivilegedAccess.Read.AzureResources |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

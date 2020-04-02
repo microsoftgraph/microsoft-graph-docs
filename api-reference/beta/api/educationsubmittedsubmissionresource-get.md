@@ -4,9 +4,12 @@ description: "Returns a submitted resource. This will be available to a teacher 
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationSubmittedSubmissionResource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

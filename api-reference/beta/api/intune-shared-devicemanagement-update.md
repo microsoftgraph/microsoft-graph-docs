@@ -1,9 +1,10 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagement
@@ -35,14 +36,36 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Policy Set** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Remote assistance** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Software Update** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Telecom expense management** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.|
-| Application | Not supported. |
+| Application ||
+| &nbsp; &nbsp; **Android for Work** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp; &nbsp; **Auditing** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Company terms** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Device intent** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Electronic SIM** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Policy Set** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **Remote assistance** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Software Update** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Telecom expense management** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 
 ## HTTP Request
 <!-- {
@@ -161,6 +184,13 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
+
+
+
+
 
 
 

@@ -4,9 +4,12 @@ description: "Represents the set of conditions and exceptions that are available
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # messageRulePredicates resource type
+
+Namespace: microsoft.graph
 
 
 Represents the set of conditions and exceptions that are available for a rule.

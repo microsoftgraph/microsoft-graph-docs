@@ -1,9 +1,10 @@
 ---
 title: "Update windowsInformationProtectionDeviceRegistration"
 description: "Update the properties of a windowsInformationProtectionDeviceRegistration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsInformationProtectionDeviceRegistration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -96,7 +97,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

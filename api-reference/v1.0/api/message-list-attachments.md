@@ -4,9 +4,12 @@ description: "Retrieve a list of attachment objects attached to a message."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List attachments
+
+Namespace: microsoft.graph
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.
 ## Permissions
@@ -52,19 +55,40 @@ If successful, this method returns a `200 OK` response code and collection of [A
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_attachments"
+  "name": "message_get_attachments_v1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/message-get-attachments-v1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-get-attachments-v1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/message-get-attachments-v1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-get-attachments-v1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "message_get_attachments_v1",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.attachment)",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "isCollection": true
 } -->
 ```http
@@ -78,7 +102,7 @@ Content-length: 215
       "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "base64-contentBytes-value",
+      "contentBytes": "contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",
@@ -89,16 +113,6 @@ Content-length: 215
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_attachments-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_attachments-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -109,7 +123,5 @@ Content-length: 215
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/message-list-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/message-list-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

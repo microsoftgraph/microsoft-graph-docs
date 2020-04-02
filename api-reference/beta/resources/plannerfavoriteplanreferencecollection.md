@@ -4,9 +4,12 @@ description: " the value is the plannerFavoritePlanReference object."
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerFavoritePlanReferenceCollection resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,9 +4,12 @@ description: "`)"
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: conceptualPageType
 ---
 
 # Using order hints in Planner
+
+Namespace: microsoft.graph
 
 Objects in Planner identify their sort order by order hints. The order hint values are strings. The clients can sort the strings based on ordinal value of characters in them to identify the order of items. The characters are compared from the beginning of the string, until a difference is encountered in the ordinal values of characters, or one string ends, in which case the shorter string would be sorted before the longer. The values can contain any character between ordinals 32 (space) and 126 (`~`)
 
@@ -53,7 +56,7 @@ Once these changes to order hint values are sent to the service in patch request
 4. Item 2 (Order Hint: `'adhg'`)
 5. Item 1 (Order Hint: `'de5%'`)
 
-Order Hints can be specified for creating the first item in the list as ` !`, since neither a previous or a next item exists in that case, however this is unnecessary, as the service will auto-generate values for all order hint values on items if they are not specified during creation of the item. Following example illustrates the order hints should be used when placing items in a previously empty list.
+Order Hints can be specified for creating the first item in the list as `!`, since neither a previous or a next item exists in that case, however this is unnecessary, as the service will auto-generate values for all order hint values on items if they are not specified during creation of the item. Following example illustrates the order hints should be used when placing items in a previously empty list.
 Add the first item:
 
 1. Item 1 (Order Hint: `' !'`)

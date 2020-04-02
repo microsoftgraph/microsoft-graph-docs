@@ -1,9 +1,10 @@
 ---
 title: "Get deviceManagementAbstractComplexSettingDefinition"
 description: "Read properties and relationships of the deviceManagementAbstractComplexSettingDefinition object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceManagementAbstractComplexSettingDefinition
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +37,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 928
+Content-Length: 1142
 
 {
   "value": {
@@ -73,13 +74,17 @@ Content-Length: 928
     "displayName": "Display Name value",
     "isTopLevel": true,
     "description": "Description value",
+    "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
     "keywords": [
       "Keywords value"
     ],
     "constraints": [
       {
-        "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+        "supportedTypes": [
+          "Supported Types value"
+        ]
       }
     ],
     "dependencies": [
@@ -88,7 +93,10 @@ Content-Length: 928
         "definitionId": "Definition Id value",
         "constraints": [
           {
-            "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+            "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+            "supportedTypes": [
+              "Supported Types value"
+            ]
           }
         ]
       }
@@ -99,7 +107,6 @@ Content-Length: 928
   }
 }
 ```
-
 
 
 

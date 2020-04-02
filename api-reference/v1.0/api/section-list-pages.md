@@ -4,9 +4,12 @@ description: "Retrieve a list of page objects from the specified section."
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List pages
+
+Namespace: microsoft.graph
 
 Retrieve a list of [page](../resources/page.md) objects from the specified section.
 ## Permissions

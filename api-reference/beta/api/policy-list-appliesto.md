@@ -1,23 +1,28 @@
 ---
 title: "List Applications and Service Principals with specific Policy assigned"
-description: "Retrieve the application and service principal objects with the specified policy assigned."
+description: "Get the application and service principal objects with the specified policy assigned."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # List applications and service principals with specific policy assigned
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.
+Get the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Directory.Read.All |
 
 ## HTTP request
 ```http

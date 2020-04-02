@@ -4,9 +4,12 @@ description: "You can use the SharePoint site usage reports to gain a high level
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # SharePoint site usage reports
+
+Namespace: microsoft.graph
 
 You can use the SharePoint site usage reports to gain a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into these reports to understand the trends and per site level details for all sites.
 

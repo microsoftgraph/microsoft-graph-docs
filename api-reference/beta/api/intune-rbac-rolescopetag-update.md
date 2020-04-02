@@ -1,9 +1,10 @@
 ---
 title: "Update roleScopeTag"
 description: "Update the properties of a roleScopeTag object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update roleScopeTag
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
+|isBuiltIn|Boolean|Description of the Role Scope Tag.|
 
 
 
@@ -62,12 +64,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScopeTagId}
 Content-type: application/json
-Content-length: 133
+Content-length: 155
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
 
@@ -76,16 +79,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 182
+Content-Length: 204
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
-
 
 
 

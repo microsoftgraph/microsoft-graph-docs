@@ -1,16 +1,19 @@
 ---
-title: "Create Application"
-description: "Use this API to create a new application."
-author: "VinodRavichandran"
+title: "Create application"
+description: "Create a new application."
+author: "sureshja"
 localization_priority: Priority
-ms.prod: "microsoft-teams"
+doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
 ---
 
-# Create Application
+# Create application
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new application.
+Create a new [application](../resources/application.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,15 +37,17 @@ POST /applications
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_application_from_applications"
@@ -53,13 +58,27 @@ Content-type: application/json
 Content-length: 67
 
 {
-  "allowPublicClient": true,
   "displayName": "Display name"
 }
 ```
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-applications-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-from-applications-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-applications-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -72,20 +91,33 @@ Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
-    "id": "b5b2920e-a47c-43b7-91ef-25ae96fddddd",
+    "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
-    "api": {
-        "acceptedAccessTokenVersion": 2,
-        "publishedPermissionScopes": []
-    },
-    "allowPublicClient": true,
-    "applicationAliases": [],
-    "appRoles": [],
-    "createdDateTime": "2017-05-25T16:33:04.3646617Z",
-    "installedClients": {
-        "redirectUrls": []
-    },
+    "isFallbackPublicClient": null,
+    "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+    "applicationTemplateId": null,
+    "identifierUris": [],
+    "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
+    "isDeviceOnlyAuthSupported": null,
+    "groupMembershipClaims": null,
+    "optionalClaims": null,
+    "addIns": [],
+    "publisherDomain": "contoso.onmicrosoft.com",
+    "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "publicClient": {
+        "redirectUris": []
+    },
     "info": {
         "termsOfServiceUrl": null,
         "supportUrl": null,
@@ -94,28 +126,23 @@ Content-length: 1145
         "logoUrl": null
     },
     "keyCredentials": [],
-    "orgRestrictions": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
     "passwordCredentials": [],
-    "preAuthorizedApplications": [],
     "requiredResourceAccess": [],
-    "tags": [],
     "web": {
-        "redirectUrls": [],
+        "redirectUris": [],
+        "homePageUrl": null,
         "logoutUrl": null,
-        "oauth2AllowImplicitFlow": null
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
     }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_application_from_applications-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_application_from_applications-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -127,8 +154,6 @@ Content-length: 1145
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/application-post-applications.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/application-post-applications.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

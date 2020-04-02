@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementCollectionSettingInstance resource type"
 description: "A setting instance representing a collection of values"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementCollectionSettingInstance resource type
@@ -54,8 +55,6 @@ Here is a JSON representation of the resource.
   "valueJson": "String"
 }
 ```
-
-
 
 
 

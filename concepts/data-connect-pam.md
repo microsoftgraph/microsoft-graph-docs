@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Microsoft Graph data connect integration with Privileged Access Management
 
-Microsoft Graph data connect relies on Privileged Access Management (PAM) to allow Office 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Office 365 administrator during enablement. To set up the approver group, see [Get started](/concepts/data-connect-get-started.md).
+Microsoft Graph data connect relies on Privileged Access Management (PAM) to allow Office 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Office 365 administrator during enablement. To set up the approver group, see [Get started](data-connect-get-started.md).
 
 Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Office 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data, or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline. 
 
@@ -42,9 +42,9 @@ Data connect pipelines must be approved by a member of a data access request app
 
 Use the following steps to interact with a request using the Exchange Online PowerShell module:
 
-1. Install the Exchange Online Powershell module. For installation instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+1. Install the Exchange Online Powershell module. For installation instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
 
-2. Connect to Exchange Online Powershell using multi-factor authentication (MFA). For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+2. Connect to Exchange Online Powershell using multi-factor authentication (MFA). For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
     >**Note**: You do not need to enable multi-factor authentication for your organization to use these steps while connecting to Exchange Online PowerShell. Connecting with MFA creates an OAuth token that is used by PAM for signing your requests.
 
 3. Sign in with your account. Note that you must be part of the configured data access approver group in order to be able to approve, deny, or revoke requests. Guest users cannot approve requests, even if they are in the approver group. 
@@ -163,4 +163,4 @@ The following table shows the names of the datasets and the columns for which th
 
 ## Next Steps
 
-Ensure your organization has Privileged Access Management configured correctly for usage with Microsoft Graph data by completing the steps in [Get started](/concepts/data-connect-get-started.md).
+Ensure your organization has Privileged Access Management configured correctly for usage with Microsoft Graph data by completing the steps in [Get started](data-connect-get-started.md).

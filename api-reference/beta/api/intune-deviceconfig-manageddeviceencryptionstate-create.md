@@ -1,9 +1,10 @@
 ---
 title: "Create managedDeviceEncryptionState"
 description: "Create a new managedDeviceEncryptionState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create managedDeviceEncryptionState
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -55,6 +56,7 @@ The following table shows the properties that are required when you create the m
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Device encryption state. Possible values are: `notEncrypted`, `encrypted`.|
 |encryptionPolicySettingState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Encryption policy setting state. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |advancedBitLockerStates|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|Advanced BitLocker State. Possible values are: `success`, `noUserConsent`, `osVolumeEncryptionMethodMismatch`, `osVolumeTpmRequired`, `osVolumeTpmOnlyRequired`, `osVolumeTpmPinRequired`, `osVolumeTpmStartupKeyRequired`, `osVolumeTpmPinStartupKeyRequired`, `osVolumeUnprotected`, `recoveryKeyBackupFailed`, `fixedDriveNotEncrypted`, `fixedDriveEncryptionMethodMismatch`, `loggedOnUserNonAdmin`, `windowsRecoveryEnvironmentNotConfigured`, `tpmNotAvailable`, `tpmNotReady`, `networkError`.|
+|fileVaultStates|[fileVaultState](../resources/intune-deviceconfig-filevaultstate.md)|FileVault State. Possible values are: `success`, `driveEncryptedByUser`, `userDeferredEncryption`, `escrowNotEnabled`.|
 |policyDetails|[encryptionReportPolicyDetails](../resources/intune-deviceconfig-encryptionreportpolicydetails.md) collection|Policy Details|
 
 
@@ -69,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryptionStates
 Content-type: application/json
-Content-length: 658
+Content-length: 704
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceEncryptionState",
@@ -82,6 +84,7 @@ Content-length: 658
   "encryptionState": "encrypted",
   "encryptionPolicySettingState": "notApplicable",
   "advancedBitLockerStates": "noUserConsent",
+  "fileVaultStates": "driveEncryptedByUser",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -97,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 707
+Content-Length: 753
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceEncryptionState",
@@ -111,6 +114,7 @@ Content-Length: 707
   "encryptionState": "encrypted",
   "encryptionPolicySettingState": "notApplicable",
   "advancedBitLockerStates": "noUserConsent",
+  "fileVaultStates": "driveEncryptedByUser",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -120,7 +124,6 @@ Content-Length: 707
   ]
 }
 ```
-
 
 
 

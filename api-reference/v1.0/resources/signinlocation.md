@@ -4,9 +4,12 @@ description: "Provides the city, state and country/region from where the sign-in
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # signInLocation resource type
+
+Namespace: microsoft.graph
 
 Provides the city, state and country/region from where the sign-in happened.
 

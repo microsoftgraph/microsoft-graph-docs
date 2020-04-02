@@ -4,9 +4,12 @@ description: "."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: BoundingRect
+
+Namespace: microsoft.graph
 
 Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E16".
 ## Permissions

@@ -7,31 +7,31 @@ author: nmetulev
 
 # Agenda component in the Microsoft Graph Toolkit
 
-The `mgt-agenda` web component represents events in a user or group calendar. By default, the calendar displays the current signed in user events for the current day. The component can also use any endpoint that returns events from Microsoft Graph. 
+The `mgt-agenda` web component represents events in a user or group calendar. By default, the calendar displays the current signed in user events for the current day. The component can also use any endpoint that returns events from Microsoft Graph.
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/ojt2c7vp/)
+The following example shows the signed-in user's calendar events displayed using the `mgt-agenda` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-agenda group-by-day></mgt-agenda>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-![mgt-agenda](./images/mgt-agenda.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## Properties
 
 By default, the `mgt-agenda` component fetches events from the `/me/calendarview` endpoint and displays events for the current day. There are several properties you can use to change this behavior.
 
-| Property | Attribute | Description |
+| Attribute | Property | Description |
 | --- | --- | --- |
-| `groupByDay` | `group-by-day` | A Boolean value to group events by day - by default events are not grouped. |
-| `date` | `date` | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
-| `days` | `days` | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
-| `eventQuery` | `event-query` | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`"/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all"`). |
-| `events` | `events` | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
+| date | date | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
+| days | days | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
+| show-max | showMax | A number to indicate the maximum number of events to show. The default value is not set (no maximum). |
+| group-id | groupId | A string ID for a group calendar to use instead of the current signed in user's calendar. |
+| event-query | eventQuery | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
+| events | events | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
+| group-by-day | groupByDay | A Boolean value to group events by day - by default events are not grouped. |
 
-The following example changes the behavior of the component to fetch data for a specific date and up to 3 days.
+The following example changes the behavior of the component to fetch data for a specific date and up to three days.
 
 ```html
 <mgt-agenda
@@ -49,7 +49,7 @@ The following example changes the behavior of the component to fetch data from a
   ></mgt-agenda>
 ```
 
-## CSS Custom properties
+## CSS custom properties
 
 The `mgt-agenda` component defines these CSS custom properties
 
@@ -115,17 +115,26 @@ The following examples illustrates how to use the `event` template:
 
 To learn more, see [templates](../templates.md).
 
+## Events
+
+The following events are fired from the control.
+
+| Event | Description |
+| --- | --- |
+| eventClick | The user clicks or taps on an event.|
+
+
 ## Graph scopes
 
 This component uses the following Microsoft Graph APIs and permissions:
 
 | resource | permission/scope |
 | - | - |
-| [/me/calendarview](https://docs.microsoft.com/en-us/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the scope at the end of the string, delimited by `|`
 
 ## Authentication
 
-The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md). 
+The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md).
 

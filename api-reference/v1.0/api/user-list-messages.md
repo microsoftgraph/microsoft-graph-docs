@@ -4,9 +4,12 @@ description: "Get the messages in the signed-in user's mailbox (including the De
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List messages
+
+Namespace: microsoft.graph
 
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
 
@@ -21,14 +24,16 @@ There are two scenarios where an app can get messages in another user's mail fol
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
 
+> **Note** Be aware of the [known issue](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) that this operation includes Microsoft Teams chat messages in its response.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 
@@ -50,6 +55,19 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+### Using filter and orderby in the same query
+When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:
+
+1. Properties that appear in `$orderby` must also appear in `$filter`. 
+2. Properties that appear in `$orderby` are in the same order as in `$filter`.
+3. Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.
+
+Failing to do this results in the following error:
+
+- Error code: `InefficientFilter`
+- Error message: `The restriction or sort order is too complex for this operation.`
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -67,13 +85,33 @@ If successful, this method returns a `200 OK` response code and collection of [M
 ## Example
 ##### Request
 This example gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
@@ -207,16 +245,6 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_messages-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_messages-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -227,7 +255,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-list-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

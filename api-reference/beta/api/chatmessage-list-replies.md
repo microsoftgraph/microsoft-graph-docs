@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List replies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of chatmessage objects.
@@ -23,13 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Chat.Read.All |
 
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /chats/{id}/messages/{id}/replies
-GET /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## Optional query parameters
@@ -55,14 +59,30 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_replies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -116,5 +136,7 @@ Content-type: application/json
   "description": "List replies",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

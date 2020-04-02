@@ -1,9 +1,10 @@
 ---
 title: "Get managedAppProtection"
 description: "Read properties and relationships of the managedAppProtection object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedAppProtection
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +36,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2112
+Content-Length: 2467
 
 {
   "value": {
@@ -110,11 +111,19 @@ Content-Length: 2112
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
-    "notificationRestriction": "blockOrganizationalData"
+    "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "managedBrowser": "microsoftEdge",
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe",
+    "blockDataIngestionIntoOrganizationDocuments": true,
+    "allowedDataIngestionLocations": [
+      "sharePoint"
+    ],
+    "appActionIfUnableToAuthenticateUser": "wipe"
   }
 }
 ```
-
 
 
 

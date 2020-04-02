@@ -1,9 +1,10 @@
 ---
 title: "Update deviceComplianceActionItem"
 description: "Update the properties of a deviceComplianceActionItem object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceComplianceActionItem
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -94,7 +95,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 

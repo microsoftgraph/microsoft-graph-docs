@@ -2,9 +2,14 @@
 title: "networkConnection resource type"
 description: "Contains stateful information about the network connection related to the alert."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # networkConnection resource type
+
+Namespace: microsoft.graph
 
 Contains stateful information about the network connection related to the alert.
 

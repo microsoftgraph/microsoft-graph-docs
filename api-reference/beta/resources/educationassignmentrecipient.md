@@ -4,9 +4,12 @@ description: "Used within the **assignments.assignTo** property. This superclass
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentRecipient resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

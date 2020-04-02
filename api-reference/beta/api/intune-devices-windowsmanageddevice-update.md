@@ -1,9 +1,10 @@
 ---
 title: "Update windowsManagedDevice"
 description: "Update the properties of a windowsManagedDevice object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsManagedDevice
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -30,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
+PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
@@ -48,74 +50,78 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userId|String|Unique Identifier for the user associated with the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceName|String|Name of the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|ownerType|[ownerType](../resources/intune-devices-ownertype.md)|Ownership of the device. Can be 'company' or 'personal' Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `company`, `personal`.|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal' Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `company`, `personal`.|
-|deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection|List of ComplexType deviceActionResult objects. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementState|[managementState](../resources/intune-devices-managementstate.md)|Management state of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|enrolledDateTime|DateTimeOffset|Enrollment time of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
-|operatingSystem|String|Operating system of the device. Windows, iOS, etc. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
-|jailBroken|String|whether the device is jail broken or rooted. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
-|osVersion|String|Operating system version of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|easActivated|Boolean|Whether the device is Exchange ActiveSync activated. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|easDeviceId|String|Exchange ActiveSync Id of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|aadRegistered|Boolean|Whether the device is Azure Active Directory registered. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `disabled`, `enabled`.|
-|activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|emailAddress|String|Email(s) for the user associated with the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Device registration state. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|String|Device category display name Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isSupervised|Boolean|Device supervised status Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
-|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isEncrypted|Boolean|Device encryption status Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userPrincipalName|String|Device user principal name Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|model|String|Model of the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|manufacturer|String|Manufacturer of the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|imei|String|IMEI Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|serialNumber|String|SerialNumber Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|phoneNumber|String|Phone number of the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|androidSecurityPatchLevel|String|Android security patch level Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userDisplayName|String|User display name Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|wiFiMacAddress|String|Wi-Fi MAC Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|The device health attestation state. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|subscriberCarrier|String|Subscriber Carrier Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|meid|String|MEID Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|totalStorageSpaceInBytes|Int64|Total Storage in Bytes Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|id|String|Unique Identifier for the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|userId|String|Unique Identifier for the user associated with the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceName|String|Name of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|The hardward details for the device.  Includes information such as storage space, manufacturer, serial number, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Ownership of the device. Can be 'company' or 'personal' Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `company`, `personal`.|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal' Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `company`, `personal`.|
+|deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection|List of ComplexType deviceActionResult objects. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementState|[managementState](../resources/intune-devices-managementstate.md)|Management state of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
+|enrolledDateTime|DateTimeOffset|Enrollment time of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
+|operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `blackberry`, `palm`, `unknown`.|
+|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
+|jailBroken|String|whether the device is jail broken or rooted. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
+|osVersion|String|Operating system version of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
+|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `disabled`, `enabled`.|
+|activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|emailAddress|String|Email(s) for the user associated with the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureActiveDirectoryDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Device registration state. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
+|deviceCategoryDisplayName|String|Device category display name. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|isSupervised|Boolean|Device supervised status. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
+|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|isEncrypted|Boolean|Device encryption status. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|userPrincipalName|String|Device user principal name. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|model|String|Model of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|manufacturer|String|Manufacturer of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|imei|String|IMEI. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|serialNumber|String|SerialNumber. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|phoneNumber|String|Phone number of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|androidSecurityPatchLevel|String|Android security patch level. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|userDisplayName|String|User display name. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|wiFiMacAddress|String|Wi-Fi MAC. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|The device health attestation state. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|subscriberCarrier|String|Subscriber Carrier. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|meid|String|MEID. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|totalStorageSpaceInBytes|Int64|Total Storage in Bytes. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|freeStorageSpaceInBytes|Int64|Free Storage in Bytes. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
-|retireAfterDateTime|DateTimeOffset|Indicates the time after when a device will be auto retired because of scheduled action. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|udid|String|Unique Device Identifier for iOS and macOS devices. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|retireAfterDateTime|DateTimeOffset|Indicates the time after when a device will be auto retired because of scheduled action. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) collection|Indicates the last logged on users of a device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolean|Reports if the managed iOS device is user approval enrollment. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|managementCertificateExpirationDate|DateTimeOffset|Reports device management certificate expiration date. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|String|Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|udid|String|Unique Device Identifier for iOS and macOS devices. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this Device instance. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|windowsActiveMalwareCount|Int32|Count of active malware for this windows device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|windowsActiveMalwareCount|Int32|Count of active malware for this windows device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Notes on the device created by IT Admin Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|ethernetMacAddress|String|Ethernet MAC. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|physicalMemoryInBytes|Int64|Total Memory in Bytes. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 
 
 
@@ -129,7 +135,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7293
+Content-length: 7665
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -166,7 +172,8 @@ Content-length: 7293
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -296,7 +303,15 @@ Content-length: 7293
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
-  }
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
+  },
+  "ethernetMacAddress": "Ethernet Mac Address value",
+  "physicalMemoryInBytes": 5,
+  "processorArchitecture": "x86"
 }
 ```
 
@@ -305,7 +320,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7342
+Content-Length: 7714
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -343,7 +358,8 @@ Content-Length: 7342
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -473,10 +489,17 @@ Content-Length: 7342
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
-  }
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
+  },
+  "ethernetMacAddress": "Ethernet Mac Address value",
+  "physicalMemoryInBytes": 5,
+  "processorArchitecture": "x86"
 }
 ```
-
 
 
 

@@ -3,9 +3,13 @@ title: "ListItemVersion resource type"
 description: "The **listItemVersion** resource represents a previous version of a ListItem resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
+author: ""
+doc_type: resourcePageType
 ---
 
 # ListItemVersion resource type
+
+Namespace: microsoft.graph
 
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
 

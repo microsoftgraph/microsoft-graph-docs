@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
+description: "The Shared resource indicates a DriveItem has been shared with others."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Shared resource type
+
+Namespace: microsoft.graph
 
 The **Shared** resource indicates a DriveItem has been shared with others.
 The resource includes information about how the item is shared.

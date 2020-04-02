@@ -4,9 +4,12 @@ description: "Workbook is the top level object which contains related workbook o
 localization_priority: Priority
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Workbook resource type
+
+Namespace: microsoft.graph
 
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 

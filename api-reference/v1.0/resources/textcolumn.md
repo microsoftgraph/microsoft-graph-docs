@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
+description: "The textColumn on a columnDefinition resource indicates that the column's values are text."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # TextColumn resource type
+
+Namespace: microsoft.graph
 
 The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.
 

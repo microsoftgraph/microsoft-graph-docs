@@ -1,9 +1,10 @@
 ---
 title: "Working with Excel in Microsoft Graph"
-description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the Drive API by identifying the location of the file in the URL. For example:"
+description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive."
 localization_priority: Priority
-author: "lumine2008"
+author: "grangery"
 ms.prod: "excel"
+doc_type: conceptualPageType
 ---
 
 # Working with Excel in Microsoft Graph
@@ -88,7 +89,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Note: If the session id has expired, a `404` HTTP error code is returned on the session. In such a scenarion, you can choose to create a new session and continue. Another approach would be to refresh the session periodically to keep the session alive. Typically the persistent session expires after about 7 minutes of inactivity. Non persistent session expires after about 5 minutes of inactivity. 
+>Note: If the session id has expired, a `404` HTTP error code is returned on the session. In such a scenarion, you can choose to create a new session and continue. Another approach would be to refresh the session periodically to keep the session alive. Typically the persistent session expires after about 5 minutes of inactivity. Non persistent session expires after about 7 minutes of inactivity. 
 
 ## Common Excel scenarios
 
@@ -1177,6 +1178,9 @@ For example, a Range can consist of one or more cells. In cases where the indivi
 }
 ```
 
+A null value is also returned in the response in the following cases:
+- If an error occurs when trying to get a certain property of an object and this property can be set as a null, the property might return a null value in the response.
+- For a range object, when getting a range for entire row or entire column, some properties might return null as the response. If the range size exceeds the upper limitation (5M cells), some properties will return null as the value.
 
 ### Blank input and output
 

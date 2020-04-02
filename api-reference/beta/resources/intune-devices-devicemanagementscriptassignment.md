@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementScriptAssignment resource type"
 description: "Contains properties used to assign a device management script to a group."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptAssignment resource type
@@ -26,7 +27,7 @@ Contains properties used to assign a device management script to a group.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script group assignment entity.|
+|id|String|Key of the device management script group assignment entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Id of the Azure Active Directory group we are targeting the script to.|
 
 ## Relationships
@@ -49,8 +50,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

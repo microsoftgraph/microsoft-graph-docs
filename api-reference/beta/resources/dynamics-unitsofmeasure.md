@@ -6,10 +6,16 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: resourcePageType
 ---
 
 <!-- To be redirected --> 
 # unitsOfMeasure resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a unit of measure, which is a standard of measurement of a quantity, in Dynamics 365 Business Central.
 
 ## Methods

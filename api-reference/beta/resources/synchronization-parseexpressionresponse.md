@@ -2,9 +2,14 @@
 title: "parseExpressionResponse resource type"
 description: "Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action."
 localization_priority: Normal
+doc_type: resourcePageType
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # parseExpressionResponse resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

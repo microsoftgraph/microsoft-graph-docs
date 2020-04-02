@@ -1,9 +1,10 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # wipe action
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -30,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
+POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/wipe
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/wipe
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/wipe
@@ -51,6 +53,7 @@ The following table shows the parameters that can be used with this action.
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
 |macOsUnlockCode|String|Not yet documented|
+|useProtectedWipe|Boolean|Not yet documented|
 
 
 
@@ -65,12 +68,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 109
+Content-length: 138
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
-  "macOsUnlockCode": "Mac Os Unlock Code value"
+  "macOsUnlockCode": "Mac Os Unlock Code value",
+  "useProtectedWipe": true
 }
 ```
 
@@ -79,7 +83,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -4,9 +4,12 @@ description: "Rich relationship connecting a user to documents that are trending
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # trending resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -16,7 +19,7 @@ Rich relationship connecting a user to documents that are trending around the us
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List trending](../api/insights-list-trending.md) |[insights_trending](insights-trending.md) collection| Get a list of trending files.|
+|[List trending](../api/insights-list-trending.md) |[trending](insights-trending.md) collection| Get a list of trending files.|
 
 ## Properties
 

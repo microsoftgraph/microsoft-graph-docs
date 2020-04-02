@@ -1,9 +1,10 @@
 ---
 title: "Create deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Create a new deviceEnrollmentPlatformRestrictionsConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceEnrollmentPlatformRestrictionsConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -45,13 +46,13 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|displayName|String|The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value. Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|id|String|Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|priority|Int32|Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ios restrictions based on platform, platform operating system version, and device ownership|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows restrictions based on platform, platform operating system version, and device ownership|
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows mobile restrictions based on platform, platform operating system version, and device ownership|
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 2231
+Content-length: 2763
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -85,49 +86,70 @@ Content-length: 2231
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   }
 }
 ```
@@ -137,7 +159,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2403
+Content-Length: 2935
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -153,53 +175,73 @@ Content-Length: 2403
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   }
 }
 ```
-
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "vpnOnDemandRule resource type"
 description: "VPN On-Demand Rule definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vpnOnDemandRule resource type
@@ -53,8 +54,6 @@ Here is a JSON representation of the resource.
   "probeRequiredUrl": "String"
 }
 ```
-
-
 
 
 

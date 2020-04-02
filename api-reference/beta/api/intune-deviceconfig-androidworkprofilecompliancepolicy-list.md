@@ -1,9 +1,10 @@
 ---
 title: "List androidWorkProfileCompliancePolicies"
 description: "List properties and relationships of the androidWorkProfileCompliancePolicy objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List androidWorkProfileCompliancePolicies
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1620
+Content-Length: 1687
 
 {
   "value": [
@@ -84,6 +85,7 @@ Content-Length: 1620
       "securityRequireVerifyApps": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "advancedThreatProtectionRequiredSecurityLevel": "secured",
       "securityBlockJailbrokenDevices": true,
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
@@ -98,7 +100,6 @@ Content-Length: 1620
   ]
 }
 ```
-
 
 
 

@@ -4,9 +4,12 @@ description: "Identifies the resource object that initiates the activity. The in
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # auditActivityInitiator resource type
+
+Namespace: microsoft.graph
 
 Identity the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered an app).
 

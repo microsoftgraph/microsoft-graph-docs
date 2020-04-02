@@ -1,9 +1,10 @@
 ---
 title: "iTunesPairingMode enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # iTunesPairingMode enum type
@@ -20,8 +21,6 @@ Not yet documented
 |disallow|0|Pairing is not allowed|
 |allow|1|Pairing allowed|
 |requiresCertificate|2|Certificate required to pair with iTunes|
-
-
 
 
 

@@ -2,18 +2,23 @@
 title: "licenseAssignmentState resource type"
 description: "The **licenseAssignmentStates** property of the user entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:  "
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # licenseAssignmentState resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:  
 
- - What plans are disabled for a user
- - Whether the license was assigned to the user directly or inherited from a group
- - Current state of the assignment
- - If the assignment state is Error, what is the error detail for the failure? 
+- What plans are disabled for a user
+- Whether the license was assigned to the user directly or inherited from a group
+- Current state of the assignment
+- If the assignment state is Error, what is the error detail for the failure? 
 
 
 ## Properties

@@ -1,9 +1,10 @@
 ---
 title: "windows10NetworkProxyServer resource type"
 description: "Network Proxy Server Policy."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10NetworkProxyServer resource type
@@ -41,8 +42,6 @@ Here is a JSON representation of the resource.
   "useForLocalAddresses": true
 }
 ```
-
-
 
 
 

@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
+description: "The FileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # FileSystemInfo facet
+
+Namespace: microsoft.graph
 
 The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
 This facet can be used to specify the last modified date or created date of the item as it was on the local device.

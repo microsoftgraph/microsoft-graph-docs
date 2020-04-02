@@ -2,9 +2,14 @@
 title: "privilegedRoleSummary resource type"
 description: "The statistics summary for a particular role."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedRoleSummary resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

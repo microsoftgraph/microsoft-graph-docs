@@ -170,8 +170,8 @@ For example, **getSchedule** can return the free/busy status and working hours o
 - The event is marked with low sensitivity level - `normal` or `personal` - 
 AND one or more of the following conditions apply:
 
-   - The requested user’s calendar settings allow the signed-in user to view subject lines and locations
-   - The requested user’s calendar is shared with the signed-in user
+  - The requested user’s calendar settings allow the signed-in user to view subject lines and locations
+  - The requested user’s calendar is shared with the signed-in user
 
 These conditions apply regardless of whether the signed-in user is an administrator in the organization. The requested user has control over the event data returned.
 

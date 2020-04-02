@@ -189,7 +189,7 @@ Content-Type: application/json
 {
   "error": {
     "code": "ErrorSendAsDenied",
-    "message": "The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account., Cannot submit message.",
+    "message": "The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account. Cannot submit message.",
     "innerError": {
       "request-id": "24e7991e-01ae-4cc2-8e06-532a96fd8948",
       "date": "2019-01-16T18:53:25"

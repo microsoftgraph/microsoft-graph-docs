@@ -4,9 +4,12 @@ description: "Describes the teamsTemplate entity."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamsTemplate resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

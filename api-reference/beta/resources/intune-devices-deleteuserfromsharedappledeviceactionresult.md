@@ -1,9 +1,10 @@
 ---
 title: "deleteUserFromSharedAppleDeviceActionResult resource type"
 description: "Delete user from shared apple device action result"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deleteUserFromSharedAppleDeviceActionResult resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

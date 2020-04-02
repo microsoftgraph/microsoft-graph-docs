@@ -4,9 +4,12 @@ description: "Use this API to add a member (user or group) to an administrative 
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Add a member
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +38,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.
 
 ## Response
 
@@ -55,7 +58,7 @@ Content-length: 109
 }
 
 ```
-In the request body, supply a JSON representation of the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
+In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
 ##### Response
 Here is an example of the response.

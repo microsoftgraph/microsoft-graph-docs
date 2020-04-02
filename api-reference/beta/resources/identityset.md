@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The identitySet resource is a keyed collection of identity resources."
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # identitySet resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

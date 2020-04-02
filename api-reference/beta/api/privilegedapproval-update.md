@@ -2,9 +2,14 @@
 title: "Update privilegedapproval"
 description: "Update the properties of privilegedapproval object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Update privilegedapproval
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /privilegedApproval/<id>
+PATCH /privilegedApproval/{id}
 ```
 ## Optional request headers
 | Name       | Description|

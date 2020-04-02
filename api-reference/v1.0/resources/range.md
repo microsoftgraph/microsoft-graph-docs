@@ -4,9 +4,12 @@ description: "Range represents a set of one or more contiguous cells such as a c
 localization_priority: Priority
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Range resource type
+
+Namespace: microsoft.graph
 
 Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 

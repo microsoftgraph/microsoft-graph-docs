@@ -2,9 +2,14 @@
 title: "responseStatus resource type"
 description: "The response status of a meeting request."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # responseStatus resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

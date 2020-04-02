@@ -4,15 +4,18 @@ description: "Retrieve the list of messages (without the replies) in a channel o
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List channel messages
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). 
 
-To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) API. 
+To get the replies for a message, call the [list message replies](channel-list-messagereplies.md) or the [get message reply](channel-get-messagereply.md) API. 
 
 ## Permissions
 
@@ -20,9 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application| Not supported. |
+|Application| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
+
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 
@@ -35,6 +41,8 @@ GET /teams/{id}/channels/{id}/messages
 
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
+
+> **Note:** [GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to GET /teams/{id}/channels/{id}/messages.
 
 ## Request headers
 
@@ -55,14 +63,30 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"],
   "name": "get_channel_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. 
 
@@ -222,16 +246,6 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_channel_messages-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_channel_messages-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -243,8 +257,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messages.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/channel-list-messages.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

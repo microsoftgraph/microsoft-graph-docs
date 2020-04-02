@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Upload small files
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
+doc_type: apiPageType
 ---
 # Upload or replace the contents of a DriveItem
+
+Namespace: microsoft.graph
 
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
 This method only supports files up to 4MB in size.
@@ -90,6 +94,8 @@ Content-Type: application/json
 
 This example replaces the contents of a file with a known ID.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -98,6 +104,16 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -116,16 +132,6 @@ Content-Type: application/json
   "file": { }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/upload-via-put-id-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/upload-via-put-id-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error responses
 
@@ -141,7 +147,5 @@ how errors are returned.
   "keywords": "insert,upsert,update,upload",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-put-content.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-put-content.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

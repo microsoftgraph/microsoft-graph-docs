@@ -1,11 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # System facet
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

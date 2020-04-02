@@ -1,9 +1,10 @@
 ---
 title: "importedAppleDeviceIdentity resource type"
 description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # importedAppleDeviceIdentity resource type
@@ -33,10 +34,11 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device|
 |isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|isDeleted|Boolean|Indicates if the device is deleted from Apple Business Manager|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## Relationships
@@ -59,6 +61,7 @@ Here is a JSON representation of the resource.
   "requestedEnrollmentProfileAssignmentDateTime": "String (timestamp)",
   "isSupervised": true,
   "discoverySource": "String",
+  "isDeleted": true,
   "createdDateTime": "String (timestamp)",
   "lastContactedDateTime": "String (timestamp)",
   "description": "String",
@@ -66,8 +69,6 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
-
-
 
 
 

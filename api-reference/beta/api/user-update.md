@@ -1,12 +1,15 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
+doc_type: apiPageType
 ---
 
 # Update user
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,14 +20,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
 > - When updating the **passwordProfile** property, the following permission is required: Directory.AccessAsUser.All.
 > - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader, and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
 
+>[!NOTE]
+>Updating the **identities** property requires the User.ManageIdentities.All permission. Also, adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -55,6 +60,7 @@ In the request body, supply the values for relevant fields that should be update
 |employeeId|String|The employee identifier assigned to the user by the organization.|
 |givenName|String|The given name (first name) of the user.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Any update to **identities** will replace the entire collection and you must supply the userPrincipalName **signInType** identity in the collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
@@ -84,9 +90,16 @@ add, update, or delete your own app-specific data in custom properties of an ext
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
 ## Example
-##### Request
-Here is an example of the request.
+
+### Example 1: Update properties of the signed-in user
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_user"
@@ -94,32 +107,31 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me
 Content-type: application/json
-Content-length: 491
 
 {
-  "accountEnabled": true,
-  "assignedLicenses": [
-    {
-      "disabledPlans": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value"
+  "officeLocation": "city-value"
 }
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -128,16 +140,56 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_user-Cs-snippets.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_user-Javascript-snippets.md)]
+### Example 2: Update properties of the specified user
+
+#### Request
+
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_other_user"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "officeLocation": "city-value"
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-other-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-other-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-other-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
 ## See also
 
@@ -155,8 +207,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

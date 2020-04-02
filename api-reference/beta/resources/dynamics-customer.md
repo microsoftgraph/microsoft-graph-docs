@@ -4,14 +4,16 @@ description: "Represents an customer object in Dynamics 365 Business Central."
 localization_priority: Normal
 author: henrikwh
 ms.prod: "dynamics-365-business-central"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
-# customer resource type
+# customers resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an customer object in Dynamics 365 Business Central.
+Represents a customer in Dynamics 365 Business Central.
 
 ## Methods
 

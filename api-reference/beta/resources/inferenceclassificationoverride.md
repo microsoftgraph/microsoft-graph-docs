@@ -2,9 +2,14 @@
 title: "inferenceClassificationOverride resource type"
 description: "Represents a user's override for how incoming messages from a specific sender should always be classified as"
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # inferenceClassificationOverride resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

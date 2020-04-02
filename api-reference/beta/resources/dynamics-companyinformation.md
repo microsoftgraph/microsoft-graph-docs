@@ -9,9 +9,11 @@ doc_type: "resourcePageType"
 
 # companyInformation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an companyInformation object in Dynamics 365 Business Central.
+Represents the information specified for the current company in Dynamics 365 Business Central, such as name, address, email address, and website address.
 
 ## Methods
 
@@ -23,7 +25,7 @@ Represents an companyInformation object in Dynamics 365 Business Central.
 
 ## Properties
 
-| Property	   | Type	   |Description                           |
+| Property       | Type       |Description                           |
 |:-------------|:--------|:-------------------------------------|
 |id            |string|The unique ID of the company. Non-editable.|
 |displayName   |string   |The company's display name.           |

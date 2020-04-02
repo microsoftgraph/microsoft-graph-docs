@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
+description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # ThumbnailSet resource type
+
+Namespace: microsoft.graph
 
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
 It is used to represent a set of thumbnails associated with a DriveItem.

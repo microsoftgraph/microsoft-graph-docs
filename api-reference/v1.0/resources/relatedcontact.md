@@ -4,9 +4,12 @@ description: "Contact record related to an educationUser that provides informati
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # realtedContact resource type
+
+Namespace: microsoft.graph
 
 Contact record related to an [educationUser](../resources/educationuser.md) that provides information for guardians, aides, doctors, and so on.
 

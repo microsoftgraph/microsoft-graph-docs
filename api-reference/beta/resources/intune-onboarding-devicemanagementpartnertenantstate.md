@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementPartnerTenantState enum type"
 description: "Partner state of this tenant."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementPartnerTenantState enum type
@@ -23,8 +24,6 @@ Partner state of this tenant.
 |terminated|3|Partner connection is terminated.|
 |rejected|4|Partner messages are rejected.|
 |unresponsive|5|Partner is unresponsive.|
-
-
 
 
 

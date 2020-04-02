@@ -1,9 +1,10 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update user
@@ -26,7 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 
@@ -89,6 +94,13 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
+
+
+
+
+
 
 
 

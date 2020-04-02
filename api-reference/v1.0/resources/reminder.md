@@ -2,9 +2,14 @@
 title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # reminder resource type
+
+Namespace: microsoft.graph
 
 A reminder for an [event](event.md) in a user [calendar](calendar.md).
 

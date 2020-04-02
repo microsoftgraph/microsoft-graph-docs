@@ -1,20 +1,22 @@
 ---
 title: "Patch channel"
 description: "Update the properties of the specified channel."
-author: "nkramer"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Patch channel
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [channel](../resources/channel.md).
 
-> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -37,15 +39,22 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
+
+> Note: You cannot update the `membershipType` value for an existing channel.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -53,7 +62,14 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### Response
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -80,6 +96,7 @@ Content-length: 201
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+  ]
 }
 -->

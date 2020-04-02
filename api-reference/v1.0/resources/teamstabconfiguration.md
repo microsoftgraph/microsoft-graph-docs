@@ -4,9 +4,12 @@ description: "The settings that determine the content of a tab."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # teamsTabConfiguration resource type (Open Type)
+
+Namespace: microsoft.graph
 
 
 

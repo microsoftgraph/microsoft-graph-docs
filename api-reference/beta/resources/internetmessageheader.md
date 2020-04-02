@@ -2,9 +2,14 @@
 title: "internetMessageHeader resource type"
 description: "A key-value pair that represents an Internet message header, as defined by RFC5322, that provides "
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # internetMessageHeader resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

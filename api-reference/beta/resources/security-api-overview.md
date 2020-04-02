@@ -4,11 +4,12 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Priority
 author: "preetikr"
 ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # Use the Microsoft Graph Security API
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph Security API to build applications that:
 
@@ -32,15 +33,16 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 |[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-simulations)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) *| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|Office 365 <ul><li> [Default](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/en-us/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) *| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|Office 365 <ul><li> [Default](https://docs.microsoft.com/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph Security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* Azure Advanced Threat Protection alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure Advanced Threat Protection alerts only if you have joined the [Unified SecOps preview program](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) and connected Azure Advanced Threat Protection into Microsoft Cloud App Security.
+\* Microsoft Defender Advanced Threat Protection requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph Security API. Only the users in both Microsoft Defender Advanced Threat Protection and Microsoft Graph Security API roles can have access to the Microsoft Defender Advanced Threat Protection data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
+
+\*\* Azure Advanced Threat Protection alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure Advanced Threat Protection alerts only if you have joined the [Unified SecOps preview program](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) and connected Azure Advanced Threat Protection into Microsoft Cloud App Security.
 
 ## Threat indicators (preview)
 
@@ -53,11 +55,17 @@ You can integrate the [tiIndicator](tiindicator.md) entity into your application
 - [Palo Alto Networks MineMeld Threat Intelligence Sharing](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
 - [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the [TI sample](https://aka.ms/tipmispsample)
 
-Threat indicators sent via the Microsoft Graph Security API are available today in [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview) (preview), enabling you to correlate threat indicators with log data to get alerts on malicious activity. Support in other Microsoft security services, in including Azure Firewall, will be available soon.
+Threat indicators sent via the Microsoft Graph Security API are available today in the following products:
+
+- [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview) – Enables you to correlate threat indicators with log data to get alerts on malicious activity.
+- [Microsoft Defender ATP (Microsoft Defender Advanced Threat Protection)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Enables you to alert and/or block on threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+
+Support in other Microsoft security services will be available soon.
+
 
 ## Security Actions (preview)
 
-Take immediate action to defend against threats using the Microsoft Graph Security [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
+Take immediate action to defend against threats using the Microsoft Graph Security [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
 
   > **Note:** Currently security actions only support application permissions.
 

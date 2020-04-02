@@ -2,9 +2,14 @@
 title: "List members"
 description: "Retrieve a list of connector objects associated with a connectorGroup."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List members
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +47,7 @@ If successful, this method returns a `200 OK` response code and collection of [c
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_connectorgroup_members"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/members

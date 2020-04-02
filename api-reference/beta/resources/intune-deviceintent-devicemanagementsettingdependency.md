@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementSettingDependency resource type"
 description: "Dependency information for a setting"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementSettingDependency resource type
@@ -36,13 +37,14 @@ Here is a JSON representation of the resource.
   "definitionId": "String",
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "String"
+      ]
     }
   ]
 }
 ```
-
-
 
 
 

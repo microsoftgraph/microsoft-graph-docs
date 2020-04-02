@@ -4,8 +4,14 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
+description: "The SpecialFolder resource groups special folder-related data items into a single structure."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # SpecialFolder resource type
+
+Namespace: microsoft.graph
 
 The **SpecialFolder** resource groups special folder-related data items into a single structure.
 

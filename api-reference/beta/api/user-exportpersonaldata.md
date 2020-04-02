@@ -2,11 +2,14 @@
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
+doc_type: apiPageType
 ---
 
 # user: exportPersonalData
+
+Namespace: microsoft.graph
 
 Submits a data policy operation request, made by a company administrator to export an organizational user's data.
 
@@ -24,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id>/exportPersonalData
+POST /users/{id}/exportPersonalData
 
 ```
 ## Request headers
@@ -50,6 +53,8 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 
 ## Example
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_exportpersonaldata"
@@ -63,6 +68,20 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-exportpersonaldata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 ```http
@@ -71,16 +90,6 @@ Content-length: 48
   Retry-After: 60
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",
@@ -100,7 +109,5 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

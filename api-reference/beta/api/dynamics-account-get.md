@@ -13,6 +13,14 @@ doc_type: "apiPageType"
 
 Retrieve the properties and relationships of account object.
 
+# Get accounts
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve the properties and relationships of an account object for Dynamics 365 Business Central.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

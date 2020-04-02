@@ -4,9 +4,12 @@ description: "Get the free/busy availability information for a collection of use
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # calendar: getSchedule
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Int32|Represents the duration of a time slot in an **availabilityView** in the response. The default is 30 minutes, minimum is 6, maximum is 1440. Optional.|
+|availabilityViewInterval|Int32|Represents the duration of a time slot in an **availabilityView** in the response. The default is 30 minutes, minimum is 5, maximum is 1440. Optional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the period ends.|
 |schedules|String collection|A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the period starts.|
@@ -52,12 +55,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ##### Request
 The following example gets the availability information for two users for the specified date, time, and time zone.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/beta/me/calendar/getSchedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -71,14 +76,28 @@ Content-Type: application/json
         "dateTime": "2019-03-15T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "availabilityViewInterval": "60"
+    "availabilityViewInterval": 60
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-getschedule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.scheduleInformation",
   "isCollection": true

@@ -3,9 +3,13 @@ title: "averageComparativeScore resource type"
 description: "Contains various different scores based on different scopes."
 localization_priority: Normal
 author: preetikr
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 #  averageComparativeScore resource type
+
+Namespace: microsoft.graph
 
 Contains various different scores based on different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure).
 

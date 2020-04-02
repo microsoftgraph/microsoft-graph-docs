@@ -4,9 +4,12 @@ description: "Represents a domain associated with the tenant."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domain resource type
+
+Namespace: microsoft.graph
 
 Represents a domain associated with the tenant.
 
@@ -42,7 +45,7 @@ To associate a domain with a tenant:
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates the configured authentication type for the domain. The value is either *Managed* or *Federated*.<br> *Managed* indicates a cloud managed domain where Azure AD performs user authentication.<br>*Federated* indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable |
+|authenticationType|String| Indicates the configured authentication type for the domain. The value is either *Managed* or *Federated*.<br> *Managed* indicates a cloud managed domain where Azure AD performs user authentication.<br>*Federated* indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. This property is read-only and is not nullable. |
 |availabilityStatus|String| This property is always null except when the [verify](../api/domain-verify.md) action is used. When the [verify](../api/domain-verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either *AvailableImmediately* or *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique |
 |isAdminManaged|Boolean| The value of the property is false if the DNS record management of the domain has been delegated to Office 365. Otherwise, the value is true. Not nullable |

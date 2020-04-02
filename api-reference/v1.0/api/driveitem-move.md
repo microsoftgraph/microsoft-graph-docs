@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Move a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
+doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
+
+Namespace: microsoft.graph
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
@@ -59,6 +63,8 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
@@ -72,6 +78,24 @@ Content-type: application/json
   "name": "new-item-name.txt"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/move-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -94,16 +118,6 @@ Content-type: application/json
   }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/move-item-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/move-item-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error responses
 
@@ -119,7 +133,5 @@ how errors are returned.
   "section": "documentation",
   "tocPath": "Items/Move",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-move.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-move.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

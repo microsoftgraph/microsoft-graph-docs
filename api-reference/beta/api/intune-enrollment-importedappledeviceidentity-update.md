@@ -1,9 +1,10 @@
 ---
 title: "Update importedAppleDeviceIdentity"
 description: "Update the properties of a importedAppleDeviceIdentity object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update importedAppleDeviceIdentity
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -51,10 +52,11 @@ The following table shows the properties that are required when you create the [
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device|
 |isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
+|isDeleted|Boolean|Indicates if the device is deleted from Apple Business Manager|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
 |lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
 |description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
@@ -69,7 +71,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities/{importedAppleDeviceIdentityId}
 Content-type: application/json
-Content-length: 497
+Content-length: 519
 
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
@@ -78,6 +80,7 @@ Content-length: 497
   "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
   "isSupervised": true,
   "discoverySource": "adminImport",
+  "isDeleted": true,
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
   "enrollmentState": "enrolled",
@@ -90,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 605
+Content-Length: 627
 
 {
   "@odata.type": "#microsoft.graph.importedAppleDeviceIdentity",
@@ -100,6 +103,7 @@ Content-Length: 605
   "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
   "isSupervised": true,
   "discoverySource": "adminImport",
+  "isDeleted": true,
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
@@ -107,7 +111,6 @@ Content-Length: 605
   "platform": "ios"
 }
 ```
-
 
 
 

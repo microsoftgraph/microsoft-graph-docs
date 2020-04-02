@@ -4,9 +4,12 @@ description: "Get details about Yammer groups activity by group."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerGroupsActivityDetail
+
+Namespace: microsoft.graph
 
 Get details about Yammer groups activity by group.
 
@@ -22,7 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).
+
 ## HTTP request
+
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -76,15 +82,17 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
 <!--{
-  "blockType": "request",
+  "blockType": "ignored",
   "isComposable": true,
   "name": "reportroot_getyammergroupsactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(period='D7')
 ```
+
 
 #### Response
 
@@ -96,16 +104,6 @@ The following is an example of the response.
 HTTP/1.1 302 Found
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getyammergroupsactivityuserdetail-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getyammergroupsactivityuserdetail-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### Request
 If called with a `date`, the report is scoped to activity on the given date.
@@ -153,7 +151,5 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getyammergroupsactivitydetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getyammergroupsactivitydetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

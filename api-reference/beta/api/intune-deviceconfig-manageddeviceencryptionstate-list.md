@@ -1,9 +1,10 @@
 ---
 title: "List managedDeviceEncryptionStates"
 description: "List properties and relationships of the managedDeviceEncryptionState objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedDeviceEncryptionStates
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 812
+Content-Length: 862
 
 {
   "value": [
@@ -73,6 +74,7 @@ Content-Length: 812
       "encryptionState": "encrypted",
       "encryptionPolicySettingState": "notApplicable",
       "advancedBitLockerStates": "noUserConsent",
+      "fileVaultStates": "driveEncryptedByUser",
       "policyDetails": [
         {
           "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -84,7 +86,6 @@ Content-Length: 812
   ]
 }
 ```
-
 
 
 

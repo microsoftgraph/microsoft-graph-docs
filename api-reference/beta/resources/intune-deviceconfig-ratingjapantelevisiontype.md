@@ -1,9 +1,10 @@
 ---
 title: "ratingJapanTelevisionType enum type"
 description: "TV content rating labels in Japan"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingJapanTelevisionType enum type
@@ -20,8 +21,6 @@ TV content rating labels in Japan
 |allAllowed|0|Default value, allow all TV shows content|
 |allBlocked|1|Do not allow any TV shows content|
 |explicitAllowed|2|All TV content is explicitly allowed|
-
-
 
 
 

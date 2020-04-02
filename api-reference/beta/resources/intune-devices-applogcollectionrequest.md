@@ -1,9 +1,10 @@
 ---
 title: "appLogCollectionRequest resource type"
 description: "AppLogCollectionRequest Entity."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # appLogCollectionRequest resource type
@@ -56,8 +57,6 @@ Here is a JSON representation of the resource.
   "completedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

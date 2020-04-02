@@ -4,9 +4,12 @@ description: "Represents a version of the timeOff."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType_
 ---
 
 # timeOffItem resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

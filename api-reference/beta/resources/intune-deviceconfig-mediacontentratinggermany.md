@@ -1,9 +1,10 @@
 ---
 title: "mediaContentRatingGermany resource type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mediaContentRatingGermany resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "tvRating": "String"
 }
 ```
-
-
 
 
 

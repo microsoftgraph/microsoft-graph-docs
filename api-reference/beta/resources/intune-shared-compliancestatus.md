@@ -1,9 +1,10 @@
 ---
 title: "complianceStatus enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # complianceStatus enum type
@@ -25,8 +26,6 @@ Not yet documented
 |error|5|Not yet documented|
 |conflict|6|Not yet documented|
 |notAssigned|7|Not yet documented|
-
-
 
 
 

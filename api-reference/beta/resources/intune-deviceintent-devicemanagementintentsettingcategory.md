@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementIntentSettingCategory resource type"
 description: "Entity representing an intent setting category"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementIntentSettingCategory resource type
@@ -31,6 +32,7 @@ Inherits from [deviceManagementSettingCategory](../resources/intune-deviceintent
 |:---|:---|:---|
 |id|String|The category ID Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|The category name Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Boolean|The category contains top level required setting Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -50,11 +52,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "hasRequiredSetting": true
 }
 ```
-
-
 
 
 

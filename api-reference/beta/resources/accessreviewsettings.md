@@ -2,9 +2,14 @@
 title: "accessReviewSettings resource type"
 description: ""
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: ""
 ---
 
 # accessReviewSettings resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

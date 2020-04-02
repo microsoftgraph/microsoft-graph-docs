@@ -1,9 +1,10 @@
 ---
 title: "unsupportedDeviceConfigurationDetail resource type"
 description: "A description of why an entity is unsupported."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # unsupportedDeviceConfigurationDetail resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "propertyName": "String"
 }
 ```
-
-
 
 
 

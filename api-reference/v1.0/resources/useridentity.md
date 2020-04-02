@@ -4,9 +4,12 @@ description: "In the context of an Azure AD audit log, this represents the user 
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # userIdentity resource type
+
+Namespace: microsoft.graph
 
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 

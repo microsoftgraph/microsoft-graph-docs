@@ -4,9 +4,12 @@ description: "Contains stateful information about the user account."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # userSecurityState resource type
+
+Namespace: microsoft.graph
 
 Contains stateful information about the user account.
 

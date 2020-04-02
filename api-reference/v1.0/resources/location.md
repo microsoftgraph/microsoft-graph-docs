@@ -4,9 +4,12 @@ description: "Represents location information of an event."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # Location resource type
+
+Namespace: microsoft.graph
 
 Represents location information of an [event](event.md).
 

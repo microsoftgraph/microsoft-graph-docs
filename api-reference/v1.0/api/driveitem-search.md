@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Search for files
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Search the hierarchy of items for items matching a query."
+doc_type: apiPageType
 ---
 # Search for a DriveItems within a drive
+
+Namespace: microsoft.graph
 
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
@@ -49,18 +53,38 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 Here is an example of the request searching the current user's OneDrive
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/search(q='{search-query}')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/item-search-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/item-search-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-search-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
 This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
 If no items were found, an empty collection is returned.
 
-If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
+If there are too many matches the response will be paged and an **\@odata.nextLink** property will contain a URL to the next page of results.
 You can use the `$top` query parameter to specify the number of items in the page.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
@@ -87,16 +111,6 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/item_search-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/item_search-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Searching for items a user can access
 
@@ -105,11 +119,31 @@ To broaden the search scope, use the **search** method on the [Drive](../resourc
 
 ### Example
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/search(q='{search-query}')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/item-search-all-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/item-search-all-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-search-all-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -141,16 +175,6 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/item_search_all-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/item_search_all-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error responses
 
@@ -168,9 +192,5 @@ how errors are returned.
   "section": "documentation",
   "tocPath": "Items/Search",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 } -->

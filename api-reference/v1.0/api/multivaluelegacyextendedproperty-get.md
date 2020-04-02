@@ -2,9 +2,14 @@
 title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Get multiValueLegacyExtendedProperty
+
+Namespace: microsoft.graph
 
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 

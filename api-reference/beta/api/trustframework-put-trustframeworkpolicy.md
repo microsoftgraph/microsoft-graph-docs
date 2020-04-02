@@ -4,8 +4,11 @@ description: "This operation updates an existing trustFrameworkPolicy object, or
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # Update or create trustFrameworkPolicy
+
+Namespace: microsoft.graph
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -17,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.ReadWrite.TrustFramework, Policy.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|Policy.ReadWrite.TrustFramework|
 
 The work or school account must be a global administrator of the tenant.
 

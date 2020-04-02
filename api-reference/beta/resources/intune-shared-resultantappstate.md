@@ -1,9 +1,10 @@
 ---
 title: "resultantAppState enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # resultantAppState enum type
@@ -24,8 +25,6 @@ Not yet documented
 |pendingInstall|5|The installation of the application is in progress.|
 |unknown|99|The status of the application is unknown.|
 |notApplicable|-1|The application is not applicable.|
-
-
 
 
 

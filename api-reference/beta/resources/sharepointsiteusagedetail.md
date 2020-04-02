@@ -3,9 +3,13 @@ title: "sharePointSiteUsageDetail resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
+author: ""
 ---
 
 # sharePointSiteUsageDetail resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 

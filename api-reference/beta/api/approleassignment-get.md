@@ -2,9 +2,14 @@
 title: "Get appRoleAssignment"
 description: "Retrieve the properties and relationships of approleassignment object."
 localization_priority: Priority
+doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # Get appRoleAssignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/appRoleAssignments/{id}
-GET /servicePrincipals/{id}/appRoleAssignedTo
 GET /groups/{id}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -42,13 +48,29 @@ If successful, this method returns a `200 OK` response code and [appRoleAssignme
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_approleassignment"
 }-->
-```http
-GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -70,16 +92,6 @@ Content-length: 253
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_approleassignment-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_approleassignment-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,8 +103,6 @@ Content-length: 253
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/approleassignment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/approleassignment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -1,9 +1,10 @@
 ---
 title: "Create remoteAssistancePartner"
 description: "Create a new remoteAssistancePartner object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create remoteAssistancePartner
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -90,7 +91,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

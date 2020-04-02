@@ -1,9 +1,10 @@
 ---
 title: "keyUsages enum type"
 description: "Key Usage Options."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # keyUsages enum type
@@ -19,8 +20,6 @@ Key Usage Options.
 |:---|:---|:---|
 |keyEncipherment|1|Key Encipherment Usage.|
 |digitalSignature|2|Digital Signature Usage.|
-
-
 
 
 

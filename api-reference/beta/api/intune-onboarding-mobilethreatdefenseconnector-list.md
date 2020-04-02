@@ -1,9 +1,10 @@
 ---
 title: "List mobileThreatDefenseConnectors"
 description: "List properties and relationships of the mobileThreatDefenseConnector objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List mobileThreatDefenseConnectors
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 876
 
 {
   "value": [
@@ -66,6 +67,8 @@ Content-Length: 764
       "id": "e4bede14-de14-e4be-14de-bee414debee4",
       "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
       "partnerState": "available",
+      "androidMobileApplicationManagementEnabled": true,
+      "iosMobileApplicationManagementEnabled": true,
       "androidEnabled": true,
       "iosEnabled": true,
       "windowsEnabled": true,
@@ -81,7 +84,6 @@ Content-Length: 764
   ]
 }
 ```
-
 
 
 

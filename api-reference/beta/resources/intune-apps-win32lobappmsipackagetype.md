@@ -1,9 +1,10 @@
 ---
 title: "win32LobAppMsiPackageType enum type"
 description: "Indicates the package type of an MSI Win32LobApp."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # win32LobAppMsiPackageType enum type
@@ -20,8 +21,6 @@ Indicates the package type of an MSI Win32LobApp.
 |perMachine|0|Indicates a per-machine app package.|
 |perUser|1|Indicates a per-user app package.|
 |dualPurpose|2|Indicates a dual-purpose app package.|
-
-
 
 
 

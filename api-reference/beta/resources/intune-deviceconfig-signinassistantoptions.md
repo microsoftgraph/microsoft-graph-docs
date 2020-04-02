@@ -1,9 +1,10 @@
 ---
 title: "signInAssistantOptions enum type"
 description: "Values for the SignInAssistantSettings."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # signInAssistantOptions enum type
@@ -19,8 +20,6 @@ Values for the SignInAssistantSettings.
 |:---|:---|:---|
 |notConfigured|0|Not configured - wlidsvc Start will be set to SERVICE_DEMAND_START.|
 |disabled|1|Disabled - wlidsvc Start will be set to SERVICE_DISABLED.|
-
-
 
 
 

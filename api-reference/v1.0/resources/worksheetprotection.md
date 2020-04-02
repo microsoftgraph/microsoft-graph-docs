@@ -4,9 +4,12 @@ description: "Represents the protection of a sheet object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # WorksheetProtection resource type
+
+Namespace: microsoft.graph
 
 Represents the protection of a sheet object.
 

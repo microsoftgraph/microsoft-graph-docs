@@ -2,9 +2,14 @@
 title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # singleValueLegacyExtendedProperty resource type
+
+Namespace: microsoft.graph
 
 An extended property that contains a single value. 
 

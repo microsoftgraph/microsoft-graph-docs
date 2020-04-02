@@ -1,9 +1,10 @@
 ---
 title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsUserAccountControlSettings enum type
@@ -22,8 +23,6 @@ Possible values for Windows user account control settings.
 |notifyOnAppChanges|2|Notify on app changes.|
 |notifyOnAppChangesWithoutDimming|3|Notify on app changes without dimming desktop.|
 |neverNotify|4|Never notify.|
-
-
 
 
 

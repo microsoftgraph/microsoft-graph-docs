@@ -1,9 +1,10 @@
 ---
 title: "userPFXCertificate resource type"
 description: "Entity that encapsulates all information required for a user's PFX certificates."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # userPFXCertificate resource type
@@ -69,8 +70,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

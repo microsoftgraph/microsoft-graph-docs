@@ -4,9 +4,12 @@ description: "You can use the Office 365 active users reports to find out how ma
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Office 365 active users reports
+
+Namespace: microsoft.graph
 
 You can use the Office 365 active users reports to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. These reports can help administrators identify underutilized products or users that might need additional training or information.
 

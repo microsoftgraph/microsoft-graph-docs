@@ -1,9 +1,10 @@
 ---
 title: "vppTokenState enum type"
 description: "Possible states associated with an Apple Volume Purchase Program token."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vppTokenState enum type
@@ -22,8 +23,6 @@ Possible states associated with an Apple Volume Purchase Program token.
 |expired|2|Token is expired.|
 |invalid|3|Token is invalid.|
 |assignedToExternalMDM|4|Token is managed by another MDM Service.|
-
-
 
 
 

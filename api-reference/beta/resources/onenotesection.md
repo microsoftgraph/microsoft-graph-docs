@@ -2,9 +2,14 @@
 title: "onenoteSection resource type"
 description: "A section in a OneNote notebook. Sections can contain pages."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # onenoteSection resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

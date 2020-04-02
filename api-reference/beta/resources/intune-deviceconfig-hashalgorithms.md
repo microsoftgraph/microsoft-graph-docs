@@ -1,9 +1,10 @@
 ---
 title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # hashAlgorithms enum type
@@ -19,8 +20,6 @@ Hash Algorithm Options.
 |:---|:---|:---|
 |sha1|1|SHA-1 Hash Algorithm.|
 |sha2|2|SHA-2 Hash Algorithm.|
-
-
 
 
 

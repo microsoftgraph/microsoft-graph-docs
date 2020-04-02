@@ -2,8 +2,8 @@
 title: "Calling the Microsoft Graph API"
 description: "To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   "
 localization_priority: Normal
-author: "VinodRavichandran"
-ms.prod: "microsoft-teams"
+author: "ananmishr"
+ms.prod: "cloud-communications"
 ---
 
 # Calling the Microsoft Graph API
@@ -29,7 +29,7 @@ For this URL:
 - `{resource}` is resource segment or path, such as:
   - `users`, `groups`, `devices`, `organization`
   - The alias `me`, which resolves to the signed-in user
-   - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
+  - The resources belonging to a user, such as `me/events`, `me/drive` or `me/messages`
   - The alias `myOrganization`, which resolves to the tenant of the organization signed-in user
 - `[query_parameters]` represents additional query parameters such as `$filter` and `$select`.
 

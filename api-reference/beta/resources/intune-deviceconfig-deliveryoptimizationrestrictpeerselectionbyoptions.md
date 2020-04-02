@@ -1,9 +1,10 @@
 ---
 title: "deliveryOptimizationRestrictPeerSelectionByOptions enum type"
 description: "Values to restrict peer selection by."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deliveryOptimizationRestrictPeerSelectionByOptions enum type
@@ -19,8 +20,6 @@ Values to restrict peer selection by.
 |:---|:---|:---|
 |notConfigured|0|Not configured.|
 |subnetMask|1|Subnet mask.|
-
-
 
 
 

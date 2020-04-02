@@ -161,20 +161,6 @@ Output **img** elements contain endpoints for image file resources and the image
     data-fullres-src-type="image/png" ... />
 ```
 
-By default, images won't render directly in a browser because they are private and require authorization to retrieve them, like the rest of the page contents. To get public URLs to the image resources on a page, include **preAuthenticated=true** in the query string when you retrieve the page content (example: `GET ../pages/{page-id}/content?preAuthenticated=true`). The public URLs that are returned are valid for one hour. 
-
-#### Image with public URL when _preAuthenticated=true_ is included in the request
-
-```html
-<img 
-    width="170" height="128" 
-    src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-src-type="image/{type}" 
-    data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-fullres-src-type="image/{type}"
-/>
-```
-
 The following examples show the information an **img** element might contain in the output HTML.
 
 #### Image with web-ready and high resolution resources
@@ -460,7 +446,12 @@ Tables can contain the following attributes in the input and output HTML. The On
 |Input attribute|Description|
 |:------|:------|
 | data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The CSS [style](#styles) properties of the element, and also:<br/> - **border**. Can be either 0px or 1px.<br/> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
+| style | The CSS [style](#styles) properties of the element, and also:<br/> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
+| border | Adds border to table with specified width |
+| width | Width of the table |
+| bgcolor | The background color of the table |
+
+**Note:** The use of the **border** property in the style attribute of a table is not supported in input html. 
  
 
 #### Output attributes
@@ -477,7 +468,7 @@ The following examples show input HTML that uses different ways to define styles
 #### Input HTML with optional settings at different levels
 
 ```html
-<table style="border:0px;width:500px;background-color:green">
+<table border="1"; Width="500"; bgcolor = "green">
     <tr> 
         <td>Cell 1</td> 
         <td>Cell 2</td> 

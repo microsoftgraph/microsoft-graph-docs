@@ -4,9 +4,12 @@ description: "When OAuth1 is to be used to connect to the data provider, this co
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationSynchronizationOAuth1ConnectionSettings resource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

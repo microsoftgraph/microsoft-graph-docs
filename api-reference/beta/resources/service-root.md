@@ -2,9 +2,14 @@
 title: "Service root"
 description: "2015-10-25 14:57:30 UTC -->"
 localization_priority: Normal
+doc_type: conceptualPageType
+ms.prod: ""
+author: ""
 ---
 
 # Service root
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,9 +1,10 @@
 ---
 title: "applicationType enum type"
 description: "Possible types of Application"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # applicationType enum type
@@ -19,8 +20,6 @@ Possible types of Application
 |:---|:---|:---|
 |universal|1|The windows universal application|
 |desktop|2|The windows desktop application|
-
-
 
 
 

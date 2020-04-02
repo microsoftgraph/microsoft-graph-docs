@@ -6,10 +6,16 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 <!-- To be redirected --> 
 
 # Create journals
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Creates a journal in Dynamics 365 Business Central. 
 
 ## Permissions
@@ -24,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-POST /financials/companies('{id}')/journals('{id}')
+POST /financials/companies/{id}/journals/{id}
 ```
 
 ## Optional query parameters
@@ -49,7 +55,7 @@ If successful, this method returns ```201 Created``` response code and a **journ
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/journals
+POST https://graph.microsoft.com/beta/financials/companies/{id}/journals
 Content-type: application/json
 
 ```json

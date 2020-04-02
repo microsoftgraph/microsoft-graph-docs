@@ -4,9 +4,12 @@ description: "One of the following permissions is required to call this API. To 
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRangeView: itemAt
+
+Namespace: microsoft.graph
 
 
 ## Permissions

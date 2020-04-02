@@ -2,8 +2,9 @@
 title: "List officeClientConfigurationAssignments"
 description: "List properties and relationships of the officeClientConfigurationAssignment objects."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List officeClientConfigurationAssignments
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|**TODO: Determine scopes **|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|**TODO: Determine scopes **|
 
 ## HTTP Request
 <!-- {
@@ -71,6 +72,7 @@ Content-Length: 274
   ]
 }
 ```
+
 
 
 

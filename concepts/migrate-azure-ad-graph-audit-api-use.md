@@ -24,7 +24,7 @@ Microsoft Graph supports many of the same features and capabilities of Azure AD 
 
 You'll also want to verify the permissions required for the features your app is using.  In some cases, more granular permissions are available.
 
-To learn more, see [Permissions](/concepts/permissions-reference.md).
+To learn more, see [Permissions](permissions-reference.md).
 
 ## Next Steps
 

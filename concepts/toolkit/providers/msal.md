@@ -22,10 +22,17 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
                    login-type="redirect/popup"
+                   scopes="user.read,people.read"
                    authority=""></mgt-msal-provider>
 ```
 
->**Note:** `login-type` and `authority` are optional.
+| Attribute | Description |
+| --- | --- | --- |
+| client-id   | String client ID (see Creating an app/client ID). Required.|
+| login-type  | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional. |
+| scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional.|
+| authority  | Authority string - default is the common authority. Optional.|
+| depends-on | Element selector string of another higher priority provider component. Optional. |
 
 ### Initialize in JavaScript
 
@@ -56,6 +63,6 @@ To learn more, see the [MSAL documentation](https://github.com/AzureAD/microsoft
 
 ## Creating an app/client ID
 
-For details about how to register an app and get a client ID, see the [Register an app quick start](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+For details about how to register an app and get a client ID, see the [Register an app quick start](/azure/active-directory/develop/quickstart-register-app).
 
 >**Note:** MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.

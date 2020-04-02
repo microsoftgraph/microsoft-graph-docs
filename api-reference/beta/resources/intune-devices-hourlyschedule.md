@@ -1,9 +1,10 @@
 ---
 title: "hourlySchedule resource type"
 description: "Hourly run schedule of a recurring device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # hourlySchedule resource type
@@ -38,8 +39,6 @@ Here is a JSON representation of the resource.
   "interval": 1024
 }
 ```
-
-
 
 
 

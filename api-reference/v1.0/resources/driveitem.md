@@ -5,8 +5,11 @@ title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # driveItem resource type
+
+Namespace: microsoft.graph
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
@@ -99,6 +102,8 @@ These properties are temporary and either a) define behavior the service should 
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
+>**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
+
 ## JSON representation
 
 Here is a JSON representation of a **driveItem** resource.
@@ -186,7 +191,9 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | [Copy item](../api/driveitem-copy.md)                    | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Creates a copy of an driveItem (including any children).
 | [Search items](../api/driveitem-search.md)               | collection of driveItem | Search the hierarchy of items for items matching a query.
 | [List changes in a drive](../api/driveitem-delta.md)     | delta link | List any changes in the drive.
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | colletion of driveItem | List driveItems with their thumbnails. 
+| [Follow Item](../api/driveitem-follow.md)                | driveItem  | Follow a driveItem.
+| [Unfollow Item](../api/driveitem-unfollow.md)            | No content | Unfollow a driveItem.
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | collection of driveItem | List driveItems with their thumbnails. 
 | [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
 | [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
 | [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
@@ -208,7 +215,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem-list-versions.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

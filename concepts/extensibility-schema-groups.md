@@ -3,6 +3,7 @@ title: "Add custom data to groups using schema extensions "
 description: "We're going to walk you through an example to demonstrate how to use *schema extensions*. "
 author: "dkershaw10"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Add custom data to groups using schema extensions 
@@ -250,7 +251,7 @@ Content-length: 326
 
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
-- [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
 - [Adding and Verifying a Domain for the NEW Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension resource type](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)

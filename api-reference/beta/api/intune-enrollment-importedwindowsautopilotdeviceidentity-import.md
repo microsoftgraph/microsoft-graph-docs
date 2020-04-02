@@ -1,9 +1,10 @@
 ---
 title: "import action"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # import action
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
-POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/import
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 822
+Content-length: 860
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
@@ -69,6 +69,7 @@ Content-length: 822
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",
@@ -91,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 787
+Content-Length: 825
 
 {
   "value": [
@@ -99,6 +100,7 @@ Content-Length: 787
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",
@@ -115,7 +117,6 @@ Content-Length: 787
   ]
 }
 ```
-
 
 
 

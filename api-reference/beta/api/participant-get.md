@@ -1,19 +1,21 @@
 ---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: apiPageType
 ---
 
 # Get participant
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a **participant** object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
@@ -25,8 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants/{id}
-GET /applications/{id}/calls/{id}/participants/{id}
+GET /communications/calls/{id}/participants/{id}
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -46,13 +49,29 @@ If successful, this method returns a `200 OK` response code and a [participant](
 
 ##### Request
 The following example shows the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-participant"
 }-->
-```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-participant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-participant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -66,59 +85,43 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 977
 
 {
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "isInLobby": true,
-  "isMuted": true,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "initiatedBy": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
+   "@odata.type":"#microsoft.graph.participant",
+   "info":{
+      "@odata.type":"#microsoft.graph.participantInfo",
+      "identity":{
+         "@odata.type":"#microsoft.graph.identitySet",
+         "application":{
+            "@odata.type":"#microsoft.graph.identity",
+            "displayName":"Display Name",
+            "id":"278405a3-f568-4b3e-b684-009193463064",
+            "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+            },
+         "user":null,
+         "device":null,
+         "phone":null
       },
-      "languageId": "languageId-value",
-      "region": "region-value"
-    },
-    "status": "recordingCapable"
-  }
+      "id":null
+   },
+   "mediaStreams":[
+      {
+         "@odata.type":"#microsoft.graph.mediaStream",
+         "mediaType":"audio",
+         "sourceId":"1",
+         "direction":"sendReceive",
+         "serverMuted":false,
+         "label":null
+      }
+   ],
+   "isMuted":false,
+   "isInLobby":false,
+   "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants/$entity",
+   "metadata":null,
+   "recordingInfo":null
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-participant-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-participant-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -130,8 +133,6 @@ Content-Length: 977
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/participant-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/participant-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

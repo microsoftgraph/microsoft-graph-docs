@@ -1,9 +1,10 @@
 ---
 title: "List iosEducationDeviceConfigurations"
 description: "List properties and relationships of the iosEducationDeviceConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosEducationDeviceConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -99,7 +100,6 @@ Content-Length: 1367
   ]
 }
 ```
-
 
 
 

@@ -4,9 +4,12 @@ description: "Get details about mailbox usage."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getMailboxUsageDetail
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Reports.Read.All                         |
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
+
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -70,6 +75,8 @@ The CSV file has the following headers for columns.
 - Issue Warning Quota (Byte)
 - Prohibit Send Quota (Byte)
 - Prohibit Send/Receive Quota (Byte)
+- Deleted Item Count
+- Deleted Item Size (Byte)
 - Report Period
 
 ### JSON
@@ -88,14 +95,16 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=text/csv
 ```
+
 
 #### Response
 
@@ -108,16 +117,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getmailboxusagedetail_csv-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getmailboxusagedetail_csv-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -131,7 +130,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Report Period
 ```
 
 ### JSON
@@ -142,14 +141,16 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=application/json
 ```
+
 
 #### Response
 
@@ -181,6 +182,8 @@ Content-Length: 526
       "lastActivityDate": "2017-09-01", 
       "itemCount": 138481, 
       "storageUsedInBytes": 10414748704, 
+      "deletedItemCount": 138481,
+      "deletedItemSizeInBytes": 10414748704, 
       "issueWarningQuotaInBytes": 10522698752, 
       "prohibitSendQuotaInBytes": 10630040576, 
       "prohibitSendReceiveQuotaInBytes": 10737418240, 
@@ -189,16 +192,6 @@ Content-Length: 526
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getmailboxusagedetail_json-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getmailboxusagedetail_json-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -208,9 +201,5 @@ Content-Length: 526
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getmailboxusagedetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
-    "Error: /api-reference/beta/api/reportroot-getmailboxusagedetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/reportroot-getmailboxusagedetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
-    "Error: /api-reference/beta/api/reportroot-getmailboxusagedetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

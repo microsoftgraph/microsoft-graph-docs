@@ -1,9 +1,10 @@
 ---
 title: "Update deviceManagementScriptRunSummary"
 description: "Update the properties of a deviceManagementScriptRunSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagementScriptRunSummary
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -29,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 ```
 
@@ -45,7 +47,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script run summary entity.|
+|id|String|Key of the device management script run summary entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count.|
 |errorDeviceCount|Int32|Error device count.|
 |successUserCount|Int32|Success user count.|
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 Content-type: application/json
 Content-length: 179
 
@@ -90,7 +92,6 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
-
 
 
 

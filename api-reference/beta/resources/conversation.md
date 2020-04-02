@@ -4,9 +4,12 @@ description: "A conversation is a collection of threads, and a thread contains p
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # conversation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,9 +1,10 @@
 ---
 title: "depEnrollmentBaseProfile resource type"
 description: "The DepEnrollmentBaseProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depEnrollmentBaseProfile resource type
@@ -51,7 +52,9 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled|
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled|
+|screenTimeScreenDisabled|Boolean|Indicates if screen timeout setup is disabled|
 |deviceNameTemplate|String|Sets a literal or name pattern.|
+|configurationWebUrl|Boolean|URL for setup assistant login|
 
 ## Relationships
 None
@@ -92,11 +95,11 @@ Here is a JSON representation of the resource.
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
-  "deviceNameTemplate": "String"
+  "screenTimeScreenDisabled": true,
+  "deviceNameTemplate": "String",
+  "configurationWebUrl": true
 }
 ```
-
-
 
 
 

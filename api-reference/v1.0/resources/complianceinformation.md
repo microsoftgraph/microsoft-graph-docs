@@ -3,9 +3,13 @@ title: "complianceInformation resource type"
 description: "This resource contains compliance data associated with secure score control."
 localization_priority: Normal
 author: preetikr
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 #  complianceInformation resource type
+
+Namespace: microsoft.graph
 
 Contains compliance data associated with secure score control.
 

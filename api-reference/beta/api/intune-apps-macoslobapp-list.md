@@ -1,9 +1,10 @@
 ---
 title: "List macOSLobApps"
 description: "List properties and relationships of the macOSLobApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List macOSLobApps
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1999
+Content-Length: 2049
 
 {
   "value": [
@@ -99,7 +100,9 @@ Content-Length: 1999
         "v10_10": true,
         "v10_11": true,
         "v10_12": true,
-        "v10_13": true
+        "v10_13": true,
+        "v10_14": true,
+        "v10_15": true
       },
       "buildNumber": "Build Number value",
       "versionNumber": "Version Number value",
@@ -121,7 +124,6 @@ Content-Length: 1999
   ]
 }
 ```
-
 
 
 

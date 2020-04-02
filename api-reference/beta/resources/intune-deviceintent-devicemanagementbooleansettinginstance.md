@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementBooleanSettingInstance resource type"
 description: "A setting instance representing a boolean value"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementBooleanSettingInstance resource type
@@ -54,8 +55,6 @@ Here is a JSON representation of the resource.
   "value": true
 }
 ```
-
-
 
 
 

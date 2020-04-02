@@ -1,9 +1,10 @@
 ---
 title: "windows10EndpointProtectionConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the Windows10EndpointProtectionConfiguration resource."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10EndpointProtectionConfiguration resource type
@@ -15,7 +16,7 @@ ms.prod: "Intune"
 This topic provides descriptions of the declared methods, properties and relationships exposed by the Windows10EndpointProtectionConfiguration resource.
 
 
-Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
+Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,24 +30,25 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe. Possible values are: `deviceDefault`, `blockAll`, `allowAll`.|
 |firewallRules|[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md) collection|Configures the firewall rule settings. This collection can contain a maximum of 150 elements.|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
 |userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported|
-|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed and Blocked are all supported |
+|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed are supported |
+|userRightsDenyLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users cannot log on to the computer. States NotConfigured, Blocked are supported |
 |userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported|
 |userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported|
 |userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported|
@@ -70,7 +72,6 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This security setting determines which service accounts are prevented from registering a process as a service. Note: This security setting does not apply to the System, Local Service, or Network Service accounts. Only state Blocked is supported.|
 |xboxServicesEnableXboxGameSaveTask|Boolean|This setting determines whether xbox game save is enabled (1) or disabled (0).|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
@@ -143,6 +144,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notifications to show from the displayed areas of app. Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
+|windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Configure windows defender TamperProtection settings. Possible values are: `notConfigured`, `enable`, `disable`.|
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Select the preshared key encoding to be used. Possible values are: `deviceDefault`, `none`, `utF8`.|
@@ -216,17 +218,62 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker System Drive Policy.|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker Fixed Drive Policy.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
+|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE). Possible values are: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
+|defenderDisableScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
+|defenderAllowScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
+|defenderDisableBehaviorMonitoring|Boolean|Allows or disallows Windows Defender Behavior Monitoring functionality.|
+|defenderAllowBehaviorMonitoring|Boolean|Allows or disallows Windows Defender Behavior Monitoring functionality.|
+|defenderDisableCloudProtection|Boolean|To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.|
+|defenderAllowCloudProtection|Boolean|To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.|
+|defenderEnableScanIncomingMail|Boolean|Allows or disallows scanning of email.|
+|defenderEnableScanMappedNetworkDrivesDuringFullScan|Boolean|Allows or disallows a full scan of mapped network drives.|
+|defenderDisableScanRemovableDrivesDuringFullScan|Boolean|Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.|
+|defenderAllowScanRemovableDrivesDuringFullScan|Boolean|Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.|
+|defenderDisableScanDownloads|Boolean|Allows or disallows Windows Defender IOAVP Protection functionality.|
+|defenderAllowScanDownloads|Boolean|Allows or disallows Windows Defender IOAVP Protection functionality.|
+|defenderDisableIntrusionPreventionSystem|Boolean|Allows or disallows Windows Defender Intrusion Prevention functionality.|
+|defenderAllowIntrusionPreventionSystem|Boolean|Allows or disallows Windows Defender Intrusion Prevention functionality.|
+|defenderDisableOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
+|defenderAllowOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
+|defenderDisableRealTimeMonitoring|Boolean|Allows or disallows Windows Defender Realtime Monitoring functionality.|
+|defenderAllowRealTimeMonitoring|Boolean|Allows or disallows Windows Defender Realtime Monitoring functionality.|
+|defenderDisableScanNetworkFiles|Boolean|Allows or disallows a scanning of network files.|
+|defenderAllowScanNetworkFiles|Boolean|Allows or disallows a scanning of network files.|
+|defenderDisableScanScriptsLoadedInInternetExplorer|Boolean|Allows or disallows Windows Defender Script Scanning functionality.|
+|defenderAllowScanScriptsLoadedInInternetExplorer|Boolean|Allows or disallows Windows Defender Script Scanning functionality.|
+|defenderBlockEndUserAccess|Boolean|Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.|
+|defenderAllowEndUserAccess|Boolean|Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.|
+|defenderScanMaxCpuPercentage|Int32|Represents the average CPU load factor for the Windows Defender scan (in percent). The default value is 50. Valid values 0 to 100|
+|defenderCheckForSignaturesBeforeRunningScan|Boolean|This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan.|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Added in Windows 10, version 1709. This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. This feature requires the "Join Microsoft MAPS" setting enabled in order to function. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Added in Windows 10, version 1709. This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50. This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required". Valid values 0 to 50|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Time period (in days) that quarantine items will be stored on the system. Valid values 0 to 90|
+|defenderDisableCatchupFullScan|Boolean|This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.|
+|defenderDisableCatchupQuickScan|Boolean|This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.|
+|defenderEnableLowCpuPriority|Boolean|This policy setting allows you to enable or disable low CPU priority for scheduled scans.|
+|defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
+|defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
+|defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
+|defenderPotentiallyUnwantedAppAction|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer. Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderScanDirection|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Controls which sets of files should be monitored. Possible values are: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Selects whether to perform a quick scan or full scan. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderScheduledQuickScanTime|TimeOfDay|Selects the time of day that the Windows Defender quick scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120|
+|defenderScheduledScanDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Selects the day that the Windows Defender scan should run. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
+|defenderScheduledScanTime|TimeOfDay|Selects the time of day that the Windows Defender scan should run.|
+|defenderSignatureUpdateIntervalInHours|Int32|Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval. Valid values 0 to 24|
+|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) collection|Device configuration installation status by user. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) collection|The list of group assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) collection|Device configuration installation status by user. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -296,6 +343,7 @@ Here is a JSON representation of the resource.
       "action": "String",
       "trafficDirection": "String",
       "interfaceTypes": "String",
+      "edgeTraversal": "String",
       "localUserAuthorizations": "String"
     }
   ],
@@ -348,6 +396,18 @@ Here is a JSON representation of the resource.
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "String",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "String",
+        "description": "String",
+        "securityIdentifier": "String"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "String",
     "localUsersOrGroups": [
@@ -635,18 +695,6 @@ Here is a JSON representation of the resource.
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "String",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "String",
-        "description": "String",
-        "securityIdentifier": "String"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "String",
   "xboxServicesLiveAuthManagerServiceStartupMode": "String",
@@ -719,6 +767,7 @@ Here is a JSON representation of the resource.
   "defenderSecurityCenterHelpURL": "String",
   "defenderSecurityCenterNotificationsFromApp": "String",
   "defenderSecurityCenterITContactDisplay": "String",
+  "windowsDefenderTamperProtection": "String",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
   "firewallPreSharedKeyEncodingMethod": "String",
@@ -914,11 +963,66 @@ Here is a JSON representation of the resource.
     "encryptionMethod": "String",
     "requireEncryptionForWriteAccess": true,
     "blockCrossOrganizationWriteAccess": true
+  },
+  "bitLockerRecoveryPasswordRotation": "String",
+  "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
+  "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
+  "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
+  "defenderEnableScanIncomingMail": true,
+  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
+  "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
+  "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
+  "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
+  "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
+  "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
+  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
+  "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
+  "defenderScanMaxCpuPercentage": 1024,
+  "defenderCheckForSignaturesBeforeRunningScan": true,
+  "defenderCloudBlockLevel": "String",
+  "defenderCloudExtendedTimeoutInSeconds": 1024,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 1024,
+  "defenderDisableCatchupFullScan": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderEnableLowCpuPriority": true,
+  "defenderFileExtensionsToExclude": [
+    "String"
+  ],
+  "defenderFilesAndFoldersToExclude": [
+    "String"
+  ],
+  "defenderProcessesToExclude": [
+    "String"
+  ],
+  "defenderPotentiallyUnwantedAppAction": "String",
+  "defenderScanDirection": "String",
+  "defenderScanType": "String",
+  "defenderScheduledQuickScanTime": "String (time of day)",
+  "defenderScheduledScanDay": "String",
+  "defenderScheduledScanTime": "String (time of day)",
+  "defenderSignatureUpdateIntervalInHours": 1024,
+  "defenderSubmitSamplesConsentType": "String",
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "String",
+    "moderateSeverity": "String",
+    "highSeverity": "String",
+    "severeSeverity": "String"
   }
 }
 ```
-
-
 
 
 

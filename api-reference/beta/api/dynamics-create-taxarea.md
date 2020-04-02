@@ -6,9 +6,15 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 <!-- To be redirected --> 
 # Create taxAreas
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Creates a tax area object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-POST /financials/companies('{id}')/taxAreas('{id}')
+POST /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## Optional query parameters
@@ -48,7 +54,7 @@ If successful, this method returns ```201 Created``` response code and a **taxAr
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas
+POST https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas
 Content-type: application/json
 
 ```json

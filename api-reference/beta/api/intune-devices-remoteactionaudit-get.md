@@ -1,9 +1,10 @@
 ---
 title: "Get remoteActionAudit"
 description: "Read properties and relationships of the remoteActionAudit object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get remoteActionAudit
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -33,7 +34,7 @@ GET /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 594
 
 {
   "value": {
@@ -73,11 +74,11 @@ Content-Length: 543
     "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
     "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
     "deviceIMEI": "Device IMEI value",
-    "actionState": "pending"
+    "actionState": "pending",
+    "managedDeviceId": "Managed Device Id value"
   }
 }
 ```
-
 
 
 

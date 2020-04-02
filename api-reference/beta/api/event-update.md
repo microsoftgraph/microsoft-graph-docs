@@ -4,13 +4,19 @@ description: "Update the properties of the event object."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the [event](../resources/event.md) object.
+
+When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -53,18 +59,20 @@ In the request body, supply the values for relevant fields that should be update
 | attendees|Attendee|The collection of attendees for the event.|
 | body|ItemBody|The body of the message associated with the event.|
 | categories|String|The categories associated with the event.|
-| end|DateTimeTimeZone|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
+| end|DateTimeTimeZone|The date, time, and time zone that the event ends. |
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
-| isAllDay|Boolean|Set to true if the event lasts all day.|
+| isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
+|isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 | location|Location|The location of the event.|
 |locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|
 | reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 | sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|The status to show. Possible values are: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-| start|DateTimeTimeZone|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
+| start|DateTimeTimeZone|The start date, time, and time zone of the event. |
 | subject|String|The text of the event's subject line.|
 
 Because the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
@@ -83,6 +91,8 @@ If successful, this method returns a `200 OK` response code and updated [event](
 ##### Request
 
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_event"
@@ -102,9 +112,21 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -128,19 +150,16 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
+  "isReminderOn": true,
+  "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+91 22 6241 6885"
+    }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_event-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_event-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## See also
@@ -160,8 +179,6 @@ Content-length: 285
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/event-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/event-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Follow site 
 
+Namespace: microsoft.graph
+
 Follow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
@@ -41,7 +43,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response 
 
 * If the request is successful, this method returns an array of sites that were followed.  
-* If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
+* If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
 
 ## Example
 
@@ -49,6 +51,8 @@ The following example shows how to follow multiple sites.
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -67,6 +71,20 @@ Content-Type: application/json
     ] 
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 If successful, it returns the following JSON response. 
@@ -155,5 +173,7 @@ Content-type: application/json
   "description": "Follow sharepoint site for a user.",
   "keywords": "follow site",
   "section": "documentation",
-  "tocPath": "Sites/Follow site"
+  "tocPath": "Sites/Follow site",
+  "suppressions": [
+  ]
 } -->

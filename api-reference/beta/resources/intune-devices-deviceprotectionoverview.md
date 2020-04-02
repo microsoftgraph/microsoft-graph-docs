@@ -1,9 +1,10 @@
 ---
 title: "deviceProtectionOverview resource type"
 description: "Hardware information of a given device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceProtectionOverview resource type
@@ -53,8 +54,6 @@ Here is a JSON representation of the resource.
   "criticalFailuresDeviceCount": 1024
 }
 ```
-
-
 
 
 

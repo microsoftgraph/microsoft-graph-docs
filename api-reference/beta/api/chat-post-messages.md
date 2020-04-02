@@ -2,16 +2,18 @@
 title: "Create chatMessage"
 description: "Use this API to create a new chatMessage."
 localization_priority: Normal
-author: "RamjotSingh"
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
 # Create chatMessage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).
+Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create an new chat, you must use the [list chats](chat-list.md) method to retreive the Id of an existing chat before creating a chat message.
 
 ## Permissions
 
@@ -51,6 +53,8 @@ If successful, this method returns a `201 Created` response code and a new [chat
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_chat"
@@ -66,6 +70,20 @@ Content-type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-chat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -110,5 +128,7 @@ Content-type: application/json
   "description": "Create chatMessage",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

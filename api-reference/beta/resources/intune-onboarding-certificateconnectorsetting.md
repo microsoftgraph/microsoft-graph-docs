@@ -1,9 +1,10 @@
 ---
 title: "certificateConnectorSetting resource type"
 description: "Certificate connector settings."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # certificateConnectorSetting resource type
@@ -45,8 +46,6 @@ Here is a JSON representation of the resource.
   "lastUploadVersion": 1024
 }
 ```
-
-
 
 
 

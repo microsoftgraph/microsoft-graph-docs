@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: " or a collection of items that should be treated as a collection instead of individual items."
 ms.date: 09/10/2017
 title: Package
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Package resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

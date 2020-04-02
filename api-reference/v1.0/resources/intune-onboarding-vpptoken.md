@@ -1,12 +1,15 @@
 ---
 title: "vppToken resource type"
 description: "You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education. This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune. You can then synchronize your volume purchase information with Intune and track your volume-purchased app use. You can upload multiple Apple VPP Business or Education tokens."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppToken resource type
+
+Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -30,7 +33,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
 |appleId|String|The apple Id associated with the given Apple Volume Purchase Program Token.|
 |expirationDateTime|DateTimeOffset|The expiration date time of the Apple Volume Purchase Program Token.|
-|lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.|
+|lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume Purchase Program Token.|
 |token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
@@ -66,6 +69,7 @@ Here is a JSON representation of the resource.
   "countryOrRegion": "String"
 }
 ```
+
 
 
 

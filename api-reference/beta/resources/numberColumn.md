@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # NumberColumn resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

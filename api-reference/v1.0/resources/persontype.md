@@ -4,9 +4,12 @@ description: "Represents the type of person."
 localization_priority: Normal
 author: "simonhult"
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # personType resource type
+
+Namespace: microsoft.graph
 
 Represents the type of person.
 

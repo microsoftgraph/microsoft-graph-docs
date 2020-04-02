@@ -5,8 +5,11 @@ title: Get item activity stats by interval
 description: Get itemAnalyticyStats for the activities that took place on this resource within the specified time interval.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get item activity stats by interval
+
+Namespace: microsoft.graph
 
 Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
 

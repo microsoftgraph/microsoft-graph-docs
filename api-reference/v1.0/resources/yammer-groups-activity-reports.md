@@ -4,9 +4,12 @@ description: "You can use the Yammer groups activity reports to gain insights in
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: conceptualPageType
 ---
 
 # Yammer groups activity reports
+
+Namespace: microsoft.graph
 
 You can use the Yammer groups activity reports to gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
 

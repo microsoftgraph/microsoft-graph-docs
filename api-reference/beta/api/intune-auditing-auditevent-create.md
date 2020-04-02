@@ -1,9 +1,10 @@
 ---
 title: "Create auditEvent"
 description: "Create a new auditEvent object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create auditEvent
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1390
+Content-length: 1603
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -87,7 +88,14 @@ Content-length: 1390
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "userRoleScopeTags": [
+      {
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -120,7 +128,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -138,7 +146,14 @@ Content-Length: 1439
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "userRoleScopeTags": [
+      {
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -165,7 +180,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 

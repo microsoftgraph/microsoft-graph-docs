@@ -1,9 +1,10 @@
 ---
 title: "createInstance action"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # createInstance action
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,6 +50,7 @@ The following table shows the parameters that can be used with this action.
 |displayName|String|Not yet documented|
 |description|String|Not yet documented|
 |settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) collection|Not yet documented|
+|roleScopeTagIds|String collection|Not yet documented|
 
 
 
@@ -63,7 +65,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/createInstance
 
 Content-type: application/json
-Content-length: 336
+Content-length: 398
 
 {
   "displayName": "Display Name value",
@@ -75,6 +77,9 @@ Content-length: 336
       "definitionId": "Definition Id value",
       "valueJson": "Value Json value"
     }
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -101,7 +106,6 @@ Content-Length: 418
   }
 }
 ```
-
 
 
 

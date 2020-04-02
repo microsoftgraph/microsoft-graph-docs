@@ -1,8 +1,9 @@
 ---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Use query parameters to customize responses
@@ -42,6 +43,15 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
+
+## Other OData URL capabilities
+
+The following OData 4.0 capabilities are URL segments, not query parameters.
+
+| Name                     | Description | Example 
+|:-------------------------|:------------|:---------|
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
 
 ## Encoding query parameters
 
@@ -131,7 +141,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - or (`or`)
 - not (`not`)
  
-The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
+The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. 
+
+> **Note:** You must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) when using both `$filter` and `$orderby` in the same query to get messages.
+
+For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
 
 The following table shows some examples that use the `$filter` query parameter.
 
@@ -190,8 +204,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter`, because the server always infers 
-a sort order for the results of a `$filter`, the properties in the `$filter` must be listed first in the `$orderby` before any other properties, and they must be listed in the order that they appear in the `$filter` parameter. 
+> **Note:** When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers 
+a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
+
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and 
 **receivedDateTime** properties in descending order.
@@ -248,11 +263,11 @@ Alternatively, you can search messages by specifying message property names in t
 
 For more information about searchable email properties, KQL syntax, supported operators, and tips on searching, see the following articles:
 
-- [Searchable properties in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
+- [Searchable properties in Exchange](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](https://technet.microsoft.com/library/dn774955(v=exchg.160).aspx)
 
 ### Using $search on person collections
 
@@ -354,6 +369,8 @@ Use the `$top` query parameter to specify the page size of the result set.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
+$top accepts a minimum value of 1 and a maximum value of 999 (inclusive).  
+
 For example, the following request returns the first five messages in the user's mailbox:
 
 ```http
@@ -415,6 +432,11 @@ However, it is important to note that query parameters specified in a request mi
 [search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
 [search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
 
-[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
+[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
+
+
+## See also
+
+- [Query parameter limitations](known-issues.md#query-parameter-limitations)

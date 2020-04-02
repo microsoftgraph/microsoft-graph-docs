@@ -4,9 +4,12 @@ description: "Directory settings can be created based on the available directory
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # directorySetting resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

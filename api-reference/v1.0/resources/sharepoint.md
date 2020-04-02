@@ -3,6 +3,8 @@ title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 localization_priority: Priority
 ms.prod: "sharepoint"
+author: ""
+doc_type: conceptualPageType
 ---
 
 # Working with SharePoint sites in Microsoft Graph
@@ -108,6 +110,12 @@ A URL constructed with only the hostname and siteCollection (`SPSite`) ID will p
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
+```
+
+A URL constructed with only the siteCollection (`SPSite`) ID will point to the root site (`SPWeb`) in the given site collection.
+
+```http
+GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
 
 [site]: site.md

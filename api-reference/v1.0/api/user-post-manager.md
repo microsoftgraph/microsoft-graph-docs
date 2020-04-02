@@ -1,24 +1,28 @@
 ---
-title: "Assign a manager"
-description: "Use this API to assign a user's manager."
+title: "Assign manager"
+description: "Assign a user's manager."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
+doc_type: apiPageType
 ---
 
-# Assign a manager
+# Assign manager
 
-Use this API to assign a user's manager.
-> Note: You cannot assign direct reports - instead use this API.
+Namespace: microsoft.graph
+
+Assign a user's manager.
+> [!NOTE]
+> You cannot assign direct reports; instead, use this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -26,12 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /users/{id}/manager/$ref
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| Content-type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
 
@@ -39,10 +44,12 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_manager_from_group"
 }-->
 ```http
 PUT https://graph.microsoft.com/v1.0/users/{id}/manager/$ref
@@ -53,9 +60,27 @@ Content-length: xxx
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-manager-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-manager-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-manager-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-manager-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -64,16 +89,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 204 No Content
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,7 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-post-manager.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-post-manager.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

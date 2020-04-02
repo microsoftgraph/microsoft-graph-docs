@@ -4,9 +4,12 @@ description: "Represents a chart title object of a chart."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartTitle resource type
+
+Namespace: microsoft.graph
 
 Represents a chart title object of a chart.
 

@@ -1,25 +1,28 @@
 ---
 title: "Update calendar"
-description: "Update the properties of of a calendar object. The calendar can be one for a user, "
+description: "Update the properties of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update calendar
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
 or the default calendar of an Office 365 [group](../resources/group.md).
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +65,9 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example updates the name of the signed-in user's default calendar.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -75,6 +80,20 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -100,22 +119,18 @@ Content-type: application/json
     "isShared":false,
     "isSharedWithMe":false,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
     }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_calendar-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_calendar-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -127,8 +142,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/calendar-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/calendar-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

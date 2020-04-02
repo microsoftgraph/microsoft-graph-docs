@@ -4,9 +4,12 @@ description: "Create a new identityProvider"
 localization_priority: Priority
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create identityProvider
+
+Namespace: microsoft.graph
 
 Create a new [identityProvider](../resources/identityprovider.md) by specifying display name, identityProvider type, client ID, and client secret.
 

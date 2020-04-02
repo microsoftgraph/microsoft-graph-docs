@@ -4,11 +4,12 @@ description: "To use Microsoft Graph to read and write resources on behalf of a 
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Get access on behalf of a user
 
-To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. In this topic, we will walk through an example using this flow.
+To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from the Microsoft identity platform and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. This topic  walks through an example using this flow.
 
 ## Authentication and Authorization steps
 
@@ -26,9 +27,9 @@ To use the Microsoft identity platform endpoint, you must register your app usin
 
 To configure an app to use the OAuth 2.0 authorization code grant flow, you'll need to save the following values when registering the app:
 
-- The Application ID assigned by the app registration portal.
+- The Application (client) ID assigned by the app registration portal.
 - A Client (application) Secret, either a password or a public/private key pair (certificate). This is not required for native apps.
-- A Redirect URL for your app to receive responses from Azure AD.
+- A Redirect URI (or reply URL) for your app to receive responses from Azure AD.
 
 For steps on how to configure an app in the Azure portal, see [Register your app](./auth-register-app-v2.md).
 
@@ -68,19 +69,19 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### Consent experience
 
-At this point, the user will be asked to enter their credentials to authenticate with Microsoft. The v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, they will be asked to consent to the required permissions.  
+At this point, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, they will be asked to consent to the required permissions.  
 
-Here is an example of the consent dialog presented for a Microsoft account:
+The following is an example of the consent dialog box presented for a Microsoft account user.
 
 ![Consent dialog for Microsoft account](./images/v2-consumer-consent.png)
 
-> **Try** If you have a Microsoft account or an Azure AD work or school account, you can try this for yourself by clicking on the link below. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
+> **Try** If you have a Microsoft account or an Azure AD work or school account, you can try this for yourself by clicking the following link. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
 >
 > <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
 
 ### Authorization response
 
-If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. Here is an example of a successful response to the request above. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
+If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. Here is an example of a successful response to the previous request. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
 
 ```
 GET https://localhost/myapp/?
@@ -102,7 +103,7 @@ Your app uses the authorization `code` received in the previous step to request 
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
@@ -140,7 +141,7 @@ Although the access token is opaque to your app, the response contains a list of
 
 | Parameter | Description |
 | --- | --- |
-| token_type |Indicates the token type value. The only type that Azure AD supports is Bearer |
+| token_type |Indicates the token type value. The only type that Azure AD supports is Bearer. |
 | scope |A space separated list of the Microsoft Graph permissions that the access_token is valid for. |
 | expires_in |How long the access token is valid (in seconds). |
 | access_token |The requested access token. Your app can use this token to call Microsoft Graph. |
@@ -148,7 +149,7 @@ Although the access token is opaque to your app, the response contains a list of
 
 ## 4. Use the access token to call Microsoft Graph
 
-Once you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets the profile of the signed-in user.
+After you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets the profile of the signed-in user.
 
 ```
 GET https://graph.microsoft.com/v1.0/me 
@@ -157,7 +158,7 @@ Host: graph.microsoft.com
 
 ```
 
-A successful response will look similar to this (some response headers have been removed):
+A successful response will look similar to the following (some response headers have been removed).
 
 ```
 HTTP/1.1 200 OK
@@ -242,24 +243,24 @@ A successful token response will look similar to the following.
 
 You can call Microsoft Graph on behalf of a user from the following kinds of apps:
 
-- Native/Mobile apps
-- Web apps
-- Single page apps (SPA)
-- Back-end Web APIs: For example, in scenarios where a client app, like a native app, implements functionality in a Web API back end. With the Microsoft identity platform endpoint, both the client app and the back-end Web API must have the same Application ID.
+- [Native/Mobile apps](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Web apps](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Single page apps (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Back-end Web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview): For example, in scenarios where a client app, like a native app, implements functionality in a Web API back end. With the Microsoft identity platform endpoint, both the client app and the back-end Web API must have the same Application ID.
 
-For more information about supported app types with the Microsoft identity platform endpoint, see [Types of apps](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
+For more information about supported app scenarios with the Microsoft identity platform endpoint, see [App scenarios and authentication flows](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios).
 
 > **Note**: Calling Microsoft Graph from a standalone web API is not currently supported by the Microsoft identity platform endpoint. For this scenario, you need to use the Azure AD endpoint.
 
 For more information about getting access to Microsoft Graph on behalf of a user from the Microsoft identity platform endpoint:
 
 - For links to protocol documentation and getting started articles for different kinds of apps, see the [Microsoft identity platform endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-- For detailed explanations of authentication flows, see [v2.0 protocols](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).
+- For detailed explanations of supported application types and authentication flows, see [v2.0 app types](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types).
 - For more information about recommended Microsoft and third-party authentication libraries and server middleware for the Microsoft identity platform, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
 ## Endpoint considerations
 
-Microsoft continues to support the Azure AD endpoint. There are several differences between using the Microsoft identity platform endpoint and the Azure AD endpoint. When using the Azure AD endpoint:
+Microsoft continues to support the Azure AD endpoint. There are [several differences](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison) between using the Microsoft identity platform endpoint and the Azure AD endpoint. When using the Azure AD endpoint:
 
 - Your app will require a different application ID (client ID) for each platform.
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the [Azure portal](https://portal.azure.com).
@@ -269,5 +270,6 @@ Microsoft continues to support the Azure AD endpoint. There are several differen
 
 For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD endpoint:
 
-- For information about using the Azure AD endpoint with different kinds of apps, see the **Get Started** links in the [Azure Active Directory developers guide](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, code walk-throughs, and protocol documentation for different kinds of app supported by the Azure AD endpoint.
-- For information about the Active Directory Authentication Library (ADAL) and server middleware available for use with the Azure AD endpoint, see [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
+- For information about using the Microsoft identity platform endpoint with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform developer documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The documentation contains links to overview topics, quickstarts, tutorials, code samples and protocol documentation for different kinds of apps supported by the Microsoft identity platform endpoint.
+- For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+

@@ -1,9 +1,10 @@
 ---
 title: "folderProtectionType enum type"
 description: "Possible values of Folder Protection"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # folderProtectionType enum type
@@ -22,8 +23,6 @@ Possible values of Folder Protection
 |auditMode|2|Allow functionality but generate logs.|
 |blockDiskModification|3|Block untrusted apps from writing to disk sectors.|
 |auditDiskModification|4|Generate logs when untrusted apps write to disk sectors.|
-
-
 
 
 

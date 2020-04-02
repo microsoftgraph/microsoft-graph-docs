@@ -1,9 +1,10 @@
 ---
 title: "deviceThreatProtectionLevel enum type"
 description: "Device threat protection levels for the Device Threat Protection API."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceThreatProtectionLevel enum type
@@ -23,8 +24,6 @@ Device threat protection levels for the Device Threat Protection API.
 |medium|3|Device Threat Protection level requirement: Medium. Medium represents a severity of threat that poses moderate risk to the device or device data.|
 |high|4|Device Threat Protection level requirement: High. High represents a severity of threat that poses severe risk to the device or device data.|
 |notSet|10|Device Threat Protection level requirement: Not Set. Not set represents that there is no requirement for the device to meet a Threat Protection level.|
-
-
 
 
 

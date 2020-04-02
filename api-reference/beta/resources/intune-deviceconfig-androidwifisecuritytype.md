@@ -1,9 +1,10 @@
 ---
 title: "androidWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidWiFiSecurityType enum type
@@ -20,8 +21,6 @@ Wi-Fi Security Types for Android.
 |open|0|Open (No Authentication).|
 |wpaEnterprise|1|WPA-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
 |wpa2Enterprise|2|WPA2-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
-
-
 
 
 

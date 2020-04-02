@@ -4,9 +4,12 @@ description: "The **plannerOrderHintsByAssignee** is a resource that contains or
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerOrderHintsByAssignee resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

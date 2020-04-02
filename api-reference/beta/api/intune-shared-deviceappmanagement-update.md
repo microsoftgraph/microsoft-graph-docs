@@ -1,9 +1,10 @@
 ---
 title: "Update deviceAppManagement"
 description: "Update the properties of a deviceAppManagement object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceAppManagement
@@ -19,10 +20,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 | Delegated (work or school account) | |
-| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, or **Partner Integration** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Not supported. |
+| Application | |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
 <!-- {
@@ -87,6 +90,13 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
+
+
+
+
+
+
+
 
 
 

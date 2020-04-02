@@ -2,9 +2,14 @@
 title: "filterOperatorSchema resource type"
 description: "Describes an operator that can be used in a filter."
 localization_priority: Normal
+doc_type: resourcePageType
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # filterOperatorSchema resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

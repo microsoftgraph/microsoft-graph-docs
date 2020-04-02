@@ -1,9 +1,10 @@
 ---
 title: "androidForWorkSettings resource type"
 description: "Settings for Android For Work."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkSettings resource type
@@ -66,8 +67,6 @@ Here is a JSON representation of the resource.
   "deviceOwnerManagementEnabled": true
 }
 ```
-
-
 
 
 
