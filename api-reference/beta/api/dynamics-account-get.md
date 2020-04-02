@@ -3,23 +3,17 @@ title: "Get account"
 description: "Retrieve the properties and relationships of account object."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---
 
 # Get account
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of account object.
-
-# Get accounts
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an account object for Dynamics 365 Business Central.
+Retrieve the properties and relationships of account object.
 
 ## Permissions
 
