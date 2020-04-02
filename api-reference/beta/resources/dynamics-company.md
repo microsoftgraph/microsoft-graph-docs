@@ -3,6 +3,7 @@ title: "company resource type"
 description: "Represents an company object in Dynamics 365 Business Central."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---
@@ -82,7 +83,7 @@ Represents an company object in Dynamics 365 Business Central.
 
 ## Properties
 
-| Property	      | Type |Description                             |
+| Property          | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
 |id               |string  |The unique ID of the company. Read-Only.|
 |name             |string|Specifies the Company.                  |

@@ -3,6 +3,7 @@ title: "currency resource type"
 description: "Represents an currency object in Dynamics 365 Business Central."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "resourcePageType"
 ---
@@ -23,7 +24,7 @@ Represents an currency object in Dynamics 365 Business Central.
 
 ## Properties
 
-| Property	            | Type	 |Description                                                   |
+| Property                | Type     |Description                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
 |id                     |string    |The unique ID of the currency. Non-editable.                  |
 |code                   |string  |Specifies the currency code.                                  |

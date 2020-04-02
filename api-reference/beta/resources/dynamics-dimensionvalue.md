@@ -3,6 +3,7 @@ title: "dimensionValue resource type"
 description: "Represents an dimensionValue object in Dynamics 365 Business Central."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
 ---
