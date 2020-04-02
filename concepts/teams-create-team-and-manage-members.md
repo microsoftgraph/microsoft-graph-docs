@@ -60,3 +60,5 @@ Membership changes made to an Office 365 Group backing a team via graph API or t
 For the process to get triggered, a current owner or member of that team (someone who can see the team in the Teams client) must have the Teams desktop (ideally) or web client open. Mobile clients do not trigger this sync.
 
 The current SLA for synchronizing membership changes made to Groups to Teams is up to 24 hours once triggered by client activity but could take longer under certain circumstances (due to service load for example).
+
+![Process for roster sync.](images/teams-roster-sync.png)
