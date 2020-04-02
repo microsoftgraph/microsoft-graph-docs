@@ -3,6 +3,7 @@ title: "Get paymentMethod"
 description: "Retrieve the properties and relationships of paymentmethod object."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

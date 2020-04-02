@@ -3,6 +3,7 @@ title: "Delete countryRegion"
 description: "Delete countryRegion."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

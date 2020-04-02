@@ -3,6 +3,7 @@ title: "List agedAccountsReceivable"
 description: "Retrieve a list of agedaccountsreceivable objects."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

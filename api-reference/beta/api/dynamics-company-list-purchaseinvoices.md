@@ -3,6 +3,7 @@ title: "List purchaseInvoices"
 description: "Retrieve a list of purchaseinvoice objects."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

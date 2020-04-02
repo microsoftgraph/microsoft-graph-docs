@@ -3,6 +3,7 @@ title: "Create companyInformation"
 description: "Use this API to create a new companyInformation."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

@@ -3,6 +3,7 @@ title: "Get taxArea"
 description: "Retrieve the properties and relationships of taxarea object."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

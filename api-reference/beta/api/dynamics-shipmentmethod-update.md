@@ -3,6 +3,7 @@ title: "Update shipmentmethod"
 description: "Update the properties of shipmentmethod object."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---

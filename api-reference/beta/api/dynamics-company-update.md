@@ -3,6 +3,7 @@ title: "Update company"
 description: "Update the properties of company object."
 localization_priority: Normal
 author: henrikwh
+ms.reviewer: solsen
 ms.prod: "dynamics-365-business-central"
 doc_type: "apiPageType"
 ---
