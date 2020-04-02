@@ -1,9 +1,9 @@
 ---
 title: "user: reminderView"
 description: "Return a list of calendar reminders within the specified start and end times. "
-author: "dkershaw10"
+author: "harini84"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

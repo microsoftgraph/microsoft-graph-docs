@@ -78,6 +78,7 @@ The CSV file has the following headers for columns.
 - Posted Count
 - Read Count
 - Liked Count
+- Network Display Name
 - Report Period
 
 ### JSON
@@ -131,7 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Network Display Name,Report Period
 ```
 
 ### JSON
@@ -184,7 +185,8 @@ Content-Length: 441
       "memberCount": 176, 
       "postedCount": 15, 
       "readCount": 24, 
-      "likedCount": 3, 
+      "likedCount": 3,
+      "networkDisplayName": "networkDisplayName-value",
       "reportPeriod": "7"
     }
   ]

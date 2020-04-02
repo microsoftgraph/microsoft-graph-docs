@@ -1,9 +1,9 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

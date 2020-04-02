@@ -25,8 +25,9 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Office 365 group [conversation][] | Changes to a group's conversations:<br>`groups/{id}/conversations` | No |
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_:<br>`/users/{id}/drive/root` | No |
 | [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | No |
+| [list][] under a SharePoint [site][] | Changes to content within the _list_: <br>`/sites/{id}/lists/{id}` | No |
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
-| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Changes to chat messages in all channels in all teams:<br>`/teams/allMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/allMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
+| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-v1.0) | Changes to chat messages in all channels in all teams:<br>`/teams/allMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/allMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
@@ -36,9 +37,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
-| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
-| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
+| Application                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][]|
 
 
 ## See also
@@ -53,6 +54,8 @@ In general, subscription operations require read permission to the resource. For
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

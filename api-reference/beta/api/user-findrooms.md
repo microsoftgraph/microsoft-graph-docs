@@ -2,8 +2,8 @@
 title: "user: findRooms"
 description: "Get all the meeting rooms in the user's tenant or in a specific room list. "
 localization_priority: Priority
-author: "angelgolfer-ms"
-ms.prod: "microsoft-identity-platform"
+author: "vrod9429"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

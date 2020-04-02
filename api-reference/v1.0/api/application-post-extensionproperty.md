@@ -2,7 +2,7 @@
 title: "Create extensionProperty"
 description: "Create a new extensionProperty."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

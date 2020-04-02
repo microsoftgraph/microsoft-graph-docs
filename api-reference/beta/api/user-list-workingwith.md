@@ -1,9 +1,9 @@
 ---
 title: "List workingWith"
 description: "Calculated insight for the list of users that a user has been working with."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

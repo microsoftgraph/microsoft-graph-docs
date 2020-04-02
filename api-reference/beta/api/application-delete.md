@@ -1,7 +1,7 @@
 ---
 title: "Delete application"
 description: "Deletes an application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

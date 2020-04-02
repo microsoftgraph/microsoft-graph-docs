@@ -1,7 +1,7 @@
 ---
 title: "Create application"
 description: "Create a new application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"

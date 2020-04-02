@@ -243,7 +243,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 [createLink]: ../api/driveitem-createlink.md

@@ -12,10 +12,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].
+Allows you to receive near-real-time change notifications for a [drive][] and [list][] using [socket.io][].
 Socket.io is a popular notifications library for JavaScript that utilizes WebSockets. To learn more, see [socket.io](https://socket.io).
 
 [drive]: ../resources/drive.md
+[list]: ../resources/list.md
 [socket.io]: https://socket.io/
 
 ## Permissions
@@ -36,6 +37,7 @@ To learn more, including how to choose permissions, see [Permissions](/graph/per
 ```http
 GET /me/drive/root/subscriptions/socketIo
 GET /drives/{driveId}/root/subscriptions/socketIo
+GET /lists/{list-id}/subscriptions/socketIo
 GET /groups/{groupId}/drive/root/subscriptions/socketIo
 GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ```

@@ -2,8 +2,8 @@
 title: "List calendars"
 description: "Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. "
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

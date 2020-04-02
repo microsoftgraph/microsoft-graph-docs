@@ -191,7 +191,9 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | [Copy item](../api/driveitem-copy.md)                    | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Creates a copy of an driveItem (including any children).
 | [Search items](../api/driveitem-search.md)               | collection of driveItem | Search the hierarchy of items for items matching a query.
 | [List changes in a drive](../api/driveitem-delta.md)     | delta link | List any changes in the drive.
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | colletion of driveItem | List driveItems with their thumbnails. 
+| [Follow Item](../api/driveitem-follow.md)                | driveItem  | Follow a driveItem.
+| [Unfollow Item](../api/driveitem-unfollow.md)            | No content | Unfollow a driveItem.
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | collection of driveItem | List driveItems with their thumbnails. 
 | [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
 | [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
 | [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
@@ -213,7 +215,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem-list-versions.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

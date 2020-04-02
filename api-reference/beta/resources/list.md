@@ -42,7 +42,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 [Delete list item]: ../api/listitem-delete.md
 [Create list item]: ../api/listitem-create.md
 [Get recent activities]: ../api/activities-list.md
-[Get WebSocket channel]: ../api/driveitem-subscriptions-socketio.md
+[Get WebSocket channel]: ../api/subscriptions-socketio.md
 
 ## JSON representation
 

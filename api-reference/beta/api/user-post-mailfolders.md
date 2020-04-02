@@ -2,8 +2,8 @@
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "svpsiva"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
