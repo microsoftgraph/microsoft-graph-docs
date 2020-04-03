@@ -19,6 +19,9 @@ This resource supports:
 - Checking whether a user and the user's organization contribute to content discovery.
 - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
 
+> [!NOTE]
+> This endpoint works only with users. You can't use this endpoint with contacts.
+
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
