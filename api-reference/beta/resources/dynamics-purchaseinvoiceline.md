@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # purchaseInvoiceLine resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an purchaseInvoiceLine object in Dynamics 365 Business Central.

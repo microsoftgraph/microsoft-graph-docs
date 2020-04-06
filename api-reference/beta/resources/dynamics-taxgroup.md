@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # taxGroup resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an taxGroup object in Dynamics 365 Business Central.

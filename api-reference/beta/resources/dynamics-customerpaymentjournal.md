@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # customerPaymentJournal resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an customerPaymentJournal object in Dynamics 365 Business Central.

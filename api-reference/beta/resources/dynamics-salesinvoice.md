@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # salesInvoice resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an salesInvoice object in Dynamics 365 Business Central.

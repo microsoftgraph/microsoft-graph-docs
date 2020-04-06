@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # company resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an company object in Dynamics 365 Business Central.

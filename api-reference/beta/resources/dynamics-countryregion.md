@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # countryRegion resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an countryRegion object in Dynamics 365 Business Central.

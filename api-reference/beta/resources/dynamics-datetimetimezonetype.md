@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # dateTime TimeZoneType resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an dateTimeTimeZoneType object in Dynamics 365 Business Central.

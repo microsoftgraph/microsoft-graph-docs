@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # picture resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an picture object in Dynamics 365 Business Central.
