@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Delete salesQuote
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete salesQuote.

@@ -9,6 +9,7 @@ doc_type: "apiPageType"
 ---
 
 # List vendors
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

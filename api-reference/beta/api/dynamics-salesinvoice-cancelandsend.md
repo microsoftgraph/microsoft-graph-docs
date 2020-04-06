@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # salesInvoice: cancelAndSend
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cancel and send salesInvoice.

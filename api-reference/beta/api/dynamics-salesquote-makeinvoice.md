@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # salesQuote: makeInvoice
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a sales quote.

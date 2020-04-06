@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # List employees
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of employee objects.

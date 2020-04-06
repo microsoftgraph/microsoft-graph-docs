@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Update salescreditmemoline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of salescreditmemoline object.

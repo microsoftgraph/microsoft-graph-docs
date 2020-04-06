@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Get shipmentMethod
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of shipmentmethod object.

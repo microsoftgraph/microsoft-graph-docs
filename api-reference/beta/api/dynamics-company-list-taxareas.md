@@ -9,6 +9,7 @@ doc_type: "apiPageType"
 ---
 
 # List taxAreas
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

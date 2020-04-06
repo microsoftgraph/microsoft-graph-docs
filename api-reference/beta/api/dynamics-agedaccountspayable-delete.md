@@ -9,6 +9,7 @@ doc_type: "apiPageType"
 ---
 
 # Delete agedAccountsPayable
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

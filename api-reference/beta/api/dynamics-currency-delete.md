@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Delete currency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete currency.

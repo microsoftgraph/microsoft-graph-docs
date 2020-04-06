@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Update currency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of currency object.

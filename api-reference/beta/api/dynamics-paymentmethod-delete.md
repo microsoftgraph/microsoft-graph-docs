@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Delete paymentMethod
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete paymentMethod.

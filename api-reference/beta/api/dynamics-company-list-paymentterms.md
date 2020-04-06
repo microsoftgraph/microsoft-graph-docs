@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # List paymentTerms
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of paymentterm objects.

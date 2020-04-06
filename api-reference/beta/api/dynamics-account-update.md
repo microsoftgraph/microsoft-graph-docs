@@ -9,6 +9,7 @@ doc_type: "apiPageType"
 ---
 
 # Update account
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

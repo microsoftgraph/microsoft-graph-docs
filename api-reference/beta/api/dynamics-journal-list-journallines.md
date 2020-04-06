@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # List journalLines
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of journalline objects.

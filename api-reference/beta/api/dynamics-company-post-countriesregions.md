@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Create countryRegion
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new countryRegion.

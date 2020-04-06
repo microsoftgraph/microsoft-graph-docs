@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 # Delete employee
 Namespace: microsoft.graph
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete employee.

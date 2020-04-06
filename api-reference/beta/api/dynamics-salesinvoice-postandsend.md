@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # salesInvoice: postAndSend
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Post and send a sales invoice.

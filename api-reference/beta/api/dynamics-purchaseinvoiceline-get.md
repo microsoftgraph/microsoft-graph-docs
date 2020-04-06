@@ -10,6 +10,8 @@ doc_type: "apiPageType"
 
 # Get purchaseInvoiceLine
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of purchaseinvoiceline object.
