@@ -99,13 +99,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/$entity",
     "id": "profileId",
-    "anniversaries@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/anniversaries",
     "anniversaries": [],
-    "websites@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/websites",
     "websites": [],
-    "educationalActivities@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/educationalActivities",
     "educationalActivities": [
         {
             "endMonthYear": null,
@@ -172,7 +168,6 @@ Content-type: application/json
             }
         }
     ],
-    "emails@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/emails",
     "emails": [
         {
             "address": "IrenaK@M365x214355.onmicrosoft.com",
@@ -193,7 +188,6 @@ Content-type: application/json
             }
         }
     ],
-    "interests@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/interests",
     "interests": [
         {
             "categories": [],
@@ -291,7 +285,6 @@ Content-type: application/json
             }
         }
     ],
-    "languages@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/languages",
     "languages": [
         {
             "displayName": "English (United States)",
@@ -312,7 +305,6 @@ Content-type: application/json
             }
         }
     ],
-    "names@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/names",
     "names": [
         {
             "displayName": "Irena Koren",
@@ -341,7 +333,6 @@ Content-type: application/json
             }
         }
     ],
-    "phones@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/phones",
     "phones": [
         {
             "displayName": null,
@@ -362,7 +353,6 @@ Content-type: application/json
             }
         }
     ],
-    "positions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/positions",
     "positions": [
         {
             "categories": [],
@@ -404,7 +394,6 @@ Content-type: application/json
             }
         }
     ],
-    "projects@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/projects",
     "projects": [
         {
             "categories": [],
@@ -470,7 +459,6 @@ Content-type: application/json
             }
         }
     ],
-    "skills@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/skills",
     "skills": [
         {
             "categories": [],
@@ -568,7 +556,6 @@ Content-type: application/json
             }
         }
     ],
-    "webAccounts@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/webAccounts",
     "webAccounts": []
 }
 ```
