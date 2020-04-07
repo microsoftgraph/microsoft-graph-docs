@@ -1,6 +1,6 @@
 ---
 title: "List anniversaries"
-description: "Retrieve a list of personanniversary objects."
+description: "Retrieve a list of personAnniversary objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/anniversaries 
+GET /me/profile/anniversaries
 ```
 
 ## Optional query parameters
@@ -74,6 +74,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/anniversaries
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-anniversaries-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
