@@ -40,7 +40,8 @@ This resource type inherits from [itemFacet](itemfacet.md).
 |isCurrent             |Boolean                                      | Denotes if the position is current for the user.                                                                                                                                                |
 |lastModifiedBy        |[identitySet](identityset.md)                | Identifier of the partner or user who last modified the entity.                                                                                                                                 |
 |lastModifiedDateTime  |DateTimeOffset                               | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|source                |[personDataSource](personDataSource.md)      | Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
+|manager               |[relatedPerson](relatedperson.md)            | Contains details of the users manager for the specified position.                                                                                                                               |
+|source                |[personDataSource](persondatasource.md)      | Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
 
 ## Relationships
 
@@ -63,7 +64,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "allowedAudiences": "organization",
-  "categories": [],
+  "categories": null,
   "colleagues": [],
    "createdBy": {
       "device": null,

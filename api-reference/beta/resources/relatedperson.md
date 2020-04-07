@@ -17,11 +17,11 @@ Represents information about people related to information within a given entity
 
 ## Properties
 
-| Property        | Type        | Description                                               |
-|:----------------|:------------|:----------------------------------------------------------|
-|displayName      |String       | Name of the person.                                        |
+| Property        | Type        | Description                                                                                                                                                                                                                                     |
+|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|displayName      |String       | Name of the person.                                                                                                                                                                                                                             |
 |relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
-|userPrincipalName|String       | Email address or reference to person within organization. |
+|userPrincipalName|String       | Email address or reference to person within organization.                                                                                                                                                                                       |
 
 ## JSON representation
 
@@ -38,9 +38,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
-  "relationship": "String",
-  "userPrincipalName": "String"
+  "displayName": "Megan Bowen",
+  "relationship": "Manager",
+  "userPrincipalName": "megan.bowen@contoso.com"
 }
 ```
 

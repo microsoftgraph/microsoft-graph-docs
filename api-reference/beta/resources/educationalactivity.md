@@ -49,7 +49,9 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationalActivity",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
+
 }-->
 
 ```json
@@ -58,7 +60,7 @@ The following is a JSON representation of the resource.
   "endMonthYear": "String (timestamp)",
   "institution": {"@odata.type": "microsoft.graph.institutionData"},
   "program": {"@odata.type": "microsoft.graph.educationalActivityDetail"},
-  "startMonthYear": "String (timestamp)"
+  "startMonthYear": "String (timestamp)" 
 }
 ```
 

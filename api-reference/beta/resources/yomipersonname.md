@@ -40,11 +40,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
-  "first": "String",
-  "last": "String",
-  "maiden": "String",
-  "middle": "String"
+  "displayName": "I-ren-a Ko-ren",
+  "first": "I-ren-a",
+  "last": "Ko-ren",
+  "maiden": null,
+  "middle": null
 }
 ```
 

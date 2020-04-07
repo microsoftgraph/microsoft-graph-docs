@@ -27,19 +27,27 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Properties
 
-| Property     | Type                              | Description |
-|:-------------|:----------------------------------|:------------|
-|displayName   |String                             | Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device. |
-|first         |String                             | First Name of the user.                                                                                      |
-|initials      |String                             | Initials of the user.                                                                                        |
-|languageTag   |String                             | Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.                        |
-|last          |String                             | Last Name of the user.                                                                                       |
-|maiden        |String                             | Maiden Name of the user.                                                                                     |
-|middle        |String                             | Middlie Name of the user.                                                                                    | 
-|nickname      |String                             | Nickname of the user.                                                                                        |
-|pronunciation |[yomiPersonName](yomipersonname.md)| Guidance on how to pronounce the users name.                                                                 |
-|suffix        |String                             | Designators used after the users name (eg: PhD.)                                                             |
-|title         |String                             | Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)                                            |
+| Property             | Type                                   | Description                                                                                                                                                                                     |
+|:---------------------|:---------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|allowedAudiences      |string                                  | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                    |
+|createdBy             |[identitySet](identityset.md)           | When the entity was originally created.                                                                                                                                                         |
+|createdDateTime       |DateTimeOffset                          | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|displayName           |String                                  | Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.                                                                                    |
+|first                 |String                                  | First Name of the user.                                                                                                                                                                         |
+|id                    |String                                  | Read-only.                                                                                                                                                                                      | 
+|inference             |[inferenceData](inferencedata.md)       | Contains inference detail if the entity is inferred.                                                                                                                                            |
+|initials              |String                                  | Initials of the user.                                                                                                                                                                           |
+|languageTag           |String                                  | Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.                                                                                                           |
+|last                  |String                                  | Last Name of the user.                                                                                                                                                                          |
+|lastModifiedBy        |[identitySet](identityset.md)           | Identifier of the partner or user who last modified the entity.                                                                                                                                 |
+|lastModifiedDateTime  |DateTimeOffset                          | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|maiden                |String                                  | Maiden Name of the user.                                                                                                                                                                        |
+|middle                |String                                  | Middlie Name of the user.                                                                                                                                                                       | 
+|nickname              |String                                  | Nickname of the user.                                                                                                                                                                           |
+|pronunciation         |[yomiPersonName](yomipersonname.md)     | Guidance on how to pronounce the users name.                                                                                                                                                    |
+|source                |[personDataSource](personDataSource.md) | Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
+|suffix                |String                                  | Designators used after the users name (eg: PhD.)                                                                                                                                                |
+|title                 |String                                  | Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)                                                                                                                               |
 
 ## Relationships
 
@@ -55,22 +63,45 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.personName",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
-  "displayName": "String",
-  "first": "String",
-  "initials": "String",
-  "languageTag": "String",
-  "last": "String",
-  "maiden": "String",
-  "middle": "String",
-  "nickname": "String",
-  "pronunciation": {"@odata.type": "microsoft.graph.yomiPersonName"},
-  "suffix": "String",
-  "title": "String"
+  "allowedAudiences": "everyone",
+  "createdBy": {
+      "device": null,
+      "user": null,
+      "application": {
+          "displayName": "AAD",
+          "id": null
+      }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "displayName": "Irena Koren",
+  "first": "Irena",
+  "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
+  "inference": null,
+  "initials": "",
+  "languageTag": null,
+  "last": "Koren",
+  "lastModifiedBy": {
+      "device": null,
+      "user": null,
+      "application": {
+          "displayName": "AAD",
+          "id": null
+      }
+  },
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "maiden": null,
+  "middle": null,
+  "nickname": null,
+  "pronunciation": null,
+  "source": null,
+  "suffix": null,
+  "title": null
 }
 ```
 
