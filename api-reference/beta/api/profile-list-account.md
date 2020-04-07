@@ -1,5 +1,5 @@
 ---
-title: "List accounts"
+title: "List account"
 description: "Retrieve a list of useraccountinformation objects."
 localization_priority: Normal
 author: "kevinbellinger"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves properties related to the user's accounts from the [profile](../resources/profile.md).
+Retrieves properties related to the user's account from the [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -108,17 +108,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "ageGroup": "3",
-      "countryCode": "NO",
-      "preferredLanguageTag": {
+  "allowedAudiences": "organization",
+  "ageGroup": "3",
+  "countryCode": "NO",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "AAD",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "preferredLanguageTag": {
         "locale": "en-AU",
         "displayName": "English (Australian)"
       },
-      "userPrincipalName": "MeganB@M365x214355.onmicrosoft.com"
-    }
-  ]
+  "source": null,    
+  "userPrincipalName": "ikoren@contoso.com"
 }
 ```
 
