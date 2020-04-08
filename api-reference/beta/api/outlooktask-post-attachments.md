@@ -124,6 +124,8 @@ HTTP 201 Created
 
 Here is an example which attaches an event with another event as an item attachment.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_item_attachment_to_task"
@@ -154,6 +156,12 @@ Content-type: application/json
     }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-item-attachment-to-task-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
