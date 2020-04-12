@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookTableSort resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Manages sorting operations on Table objects.

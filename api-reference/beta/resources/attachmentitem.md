@@ -2,12 +2,14 @@
 title: "attachmentItem resource type"
 description: "Represents attributes of an item to be attached."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---
 
 # attachmentItem resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

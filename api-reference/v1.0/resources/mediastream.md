@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaStream resource type
 
+Namespace: microsoft.graph
+
 This contains information about the media channel.
 
 ## Properties

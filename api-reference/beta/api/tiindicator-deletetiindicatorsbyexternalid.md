@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # tiIndicator: deleteTiIndicatorsByExternalId
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.

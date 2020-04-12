@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update schemaExtension
 
+Namespace: microsoft.graph
+
 Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
 
 The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 

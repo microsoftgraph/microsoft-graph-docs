@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkMobileAppConfiguration"
 description: "Read properties and relationships of the androidForWorkMobileAppConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -90,7 +90,6 @@ Content-Length: 795
   }
 }
 ```
-
 
 
 

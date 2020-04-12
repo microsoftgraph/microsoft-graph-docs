@@ -1,13 +1,15 @@
 ---
 title: "Delete mailFolder"
 description: "Delete the specified mailFolder or mailSearchFolder."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete mailFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

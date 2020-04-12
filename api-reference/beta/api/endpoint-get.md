@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get endpoint
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a specific [endpoint](../resources/endpoint.md) object.

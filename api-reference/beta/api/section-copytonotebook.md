@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # section: copyToNotebook
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copies a section to a specific notebook.

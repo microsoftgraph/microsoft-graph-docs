@@ -1,7 +1,7 @@
 ---
 title: "roleScopeTagInfo resource type"
 description: "A class containing the properties of Role Scope Tag Object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

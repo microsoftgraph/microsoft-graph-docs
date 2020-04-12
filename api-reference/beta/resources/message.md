@@ -1,13 +1,15 @@
 ---
 title: "message resource type"
 description: "A message in a mailbox folder."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # message resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

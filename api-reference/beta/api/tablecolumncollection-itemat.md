@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableColumnCollection: ItemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a column based on its position in the collection.

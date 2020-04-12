@@ -1,6 +1,6 @@
 ---
 title: "participant resource type"
-description: "The participant type."
+description: "Represents the participant type."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -9,7 +9,9 @@ doc_type: resourcePageType
 
 # participant resource type
 
-The participant type.
+Namespace: microsoft.graph
+
+Represents the participant type.
 
 ## Methods
 
@@ -28,6 +30,7 @@ The participant type.
 | isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Information about whether the participant has recording capability. |
 
 ## Relationships
 None.

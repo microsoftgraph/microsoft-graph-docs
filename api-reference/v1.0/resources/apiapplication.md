@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # apiApplication resource type
 
+Namespace: microsoft.graph
+
 Specifies settings for an application that implements a web API.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationCustomization resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized. 

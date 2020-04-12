@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Delete conversation thread
+
+Namespace: microsoft.graph
 Delete a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

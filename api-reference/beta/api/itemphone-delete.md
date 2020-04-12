@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete itemPhoneNumber
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [itemPhone](../resources/itemphone.md) object from the user's [profile](../resources/profile.md).

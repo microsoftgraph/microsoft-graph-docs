@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # participant: invite
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Invite participants to the active call.

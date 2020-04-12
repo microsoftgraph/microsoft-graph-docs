@@ -2,12 +2,14 @@
 title: "message: reply"
 description: "Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: reply
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

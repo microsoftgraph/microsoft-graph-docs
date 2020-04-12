@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # clonableTeamParts enum type
 
+Namespace: microsoft.graph
+
 
 
 Describes which part of a [team](../resources/team.md) should be cloned. 

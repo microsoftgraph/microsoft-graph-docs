@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update roleDefinition
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [roleDefinition](../resources/intune-rbac-roledefinition.md) object.

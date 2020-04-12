@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete languageProficiency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [languageProficiency](../resources/languageproficiency.md) object from a user's [profile](../resources/profile.md).
@@ -74,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/languages/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

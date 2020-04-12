@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # itemAnalytics resource type
 
+Namespace: microsoft.graph
+
 The **itemAnalytics** resource provides analytics about activities that took place on an item. This resource is currently only available on SharePoint and OneDrive for Business.
 
 You can also use the [getActivitiesByInterval][] API to retrieve analytics over a custom time range or interval.

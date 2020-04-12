@@ -1,7 +1,7 @@
 ---
 title: "Get mobileThreatDefenseConnector"
 description: "Read properties and relationships of the mobileThreatDefenseConnector object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -85,7 +85,6 @@ Content-Length: 828
   }
 }
 ```
-
 
 
 

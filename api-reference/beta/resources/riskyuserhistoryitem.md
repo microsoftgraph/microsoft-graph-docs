@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # riskyUserHistoryItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. 
 

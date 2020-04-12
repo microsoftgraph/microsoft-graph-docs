@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # DefaultColumnValue resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List group transitive members
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the group's members. A group can have users, contacts, devices, service principals and other groups as members. This operation is transitive and will also return a flat list of all nested members.

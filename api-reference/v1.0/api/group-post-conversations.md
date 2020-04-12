@@ -1,13 +1,15 @@
 ---
 title: "Create conversation"
 description: "Create a new conversation by including a thread and a post. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Create conversation
+
+Namespace: microsoft.graph
 Create a new [conversation](../resources/conversation.md) by including a thread and a post. 
 
 Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.

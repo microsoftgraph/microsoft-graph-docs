@@ -1,13 +1,15 @@
 ---
 title: "Delete directoryObject"
 description: "Deletes a directoryObject."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete directoryObject
+
+Namespace: microsoft.graph
 
 Deletes a directoryObject.
 

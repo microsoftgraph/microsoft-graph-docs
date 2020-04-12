@@ -1,7 +1,7 @@
 ---
 title: "mobileAppInstallTimeSettings resource type"
 description: "Contains properties used to determine when to offer an app to devices and when to install the app on devices."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

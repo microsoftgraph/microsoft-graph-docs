@@ -1,7 +1,7 @@
 ---
 title: "Update circularGeofenceManagementCondition"
 description: "Update the properties of a circularGeofenceManagementCondition object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -112,7 +112,6 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "microsoftStoreForBusinessContainedApp resource type"
 description: "A class that represents a contained app of a MicrosoftStoreForBusinessApp."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

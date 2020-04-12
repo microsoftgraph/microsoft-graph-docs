@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # threatAssessmentRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract resouce type used to represent a threat assessment request item.

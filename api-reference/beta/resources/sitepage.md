@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 # sitePage resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents a page in the SitePages [list][].

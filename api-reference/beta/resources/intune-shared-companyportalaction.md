@@ -1,7 +1,7 @@
 ---
 title: "companyPortalAction enum type"
 description: "Action on a device that can be executed in the Company Portal"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

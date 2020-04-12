@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Delete an item from a list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes an item from a [list][].

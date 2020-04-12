@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerBucket
 
+Namespace: microsoft.graph
+
 Use this API to create a new **plannerBucket**.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create educationRubric
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [educationRubric](../resources/educationrubric.md) object.

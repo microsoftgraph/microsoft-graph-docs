@@ -2,12 +2,14 @@
 title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Outlook category
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -9,6 +9,11 @@ doc_type: "resourcePageType"
 
 # externalFile resource type
 
+Namespace: microsoft.graph
+
+> [!CAUTION]
+> The `externalFile` type has been deprecated. Developers should not use this type. External files may still be indexed using the [externalItem](externalitem.md) type.
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An item indexed via a Microsoft Search [connection](externalconnection.md). This type derives from the [externalItem](externalitem.md) type.

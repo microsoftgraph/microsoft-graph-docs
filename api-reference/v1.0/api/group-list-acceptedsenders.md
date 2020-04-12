@@ -1,13 +1,15 @@
 ---
 title: "List acceptedSenders"
 description: "Get a list of users or groups that are in the accepted-senders list for this group."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List acceptedSenders
+
+Namespace: microsoft.graph
 Get a list of users or groups that are in the accepted-senders list for this group.
 
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 

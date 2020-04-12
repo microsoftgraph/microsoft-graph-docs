@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Delete page from the site pages list of a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes a [sitePage][] from the site pages [list][] in a [site][].

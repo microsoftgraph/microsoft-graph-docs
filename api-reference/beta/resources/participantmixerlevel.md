@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # participantMixerLevel resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Configuration of mixer levels for given audio participant

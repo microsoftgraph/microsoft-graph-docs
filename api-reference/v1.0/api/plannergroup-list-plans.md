@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List plans
 
+Namespace: microsoft.graph
+
 Retrieve a list of **plannerPlan** objects owned by a [group](../resources/group.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

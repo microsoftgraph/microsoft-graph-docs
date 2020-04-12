@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Create inferenceClassificationOverride
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a [Focused Inbox](../resources/manage-focused-inbox.md) override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 

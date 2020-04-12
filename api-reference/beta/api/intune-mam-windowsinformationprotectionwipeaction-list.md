@@ -1,7 +1,7 @@
 ---
 title: "List windowsInformationProtectionWipeActions"
 description: "List properties and relationships of the windowsInformationProtectionWipeAction objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -75,7 +75,6 @@ Content-Length: 526
   ]
 }
 ```
-
 
 
 

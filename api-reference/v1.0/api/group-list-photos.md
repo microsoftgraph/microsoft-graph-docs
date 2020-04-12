@@ -1,13 +1,15 @@
 ---
 title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List photos
+
+Namespace: microsoft.graph
 Retrieve a list of [profilePhoto](../resources/profilephoto.md) objects.
 
 ## Permissions

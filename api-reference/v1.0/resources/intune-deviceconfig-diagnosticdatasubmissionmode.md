@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # diagnosticDataSubmissionMode enum type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Allow the device to send diagnostic and usage telemetry data, such as Watson.

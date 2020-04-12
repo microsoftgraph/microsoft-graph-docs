@@ -2,12 +2,14 @@
 title: "message: createReplyAll"
 description: "Create a draft of a reply-all message to include a comment or update any message properties, "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: createReplyAll
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

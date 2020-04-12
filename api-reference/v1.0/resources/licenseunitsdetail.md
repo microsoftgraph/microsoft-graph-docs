@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # licenseUnitsDetail resource type
 
+Namespace: microsoft.graph
+
 The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.
 
 ## Properties

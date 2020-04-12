@@ -1,7 +1,7 @@
 ---
 title: "deviceExchangeAccessStateSummary resource type"
 description: "Device Exchange Access State summary"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

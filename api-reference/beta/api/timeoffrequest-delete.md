@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete timeOffRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [timeOffRequest](../resources/timeoffrequest.md) object.

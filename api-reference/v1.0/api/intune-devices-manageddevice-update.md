@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update managedDevice
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.

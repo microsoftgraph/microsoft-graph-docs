@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # appliedConditionalAccessPolicy resource type
 
+Namespace: microsoft.graph
+
 Indicates the attributes related to applied conditional access policy or policies that are triggered by the corresponding sign-in activity.
 
 ## Properties

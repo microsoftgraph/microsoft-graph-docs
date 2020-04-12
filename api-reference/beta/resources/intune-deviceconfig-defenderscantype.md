@@ -1,7 +1,7 @@
 ---
 title: "defenderScanType enum type"
 description: "Possible values for system scan type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

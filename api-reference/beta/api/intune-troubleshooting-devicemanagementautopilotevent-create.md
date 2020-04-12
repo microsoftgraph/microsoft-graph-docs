@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementAutopilotEvent"
 description: "Create a new deviceManagementAutopilotEvent object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -47,6 +47,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|UUID for the object|
+|deviceId|String|Device id associated with the object|
 |eventDateTime|DateTimeOffset|Time when the event occurred .|
 |deviceRegisteredDateTime|DateTimeOffset|Device registration date.|
 |enrollmentStartDateTime|DateTimeOffset|Device enrollment start date.|
@@ -82,10 +83,11 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
 Content-type: application/json
-Content-length: 1323
+Content-length: 1357
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
+  "deviceId": "Device Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -116,11 +118,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1372
+Content-Length: 1406
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
+  "deviceId": "Device Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -145,7 +148,6 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

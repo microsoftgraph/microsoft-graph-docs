@@ -30,7 +30,7 @@ The following example uses the provider in HTML (via CDN).
 ```
 
 | Attribute | Description |
-| --- | --- | --- |
+| --- | --- |
 | client-id   | String client ID (see Configure your Teams app). Required. |
 | auth-popup-url  | Absolute or relative path to the page that will handle auth in the popup (see Create the popup page). Required. |
 | scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |

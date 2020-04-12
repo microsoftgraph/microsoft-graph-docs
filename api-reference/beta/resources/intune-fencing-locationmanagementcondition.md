@@ -1,7 +1,7 @@
 ---
 title: "locationManagementCondition resource type"
 description: "Contains the information to define a location management condition, an area of interest, to monitor."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

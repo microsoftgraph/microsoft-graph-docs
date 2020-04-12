@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # requestorSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used for the **requestorSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who can create a request for an access package on that policy.

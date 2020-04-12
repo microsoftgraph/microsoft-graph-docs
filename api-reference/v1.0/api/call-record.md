@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: recordResponse
 
+Namespace: microsoft.graph
+
 Records a short audio response from the caller.
 A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 

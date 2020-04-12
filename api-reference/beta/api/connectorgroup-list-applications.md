@@ -9,6 +9,8 @@ author: ""
 
 # List applications
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of application objects associated with the connectorGroup.

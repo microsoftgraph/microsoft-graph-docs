@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # group: delta
+
+Namespace: microsoft.graph
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See [Using Delta Query](/graph/delta-query-overview) for details.
 
 ## Permissions

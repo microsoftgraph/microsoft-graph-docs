@@ -1,7 +1,7 @@
 ---
 title: "Get windows81VpnConfiguration"
 description: "Read properties and relationships of the windows81VpnConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -124,7 +124,6 @@ Content-Length: 2087
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create deviceHealthScriptDeviceState"
 description: "Create a new deviceHealthScriptDeviceState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -109,7 +109,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileCertificateProfileBases"
 description: "List properties and relationships of the androidWorkProfileCertificateProfileBase objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -112,7 +112,6 @@ Content-Length: 1836
   ]
 }
 ```
-
 
 
 

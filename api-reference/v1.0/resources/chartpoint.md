@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartPoint resource type
 
+Namespace: microsoft.graph
+
 Represents a point of a series in a chart.
 
 

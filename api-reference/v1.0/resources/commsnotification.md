@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # commsNotification resource type
 
+Namespace: microsoft.graph
+
 Communications notification base type that is published by Communications servers to notify changes.
 
 ## Properties

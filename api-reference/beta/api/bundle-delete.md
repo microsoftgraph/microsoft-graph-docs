@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Delete bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [bundle][] of driveItems by using its **id**.

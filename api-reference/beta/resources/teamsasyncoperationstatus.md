@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsAsyncOperationStatus enum type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).

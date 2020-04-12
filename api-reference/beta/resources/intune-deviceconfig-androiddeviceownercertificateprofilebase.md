@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerCertificateProfileBase resource type"
 description: "Android Device Owner certificate profile base."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

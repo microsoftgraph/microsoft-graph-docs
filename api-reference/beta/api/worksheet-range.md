@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Worksheet: Range
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the range object specified by the address or name.

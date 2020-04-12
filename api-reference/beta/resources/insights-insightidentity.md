@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # insightIdentity
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Complex type containing properties of [sharedInsight](insights-shared.md) items. 

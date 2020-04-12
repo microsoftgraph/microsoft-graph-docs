@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List plans
 
+Namespace: microsoft.graph
+
 Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.
 
 ## Permissions

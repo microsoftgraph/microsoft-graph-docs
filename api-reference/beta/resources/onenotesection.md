@@ -9,6 +9,8 @@ author: ""
 
 # onenoteSection resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A section in a OneNote notebook. Sections can contain pages.

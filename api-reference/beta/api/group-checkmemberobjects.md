@@ -2,12 +2,14 @@
 title: "group: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified group object."
 localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "yyuank"
+ms.prod: "groups"
 doc_type: "apiPageType"
 ---
 
 # group: checkMemberObjects
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

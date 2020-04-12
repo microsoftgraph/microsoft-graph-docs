@@ -1,7 +1,7 @@
 ---
 title: "ndesConnector resource type"
 description: "Entity which represents an OnPrem Ndes connector."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

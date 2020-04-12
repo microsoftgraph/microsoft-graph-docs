@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartFill resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the fill formatting for a chart element.

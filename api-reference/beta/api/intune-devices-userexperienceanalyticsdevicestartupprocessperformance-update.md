@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsDeviceStartupProcessPerformance"
 description: "Update the properties of a userExperienceAnalyticsDeviceStartupProcessPerformance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -97,7 +97,6 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
-
 
 
 

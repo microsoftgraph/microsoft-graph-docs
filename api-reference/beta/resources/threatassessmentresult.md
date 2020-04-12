@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # threatAssessmentResult resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a threat assessment result item.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessConditionSet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the type of conditions that govern when the policy applies.

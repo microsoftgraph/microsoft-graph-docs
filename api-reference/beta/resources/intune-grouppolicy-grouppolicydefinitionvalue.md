@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyDefinitionValue resource type"
 description: "The definition value entity stores the value for a single group policy definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

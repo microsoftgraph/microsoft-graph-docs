@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Get synchronizationSchema
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the schema for a given synchronization job or template.

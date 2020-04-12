@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ColumnLink resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.

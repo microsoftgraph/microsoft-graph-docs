@@ -2,12 +2,14 @@
 title: "Create onPremisesAgentGroup"
 description: "Create a new **onPremisesAgentGroup** object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Create onPremisesAgentGroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

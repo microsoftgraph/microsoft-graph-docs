@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Update externalitem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
+Update the properties of an [externalitem](../resources/externalitem.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -38,7 +40,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md). |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
 
 ## Request headers
 
@@ -49,26 +51,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
+In the request body, supply the values for relevant fields that should be updated. Existing properties (excluding properties inside the `properties` object) that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
 
-> [!NOTE]
-> During the preview only the `acl` property can be updated via PATCH. In order to update other properties, use a [PUT to overwrite the existing item with a new item](externalconnection-put-items.md).
+| Property   | Type                                  | Description               |
+|:-----------|:--------------------------------------|:--------------------------|
+| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | String                                | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
 
-### externalItem properties
+### Updating the acl collection
 
-| Property | Type                                  | Description               |
-|:---------|:--------------------------------------|:--------------------------|
-| acl      | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+If the `acl` property is included in an update request, the existing ACL collection is overwritten with the collection included in the request.
 
-### externalFile properties
+### Updating the properties object
 
-| Property | Type                                  | Description               |
-|:---------|:--------------------------------------|:--------------------------|
-| acl      | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+If the `properties` property is included in an update request, the existing property bag is overwritten with the value included in the request.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [externalItem](../resources/externalitem.md) object in the response body.
 
 ## Examples
 
@@ -154,5 +155,8 @@ Content-type: application/json
   "description": "Update externalitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
+  ]
 }-->

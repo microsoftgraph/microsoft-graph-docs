@@ -1,7 +1,7 @@
 ---
 title: "secureBootWithDMAType enum type"
 description: "Possible values of Secure Boot with DMA"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

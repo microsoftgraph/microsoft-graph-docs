@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # applicationServicePrincipal resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 When an instance of an application from the Azure AD application gallery is added, [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects are created in the directory. The **applicationServicePrincipal** represents the concatenation of the **application** and **servicePrincipal** object.

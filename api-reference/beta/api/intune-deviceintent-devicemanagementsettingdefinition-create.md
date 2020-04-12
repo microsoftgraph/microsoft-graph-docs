@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementSettingDefinition"
 description: "Create a new deviceManagementSettingDefinition object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -153,7 +153,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

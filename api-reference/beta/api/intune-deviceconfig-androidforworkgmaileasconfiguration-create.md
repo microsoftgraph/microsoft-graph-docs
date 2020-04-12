@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkGmailEasConfiguration"
 description: "Create a new androidForWorkGmailEasConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -166,7 +166,6 @@ Content-Length: 1436
   "usernameSource": "userPrincipalName"
 }
 ```
-
 
 
 

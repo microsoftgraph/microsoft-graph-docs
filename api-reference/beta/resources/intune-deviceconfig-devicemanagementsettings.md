@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -26,6 +26,7 @@ Not yet documented
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|The Derived Credential Provider to use for this account. Possible values are: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|String|The Derived Credential Provider self-service URI.|
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|The property to determine if Android device administrator enrollment is enabled for this account.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|The property to determine whether to ignore unsupported compliance settings on certian models of devices.|
 
 ## Relationships
 None
@@ -47,7 +48,8 @@ Here is a JSON representation of the resource.
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
-  "androidDeviceAdministratorEnrollmentEnabled": true
+  "androidDeviceAdministratorEnrollmentEnabled": true,
+  "ignoreDevicesForUnsupportedSettingsEnabled": true
 }
 ```
 

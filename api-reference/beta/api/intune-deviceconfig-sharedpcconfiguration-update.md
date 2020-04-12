@@ -1,7 +1,7 @@
 ---
 title: "Update sharedPCConfiguration"
 description: "Update the properties of a sharedPCConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -215,7 +215,6 @@ Content-Length: 2092
   "fastFirstSignIn": "enabled"
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get audio routing group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.

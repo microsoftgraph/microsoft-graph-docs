@@ -1,7 +1,7 @@
 ---
 title: "azureADWindowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

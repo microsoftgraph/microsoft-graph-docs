@@ -2,12 +2,14 @@
 title: "application resource type"
 description: "Represents an application."
 localization_priority: Priority
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # application resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

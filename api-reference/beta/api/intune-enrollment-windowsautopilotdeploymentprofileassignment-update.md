@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAutopilotDeploymentProfileAssignment"
 description: "Update the properties of a windowsAutopilotDeploymentProfileAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -92,7 +92,6 @@ Content-Length: 293
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

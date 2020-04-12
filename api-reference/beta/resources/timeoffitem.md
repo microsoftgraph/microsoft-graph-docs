@@ -9,6 +9,8 @@ doc_type: resourcePageType_
 
 # timeOffItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a version of the [timeOff](timeoff.md).

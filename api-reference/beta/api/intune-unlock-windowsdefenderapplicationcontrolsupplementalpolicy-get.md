@@ -1,7 +1,7 @@
 ---
 title: "Get windowsDefenderApplicationControlSupplementalPolicy"
 description: "Read properties and relationships of the windowsDefenderApplicationControlSupplementalPolicy object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,7 +81,6 @@ Content-Length: 560
   }
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # inviteParticipantsOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API.

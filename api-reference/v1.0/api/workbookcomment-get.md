@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get workbookComment
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [workbookComment](../resources/workbookcomment.md) object.
 
 ## Permissions

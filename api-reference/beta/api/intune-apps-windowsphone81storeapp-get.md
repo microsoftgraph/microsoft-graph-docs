@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81StoreApp"
 description: "Read properties and relationships of the windowsPhone81StoreApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -96,7 +96,6 @@ Content-Length: 1018
   }
 }
 ```
-
 
 
 

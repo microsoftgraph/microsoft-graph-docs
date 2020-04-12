@@ -1,7 +1,7 @@
 ---
 title: "deviceAppManagementTaskStatus enum type"
 description: "Device app management task status."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 # itemPreviewInfo resource type
 
+Namespace: microsoft.graph
+
 The **itemPreviewInfo** resource contains information on how to embed a preview of a [driveItem](driveitem.md).
 
 ## JSON representation

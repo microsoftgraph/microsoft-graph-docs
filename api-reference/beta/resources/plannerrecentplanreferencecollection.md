@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerRecentPlanReferenceCollection resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user. This resource is an open type and is part of the [plannerUser](planneruser.md) object. The property name is the ID of the corresponding plan. The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.

@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceMobileAppConfigurationDeviceStatus resource type"
 description: "Contains properties, inherited properties and actions for an MDM mobile app configuration status for a device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

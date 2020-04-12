@@ -1,7 +1,7 @@
 ---
 title: "webApp resource type"
 description: "Contains properties and inherited properties for web apps."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

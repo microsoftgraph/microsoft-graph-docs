@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationAssignmentGrade resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the **Grade** object on a Submission. This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this

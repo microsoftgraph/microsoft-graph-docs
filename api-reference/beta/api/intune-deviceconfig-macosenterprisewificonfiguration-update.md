@@ -1,7 +1,7 @@
 ---
 title: "Update macOSEnterpriseWiFiConfiguration"
 description: "Update the properties of a macOSEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -201,7 +201,6 @@ Content-Length: 2030
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

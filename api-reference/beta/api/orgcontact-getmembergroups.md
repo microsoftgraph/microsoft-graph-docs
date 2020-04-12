@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # orgContact: getMemberGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions

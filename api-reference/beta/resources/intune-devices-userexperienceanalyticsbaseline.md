@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsBaseline resource type"
 description: "The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

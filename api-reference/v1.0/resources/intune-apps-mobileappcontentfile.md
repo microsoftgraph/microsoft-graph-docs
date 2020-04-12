@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mobileAppContentFile resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for a single installer file that is associated with a given mobileAppContent version.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create educationUser
 
+Namespace: microsoft.graph
+
 Create a new user.
 
 <!-- Add some additional text to better distinguish this method from the user_post_users (https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_post_users) topic. -->

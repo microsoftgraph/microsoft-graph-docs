@@ -1,13 +1,15 @@
 ---
 title: "groupLifecyclePolicy: removeGroup"
 description: "Removes a group from a lifecycle policy."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # groupLifecyclePolicy: removeGroup
+
+Namespace: microsoft.graph
 
 Removes a group from a lifecycle policy.
 

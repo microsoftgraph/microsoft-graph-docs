@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # settingValue resource type
 
+Namespace: microsoft.graph
+
 A setting represented by a name/value pair.
 
 ### Properties

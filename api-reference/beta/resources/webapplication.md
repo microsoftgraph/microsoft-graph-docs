@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # webApplication resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Specifies settings for a web application.

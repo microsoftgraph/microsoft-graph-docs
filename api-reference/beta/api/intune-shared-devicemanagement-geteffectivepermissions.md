@@ -1,7 +1,7 @@
 ---
 title: "getEffectivePermissions function"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -89,7 +89,6 @@ Content-Length: 471
   ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "windowsFirewallRuleTrafficDirectionType enum type"
 description: "Firewall rule traffic directions."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

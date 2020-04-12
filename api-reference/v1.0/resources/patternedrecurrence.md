@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # patternedRecurrence resource type
 
+Namespace: microsoft.graph
+
 The recurrence pattern and range.
 
 ## Properties

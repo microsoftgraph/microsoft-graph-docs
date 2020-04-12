@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create acceptedSender
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a new user or group to the acceptedSender list.

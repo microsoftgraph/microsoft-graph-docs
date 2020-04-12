@@ -9,6 +9,8 @@ author: ""
 
 # List memberOf
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the connectorgroup the connector is a member of.

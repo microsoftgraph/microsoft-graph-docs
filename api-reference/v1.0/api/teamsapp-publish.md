@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Publish apps to your organization's app catalog
 
+Namespace: microsoft.graph
+
 
 
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.

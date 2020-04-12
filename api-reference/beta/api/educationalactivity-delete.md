@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete educationalActivity
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [educationalActivity](../resources/educationalactivity.md) object from a user's [profile](../resources/profile.md).

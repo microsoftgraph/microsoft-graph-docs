@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var policy = await graphClient.Policies["claimsMappingPolicies"]
+var claimsMappingPolicies = await graphClient.Policies.ClaimsMappingPolicies
 	.Request()
 	.GetAsync();
 

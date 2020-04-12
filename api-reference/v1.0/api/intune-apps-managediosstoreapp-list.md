@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List managedIOSStoreApps
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) objects.

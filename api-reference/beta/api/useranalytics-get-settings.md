@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get settings for user analytics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a [settings](../resources/settings.md) object as applicable for the analytics API.

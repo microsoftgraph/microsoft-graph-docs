@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamMessagingSettings resource type
 
+Namespace: microsoft.graph
+
 
 
 Settings to configure messaging and mentions in the [team](team.md).

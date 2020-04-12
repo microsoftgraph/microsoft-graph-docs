@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartDataLabelFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsulates the format properties for the chart data labels.

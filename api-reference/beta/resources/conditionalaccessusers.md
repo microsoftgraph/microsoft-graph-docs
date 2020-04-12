@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessUsers resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents users, groups, and roles included in and excluded from the policy scope.

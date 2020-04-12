@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # Device configuration in Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -226,6 +228,7 @@ The following Graph resources are available to manage settings and features on d
 - [Firewall packet queueing method type](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [Firewall pre shared key encoding method type](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
 - [Folder protection type](intune-deviceconfig-folderprotectiontype.md)
+- [Group policy category](intune-grouppolicy-grouppolicycategory.md)
 - [Group policy configuration](intune-grouppolicy-grouppolicyconfiguration.md)
 - [Group policy configuration assignment](intune-grouppolicy-grouppolicyconfigurationassignment.md)
 - [Group policy configuration type](intune-grouppolicy-grouppolicyconfigurationtype.md)
@@ -252,6 +255,7 @@ The following Graph resources are available to manage settings and features on d
 - [Group policy presentation value multi text](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [Group policy presentation value text](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [Group policy type](intune-grouppolicy-grouppolicytype.md)
+- [Group policy uploaded category](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [Group policy uploaded definition](intune-grouppolicy-grouppolicyuploadeddefinition.md)
 - [Group policy uploaded presentation](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Hash algorithms](intune-deviceconfig-hashalgorithms.md)
@@ -259,6 +263,7 @@ The following Graph resources are available to manage settings and features on d
 - [Intended purpose](intune-deviceconfig-intendedpurpose.md)
 - [Internet explorer message setting](intune-deviceconfig-internetexplorermessagesetting.md)
 - [Internet site security level](intune-deviceconfig-internetsitesecuritylevel.md)
+- [iOS Azure ad single sign on extension](intune-deviceconfig-iosazureadsinglesignonextension.md)
 - [iOS bookmark](intune-deviceconfig-iosbookmark.md)
 - [iOS certificate profile](intune-deviceconfig-ioscertificateprofile.md)
 - [iOS certificate profile base](intune-deviceconfig-ioscertificateprofilebase.md)
@@ -320,6 +325,7 @@ The following Graph resources are available to manage settings and features on d
 - [Local security options minimum session security](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [Local security options smart card removal behavior type](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Local security options standard user elevation prompt behavior type](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [macOS associated domains key/value pair](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [macOS certificate profile base](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS compliance policy](intune-deviceconfig-macoscompliancepolicy.md)
 - [macOS credential single sign on extension](intune-deviceconfig-macoscredentialsinglesignonextension.md)

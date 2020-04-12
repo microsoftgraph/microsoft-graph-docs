@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationClass resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office 365 experiences to work correctly, teachers must be members of both the teachers and members collections.

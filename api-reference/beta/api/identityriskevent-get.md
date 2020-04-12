@@ -3,11 +3,13 @@ title: "Get identityRiskEvent"
 description: "Retrieve the properties and relationships of identityriskevent object."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get identityRiskEvent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

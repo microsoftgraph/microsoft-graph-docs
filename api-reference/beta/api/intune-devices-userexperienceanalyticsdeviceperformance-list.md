@@ -1,7 +1,7 @@
 ---
 title: "List userExperienceAnalyticsDevicePerformances"
 description: "List properties and relationships of the userExperienceAnalyticsDevicePerformance objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -83,7 +83,6 @@ Content-Length: 675
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create threat intelligence indicator
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [tiIndicator](../resources/tiindicator.md) object.

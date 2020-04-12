@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Update synchronizationTemplate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update (override) the synchronization template associated with a given application.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableColumnCollection: add
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a new column to the table.

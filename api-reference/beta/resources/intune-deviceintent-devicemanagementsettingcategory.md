@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingCategory resource type"
 description: "Entity representing a setting category"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileTrustedRootCertificate resource type"
 description: "Android Work Profile Trusted Root Certificate configuration profile"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

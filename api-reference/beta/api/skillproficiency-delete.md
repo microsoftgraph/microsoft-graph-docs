@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete skillProficiency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [skillProficiency](../resources/skillproficiency.md) object from a user's [profile](../resources/profile.md).

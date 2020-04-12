@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntegerSettingInstance resource type"
 description: "A setting instance representing an integer value"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

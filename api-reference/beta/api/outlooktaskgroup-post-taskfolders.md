@@ -1,13 +1,15 @@
 ---
 title: "Create outlookTaskFolder"
 description: "Create an Outlook task folder under a specified outlookTaskGroup."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create outlookTaskFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

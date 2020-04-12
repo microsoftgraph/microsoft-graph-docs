@@ -2,12 +2,14 @@
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # user: exportPersonalData
+
+Namespace: microsoft.graph
 
 Submits a data policy operation request, made by a company administrator to export an organizational user's data.
 

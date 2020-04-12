@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # webApplication resource type
 
+Namespace: microsoft.graph
+
 Specifies settings for a web application.
 
 ## Properties

@@ -9,6 +9,8 @@ author: ""
 
 # workbookFilterCriteria resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the filtering criteria applied to a column.

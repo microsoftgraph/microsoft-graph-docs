@@ -3,11 +3,13 @@ title: "Update governanceRoleSetting"
 description: "Update the properties of governanceRoleSetting."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Update governanceRoleSetting
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

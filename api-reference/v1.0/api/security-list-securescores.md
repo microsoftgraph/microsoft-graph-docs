@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List secureScores
 
+Namespace: microsoft.graph
+
 Retrieve a list of [secureScore](../resources/securescore.md) objects.
 
 ## Permissions

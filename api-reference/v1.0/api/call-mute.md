@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: mute
 
+Namespace: microsoft.graph
+
 Allows the application to mute itself.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.

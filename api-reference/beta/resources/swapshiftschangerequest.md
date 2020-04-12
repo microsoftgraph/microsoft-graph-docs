@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # swapShiftsChangeRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).

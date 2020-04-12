@@ -2,12 +2,14 @@
 title: "trustFrameworkKeySet: uploadSecret"
 description: "Upload a secret to a keyset."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # trustFrameworkKeySet: uploadSecret
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

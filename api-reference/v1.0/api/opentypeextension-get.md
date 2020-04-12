@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get open extension
 
+Namespace: microsoft.graph
+
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.
 
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.

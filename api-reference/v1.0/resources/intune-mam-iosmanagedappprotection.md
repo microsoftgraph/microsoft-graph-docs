@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # iosManagedAppProtection resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device

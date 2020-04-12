@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Microsoft Teams device usage reports
 
+Namespace: microsoft.graph
+
 Use the Microsoft Teams device usage reports to get information about Microsoft Teams device usage in your organization.
 
 ## Methods

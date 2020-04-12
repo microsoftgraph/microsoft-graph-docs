@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Create a new item in a list
 
+Namespace: microsoft.graph
+
 Create a new [listItem][] in a [list][].
 
 ## Permissions

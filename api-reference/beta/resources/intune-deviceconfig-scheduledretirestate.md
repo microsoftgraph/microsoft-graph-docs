@@ -1,7 +1,7 @@
 ---
 title: "scheduledRetireState enum type"
 description: "Cancel or confirm scheduled retire "
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

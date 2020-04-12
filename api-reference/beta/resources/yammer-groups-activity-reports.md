@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Yammer groups activity reports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.

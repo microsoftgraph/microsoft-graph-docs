@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: playPrompt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Play a prompt in the call.

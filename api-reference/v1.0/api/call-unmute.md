@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: unmute
 
+Namespace: microsoft.graph
+
 Allow the application to unmute itself.
 
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.

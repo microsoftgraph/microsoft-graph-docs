@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: redirect
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.

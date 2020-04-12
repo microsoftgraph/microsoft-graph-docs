@@ -9,7 +9,9 @@ ms.prod: "microsoft-identity-platform"
 ---
 # accessAction resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
+
+
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 

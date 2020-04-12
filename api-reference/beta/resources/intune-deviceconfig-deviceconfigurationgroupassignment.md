@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationGroupAssignment resource type"
 description: "Device configuration group assignment."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

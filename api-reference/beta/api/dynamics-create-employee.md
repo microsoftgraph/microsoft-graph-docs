@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create employees
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create an employee object in Dynamics 365 Business Central.
 
 ## Permissions

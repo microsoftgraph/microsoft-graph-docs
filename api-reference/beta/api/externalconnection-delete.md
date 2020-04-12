@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete externalConnection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [externalConnection](../resources/externalconnection.md).

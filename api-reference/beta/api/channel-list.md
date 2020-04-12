@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # List channels
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).

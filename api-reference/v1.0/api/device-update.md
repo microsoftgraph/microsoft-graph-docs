@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update device
 
+Namespace: microsoft.graph
+
 Update the properties of a registered device.
 
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.

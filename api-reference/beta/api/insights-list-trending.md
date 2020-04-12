@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List trending
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight that includes a list of documents trending around the user.

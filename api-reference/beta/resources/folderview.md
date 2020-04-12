@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # FolderView resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **FolderView** resource provides or sets recommendations on the user-experience of a folder.

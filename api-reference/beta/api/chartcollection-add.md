@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookChartCollection: add
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new chart.

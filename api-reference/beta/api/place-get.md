@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get place
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
 

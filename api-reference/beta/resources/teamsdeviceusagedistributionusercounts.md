@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsDeviceUsageDistributionUserCounts resource type
 
+Namespace: microsoft.graph
+
 ## Properties
 
 | Property          | Type   |

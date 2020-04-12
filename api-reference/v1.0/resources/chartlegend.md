@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartLegend resource type
 
+Namespace: microsoft.graph
+
 Represents the legend in a chart.
 
 

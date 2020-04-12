@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsStartupScoreHistory"
 description: "Update the properties of a userExperienceAnalyticsStartupScoreHistory object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the [
 |startupScore|Int32|User experience analytics device startup score.|
 |coreBootScore|Int32|The user experience analytics device core boot score.|
 |coreSigninScore|Int32|The User experience analytics device core sign-in score.|
+|recommendedSoftwareScore|Int32|The User experience analytics device core sign-in score.|
 
 
 
@@ -64,14 +65,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory/{userExperienceAnalyticsStartupScoreHistoryId}
 Content-type: application/json
-Content-length: 216
+Content-length: 250
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
 
@@ -80,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 299
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
@@ -88,10 +90,10 @@ Content-Length: 265
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
-
 
 
 

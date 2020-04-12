@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get orgContact
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of an [organizational contact](../resources/orgcontact.md).
 
 ## Permissions

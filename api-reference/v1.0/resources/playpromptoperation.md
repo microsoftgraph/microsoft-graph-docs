@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # playPromptOperation resource type
 
+Namespace: microsoft.graph
+
 The playPrompt operation to obtain the result of the playPrompt action.
 
 ## Properties

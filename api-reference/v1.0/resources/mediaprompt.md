@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaPrompt resource type
 
+Namespace: microsoft.graph
+
 This resource type contains information about the audio file to be played and other additional settings.
 
 ## Properties

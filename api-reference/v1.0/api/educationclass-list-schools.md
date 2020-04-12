@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List schools
 
+Namespace: microsoft.graph
+
 Retrieve a list of schools in which the class is taught.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # noMediaConfig resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Media configuration for indicating no media.

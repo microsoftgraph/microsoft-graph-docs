@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Delete a sharing permission from a file or folder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove access to a [DriveItem](../resources/driveitem.md).

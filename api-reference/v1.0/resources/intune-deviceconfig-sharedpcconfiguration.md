@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # sharedPCConfiguration resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource.

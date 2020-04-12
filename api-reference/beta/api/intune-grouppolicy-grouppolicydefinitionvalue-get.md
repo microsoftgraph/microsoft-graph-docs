@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyDefinitionValue"
 description: "Read properties and relationships of the groupPolicyDefinitionValue object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -75,7 +75,6 @@ Content-Length: 329
   }
 }
 ```
-
 
 
 

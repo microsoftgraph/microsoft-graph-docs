@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Clone a team
 
+Namespace: microsoft.graph
+
 
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).

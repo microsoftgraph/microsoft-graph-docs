@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Replace shift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Replace an existing [shift](../resources/shift.md).

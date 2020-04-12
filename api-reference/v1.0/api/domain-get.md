@@ -1,13 +1,15 @@
 ---
 title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get domain
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of domain object.
 

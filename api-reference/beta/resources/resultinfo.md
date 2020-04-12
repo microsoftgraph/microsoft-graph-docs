@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # resultInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains success and failure-specific result information. 

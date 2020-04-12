@@ -2,12 +2,14 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 localization_priority: Normal
-author: "davidmu1"
+author: "elisolMS"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create invitation
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

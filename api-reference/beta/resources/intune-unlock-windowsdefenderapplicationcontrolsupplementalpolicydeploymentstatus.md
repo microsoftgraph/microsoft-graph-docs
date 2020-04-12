@@ -1,7 +1,7 @@
 ---
 title: "windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus resource type"
 description: "Contains properties for the deployment state of a WindowsDefenderApplicationControl supplemental policy for a device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

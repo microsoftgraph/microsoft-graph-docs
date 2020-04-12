@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create timeOff
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md).

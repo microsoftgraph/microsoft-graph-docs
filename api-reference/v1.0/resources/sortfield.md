@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # SortField resource type
 
+Namespace: microsoft.graph
+
 Represents a condition in a sorting operation.
 
 ## Properties

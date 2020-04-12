@@ -1,7 +1,7 @@
 ---
 title: "Update windows10PFXImportCertificateProfile"
 description: "Update the properties of a windows10PFXImportCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -152,7 +152,6 @@ Content-Length: 1262
   "keyStorageProvider": "useTpmKspOtherwiseFail"
 }
 ```
-
 
 
 

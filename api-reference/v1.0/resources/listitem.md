@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 # listItem resource
 
+Namespace: microsoft.graph
+
 Represents an item in a SharePoint **[list][]**.
 Column values in the list are available through the `fieldValueSet` dictionary.
 

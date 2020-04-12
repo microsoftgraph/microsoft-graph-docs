@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add teacher
 
+Namespace: microsoft.graph
+
 Add a teacher to a class.
 
 ## Permissions

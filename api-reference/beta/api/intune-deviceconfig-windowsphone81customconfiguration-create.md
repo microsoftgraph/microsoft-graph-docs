@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81CustomConfiguration"
 description: "Create a new windowsPhone81CustomConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -169,7 +169,6 @@ Content-Length: 1473
   ]
 }
 ```
-
 
 
 

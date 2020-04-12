@@ -1,13 +1,15 @@
 ---
 title: "Create rule"
 description: "Create a messageRule object by specifying a set of conditions and actions. "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create rule
+
+Namespace: microsoft.graph
 
 
 Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 

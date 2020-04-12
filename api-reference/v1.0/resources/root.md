@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Root resource type
 
+Namespace: microsoft.graph
+
 The **Root** facet indicates that an object is the top-most one in its hierarchy.
 The presence (non-null) of the facet value indicates that the object is the root.
 A null (or missing) value indicates the object is not the root.

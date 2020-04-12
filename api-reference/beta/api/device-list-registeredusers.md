@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List registeredUsers
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of users that are registered users of the device.

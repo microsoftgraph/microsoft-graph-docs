@@ -1,7 +1,7 @@
 ---
 title: "Update windows10TeamGeneralConfiguration"
 description: "Update the properties of a windows10TeamGeneralConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -209,7 +209,6 @@ Content-Length: 2187
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

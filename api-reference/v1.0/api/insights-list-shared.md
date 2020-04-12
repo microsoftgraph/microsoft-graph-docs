@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List shared
 
+Namespace: microsoft.graph
+
 Calculated insight that includes the list of documents shared with a user.
 
 ## Permissions

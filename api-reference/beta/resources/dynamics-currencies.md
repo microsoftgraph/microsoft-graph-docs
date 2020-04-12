@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # currencies resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a currency used in Dynamics 365 Business Central.
 
 ## Methods

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create page
 
+Namespace: microsoft.graph
+
 Create a new OneNote page in the default section of the default notebook.
 
 To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`

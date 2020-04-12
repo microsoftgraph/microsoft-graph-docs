@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartTitleFormat resource type
 
+Namespace: microsoft.graph
+
 Encapsulates the format properties for the chart title.
 
 

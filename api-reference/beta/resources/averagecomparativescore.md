@@ -9,6 +9,8 @@ author: ""
 
 #  averageComparativeScore resource type
 
+Namespace: microsoft.graph
+
 This resource contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure).
 
 |Property |Type |Description |

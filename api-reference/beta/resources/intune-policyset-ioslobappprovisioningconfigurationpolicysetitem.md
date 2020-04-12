@@ -1,7 +1,7 @@
 ---
 title: "iosLobAppProvisioningConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for iOS lob app provisioning configuration PolicySetItem."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

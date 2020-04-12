@@ -1,15 +1,17 @@
 ---
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List licenseDetails
 
-Retrieve a list of licenseDetails objects.
+Namespace: microsoft.graph
+
+Retrieve a list of **licenseDetails** objects for enterprise users.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

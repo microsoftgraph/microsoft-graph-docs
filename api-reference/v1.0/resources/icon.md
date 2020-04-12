@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Icon resource type
 
+Namespace: microsoft.graph
+
 Represents a cell icon.
 
 

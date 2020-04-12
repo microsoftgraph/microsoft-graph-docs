@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create call
 
+Namespace: microsoft.graph
+
 Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
 
 > **Note:** Currently, only VoIP calls are supported. 
@@ -125,6 +127,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -340,6 +343,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -594,6 +598,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {

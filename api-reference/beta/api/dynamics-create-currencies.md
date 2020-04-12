@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create currencies
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a currency object in Dynamics 365 Business Central.
 
 ## Permissions

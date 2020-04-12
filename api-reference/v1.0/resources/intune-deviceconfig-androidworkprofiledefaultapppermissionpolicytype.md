@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # androidWorkProfileDefaultAppPermissionPolicyType enum type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Android Work Profile default app permission policy type.

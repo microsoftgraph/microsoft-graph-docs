@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # ThumbnailSet resource type
 
+Namespace: microsoft.graph
+
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
 It is used to represent a set of thumbnails associated with a DriveItem.
 

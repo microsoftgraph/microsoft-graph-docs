@@ -9,6 +9,8 @@ author: ""
 
 # privilegedRoleSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the settings for a privileged role.

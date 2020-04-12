@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # usedInsight resource type
 
+Namespace: microsoft.graph
+
 An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:
 
 - OneDrive for Business

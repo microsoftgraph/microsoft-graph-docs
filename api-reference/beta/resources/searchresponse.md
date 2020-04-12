@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # searchResponse resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The searchResponse contains the results from the search query.

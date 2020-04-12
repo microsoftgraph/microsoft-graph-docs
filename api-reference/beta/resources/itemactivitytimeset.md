@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ItemActivityTimeSet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemActivityTimeSet** resource provides information about when an [activity][activity] on an item took place.

@@ -3,11 +3,13 @@ title: "directoryDefinition resource type"
 description: "Provides the synchronization engine information about a directory and its objects."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # directoryDefinition resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # property resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A [schema](schema.md) property definition for a Microsoft Search [connection](externalconnection.md).

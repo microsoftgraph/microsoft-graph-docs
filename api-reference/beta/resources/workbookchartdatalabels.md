@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartDataLabels resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a collection of all the data labels on a chart point.

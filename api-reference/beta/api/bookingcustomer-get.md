@@ -2,12 +2,14 @@
 title: "Get bookingCustomer"
 description: "Get the properties and relationships of a bookingCustomer object."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # Get bookingCustomer
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

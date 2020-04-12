@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # officeGraphInsights resource type
 
+Namespace: microsoft.graph
+
 Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive documents trending around users.
 
 Insights are returned by the following APIs:

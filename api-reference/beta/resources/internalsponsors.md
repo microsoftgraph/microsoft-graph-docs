@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # internalSponsors complex type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md). 

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # innerErrorDetail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An inner error contained in an [errorDetail](errordetail.md) object.

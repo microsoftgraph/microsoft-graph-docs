@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # group: removeFavorite
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.

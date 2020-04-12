@@ -1,13 +1,15 @@
 ---
 title: "List directoryRoles"
 description: "List the directory roles that are activated in the tenant."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List directoryRoles
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

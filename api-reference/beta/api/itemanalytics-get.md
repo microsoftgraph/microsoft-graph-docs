@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Get analytics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [itemAnalytics][] about the views that took place under this resource.

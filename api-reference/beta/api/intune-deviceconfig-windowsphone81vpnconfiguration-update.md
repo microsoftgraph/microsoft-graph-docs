@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81VpnConfiguration"
 description: "Update the properties of a windowsPhone81VpnConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -220,7 +220,6 @@ Content-Length: 2188
   ]
 }
 ```
-
 
 
 

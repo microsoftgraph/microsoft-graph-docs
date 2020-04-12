@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get onlineMeeting
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 > **Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.

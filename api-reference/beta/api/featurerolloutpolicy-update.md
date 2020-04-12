@@ -2,12 +2,14 @@
 title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Update featurerolloutpolicy
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

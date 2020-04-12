@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create timeOffReason
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [timeOffReason](../resources/timeoffreason.md).

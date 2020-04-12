@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementAutopilotEvent resource type"
 description: "Represents an Autopilot flow event."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -28,6 +28,7 @@ Represents an Autopilot flow event.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|UUID for the object|
+|deviceId|String|Device id associated with the object|
 |eventDateTime|DateTimeOffset|Time when the event occurred .|
 |deviceRegisteredDateTime|DateTimeOffset|Device registration date.|
 |enrollmentStartDateTime|DateTimeOffset|Device enrollment start date.|
@@ -52,7 +53,9 @@ Represents an Autopilot flow event.
 |enrollmentFailureDetails|String|Enrollment failure details.|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|policyStatusDetails|[deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) collection|Policy and application status details for this device.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -66,6 +69,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "String (identifier)",
+  "deviceId": "String",
   "eventDateTime": "String (timestamp)",
   "deviceRegisteredDateTime": "String (timestamp)",
   "enrollmentStartDateTime": "String (timestamp)",

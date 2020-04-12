@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # termsAndConditions resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
@@ -16,7 +18,7 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List termsAndConditionses](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|List properties and relationships of the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) objects.|
+|[List termsAndConditions](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|List properties and relationships of the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) objects.|
 |[Get termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Read properties and relationships of the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.|
 |[Create termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Create a new [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.|
 |[Delete termsAndConditions](../api/intune-companyterms-termsandconditions-delete.md)|None|Deletes a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|

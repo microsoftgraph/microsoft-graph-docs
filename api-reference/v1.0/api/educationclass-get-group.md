@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get group
 
+Namespace: microsoft.graph
+
 Retrieve the Office 365 **group** that corresponds to this **educationClass**.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.

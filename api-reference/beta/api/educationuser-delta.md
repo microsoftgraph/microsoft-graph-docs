@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # educationUser: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get newly created or updated [educationUser](../resources/educationuser.md) without having to perform a full read of the entire collection. See [Use delta query](/graph/delta-query-overview) for details.

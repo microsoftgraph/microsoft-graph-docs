@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # itemBody resource type
 
+Namespace: microsoft.graph
+
 Represents properties of the body of an item, such as a message, event or group post.
 
 ## Properties

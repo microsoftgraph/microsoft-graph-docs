@@ -1,7 +1,7 @@
 ---
 title: "operatingSystemVersionRange resource type"
 description: "Operating System version range."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

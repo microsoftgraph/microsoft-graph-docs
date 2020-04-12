@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete tab from channel
 
+Namespace: microsoft.graph
+
 
 
 Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 

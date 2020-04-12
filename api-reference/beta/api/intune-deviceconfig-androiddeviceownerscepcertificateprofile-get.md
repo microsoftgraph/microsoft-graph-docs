@@ -1,7 +1,7 @@
 ---
 title: "Get androidDeviceOwnerScepCertificateProfile"
 description: "Read properties and relationships of the androidDeviceOwnerScepCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -130,7 +130,6 @@ Content-Length: 2293
   }
 }
 ```
-
 
 
 

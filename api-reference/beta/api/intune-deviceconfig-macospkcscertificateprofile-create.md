@@ -1,7 +1,7 @@
 ---
 title: "Create macOSPkcsCertificateProfile"
 description: "Create a new macOSPkcsCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -199,7 +199,6 @@ Content-Length: 2029
   "allowAllAppsAccess": true
 }
 ```
-
 
 
 

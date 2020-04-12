@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List emails
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves a list of [itemEmail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/emails 
+GET /me/profile/emails
 ```
 
 ## Optional query parameters

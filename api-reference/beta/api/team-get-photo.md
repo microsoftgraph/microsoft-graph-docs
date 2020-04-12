@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get team photo
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the photo (picture) for a team, or metadata for the photo. In general, it is a best practice to first attempt to retrieve the metadata for the size of the photo you'd like to get to ensure that size is available. Once you have retrieved the metadata, use the `/$value` path to get the binary data for the photo.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeFormat: autofitRows
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.

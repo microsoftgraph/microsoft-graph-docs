@@ -3,11 +3,13 @@ title: "Get leakedCredentialsRiskEvent"
 description: "Retrieve the properties and relationships of a leakedcredentialsriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get leakedCredentialsRiskEvent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

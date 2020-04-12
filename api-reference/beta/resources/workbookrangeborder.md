@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookRangeBorder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the border of an object.

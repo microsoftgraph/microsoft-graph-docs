@@ -2,12 +2,14 @@
 title: "Delete featureRolloutPolicy"
 description: "Delete a featureRolloutPolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete featureRolloutPolicy
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

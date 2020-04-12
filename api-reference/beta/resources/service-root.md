@@ -9,6 +9,8 @@ author: ""
 
 # Service root
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Methods

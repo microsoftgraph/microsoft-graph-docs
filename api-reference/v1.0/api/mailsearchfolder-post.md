@@ -2,12 +2,14 @@
 title: "Create mailSearchFolder"
 description: "Use this API to create a new mailSearchFolder in the specified user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create mailSearchFolder
+
+Namespace: microsoft.graph
 
 Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.
 

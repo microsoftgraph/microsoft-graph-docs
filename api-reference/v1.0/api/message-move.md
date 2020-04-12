@@ -1,13 +1,15 @@
 ---
 title: "message: move"
 description: "Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: move
+
+Namespace: microsoft.graph
 
 Move a message to another folder within the specified user's mailbox. This creates a new copy of the message in the destination folder and removes the original message.
 

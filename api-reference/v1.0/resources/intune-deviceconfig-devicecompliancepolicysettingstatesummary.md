@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # deviceCompliancePolicySettingStateSummary resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Device Compilance Policy Setting State summary across the account.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List conversations
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [conversations](../resources/conversation.md) in this group.

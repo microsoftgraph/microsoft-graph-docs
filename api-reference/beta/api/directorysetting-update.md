@@ -1,13 +1,15 @@
 ---
 title: "Update a directory setting"
 description: "Update the properties of a specific directory setting object."
-author: "davidmu1"
+author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Update a directory setting
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

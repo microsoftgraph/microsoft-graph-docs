@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # insightIdentity
 
+Namespace: microsoft.graph
+
 Complex type containing properties of [sharedInsight](insights-shared.md) items. 
 
 ## JSON representation

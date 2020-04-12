@@ -9,6 +9,8 @@ author: ""
 
 # privilegedAccess resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a group of functionalities provided by the Privileged Identity Management (PIM) service. Different instances of `privilegedAccess` represent different providers managed by PIM; for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationLinkResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subclass of [educationResource](educationresource.md). This resource is a link and does not have any additional data associated with it.

@@ -1,7 +1,7 @@
 ---
 title: "safeSearchFilterType enum type"
 description: "Specifies what level of safe search (filtering adult content) is required"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

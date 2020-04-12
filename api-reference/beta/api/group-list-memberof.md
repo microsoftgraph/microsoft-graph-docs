@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List group memberOf
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get groups and administrative units that the group is a direct member of.

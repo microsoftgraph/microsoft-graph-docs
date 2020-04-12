@@ -2,12 +2,14 @@
 title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete unifiedRoleAssignment
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

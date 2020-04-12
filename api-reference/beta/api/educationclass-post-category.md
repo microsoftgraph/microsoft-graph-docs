@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create educationCategory
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md).

@@ -1,7 +1,7 @@
 ---
 title: "Update securityBaselineTemplate"
 description: "Update the properties of a securityBaselineTemplate object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -104,7 +104,6 @@ Content-Length: 420
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # reportRoot: getCredentialUsageSummary
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Report the current state of how many users in your organization used the self-service password reset capabilities.

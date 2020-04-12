@@ -1,6 +1,6 @@
 ---
 title: "Update personName"
-description: "Update the properties of a personname object."
+description: "Update the properties of a personName object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # Update personname
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ PATCH /me/profile/names/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type                                            | Description                                                                             | 
+| Property     | Type                                            | Description                                                                             |
 |:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
 |displayName   |String                                           | Provides an ordered rendering of first name and last name.                              |
 |first         |String                                           | First Name of the user.                                                                 |
@@ -98,7 +100,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

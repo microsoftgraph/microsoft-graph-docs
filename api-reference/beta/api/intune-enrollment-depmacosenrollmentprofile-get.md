@@ -1,7 +1,7 @@
 ---
 title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -102,7 +102,6 @@ Content-Length: 1396
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create iosImportedPFXCertificateProfile"
 description: "Create a new iosImportedPFXCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -151,7 +151,6 @@ Content-Length: 1248
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

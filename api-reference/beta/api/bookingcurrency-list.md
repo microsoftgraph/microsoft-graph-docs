@@ -2,12 +2,14 @@
 title: "List bookingCurrencies"
 description: "Get a list of bookingCurrency objects available to a Microsoft Bookings business."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # List bookingCurrencies
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

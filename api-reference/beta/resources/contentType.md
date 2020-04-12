@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # ContentType resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **contentType** resource represents a _content type_ in SharePoint.

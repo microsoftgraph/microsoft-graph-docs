@@ -2,12 +2,14 @@
 title: "application: addPassword"
 description: "Add a strong password to an application."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # application: addPassword
+
+Namespace: microsoft.graph
 
 Adds a strong password to an [application](../resources/application.md).
 

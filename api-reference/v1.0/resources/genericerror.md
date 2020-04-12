@@ -9,6 +9,8 @@ author: ""
 
 # genericError resource type
 
+Namespace: microsoft.graph
+
 A general-purpose error.
 
 ## Properties

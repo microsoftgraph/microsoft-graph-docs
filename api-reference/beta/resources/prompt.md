@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # prompt resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Prompt action base type.

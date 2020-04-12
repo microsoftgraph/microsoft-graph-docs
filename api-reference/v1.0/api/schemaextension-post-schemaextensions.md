@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create schemaExtension
 
+Namespace: microsoft.graph
+
 Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).
 
 Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 

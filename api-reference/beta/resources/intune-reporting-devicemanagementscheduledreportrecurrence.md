@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementScheduledReportRecurrence enum type"
 description: "Possible values for the recurrence of a scheduled report"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

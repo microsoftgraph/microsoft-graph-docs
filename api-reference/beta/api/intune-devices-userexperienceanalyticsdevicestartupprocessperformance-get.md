@@ -1,7 +1,7 @@
 ---
 title: "Get userExperienceAnalyticsDeviceStartupProcessPerformance"
 description: "Read properties and relationships of the userExperienceAnalyticsDeviceStartupProcessPerformance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -76,7 +76,6 @@ Content-Length: 369
   }
 }
 ```
-
 
 
 

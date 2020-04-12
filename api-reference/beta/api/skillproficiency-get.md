@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get skillProficiency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [skillproficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).
@@ -45,7 +47,7 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request headers
 
-| Name           |Description                   |
+| Name           | Description                  |
 |:---------------|:-----------------------------|
 | Authorization  | Bearer {token}. Required.    |
 | Content-Type   | application/json. Required.  |

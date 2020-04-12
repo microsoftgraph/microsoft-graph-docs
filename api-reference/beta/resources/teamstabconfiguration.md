@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsTabConfiguration resource type (Open Type)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The settings that determine the content of a [tab](teamstab.md).

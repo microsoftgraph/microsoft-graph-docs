@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # commsOperation resource type
 
+Namespace: microsoft.graph
+
 Represents the status of certain long-running operations.
 
 This resource can be returned as the response to an action, or as the content of a [commsNotification](commsNotification.md).  

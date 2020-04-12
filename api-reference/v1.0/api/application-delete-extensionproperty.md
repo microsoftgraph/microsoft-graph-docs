@@ -2,12 +2,14 @@
 title: "Delete extensionProperty"
 description: "Delete an extensionProperty."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete extensionProperty
+
+Namespace: microsoft.graph
 
 Delete an [extensionProperty](../resources/extensionproperty.md).
 

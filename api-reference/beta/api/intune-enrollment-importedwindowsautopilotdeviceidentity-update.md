@@ -1,7 +1,7 @@
 ---
 title: "Update importedWindowsAutopilotDeviceIdentity"
 description: "Update the properties of a importedWindowsAutopilotDeviceIdentity object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,7 +115,6 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

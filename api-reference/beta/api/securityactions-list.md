@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List securityActions
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [securityAction](../resources/securityaction.md) objects.

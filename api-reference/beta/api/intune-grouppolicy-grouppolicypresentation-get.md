@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentation"
 description: "Read properties and relationships of the groupPolicyPresentation object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -73,7 +73,6 @@ Content-Length: 232
   }
 }
 ```
-
 
 
 

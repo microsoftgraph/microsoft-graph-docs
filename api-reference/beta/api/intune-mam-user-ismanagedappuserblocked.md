@@ -1,7 +1,7 @@
 ---
 title: "isManagedAppUserBlocked function"
 description: "Gets the blocked state of a managed app user."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -64,7 +64,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

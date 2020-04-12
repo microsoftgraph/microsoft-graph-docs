@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete workPosition
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a specific [workPosition](../resources/workposition.md) object from a user's [profile](../resources/profile.md).

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsApp resource type
 
+Namespace: microsoft.graph
+
 
 
 An app in the [Microsoft Teams](teams-api-overview.md) app catalog.

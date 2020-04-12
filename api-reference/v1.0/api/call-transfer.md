@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: transfer
 
+Namespace: microsoft.graph
+
 Transfer an active peer-to-peer call.
 
 > **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users that belong to the same tenant. Transfer to PSTN number is not supported. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).

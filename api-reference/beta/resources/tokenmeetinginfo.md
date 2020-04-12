@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # tokenMeetingInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This is the token information that allows you to join an existing meeting. This is obtained as part of the incoming call notification. 

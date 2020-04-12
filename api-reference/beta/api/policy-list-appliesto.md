@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List applications and service principals with specific policy assigned
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.

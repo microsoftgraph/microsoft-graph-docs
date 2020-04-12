@@ -2,12 +2,14 @@
 title: "servicePrincipal: createPasswordSingleSignOnCredentials"
 description: "Create single sign-on credentials using a password for a user or group."
 localization_priority: Normal
-author: "bharathramh92"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # servicePrincipal: createPasswordSingleSignOnCredentials
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

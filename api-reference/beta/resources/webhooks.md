@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Use the Microsoft Graph API to get change notifications
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
@@ -27,6 +29,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | No |
 | [list][] under a SharePoint [site][] | `/sites/{id}/lists/{id}` | No |
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
+| Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Changes to chat messages in all channels in all teams:<br>`/teams/allMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/allMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
@@ -39,7 +42,7 @@ In general, subscription operations require read permission to the resource. For
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
-| Application                            | [alert][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [chatMessage][]|
+| Application                            | [alert][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][]|
 
 ## See also
 
@@ -60,4 +63,5 @@ In general, subscription operations require read permission to the resource. For
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
+[callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md

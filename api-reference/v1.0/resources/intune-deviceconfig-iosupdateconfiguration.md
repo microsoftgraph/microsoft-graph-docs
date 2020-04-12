@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # iosUpdateConfiguration resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 IOS Update Configuration, allows you to configure time window within week to install iOS updates

@@ -1,13 +1,15 @@
 ---
 title: "synchronizationSecretKeyStringValuePair resource type"
-description: "Represents a single secret value. "
+description: "Represents a single secret value."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSecretKeyStringValuePair resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

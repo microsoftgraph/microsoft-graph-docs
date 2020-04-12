@@ -3,11 +3,13 @@ title: "servicePrincipal: List appRoleAssignments"
 description: "Retrieve a list of approleassignment objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # servicePrincipal: List appRoleAssignments
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

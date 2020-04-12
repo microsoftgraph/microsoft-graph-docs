@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # toneInfo resource type
 
+Namespace: microsoft.graph
+
 A single DTMF event.
 
 ## Properties

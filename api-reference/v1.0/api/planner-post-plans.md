@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerPlan
 
+Namespace: microsoft.graph
+
 Use this API to create a new **plannerPlan**.
 
 ## Permissions

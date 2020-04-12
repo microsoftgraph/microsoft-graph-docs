@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Create a sharing link for a DriveItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.

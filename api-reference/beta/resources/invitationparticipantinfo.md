@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # invitationParticipantInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an entity that is being invited to a group call. 

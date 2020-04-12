@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List submissions
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the submissions associated with this assignment. A teacher can get all the submissions while a student can only get submissions that they are associated with.

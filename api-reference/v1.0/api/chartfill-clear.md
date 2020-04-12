@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartFill: clear
 
+Namespace: microsoft.graph
+
 Clear the fill color of a chart element.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

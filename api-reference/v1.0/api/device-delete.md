@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete device
 
+Namespace: microsoft.graph
+
 Delete a registered device.
 
 ## Permissions

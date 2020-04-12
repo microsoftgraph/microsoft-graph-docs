@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 ## nextLink response
 
-The response contains another `nextLink` with a new `skipToken` value, indicating there are more groups available. You continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response.
+The response contains another `nextLink` with a new `skipToken` value, which indicates that more groups are available. You should continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response, even if the value is an empty array (this can happen under certain circumstances).
 
 ```http
 HTTP/1.1 200 OK
@@ -235,7 +235,7 @@ Some things to note about the example response above:
 
 - `members@delta` contains any changes to membership.
 
-  - The first user in the list has been removed from the group - either by removing the membership or by deleting the user object itself. The `@removed` property describes that.
+  - The first user in the list has been removed from the group - either by removing the membership or by deleting the user object itself. The `@removed` property describes that. Only users that have been permanently deleted are removed from groups. Users that have been temporary deleted keep their group memberships and will not appear in the delta result until they are permanently deleted. For details, see [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-1.0).
 
   - The second user has been added to the group.
 

@@ -9,6 +9,8 @@ author: ""
 
 # diagnostic resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Information about an error or warning for a OneNote operation.

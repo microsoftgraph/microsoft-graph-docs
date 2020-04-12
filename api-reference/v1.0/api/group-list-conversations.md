@@ -1,13 +1,15 @@
 ---
 title: "List conversations"
 description: "Retrieve the list of conversations in this group."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List conversations
+
+Namespace: microsoft.graph
 Retrieve the list of [conversations](../resources/conversation.md) in this group.
 
 ## Permissions

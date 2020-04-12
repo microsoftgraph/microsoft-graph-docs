@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List the published apps from the Microsoft Teams app catalog
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.

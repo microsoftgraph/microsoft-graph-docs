@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # recordingInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recording information for a participant.

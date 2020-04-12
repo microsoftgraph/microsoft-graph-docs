@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeFormat: autofitColumns
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # focusActivityStatistics resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents data about the user's time available for focus work. This is based on [activityStatistics](../resources/activitystatistics.md).

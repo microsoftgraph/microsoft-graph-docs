@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessLocations resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents locations included in and excluded from the policy scope.

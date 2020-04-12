@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaConfig resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract base class that contains the media configuration used to connect to a call.

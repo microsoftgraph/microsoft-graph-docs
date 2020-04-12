@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List participants
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of participant objects in the call.

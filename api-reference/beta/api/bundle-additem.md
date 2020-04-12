@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Add item to a bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an additional [driveItem][] from a drive to a [bundle][].

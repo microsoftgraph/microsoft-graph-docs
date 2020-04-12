@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 
 # profilePhoto resource type
+
+Namespace: microsoft.graph
 A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
 
 The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', 

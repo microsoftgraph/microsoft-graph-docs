@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # ListItem resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents an item in a SharePoint **[list][]**.

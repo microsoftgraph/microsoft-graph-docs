@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Skype for Business organizer activity reports
 
+Namespace: microsoft.graph
+
 You can use the Skype for Business organizer activity reports to get details on organized conferences activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference organizer activity](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254).

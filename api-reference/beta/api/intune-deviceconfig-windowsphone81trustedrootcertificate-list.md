@@ -1,7 +1,7 @@
 ---
 title: "List windowsPhone81TrustedRootCertificates"
 description: "List properties and relationships of the windowsPhone81TrustedRootCertificate objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -102,7 +102,6 @@ Content-Length: 1488
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationAssignmentPointsGradeType resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used with the **assignments.grading** property. This is a subclass of [educationAssignmentGradeType](educationassignmentgradetype.md).

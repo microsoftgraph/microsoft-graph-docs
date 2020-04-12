@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # iosUpdatesInstallStatus enum type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Not yet documented
@@ -33,6 +35,7 @@ Not yet documented
 |installFailed|-2016330702|Not yet documented|
 |notSupportedOperation|-2016330701|Not yet documented|
 |sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
+|deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
 
 
 

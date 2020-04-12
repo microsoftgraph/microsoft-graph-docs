@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: LastRow
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".

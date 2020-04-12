@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementCollectionSettingInstance"
 description: "Create a new deviceManagementCollectionSettingInstance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,7 +88,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

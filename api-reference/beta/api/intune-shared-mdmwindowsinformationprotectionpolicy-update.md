@@ -1,7 +1,7 @@
 ---
 title: "Update mdmWindowsInformationProtectionPolicy"
 description: "Update the properties of a mdmWindowsInformationProtectionPolicy object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -361,7 +361,6 @@ Content-Length: 4139
   "isAssigned": true
 }
 ```
-
 
 
 

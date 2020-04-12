@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPrivacyDataAccessControlItem"
 description: "Update the properties of a windowsPrivacyDataAccessControlItem object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,7 +91,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 

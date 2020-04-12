@@ -1,7 +1,7 @@
 ---
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -260,7 +260,6 @@ Content-Length: 3001
   }
 }
 ```
-
 
 
 

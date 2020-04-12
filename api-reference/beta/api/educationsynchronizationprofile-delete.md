@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete a educationSynchronizationProfile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.

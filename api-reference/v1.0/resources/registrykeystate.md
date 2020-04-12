@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # registryKeyState resource type
 
+Namespace: microsoft.graph
+
 Contains information about registry key changes related to the alert, and the process that changed the registry keys.
 
 ## Properties

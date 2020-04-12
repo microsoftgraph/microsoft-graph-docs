@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # Get channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationTeacher resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.

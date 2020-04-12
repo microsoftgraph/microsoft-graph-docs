@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List device groups
 
+Namespace: microsoft.graph
+
 Get groups that this device is a direct member of. This operation is not transitive.
 
 ## Permissions

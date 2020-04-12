@@ -9,6 +9,8 @@ author: "svpsiva"
 
 # convertIdResult resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The result of an ID format conversion performed by the [translateExchangeIds](../api/user-translateexchangeids.md) function.

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsRegressionSummary resource type"
 description: "The user experience analytics Regression Summary."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -2,12 +2,14 @@
 title: "Get user mailbox settings"
 description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get user mailbox settings
+
+Namespace: microsoft.graph
 
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). You can view all mailbox settings, or get specific settings.
 
@@ -16,6 +18,7 @@ Users can set the following settings for their mailboxes through an Outlook clie
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon
 receipt of their email)
 - date format
+- delegateMeetingMessageDeliveryOptions
 - [locale](../resources/localeinfo.md) (language and country/region)
 - time format
 - time zone
@@ -53,6 +56,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 GET /me/mailboxSettings/dateFormat
 GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
 
+GET /me/mailboxSettings/delegateMeetingMessageDeliveryOptions
+GET /users/{id|userPrincipalName}/mailboxSettings/delegateMeetingMessageDeliveryOptions
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
 
@@ -82,6 +88,7 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - [mailboxSettings](../resources/mailboxsettings.md) object
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) object
 - string (for **dateFormat**)
+- string (for **delegateMeetingMessageDeliveryOptions**)
 - [localeInfo](../resources/localeinfo.md) object
 - string (for **timeFormat**)
 - string (for **timeZone**)
@@ -151,7 +158,8 @@ Content-type: application/json
         }
     },
     "dateFormat": "MM/dd/yyyy",
-    "timeFormat": "hh:mm tt"
+    "timeFormat": "hh:mm tt",
+    "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 

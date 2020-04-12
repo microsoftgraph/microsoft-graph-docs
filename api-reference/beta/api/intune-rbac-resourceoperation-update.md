@@ -1,7 +1,7 @@
 ---
 title: "Update resourceOperation"
 description: "Update the properties of a resourceOperation object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -94,7 +94,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
@@ -48,12 +50,14 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. Required. |
+| displayName | string | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
+| description | string | A description for the group. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
+|visibility|String|Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
 > **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
@@ -175,7 +179,7 @@ Content-type: application/json
 
 ### Example 2: Create an Office 365 group with an owner and members
 
-The following example creates an Office 365 group with an owner and members specified.
+The following example creates an Office 365 group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API or JSON batching.
 
 #### Request
 

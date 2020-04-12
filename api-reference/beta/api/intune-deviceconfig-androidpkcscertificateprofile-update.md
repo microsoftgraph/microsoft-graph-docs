@@ -1,7 +1,7 @@
 ---
 title: "Update androidPkcsCertificateProfile"
 description: "Update the properties of a androidPkcsCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -191,7 +191,6 @@ Content-Length: 1903
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

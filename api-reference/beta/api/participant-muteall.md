@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # participant: muteAll
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mute all participants in the call.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update iosVppApp
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [iosVppApp](../resources/intune-apps-iosvppapp.md) object.

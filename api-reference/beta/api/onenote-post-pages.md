@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create page
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new OneNote page in the default section of the default notebook.

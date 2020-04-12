@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Search for sites
 
+Namespace: microsoft.graph
+
 Search across a SharePoint tenant for [sites][] that match keywords provided.
 
 [sites]: ../resources/site.md

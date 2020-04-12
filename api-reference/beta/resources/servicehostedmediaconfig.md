@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # serviceHostedMediaConfig resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The media that's hosted remotely. This is inherited from [mediaConfig](mediaconfig.md).

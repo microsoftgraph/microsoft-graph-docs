@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Remove rejectedSender
+
+Namespace: microsoft.graph
 Remove a user or group from the rejected-senders list.
 
 ## Permissions

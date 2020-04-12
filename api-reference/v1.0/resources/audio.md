@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # Audio facet
 
+Namespace: microsoft.graph
+
 The **Audio** resource groups audio-related properties on an item into a single structure.
 
 If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file.

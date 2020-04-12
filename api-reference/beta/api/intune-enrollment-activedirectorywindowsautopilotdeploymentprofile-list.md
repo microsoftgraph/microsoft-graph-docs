@@ -1,7 +1,7 @@
 ---
 title: "List activeDirectoryWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -101,7 +101,6 @@ Content-Length: 1559
   ]
 }
 ```
-
 
 
 

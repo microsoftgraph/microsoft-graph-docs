@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81CompliancePolicy"
 description: "Create a new windowsPhone81CompliancePolicy object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -132,7 +132,6 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

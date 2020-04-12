@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: recordResponse
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Record a short audio response from the caller.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove educationClass
 
+Namespace: microsoft.graph
+
 Delete a class from a school.
 
 ## Permissions

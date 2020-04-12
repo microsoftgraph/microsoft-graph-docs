@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List offerShiftRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of all [offerShiftRequest](../resources/offershiftrequest.md) objects in a team.

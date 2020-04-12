@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartSeriesCollection: ItemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves a series based on its position in the collection

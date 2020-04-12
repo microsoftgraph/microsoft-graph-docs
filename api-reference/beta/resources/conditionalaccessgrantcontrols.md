@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessGrantControls resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents grant controls that must be fulfilled to pass the policy.

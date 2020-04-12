@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create registeredUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a registered user for the device.

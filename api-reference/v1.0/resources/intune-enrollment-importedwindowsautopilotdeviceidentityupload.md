@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # importedWindowsAutopilotDeviceIdentityUpload resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Import windows autopilot devices using upload.

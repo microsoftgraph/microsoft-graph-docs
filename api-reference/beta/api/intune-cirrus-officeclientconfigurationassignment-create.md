@@ -2,7 +2,7 @@
 title: "Create officeClientConfigurationAssignment"
 description: "Add a target group to an existing policy."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -86,7 +86,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

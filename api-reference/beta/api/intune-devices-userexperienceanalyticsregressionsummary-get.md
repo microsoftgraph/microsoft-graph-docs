@@ -1,7 +1,7 @@
 ---
 title: "Get userExperienceAnalyticsRegressionSummary"
 description: "Read properties and relationships of the userExperienceAnalyticsRegressionSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -70,7 +70,6 @@ Content-Length: 154
   }
 }
 ```
-
 
 
 

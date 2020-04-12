@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # educationMakeCodeResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A resource representing a [MakeCode](https://www.microsoft.com/en-us/makecode) project.

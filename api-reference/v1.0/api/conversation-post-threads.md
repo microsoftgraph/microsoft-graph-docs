@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create thread
 
+Namespace: microsoft.graph
+
 Create a new thread in the specified conversation. 
 
 A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post 

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # networkLocationDetail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides the name and type of network from which the user signed in.

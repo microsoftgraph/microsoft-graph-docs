@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List orgContacts
 
+Namespace: microsoft.graph
+
 Get the list of [organizational contacts](../resources/orgcontact.md) for this organization.
 
 ## Permissions

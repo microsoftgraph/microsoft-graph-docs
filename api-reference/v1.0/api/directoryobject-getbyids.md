@@ -1,13 +1,15 @@
 ---
 title: "Get directory objects from a list of ids"
 description: "select` query option is not available for this operation."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get directory objects from a list of ids
+
+Namespace: microsoft.graph
 
 Returns the directory objects specified in a list of IDs.
 

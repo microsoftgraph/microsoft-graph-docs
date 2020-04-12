@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete projectParticipation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [projectParticipation](../resources/projectparticipation.md) object from a user's [profile](../resources/profile.md).

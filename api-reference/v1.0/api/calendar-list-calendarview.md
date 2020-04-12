@@ -2,12 +2,14 @@
 title: "List calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List calendarView
+
+Namespace: microsoft.graph
 
 Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,
 from a user's default calendar `(../me/calendarview)` or some other calendar of the user's.

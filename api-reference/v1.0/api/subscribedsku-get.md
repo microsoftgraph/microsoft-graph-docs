@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get subscribedSku
 
+Namespace: microsoft.graph
+
 Get a specific commercial subscription that an organization has acquired.
 
 ## Permissions

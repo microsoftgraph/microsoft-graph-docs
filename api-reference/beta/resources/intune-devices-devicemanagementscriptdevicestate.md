@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementScriptDeviceState resource type"
 description: "Contains properties for device run state of the device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

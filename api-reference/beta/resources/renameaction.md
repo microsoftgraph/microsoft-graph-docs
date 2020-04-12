@@ -10,6 +10,8 @@ ms.prod: ""
 
 # RenameAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **RenameAction** resource on an [**itemActivity**][activity] indicates that the activity renamed an item.

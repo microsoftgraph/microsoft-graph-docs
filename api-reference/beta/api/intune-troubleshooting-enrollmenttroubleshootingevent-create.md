@@ -1,7 +1,7 @@
 ---
 title: "Create enrollmentTroubleshootingEvent"
 description: "Create a new enrollmentTroubleshootingEvent object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -156,7 +156,6 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

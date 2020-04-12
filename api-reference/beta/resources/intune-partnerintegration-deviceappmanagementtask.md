@@ -1,7 +1,7 @@
 ---
 title: "deviceAppManagementTask resource type"
 description: "A device app management task."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

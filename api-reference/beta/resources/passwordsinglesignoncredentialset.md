@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # passwordSingleSignOnCredentialSet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates a set of credentials that completely define a sign in flow for a user or group to an application.

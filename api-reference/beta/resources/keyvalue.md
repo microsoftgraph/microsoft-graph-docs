@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # keyValue resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.

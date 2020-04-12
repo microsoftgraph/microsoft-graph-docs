@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add app to team
 
+Namespace: microsoft.graph
+
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # optionalClaim resource type
 
+Namespace: microsoft.graph
+
 Contains an optional claim associated with an [application](application.md) <!-- or a service principal -->. The `idToken`, `accessToken`, and `saml2Token` properties of the [optionalClaims](optionalclaims.md) resource is a collection of **optionalClaim**. If supported by a specific claim, you can also modify the behavior of the optionalClaim using the `additionalProperties` property.
 
 See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.

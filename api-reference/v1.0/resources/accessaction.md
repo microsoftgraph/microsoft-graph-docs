@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # accessAction resource type
 
+Namespace: microsoft.graph
+
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 
 >**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.

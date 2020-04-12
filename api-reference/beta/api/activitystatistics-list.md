@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List activityStatistics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of [activityStatistics](../resources/activitystatistics.md) for a user, for the last complete week.

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete workforceIntegration
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an instance of a [workforceIntegration](../resources/workforceintegration.md).

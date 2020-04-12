@@ -1,7 +1,7 @@
 ---
 title: "List macOSExtensionsConfigurations"
 description: "List properties and relationships of the macOSExtensionsConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -111,7 +111,6 @@ Content-Length: 1760
   ]
 }
 ```
-
 
 
 

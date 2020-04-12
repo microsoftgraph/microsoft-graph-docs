@@ -2,12 +2,14 @@
 title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Normal
-author: "davidmu1"
+author: "elisolMS"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # invitation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

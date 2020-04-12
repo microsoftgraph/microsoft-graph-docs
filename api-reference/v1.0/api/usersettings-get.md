@@ -1,13 +1,15 @@
 ---
 title: "Get settings"
 description: "Read the user and organization settings object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # Get settings
+
+Namespace: microsoft.graph
 
 Read the user and organization [userSettings](../resources/usersettings.md) object.
 To learn how to update the properties of the [userSettings](../resources/usersettings.md) object, see [update user settings](usersettings-update.md).

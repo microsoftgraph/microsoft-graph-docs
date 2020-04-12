@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # OneNoteResource resource type
 
+Namespace: microsoft.graph
+
 An image or other file resource on a OneNote page. 
 
 You can get the binary data of a resource, but getting a JSON representation of a resource object or a resource collection is not supported.

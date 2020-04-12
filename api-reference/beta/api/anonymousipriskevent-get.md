@@ -3,11 +3,13 @@ title: "Get anonymousIpRiskEvent"
 description: "Retrieve the properties and relationships of an anonymousipriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "cloudhandler"
 ---
 
 # Get anonymousIpRiskEvent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

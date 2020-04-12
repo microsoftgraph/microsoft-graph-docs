@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Get a DriveItem resource
 
+Namespace: microsoft.graph
+
 Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
 
 ## Permissions

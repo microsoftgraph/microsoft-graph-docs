@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create an educationSynchronizationProfile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a request for a new school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant. [Query the status](educationsynchronizationprofilestatus-get.md) to get the status of the profile. 

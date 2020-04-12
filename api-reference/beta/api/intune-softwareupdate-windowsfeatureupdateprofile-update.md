@@ -1,7 +1,7 @@
 ---
 title: "Update windowsFeatureUpdateProfile"
 description: "Update the properties of a windowsFeatureUpdateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -92,7 +92,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # searchHit resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represent a single result within the list of search results.

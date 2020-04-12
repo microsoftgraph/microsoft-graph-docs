@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # addContentFooterAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an action that specifies the details on the content footer to be added to the information, if applicable.

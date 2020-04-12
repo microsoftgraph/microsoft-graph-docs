@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create threatAssessmentRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new threat assessment request.

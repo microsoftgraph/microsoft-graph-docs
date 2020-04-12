@@ -1,7 +1,7 @@
 ---
 title: "List windows81CompliancePolicies"
 description: "List properties and relationships of the windows81CompliancePolicy objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,7 +88,6 @@ Content-Length: 953
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get orgContact
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of an organizational contact object.

@@ -1,7 +1,7 @@
 ---
 title: "sharedPCAllowedAccountType enum type"
 description: "Type of accounts that are allowed to share the PC."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

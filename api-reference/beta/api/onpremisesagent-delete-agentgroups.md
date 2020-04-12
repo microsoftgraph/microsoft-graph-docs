@@ -2,12 +2,14 @@
 title: "Remove onpremisesAgent from an onPremisesAgentGroup"
 description: "Remove an onpremisesAgent from an onPremisesAgentGroup."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Remove onPremisesAgent from an onPremisesAgentGroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

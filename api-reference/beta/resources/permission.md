@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # permission resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.
@@ -69,7 +71,7 @@ Here is a JSON representation of the resource.
 | expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
 | hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
 
-### Roles enumeration values
+### Roles property values
 
 | Value        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -241,7 +243,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 [createLink]: ../api/driveitem-createlink.md

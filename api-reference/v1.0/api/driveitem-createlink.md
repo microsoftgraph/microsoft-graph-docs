@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Create a sharing link for a DriveItem
 
+Namespace: microsoft.graph
+
 You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
 
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.

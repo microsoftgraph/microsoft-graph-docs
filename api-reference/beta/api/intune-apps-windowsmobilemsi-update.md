@@ -1,7 +1,7 @@
 ---
 title: "Update windowsMobileMSI"
 description: "Update the properties of a windowsMobileMSI object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -169,7 +169,6 @@ Content-Length: 1238
   "useDeviceContext": true
 }
 ```
-
 
 
 

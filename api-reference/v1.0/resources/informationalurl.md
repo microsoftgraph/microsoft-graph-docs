@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # informationalUrl resource type
 
+Namespace: microsoft.graph
+
 Basic profile information of the application.
 
 ## Properties

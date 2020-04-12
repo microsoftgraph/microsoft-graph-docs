@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Download the contents of a DriveItem
 
+Namespace: microsoft.graph
+
 Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
 
 ## Permissions

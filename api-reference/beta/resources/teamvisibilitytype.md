@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # teamVisibilityType enum type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the visibility of a [team](../resources/team.md). 

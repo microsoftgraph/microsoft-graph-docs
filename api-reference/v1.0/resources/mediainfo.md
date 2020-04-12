@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mediaInfo resource type
 
+Namespace: microsoft.graph
+
 The media information used in actions for prompts.
 
 ## Properties

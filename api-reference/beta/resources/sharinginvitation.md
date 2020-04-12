@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # SharingInvitation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **SharingInvitation** resource groups invitation-related data items into a single structure.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationUser
 
+Namespace: microsoft.graph
+
 Delete a user.
 
 

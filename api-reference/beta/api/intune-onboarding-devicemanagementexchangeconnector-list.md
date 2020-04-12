@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementExchangeConnectors"
 description: "List properties and relationships of the deviceManagementExchangeConnector objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -78,7 +78,6 @@ Content-Length: 616
   ]
 }
 ```
-
 
 
 

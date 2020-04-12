@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # calendar: getSchedule
 
+Namespace: microsoft.graph
+
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## Permissions

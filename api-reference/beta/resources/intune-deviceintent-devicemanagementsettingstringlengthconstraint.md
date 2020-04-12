@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingStringLengthConstraint resource type"
 description: "Constraint enforcing a given string length range"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

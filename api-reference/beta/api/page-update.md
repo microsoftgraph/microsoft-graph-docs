@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update page
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the content of a OneNote page.

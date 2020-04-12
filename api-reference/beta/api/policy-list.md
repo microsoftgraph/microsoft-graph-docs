@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List Policies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all [policy](../resources/policy.md) objects in the directory.

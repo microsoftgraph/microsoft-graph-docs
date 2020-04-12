@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # userSecurityState resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains stateful information about the user account.

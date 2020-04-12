@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationConnectionSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the provider connection settings. This allows the system to know how to connect to the provider APIs. 

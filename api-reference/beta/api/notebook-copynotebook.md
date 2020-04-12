@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # notebook: copyNotebook
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copies a notebook to the Notebooks folder in the destination Documents library. The folder is created if it doesn't exist.

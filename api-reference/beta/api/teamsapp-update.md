@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update apps published to your organization's app catalog
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog.

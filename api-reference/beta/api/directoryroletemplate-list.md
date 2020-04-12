@@ -1,13 +1,15 @@
 ---
 title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryroletemplate objects."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List directoryRoleTemplates
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

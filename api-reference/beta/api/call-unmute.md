@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: unmute
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allow the application to unmute itself.

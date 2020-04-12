@@ -9,6 +9,8 @@ author: ""
 
 # Create Policy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [policy](../resources/policy.md) object by specifying display name, policy type, and policy description.

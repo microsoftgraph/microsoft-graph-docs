@@ -9,6 +9,8 @@ author: ""
 
 # Add Connector to connectorGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to add a connector to a new connectorGroup.

@@ -1,7 +1,7 @@
 ---
 title: "Create deviceConfigurationGroupAssignment"
 description: "Create a new deviceConfigurationGroupAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -94,7 +94,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

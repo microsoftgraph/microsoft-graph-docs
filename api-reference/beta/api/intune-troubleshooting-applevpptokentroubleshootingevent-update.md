@@ -1,7 +1,7 @@
 ---
 title: "Update appleVppTokenTroubleshootingEvent"
 description: "Update the properties of a appleVppTokenTroubleshootingEvent object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -135,7 +135,6 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
-
 
 
 

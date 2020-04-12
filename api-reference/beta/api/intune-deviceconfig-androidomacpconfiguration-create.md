@@ -1,7 +1,7 @@
 ---
 title: "Create androidOmaCpConfiguration"
 description: "Create a new androidOmaCpConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -151,7 +151,6 @@ Content-Length: 1251
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create administrativeUnit
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get secureScore
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [secureScore](../resources/securescore.md) object.
 
 ## Permissions

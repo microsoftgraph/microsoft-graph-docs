@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android Device Owner."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

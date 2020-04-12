@@ -8,6 +8,8 @@ author: ""
 ---
 
 # signInStatus resource type
+
+Namespace: microsoft.graph
 Provides the sign-in status (Success or Failure) of the sign-in
 
 

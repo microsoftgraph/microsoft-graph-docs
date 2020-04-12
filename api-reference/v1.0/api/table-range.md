@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: Range
 
+Namespace: microsoft.graph
+
 Gets the range object associated with the entire table.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

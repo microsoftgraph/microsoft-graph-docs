@@ -9,6 +9,8 @@ author: ""
 
 # List secureScoreControlProfiles
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.

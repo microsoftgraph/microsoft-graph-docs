@@ -9,6 +9,8 @@ author: "grangeryy"
 
 # itemBody resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents properties of the body of an item, such as a message, event or group post.

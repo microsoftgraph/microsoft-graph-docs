@@ -1,7 +1,7 @@
 ---
 title: "appleVpnAlwaysOnConfiguration resource type"
 description: "Always On VPN configuration for MacOS and iOS IKEv2"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

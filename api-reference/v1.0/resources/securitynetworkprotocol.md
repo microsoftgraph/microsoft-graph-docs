@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # securityNetworkProtocol enum type
 
+Namespace: microsoft.graph
+
 Possible values for the network protocol.
 
 ## Members

@@ -1,7 +1,7 @@
 ---
 title: "enrollmentConfigurationAssignment resource type"
 description: "Enrollment Configuration Assignment"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

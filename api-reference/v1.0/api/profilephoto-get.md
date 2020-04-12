@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get photo
 
+Namespace: microsoft.graph
+
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).
 
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create device
 
+Namespace: microsoft.graph
+
 Create and register a new device in the organization.
 
 ## Permissions

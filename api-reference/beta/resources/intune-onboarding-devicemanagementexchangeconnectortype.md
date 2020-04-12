@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementExchangeConnectorType enum type"
 description: "The type of Exchange Connector."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

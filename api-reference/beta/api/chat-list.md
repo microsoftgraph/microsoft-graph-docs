@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List chats
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.

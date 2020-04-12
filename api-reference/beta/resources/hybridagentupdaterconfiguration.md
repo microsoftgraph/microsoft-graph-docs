@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # hybridAgentUpdaterConfiguration resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A tenant admin can configure for each onPremisesPublishingProfile the time window during which agents can receive updates or defer updates to the agents. The hybridAgentUpdaterConfiguration specified for an onPremisesPublishingProfile is applicable to all the agents within that onPremisesPublishingProfile.

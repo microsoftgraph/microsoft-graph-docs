@@ -1,7 +1,7 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -160,7 +160,6 @@ Content-Length: 3442
   ]
 }
 ```
-
 
 
 

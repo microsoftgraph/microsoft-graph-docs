@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingProfileConstraint resource type"
 description: "Constraint enforcing a given profile metadata"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

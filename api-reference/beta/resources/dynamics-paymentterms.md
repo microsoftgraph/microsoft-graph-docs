@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # paymentTerms resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a payment term in Dynamics 365 Business Central.
 
 ## Methods

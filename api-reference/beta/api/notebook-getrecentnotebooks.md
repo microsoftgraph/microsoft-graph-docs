@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # notebook: getRecentNotebooks
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # commsNotification resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Communications notification base type that is published by Communications servers to notify changes.

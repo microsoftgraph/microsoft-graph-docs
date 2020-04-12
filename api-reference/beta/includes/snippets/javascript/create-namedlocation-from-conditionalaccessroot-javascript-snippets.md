@@ -20,7 +20,7 @@ const namedLocation = {
     includeUnknownCountriesAndRegions: true
 };
 
-let res = await client.api('/conditionalAccess/namedLocations')
+let res = await client.api('/identity/conditionalAccess/namedLocations')
 	.version('beta')
 	.post(namedLocation);
 

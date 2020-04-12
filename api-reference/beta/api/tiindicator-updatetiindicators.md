@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # tiIndicator: updateTiIndicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.

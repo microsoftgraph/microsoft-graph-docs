@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartAxis resource type
 
+Namespace: microsoft.graph
+
 Represents a single axis in a chart.
 
 

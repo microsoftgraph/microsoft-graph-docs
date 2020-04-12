@@ -1,7 +1,7 @@
 ---
 title: "List windowsUpdateStates"
 description: "List properties and relationships of the windowsUpdateState objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -82,7 +82,6 @@ Content-Length: 630
   ]
 }
 ```
-
 
 
 

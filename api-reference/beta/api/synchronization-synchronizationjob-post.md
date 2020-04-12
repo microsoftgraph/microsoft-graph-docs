@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create synchronizationJob
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call [Start job](synchronization-synchronizationjob-start.md) to start synchronization.

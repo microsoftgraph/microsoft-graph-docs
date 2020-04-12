@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # openShiftItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a single count of an [openshift](../resources/openshift.md).

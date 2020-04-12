@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceReportedApp resource type"
 description: "Application data for reporting"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

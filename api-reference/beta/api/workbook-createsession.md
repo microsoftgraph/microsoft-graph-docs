@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Session
 
+Namespace: microsoft.graph
+
 Use this API to create a new workbook session. 
 
 Excel APIs can be called in one of two modes: 

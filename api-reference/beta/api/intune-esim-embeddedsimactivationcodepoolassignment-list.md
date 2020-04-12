@@ -1,7 +1,7 @@
 ---
 title: "List embeddedSIMActivationCodePoolAssignments"
 description: "List properties and relationships of the embeddedSIMActivationCodePoolAssignment objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,7 +72,6 @@ Content-Length: 281
   ]
 }
 ```
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "event: snoozeReminder"
 description: "Postpone a reminder for an event in a user calendar until a new time."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: snoozeReminder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

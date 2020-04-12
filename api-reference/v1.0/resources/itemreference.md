@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # ItemReference resource type
 
+Namespace: microsoft.graph
+
 The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.
 
 ## JSON representation

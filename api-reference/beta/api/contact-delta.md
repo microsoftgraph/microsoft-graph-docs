@@ -2,12 +2,14 @@
 title: "contact: delta"
 description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # contact: delta
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

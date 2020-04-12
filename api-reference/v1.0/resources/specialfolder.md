@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # SpecialFolder resource type
 
+Namespace: microsoft.graph
+
 The **SpecialFolder** resource groups special folder-related data items into a single structure.
 
 If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.

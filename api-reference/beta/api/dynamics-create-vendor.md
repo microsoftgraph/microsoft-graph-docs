@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create vendors
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a vendor object in Dynamics 365 Business Central.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create androidStoreApp
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # settings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the current required settings for a user to use the analytics API.

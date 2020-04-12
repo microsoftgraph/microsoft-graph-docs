@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationCategory
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an existing category.

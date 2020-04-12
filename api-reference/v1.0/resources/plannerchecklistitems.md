@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerChecklistItems resource type
 
+Namespace: microsoft.graph
+
 The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List ChartCollection
 
+Namespace: microsoft.graph
+
 Retrieve a list of chart objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

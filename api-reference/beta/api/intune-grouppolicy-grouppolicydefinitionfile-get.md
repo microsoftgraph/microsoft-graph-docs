@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyDefinitionFile"
 description: "Read properties and relationships of the groupPolicyDefinitionFile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitionFile
 ```
 
 ## Optional query parameters
@@ -81,7 +82,6 @@ Content-Length: 514
   }
 }
 ```
-
 
 
 

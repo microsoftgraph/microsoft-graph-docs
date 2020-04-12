@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create open extension
 
+Namespace: microsoft.graph
+
 Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource.
 
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).

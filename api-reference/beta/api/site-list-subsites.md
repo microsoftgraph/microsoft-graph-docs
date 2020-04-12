@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Enumerate subsites
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of subsites defined for a [site][].

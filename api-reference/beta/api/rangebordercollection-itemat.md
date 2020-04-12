@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # RangeBorderCollection: ItemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a border object using its index

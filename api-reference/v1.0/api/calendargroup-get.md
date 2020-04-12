@@ -1,13 +1,15 @@
 ---
 title: "Get calendarGroup"
 description: "Retrieve the properties and relationships of a calendar group object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get calendarGroup
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a calendar group object.
 

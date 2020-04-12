@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # timeStamp resource type
 
+Namespace: microsoft.graph
+
 Date and time information for a point in time.
 
 ## JSON representation

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: HeaderRowRange
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the range object associated with header row of the table.

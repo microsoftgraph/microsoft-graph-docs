@@ -1,7 +1,7 @@
 ---
 title: "singleSignOnExtension resource type"
 description: "Represents an Apple Single Sign-On Extension."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

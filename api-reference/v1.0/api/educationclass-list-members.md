@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List members
 
+Namespace: microsoft.graph
+
 Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class.
 
 ## Permissions

@@ -1,13 +1,15 @@
 ---
 title: "Create CalendarGroup"
 description: "Use this API to create a new CalendarGroup."
-author: "dkershaw10"
+author: "harini84"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create CalendarGroup
+
+Namespace: microsoft.graph
 
 Use this API to create a new CalendarGroup.
 ## Permissions

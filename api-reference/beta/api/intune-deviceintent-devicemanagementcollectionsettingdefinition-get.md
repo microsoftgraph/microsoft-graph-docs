@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementCollectionSettingDefinition"
 description: "Read properties and relationships of the deviceManagementCollectionSettingDefinition object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -105,7 +105,6 @@ Content-Length: 1131
   }
 }
 ```
-
 
 
 

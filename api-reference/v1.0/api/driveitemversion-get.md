@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a DriveItemVersion resource
 
+Namespace: microsoft.graph
+
 Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).
 
 ## Permissions

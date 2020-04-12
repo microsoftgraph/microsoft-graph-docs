@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyDefinition resource type"
 description: "The entity describes all of the information about a single group policy."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -30,6 +30,7 @@ The entity describes all of the information about a single group policy.
 |categoryPath|String|The localized full category path for the policy.|
 |supportedOn|String|Localized string used to specify what operating system or application version is affected by the policy.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
+|groupPolicyCategoryId|Guid|The category id of the parent category|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -37,6 +38,7 @@ The entity describes all of the information about a single group policy.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |definitionFile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|The group policy file associated with the definition.|
+|category|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|The group policy category associated with the definition.|
 |presentations|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) collection|The group policy presentations associated with the definition.|
 
 ## JSON Representation
@@ -56,6 +58,7 @@ Here is a JSON representation of the resource.
   "categoryPath": "String",
   "supportedOn": "String",
   "policyType": "String",
+  "groupPolicyCategoryId": "Guid",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }

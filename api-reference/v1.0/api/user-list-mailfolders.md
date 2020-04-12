@@ -1,13 +1,15 @@
 ---
 title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "outlook"
 ---
 
 # List mailFolders
+
+Namespace: microsoft.graph
 
 Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 

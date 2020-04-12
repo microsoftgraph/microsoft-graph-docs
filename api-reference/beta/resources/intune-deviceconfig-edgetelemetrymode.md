@@ -1,7 +1,7 @@
 ---
 title: "edgeTelemetryMode enum type"
 description: "Type of browsing data sent to Microsoft 365 analytics"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81StoreApp"
 description: "Update the properties of a windowsPhone81StoreApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -145,7 +145,6 @@ Content-Length: 947
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

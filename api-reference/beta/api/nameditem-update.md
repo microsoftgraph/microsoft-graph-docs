@@ -9,6 +9,8 @@ author: ""
 
 # Update nameditem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of nameditem object.

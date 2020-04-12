@@ -1,13 +1,15 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar in a calendar group for a user."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Calendar
+
+Namespace: microsoft.graph
 
 Use this API to create a new calendar in a calendar group for a [user](../resources/user.md).
 

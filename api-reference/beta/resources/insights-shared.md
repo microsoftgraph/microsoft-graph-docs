@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # sharedInsight resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An insight representing files shared with or by a specific user. The following shared files are supported:

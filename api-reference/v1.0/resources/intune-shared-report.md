@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # report resource type
 
+Namespace: microsoft.graph
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 A report that varies according to the workflow, either device configuration profile history or enrollment failures.

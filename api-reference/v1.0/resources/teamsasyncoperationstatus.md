@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # teamsAsyncOperationStatus enum type
 
+Namespace: microsoft.graph
+
 
 
 Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).

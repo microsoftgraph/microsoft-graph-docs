@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List registeredOwners
 
+Namespace: microsoft.graph
+
 Retrieve a list of users that are registered owners of the device. A registered owner is the user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner.
 
 ## Permissions

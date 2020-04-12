@@ -9,6 +9,8 @@ ms.prod: "cloud-communications"
 
 # cloudCommunications: getPresencesByUserId
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [presence](../resources/presence.md) information for multiple users.

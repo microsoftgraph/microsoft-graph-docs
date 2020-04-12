@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update place
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md). You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # credentialUsageSummary resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the current state of how many users in your organization are using self-service password reset capabilities.

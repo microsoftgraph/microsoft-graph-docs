@@ -3,11 +3,13 @@ title: "attributeMappingParameterSchema resource type"
 description: "Describes a single parameter used in an attributeMappingFunctionSchema."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # attributeMappingParameterSchema resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

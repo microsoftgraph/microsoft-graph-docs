@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update team
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [team](../resources/team.md).

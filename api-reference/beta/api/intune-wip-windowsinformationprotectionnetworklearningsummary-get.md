@@ -1,7 +1,7 @@
 ---
 title: "Get windowsInformationProtectionNetworkLearningSummary"
 description: "Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,7 +72,6 @@ Content-Length: 213
   }
 }
 ```
-
 
 
 

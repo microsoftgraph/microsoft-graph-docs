@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # MuteParticipantOperation resource type
 
+Namespace: microsoft.graph
+
 Describes the response format of a call participant mute operation.
 
 ## Properties

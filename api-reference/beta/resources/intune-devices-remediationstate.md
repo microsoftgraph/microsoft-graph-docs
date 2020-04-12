@@ -1,7 +1,7 @@
 ---
 title: "remediationState enum type"
 description: "Indicates the type of execution status of the device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

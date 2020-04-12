@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerTaskDetails resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **plannerTaskDetails** resource represents the additional information about a task. Each [task](plannertask.md) object has a details object.

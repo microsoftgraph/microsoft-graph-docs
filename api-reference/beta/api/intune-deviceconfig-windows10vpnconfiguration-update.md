@@ -1,7 +1,7 @@
 ---
 title: "Update windows10VpnConfiguration"
 description: "Update the properties of a windows10VpnConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -388,7 +388,6 @@ Content-Length: 4332
   ]
 }
 ```
-
 
 
 

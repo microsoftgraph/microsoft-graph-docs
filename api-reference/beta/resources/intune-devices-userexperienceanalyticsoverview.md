@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsOverview resource type"
 description: "The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookApplication resource type
 
+Namespace: microsoft.graph
+
 Represents the Excel application that manages the workbook.
 
 

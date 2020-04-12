@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List recent files
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List a set of items that have been recently used by the signed in user.

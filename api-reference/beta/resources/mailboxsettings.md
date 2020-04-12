@@ -2,12 +2,14 @@
 title: "mailboxSettings resource type"
 description: "Settings for the primary mailbox of the signed-in user."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # mailboxSettings resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # geoCoordinates resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides geographic coordinates and elevation of a location based on metadata contained within the file.

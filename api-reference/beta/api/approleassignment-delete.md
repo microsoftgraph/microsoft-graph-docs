@@ -9,6 +9,8 @@ author: "psignoret"
 
 # Delete appRoleAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete appRoleAssignment.

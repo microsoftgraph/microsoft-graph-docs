@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This is an abstract class that contains meeting specific information.

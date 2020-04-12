@@ -9,6 +9,8 @@ author: ""
 
 # leakedCredentialsRiskEvent resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]

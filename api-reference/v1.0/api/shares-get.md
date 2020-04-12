@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Accessing shared DriveItems
 
+Namespace: microsoft.graph
+
 Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
 To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).

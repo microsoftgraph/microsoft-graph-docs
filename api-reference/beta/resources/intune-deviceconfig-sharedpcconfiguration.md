@@ -1,7 +1,7 @@
 ---
 title: "sharedPCConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # userSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The current user settings for content discovery. 
@@ -18,6 +20,9 @@ This resource supports:
 
 - Checking whether a user and the user's organization contribute to content discovery.
 - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
+
+> [!NOTE]
+> This endpoint works only with users. You can't use this endpoint with contacts.
 
 ## Methods
 | Method       | Return Type  |Description|

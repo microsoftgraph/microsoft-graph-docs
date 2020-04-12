@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 # educationIdentitySynchronizationConfiguration resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abstract base class for all school data profile identity synchronization configurations. The derived classes define the behavior for synchronizing identities. The following are the derived types.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # group: checkMemberGroups
 
+Namespace: microsoft.graph
+
 Check for membership in the specified list of groups. Returns from the list those groups of which
 the specified group has a direct or transitive membership.
 

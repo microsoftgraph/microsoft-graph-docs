@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List classes
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. 

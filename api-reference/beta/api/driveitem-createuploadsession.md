@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Upload large files with an upload session
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session to allow your app to upload files up to the maximum file size.

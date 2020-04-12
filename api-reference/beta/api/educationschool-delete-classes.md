@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove educationClass
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a class from a school.

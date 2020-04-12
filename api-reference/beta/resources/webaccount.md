@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # webAccount resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents web accounts the user has indicated they use or has added to their user [profile](profile.md).
@@ -17,11 +19,11 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method                                     | Return Type                 | Description                                             |
-|:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
-| [Get webAccount](../api/webaccount-get.md) | [webAccount](webaccount.md) | Read the properties and relationships of a **webAccount** object. |
-| [Update webAccount](../api/webaccount-update.md)      | [webAccount](webaccount.md) | Update a **webAccount** object.                               |
-| [Delete webAccount](../api/webaccount-delete.md)      | None                        | Delete a **webAccount** object.                               |
+| Method                                                | Return Type                 | Description                                                       |
+|:------------------------------------------------------|:----------------------------|:------------------------------------------------------------------|
+| [Get webAccount](../api/webaccount-get.md)            | [webAccount](webaccount.md) | Read the properties and relationships of a **webAccount** object. |
+| [Update webAccount](../api/webaccount-update.md)      | [webAccount](webaccount.md) | Update a **webAccount** object.                                   |
+| [Delete webAccount](../api/webaccount-delete.md)      | None                        | Delete a **webAccount** object.                                   |
 
 ## Properties
 
@@ -30,8 +32,8 @@ This resource type inherits from [itemFacet](itemfacet.md).
 |description   |String                                     | Contains the description the user has provided for the account on the service being referenced.|
 |service       |[serviceInformation](serviceinformation.md)| Contains basic detail about the service that is being associated.                              |
 |statusMessage |String                                     | Contains a status message from the cloud service if provided or synchronized.                  |
-|userId        |String                                     | The user name  displayed for the webaccount.                                    |
-|webUrl        |String                                     | Contains a link to the user's profile on the cloud service if one exists.                       |
+|userId        |String                                     | The user name  displayed for the webaccount.                                                   |
+|webUrl        |String                                     | Contains a link to the user's profile on the cloud service if one exists.                      |
 
 ## Relationships
 

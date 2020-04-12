@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: delete
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the cells associated with the range.

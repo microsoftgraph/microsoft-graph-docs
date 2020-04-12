@@ -2,12 +2,14 @@
 title: "directory resource type (deleted items)"
 description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # directory resource type (deleted items)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

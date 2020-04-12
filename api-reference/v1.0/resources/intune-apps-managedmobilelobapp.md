@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # managedMobileLobApp resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 An abstract base class containing properties for all managed mobile line of business apps.

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List workbookCommentReplies
 
+Namespace: microsoft.graph
+
 Retrieve a list of [workbookCommentReply](../resources/workbookcommentreply.md) objects.
 
 ## Permissions

@@ -1,13 +1,15 @@
 ---
 title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: dismissReminder
+
+Namespace: microsoft.graph
 
 Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 

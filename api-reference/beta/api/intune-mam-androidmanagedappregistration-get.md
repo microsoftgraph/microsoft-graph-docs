@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedAppRegistration"
 description: "Read properties and relationships of the androidManagedAppRegistration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -92,7 +92,6 @@ Content-Length: 1054
   }
 }
 ```
-
 
 
 

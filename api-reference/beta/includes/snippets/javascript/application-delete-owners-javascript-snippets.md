@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/applications/{id}/owners/{id}/$ref')
+	.version('beta')
 	.delete();
 
 ```

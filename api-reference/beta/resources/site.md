@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # site resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **site** resource provides metadata and relationships for a SharePoint site.

@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Update sharing permission
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a sharing permission by patching the permission resource.

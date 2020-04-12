@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # commsNotifications resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List of notifications used by the Communications servers for sending multiple notifications in a single batch.

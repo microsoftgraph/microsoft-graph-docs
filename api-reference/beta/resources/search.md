@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # search resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The search resource is the top level object representing the search endpoint. It serves as an anchor to the [query](../api/search-query.md) action.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookChartTitleFormat resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsulates the format properties for the chart title.

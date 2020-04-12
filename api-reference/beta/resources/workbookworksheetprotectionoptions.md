@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookWorksheetProtectionOptions resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the options in sheet protection.

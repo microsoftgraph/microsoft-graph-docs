@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update connection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [externalConnection](../resources/externalconnection.md).

@@ -3,11 +3,13 @@ title: "List privilegedRoleAssignmentRequests"
 description: "Retrieve a collection of privilegedRoleAssignmentRequest. "
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # List privilegedRoleAssignmentRequests
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

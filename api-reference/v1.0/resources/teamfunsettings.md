@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamFunSettings resource type
 
+Namespace: microsoft.graph
+
 
 
 Settings to configure use of Giphy, memes, and stickers in the [team](team.md).

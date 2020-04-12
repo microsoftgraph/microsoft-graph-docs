@@ -1,6 +1,6 @@
 ---
 title: "List names"
-description: "Retrieve a list of personname objects from a user's profile."
+description: "Retrieve a list of personName objects from a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # List names
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
 
-## Request body 
+## Request body
 
 Do not supply a request body for this method.
 

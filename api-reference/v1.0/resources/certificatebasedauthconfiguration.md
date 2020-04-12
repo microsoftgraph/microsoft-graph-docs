@@ -2,12 +2,14 @@
 title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # certificateBasedAuthConfiguration resource type
+
+Namespace: microsoft.graph
 
 Certificate-based authentication enables you to be authenticated by Azure Active Directory with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:
 

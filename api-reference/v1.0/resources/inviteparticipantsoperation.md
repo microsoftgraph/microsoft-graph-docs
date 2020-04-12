@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # inviteParticipantsOperation resource type
 
+Namespace: microsoft.graph
+
 Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API.
 
 ## Properties

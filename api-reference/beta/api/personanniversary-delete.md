@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete personAnniversary
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [personAnniversary](../resources/personanniversary.md) object from the user's [profile](../resources/profile.md).
@@ -73,7 +75,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

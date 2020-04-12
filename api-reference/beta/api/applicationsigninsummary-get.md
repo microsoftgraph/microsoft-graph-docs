@@ -2,12 +2,14 @@
 title: "Get applicationSignInSummary"
 description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get applicationSignInSummary
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

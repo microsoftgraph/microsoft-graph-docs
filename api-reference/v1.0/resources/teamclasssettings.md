@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamClassSettings resource type
 
+Namespace: microsoft.graph
+
 Represents class-specific properties of a [team](team.md). Available only when the team represents a class.
 
 ## Properties

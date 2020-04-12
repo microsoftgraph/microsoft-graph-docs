@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update paymentTerms
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a payment terms object for Dynamics 365 Business Central.
 
 ## Permissions

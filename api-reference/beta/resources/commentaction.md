@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # CommentAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **CommentAction** resource provides information about a comment [activity][] made on an item.

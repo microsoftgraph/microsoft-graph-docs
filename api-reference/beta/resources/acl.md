@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # acl resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An access control entry for an item indexed by a Microsoft Search [externalConnection](externalconnection.md).

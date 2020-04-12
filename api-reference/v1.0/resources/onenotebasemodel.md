@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenoteEntityBaseModel resource
 
+Namespace: microsoft.graph
+
 This is the base type for OneNote entities.
 
 ## JSON representation

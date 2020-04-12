@@ -1,7 +1,7 @@
 ---
 title: "Get organization"
 description: "Read properties and relationships of the organization object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -80,7 +80,6 @@ Content-Length: 584
   }
 }
 ```
-
 
 
 

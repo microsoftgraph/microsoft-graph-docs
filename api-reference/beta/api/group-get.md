@@ -1,13 +1,15 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get group
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

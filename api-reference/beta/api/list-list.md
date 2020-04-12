@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Enumerate lists in a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the collection of [lists][] for a [site][].

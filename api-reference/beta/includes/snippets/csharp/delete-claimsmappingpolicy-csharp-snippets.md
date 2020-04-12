@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Policies["claimsMappingPolicies"].{id}
+await graphClient.Policies.ClaimsMappingPolicies["{id}"]
 	.Request()
 	.DeleteAsync();
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: EntireColumn
 
+Namespace: microsoft.graph
+
 Gets an object that represents the entire column of the range.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Thumbnail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.

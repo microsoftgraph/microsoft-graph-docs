@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List channels
 
+Namespace: microsoft.graph
+
 
 
 Retrieve the list of [channels](../resources/channel.md) in this team.

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingRegexConstraint resource type"
 description: "Constraint enforcing the setting matches against a given RegEx pattern"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

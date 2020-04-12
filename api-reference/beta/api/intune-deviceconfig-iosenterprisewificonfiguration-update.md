@@ -1,7 +1,7 @@
 ---
 title: "Update iosEnterpriseWiFiConfiguration"
 description: "Update the properties of a iosEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -207,7 +207,6 @@ Content-Length: 2146
   "passwordFormatString": "Password Format String value"
 }
 ```
-
 
 
 

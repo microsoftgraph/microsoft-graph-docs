@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update shiftPreferences
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object.

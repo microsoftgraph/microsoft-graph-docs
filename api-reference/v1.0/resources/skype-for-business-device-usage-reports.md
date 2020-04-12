@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Skype for Business device usage reports
 
+Namespace: microsoft.graph
+
 You can use the Skype for Business device usage reports to get details on the types of clients and devices that are used across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).

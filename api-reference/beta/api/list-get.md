@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Get metadata for a list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return the metadata for a [list][].

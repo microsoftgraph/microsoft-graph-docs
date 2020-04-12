@@ -1,6 +1,6 @@
 ---
 title: "List accounts"
-description: "Retrieve a list of useraccountinformation objects."
+description: "Retrieve a list of userAccountInformation objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # List accounts
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

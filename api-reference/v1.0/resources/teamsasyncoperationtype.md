@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # teamsAsyncOperationType enum type
 
+Namespace: microsoft.graph
+
 
 
 Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added here as more async operations are supported.

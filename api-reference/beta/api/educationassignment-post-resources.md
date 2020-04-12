@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create educationAssignmentResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an [assignment resource](../resources/educationassignmentresource.md). The resource itself has an @odata.type to indicate which type of resource is being created. Note that file-based resources must first be uploaded to the assignments **resourceFolder**.

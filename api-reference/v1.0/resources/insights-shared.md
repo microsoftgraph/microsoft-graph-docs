@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # sharedInsight resource type
 
+Namespace: microsoft.graph
+
 An insight representing files shared with or by a specific user. The following shared files are supported:
 
 - Files attached directly in an email or a meeting invite.

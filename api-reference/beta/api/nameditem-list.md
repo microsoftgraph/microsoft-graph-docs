@@ -9,6 +9,8 @@ author: ""
 
 # List NamedItemCollection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of nameditem objects.

@@ -1,13 +1,15 @@
 ---
 title: "message: replyAll"
 description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: replyAll
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

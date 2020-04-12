@@ -10,6 +10,8 @@ doc_type: "resourcePageType"
 
 # pendingOperations resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.

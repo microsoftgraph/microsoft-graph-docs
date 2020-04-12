@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # FormatProtection resource type
 
+Namespace: microsoft.graph
+
 Represents the format protection of a range object.
 
 

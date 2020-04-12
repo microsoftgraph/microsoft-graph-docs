@@ -9,6 +9,8 @@ doc_type: resourcePageType_
 
 # timeOffReason resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.md).

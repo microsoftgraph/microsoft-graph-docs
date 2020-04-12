@@ -1,7 +1,7 @@
 ---
 title: "vpnTunnelConfigurationType enum type"
 description: "The type of tunnels that will be present to the VPN client for configuration"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

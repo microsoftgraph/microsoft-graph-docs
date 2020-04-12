@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # fileSecurityState resource type
 
+Namespace: microsoft.graph
+
 Contains information about the file (not process) related to the alert.
 
 ## Properties

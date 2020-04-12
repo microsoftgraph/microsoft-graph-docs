@@ -2,12 +2,14 @@
 title: "emailAddress resource type"
 description: "The name and email address of a contact or message recipient."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # emailAddress resource type
+
+Namespace: microsoft.graph
 
 The name and email address of a contact or message recipient.
 

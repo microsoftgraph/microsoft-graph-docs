@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # commentAction resource type
 
+Namespace: microsoft.graph
+
 The **commentAction** resource provides information about a comment [activity][] made on an item.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

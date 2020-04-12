@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const claimsMappingPolicies = {
+const claimsMappingPolicy = {
   @odata.id:"https://graph.microsoft.com/beta/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 };
 
 let res = await client.api('/servicePrincipals/{id}/claimsMappingPolicies')
 	.version('beta')
-	.post(claimsMappingPolicies);
+	.post(claimsMappingPolicy);
 
 ```

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingParticipantInfo resource type
 
+Namespace: microsoft.graph
+
 Information about a participant in a meeting.
 
 ## Properties

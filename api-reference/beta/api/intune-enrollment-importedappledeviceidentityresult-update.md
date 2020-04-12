@@ -1,7 +1,7 @@
 ---
 title: "Update importedAppleDeviceIdentityResult"
 description: "Update the properties of a importedAppleDeviceIdentityResult object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -114,7 +114,6 @@ Content-Length: 652
   "status": true
 }
 ```
-
 
 
 

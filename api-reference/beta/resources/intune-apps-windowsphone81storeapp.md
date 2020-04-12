@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81StoreApp resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 Store apps."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

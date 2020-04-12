@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # deleteAction resource type
 
+Namespace: microsoft.graph
+
 The presence of the **deleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

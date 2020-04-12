@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # requestoManager complex type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used in the approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md). 

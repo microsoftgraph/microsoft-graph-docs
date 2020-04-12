@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # IVR scenarios in calls
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The following are the Interactive Voice Response (IVR) scenarios that the calling APIs in Microsoft Graph support:

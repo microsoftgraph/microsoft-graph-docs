@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # TableRowCollection: ItemAt
 
+Namespace: microsoft.graph
+
 Gets a row based on its position in the collection.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

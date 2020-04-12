@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # chatInfo resource type
 
+Namespace: microsoft.graph
+
 This contains information associated with Microsoft Teams meetings.
 
 ## Properties

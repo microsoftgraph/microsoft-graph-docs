@@ -1,7 +1,7 @@
 ---
 title: "iosKioskModeAppType enum type"
 description: "App source options for iOS kiosk mode."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

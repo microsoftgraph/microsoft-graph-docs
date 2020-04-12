@@ -1,7 +1,7 @@
 ---
 title: "keyTypedValuePair resource type"
 description: "A key-value pair with a string key and a typed value."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

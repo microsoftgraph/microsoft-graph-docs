@@ -1,13 +1,15 @@
 ---
 title: "Update settings"
 description: "Update the properties of the settings object. "
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # Update settings
+
+Namespace: microsoft.graph
 
 Update the properties of the [userSettings](../resources/usersettings.md) object. 
 Users in the same organization can have different settings based on their preference or on the organization policies. 

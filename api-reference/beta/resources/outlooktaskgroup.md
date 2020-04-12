@@ -1,13 +1,15 @@
 ---
 title: "outlookTaskGroup resource type"
 description: "A group of folders (outlookTaskFolder) that contain Outlook tasks (collection of outlookTask objects). "
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # outlookTaskGroup resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

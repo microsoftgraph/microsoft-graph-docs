@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete webAccount
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [webAccount](../resources/webaccount.md) object from the user's profile.
@@ -33,9 +35,9 @@ DELETE /me/profile/webAccounts/{id}
 
 ## Request headers
 
-| Name           |Description                 |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  | 
+| Name           | Description                 |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
 
 ## Request body
 

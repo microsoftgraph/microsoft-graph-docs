@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationFormResource resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A subclass of [educationResource](educationresource.md). This resource is a form.

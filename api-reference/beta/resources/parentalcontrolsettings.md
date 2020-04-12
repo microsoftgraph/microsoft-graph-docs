@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # parentalControlSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Specifies parental control settings for an application. These settings control the consent experience.

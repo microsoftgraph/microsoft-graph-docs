@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsStartupScoreHistory resource type"
 description: "The user experience analytics device startup score history."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -32,6 +32,7 @@ The user experience analytics device startup score history.
 |startupScore|Int32|User experience analytics device startup score.|
 |coreBootScore|Int32|The user experience analytics device core boot score.|
 |coreSigninScore|Int32|The User experience analytics device core sign-in score.|
+|recommendedSoftwareScore|Int32|The User experience analytics device core sign-in score.|
 
 ## Relationships
 None
@@ -51,7 +52,8 @@ Here is a JSON representation of the resource.
   "startupDateTime": "String (timestamp)",
   "startupScore": 1024,
   "coreBootScore": 1024,
-  "coreSigninScore": 1024
+  "coreSigninScore": 1024,
+  "recommendedSoftwareScore": 1024
 }
 ```
 

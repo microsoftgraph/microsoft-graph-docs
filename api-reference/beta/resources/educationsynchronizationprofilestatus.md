@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationProfileStatus resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md). 

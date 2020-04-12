@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create section
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [section](../resources/onenotesection.md) in the specified section group.

@@ -2,12 +2,14 @@
 title: "Delete publishedResource"
 description: "Delete a [publishedResource](../resources/publishedresource.md) object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Delete publishedResource
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

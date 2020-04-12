@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # sharingLink resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **sharingLink** resource groups link-related data items into a single structure.

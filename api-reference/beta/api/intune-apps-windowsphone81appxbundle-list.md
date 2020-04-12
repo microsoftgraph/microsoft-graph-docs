@@ -1,7 +1,7 @@
 ---
 title: "List windowsPhone81AppXBundles"
 description: "List properties and relationships of the windowsPhone81AppXBundle objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -137,7 +137,6 @@ Content-Length: 2796
   ]
 }
 ```
-
 
 
 

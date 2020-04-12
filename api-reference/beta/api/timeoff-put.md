@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Replace timeOff
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Replace an existing [timeOff](../resources/timeoff.md).

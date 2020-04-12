@@ -1,7 +1,7 @@
 ---
 title: "groupPolicySettingType enum type"
 description: "Setting type of the group policy."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # shiftItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a version of a [shift](shift.md).

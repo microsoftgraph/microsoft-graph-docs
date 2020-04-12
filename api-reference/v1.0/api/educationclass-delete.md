@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationClass
 
+Namespace: microsoft.graph
+
 Delete a class. Because a class is also a universal group, deleting a class deletes the group.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Skype for Business activity reports
 
+Namespace: microsoft.graph
+
 You can use the Skype for Business activity reports to get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).

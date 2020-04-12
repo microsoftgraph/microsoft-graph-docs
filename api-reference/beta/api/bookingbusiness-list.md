@@ -2,12 +2,14 @@
 title: "List bookingBusinesses"
 description: "Get a collection of bookingbusiness objects that has been created for the tenant."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # List bookingBusinesses
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

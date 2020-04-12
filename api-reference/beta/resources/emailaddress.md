@@ -2,12 +2,14 @@
 title: "emailAddress resource type"
 description: "Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # emailAddress resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

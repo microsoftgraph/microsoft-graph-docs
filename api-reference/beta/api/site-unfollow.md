@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Unfollow site 
 
+Namespace: microsoft.graph
+
 Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions

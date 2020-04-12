@@ -2,12 +2,14 @@
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # organization resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

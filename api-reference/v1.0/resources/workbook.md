@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Workbook resource type
 
+Namespace: microsoft.graph
+
 Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
 ## JSON representation

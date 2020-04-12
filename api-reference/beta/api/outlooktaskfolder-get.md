@@ -1,13 +1,15 @@
 ---
 title: "Get outlookTaskFolder"
 description: "Get the properties and relationships of the specified Outlook task folder."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get outlookTaskFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

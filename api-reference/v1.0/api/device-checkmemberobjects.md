@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # device: checkMemberObjects
 
+Namespace: microsoft.graph
+
 Check for membership in a list of groups or directory roles for the specified device object. This method is transitive.
 
 ## Permissions

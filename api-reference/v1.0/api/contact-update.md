@@ -1,13 +1,15 @@
 ---
 title: "Update contact"
 description: "Update the properties of a contact object."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update contact
+
+Namespace: microsoft.graph
 
 Update the properties of a contact object.
 ## Permissions

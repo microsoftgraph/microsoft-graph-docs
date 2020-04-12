@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartPointsCollection: ItemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a point based on its position within the series.

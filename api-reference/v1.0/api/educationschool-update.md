@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update educationSchool properties
 
+Namespace: microsoft.graph
+
 Update the properties of a school object.
 
 ## Permissions

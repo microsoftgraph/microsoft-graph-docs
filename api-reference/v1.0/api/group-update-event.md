@@ -1,13 +1,16 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Update event
+
+Namespace: microsoft.graph
+
 Update an [event](../resources/event.md) object.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # section resource type
 
+Namespace: microsoft.graph
+
 A section in a OneNote notebook. Sections can contain pages.
 
 ## JSON representation

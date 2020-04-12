@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update tab
 
+Namespace: microsoft.graph
+
 
 Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.

@@ -3,11 +3,13 @@ title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 ---
 
 # dateTimeTimeZone resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

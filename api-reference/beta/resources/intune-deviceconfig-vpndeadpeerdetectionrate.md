@@ -1,7 +1,7 @@
 ---
 title: "vpnDeadPeerDetectionRate enum type"
 description: "Determines how often to check if a peer connection is still alive"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

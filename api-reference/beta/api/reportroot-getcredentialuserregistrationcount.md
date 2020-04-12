@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # reportRoot: getCredentialUserRegistrationCount
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.

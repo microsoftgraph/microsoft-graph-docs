@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # timeOffRequest: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline a [timeoffrequest](../resources/timeoffrequest.md) object.

@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationSettingState resource type"
 description: "Device Configuration Setting State for a given device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

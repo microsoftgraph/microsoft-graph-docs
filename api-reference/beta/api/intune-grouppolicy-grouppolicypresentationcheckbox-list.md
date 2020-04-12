@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationCheckBoxes"
 description: "List properties and relationships of the groupPolicyPresentationCheckBox objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,7 +72,6 @@ Content-Length: 293
   ]
 }
 ```
-
 
 
 

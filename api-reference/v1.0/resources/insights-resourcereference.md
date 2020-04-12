@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # resourceReference resource type
 
+Namespace: microsoft.graph
+
 Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # notebook: getNotebookFromWebUrl
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.

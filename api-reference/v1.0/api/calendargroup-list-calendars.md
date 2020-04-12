@@ -1,13 +1,15 @@
 ---
 title: "List calendars"
 description: "Retrieve a list of calendars belonging to a calendar group."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List calendars
+
+Namespace: microsoft.graph
 
 Retrieve a list of calendars belonging to a calendar group.
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationCsvDataProvider resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used to set up the school data synchronization profile when CSV files are the input source.  

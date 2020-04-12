@@ -11,13 +11,11 @@ The `mgt-agenda` web component represents events in a user or group calendar. By
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/ojt2c7vp/)
+The following example shows the signed-in user's calendar events displayed using the `mgt-agenda` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-agenda group-by-day></mgt-agenda>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-![mgt-agenda](./images/mgt-agenda.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## Properties
 
@@ -123,20 +121,36 @@ The following events are fired from the control.
 
 | Event | Description |
 | --- | --- |
-| eventClick | The user clicks or taps on an event.|
+| eventClick | The user clicks or taps an event.|
 
 
-## Graph scopes
+## Permissions
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| resource | permission/scope |
+| Resource | Permission |
 | - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
-The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the scope at the end of the string, delimited by `|`
+The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
 ## Authentication
 
 The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md).
 
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected` render* methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderLoading | Renders a loading state while the component loads. |
+| renderNoData | Renders an empty data state. |
+| renderGroups | Sorts event data into groups and renders them with group headers. |
+| renderHeader | Renders a group header. |
+| renderEvents | Renders a list of event objects. |
+| renderEvent | Renders a singular event and all of its parts.
+| renderTitle | Renders the event title part. |
+| renderLocation | Renders the event location part. |
+| renderAttendees | Renders the event attendees part. |
+| renderOther | Renders additional event content. |

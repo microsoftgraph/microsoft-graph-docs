@@ -1,7 +1,7 @@
 ---
 title: "Update windows10EnrollmentCompletionPageConfigurationPolicySetItem"
 description: "Update the properties of a windows10EnrollmentCompletionPageConfigurationPolicySetItem object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -108,7 +108,6 @@ Content-Length: 531
   "priority": 8
 }
 ```
-
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Update personInterest"
-description: "Update the properties of personinterest object."
+description: "Update the properties of personInterest object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # Update personinterest
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

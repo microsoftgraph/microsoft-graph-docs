@@ -9,6 +9,8 @@ author: ""
 
 # Update Policy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update properties in a preexisting [policy](../resources/policy.md).

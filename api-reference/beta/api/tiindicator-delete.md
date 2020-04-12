@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete threat intelligence indicator
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [tiIndicator](../resources/tiindicator.md) object.

@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsInsight resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

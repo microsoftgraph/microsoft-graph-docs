@@ -1,7 +1,7 @@
 ---
 title: "macOSLobChildApp resource type"
 description: "Contains properties the MacOS LOB App in a bundle package"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

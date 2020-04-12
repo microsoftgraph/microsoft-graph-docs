@@ -9,6 +9,8 @@ author: ""
 
 # logonUser resource type
 
+Namespace: microsoft.graph
+
 Contains stateful information about the logged on user on this host
 
 ## Properties

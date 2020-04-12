@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get schedulingGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID.

@@ -1,13 +1,15 @@
 ---
 title: "mailFolder: move"
 description: "Move a mailfolder and its contents to another mailfolder."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # mailFolder: move
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

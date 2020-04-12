@@ -1,7 +1,7 @@
 ---
 title: "Get mobileContainedApp"
 description: "Read properties and relationships of the mobileContainedApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,7 +72,6 @@ Content-Length: 132
   }
 }
 ```
-
 
 
 

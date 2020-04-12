@@ -1,13 +1,15 @@
 ---
 title: "Force domain deletion"
 description: "Deletes a domain using an asynchronous long-running operation."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Force domain deletion
+
+Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous long-running operation.
 
@@ -76,7 +78,7 @@ If successful, this method returns `HTTP/1.1 204 OK` status code.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/domains/{id}/forceDelete
+POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
 Content-length: 33
 

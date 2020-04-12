@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: EntireColumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets an object that represents the entire column of the range.

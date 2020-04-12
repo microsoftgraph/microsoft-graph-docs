@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 Add an [attachment](../resources/attachment.md) when creating a group post.
 
 This operation limits the size of the attachment you can add to under 4 MB.

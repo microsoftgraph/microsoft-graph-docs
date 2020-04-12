@@ -10,6 +10,8 @@ author: "merzink"
 
 # targetPolicyEndpoints resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the platforms that can be targeted to receive notifications sent to the user.  These include Windows, iOS, Android and Web. 

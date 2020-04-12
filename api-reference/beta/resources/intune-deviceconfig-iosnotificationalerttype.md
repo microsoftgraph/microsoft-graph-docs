@@ -1,7 +1,7 @@
 ---
 title: "iosNotificationAlertType enum type"
 description: "Notification Settings Alert Type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

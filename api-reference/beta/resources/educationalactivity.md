@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # educationalActivity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.

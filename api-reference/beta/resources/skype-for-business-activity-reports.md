@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Skype for Business activity reports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can get details on activity across your organization. These details can help you investigate, plan, and make other business decisions for your organization.

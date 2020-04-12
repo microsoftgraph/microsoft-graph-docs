@@ -1,13 +1,15 @@
 ---
 title: "Get groupLifecyclePolicy"
 description: "Retrieve the properties and relationships of a groupLifecyclePolicies object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get groupLifecyclePolicy
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

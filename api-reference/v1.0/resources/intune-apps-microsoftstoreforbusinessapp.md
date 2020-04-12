@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # microsoftStoreForBusinessApp resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Microsoft Store for Business Apps. This class does not support Create, Delete, or Update.

@@ -2,12 +2,14 @@
 title: "Create certificateBasedAuthConfiguration"
 description: "Use this API to create a new certificateBasedAuthConfiguration."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Create certificateBasedAuthConfiguration
+
+Namespace: microsoft.graph
 
 Create a new [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 

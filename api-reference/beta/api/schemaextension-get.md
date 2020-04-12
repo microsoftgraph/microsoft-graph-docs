@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get schemaExtension
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties of the specified [schemaExtension](../resources/schemaextension.md) definition.

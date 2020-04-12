@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create rejectedSender
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a new user or group to the rejectedSender list.

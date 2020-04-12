@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # relatedContact resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contact record related to an [educationUser](../resources/educationuser.md) that provides information for guardians, aides, doctors, and so on.

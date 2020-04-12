@@ -1,7 +1,7 @@
 ---
 title: "Get appleVpnConfiguration"
 description: "Read properties and relationships of the appleVpnConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -159,7 +159,6 @@ Content-Length: 2999
   }
 }
 ```
-
 
 
 

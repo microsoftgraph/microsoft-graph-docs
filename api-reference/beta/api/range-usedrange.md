@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: UsedRange
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the used range of the given range object.

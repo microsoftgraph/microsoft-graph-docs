@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # TextColumn resource type
 
+Namespace: microsoft.graph
+
 The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.
 
 ## JSON representation

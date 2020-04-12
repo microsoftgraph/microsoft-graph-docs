@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookApplication
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [workbookApplication](../resources/workbookapplication.md) object.
 
 ## Permissions

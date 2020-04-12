@@ -2,12 +2,14 @@
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, mail message, or group post."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete attachment
+
+Namespace: microsoft.graph
 
 Delete an attachment from a user calendar event, mail message, or group post.
 ## Permissions

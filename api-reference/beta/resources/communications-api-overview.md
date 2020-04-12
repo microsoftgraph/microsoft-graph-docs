@@ -25,6 +25,7 @@ One of the following [permissions](/graph/permissions-reference#calls-permission
 | Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 | Presence                 | Presence.Read, Presence.Read.All |
+| Call records             | CallRecords.Read.All |
 
 ## Common use cases
 
@@ -37,6 +38,7 @@ The following table lists some of the common uses for the communications API.
 | Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-beta)   ||
 |Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 |Presence | [presence](/graph/api/resources/presence) | [Methods for presence](/graph/api/resources/presence#methods) |
+| Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta) |
 
 ## Common properties
 
@@ -46,6 +48,7 @@ The following table lists some of the common uses for the communications API.
 | participant                         | [participant properties](/graph/api/resources/participant?view=graph-rest-beta#properties) |
 | onlineMeeting                            | [onlineMeeting properties](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | presence | [presence properties](/graph/api/resources/presence#properties) |
+| callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord#properties) |
 
 ## See also
 

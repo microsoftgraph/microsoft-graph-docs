@@ -9,6 +9,8 @@ author: ""
 
 # Get multiValueLegacyExtendedProperty
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a resource instance that contains a multi-value extended property by using `$expand`.

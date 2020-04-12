@@ -2,12 +2,14 @@
 title: "message: send"
 description: "Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or"
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: send
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

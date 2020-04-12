@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # riskyUser: confirmCompromised
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** The riskyUsers API requires an Azure AD Premium P2 license.

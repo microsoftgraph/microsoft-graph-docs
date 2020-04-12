@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add member
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a member to an Office 365 group or security group through the **members** navigation property.

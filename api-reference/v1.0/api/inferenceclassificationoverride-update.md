@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update inferenceclassificationoverride
 
+Namespace: microsoft.graph
+
 Change the **classifyAs** field of an override as specified. 
 
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance. 

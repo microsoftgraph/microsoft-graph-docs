@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create openShiftChangeRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create instance of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.

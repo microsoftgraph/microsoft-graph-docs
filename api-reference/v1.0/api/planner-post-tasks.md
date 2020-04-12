@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerTask
 
+Namespace: microsoft.graph
+
 Use this API to create a new **plannerTask**.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
-
 ```
 ## Request headers
 | Name       | Description|

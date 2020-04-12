@@ -9,6 +9,8 @@ author: "angelgolfer-ms"
 
 # workingHours resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the days of the week and hours in a specific time zone that the user works.

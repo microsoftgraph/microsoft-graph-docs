@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rangeView rows
 
+Namespace: microsoft.graph
+
 Retrieve a list of range view objects.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List accessPackageCatalogs
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects.

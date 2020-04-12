@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # swapShiftsChangeRequest: approve
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.

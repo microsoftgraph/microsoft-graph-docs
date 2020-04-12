@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # iosHomeScreenApp resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents an icon for an app on the Home Screen

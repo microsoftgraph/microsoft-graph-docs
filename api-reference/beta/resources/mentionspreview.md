@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mentionsPreview resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about [mention](../resources/mention.md) objects in a resource instance.

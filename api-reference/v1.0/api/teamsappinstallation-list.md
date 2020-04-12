@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List apps in team
 
+Namespace: microsoft.graph
+
 Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
 ## Permissions

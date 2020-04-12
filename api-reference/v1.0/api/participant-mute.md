@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # participant: mute
 
+Namespace: microsoft.graph
+
 Mute a specific participant in the call.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.

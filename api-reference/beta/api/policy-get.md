@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Get Policy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a [policy](../resources/policy.md).

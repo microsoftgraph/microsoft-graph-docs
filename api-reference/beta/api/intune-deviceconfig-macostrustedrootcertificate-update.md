@@ -1,7 +1,7 @@
 ---
 title: "Update macOSTrustedRootCertificate"
 description: "Update the properties of a macOSTrustedRootCertificate object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -155,7 +155,6 @@ Content-Length: 1310
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

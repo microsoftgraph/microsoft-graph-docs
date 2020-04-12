@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: LastColumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".

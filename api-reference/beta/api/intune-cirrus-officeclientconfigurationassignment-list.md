@@ -2,7 +2,7 @@
 title: "List officeClientConfigurationAssignments"
 description: "List properties and relationships of the officeClientConfigurationAssignment objects."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -72,7 +72,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

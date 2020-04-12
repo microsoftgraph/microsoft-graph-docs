@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Delete shipmentMethods
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a shipment method object from Dynamics 365 Business Central.
 
 ## Permissions

@@ -2,12 +2,14 @@
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
 localization_priority: Priority
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get identityProvider
+
+Namespace: microsoft.graph
 
 Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).
 

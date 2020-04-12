@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete shift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [shift](../resources/shift.md) from the schedule.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create team
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [team](../resources/team.md).

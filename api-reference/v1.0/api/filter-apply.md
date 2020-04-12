@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Filter: apply
 
+Namespace: microsoft.graph
+
 Apply the given filter criteria on the given column.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

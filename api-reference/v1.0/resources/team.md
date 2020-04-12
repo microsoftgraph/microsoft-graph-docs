@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # team resource type
 
+Namespace: microsoft.graph
+
 
 
 A team in Microsoft Teams is a collection of [channel](channel.md) objects.

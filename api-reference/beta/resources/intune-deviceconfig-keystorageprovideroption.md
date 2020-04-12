@@ -1,7 +1,7 @@
 ---
 title: "keyStorageProviderOption enum type"
 description: "Key Storage Provider (KSP) Import Options."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

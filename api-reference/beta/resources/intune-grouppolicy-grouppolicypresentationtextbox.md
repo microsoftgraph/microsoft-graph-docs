@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationTextBox resource type"
 description: "Represents an ADMX textBox element and an ADMX text element."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

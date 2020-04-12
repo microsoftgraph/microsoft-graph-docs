@@ -3,11 +3,13 @@ title: "privilegedRoleAssignmentRequest: my"
 description: "Get the requester's privileged role assignment requests."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # privilegedRoleAssignmentRequest: my
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

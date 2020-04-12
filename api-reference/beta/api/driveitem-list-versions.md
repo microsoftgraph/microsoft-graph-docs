@@ -9,6 +9,8 @@ author: ""
 
 # Listing versions of a DriveItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 OneDrive and SharePoint can be configured to retain the history for files.

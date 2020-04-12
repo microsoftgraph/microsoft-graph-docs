@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeFormat resource type
 
+Namespace: microsoft.graph
+
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
 

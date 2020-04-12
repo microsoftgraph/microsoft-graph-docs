@@ -3,11 +3,13 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders in the directory."
 localization_priority: Normal
 doc_type: apiPageType
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # List identityProviders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

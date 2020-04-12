@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Search for a DriveItems within a drive
 
+Namespace: microsoft.graph
+
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 

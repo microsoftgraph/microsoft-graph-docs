@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get personAnniversary
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
@@ -85,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

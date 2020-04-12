@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List available drives
 
+Namespace: microsoft.graph
+
 Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
 
 ## Permissions

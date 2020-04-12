@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Device management in Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
 
 - [Action state](intune-devices-actionstate.md)

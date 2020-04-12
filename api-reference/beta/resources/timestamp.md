@@ -9,6 +9,8 @@ author: ""
 
 # timeStamp resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Date and time information for a point in time.

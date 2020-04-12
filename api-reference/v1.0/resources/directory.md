@@ -2,12 +2,14 @@
 title: "directory resource type (deleted items)"
 description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # directory resource type (deleted items)
+
+Namespace: microsoft.graph
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 

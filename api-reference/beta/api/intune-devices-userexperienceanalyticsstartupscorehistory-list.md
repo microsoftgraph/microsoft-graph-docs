@@ -1,7 +1,7 @@
 ---
 title: "List userExperienceAnalyticsStartupScoreHistories"
 description: "List properties and relationships of the userExperienceAnalyticsStartupScoreHistory objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 322
+Content-Length: 360
 
 {
   "value": [
@@ -68,12 +68,12 @@ Content-Length: 322
       "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
       "startupScore": 12,
       "coreBootScore": 13,
-      "coreSigninScore": 15
+      "coreSigninScore": 15,
+      "recommendedSoftwareScore": 8
     }
   ]
 }
 ```
-
 
 
 

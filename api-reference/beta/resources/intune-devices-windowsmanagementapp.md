@@ -1,7 +1,7 @@
 ---
 title: "windowsManagementApp resource type"
 description: "Windows management app entity."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

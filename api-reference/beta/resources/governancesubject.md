@@ -9,6 +9,8 @@ author: ""
 
 # governanceSubject resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents users, groups, and service principals being managed in Privileged Identity Management (PIM).

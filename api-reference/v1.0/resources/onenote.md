@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenote resource type
 
+Namespace: microsoft.graph
+
 The entry point for OneNote resources.
 
 All calls to the OneNote service through the Microsoft Graph API use this service root URL:

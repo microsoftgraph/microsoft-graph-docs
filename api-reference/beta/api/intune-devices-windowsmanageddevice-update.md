@@ -1,7 +1,7 @@
 ---
 title: "Update windowsManagedDevice"
 description: "Update the properties of a windowsManagedDevice object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -135,7 +135,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7641
+Content-length: 7665
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -306,7 +306,8 @@ Content-length: 7641
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -319,7 +320,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7690
+Content-Length: 7714
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -491,14 +492,14 @@ Content-Length: 7690
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
   "processorArchitecture": "x86"
 }
 ```
-
 
 
 

@@ -3,11 +3,13 @@ title: "governanceRoleAssignment resource type"
 description: "Represents the assignment of a user or group to a role."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # governanceRoleAssignment resource type
+
+Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the assignment of a user or group to a role.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationSubmittedSubmissionResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns a submitted resource. This will be available to a teacher after a student has submitted, and will be available to the student after the teacher has released the submission.  Note that teachers can leave notes in some resources.

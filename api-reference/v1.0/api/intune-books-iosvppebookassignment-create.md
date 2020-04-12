@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create iosVppEBookAssignment
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.

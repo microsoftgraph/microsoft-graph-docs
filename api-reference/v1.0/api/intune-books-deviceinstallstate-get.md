@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get deviceInstallState
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.

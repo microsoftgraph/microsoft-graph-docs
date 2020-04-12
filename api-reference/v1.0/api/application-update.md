@@ -1,13 +1,15 @@
 ---
 title: "Update application"
 description: "Update the properties of an application object."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Update application
+
+Namespace: microsoft.graph
 
 Update the properties of an [application](../resources/application.md) object.
 ## Permissions

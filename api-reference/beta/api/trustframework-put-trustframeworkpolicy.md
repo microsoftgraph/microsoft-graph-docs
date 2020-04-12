@@ -2,11 +2,13 @@
 title: "Update trustFrameworkPolicy"
 description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one. "
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 # Update or create trustFrameworkPolicy
+
+Namespace: microsoft.graph
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationLicenseAssignment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts.

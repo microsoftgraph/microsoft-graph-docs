@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: redirect
 
+Namespace: microsoft.graph
+
 Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
 
 The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.

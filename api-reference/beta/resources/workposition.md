@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # workPosition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents detailed information about work positions associated with a user's [profile](profile.md).
@@ -17,18 +19,18 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method                                         | Return Type                     | Description                                               |
-|:-----------------------------------------------|:--------------------------------|:----------------------------------------------------------|
-| [Get workPosition](../api/workposition-get.md) | [workPosition](workposition.md) | Read the properties and relationships of a **workPosition** object. |
-| [Update workPosition](../api/workposition-update.md)        | [workPosition](workposition.md) | Update a **workPosition** object.                               |
-| [Delete workPosition](../api/workposition-delete.md)        | None                            | Delete a **workPosition** object.                               |
+| Method                                                      | Return Type                     | Description                                                         |
+|:------------------------------------------------------------|:--------------------------------|:--------------------------------------------------------------------|
+| [Get workPosition](../api/workposition-get.md)              | [workPosition](workposition.md) | Read the properties and relationships of a **workPosition** object. |
+| [Update workPosition](../api/workposition-update.md)        | [workPosition](workposition.md) | Update a **workPosition** object.                                   |
+| [Delete workPosition](../api/workposition-delete.md)        | None                            | Delete a **workPosition** object.                                   |
 
 ## Properties
 
-| Property             | Type                               | Description                                                                                                |
-|:---------------------|:-----------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|categories            |String collection                   | Contains categories a user has associated with the position (for example, digital transformation, people). |
-|detail                |[positionDetail](positiondetail.md) | Contains detail about the user's current and previous employment positions.                                 |
+| Property             | Type                                | Description                                                                                                |
+|:---------------------|:------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|categories            | String collection                   | Contains categories a user has associated with the position (for example, digital transformation, people). |
+|detail                | [positionDetail](positiondetail.md) | Contains detail about the user's current and previous employment positions.                                |
 
 ## Relationships
 

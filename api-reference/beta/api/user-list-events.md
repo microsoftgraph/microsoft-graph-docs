@@ -2,12 +2,14 @@
 title: "List events"
 description: "Get a list of event objects from the user's default calendar or "
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List events
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

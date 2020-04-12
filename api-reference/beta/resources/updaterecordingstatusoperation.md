@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # updateRecordingStatusOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the response format of an update recording status action.

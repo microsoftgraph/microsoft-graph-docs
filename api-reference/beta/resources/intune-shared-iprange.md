@@ -1,7 +1,7 @@
 ---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4, IPV6 address ranges"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

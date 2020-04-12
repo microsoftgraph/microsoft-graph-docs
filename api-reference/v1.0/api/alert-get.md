@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get alert
 
+Namespace: microsoft.graph
+
  Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 
 ## Permissions

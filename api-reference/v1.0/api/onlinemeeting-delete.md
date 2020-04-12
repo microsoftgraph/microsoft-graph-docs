@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete onlineMeeting
 
+Namespace: microsoft.graph
+
 Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Permissions

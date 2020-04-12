@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # operation resource type
 
+Namespace: microsoft.graph
+
 The status of a long-running operation.
 
 ## JSON representation

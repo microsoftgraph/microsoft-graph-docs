@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRange: columnsAfter
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a certain number of columns to the right of the given range.

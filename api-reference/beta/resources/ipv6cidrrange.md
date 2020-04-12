@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # iPv6CidrRange resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an IPv6 range using the CIDR notation.

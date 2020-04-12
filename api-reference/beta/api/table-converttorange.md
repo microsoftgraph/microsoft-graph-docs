@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Table: convertToRange
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Converts the table into a normal range of cells. All data is preserved.

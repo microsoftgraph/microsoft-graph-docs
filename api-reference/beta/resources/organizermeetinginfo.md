@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # organizerMeetingInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains details about the meeting organizer. 

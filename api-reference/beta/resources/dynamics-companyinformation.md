@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
  
 # companyInformation resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the information specified for the current company in Dynamics 365 Business Central, such as name, address, email address, and website address.
 
 ## Methods

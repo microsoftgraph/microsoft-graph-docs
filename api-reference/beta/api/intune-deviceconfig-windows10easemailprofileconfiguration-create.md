@@ -1,7 +1,7 @@
 ---
 title: "Create windows10EasEmailProfileConfiguration"
 description: "Create a new windows10EasEmailProfileConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -187,7 +187,6 @@ Content-Length: 1698
   "requireSsl": true
 }
 ```
-
 
 
 

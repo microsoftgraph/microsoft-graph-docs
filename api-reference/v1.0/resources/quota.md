@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Quota resource type
 
+Namespace: microsoft.graph
+
 The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
 
 ## JSON representation

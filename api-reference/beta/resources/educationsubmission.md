@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSubmission resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the outcomes (such as grades or feedback) that are associated with the submission.

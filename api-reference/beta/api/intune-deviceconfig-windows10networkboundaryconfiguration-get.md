@@ -1,7 +1,7 @@
 ---
 title: "Get windows10NetworkBoundaryConfiguration"
 description: "Read properties and relationships of the windows10NetworkBoundaryConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -133,7 +133,6 @@ Content-Length: 2334
   }
 }
 ```
-
 
 
 

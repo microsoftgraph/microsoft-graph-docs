@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementConstraint resource type"
 description: "Base entity for a constraint"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # FilterDatetime resource type
 
+Namespace: microsoft.graph
+
 Represents how to filter a date when filtering on values.
 
 ## Properties

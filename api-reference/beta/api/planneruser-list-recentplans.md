@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List recentPlans
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [plannerPlans](../resources/plannerplan.md) recently viewed by a user. You can update recently viewed plans by [updating the plannerUser resource](planneruser-update.md).

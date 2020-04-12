@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # freeBusyError resource type
 
+Namespace: microsoft.graph
+
 Represents error information from attempting to get the availability of a user, distribution list, or resource.
 
 ## Properties

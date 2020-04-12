@@ -1,13 +1,15 @@
 ---
 title: "messageRulePredicates resource type"
 description: "Represents the set of conditions and exceptions that are available for a rule."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # messageRulePredicates resource type
+
+Namespace: microsoft.graph
 
 
 Represents the set of conditions and exceptions that are available for a rule.

@@ -1,7 +1,7 @@
 ---
 title: "managedAppStatus resource type"
 description: "Represents app protection and configuration status for the organization."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List teachers
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list teachers for a class. Delegated tokens must be members of the class to get the teacher list.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Pause sync on an educationSynchronizationProfile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Pause the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.

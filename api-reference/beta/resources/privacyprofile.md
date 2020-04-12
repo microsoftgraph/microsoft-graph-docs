@@ -9,6 +9,8 @@ author: ""
 
 # privacyProfile resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbook resource type
 
+Namespace: microsoft.graph
+
 Contains related workbook objects such as worksheets, tables, ranges, and so on.
 
 ## Methods

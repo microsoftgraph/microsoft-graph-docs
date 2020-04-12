@@ -1,6 +1,6 @@
 ---
 title: "Get itemEmail"
-description: "Retrieve the properties and relationships of an itememail object."
+description: "Retrieve the properties and relationships of an itemEmail object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # Get itemEmail
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

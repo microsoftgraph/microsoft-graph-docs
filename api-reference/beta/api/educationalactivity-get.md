@@ -1,6 +1,6 @@
 ---
 title: "Get educationalActivity"
-description: "Retrieve the properties and relationships of an educationalactivity object."
+description: "Retrieve the properties and relationships of an educationalActivity object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # Get educationalActivity
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,9 +47,9 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request headers
 
-| Name           |Description                  |
+|Name            |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization   |Bearer {token}. Required.    |
 
 ## Request body
 
@@ -64,6 +66,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationalactivity"
@@ -73,19 +76,21 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

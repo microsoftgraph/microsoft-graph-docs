@@ -1,7 +1,7 @@
 ---
 title: "iosScepCertificateProfile resource type"
 description: "iOS SCEP certificate profile."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

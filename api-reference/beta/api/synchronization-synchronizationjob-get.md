@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Get synchronizationJob
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the existing synchronization job and its properties.

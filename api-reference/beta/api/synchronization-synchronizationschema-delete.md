@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Delete synchronizationSchema
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes the customized schema and resets the schema to the default configuration. If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.

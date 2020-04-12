@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Office 365 Groups activity reports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 groups are being created and used.

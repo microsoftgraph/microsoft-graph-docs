@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get administrativeUnit
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**.

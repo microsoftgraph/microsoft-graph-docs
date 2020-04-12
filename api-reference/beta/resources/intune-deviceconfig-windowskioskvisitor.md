@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskVisitor resource type"
 description: "The class used to identify a visitor kiosk account"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

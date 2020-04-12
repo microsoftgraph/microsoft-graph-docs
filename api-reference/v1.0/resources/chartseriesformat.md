@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartSeriesFormat resource type
 
+Namespace: microsoft.graph
+
 encapsulates the format properties for the chart series
 
 

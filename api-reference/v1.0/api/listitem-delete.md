@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Delete an item from a list
 
+Namespace: microsoft.graph
+
 Removes an item from a [list][].
 
 [list]: ../resources/list.md

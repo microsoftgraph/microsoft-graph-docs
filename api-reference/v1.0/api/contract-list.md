@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List contracts
 
+Namespace: microsoft.graph
+
 Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.
 
 ## Permissions

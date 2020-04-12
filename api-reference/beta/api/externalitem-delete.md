@@ -1,6 +1,6 @@
 ---
 title: "Delete externalItem"
-description: "Delete an externalItem or externalFile."
+description: "Delete an externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Delete externalItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
+Delete an [externalitem](../resources/externalitem.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -38,7 +40,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md). |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
 
 ## Request headers
 

@@ -3,11 +3,13 @@ title: "privilegedRoleAssignment resource type"
 description: "Represents a privileged role assignment for a particular user. "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # privilegedRoleAssignment resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

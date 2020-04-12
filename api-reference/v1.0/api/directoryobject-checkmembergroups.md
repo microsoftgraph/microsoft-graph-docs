@@ -2,12 +2,14 @@
 title: "Check member groups"
 description: "Check for membership in a specified list of groups, and returns from that list those groups"
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Check member groups
+
+Namespace: microsoft.graph
 
 Check for membership in a specified list of groups, and returns from that list those groups
 of which the specified user, group, or directory object is a member. This function is transitive.

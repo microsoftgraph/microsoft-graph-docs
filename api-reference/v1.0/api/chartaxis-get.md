@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get ChartAxis
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of chartaxis object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

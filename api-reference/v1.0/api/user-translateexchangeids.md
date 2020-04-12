@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: translateExchangeIds
 
+Namespace: microsoft.graph
+
 Translate identifiers of Outlook-related resources between formats.
 
 ## Permissions

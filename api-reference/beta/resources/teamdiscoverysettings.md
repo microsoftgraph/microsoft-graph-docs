@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamDiscoverySettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides settings to enable others to configure [team](team.md) discoverability. You can only modify discovery settings for private teams.

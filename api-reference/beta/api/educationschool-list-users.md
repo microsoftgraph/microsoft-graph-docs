@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List educationUsers
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of users at a school.

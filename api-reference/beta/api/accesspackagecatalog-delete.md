@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete accessPackageCatalog
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [accessPackageCatalog](../resources/accesspackagecatalog.md).

@@ -1,13 +1,15 @@
 ---
 title: "domain: forceDelete"
 description: "Deletes a domain using an asynchronous operation."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # domain: forceDelete
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

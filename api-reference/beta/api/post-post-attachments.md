@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an [attachment](../resources/attachment.md) when creating a group post. 

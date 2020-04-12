@@ -1,13 +1,15 @@
 ---
 title: "event: tentativelyAccept"
 description: "Tentatively accept the specified event in a user calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: tentativelyAccept
+
+Namespace: microsoft.graph
 
 Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 

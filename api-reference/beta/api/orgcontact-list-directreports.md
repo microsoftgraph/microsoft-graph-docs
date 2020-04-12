@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # orgContact: List directReports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the contact's direct reports.

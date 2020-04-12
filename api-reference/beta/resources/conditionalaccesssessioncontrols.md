@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessSessionControls resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents session controls that are enforced after sign-in.

@@ -221,7 +221,7 @@ See [requirements and limitations for input HTML](#requirements-and-limitations-
 |------|------|  
 | Success code | A 201 HTTP status code. |  
 | Response body | A OData representation of the new page in JSON format. |  
-| Errors | If the request fails, the API returns errors in the **@api.diagnostics** object in the response body. |  
+| Errors | If the request fails, the API returns errors in the **\@api.diagnostics** object in the response body. |  
 | Location header | The resource URL for the new page. |  
 | X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
 

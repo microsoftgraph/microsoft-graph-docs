@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # privacyProfile resource type
 
+Namespace: microsoft.graph
+
 Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.
 
 ## Properties

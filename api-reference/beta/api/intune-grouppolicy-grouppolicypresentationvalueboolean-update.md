@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationValueBoolean"
 description: "Update the properties of a groupPolicyPresentationValueBoolean object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -86,7 +86,6 @@ Content-Length: 267
   "value": true
 }
 ```
-
 
 
 

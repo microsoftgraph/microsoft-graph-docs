@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenoteOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The status of certain long-running OneNote operations.

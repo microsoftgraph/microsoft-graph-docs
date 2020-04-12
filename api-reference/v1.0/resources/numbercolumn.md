@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # NumberColumn resource type
 
+Namespace: microsoft.graph
+
 The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
 ## JSON representation

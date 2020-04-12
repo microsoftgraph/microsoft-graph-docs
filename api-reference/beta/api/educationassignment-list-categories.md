@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List categories
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the categories associated with this assignment.

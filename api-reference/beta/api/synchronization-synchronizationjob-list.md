@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # List synchronization jobs
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List existing jobs for a given application instance (service principal).

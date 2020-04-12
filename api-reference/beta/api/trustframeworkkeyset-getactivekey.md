@@ -2,12 +2,14 @@
 title: "trustFrameworkKeySet: getActiveKey"
 description: "Get the active key in the keyset."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # trustFrameworkKeySet: getActiveKey
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

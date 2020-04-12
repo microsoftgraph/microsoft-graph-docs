@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # appListItem resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents an app in the list of managed applications

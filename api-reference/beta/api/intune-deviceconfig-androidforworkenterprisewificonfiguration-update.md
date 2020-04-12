@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidForWorkEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -179,7 +179,6 @@ Content-Length: 1717
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

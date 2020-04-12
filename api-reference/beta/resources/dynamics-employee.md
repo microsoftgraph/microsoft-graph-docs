@@ -10,6 +10,11 @@ doc_type: resourcePageType
 ---
 
 # employees resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents an employee in Dynamics 365 Business Central.
 
 ## Methods

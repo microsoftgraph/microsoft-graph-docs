@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Deleted facet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Deleted** resource indicates that the item has been deleted.

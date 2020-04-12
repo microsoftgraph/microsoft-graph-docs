@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove an app from your organization's app catalog
 
+Namespace: microsoft.graph
+
 
 
 Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 

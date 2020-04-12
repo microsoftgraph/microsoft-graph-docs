@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Search for a DriveItems within a drive
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search the hierarchy of items for items matching a query.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List alerts
 
+Namespace: microsoft.graph
+
 Retrieve a list of [alert](../resources/alert.md) objects.
 
 ## Permissions

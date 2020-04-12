@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get schema
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a [schema](../resources/schema.md) for an [externalConnection](../resources/externalconnection.md).

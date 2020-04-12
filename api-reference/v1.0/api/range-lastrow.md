@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: LastRow
 
+Namespace: microsoft.graph
+
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

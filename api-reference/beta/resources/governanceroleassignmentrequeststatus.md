@@ -9,6 +9,8 @@ author: ""
 
 # governanceRoleAssignmentRequestStatus resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the status of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).

@@ -2,12 +2,14 @@
 title: "message: delta"
 description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: delta
+
+Namespace: microsoft.graph
 
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 

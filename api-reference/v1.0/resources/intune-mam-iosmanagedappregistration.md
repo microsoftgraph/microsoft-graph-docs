@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 # iosManagedAppRegistration resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the synchronization details of an ios app, with management capabilities, for a specific user.

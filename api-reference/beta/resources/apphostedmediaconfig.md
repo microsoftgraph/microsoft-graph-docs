@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # appHostedMediaConfig resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Media stack hosted by the application.

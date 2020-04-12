@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # participant resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The participant type.

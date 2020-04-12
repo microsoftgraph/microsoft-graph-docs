@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: Intersection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the range object that represents the rectangular intersection of the given ranges.

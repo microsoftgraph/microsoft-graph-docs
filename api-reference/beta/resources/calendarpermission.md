@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # calendarPermission resource type
 
+Namespace: microsoft.graph
+
 The permissions of a user with whom the calendar has been shared or delegated in an Outlook client.
 
 Get, update, and delete of calendar permissions is supported on behalf of only the calendar owner.

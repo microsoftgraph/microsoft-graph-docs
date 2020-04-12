@@ -1,7 +1,7 @@
 ---
 title: "List managedAppRegistrations"
 description: "List properties and relationships of the managedAppRegistration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -89,7 +89,6 @@ Content-Length: 1014
   ]
 }
 ```
-
 
 
 

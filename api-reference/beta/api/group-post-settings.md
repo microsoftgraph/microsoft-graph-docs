@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create a directory setting on groups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new directory setting for the group.

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/conditionalAccess/policies/{id}')
+let res = await client.api('/identity/conditionalAccess/policies/{id}')
 	.version('beta')
 	.delete();
 

@@ -1,7 +1,7 @@
 ---
 title: "mobileAppIntentAndState resource type"
 description: "MobileApp Intent and Install State for a given device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete an activity
 
+Namespace: microsoft.graph
+
 Delete an existing user activity for your app.
 
 ## Permissions

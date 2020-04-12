@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # Device management in Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -32,6 +34,8 @@ ms.prod: "intune"
 - [Co management eligible type](intune-devices-comanagementeligibletype.md)
 - [Compliance state](intune-devices-compliancestate.md)
 - [Configuration manager action](intune-devices-configurationmanageraction.md)
+- [Configuration manager action delivery status](intune-devices-configurationmanageractiondeliverystatus.md)
+- [Configuration manager action result](intune-devices-configurationmanageractionresult.md)
 - [Configuration manager action type](intune-devices-configurationmanageractiontype.md)
 - [Configuration manager client enabled features](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Configuration manager client health state](intune-devices-configurationmanagerclienthealthstate.md)
@@ -42,6 +46,7 @@ ms.prod: "intune"
 - [Delete user from shared Apple device action result](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Detected app](intune-devices-detectedapp.md)
 - [Device action result](intune-devices-deviceactionresult.md)
+- [Device and app management assignment filter type](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [Device enrollment failure reason](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Device exchange access state summary](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Device geolocation](intune-devices-devicegeolocation.md)
@@ -52,10 +57,14 @@ ms.prod: "intune"
 - [Device health script](intune-devices-devicehealthscript.md)
 - [Device health script assignment](intune-devices-devicehealthscriptassignment.md)
 - [Device health script device state](intune-devices-devicehealthscriptdevicestate.md)
+- [Device health script remediation summary](intune-devices-devicehealthscriptremediationsummary.md)
 - [Device health script run summary](intune-devices-devicehealthscriptrunsummary.md)
 - [Device management abstract complex setting definition](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Device management abstract complex setting instance](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management autopilot event](intune-troubleshooting-devicemanagementautopilotevent.md)
+- [Device management autopilot policy compliance status](intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)
+- [Device management autopilot policy status detail](intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
+- [Device management autopilot policy type](intune-troubleshooting-devicemanagementautopilotpolicytype.md)
 - [Device management boolean setting instance](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Device management collection setting definition](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Device management collection setting instance](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -96,6 +105,7 @@ ms.prod: "intune"
 - [Device management setting profile constraint](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [Device management setting regex constraint](intune-deviceintent-devicemanagementsettingregexconstraint.md)
 - [Device management setting required constraint](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
+- [Device management setting sddl constraint](intune-deviceintent-devicemanagementsettingsddlconstraint.md)
 - [Device management setting string length constraint](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [Device management setting xml constraint](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [Device management string setting instance](intune-deviceintent-devicemanagementstringsettinginstance.md)

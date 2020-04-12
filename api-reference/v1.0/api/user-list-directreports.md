@@ -2,12 +2,14 @@
 title: "List directReports"
 description: "Get a user's direct reports."
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List directReports
+
+Namespace: microsoft.graph
 
 Get a user's direct reports.
 

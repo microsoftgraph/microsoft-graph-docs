@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get calendarPermission
 
+Namespace: microsoft.graph
+
 Get the specified permissions object of a user or group calendar that has been shared.
 
 ## Permissions

@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # hashes resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Groups available hashes into a single structure for an item.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ChartAxisTitleFormat resource type
 
+Namespace: microsoft.graph
+
 Represents the chart axis title formatting.
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workingHours resource type
 
+Namespace: microsoft.graph
+
 Represents the days of the week and hours in a specific time zone that the user works.
 
 Having access to a user's working hours is useful in scenarios that handle activity or resource planning. 

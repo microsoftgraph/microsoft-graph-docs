@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List thumbnails for a DriveItem
 
+Namespace: microsoft.graph
+
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
 A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.

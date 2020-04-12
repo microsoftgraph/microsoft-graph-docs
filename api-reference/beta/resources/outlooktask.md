@@ -1,13 +1,15 @@
 ---
 title: "outlookTask resource type"
 description: "An Outlook item that can track a work item. "
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # outlookTask resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

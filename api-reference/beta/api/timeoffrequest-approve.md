@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # timeOffRequest: approve
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Approve a [timeoffrequest](../resources/timeoffrequest.md).

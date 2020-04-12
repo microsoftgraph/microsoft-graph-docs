@@ -1,7 +1,7 @@
 ---
 title: "windowsManagedDevice resource type"
 description: "Windows devices that are managed or pre-enrolled through Intune"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -290,7 +290,8 @@ Here is a JSON representation of the resource.
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "String"
+    "clientIdentifier": "String",
+    "isBlocked": true
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,

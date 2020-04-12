@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # applicationEnforcedRestrictionsSessionControl resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Session control to enforce application restrictions. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).

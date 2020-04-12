@@ -3,11 +3,13 @@ title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
 localization_priority: Priority
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "svpsiva"
 doc_type: resourcePageType
 ---
 
 # itemAttachment resource type
+
+Namespace: microsoft.graph
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md).  

@@ -1,7 +1,7 @@
 ---
 title: "Create macOSGeneralDeviceConfiguration"
 description: "Create a new macOSGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -312,7 +312,6 @@ Content-Length: 3318
   "iCloudBlockActivityContinuation": true
 }
 ```
-
 
 
 

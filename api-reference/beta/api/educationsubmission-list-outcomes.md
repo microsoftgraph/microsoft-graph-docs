@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List outcomes
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.  There are three types of outcomes: **educationPointsOutcome**, **educationFeedbackOutcome**, and **educationRubricOutcome**.

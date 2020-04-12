@@ -9,6 +9,8 @@ doc_type: enumPageType
 
 # managedAppClipboardSharingLevel enum type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Represents the level to which the device's clipboard may be shared between apps

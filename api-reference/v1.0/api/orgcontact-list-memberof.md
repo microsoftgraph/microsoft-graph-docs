@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List memberOf
 
+Namespace: microsoft.graph
+
 List the groups that this [organizational contact](../resources/orgcontact.md) is a member of.
 
 ## Permissions

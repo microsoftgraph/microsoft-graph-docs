@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # workbookRangeView: range
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return the range associated with the rangeView resource.

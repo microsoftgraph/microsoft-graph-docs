@@ -1,7 +1,7 @@
 ---
 title: "vpnTrafficRuleRoutingPolicyType enum type"
 description: "Specifies the routing policy for a VPN traffic rule."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

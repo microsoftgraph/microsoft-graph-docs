@@ -1,7 +1,7 @@
 ---
 title: "Update windowsMicrosoftEdgeApp"
 description: "Update the properties of a windowsMicrosoftEdgeApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -148,7 +148,6 @@ Content-Length: 977
   "displayLanguageLocale": "Display Language Locale value"
 }
 ```
-
 
 
 

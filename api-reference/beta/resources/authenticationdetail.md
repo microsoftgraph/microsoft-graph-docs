@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # authenticationDetail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides the authentication details for a user sign-in, such as multi-factor authentication (MFA) information and PTA/PHS details.

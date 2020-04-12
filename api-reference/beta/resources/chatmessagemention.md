@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # chatMessageMention resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md). 

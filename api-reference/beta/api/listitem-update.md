@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Update an item in a list
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties on a **[listItem][]**.

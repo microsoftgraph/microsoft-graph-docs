@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # payloadTypes resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification.

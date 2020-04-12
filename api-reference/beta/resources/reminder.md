@@ -9,6 +9,8 @@ author: ""
 
 # reminder resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A reminder for an [event](event.md) in a user [calendar](calendar.md).

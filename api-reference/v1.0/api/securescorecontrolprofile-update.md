@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update secureScoreControlProfile
 
+Namespace: microsoft.graph
+
 Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
 
 ## Permissions

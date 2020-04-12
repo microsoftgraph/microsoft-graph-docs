@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: subscribeToTone
 
+Namespace: microsoft.graph
+
 
 Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "dialpad".
 

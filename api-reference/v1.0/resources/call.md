@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # call resource type
 
+Namespace: microsoft.graph
+
 The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`.
 
 Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new group call is created automatically. For an incoming call, record these values in a highly available store, so that your application to rejoin the call in the event your application crashes.
@@ -48,12 +50,18 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Mute self in the call.                                                          |
 | [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Unmute self in the call.                                                        |
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | None                                                        | Start and stop sharing screen in the call.                                      |
+| **Recording Operations**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Updates the recording status.                      |
+| **Logging Operations**                                           |                                                             |                                              |
+| [Log device quality data](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Log video teleconferencing device quality data.|
 
 ## Properties
 
 | Property            | Type                                                                                                   | Description                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
+| callChainId         | String                                                                                                 | A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from `Microsoft.Graph.Call.CallChainId`. |
+| callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | The routing information on how the call was retargeted. Read-only.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for joining a meeting.                                                                                                                              |
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only.                                                                                            |
 | id                  | String                                                                                                 | The call id. Read-only.                                                                                                                                                                        |
@@ -68,6 +76,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) collection                                             | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
 toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.                                                                                                                                                                        |
+incomingContext            | [incomingContext](incomingContext.md)                                                                                | Call context associated with an incoming call.                                                                                                                                                                       |
 
 ## Relationships
 
@@ -83,6 +92,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "callChainId",
     "chatInfo",
     "direction",
     "id",
@@ -104,6 +114,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "callbackUri": "String",
+  "callChainId": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",

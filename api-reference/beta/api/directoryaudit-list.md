@@ -2,12 +2,14 @@
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
-author: "davidmu1"
+author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List directoryAudits
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ This method supports the following OData query parameters to help customize the 
 |initiatedBy/user/displayName| eq|
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
+|initiatedBy/app/displayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq, startswith|
 

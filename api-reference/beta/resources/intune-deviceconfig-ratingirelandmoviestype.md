@@ -1,7 +1,7 @@
 ---
 title: "ratingIrelandMoviesType enum type"
 description: "Movies rating labels in Ireland"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

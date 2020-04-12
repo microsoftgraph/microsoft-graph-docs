@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessApplications resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the applications and user actions included in and excluded from the policy.

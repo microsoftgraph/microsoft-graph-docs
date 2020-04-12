@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # BaseItemVersion resource type
 
+Namespace: microsoft.graph
+
 The **baseItemVersion** resource represents a previous version of an item or entity.
 
 

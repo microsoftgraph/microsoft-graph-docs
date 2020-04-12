@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # informationProtectionLabel: listLabels
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.

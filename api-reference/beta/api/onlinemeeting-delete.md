@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete onlineMeeting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [onlineMeeting](../resources/onlinemeeting.md) object.

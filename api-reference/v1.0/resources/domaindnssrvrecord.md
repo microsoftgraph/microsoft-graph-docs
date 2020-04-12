@@ -1,13 +1,15 @@
 ---
 title: "domainDnsSrvRecord resource type"
-description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
-author: "davidmu1"
+description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant."
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # domainDnsSrvRecord resource type
+
+Namespace: microsoft.graph
 
 Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
 

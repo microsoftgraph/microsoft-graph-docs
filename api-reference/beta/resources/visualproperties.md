@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # visualProperties resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the visual content, namely title and body, of a visual notification targeted to a user. 

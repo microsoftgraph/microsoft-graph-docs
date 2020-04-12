@@ -9,6 +9,8 @@ author: ""
 
 # Get singleValueLegacyExtendedProperty
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can get a single resource instance expanded with a specific extended property, or a collection of resource instances

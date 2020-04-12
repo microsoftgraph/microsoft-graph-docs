@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete timeOffReason
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property.

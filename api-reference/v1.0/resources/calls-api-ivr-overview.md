@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # IVR scenarios in calls
 
+Namespace: microsoft.graph
+
 The following are the Interactive Voice Response (IVR) scenarios that the calling APIs in Microsoft Graph support:
 
 - Playing an audio prompt - e.g., when a call is placed in a customer service agent's queue.

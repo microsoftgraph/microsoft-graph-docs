@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directReports
 
+Namespace: microsoft.graph
+
 Get the direct reports for this [organizational contact](../resources/orgcontact.md).
 
 ## Permissions

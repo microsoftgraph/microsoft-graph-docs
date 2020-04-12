@@ -9,6 +9,8 @@ author: ""
 
 # governanceSchedule resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the schedule for a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). For a role assignment request, the schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequently to do the role assignment operation. 

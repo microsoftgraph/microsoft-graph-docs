@@ -1,7 +1,7 @@
 ---
 title: "List windows10ImportedPFXCertificateProfiles"
 description: "List properties and relationships of the windows10ImportedPFXCertificateProfile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -107,7 +107,6 @@ Content-Length: 1720
   ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create macOSMicrosoftEdgeApp"
 description: "Create a new macOSMicrosoftEdgeApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -143,7 +143,6 @@ Content-Length: 914
   "channel": "beta"
 }
 ```
-
 
 
 

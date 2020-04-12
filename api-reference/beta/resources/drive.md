@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # drive resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.

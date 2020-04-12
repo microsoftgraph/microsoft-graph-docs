@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceArchitecture enum type"
 description: "Processor architecture"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

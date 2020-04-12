@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # schemaExtension resource type (schema extensions)
 
+Namespace: microsoft.graph
+
 Schema extensions allow you to define a schema to extend and add strongly-typed custom data to a resource type. The custom data appears as a complex type on the extended resource. 
 
 Schema extensions are supported by the following resource types:

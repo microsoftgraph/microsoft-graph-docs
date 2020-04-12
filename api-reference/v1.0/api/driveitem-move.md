@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
 
+Namespace: microsoft.graph
+
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
 This is a special case of the [Update](driveitem-update.md) method.

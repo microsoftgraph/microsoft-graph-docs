@@ -9,6 +9,8 @@ author: ""
 
 # governanceRuleSetting resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the rules that the role settings are composed of.

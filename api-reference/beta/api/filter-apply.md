@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Filter: apply
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Apply the given filter criteria on the given column.

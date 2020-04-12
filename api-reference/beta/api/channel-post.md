@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.

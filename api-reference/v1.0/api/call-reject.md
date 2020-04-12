@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: reject
 
+Namespace: microsoft.graph
+
 Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the **chatInfo** and **meetingInfo** parameters.
 
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.

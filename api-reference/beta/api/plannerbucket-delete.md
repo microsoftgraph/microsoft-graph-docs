@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete plannerBucket
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete **plannerBucket**.

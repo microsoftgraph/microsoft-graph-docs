@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get customers
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a customer object for Dynamics 365 Business Central.
 
 ## Permissions

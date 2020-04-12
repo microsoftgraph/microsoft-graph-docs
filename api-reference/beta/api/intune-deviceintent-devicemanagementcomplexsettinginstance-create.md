@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementComplexSettingInstance"
 description: "Create a new deviceManagementComplexSettingInstance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,7 +88,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

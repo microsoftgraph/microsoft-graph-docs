@@ -2,12 +2,14 @@
 title: "activityBasedTimeoutPolicy resource type"
 description: "Represents a policy that can control the idle timeout for web sessions for applications that support activity-based timeout functionality."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # activityBasedTimeoutPolicy resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,12 +2,14 @@
 title: "eventMessageResponse resource type"
 description: "A message that represents a response to a meeting request in the meeting organizer's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---
 
 # eventMessageResponse resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

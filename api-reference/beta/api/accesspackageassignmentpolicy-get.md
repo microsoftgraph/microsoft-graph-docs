@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get accessPackageAssignmentPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve the properties and relationships of an
@@ -100,8 +102,7 @@ Content-type: application/json
   "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
   "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isDenyPolicy": false,
+  "description": "All users in the directory can request access.",
   "canExtend": false,
   "durationInDays": 365,
   "accessReviewSettings": null

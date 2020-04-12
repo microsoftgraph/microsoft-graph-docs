@@ -2,12 +2,14 @@
 title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Create accessReview
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

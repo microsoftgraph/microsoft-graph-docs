@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List schools
 
+Namespace: microsoft.graph
+
 Retrieve a list of schools for a user.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.

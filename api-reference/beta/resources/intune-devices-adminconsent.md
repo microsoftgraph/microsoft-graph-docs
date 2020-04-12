@@ -1,7 +1,7 @@
 ---
 title: "adminConsent resource type"
 description: "Admin consent information."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

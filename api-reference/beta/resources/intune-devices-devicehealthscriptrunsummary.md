@@ -1,7 +1,7 @@
 ---
 title: "deviceHealthScriptRunSummary resource type"
 description: "Contains properties for the run summary of a device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

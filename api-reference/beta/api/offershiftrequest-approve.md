@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # offerShiftRequest: approve
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Approve an [offershiftrequest](../resources/offershiftrequest.md) object.

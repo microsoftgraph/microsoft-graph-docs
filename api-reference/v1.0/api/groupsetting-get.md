@@ -1,13 +1,15 @@
 ---
 title: "Get a group setting"
 description: "Retrieve the properties of a specific of group setting object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get a group setting
+
+Namespace: microsoft.graph
 
 Retrieve the properties of a specific of group setting object.
 

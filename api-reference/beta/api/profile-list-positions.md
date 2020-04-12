@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List positions
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [workPosition](../resources/workposition.md) objects from a user's [profile](../resources/profile.md).

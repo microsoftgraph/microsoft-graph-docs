@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List threat intelligence indicators
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.

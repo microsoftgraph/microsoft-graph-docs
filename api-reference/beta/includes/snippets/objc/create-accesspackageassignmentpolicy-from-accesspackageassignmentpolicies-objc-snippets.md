@@ -15,7 +15,21 @@ MSGraphAccessPackageAssignmentPolicy *accessPackageAssignmentPolicy = [[MSGraphA
 [accessPackageAssignmentPolicy setAccessPackageId:@"56ff43fd-6b05-48df-9634-956a777fce6d"];
 [accessPackageAssignmentPolicy setDisplayName:@"direct"];
 [accessPackageAssignmentPolicy setDescription:@"direct assignments by administrator"];
-[accessPackageAssignmentPolicy setIsEnabled: true];
+[accessPackageAssignmentPolicy setAccessReviewSettings: null];
+MSGraphRequestorSettings *requestorSettings = [[MSGraphRequestorSettings alloc] init];
+[requestorSettings setScopeType:@"NoSubjects"];
+[requestorSettings setAcceptRequests: true];
+NSMutableArray *allowedRequestorsList = [[NSMutableArray alloc] init];
+[requestorSettings setAllowedRequestors:allowedRequestorsList];
+[accessPackageAssignmentPolicy setRequestorSettings:requestorSettings];
+MSGraphApprovalSettings *requestApprovalSettings = [[MSGraphApprovalSettings alloc] init];
+[requestApprovalSettings setIsApprovalRequired: false];
+[requestApprovalSettings setIsApprovalRequiredForExtension: false];
+[requestApprovalSettings setIsRequestorJustificationRequired: false];
+[requestApprovalSettings setApprovalMode:@"NoApproval"];
+NSMutableArray *approvalStagesList = [[NSMutableArray alloc] init];
+[requestApprovalSettings setApprovalStages:approvalStagesList];
+[accessPackageAssignmentPolicy setRequestApprovalSettings:requestApprovalSettings];
 
 NSError *error;
 NSData *accessPackageAssignmentPolicyData = [accessPackageAssignmentPolicy getSerializedDataWithError:&error];

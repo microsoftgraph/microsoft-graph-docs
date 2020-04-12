@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # meetingActivityStatistics resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents data about the user's time spent in meetings in Microsoft Outlook, Microsoft Teams, or Skype for Business. This is based on [activityStatistics](../resources/activitystatistics.md).

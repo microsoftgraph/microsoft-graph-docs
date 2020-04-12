@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create or replace a historyItem
 
+Namespace: microsoft.graph
+
 Create a new or replace an existing history item for an existing user activity.
 
 ## Permissions

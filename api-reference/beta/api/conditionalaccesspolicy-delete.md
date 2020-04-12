@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete conditionalAccessPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /conditionalAccess/policies/{id}
+DELETE /identity/conditionalAccess/policies/{id}
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conditionalaccesspolicy-csharp-snippets.md)]

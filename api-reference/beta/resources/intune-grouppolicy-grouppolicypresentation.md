@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentation resource type"
 description: "The base entity for the display presentation of any of the additional options in a group policy definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

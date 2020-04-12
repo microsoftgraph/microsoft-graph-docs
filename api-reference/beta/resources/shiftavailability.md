@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # shiftAvailability resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Availability of the user to be scheduled for a [shift](shift.md) and its recurrence pattern.

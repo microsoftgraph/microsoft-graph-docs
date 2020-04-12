@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidWorkProfileEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -185,7 +185,6 @@ Content-Length: 1843
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
 }
 ```
-
 
 
 

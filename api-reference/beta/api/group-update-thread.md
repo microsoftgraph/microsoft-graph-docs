@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update conversation thread
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update a [thread](../resources/conversationthread.md) object.

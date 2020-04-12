@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # notebookLinks resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Links for opening a OneNote notebook.

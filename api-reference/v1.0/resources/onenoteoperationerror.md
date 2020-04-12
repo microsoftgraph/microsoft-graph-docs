@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onenoteOperationError resource type
 
+Namespace: microsoft.graph
+
 An error from a failed OneNote operation.
 
 ## JSON representation

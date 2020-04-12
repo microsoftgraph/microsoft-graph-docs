@@ -3,11 +3,13 @@ title: "servicePrincipal: getMemberGroups"
 description: "Get the list of groups that this service principal is a member of.  The check is transitive."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # servicePrincipal: getMemberGroups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

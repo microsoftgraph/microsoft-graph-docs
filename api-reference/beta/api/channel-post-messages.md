@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create chatMessage in a channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).

@@ -1,13 +1,15 @@
 ---
 title: "Create groupLifecyclePolicy"
 description: "Creates a new groupLifecyclePolicy."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Create groupLifecyclePolicy
+
+Namespace: microsoft.graph
 
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 

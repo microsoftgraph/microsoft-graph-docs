@@ -1,13 +1,15 @@
 ---
 title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Remove directory role member
+
+Namespace: microsoft.graph
 
 Remove a member from a directoryRole.
 

@@ -2,8 +2,8 @@
 title: "Microsoft Graph REST API v1.0 reference"
 description: "Welcome to Microsoft Graph REST API reference for the v1.0 endpoint."
 localization_priority: Priority
-author: ""
-ms.prod: ""
+author: "angelgolfer-ms"
+ms.prod: "non-product-specific"
 doc_type: conceptualPageType
 ---
 
@@ -44,6 +44,16 @@ There are currently 2 versions of Microsoft Graph REST APIs - v1.0 and beta.
 If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint.
 
 Find more information about [versioning and support](/graph/versioning-and-support).
+
+## Call the v1.0 endpoint
+
+Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
+
+```
+https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+```
+
+For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## Connect with us
 

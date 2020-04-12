@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Table resource type
 
+Namespace: microsoft.graph
+
 Represents an Excel table.
 
 

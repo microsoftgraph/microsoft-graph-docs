@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update customers
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a customer object for Dynamics 365 Business Central.
 
 ## Permissions

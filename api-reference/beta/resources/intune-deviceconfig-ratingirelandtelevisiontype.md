@@ -1,7 +1,7 @@
 ---
 title: "ratingIrelandTelevisionType enum type"
 description: "TV content rating labels in Ireland"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

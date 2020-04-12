@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete userAccountInformation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [userAccountInformation](../resources/useraccountinformation.md) object from a user's [profile](../resources/profile.md).
@@ -33,7 +35,7 @@ DELETE /user/profile/account{id}
 
 ## Request headers
 
-| Name           |Description                 |
+| Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
 

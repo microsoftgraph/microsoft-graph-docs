@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ipRange resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 IP range base class for representing IPV4 and IPV6 address ranges.

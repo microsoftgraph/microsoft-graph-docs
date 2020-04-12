@@ -1,7 +1,7 @@
 ---
 title: "Update remoteAssistancePartner"
 description: "Update the properties of a remoteAssistancePartner object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,7 +91,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

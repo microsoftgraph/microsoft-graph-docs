@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartSeriesCollection: ItemAt
 
+Namespace: microsoft.graph
+
 Retrieves a series based on its position in the collection
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get open extension
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.

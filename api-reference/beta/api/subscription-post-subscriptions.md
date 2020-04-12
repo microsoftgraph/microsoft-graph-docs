@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Create subscription
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
@@ -21,6 +23,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/allMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
@@ -132,6 +135,7 @@ The following are valid values for the resource property.
 |Drives|me/drive/root|
 |List|site/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
+|Call records|communications/callRecords|
 
 ### Response
 

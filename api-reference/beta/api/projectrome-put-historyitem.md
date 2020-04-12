@@ -9,6 +9,8 @@ author: ""
 
 # Create or replace a historyItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new or replace an existing history item for an existing user activity.

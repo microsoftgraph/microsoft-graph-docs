@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # IdentitySet resource type
 
+Namespace: microsoft.graph
+
 The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 

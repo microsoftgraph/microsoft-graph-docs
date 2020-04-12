@@ -29,7 +29,7 @@ const plannerTaskDetails = {
     95e27074-6c4a-447a-aa24-9d718a0b86fa:{
       @odata.type: "microsoft.graph.plannerChecklistItem",
       title: "Update task details",
-      ischecked: true
+      isChecked: true
     },
     d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff:{
       @odata.type: "microsoft.graph.plannerChecklistItem",

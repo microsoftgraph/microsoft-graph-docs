@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingDependency resource type"
 description: "Dependency information for a setting"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

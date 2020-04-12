@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # onlineMeetingInfo resource type
 
+Namespace: microsoft.graph
+
 Details for an attendee to join the meeting online.
 
 ## Properties

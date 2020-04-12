@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # conversationThread: reply
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ipRange resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 IP range base class for representing IPV4, IPV6 address ranges

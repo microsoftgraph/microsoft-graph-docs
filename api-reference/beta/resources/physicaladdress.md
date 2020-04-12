@@ -2,12 +2,14 @@
 title: "physicalAddress resource type"
 description: "Represents the street address of a resource such as a contact or event."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # physicalAddress resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

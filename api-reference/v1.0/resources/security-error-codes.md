@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Microsoft Graph Security API error responses
 
+Namespace: microsoft.graph
+
 Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header.
 
 ## Errors

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rangeView rows
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of range view objects.

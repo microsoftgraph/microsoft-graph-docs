@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create onlineMeeting
 
+Namespace: microsoft.graph
+
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
 
 > **Note**: The meeting does not show up on the user's calendar.

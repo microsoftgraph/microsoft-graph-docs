@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update skillproficiency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [skillProficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).
@@ -46,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type            | Description                                                                                                                        |
 |:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 |categories    |String collection| Contains categories a user has associated with the skill (eg: personal, professional, hobby)                                       |
-|displayName   |String           | Contains a friendly name for the skill.                                                                                            | 
+|displayName   |String           | Contains a friendly name for the skill.                                                                                            |
 |proficiency   |string           | Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 |webUrl        |String           | Contains a link to an information source about the skill.                                                                          |
 

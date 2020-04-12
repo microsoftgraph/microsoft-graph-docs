@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # notebook: getRecentNotebooks
 
+Namespace: microsoft.graph
+
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.
 
 ## Permissions

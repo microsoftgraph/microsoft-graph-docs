@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # schema resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).
@@ -26,8 +28,8 @@ Describes the type of content and how to index each property in items in a Micro
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Possible values are `microsoft.graph.externalItem` and `microsoft.graph.externalFile`. Required. |
-| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 64. Required when `baseType` is set to `microsoft.graph.externalItem`. Ignored when `baseType` is set to `microsoft.graph.externalFile`. |
+| baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
+| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 64. |
 
 ## Relationships
 

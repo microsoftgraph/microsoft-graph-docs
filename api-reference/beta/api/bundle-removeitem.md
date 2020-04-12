@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Remove item from bundle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove an item from a [bundle][].

@@ -1,13 +1,15 @@
 ---
 title: "Update eventMessage"
 description: "Update the properties of an eventMessage object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update eventMessage
+
+Namespace: microsoft.graph
 
 Update the properties of an [eventMessage](../resources/eventmessage.md) object.
 ## Permissions

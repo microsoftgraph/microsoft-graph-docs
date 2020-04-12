@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # meetingParticipants resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Participants in a meeting.

@@ -1,13 +1,15 @@
 ---
 title: "Update outlooktaskgroup"
 description: "Update the writable properties of an Outlook task group."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update outlooktaskgroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

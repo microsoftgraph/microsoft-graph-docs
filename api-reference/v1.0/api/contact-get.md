@@ -1,13 +1,15 @@
 ---
 title: "Get contact"
 description: "Retrieve the properties and relationships of a contact object."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get contact
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a contact object.
 

@@ -9,6 +9,8 @@ author: ""
 
 # singleValueLegacyExtendedProperty resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An extended property that contains a single value. 

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List interests
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [personInterest](../resources/personinterest.md) objects from a user's [profile](../resources/profile.md).

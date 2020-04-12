@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # publicClientApplication resource type
 
+Namespace: microsoft.graph
+
 Specifies settings for non-web app or non-web API (for example, mobile or other public clients such as an installed application running on a desktop device).
 
 ## Properties

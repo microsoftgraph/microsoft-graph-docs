@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Get metadata for a list
 
+Namespace: microsoft.graph
+
 Returns the metadata for a [list][].
 
 [list]: ../resources/list.md

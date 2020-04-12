@@ -1,7 +1,7 @@
 ---
 title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

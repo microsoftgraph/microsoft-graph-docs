@@ -1,7 +1,7 @@
 ---
 title: "Create windows10PkcsCertificateProfile"
 description: "Create a new windows10PkcsCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -214,7 +214,6 @@ Content-Length: 2246
   ]
 }
 ```
-
 
 
 

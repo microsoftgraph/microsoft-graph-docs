@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # schedule: share
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Share a [schedule](../resources/schedule.md) time range with schedule members.

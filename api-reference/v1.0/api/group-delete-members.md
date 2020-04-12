@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # Remove member
+
+Namespace: microsoft.graph
+
 Use this API to remove a member from a group via the **members** navigation property.
 
 ## Permissions

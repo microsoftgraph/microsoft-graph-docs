@@ -3,11 +3,13 @@ title: "identityRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection. It is the base type for each specific risk event type:"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # identityRiskEvent resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

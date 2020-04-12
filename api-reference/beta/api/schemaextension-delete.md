@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Delete schemaExtension
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete the definition of a [schema extension](../resources/schemaextension.md).

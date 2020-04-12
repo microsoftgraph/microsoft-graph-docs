@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # certificateAuthority resource type
 
+Namespace: microsoft.graph
+
 Represents a certificate authority.
 
 ## Properties

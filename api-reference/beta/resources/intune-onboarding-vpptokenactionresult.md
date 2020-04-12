@@ -1,7 +1,7 @@
 ---
 title: "vppTokenActionResult resource type"
 description: "The status of the action performed with an Apple Volume Purchase Program token."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

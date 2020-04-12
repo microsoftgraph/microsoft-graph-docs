@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get languageProficiency
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [languageProficiency](../resources/languageproficiency.md) object within a user's [profile](../resources/profile.md).
@@ -85,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/profile/languages/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

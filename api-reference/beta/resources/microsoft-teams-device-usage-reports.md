@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Microsoft Teams device usage reports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use the Microsoft Teams device usage reports to get insights into the Microsoft Teams device usage in your organization. 

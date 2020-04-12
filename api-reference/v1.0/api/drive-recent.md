@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # List recent files
 
+Namespace: microsoft.graph
+
 List a set of items that have been recently used by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
 

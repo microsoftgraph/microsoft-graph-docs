@@ -9,6 +9,8 @@ author: ""
 
 # freeBusyError resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Represents error information from attempting to get the availability of a user, distribution list, or resource.

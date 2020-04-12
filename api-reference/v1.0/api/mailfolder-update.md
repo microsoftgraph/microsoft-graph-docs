@@ -1,13 +1,15 @@
 ---
 title: "Update mailfolder"
 description: "Update the properties of mailfolder object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update mailfolder
+
+Namespace: microsoft.graph
 
 Update the properties of mailfolder object.
 ## Permissions

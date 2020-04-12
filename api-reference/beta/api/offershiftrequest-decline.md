@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # offerShiftRequest: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline an [offershiftrequest](../resources/offershiftrequest.md) object.

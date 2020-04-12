@@ -9,6 +9,8 @@ author: ""
 
 # licenseDetails resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about a license assigned to a user.

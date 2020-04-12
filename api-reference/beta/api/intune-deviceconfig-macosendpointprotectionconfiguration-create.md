@@ -1,7 +1,7 @@
 ---
 title: "Create macOSEndpointProtectionConfiguration"
 description: "Create a new macOSEndpointProtectionConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -73,6 +73,15 @@ The following table shows the properties that are required when you create the m
 |fileVaultNumberOfTimesUserCanIgnore|Int32|Optional. When using the Defer option, this is the maximum number of times the user can ignore prompts to enable FileVault before FileVault will be required for the user to sign in. If set to -1, it will always prompt to enable FileVault until FileVault is enabled, though it will allow the user to bypass enabling FileVault. Setting this to 0 will disable the feature.|
 |fileVaultDisablePromptAtSignOut|Boolean|Optional. When using the Defer option, if set to true, the user is not prompted to enable FileVault at sign-out.|
 |fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Optional. If selected recovery key type(s) include PersonalRecoveryKey, the frequency to rotate that key, in months.|
+|fileVaultHidePersonalRecoveryKey|Boolean|Optional. A hidden personal recovery key does not appear on the user's screen during FileVault encryption, reducing the risk of it ending up in the wrong hands.|
+|advancedThreatProtectionRealTime|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable real-time protection for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionCloudDelivered|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable cloud-delivered protection for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionAutomaticSampleSubmission|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable automatic file sample submission for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionDiagnosticDataCollection|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable diagnostic and usage data collection for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionExcludedFolders|String collection|A list of paths to folders to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
+|advancedThreatProtectionExcludedFiles|String collection|A list of paths to files to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
+|advancedThreatProtectionExcludedExtensions|String collection|A list of file extensions to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
+|advancedThreatProtectionExcludedProcesses|String collection|A list of process names to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
 
 
 
@@ -86,7 +95,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2052
+Content-length: 2786
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -138,7 +147,24 @@ Content-length: 2052
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
 
@@ -147,7 +173,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2224
+Content-Length: 2958
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -202,10 +228,26 @@ Content-Length: 2224
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
-
 
 
 

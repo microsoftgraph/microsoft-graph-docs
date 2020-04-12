@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.

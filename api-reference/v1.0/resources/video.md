@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # Video resource type
 
+Namespace: microsoft.graph
+
 The **Video** resource groups video-related data items into a single structure.
 
 If a [**DriveItem**](driveitem.md) has a non-null **video** facet, the item represents a video file.

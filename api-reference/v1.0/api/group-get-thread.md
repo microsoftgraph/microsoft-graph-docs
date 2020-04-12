@@ -8,6 +8,9 @@ doc_type: apiPageType
 ---
 
 # Get conversation thread
+
+Namespace: microsoft.graph
+
 Get a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

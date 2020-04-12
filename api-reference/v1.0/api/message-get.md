@@ -1,13 +1,15 @@
 ---
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get message
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 

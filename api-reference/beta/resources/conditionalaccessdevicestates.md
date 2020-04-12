@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessDeviceStates resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents device states in the policy scope.

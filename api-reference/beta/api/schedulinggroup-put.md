@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Replace schedulingGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Replace an existing [schedulingGroup](../resources/schedulinggroup.md).

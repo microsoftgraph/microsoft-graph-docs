@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create accessPackageResourceRoleScope
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package.  The access package resource must already exist in the access package catalog.  Any subsequent access package assignment requests to this access package will include this resource role.  

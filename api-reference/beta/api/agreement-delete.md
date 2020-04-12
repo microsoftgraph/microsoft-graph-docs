@@ -3,11 +3,13 @@ title: "Delete agreement"
 description: "Delete an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "raprakasMSFT"
 ---
 
 # Delete agreement
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

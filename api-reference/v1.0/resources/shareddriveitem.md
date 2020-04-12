@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # SharedDriveItem resource type
 
+Namespace: microsoft.graph
+
 The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
 ## JSON representation

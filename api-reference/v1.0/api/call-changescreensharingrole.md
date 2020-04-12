@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: changeScreenSharingRole
 
+Namespace: microsoft.graph
+
 Allow applications to share screen content with the participants of a group call.
 
 > **Note:** This is only supported for group calls that use App-Hosted Media.

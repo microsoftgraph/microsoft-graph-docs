@@ -1,13 +1,15 @@
 ---
 title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List childFolders
+
+Namespace: microsoft.graph
 
 Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.

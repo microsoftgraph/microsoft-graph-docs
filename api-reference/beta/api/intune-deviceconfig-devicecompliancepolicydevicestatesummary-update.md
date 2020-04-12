@@ -1,7 +1,7 @@
 ---
 title: "Update deviceCompliancePolicyDeviceStateSummary"
 description: "Update the properties of a deviceCompliancePolicyDeviceStateSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,7 +106,6 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

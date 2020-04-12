@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List transitiveMemberOf
 
+Namespace: microsoft.graph
+
 Get groups that this [organizational contact](../resources/orgcontact.md) is a member of. The API request is transitive, and returns all groups the organizational contact is a nested member of.
 
 ## Permissions

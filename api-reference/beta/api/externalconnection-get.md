@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get connection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [externalConnection](../resources/externalconnection.md).

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeFill resource type
 
+Namespace: microsoft.graph
+
 Represents the background of a range object.
 
 

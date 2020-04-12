@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update workbookChartAxisTitle
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of workbookChartAxisTitle object.

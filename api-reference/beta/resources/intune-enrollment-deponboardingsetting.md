@@ -1,7 +1,7 @@
 ---
 title: "depOnboardingSetting resource type"
 description: "The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -24,6 +24,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[Delete depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|None|Deletes a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Update depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Update the properties of a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.|
 |[getEncryptionPublicKey function](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Get a public key to use to encrypt the Apple device enrollment program token|
+|[generateEncryptionPublicKey action](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|String|Generate a public key to use to encrypt the Apple device enrollment program token|
 |[uploadDepToken action](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|None|Uploads a new Device Enrollment Program token|
 |[syncWithAppleDeviceEnrollmentProgram action](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|None|Synchronizes between Apple Device Enrollment Program and Intune|
 |[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None|Not yet documented|

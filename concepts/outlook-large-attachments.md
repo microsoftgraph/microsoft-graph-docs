@@ -17,6 +17,9 @@ To attach multiple files to a message, choose the approach for each file based o
 
 This article uses an example to illustrate the second approach. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
 
+> [!IMPORTANT] 
+> Be aware of a [known issue](known-issues.md#attaching-large-files-to-messages) if you're attaching large files to a message in a shared or delegated mailbox.
+
 ## Step 1: Create an upload session
 
 [Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message. Specify the file in the input parameter **AttachmentItem**.

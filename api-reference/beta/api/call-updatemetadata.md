@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: updateMetadata
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the appliation's metadata associated with a call.

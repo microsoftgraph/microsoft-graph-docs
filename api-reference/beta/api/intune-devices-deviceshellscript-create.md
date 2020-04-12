@@ -1,7 +1,7 @@
 ---
 title: "Create deviceShellScript"
 description: "Create a new deviceShellScript object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -46,6 +46,9 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
+|executionFrequency|Duration|The interval for the script to run. If not defined, the script runs once.|
+|retryCount|Int32| The number of times for the script to be retried if it fails. |
+|blockExecutionNotifications|Boolean|Indicates whether the user is notified when a script is being executed.|
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
@@ -53,8 +56,8 @@ The following table shows the properties that are required when you create the d
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
-|fileName|String|Script file name.|
-|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
+|fileName|String|The script file name.|
+|roleScopeTagIds|String collection|The list of Scope Tag IDs for this PowerShellScript instance.|
 
 
 
@@ -68,10 +71,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts
 Content-type: application/json
-Content-length: 305
+Content-length: 409
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "displayName": "Display Name value",
   "description": "Description value",
   "scriptContent": "c2NyaXB0Q29udGVudA==",
@@ -88,10 +94,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 477
+Content-Length: 581
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
   "displayName": "Display Name value",
   "description": "Description value",
@@ -105,8 +114,6 @@ Content-Length: 477
   ]
 }
 ```
-
-
 
 
 

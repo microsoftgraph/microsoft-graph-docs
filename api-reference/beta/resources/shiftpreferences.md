@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # shiftPreferences resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a user's availability to be assigned shifts in the [schedule](schedule.md).

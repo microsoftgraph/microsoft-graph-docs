@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerPlanContextDetails resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **plannerPlanContextDetails** resource contains additional information about a [plannerPlanContext](plannerplancontext.md).

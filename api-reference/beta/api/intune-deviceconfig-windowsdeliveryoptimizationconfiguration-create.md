@@ -1,7 +1,7 @@
 ---
 title: "Create windowsDeliveryOptimizationConfiguration"
 description: "Create a new windowsDeliveryOptimizationConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -221,7 +221,6 @@ Content-Length: 2211
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
-
 
 
 

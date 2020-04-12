@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # WorksheetProtection: protect
 
+Namespace: microsoft.graph
+
 Protect a worksheet. It throws if the worksheet has been protected.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

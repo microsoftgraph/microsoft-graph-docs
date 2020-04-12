@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # plannerPlanDetails resource type
 
+Namespace: microsoft.graph
+
 
 The **plannerPlanDetails** resource represents the additional information about a plan. Each [plan](plannerplan.md) object has a details object.
 

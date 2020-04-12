@@ -3,11 +3,13 @@ title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oauth2PermissionGrant objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # List oauth2PermissionGrants
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

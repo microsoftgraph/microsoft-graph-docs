@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List threatAssessmentRequests
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects.

@@ -1,7 +1,7 @@
 ---
 title: "Get macOsVppApp"
 description: "Read properties and relationships of the macOsVppApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -125,7 +125,6 @@ Content-Length: 2170
   }
 }
 ```
-
 
 
 

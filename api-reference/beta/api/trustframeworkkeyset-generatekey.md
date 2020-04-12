@@ -2,12 +2,14 @@
 title: "trustFrameworkKeySet: generateKey"
 description: "Generate a key and a secret automatically in the keyset."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # trustFrameworkKeySet: generateKey
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

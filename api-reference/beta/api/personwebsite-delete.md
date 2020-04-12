@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete personWebsite
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a [personWebsite](../resources/personwebsite.md) object from a user's [profile](../resources/profile.md).
@@ -74,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/websites/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

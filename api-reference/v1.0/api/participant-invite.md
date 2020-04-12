@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # participant: invite
 
+Namespace: microsoft.graph
+
 Invite participants to the active call.
 
 For more information about how to handle operations, see [commsoperation](../resources/commsoperation.md).

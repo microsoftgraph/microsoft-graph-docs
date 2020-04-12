@@ -1,7 +1,7 @@
 ---
 title: "iosVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS VPP mobile app to a group."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

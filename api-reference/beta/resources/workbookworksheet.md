@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookWorksheet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.

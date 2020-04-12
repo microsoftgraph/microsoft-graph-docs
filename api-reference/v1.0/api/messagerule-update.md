@@ -1,13 +1,15 @@
 ---
 title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update rule
+
+Namespace: microsoft.graph
 
 
 Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.

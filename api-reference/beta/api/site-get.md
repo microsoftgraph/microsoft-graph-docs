@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get a site resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve properties and relationships for a [site][] resource.

@@ -9,6 +9,8 @@ doc_type: "conceptualPageType"
 
 # Working with the Azure AD entitlement management API
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure Active Directory (Azure AD) entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization.

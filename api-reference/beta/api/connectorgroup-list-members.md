@@ -9,6 +9,8 @@ author: ""
 
 # List members
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of connector objects associated with a connectorGroup.

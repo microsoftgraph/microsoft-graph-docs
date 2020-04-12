@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # moveAction resource type
 
+Namespace: microsoft.graph
+
 The presence of the **moveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

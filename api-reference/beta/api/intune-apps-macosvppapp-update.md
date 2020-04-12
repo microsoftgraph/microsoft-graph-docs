@@ -1,7 +1,7 @@
 ---
 title: "Update macOsVppApp"
 description: "Update the properties of a macOsVppApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -213,7 +213,6 @@ Content-Length: 2041
   ]
 }
 ```
-
 
 
 

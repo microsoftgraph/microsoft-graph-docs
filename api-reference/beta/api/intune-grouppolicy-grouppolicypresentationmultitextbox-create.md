@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationMultiTextBox"
 description: "Create a new groupPolicyPresentationMultiTextBox object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,7 +93,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
 
 
 

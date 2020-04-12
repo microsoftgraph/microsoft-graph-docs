@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update calendarPermission
 
+Namespace: microsoft.graph
+
 Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.
 
 ## Permissions

@@ -2,12 +2,14 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # List manager
+
+Namespace: microsoft.graph
 
 Get user's manager. Returns the user or organizational contact assigned as the user's manager.
 ## Permissions

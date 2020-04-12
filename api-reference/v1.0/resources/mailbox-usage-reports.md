@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Mailbox usage reports
 
+Namespace: microsoft.graph
+
 Use the mailbox usage reports to get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many mailboxes are approaching storage quotas.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).

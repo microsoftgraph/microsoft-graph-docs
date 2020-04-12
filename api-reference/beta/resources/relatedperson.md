@@ -9,17 +9,19 @@ doc_type: "resourcePageType"
 
 # relatedPerson resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about people related to information within a given entity in a [profile](profile.md) for a user.
 
 ## Properties
 
-| Property        | Type        | Description                                               |
-|:----------------|:------------|:----------------------------------------------------------|
-|displayName      |String       | Name of the person.                                        |
+| Property        | Type        | Description                                                                                                                                                                                                                                     |
+|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|displayName      |String       | Name of the person.                                                                                                                                                                                                                             |
 |relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
-|userPrincipalName|String       | Email address or reference to person within organization. |
+|userPrincipalName|String       | Email address or reference to person within organization.                                                                                                                                                                                       |
 
 ## JSON representation
 

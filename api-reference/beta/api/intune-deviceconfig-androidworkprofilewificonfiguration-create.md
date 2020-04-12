@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileWiFiConfiguration"
 description: "Create a new androidWorkProfileWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -163,7 +163,6 @@ Content-Length: 1391
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
-
 
 
 

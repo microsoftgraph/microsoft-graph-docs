@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # keyValue resource type
 
+Namespace: microsoft.graph
+
 Represents a key-value pair.
 
 ## Properties

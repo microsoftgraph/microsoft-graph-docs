@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerTrustedRootCertificate resource type"
 description: "Android Device Owner Trusted Root Certificate configuration profile"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

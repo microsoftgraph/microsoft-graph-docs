@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerActionType enum type"
 description: "Action type on Configuration Manager client"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

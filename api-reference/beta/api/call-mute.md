@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: mute
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allows the application to mute itself.

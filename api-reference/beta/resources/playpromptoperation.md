@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # playPromptOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The playPrompt operation to obtain the result of the playPrompt action.

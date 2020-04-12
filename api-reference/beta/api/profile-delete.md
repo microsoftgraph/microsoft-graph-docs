@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete profile
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete [profile](../resources/profile.md) object from a user's account.

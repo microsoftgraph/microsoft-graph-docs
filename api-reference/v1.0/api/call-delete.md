@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete call
 
+Namespace: microsoft.graph
+
 Delete or hang up an active call. For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 ## Permissions

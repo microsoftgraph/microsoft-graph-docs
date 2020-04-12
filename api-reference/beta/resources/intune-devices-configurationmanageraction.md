@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerAction resource type"
 description: "Parameter for action triggerConfigurationManagerAction"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

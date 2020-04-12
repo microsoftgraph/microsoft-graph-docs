@@ -1,13 +1,15 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # event resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,9 +64,10 @@ Here is a JSON representation of the resource
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,
+  "isReminderOn": true,  
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
@@ -112,6 +115,7 @@ Here is a JSON representation of the resource
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
+|isDraft|Boolean|Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.|
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information (that is, **onlineMeeting** points to an [onlineMeetingInfo](onlinemeetinginfo.md) resource), `false` otherwise. Default is `false` (**onlineMeeting** is `null`). Optional. <br> After you set **isOnlineMeeting** to `true`, Microsoft Graph initializes **onlineMeeting**. Subsequently Outlook ignores any further changes to **isOnlineMeeting**, and the meeting remains available online. |
 |isOrganizer|Boolean|Set to true if the calendar owner (specified by the **owner** property of the [calendar](calendar.md)) is the organizer of the event (specified by the **organizer** property of the **event**). This also applies if a delegate organized the event on behalf of the owner.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|

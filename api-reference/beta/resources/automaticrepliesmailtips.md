@@ -9,6 +9,8 @@ author: ""
 
 # automaticRepliesMailTips resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.

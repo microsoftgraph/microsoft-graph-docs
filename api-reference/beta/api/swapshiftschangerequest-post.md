@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create swapShiftsChangeRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an instance of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.

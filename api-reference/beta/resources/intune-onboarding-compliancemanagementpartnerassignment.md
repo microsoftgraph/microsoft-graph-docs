@@ -1,7 +1,7 @@
 ---
 title: "complianceManagementPartnerAssignment resource type"
 description: "User group targeting for Compliance Management Partner"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

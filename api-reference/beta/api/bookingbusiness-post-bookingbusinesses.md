@@ -2,12 +2,14 @@
 title: "Create bookingBusiness"
 description: "Create a new Microsoft Bookings business in a tenant."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # Create bookingBusiness
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

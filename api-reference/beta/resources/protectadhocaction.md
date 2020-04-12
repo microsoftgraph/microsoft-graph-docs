@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # protectAdhocAction resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informs the application that ad hoc protection should be applied. The **protectAdhocAction** informs that applications that the label should apply ad hoc protection. Ad hoc protection is defined at runtime by the user or application. The consuming application must use the Microsoft Information Protection SDK to locally apply the protection to the file or data.

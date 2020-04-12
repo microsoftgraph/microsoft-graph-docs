@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove educationUser from an educationSchool
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a user from a school.

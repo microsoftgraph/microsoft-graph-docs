@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # Audio facet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Audio** resource groups audio-related properties on an item into a single structure.

@@ -1,7 +1,7 @@
 ---
 title: "List iosLobApps"
 description: "List properties and relationships of the iosLobApp objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -114,7 +114,6 @@ Content-Length: 1804
   ]
 }
 ```
-
 
 
 

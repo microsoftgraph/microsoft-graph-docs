@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamClassSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents class-specific properties of a [team](team.md). Available only when the team represents a class.

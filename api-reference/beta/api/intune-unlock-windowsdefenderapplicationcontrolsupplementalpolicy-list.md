@@ -1,7 +1,7 @@
 ---
 title: "List windowsDefenderApplicationControlSupplementalPolicies"
 description: "List properties and relationships of the windowsDefenderApplicationControlSupplementalPolicy objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -79,7 +79,6 @@ Content-Length: 598
   ]
 }
 ```
-
 
 
 

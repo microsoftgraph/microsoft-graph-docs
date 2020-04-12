@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get timeOff
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [timeOff](../resources/timeoff.md) object by ID.

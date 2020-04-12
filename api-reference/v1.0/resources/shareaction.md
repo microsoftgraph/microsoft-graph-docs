@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # shareAction resource type
 
+Namespace: microsoft.graph
+
 The **shareAction** resource provides information about an [activity][activity] that shared an item.
 
 >**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.

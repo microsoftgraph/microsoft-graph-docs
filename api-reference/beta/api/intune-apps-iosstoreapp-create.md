@@ -1,7 +1,7 @@
 ---
 title: "Create iosStoreApp"
 description: "Create a new iosStoreApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -176,7 +176,6 @@ Content-Length: 1332
   }
 }
 ```
-
 
 
 

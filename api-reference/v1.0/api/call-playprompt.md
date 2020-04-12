@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: playPrompt
 
+Namespace: microsoft.graph
+
 Play a prompt in the call.
 
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)

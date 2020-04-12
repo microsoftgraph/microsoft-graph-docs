@@ -9,6 +9,8 @@ ms.prod: "cloud-communications"
 
 # Get presence
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a user's [presence](../resources/presence.md) information.

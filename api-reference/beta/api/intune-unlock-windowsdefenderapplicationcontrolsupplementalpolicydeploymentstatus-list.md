@@ -1,7 +1,7 @@
 ---
 title: "List windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses"
 description: "List properties and relationships of the windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -78,7 +78,6 @@ Content-Length: 612
   ]
 }
 ```
-
 
 
 

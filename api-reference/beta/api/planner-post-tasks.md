@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new **plannerTask**.
@@ -65,7 +67,7 @@ Content-length: 285
       "@odata.type": "#microsoft.graph.plannerAssignment",
       "orderHint": " !"
     }
-  },
+  }
 }
 ```
 # [JavaScript](#tab/javascript)

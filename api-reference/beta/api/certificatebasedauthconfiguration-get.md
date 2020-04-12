@@ -2,12 +2,14 @@
 title: "Get certificateBasedAuthConfiguration"
 description: "Get the properties of a certificatebasedauthconfiguration object."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Get certificateBasedAuthConfiguration
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

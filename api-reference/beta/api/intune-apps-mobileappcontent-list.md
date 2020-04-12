@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppContents"
 description: "List properties and relationships of the mobileAppContent objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -71,7 +71,6 @@ Content-Length: 148
   ]
 }
 ```
-
 
 
 

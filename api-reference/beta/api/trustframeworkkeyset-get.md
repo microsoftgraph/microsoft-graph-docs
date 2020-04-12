@@ -2,12 +2,14 @@
 title: "Get trustFrameworkKeySet"
 description: "Retrieve the properties and relationships of trustframeworkkeyset object."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Get trustFrameworkKeySet
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

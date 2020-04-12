@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create workbookCommentReply
 
+Namespace: microsoft.graph
+
 Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object.
 
 ## Permissions

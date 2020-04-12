@@ -1,7 +1,7 @@
 ---
 title: "bitLockerRecoveryOptions resource type"
 description: "BitLocker Recovery Options."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

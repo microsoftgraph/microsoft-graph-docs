@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: cancelMediaProcessing
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cancels processing for any in-progress [play prompt](./call-playprompt.md) or [record response](./call-record.md) operations.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get group
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of a group object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.

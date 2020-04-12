@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var conditionalAccessPolicy = await graphClient.ConditionalAccess.Policies["{id}"]
+var conditionalAccessPolicy = await graphClient.Identity.ConditionalAccess.Policies["{id}"]
 	.Request()
 	.GetAsync();
 

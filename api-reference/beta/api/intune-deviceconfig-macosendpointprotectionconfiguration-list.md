@@ -1,7 +1,7 @@
 ---
 title: "List macOSEndpointProtectionConfigurations"
 description: "List properties and relationships of the macOSEndpointProtectionConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2469
+Content-Length: 3271
 
 {
   "value": [
@@ -116,12 +116,28 @@ Content-Length: 2469
       "fileVaultAllowDeferralUntilSignOut": true,
       "fileVaultNumberOfTimesUserCanIgnore": 3,
       "fileVaultDisablePromptAtSignOut": true,
-      "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+      "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+      "fileVaultHidePersonalRecoveryKey": true,
+      "advancedThreatProtectionRealTime": "enabled",
+      "advancedThreatProtectionCloudDelivered": "enabled",
+      "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+      "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+      "advancedThreatProtectionExcludedFolders": [
+        "Advanced Threat Protection Excluded Folders value"
+      ],
+      "advancedThreatProtectionExcludedFiles": [
+        "Advanced Threat Protection Excluded Files value"
+      ],
+      "advancedThreatProtectionExcludedExtensions": [
+        "Advanced Threat Protection Excluded Extensions value"
+      ],
+      "advancedThreatProtectionExcludedProcesses": [
+        "Advanced Threat Protection Excluded Processes value"
+      ]
     }
   ]
 }
 ```
-
 
 
 

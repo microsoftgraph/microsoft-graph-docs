@@ -1,13 +1,15 @@
 ---
 title: "message: createReply"
 description: "Create a draft of a reply message to include a comment or update any message properties "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: createReply
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

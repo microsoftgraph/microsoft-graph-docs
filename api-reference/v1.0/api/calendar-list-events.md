@@ -1,13 +1,15 @@
 ---
 title: "List events"
 description: "Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List events
+
+Namespace: microsoft.graph
 
 Retrieve a list of events in a calendar.  The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). The list of events contains single instance meetings and series masters.
 

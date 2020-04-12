@@ -2,16 +2,18 @@
 title: "signInActivity resource type"
 description: "Provides the last signed-in date for a specific user."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # signInActivity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the last signed-in date for a specific user.
+Provides the last signed-in date for a specific [user](user.md).
 
 ## Properties
 

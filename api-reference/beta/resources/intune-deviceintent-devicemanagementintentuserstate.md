@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntentUserState resource type"
 description: "Entity that represents user state for an intent"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

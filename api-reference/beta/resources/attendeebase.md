@@ -9,6 +9,8 @@ author: ""
 
 # attendeeBase resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The type of attendee.

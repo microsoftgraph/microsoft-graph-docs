@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkEnterpriseWiFiConfiguration"
 description: "Create a new androidForWorkEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -178,7 +178,6 @@ Content-Length: 1717
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

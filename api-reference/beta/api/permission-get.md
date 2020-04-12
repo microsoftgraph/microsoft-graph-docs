@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # Get sharing permission for a file or folder
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return the effective sharing permission for a particular permission resource.

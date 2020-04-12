@@ -3,11 +3,13 @@ title: "objectIdentity resource type"
 description: "Represents an identity used to sign in to a user account."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "users"
+author: "krbain"
 ---
 
 # objectIdentity resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

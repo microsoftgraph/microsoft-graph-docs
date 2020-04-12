@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # chatMessageHostedContent resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents content hosted in a chat message, such as images or code snippets.

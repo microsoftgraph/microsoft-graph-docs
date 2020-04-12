@@ -1,7 +1,7 @@
 ---
 title: "Update targetedManagedAppPolicyAssignment"
 description: "Update the properties of a targetedManagedAppPolicyAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -96,7 +96,6 @@ Content-Length: 284
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ author: ""
 
 # Json resource type
 
+Namespace: microsoft.graph
+
 Represents data returned in JSON format
 ## Properties
 |Property|Type|Description|

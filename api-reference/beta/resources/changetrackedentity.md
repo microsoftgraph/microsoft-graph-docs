@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # changeTrackedEntity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an entity to track changes made to any supported [schedule](schedule.md) and associated resource.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List subscribedSkus
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of commercial subscriptions that an organization has acquired.

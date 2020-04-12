@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # FileSystemInfo facet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.

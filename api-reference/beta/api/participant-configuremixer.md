@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # participant: configureMixer
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Configure how audio is mixed for different participants in a multiparty conversation.

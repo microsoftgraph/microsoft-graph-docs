@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # section: copyToSectionGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copies a section to a specific section group.

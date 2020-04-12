@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # synchronizationSchema: parseExpression
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.

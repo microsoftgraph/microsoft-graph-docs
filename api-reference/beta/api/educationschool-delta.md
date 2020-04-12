@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # educationSchool: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get newly created or updated schools without having to perform a full read of the entire school collection. See [Use delta query](/graph/delta-query-overview) for details.

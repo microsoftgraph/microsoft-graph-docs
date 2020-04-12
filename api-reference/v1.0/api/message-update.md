@@ -1,13 +1,15 @@
 ---
 title: "Update message"
 description: "Update the properties of message object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update message
+
+Namespace: microsoft.graph
 
 Update the properties of a message object.
 ## Permissions

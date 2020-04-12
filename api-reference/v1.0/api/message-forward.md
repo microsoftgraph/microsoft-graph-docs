@@ -1,13 +1,15 @@
 ---
 title: "message: forward"
 description: "Forward a message. The message is saved in the Sent Items folder."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: forward
+
+Namespace: microsoft.graph
 
 Forward a message. The message is saved in the Sent Items folder.
 

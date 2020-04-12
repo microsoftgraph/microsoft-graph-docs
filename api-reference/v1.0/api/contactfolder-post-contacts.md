@@ -1,13 +1,15 @@
 ---
 title: "Create contact"
 description: "Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create contact
+
+Namespace: microsoft.graph
 
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 

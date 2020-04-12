@@ -2,12 +2,14 @@
 title: "List contacts"
 description: "Get contacts in the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
-ms.prod: "microsoft-identity-platform"
+author: "kevinbellinger"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List contacts
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

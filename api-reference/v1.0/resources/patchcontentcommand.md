@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # patchContentCommand resource type
 
+Namespace: microsoft.graph
+
 The changes to make to a OneNote page in a PATCH request.
 
 ## JSON representation

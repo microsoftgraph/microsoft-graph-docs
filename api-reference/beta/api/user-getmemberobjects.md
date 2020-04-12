@@ -2,12 +2,14 @@
 title: "user: getMemberObjects"
 description: "Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # user: getMemberObjects
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

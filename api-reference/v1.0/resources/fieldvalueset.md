@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # FieldValueSet resource
 
+Namespace: microsoft.graph
+
 Represents the column values in a [listItem](listitem.md) resource.
 
 ## JSON representation

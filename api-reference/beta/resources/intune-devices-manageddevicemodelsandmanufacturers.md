@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceModelsAndManufacturers resource type"
 description: "Models and Manufactures meatadata for managed devices in the account"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # SearchResult resource type
 
+Namespace: microsoft.graph
+
 The **SearchResult** resource indicates than an item is the response to a search query.
 
 ## JSON representation

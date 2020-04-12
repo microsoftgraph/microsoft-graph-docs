@@ -9,6 +9,8 @@ author: ""
 
 # extension resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract type to support the OData v4 open type [openTypeExtension](opentypeextension.md).

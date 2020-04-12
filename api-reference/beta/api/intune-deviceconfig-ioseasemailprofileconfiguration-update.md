@@ -1,7 +1,7 @@
 ---
 title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -227,7 +227,6 @@ Content-Length: 2303
   "encryptionCertificateType": "certificate"
 }
 ```
-
 
 
 

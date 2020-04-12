@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # externalLink resource type
 
+Namespace: microsoft.graph
+
 A url that opens a OneNote page or notebook.
 
 ## JSON representation

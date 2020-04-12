@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 #  secureScoreControlStateUpdate resource type
 
+Namespace: microsoft.graph
+
 Contains the history of the control states updated by the user (control states include Default, Ignored, ThirdParty, Reviewed).
 
 ## Properties

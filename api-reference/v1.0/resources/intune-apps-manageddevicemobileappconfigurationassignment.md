@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # managedDeviceMobileAppConfigurationAssignment resource type
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains the properties used to assign an MDM app configuration to a group.

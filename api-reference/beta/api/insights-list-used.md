@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List used
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight that includes a list of documents the user has modified.

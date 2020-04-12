@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # ChartCollection: ItemAt
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a chart based on its position in the collection.

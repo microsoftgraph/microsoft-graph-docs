@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # updateWindow resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents time window during which [agents](onpremisesagent.md) can receive updates.

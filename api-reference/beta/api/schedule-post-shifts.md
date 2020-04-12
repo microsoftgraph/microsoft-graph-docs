@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create shift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).

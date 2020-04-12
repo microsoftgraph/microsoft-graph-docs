@@ -1,7 +1,7 @@
 ---
 title: "macOSLobApp resource type"
 description: "Contains properties and inherited properties for the MacOS LOB App."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

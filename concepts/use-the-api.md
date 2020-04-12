@@ -12,7 +12,15 @@ Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud 
 
 > **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
-To read from or write to a resource such as a user or an email message, you construct a request that looks like the following.
+## OData namespace
+
+The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) in `microsoft.graph.callRecords`. 
+
+Unless explicitly specified in the corresponding topic, assume types, methods, and enumerations are part of the `microsoft.graph` namespace.
+
+## Call a REST API method
+
+To read from or write to a resource such as a user or an email message, you construct a request that looks like the following:
 
 <!-- {
   "blockType": "ignored"
@@ -37,7 +45,6 @@ After you make a request, a response is returned that includes:
 ## HTTP methods
 
 Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.
-
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |

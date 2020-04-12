@@ -1,13 +1,15 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # Get a user
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of user object.
 

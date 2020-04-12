@@ -9,6 +9,8 @@ author: ""
 
 # fileSecurityState resource type
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about the file (not process) related to the alert.

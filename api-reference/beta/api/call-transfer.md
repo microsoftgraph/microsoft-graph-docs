@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: transfer
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Transfer an active peer-to-peer call.

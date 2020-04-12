@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # ListItemVersion resource type
 
+Namespace: microsoft.graph
+
 The **listItemVersion** resource represents a previous version of a [ListItem](listitem.md) resource.
 
 ## Tasks on ListItemVersion resources

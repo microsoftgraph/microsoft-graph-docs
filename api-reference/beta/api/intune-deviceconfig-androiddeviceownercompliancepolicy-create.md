@@ -1,7 +1,7 @@
 ---
 title: "Create androidDeviceOwnerCompliancePolicy"
 description: "Create a new androidDeviceOwnerCompliancePolicy object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -162,7 +162,6 @@ Content-Length: 1395
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # educationSubmission: unsubmit
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An action that indicates that a student wants to work on the submission of the assignment after it was turned in. This action can only be taken by the student. This will change the status of the submission from "submitted" to "working". During the submit process, all the resources will be copied from submittedResources to the workingResources bucket. The teacher will be looking at the working resources list for grading.

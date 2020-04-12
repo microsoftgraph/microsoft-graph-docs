@@ -1,7 +1,7 @@
 ---
 title: "networkManagementCondition resource type"
 description: "Contains the information to define a network management condition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

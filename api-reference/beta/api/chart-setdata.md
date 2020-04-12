@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Chart: setData
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Resets the source data for the chart.

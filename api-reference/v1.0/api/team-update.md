@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update team
 
+Namespace: microsoft.graph
+
 
 
 Update the properties of the specified [team](../resources/team.md).

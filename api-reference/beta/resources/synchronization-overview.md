@@ -1,13 +1,15 @@
 ---
 title: "Azure AD synchronization API overview"
-description: ") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:"
+description: "Automate the creation, maintenance, and removal of identities in cloud applications."
 localization_priority: Normal
 doc_type: conceptualPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # Azure AD synchronization API overview
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

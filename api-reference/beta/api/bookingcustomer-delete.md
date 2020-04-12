@@ -2,12 +2,14 @@
 title: "Delete bookingCustomer"
 description: "Delete the specified bookingCustomer object."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # Delete bookingCustomer
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

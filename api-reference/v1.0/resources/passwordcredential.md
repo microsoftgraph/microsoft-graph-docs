@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # passwordCredential resource type
 
+Namespace: microsoft.graph
+
 Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> entity is a collection of **passwordCredential** objects.
 
 > [!IMPORTANT]

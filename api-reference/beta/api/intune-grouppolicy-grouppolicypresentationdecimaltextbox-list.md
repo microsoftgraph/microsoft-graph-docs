@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationDecimalTextBoxes"
 description: "List properties and relationships of the groupPolicyPresentationDecimalTextBox objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -77,7 +77,6 @@ Content-Length: 407
   ]
 }
 ```
-
 
 
 

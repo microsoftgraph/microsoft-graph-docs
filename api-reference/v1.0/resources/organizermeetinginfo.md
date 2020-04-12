@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # organizerMeetingInfo resource type
 
+Namespace: microsoft.graph
+
 Contains details about the meeting organizer. 
 
 To join an existing meeting, you must either provide a combination of the organizerMeetingInfo 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # restoreAction resource type
 
+Namespace: microsoft.graph
+
 The presence of the **restoreAction** resource on an [**itemActivity**][activity] indicates that the activity restored an item.
 
 **Note**: This resource is currently empty. In the future, it might be populated with additional properties.

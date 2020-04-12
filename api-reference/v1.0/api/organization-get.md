@@ -2,12 +2,14 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 localization_priority: Priority
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get organization
+
+Namespace: microsoft.graph
 
 Get the properties and relationships of the currently authenticated organization.
 

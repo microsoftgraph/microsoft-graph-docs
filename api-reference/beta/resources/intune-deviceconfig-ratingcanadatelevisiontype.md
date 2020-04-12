@@ -1,7 +1,7 @@
 ---
 title: "ratingCanadaTelevisionType enum type"
 description: "TV content rating labels in Canada"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

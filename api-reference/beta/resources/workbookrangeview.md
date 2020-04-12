@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # workbookRangeView resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 RangeView represents a set of visible cells of the parent range.

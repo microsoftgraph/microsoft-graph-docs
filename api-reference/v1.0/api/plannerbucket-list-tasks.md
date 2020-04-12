@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List tasks
 
+Namespace: microsoft.graph
+
 Retrieve a list of **plannerTask** objects associated to a [plannerBucket](../resources/plannerbucket.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,7 +1,7 @@
 ---
 title: "windowsFeatureUpdateProfileAssignment resource type"
 description: "This entity contains the properties used to assign a windows feature update profile to a group."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

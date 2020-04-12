@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Patch channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the specified [channel](../resources/channel.md).

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationTerm resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A term. This represents a designated portion of the academic year. It is used within [educationClass](educationclass.md).

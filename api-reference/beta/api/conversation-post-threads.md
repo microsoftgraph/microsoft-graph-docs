@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create thread
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new thread in the specified conversation.

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Create itemCategories
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create an item category object Dynamics 365 Business Central.
 
 ## Permissions

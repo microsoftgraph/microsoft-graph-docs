@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # offerShiftRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents type of shift request to offer a shift to another user in the team.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # callMediaState resource type
 
+Namespace: microsoft.graph
+
 
 Represents the media state for a [call](call.md).
 

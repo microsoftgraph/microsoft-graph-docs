@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementReportSchedule"
 description: "Create a new deviceManagementReportSchedule object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -127,7 +127,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

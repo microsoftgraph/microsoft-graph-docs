@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # appHostedMediaConfig resource type
 
+Namespace: microsoft.graph
+
 Media stack hosted by the application.
 
 ## Properties

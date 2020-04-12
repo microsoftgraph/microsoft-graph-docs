@@ -9,6 +9,8 @@ author: ""
 
 # Get a DriveItemVersion resource (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).

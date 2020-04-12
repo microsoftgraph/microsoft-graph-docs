@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # externalConnection resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A connection to Microsoft Search from an external source.

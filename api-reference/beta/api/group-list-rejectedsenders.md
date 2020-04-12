@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rejectedSenders
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of users or groups that are in the rejected-senders list for this group. 

@@ -1,13 +1,15 @@
 ---
 title: "Delete a directory setting"
 description: "Delete a directory setting."
-author: "davidmu1"
+author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete a directory setting
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

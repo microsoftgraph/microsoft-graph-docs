@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update educationAssignmentResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  

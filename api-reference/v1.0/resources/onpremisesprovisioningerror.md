@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # onPremisesProvisioningError resource type
 
+Namespace: microsoft.graph
+
 Represents directory synchronization errors for the [user](user.md), [group](group.md) and [orgContact](orgcontact.md) resources when synchronizing on-premises directories to Azure Active Directory.
 
 ## Properties

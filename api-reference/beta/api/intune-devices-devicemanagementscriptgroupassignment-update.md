@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScriptGroupAssignment"
 description: "Update the properties of a deviceManagementScriptGroupAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -83,7 +83,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

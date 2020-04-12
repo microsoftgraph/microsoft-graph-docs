@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # companyDetail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about companies related to entities within their [profile](profile.md).

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # credential resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates a single credential used for sign-in to an application. For example, username is one credential, password is another credential.

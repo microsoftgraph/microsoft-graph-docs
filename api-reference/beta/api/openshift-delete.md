@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [openShift](../resources/openshift.md) object.

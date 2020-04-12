@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # scheduleInformation resource type
 
+Namespace: microsoft.graph
+
 Represents the availability of a user, distribution list, or resource (room or equipment) for a specified time period.
 
 ## Properties

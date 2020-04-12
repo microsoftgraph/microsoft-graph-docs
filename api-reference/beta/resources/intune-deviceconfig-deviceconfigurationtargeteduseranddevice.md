@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationTargetedUserAndDevice resource type"
 description: "Conflict summary for a set of device configuration policies."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

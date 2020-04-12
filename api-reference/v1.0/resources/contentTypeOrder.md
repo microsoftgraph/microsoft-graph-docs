@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # ContentTypeOrder resource type
 
+Namespace: microsoft.graph
+
 The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.
 
 ## JSON representation

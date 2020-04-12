@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add app to team
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).

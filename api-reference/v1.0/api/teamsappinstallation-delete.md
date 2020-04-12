@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove app from team
 
+Namespace: microsoft.graph
+
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get manager
 
+Namespace: microsoft.graph
+
 Get this organizational contact's manager.
 
 ## Permissions

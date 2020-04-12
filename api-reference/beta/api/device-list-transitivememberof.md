@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List device transitive groups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get groups that the device is a member of. This API request is transitive, and will also return all groups the device is a nested member of.

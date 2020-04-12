@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # locationConstraint resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The conditions stated by a client for the location of a meeting.

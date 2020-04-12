@@ -1,7 +1,7 @@
 ---
 title: "List advancedThreatProtectionOnboardingDeviceSettingStates"
 description: "List properties and relationships of the advancedThreatProtectionOnboardingDeviceSettingState objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,7 +81,6 @@ Content-Length: 711
   ]
 }
 ```
-
 
 
 

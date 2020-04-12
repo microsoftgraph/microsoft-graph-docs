@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # PublicationFacet resource type
 
+Namespace: microsoft.graph
+
 The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.
 
 ## JSON representation

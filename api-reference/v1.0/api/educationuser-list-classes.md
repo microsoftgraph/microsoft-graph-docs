@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List classes
 
+Namespace: microsoft.graph
+
 Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. 
 
 <!-- Please verify the revision to the delegated token text. -->

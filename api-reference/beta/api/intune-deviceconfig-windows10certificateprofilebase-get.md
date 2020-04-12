@@ -1,7 +1,7 @@
 ---
 title: "Get windows10CertificateProfileBase"
 description: "Read properties and relationships of the windows10CertificateProfileBase object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -108,7 +108,6 @@ Content-Length: 1578
   }
 }
 ```
-
 
 
 

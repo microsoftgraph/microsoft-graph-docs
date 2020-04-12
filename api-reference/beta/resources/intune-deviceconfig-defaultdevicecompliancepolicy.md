@@ -1,7 +1,7 @@
 ---
 title: "defaultDeviceCompliancePolicy resource type"
 description: "Default device compliance policy rules that are enforced account wide."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

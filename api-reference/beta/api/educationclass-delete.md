@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete educationClass
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a class. Because a class is also a universal group, deleting a class deletes the group.

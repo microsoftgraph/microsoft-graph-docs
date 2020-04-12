@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List hostedContents
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)|For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All|
+|Delegated (work or school account)|For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
+|Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).

@@ -1,7 +1,7 @@
 ---
 title: "Create unsupportedGroupPolicyExtension"
 description: "Create a new unsupportedGroupPolicyExtension object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,7 +91,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 

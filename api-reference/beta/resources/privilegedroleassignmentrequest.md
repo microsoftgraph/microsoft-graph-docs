@@ -3,11 +3,13 @@ title: "privilegedRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privilegd Identity Management."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # privilegedRoleAssignmentRequest resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

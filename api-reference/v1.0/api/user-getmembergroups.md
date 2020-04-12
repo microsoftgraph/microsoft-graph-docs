@@ -2,12 +2,14 @@
 title: "user: getMemberGroups"
 description: "Return all the groups that the user is a member of. The check is transitive, unlike reading the"
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
 # user: getMemberGroups
+
+Namespace: microsoft.graph
 
 Return all the groups that the user is a member of. The check is transitive, unlike reading the
 [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.

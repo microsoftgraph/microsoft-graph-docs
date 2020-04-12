@@ -2,12 +2,14 @@
 title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # certificateBasedAuthConfiguration resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove teacher
 
+Namespace: microsoft.graph
+
 Remove a teacher from a class.
 
 ## Permissions

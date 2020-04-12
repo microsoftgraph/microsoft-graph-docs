@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileScepCertificateProfiles"
 description: "List properties and relationships of the androidWorkProfileScepCertificateProfile objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -128,7 +128,6 @@ Content-Length: 2427
   ]
 }
 ```
-
 
 
 

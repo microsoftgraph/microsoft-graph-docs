@@ -1,7 +1,7 @@
 ---
 title: "macOSEndpointProtectionConfiguration resource type"
 description: "MacOS endpoint protection configuration profile."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -56,6 +56,15 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |fileVaultNumberOfTimesUserCanIgnore|Int32|Optional. When using the Defer option, this is the maximum number of times the user can ignore prompts to enable FileVault before FileVault will be required for the user to sign in. If set to -1, it will always prompt to enable FileVault until FileVault is enabled, though it will allow the user to bypass enabling FileVault. Setting this to 0 will disable the feature.|
 |fileVaultDisablePromptAtSignOut|Boolean|Optional. When using the Defer option, if set to true, the user is not prompted to enable FileVault at sign-out.|
 |fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Optional. If selected recovery key type(s) include PersonalRecoveryKey, the frequency to rotate that key, in months.|
+|fileVaultHidePersonalRecoveryKey|Boolean|Optional. A hidden personal recovery key does not appear on the user's screen during FileVault encryption, reducing the risk of it ending up in the wrong hands.|
+|advancedThreatProtectionRealTime|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable real-time protection for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionCloudDelivered|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable cloud-delivered protection for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionAutomaticSampleSubmission|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable automatic file sample submission for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionDiagnosticDataCollection|[enablement](../resources/intune-shared-enablement.md)|Determines whether or not to enable diagnostic and usage data collection for Microsoft Defender Advanced Threat Protection on macOS. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionExcludedFolders|String collection|A list of paths to folders to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
+|advancedThreatProtectionExcludedFiles|String collection|A list of paths to files to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
+|advancedThreatProtectionExcludedExtensions|String collection|A list of file extensions to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
+|advancedThreatProtectionExcludedProcesses|String collection|A list of process names to exclude from antivirus scanning for Microsoft Defender Advanced Threat Protection on macOS.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -130,7 +139,24 @@ Here is a JSON representation of the resource.
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 1024,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 1024
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 1024,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "String",
+  "advancedThreatProtectionCloudDelivered": "String",
+  "advancedThreatProtectionAutomaticSampleSubmission": "String",
+  "advancedThreatProtectionDiagnosticDataCollection": "String",
+  "advancedThreatProtectionExcludedFolders": [
+    "String"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "String"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "String"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "String"
+  ]
 }
 ```
 

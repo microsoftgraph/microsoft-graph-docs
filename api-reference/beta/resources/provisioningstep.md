@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # provisioningStep resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the steps taken to perform an action.

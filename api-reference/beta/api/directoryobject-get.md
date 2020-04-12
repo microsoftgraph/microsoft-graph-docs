@@ -1,13 +1,15 @@
 ---
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryobject object."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get directoryObject
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: "Update importedDeviceIdentity"
 description: "Update the properties of a importedDeviceIdentity object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -101,7 +101,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "windowsDeliveryOptimizationMode enum type"
 description: "Delivery optimization mode for peer distribution"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

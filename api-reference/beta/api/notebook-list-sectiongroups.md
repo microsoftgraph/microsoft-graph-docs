@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List sectionGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.

@@ -1,13 +1,15 @@
 ---
 title: "Create ContactFolder"
 description: "Create a new contactFolder as a child of a specified folder. "
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create ContactFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsHealthMonitoringConfiguration"
 description: "Create a new windowsHealthMonitoringConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -157,7 +157,6 @@ Content-Length: 1416
   "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

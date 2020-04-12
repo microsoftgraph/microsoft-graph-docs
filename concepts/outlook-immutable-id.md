@@ -29,7 +29,6 @@ An item's immutable ID will not change so long as the item stays in the same mai
 
 - The user moves the item to an archive mailbox.
 - The user exports the item (to a PST, as an MSG file, etc.) and re-imports it into their mailbox.
-- The user sends a draft message. The immutable ID of the copy in Sent Items will not be the same immutable ID of the draft message.
 
 ## Items that support immutable ID
 
@@ -43,6 +42,17 @@ The following items support immutable IDs:
 - [outlookTask resource type](/graph/api/resources/outlooktask)
 
 Container types (mailFolder, calendar, etc.) do not support immutable ID, but their regular IDs were already constant.
+
+## Immutable ID with sending mail
+
+You can use immutable IDs to find a message in the Sent Items folder after it has been sent, using the following steps:
+
+1. [Create a draft message](/graph/api/user-post-messages) using the `Prefer: IdType="ImmutableId"` header and save the `id` property of the message in the response.
+1. [Send the message](/graph/api/message-send) using the ID from the previous step.
+1. [Get the message](/graph/api/message-get) using the ID from the first step. This is the copy in Sent Items.
+
+> [!NOTE]
+> Getting the message in Sent Items may not succeed immediately after sending the message. The copy of the message is not created until the message successfully sends, which may take time.
 
 ## Immutable ID with change notifications
 

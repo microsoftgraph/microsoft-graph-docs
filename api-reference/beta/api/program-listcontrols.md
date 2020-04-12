@@ -3,11 +3,13 @@ title: "List programControls of a program"
 description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # List programControls of a program
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

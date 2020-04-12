@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # inferenceData resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The [inferenceData](inferencedata.md) resource type provides additional detail about an entity which has been created through inferring information about the user. This information will be present whenever the data within a particular entity was derived from a machine learning or other system process iterating over data.

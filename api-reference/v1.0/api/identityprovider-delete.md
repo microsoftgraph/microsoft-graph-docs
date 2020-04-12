@@ -2,12 +2,14 @@
 title: "Delete identityProvider"
 description: "Delete an existing identityProvider"
 localization_priority: Priority
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete identityProvider
+
+Namespace: microsoft.graph
 
 Delete an existing [identityProvider](../resources/identityprovider.md).
 

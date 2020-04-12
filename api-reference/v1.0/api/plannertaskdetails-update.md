@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update plannertaskdetails
 
+Namespace: microsoft.graph
+
 Update the properties of **plannertaskdetails** object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,7 +82,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
     "95e27074-6c4a-447a-aa24-9d718a0b86fa":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
       "title": "Update task details",
-      "ischecked": true
+      "isChecked": true
     },
     "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",

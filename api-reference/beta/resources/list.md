@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # List resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **list** resource represents a list in a [site][].
@@ -40,7 +42,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 [Delete list item]: ../api/listitem-delete.md
 [Create list item]: ../api/listitem-create.md
 [Get recent activities]: ../api/activities-list.md
-[Get WebSocket channel]: ../api/driveitem-subscriptions-socketio.md
+[Get WebSocket channel]: ../api/subscriptions-socketio.md
 
 ## JSON representation
 

@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Update open extension
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:

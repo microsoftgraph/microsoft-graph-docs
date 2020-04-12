@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete termsAndConditionsAssignment
 
+Namespace: microsoft.graph
+
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Deletes a [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md).

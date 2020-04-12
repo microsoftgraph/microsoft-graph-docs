@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update audio routing group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).

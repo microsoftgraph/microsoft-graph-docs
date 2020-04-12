@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # File resource type
 
+Namespace: microsoft.graph
+
 The **File** resource groups file-related data items into a single structure.
 
 If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.

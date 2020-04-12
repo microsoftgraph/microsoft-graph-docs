@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var policy = await graphClient.Policies["homeRealmDiscoveryPolicies"]
+var homeRealmDiscoveryPolicies = await graphClient.Policies.HomeRealmDiscoveryPolicies
 	.Request()
 	.GetAsync();
 

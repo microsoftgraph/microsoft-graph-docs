@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 # Track changes for a Drive
 
+Namespace: microsoft.graph
+
 This method allows your app to track changes to a drive and its children over time.
 
 Your app begins by calling `delta` without any parameters. 

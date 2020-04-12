@@ -1,13 +1,15 @@
 ---
 title: "messageRuleActions resource type"
 description: "Represents the set of actions that are available to a rule."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # messageRuleActions resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

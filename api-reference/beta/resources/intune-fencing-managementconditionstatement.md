@@ -1,7 +1,7 @@
 ---
 title: "managementConditionStatement resource type"
 description: "A management condition statement is a group of management conditions that enable/disable device/application configurations when all contained management conditions are met."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

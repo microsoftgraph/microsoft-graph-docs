@@ -9,6 +9,8 @@ ms.prod: ""
 ---
 # storagePlanInformation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **storagePlanInformation** resource provides information about the drive's storage quota plans.

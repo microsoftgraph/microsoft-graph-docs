@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # commsOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the status of certain long-running operations.

@@ -3,11 +3,13 @@ title: "Update governanceRoleAssignmentRequests"
 description: "Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on governanceRoleAssignmentRequests that are in status of `PendingAdminDecision`."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Update governanceRoleAssignmentRequests
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

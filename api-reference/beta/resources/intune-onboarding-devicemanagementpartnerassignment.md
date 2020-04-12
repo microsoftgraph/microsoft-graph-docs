@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPartnerAssignment resource type"
 description: "User group targeting for Device Management Partner"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

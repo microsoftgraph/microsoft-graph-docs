@@ -1,7 +1,7 @@
 ---
 title: "List iosEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the iosEnterpriseWiFiConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -120,7 +120,6 @@ Content-Length: 2387
   ]
 }
 ```
-
 
 
 
