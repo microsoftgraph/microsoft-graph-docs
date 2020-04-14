@@ -42,7 +42,7 @@
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
-      "uhfHeaderId": "MSDocsHeader-MSGraph",
+      "uhfHeaderId": "msgraph-experimental",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
       "searchScope": ["graph"],
