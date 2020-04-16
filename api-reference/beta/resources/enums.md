@@ -1174,3 +1174,72 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
+
+### onPremisesPublishingType
+
+| Member       | Value       |
+|:--------------|:--------------|
+|appProxy|0|
+|exchangeOnline|1|
+|authentication|2|
+|provisioning|3|
+|intunePfx|4|
+|oflineDomainJoin|5|
+|unknownFutureValue|6|
+
+### agentStatus
+
+| Member       | Value       |
+|:--------------|:--------------|
+|active|0|
+|inactive|1|
+
+### connectorGroupType
+
+| Member       | Value       |
+|:--------------|:--------------|
+|applicationProxy||
+
+### externalAuthenticationType
+
+| Member       | Value       |
+|:--------------|:--------------|
+|passthru|0|
+|aadPreAuthentication|1|
+
+### connectorStatus
+
+| Member       | Value       |
+|:--------------|:--------------|
+|active|0|
+|inactive|1|
+
+### singleSignOnMode
+
+| Member       | Value       |
+|:--------------|:--------------|
+|none|0|
+|onPremisesKerberos|1|
+|headerBased|2|
+|saml|3|
+
+### kerberosSignOnMappingAttributeType
+
+| Member       | Value       |
+|:--------------|:--------------|
+|userPrincipalName|0|
+|onPremisesUserPrincipalName|1|
+|userPrincipalUsername|2|
+|onPremisesUserPrincipalUsername|3|
+|onPremisesSAMAccountName|4|
+
+### connectorGroupRegion
+
+| Member       | Value       |
+|:--------------|:--------------|
+|nam|0|
+|eur|1|
+|aus|2|
+|asia|3|
+|ind|4|
+|unknownFutureValue|5|
