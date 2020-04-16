@@ -20,11 +20,11 @@ Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is alway
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of connectorGroup object. |
-|[Create application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
+|[Assign an application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
 |[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the application object collection associated with the connectorGroup. |
 |[Add connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connectorGroup by posting to the members collection. |
 |[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection. |
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)	| Update connectorGroup object. |
+|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update connectorGroup object. |
 |[Delete](../api/connectorgroup-delete.md) | None | Delete connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |
 
 ## Properties
@@ -34,7 +34,7 @@ Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is alway
 |id|string| Unique identifier for this connectorGroup. Read-only. |
 |isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. Read-only. |
 |name|string| The name associated with the connectorGroup. |
-|region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no connectors or applications** are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Relationships
 | Relationship | Type	|Description|
