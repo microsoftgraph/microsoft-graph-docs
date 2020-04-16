@@ -23,6 +23,7 @@ After [creating an application](../api/application-post-applications.md), the Ap
 
 | Property|Type|Description|
 |:---------------|:--------|:----------|
+|alternateUrl|String| If you are configuring a traffic manager in front of multiple App Proxy applications, the alternateUrl is the user-friendly URL that will point to the traffic manager. |
 |applicationServerTimeout|String| The duration the connector will wait for a response from the backend application before closing the connection. At default, the backend application timeout has a length of 85 seconds. When set to long, the backend timeout is increased to 180 seconds. Possible values are `default`, `long`. Use `long` if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is "Backend Timeout".|
 |applicationType|String| Indicates if this application is an Application Proxy configured application. This is pre-set by the system. Read-only. |
 |externalAuthenticationType|String| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Passthru does not require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
@@ -55,6 +56,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "alternateUrl": "String",
   "applicationServerTimeout": "String",
   "applicationType": "String",
   "externalAuthenticationType": "String",
